@@ -1,0 +1,12 @@
+[
+  {
+    "id": "000249F1",
+    "name": "Gold Gift",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "Small Win",
+    "tip": "1",
+    "price": 0,
+    "imageID": 150001,
+    "actAward": "[{\"key\":1,\"value\":[21401009],\"prompt\":\"Current claimed times: %0/%1\"},{\"key\":2,\"value\":[21401009],\"prompt\":\"Current claimed times: %0/%1\"},{\"key\":3,\"value\":[21401009],\"prompt\":\"Current claimed times: %0/%1\"}]"
+  }
+]

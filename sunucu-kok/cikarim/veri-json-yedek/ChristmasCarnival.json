@@ -1,0 +1,23 @@
+[
+  {
+    "id": "000AFC81",
+    "name": "圣诞狂欢",
+    "tName": "圣诞狂欢",
+    "desc": "1、玩家可以通过圣诞许愿活动获得贺卡。使用贺卡可以刷新商品和伙伴的原有折扣,无刷新上限.\n2、每次刷新后会提高贺卡的花费，花费达到10贺卡后保持不变,最低折扣为3-5折之间\n3、玩家购买商品只能购买一次，购买完后不能再对商品进行折扣的刷新。 \n4、玩家购买完六个商品后，必须点击刷新商品按钮，才会出现新的商品。冷却时间未到，需花费50金币进行刷新。",
+    "tip": "4",
+    "price": 0,
+    "imageID": 720001,
+    "itemRefreshIndexs": "[0,1,2,3,4,5]",
+    "itemBuyIndexs": "[6,7,8,9,10,11]",
+    "allItems": "[{\"rate\":3,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402270,\"type\":1,\"name\":\"缤纷大礼\",\"cost\":8888},{\"rate\":6,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402271,\"type\":1,\"name\":\"缤纷豪礼\",\"cost\":6000},{\"rate\":9,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402272,\"type\":1,\"name\":\"圣诞大礼\",\"cost\":5000},{\"rate\":12,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402273,\"type\":1,\"name\":\"圣诞豪礼\",\"cost\":10000},{\"rate\":15,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402274,\"type\":1,\"name\":\"圣诞礼包\",\"cost\":9500},{\"rate\":18,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402275,\"type\":1,\"name\":\"节日大礼\",\"cost\":5000},{\"rate\":21,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402276,\"type\":1,\"name\":\"璀璨大礼\",\"cost\":6666},{\"rate\":24,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402277,\"type\":1,\"name\":\"璀璨礼包\",\"cost\":9999},{\"rate\":27,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402278,\"type\":1,\"name\":\"璀璨豪礼\",\"cost\":5000},{\"rate\":30,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402279,\"type\":1,\"name\":\"缤纷礼包\",\"cost\":6666},{\"rate\":33,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402280,\"type\":1,\"name\":\"节日礼包\",\"cost\":8888},{\"rate\":36,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402281,\"type\":1,\"name\":\"狂欢礼包\",\"cost\":7000},{\"rate\":39,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402282,\"type\":1,\"name\":\"狂欢大礼\",\"cost\":5000},{\"rate\":42,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402283,\"type\":1,\"name\":\"狂欢豪礼\",\"cost\":10000},{\"rate\":45,\"startdiscount\":90,\"mindiscount\":45,\"award\":21402284,\"type\":1,\"name\":\"节日珍藏\",\"cost\":12000},{\"rate\":48,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402255,\"type\":2,\"name\":\"圣诞回馈\",\"cost\":1500},{\"rate\":51,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402256,\"type\":2,\"name\":\"节日回馈\",\"cost\":2000},{\"rate\":54,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402257,\"type\":2,\"name\":\"圣诞有礼\",\"cost\":1700},{\"rate\":57,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402258,\"type\":2,\"name\":\"圣诞热卖\",\"cost\":2000},{\"rate\":60,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402259,\"type\":2,\"name\":\"节日热卖\",\"cost\":3000},{\"rate\":63,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402260,\"type\":2,\"name\":\"圣诞珍品\",\"cost\":2000},{\"rate\":66,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402261,\"type\":2,\"name\":\"节日珍品\",\"cost\":1500},{\"rate\":69,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402262,\"type\":2,\"name\":\"圣诞热卖\",\"cost\":4000},{\"rate\":72,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402263,\"type\":2,\"name\":\"暖冬大礼\",\"cost\":1500},{\"rate\":75,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402264,\"type\":2,\"name\":\"暖冬豪礼\",\"cost\":3000},{\"rate\":78,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402265,\"type\":2,\"name\":\"暖冬珍品\",\"cost\":3000},{\"rate\":81,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402266,\"type\":2,\"name\":\"暖冬热卖\",\"cost\":2000},{\"rate\":90,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402267,\"type\":2,\"name\":\"暖冬有礼\",\"cost\":2500},{\"rate\":95,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402268,\"type\":2,\"name\":\"许愿礼包\",\"cost\":2000},{\"rate\":100,\"startdiscount\":90,\"mindiscount\":30,\"award\":21402269,\"type\":2,\"name\":\"许愿有礼\",\"cost\":2000}]",
+    "superItems": "[{\"type\":1,\"code\":14501004,\"amount\":1},{\"type\":1,\"code\":14100019,\"amount\":1},{\"type\":1,\"code\":14100332,\"amount\":1},{\"type\":1,\"code\":14100327,\"amount\":1},{\"type\":1,\"code\":14100328,\"amount\":1},{\"type\":1,\"code\":14100103,\"amount\":1}]",
+    "refreshConsume": "[1,2,3,4,5,6,7,8,9,10]",
+    "refreshIntervalTime": 1,
+    "refreshItemGold": 50,
+    "refreshIndex": 86,
+    "refreshHeroIndex": 89,
+    "hero": "{\"index\":90,\"heroId\":11120008,\"awardId\":21402288,\"gold\":228888,\"startdiscount\":90,\"mindiscount\":50}",
+    "language": "[\"%0折\",\"您确认花费%0贺卡，刷新折扣吗？\",\"贺卡不足\",\"您确认花费%0金币刷新物品吗？\",\"刷新成功，折扣为%0折\",\"已招募该伙伴\"]",
+    "discountCostIndex": 95
+  }
+]

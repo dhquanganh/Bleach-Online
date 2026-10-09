@@ -1,0 +1,20 @@
+[
+  {
+    "id": "00129DA1",
+    "name": "礼从天降",
+    "tName": "大富翁",
+    "desc": "1. Vous pouvez obtenir une des recompenses en ouvrant des Oeufs avec de l'Or. Utilisez \"Ouvrir 10 fois\" pour avoir une remise de 10%.\n2. Vous pouvez ouvrir gratuitement un Oeuf Bronze apres un certain temps. Vous obtenez des points en ouvrant les Oeufs.\n3. Vous pouvez echanger vos points contre des Recompenses. Vous pouvez voir vos points et votre Rang dans le Classement.\n4. Le dernier jour de l'event a 23h50 , le Classement ne sera plus mis a jour. Les Recompenses seront envoyees par mail a 00h00.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "copperEgg": "{\"index\" : 0, \"gold\" : 50, \"time\" : 43200, \"score\" : 50}",
+    "sliverEgg": "{\"index\" :1, \"gold\" : 500 , \"score\" : 500}",
+    "goldEgg": "{\"index\" : 2, \"gold\" : 2000, \"score\" : 2000}",
+    "scoreIndex": 3,
+    "scoreGift": "{\"index\" : 4, \"infos\" : [{\"score\" : 500, \"awardId\" : 21404014}, {\"score\" : 2000, \"awardId\" : 21404015}, {\"score\" : 4000, \"awardId\" : 21404016}, {\"score\" : 6000, \"awardId\" : 21404017}, {\"score\" : 8000, \"awardId\" : 21404018}, {\"score\" : 12000, \"awardId\" : 21404019}, {\"score\" : 20000, \"awardId\" : 21404020}, {\"score\" : 30000, \"awardId\" : 21404021}, {\"score\" : 50000, \"awardId\" : 21404022}]}",
+    "disCount": 90,
+    "rankNum": 50,
+    "rankAward": "[{\"key\":1,\"value\":21404023,\"title\":6003056,\"prompt\":\"NO.1\"},{\"key\":2,\"value\":21404024,\"title\":6003057,\"prompt\":\"NO.2\"},{\"key\":3,\"value\":21404025,\"title\":6003058,\"prompt\":\"NO.3\"},{\"key\":10,\"value\":21404026,\"title\":0,\"prompt\":\"NO.4-10\"},{\"key\":20,\"value\":21404027,\"title\":0,\"prompt\":\"NO.11-20\"},{\"key\":50,\"value\":21404028,\"title\":0,\"prompt\":\"第NO.21-50\"}]",
+    "awards": "[{\"type\" : 0, \"awardId\" : 21403996, \"rate\" : 5}, {\"type\" : 0, \"awardId\" : 21403997, \"rate\" : 20},{\"type\" : 0, \"awardId\" : 21403998, \"rate\" : 20},{\"type\" : 0, \"awardId\" : 21403999, \"rate\" : 20},{\"type\" : 0, \"awardId\" : 21404000, \"rate\" : 20}, {\"type\" : 0, \"awardId\" : 21404001, \"rate\" : 15},{\"type\" : 1, \"awardId\" : 21404002, \"rate\" : 20}, {\"type\" : 1, \"awardId\" : 21404003, \"rate\" : 20}, {\"type\" : 1, \"awardId\" : 21404004, \"rate\" : 15}, {\"type\" : 1, \"awardId\" : 21404005, \"rate\" : 15}, {\"type\" : 1, \"awardId\" : 21404006, \"rate\" : 10},{\"type\" : 1, \"awardId\" : 21404007, \"rate\" : 20}, {\"type\" : 2, \"awardId\" : 21404008, \"rate\" : 20}, {\"type\" : 2, \"awardId\" : 21404009, \"rate\" : 15}, {\"type\" : 2, \"awardId\" : 21404010, \"rate\" : 15}, {\"type\" : 2, \"awardId\" : 21404011, \"rate\" : 20}, {\"type\" : 2, \"awardId\" : 21404012, \"rate\" : 15},{\"type\" : 2, \"awardId\" : 21404013, \"rate\" : 15}]"
+  }
+]

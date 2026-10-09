@@ -1,0 +1,3777 @@
+{
+  "hepsi": [
+    {
+      "ad": "PACKETID_CS_Login_StatusServerTransmitToken",
+      "op": "0x1810000"
+    },
+    {
+      "ad": "PACKETID_CS_Login_GateServerTransmitToken",
+      "op": "0x1810001"
+    },
+    {
+      "ad": "PACKETID_CS_CREATECHAR_CreateChar",
+      "op": "0x1810100"
+    },
+    {
+      "ad": "PACKETID_CS_Account_CharBaseAttributeReq",
+      "op": "0x1810101"
+    },
+    {
+      "ad": "PACKETID_CS_Account_CharUpgradeReq",
+      "op": "0x1810102"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Enter_Town",
+      "op": "0x1810200"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_WorldMap",
+      "op": "0x1810201"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Hurdle",
+      "op": "0x1810202"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_KillHeros",
+      "op": "0x1810203"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Jade",
+      "op": "0x1810204"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Tavern",
+      "op": "0x1810205"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Arena",
+      "op": "0x1810206"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TreasureMap",
+      "op": "0x1810207"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_CityDefend",
+      "op": "0x1810208"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_FightPet",
+      "op": "0x1810209"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_OrganizationWar",
+      "op": "0x181020a"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Home",
+      "op": "0x181020b"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TraitorAttack",
+      "op": "0x181020c"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_SevenKing",
+      "op": "0x181020d"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle",
+      "op": "0x181020e"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle_PVP",
+      "op": "0x181020f"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle_PVE",
+      "op": "0x1810210"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_SkyTower",
+      "op": "0x1810211"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_GongFuFight",
+      "op": "0x1810213"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Pet",
+      "op": "0x1810215"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Town_Move",
+      "op": "0x1810300"
+    },
+    {
+      "ad": "PACKETID_CS_BattleStart",
+      "op": "0x1548000"
+    },
+    {
+      "ad": "PACKETID_CS_BattleStatistics",
+      "op": "0x1548002"
+    },
+    {
+      "ad": "PACKETID_CS_Chat_ChatInfo",
+      "op": "0x1810400"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_QueryChest",
+      "op": "0x1810500"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_ReceiveChest",
+      "op": "0x1810501"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_ResetFB",
+      "op": "0x1810502"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_AutoBattle",
+      "op": "0x1810504"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_StopAutoBattle",
+      "op": "0x1810505"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_GoldFastAutoBattle",
+      "op": "0x1810506"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_EnterNextLayer",
+      "op": "0x1810600"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_QueryChest",
+      "op": "0x1810601"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_ReceiveChest",
+      "op": "0x1810602"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_KillHeros_ResetReq",
+      "op": "0x1810701"
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_MilitaryRankInfoReq",
+      "op": "0x1810800"
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_Upgrade",
+      "op": "0x1810801"
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_ReceiveSalary",
+      "op": "0x1810802"
+    },
+    {
+      "ad": "PACKETID_CS_TacticalDeployment_ChangePositionReq",
+      "op": "0x1810900"
+    },
+    {
+      "ad": "PACKETID_CS_JadeCombine",
+      "op": "0x1811100"
+    },
+    {
+      "ad": "PACKETID_CS_JadeEquipMount",
+      "op": "0x1811101"
+    },
+    {
+      "ad": "PACKETID_CS_JadeEquipUnMount",
+      "op": "0x1811102"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_InfoReq",
+      "op": "0x1810b00"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_UpgradeReq",
+      "op": "0x1810b01"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_ChangePageReq",
+      "op": "0x1810b02"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_PointReq",
+      "op": "0x1810b03"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_SkillUpgradeReq",
+      "op": "0x1810b04"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_SkillListReq",
+      "op": "0x1810b05"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_ChangeSkillReq",
+      "op": "0x1810b06"
+    },
+    {
+      "ad": "PACKETID_CS_Task_QuestInforReq",
+      "op": "0x1811200"
+    },
+    {
+      "ad": "PACKETID_CS_Task_QuestActionReq",
+      "op": "0x1811201"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_LoadBag",
+      "op": "0x1810f00"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_UseAppliance",
+      "op": "0x1810f01"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_SellItem",
+      "op": "0x1810f03"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_DepotToBag",
+      "op": "0x1810f07"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_Dismount",
+      "op": "0x1811001"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_Mount",
+      "op": "0x1811002"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_DeleteHero",
+      "op": "0x1811003"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_OneKeySwap",
+      "op": "0x1811004"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_BuyHeroCountReq",
+      "op": "0x1811005"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_RenewHeroReq",
+      "op": "0x1811006"
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_ComposeReq",
+      "op": "0x1811007"
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_DressReq",
+      "op": "0x1811008"
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_DoneReq",
+      "op": "0x1811009"
+    },
+    {
+      "ad": "PACKETID_CS_HeroWakeUp_AdvancedOrStrengReq",
+      "op": "0x181100a"
+    },
+    {
+      "ad": "PACKETID_CS_TavernMoraReq",
+      "op": "0x1810c00"
+    },
+    {
+      "ad": "PACKETID_CS_TavernNormalMoraReq",
+      "op": "0x1810c01"
+    },
+    {
+      "ad": "PACKETID_CS_TavernRecruitReq",
+      "op": "0x1810c02"
+    },
+    {
+      "ad": "PACKETID_CS_TavernChangeCardReq",
+      "op": "0x1810c03"
+    },
+    {
+      "ad": "PACKETID_CS_Equip_Make",
+      "op": "0x1810d00"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanUpgradeRequest",
+      "op": "0x1811301"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanTransitionRequest",
+      "op": "0x1811302"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanLevelUpRequest",
+      "op": "0x1811303"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanProductRequest",
+      "op": "0x1811304"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyStrengthenRequest",
+      "op": "0x1810e00"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRefinedRequest",
+      "op": "0x1810e01"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyInheritRequest",
+      "op": "0x1810e02"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRefinedConfirmRequest",
+      "op": "0x1810e03"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyStrengthClearTime",
+      "op": "0x1810e04"
+    },
+    {
+      "ad": "PACKETID_CS_Equip_Advanced",
+      "op": "0x1810e05"
+    },
+    {
+      "ad": "PACKETID_CS_Equip_GetSkill",
+      "op": "0x1810e06"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRequestColdTime",
+      "op": "0x1810105"
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpirit_Req",
+      "op": "0x1810e07"
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpiritBuyStone_Req",
+      "op": "0x1810e08"
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpiritFlush_Req",
+      "op": "0x1810e09"
+    },
+    {
+      "ad": "PACKETID_CS_Punch_Req",
+      "op": "0x1810e10"
+    },
+    {
+      "ad": "PACKETID_CS_KnifeTrainRequest",
+      "op": "0x1811400"
+    },
+    {
+      "ad": "PACKETID_CS_KnifeSoulShowViewRequest",
+      "op": "0x1811404"
+    },
+    {
+      "ad": "PACKETID_CS_KnifeInfoRequest",
+      "op": "0x1811405"
+    },
+    {
+      "ad": "PACKETID_CS_SpiritSchoolInfoReq",
+      "op": "0x1811406"
+    },
+    {
+      "ad": "PACKETID_CS_SpiritSchoolTrainReq",
+      "op": "0x1811407"
+    },
+    {
+      "ad": "PACKETID_CS_KnifeOfKillSoulRequest",
+      "op": "0x1814101"
+    },
+    {
+      "ad": "PACKETID_CS_OpenKnifeRequest",
+      "op": "0x1814102"
+    },
+    {
+      "ad": "PACKETID_CS_TrainKnifeRequest",
+      "op": "0x1814103"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeKnifeRequest",
+      "op": "0x1814104"
+    },
+    {
+      "ad": "PACKETID_CS_KnifeStrengReq",
+      "op": "0x1814105"
+    },
+    {
+      "ad": "PACKETID_CS_Friend_LoadFriend",
+      "op": "0x1811500"
+    },
+    {
+      "ad": "PACKETID_CS_Friend_LoadRecommendFriend",
+      "op": "0x1811501"
+    },
+    {
+      "ad": "PACKETID_CS_Friend_ProcessFriendReq",
+      "op": "0x1811502"
+    },
+    {
+      "ad": "PACKETID_CS_Friend_FriendState",
+      "op": "0x1811503"
+    },
+    {
+      "ad": "PACKETID_CS_Friend_InquiryFriendIDReq",
+      "op": "0x1811504"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_InitDataReq",
+      "op": "0x1811600"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_SendMailReq",
+      "op": "0x1811601"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_DelMailReq",
+      "op": "0x1811602"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_GetAttachmentReq",
+      "op": "0x1811603"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_FirstReadMailReq",
+      "op": "0x1811604"
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_CharInfoReq",
+      "op": "0x181a000"
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertInventoryReq",
+      "op": "0x181a001"
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertServerTimeReq",
+      "op": "0x181a002"
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertInventoryIDReq",
+      "op": "0x181a003"
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_CompleteStepReq",
+      "op": "0x1811800"
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_FamilyReq",
+      "op": "0x1811801"
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_RecommandFamilyReq",
+      "op": "0x1811802"
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_RecommandFamilyRet",
+      "op": "0x1181802"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_BigFish_Req",
+      "op": "0x1811900"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_GetReward_Req",
+      "op": "0x1811901"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_AddOrder_Req",
+      "op": "0x1811902"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Faster_Req",
+      "op": "0x1811903"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Fight_Req",
+      "op": "0x1811904"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Look_Req",
+      "op": "0x1811905"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_ColdTime_Req",
+      "op": "0x1811906"
+    },
+    {
+      "ad": "PACKETID_CS_Mall_SuperMarketReq",
+      "op": "0x1811a01"
+    },
+    {
+      "ad": "PACKETID_CS_Mall_HonorShopReq",
+      "op": "0x1811a02"
+    },
+    {
+      "ad": "PACKETID_CS_Mall_VipShopReq",
+      "op": "0x1811a04"
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Load",
+      "op": "0x1811b00"
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Commit",
+      "op": "0x1811b01"
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Reward",
+      "op": "0x1811b02"
+    },
+    {
+      "ad": "PACKETID_CS_Coupon_Reward",
+      "op": "0x1811b03"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_StartReq",
+      "op": "0x1811f00"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_RefreshReq",
+      "op": "0x1811f01"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_OpenMapReq",
+      "op": "0x1811f02"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_FastReq",
+      "op": "0x1811f03"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_FightReq",
+      "op": "0x1811f04"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_VipAddTimesReq",
+      "op": "0x1811f05"
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_InfoReq",
+      "op": "0x1812000"
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_TaskReq",
+      "op": "0x1812001"
+    },
+    {
+      "ad": "PACKETID_CS_DailyTaskp_FreshReq",
+      "op": "0x1812002"
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_RewardReq",
+      "op": "0x1812003"
+    },
+    {
+      "ad": "PACKETID_CS_Counter_CounterReq",
+      "op": "0x1811e01"
+    },
+    {
+      "ad": "PACKETID_CS_Vip_ReceiveReq",
+      "op": "0x1812200"
+    },
+    {
+      "ad": "PACKETID_CS_Activity_LoadActivityInfoReq",
+      "op": "0x1812300"
+    },
+    {
+      "ad": "PACKETID_CS_Activity_InitReq",
+      "op": "0x1812302"
+    },
+    {
+      "ad": "PACKETID_CS_Activity_OperateReq",
+      "op": "0x1812303"
+    },
+    {
+      "ad": "PACKETID_CS_Activity_CDKReq",
+      "op": "0x1812304"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadGulidListReq",
+      "op": "0x1812500"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CreateGulidReq",
+      "op": "0x1812501"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ApplyJoinGulidReq",
+      "op": "0x1812502"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_UpGradeReq",
+      "op": "0x1812503"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadApplyListReq",
+      "op": "0x1812504"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_UpGradeGuildTechReq",
+      "op": "0x1812505"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadMemberListReq",
+      "op": "0x1812506"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GetGulidInfoReq",
+      "op": "0x1812507"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GetCampReq",
+      "op": "0x1812508"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SwitchPowerReq",
+      "op": "0x1812509"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_MuyeBattleReq",
+      "op": "0x1812510"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ConfirmApplyJoinGuildReq",
+      "op": "0x1812511"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadGulidDepotReq",
+      "op": "0x1812512"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_AssignGulidDepotReq",
+      "op": "0x1812513"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_DonateReq",
+      "op": "0x1812514"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_QuitGuildReq",
+      "op": "0x1812515"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_DismissGuildReq",
+      "op": "0x1812516"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ActivityStatusReq",
+      "op": "0x1812517"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_BoardModifyReq",
+      "op": "0x1812518"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GuildLogReq",
+      "op": "0x1812519"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_KickMemberReq",
+      "op": "0x1812521"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CityDefendInfoReq",
+      "op": "0x1812522"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SingleInitReq",
+      "op": "0x1812523"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SingleEnterReq",
+      "op": "0x1812524"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupInitReq",
+      "op": "0x1812526"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupOpenReq",
+      "op": "0x1812527"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupEnterReq",
+      "op": "0x1812528"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CopyRefreshReq",
+      "op": "0x1812529"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_EntetOrNotReq",
+      "op": "0x1812600"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_InspireReq",
+      "op": "0x1812605"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_ResurrectionReq",
+      "op": "0x1812606"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_FightReq",
+      "op": "0x1812607"
+    },
+    {
+      "ad": "PACKETID_CS_OrganizationWar_CommandReq",
+      "op": "0x1812700"
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_CityDoorReq",
+      "op": "0x1812400"
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_FightReq",
+      "op": "0x1812401"
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_ReviveReq",
+      "op": "0x1812402"
+    },
+    {
+      "ad": "PACKETID_CS_FightingShow_ALLFightRankReq",
+      "op": "0x1812900"
+    },
+    {
+      "ad": "PACKETID_CS_FightingShow_SingleFightRankReq",
+      "op": "0x1812901"
+    },
+    {
+      "ad": "PACKETID_CS_Home_HomeUpgradeReq",
+      "op": "0x1814200"
+    },
+    {
+      "ad": "PACKETID_CS_Home_InteractiveRecordReq",
+      "op": "0x1814202"
+    },
+    {
+      "ad": "PACKETID_CS_Home_HZReq",
+      "op": "0x1814214"
+    },
+    {
+      "ad": "PACKETID_CS_Home_LuckyCatReq",
+      "op": "0x1814228"
+    },
+    {
+      "ad": "PACKETID_CS_Home_ClearLuckyCatReq",
+      "op": "0x1814229"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendBaseInforReq",
+      "op": "0x181423c"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendUpgradeReq",
+      "op": "0x181423d"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendMakeTofu",
+      "op": "0x181423e"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendClearMakeTofuCD",
+      "op": "0x181423f"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendSpriteCommnicate",
+      "op": "0x1814240"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendClearSpriteCommnicateCD",
+      "op": "0x1814241"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendTeaseReq",
+      "op": "0x1814242"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendChangeShapeReq",
+      "op": "0x1814244"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_LoadBaseDataReq",
+      "op": "0x1813500"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_CatchListReq",
+      "op": "0x1813501"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_RescueMembersListReq",
+      "op": "0x1813502"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_CommandReq",
+      "op": "0x1813503"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_SOSListReq",
+      "op": "0x1813504"
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_InteractionLogReq",
+      "op": "0x1813505"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_BaseDataReq",
+      "op": "0x1814301"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_ExchangeReq",
+      "op": "0x1814302"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_EatReq",
+      "op": "0x1814303"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_HellPowderRewardReq",
+      "op": "0x1814304"
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_InitReq",
+      "op": "0x1814400"
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_StartRollReq",
+      "op": "0x1814401"
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_GetBoxReq",
+      "op": "0x1814402"
+    },
+    {
+      "ad": "PACKETID_CS_TraitorAttack_ReviveReq",
+      "op": "0x1813400"
+    },
+    {
+      "ad": "PACKETID_CS_TraitorAttack_BattleReq",
+      "op": "0x1813402"
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_AutomaticStatusReq",
+      "op": "0x1813b00"
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_AutomaticOperateReq",
+      "op": "0x1813b01"
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_DailyRewardReq",
+      "op": "0x1813b02"
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_FightReq",
+      "op": "0x1813801"
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_RespectReq",
+      "op": "0x1813802"
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_ReportReq",
+      "op": "0x1813803"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_NijiaSoulUpdateReq",
+      "op": "0x1813901"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_LevelUpReq",
+      "op": "0x1813902"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_ExchangeReq",
+      "op": "0x1813903"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_NijiaStarUpdateReq",
+      "op": "0x1813904"
+    },
+    {
+      "ad": "PACKETID_CS_AchievementInforReq",
+      "op": "0x1815200"
+    },
+    {
+      "ad": "PACKETID_CS_AchievementRewardReq",
+      "op": "0x1815201"
+    },
+    {
+      "ad": "PACKETID_CS_AchievenmentTitleInforReq",
+      "op": "0x1815203"
+    },
+    {
+      "ad": "PACKETID_CS_EquipAchievenmentTitleRep",
+      "op": "0x1815204"
+    },
+    {
+      "ad": "PACKETID_CS_CancleAchievenmentTitleRep",
+      "op": "0x1815205"
+    },
+    {
+      "ad": "PACKETID_CS_OtherUserAchievenmentReq",
+      "op": "0x1815207"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_Challenge_Req",
+      "op": "0x1810a01"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_BuyChallengeCount_Req",
+      "op": "0x1810a02"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_AutoBattle_Req",
+      "op": "0x1810a03"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_AKeyPve_Req",
+      "op": "0x1810a04"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_PvpReceiving_Req",
+      "op": "0x1810a05"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_ChestInfo_Req",
+      "op": "0x1810a06"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_ReceiveChest_Req",
+      "op": "0x1810a07"
+    },
+    {
+      "ad": "PACKETID_CS_YellowDiamondInfor_Req",
+      "op": "0x1815100"
+    },
+    {
+      "ad": "PACKETID_CS_YellowDiamondRecive_Req",
+      "op": "0x1815101"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_CreatePlayerRoom",
+      "op": "0x1816001"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_EnterPlayerRoom",
+      "op": "0x1816002"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_LeaveHall",
+      "op": "0x1816003"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_RoomInOperating",
+      "op": "0x1816100"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveModeChange",
+      "op": "0x1816101"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_ChangePassword",
+      "op": "0x1816102"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_StartGame",
+      "op": "0x1816103"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_ChangeStation",
+      "op": "0x1816104"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattleMatching",
+      "op": "0x1816105"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_StartBattlePVE",
+      "op": "0x1816106"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_FriendListReq",
+      "op": "0x1816107"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveModeChangeConfirmation",
+      "op": "0x1816108"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveStartWait",
+      "op": "0x1816109"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveReturnRoom",
+      "op": "0x181610a"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePvpStartWait",
+      "op": "0x181610b"
+    },
+    {
+      "ad": "PACKETID_CS_Invite_InvitePlayerReq",
+      "op": "0x1816200"
+    },
+    {
+      "ad": "PACKETID_CS_Invite_AnnouncementReq",
+      "op": "0x1816201"
+    },
+    {
+      "ad": "PACKETID_CS_Ornament_OrnamentGradeReq",
+      "op": "0x1816400"
+    },
+    {
+      "ad": "PACKETID_CS_Ornament_OrnamentUpgradeReq",
+      "op": "0x1816401"
+    },
+    {
+      "ad": "PACKETID_CS_GirlGameInforReq",
+      "op": "0x1816600"
+    },
+    {
+      "ad": "PACKETID_CS_GirlGameUndressReq",
+      "op": "0x1816601"
+    },
+    {
+      "ad": "PACKETID_CS_UndressOneKeyReq",
+      "op": "0x1816602"
+    },
+    {
+      "ad": "PACKETID_CS_ReveredBook_QuestionReq",
+      "op": "0x1816701"
+    },
+    {
+      "ad": "PACKETID_CS_Welcome_NipReq",
+      "op": "0x1816800"
+    },
+    {
+      "ad": "PACKETID_CS_BleachDailyRecord_Req",
+      "op": "0x1816900"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrain_Req",
+      "op": "0x1816a00"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainGetReward_Req",
+      "op": "0x1816a01"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainVipBag_Req",
+      "op": "0x1816a03"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrain_Ret",
+      "op": "0x1186a00"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainGetReward_Ret",
+      "op": "0x1186a01"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainUpdate",
+      "op": "0x1186a02"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainVipBag_Ret",
+      "op": "0x1186a03"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_Apply",
+      "op": "0x1813d01"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_FightReq",
+      "op": "0x1813d02"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_PayReq",
+      "op": "0x1813d03"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_RankInforReq",
+      "op": "0x1813d04"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_ChallengeListReq",
+      "op": "0x1813d05"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_AwardExchangeReq",
+      "op": "0x1813d06"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_BaseInforReq",
+      "op": "0x1813d07"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_TryIn",
+      "op": "0x1813d09"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_OpenBeyondLevelFightReq",
+      "op": "0x1813d0a"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_PayRecordReq",
+      "op": "0x1813d0b"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_AddFightTimeReq",
+      "op": "0x1813d0c"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_SeasonInforReq",
+      "op": "0x1813d0d"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_FightRecordReq",
+      "op": "0x1813d0e"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_ReciveBox",
+      "op": "0x1813d11"
+    },
+    {
+      "ad": "PACKETID_CS_Log_Req",
+      "op": "0x1816b00"
+    },
+    {
+      "ad": "PACKETID_CS_Log_PersonReq",
+      "op": "0x1816b01"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_InforReq",
+      "op": "0x1816c00"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_MakeJadeReq",
+      "op": "0x1816c01"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_MakeJadeOneKeyReq",
+      "op": "0x1816c02"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_PickUpReq",
+      "op": "0x1816c03"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_PickUpOneKeyReq",
+      "op": "0x1816c04"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SellReq",
+      "op": "0x1816c05"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SellOneKeyReq",
+      "op": "0x1816c06"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_OpenHighLevelReq",
+      "op": "0x1816c07"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_BuyTimeReq",
+      "op": "0x1816c08"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SwallowPelletReq",
+      "op": "0x1816c0a"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_UnlockSlotReq",
+      "op": "0x1816c0b"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SwallowReq",
+      "op": "0x1816c10"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_ComposeReq",
+      "op": "0x1816c11"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_EquipJadeReq",
+      "op": "0x1816c12"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_InitBackPackReq",
+      "op": "0x1816c13"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_UnloadJadeReq",
+      "op": "0x1816c14"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_ShopInfoReq",
+      "op": "0x1816c15"
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_InforReq",
+      "op": "0x1816d00"
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_GetBackReq",
+      "op": "0x1816d01"
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_OneKeyReq",
+      "op": "0x1816d02"
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_DailyWelfareReq",
+      "op": "0x1816d03"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureAwake_LevelUpReq",
+      "op": "0x1816e00"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_InforReq",
+      "op": "0x1816f00"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ChangeReq",
+      "op": "0x1816f01"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_MakePillReq",
+      "op": "0x1816f02"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ExchangePillReq",
+      "op": "0x1816f03"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_BuyIntoTimeReq",
+      "op": "0x1816f06"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ResetReq",
+      "op": "0x1816f07"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ReliveReq",
+      "op": "0x1816f08"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_FightReq",
+      "op": "0x1816f09"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_OneKeyReq",
+      "op": "0x1816f0a"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_InheritanceReq",
+      "op": "0x1816f0b"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_AdvanceRefreshReq",
+      "op": "0x1816f0c"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_AdvanceReturnReq",
+      "op": "0x1816f0d"
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_GoodsInforReq",
+      "op": "0x1817000"
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_FlushGoodsReq",
+      "op": "0x1817001"
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_BuyGoodReq",
+      "op": "0x1817002"
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_InitInforReq",
+      "op": "0x1817003"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InitInfoReq",
+      "op": "0x1817100"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractReq",
+      "op": "0x1817101"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractClearCDReq",
+      "op": "0x1817102"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractBuyCountReq",
+      "op": "0x1817103"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_GetPetBagReq",
+      "op": "0x1817104"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetFeedReq",
+      "op": "0x1817200"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetRankUpReq",
+      "op": "0x1817201"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetDelReq",
+      "op": "0x1817202"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetChangeReq",
+      "op": "0x1817203"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_NotiyPetItemReq",
+      "op": "0x1817204"
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainReq",
+      "op": "0x1817300"
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainCancelReq",
+      "op": "0x1817301"
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainClearCDReq",
+      "op": "0x1817302"
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainGetReq",
+      "op": "0x1817303"
+    },
+    {
+      "ad": "PACKETID_CS_TrainSlotOpenReq",
+      "op": "0x1817304"
+    },
+    {
+      "ad": "PACKETID_CS_TrainExpCardReq",
+      "op": "0x1817305"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetMakeReq",
+      "op": "0x1817400"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetEquipReq",
+      "op": "0x1817401"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetUnEquipReq",
+      "op": "0x1817402"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetDelReq",
+      "op": "0x1817403"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetInheritReq",
+      "op": "0x1817404"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetRankUpReq",
+      "op": "0x1817405"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_StoreExtendReq",
+      "op": "0x1817406"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetWashExpReq",
+      "op": "0x1817407"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_ExpPoolExtendReq",
+      "op": "0x1817408"
+    },
+    {
+      "ad": "PACKETID_CS_LikeUs_DataReq",
+      "op": "0x1817500"
+    },
+    {
+      "ad": "PACKETID_CS_LikeUs_ReceiveReq",
+      "op": "0x1817501"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_InitReq",
+      "op": "0x1817600"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_BattleReq",
+      "op": "0x1817601"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_DailyResetReq",
+      "op": "0x1817602"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_TakeRewardReq",
+      "op": "0x1817603"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_InitShopReq",
+      "op": "0x1817605"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_FlushShopReq",
+      "op": "0x1817606"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_BuyGoodReq",
+      "op": "0x1817607"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_ReliveReq",
+      "op": "0x1817608"
+    },
+    {
+      "ad": "PACKETID_CS_HeroID_DataReq",
+      "op": "0x1812100"
+    },
+    {
+      "ad": "PACKETID_CS_TavernAddQuality_Req",
+      "op": "0x1812101"
+    },
+    {
+      "ad": "PACKETID_CS_Related_PointInfoReq",
+      "op": "0x1818000"
+    },
+    {
+      "ad": "PACKETID_CS_Related_FightReq",
+      "op": "0x1818001"
+    },
+    {
+      "ad": "PACKETID_CS_Related_RewardReq",
+      "op": "0x1818002"
+    },
+    {
+      "ad": "PACKETID_CS_Related_DailyTrainReq",
+      "op": "0x1818003"
+    },
+    {
+      "ad": "PACKETID_CS_Related_SkillInfoReq",
+      "op": "0x1818005"
+    },
+    {
+      "ad": "PACKETID_CS_Related_LevelupReq",
+      "op": "0x1818006"
+    },
+    {
+      "ad": "PACKETID_CS_Related_HeroHelpReq",
+      "op": "0x1818007"
+    },
+    {
+      "ad": "PACKETID_CS_Related_HeroHelpCancelReq",
+      "op": "0x1818008"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_SingleChallengeReq",
+      "op": "0x1817800"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_PointRefreshReq",
+      "op": "0x1817801"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_AutoFightReq",
+      "op": "0x1817802"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_GroupChallengeReq",
+      "op": "0x1817803"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_QuitMapReq",
+      "op": "0x1817804"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_AllocationReq",
+      "op": "0x1817900"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_SpoilsReq",
+      "op": "0x1817901"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_AttValueReq",
+      "op": "0x1817902"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_ApplyReq",
+      "op": "0x1817903"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_ApplyListReq",
+      "op": "0x1817904"
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_InitDataReq",
+      "op": "0x1817a00"
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_RefreshReq",
+      "op": "0x1817a01"
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_BuyGoodReq",
+      "op": "0x1817a02"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_InfoReq",
+      "op": "0x1817b00"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_EmployReq",
+      "op": "0x1817b01"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_SeatedReq",
+      "op": "0x1817b02"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_UnseatedReq",
+      "op": "0x1817b03"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_UpgrateReq",
+      "op": "0x1817b04"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_ComposeReq",
+      "op": "0x1817b05"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_ReforgingReq",
+      "op": "0x1817b06"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_EncounterReq",
+      "op": "0x1817b07"
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_InitInfoReq",
+      "op": "0x1818300"
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_BuyReq",
+      "op": "0x1818301"
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_UpdateReq",
+      "op": "0x1818302"
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_InitInfoReq",
+      "op": "0x1818400"
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_SkillReq",
+      "op": "0x1818401"
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_RefreshReq",
+      "op": "0x1818402"
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_FightReq",
+      "op": "0x1818403"
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_InitInfoReq",
+      "op": "0x1818700"
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_UpdateReq",
+      "op": "0x1818701"
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_ChangeSkillReq",
+      "op": "0x1818702"
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_RebirthReq",
+      "op": "0x1818500"
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_ResetReq",
+      "op": "0x1818501"
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_GetExpBookReq",
+      "op": "0x1818502"
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_InitReq",
+      "op": "0x1818503"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeInfo_ChangeNameReq",
+      "op": "0x1818600"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeInfo_ChangeCountryReq",
+      "op": "0x1818601"
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_InitReq",
+      "op": "0x1818800"
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_OperatorReq",
+      "op": "0x1818801"
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_MallReq",
+      "op": "0x1818802"
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_VipBuyReq",
+      "op": "0x1818803"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_InitFightReq",
+      "op": "0x1818a00"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_InitReq",
+      "op": "0x1818a01"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_RankReq",
+      "op": "0x1818a02"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_FightReq",
+      "op": "0x1818a03"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BoxAwardReq",
+      "op": "0x1818a04"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BettingReq",
+      "op": "0x1818a05"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BettingAwardReq",
+      "op": "0x1818a06"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_UploadReq",
+      "op": "0x1818a07"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_NpcReq",
+      "op": "0x1818a08"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_InitReq",
+      "op": "0x1818b00"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_InfoSubmitReq",
+      "op": "0x1818b01"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_FightEnterReq",
+      "op": "0x1818b02"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_ReviveReq",
+      "op": "0x1818b03"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_JoinAwardReq",
+      "op": "0x1818b07"
+    },
+    {
+      "ad": "PACKETID_CS_Smelt_ResetReq",
+      "op": "0x1818900"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_InitReq",
+      "op": "0x1818c00"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_ForgeReq",
+      "op": "0x1818c01"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_AdvancedReq",
+      "op": "0x1818c02"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_WorkReq",
+      "op": "0x1818c03"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_BuyEnergyReq",
+      "op": "0x1818c04"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_CompleteReq",
+      "op": "0x1818c05"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_AwardReq",
+      "op": "0x1818c06"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Info",
+      "op": "0x1818d00"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Mall",
+      "op": "0x1818d01"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Levelup",
+      "op": "0x1818d02"
+    },
+    {
+      "ad": "PACKETID_CS_PurchaseReq",
+      "op": "0x1811a00"
+    }
+  ],
+  "okuma": [
+    {
+      "ad": "PACKETID_CS_Login_StatusServerTransmitToken",
+      "op": "0x1810000",
+      "val": 25231360
+    },
+    {
+      "ad": "PACKETID_CS_Login_GateServerTransmitToken",
+      "op": "0x1810001",
+      "val": 25231361
+    },
+    {
+      "ad": "PACKETID_CS_Account_CharBaseAttributeReq",
+      "op": "0x1810101",
+      "val": 25231617
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Enter_Town",
+      "op": "0x1810200",
+      "val": 25231872
+    },
+    {
+      "ad": "PACKETID_CS_Enter_WorldMap",
+      "op": "0x1810201",
+      "val": 25231873
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Hurdle",
+      "op": "0x1810202",
+      "val": 25231874
+    },
+    {
+      "ad": "PACKETID_CS_Enter_KillHeros",
+      "op": "0x1810203",
+      "val": 25231875
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Jade",
+      "op": "0x1810204",
+      "val": 25231876
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Tavern",
+      "op": "0x1810205",
+      "val": 25231877
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Arena",
+      "op": "0x1810206",
+      "val": 25231878
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TreasureMap",
+      "op": "0x1810207",
+      "val": 25231879
+    },
+    {
+      "ad": "PACKETID_CS_Enter_CityDefend",
+      "op": "0x1810208",
+      "val": 25231880
+    },
+    {
+      "ad": "PACKETID_CS_Enter_OrganizationWar",
+      "op": "0x181020a",
+      "val": 25231882
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Home",
+      "op": "0x181020b",
+      "val": 25231883
+    },
+    {
+      "ad": "PACKETID_CS_Enter_SevenKing",
+      "op": "0x181020d",
+      "val": 25231885
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle",
+      "op": "0x181020e",
+      "val": 25231886
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle_PVP",
+      "op": "0x181020f",
+      "val": 25231887
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TeamBattle_PVE",
+      "op": "0x1810210",
+      "val": 25231888
+    },
+    {
+      "ad": "PACKETID_CS_Enter_SkyTower",
+      "op": "0x1810211",
+      "val": 25231889
+    },
+    {
+      "ad": "PACKETID_CS_Enter_Pet",
+      "op": "0x1810215",
+      "val": 25231893
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Town_Move",
+      "op": "0x1810300",
+      "val": 25232128
+    },
+    {
+      "ad": "PACKETID_CS_BattleStatistics",
+      "op": "0x1548002",
+      "val": 22315010
+    },
+    {
+      "ad": "PACKETID_CS_Chat_ChatInfo",
+      "op": "0x1810400",
+      "val": 25232384
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_QueryChest",
+      "op": "0x1810500",
+      "val": 25232640
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_AutoBattle",
+      "op": "0x1810504",
+      "val": 25232644
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_StopAutoBattle",
+      "op": "0x1810505",
+      "val": 25232645
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_GoldFastAutoBattle",
+      "op": "0x1810506",
+      "val": 25232646
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_EnterNextLayer",
+      "op": "0x1810600",
+      "val": 25232896
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_QueryChest",
+      "op": "0x1810601",
+      "val": 25232897
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_MilitaryRankInfoReq",
+      "op": "0x1810800",
+      "val": 25233408
+    },
+    {
+      "ad": "PACKETID_CS_JadeCombine",
+      "op": "0x1811100",
+      "val": 25235712
+    },
+    {
+      "ad": "PACKETID_CS_JadeEquipMount",
+      "op": "0x1811101",
+      "val": 25235713
+    },
+    {
+      "ad": "PACKETID_CS_JadeEquipUnMount",
+      "op": "0x1811102",
+      "val": 25235714
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_InfoReq",
+      "op": "0x1810b00",
+      "val": 25234176
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_PointReq",
+      "op": "0x1810b03",
+      "val": 25234179
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_SkillListReq",
+      "op": "0x1810b05",
+      "val": 25234181
+    },
+    {
+      "ad": "PACKETID_CS_Task_QuestInforReq",
+      "op": "0x1811200",
+      "val": 25235968
+    },
+    {
+      "ad": "PACKETID_CS_Task_QuestActionReq",
+      "op": "0x1811201",
+      "val": 25235969
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_LoadBag",
+      "op": "0x1810f00",
+      "val": 25235200
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_DepotToBag",
+      "op": "0x1810f07",
+      "val": 25235207
+    },
+    {
+      "ad": "PACKETID_CS_Heros_Dismount",
+      "op": "0x1811001",
+      "val": 25235457
+    },
+    {
+      "ad": "PACKETID_CS_Heros_Mount",
+      "op": "0x1811002",
+      "val": 25235458
+    },
+    {
+      "ad": "PACKETID_CS_Heros_OneKeySwap",
+      "op": "0x1811004",
+      "val": 25235460
+    },
+    {
+      "ad": "PACKETID_CS_Heros_RenewHeroReq",
+      "op": "0x1811006",
+      "val": 25235462
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_DressReq",
+      "op": "0x1811008",
+      "val": 25235464
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_DoneReq",
+      "op": "0x1811009",
+      "val": 25235465
+    },
+    {
+      "ad": "PACKETID_CS_HeroWakeUp_AdvancedOrStrengReq",
+      "op": "0x181100a",
+      "val": 25235466
+    },
+    {
+      "ad": "PACKETID_CS_TavernMoraReq",
+      "op": "0x1810c00",
+      "val": 25234432
+    },
+    {
+      "ad": "PACKETID_CS_TavernNormalMoraReq",
+      "op": "0x1810c01",
+      "val": 25234433
+    },
+    {
+      "ad": "PACKETID_CS_Equip_Make",
+      "op": "0x1810d00",
+      "val": 25234688
+    },
+    {
+      "ad": "PACKETID_CS_TalismanTransitionRequest",
+      "op": "0x1811302",
+      "val": 25236226
+    },
+    {
+      "ad": "PACKETID_CS_TalismanProductRequest",
+      "op": "0x1811304",
+      "val": 25236228
+    },
+    {
+      "ad": "PACKETID_CS_SmithyInheritRequest",
+      "op": "0x1810e02",
+      "val": 25234946
+    },
+    {
+      "ad": "PACKETID_CS_SmithyStrengthClearTime",
+      "op": "0x1810e04",
+      "val": 25234948
+    },
+    {
+      "ad": "PACKETID_CS_Equip_Advanced",
+      "op": "0x1810e05",
+      "val": 25234949
+    },
+    {
+      "ad": "PACKETID_CS_Equip_GetSkill",
+      "op": "0x1810e06",
+      "val": 25234950
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRequestColdTime",
+      "op": "0x1810105",
+      "val": 25231621
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpirit_Req",
+      "op": "0x1810e07",
+      "val": 25234951
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpiritFlush_Req",
+      "op": "0x1810e09",
+      "val": 25234953
+    },
+    {
+      "ad": "PACKETID_CS_Punch_Req",
+      "op": "0x1810e10",
+      "val": 25234960
+    },
+    {
+      "ad": "PACKETID_CS_KnifeTrainRequest",
+      "op": "0x1811400",
+      "val": 25236480
+    },
+    {
+      "ad": "PACKETID_CS_KnifeSoulShowViewRequest",
+      "op": "0x1811404",
+      "val": 25236484
+    },
+    {
+      "ad": "PACKETID_CS_KnifeInfoRequest",
+      "op": "0x1811405",
+      "val": 25236485
+    },
+    {
+      "ad": "PACKETID_CS_SpiritSchoolInfoReq",
+      "op": "0x1811406",
+      "val": 25236486
+    },
+    {
+      "ad": "PACKETID_CS_SpiritSchoolTrainReq",
+      "op": "0x1811407",
+      "val": 25236487
+    },
+    {
+      "ad": "PACKETID_CS_KnifeOfKillSoulRequest",
+      "op": "0x1814101",
+      "val": 25248001
+    },
+    {
+      "ad": "PACKETID_CS_OpenKnifeRequest",
+      "op": "0x1814102",
+      "val": 25248002
+    },
+    {
+      "ad": "PACKETID_CS_TrainKnifeRequest",
+      "op": "0x1814103",
+      "val": 25248003
+    },
+    {
+      "ad": "PACKETID_CS_KnifeStrengReq",
+      "op": "0x1814105",
+      "val": 25248005
+    },
+    {
+      "ad": "PACKETID_CS_Friend_LoadFriend",
+      "op": "0x1811500",
+      "val": 25236736
+    },
+    {
+      "ad": "PACKETID_CS_Friend_LoadRecommendFriend",
+      "op": "0x1811501",
+      "val": 25236737
+    },
+    {
+      "ad": "PACKETID_CS_Friend_ProcessFriendReq",
+      "op": "0x1811502",
+      "val": 25236738
+    },
+    {
+      "ad": "PACKETID_CS_Friend_FriendState",
+      "op": "0x1811503",
+      "val": 25236739
+    },
+    {
+      "ad": "PACKETID_CS_Friend_InquiryFriendIDReq",
+      "op": "0x1811504",
+      "val": 25236740
+    },
+    {
+      "ad": "PACKETID_CS_Mail_InitDataReq",
+      "op": "0x1811600",
+      "val": 25236992
+    },
+    {
+      "ad": "PACKETID_CS_Mail_DelMailReq",
+      "op": "0x1811602",
+      "val": 25236994
+    },
+    {
+      "ad": "PACKETID_CS_Mail_GetAttachmentReq",
+      "op": "0x1811603",
+      "val": 25236995
+    },
+    {
+      "ad": "PACKETID_CS_Mail_FirstReadMailReq",
+      "op": "0x1811604",
+      "val": 25236996
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_CharInfoReq",
+      "op": "0x181a000",
+      "val": 25272320
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertInventoryReq",
+      "op": "0x181a001",
+      "val": 25272321
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertServerTimeReq",
+      "op": "0x181a002",
+      "val": 25272322
+    },
+    {
+      "ad": "PACKETID_CS_Inspector_QuertInventoryIDReq",
+      "op": "0x181a003",
+      "val": 25272323
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_CompleteStepReq",
+      "op": "0x1811800",
+      "val": 25237504
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_FamilyReq",
+      "op": "0x1811801",
+      "val": 25237505
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_RecommandFamilyReq",
+      "op": "0x1811802",
+      "val": 25237506
+    },
+    {
+      "ad": "PACKETID_CS_FreshGuide_RecommandFamilyRet",
+      "op": "0x1181802",
+      "val": 18356226
+    },
+    {
+      "ad": "PACKETID_CS_Arena_BigFish_Req",
+      "op": "0x1811900",
+      "val": 25237760
+    },
+    {
+      "ad": "PACKETID_CS_Arena_AddOrder_Req",
+      "op": "0x1811902",
+      "val": 25237762
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Faster_Req",
+      "op": "0x1811903",
+      "val": 25237763
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Look_Req",
+      "op": "0x1811905",
+      "val": 25237765
+    },
+    {
+      "ad": "PACKETID_CS_Arena_ColdTime_Req",
+      "op": "0x1811906",
+      "val": 25237766
+    },
+    {
+      "ad": "PACKETID_CS_Mall_SuperMarketReq",
+      "op": "0x1811a01",
+      "val": 25238017
+    },
+    {
+      "ad": "PACKETID_CS_Mall_HonorShopReq",
+      "op": "0x1811a02",
+      "val": 25238018
+    },
+    {
+      "ad": "PACKETID_CS_Mall_VipShopReq",
+      "op": "0x1811a04",
+      "val": 25238020
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Load",
+      "op": "0x1811b00",
+      "val": 25238272
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Commit",
+      "op": "0x1811b01",
+      "val": 25238273
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_RefreshReq",
+      "op": "0x1811f01",
+      "val": 25239297
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_OpenMapReq",
+      "op": "0x1811f02",
+      "val": 25239298
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_FastReq",
+      "op": "0x1811f03",
+      "val": 25239299
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_VipAddTimesReq",
+      "op": "0x1811f05",
+      "val": 25239301
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_InfoReq",
+      "op": "0x1812000",
+      "val": 25239552
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_TaskReq",
+      "op": "0x1812001",
+      "val": 25239553
+    },
+    {
+      "ad": "PACKETID_CS_DailyTaskp_FreshReq",
+      "op": "0x1812002",
+      "val": 25239554
+    },
+    {
+      "ad": "PACKETID_CS_Counter_CounterReq",
+      "op": "0x1811e01",
+      "val": 25239041
+    },
+    {
+      "ad": "PACKETID_CS_Activity_LoadActivityInfoReq",
+      "op": "0x1812300",
+      "val": 25240320
+    },
+    {
+      "ad": "PACKETID_CS_Activity_InitReq",
+      "op": "0x1812302",
+      "val": 25240322
+    },
+    {
+      "ad": "PACKETID_CS_Activity_CDKReq",
+      "op": "0x1812304",
+      "val": 25240324
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadGulidListReq",
+      "op": "0x1812500",
+      "val": 25240832
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadMemberListReq",
+      "op": "0x1812506",
+      "val": 25240838
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GetGulidInfoReq",
+      "op": "0x1812507",
+      "val": 25240839
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GetCampReq",
+      "op": "0x1812508",
+      "val": 25240840
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SwitchPowerReq",
+      "op": "0x1812509",
+      "val": 25240841
+    },
+    {
+      "ad": "PACKETID_CS_Organization_MuyeBattleReq",
+      "op": "0x1812510",
+      "val": 25240848
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadGulidDepotReq",
+      "op": "0x1812512",
+      "val": 25240850
+    },
+    {
+      "ad": "PACKETID_CS_Organization_AssignGulidDepotReq",
+      "op": "0x1812513",
+      "val": 25240851
+    },
+    {
+      "ad": "PACKETID_CS_Organization_DismissGuildReq",
+      "op": "0x1812516",
+      "val": 25240854
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ActivityStatusReq",
+      "op": "0x1812517",
+      "val": 25240855
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GuildLogReq",
+      "op": "0x1812519",
+      "val": 25240857
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CityDefendInfoReq",
+      "op": "0x1812522",
+      "val": 25240866
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SingleInitReq",
+      "op": "0x1812523",
+      "val": 25240867
+    },
+    {
+      "ad": "PACKETID_CS_Organization_SingleEnterReq",
+      "op": "0x1812524",
+      "val": 25240868
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupInitReq",
+      "op": "0x1812526",
+      "val": 25240870
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupOpenReq",
+      "op": "0x1812527",
+      "val": 25240871
+    },
+    {
+      "ad": "PACKETID_CS_Organization_GroupEnterReq",
+      "op": "0x1812528",
+      "val": 25240872
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CopyRefreshReq",
+      "op": "0x1812529",
+      "val": 25240873
+    },
+    {
+      "ad": "PACKETID_CS_OrganizationWar_CommandReq",
+      "op": "0x1812700",
+      "val": 25241344
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_CityDoorReq",
+      "op": "0x1812400",
+      "val": 25240576
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_ReviveReq",
+      "op": "0x1812402",
+      "val": 25240578
+    },
+    {
+      "ad": "PACKETID_CS_Home_InteractiveRecordReq",
+      "op": "0x1814202",
+      "val": 25248258
+    },
+    {
+      "ad": "PACKETID_CS_Home_HZReq",
+      "op": "0x1814214",
+      "val": 25248276
+    },
+    {
+      "ad": "PACKETID_CS_Home_LuckyCatReq",
+      "op": "0x1814228",
+      "val": 25248296
+    },
+    {
+      "ad": "PACKETID_CS_Home_ClearLuckyCatReq",
+      "op": "0x1814229",
+      "val": 25248297
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendBaseInforReq",
+      "op": "0x181423c",
+      "val": 25248316
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendMakeTofu",
+      "op": "0x181423e",
+      "val": 25248318
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendClearMakeTofuCD",
+      "op": "0x181423f",
+      "val": 25248319
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendSpriteCommnicate",
+      "op": "0x1814240",
+      "val": 25248320
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendClearSpriteCommnicateCD",
+      "op": "0x1814241",
+      "val": 25248321
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendTeaseReq",
+      "op": "0x1814242",
+      "val": 25248322
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_LoadBaseDataReq",
+      "op": "0x1813500",
+      "val": 25244928
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_CatchListReq",
+      "op": "0x1813501",
+      "val": 25244929
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_RescueMembersListReq",
+      "op": "0x1813502",
+      "val": 25244930
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_CommandReq",
+      "op": "0x1813503",
+      "val": 25244931
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_SOSListReq",
+      "op": "0x1813504",
+      "val": 25244932
+    },
+    {
+      "ad": "PACKETID_CS_Mentorship_InteractionLogReq",
+      "op": "0x1813505",
+      "val": 25244933
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_BaseDataReq",
+      "op": "0x1814301",
+      "val": 25248513
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_EatReq",
+      "op": "0x1814303",
+      "val": 25248515
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_InitReq",
+      "op": "0x1814400",
+      "val": 25248768
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_GetBoxReq",
+      "op": "0x1814402",
+      "val": 25248770
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_AutomaticStatusReq",
+      "op": "0x1813b00",
+      "val": 25246464
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_RespectReq",
+      "op": "0x1813802",
+      "val": 25245698
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_ReportReq",
+      "op": "0x1813803",
+      "val": 25245699
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_NijiaSoulUpdateReq",
+      "op": "0x1813901",
+      "val": 25245953
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_NijiaStarUpdateReq",
+      "op": "0x1813904",
+      "val": 25245956
+    },
+    {
+      "ad": "PACKETID_CS_AchievementInforReq",
+      "op": "0x1815200",
+      "val": 25252352
+    },
+    {
+      "ad": "PACKETID_CS_AchievenmentTitleInforReq",
+      "op": "0x1815203",
+      "val": 25252355
+    },
+    {
+      "ad": "PACKETID_CS_EquipAchievenmentTitleRep",
+      "op": "0x1815204",
+      "val": 25252356
+    },
+    {
+      "ad": "PACKETID_CS_CancleAchievenmentTitleRep",
+      "op": "0x1815205",
+      "val": 25252357
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_AutoBattle_Req",
+      "op": "0x1810a03",
+      "val": 25233923
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_AKeyPve_Req",
+      "op": "0x1810a04",
+      "val": 25233924
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_PvpReceiving_Req",
+      "op": "0x1810a05",
+      "val": 25233925
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_ChestInfo_Req",
+      "op": "0x1810a06",
+      "val": 25233926
+    },
+    {
+      "ad": "PACKETID_CS_YellowDiamondInfor_Req",
+      "op": "0x1815100",
+      "val": 25252096
+    },
+    {
+      "ad": "PACKETID_CS_YellowDiamondRecive_Req",
+      "op": "0x1815101",
+      "val": 25252097
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_EnterPlayerRoom",
+      "op": "0x1816002",
+      "val": 25255938
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_LeaveHall",
+      "op": "0x1816003",
+      "val": 25255939
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_RoomInOperating",
+      "op": "0x1816100",
+      "val": 25256192
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattleMatching",
+      "op": "0x1816105",
+      "val": 25256197
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_FriendListReq",
+      "op": "0x1816107",
+      "val": 25256199
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveReturnRoom",
+      "op": "0x181610a",
+      "val": 25256202
+    },
+    {
+      "ad": "PACKETID_CS_Invite_InvitePlayerReq",
+      "op": "0x1816200",
+      "val": 25256448
+    },
+    {
+      "ad": "PACKETID_CS_Invite_AnnouncementReq",
+      "op": "0x1816201",
+      "val": 25256449
+    },
+    {
+      "ad": "PACKETID_CS_Ornament_OrnamentGradeReq",
+      "op": "0x1816400",
+      "val": 25256960
+    },
+    {
+      "ad": "PACKETID_CS_GirlGameInforReq",
+      "op": "0x1816600",
+      "val": 25257472
+    },
+    {
+      "ad": "PACKETID_CS_GirlGameUndressReq",
+      "op": "0x1816601",
+      "val": 25257473
+    },
+    {
+      "ad": "PACKETID_CS_UndressOneKeyReq",
+      "op": "0x1816602",
+      "val": 25257474
+    },
+    {
+      "ad": "PACKETID_CS_ReveredBook_QuestionReq",
+      "op": "0x1816701",
+      "val": 25257729
+    },
+    {
+      "ad": "PACKETID_CS_Welcome_NipReq",
+      "op": "0x1816800",
+      "val": 25257984
+    },
+    {
+      "ad": "PACKETID_CS_BleachDailyRecord_Req",
+      "op": "0x1816900",
+      "val": 25258240
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrain_Req",
+      "op": "0x1816a00",
+      "val": 25258496
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainVipBag_Req",
+      "op": "0x1816a03",
+      "val": 25258499
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrain_Ret",
+      "op": "0x1186a00",
+      "val": 18377216
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainUpdate",
+      "op": "0x1186a02",
+      "val": 18377218
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainVipBag_Ret",
+      "op": "0x1186a03",
+      "val": 18377219
+    },
+    {
+      "ad": "PACKETID_CS_Log_Req",
+      "op": "0x1816b00",
+      "val": 25258752
+    },
+    {
+      "ad": "PACKETID_CS_Log_PersonReq",
+      "op": "0x1816b01",
+      "val": 25258753
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_InforReq",
+      "op": "0x1816c00",
+      "val": 25259008
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_MakeJadeReq",
+      "op": "0x1816c01",
+      "val": 25259009
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_MakeJadeOneKeyReq",
+      "op": "0x1816c02",
+      "val": 25259010
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_PickUpReq",
+      "op": "0x1816c03",
+      "val": 25259011
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_PickUpOneKeyReq",
+      "op": "0x1816c04",
+      "val": 25259012
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_OpenHighLevelReq",
+      "op": "0x1816c07",
+      "val": 25259015
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SwallowPelletReq",
+      "op": "0x1816c0a",
+      "val": 25259018
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_UnlockSlotReq",
+      "op": "0x1816c0b",
+      "val": 25259019
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SwallowReq",
+      "op": "0x1816c10",
+      "val": 25259024
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_EquipJadeReq",
+      "op": "0x1816c12",
+      "val": 25259026
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_InitBackPackReq",
+      "op": "0x1816c13",
+      "val": 25259027
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_ShopInfoReq",
+      "op": "0x1816c15",
+      "val": 25259029
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_InforReq",
+      "op": "0x1816d00",
+      "val": 25259264
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_GetBackReq",
+      "op": "0x1816d01",
+      "val": 25259265
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_OneKeyReq",
+      "op": "0x1816d02",
+      "val": 25259266
+    },
+    {
+      "ad": "PACKETID_CS_DailyWelfare_DailyWelfareReq",
+      "op": "0x1816d03",
+      "val": 25259267
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_GoodsInforReq",
+      "op": "0x1817000",
+      "val": 25260032
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_FlushGoodsReq",
+      "op": "0x1817001",
+      "val": 25260033
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_InitInforReq",
+      "op": "0x1817003",
+      "val": 25260035
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InitInfoReq",
+      "op": "0x1817100",
+      "val": 25260288
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractReq",
+      "op": "0x1817101",
+      "val": 25260289
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractClearCDReq",
+      "op": "0x1817102",
+      "val": 25260290
+    },
+    {
+      "ad": "PACKETID_CS_Pet_GetPetBagReq",
+      "op": "0x1817104",
+      "val": 25260292
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetRankUpReq",
+      "op": "0x1817201",
+      "val": 25260545
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetDelReq",
+      "op": "0x1817202",
+      "val": 25260546
+    },
+    {
+      "ad": "PACKETID_CS_Pet_NotiyPetItemReq",
+      "op": "0x1817204",
+      "val": 25260548
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainReq",
+      "op": "0x1817300",
+      "val": 25260800
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainCancelReq",
+      "op": "0x1817301",
+      "val": 25260801
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainClearCDReq",
+      "op": "0x1817302",
+      "val": 25260802
+    },
+    {
+      "ad": "PACKETID_CS_VicePetTrainGetReq",
+      "op": "0x1817303",
+      "val": 25260803
+    },
+    {
+      "ad": "PACKETID_CS_TrainSlotOpenReq",
+      "op": "0x1817304",
+      "val": 25260804
+    },
+    {
+      "ad": "PACKETID_CS_TrainExpCardReq",
+      "op": "0x1817305",
+      "val": 25260805
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetMakeReq",
+      "op": "0x1817400",
+      "val": 25261056
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetEquipReq",
+      "op": "0x1817401",
+      "val": 25261057
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetUnEquipReq",
+      "op": "0x1817402",
+      "val": 25261058
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetDelReq",
+      "op": "0x1817403",
+      "val": 25261059
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetInheritReq",
+      "op": "0x1817404",
+      "val": 25261060
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetRankUpReq",
+      "op": "0x1817405",
+      "val": 25261061
+    },
+    {
+      "ad": "PACKETID_CS_Pet_StoreExtendReq",
+      "op": "0x1817406",
+      "val": 25261062
+    },
+    {
+      "ad": "PACKETID_CS_Pet_VicePetWashExpReq",
+      "op": "0x1817407",
+      "val": 25261063
+    },
+    {
+      "ad": "PACKETID_CS_Pet_ExpPoolExtendReq",
+      "op": "0x1817408",
+      "val": 25261064
+    },
+    {
+      "ad": "PACKETID_CS_LikeUs_DataReq",
+      "op": "0x1817500",
+      "val": 25261312
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_InitReq",
+      "op": "0x1817600",
+      "val": 25261568
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_BattleReq",
+      "op": "0x1817601",
+      "val": 25261569
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_InitShopReq",
+      "op": "0x1817605",
+      "val": 25261573
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_FlushShopReq",
+      "op": "0x1817606",
+      "val": 25261574
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_ReliveReq",
+      "op": "0x1817608",
+      "val": 25261576
+    },
+    {
+      "ad": "PACKETID_CS_HeroID_DataReq",
+      "op": "0x1812100",
+      "val": 25239808
+    },
+    {
+      "ad": "PACKETID_CS_TavernAddQuality_Req",
+      "op": "0x1812101",
+      "val": 25239809
+    },
+    {
+      "ad": "PACKETID_CS_Related_PointInfoReq",
+      "op": "0x1818000",
+      "val": 25264128
+    },
+    {
+      "ad": "PACKETID_CS_Related_DailyTrainReq",
+      "op": "0x1818003",
+      "val": 25264131
+    },
+    {
+      "ad": "PACKETID_CS_Related_SkillInfoReq",
+      "op": "0x1818005",
+      "val": 25264133
+    },
+    {
+      "ad": "PACKETID_CS_Related_HeroHelpReq",
+      "op": "0x1818007",
+      "val": 25264135
+    },
+    {
+      "ad": "PACKETID_CS_Related_HeroHelpCancelReq",
+      "op": "0x1818008",
+      "val": 25264136
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_PointRefreshReq",
+      "op": "0x1817801",
+      "val": 25262081
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_AllocationReq",
+      "op": "0x1817900",
+      "val": 25262336
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_SpoilsReq",
+      "op": "0x1817901",
+      "val": 25262337
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_AttValueReq",
+      "op": "0x1817902",
+      "val": 25262338
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_InitDataReq",
+      "op": "0x1817a00",
+      "val": 25262592
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_RefreshReq",
+      "op": "0x1817a01",
+      "val": 25262593
+    },
+    {
+      "ad": "PACKETID_CS_Companion_InfoReq",
+      "op": "0x1817b00",
+      "val": 25262848
+    },
+    {
+      "ad": "PACKETID_CS_Companion_EmployReq",
+      "op": "0x1817b01",
+      "val": 25262849
+    },
+    {
+      "ad": "PACKETID_CS_Companion_SeatedReq",
+      "op": "0x1817b02",
+      "val": 25262850
+    },
+    {
+      "ad": "PACKETID_CS_Companion_UnseatedReq",
+      "op": "0x1817b03",
+      "val": 25262851
+    },
+    {
+      "ad": "PACKETID_CS_Companion_UpgrateReq",
+      "op": "0x1817b04",
+      "val": 25262852
+    },
+    {
+      "ad": "PACKETID_CS_Companion_ReforgingReq",
+      "op": "0x1817b06",
+      "val": 25262854
+    },
+    {
+      "ad": "PACKETID_CS_Companion_EncounterReq",
+      "op": "0x1817b07",
+      "val": 25262855
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_InitInfoReq",
+      "op": "0x1818300",
+      "val": 25264896
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_UpdateReq",
+      "op": "0x1818302",
+      "val": 25264898
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_InitInfoReq",
+      "op": "0x1818400",
+      "val": 25265152
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_SkillReq",
+      "op": "0x1818401",
+      "val": 25265153
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_RefreshReq",
+      "op": "0x1818402",
+      "val": 25265154
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_InitInfoReq",
+      "op": "0x1818700",
+      "val": 25265920
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_UpdateReq",
+      "op": "0x1818701",
+      "val": 25265921
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_RebirthReq",
+      "op": "0x1818500",
+      "val": 25265408
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_GetExpBookReq",
+      "op": "0x1818502",
+      "val": 25265410
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_InitReq",
+      "op": "0x1818503",
+      "val": 25265411
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_InitReq",
+      "op": "0x1818800",
+      "val": 25266176
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_OperatorReq",
+      "op": "0x1818801",
+      "val": 25266177
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_MallReq",
+      "op": "0x1818802",
+      "val": 25266178
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_InitReq",
+      "op": "0x1818b00",
+      "val": 25266944
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_ReviveReq",
+      "op": "0x1818b03",
+      "val": 25266947
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_InitReq",
+      "op": "0x1818c00",
+      "val": 25267200
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_ForgeReq",
+      "op": "0x1818c01",
+      "val": 25267201
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_AdvancedReq",
+      "op": "0x1818c02",
+      "val": 25267202
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_WorkReq",
+      "op": "0x1818c03",
+      "val": 25267203
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_CompleteReq",
+      "op": "0x1818c05",
+      "val": 25267205
+    },
+    {
+      "ad": "PACKETID_CS_PurchaseReq",
+      "op": "0x1811a00",
+      "val": 25238016
+    }
+  ],
+  "aksiyon": [
+    {
+      "ad": "PACKETID_CS_CREATECHAR_CreateChar",
+      "op": "0x1810100"
+    },
+    {
+      "ad": "PACKETID_CS_Account_CharUpgradeReq",
+      "op": "0x1810102"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_FightPet",
+      "op": "0x1810209"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_TraitorAttack",
+      "op": "0x181020c"
+    },
+    {
+      "ad": "PACKETID_CS_Enter_GongFuFight",
+      "op": "0x1810213"
+    },
+    {
+      "ad": "PACKETID_CS_BattleStart",
+      "op": "0x1548000"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_ReceiveChest",
+      "op": "0x1810501"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_WorldMap_ResetFB",
+      "op": "0x1810502"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_Hurdle_ReceiveChest",
+      "op": "0x1810602"
+    },
+    {
+      "ad": "PACKETID_CS_LOBBY_KillHeros_ResetReq",
+      "op": "0x1810701"
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_Upgrade",
+      "op": "0x1810801"
+    },
+    {
+      "ad": "PACKETID_CS_MilitaryRank_ReceiveSalary",
+      "op": "0x1810802"
+    },
+    {
+      "ad": "PACKETID_CS_TacticalDeployment_ChangePositionReq",
+      "op": "0x1810900"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_UpgradeReq",
+      "op": "0x1810b01"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_ChangePageReq",
+      "op": "0x1810b02"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_SkillUpgradeReq",
+      "op": "0x1810b04"
+    },
+    {
+      "ad": "PACKETID_CS_GeneralStar_ChangeSkillReq",
+      "op": "0x1810b06"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_UseAppliance",
+      "op": "0x1810f01"
+    },
+    {
+      "ad": "PACKETID_CS_Backpack_SellItem",
+      "op": "0x1810f03"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_DeleteHero",
+      "op": "0x1811003"
+    },
+    {
+      "ad": "PACKETID_CS_Heros_BuyHeroCountReq",
+      "op": "0x1811005"
+    },
+    {
+      "ad": "PACKETID_CS_WakeUp_ComposeReq",
+      "op": "0x1811007"
+    },
+    {
+      "ad": "PACKETID_CS_TavernRecruitReq",
+      "op": "0x1810c02"
+    },
+    {
+      "ad": "PACKETID_CS_TavernChangeCardReq",
+      "op": "0x1810c03"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanUpgradeRequest",
+      "op": "0x1811301"
+    },
+    {
+      "ad": "PACKETID_CS_TalismanLevelUpRequest",
+      "op": "0x1811303"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyStrengthenRequest",
+      "op": "0x1810e00"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRefinedRequest",
+      "op": "0x1810e01"
+    },
+    {
+      "ad": "PACKETID_CS_SmithyRefinedConfirmRequest",
+      "op": "0x1810e03"
+    },
+    {
+      "ad": "PACKETID_CS_FlushSpiritBuyStone_Req",
+      "op": "0x1810e08"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeKnifeRequest",
+      "op": "0x1814104"
+    },
+    {
+      "ad": "PACKETID_CS_Mail_SendMailReq",
+      "op": "0x1811601"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_GetReward_Req",
+      "op": "0x1811901"
+    },
+    {
+      "ad": "PACKETID_CS_Arena_Fight_Req",
+      "op": "0x1811904"
+    },
+    {
+      "ad": "PACKETID_CS_Sign_Reward",
+      "op": "0x1811b02"
+    },
+    {
+      "ad": "PACKETID_CS_Coupon_Reward",
+      "op": "0x1811b03"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_StartReq",
+      "op": "0x1811f00"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureMap_FightReq",
+      "op": "0x1811f04"
+    },
+    {
+      "ad": "PACKETID_CS_DailyTask_RewardReq",
+      "op": "0x1812003"
+    },
+    {
+      "ad": "PACKETID_CS_Vip_ReceiveReq",
+      "op": "0x1812200"
+    },
+    {
+      "ad": "PACKETID_CS_Activity_OperateReq",
+      "op": "0x1812303"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_CreateGulidReq",
+      "op": "0x1812501"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ApplyJoinGulidReq",
+      "op": "0x1812502"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_UpGradeReq",
+      "op": "0x1812503"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_LoadApplyListReq",
+      "op": "0x1812504"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_UpGradeGuildTechReq",
+      "op": "0x1812505"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_ConfirmApplyJoinGuildReq",
+      "op": "0x1812511"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_DonateReq",
+      "op": "0x1812514"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_QuitGuildReq",
+      "op": "0x1812515"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_BoardModifyReq",
+      "op": "0x1812518"
+    },
+    {
+      "ad": "PACKETID_CS_Organization_KickMemberReq",
+      "op": "0x1812521"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_EntetOrNotReq",
+      "op": "0x1812600"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_InspireReq",
+      "op": "0x1812605"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_ResurrectionReq",
+      "op": "0x1812606"
+    },
+    {
+      "ad": "PACKETID_CS_FightPet_FightReq",
+      "op": "0x1812607"
+    },
+    {
+      "ad": "PACKETID_CS_CityDefend_FightReq",
+      "op": "0x1812401"
+    },
+    {
+      "ad": "PACKETID_CS_FightingShow_ALLFightRankReq",
+      "op": "0x1812900"
+    },
+    {
+      "ad": "PACKETID_CS_FightingShow_SingleFightRankReq",
+      "op": "0x1812901"
+    },
+    {
+      "ad": "PACKETID_CS_Home_HomeUpgradeReq",
+      "op": "0x1814200"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendUpgradeReq",
+      "op": "0x181423d"
+    },
+    {
+      "ad": "PACKETID_CS_Home_GirlFriendChangeShapeReq",
+      "op": "0x1814244"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_ExchangeReq",
+      "op": "0x1814302"
+    },
+    {
+      "ad": "PACKETID_CS_HellButterfly_HellPowderRewardReq",
+      "op": "0x1814304"
+    },
+    {
+      "ad": "PACKETID_CS_QianKunARoll_StartRollReq",
+      "op": "0x1814401"
+    },
+    {
+      "ad": "PACKETID_CS_TraitorAttack_ReviveReq",
+      "op": "0x1813400"
+    },
+    {
+      "ad": "PACKETID_CS_TraitorAttack_BattleReq",
+      "op": "0x1813402"
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_AutomaticOperateReq",
+      "op": "0x1813b01"
+    },
+    {
+      "ad": "PACKETID_CS_DailyActivity_DailyRewardReq",
+      "op": "0x1813b02"
+    },
+    {
+      "ad": "PACKETID_CS_SevenKing_FightReq",
+      "op": "0x1813801"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_LevelUpReq",
+      "op": "0x1813902"
+    },
+    {
+      "ad": "PACKETID_CS_NijiaStar_ExchangeReq",
+      "op": "0x1813903"
+    },
+    {
+      "ad": "PACKETID_CS_AchievementRewardReq",
+      "op": "0x1815201"
+    },
+    {
+      "ad": "PACKETID_CS_OtherUserAchievenmentReq",
+      "op": "0x1815207"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_Challenge_Req",
+      "op": "0x1810a01"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_BuyChallengeCount_Req",
+      "op": "0x1810a02"
+    },
+    {
+      "ad": "PACKETID_CS_SkyTower_ReceiveChest_Req",
+      "op": "0x1810a07"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleHall_CreatePlayerRoom",
+      "op": "0x1816001"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveModeChange",
+      "op": "0x1816101"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_ChangePassword",
+      "op": "0x1816102"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_StartGame",
+      "op": "0x1816103"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_ChangeStation",
+      "op": "0x1816104"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_StartBattlePVE",
+      "op": "0x1816106"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveModeChangeConfirmation",
+      "op": "0x1816108"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePveStartWait",
+      "op": "0x1816109"
+    },
+    {
+      "ad": "PACKETID_CS_TeamBattleRoom_BattlePvpStartWait",
+      "op": "0x181610b"
+    },
+    {
+      "ad": "PACKETID_CS_Ornament_OrnamentUpgradeReq",
+      "op": "0x1816401"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainGetReward_Req",
+      "op": "0x1816a01"
+    },
+    {
+      "ad": "PACKETID_CS_BleachTrainGetReward_Ret",
+      "op": "0x1186a01"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_Apply",
+      "op": "0x1813d01"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_FightReq",
+      "op": "0x1813d02"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_PayReq",
+      "op": "0x1813d03"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_RankInforReq",
+      "op": "0x1813d04"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_ChallengeListReq",
+      "op": "0x1813d05"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_AwardExchangeReq",
+      "op": "0x1813d06"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_BaseInforReq",
+      "op": "0x1813d07"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_TryIn",
+      "op": "0x1813d09"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_OpenBeyondLevelFightReq",
+      "op": "0x1813d0a"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_PayRecordReq",
+      "op": "0x1813d0b"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_AddFightTimeReq",
+      "op": "0x1813d0c"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_SeasonInforReq",
+      "op": "0x1813d0d"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_FightRecordReq",
+      "op": "0x1813d0e"
+    },
+    {
+      "ad": "PACKETID_CS_GongFuFight_ReciveBox",
+      "op": "0x1813d11"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SellReq",
+      "op": "0x1816c05"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_SellOneKeyReq",
+      "op": "0x1816c06"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_BuyTimeReq",
+      "op": "0x1816c08"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_ComposeReq",
+      "op": "0x1816c11"
+    },
+    {
+      "ad": "PACKETID_CS_CrashJade_UnloadJadeReq",
+      "op": "0x1816c14"
+    },
+    {
+      "ad": "PACKETID_CS_TreasureAwake_LevelUpReq",
+      "op": "0x1816e00"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_InforReq",
+      "op": "0x1816f00"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ChangeReq",
+      "op": "0x1816f01"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_MakePillReq",
+      "op": "0x1816f02"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ExchangePillReq",
+      "op": "0x1816f03"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_BuyIntoTimeReq",
+      "op": "0x1816f06"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ResetReq",
+      "op": "0x1816f07"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_ReliveReq",
+      "op": "0x1816f08"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_FightReq",
+      "op": "0x1816f09"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_OneKeyReq",
+      "op": "0x1816f0a"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_InheritanceReq",
+      "op": "0x1816f0b"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_AdvanceRefreshReq",
+      "op": "0x1816f0c"
+    },
+    {
+      "ad": "PACKETID_CS_HeroChange_AdvanceReturnReq",
+      "op": "0x1816f0d"
+    },
+    {
+      "ad": "PACKETID_CS_BlackMarket_BuyGoodReq",
+      "op": "0x1817002"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_InteractBuyCountReq",
+      "op": "0x1817103"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetFeedReq",
+      "op": "0x1817200"
+    },
+    {
+      "ad": "PACKETID_CS_Pet_MainPetChangeReq",
+      "op": "0x1817203"
+    },
+    {
+      "ad": "PACKETID_CS_LikeUs_ReceiveReq",
+      "op": "0x1817501"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_DailyResetReq",
+      "op": "0x1817602"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_TakeRewardReq",
+      "op": "0x1817603"
+    },
+    {
+      "ad": "PACKETID_CS_VainTravel_BuyGoodReq",
+      "op": "0x1817607"
+    },
+    {
+      "ad": "PACKETID_CS_Related_FightReq",
+      "op": "0x1818001"
+    },
+    {
+      "ad": "PACKETID_CS_Related_RewardReq",
+      "op": "0x1818002"
+    },
+    {
+      "ad": "PACKETID_CS_Related_LevelupReq",
+      "op": "0x1818006"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_SingleChallengeReq",
+      "op": "0x1817800"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_AutoFightReq",
+      "op": "0x1817802"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_GroupChallengeReq",
+      "op": "0x1817803"
+    },
+    {
+      "ad": "PACKETID_CS_OrgPointMap_QuitMapReq",
+      "op": "0x1817804"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_ApplyReq",
+      "op": "0x1817903"
+    },
+    {
+      "ad": "PACKETID_CS_PointMapInfoUI_ApplyListReq",
+      "op": "0x1817904"
+    },
+    {
+      "ad": "PACKETID_CS_TimeMall_BuyGoodReq",
+      "op": "0x1817a02"
+    },
+    {
+      "ad": "PACKETID_CS_Companion_ComposeReq",
+      "op": "0x1817b05"
+    },
+    {
+      "ad": "PACKETID_CS_BleachAgent_BuyReq",
+      "op": "0x1818301"
+    },
+    {
+      "ad": "PACKETID_CS_ExpDuplicate_FightReq",
+      "op": "0x1818403"
+    },
+    {
+      "ad": "PACKETID_CS_CustomHero_ChangeSkillReq",
+      "op": "0x1818702"
+    },
+    {
+      "ad": "PACKETID_CS_Rebirth_ResetReq",
+      "op": "0x1818501"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeInfo_ChangeNameReq",
+      "op": "0x1818600"
+    },
+    {
+      "ad": "PACKETID_CS_ChangeInfo_ChangeCountryReq",
+      "op": "0x1818601"
+    },
+    {
+      "ad": "PACKETID_CS_CollectSoul_VipBuyReq",
+      "op": "0x1818803"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_InitFightReq",
+      "op": "0x1818a00"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_InitReq",
+      "op": "0x1818a01"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_RankReq",
+      "op": "0x1818a02"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_FightReq",
+      "op": "0x1818a03"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BoxAwardReq",
+      "op": "0x1818a04"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BettingReq",
+      "op": "0x1818a05"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_BettingAwardReq",
+      "op": "0x1818a06"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_UploadReq",
+      "op": "0x1818a07"
+    },
+    {
+      "ad": "PACKETID_CS_KingChallenge_NpcReq",
+      "op": "0x1818a08"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_InfoSubmitReq",
+      "op": "0x1818b01"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_FightEnterReq",
+      "op": "0x1818b02"
+    },
+    {
+      "ad": "PACKETID_CS_VoidSoulWorld_JoinAwardReq",
+      "op": "0x1818b07"
+    },
+    {
+      "ad": "PACKETID_CS_Smelt_ResetReq",
+      "op": "0x1818900"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_BuyEnergyReq",
+      "op": "0x1818c04"
+    },
+    {
+      "ad": "PACKETID_CS_UltimateEquip_AwardReq",
+      "op": "0x1818c06"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Info",
+      "op": "0x1818d00"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Mall",
+      "op": "0x1818d01"
+    },
+    {
+      "ad": "PACKETID_CS_ProfessionRefine_Levelup",
+      "op": "0x1818d02"
+    }
+  ]
+}

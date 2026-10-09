@@ -1,0 +1,24 @@
+[
+  {
+    "id": "000D1F61",
+    "name": "限时回馈",
+    "tName": "限时回馈",
+    "desc": "1. Sign in for certain times to receive corresponding rewards.\n2. Top up certain amount of gold to receive corresponding rewards.\n3. Spend certain amount of gold to receive corresponding rewards.\n4. Cumulate certain amount of top-up and consumption of gold to receive the ultimate reward.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 860001,
+    "signInIndex": 1,
+    "rechargeIndex": 2,
+    "consumeIndex": 3,
+    "signInReceiveIndex": 4,
+    "rechargeReceiveIndex": 5,
+    "consumeReceiveIndex": 6,
+    "finalReceiveIndex": 7,
+    "signInGift": "[{\"condition\":1,\"awardID\":21405686},{\"condition\":2,\"awardID\":21405687},{\"condition\":3,\"awardID\":21405688},{\"condition\":4,\"awardID\":21405689},{\"condition\":5,\"awardID\":21405690}]",
+    "rechargeGift": "[{\"condition\":200,\"awardID\":21405691,\"showID\":21405691,\"showType\":2,\"FightReportAddr\":\"xxx\"},{\"condition\":400,\"awardID\":21405692,\"showID\":21405692,\"showType\":2,\"fightReportAddr\":\"XXX\"},{\"condition\":600,\"awardID\":21405693,\"showID\":21405693,\"showType\":2,\"fightReportAddr\":\"XXX\"},{\"condition\":800,\"awardID\":21405694,\"showID\":21405694,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":1000,\"awardID\":21405695,\"showID\":21405695,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":2000,\"awardID\":21405696,\"showID\":21405696,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":3000,\"awardID\":21405697,\"showID\":21405697,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":4000,\"awardID\":21405698,\"showID\":21405698,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":6000,\"awardID\":21405699,\"showID\":21405699,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":8000,\"awardID\":21405700,\"showID\":21405700,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":12000,\"awardID\":21405701,\"showID\":21405701,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":20000,\"awardID\":21405702,\"showID\":21405702,\"showType\":2,\"fightReportAddr\":\"XXX\"}]",
+    "consumeGift": "[{\"condition\":200,\"awardID\":21405703,\"showID\":21405703,\"showType\":2,\"FightReportAddr\":\"xxx\"},{\"condition\":400,\"awardID\":21405704,\"showID\":21405704,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":600,\"awardID\":21405705,\"showID\":21405705,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":800,\"awardID\":21405706,\"showID\":21405706,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":1000,\"awardID\":21405707,\"showID\":21405707,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":2000,\"awardID\":21405708,\"showID\":21405708,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":3000,\"awardID\":21405709,\"showID\":21405709,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":4000,\"awardID\":21405710,\"showID\":21405710,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":6000,\"awardID\":21405711,\"showID\":21405711,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":8000,\"awardID\":21405712,\"showID\":21405712,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":12000,\"awardID\":21405713,\"showID\":21405713,\"showType\":2,\"fightReportAddr\":\"xxx\"},{\"condition\":20000,\"awardID\":21405714,\"showID\":21405714,\"showType\":2,\"fightReportAddr\":\"xxx\"}]",
+    "finalGift": "{\"rechargeCondition\":30000,\"consumeCondition\":15000,\"awardID\":21405715,\"showID\":21405715,\"showType\":2,\"fightReportAddr\":\"\"}",
+    "link": "{\"signInLink\":18,\"rechargeLink\":29,\"consumeLink\":20}",
+    "language": "{\"rechargeTitle\":\"Top up %0 gold\",\"consumeTitle\":\"Spend %0 gold\",\"rechargeDesc\":\"Currently cumulated top-up\",\"consumeDesc\":\"Currently cumulated consumption\"}"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00177FA1",
+    "name": "国庆节1",
+    "tName": "国庆签到",
+    "desc": "1. Daily sign-in or late sign-in to claim corresponding giftpacks.\n2. Sign-in a certain days to claim giftpacks. (Claim once only) \n3. Items in Special Offer can be purchased twice and the purchase chances will be reset daily.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1540001,
+    "costGold": 10,
+    "signList": "[{\"index\":1,\"awardid\":21407100,\"cond\":1},{\"index\":2,\"awardid\":21407101,\"cond\":2},{\"index\":3,\"awardid\":21407102,\"cond\":3},{\"index\":4,\"awardid\":21407103,\"cond\":4},{\"index\":5,\"awardid\":21407104,\"cond\":5},{\"index\":6,\"awardid\":21407105,\"cond\":6},{\"index\":7,\"awardid\":21407106,\"cond\":7},{\"index\":8,\"awardid\":21407107,\"cond\":8},{\"index\":9,\"awardid\":21407108,\"cond\":9},{\"index\":10,\"awardid\":21407109,\"cond\":10}]",
+    "leftBags": "[{\"index\":31,\"originalPrice\":500,\"currentPrice\":200,\"awardid\":21407110,\"limit\":2},{\"index\":32,\"originalPrice\":500,\"currentPrice\":200,\"awardid\":21407111,\"limit\":2},{\"index\":33,\"originalPrice\":1000,\"currentPrice\":300,\"awardid\":21407112,\"limit\":2},{\"index\":34,\"originalPrice\":1000,\"currentPrice\":300,\"awardid\":21407113,\"limit\":2}]",
+    "rightBags": "[{\"index\":81,\"awardid\":21407114,\"cond\":2},{\"index\":82,\"awardid\":21407115,\"cond\":4},{\"index\":83,\"awardid\":21407116,\"cond\":6},{\"index\":84,\"awardid\":21407117,\"cond\":10}]",
+    "curDayIndex": 90
+  }
+]

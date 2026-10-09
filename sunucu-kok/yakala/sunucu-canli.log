@@ -1,0 +1,317 @@
+=== sunucu-canli.log  2026-10-09T06:53:44.078Z ===
+
+[+] conn1 baglandi  127.0.0.1:59585  @2026-10-09T06:53:53.761Z
+  #1 conn1 C2S CS_LOBBY+0x0000 (0x1810000) len=38
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 35 32 38 38 33 31
+      -> S2C SC_LOBBY+0x0000 (0x1180000) len=8 [CEVAP-gercek]
+[-] conn1 kapandi  (kapandi)  paket=1 up=38B down=8B sure=629ms
+
+[+] conn2 baglandi  127.0.0.1:59586  @2026-10-09T06:53:54.885Z
+  #2 conn2 C2S CS_LOBBY+0x0001 (0x1810001) len=38
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 35 32 38 38 33 31
+      -> S2C SC_LOBBY+0x0102 (0x1180102) len=3238 [replay[1/2]]
+  #3 conn2 C2S CS_LOBBY+0xa002 (0x181a002) len=0
+      -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
+  #4 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 00 00 00 04
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+      -> S2C SC_LOBBY+0x6700 (0x1186700) len=8 [PUSH-nemu]
+  #5 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 00 00 00 04
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+  #6 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 11 e1 a3 26
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+  #7 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 00 00 00 03
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+  #8 conn2 C2S CS_LOBBY+0x2300 (0x1812300) len=0
+      -> S2C SC_LOBBY+0x2300 (0x1182300) len=362 [HANDLER]
+      -> S2C SC_LOBBY+0x6500 (0x1186500) len=1 [PUSH-login]
+  #9 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 0d
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=16 [HANDLER]
+  #10 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 64
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=26 [HANDLER]
+  #11 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 0c
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=106 [HANDLER]
+  #12 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 17
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=124 [HANDLER]
+  #13 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1a
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=26 [HANDLER]
+  #14 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1b
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=92 [HANDLER]
+  #15 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1c
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=48 [HANDLER]
+  #16 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1d
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=152 [HANDLER]
+  #17 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 4f
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=148 [HANDLER]
+  #18 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 50
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=162 [HANDLER]
+  #19 conn2 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 55
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=116 [HANDLER]
+  #20 conn2 C2S CS_LOBBY+0x0800 (0x1810800) len=0
+      -> S2C SC_LOBBY+0x0800 (0x1180800) len=9 [HANDLER]
+  #21 conn2 C2S CS_LOBBY+0x5203 (0x1815203) len=0
+      -> S2C SC_LOBBY+0x5203 (0x1185203) len=4 [CEVAP-gercek]
+  #22 conn2 C2S CS_LOBBY+0x7100 (0x1817100) len=0
+      -> S2C SC_LOBBY+0x7100 (0x1187100) len=20 [HANDLER]
+  #23 conn2 C2S CS_LOBBY+0x3d09 (0x1813d09) len=0
+      -> S2C SC_LOBBY+0x3d09 (0x1183d09) len=1 [HANDLER]
+  #24 conn2 C2S CS_LOBBY+0x3d0d (0x1813d0d) len=0
+      -> S2C SC_LOBBY+0x3d0d (0x1183d0d) len=20 [HANDLER]
+  #25 conn2 C2S CS_LOBBY+0x3d07 (0x1813d07) len=0
+      -> S2C SC_LOBBY+0x3d07 (0x1183d07) len=50 [HANDLER]
+  #26 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
+        01 60 7a 61 00 00 00 00
+      -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
+  #27 conn2 C2S CS_LOBBY+0x1200 (0x1811200) len=0
+      -> S2C SC_LOBBY+0x1202 (0x1181202) len=38 [GOREV-kabul]
+      -> S2C SC_LOBBY+0x1203 (0x1181203) len=322 [GOREV-biten]
+      -> S2C SC_LOBBY+0x1200 (0x1181200) len=0 [GOREV-sendinfo]
+  #28 conn2 C2S CS_LOBBY+0x1a01 (0x1811a01) len=0
+      -> S2C SC_LOBBY+0x1a01 (0x1181a01) len=14 [HANDLER]
+  #29 conn2 C2S CS_LOBBY+0x5200 (0x1815200) len=0
+      -> S2C SC_LOBBY+0x5200 (0x1185200) len=2 [CEVAP-gercek]
+  #30 conn2 C2S CS_LOBBY+0x6a00 (0x1816a00) len=0
+      -> S2C SC_LOBBY+0x6a00 (0x1186a00) len=2212 [HANDLER]
+  #31 conn2 C2S CS_LOBBY+0x2000 (0x1812000) len=0
+      -> S2C SC_LOBBY+0x2000 (0x1182000) len=41 [HANDLER]
+  #32 conn2 C2S CS_LOBBY+0x0105 (0x1810105) len=3
+        00 01 06
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [HANDLER]
+  #33 conn2 C2S CS_LOBBY+0x0e07 (0x1810e07) len=0
+      -> S2C SC_LOBBY+0x0e07 (0x1180e07) len=8 [HANDLER]
+  #34 conn2 C2S CS_LOBBY+0x1906 (0x1811906) len=0
+      -> S2C SC_LOBBY+0x1908 (0x1181908) len=4 [CEVAP-gercek]
+  #35 conn2 C2S CS_LOBBY+0x2507 (0x1812507) len=0
+      -> S2C SC_LOBBY+0x2507 (0x1182507) len=96 [HANDLER]
+  #36 conn2 C2S CS_LOBBY+0x2508 (0x1812508) len=0
+      -> S2C SC_LOBBY+0x2508 (0x1182508) len=30 [HANDLER]
+  #37 conn2 C2S CS_LOBBY+0x2506 (0x1812506) len=0
+      -> S2C SC_LOBBY+0x2506 (0x1182506) len=58 [HANDLER]
+  #38 conn2 C2S CS_LOBBY+0x2517 (0x1812517) len=0
+      -> S2C SC_LOBBY+0x2517 (0x1182517) len=7 [HANDLER]
+  #39 conn2 C2S CS_LOBBY+0x1405 (0x1811405) len=0
+      -> S2C SC_LOBBY+0x1405 (0x1181405) len=28 [HANDLER]
+  #40 conn2 C2S CS_LOBBY+0x4101 (0x1814101) len=0
+      -> S2C SC_LOBBY+0x4101 (0x1184101) len=196 [HANDLER]
+  #41 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f 65
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #42 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f c5
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #43 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f c6
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #44 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 ad 81
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #45 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb a8
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #46 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 aa 22 e9
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #47 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 aa 49 ce
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #48 conn2 C2S CS_LOBBY+0x1b00 (0x1811b00) len=0
+      -> S2C SC_LOBBY+0x1b00 (0x1181b00) len=40 [HANDLER]
+  #49 conn2 C2S CS_LOBBY+0x1500 (0x1811500) len=0
+      -> S2C SC_LOBBY+0x1500 (0x1181500) len=35 [CEVAP-gercek]
+  #50 conn2 C2S CS_LOBBY+0x0f00 (0x1810f00) len=1
+        00
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=10367 [HANDLER]
+      -> S2C SC_LOBBY+0x0f7f (0x1180f7f) len=56 [ITEM-state]
+  #51 conn2 C2S CS_LOBBY+0x1600 (0x1811600) len=0
+      -> S2C SC_LOBBY+0x1600 (0x1181600) len=181 [HANDLER]
+  #52 conn2 C2S CS_LOBBY+0x0b05 (0x1810b05) len=0
+      -> S2C SC_LOBBY+0x0b05 (0x1180b05) len=26 [HANDLER]
+  #53 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=10
+        00 02 00 04 93 e1 00 04 93 e3
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=18 [HANDLER]
+  #54 conn2 C2S CS_LOBBY+0x3904 (0x1813904) len=4
+        00 00 00 00
+      -> S2C SC_LOBBY+0x3904 (0x1183904) len=2 [HANDLER]
+  #55 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=2
+        00 00
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=2 [HANDLER]
+  #56 conn2 C2S CS_LOBBY+0x3500 (0x1813500) len=4
+        00 00 00 00
+      -> S2C SC_LOBBY+0x3500 (0x1183500) len=142 [HANDLER]
+  #57 conn2 C2S CS_LOBBY+0x6d00 (0x1816d00) len=0
+      -> S2C SC_LOBBY+0x6d00 (0x1186d00) len=6 [HANDLER]
+  #58 conn2 C2S CS_LOBBY+0x7500 (0x1817500) len=0
+      -> S2C SC_LOBBY+0x7500 (0x1187500) len=8 [HANDLER]
+  #59 conn2 C2S CS_LOBBY+0x8700 (0x1818700) len=0
+      -> S2C SC_LOBBY+0x8700 (0x1188700) len=1662 [HANDLER]
+  #60 conn2 C2S CS_LOBBY+0x8a08 (0x1818a08) len=0
+      -> S2C SC_LOBBY+0x8a08 (0x1188a08) len=14 [CEVAP-gercek]
+  #61 conn2 C2S CS_LOBBY+0x3b00 (0x1813b00) len=0
+      -> S2C SC_LOBBY+0x3b00 (0x1183b00) len=57 [HANDLER]
+  #62 conn2 C2S CS_LOBBY+0x3b02 (0x1813b02) len=0
+      -> S2C SC_LOBBY+0x3b02 (0x1183b02) len=3 [HANDLER]
+  #63 conn2 C2S CS_LOBBY+0x0208 (0x1810208) len=0
+      -> S2C SC_LOBBY+0x0208 (0x1180208) len=99 [HANDLER]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-history]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-history]
+  #64 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #65 conn2 C2S CS_LOBBY+0x2401 (0x1812401) len=8
+        00 00 00 00 00 00 00 00
+      -> S2C SC_LOBBY+0x2401 (0x1182401) len=8 [PROTECT-FightRet]
+      -> S2C CS_CS+0x8000 (0x1458000) len=6209 [PROTECT-report]
+      -> S2C CS_CS+0x8001 (0x1458001) len=17 [PROTECT-result]
+      -> S2C SC_LOBBY+0x2403 (0x1182403) len=20 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2404 (0x1182404) len=4 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [PROTECT-update]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=10367 [PROTECT-update]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #66 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=43
+        00 29 50 72 6f 74 65 63 74 20 72 65 70 6f 72 74 20 76 69 73 69 62 6c 65 3d 74 72 75 65 20 62 6c 6f 63 6b 65 64 3d 66 61 6c 73 65
+      ! conn2 FLASH-VOID Protect report visible=true blocked=false
+  #67 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=18
+        00 10 50 72 6f 74 65 63 74 20 64 65 63 6f 64 65 64 20
+      ! conn2 FLASH-VOID Protect decoded 
+  #68 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 6b 69 6c 6c 73 2d 63 68 65 63 6b 65 64 20
+      ! conn2 FLASH-VOID Protect skills-checked 
+  #69 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=30
+        00 1c 50 72 6f 74 65 63 74 20 72 65 73 6f 75 72 63 65 73 2d 72 65 71 75 65 73 74 65 64 20
+      ! conn2 FLASH-VOID Protect resources-requested 
+  #70 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=28
+        00 1a 50 72 6f 74 65 63 74 20 6c 6f 61 64 69 6e 67 2d 63 6f 6d 70 6c 65 74 65 64 20
+      ! conn2 FLASH-VOID Protect loading-completed 
+  #71 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=24
+        00 16 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 61 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-created 
+  #72 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 64 69 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-credited 
+  #73 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #74 conn2 C2S UNK+0x0001 (0x1) len=0
+  #75 conn2 C2S CS_LOBBY+0x2402 (0x1812402) len=0
+      -> S2C SC_LOBBY+0x2402 (0x1182402) len=4 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [PROTECT-revive-cost]
+  #76 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #77 conn2 C2S CS_LOBBY+0x2401 (0x1812401) len=8
+        00 00 00 00 00 00 00 00
+      -> S2C SC_LOBBY+0x2401 (0x1182401) len=8 [PROTECT-FightRet]
+      -> S2C CS_CS+0x8000 (0x1458000) len=6209 [PROTECT-report]
+      -> S2C CS_CS+0x8001 (0x1458001) len=17 [PROTECT-result]
+      -> S2C SC_LOBBY+0x2403 (0x1182403) len=20 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2404 (0x1182404) len=4 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [PROTECT-update]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=10367 [PROTECT-update]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #78 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=43
+        00 29 50 72 6f 74 65 63 74 20 72 65 70 6f 72 74 20 76 69 73 69 62 6c 65 3d 74 72 75 65 20 62 6c 6f 63 6b 65 64 3d 66 61 6c 73 65
+      ! conn2 FLASH-VOID Protect report visible=true blocked=false
+  #79 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=18
+        00 10 50 72 6f 74 65 63 74 20 64 65 63 6f 64 65 64 20
+      ! conn2 FLASH-VOID Protect decoded 
+  #80 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 6b 69 6c 6c 73 2d 63 68 65 63 6b 65 64 20
+      ! conn2 FLASH-VOID Protect skills-checked 
+  #81 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=30
+        00 1c 50 72 6f 74 65 63 74 20 72 65 73 6f 75 72 63 65 73 2d 72 65 71 75 65 73 74 65 64 20
+      ! conn2 FLASH-VOID Protect resources-requested 
+  #82 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=28
+        00 1a 50 72 6f 74 65 63 74 20 6c 6f 61 64 69 6e 67 2d 63 6f 6d 70 6c 65 74 65 64 20
+      ! conn2 FLASH-VOID Protect loading-completed 
+  #83 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=24
+        00 16 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 61 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-created 
+  #84 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 64 69 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-credited 
+  #85 conn2 C2S UNK+0x0001 (0x1) len=0
+  #86 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #87 conn2 C2S UNK+0x0001 (0x1) len=0
+  #88 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #89 conn2 C2S CS_LOBBY+0x2401 (0x1812401) len=8
+        00 00 00 00 00 00 00 00
+      -> S2C SC_LOBBY+0x2401 (0x1182401) len=8 [PROTECT-FightRet]
+      -> S2C CS_CS+0x8000 (0x1458000) len=6145 [PROTECT-report]
+      -> S2C CS_CS+0x8001 (0x1458001) len=17 [PROTECT-result]
+      -> S2C SC_LOBBY+0x2403 (0x1182403) len=20 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2404 (0x1182404) len=4 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [PROTECT-update]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=10367 [PROTECT-update]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #90 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=43
+        00 29 50 72 6f 74 65 63 74 20 72 65 70 6f 72 74 20 76 69 73 69 62 6c 65 3d 74 72 75 65 20 62 6c 6f 63 6b 65 64 3d 66 61 6c 73 65
+      ! conn2 FLASH-VOID Protect report visible=true blocked=false
+  #91 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=18
+        00 10 50 72 6f 74 65 63 74 20 64 65 63 6f 64 65 64 20
+      ! conn2 FLASH-VOID Protect decoded 
+  #92 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 6b 69 6c 6c 73 2d 63 68 65 63 6b 65 64 20
+      ! conn2 FLASH-VOID Protect skills-checked 
+  #93 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=30
+        00 1c 50 72 6f 74 65 63 74 20 72 65 73 6f 75 72 63 65 73 2d 72 65 71 75 65 73 74 65 64 20
+      ! conn2 FLASH-VOID Protect resources-requested 
+  #94 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=28
+        00 1a 50 72 6f 74 65 63 74 20 6c 6f 61 64 69 6e 67 2d 63 6f 6d 70 6c 65 74 65 64 20
+      ! conn2 FLASH-VOID Protect loading-completed 
+  #95 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=24
+        00 16 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 61 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-created 
+  #96 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 74 61 67 65 2d 63 72 65 64 69 74 65 64 20
+      ! conn2 FLASH-VOID Protect stage-credited 
+  #97 conn2 C2S UNK+0x0001 (0x1) len=0
+  #98 conn2 C2S UNK+0x0001 (0x1) len=0
+  #99 conn2 C2S UNK+0x0001 (0x1) len=0
+  #100 conn2 C2S CS_LOBBY+0x2400 (0x1812400) len=1
+        01
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [HANDLER]
+  #101 conn2 C2S CS_LOBBY+0x2401 (0x1812401) len=8
+        00 00 00 00 00 00 00 00
+      -> S2C SC_LOBBY+0x2401 (0x1182401) len=8 [PROTECT-FightRet]
+      -> S2C CS_CS+0x8000 (0x1458000) len=6209 [PROTECT-report]
+      -> S2C CS_CS+0x8001 (0x1458001) len=17 [PROTECT-result]
+      -> S2C SC_LOBBY+0x2403 (0x1182403) len=20 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2407 (0x1182407) len=56 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2404 (0x1182404) len=4 [PROTECT-update]
+      -> S2C SC_LOBBY+0x2406 (0x1182406) len=17 [PROTECT-update]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=10367 [PROTECT-update]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #102 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=43
+        00 29 50 72 6f 74 65 63 74 20 72 65 70 6f 72 74 20 76 69 73 69 62 6c 65 3d 74 72 75 65 20 62 6c 6f 63 6b 65 64 3d 66 61 6c 73 65
+      ! conn2 FLASH-VOID Protect report visible=true blocked=false
+  #103 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=18
+        00 10 50 72 6f 74 65 63 74 20 64 65 63 6f 64 65 64 20
+      ! conn2 FLASH-VOID Protect decoded 
+  #104 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=25
+        00 17 50 72 6f 74 65 63 74 20 73 6b 69 6c 6c 73 2d 63 68 65 63 6b 65 64 20
+      ! conn2 FLASH-VOID Protect skills-checked 
+  #105 conn2 C2S CS_LOBBY+0xf301 (0x181f301) len=30  ⚠️DONGU-BASLADI
+        00 1c 50 72 6f 74 65 63 74 20 72 65 73 6f 75 72 63 65 73 2d 72 65 71 75 65 73 74 65 64 20
+      ! conn2 FLASH-VOID Protect resources-requested 
+[-] conn2 kapandi  (kapandi)  paket=104 up=899B down=89399B sure=205435ms

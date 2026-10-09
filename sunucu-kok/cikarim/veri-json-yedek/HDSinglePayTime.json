@@ -1,0 +1,13 @@
+[
+  {
+    "id": "0005CC61",
+    "name": "Kon's Treasure Box",
+    "tName": "Kon's Treasure Box",
+    "desc": "1. Single Top-up corresponding gold can activate corresponding reward; single top-up of 25000 gold can activate all reward.\n2. After the event starts, during the first 5 days can activate treasure chest and receive reward; the second 5 days can only receive the previously actvated reward\n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 380001,
+    "payDay": "[{\"type\":1,\"key\":400,\"limit\":5,\"award\":[21405440]},{\"type\":1,\"key\":1200,\"limit\":5,\"award\":[21405441]},{\"type\":1,\"key\":2000,\"limit\":5,\"award\":[21405442]}]",
+    "f7": 5
+  }
+]

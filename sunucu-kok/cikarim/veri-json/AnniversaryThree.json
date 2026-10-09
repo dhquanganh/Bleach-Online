@@ -1,0 +1,20 @@
+[
+  {
+    "id": "00175891",
+    "name": "周年庆3",
+    "tName": "Lucky Draw",
+    "desc": "1. When you spend Gold to draw, you can obtain same Points as the Gold you spend.\n2. Every 20 players joining will activate 1 drawing, and the winner will obtain a grand prize.\n3. Every player can only join each round once. \n4. Reward Record and Winners list refresh once every 5 minutes.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1530001,
+    "showNum": 9,
+    "onceNum": 10,
+    "startIndex": 1,
+    "awardIndex": 2,
+    "scoreIndex": 3,
+    "cost": 100,
+    "awardInfo": "{\"awardid\":21407021,\"score\":14100754,\"count\":1000}",
+    "tips": "[\"%0 period\",\"Congratulations You won the prize\",\"What a pity! You didn't win the prize！\"]",
+    "mall": "[{\"index\":60,\"cost\":40000,\"awardid\":21407022,\"numLimit\":1},{\"index\":61,\"cost\":30000,\"awardid\":21407023,\"numLimit\":1},{\"index\":62,\"cost\":40000,\"awardid\":21407024,\"numLimit\":1},{\"index\":63,\"cost\":40000,\"awardid\":21407025,\"numLimit\":1},{\"index\":64,\"cost\":20000,\"awardid\":21407026,\"numLimit\":1},{\"index\":65,\"cost\":20000,\"awardid\":21407027,\"numLimit\":1},{\"index\":66,\"cost\":20000,\"awardid\":21407028,\"numLimit\":1},{\"index\":67,\"cost\":20000,\"awardid\":21407029,\"numLimit\":1},{\"index\":68,\"cost\":30000,\"awardid\":21407030,\"numLimit\":1},{\"index\":69,\"cost\":30000,\"awardid\":21407031,\"numLimit\":1},{\"index\":70,\"cost\":20000,\"awardid\":21407032,\"numLimit\":1},{\"index\":71,\"cost\":20000,\"awardid\":21407033,\"numLimit\":1},{\"index\":72,\"cost\":20000,\"awardid\":21407034,\"numLimit\":1},{\"index\":73,\"cost\":20000,\"awardid\":21407035,\"numLimit\":1},{\"index\":74,\"cost\":20000,\"awardid\":21407036,\"numLimit\":1},{\"index\":75,\"cost\":20000,\"awardid\":21407037,\"numLimit\":1},{\"index\":76,\"cost\":20000,\"awardid\":21407038,\"numLimit\":1},{\"index\":77,\"cost\":20000,\"awardid\":21407039,\"numLimit\":1},{\"index\":78,\"cost\":30000,\"awardid\":21407040,\"numLimit\":1},{\"index\":79,\"cost\":20000,\"awardid\":21407041,\"numLimit\":1},{\"index\":80,\"cost\":40000,\"awardid\":21407042,\"numLimit\":1},{\"index\":81,\"cost\":40000,\"awardid\":21407043,\"numLimit\":1},{\"index\":82,\"cost\":30000,\"awardid\":21407044,\"numLimit\":1},{\"index\":83,\"cost\":8000,\"awardid\":21407045,\"numLimit\":0},{\"index\":84,\"cost\":100,\"awardid\":21407046,\"numLimit\":0},{\"index\":85,\"cost\":100,\"awardid\":21407047,\"numLimit\":0},{\"index\":86,\"cost\":3000,\"awardid\":21407048,\"numLimit\":0},{\"index\":87,\"cost\":100,\"awardid\":21407049,\"numLimit\":0},{\"index\":88,\"cost\":100,\"awardid\":21407050,\"numLimit\":0},{\"index\":89,\"cost\":100,\"awardid\":21407051,\"numLimit\":0},{\"index\":90,\"cost\":100,\"awardid\":21407052,\"numLimit\":0},{\"index\":91,\"cost\":100,\"awardid\":21407053,\"numLimit\":0},{\"index\":92,\"cost\":100,\"awardid\":21407054,\"numLimit\":0}]"
+  }
+]

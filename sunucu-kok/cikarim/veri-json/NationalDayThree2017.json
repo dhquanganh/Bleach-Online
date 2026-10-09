@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0017CDC1",
+    "name": "欢度国庆3",
+    "tName": "国庆献礼",
+    "desc": "1. Spend Gold to obtain points, 1 Gold = 1 point. Points will be cleared when event ends.\n2. Accumulatively spend 1000 Gold daily to get a chance to spin roulette to win reward. \n3. Players can spin 10 times at most per day and roulette resets daily.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1560001,
+    "refreshIndex": 1,
+    "scoreIndex": 2,
+    "lotteryIndex": 4,
+    "lotteryRatio": 1000,
+    "scoreRatio": 1,
+    "refreshCost": 10,
+    "itemsIndex": "[10,11,12,13,14,15,16,17,18]",
+    "pool": "[{\"index\":25,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407129},{\"index\":26,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407130},{\"index\":27,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407131},{\"index\":28,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407132},{\"index\":29,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407133},{\"index\":30,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407134},{\"index\":31,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407135},{\"index\":32,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407136},{\"index\":33,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407137},{\"index\":34,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407138},{\"index\":35,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407139},{\"index\":36,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407140},{\"index\":37,\"weight\":1,\"cost\":50,\"num\":1,\"awardid\":21407141},{\"index\":38,\"weight\":1,\"cost\":100,\"num\":1,\"awardid\":21407142},{\"index\":39,\"weight\":1,\"cost\":200,\"num\":1,\"awardid\":21407143},{\"index\":40,\"weight\":1,\"cost\":400,\"num\":1,\"awardid\":21407144},{\"index\":41,\"weight\":1,\"cost\":800,\"num\":1,\"awardid\":21407145},{\"index\":42,\"weight\":1,\"cost\":4000,\"num\":1,\"awardid\":21407146},{\"index\":43,\"weight\":1,\"cost\":2000,\"num\":1,\"awardid\":21407147},{\"index\":44,\"weight\":1,\"cost\":2000,\"num\":1,\"awardid\":21407148},{\"index\":45,\"weight\":1,\"cost\":4000,\"num\":1,\"awardid\":21407149},{\"index\":46,\"weight\":1,\"cost\":4000,\"num\":1,\"awardid\":21407150},{\"index\":47,\"weight\":1,\"cost\":6000,\"num\":1,\"awardid\":21407151},{\"index\":48,\"weight\":1,\"cost\":6000,\"num\":1,\"awardid\":21407152}]",
+    "lotteryAward": "[{\"index\":50,\"weight\":50000,\"awardid\":21407153},{\"index\":51,\"weight\":50000,\"awardid\":21407154},{\"index\":52,\"weight\":10000,\"awardid\":21407155},{\"index\":53,\"weight\":10000,\"awardid\":21407156},{\"index\":54,\"weight\":700,\"awardid\":21407157},{\"index\":55,\"weight\":700,\"awardid\":21407158},{\"index\":56,\"weight\":45,\"awardid\":21407159},{\"index\":57,\"weight\":45,\"awardid\":21407160},{\"index\":58,\"weight\":5,\"awardid\":21407161},{\"index\":59,\"weight\":1,\"awardid\":21407162}]",
+    "mall": "[{\"index\":60,\"cost\":60000,\"awardid\":21407163,\"numLimit\":1},{\"index\":61,\"cost\":60000,\"awardid\":21407164,\"numLimit\":1},{\"index\":62,\"cost\":60000,\"awardid\":21407165,\"numLimit\":1},{\"index\":63,\"cost\":60000,\"awardid\":21407166,\"numLimit\":1},{\"index\":64,\"cost\":50000,\"awardid\":21407167,\"numLimit\":1},{\"index\":65,\"cost\":50000,\"awardid\":21407168,\"numLimit\":1},{\"index\":66,\"cost\":50000,\"awardid\":21407169,\"numLimit\":1},{\"index\":67,\"cost\":50000,\"awardid\":21407170,\"numLimit\":1},{\"index\":68,\"cost\":50000,\"awardid\":21407171,\"numLimit\":1},{\"index\":69,\"cost\":50000,\"awardid\":21407172,\"numLimit\":1},{\"index\":70,\"cost\":40000,\"awardid\":21407173,\"numLimit\":1},{\"index\":71,\"cost\":40000,\"awardid\":21407174,\"numLimit\":1},{\"index\":72,\"cost\":40000,\"awardid\":21407175,\"numLimit\":1},{\"index\":73,\"cost\":40000,\"awardid\":21407176,\"numLimit\":1},{\"index\":74,\"cost\":30000,\"awardid\":21407177,\"numLimit\":1},{\"index\":75,\"cost\":30000,\"awardid\":21407178,\"numLimit\":1},{\"index\":76,\"cost\":30000,\"awardid\":21407179,\"numLimit\":1},{\"index\":77,\"cost\":8000,\"awardid\":21407180,\"numLimit\":0},{\"index\":78,\"cost\":100,\"awardid\":21407181,\"numLimit\":0},{\"index\":79,\"cost\":100,\"awardid\":21407182,\"numLimit\":0},{\"index\":80,\"cost\":100,\"awardid\":21407183,\"numLimit\":0},{\"index\":81,\"cost\":200,\"awardid\":21407184,\"numLimit\":0},{\"index\":82,\"cost\":200,\"awardid\":21407185,\"numLimit\":0},{\"index\":83,\"cost\":200,\"awardid\":21407186,\"numLimit\":0}]",
+    "itemsStatus": "[91,92,93,94,95,96,97,98,99]"
+  }
+]

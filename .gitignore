@@ -1,0 +1,5 @@
+# Runtime lock files and Python bytecode
+**/*.db-wal
+**/*.db-shm
+**/__pycache__/
+**/*.pyc

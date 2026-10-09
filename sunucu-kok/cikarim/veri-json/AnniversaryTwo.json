@@ -1,0 +1,15 @@
+[
+  {
+    "id": "00173181",
+    "name": "周年庆2",
+    "tName": "Summer Fun",
+    "desc": "1. Daily top-up required Gold to claim Single Top-up reward once.\n2. Accumulative top-up reaches required Gold to claim Accumulative Top-up reward once.\n3. Accumulative top-up reaches required Gold to get extra super rewards.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1520001,
+    "totalPayIndex": 1,
+    "dayAward": "[{\"index\":2,\"cond\":200,\"awardid\":21407012},{\"index\":3,\"cond\":1000,\"awardid\":21407013},{\"index\":4,\"cond\":2000,\"awardid\":21407014}]",
+    "totalAward": "[{\"index\":5,\"cond\":2000,\"awardid\":21407015},{\"index\":6,\"cond\":8000,\"awardid\":21407016},{\"index\":7,\"cond\":20000,\"awardid\":21407017},{\"index\":8,\"cond\":40000,\"awardid\":21407018},{\"index\":9,\"cond\":80000,\"awardid\":21407019}]",
+    "bag": "{\"index\" :95, \"awardId\" : 21407020, \"gold\" : 40000, \"showID\":11150042,\"showType\":0,\"fightReportAddr\":\"http://bleachjf.gametrees.com/fightreport/?rid=844424944520512288&aid=54&t=1&lang=en_US\"}\n"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "00002711",
+    "goldNum": 10,
+    "normalPrice": 10,
+    "yellowVipPrice": 8,
+    "vipLevel": 1
+  },
+  {
+    "id": "00002712",
+    "goldNum": 500,
+    "normalPrice": 500,
+    "yellowVipPrice": 400,
+    "vipLevel": 2
+  },
+  {
+    "id": "00002713",
+    "goldNum": 1000,
+    "normalPrice": 1000,
+    "yellowVipPrice": 800,
+    "vipLevel": 3
+  },
+  {
+    "id": "00002714",
+    "goldNum": 5000,
+    "normalPrice": 5000,
+    "yellowVipPrice": 4000,
+    "vipLevel": 5
+  },
+  {
+    "id": "00002715",
+    "goldNum": 10000,
+    "normalPrice": 10000,
+    "yellowVipPrice": 8000,
+    "vipLevel": 6
+  },
+  {
+    "id": "00002716",
+    "goldNum": 50000,
+    "normalPrice": 50000,
+    "yellowVipPrice": 40000,
+    "vipLevel": 8
+  }
+]

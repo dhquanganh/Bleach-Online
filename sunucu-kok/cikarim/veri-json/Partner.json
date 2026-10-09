@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0008D9A1",
+    "name": "天生一对",
+    "tName": "天生一对",
+    "desc": "Players who met the requirements can obtain roses and can purchase rose giftpacks.\nEach time player met a requirement, a level of purchasing qualification for rose giftpacks will be unlocked.\nDuring the event the supervalue store will be available and players can directly buy supervalue giftpacks to meet the requirements.\nPlayers can obtain rewards and roses by purchasing rose giftpacks.\nWhen players obtained a certain amount of roses, Shinigami Yoruichi and Shinigami Urahara will be able for exchange",
+    "tip": "1",
+    "price": 0,
+    "imageID": 580001,
+    "roseNumIndex": "{\"index\":0,\"indexType\":3,\"getType\":1,\"condition\":[{\"id\":14210091,\"type\":1},{\"id\":14210092,\"type\":1},{\"id\":14210093,\"type\":1},{\"id\":14210094,\"type\":2},{\"id\":14210095, \"type\":3},{\"id\":14210096,\"type\":4},{\"id\":14210097,\"type\":5},{\"id\":14210098,\"type\":6}],\"rose\":50,\"prompt\":\"Collect a set of Lv.120 equipment\",\"totalSchedule\":6}",
+    "f7": "{\"index\":1,\"indexType\":3,\"getType\":1,\"level\":7,\"num\":4,\"rose\":50,\"prompt\":\"Collect 4 or more Lv.7 Spirit Stones\",\"totalSchedule\":4}",
+    "f8": "{\"index\":2,\"indexType\":3,\"getType\":1,\"level\":12,\"num\":1,\"rose\":60,\"prompt\":\"Collect any of Lv.12 Hogu\",\"totalSchedule\":1}",
+    "f9": "[{\"index\":3,\"getType\":2,\"cost\":3000,\"award\":21401665},{\"index\":4,\"getType\":2,\"cost\":5000,\"award\":21401666},{\"index\":5,\"getType\":2,\"cost\":8000,\"award\":21401667},{\"index\":6,\"getType\":2,\"cost\":1500,\"award\":21401668},{\"index\":7,\"getType\":2,\"cost\":2600,\"award\":21401669},{\"index\":8,\"getType\":2,\"cost\":5000,\"award\":21401670},{\"index\":9,\"getType\":2,\"cost\":5000,\"award\":21401671},{\"index\":10,\"getType\":2,\"cost\":500,\"award\":21401672},{\"index\":11,\"getType\":2,\"cost\":4800,\"award\":21401673}]",
+    "f10": "[{\"index\":12,\"cost\":300,\"award\":21401674,\"rose\":[{\"rate\":100,\"amount\":10}],\"count\":1},{\"index\":13,\"cost\":1000,\"award\":21401675,\"rose\":[{\"rate\":100,\"amount\":40}],\"count\":2},{\"index\":14,\"cost\":4000,\"award\":21401676,\"rose\":[{\"rate\":100,\"amount\":200}],\"count\":3}]",
+    "f11": "[{\"index\":15,\"getType\":2,\"needRose\":2000,\"limit\":1,\"award\":21401677,\"reportId\":\"\",\"get\":{\"indexType\":92,\"num\":1},\"heroID\":11150058},{\"index\":16,\"getType\":2,\"needRose\":2000,\"limit\":1,\"award\":21401678,\"reportId\":\"\",\"get\":{\"indexType\":92,\"num\":1},\"heroID\":11150057}]",
+    "f12": "{\"index\":17,\"getType\":1,\"condition\":{\"indexType\":92,\"num\":2},\"award\":21401679,\"titleID\":6003064}",
+    "f13": 90,
+    "f14": "{\"type\":1,\"code\":14100421}"
+  }
+]

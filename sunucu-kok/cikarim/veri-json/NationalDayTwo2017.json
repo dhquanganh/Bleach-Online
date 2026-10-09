@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0017A6B1",
+    "name": "国庆节2",
+    "tName": "喜迎国庆",
+    "desc": "1. Single top-up a certain amount of Gold to claim giftpacks. (Claim for unlimited times) \n2. Accumulatively top-up a certain amount of Gold to claim giftpacks. (Claim once only) \n3. Top-up required Gold in event to claim a partner for ultimate reward.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1550001,
+    "totalPayIndex": 1,
+    "dayPayIndex": 2,
+    "singleAward": "[{\"index\":3,\"cond\":200,\"awardid\":21407118},{\"index\":4,\"cond\":1200,\"awardid\":21407119},{\"index\":5,\"cond\":2000,\"awardid\":21407120},{\"index\":6,\"cond\":4000,\"awardid\":21407121}]",
+    "totalAward": "[{\"index\":7,\"cond\":400,\"awardid\":21407122},{\"index\":8,\"cond\":800,\"awardid\":21407123},{\"index\":9,\"cond\":1600,\"awardid\":21407124},{\"index\":10,\"cond\":3000,\"awardid\":21407125},{\"index\":11,\"cond\":5000,\"awardid\":21407126},{\"index\":12,\"cond\":8000,\"awardid\":21407127}]",
+    "bigAward": "{\"index\" :95, \"awardId\" : 21407128, \"gold\" : 40000, \"showID\":11150059,\"showType\":0,\"fightReportAddr\":\"\"}\n"
+  }
+]

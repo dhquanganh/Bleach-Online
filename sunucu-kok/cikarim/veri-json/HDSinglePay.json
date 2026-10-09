@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00011171",
+    "name": "Single Top-up ",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "During the event period, Single Top-up reaches corresponding amount and immediately receive super value rewards!",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70001,
+    "f6": "[{\"type\":1,\"key\":500,\"value\":[21401030],\"prompt\":\"500\"},{\"type\":1,\"key\":1000,\"value\":[21401031],\"prompt\":\"1000\"},{\"type\":1,\"key\":5000,\"value\":[21401032],\"prompt\":\"5000\"},{\"type\":1,\"key\":10000,\"value\":[21401033],\"prompt\":\"10000\"},{\"type\":1,\"key\":20000,\"value\":[21401034],\"prompt\":\"20000\"},{\"type\":1,\"key\":50000,\"value\":[21401035],\"prompt\":\"50000\"},{\"type\":1,\"key\":100000,\"value\":[21401036],\"prompt\":\"100000\"},{\"type\":1,\"key\":500000,\"value\":[21401037],\"prompt\":\"500000\"}]"
+  },
+  {
+    "id": "00011172",
+    "name": "Single Top-up ",
+    "tName": "Superb Prizes for Single Top-up",
+    "desc": "Event starting time is when the event appears within the game.\nTop-up prior to event starting time does not count towards the event.                                                                         During the event period, single top-up to corresponding amount to received great value rewards.\nReward will be sent out immediately via in-game mail.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70001,
+    "f6": "[{\"type\":3,\"key\":500,\"value\":[21401269],\"prompt\":\"500 Gold\"},{\"type\":3,\"key\":1000,\"value\":[21401270],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401271],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401272],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401273],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401274],\"prompt\":\"50000 Gold\"}]"
+  },
+  {
+    "id": "00011173",
+    "name": "Single Top-up ",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "During the event period, Single Top-up reaches corresponding amount and immediately receive super value rewards!",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70001,
+    "f6": "[{\"type\":3,\"key\":500,\"value\":[21401269],\"prompt\":\"500 Gold\"},{\"type\":3,\"key\":1000,\"value\":[21401270],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401271],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401272],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401273],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401274],\"prompt\":\"50000 Gold\"}]"
+  },
+  {
+    "id": "00011174",
+    "name": "Single Top-up ",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "During the event period, Single Top-up reaches corresponding amount and immediately receive super value rewards!",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70001,
+    "f6": "[{\"type\":3,\"key\":500,\"value\":[21401360],\"prompt\":\"500 Gold\"},{\"type\":3,\"key\":1000,\"value\":[21401361],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401362],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401363],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401364],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401365],\"prompt\":\"50000 Gold\"}]"
+  },
+  {
+    "id": "00011175",
+    "name": "Single Top-up ",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "During the event period, Single Top-up reaches corresponding amount and immediately receive super value rewards!",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70001,
+    "f6": "[{\"type\":3,\"key\":500,\"value\":[21401366],\"prompt\":\"500 Gold\"},{\"type\":3,\"key\":1000,\"value\":[21401367],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401368],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401369],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401370],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401371],\"prompt\":\"50000 Gold\"}]"
+  },
+  {
+    "id": "00011176",
+    "name": "Single Top-up ",
+    "tName": "Superb Prizes for Single Top-up",
+    "desc": "Event starting time is when the event appears within the game.\nTop-up prior to event starting time does not count towards the event.                                                                         During the event period, single top-up to corresponding amount to received great value rewards.\nReward will be sent out immediately via in-game mail.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 70006,
+    "f6": "[{\"type\":3,\"key\":400,\"value\":[21401500],\"prompt\":\"400 Gold\"},{\"type\":3,\"key\":600,\"value\":[21401501],\"prompt\":\"600 Gold\"},{\"type\":3,\"key\":1200,\"value\":[21401502],\"prompt\":\"1200 Gold\"},{\"type\":3,\"key\":2000,\"value\":[21401503],\"prompt\":\"2000 Gold\"},{\"type\":3,\"key\":6000,\"value\":[21401504],\"prompt\":\"6000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401505],\"prompt\":\"20000 Gold\"}]"
+  }
+]

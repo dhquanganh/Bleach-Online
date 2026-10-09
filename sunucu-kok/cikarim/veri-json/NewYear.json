@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0005A551",
+    "name": "惊奇礼盒",
+    "tName": "惊奇礼盒",
+    "desc": "1. Top-up any amount to receive Pink Suprise Box and activate the rights to purchase the first row of supervalue gift box.\n2. Single Top-up 400 Gold can receive Pink and Gold Suprise Gift Box, also activate the rights to purchase all supervalue gift box.\n3. The events last for 5 days and reset at Midnight daily. You can top-up again the next to activate and purchase.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 370001,
+    "f6": "[{\"indexType\":0,\"getType\":1,\"condition\":1,\"limit\":1,\"cost\":0,\"award\":[21406140,21406140,21406140,21406140,21406140],\"isDefaultAward\":0,\"defaultCost\":0,\"rate\":0},{\"indexType\":0,\"getType\":2,\"condition\":1,\"limit\":3,\"cost\":40,\"award\":[21406142,21406142,21406142,21406142,21406142],\"isDefaultAward\":0,\"defaultCost\":700,\"rate\":\"40%off\"},{\"indexType\":0,\"getType\":2,\"condition\":1,\"limit\":3,\"cost\":200,\"award\":[21406143,21406143,21406143,21406143,21406143],\"isDefaultAward\":0,\"defaultCost\":1650,\"rate\":\"50%off\"},{\"indexType\":0,\"getType\":2,\"condition\":1,\"limit\":3,\"cost\":400,\"award\":[21406144,21406144,21406144,21406144,21406144],\"isDefaultAward\":0,\"defaultCost\":6000,\"rate\":\"50%off\"},{\"indexType\":0,\"getType\":1,\"condition\":400,\"limit\":1,\"cost\":0,\"award\":[21406141,21406141,21406141,21406141,21406141],\"isDefaultAward\":0,\"defaultCost\":6000,\"rate\":\"0\"},{\"indexType\":0,\"getType\":2,\"condition\":200,\"limit\":3,\"cost\":600,\"award\":[21406145,21406145,21406145,21406145,21406145],\"isDefaultAward\":0,\"defaultCost\":6000,\"rate\":\"60%off\"},{\"indexType\":0,\"getType\":2,\"condition\":200,\"limit\":3,\"cost\":800,\"award\":[21406146,21406146,21406146,21406146,21406146],\"isDefaultAward\":0,\"defaultCost\":6000,\"rate\":\"70%off\"}]"
+  }
+]

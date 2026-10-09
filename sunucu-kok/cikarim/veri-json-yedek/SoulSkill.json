@@ -1,0 +1,5582 @@
+[
+  {
+    "id": "00C7E3E1",
+    "skillLv": 0,
+    "nextSkillId": 13106001,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB51",
+    "skillLv": 1,
+    "nextSkillId": 13106002,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB52",
+    "skillLv": 2,
+    "nextSkillId": 13106003,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB53",
+    "skillLv": 3,
+    "nextSkillId": 13106004,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB54",
+    "skillLv": 4,
+    "nextSkillId": 13106005,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB55",
+    "skillLv": 5,
+    "nextSkillId": 13106006,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB56",
+    "skillLv": 6,
+    "nextSkillId": 13106007,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB57",
+    "skillLv": 7,
+    "nextSkillId": 13106008,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB58",
+    "skillLv": 8,
+    "nextSkillId": 13106009,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB59",
+    "skillLv": 9,
+    "nextSkillId": 13106010,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB5A",
+    "skillLv": 10,
+    "nextSkillId": 13106011,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB5B",
+    "skillLv": 11,
+    "nextSkillId": 13106012,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB5C",
+    "skillLv": 12,
+    "nextSkillId": 13106013,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB5D",
+    "skillLv": 13,
+    "nextSkillId": 13106014,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB5E",
+    "skillLv": 14,
+    "nextSkillId": 13106015,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB5F",
+    "skillLv": 15,
+    "nextSkillId": 13106016,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB60",
+    "skillLv": 16,
+    "nextSkillId": 13106017,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB61",
+    "skillLv": 17,
+    "nextSkillId": 13106018,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FB62",
+    "skillLv": 18,
+    "nextSkillId": 13106019,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FB63",
+    "skillLv": 19,
+    "nextSkillId": 13106020,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FB64",
+    "skillLv": 20,
+    "nextSkillId": 13106021,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FB65",
+    "skillLv": 21,
+    "nextSkillId": 13106022,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FB66",
+    "skillLv": 22,
+    "nextSkillId": 13106023,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FB67",
+    "skillLv": 23,
+    "nextSkillId": 13106024,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FB68",
+    "skillLv": 24,
+    "nextSkillId": 13106025,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FB69",
+    "skillLv": 25,
+    "nextSkillId": 13106026,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FB6A",
+    "skillLv": 26,
+    "nextSkillId": 13106027,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FB6B",
+    "skillLv": 27,
+    "nextSkillId": 13106028,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FB6C",
+    "skillLv": 28,
+    "nextSkillId": 13106029,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FB6D",
+    "skillLv": 29,
+    "nextSkillId": 13106030,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FB6E",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E2",
+    "skillLv": 0,
+    "nextSkillId": 13106032,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB70",
+    "skillLv": 1,
+    "nextSkillId": 13106033,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB71",
+    "skillLv": 2,
+    "nextSkillId": 13106034,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB72",
+    "skillLv": 3,
+    "nextSkillId": 13106035,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB73",
+    "skillLv": 4,
+    "nextSkillId": 13106036,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB74",
+    "skillLv": 5,
+    "nextSkillId": 13106037,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB75",
+    "skillLv": 6,
+    "nextSkillId": 13106038,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB76",
+    "skillLv": 7,
+    "nextSkillId": 13106039,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB77",
+    "skillLv": 8,
+    "nextSkillId": 13106040,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB78",
+    "skillLv": 9,
+    "nextSkillId": 13106041,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB79",
+    "skillLv": 10,
+    "nextSkillId": 13106042,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB7A",
+    "skillLv": 11,
+    "nextSkillId": 13106043,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB7B",
+    "skillLv": 12,
+    "nextSkillId": 13106044,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB7C",
+    "skillLv": 13,
+    "nextSkillId": 13106045,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB7D",
+    "skillLv": 14,
+    "nextSkillId": 13106046,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB7E",
+    "skillLv": 15,
+    "nextSkillId": 13106047,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB7F",
+    "skillLv": 16,
+    "nextSkillId": 13106048,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB80",
+    "skillLv": 17,
+    "nextSkillId": 13106049,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FB81",
+    "skillLv": 18,
+    "nextSkillId": 13106050,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FB82",
+    "skillLv": 19,
+    "nextSkillId": 13106051,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FB83",
+    "skillLv": 20,
+    "nextSkillId": 13106052,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FB84",
+    "skillLv": 21,
+    "nextSkillId": 13106053,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FB85",
+    "skillLv": 22,
+    "nextSkillId": 13106054,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FB86",
+    "skillLv": 23,
+    "nextSkillId": 13106055,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FB87",
+    "skillLv": 24,
+    "nextSkillId": 13106056,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FB88",
+    "skillLv": 25,
+    "nextSkillId": 13106057,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FB89",
+    "skillLv": 26,
+    "nextSkillId": 13106058,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FB8A",
+    "skillLv": 27,
+    "nextSkillId": 13106059,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FB8B",
+    "skillLv": 28,
+    "nextSkillId": 13106060,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FB8C",
+    "skillLv": 29,
+    "nextSkillId": 13106061,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FB8D",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E3",
+    "skillLv": 0,
+    "nextSkillId": 13106063,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB8F",
+    "skillLv": 1,
+    "nextSkillId": 13106064,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB90",
+    "skillLv": 2,
+    "nextSkillId": 13106065,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB91",
+    "skillLv": 3,
+    "nextSkillId": 13106066,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB92",
+    "skillLv": 4,
+    "nextSkillId": 13106067,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB93",
+    "skillLv": 5,
+    "nextSkillId": 13106068,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB94",
+    "skillLv": 6,
+    "nextSkillId": 13106069,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB95",
+    "skillLv": 7,
+    "nextSkillId": 13106070,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB96",
+    "skillLv": 8,
+    "nextSkillId": 13106071,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB97",
+    "skillLv": 9,
+    "nextSkillId": 13106072,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB98",
+    "skillLv": 10,
+    "nextSkillId": 13106073,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB99",
+    "skillLv": 11,
+    "nextSkillId": 13106074,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB9A",
+    "skillLv": 12,
+    "nextSkillId": 13106075,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB9B",
+    "skillLv": 13,
+    "nextSkillId": 13106076,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB9C",
+    "skillLv": 14,
+    "nextSkillId": 13106077,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB9D",
+    "skillLv": 15,
+    "nextSkillId": 13106078,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB9E",
+    "skillLv": 16,
+    "nextSkillId": 13106079,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB9F",
+    "skillLv": 17,
+    "nextSkillId": 13106080,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBA0",
+    "skillLv": 18,
+    "nextSkillId": 13106081,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBA1",
+    "skillLv": 19,
+    "nextSkillId": 13106082,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBA2",
+    "skillLv": 20,
+    "nextSkillId": 13106083,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBA3",
+    "skillLv": 21,
+    "nextSkillId": 13106084,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBA4",
+    "skillLv": 22,
+    "nextSkillId": 13106085,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBA5",
+    "skillLv": 23,
+    "nextSkillId": 13106086,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBA6",
+    "skillLv": 24,
+    "nextSkillId": 13106087,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBA7",
+    "skillLv": 25,
+    "nextSkillId": 13106088,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBA8",
+    "skillLv": 26,
+    "nextSkillId": 13106089,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBA9",
+    "skillLv": 27,
+    "nextSkillId": 13106090,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBAA",
+    "skillLv": 28,
+    "nextSkillId": 13106091,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBAB",
+    "skillLv": 29,
+    "nextSkillId": 13106092,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBAC",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E4",
+    "skillLv": 0,
+    "nextSkillId": 13106094,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBAE",
+    "skillLv": 1,
+    "nextSkillId": 13106095,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBAF",
+    "skillLv": 2,
+    "nextSkillId": 13106096,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBB0",
+    "skillLv": 3,
+    "nextSkillId": 13106097,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBB1",
+    "skillLv": 4,
+    "nextSkillId": 13106098,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBB2",
+    "skillLv": 5,
+    "nextSkillId": 13106099,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBB3",
+    "skillLv": 6,
+    "nextSkillId": 13106100,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBB4",
+    "skillLv": 7,
+    "nextSkillId": 13106101,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBB5",
+    "skillLv": 8,
+    "nextSkillId": 13106102,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBB6",
+    "skillLv": 9,
+    "nextSkillId": 13106103,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBB7",
+    "skillLv": 10,
+    "nextSkillId": 13106104,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBB8",
+    "skillLv": 11,
+    "nextSkillId": 13106105,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBB9",
+    "skillLv": 12,
+    "nextSkillId": 13106106,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBBA",
+    "skillLv": 13,
+    "nextSkillId": 13106107,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBBB",
+    "skillLv": 14,
+    "nextSkillId": 13106108,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBBC",
+    "skillLv": 15,
+    "nextSkillId": 13106109,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBBD",
+    "skillLv": 16,
+    "nextSkillId": 13106110,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBBE",
+    "skillLv": 17,
+    "nextSkillId": 13106111,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBBF",
+    "skillLv": 18,
+    "nextSkillId": 13106112,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBC0",
+    "skillLv": 19,
+    "nextSkillId": 13106113,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBC1",
+    "skillLv": 20,
+    "nextSkillId": 13106114,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBC2",
+    "skillLv": 21,
+    "nextSkillId": 13106115,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBC3",
+    "skillLv": 22,
+    "nextSkillId": 13106116,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBC4",
+    "skillLv": 23,
+    "nextSkillId": 13106117,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBC5",
+    "skillLv": 24,
+    "nextSkillId": 13106118,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBC6",
+    "skillLv": 25,
+    "nextSkillId": 13106119,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBC7",
+    "skillLv": 26,
+    "nextSkillId": 13106120,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBC8",
+    "skillLv": 27,
+    "nextSkillId": 13106121,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBC9",
+    "skillLv": 28,
+    "nextSkillId": 13106122,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBCA",
+    "skillLv": 29,
+    "nextSkillId": 13106123,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBCB",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E5",
+    "skillLv": 0,
+    "nextSkillId": 13106125,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBCD",
+    "skillLv": 1,
+    "nextSkillId": 13106126,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBCE",
+    "skillLv": 2,
+    "nextSkillId": 13106127,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBCF",
+    "skillLv": 3,
+    "nextSkillId": 13106128,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBD0",
+    "skillLv": 4,
+    "nextSkillId": 13106129,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBD1",
+    "skillLv": 5,
+    "nextSkillId": 13106130,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBD2",
+    "skillLv": 6,
+    "nextSkillId": 13106131,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBD3",
+    "skillLv": 7,
+    "nextSkillId": 13106132,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBD4",
+    "skillLv": 8,
+    "nextSkillId": 13106133,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBD5",
+    "skillLv": 9,
+    "nextSkillId": 13106134,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBD6",
+    "skillLv": 10,
+    "nextSkillId": 13106135,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBD7",
+    "skillLv": 11,
+    "nextSkillId": 13106136,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBD8",
+    "skillLv": 12,
+    "nextSkillId": 13106137,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBD9",
+    "skillLv": 13,
+    "nextSkillId": 13106138,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBDA",
+    "skillLv": 14,
+    "nextSkillId": 13106139,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBDB",
+    "skillLv": 15,
+    "nextSkillId": 13106140,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBDC",
+    "skillLv": 16,
+    "nextSkillId": 13106141,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBDD",
+    "skillLv": 17,
+    "nextSkillId": 13106142,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBDE",
+    "skillLv": 18,
+    "nextSkillId": 13106143,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBDF",
+    "skillLv": 19,
+    "nextSkillId": 13106144,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBE0",
+    "skillLv": 20,
+    "nextSkillId": 13106145,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBE1",
+    "skillLv": 21,
+    "nextSkillId": 13106146,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBE2",
+    "skillLv": 22,
+    "nextSkillId": 13106147,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBE3",
+    "skillLv": 23,
+    "nextSkillId": 13106148,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBE4",
+    "skillLv": 24,
+    "nextSkillId": 13106149,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBE5",
+    "skillLv": 25,
+    "nextSkillId": 13106150,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBE6",
+    "skillLv": 26,
+    "nextSkillId": 13106151,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBE7",
+    "skillLv": 27,
+    "nextSkillId": 13106152,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBE8",
+    "skillLv": 28,
+    "nextSkillId": 13106153,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBE9",
+    "skillLv": 29,
+    "nextSkillId": 13106154,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBEA",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E6",
+    "skillLv": 0,
+    "nextSkillId": 13106156,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBEC",
+    "skillLv": 1,
+    "nextSkillId": 13106157,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBED",
+    "skillLv": 2,
+    "nextSkillId": 13106158,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBEE",
+    "skillLv": 3,
+    "nextSkillId": 13106159,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBEF",
+    "skillLv": 4,
+    "nextSkillId": 13106160,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBF0",
+    "skillLv": 5,
+    "nextSkillId": 13106161,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBF1",
+    "skillLv": 6,
+    "nextSkillId": 13106162,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBF2",
+    "skillLv": 7,
+    "nextSkillId": 13106163,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBF3",
+    "skillLv": 8,
+    "nextSkillId": 13106164,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBF4",
+    "skillLv": 9,
+    "nextSkillId": 13106165,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBF5",
+    "skillLv": 10,
+    "nextSkillId": 13106166,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBF6",
+    "skillLv": 11,
+    "nextSkillId": 13106167,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBF7",
+    "skillLv": 12,
+    "nextSkillId": 13106168,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBF8",
+    "skillLv": 13,
+    "nextSkillId": 13106169,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBF9",
+    "skillLv": 14,
+    "nextSkillId": 13106170,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBFA",
+    "skillLv": 15,
+    "nextSkillId": 13106171,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBFB",
+    "skillLv": 16,
+    "nextSkillId": 13106172,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBFC",
+    "skillLv": 17,
+    "nextSkillId": 13106173,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBFD",
+    "skillLv": 18,
+    "nextSkillId": 13106174,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBFE",
+    "skillLv": 19,
+    "nextSkillId": 13106175,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBFF",
+    "skillLv": 20,
+    "nextSkillId": 13106176,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC00",
+    "skillLv": 21,
+    "nextSkillId": 13106177,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC01",
+    "skillLv": 22,
+    "nextSkillId": 13106178,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC02",
+    "skillLv": 23,
+    "nextSkillId": 13106179,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC03",
+    "skillLv": 24,
+    "nextSkillId": 13106180,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC04",
+    "skillLv": 25,
+    "nextSkillId": 13106181,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC05",
+    "skillLv": 26,
+    "nextSkillId": 13106182,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC06",
+    "skillLv": 27,
+    "nextSkillId": 13106183,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC07",
+    "skillLv": 28,
+    "nextSkillId": 13106184,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC08",
+    "skillLv": 29,
+    "nextSkillId": 13106185,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC09",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E7",
+    "skillLv": 0,
+    "nextSkillId": 13106187,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC0B",
+    "skillLv": 1,
+    "nextSkillId": 13106188,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC0C",
+    "skillLv": 2,
+    "nextSkillId": 13106189,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC0D",
+    "skillLv": 3,
+    "nextSkillId": 13106190,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC0E",
+    "skillLv": 4,
+    "nextSkillId": 13106191,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC0F",
+    "skillLv": 5,
+    "nextSkillId": 13106192,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC10",
+    "skillLv": 6,
+    "nextSkillId": 13106193,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC11",
+    "skillLv": 7,
+    "nextSkillId": 13106194,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC12",
+    "skillLv": 8,
+    "nextSkillId": 13106195,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC13",
+    "skillLv": 9,
+    "nextSkillId": 13106196,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC14",
+    "skillLv": 10,
+    "nextSkillId": 13106197,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC15",
+    "skillLv": 11,
+    "nextSkillId": 13106198,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC16",
+    "skillLv": 12,
+    "nextSkillId": 13106199,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC17",
+    "skillLv": 13,
+    "nextSkillId": 13106200,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC18",
+    "skillLv": 14,
+    "nextSkillId": 13106201,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC19",
+    "skillLv": 15,
+    "nextSkillId": 13106202,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC1A",
+    "skillLv": 16,
+    "nextSkillId": 13106203,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC1B",
+    "skillLv": 17,
+    "nextSkillId": 13106204,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC1C",
+    "skillLv": 18,
+    "nextSkillId": 13106205,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC1D",
+    "skillLv": 19,
+    "nextSkillId": 13106206,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC1E",
+    "skillLv": 20,
+    "nextSkillId": 13106207,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC1F",
+    "skillLv": 21,
+    "nextSkillId": 13106208,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC20",
+    "skillLv": 22,
+    "nextSkillId": 13106209,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC21",
+    "skillLv": 23,
+    "nextSkillId": 13106210,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC22",
+    "skillLv": 24,
+    "nextSkillId": 13106211,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC23",
+    "skillLv": 25,
+    "nextSkillId": 13106212,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC24",
+    "skillLv": 26,
+    "nextSkillId": 13106213,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC25",
+    "skillLv": 27,
+    "nextSkillId": 13106214,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC26",
+    "skillLv": 28,
+    "nextSkillId": 13106215,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC27",
+    "skillLv": 29,
+    "nextSkillId": 13106216,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC28",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E8",
+    "skillLv": 0,
+    "nextSkillId": 13106218,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC2A",
+    "skillLv": 1,
+    "nextSkillId": 13106219,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC2B",
+    "skillLv": 2,
+    "nextSkillId": 13106220,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC2C",
+    "skillLv": 3,
+    "nextSkillId": 13106221,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC2D",
+    "skillLv": 4,
+    "nextSkillId": 13106222,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC2E",
+    "skillLv": 5,
+    "nextSkillId": 13106223,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC2F",
+    "skillLv": 6,
+    "nextSkillId": 13106224,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC30",
+    "skillLv": 7,
+    "nextSkillId": 13106225,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC31",
+    "skillLv": 8,
+    "nextSkillId": 13106226,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC32",
+    "skillLv": 9,
+    "nextSkillId": 13106227,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC33",
+    "skillLv": 10,
+    "nextSkillId": 13106228,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC34",
+    "skillLv": 11,
+    "nextSkillId": 13106229,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC35",
+    "skillLv": 12,
+    "nextSkillId": 13106230,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC36",
+    "skillLv": 13,
+    "nextSkillId": 13106231,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC37",
+    "skillLv": 14,
+    "nextSkillId": 13106232,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC38",
+    "skillLv": 15,
+    "nextSkillId": 13106233,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC39",
+    "skillLv": 16,
+    "nextSkillId": 13106234,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC3A",
+    "skillLv": 17,
+    "nextSkillId": 13106235,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC3B",
+    "skillLv": 18,
+    "nextSkillId": 13106236,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC3C",
+    "skillLv": 19,
+    "nextSkillId": 13106237,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC3D",
+    "skillLv": 20,
+    "nextSkillId": 13106238,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC3E",
+    "skillLv": 21,
+    "nextSkillId": 13106239,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC3F",
+    "skillLv": 22,
+    "nextSkillId": 13106240,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC40",
+    "skillLv": 23,
+    "nextSkillId": 13106241,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC41",
+    "skillLv": 24,
+    "nextSkillId": 13106242,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC42",
+    "skillLv": 25,
+    "nextSkillId": 13106243,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC43",
+    "skillLv": 26,
+    "nextSkillId": 13106244,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC44",
+    "skillLv": 27,
+    "nextSkillId": 13106245,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC45",
+    "skillLv": 28,
+    "nextSkillId": 13106246,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC46",
+    "skillLv": 29,
+    "nextSkillId": 13106247,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC47",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E9",
+    "skillLv": 0,
+    "nextSkillId": 13106249,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC49",
+    "skillLv": 1,
+    "nextSkillId": 13106250,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC4A",
+    "skillLv": 2,
+    "nextSkillId": 13106251,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC4B",
+    "skillLv": 3,
+    "nextSkillId": 13106252,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC4C",
+    "skillLv": 4,
+    "nextSkillId": 13106253,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC4D",
+    "skillLv": 5,
+    "nextSkillId": 13106254,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC4E",
+    "skillLv": 6,
+    "nextSkillId": 13106255,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC4F",
+    "skillLv": 7,
+    "nextSkillId": 13106256,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC50",
+    "skillLv": 8,
+    "nextSkillId": 13106257,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC51",
+    "skillLv": 9,
+    "nextSkillId": 13106258,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC52",
+    "skillLv": 10,
+    "nextSkillId": 13106259,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC53",
+    "skillLv": 11,
+    "nextSkillId": 13106260,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC54",
+    "skillLv": 12,
+    "nextSkillId": 13106261,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC55",
+    "skillLv": 13,
+    "nextSkillId": 13106262,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC56",
+    "skillLv": 14,
+    "nextSkillId": 13106263,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC57",
+    "skillLv": 15,
+    "nextSkillId": 13106264,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC58",
+    "skillLv": 16,
+    "nextSkillId": 13106265,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC59",
+    "skillLv": 17,
+    "nextSkillId": 13106266,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC5A",
+    "skillLv": 18,
+    "nextSkillId": 13106267,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC5B",
+    "skillLv": 19,
+    "nextSkillId": 13106268,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC5C",
+    "skillLv": 20,
+    "nextSkillId": 13106269,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC5D",
+    "skillLv": 21,
+    "nextSkillId": 13106270,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC5E",
+    "skillLv": 22,
+    "nextSkillId": 13106271,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC5F",
+    "skillLv": 23,
+    "nextSkillId": 13106272,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC60",
+    "skillLv": 24,
+    "nextSkillId": 13106273,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC61",
+    "skillLv": 25,
+    "nextSkillId": 13106274,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC62",
+    "skillLv": 26,
+    "nextSkillId": 13106275,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC63",
+    "skillLv": 27,
+    "nextSkillId": 13106276,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC64",
+    "skillLv": 28,
+    "nextSkillId": 13106277,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC65",
+    "skillLv": 29,
+    "nextSkillId": 13106278,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC66",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3ED",
+    "skillLv": 0,
+    "nextSkillId": 13106280,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC68",
+    "skillLv": 1,
+    "nextSkillId": 13106281,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC69",
+    "skillLv": 2,
+    "nextSkillId": 13106282,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC6A",
+    "skillLv": 3,
+    "nextSkillId": 13106283,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC6B",
+    "skillLv": 4,
+    "nextSkillId": 13106284,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC6C",
+    "skillLv": 5,
+    "nextSkillId": 13106285,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC6D",
+    "skillLv": 6,
+    "nextSkillId": 13106286,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC6E",
+    "skillLv": 7,
+    "nextSkillId": 13106287,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC6F",
+    "skillLv": 8,
+    "nextSkillId": 13106288,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC70",
+    "skillLv": 9,
+    "nextSkillId": 13106289,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC71",
+    "skillLv": 10,
+    "nextSkillId": 13106290,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC72",
+    "skillLv": 11,
+    "nextSkillId": 13106291,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC73",
+    "skillLv": 12,
+    "nextSkillId": 13106292,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC74",
+    "skillLv": 13,
+    "nextSkillId": 13106293,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC75",
+    "skillLv": 14,
+    "nextSkillId": 13106294,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC76",
+    "skillLv": 15,
+    "nextSkillId": 13106295,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC77",
+    "skillLv": 16,
+    "nextSkillId": 13106296,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC78",
+    "skillLv": 17,
+    "nextSkillId": 13106297,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC79",
+    "skillLv": 18,
+    "nextSkillId": 13106298,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC7A",
+    "skillLv": 19,
+    "nextSkillId": 13106299,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC7B",
+    "skillLv": 20,
+    "nextSkillId": 13106300,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC7C",
+    "skillLv": 21,
+    "nextSkillId": 13106301,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC7D",
+    "skillLv": 22,
+    "nextSkillId": 13106302,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC7E",
+    "skillLv": 23,
+    "nextSkillId": 13106303,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC7F",
+    "skillLv": 24,
+    "nextSkillId": 13106304,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC80",
+    "skillLv": 25,
+    "nextSkillId": 13106305,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC81",
+    "skillLv": 26,
+    "nextSkillId": 13106306,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC82",
+    "skillLv": 27,
+    "nextSkillId": 13106307,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC83",
+    "skillLv": 28,
+    "nextSkillId": 13106308,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC84",
+    "skillLv": 29,
+    "nextSkillId": 13106309,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC85",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F1",
+    "skillLv": 0,
+    "nextSkillId": 13106311,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC87",
+    "skillLv": 1,
+    "nextSkillId": 13106312,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC88",
+    "skillLv": 2,
+    "nextSkillId": 13106313,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC89",
+    "skillLv": 3,
+    "nextSkillId": 13106314,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC8A",
+    "skillLv": 4,
+    "nextSkillId": 13106315,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC8B",
+    "skillLv": 5,
+    "nextSkillId": 13106316,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC8C",
+    "skillLv": 6,
+    "nextSkillId": 13106317,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC8D",
+    "skillLv": 7,
+    "nextSkillId": 13106318,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC8E",
+    "skillLv": 8,
+    "nextSkillId": 13106319,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC8F",
+    "skillLv": 9,
+    "nextSkillId": 13106320,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC90",
+    "skillLv": 10,
+    "nextSkillId": 13106321,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC91",
+    "skillLv": 11,
+    "nextSkillId": 13106322,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC92",
+    "skillLv": 12,
+    "nextSkillId": 13106323,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC93",
+    "skillLv": 13,
+    "nextSkillId": 13106324,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC94",
+    "skillLv": 14,
+    "nextSkillId": 13106325,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC95",
+    "skillLv": 15,
+    "nextSkillId": 13106326,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC96",
+    "skillLv": 16,
+    "nextSkillId": 13106327,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC97",
+    "skillLv": 17,
+    "nextSkillId": 13106328,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC98",
+    "skillLv": 18,
+    "nextSkillId": 13106329,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC99",
+    "skillLv": 19,
+    "nextSkillId": 13106330,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC9A",
+    "skillLv": 20,
+    "nextSkillId": 13106331,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC9B",
+    "skillLv": 21,
+    "nextSkillId": 13106332,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC9C",
+    "skillLv": 22,
+    "nextSkillId": 13106333,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC9D",
+    "skillLv": 23,
+    "nextSkillId": 13106334,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC9E",
+    "skillLv": 24,
+    "nextSkillId": 13106335,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC9F",
+    "skillLv": 25,
+    "nextSkillId": 13106336,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCA0",
+    "skillLv": 26,
+    "nextSkillId": 13106337,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCA1",
+    "skillLv": 27,
+    "nextSkillId": 13106338,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCA2",
+    "skillLv": 28,
+    "nextSkillId": 13106339,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCA3",
+    "skillLv": 29,
+    "nextSkillId": 13106340,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCA4",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F2",
+    "skillLv": 0,
+    "nextSkillId": 13106342,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCA6",
+    "skillLv": 1,
+    "nextSkillId": 13106343,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCA7",
+    "skillLv": 2,
+    "nextSkillId": 13106344,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCA8",
+    "skillLv": 3,
+    "nextSkillId": 13106345,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCA9",
+    "skillLv": 4,
+    "nextSkillId": 13106346,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCAA",
+    "skillLv": 5,
+    "nextSkillId": 13106347,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCAB",
+    "skillLv": 6,
+    "nextSkillId": 13106348,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCAC",
+    "skillLv": 7,
+    "nextSkillId": 13106349,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCAD",
+    "skillLv": 8,
+    "nextSkillId": 13106350,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCAE",
+    "skillLv": 9,
+    "nextSkillId": 13106351,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCAF",
+    "skillLv": 10,
+    "nextSkillId": 13106352,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCB0",
+    "skillLv": 11,
+    "nextSkillId": 13106353,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCB1",
+    "skillLv": 12,
+    "nextSkillId": 13106354,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCB2",
+    "skillLv": 13,
+    "nextSkillId": 13106355,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCB3",
+    "skillLv": 14,
+    "nextSkillId": 13106356,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCB4",
+    "skillLv": 15,
+    "nextSkillId": 13106357,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCB5",
+    "skillLv": 16,
+    "nextSkillId": 13106358,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCB6",
+    "skillLv": 17,
+    "nextSkillId": 13106359,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCB7",
+    "skillLv": 18,
+    "nextSkillId": 13106360,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCB8",
+    "skillLv": 19,
+    "nextSkillId": 13106361,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCB9",
+    "skillLv": 20,
+    "nextSkillId": 13106362,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCBA",
+    "skillLv": 21,
+    "nextSkillId": 13106363,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCBB",
+    "skillLv": 22,
+    "nextSkillId": 13106364,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCBC",
+    "skillLv": 23,
+    "nextSkillId": 13106365,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCBD",
+    "skillLv": 24,
+    "nextSkillId": 13106366,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCBE",
+    "skillLv": 25,
+    "nextSkillId": 13106367,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCBF",
+    "skillLv": 26,
+    "nextSkillId": 13106368,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCC0",
+    "skillLv": 27,
+    "nextSkillId": 13106369,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCC1",
+    "skillLv": 28,
+    "nextSkillId": 13106370,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCC2",
+    "skillLv": 29,
+    "nextSkillId": 13106371,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCC3",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F3",
+    "skillLv": 0,
+    "nextSkillId": 13106373,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCC5",
+    "skillLv": 1,
+    "nextSkillId": 13106374,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCC6",
+    "skillLv": 2,
+    "nextSkillId": 13106375,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCC7",
+    "skillLv": 3,
+    "nextSkillId": 13106376,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCC8",
+    "skillLv": 4,
+    "nextSkillId": 13106377,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCC9",
+    "skillLv": 5,
+    "nextSkillId": 13106378,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCCA",
+    "skillLv": 6,
+    "nextSkillId": 13106379,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCCB",
+    "skillLv": 7,
+    "nextSkillId": 13106380,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCCC",
+    "skillLv": 8,
+    "nextSkillId": 13106381,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCCD",
+    "skillLv": 9,
+    "nextSkillId": 13106382,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCCE",
+    "skillLv": 10,
+    "nextSkillId": 13106383,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCCF",
+    "skillLv": 11,
+    "nextSkillId": 13106384,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCD0",
+    "skillLv": 12,
+    "nextSkillId": 13106385,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCD1",
+    "skillLv": 13,
+    "nextSkillId": 13106386,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCD2",
+    "skillLv": 14,
+    "nextSkillId": 13106387,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCD3",
+    "skillLv": 15,
+    "nextSkillId": 13106388,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCD4",
+    "skillLv": 16,
+    "nextSkillId": 13106389,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCD5",
+    "skillLv": 17,
+    "nextSkillId": 13106390,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCD6",
+    "skillLv": 18,
+    "nextSkillId": 13106391,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCD7",
+    "skillLv": 19,
+    "nextSkillId": 13106392,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCD8",
+    "skillLv": 20,
+    "nextSkillId": 13106393,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCD9",
+    "skillLv": 21,
+    "nextSkillId": 13106394,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCDA",
+    "skillLv": 22,
+    "nextSkillId": 13106395,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCDB",
+    "skillLv": 23,
+    "nextSkillId": 13106396,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCDC",
+    "skillLv": 24,
+    "nextSkillId": 13106397,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCDD",
+    "skillLv": 25,
+    "nextSkillId": 13106398,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCDE",
+    "skillLv": 26,
+    "nextSkillId": 13106399,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCDF",
+    "skillLv": 27,
+    "nextSkillId": 13106400,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCE0",
+    "skillLv": 28,
+    "nextSkillId": 13106401,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCE1",
+    "skillLv": 29,
+    "nextSkillId": 13106402,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCE2",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F4",
+    "skillLv": 0,
+    "nextSkillId": 13106404,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCE4",
+    "skillLv": 1,
+    "nextSkillId": 13106405,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCE5",
+    "skillLv": 2,
+    "nextSkillId": 13106406,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCE6",
+    "skillLv": 3,
+    "nextSkillId": 13106407,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCE7",
+    "skillLv": 4,
+    "nextSkillId": 13106408,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCE8",
+    "skillLv": 5,
+    "nextSkillId": 13106409,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCE9",
+    "skillLv": 6,
+    "nextSkillId": 13106410,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCEA",
+    "skillLv": 7,
+    "nextSkillId": 13106411,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCEB",
+    "skillLv": 8,
+    "nextSkillId": 13106412,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCEC",
+    "skillLv": 9,
+    "nextSkillId": 13106413,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCED",
+    "skillLv": 10,
+    "nextSkillId": 13106414,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCEE",
+    "skillLv": 11,
+    "nextSkillId": 13106415,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCEF",
+    "skillLv": 12,
+    "nextSkillId": 13106416,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCF0",
+    "skillLv": 13,
+    "nextSkillId": 13106417,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCF1",
+    "skillLv": 14,
+    "nextSkillId": 13106418,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCF2",
+    "skillLv": 15,
+    "nextSkillId": 13106419,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCF3",
+    "skillLv": 16,
+    "nextSkillId": 13106420,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCF4",
+    "skillLv": 17,
+    "nextSkillId": 13106421,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCF5",
+    "skillLv": 18,
+    "nextSkillId": 13106422,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCF6",
+    "skillLv": 19,
+    "nextSkillId": 13106423,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCF7",
+    "skillLv": 20,
+    "nextSkillId": 13106424,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCF8",
+    "skillLv": 21,
+    "nextSkillId": 13106425,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCF9",
+    "skillLv": 22,
+    "nextSkillId": 13106426,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCFA",
+    "skillLv": 23,
+    "nextSkillId": 13106427,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCFB",
+    "skillLv": 24,
+    "nextSkillId": 13106428,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCFC",
+    "skillLv": 25,
+    "nextSkillId": 13106429,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCFD",
+    "skillLv": 26,
+    "nextSkillId": 13106430,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCFE",
+    "skillLv": 27,
+    "nextSkillId": 13106431,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCFF",
+    "skillLv": 28,
+    "nextSkillId": 13106432,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD00",
+    "skillLv": 29,
+    "nextSkillId": 13106433,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD01",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F5",
+    "skillLv": 0,
+    "nextSkillId": 13106435,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD03",
+    "skillLv": 1,
+    "nextSkillId": 13106436,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD04",
+    "skillLv": 2,
+    "nextSkillId": 13106437,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD05",
+    "skillLv": 3,
+    "nextSkillId": 13106438,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD06",
+    "skillLv": 4,
+    "nextSkillId": 13106439,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD07",
+    "skillLv": 5,
+    "nextSkillId": 13106440,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD08",
+    "skillLv": 6,
+    "nextSkillId": 13106441,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD09",
+    "skillLv": 7,
+    "nextSkillId": 13106442,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD0A",
+    "skillLv": 8,
+    "nextSkillId": 13106443,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD0B",
+    "skillLv": 9,
+    "nextSkillId": 13106444,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD0C",
+    "skillLv": 10,
+    "nextSkillId": 13106445,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD0D",
+    "skillLv": 11,
+    "nextSkillId": 13106446,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD0E",
+    "skillLv": 12,
+    "nextSkillId": 13106447,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD0F",
+    "skillLv": 13,
+    "nextSkillId": 13106448,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD10",
+    "skillLv": 14,
+    "nextSkillId": 13106449,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD11",
+    "skillLv": 15,
+    "nextSkillId": 13106450,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD12",
+    "skillLv": 16,
+    "nextSkillId": 13106451,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD13",
+    "skillLv": 17,
+    "nextSkillId": 13106452,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD14",
+    "skillLv": 18,
+    "nextSkillId": 13106453,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD15",
+    "skillLv": 19,
+    "nextSkillId": 13106454,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD16",
+    "skillLv": 20,
+    "nextSkillId": 13106455,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD17",
+    "skillLv": 21,
+    "nextSkillId": 13106456,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD18",
+    "skillLv": 22,
+    "nextSkillId": 13106457,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD19",
+    "skillLv": 23,
+    "nextSkillId": 13106458,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD1A",
+    "skillLv": 24,
+    "nextSkillId": 13106459,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD1B",
+    "skillLv": 25,
+    "nextSkillId": 13106460,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD1C",
+    "skillLv": 26,
+    "nextSkillId": 13106461,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD1D",
+    "skillLv": 27,
+    "nextSkillId": 13106462,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD1E",
+    "skillLv": 28,
+    "nextSkillId": 13106463,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD1F",
+    "skillLv": 29,
+    "nextSkillId": 13106464,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD20",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F6",
+    "skillLv": 0,
+    "nextSkillId": 13106466,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD22",
+    "skillLv": 1,
+    "nextSkillId": 13106467,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD23",
+    "skillLv": 2,
+    "nextSkillId": 13106468,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD24",
+    "skillLv": 3,
+    "nextSkillId": 13106469,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD25",
+    "skillLv": 4,
+    "nextSkillId": 13106470,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD26",
+    "skillLv": 5,
+    "nextSkillId": 13106471,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD27",
+    "skillLv": 6,
+    "nextSkillId": 13106472,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD28",
+    "skillLv": 7,
+    "nextSkillId": 13106473,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD29",
+    "skillLv": 8,
+    "nextSkillId": 13106474,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD2A",
+    "skillLv": 9,
+    "nextSkillId": 13106475,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD2B",
+    "skillLv": 10,
+    "nextSkillId": 13106476,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD2C",
+    "skillLv": 11,
+    "nextSkillId": 13106477,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD2D",
+    "skillLv": 12,
+    "nextSkillId": 13106478,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD2E",
+    "skillLv": 13,
+    "nextSkillId": 13106479,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD2F",
+    "skillLv": 14,
+    "nextSkillId": 13106480,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD30",
+    "skillLv": 15,
+    "nextSkillId": 13106481,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD31",
+    "skillLv": 16,
+    "nextSkillId": 13106482,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD32",
+    "skillLv": 17,
+    "nextSkillId": 13106483,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD33",
+    "skillLv": 18,
+    "nextSkillId": 13106484,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD34",
+    "skillLv": 19,
+    "nextSkillId": 13106485,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD35",
+    "skillLv": 20,
+    "nextSkillId": 13106486,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD36",
+    "skillLv": 21,
+    "nextSkillId": 13106487,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD37",
+    "skillLv": 22,
+    "nextSkillId": 13106488,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD38",
+    "skillLv": 23,
+    "nextSkillId": 13106489,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD39",
+    "skillLv": 24,
+    "nextSkillId": 13106490,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD3A",
+    "skillLv": 25,
+    "nextSkillId": 13106491,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD3B",
+    "skillLv": 26,
+    "nextSkillId": 13106492,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD3C",
+    "skillLv": 27,
+    "nextSkillId": 13106493,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD3D",
+    "skillLv": 28,
+    "nextSkillId": 13106494,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD3E",
+    "skillLv": 29,
+    "nextSkillId": 13106495,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD3F",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F7",
+    "skillLv": 0,
+    "nextSkillId": 13106497,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD41",
+    "skillLv": 1,
+    "nextSkillId": 13106498,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD42",
+    "skillLv": 2,
+    "nextSkillId": 13106499,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD43",
+    "skillLv": 3,
+    "nextSkillId": 13106500,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD44",
+    "skillLv": 4,
+    "nextSkillId": 13106501,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD45",
+    "skillLv": 5,
+    "nextSkillId": 13106502,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD46",
+    "skillLv": 6,
+    "nextSkillId": 13106503,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD47",
+    "skillLv": 7,
+    "nextSkillId": 13106504,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD48",
+    "skillLv": 8,
+    "nextSkillId": 13106505,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD49",
+    "skillLv": 9,
+    "nextSkillId": 13106506,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD4A",
+    "skillLv": 10,
+    "nextSkillId": 13106507,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD4B",
+    "skillLv": 11,
+    "nextSkillId": 13106508,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD4C",
+    "skillLv": 12,
+    "nextSkillId": 13106509,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD4D",
+    "skillLv": 13,
+    "nextSkillId": 13106510,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD4E",
+    "skillLv": 14,
+    "nextSkillId": 13106511,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD4F",
+    "skillLv": 15,
+    "nextSkillId": 13106512,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD50",
+    "skillLv": 16,
+    "nextSkillId": 13106513,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD51",
+    "skillLv": 17,
+    "nextSkillId": 13106514,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD52",
+    "skillLv": 18,
+    "nextSkillId": 13106515,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD53",
+    "skillLv": 19,
+    "nextSkillId": 13106516,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD54",
+    "skillLv": 20,
+    "nextSkillId": 13106517,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD55",
+    "skillLv": 21,
+    "nextSkillId": 13106518,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD56",
+    "skillLv": 22,
+    "nextSkillId": 13106519,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD57",
+    "skillLv": 23,
+    "nextSkillId": 13106520,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD58",
+    "skillLv": 24,
+    "nextSkillId": 13106521,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD59",
+    "skillLv": 25,
+    "nextSkillId": 13106522,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD5A",
+    "skillLv": 26,
+    "nextSkillId": 13106523,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD5B",
+    "skillLv": 27,
+    "nextSkillId": 13106524,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD5C",
+    "skillLv": 28,
+    "nextSkillId": 13106525,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD5D",
+    "skillLv": 29,
+    "nextSkillId": 13106526,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD5E",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F8",
+    "skillLv": 0,
+    "nextSkillId": 13106528,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD60",
+    "skillLv": 1,
+    "nextSkillId": 13106529,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD61",
+    "skillLv": 2,
+    "nextSkillId": 13106530,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD62",
+    "skillLv": 3,
+    "nextSkillId": 13106531,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD63",
+    "skillLv": 4,
+    "nextSkillId": 13106532,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD64",
+    "skillLv": 5,
+    "nextSkillId": 13106533,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD65",
+    "skillLv": 6,
+    "nextSkillId": 13106534,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD66",
+    "skillLv": 7,
+    "nextSkillId": 13106535,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD67",
+    "skillLv": 8,
+    "nextSkillId": 13106536,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD68",
+    "skillLv": 9,
+    "nextSkillId": 13106537,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD69",
+    "skillLv": 10,
+    "nextSkillId": 13106538,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD6A",
+    "skillLv": 11,
+    "nextSkillId": 13106539,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD6B",
+    "skillLv": 12,
+    "nextSkillId": 13106540,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD6C",
+    "skillLv": 13,
+    "nextSkillId": 13106541,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD6D",
+    "skillLv": 14,
+    "nextSkillId": 13106542,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD6E",
+    "skillLv": 15,
+    "nextSkillId": 13106543,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD6F",
+    "skillLv": 16,
+    "nextSkillId": 13106544,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD70",
+    "skillLv": 17,
+    "nextSkillId": 13106545,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD71",
+    "skillLv": 18,
+    "nextSkillId": 13106546,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD72",
+    "skillLv": 19,
+    "nextSkillId": 13106547,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD73",
+    "skillLv": 20,
+    "nextSkillId": 13106548,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD74",
+    "skillLv": 21,
+    "nextSkillId": 13106549,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD75",
+    "skillLv": 22,
+    "nextSkillId": 13106550,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD76",
+    "skillLv": 23,
+    "nextSkillId": 13106551,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD77",
+    "skillLv": 24,
+    "nextSkillId": 13106552,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD78",
+    "skillLv": 25,
+    "nextSkillId": 13106553,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD79",
+    "skillLv": 26,
+    "nextSkillId": 13106554,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD7A",
+    "skillLv": 27,
+    "nextSkillId": 13106555,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD7B",
+    "skillLv": 28,
+    "nextSkillId": 13106556,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD7C",
+    "skillLv": 29,
+    "nextSkillId": 13106557,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD7D",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F9",
+    "skillLv": 0,
+    "nextSkillId": 13106559,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD7F",
+    "skillLv": 1,
+    "nextSkillId": 13106560,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD80",
+    "skillLv": 2,
+    "nextSkillId": 13106561,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD81",
+    "skillLv": 3,
+    "nextSkillId": 13106562,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD82",
+    "skillLv": 4,
+    "nextSkillId": 13106563,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD83",
+    "skillLv": 5,
+    "nextSkillId": 13106564,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD84",
+    "skillLv": 6,
+    "nextSkillId": 13106565,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD85",
+    "skillLv": 7,
+    "nextSkillId": 13106566,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD86",
+    "skillLv": 8,
+    "nextSkillId": 13106567,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD87",
+    "skillLv": 9,
+    "nextSkillId": 13106568,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD88",
+    "skillLv": 10,
+    "nextSkillId": 13106569,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD89",
+    "skillLv": 11,
+    "nextSkillId": 13106570,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD8A",
+    "skillLv": 12,
+    "nextSkillId": 13106571,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD8B",
+    "skillLv": 13,
+    "nextSkillId": 13106572,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD8C",
+    "skillLv": 14,
+    "nextSkillId": 13106573,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD8D",
+    "skillLv": 15,
+    "nextSkillId": 13106574,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD8E",
+    "skillLv": 16,
+    "nextSkillId": 13106575,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD8F",
+    "skillLv": 17,
+    "nextSkillId": 13106576,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD90",
+    "skillLv": 18,
+    "nextSkillId": 13106577,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD91",
+    "skillLv": 19,
+    "nextSkillId": 13106578,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD92",
+    "skillLv": 20,
+    "nextSkillId": 13106579,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD93",
+    "skillLv": 21,
+    "nextSkillId": 13106580,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD94",
+    "skillLv": 22,
+    "nextSkillId": 13106581,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD95",
+    "skillLv": 23,
+    "nextSkillId": 13106582,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD96",
+    "skillLv": 24,
+    "nextSkillId": 13106583,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD97",
+    "skillLv": 25,
+    "nextSkillId": 13106584,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD98",
+    "skillLv": 26,
+    "nextSkillId": 13106585,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD99",
+    "skillLv": 27,
+    "nextSkillId": 13106586,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD9A",
+    "skillLv": 28,
+    "nextSkillId": 13106587,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD9B",
+    "skillLv": 29,
+    "nextSkillId": 13106588,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD9C",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3FD",
+    "skillLv": 0,
+    "nextSkillId": 13106590,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD9E",
+    "skillLv": 1,
+    "nextSkillId": 13106591,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD9F",
+    "skillLv": 2,
+    "nextSkillId": 13106592,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDA0",
+    "skillLv": 3,
+    "nextSkillId": 13106593,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDA1",
+    "skillLv": 4,
+    "nextSkillId": 13106594,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDA2",
+    "skillLv": 5,
+    "nextSkillId": 13106595,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDA3",
+    "skillLv": 6,
+    "nextSkillId": 13106596,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDA4",
+    "skillLv": 7,
+    "nextSkillId": 13106597,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDA5",
+    "skillLv": 8,
+    "nextSkillId": 13106598,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDA6",
+    "skillLv": 9,
+    "nextSkillId": 13106599,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDA7",
+    "skillLv": 10,
+    "nextSkillId": 13106600,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDA8",
+    "skillLv": 11,
+    "nextSkillId": 13106601,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDA9",
+    "skillLv": 12,
+    "nextSkillId": 13106602,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDAA",
+    "skillLv": 13,
+    "nextSkillId": 13106603,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDAB",
+    "skillLv": 14,
+    "nextSkillId": 13106604,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDAC",
+    "skillLv": 15,
+    "nextSkillId": 13106605,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDAD",
+    "skillLv": 16,
+    "nextSkillId": 13106606,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDAE",
+    "skillLv": 17,
+    "nextSkillId": 13106607,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDAF",
+    "skillLv": 18,
+    "nextSkillId": 13106608,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDB0",
+    "skillLv": 19,
+    "nextSkillId": 13106609,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDB1",
+    "skillLv": 20,
+    "nextSkillId": 13106610,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDB2",
+    "skillLv": 21,
+    "nextSkillId": 13106611,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDB3",
+    "skillLv": 22,
+    "nextSkillId": 13106612,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDB4",
+    "skillLv": 23,
+    "nextSkillId": 13106613,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDB5",
+    "skillLv": 24,
+    "nextSkillId": 13106614,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDB6",
+    "skillLv": 25,
+    "nextSkillId": 13106615,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDB7",
+    "skillLv": 26,
+    "nextSkillId": 13106616,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDB8",
+    "skillLv": 27,
+    "nextSkillId": 13106617,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDB9",
+    "skillLv": 28,
+    "nextSkillId": 13106618,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDBA",
+    "skillLv": 29,
+    "nextSkillId": 13106619,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDBB",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E401",
+    "skillLv": 0,
+    "nextSkillId": 13106621,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDBD",
+    "skillLv": 1,
+    "nextSkillId": 13106622,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDBE",
+    "skillLv": 2,
+    "nextSkillId": 13106623,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDBF",
+    "skillLv": 3,
+    "nextSkillId": 13106624,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDC0",
+    "skillLv": 4,
+    "nextSkillId": 13106625,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDC1",
+    "skillLv": 5,
+    "nextSkillId": 13106626,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDC2",
+    "skillLv": 6,
+    "nextSkillId": 13106627,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDC3",
+    "skillLv": 7,
+    "nextSkillId": 13106628,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDC4",
+    "skillLv": 8,
+    "nextSkillId": 13106629,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDC5",
+    "skillLv": 9,
+    "nextSkillId": 13106630,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDC6",
+    "skillLv": 10,
+    "nextSkillId": 13106631,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDC7",
+    "skillLv": 11,
+    "nextSkillId": 13106632,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDC8",
+    "skillLv": 12,
+    "nextSkillId": 13106633,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDC9",
+    "skillLv": 13,
+    "nextSkillId": 13106634,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDCA",
+    "skillLv": 14,
+    "nextSkillId": 13106635,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDCB",
+    "skillLv": 15,
+    "nextSkillId": 13106636,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDCC",
+    "skillLv": 16,
+    "nextSkillId": 13106637,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDCD",
+    "skillLv": 17,
+    "nextSkillId": 13106638,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDCE",
+    "skillLv": 18,
+    "nextSkillId": 13106639,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDCF",
+    "skillLv": 19,
+    "nextSkillId": 13106640,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDD0",
+    "skillLv": 20,
+    "nextSkillId": 13106641,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDD1",
+    "skillLv": 21,
+    "nextSkillId": 13106642,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDD2",
+    "skillLv": 22,
+    "nextSkillId": 13106643,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDD3",
+    "skillLv": 23,
+    "nextSkillId": 13106644,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDD4",
+    "skillLv": 24,
+    "nextSkillId": 13106645,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDD5",
+    "skillLv": 25,
+    "nextSkillId": 13106646,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDD6",
+    "skillLv": 26,
+    "nextSkillId": 13106647,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDD7",
+    "skillLv": 27,
+    "nextSkillId": 13106648,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDD8",
+    "skillLv": 28,
+    "nextSkillId": 13106649,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDD9",
+    "skillLv": 29,
+    "nextSkillId": 13106650,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDDA",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E402",
+    "skillLv": 0,
+    "nextSkillId": 13106652,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDDC",
+    "skillLv": 1,
+    "nextSkillId": 13106653,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDDD",
+    "skillLv": 2,
+    "nextSkillId": 13106654,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDDE",
+    "skillLv": 3,
+    "nextSkillId": 13106655,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDDF",
+    "skillLv": 4,
+    "nextSkillId": 13106656,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDE0",
+    "skillLv": 5,
+    "nextSkillId": 13106657,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDE1",
+    "skillLv": 6,
+    "nextSkillId": 13106658,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDE2",
+    "skillLv": 7,
+    "nextSkillId": 13106659,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDE3",
+    "skillLv": 8,
+    "nextSkillId": 13106660,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDE4",
+    "skillLv": 9,
+    "nextSkillId": 13106661,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDE5",
+    "skillLv": 10,
+    "nextSkillId": 13106662,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDE6",
+    "skillLv": 11,
+    "nextSkillId": 13106663,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDE7",
+    "skillLv": 12,
+    "nextSkillId": 13106664,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDE8",
+    "skillLv": 13,
+    "nextSkillId": 13106665,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDE9",
+    "skillLv": 14,
+    "nextSkillId": 13106666,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDEA",
+    "skillLv": 15,
+    "nextSkillId": 13106667,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDEB",
+    "skillLv": 16,
+    "nextSkillId": 13106668,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDEC",
+    "skillLv": 17,
+    "nextSkillId": 13106669,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDED",
+    "skillLv": 18,
+    "nextSkillId": 13106670,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDEE",
+    "skillLv": 19,
+    "nextSkillId": 13106671,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDEF",
+    "skillLv": 20,
+    "nextSkillId": 13106672,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDF0",
+    "skillLv": 21,
+    "nextSkillId": 13106673,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDF1",
+    "skillLv": 22,
+    "nextSkillId": 13106674,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDF2",
+    "skillLv": 23,
+    "nextSkillId": 13106675,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDF3",
+    "skillLv": 24,
+    "nextSkillId": 13106676,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDF4",
+    "skillLv": 25,
+    "nextSkillId": 13106677,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDF5",
+    "skillLv": 26,
+    "nextSkillId": 13106678,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDF6",
+    "skillLv": 27,
+    "nextSkillId": 13106679,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDF7",
+    "skillLv": 28,
+    "nextSkillId": 13106680,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDF8",
+    "skillLv": 29,
+    "nextSkillId": 13106681,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDF9",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E403",
+    "skillLv": 0,
+    "nextSkillId": 13106683,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDFB",
+    "skillLv": 1,
+    "nextSkillId": 13106684,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDFC",
+    "skillLv": 2,
+    "nextSkillId": 13106685,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDFD",
+    "skillLv": 3,
+    "nextSkillId": 13106686,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDFE",
+    "skillLv": 4,
+    "nextSkillId": 13106687,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDFF",
+    "skillLv": 5,
+    "nextSkillId": 13106688,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE00",
+    "skillLv": 6,
+    "nextSkillId": 13106689,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE01",
+    "skillLv": 7,
+    "nextSkillId": 13106690,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE02",
+    "skillLv": 8,
+    "nextSkillId": 13106691,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE03",
+    "skillLv": 9,
+    "nextSkillId": 13106692,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE04",
+    "skillLv": 10,
+    "nextSkillId": 13106693,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE05",
+    "skillLv": 11,
+    "nextSkillId": 13106694,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE06",
+    "skillLv": 12,
+    "nextSkillId": 13106695,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE07",
+    "skillLv": 13,
+    "nextSkillId": 13106696,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE08",
+    "skillLv": 14,
+    "nextSkillId": 13106697,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE09",
+    "skillLv": 15,
+    "nextSkillId": 13106698,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE0A",
+    "skillLv": 16,
+    "nextSkillId": 13106699,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE0B",
+    "skillLv": 17,
+    "nextSkillId": 13106700,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE0C",
+    "skillLv": 18,
+    "nextSkillId": 13106701,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE0D",
+    "skillLv": 19,
+    "nextSkillId": 13106702,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE0E",
+    "skillLv": 20,
+    "nextSkillId": 13106703,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE0F",
+    "skillLv": 21,
+    "nextSkillId": 13106704,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE10",
+    "skillLv": 22,
+    "nextSkillId": 13106705,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE11",
+    "skillLv": 23,
+    "nextSkillId": 13106706,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE12",
+    "skillLv": 24,
+    "nextSkillId": 13106707,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE13",
+    "skillLv": 25,
+    "nextSkillId": 13106708,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE14",
+    "skillLv": 26,
+    "nextSkillId": 13106709,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE15",
+    "skillLv": 27,
+    "nextSkillId": 13106710,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE16",
+    "skillLv": 28,
+    "nextSkillId": 13106711,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE17",
+    "skillLv": 29,
+    "nextSkillId": 13106712,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE18",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E404",
+    "skillLv": 0,
+    "nextSkillId": 13106714,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE1A",
+    "skillLv": 1,
+    "nextSkillId": 13106715,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE1B",
+    "skillLv": 2,
+    "nextSkillId": 13106716,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE1C",
+    "skillLv": 3,
+    "nextSkillId": 13106717,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE1D",
+    "skillLv": 4,
+    "nextSkillId": 13106718,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE1E",
+    "skillLv": 5,
+    "nextSkillId": 13106719,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE1F",
+    "skillLv": 6,
+    "nextSkillId": 13106720,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE20",
+    "skillLv": 7,
+    "nextSkillId": 13106721,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE21",
+    "skillLv": 8,
+    "nextSkillId": 13106722,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE22",
+    "skillLv": 9,
+    "nextSkillId": 13106723,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE23",
+    "skillLv": 10,
+    "nextSkillId": 13106724,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE24",
+    "skillLv": 11,
+    "nextSkillId": 13106725,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE25",
+    "skillLv": 12,
+    "nextSkillId": 13106726,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE26",
+    "skillLv": 13,
+    "nextSkillId": 13106727,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE27",
+    "skillLv": 14,
+    "nextSkillId": 13106728,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE28",
+    "skillLv": 15,
+    "nextSkillId": 13106729,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE29",
+    "skillLv": 16,
+    "nextSkillId": 13106730,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE2A",
+    "skillLv": 17,
+    "nextSkillId": 13106731,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE2B",
+    "skillLv": 18,
+    "nextSkillId": 13106732,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE2C",
+    "skillLv": 19,
+    "nextSkillId": 13106733,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE2D",
+    "skillLv": 20,
+    "nextSkillId": 13106734,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE2E",
+    "skillLv": 21,
+    "nextSkillId": 13106735,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE2F",
+    "skillLv": 22,
+    "nextSkillId": 13106736,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE30",
+    "skillLv": 23,
+    "nextSkillId": 13106737,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE31",
+    "skillLv": 24,
+    "nextSkillId": 13106738,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE32",
+    "skillLv": 25,
+    "nextSkillId": 13106739,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE33",
+    "skillLv": 26,
+    "nextSkillId": 13106740,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE34",
+    "skillLv": 27,
+    "nextSkillId": 13106741,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE35",
+    "skillLv": 28,
+    "nextSkillId": 13106742,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE36",
+    "skillLv": 29,
+    "nextSkillId": 13106743,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE37",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E405",
+    "skillLv": 0,
+    "nextSkillId": 13106745,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE39",
+    "skillLv": 1,
+    "nextSkillId": 13106746,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE3A",
+    "skillLv": 2,
+    "nextSkillId": 13106747,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE3B",
+    "skillLv": 3,
+    "nextSkillId": 13106748,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE3C",
+    "skillLv": 4,
+    "nextSkillId": 13106749,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE3D",
+    "skillLv": 5,
+    "nextSkillId": 13106750,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE3E",
+    "skillLv": 6,
+    "nextSkillId": 13106751,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE3F",
+    "skillLv": 7,
+    "nextSkillId": 13106752,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE40",
+    "skillLv": 8,
+    "nextSkillId": 13106753,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE41",
+    "skillLv": 9,
+    "nextSkillId": 13106754,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE42",
+    "skillLv": 10,
+    "nextSkillId": 13106755,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE43",
+    "skillLv": 11,
+    "nextSkillId": 13106756,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE44",
+    "skillLv": 12,
+    "nextSkillId": 13106757,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE45",
+    "skillLv": 13,
+    "nextSkillId": 13106758,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE46",
+    "skillLv": 14,
+    "nextSkillId": 13106759,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE47",
+    "skillLv": 15,
+    "nextSkillId": 13106760,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE48",
+    "skillLv": 16,
+    "nextSkillId": 13106761,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE49",
+    "skillLv": 17,
+    "nextSkillId": 13106762,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE4A",
+    "skillLv": 18,
+    "nextSkillId": 13106763,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE4B",
+    "skillLv": 19,
+    "nextSkillId": 13106764,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE4C",
+    "skillLv": 20,
+    "nextSkillId": 13106765,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE4D",
+    "skillLv": 21,
+    "nextSkillId": 13106766,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE4E",
+    "skillLv": 22,
+    "nextSkillId": 13106767,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE4F",
+    "skillLv": 23,
+    "nextSkillId": 13106768,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE50",
+    "skillLv": 24,
+    "nextSkillId": 13106769,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE51",
+    "skillLv": 25,
+    "nextSkillId": 13106770,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE52",
+    "skillLv": 26,
+    "nextSkillId": 13106771,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE53",
+    "skillLv": 27,
+    "nextSkillId": 13106772,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE54",
+    "skillLv": 28,
+    "nextSkillId": 13106773,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE55",
+    "skillLv": 29,
+    "nextSkillId": 13106774,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE56",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E406",
+    "skillLv": 0,
+    "nextSkillId": 13106776,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE58",
+    "skillLv": 1,
+    "nextSkillId": 13106777,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE59",
+    "skillLv": 2,
+    "nextSkillId": 13106778,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE5A",
+    "skillLv": 3,
+    "nextSkillId": 13106779,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE5B",
+    "skillLv": 4,
+    "nextSkillId": 13106780,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE5C",
+    "skillLv": 5,
+    "nextSkillId": 13106781,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE5D",
+    "skillLv": 6,
+    "nextSkillId": 13106782,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE5E",
+    "skillLv": 7,
+    "nextSkillId": 13106783,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE5F",
+    "skillLv": 8,
+    "nextSkillId": 13106784,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE60",
+    "skillLv": 9,
+    "nextSkillId": 13106785,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE61",
+    "skillLv": 10,
+    "nextSkillId": 13106786,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE62",
+    "skillLv": 11,
+    "nextSkillId": 13106787,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE63",
+    "skillLv": 12,
+    "nextSkillId": 13106788,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE64",
+    "skillLv": 13,
+    "nextSkillId": 13106789,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE65",
+    "skillLv": 14,
+    "nextSkillId": 13106790,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE66",
+    "skillLv": 15,
+    "nextSkillId": 13106791,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE67",
+    "skillLv": 16,
+    "nextSkillId": 13106792,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE68",
+    "skillLv": 17,
+    "nextSkillId": 13106793,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE69",
+    "skillLv": 18,
+    "nextSkillId": 13106794,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE6A",
+    "skillLv": 19,
+    "nextSkillId": 13106795,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE6B",
+    "skillLv": 20,
+    "nextSkillId": 13106796,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE6C",
+    "skillLv": 21,
+    "nextSkillId": 13106797,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE6D",
+    "skillLv": 22,
+    "nextSkillId": 13106798,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE6E",
+    "skillLv": 23,
+    "nextSkillId": 13106799,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE6F",
+    "skillLv": 24,
+    "nextSkillId": 13106800,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE70",
+    "skillLv": 25,
+    "nextSkillId": 13106801,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE71",
+    "skillLv": 26,
+    "nextSkillId": 13106802,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE72",
+    "skillLv": 27,
+    "nextSkillId": 13106803,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE73",
+    "skillLv": 28,
+    "nextSkillId": 13106804,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE74",
+    "skillLv": 29,
+    "nextSkillId": 13106805,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE75",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E407",
+    "skillLv": 0,
+    "nextSkillId": 13106807,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE77",
+    "skillLv": 1,
+    "nextSkillId": 13106808,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE78",
+    "skillLv": 2,
+    "nextSkillId": 13106809,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE79",
+    "skillLv": 3,
+    "nextSkillId": 13106810,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE7A",
+    "skillLv": 4,
+    "nextSkillId": 13106811,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE7B",
+    "skillLv": 5,
+    "nextSkillId": 13106812,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE7C",
+    "skillLv": 6,
+    "nextSkillId": 13106813,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE7D",
+    "skillLv": 7,
+    "nextSkillId": 13106814,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE7E",
+    "skillLv": 8,
+    "nextSkillId": 13106815,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE7F",
+    "skillLv": 9,
+    "nextSkillId": 13106816,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE80",
+    "skillLv": 10,
+    "nextSkillId": 13106817,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE81",
+    "skillLv": 11,
+    "nextSkillId": 13106818,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE82",
+    "skillLv": 12,
+    "nextSkillId": 13106819,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE83",
+    "skillLv": 13,
+    "nextSkillId": 13106820,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE84",
+    "skillLv": 14,
+    "nextSkillId": 13106821,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE85",
+    "skillLv": 15,
+    "nextSkillId": 13106822,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE86",
+    "skillLv": 16,
+    "nextSkillId": 13106823,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE87",
+    "skillLv": 17,
+    "nextSkillId": 13106824,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE88",
+    "skillLv": 18,
+    "nextSkillId": 13106825,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE89",
+    "skillLv": 19,
+    "nextSkillId": 13106826,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE8A",
+    "skillLv": 20,
+    "nextSkillId": 13106827,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE8B",
+    "skillLv": 21,
+    "nextSkillId": 13106828,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE8C",
+    "skillLv": 22,
+    "nextSkillId": 13106829,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE8D",
+    "skillLv": 23,
+    "nextSkillId": 13106830,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE8E",
+    "skillLv": 24,
+    "nextSkillId": 13106831,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE8F",
+    "skillLv": 25,
+    "nextSkillId": 13106832,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE90",
+    "skillLv": 26,
+    "nextSkillId": 13106833,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE91",
+    "skillLv": 27,
+    "nextSkillId": 13106834,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE92",
+    "skillLv": 28,
+    "nextSkillId": 13106835,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE93",
+    "skillLv": 29,
+    "nextSkillId": 13106836,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE94",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E408",
+    "skillLv": 0,
+    "nextSkillId": 13106838,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE96",
+    "skillLv": 1,
+    "nextSkillId": 13106839,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE97",
+    "skillLv": 2,
+    "nextSkillId": 13106840,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE98",
+    "skillLv": 3,
+    "nextSkillId": 13106841,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE99",
+    "skillLv": 4,
+    "nextSkillId": 13106842,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE9A",
+    "skillLv": 5,
+    "nextSkillId": 13106843,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE9B",
+    "skillLv": 6,
+    "nextSkillId": 13106844,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE9C",
+    "skillLv": 7,
+    "nextSkillId": 13106845,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE9D",
+    "skillLv": 8,
+    "nextSkillId": 13106846,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE9E",
+    "skillLv": 9,
+    "nextSkillId": 13106847,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE9F",
+    "skillLv": 10,
+    "nextSkillId": 13106848,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEA0",
+    "skillLv": 11,
+    "nextSkillId": 13106849,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEA1",
+    "skillLv": 12,
+    "nextSkillId": 13106850,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEA2",
+    "skillLv": 13,
+    "nextSkillId": 13106851,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEA3",
+    "skillLv": 14,
+    "nextSkillId": 13106852,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEA4",
+    "skillLv": 15,
+    "nextSkillId": 13106853,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEA5",
+    "skillLv": 16,
+    "nextSkillId": 13106854,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEA6",
+    "skillLv": 17,
+    "nextSkillId": 13106855,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEA7",
+    "skillLv": 18,
+    "nextSkillId": 13106856,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEA8",
+    "skillLv": 19,
+    "nextSkillId": 13106857,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEA9",
+    "skillLv": 20,
+    "nextSkillId": 13106858,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEAA",
+    "skillLv": 21,
+    "nextSkillId": 13106859,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FEAB",
+    "skillLv": 22,
+    "nextSkillId": 13106860,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FEAC",
+    "skillLv": 23,
+    "nextSkillId": 13106861,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FEAD",
+    "skillLv": 24,
+    "nextSkillId": 13106862,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FEAE",
+    "skillLv": 25,
+    "nextSkillId": 13106863,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FEAF",
+    "skillLv": 26,
+    "nextSkillId": 13106864,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FEB0",
+    "skillLv": 27,
+    "nextSkillId": 13106865,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FEB1",
+    "skillLv": 28,
+    "nextSkillId": 13106866,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FEB2",
+    "skillLv": 29,
+    "nextSkillId": 13106867,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FEB3",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E409",
+    "skillLv": 0,
+    "nextSkillId": 13106869,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FEB5",
+    "skillLv": 1,
+    "nextSkillId": 13106870,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FEB6",
+    "skillLv": 2,
+    "nextSkillId": 13106871,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FEB7",
+    "skillLv": 3,
+    "nextSkillId": 13106872,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FEB8",
+    "skillLv": 4,
+    "nextSkillId": 13106873,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FEB9",
+    "skillLv": 5,
+    "nextSkillId": 13106874,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FEBA",
+    "skillLv": 6,
+    "nextSkillId": 13106875,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FEBB",
+    "skillLv": 7,
+    "nextSkillId": 13106876,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FEBC",
+    "skillLv": 8,
+    "nextSkillId": 13106877,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FEBD",
+    "skillLv": 9,
+    "nextSkillId": 13106878,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FEBE",
+    "skillLv": 10,
+    "nextSkillId": 13106879,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEBF",
+    "skillLv": 11,
+    "nextSkillId": 13106880,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEC0",
+    "skillLv": 12,
+    "nextSkillId": 13106881,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEC1",
+    "skillLv": 13,
+    "nextSkillId": 13106882,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEC2",
+    "skillLv": 14,
+    "nextSkillId": 13106883,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEC3",
+    "skillLv": 15,
+    "nextSkillId": 13106884,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEC4",
+    "skillLv": 16,
+    "nextSkillId": 13106885,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEC5",
+    "skillLv": 17,
+    "nextSkillId": 13106886,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEC6",
+    "skillLv": 18,
+    "nextSkillId": 13106887,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEC7",
+    "skillLv": 19,
+    "nextSkillId": 13106888,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEC8",
+    "skillLv": 20,
+    "nextSkillId": 13106889,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEC9",
+    "skillLv": 21,
+    "nextSkillId": 13106890,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FECA",
+    "skillLv": 22,
+    "nextSkillId": 13106891,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FECB",
+    "skillLv": 23,
+    "nextSkillId": 13106892,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FECC",
+    "skillLv": 24,
+    "nextSkillId": 13106893,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FECD",
+    "skillLv": 25,
+    "nextSkillId": 13106894,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FECE",
+    "skillLv": 26,
+    "nextSkillId": 13106895,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FECF",
+    "skillLv": 27,
+    "nextSkillId": 13106896,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FED0",
+    "skillLv": 28,
+    "nextSkillId": 13106897,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FED1",
+    "skillLv": 29,
+    "nextSkillId": 13106898,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FED2",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E40D",
+    "skillLv": 0,
+    "nextSkillId": 13106900,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FED4",
+    "skillLv": 1,
+    "nextSkillId": 13106901,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FED5",
+    "skillLv": 2,
+    "nextSkillId": 13106902,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FED6",
+    "skillLv": 3,
+    "nextSkillId": 13106903,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FED7",
+    "skillLv": 4,
+    "nextSkillId": 13106904,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FED8",
+    "skillLv": 5,
+    "nextSkillId": 13106905,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FED9",
+    "skillLv": 6,
+    "nextSkillId": 13106906,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FEDA",
+    "skillLv": 7,
+    "nextSkillId": 13106907,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FEDB",
+    "skillLv": 8,
+    "nextSkillId": 13106908,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FEDC",
+    "skillLv": 9,
+    "nextSkillId": 13106909,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FEDD",
+    "skillLv": 10,
+    "nextSkillId": 13106910,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEDE",
+    "skillLv": 11,
+    "nextSkillId": 13106911,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEDF",
+    "skillLv": 12,
+    "nextSkillId": 13106912,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEE0",
+    "skillLv": 13,
+    "nextSkillId": 13106913,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEE1",
+    "skillLv": 14,
+    "nextSkillId": 13106914,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEE2",
+    "skillLv": 15,
+    "nextSkillId": 13106915,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEE3",
+    "skillLv": 16,
+    "nextSkillId": 13106916,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEE4",
+    "skillLv": 17,
+    "nextSkillId": 13106917,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEE5",
+    "skillLv": 18,
+    "nextSkillId": 13106918,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEE6",
+    "skillLv": 19,
+    "nextSkillId": 13106919,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEE7",
+    "skillLv": 20,
+    "nextSkillId": 13106920,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEE8",
+    "skillLv": 21,
+    "nextSkillId": 13106921,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FEE9",
+    "skillLv": 22,
+    "nextSkillId": 13106922,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FEEA",
+    "skillLv": 23,
+    "nextSkillId": 13106923,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FEEB",
+    "skillLv": 24,
+    "nextSkillId": 13106924,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FEEC",
+    "skillLv": 25,
+    "nextSkillId": 13106925,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FEED",
+    "skillLv": 26,
+    "nextSkillId": 13106926,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FEEE",
+    "skillLv": 27,
+    "nextSkillId": 13106927,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FEEF",
+    "skillLv": 28,
+    "nextSkillId": 13106928,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FEF0",
+    "skillLv": 29,
+    "nextSkillId": 13106929,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FEF1",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "soulSkillNeedItem": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  }
+]

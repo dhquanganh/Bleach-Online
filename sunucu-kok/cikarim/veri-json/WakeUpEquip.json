@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "00D7E971",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":16,\"value\":200}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000001},{\"cityID\":15400002,\"pointID\":16000101},{\"cityID\":15400003,\"pointID\":16000201}]"
+  },
+  {
+    "id": "00D7E972",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":17,\"value\":160}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000002},{\"cityID\":15400002,\"pointID\":16000102},{\"cityID\":15400003,\"pointID\":16000202}]"
+  },
+  {
+    "id": "00D7E973",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":20,\"value\":200}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000003},{\"cityID\":15400002,\"pointID\":16000103},{\"cityID\":15400003,\"pointID\":16000203}]"
+  },
+  {
+    "id": "00D7E974",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":21,\"value\":160}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000004},{\"cityID\":15400002,\"pointID\":16000104},{\"cityID\":15400003,\"pointID\":16000204}]"
+  },
+  {
+    "id": "00D7E975",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":101,\"value\":1250}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000005},{\"cityID\":15400002,\"pointID\":16000105},{\"cityID\":15400003,\"pointID\":16000205}]"
+  },
+  {
+    "id": "00D7E976",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":27,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000006},{\"cityID\":15400002,\"pointID\":16000106},{\"cityID\":15400003,\"pointID\":16000206}]"
+  },
+  {
+    "id": "00D7E977",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":23,\"value\":0.003}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000007},{\"cityID\":15400002,\"pointID\":16000107},{\"cityID\":15400003,\"pointID\":16000207}]"
+  },
+  {
+    "id": "00D7E978",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":31,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000008},{\"cityID\":15400002,\"pointID\":16000108},{\"cityID\":15400003,\"pointID\":16000208}]"
+  },
+  {
+    "id": "00D7E979",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":25,\"value\":0.003}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400001,\"pointID\":16000009},{\"cityID\":15400002,\"pointID\":16000109},{\"cityID\":15400003,\"pointID\":16000209}]"
+  },
+  {
+    "id": "00D7E97A",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":34,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000101},{\"cityID\":15400003,\"pointID\":16000201},{\"cityID\":15400004,\"pointID\":16000301}]"
+  },
+  {
+    "id": "00D7E97B",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":22,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000102},{\"cityID\":15400003,\"pointID\":16000202},{\"cityID\":15400004,\"pointID\":16000302}]"
+  },
+  {
+    "id": "00D7E97C",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":24,\"value\":0.003}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000103},{\"cityID\":15400003,\"pointID\":16000203},{\"cityID\":15400004,\"pointID\":16000303}]"
+  },
+  {
+    "id": "00D7E97D",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":11,\"value\":50}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000104},{\"cityID\":15400003,\"pointID\":16000204},{\"cityID\":15400004,\"pointID\":16000304}]"
+  },
+  {
+    "id": "00D7E97E",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":26,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000105},{\"cityID\":15400003,\"pointID\":16000205},{\"cityID\":15400004,\"pointID\":16000305}]"
+  },
+  {
+    "id": "00D7E97F",
+    "needLevel": 30,
+    "costPrice": "[{\"type\":30,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 60000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000106},{\"cityID\":15400003,\"pointID\":16000206},{\"cityID\":15400004,\"pointID\":16000306}]"
+  },
+  {
+    "id": "00D7E9D5",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":16,\"value\":360}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000107},{\"cityID\":15400003,\"pointID\":16000207},{\"cityID\":15400004,\"pointID\":16000307}]"
+  },
+  {
+    "id": "00D7E9D6",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":17,\"value\":280}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000108},{\"cityID\":15400003,\"pointID\":16000208},{\"cityID\":15400004,\"pointID\":16000308}]"
+  },
+  {
+    "id": "00D7E9D7",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":20,\"value\":360}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400002,\"pointID\":16000109},{\"cityID\":15400003,\"pointID\":16000209},{\"cityID\":15400004,\"pointID\":16000309}]"
+  },
+  {
+    "id": "00D7E9D8",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":21,\"value\":280}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000201},{\"cityID\":15400004,\"pointID\":16000301},{\"cityID\":15400005,\"pointID\":16000401}]"
+  },
+  {
+    "id": "00D7E9D9",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":11,\"value\":100}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000202},{\"cityID\":15400004,\"pointID\":16000302},{\"cityID\":15400005,\"pointID\":16000402}]"
+  },
+  {
+    "id": "00D7E9DA",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":101,\"value\":2000}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000203},{\"cityID\":15400004,\"pointID\":16000303},{\"cityID\":15400005,\"pointID\":16000403}]"
+  },
+  {
+    "id": "00D7E9DB",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":28,\"value\":0.0075}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000204},{\"cityID\":15400004,\"pointID\":16000304},{\"cityID\":15400005,\"pointID\":16000404}]"
+  },
+  {
+    "id": "00D7E9DC",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":29,\"value\":0.0075}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000205},{\"cityID\":15400004,\"pointID\":16000305},{\"cityID\":15400005,\"pointID\":16000405}]"
+  },
+  {
+    "id": "00D7E9DD",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":23,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000206},{\"cityID\":15400004,\"pointID\":16000306},{\"cityID\":15400005,\"pointID\":16000406}]"
+  },
+  {
+    "id": "00D7E9DE",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":22,\"value\":0.0075}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000207},{\"cityID\":15400004,\"pointID\":16000307},{\"cityID\":15400005,\"pointID\":16000407}]"
+  },
+  {
+    "id": "00D7E9DF",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":24,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000208},{\"cityID\":15400004,\"pointID\":16000308},{\"cityID\":15400005,\"pointID\":16000408}]"
+  },
+  {
+    "id": "00D7E9E0",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":31,\"value\":0.0075}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400003,\"pointID\":16000209},{\"cityID\":15400004,\"pointID\":16000309},{\"cityID\":15400005,\"pointID\":16000409}]"
+  },
+  {
+    "id": "00D7E9E1",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":25,\"value\":0.005}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000301},{\"cityID\":15400005,\"pointID\":16000401},{\"cityID\":15400006,\"pointID\":16000501}]"
+  },
+  {
+    "id": "00D7E9E2",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":30,\"value\":0.0075}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000302},{\"cityID\":15400005,\"pointID\":16000402},{\"cityID\":15400006,\"pointID\":16000502}]"
+  },
+  {
+    "id": "00D7E9E3",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":34,\"value\":0.01}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000303},{\"cityID\":15400005,\"pointID\":16000403},{\"cityID\":15400006,\"pointID\":16000503}]"
+  },
+  {
+    "id": "00D7E9E4",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":26,\"value\":0.01}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000304},{\"cityID\":15400005,\"pointID\":16000404},{\"cityID\":15400006,\"pointID\":16000504}]"
+  },
+  {
+    "id": "00D7E9E5",
+    "needLevel": 35,
+    "costPrice": "[{\"type\":27,\"value\":0.01}]",
+    "f2": "[]",
+    "f3": 70000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000305},{\"cityID\":15400005,\"pointID\":16000405},{\"cityID\":15400006,\"pointID\":16000505}]"
+  },
+  {
+    "id": "00D7EA39",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":25,\"value\":0.0015},{\"type\":17,\"value\":600}]",
+    "f2": "[{\"type\":1,\"code\":14151001,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3A",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":101,\"value\":4000},{\"type\":31,\"value\":0.0015}]",
+    "f2": "[{\"type\":1,\"code\":14151002,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3B",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":23,\"value\":0.0025},{\"type\":31,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151003,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3C",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":21,\"value\":110},{\"type\":17,\"value\":110}]",
+    "f2": "[{\"type\":1,\"code\":14151004,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3D",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":29,\"value\":0.0015},{\"type\":101,\"value\":4000}]",
+    "f2": "[{\"type\":1,\"code\":14151005,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3E",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":27,\"value\":0.0025},{\"type\":22,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151006,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA3F",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":34,\"value\":0.001},{\"type\":101,\"value\":4000}]",
+    "f2": "[{\"type\":1,\"code\":14151007,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA40",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":23,\"value\":0.0025},{\"type\":25,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151008,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA41",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":24,\"value\":0.0025},{\"type\":101,\"value\":4000}]",
+    "f2": "[{\"type\":1,\"code\":14151009,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA42",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":22,\"value\":0.0025},{\"type\":24,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151010,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA43",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":16,\"value\":600},{\"type\":24,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151011,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA44",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":30,\"value\":0.0025},{\"type\":24,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151012,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA45",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":20,\"value\":600},{\"type\":24,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151013,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA46",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":11,\"value\":300},{\"type\":22,\"value\":0.0025}]",
+    "f2": "[{\"type\":1,\"code\":14151014,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA47",
+    "needLevel": 40,
+    "costPrice": "[{\"type\":30,\"value\":0.0025},{\"type\":20,\"value\":600}]",
+    "f2": "[{\"type\":1,\"code\":14151015,\"amount\":5}]",
+    "f3": 80000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA48",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":11,\"value\":500},{\"type\":24,\"value\":0.002}]",
+    "f2": "[{\"type\":1,\"code\":14150209,\"amount\":1},{\"type\":1,\"code\":14150105,\"amount\":1},{\"type\":1,\"code\":14150005,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA49",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":28,\"value\":0.0075},{\"type\":22,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150206,\"amount\":1},{\"type\":1,\"code\":14150107,\"amount\":1},{\"type\":1,\"code\":14150013,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4A",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":11,\"value\":500},{\"type\":30,\"value\":0.002}]",
+    "f2": "[{\"type\":1,\"code\":14150214,\"amount\":1},{\"type\":1,\"code\":14150114,\"amount\":1},{\"type\":1,\"code\":14150009,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4B",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":25,\"value\":0.0075},{\"type\":23,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150208,\"amount\":1},{\"type\":1,\"code\":14150208,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4C",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":17,\"value\":800},{\"type\":29,\"value\":0.0015}]",
+    "f2": "[{\"type\":1,\"code\":14150204,\"amount\":1},{\"type\":1,\"code\":14150108,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4D",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":101,\"value\":3000},{\"type\":17,\"value\":400}]",
+    "f2": "[{\"type\":1,\"code\":14150204,\"amount\":1},{\"type\":1,\"code\":14150106,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4E",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":21,\"value\":800},{\"type\":23,\"value\":0.0015}]",
+    "f2": "[{\"type\":1,\"code\":14150204,\"amount\":1},{\"type\":1,\"code\":14150109,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA4F",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":11,\"value\":500},{\"type\":25,\"value\":0.0015}]",
+    "f2": "[{\"type\":1,\"code\":14150201,\"amount\":1},{\"type\":1,\"code\":14150113,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA50",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":26,\"value\":0.0075},{\"type\":24,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150212,\"amount\":1},{\"type\":1,\"code\":14150116,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA51",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":31,\"value\":0.0075},{\"type\":23,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150203,\"amount\":1},{\"type\":1,\"code\":14150203,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA52",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":30,\"value\":0.0075},{\"type\":27,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150212,\"amount\":1},{\"type\":1,\"code\":14150117,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA53",
+    "needLevel": 45,
+    "costPrice": "[{\"type\":101,\"value\":4000},{\"type\":29,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150205,\"amount\":1},{\"type\":1,\"code\":14150205,\"amount\":1}]",
+    "f3": 90000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA9D",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":25,\"value\":0.0075},{\"type\":23,\"value\":0.0075},{\"type\":101,\"value\":8000}]",
+    "f2": "[{\"type\":1,\"code\":14151101,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA9E",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":31,\"value\":0.0075},{\"type\":22,\"value\":0.0075},{\"type\":23,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14151102,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EA9F",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":17,\"value\":600},{\"type\":21,\"value\":600},{\"type\":101,\"value\":4000}]",
+    "f2": "[{\"type\":1,\"code\":14151103,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA0",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":22,\"value\":0.0075},{\"type\":24,\"value\":0.0075},{\"type\":30,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14151104,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA1",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":28,\"value\":0.0075},{\"type\":29,\"value\":0.0075},{\"type\":34,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151105,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA2",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":26,\"value\":0.0075},{\"type\":11,\"value\":1000},{\"type\":27,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151106,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA3",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":16,\"value\":2000},{\"type\":30,\"value\":0.0075},{\"type\":24,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151107,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA4",
+    "needLevel": 50,
+    "costPrice": "[{\"type\":20,\"value\":1000},{\"type\":11,\"value\":500},{\"type\":22,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151108,\"amount\":10}]",
+    "f3": 100000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA5",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":28,\"value\":0.0075},{\"type\":101,\"value\":3000},{\"type\":11,\"value\":1500}]",
+    "f2": "[{\"type\":1,\"code\":14150306,\"amount\":1},{\"type\":1,\"code\":14150207,\"amount\":1},{\"type\":1,\"code\":14150105,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA6",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":17,\"value\":1200},{\"type\":21,\"value\":1200},{\"type\":34,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14150303,\"amount\":1},{\"type\":1,\"code\":14150115,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA7",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":31,\"value\":0.0075},{\"type\":29,\"value\":0.0075},{\"type\":25,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150302,\"amount\":1},{\"type\":1,\"code\":14150203,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA8",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":11,\"value\":600},{\"type\":23,\"value\":0.0075},{\"type\":26,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150223,\"amount\":1},{\"type\":1,\"code\":14150214,\"amount\":1},{\"type\":1,\"code\":14150116,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAA9",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":20,\"value\":1000},{\"type\":11,\"value\":500},{\"type\":28,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14150215,\"amount\":1},{\"type\":1,\"code\":14150213,\"amount\":1},{\"type\":1,\"code\":14150003,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAA",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":16,\"value\":1000},{\"type\":24,\"value\":0.0075},{\"type\":28,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150211,\"amount\":1},{\"type\":1,\"code\":14150210,\"amount\":1},{\"type\":1,\"code\":14150001,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAB",
+    "needLevel": 60,
+    "costPrice": "[{\"type\":11,\"value\":500},{\"type\":24,\"value\":0.0075},{\"type\":101,\"value\":4000}]",
+    "f2": "[{\"type\":1,\"code\":14150209,\"amount\":1},{\"type\":1,\"code\":14150216,\"amount\":1},{\"type\":1,\"code\":14150106,\"amount\":1}]",
+    "f3": 120000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAC",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":24,\"value\":0.01},{\"type\":28,\"value\":0.01},{\"type\":11,\"value\":1000}]",
+    "f2": "[{\"type\":1,\"code\":14150216,\"amount\":1},{\"type\":1,\"code\":14150216,\"amount\":1},{\"type\":1,\"code\":14150107,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAD",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":31,\"value\":0.01},{\"type\":101,\"value\":6000},{\"type\":29,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150227,\"amount\":1},{\"type\":1,\"code\":14150202,\"amount\":1},{\"type\":1,\"code\":14150005,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAE",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":30,\"value\":0.01},{\"type\":11,\"value\":1000},{\"type\":26,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150306,\"amount\":1},{\"type\":1,\"code\":14150226,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAAF",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":27,\"value\":0.01},{\"type\":26,\"value\":0.01},{\"type\":101,\"value\":6000}]",
+    "f2": "[{\"type\":1,\"code\":14150306,\"amount\":1},{\"type\":1,\"code\":14150207,\"amount\":1},{\"type\":1,\"code\":14150005,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAB0",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":17,\"value\":1000},{\"type\":21,\"value\":1000},{\"type\":25,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150303,\"amount\":1},{\"type\":1,\"code\":14150301,\"amount\":1},{\"type\":1,\"code\":14150113,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAB1",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":28,\"value\":0.01},{\"type\":22,\"value\":0.01},{\"type\":11,\"value\":1000}]",
+    "f2": "[{\"type\":1,\"code\":14150217,\"amount\":1},{\"type\":1,\"code\":14150214,\"amount\":1},{\"type\":1,\"code\":14150011,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EAB2",
+    "needLevel": 70,
+    "costPrice": "[{\"type\":25,\"value\":0.01},{\"type\":31,\"value\":0.01},{\"type\":27,\"value\":0.02}]",
+    "f2": "[{\"type\":1,\"code\":14150226,\"amount\":1},{\"type\":1,\"code\":14150219,\"amount\":1},{\"type\":1,\"code\":14150117,\"amount\":1}]",
+    "f3": 140000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB01",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":17,\"value\":1000},{\"type\":21,\"value\":1000},{\"type\":25,\"value\":0.005},{\"type\":101,\"value\":3000}]",
+    "f2": "[{\"type\":1,\"code\":14151201,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB02",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":31,\"value\":0.0075},{\"type\":101,\"value\":10000},{\"type\":29,\"value\":0.005},{\"type\":27,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14151202,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB03",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":25,\"value\":0.01},{\"type\":34,\"value\":0.015},{\"type\":22,\"value\":0.01},{\"type\":30,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151203,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB04",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":16,\"value\":1200},{\"type\":24,\"value\":0.005},{\"type\":28,\"value\":0.005},{\"type\":101,\"value\":6000}]",
+    "f2": "[{\"type\":1,\"code\":14151204,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB05",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":30,\"value\":0.01},{\"type\":24,\"value\":0.01},{\"type\":26,\"value\":0.01},{\"type\":27,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151205,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB06",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":28,\"value\":0.005},{\"type\":30,\"value\":0.005},{\"type\":11,\"value\":1200},{\"type\":29,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14151206,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB07",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":34,\"value\":0.015},{\"type\":23,\"value\":0.01},{\"type\":25,\"value\":0.01},{\"type\":31,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151207,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB08",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":101,\"value\":6000},{\"type\":11,\"value\":800},{\"type\":29,\"value\":0.005},{\"type\":30,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14151208,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB09",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":20,\"value\":1200},{\"type\":11,\"value\":600},{\"type\":28,\"value\":0.0025},{\"type\":27,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14151209,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0A",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":39,\"value\":0.01},{\"type\":41,\"value\":0.01},{\"type\":101,\"value\":1000},{\"type\":11,\"value\":100}]",
+    "f2": "[{\"type\":1,\"code\":14151210,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0B",
+    "needLevel": 80,
+    "costPrice": "[{\"type\":20,\"value\":2000},{\"type\":40,\"value\":0.0025},{\"type\":42,\"value\":0.0025},{\"type\":30,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14151211,\"amount\":20}]",
+    "f3": 160000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0C",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":101,\"value\":8000},{\"type\":27,\"value\":0.01},{\"type\":40,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150405,\"amount\":1},{\"type\":1,\"code\":14150226,\"amount\":1},{\"type\":1,\"code\":14150106,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0D",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":17,\"value\":1000},{\"type\":101,\"value\":8000},{\"type\":25,\"value\":0.005},{\"type\":23,\"value\":0.005}]",
+    "f2": "[{\"type\":1,\"code\":14150301,\"amount\":1},{\"type\":1,\"code\":14150220,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0E",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":42,\"value\":0.05},{\"type\":16,\"value\":1000},{\"type\":17,\"value\":1200}]",
+    "f2": "[{\"type\":1,\"code\":14150401,\"amount\":1},{\"type\":1,\"code\":14150301,\"amount\":1},{\"type\":1,\"code\":14150101,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB0F",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":40,\"value\":0.05},{\"type\":25,\"value\":0.01},{\"type\":29,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150301,\"amount\":1},{\"type\":1,\"code\":14150308,\"amount\":1},{\"type\":1,\"code\":14150227,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB10",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":16,\"value\":3500},{\"type\":28,\"value\":0.0055},{\"type\":25,\"value\":0.0055}]",
+    "f2": "[{\"type\":1,\"code\":14150404,\"amount\":1},{\"type\":1,\"code\":14150301,\"amount\":1},{\"type\":1,\"code\":14150201,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB11",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":28,\"value\":0.01},{\"type\":29,\"value\":0.01},{\"type\":41,\"value\":0.02}]",
+    "f2": "[{\"type\":1,\"code\":14150305,\"amount\":1},{\"type\":1,\"code\":14150305,\"amount\":1},{\"type\":1,\"code\":14150013,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB12",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":24,\"value\":0.01},{\"type\":26,\"value\":0.02},{\"type\":39,\"value\":0.02}]",
+    "f2": "[{\"type\":1,\"code\":14150304,\"amount\":1},{\"type\":1,\"code\":14150224,\"amount\":1},{\"type\":1,\"code\":14150209,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB13",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":16,\"value\":3000},{\"type\":24,\"value\":0.005},{\"type\":30,\"value\":0.01},{\"type\":101,\"value\":3000}]",
+    "f2": "[{\"type\":1,\"code\":14150404,\"amount\":1},{\"type\":1,\"code\":14150304,\"amount\":1},{\"type\":1,\"code\":14150227,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB14",
+    "needLevel": 90,
+    "costPrice": "[{\"type\":101,\"value\":12000},{\"type\":22,\"value\":0.0075},{\"type\":26,\"value\":0.01},{\"type\":30,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150408,\"amount\":1},{\"type\":1,\"code\":14150405,\"amount\":1}]",
+    "f3": 180000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB15",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":29,\"value\":0.0025},{\"type\":17,\"value\":1200},{\"type\":21,\"value\":1200},{\"type\":101,\"value\":6000},{\"type\":25,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150401,\"amount\":1},{\"type\":1,\"code\":14150402,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB16",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":39,\"value\":0.05},{\"type\":101,\"value\":6000},{\"type\":25,\"value\":0.0035},{\"type\":31,\"value\":0.0075},{\"type\":22,\"value\":0.0075}]",
+    "f2": "[{\"type\":1,\"code\":14150410,\"amount\":1},{\"type\":1,\"code\":14150302,\"amount\":1},{\"type\":1,\"code\":14150301,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB17",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":101,\"value\":12000},{\"type\":17,\"value\":1000},{\"type\":22,\"value\":0.0075},{\"type\":29,\"value\":0.0075},{\"type\":31,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150401,\"amount\":1},{\"type\":1,\"code\":14150402,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB18",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":17,\"value\":2000},{\"type\":27,\"value\":0.006},{\"type\":34,\"value\":0.01},{\"type\":22,\"value\":0.005},{\"type\":11,\"value\":1200}]",
+    "f2": "[{\"type\":1,\"code\":14150401,\"amount\":1},{\"type\":1,\"code\":14150306,\"amount\":1},{\"type\":1,\"code\":14150214,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB19",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":24,\"value\":0.0075},{\"type\":28,\"value\":0.007},{\"type\":22,\"value\":0.015},{\"type\":41,\"value\":0.05},{\"type\":42,\"value\":0.05}]",
+    "f2": "[{\"type\":1,\"code\":14150411,\"amount\":1},{\"type\":1,\"code\":14150404,\"amount\":1},{\"type\":1,\"code\":14150304,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1A",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":20,\"value\":1200},{\"type\":16,\"value\":1200},{\"type\":104,\"value\":5},{\"type\":24,\"value\":0.005},{\"type\":101,\"value\":8000}]",
+    "f2": "[{\"type\":1,\"code\":14150404,\"amount\":1},{\"type\":1,\"code\":14150409,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1B",
+    "needLevel": 100,
+    "costPrice": "[{\"type\":101,\"value\":12000},{\"type\":25,\"value\":0.01},{\"type\":28,\"value\":0.0075},{\"type\":104,\"value\":5},{\"type\":11,\"value\":500}]",
+    "f2": "[{\"type\":1,\"code\":14150406,\"amount\":1},{\"type\":1,\"code\":14150406,\"amount\":1},{\"type\":1,\"code\":14150113,\"amount\":1}]",
+    "f3": 200000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1C",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":104,\"value\":5},{\"type\":17,\"value\":2000},{\"type\":21,\"value\":2000},{\"type\":25,\"value\":0.01},{\"type\":31,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150401,\"amount\":1},{\"type\":1,\"code\":14150402,\"amount\":1},{\"type\":1,\"code\":14150403,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1D",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":16,\"value\":1500},{\"type\":24,\"value\":0.0055},{\"type\":28,\"value\":0.0075},{\"type\":101,\"value\":15000},{\"type\":30,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150404,\"amount\":1},{\"type\":1,\"code\":14150406,\"amount\":1},{\"type\":1,\"code\":14150307,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1E",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":20,\"value\":3500},{\"type\":30,\"value\":0.007},{\"type\":11,\"value\":700},{\"type\":28,\"value\":0.005},{\"type\":24,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150409,\"amount\":1},{\"type\":1,\"code\":14150405,\"amount\":1},{\"type\":1,\"code\":14150408,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB1F",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":11,\"value\":500},{\"type\":24,\"value\":0.0075},{\"type\":31,\"value\":0.0075},{\"type\":25,\"value\":0.0075},{\"type\":101,\"value\":15000}]",
+    "f2": "[{\"type\":1,\"code\":14150402,\"amount\":1},{\"type\":1,\"code\":14150408,\"amount\":1},{\"type\":1,\"code\":14150302,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB20",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":34,\"value\":0.02},{\"type\":25,\"value\":0.02},{\"type\":29,\"value\":0.01},{\"type\":28,\"value\":0.01},{\"type\":24,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150407,\"amount\":1},{\"type\":1,\"code\":14150406,\"amount\":1},{\"type\":1,\"code\":14150305,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB21",
+    "needLevel": 110,
+    "costPrice": "[{\"type\":40,\"value\":0.05},{\"type\":42,\"value\":0.05},{\"type\":39,\"value\":0.05},{\"type\":41,\"value\":0.05},{\"type\":28,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150410,\"amount\":1},{\"type\":1,\"code\":14150411,\"amount\":1},{\"type\":1,\"code\":14150406,\"amount\":1}]",
+    "f3": 220000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB65",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":17,\"value\":2000},{\"type\":21,\"value\":2000},{\"type\":29,\"value\":0.01},{\"type\":31,\"value\":0.01},{\"type\":101,\"value\":15000},{\"type\":23,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150428,\"amount\":1},{\"type\":1,\"code\":14150421,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB66",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":16,\"value\":2000},{\"type\":24,\"value\":0.01},{\"type\":28,\"value\":0.01},{\"type\":30,\"value\":0.02},{\"type\":101,\"value\":20000},{\"type\":22,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150429,\"amount\":1},{\"type\":1,\"code\":14150420,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB67",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":20,\"value\":6000},{\"type\":30,\"value\":0.0125},{\"type\":24,\"value\":0.0125},{\"type\":28,\"value\":0.01},{\"type\":11,\"value\":1500},{\"type\":26,\"value\":0.02}]",
+    "f2": "[{\"type\":1,\"code\":14150430,\"amount\":1},{\"type\":1,\"code\":14150406,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB68",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":28,\"value\":0.01},{\"type\":29,\"value\":0.015},{\"type\":26,\"value\":0.05},{\"type\":27,\"value\":0.04},{\"type\":25,\"value\":0.02},{\"type\":24,\"value\":0.02}]",
+    "f2": "[{\"type\":1,\"code\":14150432,\"amount\":1},{\"type\":1,\"code\":14150420,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB69",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":40,\"value\":0.05},{\"type\":42,\"value\":0.05},{\"type\":39,\"value\":0.05},{\"type\":41,\"value\":0.05},{\"type\":101,\"value\":6000},{\"type\":34,\"value\":0.01}]",
+    "f2": "[{\"type\":1,\"code\":14150433,\"amount\":1},{\"type\":1,\"code\":14150411,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7EB6A",
+    "needLevel": 120,
+    "costPrice": "[{\"type\":31,\"value\":0.01},{\"type\":29,\"value\":0.01},{\"type\":23,\"value\":0.01},{\"type\":101,\"value\":30000},{\"type\":25,\"value\":0.02},{\"type\":27,\"value\":0.03}]",
+    "f2": "[{\"type\":1,\"code\":14150431,\"amount\":1},{\"type\":1,\"code\":14150407,\"amount\":1},{\"type\":1,\"code\":14151301,\"amount\":50}]",
+    "f3": 240000,
+    "f4": "[]"
+  },
+  {
+    "id": "00D7ED59",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000306},{\"cityID\":15400005,\"pointID\":16000406},{\"cityID\":15400006,\"pointID\":16000506}]"
+  },
+  {
+    "id": "00D7ED5A",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000307},{\"cityID\":15400005,\"pointID\":16000407},{\"cityID\":15400006,\"pointID\":16000507}]"
+  },
+  {
+    "id": "00D7ED5B",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000308},{\"cityID\":15400005,\"pointID\":16000408},{\"cityID\":15400006,\"pointID\":16000508}]"
+  },
+  {
+    "id": "00D7ED5C",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400004,\"pointID\":16000309},{\"cityID\":15400005,\"pointID\":16000409},{\"cityID\":15400006,\"pointID\":16000509}]"
+  },
+  {
+    "id": "00D7ED5D",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000401},{\"cityID\":15400006,\"pointID\":16000501},{\"cityID\":15400007,\"pointID\":16000601}]"
+  },
+  {
+    "id": "00D7ED5E",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000402},{\"cityID\":15400006,\"pointID\":16000502},{\"cityID\":15400007,\"pointID\":16000602}]"
+  },
+  {
+    "id": "00D7ED5F",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000403},{\"cityID\":15400006,\"pointID\":16000503},{\"cityID\":15400007,\"pointID\":16000603}]"
+  },
+  {
+    "id": "00D7ED60",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000404},{\"cityID\":15400006,\"pointID\":16000504},{\"cityID\":15400007,\"pointID\":16000604}]"
+  },
+  {
+    "id": "00D7ED61",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000405},{\"cityID\":15400006,\"pointID\":16000505},{\"cityID\":15400007,\"pointID\":16000605}]"
+  },
+  {
+    "id": "00D7ED62",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000406},{\"cityID\":15400006,\"pointID\":16000506},{\"cityID\":15400007,\"pointID\":16000606}]"
+  },
+  {
+    "id": "00D7ED63",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000407},{\"cityID\":15400006,\"pointID\":16000507},{\"cityID\":15400007,\"pointID\":16000607}]"
+  },
+  {
+    "id": "00D7ED64",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000408},{\"cityID\":15400006,\"pointID\":16000508},{\"cityID\":15400007,\"pointID\":16000608}]"
+  },
+  {
+    "id": "00D7ED65",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400005,\"pointID\":16000409},{\"cityID\":15400006,\"pointID\":16000509},{\"cityID\":15400007,\"pointID\":16000609}]"
+  },
+  {
+    "id": "00D7ED66",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000501},{\"cityID\":15400007,\"pointID\":16000601},{\"cityID\":15400008,\"pointID\":16000701}]"
+  },
+  {
+    "id": "00D7ED67",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000502},{\"cityID\":15400007,\"pointID\":16000602},{\"cityID\":15400008,\"pointID\":16000702}]"
+  },
+  {
+    "id": "00D7EDBD",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000503},{\"cityID\":15400007,\"pointID\":16000603},{\"cityID\":15400008,\"pointID\":16000703}]"
+  },
+  {
+    "id": "00D7EDBE",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000504},{\"cityID\":15400007,\"pointID\":16000604},{\"cityID\":15400008,\"pointID\":16000704}]"
+  },
+  {
+    "id": "00D7EDBF",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000505},{\"cityID\":15400007,\"pointID\":16000605},{\"cityID\":15400008,\"pointID\":16000705}]"
+  },
+  {
+    "id": "00D7EDC0",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000506},{\"cityID\":15400007,\"pointID\":16000606},{\"cityID\":15400008,\"pointID\":16000706}]"
+  },
+  {
+    "id": "00D7EDC1",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000507},{\"cityID\":15400007,\"pointID\":16000607},{\"cityID\":15400008,\"pointID\":16000707}]"
+  },
+  {
+    "id": "00D7EDC2",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000508},{\"cityID\":15400007,\"pointID\":16000608},{\"cityID\":15400008,\"pointID\":16000708}]"
+  },
+  {
+    "id": "00D7EDC3",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400006,\"pointID\":16000509},{\"cityID\":15400007,\"pointID\":16000609},{\"cityID\":15400008,\"pointID\":16000709}]"
+  },
+  {
+    "id": "00D7EDC4",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000601},{\"cityID\":15400009,\"pointID\":16000801},{\"cityID\":15400010,\"pointID\":16000901}]"
+  },
+  {
+    "id": "00D7EE21",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000602},{\"cityID\":15400009,\"pointID\":16000802},{\"cityID\":15400010,\"pointID\":16000902}]"
+  },
+  {
+    "id": "00D7EE22",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000603},{\"cityID\":15400009,\"pointID\":16000803},{\"cityID\":15400010,\"pointID\":16000903}]"
+  },
+  {
+    "id": "00D7EE23",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000604},{\"cityID\":15400009,\"pointID\":16000804},{\"cityID\":15400010,\"pointID\":16000904}]"
+  },
+  {
+    "id": "00D7EE24",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000605},{\"cityID\":15400009,\"pointID\":16000805},{\"cityID\":15400010,\"pointID\":16000905}]"
+  },
+  {
+    "id": "00D7EE25",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000606},{\"cityID\":15400009,\"pointID\":16000806},{\"cityID\":15400010,\"pointID\":16000906}]"
+  },
+  {
+    "id": "00D7EE26",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000607},{\"cityID\":15400009,\"pointID\":16000807},{\"cityID\":15400010,\"pointID\":16000907}]"
+  },
+  {
+    "id": "00D7EE27",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000608},{\"cityID\":15400009,\"pointID\":16000808},{\"cityID\":15400010,\"pointID\":16000908}]"
+  },
+  {
+    "id": "00D7EE28",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400007,\"pointID\":16000609},{\"cityID\":15400009,\"pointID\":16000809},{\"cityID\":15400010,\"pointID\":16000909}]"
+  },
+  {
+    "id": "00D7EE29",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000701},{\"cityID\":15400009,\"pointID\":16000801},{\"cityID\":15400010,\"pointID\":16000901}]"
+  },
+  {
+    "id": "00D7EE2A",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000702},{\"cityID\":15400009,\"pointID\":16000802},{\"cityID\":15400010,\"pointID\":16000902}]"
+  },
+  {
+    "id": "00D7EE2B",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000703},{\"cityID\":15400009,\"pointID\":16000803},{\"cityID\":15400010,\"pointID\":16000903}]"
+  },
+  {
+    "id": "00D7EE85",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000704},{\"cityID\":15400009,\"pointID\":16000804},{\"cityID\":15400010,\"pointID\":16000904}]"
+  },
+  {
+    "id": "00D7EE86",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000705},{\"cityID\":15400009,\"pointID\":16000805},{\"cityID\":15400010,\"pointID\":16000905}]"
+  },
+  {
+    "id": "00D7EE87",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000706},{\"cityID\":15400009,\"pointID\":16000806},{\"cityID\":15400010,\"pointID\":16000906}]"
+  },
+  {
+    "id": "00D7EE88",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000707},{\"cityID\":15400009,\"pointID\":16000807},{\"cityID\":15400010,\"pointID\":16000907}]"
+  },
+  {
+    "id": "00D7EE89",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000708},{\"cityID\":15400009,\"pointID\":16000808},{\"cityID\":15400010,\"pointID\":16000908}]"
+  },
+  {
+    "id": "00D7EE8A",
+    "needLevel": 30,
+    "costPrice": "[]",
+    "f2": "[]",
+    "f3": 600000,
+    "f4": "[{\"cityID\":15400008,\"pointID\":16000709},{\"cityID\":15400009,\"pointID\":16000809},{\"cityID\":15400010,\"pointID\":16000909}]"
+  }
+]

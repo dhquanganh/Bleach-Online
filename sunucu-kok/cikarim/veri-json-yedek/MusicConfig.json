@@ -1,0 +1,380 @@
+[
+  {
+    "id": "01607A61",
+    "fighting": 0,
+    "background": 100001,
+    "istab": false
+  },
+  {
+    "id": "00E66861",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66862",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66863",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66864",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66865",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66866",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66867",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66868",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66869",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686A",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686B",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686C",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686D",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686E",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E6686F",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66870",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66871",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66872",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66873",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66874",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66875",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E66876",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "00E81611",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E81612",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E81613",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E81614",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E81615",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E81616",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E7EF07",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E7EF08",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E7EF09",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E7EF0A",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E97988",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E97D70",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E98158",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E98540",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E98928",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E98D10",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E990F8",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "00E994E0",
+    "fighting": 100037,
+    "background": 100037,
+    "istab": false
+  },
+  {
+    "id": "01406F41",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "014FB181",
+    "fighting": 100034,
+    "background": 100034,
+    "istab": false
+  },
+  {
+    "id": "015EF3C1",
+    "fighting": 100035,
+    "background": 100035,
+    "istab": false
+  },
+  {
+    "id": "016E3601",
+    "fighting": 100036,
+    "background": 100036,
+    "istab": false
+  },
+  {
+    "id": "017D7841",
+    "fighting": 100036,
+    "background": 100036,
+    "istab": false
+  },
+  {
+    "id": "018CBA81",
+    "fighting": 100003,
+    "background": 100003,
+    "istab": false
+  },
+  {
+    "id": "019BFCC1",
+    "fighting": 100001,
+    "background": 100001,
+    "istab": false
+  },
+  {
+    "id": "01AB3F01",
+    "fighting": 100003,
+    "background": 100001,
+    "istab": true
+  },
+  {
+    "id": "00F29D61",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D62",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D63",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D64",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D65",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D66",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D67",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D68",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D69",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D6A",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D6B",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D6C",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "00F29D6D",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  },
+  {
+    "id": "01BA8141",
+    "fighting": 100033,
+    "background": 100033,
+    "istab": false
+  }
+]

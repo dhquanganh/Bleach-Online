@@ -1,0 +1,44 @@
+[
+  {
+    "id": "01174048",
+    "name": "Fierce Beast Soul",
+    "levelLimit": 500,
+    "effectName": "Physical Attack",
+    "addType": 16
+  },
+  {
+    "id": "01174430",
+    "name": "Firm Beast Soul",
+    "levelLimit": 500,
+    "effectName": "Physical Defense",
+    "addType": 17
+  },
+  {
+    "id": "01174818",
+    "name": "Wisdom Beast Soul",
+    "levelLimit": 500,
+    "effectName": "Strategy Attack",
+    "addType": 20
+  },
+  {
+    "id": "01174C00",
+    "name": "Insight Beast Soul",
+    "levelLimit": 500,
+    "effectName": "Strategy Defense",
+    "addType": 21
+  },
+  {
+    "id": "01174FE8",
+    "name": "Agility Beast Soul",
+    "levelLimit": 500,
+    "effectName": "Speed",
+    "addType": 11
+  },
+  {
+    "id": "011753D0",
+    "name": "Power Beast Soul",
+    "levelLimit": 500,
+    "effectName": "HP",
+    "addType": 101
+  }
+]

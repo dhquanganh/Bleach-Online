@@ -1,0 +1,5582 @@
+[
+  {
+    "id": "00C7E3E1",
+    "skillLv": 0,
+    "nextSkillId": 13106001,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB51",
+    "skillLv": 1,
+    "nextSkillId": 13106002,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB52",
+    "skillLv": 2,
+    "nextSkillId": 13106003,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB53",
+    "skillLv": 3,
+    "nextSkillId": 13106004,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB54",
+    "skillLv": 4,
+    "nextSkillId": 13106005,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB55",
+    "skillLv": 5,
+    "nextSkillId": 13106006,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB56",
+    "skillLv": 6,
+    "nextSkillId": 13106007,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB57",
+    "skillLv": 7,
+    "nextSkillId": 13106008,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB58",
+    "skillLv": 8,
+    "nextSkillId": 13106009,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB59",
+    "skillLv": 9,
+    "nextSkillId": 13106010,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB5A",
+    "skillLv": 10,
+    "nextSkillId": 13106011,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB5B",
+    "skillLv": 11,
+    "nextSkillId": 13106012,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB5C",
+    "skillLv": 12,
+    "nextSkillId": 13106013,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB5D",
+    "skillLv": 13,
+    "nextSkillId": 13106014,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB5E",
+    "skillLv": 14,
+    "nextSkillId": 13106015,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB5F",
+    "skillLv": 15,
+    "nextSkillId": 13106016,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB60",
+    "skillLv": 16,
+    "nextSkillId": 13106017,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB61",
+    "skillLv": 17,
+    "nextSkillId": 13106018,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FB62",
+    "skillLv": 18,
+    "nextSkillId": 13106019,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FB63",
+    "skillLv": 19,
+    "nextSkillId": 13106020,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FB64",
+    "skillLv": 20,
+    "nextSkillId": 13106021,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FB65",
+    "skillLv": 21,
+    "nextSkillId": 13106022,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FB66",
+    "skillLv": 22,
+    "nextSkillId": 13106023,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FB67",
+    "skillLv": 23,
+    "nextSkillId": 13106024,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FB68",
+    "skillLv": 24,
+    "nextSkillId": 13106025,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FB69",
+    "skillLv": 25,
+    "nextSkillId": 13106026,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FB6A",
+    "skillLv": 26,
+    "nextSkillId": 13106027,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FB6B",
+    "skillLv": 27,
+    "nextSkillId": 13106028,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FB6C",
+    "skillLv": 28,
+    "nextSkillId": 13106029,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FB6D",
+    "skillLv": 29,
+    "nextSkillId": 13106030,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FB6E",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E2",
+    "skillLv": 0,
+    "nextSkillId": 13106032,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB70",
+    "skillLv": 1,
+    "nextSkillId": 13106033,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB71",
+    "skillLv": 2,
+    "nextSkillId": 13106034,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB72",
+    "skillLv": 3,
+    "nextSkillId": 13106035,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB73",
+    "skillLv": 4,
+    "nextSkillId": 13106036,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB74",
+    "skillLv": 5,
+    "nextSkillId": 13106037,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB75",
+    "skillLv": 6,
+    "nextSkillId": 13106038,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB76",
+    "skillLv": 7,
+    "nextSkillId": 13106039,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB77",
+    "skillLv": 8,
+    "nextSkillId": 13106040,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB78",
+    "skillLv": 9,
+    "nextSkillId": 13106041,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB79",
+    "skillLv": 10,
+    "nextSkillId": 13106042,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB7A",
+    "skillLv": 11,
+    "nextSkillId": 13106043,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB7B",
+    "skillLv": 12,
+    "nextSkillId": 13106044,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB7C",
+    "skillLv": 13,
+    "nextSkillId": 13106045,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB7D",
+    "skillLv": 14,
+    "nextSkillId": 13106046,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB7E",
+    "skillLv": 15,
+    "nextSkillId": 13106047,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB7F",
+    "skillLv": 16,
+    "nextSkillId": 13106048,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB80",
+    "skillLv": 17,
+    "nextSkillId": 13106049,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FB81",
+    "skillLv": 18,
+    "nextSkillId": 13106050,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FB82",
+    "skillLv": 19,
+    "nextSkillId": 13106051,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FB83",
+    "skillLv": 20,
+    "nextSkillId": 13106052,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FB84",
+    "skillLv": 21,
+    "nextSkillId": 13106053,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FB85",
+    "skillLv": 22,
+    "nextSkillId": 13106054,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FB86",
+    "skillLv": 23,
+    "nextSkillId": 13106055,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FB87",
+    "skillLv": 24,
+    "nextSkillId": 13106056,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FB88",
+    "skillLv": 25,
+    "nextSkillId": 13106057,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FB89",
+    "skillLv": 26,
+    "nextSkillId": 13106058,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FB8A",
+    "skillLv": 27,
+    "nextSkillId": 13106059,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FB8B",
+    "skillLv": 28,
+    "nextSkillId": 13106060,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FB8C",
+    "skillLv": 29,
+    "nextSkillId": 13106061,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FB8D",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E3",
+    "skillLv": 0,
+    "nextSkillId": 13106063,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FB8F",
+    "skillLv": 1,
+    "nextSkillId": 13106064,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FB90",
+    "skillLv": 2,
+    "nextSkillId": 13106065,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FB91",
+    "skillLv": 3,
+    "nextSkillId": 13106066,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FB92",
+    "skillLv": 4,
+    "nextSkillId": 13106067,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FB93",
+    "skillLv": 5,
+    "nextSkillId": 13106068,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FB94",
+    "skillLv": 6,
+    "nextSkillId": 13106069,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FB95",
+    "skillLv": 7,
+    "nextSkillId": 13106070,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FB96",
+    "skillLv": 8,
+    "nextSkillId": 13106071,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FB97",
+    "skillLv": 9,
+    "nextSkillId": 13106072,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FB98",
+    "skillLv": 10,
+    "nextSkillId": 13106073,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FB99",
+    "skillLv": 11,
+    "nextSkillId": 13106074,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FB9A",
+    "skillLv": 12,
+    "nextSkillId": 13106075,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FB9B",
+    "skillLv": 13,
+    "nextSkillId": 13106076,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FB9C",
+    "skillLv": 14,
+    "nextSkillId": 13106077,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FB9D",
+    "skillLv": 15,
+    "nextSkillId": 13106078,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FB9E",
+    "skillLv": 16,
+    "nextSkillId": 13106079,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FB9F",
+    "skillLv": 17,
+    "nextSkillId": 13106080,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBA0",
+    "skillLv": 18,
+    "nextSkillId": 13106081,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBA1",
+    "skillLv": 19,
+    "nextSkillId": 13106082,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBA2",
+    "skillLv": 20,
+    "nextSkillId": 13106083,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBA3",
+    "skillLv": 21,
+    "nextSkillId": 13106084,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBA4",
+    "skillLv": 22,
+    "nextSkillId": 13106085,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBA5",
+    "skillLv": 23,
+    "nextSkillId": 13106086,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBA6",
+    "skillLv": 24,
+    "nextSkillId": 13106087,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBA7",
+    "skillLv": 25,
+    "nextSkillId": 13106088,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBA8",
+    "skillLv": 26,
+    "nextSkillId": 13106089,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBA9",
+    "skillLv": 27,
+    "nextSkillId": 13106090,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBAA",
+    "skillLv": 28,
+    "nextSkillId": 13106091,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBAB",
+    "skillLv": 29,
+    "nextSkillId": 13106092,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBAC",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E4",
+    "skillLv": 0,
+    "nextSkillId": 13106094,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBAE",
+    "skillLv": 1,
+    "nextSkillId": 13106095,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBAF",
+    "skillLv": 2,
+    "nextSkillId": 13106096,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBB0",
+    "skillLv": 3,
+    "nextSkillId": 13106097,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBB1",
+    "skillLv": 4,
+    "nextSkillId": 13106098,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBB2",
+    "skillLv": 5,
+    "nextSkillId": 13106099,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBB3",
+    "skillLv": 6,
+    "nextSkillId": 13106100,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBB4",
+    "skillLv": 7,
+    "nextSkillId": 13106101,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBB5",
+    "skillLv": 8,
+    "nextSkillId": 13106102,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBB6",
+    "skillLv": 9,
+    "nextSkillId": 13106103,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBB7",
+    "skillLv": 10,
+    "nextSkillId": 13106104,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBB8",
+    "skillLv": 11,
+    "nextSkillId": 13106105,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBB9",
+    "skillLv": 12,
+    "nextSkillId": 13106106,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBBA",
+    "skillLv": 13,
+    "nextSkillId": 13106107,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBBB",
+    "skillLv": 14,
+    "nextSkillId": 13106108,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBBC",
+    "skillLv": 15,
+    "nextSkillId": 13106109,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBBD",
+    "skillLv": 16,
+    "nextSkillId": 13106110,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBBE",
+    "skillLv": 17,
+    "nextSkillId": 13106111,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBBF",
+    "skillLv": 18,
+    "nextSkillId": 13106112,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBC0",
+    "skillLv": 19,
+    "nextSkillId": 13106113,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBC1",
+    "skillLv": 20,
+    "nextSkillId": 13106114,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBC2",
+    "skillLv": 21,
+    "nextSkillId": 13106115,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBC3",
+    "skillLv": 22,
+    "nextSkillId": 13106116,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBC4",
+    "skillLv": 23,
+    "nextSkillId": 13106117,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBC5",
+    "skillLv": 24,
+    "nextSkillId": 13106118,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBC6",
+    "skillLv": 25,
+    "nextSkillId": 13106119,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBC7",
+    "skillLv": 26,
+    "nextSkillId": 13106120,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBC8",
+    "skillLv": 27,
+    "nextSkillId": 13106121,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBC9",
+    "skillLv": 28,
+    "nextSkillId": 13106122,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBCA",
+    "skillLv": 29,
+    "nextSkillId": 13106123,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBCB",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E5",
+    "skillLv": 0,
+    "nextSkillId": 13106125,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBCD",
+    "skillLv": 1,
+    "nextSkillId": 13106126,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBCE",
+    "skillLv": 2,
+    "nextSkillId": 13106127,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBCF",
+    "skillLv": 3,
+    "nextSkillId": 13106128,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBD0",
+    "skillLv": 4,
+    "nextSkillId": 13106129,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBD1",
+    "skillLv": 5,
+    "nextSkillId": 13106130,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBD2",
+    "skillLv": 6,
+    "nextSkillId": 13106131,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBD3",
+    "skillLv": 7,
+    "nextSkillId": 13106132,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBD4",
+    "skillLv": 8,
+    "nextSkillId": 13106133,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBD5",
+    "skillLv": 9,
+    "nextSkillId": 13106134,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBD6",
+    "skillLv": 10,
+    "nextSkillId": 13106135,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBD7",
+    "skillLv": 11,
+    "nextSkillId": 13106136,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBD8",
+    "skillLv": 12,
+    "nextSkillId": 13106137,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBD9",
+    "skillLv": 13,
+    "nextSkillId": 13106138,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBDA",
+    "skillLv": 14,
+    "nextSkillId": 13106139,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBDB",
+    "skillLv": 15,
+    "nextSkillId": 13106140,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBDC",
+    "skillLv": 16,
+    "nextSkillId": 13106141,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBDD",
+    "skillLv": 17,
+    "nextSkillId": 13106142,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBDE",
+    "skillLv": 18,
+    "nextSkillId": 13106143,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBDF",
+    "skillLv": 19,
+    "nextSkillId": 13106144,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBE0",
+    "skillLv": 20,
+    "nextSkillId": 13106145,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FBE1",
+    "skillLv": 21,
+    "nextSkillId": 13106146,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FBE2",
+    "skillLv": 22,
+    "nextSkillId": 13106147,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FBE3",
+    "skillLv": 23,
+    "nextSkillId": 13106148,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FBE4",
+    "skillLv": 24,
+    "nextSkillId": 13106149,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FBE5",
+    "skillLv": 25,
+    "nextSkillId": 13106150,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FBE6",
+    "skillLv": 26,
+    "nextSkillId": 13106151,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FBE7",
+    "skillLv": 27,
+    "nextSkillId": 13106152,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FBE8",
+    "skillLv": 28,
+    "nextSkillId": 13106153,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FBE9",
+    "skillLv": 29,
+    "nextSkillId": 13106154,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FBEA",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E6",
+    "skillLv": 0,
+    "nextSkillId": 13106156,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FBEC",
+    "skillLv": 1,
+    "nextSkillId": 13106157,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FBED",
+    "skillLv": 2,
+    "nextSkillId": 13106158,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FBEE",
+    "skillLv": 3,
+    "nextSkillId": 13106159,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FBEF",
+    "skillLv": 4,
+    "nextSkillId": 13106160,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FBF0",
+    "skillLv": 5,
+    "nextSkillId": 13106161,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FBF1",
+    "skillLv": 6,
+    "nextSkillId": 13106162,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FBF2",
+    "skillLv": 7,
+    "nextSkillId": 13106163,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FBF3",
+    "skillLv": 8,
+    "nextSkillId": 13106164,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FBF4",
+    "skillLv": 9,
+    "nextSkillId": 13106165,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FBF5",
+    "skillLv": 10,
+    "nextSkillId": 13106166,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FBF6",
+    "skillLv": 11,
+    "nextSkillId": 13106167,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FBF7",
+    "skillLv": 12,
+    "nextSkillId": 13106168,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FBF8",
+    "skillLv": 13,
+    "nextSkillId": 13106169,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FBF9",
+    "skillLv": 14,
+    "nextSkillId": 13106170,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FBFA",
+    "skillLv": 15,
+    "nextSkillId": 13106171,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FBFB",
+    "skillLv": 16,
+    "nextSkillId": 13106172,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FBFC",
+    "skillLv": 17,
+    "nextSkillId": 13106173,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FBFD",
+    "skillLv": 18,
+    "nextSkillId": 13106174,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FBFE",
+    "skillLv": 19,
+    "nextSkillId": 13106175,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FBFF",
+    "skillLv": 20,
+    "nextSkillId": 13106176,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC00",
+    "skillLv": 21,
+    "nextSkillId": 13106177,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC01",
+    "skillLv": 22,
+    "nextSkillId": 13106178,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC02",
+    "skillLv": 23,
+    "nextSkillId": 13106179,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC03",
+    "skillLv": 24,
+    "nextSkillId": 13106180,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC04",
+    "skillLv": 25,
+    "nextSkillId": 13106181,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC05",
+    "skillLv": 26,
+    "nextSkillId": 13106182,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC06",
+    "skillLv": 27,
+    "nextSkillId": 13106183,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC07",
+    "skillLv": 28,
+    "nextSkillId": 13106184,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC08",
+    "skillLv": 29,
+    "nextSkillId": 13106185,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC09",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E7",
+    "skillLv": 0,
+    "nextSkillId": 13106187,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC0B",
+    "skillLv": 1,
+    "nextSkillId": 13106188,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC0C",
+    "skillLv": 2,
+    "nextSkillId": 13106189,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC0D",
+    "skillLv": 3,
+    "nextSkillId": 13106190,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC0E",
+    "skillLv": 4,
+    "nextSkillId": 13106191,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC0F",
+    "skillLv": 5,
+    "nextSkillId": 13106192,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC10",
+    "skillLv": 6,
+    "nextSkillId": 13106193,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC11",
+    "skillLv": 7,
+    "nextSkillId": 13106194,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC12",
+    "skillLv": 8,
+    "nextSkillId": 13106195,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC13",
+    "skillLv": 9,
+    "nextSkillId": 13106196,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC14",
+    "skillLv": 10,
+    "nextSkillId": 13106197,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC15",
+    "skillLv": 11,
+    "nextSkillId": 13106198,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC16",
+    "skillLv": 12,
+    "nextSkillId": 13106199,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC17",
+    "skillLv": 13,
+    "nextSkillId": 13106200,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC18",
+    "skillLv": 14,
+    "nextSkillId": 13106201,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC19",
+    "skillLv": 15,
+    "nextSkillId": 13106202,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC1A",
+    "skillLv": 16,
+    "nextSkillId": 13106203,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC1B",
+    "skillLv": 17,
+    "nextSkillId": 13106204,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC1C",
+    "skillLv": 18,
+    "nextSkillId": 13106205,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC1D",
+    "skillLv": 19,
+    "nextSkillId": 13106206,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC1E",
+    "skillLv": 20,
+    "nextSkillId": 13106207,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC1F",
+    "skillLv": 21,
+    "nextSkillId": 13106208,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC20",
+    "skillLv": 22,
+    "nextSkillId": 13106209,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC21",
+    "skillLv": 23,
+    "nextSkillId": 13106210,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC22",
+    "skillLv": 24,
+    "nextSkillId": 13106211,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC23",
+    "skillLv": 25,
+    "nextSkillId": 13106212,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC24",
+    "skillLv": 26,
+    "nextSkillId": 13106213,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC25",
+    "skillLv": 27,
+    "nextSkillId": 13106214,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC26",
+    "skillLv": 28,
+    "nextSkillId": 13106215,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC27",
+    "skillLv": 29,
+    "nextSkillId": 13106216,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC28",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E8",
+    "skillLv": 0,
+    "nextSkillId": 13106218,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC2A",
+    "skillLv": 1,
+    "nextSkillId": 13106219,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC2B",
+    "skillLv": 2,
+    "nextSkillId": 13106220,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC2C",
+    "skillLv": 3,
+    "nextSkillId": 13106221,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC2D",
+    "skillLv": 4,
+    "nextSkillId": 13106222,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC2E",
+    "skillLv": 5,
+    "nextSkillId": 13106223,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC2F",
+    "skillLv": 6,
+    "nextSkillId": 13106224,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC30",
+    "skillLv": 7,
+    "nextSkillId": 13106225,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC31",
+    "skillLv": 8,
+    "nextSkillId": 13106226,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC32",
+    "skillLv": 9,
+    "nextSkillId": 13106227,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC33",
+    "skillLv": 10,
+    "nextSkillId": 13106228,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC34",
+    "skillLv": 11,
+    "nextSkillId": 13106229,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC35",
+    "skillLv": 12,
+    "nextSkillId": 13106230,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC36",
+    "skillLv": 13,
+    "nextSkillId": 13106231,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC37",
+    "skillLv": 14,
+    "nextSkillId": 13106232,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC38",
+    "skillLv": 15,
+    "nextSkillId": 13106233,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC39",
+    "skillLv": 16,
+    "nextSkillId": 13106234,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC3A",
+    "skillLv": 17,
+    "nextSkillId": 13106235,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC3B",
+    "skillLv": 18,
+    "nextSkillId": 13106236,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC3C",
+    "skillLv": 19,
+    "nextSkillId": 13106237,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC3D",
+    "skillLv": 20,
+    "nextSkillId": 13106238,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC3E",
+    "skillLv": 21,
+    "nextSkillId": 13106239,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC3F",
+    "skillLv": 22,
+    "nextSkillId": 13106240,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC40",
+    "skillLv": 23,
+    "nextSkillId": 13106241,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC41",
+    "skillLv": 24,
+    "nextSkillId": 13106242,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC42",
+    "skillLv": 25,
+    "nextSkillId": 13106243,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC43",
+    "skillLv": 26,
+    "nextSkillId": 13106244,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC44",
+    "skillLv": 27,
+    "nextSkillId": 13106245,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC45",
+    "skillLv": 28,
+    "nextSkillId": 13106246,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC46",
+    "skillLv": 29,
+    "nextSkillId": 13106247,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC47",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3E9",
+    "skillLv": 0,
+    "nextSkillId": 13106249,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC49",
+    "skillLv": 1,
+    "nextSkillId": 13106250,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC4A",
+    "skillLv": 2,
+    "nextSkillId": 13106251,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC4B",
+    "skillLv": 3,
+    "nextSkillId": 13106252,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC4C",
+    "skillLv": 4,
+    "nextSkillId": 13106253,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC4D",
+    "skillLv": 5,
+    "nextSkillId": 13106254,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC4E",
+    "skillLv": 6,
+    "nextSkillId": 13106255,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC4F",
+    "skillLv": 7,
+    "nextSkillId": 13106256,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC50",
+    "skillLv": 8,
+    "nextSkillId": 13106257,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC51",
+    "skillLv": 9,
+    "nextSkillId": 13106258,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC52",
+    "skillLv": 10,
+    "nextSkillId": 13106259,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC53",
+    "skillLv": 11,
+    "nextSkillId": 13106260,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC54",
+    "skillLv": 12,
+    "nextSkillId": 13106261,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC55",
+    "skillLv": 13,
+    "nextSkillId": 13106262,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC56",
+    "skillLv": 14,
+    "nextSkillId": 13106263,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC57",
+    "skillLv": 15,
+    "nextSkillId": 13106264,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC58",
+    "skillLv": 16,
+    "nextSkillId": 13106265,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC59",
+    "skillLv": 17,
+    "nextSkillId": 13106266,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC5A",
+    "skillLv": 18,
+    "nextSkillId": 13106267,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC5B",
+    "skillLv": 19,
+    "nextSkillId": 13106268,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC5C",
+    "skillLv": 20,
+    "nextSkillId": 13106269,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC5D",
+    "skillLv": 21,
+    "nextSkillId": 13106270,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC5E",
+    "skillLv": 22,
+    "nextSkillId": 13106271,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC5F",
+    "skillLv": 23,
+    "nextSkillId": 13106272,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC60",
+    "skillLv": 24,
+    "nextSkillId": 13106273,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC61",
+    "skillLv": 25,
+    "nextSkillId": 13106274,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC62",
+    "skillLv": 26,
+    "nextSkillId": 13106275,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC63",
+    "skillLv": 27,
+    "nextSkillId": 13106276,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC64",
+    "skillLv": 28,
+    "nextSkillId": 13106277,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC65",
+    "skillLv": 29,
+    "nextSkillId": 13106278,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC66",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3ED",
+    "skillLv": 0,
+    "nextSkillId": 13106280,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC68",
+    "skillLv": 1,
+    "nextSkillId": 13106281,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC69",
+    "skillLv": 2,
+    "nextSkillId": 13106282,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC6A",
+    "skillLv": 3,
+    "nextSkillId": 13106283,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC6B",
+    "skillLv": 4,
+    "nextSkillId": 13106284,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC6C",
+    "skillLv": 5,
+    "nextSkillId": 13106285,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC6D",
+    "skillLv": 6,
+    "nextSkillId": 13106286,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC6E",
+    "skillLv": 7,
+    "nextSkillId": 13106287,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC6F",
+    "skillLv": 8,
+    "nextSkillId": 13106288,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC70",
+    "skillLv": 9,
+    "nextSkillId": 13106289,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC71",
+    "skillLv": 10,
+    "nextSkillId": 13106290,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC72",
+    "skillLv": 11,
+    "nextSkillId": 13106291,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC73",
+    "skillLv": 12,
+    "nextSkillId": 13106292,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC74",
+    "skillLv": 13,
+    "nextSkillId": 13106293,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC75",
+    "skillLv": 14,
+    "nextSkillId": 13106294,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC76",
+    "skillLv": 15,
+    "nextSkillId": 13106295,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC77",
+    "skillLv": 16,
+    "nextSkillId": 13106296,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC78",
+    "skillLv": 17,
+    "nextSkillId": 13106297,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC79",
+    "skillLv": 18,
+    "nextSkillId": 13106298,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC7A",
+    "skillLv": 19,
+    "nextSkillId": 13106299,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC7B",
+    "skillLv": 20,
+    "nextSkillId": 13106300,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC7C",
+    "skillLv": 21,
+    "nextSkillId": 13106301,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC7D",
+    "skillLv": 22,
+    "nextSkillId": 13106302,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC7E",
+    "skillLv": 23,
+    "nextSkillId": 13106303,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC7F",
+    "skillLv": 24,
+    "nextSkillId": 13106304,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC80",
+    "skillLv": 25,
+    "nextSkillId": 13106305,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FC81",
+    "skillLv": 26,
+    "nextSkillId": 13106306,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FC82",
+    "skillLv": 27,
+    "nextSkillId": 13106307,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FC83",
+    "skillLv": 28,
+    "nextSkillId": 13106308,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FC84",
+    "skillLv": 29,
+    "nextSkillId": 13106309,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FC85",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F1",
+    "skillLv": 0,
+    "nextSkillId": 13106311,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FC87",
+    "skillLv": 1,
+    "nextSkillId": 13106312,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FC88",
+    "skillLv": 2,
+    "nextSkillId": 13106313,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FC89",
+    "skillLv": 3,
+    "nextSkillId": 13106314,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FC8A",
+    "skillLv": 4,
+    "nextSkillId": 13106315,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FC8B",
+    "skillLv": 5,
+    "nextSkillId": 13106316,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FC8C",
+    "skillLv": 6,
+    "nextSkillId": 13106317,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FC8D",
+    "skillLv": 7,
+    "nextSkillId": 13106318,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FC8E",
+    "skillLv": 8,
+    "nextSkillId": 13106319,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FC8F",
+    "skillLv": 9,
+    "nextSkillId": 13106320,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FC90",
+    "skillLv": 10,
+    "nextSkillId": 13106321,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FC91",
+    "skillLv": 11,
+    "nextSkillId": 13106322,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FC92",
+    "skillLv": 12,
+    "nextSkillId": 13106323,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FC93",
+    "skillLv": 13,
+    "nextSkillId": 13106324,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FC94",
+    "skillLv": 14,
+    "nextSkillId": 13106325,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FC95",
+    "skillLv": 15,
+    "nextSkillId": 13106326,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FC96",
+    "skillLv": 16,
+    "nextSkillId": 13106327,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FC97",
+    "skillLv": 17,
+    "nextSkillId": 13106328,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FC98",
+    "skillLv": 18,
+    "nextSkillId": 13106329,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FC99",
+    "skillLv": 19,
+    "nextSkillId": 13106330,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FC9A",
+    "skillLv": 20,
+    "nextSkillId": 13106331,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FC9B",
+    "skillLv": 21,
+    "nextSkillId": 13106332,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FC9C",
+    "skillLv": 22,
+    "nextSkillId": 13106333,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FC9D",
+    "skillLv": 23,
+    "nextSkillId": 13106334,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FC9E",
+    "skillLv": 24,
+    "nextSkillId": 13106335,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FC9F",
+    "skillLv": 25,
+    "nextSkillId": 13106336,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCA0",
+    "skillLv": 26,
+    "nextSkillId": 13106337,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCA1",
+    "skillLv": 27,
+    "nextSkillId": 13106338,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCA2",
+    "skillLv": 28,
+    "nextSkillId": 13106339,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCA3",
+    "skillLv": 29,
+    "nextSkillId": 13106340,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCA4",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F2",
+    "skillLv": 0,
+    "nextSkillId": 13106342,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCA6",
+    "skillLv": 1,
+    "nextSkillId": 13106343,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCA7",
+    "skillLv": 2,
+    "nextSkillId": 13106344,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCA8",
+    "skillLv": 3,
+    "nextSkillId": 13106345,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCA9",
+    "skillLv": 4,
+    "nextSkillId": 13106346,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCAA",
+    "skillLv": 5,
+    "nextSkillId": 13106347,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCAB",
+    "skillLv": 6,
+    "nextSkillId": 13106348,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCAC",
+    "skillLv": 7,
+    "nextSkillId": 13106349,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCAD",
+    "skillLv": 8,
+    "nextSkillId": 13106350,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCAE",
+    "skillLv": 9,
+    "nextSkillId": 13106351,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCAF",
+    "skillLv": 10,
+    "nextSkillId": 13106352,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCB0",
+    "skillLv": 11,
+    "nextSkillId": 13106353,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCB1",
+    "skillLv": 12,
+    "nextSkillId": 13106354,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCB2",
+    "skillLv": 13,
+    "nextSkillId": 13106355,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCB3",
+    "skillLv": 14,
+    "nextSkillId": 13106356,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCB4",
+    "skillLv": 15,
+    "nextSkillId": 13106357,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCB5",
+    "skillLv": 16,
+    "nextSkillId": 13106358,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCB6",
+    "skillLv": 17,
+    "nextSkillId": 13106359,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCB7",
+    "skillLv": 18,
+    "nextSkillId": 13106360,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCB8",
+    "skillLv": 19,
+    "nextSkillId": 13106361,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCB9",
+    "skillLv": 20,
+    "nextSkillId": 13106362,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCBA",
+    "skillLv": 21,
+    "nextSkillId": 13106363,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCBB",
+    "skillLv": 22,
+    "nextSkillId": 13106364,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCBC",
+    "skillLv": 23,
+    "nextSkillId": 13106365,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCBD",
+    "skillLv": 24,
+    "nextSkillId": 13106366,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCBE",
+    "skillLv": 25,
+    "nextSkillId": 13106367,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCBF",
+    "skillLv": 26,
+    "nextSkillId": 13106368,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCC0",
+    "skillLv": 27,
+    "nextSkillId": 13106369,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCC1",
+    "skillLv": 28,
+    "nextSkillId": 13106370,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCC2",
+    "skillLv": 29,
+    "nextSkillId": 13106371,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCC3",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F3",
+    "skillLv": 0,
+    "nextSkillId": 13106373,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCC5",
+    "skillLv": 1,
+    "nextSkillId": 13106374,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCC6",
+    "skillLv": 2,
+    "nextSkillId": 13106375,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCC7",
+    "skillLv": 3,
+    "nextSkillId": 13106376,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCC8",
+    "skillLv": 4,
+    "nextSkillId": 13106377,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCC9",
+    "skillLv": 5,
+    "nextSkillId": 13106378,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCCA",
+    "skillLv": 6,
+    "nextSkillId": 13106379,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCCB",
+    "skillLv": 7,
+    "nextSkillId": 13106380,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCCC",
+    "skillLv": 8,
+    "nextSkillId": 13106381,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCCD",
+    "skillLv": 9,
+    "nextSkillId": 13106382,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCCE",
+    "skillLv": 10,
+    "nextSkillId": 13106383,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCCF",
+    "skillLv": 11,
+    "nextSkillId": 13106384,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCD0",
+    "skillLv": 12,
+    "nextSkillId": 13106385,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCD1",
+    "skillLv": 13,
+    "nextSkillId": 13106386,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCD2",
+    "skillLv": 14,
+    "nextSkillId": 13106387,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCD3",
+    "skillLv": 15,
+    "nextSkillId": 13106388,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCD4",
+    "skillLv": 16,
+    "nextSkillId": 13106389,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCD5",
+    "skillLv": 17,
+    "nextSkillId": 13106390,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCD6",
+    "skillLv": 18,
+    "nextSkillId": 13106391,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCD7",
+    "skillLv": 19,
+    "nextSkillId": 13106392,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCD8",
+    "skillLv": 20,
+    "nextSkillId": 13106393,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCD9",
+    "skillLv": 21,
+    "nextSkillId": 13106394,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCDA",
+    "skillLv": 22,
+    "nextSkillId": 13106395,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCDB",
+    "skillLv": 23,
+    "nextSkillId": 13106396,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCDC",
+    "skillLv": 24,
+    "nextSkillId": 13106397,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCDD",
+    "skillLv": 25,
+    "nextSkillId": 13106398,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCDE",
+    "skillLv": 26,
+    "nextSkillId": 13106399,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCDF",
+    "skillLv": 27,
+    "nextSkillId": 13106400,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCE0",
+    "skillLv": 28,
+    "nextSkillId": 13106401,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FCE1",
+    "skillLv": 29,
+    "nextSkillId": 13106402,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FCE2",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F4",
+    "skillLv": 0,
+    "nextSkillId": 13106404,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FCE4",
+    "skillLv": 1,
+    "nextSkillId": 13106405,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FCE5",
+    "skillLv": 2,
+    "nextSkillId": 13106406,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FCE6",
+    "skillLv": 3,
+    "nextSkillId": 13106407,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FCE7",
+    "skillLv": 4,
+    "nextSkillId": 13106408,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FCE8",
+    "skillLv": 5,
+    "nextSkillId": 13106409,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FCE9",
+    "skillLv": 6,
+    "nextSkillId": 13106410,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FCEA",
+    "skillLv": 7,
+    "nextSkillId": 13106411,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FCEB",
+    "skillLv": 8,
+    "nextSkillId": 13106412,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FCEC",
+    "skillLv": 9,
+    "nextSkillId": 13106413,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FCED",
+    "skillLv": 10,
+    "nextSkillId": 13106414,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FCEE",
+    "skillLv": 11,
+    "nextSkillId": 13106415,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FCEF",
+    "skillLv": 12,
+    "nextSkillId": 13106416,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FCF0",
+    "skillLv": 13,
+    "nextSkillId": 13106417,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FCF1",
+    "skillLv": 14,
+    "nextSkillId": 13106418,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FCF2",
+    "skillLv": 15,
+    "nextSkillId": 13106419,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FCF3",
+    "skillLv": 16,
+    "nextSkillId": 13106420,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FCF4",
+    "skillLv": 17,
+    "nextSkillId": 13106421,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FCF5",
+    "skillLv": 18,
+    "nextSkillId": 13106422,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FCF6",
+    "skillLv": 19,
+    "nextSkillId": 13106423,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FCF7",
+    "skillLv": 20,
+    "nextSkillId": 13106424,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FCF8",
+    "skillLv": 21,
+    "nextSkillId": 13106425,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FCF9",
+    "skillLv": 22,
+    "nextSkillId": 13106426,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FCFA",
+    "skillLv": 23,
+    "nextSkillId": 13106427,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FCFB",
+    "skillLv": 24,
+    "nextSkillId": 13106428,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FCFC",
+    "skillLv": 25,
+    "nextSkillId": 13106429,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FCFD",
+    "skillLv": 26,
+    "nextSkillId": 13106430,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FCFE",
+    "skillLv": 27,
+    "nextSkillId": 13106431,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FCFF",
+    "skillLv": 28,
+    "nextSkillId": 13106432,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD00",
+    "skillLv": 29,
+    "nextSkillId": 13106433,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD01",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F5",
+    "skillLv": 0,
+    "nextSkillId": 13106435,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD03",
+    "skillLv": 1,
+    "nextSkillId": 13106436,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD04",
+    "skillLv": 2,
+    "nextSkillId": 13106437,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD05",
+    "skillLv": 3,
+    "nextSkillId": 13106438,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD06",
+    "skillLv": 4,
+    "nextSkillId": 13106439,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD07",
+    "skillLv": 5,
+    "nextSkillId": 13106440,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD08",
+    "skillLv": 6,
+    "nextSkillId": 13106441,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD09",
+    "skillLv": 7,
+    "nextSkillId": 13106442,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD0A",
+    "skillLv": 8,
+    "nextSkillId": 13106443,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD0B",
+    "skillLv": 9,
+    "nextSkillId": 13106444,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD0C",
+    "skillLv": 10,
+    "nextSkillId": 13106445,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD0D",
+    "skillLv": 11,
+    "nextSkillId": 13106446,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD0E",
+    "skillLv": 12,
+    "nextSkillId": 13106447,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD0F",
+    "skillLv": 13,
+    "nextSkillId": 13106448,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD10",
+    "skillLv": 14,
+    "nextSkillId": 13106449,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD11",
+    "skillLv": 15,
+    "nextSkillId": 13106450,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD12",
+    "skillLv": 16,
+    "nextSkillId": 13106451,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD13",
+    "skillLv": 17,
+    "nextSkillId": 13106452,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD14",
+    "skillLv": 18,
+    "nextSkillId": 13106453,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD15",
+    "skillLv": 19,
+    "nextSkillId": 13106454,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD16",
+    "skillLv": 20,
+    "nextSkillId": 13106455,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD17",
+    "skillLv": 21,
+    "nextSkillId": 13106456,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD18",
+    "skillLv": 22,
+    "nextSkillId": 13106457,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD19",
+    "skillLv": 23,
+    "nextSkillId": 13106458,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD1A",
+    "skillLv": 24,
+    "nextSkillId": 13106459,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD1B",
+    "skillLv": 25,
+    "nextSkillId": 13106460,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD1C",
+    "skillLv": 26,
+    "nextSkillId": 13106461,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD1D",
+    "skillLv": 27,
+    "nextSkillId": 13106462,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD1E",
+    "skillLv": 28,
+    "nextSkillId": 13106463,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD1F",
+    "skillLv": 29,
+    "nextSkillId": 13106464,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD20",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F6",
+    "skillLv": 0,
+    "nextSkillId": 13106466,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD22",
+    "skillLv": 1,
+    "nextSkillId": 13106467,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD23",
+    "skillLv": 2,
+    "nextSkillId": 13106468,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD24",
+    "skillLv": 3,
+    "nextSkillId": 13106469,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD25",
+    "skillLv": 4,
+    "nextSkillId": 13106470,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD26",
+    "skillLv": 5,
+    "nextSkillId": 13106471,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD27",
+    "skillLv": 6,
+    "nextSkillId": 13106472,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD28",
+    "skillLv": 7,
+    "nextSkillId": 13106473,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD29",
+    "skillLv": 8,
+    "nextSkillId": 13106474,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD2A",
+    "skillLv": 9,
+    "nextSkillId": 13106475,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD2B",
+    "skillLv": 10,
+    "nextSkillId": 13106476,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD2C",
+    "skillLv": 11,
+    "nextSkillId": 13106477,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD2D",
+    "skillLv": 12,
+    "nextSkillId": 13106478,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD2E",
+    "skillLv": 13,
+    "nextSkillId": 13106479,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD2F",
+    "skillLv": 14,
+    "nextSkillId": 13106480,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD30",
+    "skillLv": 15,
+    "nextSkillId": 13106481,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD31",
+    "skillLv": 16,
+    "nextSkillId": 13106482,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD32",
+    "skillLv": 17,
+    "nextSkillId": 13106483,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD33",
+    "skillLv": 18,
+    "nextSkillId": 13106484,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD34",
+    "skillLv": 19,
+    "nextSkillId": 13106485,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD35",
+    "skillLv": 20,
+    "nextSkillId": 13106486,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD36",
+    "skillLv": 21,
+    "nextSkillId": 13106487,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD37",
+    "skillLv": 22,
+    "nextSkillId": 13106488,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD38",
+    "skillLv": 23,
+    "nextSkillId": 13106489,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD39",
+    "skillLv": 24,
+    "nextSkillId": 13106490,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD3A",
+    "skillLv": 25,
+    "nextSkillId": 13106491,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD3B",
+    "skillLv": 26,
+    "nextSkillId": 13106492,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD3C",
+    "skillLv": 27,
+    "nextSkillId": 13106493,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD3D",
+    "skillLv": 28,
+    "nextSkillId": 13106494,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD3E",
+    "skillLv": 29,
+    "nextSkillId": 13106495,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD3F",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F7",
+    "skillLv": 0,
+    "nextSkillId": 13106497,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD41",
+    "skillLv": 1,
+    "nextSkillId": 13106498,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD42",
+    "skillLv": 2,
+    "nextSkillId": 13106499,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD43",
+    "skillLv": 3,
+    "nextSkillId": 13106500,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD44",
+    "skillLv": 4,
+    "nextSkillId": 13106501,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD45",
+    "skillLv": 5,
+    "nextSkillId": 13106502,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD46",
+    "skillLv": 6,
+    "nextSkillId": 13106503,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD47",
+    "skillLv": 7,
+    "nextSkillId": 13106504,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD48",
+    "skillLv": 8,
+    "nextSkillId": 13106505,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD49",
+    "skillLv": 9,
+    "nextSkillId": 13106506,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD4A",
+    "skillLv": 10,
+    "nextSkillId": 13106507,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD4B",
+    "skillLv": 11,
+    "nextSkillId": 13106508,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD4C",
+    "skillLv": 12,
+    "nextSkillId": 13106509,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD4D",
+    "skillLv": 13,
+    "nextSkillId": 13106510,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD4E",
+    "skillLv": 14,
+    "nextSkillId": 13106511,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD4F",
+    "skillLv": 15,
+    "nextSkillId": 13106512,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD50",
+    "skillLv": 16,
+    "nextSkillId": 13106513,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD51",
+    "skillLv": 17,
+    "nextSkillId": 13106514,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD52",
+    "skillLv": 18,
+    "nextSkillId": 13106515,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD53",
+    "skillLv": 19,
+    "nextSkillId": 13106516,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD54",
+    "skillLv": 20,
+    "nextSkillId": 13106517,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD55",
+    "skillLv": 21,
+    "nextSkillId": 13106518,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD56",
+    "skillLv": 22,
+    "nextSkillId": 13106519,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD57",
+    "skillLv": 23,
+    "nextSkillId": 13106520,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD58",
+    "skillLv": 24,
+    "nextSkillId": 13106521,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD59",
+    "skillLv": 25,
+    "nextSkillId": 13106522,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD5A",
+    "skillLv": 26,
+    "nextSkillId": 13106523,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD5B",
+    "skillLv": 27,
+    "nextSkillId": 13106524,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD5C",
+    "skillLv": 28,
+    "nextSkillId": 13106525,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD5D",
+    "skillLv": 29,
+    "nextSkillId": 13106526,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD5E",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F8",
+    "skillLv": 0,
+    "nextSkillId": 13106528,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD60",
+    "skillLv": 1,
+    "nextSkillId": 13106529,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD61",
+    "skillLv": 2,
+    "nextSkillId": 13106530,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD62",
+    "skillLv": 3,
+    "nextSkillId": 13106531,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD63",
+    "skillLv": 4,
+    "nextSkillId": 13106532,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD64",
+    "skillLv": 5,
+    "nextSkillId": 13106533,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD65",
+    "skillLv": 6,
+    "nextSkillId": 13106534,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD66",
+    "skillLv": 7,
+    "nextSkillId": 13106535,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD67",
+    "skillLv": 8,
+    "nextSkillId": 13106536,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD68",
+    "skillLv": 9,
+    "nextSkillId": 13106537,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD69",
+    "skillLv": 10,
+    "nextSkillId": 13106538,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD6A",
+    "skillLv": 11,
+    "nextSkillId": 13106539,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD6B",
+    "skillLv": 12,
+    "nextSkillId": 13106540,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD6C",
+    "skillLv": 13,
+    "nextSkillId": 13106541,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD6D",
+    "skillLv": 14,
+    "nextSkillId": 13106542,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD6E",
+    "skillLv": 15,
+    "nextSkillId": 13106543,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD6F",
+    "skillLv": 16,
+    "nextSkillId": 13106544,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD70",
+    "skillLv": 17,
+    "nextSkillId": 13106545,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD71",
+    "skillLv": 18,
+    "nextSkillId": 13106546,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD72",
+    "skillLv": 19,
+    "nextSkillId": 13106547,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD73",
+    "skillLv": 20,
+    "nextSkillId": 13106548,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD74",
+    "skillLv": 21,
+    "nextSkillId": 13106549,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD75",
+    "skillLv": 22,
+    "nextSkillId": 13106550,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD76",
+    "skillLv": 23,
+    "nextSkillId": 13106551,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD77",
+    "skillLv": 24,
+    "nextSkillId": 13106552,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD78",
+    "skillLv": 25,
+    "nextSkillId": 13106553,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD79",
+    "skillLv": 26,
+    "nextSkillId": 13106554,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD7A",
+    "skillLv": 27,
+    "nextSkillId": 13106555,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD7B",
+    "skillLv": 28,
+    "nextSkillId": 13106556,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD7C",
+    "skillLv": 29,
+    "nextSkillId": 13106557,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD7D",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3F9",
+    "skillLv": 0,
+    "nextSkillId": 13106559,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD7F",
+    "skillLv": 1,
+    "nextSkillId": 13106560,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD80",
+    "skillLv": 2,
+    "nextSkillId": 13106561,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FD81",
+    "skillLv": 3,
+    "nextSkillId": 13106562,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FD82",
+    "skillLv": 4,
+    "nextSkillId": 13106563,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FD83",
+    "skillLv": 5,
+    "nextSkillId": 13106564,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FD84",
+    "skillLv": 6,
+    "nextSkillId": 13106565,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FD85",
+    "skillLv": 7,
+    "nextSkillId": 13106566,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FD86",
+    "skillLv": 8,
+    "nextSkillId": 13106567,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FD87",
+    "skillLv": 9,
+    "nextSkillId": 13106568,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FD88",
+    "skillLv": 10,
+    "nextSkillId": 13106569,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FD89",
+    "skillLv": 11,
+    "nextSkillId": 13106570,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FD8A",
+    "skillLv": 12,
+    "nextSkillId": 13106571,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FD8B",
+    "skillLv": 13,
+    "nextSkillId": 13106572,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FD8C",
+    "skillLv": 14,
+    "nextSkillId": 13106573,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FD8D",
+    "skillLv": 15,
+    "nextSkillId": 13106574,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FD8E",
+    "skillLv": 16,
+    "nextSkillId": 13106575,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FD8F",
+    "skillLv": 17,
+    "nextSkillId": 13106576,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FD90",
+    "skillLv": 18,
+    "nextSkillId": 13106577,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FD91",
+    "skillLv": 19,
+    "nextSkillId": 13106578,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FD92",
+    "skillLv": 20,
+    "nextSkillId": 13106579,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FD93",
+    "skillLv": 21,
+    "nextSkillId": 13106580,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FD94",
+    "skillLv": 22,
+    "nextSkillId": 13106581,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FD95",
+    "skillLv": 23,
+    "nextSkillId": 13106582,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FD96",
+    "skillLv": 24,
+    "nextSkillId": 13106583,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FD97",
+    "skillLv": 25,
+    "nextSkillId": 13106584,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FD98",
+    "skillLv": 26,
+    "nextSkillId": 13106585,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FD99",
+    "skillLv": 27,
+    "nextSkillId": 13106586,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FD9A",
+    "skillLv": 28,
+    "nextSkillId": 13106587,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FD9B",
+    "skillLv": 29,
+    "nextSkillId": 13106588,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FD9C",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E3FD",
+    "skillLv": 0,
+    "nextSkillId": 13106590,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FD9E",
+    "skillLv": 1,
+    "nextSkillId": 13106591,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FD9F",
+    "skillLv": 2,
+    "nextSkillId": 13106592,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDA0",
+    "skillLv": 3,
+    "nextSkillId": 13106593,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDA1",
+    "skillLv": 4,
+    "nextSkillId": 13106594,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDA2",
+    "skillLv": 5,
+    "nextSkillId": 13106595,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDA3",
+    "skillLv": 6,
+    "nextSkillId": 13106596,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDA4",
+    "skillLv": 7,
+    "nextSkillId": 13106597,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDA5",
+    "skillLv": 8,
+    "nextSkillId": 13106598,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDA6",
+    "skillLv": 9,
+    "nextSkillId": 13106599,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDA7",
+    "skillLv": 10,
+    "nextSkillId": 13106600,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDA8",
+    "skillLv": 11,
+    "nextSkillId": 13106601,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDA9",
+    "skillLv": 12,
+    "nextSkillId": 13106602,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDAA",
+    "skillLv": 13,
+    "nextSkillId": 13106603,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDAB",
+    "skillLv": 14,
+    "nextSkillId": 13106604,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDAC",
+    "skillLv": 15,
+    "nextSkillId": 13106605,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDAD",
+    "skillLv": 16,
+    "nextSkillId": 13106606,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDAE",
+    "skillLv": 17,
+    "nextSkillId": 13106607,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDAF",
+    "skillLv": 18,
+    "nextSkillId": 13106608,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDB0",
+    "skillLv": 19,
+    "nextSkillId": 13106609,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDB1",
+    "skillLv": 20,
+    "nextSkillId": 13106610,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDB2",
+    "skillLv": 21,
+    "nextSkillId": 13106611,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDB3",
+    "skillLv": 22,
+    "nextSkillId": 13106612,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDB4",
+    "skillLv": 23,
+    "nextSkillId": 13106613,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDB5",
+    "skillLv": 24,
+    "nextSkillId": 13106614,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDB6",
+    "skillLv": 25,
+    "nextSkillId": 13106615,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDB7",
+    "skillLv": 26,
+    "nextSkillId": 13106616,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDB8",
+    "skillLv": 27,
+    "nextSkillId": 13106617,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDB9",
+    "skillLv": 28,
+    "nextSkillId": 13106618,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDBA",
+    "skillLv": 29,
+    "nextSkillId": 13106619,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDBB",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E401",
+    "skillLv": 0,
+    "nextSkillId": 13106621,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDBD",
+    "skillLv": 1,
+    "nextSkillId": 13106622,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDBE",
+    "skillLv": 2,
+    "nextSkillId": 13106623,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDBF",
+    "skillLv": 3,
+    "nextSkillId": 13106624,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDC0",
+    "skillLv": 4,
+    "nextSkillId": 13106625,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDC1",
+    "skillLv": 5,
+    "nextSkillId": 13106626,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDC2",
+    "skillLv": 6,
+    "nextSkillId": 13106627,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDC3",
+    "skillLv": 7,
+    "nextSkillId": 13106628,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDC4",
+    "skillLv": 8,
+    "nextSkillId": 13106629,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDC5",
+    "skillLv": 9,
+    "nextSkillId": 13106630,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDC6",
+    "skillLv": 10,
+    "nextSkillId": 13106631,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDC7",
+    "skillLv": 11,
+    "nextSkillId": 13106632,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDC8",
+    "skillLv": 12,
+    "nextSkillId": 13106633,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDC9",
+    "skillLv": 13,
+    "nextSkillId": 13106634,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDCA",
+    "skillLv": 14,
+    "nextSkillId": 13106635,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDCB",
+    "skillLv": 15,
+    "nextSkillId": 13106636,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDCC",
+    "skillLv": 16,
+    "nextSkillId": 13106637,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDCD",
+    "skillLv": 17,
+    "nextSkillId": 13106638,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDCE",
+    "skillLv": 18,
+    "nextSkillId": 13106639,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDCF",
+    "skillLv": 19,
+    "nextSkillId": 13106640,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDD0",
+    "skillLv": 20,
+    "nextSkillId": 13106641,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDD1",
+    "skillLv": 21,
+    "nextSkillId": 13106642,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDD2",
+    "skillLv": 22,
+    "nextSkillId": 13106643,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDD3",
+    "skillLv": 23,
+    "nextSkillId": 13106644,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDD4",
+    "skillLv": 24,
+    "nextSkillId": 13106645,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDD5",
+    "skillLv": 25,
+    "nextSkillId": 13106646,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDD6",
+    "skillLv": 26,
+    "nextSkillId": 13106647,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDD7",
+    "skillLv": 27,
+    "nextSkillId": 13106648,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDD8",
+    "skillLv": 28,
+    "nextSkillId": 13106649,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDD9",
+    "skillLv": 29,
+    "nextSkillId": 13106650,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDDA",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E402",
+    "skillLv": 0,
+    "nextSkillId": 13106652,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDDC",
+    "skillLv": 1,
+    "nextSkillId": 13106653,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDDD",
+    "skillLv": 2,
+    "nextSkillId": 13106654,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDDE",
+    "skillLv": 3,
+    "nextSkillId": 13106655,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDDF",
+    "skillLv": 4,
+    "nextSkillId": 13106656,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDE0",
+    "skillLv": 5,
+    "nextSkillId": 13106657,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FDE1",
+    "skillLv": 6,
+    "nextSkillId": 13106658,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FDE2",
+    "skillLv": 7,
+    "nextSkillId": 13106659,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FDE3",
+    "skillLv": 8,
+    "nextSkillId": 13106660,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FDE4",
+    "skillLv": 9,
+    "nextSkillId": 13106661,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FDE5",
+    "skillLv": 10,
+    "nextSkillId": 13106662,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FDE6",
+    "skillLv": 11,
+    "nextSkillId": 13106663,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FDE7",
+    "skillLv": 12,
+    "nextSkillId": 13106664,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FDE8",
+    "skillLv": 13,
+    "nextSkillId": 13106665,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FDE9",
+    "skillLv": 14,
+    "nextSkillId": 13106666,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FDEA",
+    "skillLv": 15,
+    "nextSkillId": 13106667,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FDEB",
+    "skillLv": 16,
+    "nextSkillId": 13106668,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FDEC",
+    "skillLv": 17,
+    "nextSkillId": 13106669,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FDED",
+    "skillLv": 18,
+    "nextSkillId": 13106670,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FDEE",
+    "skillLv": 19,
+    "nextSkillId": 13106671,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FDEF",
+    "skillLv": 20,
+    "nextSkillId": 13106672,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FDF0",
+    "skillLv": 21,
+    "nextSkillId": 13106673,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FDF1",
+    "skillLv": 22,
+    "nextSkillId": 13106674,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FDF2",
+    "skillLv": 23,
+    "nextSkillId": 13106675,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FDF3",
+    "skillLv": 24,
+    "nextSkillId": 13106676,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FDF4",
+    "skillLv": 25,
+    "nextSkillId": 13106677,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FDF5",
+    "skillLv": 26,
+    "nextSkillId": 13106678,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FDF6",
+    "skillLv": 27,
+    "nextSkillId": 13106679,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FDF7",
+    "skillLv": 28,
+    "nextSkillId": 13106680,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FDF8",
+    "skillLv": 29,
+    "nextSkillId": 13106681,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FDF9",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E403",
+    "skillLv": 0,
+    "nextSkillId": 13106683,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FDFB",
+    "skillLv": 1,
+    "nextSkillId": 13106684,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FDFC",
+    "skillLv": 2,
+    "nextSkillId": 13106685,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FDFD",
+    "skillLv": 3,
+    "nextSkillId": 13106686,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FDFE",
+    "skillLv": 4,
+    "nextSkillId": 13106687,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FDFF",
+    "skillLv": 5,
+    "nextSkillId": 13106688,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE00",
+    "skillLv": 6,
+    "nextSkillId": 13106689,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE01",
+    "skillLv": 7,
+    "nextSkillId": 13106690,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE02",
+    "skillLv": 8,
+    "nextSkillId": 13106691,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE03",
+    "skillLv": 9,
+    "nextSkillId": 13106692,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE04",
+    "skillLv": 10,
+    "nextSkillId": 13106693,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE05",
+    "skillLv": 11,
+    "nextSkillId": 13106694,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE06",
+    "skillLv": 12,
+    "nextSkillId": 13106695,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE07",
+    "skillLv": 13,
+    "nextSkillId": 13106696,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE08",
+    "skillLv": 14,
+    "nextSkillId": 13106697,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE09",
+    "skillLv": 15,
+    "nextSkillId": 13106698,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE0A",
+    "skillLv": 16,
+    "nextSkillId": 13106699,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE0B",
+    "skillLv": 17,
+    "nextSkillId": 13106700,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE0C",
+    "skillLv": 18,
+    "nextSkillId": 13106701,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE0D",
+    "skillLv": 19,
+    "nextSkillId": 13106702,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE0E",
+    "skillLv": 20,
+    "nextSkillId": 13106703,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE0F",
+    "skillLv": 21,
+    "nextSkillId": 13106704,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE10",
+    "skillLv": 22,
+    "nextSkillId": 13106705,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE11",
+    "skillLv": 23,
+    "nextSkillId": 13106706,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE12",
+    "skillLv": 24,
+    "nextSkillId": 13106707,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE13",
+    "skillLv": 25,
+    "nextSkillId": 13106708,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE14",
+    "skillLv": 26,
+    "nextSkillId": 13106709,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE15",
+    "skillLv": 27,
+    "nextSkillId": 13106710,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE16",
+    "skillLv": 28,
+    "nextSkillId": 13106711,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE17",
+    "skillLv": 29,
+    "nextSkillId": 13106712,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE18",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E404",
+    "skillLv": 0,
+    "nextSkillId": 13106714,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE1A",
+    "skillLv": 1,
+    "nextSkillId": 13106715,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE1B",
+    "skillLv": 2,
+    "nextSkillId": 13106716,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE1C",
+    "skillLv": 3,
+    "nextSkillId": 13106717,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE1D",
+    "skillLv": 4,
+    "nextSkillId": 13106718,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE1E",
+    "skillLv": 5,
+    "nextSkillId": 13106719,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE1F",
+    "skillLv": 6,
+    "nextSkillId": 13106720,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE20",
+    "skillLv": 7,
+    "nextSkillId": 13106721,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE21",
+    "skillLv": 8,
+    "nextSkillId": 13106722,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE22",
+    "skillLv": 9,
+    "nextSkillId": 13106723,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE23",
+    "skillLv": 10,
+    "nextSkillId": 13106724,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE24",
+    "skillLv": 11,
+    "nextSkillId": 13106725,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE25",
+    "skillLv": 12,
+    "nextSkillId": 13106726,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE26",
+    "skillLv": 13,
+    "nextSkillId": 13106727,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE27",
+    "skillLv": 14,
+    "nextSkillId": 13106728,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE28",
+    "skillLv": 15,
+    "nextSkillId": 13106729,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE29",
+    "skillLv": 16,
+    "nextSkillId": 13106730,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE2A",
+    "skillLv": 17,
+    "nextSkillId": 13106731,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE2B",
+    "skillLv": 18,
+    "nextSkillId": 13106732,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE2C",
+    "skillLv": 19,
+    "nextSkillId": 13106733,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE2D",
+    "skillLv": 20,
+    "nextSkillId": 13106734,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE2E",
+    "skillLv": 21,
+    "nextSkillId": 13106735,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE2F",
+    "skillLv": 22,
+    "nextSkillId": 13106736,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE30",
+    "skillLv": 23,
+    "nextSkillId": 13106737,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE31",
+    "skillLv": 24,
+    "nextSkillId": 13106738,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE32",
+    "skillLv": 25,
+    "nextSkillId": 13106739,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE33",
+    "skillLv": 26,
+    "nextSkillId": 13106740,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE34",
+    "skillLv": 27,
+    "nextSkillId": 13106741,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE35",
+    "skillLv": 28,
+    "nextSkillId": 13106742,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE36",
+    "skillLv": 29,
+    "nextSkillId": 13106743,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE37",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E405",
+    "skillLv": 0,
+    "nextSkillId": 13106745,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE39",
+    "skillLv": 1,
+    "nextSkillId": 13106746,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE3A",
+    "skillLv": 2,
+    "nextSkillId": 13106747,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE3B",
+    "skillLv": 3,
+    "nextSkillId": 13106748,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE3C",
+    "skillLv": 4,
+    "nextSkillId": 13106749,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE3D",
+    "skillLv": 5,
+    "nextSkillId": 13106750,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE3E",
+    "skillLv": 6,
+    "nextSkillId": 13106751,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE3F",
+    "skillLv": 7,
+    "nextSkillId": 13106752,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE40",
+    "skillLv": 8,
+    "nextSkillId": 13106753,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE41",
+    "skillLv": 9,
+    "nextSkillId": 13106754,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE42",
+    "skillLv": 10,
+    "nextSkillId": 13106755,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE43",
+    "skillLv": 11,
+    "nextSkillId": 13106756,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE44",
+    "skillLv": 12,
+    "nextSkillId": 13106757,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE45",
+    "skillLv": 13,
+    "nextSkillId": 13106758,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE46",
+    "skillLv": 14,
+    "nextSkillId": 13106759,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE47",
+    "skillLv": 15,
+    "nextSkillId": 13106760,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE48",
+    "skillLv": 16,
+    "nextSkillId": 13106761,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE49",
+    "skillLv": 17,
+    "nextSkillId": 13106762,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE4A",
+    "skillLv": 18,
+    "nextSkillId": 13106763,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE4B",
+    "skillLv": 19,
+    "nextSkillId": 13106764,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE4C",
+    "skillLv": 20,
+    "nextSkillId": 13106765,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE4D",
+    "skillLv": 21,
+    "nextSkillId": 13106766,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE4E",
+    "skillLv": 22,
+    "nextSkillId": 13106767,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE4F",
+    "skillLv": 23,
+    "nextSkillId": 13106768,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE50",
+    "skillLv": 24,
+    "nextSkillId": 13106769,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE51",
+    "skillLv": 25,
+    "nextSkillId": 13106770,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE52",
+    "skillLv": 26,
+    "nextSkillId": 13106771,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE53",
+    "skillLv": 27,
+    "nextSkillId": 13106772,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE54",
+    "skillLv": 28,
+    "nextSkillId": 13106773,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE55",
+    "skillLv": 29,
+    "nextSkillId": 13106774,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE56",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E406",
+    "skillLv": 0,
+    "nextSkillId": 13106776,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE58",
+    "skillLv": 1,
+    "nextSkillId": 13106777,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE59",
+    "skillLv": 2,
+    "nextSkillId": 13106778,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE5A",
+    "skillLv": 3,
+    "nextSkillId": 13106779,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE5B",
+    "skillLv": 4,
+    "nextSkillId": 13106780,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE5C",
+    "skillLv": 5,
+    "nextSkillId": 13106781,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE5D",
+    "skillLv": 6,
+    "nextSkillId": 13106782,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE5E",
+    "skillLv": 7,
+    "nextSkillId": 13106783,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE5F",
+    "skillLv": 8,
+    "nextSkillId": 13106784,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE60",
+    "skillLv": 9,
+    "nextSkillId": 13106785,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE61",
+    "skillLv": 10,
+    "nextSkillId": 13106786,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE62",
+    "skillLv": 11,
+    "nextSkillId": 13106787,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE63",
+    "skillLv": 12,
+    "nextSkillId": 13106788,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE64",
+    "skillLv": 13,
+    "nextSkillId": 13106789,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE65",
+    "skillLv": 14,
+    "nextSkillId": 13106790,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE66",
+    "skillLv": 15,
+    "nextSkillId": 13106791,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE67",
+    "skillLv": 16,
+    "nextSkillId": 13106792,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE68",
+    "skillLv": 17,
+    "nextSkillId": 13106793,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE69",
+    "skillLv": 18,
+    "nextSkillId": 13106794,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE6A",
+    "skillLv": 19,
+    "nextSkillId": 13106795,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE6B",
+    "skillLv": 20,
+    "nextSkillId": 13106796,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE6C",
+    "skillLv": 21,
+    "nextSkillId": 13106797,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE6D",
+    "skillLv": 22,
+    "nextSkillId": 13106798,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE6E",
+    "skillLv": 23,
+    "nextSkillId": 13106799,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE6F",
+    "skillLv": 24,
+    "nextSkillId": 13106800,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE70",
+    "skillLv": 25,
+    "nextSkillId": 13106801,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE71",
+    "skillLv": 26,
+    "nextSkillId": 13106802,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE72",
+    "skillLv": 27,
+    "nextSkillId": 13106803,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE73",
+    "skillLv": 28,
+    "nextSkillId": 13106804,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE74",
+    "skillLv": 29,
+    "nextSkillId": 13106805,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE75",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E407",
+    "skillLv": 0,
+    "nextSkillId": 13106807,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE77",
+    "skillLv": 1,
+    "nextSkillId": 13106808,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE78",
+    "skillLv": 2,
+    "nextSkillId": 13106809,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE79",
+    "skillLv": 3,
+    "nextSkillId": 13106810,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE7A",
+    "skillLv": 4,
+    "nextSkillId": 13106811,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE7B",
+    "skillLv": 5,
+    "nextSkillId": 13106812,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE7C",
+    "skillLv": 6,
+    "nextSkillId": 13106813,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE7D",
+    "skillLv": 7,
+    "nextSkillId": 13106814,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE7E",
+    "skillLv": 8,
+    "nextSkillId": 13106815,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE7F",
+    "skillLv": 9,
+    "nextSkillId": 13106816,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE80",
+    "skillLv": 10,
+    "nextSkillId": 13106817,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FE81",
+    "skillLv": 11,
+    "nextSkillId": 13106818,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FE82",
+    "skillLv": 12,
+    "nextSkillId": 13106819,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FE83",
+    "skillLv": 13,
+    "nextSkillId": 13106820,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FE84",
+    "skillLv": 14,
+    "nextSkillId": 13106821,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FE85",
+    "skillLv": 15,
+    "nextSkillId": 13106822,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FE86",
+    "skillLv": 16,
+    "nextSkillId": 13106823,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FE87",
+    "skillLv": 17,
+    "nextSkillId": 13106824,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FE88",
+    "skillLv": 18,
+    "nextSkillId": 13106825,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FE89",
+    "skillLv": 19,
+    "nextSkillId": 13106826,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FE8A",
+    "skillLv": 20,
+    "nextSkillId": 13106827,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FE8B",
+    "skillLv": 21,
+    "nextSkillId": 13106828,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FE8C",
+    "skillLv": 22,
+    "nextSkillId": 13106829,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FE8D",
+    "skillLv": 23,
+    "nextSkillId": 13106830,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FE8E",
+    "skillLv": 24,
+    "nextSkillId": 13106831,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FE8F",
+    "skillLv": 25,
+    "nextSkillId": 13106832,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FE90",
+    "skillLv": 26,
+    "nextSkillId": 13106833,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FE91",
+    "skillLv": 27,
+    "nextSkillId": 13106834,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FE92",
+    "skillLv": 28,
+    "nextSkillId": 13106835,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FE93",
+    "skillLv": 29,
+    "nextSkillId": 13106836,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FE94",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E408",
+    "skillLv": 0,
+    "nextSkillId": 13106838,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FE96",
+    "skillLv": 1,
+    "nextSkillId": 13106839,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FE97",
+    "skillLv": 2,
+    "nextSkillId": 13106840,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FE98",
+    "skillLv": 3,
+    "nextSkillId": 13106841,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FE99",
+    "skillLv": 4,
+    "nextSkillId": 13106842,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FE9A",
+    "skillLv": 5,
+    "nextSkillId": 13106843,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FE9B",
+    "skillLv": 6,
+    "nextSkillId": 13106844,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FE9C",
+    "skillLv": 7,
+    "nextSkillId": 13106845,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FE9D",
+    "skillLv": 8,
+    "nextSkillId": 13106846,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FE9E",
+    "skillLv": 9,
+    "nextSkillId": 13106847,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FE9F",
+    "skillLv": 10,
+    "nextSkillId": 13106848,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEA0",
+    "skillLv": 11,
+    "nextSkillId": 13106849,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEA1",
+    "skillLv": 12,
+    "nextSkillId": 13106850,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEA2",
+    "skillLv": 13,
+    "nextSkillId": 13106851,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEA3",
+    "skillLv": 14,
+    "nextSkillId": 13106852,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEA4",
+    "skillLv": 15,
+    "nextSkillId": 13106853,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEA5",
+    "skillLv": 16,
+    "nextSkillId": 13106854,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEA6",
+    "skillLv": 17,
+    "nextSkillId": 13106855,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEA7",
+    "skillLv": 18,
+    "nextSkillId": 13106856,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEA8",
+    "skillLv": 19,
+    "nextSkillId": 13106857,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEA9",
+    "skillLv": 20,
+    "nextSkillId": 13106858,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEAA",
+    "skillLv": 21,
+    "nextSkillId": 13106859,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FEAB",
+    "skillLv": 22,
+    "nextSkillId": 13106860,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FEAC",
+    "skillLv": 23,
+    "nextSkillId": 13106861,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FEAD",
+    "skillLv": 24,
+    "nextSkillId": 13106862,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FEAE",
+    "skillLv": 25,
+    "nextSkillId": 13106863,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FEAF",
+    "skillLv": 26,
+    "nextSkillId": 13106864,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FEB0",
+    "skillLv": 27,
+    "nextSkillId": 13106865,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FEB1",
+    "skillLv": 28,
+    "nextSkillId": 13106866,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FEB2",
+    "skillLv": 29,
+    "nextSkillId": 13106867,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FEB3",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E409",
+    "skillLv": 0,
+    "nextSkillId": 13106869,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FEB5",
+    "skillLv": 1,
+    "nextSkillId": 13106870,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FEB6",
+    "skillLv": 2,
+    "nextSkillId": 13106871,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FEB7",
+    "skillLv": 3,
+    "nextSkillId": 13106872,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FEB8",
+    "skillLv": 4,
+    "nextSkillId": 13106873,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FEB9",
+    "skillLv": 5,
+    "nextSkillId": 13106874,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FEBA",
+    "skillLv": 6,
+    "nextSkillId": 13106875,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FEBB",
+    "skillLv": 7,
+    "nextSkillId": 13106876,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FEBC",
+    "skillLv": 8,
+    "nextSkillId": 13106877,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FEBD",
+    "skillLv": 9,
+    "nextSkillId": 13106878,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FEBE",
+    "skillLv": 10,
+    "nextSkillId": 13106879,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEBF",
+    "skillLv": 11,
+    "nextSkillId": 13106880,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEC0",
+    "skillLv": 12,
+    "nextSkillId": 13106881,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEC1",
+    "skillLv": 13,
+    "nextSkillId": 13106882,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEC2",
+    "skillLv": 14,
+    "nextSkillId": 13106883,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEC3",
+    "skillLv": 15,
+    "nextSkillId": 13106884,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEC4",
+    "skillLv": 16,
+    "nextSkillId": 13106885,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEC5",
+    "skillLv": 17,
+    "nextSkillId": 13106886,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEC6",
+    "skillLv": 18,
+    "nextSkillId": 13106887,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEC7",
+    "skillLv": 19,
+    "nextSkillId": 13106888,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEC8",
+    "skillLv": 20,
+    "nextSkillId": 13106889,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEC9",
+    "skillLv": 21,
+    "nextSkillId": 13106890,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FECA",
+    "skillLv": 22,
+    "nextSkillId": 13106891,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FECB",
+    "skillLv": 23,
+    "nextSkillId": 13106892,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FECC",
+    "skillLv": 24,
+    "nextSkillId": 13106893,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FECD",
+    "skillLv": 25,
+    "nextSkillId": 13106894,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FECE",
+    "skillLv": 26,
+    "nextSkillId": 13106895,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FECF",
+    "skillLv": 27,
+    "nextSkillId": 13106896,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FED0",
+    "skillLv": 28,
+    "nextSkillId": 13106897,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FED1",
+    "skillLv": 29,
+    "nextSkillId": 13106898,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FED2",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  },
+  {
+    "id": "00C7E40D",
+    "skillLv": 0,
+    "nextSkillId": 13106900,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":81}"
+  },
+  {
+    "id": "00C7FED4",
+    "skillLv": 1,
+    "nextSkillId": 13106901,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":162}"
+  },
+  {
+    "id": "00C7FED5",
+    "skillLv": 2,
+    "nextSkillId": 13106902,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":243}"
+  },
+  {
+    "id": "00C7FED6",
+    "skillLv": 3,
+    "nextSkillId": 13106903,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":324}"
+  },
+  {
+    "id": "00C7FED7",
+    "skillLv": 4,
+    "nextSkillId": 13106904,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":405}"
+  },
+  {
+    "id": "00C7FED8",
+    "skillLv": 5,
+    "nextSkillId": 13106905,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":488}"
+  },
+  {
+    "id": "00C7FED9",
+    "skillLv": 6,
+    "nextSkillId": 13106906,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":571}"
+  },
+  {
+    "id": "00C7FEDA",
+    "skillLv": 7,
+    "nextSkillId": 13106907,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":655}"
+  },
+  {
+    "id": "00C7FEDB",
+    "skillLv": 8,
+    "nextSkillId": 13106908,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":741}"
+  },
+  {
+    "id": "00C7FEDC",
+    "skillLv": 9,
+    "nextSkillId": 13106909,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":829}"
+  },
+  {
+    "id": "00C7FEDD",
+    "skillLv": 10,
+    "nextSkillId": 13106910,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":920}"
+  },
+  {
+    "id": "00C7FEDE",
+    "skillLv": 11,
+    "nextSkillId": 13106911,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1017}"
+  },
+  {
+    "id": "00C7FEDF",
+    "skillLv": 12,
+    "nextSkillId": 13106912,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1119}"
+  },
+  {
+    "id": "00C7FEE0",
+    "skillLv": 13,
+    "nextSkillId": 13106913,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1231}"
+  },
+  {
+    "id": "00C7FEE1",
+    "skillLv": 14,
+    "nextSkillId": 13106914,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1356}"
+  },
+  {
+    "id": "00C7FEE2",
+    "skillLv": 15,
+    "nextSkillId": 13106915,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1498}"
+  },
+  {
+    "id": "00C7FEE3",
+    "skillLv": 16,
+    "nextSkillId": 13106916,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1665}"
+  },
+  {
+    "id": "00C7FEE4",
+    "skillLv": 17,
+    "nextSkillId": 13106917,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":1867}"
+  },
+  {
+    "id": "00C7FEE5",
+    "skillLv": 18,
+    "nextSkillId": 13106918,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2118}"
+  },
+  {
+    "id": "00C7FEE6",
+    "skillLv": 19,
+    "nextSkillId": 13106919,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2437}"
+  },
+  {
+    "id": "00C7FEE7",
+    "skillLv": 20,
+    "nextSkillId": 13106920,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":2851}"
+  },
+  {
+    "id": "00C7FEE8",
+    "skillLv": 21,
+    "nextSkillId": 13106921,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":3400}"
+  },
+  {
+    "id": "00C7FEE9",
+    "skillLv": 22,
+    "nextSkillId": 13106922,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":4136}"
+  },
+  {
+    "id": "00C7FEEA",
+    "skillLv": 23,
+    "nextSkillId": 13106923,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":5134}"
+  },
+  {
+    "id": "00C7FEEB",
+    "skillLv": 24,
+    "nextSkillId": 13106924,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":6500}"
+  },
+  {
+    "id": "00C7FEEC",
+    "skillLv": 25,
+    "nextSkillId": 13106925,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":8380}"
+  },
+  {
+    "id": "00C7FEED",
+    "skillLv": 26,
+    "nextSkillId": 13106926,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":10980}"
+  },
+  {
+    "id": "00C7FEEE",
+    "skillLv": 27,
+    "nextSkillId": 13106927,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":14588}"
+  },
+  {
+    "id": "00C7FEEF",
+    "skillLv": 28,
+    "nextSkillId": 13106928,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":19607}"
+  },
+  {
+    "id": "00C7FEF0",
+    "skillLv": 29,
+    "nextSkillId": 13106929,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":26601}"
+  },
+  {
+    "id": "00C7FEF1",
+    "skillLv": 30,
+    "nextSkillId": 0,
+    "f2": "{\"type\":1,\"code\":14100074,\"amount\":33595}"
+  }
+]

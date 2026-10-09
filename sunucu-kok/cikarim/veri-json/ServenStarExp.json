@@ -1,0 +1,4244 @@
+[
+  {
+    "id": "01239871",
+    "needExp": 10,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":0.0}"
+  },
+  {
+    "id": "01239872",
+    "needExp": 11,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":7.0}"
+  },
+  {
+    "id": "01239873",
+    "needExp": 12,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":15.0}"
+  },
+  {
+    "id": "01239874",
+    "needExp": 13,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":22.0}"
+  },
+  {
+    "id": "01239875",
+    "needExp": 14,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":30.0}"
+  },
+  {
+    "id": "01239876",
+    "needExp": 15,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":39.0}"
+  },
+  {
+    "id": "01239877",
+    "needExp": 16,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":47.0}"
+  },
+  {
+    "id": "01239878",
+    "needExp": 17,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":55.0}"
+  },
+  {
+    "id": "01239879",
+    "needExp": 18,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":64.0}"
+  },
+  {
+    "id": "0123987A",
+    "needExp": 19,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":73.0}"
+  },
+  {
+    "id": "0123987B",
+    "needExp": 20,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":82.0}"
+  },
+  {
+    "id": "0123987C",
+    "needExp": 21,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":91.0}"
+  },
+  {
+    "id": "0123987D",
+    "needExp": 22,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":100.0}"
+  },
+  {
+    "id": "0123987E",
+    "needExp": 23,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":110.0}"
+  },
+  {
+    "id": "0123987F",
+    "needExp": 24,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":120.0}"
+  },
+  {
+    "id": "01239880",
+    "needExp": 25,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":130.0}"
+  },
+  {
+    "id": "01239881",
+    "needExp": 26,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":140.0}"
+  },
+  {
+    "id": "01239882",
+    "needExp": 27,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":150.0}"
+  },
+  {
+    "id": "01239883",
+    "needExp": 28,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":161.0}"
+  },
+  {
+    "id": "01239884",
+    "needExp": 29,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":172.0}"
+  },
+  {
+    "id": "01239885",
+    "needExp": 30,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":183.0}"
+  },
+  {
+    "id": "01239886",
+    "needExp": 31,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":194.0}"
+  },
+  {
+    "id": "01239887",
+    "needExp": 32,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":205.0}"
+  },
+  {
+    "id": "01239888",
+    "needExp": 33,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":217.0}"
+  },
+  {
+    "id": "01239889",
+    "needExp": 34,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":229.0}"
+  },
+  {
+    "id": "0123988A",
+    "needExp": 35,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":241.0}"
+  },
+  {
+    "id": "0123988B",
+    "needExp": 36,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":254.0}"
+  },
+  {
+    "id": "0123988C",
+    "needExp": 37,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":266.0}"
+  },
+  {
+    "id": "0123988D",
+    "needExp": 38,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":279.0}"
+  },
+  {
+    "id": "0123988E",
+    "needExp": 39,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":293.0}"
+  },
+  {
+    "id": "0123988F",
+    "needExp": 40,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":306.0}"
+  },
+  {
+    "id": "01239890",
+    "needExp": 45,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":320.0}"
+  },
+  {
+    "id": "01239891",
+    "needExp": 45,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":334.0}"
+  },
+  {
+    "id": "01239892",
+    "needExp": 50,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":348.0}"
+  },
+  {
+    "id": "01239893",
+    "needExp": 50,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":363.0}"
+  },
+  {
+    "id": "01239894",
+    "needExp": 55,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":378.0}"
+  },
+  {
+    "id": "01239895",
+    "needExp": 60,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":393.0}"
+  },
+  {
+    "id": "01239896",
+    "needExp": 60,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":409.0}"
+  },
+  {
+    "id": "01239897",
+    "needExp": 65,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":425.0}"
+  },
+  {
+    "id": "01239898",
+    "needExp": 70,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":441.0}"
+  },
+  {
+    "id": "01239899",
+    "needExp": 75,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":457.0}"
+  },
+  {
+    "id": "0123989A",
+    "needExp": 80,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":474.0}"
+  },
+  {
+    "id": "0123989B",
+    "needExp": 85,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":491.0}"
+  },
+  {
+    "id": "0123989C",
+    "needExp": 90,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":509.0}"
+  },
+  {
+    "id": "0123989D",
+    "needExp": 95,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":527.0}"
+  },
+  {
+    "id": "0123989E",
+    "needExp": 100,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":545.0}"
+  },
+  {
+    "id": "0123989F",
+    "needExp": 105,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":564.0}"
+  },
+  {
+    "id": "012398A0",
+    "needExp": 115,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":583.0}"
+  },
+  {
+    "id": "012398A1",
+    "needExp": 120,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":602.0}"
+  },
+  {
+    "id": "012398A2",
+    "needExp": 130,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":622.0}"
+  },
+  {
+    "id": "012398A3",
+    "needExp": 135,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":642.0}"
+  },
+  {
+    "id": "012398A4",
+    "needExp": 145,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":663.0}"
+  },
+  {
+    "id": "012398A5",
+    "needExp": 155,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":684.0}"
+  },
+  {
+    "id": "012398A6",
+    "needExp": 165,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":706.0}"
+  },
+  {
+    "id": "012398A7",
+    "needExp": 175,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":728.0}"
+  },
+  {
+    "id": "012398A8",
+    "needExp": 190,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":750.0}"
+  },
+  {
+    "id": "012398A9",
+    "needExp": 200,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":773.0}"
+  },
+  {
+    "id": "012398AA",
+    "needExp": 215,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":796.0}"
+  },
+  {
+    "id": "012398AB",
+    "needExp": 230,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":820.0}"
+  },
+  {
+    "id": "012398AC",
+    "needExp": 245,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":844.0}"
+  },
+  {
+    "id": "012398AD",
+    "needExp": 260,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":869.0}"
+  },
+  {
+    "id": "012398AE",
+    "needExp": 275,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":895.0}"
+  },
+  {
+    "id": "012398AF",
+    "needExp": 295,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":920.0}"
+  },
+  {
+    "id": "012398B0",
+    "needExp": 315,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":947.0}"
+  },
+  {
+    "id": "012398B1",
+    "needExp": 335,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":974.0}"
+  },
+  {
+    "id": "012398B2",
+    "needExp": 360,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1001.0}"
+  },
+  {
+    "id": "012398B3",
+    "needExp": 385,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1029.0}"
+  },
+  {
+    "id": "012398B4",
+    "needExp": 410,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1058.0}"
+  },
+  {
+    "id": "012398B5",
+    "needExp": 435,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1087.0}"
+  },
+  {
+    "id": "012398B6",
+    "needExp": 465,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1117.0}"
+  },
+  {
+    "id": "012398B7",
+    "needExp": 495,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1147.0}"
+  },
+  {
+    "id": "012398B8",
+    "needExp": 530,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1178.0}"
+  },
+  {
+    "id": "012398B9",
+    "needExp": 565,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1210.0}"
+  },
+  {
+    "id": "012398BA",
+    "needExp": 605,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1242.0}"
+  },
+  {
+    "id": "012398BB",
+    "needExp": 645,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1275.0}"
+  },
+  {
+    "id": "012398BC",
+    "needExp": 685,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1309.0}"
+  },
+  {
+    "id": "012398BD",
+    "needExp": 735,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1343.0}"
+  },
+  {
+    "id": "012398BE",
+    "needExp": 785,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1378.0}"
+  },
+  {
+    "id": "012398BF",
+    "needExp": 835,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1414.0}"
+  },
+  {
+    "id": "012398C0",
+    "needExp": 890,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1450.0}"
+  },
+  {
+    "id": "012398C1",
+    "needExp": 950,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1489.0}"
+  },
+  {
+    "id": "012398C2",
+    "needExp": 1015,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1531.0}"
+  },
+  {
+    "id": "012398C3",
+    "needExp": 1085,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1576.0}"
+  },
+  {
+    "id": "012398C4",
+    "needExp": 1160,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1624.0}"
+  },
+  {
+    "id": "012398C5",
+    "needExp": 1235,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1675.0}"
+  },
+  {
+    "id": "012398C6",
+    "needExp": 1320,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1731.0}"
+  },
+  {
+    "id": "012398C7",
+    "needExp": 1410,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1790.0}"
+  },
+  {
+    "id": "012398C8",
+    "needExp": 1505,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1853.0}"
+  },
+  {
+    "id": "012398C9",
+    "needExp": 1605,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1921.0}"
+  },
+  {
+    "id": "012398CA",
+    "needExp": 1715,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":1994.0}"
+  },
+  {
+    "id": "012398CB",
+    "needExp": 1835,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2072.0}"
+  },
+  {
+    "id": "012398CC",
+    "needExp": 1955,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2155.0}"
+  },
+  {
+    "id": "012398CD",
+    "needExp": 2090,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2245.0}"
+  },
+  {
+    "id": "012398CE",
+    "needExp": 2230,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2340.0}"
+  },
+  {
+    "id": "012398CF",
+    "needExp": 2380,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2443.0}"
+  },
+  {
+    "id": "012398D0",
+    "needExp": 2545,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2553.0}"
+  },
+  {
+    "id": "012398D1",
+    "needExp": 2715,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2671.0}"
+  },
+  {
+    "id": "012398D2",
+    "needExp": 2900,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2798.0}"
+  },
+  {
+    "id": "012398D3",
+    "needExp": 3100,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":2933.0}"
+  },
+  {
+    "id": "012398D4",
+    "needExp": 3310,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":3078.0}"
+  },
+  {
+    "id": "012398D5",
+    "needExp": 3535,
+    "type": 11,
+    "value": "{\"addType\":11,\"addValue\":3234.0}"
+  },
+  {
+    "id": "0123BF81",
+    "needExp": 10,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.0}"
+  },
+  {
+    "id": "0123BF82",
+    "needExp": 11,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.002}"
+  },
+  {
+    "id": "0123BF83",
+    "needExp": 12,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.004}"
+  },
+  {
+    "id": "0123BF84",
+    "needExp": 13,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.006}"
+  },
+  {
+    "id": "0123BF85",
+    "needExp": 14,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.008}"
+  },
+  {
+    "id": "0123BF86",
+    "needExp": 15,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.01}"
+  },
+  {
+    "id": "0123BF87",
+    "needExp": 16,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.012}"
+  },
+  {
+    "id": "0123BF88",
+    "needExp": 17,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.014}"
+  },
+  {
+    "id": "0123BF89",
+    "needExp": 18,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.016}"
+  },
+  {
+    "id": "0123BF8A",
+    "needExp": 19,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.018}"
+  },
+  {
+    "id": "0123BF8B",
+    "needExp": 20,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.02}"
+  },
+  {
+    "id": "0123BF8C",
+    "needExp": 21,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.022}"
+  },
+  {
+    "id": "0123BF8D",
+    "needExp": 22,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.024}"
+  },
+  {
+    "id": "0123BF8E",
+    "needExp": 23,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.026}"
+  },
+  {
+    "id": "0123BF8F",
+    "needExp": 24,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.028}"
+  },
+  {
+    "id": "0123BF90",
+    "needExp": 25,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.03}"
+  },
+  {
+    "id": "0123BF91",
+    "needExp": 26,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.032}"
+  },
+  {
+    "id": "0123BF92",
+    "needExp": 27,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.034}"
+  },
+  {
+    "id": "0123BF93",
+    "needExp": 28,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.036}"
+  },
+  {
+    "id": "0123BF94",
+    "needExp": 29,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.038}"
+  },
+  {
+    "id": "0123BF95",
+    "needExp": 30,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.04}"
+  },
+  {
+    "id": "0123BF96",
+    "needExp": 31,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.042}"
+  },
+  {
+    "id": "0123BF97",
+    "needExp": 32,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.044}"
+  },
+  {
+    "id": "0123BF98",
+    "needExp": 33,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.046}"
+  },
+  {
+    "id": "0123BF99",
+    "needExp": 34,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.048}"
+  },
+  {
+    "id": "0123BF9A",
+    "needExp": 35,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.05}"
+  },
+  {
+    "id": "0123BF9B",
+    "needExp": 36,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.052}"
+  },
+  {
+    "id": "0123BF9C",
+    "needExp": 37,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.054}"
+  },
+  {
+    "id": "0123BF9D",
+    "needExp": 38,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.056}"
+  },
+  {
+    "id": "0123BF9E",
+    "needExp": 39,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.058}"
+  },
+  {
+    "id": "0123BF9F",
+    "needExp": 40,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.06}"
+  },
+  {
+    "id": "0123BFA0",
+    "needExp": 45,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.062}"
+  },
+  {
+    "id": "0123BFA1",
+    "needExp": 45,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.064}"
+  },
+  {
+    "id": "0123BFA2",
+    "needExp": 50,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.066}"
+  },
+  {
+    "id": "0123BFA3",
+    "needExp": 50,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.068}"
+  },
+  {
+    "id": "0123BFA4",
+    "needExp": 55,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.07}"
+  },
+  {
+    "id": "0123BFA5",
+    "needExp": 60,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.072}"
+  },
+  {
+    "id": "0123BFA6",
+    "needExp": 60,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.074}"
+  },
+  {
+    "id": "0123BFA7",
+    "needExp": 65,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.076}"
+  },
+  {
+    "id": "0123BFA8",
+    "needExp": 70,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.078}"
+  },
+  {
+    "id": "0123BFA9",
+    "needExp": 75,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.08}"
+  },
+  {
+    "id": "0123BFAA",
+    "needExp": 80,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.082}"
+  },
+  {
+    "id": "0123BFAB",
+    "needExp": 85,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.084}"
+  },
+  {
+    "id": "0123BFAC",
+    "needExp": 90,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.086}"
+  },
+  {
+    "id": "0123BFAD",
+    "needExp": 95,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.088}"
+  },
+  {
+    "id": "0123BFAE",
+    "needExp": 100,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.09}"
+  },
+  {
+    "id": "0123BFAF",
+    "needExp": 105,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.092}"
+  },
+  {
+    "id": "0123BFB0",
+    "needExp": 115,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.094}"
+  },
+  {
+    "id": "0123BFB1",
+    "needExp": 120,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.096}"
+  },
+  {
+    "id": "0123BFB2",
+    "needExp": 130,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.098}"
+  },
+  {
+    "id": "0123BFB3",
+    "needExp": 135,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.1}"
+  },
+  {
+    "id": "0123BFB4",
+    "needExp": 145,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.102}"
+  },
+  {
+    "id": "0123BFB5",
+    "needExp": 155,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.104}"
+  },
+  {
+    "id": "0123BFB6",
+    "needExp": 165,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.106}"
+  },
+  {
+    "id": "0123BFB7",
+    "needExp": 175,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.108}"
+  },
+  {
+    "id": "0123BFB8",
+    "needExp": 190,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.11}"
+  },
+  {
+    "id": "0123BFB9",
+    "needExp": 200,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.112}"
+  },
+  {
+    "id": "0123BFBA",
+    "needExp": 215,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.114}"
+  },
+  {
+    "id": "0123BFBB",
+    "needExp": 230,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.116}"
+  },
+  {
+    "id": "0123BFBC",
+    "needExp": 245,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.118}"
+  },
+  {
+    "id": "0123BFBD",
+    "needExp": 260,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.12}"
+  },
+  {
+    "id": "0123BFBE",
+    "needExp": 275,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.122}"
+  },
+  {
+    "id": "0123BFBF",
+    "needExp": 295,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.124}"
+  },
+  {
+    "id": "0123BFC0",
+    "needExp": 315,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.126}"
+  },
+  {
+    "id": "0123BFC1",
+    "needExp": 335,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.128}"
+  },
+  {
+    "id": "0123BFC2",
+    "needExp": 360,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.13}"
+  },
+  {
+    "id": "0123BFC3",
+    "needExp": 385,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.132}"
+  },
+  {
+    "id": "0123BFC4",
+    "needExp": 410,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.134}"
+  },
+  {
+    "id": "0123BFC5",
+    "needExp": 435,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.136}"
+  },
+  {
+    "id": "0123BFC6",
+    "needExp": 465,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.138}"
+  },
+  {
+    "id": "0123BFC7",
+    "needExp": 495,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.14}"
+  },
+  {
+    "id": "0123BFC8",
+    "needExp": 530,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.142}"
+  },
+  {
+    "id": "0123BFC9",
+    "needExp": 565,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.144}"
+  },
+  {
+    "id": "0123BFCA",
+    "needExp": 605,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.146}"
+  },
+  {
+    "id": "0123BFCB",
+    "needExp": 645,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.148}"
+  },
+  {
+    "id": "0123BFCC",
+    "needExp": 685,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.15}"
+  },
+  {
+    "id": "0123BFCD",
+    "needExp": 735,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.152}"
+  },
+  {
+    "id": "0123BFCE",
+    "needExp": 785,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.154}"
+  },
+  {
+    "id": "0123BFCF",
+    "needExp": 835,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.156}"
+  },
+  {
+    "id": "0123BFD0",
+    "needExp": 890,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.158}"
+  },
+  {
+    "id": "0123BFD1",
+    "needExp": 950,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.16}"
+  },
+  {
+    "id": "0123BFD2",
+    "needExp": 1015,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.162}"
+  },
+  {
+    "id": "0123BFD3",
+    "needExp": 1085,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.164}"
+  },
+  {
+    "id": "0123BFD4",
+    "needExp": 1160,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.166}"
+  },
+  {
+    "id": "0123BFD5",
+    "needExp": 1235,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.168}"
+  },
+  {
+    "id": "0123BFD6",
+    "needExp": 1320,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.17}"
+  },
+  {
+    "id": "0123BFD7",
+    "needExp": 1410,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.172}"
+  },
+  {
+    "id": "0123BFD8",
+    "needExp": 1505,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.174}"
+  },
+  {
+    "id": "0123BFD9",
+    "needExp": 1605,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.176}"
+  },
+  {
+    "id": "0123BFDA",
+    "needExp": 1715,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.178}"
+  },
+  {
+    "id": "0123BFDB",
+    "needExp": 1835,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.18}"
+  },
+  {
+    "id": "0123BFDC",
+    "needExp": 1955,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.182}"
+  },
+  {
+    "id": "0123BFDD",
+    "needExp": 2090,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.184}"
+  },
+  {
+    "id": "0123BFDE",
+    "needExp": 2230,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.186}"
+  },
+  {
+    "id": "0123BFDF",
+    "needExp": 2380,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.188}"
+  },
+  {
+    "id": "0123BFE0",
+    "needExp": 2545,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.19}"
+  },
+  {
+    "id": "0123BFE1",
+    "needExp": 2715,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.192}"
+  },
+  {
+    "id": "0123BFE2",
+    "needExp": 2900,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.194}"
+  },
+  {
+    "id": "0123BFE3",
+    "needExp": 3100,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.196}"
+  },
+  {
+    "id": "0123BFE4",
+    "needExp": 3310,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.198}"
+  },
+  {
+    "id": "0123BFE5",
+    "needExp": 3535,
+    "type": 29,
+    "value": "{\"addType\":29,\"addValue\":0.2}"
+  },
+  {
+    "id": "0123E691",
+    "needExp": 10,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":0.0}"
+  },
+  {
+    "id": "0123E692",
+    "needExp": 11,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":54.0}"
+  },
+  {
+    "id": "0123E693",
+    "needExp": 12,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":108.0}"
+  },
+  {
+    "id": "0123E694",
+    "needExp": 13,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":162.0}"
+  },
+  {
+    "id": "0123E695",
+    "needExp": 14,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":219.0}"
+  },
+  {
+    "id": "0123E696",
+    "needExp": 15,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":280.0}"
+  },
+  {
+    "id": "0123E697",
+    "needExp": 16,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":338.0}"
+  },
+  {
+    "id": "0123E698",
+    "needExp": 17,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":399.0}"
+  },
+  {
+    "id": "0123E699",
+    "needExp": 18,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":460.0}"
+  },
+  {
+    "id": "0123E69A",
+    "needExp": 19,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":525.0}"
+  },
+  {
+    "id": "0123E69B",
+    "needExp": 20,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":590.0}"
+  },
+  {
+    "id": "0123E69C",
+    "needExp": 21,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":655.0}"
+  },
+  {
+    "id": "0123E69D",
+    "needExp": 22,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":723.0}"
+  },
+  {
+    "id": "0123E69E",
+    "needExp": 23,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":792.0}"
+  },
+  {
+    "id": "0123E69F",
+    "needExp": 24,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":864.0}"
+  },
+  {
+    "id": "0123E6A0",
+    "needExp": 25,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":936.0}"
+  },
+  {
+    "id": "0123E6A1",
+    "needExp": 26,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1008.0}"
+  },
+  {
+    "id": "0123E6A2",
+    "needExp": 27,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1083.0}"
+  },
+  {
+    "id": "0123E6A3",
+    "needExp": 28,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1159.0}"
+  },
+  {
+    "id": "0123E6A4",
+    "needExp": 29,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1238.0}"
+  },
+  {
+    "id": "0123E6A5",
+    "needExp": 30,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1317.0}"
+  },
+  {
+    "id": "0123E6A6",
+    "needExp": 31,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1396.0}"
+  },
+  {
+    "id": "0123E6A7",
+    "needExp": 32,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1479.0}"
+  },
+  {
+    "id": "0123E6A8",
+    "needExp": 33,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1566.0}"
+  },
+  {
+    "id": "0123E6A9",
+    "needExp": 34,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1652.0}"
+  },
+  {
+    "id": "0123E6AA",
+    "needExp": 35,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1738.0}"
+  },
+  {
+    "id": "0123E6AB",
+    "needExp": 36,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1828.0}"
+  },
+  {
+    "id": "0123E6AC",
+    "needExp": 37,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":1918.0}"
+  },
+  {
+    "id": "0123E6AD",
+    "needExp": 38,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2012.0}"
+  },
+  {
+    "id": "0123E6AE",
+    "needExp": 39,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2109.0}"
+  },
+  {
+    "id": "0123E6AF",
+    "needExp": 40,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2206.0}"
+  },
+  {
+    "id": "0123E6B0",
+    "needExp": 45,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2304.0}"
+  },
+  {
+    "id": "0123E6B1",
+    "needExp": 45,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2404.0}"
+  },
+  {
+    "id": "0123E6B2",
+    "needExp": 50,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2509.0}"
+  },
+  {
+    "id": "0123E6B3",
+    "needExp": 50,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2613.0}"
+  },
+  {
+    "id": "0123E6B4",
+    "needExp": 55,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2721.0}"
+  },
+  {
+    "id": "0123E6B5",
+    "needExp": 60,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2833.0}"
+  },
+  {
+    "id": "0123E6B6",
+    "needExp": 60,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":2944.0}"
+  },
+  {
+    "id": "0123E6B7",
+    "needExp": 65,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3060.0}"
+  },
+  {
+    "id": "0123E6B8",
+    "needExp": 70,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3175.0}"
+  },
+  {
+    "id": "0123E6B9",
+    "needExp": 75,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3294.0}"
+  },
+  {
+    "id": "0123E6BA",
+    "needExp": 80,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3416.0}"
+  },
+  {
+    "id": "0123E6BB",
+    "needExp": 85,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3538.0}"
+  },
+  {
+    "id": "0123E6BC",
+    "needExp": 90,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3664.0}"
+  },
+  {
+    "id": "0123E6BD",
+    "needExp": 95,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3794.0}"
+  },
+  {
+    "id": "0123E6BE",
+    "needExp": 100,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":3927.0}"
+  },
+  {
+    "id": "0123E6BF",
+    "needExp": 105,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4060.0}"
+  },
+  {
+    "id": "0123E6C0",
+    "needExp": 115,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4197.0}"
+  },
+  {
+    "id": "0123E6C1",
+    "needExp": 120,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4338.0}"
+  },
+  {
+    "id": "0123E6C2",
+    "needExp": 130,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4482.0}"
+  },
+  {
+    "id": "0123E6C3",
+    "needExp": 135,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4626.0}"
+  },
+  {
+    "id": "0123E6C4",
+    "needExp": 145,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4777.0}"
+  },
+  {
+    "id": "0123E6C5",
+    "needExp": 155,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":4928.0}"
+  },
+  {
+    "id": "0123E6C6",
+    "needExp": 165,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5083.0}"
+  },
+  {
+    "id": "0123E6C7",
+    "needExp": 175,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5241.0}"
+  },
+  {
+    "id": "0123E6C8",
+    "needExp": 190,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5403.0}"
+  },
+  {
+    "id": "0123E6C9",
+    "needExp": 200,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5565.0}"
+  },
+  {
+    "id": "0123E6CA",
+    "needExp": 215,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5734.0}"
+  },
+  {
+    "id": "0123E6CB",
+    "needExp": 230,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":5907.0}"
+  },
+  {
+    "id": "0123E6CC",
+    "needExp": 245,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":6080.0}"
+  },
+  {
+    "id": "0123E6CD",
+    "needExp": 260,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":6260.0}"
+  },
+  {
+    "id": "0123E6CE",
+    "needExp": 275,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":6444.0}"
+  },
+  {
+    "id": "0123E6CF",
+    "needExp": 295,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":6627.0}"
+  },
+  {
+    "id": "0123E6D0",
+    "needExp": 315,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":6818.0}"
+  },
+  {
+    "id": "0123E6D1",
+    "needExp": 335,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":7012.0}"
+  },
+  {
+    "id": "0123E6D2",
+    "needExp": 360,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":7210.0}"
+  },
+  {
+    "id": "0123E6D3",
+    "needExp": 385,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":7412.0}"
+  },
+  {
+    "id": "0123E6D4",
+    "needExp": 410,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":7617.0}"
+  },
+  {
+    "id": "0123E6D5",
+    "needExp": 435,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":7826.0}"
+  },
+  {
+    "id": "0123E6D6",
+    "needExp": 465,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":8042.0}"
+  },
+  {
+    "id": "0123E6D7",
+    "needExp": 495,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":8262.0}"
+  },
+  {
+    "id": "0123E6D8",
+    "needExp": 530,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":8485.0}"
+  },
+  {
+    "id": "0123E6D9",
+    "needExp": 565,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":8712.0}"
+  },
+  {
+    "id": "0123E6DA",
+    "needExp": 605,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":8942.0}"
+  },
+  {
+    "id": "0123E6DB",
+    "needExp": 645,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":9180.0}"
+  },
+  {
+    "id": "0123E6DC",
+    "needExp": 685,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":9424.0}"
+  },
+  {
+    "id": "0123E6DD",
+    "needExp": 735,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":9669.0}"
+  },
+  {
+    "id": "0123E6DE",
+    "needExp": 785,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":9921.0}"
+  },
+  {
+    "id": "0123E6DF",
+    "needExp": 835,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":10180.0}"
+  },
+  {
+    "id": "0123E6E0",
+    "needExp": 890,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":10443.0}"
+  },
+  {
+    "id": "0123E6E1",
+    "needExp": 950,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":10724.0}"
+  },
+  {
+    "id": "0123E6E2",
+    "needExp": 1015,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":11023.0}"
+  },
+  {
+    "id": "0123E6E3",
+    "needExp": 1085,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":11347.0}"
+  },
+  {
+    "id": "0123E6E4",
+    "needExp": 1160,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":11692.0}"
+  },
+  {
+    "id": "0123E6E5",
+    "needExp": 1235,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":12063.0}"
+  },
+  {
+    "id": "0123E6E6",
+    "needExp": 1320,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":12463.0}"
+  },
+  {
+    "id": "0123E6E7",
+    "needExp": 1410,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":12888.0}"
+  },
+  {
+    "id": "0123E6E8",
+    "needExp": 1505,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":13345.0}"
+  },
+  {
+    "id": "0123E6E9",
+    "needExp": 1605,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":13831.0}"
+  },
+  {
+    "id": "0123E6EA",
+    "needExp": 1715,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":14356.0}"
+  },
+  {
+    "id": "0123E6EB",
+    "needExp": 1835,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":14918.0}"
+  },
+  {
+    "id": "0123E6EC",
+    "needExp": 1955,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":15519.0}"
+  },
+  {
+    "id": "0123E6ED",
+    "needExp": 2090,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":16164.0}"
+  },
+  {
+    "id": "0123E6EE",
+    "needExp": 2230,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":16851.0}"
+  },
+  {
+    "id": "0123E6EF",
+    "needExp": 2380,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":17593.0}"
+  },
+  {
+    "id": "0123E6F0",
+    "needExp": 2545,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":18385.0}"
+  },
+  {
+    "id": "0123E6F1",
+    "needExp": 2715,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":19234.0}"
+  },
+  {
+    "id": "0123E6F2",
+    "needExp": 2900,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":20145.0}"
+  },
+  {
+    "id": "0123E6F3",
+    "needExp": 3100,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":21121.0}"
+  },
+  {
+    "id": "0123E6F4",
+    "needExp": 3310,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":22165.0}"
+  },
+  {
+    "id": "0123E6F5",
+    "needExp": 3535,
+    "type": 101,
+    "value": "{\"addType\":101,\"addValue\":23284.0}"
+  },
+  {
+    "id": "01240DA1",
+    "needExp": 10,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":0.0}"
+  },
+  {
+    "id": "01240DA2",
+    "needExp": 11,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":9.0}"
+  },
+  {
+    "id": "01240DA3",
+    "needExp": 12,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":18.0}"
+  },
+  {
+    "id": "01240DA4",
+    "needExp": 13,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":27.0}"
+  },
+  {
+    "id": "01240DA5",
+    "needExp": 14,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":36.0}"
+  },
+  {
+    "id": "01240DA6",
+    "needExp": 15,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":46.0}"
+  },
+  {
+    "id": "01240DA7",
+    "needExp": 16,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":56.0}"
+  },
+  {
+    "id": "01240DA8",
+    "needExp": 17,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":66.0}"
+  },
+  {
+    "id": "01240DA9",
+    "needExp": 18,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":76.0}"
+  },
+  {
+    "id": "01240DAA",
+    "needExp": 19,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":87.0}"
+  },
+  {
+    "id": "01240DAB",
+    "needExp": 20,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":98.0}"
+  },
+  {
+    "id": "01240DAC",
+    "needExp": 21,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":109.0}"
+  },
+  {
+    "id": "01240DAD",
+    "needExp": 22,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":120.0}"
+  },
+  {
+    "id": "01240DAE",
+    "needExp": 23,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":132.0}"
+  },
+  {
+    "id": "01240DAF",
+    "needExp": 24,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":144.0}"
+  },
+  {
+    "id": "01240DB0",
+    "needExp": 25,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":156.0}"
+  },
+  {
+    "id": "01240DB1",
+    "needExp": 26,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":168.0}"
+  },
+  {
+    "id": "01240DB2",
+    "needExp": 27,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":180.0}"
+  },
+  {
+    "id": "01240DB3",
+    "needExp": 28,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":193.0}"
+  },
+  {
+    "id": "01240DB4",
+    "needExp": 29,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":206.0}"
+  },
+  {
+    "id": "01240DB5",
+    "needExp": 30,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":219.0}"
+  },
+  {
+    "id": "01240DB6",
+    "needExp": 31,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":232.0}"
+  },
+  {
+    "id": "01240DB7",
+    "needExp": 32,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":246.0}"
+  },
+  {
+    "id": "01240DB8",
+    "needExp": 33,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":261.0}"
+  },
+  {
+    "id": "01240DB9",
+    "needExp": 34,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":275.0}"
+  },
+  {
+    "id": "01240DBA",
+    "needExp": 35,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":289.0}"
+  },
+  {
+    "id": "01240DBB",
+    "needExp": 36,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":304.0}"
+  },
+  {
+    "id": "01240DBC",
+    "needExp": 37,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":319.0}"
+  },
+  {
+    "id": "01240DBD",
+    "needExp": 38,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":335.0}"
+  },
+  {
+    "id": "01240DBE",
+    "needExp": 39,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":351.0}"
+  },
+  {
+    "id": "01240DBF",
+    "needExp": 40,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":367.0}"
+  },
+  {
+    "id": "01240DC0",
+    "needExp": 45,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":384.0}"
+  },
+  {
+    "id": "01240DC1",
+    "needExp": 45,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":400.0}"
+  },
+  {
+    "id": "01240DC2",
+    "needExp": 50,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":418.0}"
+  },
+  {
+    "id": "01240DC3",
+    "needExp": 50,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":435.0}"
+  },
+  {
+    "id": "01240DC4",
+    "needExp": 55,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":453.0}"
+  },
+  {
+    "id": "01240DC5",
+    "needExp": 60,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":472.0}"
+  },
+  {
+    "id": "01240DC6",
+    "needExp": 60,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":490.0}"
+  },
+  {
+    "id": "01240DC7",
+    "needExp": 65,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":510.0}"
+  },
+  {
+    "id": "01240DC8",
+    "needExp": 70,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":529.0}"
+  },
+  {
+    "id": "01240DC9",
+    "needExp": 75,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":549.0}"
+  },
+  {
+    "id": "01240DCA",
+    "needExp": 80,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":569.0}"
+  },
+  {
+    "id": "01240DCB",
+    "needExp": 85,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":589.0}"
+  },
+  {
+    "id": "01240DCC",
+    "needExp": 90,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":610.0}"
+  },
+  {
+    "id": "01240DCD",
+    "needExp": 95,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":632.0}"
+  },
+  {
+    "id": "01240DCE",
+    "needExp": 100,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":654.0}"
+  },
+  {
+    "id": "01240DCF",
+    "needExp": 105,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":676.0}"
+  },
+  {
+    "id": "01240DD0",
+    "needExp": 115,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":699.0}"
+  },
+  {
+    "id": "01240DD1",
+    "needExp": 120,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":723.0}"
+  },
+  {
+    "id": "01240DD2",
+    "needExp": 130,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":747.0}"
+  },
+  {
+    "id": "01240DD3",
+    "needExp": 135,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":771.0}"
+  },
+  {
+    "id": "01240DD4",
+    "needExp": 145,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":796.0}"
+  },
+  {
+    "id": "01240DD5",
+    "needExp": 155,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":821.0}"
+  },
+  {
+    "id": "01240DD6",
+    "needExp": 165,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":847.0}"
+  },
+  {
+    "id": "01240DD7",
+    "needExp": 175,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":873.0}"
+  },
+  {
+    "id": "01240DD8",
+    "needExp": 190,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":900.0}"
+  },
+  {
+    "id": "01240DD9",
+    "needExp": 200,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":927.0}"
+  },
+  {
+    "id": "01240DDA",
+    "needExp": 215,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":955.0}"
+  },
+  {
+    "id": "01240DDB",
+    "needExp": 230,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":984.0}"
+  },
+  {
+    "id": "01240DDC",
+    "needExp": 245,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1013.0}"
+  },
+  {
+    "id": "01240DDD",
+    "needExp": 260,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1043.0}"
+  },
+  {
+    "id": "01240DDE",
+    "needExp": 275,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1074.0}"
+  },
+  {
+    "id": "01240DDF",
+    "needExp": 295,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1104.0}"
+  },
+  {
+    "id": "01240DE0",
+    "needExp": 315,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1136.0}"
+  },
+  {
+    "id": "01240DE1",
+    "needExp": 335,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1168.0}"
+  },
+  {
+    "id": "01240DE2",
+    "needExp": 360,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1201.0}"
+  },
+  {
+    "id": "01240DE3",
+    "needExp": 385,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1235.0}"
+  },
+  {
+    "id": "01240DE4",
+    "needExp": 410,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1269.0}"
+  },
+  {
+    "id": "01240DE5",
+    "needExp": 435,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1304.0}"
+  },
+  {
+    "id": "01240DE6",
+    "needExp": 465,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1340.0}"
+  },
+  {
+    "id": "01240DE7",
+    "needExp": 495,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1377.0}"
+  },
+  {
+    "id": "01240DE8",
+    "needExp": 530,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1414.0}"
+  },
+  {
+    "id": "01240DE9",
+    "needExp": 565,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1452.0}"
+  },
+  {
+    "id": "01240DEA",
+    "needExp": 605,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1490.0}"
+  },
+  {
+    "id": "01240DEB",
+    "needExp": 645,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1530.0}"
+  },
+  {
+    "id": "01240DEC",
+    "needExp": 685,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1570.0}"
+  },
+  {
+    "id": "01240DED",
+    "needExp": 735,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1611.0}"
+  },
+  {
+    "id": "01240DEE",
+    "needExp": 785,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1653.0}"
+  },
+  {
+    "id": "01240DEF",
+    "needExp": 835,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1696.0}"
+  },
+  {
+    "id": "01240DF0",
+    "needExp": 890,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1740.0}"
+  },
+  {
+    "id": "01240DF1",
+    "needExp": 950,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1787.0}"
+  },
+  {
+    "id": "01240DF2",
+    "needExp": 1015,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1837.0}"
+  },
+  {
+    "id": "01240DF3",
+    "needExp": 1085,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1891.0}"
+  },
+  {
+    "id": "01240DF4",
+    "needExp": 1160,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":1948.0}"
+  },
+  {
+    "id": "01240DF5",
+    "needExp": 1235,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2010.0}"
+  },
+  {
+    "id": "01240DF6",
+    "needExp": 1320,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2077.0}"
+  },
+  {
+    "id": "01240DF7",
+    "needExp": 1410,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2148.0}"
+  },
+  {
+    "id": "01240DF8",
+    "needExp": 1505,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2224.0}"
+  },
+  {
+    "id": "01240DF9",
+    "needExp": 1605,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2305.0}"
+  },
+  {
+    "id": "01240DFA",
+    "needExp": 1715,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2392.0}"
+  },
+  {
+    "id": "01240DFB",
+    "needExp": 1835,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2486.0}"
+  },
+  {
+    "id": "01240DFC",
+    "needExp": 1955,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2586.0}"
+  },
+  {
+    "id": "01240DFD",
+    "needExp": 2090,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2694.0}"
+  },
+  {
+    "id": "01240DFE",
+    "needExp": 2230,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2808.0}"
+  },
+  {
+    "id": "01240DFF",
+    "needExp": 2380,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":2932.0}"
+  },
+  {
+    "id": "01240E00",
+    "needExp": 2545,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3064.0}"
+  },
+  {
+    "id": "01240E01",
+    "needExp": 2715,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3205.0}"
+  },
+  {
+    "id": "01240E02",
+    "needExp": 2900,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3357.0}"
+  },
+  {
+    "id": "01240E03",
+    "needExp": 3100,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3520.0}"
+  },
+  {
+    "id": "01240E04",
+    "needExp": 3310,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3694.0}"
+  },
+  {
+    "id": "01240E05",
+    "needExp": 3535,
+    "type": 21,
+    "value": "{\"addType\":21,\"addValue\":3880.0}"
+  },
+  {
+    "id": "01245BC1",
+    "needExp": 10,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":0.0}"
+  },
+  {
+    "id": "01245BC2",
+    "needExp": 11,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":9.0}"
+  },
+  {
+    "id": "01245BC3",
+    "needExp": 12,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":18.0}"
+  },
+  {
+    "id": "01245BC4",
+    "needExp": 13,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":27.0}"
+  },
+  {
+    "id": "01245BC5",
+    "needExp": 14,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":36.0}"
+  },
+  {
+    "id": "01245BC6",
+    "needExp": 15,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":46.0}"
+  },
+  {
+    "id": "01245BC7",
+    "needExp": 16,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":56.0}"
+  },
+  {
+    "id": "01245BC8",
+    "needExp": 17,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":66.0}"
+  },
+  {
+    "id": "01245BC9",
+    "needExp": 18,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":76.0}"
+  },
+  {
+    "id": "01245BCA",
+    "needExp": 19,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":87.0}"
+  },
+  {
+    "id": "01245BCB",
+    "needExp": 20,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":98.0}"
+  },
+  {
+    "id": "01245BCC",
+    "needExp": 21,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":109.0}"
+  },
+  {
+    "id": "01245BCD",
+    "needExp": 22,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":120.0}"
+  },
+  {
+    "id": "01245BCE",
+    "needExp": 23,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":132.0}"
+  },
+  {
+    "id": "01245BCF",
+    "needExp": 24,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":144.0}"
+  },
+  {
+    "id": "01245BD0",
+    "needExp": 25,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":156.0}"
+  },
+  {
+    "id": "01245BD1",
+    "needExp": 26,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":168.0}"
+  },
+  {
+    "id": "01245BD2",
+    "needExp": 27,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":180.0}"
+  },
+  {
+    "id": "01245BD3",
+    "needExp": 28,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":193.0}"
+  },
+  {
+    "id": "01245BD4",
+    "needExp": 29,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":206.0}"
+  },
+  {
+    "id": "01245BD5",
+    "needExp": 30,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":219.0}"
+  },
+  {
+    "id": "01245BD6",
+    "needExp": 31,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":232.0}"
+  },
+  {
+    "id": "01245BD7",
+    "needExp": 32,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":246.0}"
+  },
+  {
+    "id": "01245BD8",
+    "needExp": 33,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":261.0}"
+  },
+  {
+    "id": "01245BD9",
+    "needExp": 34,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":275.0}"
+  },
+  {
+    "id": "01245BDA",
+    "needExp": 35,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":289.0}"
+  },
+  {
+    "id": "01245BDB",
+    "needExp": 36,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":304.0}"
+  },
+  {
+    "id": "01245BDC",
+    "needExp": 37,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":319.0}"
+  },
+  {
+    "id": "01245BDD",
+    "needExp": 38,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":335.0}"
+  },
+  {
+    "id": "01245BDE",
+    "needExp": 39,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":351.0}"
+  },
+  {
+    "id": "01245BDF",
+    "needExp": 40,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":367.0}"
+  },
+  {
+    "id": "01245BE0",
+    "needExp": 45,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":384.0}"
+  },
+  {
+    "id": "01245BE1",
+    "needExp": 45,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":400.0}"
+  },
+  {
+    "id": "01245BE2",
+    "needExp": 50,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":418.0}"
+  },
+  {
+    "id": "01245BE3",
+    "needExp": 50,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":435.0}"
+  },
+  {
+    "id": "01245BE4",
+    "needExp": 55,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":453.0}"
+  },
+  {
+    "id": "01245BE5",
+    "needExp": 60,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":472.0}"
+  },
+  {
+    "id": "01245BE6",
+    "needExp": 60,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":490.0}"
+  },
+  {
+    "id": "01245BE7",
+    "needExp": 65,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":510.0}"
+  },
+  {
+    "id": "01245BE8",
+    "needExp": 70,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":529.0}"
+  },
+  {
+    "id": "01245BE9",
+    "needExp": 75,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":549.0}"
+  },
+  {
+    "id": "01245BEA",
+    "needExp": 80,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":569.0}"
+  },
+  {
+    "id": "01245BEB",
+    "needExp": 85,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":589.0}"
+  },
+  {
+    "id": "01245BEC",
+    "needExp": 90,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":610.0}"
+  },
+  {
+    "id": "01245BED",
+    "needExp": 95,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":632.0}"
+  },
+  {
+    "id": "01245BEE",
+    "needExp": 100,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":654.0}"
+  },
+  {
+    "id": "01245BEF",
+    "needExp": 105,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":676.0}"
+  },
+  {
+    "id": "01245BF0",
+    "needExp": 115,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":699.0}"
+  },
+  {
+    "id": "01245BF1",
+    "needExp": 120,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":723.0}"
+  },
+  {
+    "id": "01245BF2",
+    "needExp": 130,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":747.0}"
+  },
+  {
+    "id": "01245BF3",
+    "needExp": 135,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":771.0}"
+  },
+  {
+    "id": "01245BF4",
+    "needExp": 145,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":796.0}"
+  },
+  {
+    "id": "01245BF5",
+    "needExp": 155,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":821.0}"
+  },
+  {
+    "id": "01245BF6",
+    "needExp": 165,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":847.0}"
+  },
+  {
+    "id": "01245BF7",
+    "needExp": 175,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":873.0}"
+  },
+  {
+    "id": "01245BF8",
+    "needExp": 190,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":900.0}"
+  },
+  {
+    "id": "01245BF9",
+    "needExp": 200,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":927.0}"
+  },
+  {
+    "id": "01245BFA",
+    "needExp": 215,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":955.0}"
+  },
+  {
+    "id": "01245BFB",
+    "needExp": 230,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":984.0}"
+  },
+  {
+    "id": "01245BFC",
+    "needExp": 245,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1013.0}"
+  },
+  {
+    "id": "01245BFD",
+    "needExp": 260,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1043.0}"
+  },
+  {
+    "id": "01245BFE",
+    "needExp": 275,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1074.0}"
+  },
+  {
+    "id": "01245BFF",
+    "needExp": 295,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1104.0}"
+  },
+  {
+    "id": "01245C00",
+    "needExp": 315,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1136.0}"
+  },
+  {
+    "id": "01245C01",
+    "needExp": 335,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1168.0}"
+  },
+  {
+    "id": "01245C02",
+    "needExp": 360,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1201.0}"
+  },
+  {
+    "id": "01245C03",
+    "needExp": 385,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1235.0}"
+  },
+  {
+    "id": "01245C04",
+    "needExp": 410,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1269.0}"
+  },
+  {
+    "id": "01245C05",
+    "needExp": 435,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1304.0}"
+  },
+  {
+    "id": "01245C06",
+    "needExp": 465,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1340.0}"
+  },
+  {
+    "id": "01245C07",
+    "needExp": 495,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1377.0}"
+  },
+  {
+    "id": "01245C08",
+    "needExp": 530,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1414.0}"
+  },
+  {
+    "id": "01245C09",
+    "needExp": 565,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1452.0}"
+  },
+  {
+    "id": "01245C0A",
+    "needExp": 605,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1490.0}"
+  },
+  {
+    "id": "01245C0B",
+    "needExp": 645,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1530.0}"
+  },
+  {
+    "id": "01245C0C",
+    "needExp": 685,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1570.0}"
+  },
+  {
+    "id": "01245C0D",
+    "needExp": 735,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1611.0}"
+  },
+  {
+    "id": "01245C0E",
+    "needExp": 785,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1653.0}"
+  },
+  {
+    "id": "01245C0F",
+    "needExp": 835,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1696.0}"
+  },
+  {
+    "id": "01245C10",
+    "needExp": 890,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1740.0}"
+  },
+  {
+    "id": "01245C11",
+    "needExp": 950,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1787.0}"
+  },
+  {
+    "id": "01245C12",
+    "needExp": 1015,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1837.0}"
+  },
+  {
+    "id": "01245C13",
+    "needExp": 1085,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1891.0}"
+  },
+  {
+    "id": "01245C14",
+    "needExp": 1160,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":1948.0}"
+  },
+  {
+    "id": "01245C15",
+    "needExp": 1235,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2010.0}"
+  },
+  {
+    "id": "01245C16",
+    "needExp": 1320,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2077.0}"
+  },
+  {
+    "id": "01245C17",
+    "needExp": 1410,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2148.0}"
+  },
+  {
+    "id": "01245C18",
+    "needExp": 1505,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2224.0}"
+  },
+  {
+    "id": "01245C19",
+    "needExp": 1605,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2305.0}"
+  },
+  {
+    "id": "01245C1A",
+    "needExp": 1715,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2392.0}"
+  },
+  {
+    "id": "01245C1B",
+    "needExp": 1835,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2486.0}"
+  },
+  {
+    "id": "01245C1C",
+    "needExp": 1955,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2586.0}"
+  },
+  {
+    "id": "01245C1D",
+    "needExp": 2090,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2694.0}"
+  },
+  {
+    "id": "01245C1E",
+    "needExp": 2230,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2808.0}"
+  },
+  {
+    "id": "01245C1F",
+    "needExp": 2380,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":2932.0}"
+  },
+  {
+    "id": "01245C20",
+    "needExp": 2545,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3064.0}"
+  },
+  {
+    "id": "01245C21",
+    "needExp": 2715,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3205.0}"
+  },
+  {
+    "id": "01245C22",
+    "needExp": 2900,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3357.0}"
+  },
+  {
+    "id": "01245C23",
+    "needExp": 3100,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3520.0}"
+  },
+  {
+    "id": "01245C24",
+    "needExp": 3310,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3694.0}"
+  },
+  {
+    "id": "01245C25",
+    "needExp": 3535,
+    "type": 17,
+    "value": "{\"addType\":17,\"addValue\":3880.0}"
+  },
+  {
+    "id": "012434B1",
+    "needExp": 10,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":0.0}"
+  },
+  {
+    "id": "012434B2",
+    "needExp": 11,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":18.0}"
+  },
+  {
+    "id": "012434B3",
+    "needExp": 12,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":36.0}"
+  },
+  {
+    "id": "012434B4",
+    "needExp": 13,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":54.0}"
+  },
+  {
+    "id": "012434B5",
+    "needExp": 14,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":73.0}"
+  },
+  {
+    "id": "012434B6",
+    "needExp": 15,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":93.0}"
+  },
+  {
+    "id": "012434B7",
+    "needExp": 16,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":112.0}"
+  },
+  {
+    "id": "012434B8",
+    "needExp": 17,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":133.0}"
+  },
+  {
+    "id": "012434B9",
+    "needExp": 18,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":153.0}"
+  },
+  {
+    "id": "012434BA",
+    "needExp": 19,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":175.0}"
+  },
+  {
+    "id": "012434BB",
+    "needExp": 20,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":196.0}"
+  },
+  {
+    "id": "012434BC",
+    "needExp": 21,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":218.0}"
+  },
+  {
+    "id": "012434BD",
+    "needExp": 22,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":241.0}"
+  },
+  {
+    "id": "012434BE",
+    "needExp": 23,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":264.0}"
+  },
+  {
+    "id": "012434BF",
+    "needExp": 24,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":288.0}"
+  },
+  {
+    "id": "012434C0",
+    "needExp": 25,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":312.0}"
+  },
+  {
+    "id": "012434C1",
+    "needExp": 26,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":336.0}"
+  },
+  {
+    "id": "012434C2",
+    "needExp": 27,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":361.0}"
+  },
+  {
+    "id": "012434C3",
+    "needExp": 28,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":386.0}"
+  },
+  {
+    "id": "012434C4",
+    "needExp": 29,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":412.0}"
+  },
+  {
+    "id": "012434C5",
+    "needExp": 30,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":439.0}"
+  },
+  {
+    "id": "012434C6",
+    "needExp": 31,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":465.0}"
+  },
+  {
+    "id": "012434C7",
+    "needExp": 32,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":493.0}"
+  },
+  {
+    "id": "012434C8",
+    "needExp": 33,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":522.0}"
+  },
+  {
+    "id": "012434C9",
+    "needExp": 34,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":550.0}"
+  },
+  {
+    "id": "012434CA",
+    "needExp": 35,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":579.0}"
+  },
+  {
+    "id": "012434CB",
+    "needExp": 36,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":609.0}"
+  },
+  {
+    "id": "012434CC",
+    "needExp": 37,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":639.0}"
+  },
+  {
+    "id": "012434CD",
+    "needExp": 38,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":670.0}"
+  },
+  {
+    "id": "012434CE",
+    "needExp": 39,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":703.0}"
+  },
+  {
+    "id": "012434CF",
+    "needExp": 40,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":735.0}"
+  },
+  {
+    "id": "012434D0",
+    "needExp": 45,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":768.0}"
+  },
+  {
+    "id": "012434D1",
+    "needExp": 45,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":801.0}"
+  },
+  {
+    "id": "012434D2",
+    "needExp": 50,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":836.0}"
+  },
+  {
+    "id": "012434D3",
+    "needExp": 50,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":871.0}"
+  },
+  {
+    "id": "012434D4",
+    "needExp": 55,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":907.0}"
+  },
+  {
+    "id": "012434D5",
+    "needExp": 60,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":944.0}"
+  },
+  {
+    "id": "012434D6",
+    "needExp": 60,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":981.0}"
+  },
+  {
+    "id": "012434D7",
+    "needExp": 65,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1020.0}"
+  },
+  {
+    "id": "012434D8",
+    "needExp": 70,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1058.0}"
+  },
+  {
+    "id": "012434D9",
+    "needExp": 75,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1098.0}"
+  },
+  {
+    "id": "012434DA",
+    "needExp": 80,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1138.0}"
+  },
+  {
+    "id": "012434DB",
+    "needExp": 85,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1179.0}"
+  },
+  {
+    "id": "012434DC",
+    "needExp": 90,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1221.0}"
+  },
+  {
+    "id": "012434DD",
+    "needExp": 95,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1264.0}"
+  },
+  {
+    "id": "012434DE",
+    "needExp": 100,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1309.0}"
+  },
+  {
+    "id": "012434DF",
+    "needExp": 105,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1353.0}"
+  },
+  {
+    "id": "012434E0",
+    "needExp": 115,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1399.0}"
+  },
+  {
+    "id": "012434E1",
+    "needExp": 120,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1446.0}"
+  },
+  {
+    "id": "012434E2",
+    "needExp": 130,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1494.0}"
+  },
+  {
+    "id": "012434E3",
+    "needExp": 135,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1542.0}"
+  },
+  {
+    "id": "012434E4",
+    "needExp": 145,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1592.0}"
+  },
+  {
+    "id": "012434E5",
+    "needExp": 155,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1642.0}"
+  },
+  {
+    "id": "012434E6",
+    "needExp": 165,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1694.0}"
+  },
+  {
+    "id": "012434E7",
+    "needExp": 175,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1747.0}"
+  },
+  {
+    "id": "012434E8",
+    "needExp": 190,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1801.0}"
+  },
+  {
+    "id": "012434E9",
+    "needExp": 200,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1855.0}"
+  },
+  {
+    "id": "012434EA",
+    "needExp": 215,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1911.0}"
+  },
+  {
+    "id": "012434EB",
+    "needExp": 230,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":1969.0}"
+  },
+  {
+    "id": "012434EC",
+    "needExp": 245,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2026.0}"
+  },
+  {
+    "id": "012434ED",
+    "needExp": 260,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2086.0}"
+  },
+  {
+    "id": "012434EE",
+    "needExp": 275,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2148.0}"
+  },
+  {
+    "id": "012434EF",
+    "needExp": 295,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2209.0}"
+  },
+  {
+    "id": "012434F0",
+    "needExp": 315,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2272.0}"
+  },
+  {
+    "id": "012434F1",
+    "needExp": 335,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2337.0}"
+  },
+  {
+    "id": "012434F2",
+    "needExp": 360,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2403.0}"
+  },
+  {
+    "id": "012434F3",
+    "needExp": 385,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2470.0}"
+  },
+  {
+    "id": "012434F4",
+    "needExp": 410,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2539.0}"
+  },
+  {
+    "id": "012434F5",
+    "needExp": 435,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2608.0}"
+  },
+  {
+    "id": "012434F6",
+    "needExp": 465,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2680.0}"
+  },
+  {
+    "id": "012434F7",
+    "needExp": 495,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2754.0}"
+  },
+  {
+    "id": "012434F8",
+    "needExp": 530,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2828.0}"
+  },
+  {
+    "id": "012434F9",
+    "needExp": 565,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2904.0}"
+  },
+  {
+    "id": "012434FA",
+    "needExp": 605,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":2980.0}"
+  },
+  {
+    "id": "012434FB",
+    "needExp": 645,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3060.0}"
+  },
+  {
+    "id": "012434FC",
+    "needExp": 685,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3141.0}"
+  },
+  {
+    "id": "012434FD",
+    "needExp": 735,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3223.0}"
+  },
+  {
+    "id": "012434FE",
+    "needExp": 785,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3307.0}"
+  },
+  {
+    "id": "012434FF",
+    "needExp": 835,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3393.0}"
+  },
+  {
+    "id": "01243500",
+    "needExp": 890,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3481.0}"
+  },
+  {
+    "id": "01243501",
+    "needExp": 950,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3574.0}"
+  },
+  {
+    "id": "01243502",
+    "needExp": 1015,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3674.0}"
+  },
+  {
+    "id": "01243503",
+    "needExp": 1085,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3782.0}"
+  },
+  {
+    "id": "01243504",
+    "needExp": 1160,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":3897.0}"
+  },
+  {
+    "id": "01243505",
+    "needExp": 1235,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4021.0}"
+  },
+  {
+    "id": "01243506",
+    "needExp": 1320,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4154.0}"
+  },
+  {
+    "id": "01243507",
+    "needExp": 1410,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4296.0}"
+  },
+  {
+    "id": "01243508",
+    "needExp": 1505,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4448.0}"
+  },
+  {
+    "id": "01243509",
+    "needExp": 1605,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4610.0}"
+  },
+  {
+    "id": "0124350A",
+    "needExp": 1715,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4785.0}"
+  },
+  {
+    "id": "0124350B",
+    "needExp": 1835,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":4972.0}"
+  },
+  {
+    "id": "0124350C",
+    "needExp": 1955,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":5173.0}"
+  },
+  {
+    "id": "0124350D",
+    "needExp": 2090,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":5388.0}"
+  },
+  {
+    "id": "0124350E",
+    "needExp": 2230,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":5617.0}"
+  },
+  {
+    "id": "0124350F",
+    "needExp": 2380,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":5864.0}"
+  },
+  {
+    "id": "01243510",
+    "needExp": 2545,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":6128.0}"
+  },
+  {
+    "id": "01243511",
+    "needExp": 2715,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":6411.0}"
+  },
+  {
+    "id": "01243512",
+    "needExp": 2900,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":6715.0}"
+  },
+  {
+    "id": "01243513",
+    "needExp": 3100,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":7040.0}"
+  },
+  {
+    "id": "01243514",
+    "needExp": 3310,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":7388.0}"
+  },
+  {
+    "id": "01243515",
+    "needExp": 3535,
+    "type": 20,
+    "value": "{\"addType\":20,\"addValue\":7761.0}"
+  },
+  {
+    "id": "012482D1",
+    "needExp": 10,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":0.0}"
+  },
+  {
+    "id": "012482D2",
+    "needExp": 11,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":18.0}"
+  },
+  {
+    "id": "012482D3",
+    "needExp": 12,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":36.0}"
+  },
+  {
+    "id": "012482D4",
+    "needExp": 13,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":54.0}"
+  },
+  {
+    "id": "012482D5",
+    "needExp": 14,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":73.0}"
+  },
+  {
+    "id": "012482D6",
+    "needExp": 15,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":93.0}"
+  },
+  {
+    "id": "012482D7",
+    "needExp": 16,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":112.0}"
+  },
+  {
+    "id": "012482D8",
+    "needExp": 17,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":133.0}"
+  },
+  {
+    "id": "012482D9",
+    "needExp": 18,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":153.0}"
+  },
+  {
+    "id": "012482DA",
+    "needExp": 19,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":175.0}"
+  },
+  {
+    "id": "012482DB",
+    "needExp": 20,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":196.0}"
+  },
+  {
+    "id": "012482DC",
+    "needExp": 21,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":218.0}"
+  },
+  {
+    "id": "012482DD",
+    "needExp": 22,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":241.0}"
+  },
+  {
+    "id": "012482DE",
+    "needExp": 23,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":264.0}"
+  },
+  {
+    "id": "012482DF",
+    "needExp": 24,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":288.0}"
+  },
+  {
+    "id": "012482E0",
+    "needExp": 25,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":312.0}"
+  },
+  {
+    "id": "012482E1",
+    "needExp": 26,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":336.0}"
+  },
+  {
+    "id": "012482E2",
+    "needExp": 27,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":361.0}"
+  },
+  {
+    "id": "012482E3",
+    "needExp": 28,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":386.0}"
+  },
+  {
+    "id": "012482E4",
+    "needExp": 29,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":412.0}"
+  },
+  {
+    "id": "012482E5",
+    "needExp": 30,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":439.0}"
+  },
+  {
+    "id": "012482E6",
+    "needExp": 31,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":465.0}"
+  },
+  {
+    "id": "012482E7",
+    "needExp": 32,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":493.0}"
+  },
+  {
+    "id": "012482E8",
+    "needExp": 33,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":522.0}"
+  },
+  {
+    "id": "012482E9",
+    "needExp": 34,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":550.0}"
+  },
+  {
+    "id": "012482EA",
+    "needExp": 35,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":579.0}"
+  },
+  {
+    "id": "012482EB",
+    "needExp": 36,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":609.0}"
+  },
+  {
+    "id": "012482EC",
+    "needExp": 37,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":639.0}"
+  },
+  {
+    "id": "012482ED",
+    "needExp": 38,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":670.0}"
+  },
+  {
+    "id": "012482EE",
+    "needExp": 39,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":703.0}"
+  },
+  {
+    "id": "012482EF",
+    "needExp": 40,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":735.0}"
+  },
+  {
+    "id": "012482F0",
+    "needExp": 45,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":768.0}"
+  },
+  {
+    "id": "012482F1",
+    "needExp": 45,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":801.0}"
+  },
+  {
+    "id": "012482F2",
+    "needExp": 50,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":836.0}"
+  },
+  {
+    "id": "012482F3",
+    "needExp": 50,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":871.0}"
+  },
+  {
+    "id": "012482F4",
+    "needExp": 55,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":907.0}"
+  },
+  {
+    "id": "012482F5",
+    "needExp": 60,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":944.0}"
+  },
+  {
+    "id": "012482F6",
+    "needExp": 60,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":981.0}"
+  },
+  {
+    "id": "012482F7",
+    "needExp": 65,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1020.0}"
+  },
+  {
+    "id": "012482F8",
+    "needExp": 70,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1058.0}"
+  },
+  {
+    "id": "012482F9",
+    "needExp": 75,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1098.0}"
+  },
+  {
+    "id": "012482FA",
+    "needExp": 80,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1138.0}"
+  },
+  {
+    "id": "012482FB",
+    "needExp": 85,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1179.0}"
+  },
+  {
+    "id": "012482FC",
+    "needExp": 90,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1221.0}"
+  },
+  {
+    "id": "012482FD",
+    "needExp": 95,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1264.0}"
+  },
+  {
+    "id": "012482FE",
+    "needExp": 100,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1309.0}"
+  },
+  {
+    "id": "012482FF",
+    "needExp": 105,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1353.0}"
+  },
+  {
+    "id": "01248300",
+    "needExp": 115,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1399.0}"
+  },
+  {
+    "id": "01248301",
+    "needExp": 120,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1446.0}"
+  },
+  {
+    "id": "01248302",
+    "needExp": 130,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1494.0}"
+  },
+  {
+    "id": "01248303",
+    "needExp": 135,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1542.0}"
+  },
+  {
+    "id": "01248304",
+    "needExp": 145,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1592.0}"
+  },
+  {
+    "id": "01248305",
+    "needExp": 155,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1642.0}"
+  },
+  {
+    "id": "01248306",
+    "needExp": 165,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1694.0}"
+  },
+  {
+    "id": "01248307",
+    "needExp": 175,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1747.0}"
+  },
+  {
+    "id": "01248308",
+    "needExp": 190,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1801.0}"
+  },
+  {
+    "id": "01248309",
+    "needExp": 200,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1855.0}"
+  },
+  {
+    "id": "0124830A",
+    "needExp": 215,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1911.0}"
+  },
+  {
+    "id": "0124830B",
+    "needExp": 230,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":1969.0}"
+  },
+  {
+    "id": "0124830C",
+    "needExp": 245,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2026.0}"
+  },
+  {
+    "id": "0124830D",
+    "needExp": 260,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2086.0}"
+  },
+  {
+    "id": "0124830E",
+    "needExp": 275,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2148.0}"
+  },
+  {
+    "id": "0124830F",
+    "needExp": 295,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2209.0}"
+  },
+  {
+    "id": "01248310",
+    "needExp": 315,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2272.0}"
+  },
+  {
+    "id": "01248311",
+    "needExp": 335,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2337.0}"
+  },
+  {
+    "id": "01248312",
+    "needExp": 360,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2403.0}"
+  },
+  {
+    "id": "01248313",
+    "needExp": 385,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2470.0}"
+  },
+  {
+    "id": "01248314",
+    "needExp": 410,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2539.0}"
+  },
+  {
+    "id": "01248315",
+    "needExp": 435,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2608.0}"
+  },
+  {
+    "id": "01248316",
+    "needExp": 465,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2680.0}"
+  },
+  {
+    "id": "01248317",
+    "needExp": 495,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2754.0}"
+  },
+  {
+    "id": "01248318",
+    "needExp": 530,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2828.0}"
+  },
+  {
+    "id": "01248319",
+    "needExp": 565,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2904.0}"
+  },
+  {
+    "id": "0124831A",
+    "needExp": 605,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":2980.0}"
+  },
+  {
+    "id": "0124831B",
+    "needExp": 645,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3060.0}"
+  },
+  {
+    "id": "0124831C",
+    "needExp": 685,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3141.0}"
+  },
+  {
+    "id": "0124831D",
+    "needExp": 735,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3223.0}"
+  },
+  {
+    "id": "0124831E",
+    "needExp": 785,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3307.0}"
+  },
+  {
+    "id": "0124831F",
+    "needExp": 835,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3393.0}"
+  },
+  {
+    "id": "01248320",
+    "needExp": 890,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3481.0}"
+  },
+  {
+    "id": "01248321",
+    "needExp": 950,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3574.0}"
+  },
+  {
+    "id": "01248322",
+    "needExp": 1015,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3674.0}"
+  },
+  {
+    "id": "01248323",
+    "needExp": 1085,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3782.0}"
+  },
+  {
+    "id": "01248324",
+    "needExp": 1160,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":3897.0}"
+  },
+  {
+    "id": "01248325",
+    "needExp": 1235,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4021.0}"
+  },
+  {
+    "id": "01248326",
+    "needExp": 1320,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4154.0}"
+  },
+  {
+    "id": "01248327",
+    "needExp": 1410,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4296.0}"
+  },
+  {
+    "id": "01248328",
+    "needExp": 1505,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4448.0}"
+  },
+  {
+    "id": "01248329",
+    "needExp": 1605,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4610.0}"
+  },
+  {
+    "id": "0124832A",
+    "needExp": 1715,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4785.0}"
+  },
+  {
+    "id": "0124832B",
+    "needExp": 1835,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":4972.0}"
+  },
+  {
+    "id": "0124832C",
+    "needExp": 1955,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":5173.0}"
+  },
+  {
+    "id": "0124832D",
+    "needExp": 2090,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":5388.0}"
+  },
+  {
+    "id": "0124832E",
+    "needExp": 2230,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":5617.0}"
+  },
+  {
+    "id": "0124832F",
+    "needExp": 2380,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":5864.0}"
+  },
+  {
+    "id": "01248330",
+    "needExp": 2545,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":6128.0}"
+  },
+  {
+    "id": "01248331",
+    "needExp": 2715,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":6411.0}"
+  },
+  {
+    "id": "01248332",
+    "needExp": 2900,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":6715.0}"
+  },
+  {
+    "id": "01248333",
+    "needExp": 3100,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":7040.0}"
+  },
+  {
+    "id": "01248334",
+    "needExp": 3310,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":7388.0}"
+  },
+  {
+    "id": "01248335",
+    "needExp": 3535,
+    "type": 16,
+    "value": "{\"addType\":16,\"addValue\":7761.0}"
+  }
+]

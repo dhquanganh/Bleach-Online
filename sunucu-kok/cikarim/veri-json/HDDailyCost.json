@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0001ADB1",
+    "name": "Daily Consumption",
+    "tName": "Daily Consumption Rewards",
+    "desc": "Complete the requested task to get extra rewards (once daily)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 110001,
+    "f6": "[{\"key\":5,\"value\":[21401102],\"prompt\":\"Catch Jigokuchō 5 times\"},{\"key\":5,\"value\":[21401103],\"prompt\":\"Purchase vitality 5 times\"}]"
+  }
+]

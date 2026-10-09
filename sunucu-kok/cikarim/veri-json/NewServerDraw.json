@@ -1,0 +1,15 @@
+[
+  {
+    "id": "000FDE81",
+    "name": "刀将谱",
+    "tName": "刀将谱",
+    "desc": "1. During the event, you can get 1 lottery chance each day by topping up 200 gold.\n2. Please select the giftpack you need before drawing. You can draw for the giftpack once only each time.\n3. Based on the reward rate you selected you'll get corresponding rewards. The minimum reward rate is twofold.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 960001,
+    "recharge": "{\"index\" : 0, \"gold\" : 200}",
+    "giftIndexs": "[{\"index\" : 1, \"awardId\" : 21403415}, {\"index\" : 2, \"awardId\" : 21403416}, {\"index\" : 3, \"awardId\" :21403420 }, {\"index\" : 4, \"awardId\" : 21403417}, {\"index\" : 5, \"awardId\" :21403418 }, {\"index\" : 6, \"awardId\" :21403419 }, {\"index\" :7, \"awardId\" : 21403421}]",
+    "studIndex": 8,
+    "doubleIndex": "[2,3,4,5,6]"
+  }
+]

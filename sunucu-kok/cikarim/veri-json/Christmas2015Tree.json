@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00111701",
+    "name": "圣诞乐翻天",
+    "tName": "圣诞乐翻天",
+    "desc": "1. Single top-up reached a certain amount can activate giftback, have no time limit.\n2. Finish consume or top-up task can get corresponding giftback once.\n3. The rewards will be invalid if players didn't receive rewards, players can only receive rewards once.\n4. All buttons will be reset at midnight each day, please receive rewards in time.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1120001,
+    "dayPayIndex": 90,
+    "drawLotteryIndex": 91,
+    "snowballIndex": 92,
+    "challengeInfo": "[{\"index\":1,\"award\":21407261,\"Limit\":200},{\"index\":2,\"award\":21407262,\"Limit\":400},{\"index\":3,\"award\":21407263,\"Limit\":1000},{\"index\":4,\"award\":21407264,\"Limit\":2000},{\"index\":5,\"award\":21407265,\"Limit\":5000}]",
+    "text": "Xmas Card"
+  }
+]

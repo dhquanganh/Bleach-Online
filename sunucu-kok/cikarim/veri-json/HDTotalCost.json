@@ -1,0 +1,24 @@
+[
+  {
+    "id": "000186A1",
+    "name": "Accumulate Spending",
+    "tName": "Accumulate Spending, Super Value Rebates",
+    "desc": "During the event period, when you spend gold (or coupons) to designated amount you'll get great rebates.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 100001,
+    "f6": "[{\"key\":100,\"value\":[21401097],\"prompt\":\"100\"},{\"key\":500,\"value\":[21401098],\"prompt\":\"500\"},{\"key\":1000,\"value\":[21401099],\"prompt\":\"1000\"},{\"key\":2000,\"value\":[21401100],\"prompt\":\"2000\"},{\"key\":5000,\"value\":[21401101],\"prompt\":\"5000 more\"}]",
+    "f7": "[{\"type\":1,\"code\":14210021,\"amount\":1},{\"type\":1,\"code\":14210022,\"amount\":1},{\"type\":1,\"code\":14210023,\"amount\":1},{\"type\":1,\"code\":14210024,\"amount\":1},{\"type\":1,\"code\":14210025,\"amount\":1},{\"type\":1,\"code\":14210026,\"amount\":1},{\"type\":1,\"code\":14210027,\"amount\":1},{\"type\":1,\"code\":14210028,\"amount\":1}]"
+  },
+  {
+    "id": "000186A2",
+    "name": "Hollow King",
+    "tName": "Visored Revenge",
+    "desc": "During the event period, when you spend 1 gold or coupon you'll get 1 Kasō-ryoku points; when your Kasō-ryoku points reaches corresponding amount then can receive corresponding Hollow King reward.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 100002,
+    "f6": "[{\"key\":200,\"value\":[21406052],\"prompt\":\"200\"},{\"key\":400,\"value\":[21406053],\"prompt\":\"400\"},{\"key\":800,\"value\":[21406054],\"prompt\":\"800\"},{\"key\":1200,\"value\":[21406055],\"prompt\":\"1200\"},{\"key\":2000,\"value\":[21406056],\"prompt\":\"2000\"},{\"key\":3000,\"value\":[21406057],\"prompt\":\"3000\"},{\"key\":5000,\"value\":[21406058],\"prompt\":\"5000\"},{\"key\":8000,\"value\":[21406059],\"prompt\":\"8000\"},{\"key\":11000,\"value\":[21406060],\"prompt\":\"11000\"},{\"key\":15000,\"value\":[21406061],\"prompt\":\"15000\"}]",
+    "f7": "[{\"type\":1,\"code\":14210021,\"amount\":1},{\"type\":1,\"code\":14210022,\"amount\":1},{\"type\":1,\"code\":14210023,\"amount\":1},{\"type\":1,\"code\":14210024,\"amount\":1},{\"type\":1,\"code\":14210025,\"amount\":1},{\"type\":1,\"code\":14210026,\"amount\":1},{\"type\":1,\"code\":14210027,\"amount\":1},{\"type\":1,\"code\":14210028,\"amount\":1}]"
+  }
+]

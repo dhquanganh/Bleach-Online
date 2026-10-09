@@ -1,0 +1,14 @@
+[
+  {
+    "id": "000D6D81",
+    "name": "成长计划",
+    "tName": "成长计划",
+    "desc": "成长计划",
+    "tip": "1",
+    "price": 0,
+    "imageID": 880001,
+    "totalRechargeIndex": "[{\"index\":0,\"level\":20,\"gold\":100},{\"index\":1,\"level\":25,\"gold\":100},{\"index\":2,\"level\":30,\"gold\":100},{\"index\":3,\"level\":35,\"gold\":100},{\"index\":4,\"level\":40,\"gold\":100},{\"index\":5,\"level\":50,\"gold\":100}]",
+    "f7": 30,
+    "f8": "{\"index\":20,\"condition\":100,\"cost\":100}"
+  }
+]

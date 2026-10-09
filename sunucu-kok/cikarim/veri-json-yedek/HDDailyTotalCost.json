@@ -1,0 +1,32 @@
+[
+  {
+    "id": "00046CD1",
+    "name": "Daily Accumulated Comsumption",
+    "tName": "Daily Accumulate Consumption and Get Super Value Gifts",
+    "desc": "During the event period, spend designated gold amount each day to receive super value gifts; this record will be cleared next day. (Please receive reward timely)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 290001,
+    "f6": "[{\"type\":1,\"key\":500,\"value\":[21401139],\"prompt\":\"500\"},{\"type\":1,\"key\":1000,\"value\":[21401140],\"prompt\":\"1000\"},{\"type\":1,\"key\":5000,\"value\":[21401141],\"prompt\":\"5000\"},{\"type\":1,\"key\":10000,\"value\":[21401142],\"prompt\":\"10000\"},{\"type\":1,\"key\":20000,\"value\":[21401143],\"prompt\":\"20000\"}]"
+  },
+  {
+    "id": "00046CD2",
+    "name": "Visor Legion",
+    "tName": "Visored Revenge",
+    "desc": "During the event period, when you spend 1 gold or coupon you'll get 1 Reiryoku points; when you collect enough Reiryoku points you'll get corresponding coupons as gifts (sent immediately via mail). The records will be cleared everyday at Midnight.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 290002,
+    "f6": "[{\"type\":3,\"key\":40,\"value\":[21406043],\"prompt\":\"40\"},{\"type\":3,\"key\":120,\"value\":[21406044],\"prompt\":\"120\"},{\"type\":3,\"key\":200,\"value\":[21406045],\"prompt\":\"200\"},{\"type\":3,\"key\":400,\"value\":[21406046],\"prompt\":\"400\"},{\"type\":3,\"key\":800,\"value\":[21406047],\"prompt\":\"800\"},{\"type\":3,\"key\":1200,\"value\":[21406048],\"prompt\":\"1200\"},{\"type\":3,\"key\":2000,\"value\":[21406049],\"prompt\":\"2000\"},{\"type\":3,\"key\":4000,\"value\":[21406050],\"prompt\":\"4000\"},{\"type\":3,\"key\":8000,\"value\":[21406051],\"prompt\":\"8000\"}]"
+  },
+  {
+    "id": "00046CD3",
+    "name": "Daily Accumulated Comsumption",
+    "tName": "Daily Accumulate Consumption and Get Super Value Gifts",
+    "desc": "During the event period, spend designated gold amount each day to receive super value gifts; this record will be cleared next day. (Please receive reward timely)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 290003,
+    "f6": "[{\"type\":1,\"key\":500,\"value\":[21401139],\"prompt\":\"500\"},{\"type\":1,\"key\":1000,\"value\":[21401140],\"prompt\":\"1000\"},{\"type\":1,\"key\":5000,\"value\":[21401141],\"prompt\":\"5000\"},{\"type\":1,\"key\":10000,\"value\":[21401142],\"prompt\":\"10000\"},{\"type\":1,\"key\":20000,\"value\":[21401143],\"prompt\":\"20000\"}]"
+  }
+]

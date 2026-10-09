@@ -1,0 +1,28 @@
+[
+  {
+    "id": "00007531",
+    "name": " Arena Rank",
+    "tName": "Wipe Out Your Opponents and Become No.1",
+    "desc": "On the second, fourth, sixth day from the server opening, the top 3 players in the arena rank will each get a bonus reward (According to the rank at 19:30 every day in the arena). Meanwhile, every day there will be 5 lucky players, and they will receive a lucky gift. Rewards will be sent by in-game mail.",
+    "tip": "0",
+    "price": 0,
+    "imageID": 30001,
+    "actAward": "[{\"key\":1,\"value\":[21401094],\"prompt\":\"1st Place\"},{\"key\":2,\"value\":[21401095],\"prompt\":\"2nd Place\"},{\"key\":3,\"value\":[21401096],\"prompt\":\"3rd Place\"}]",
+    "rankDay": "[2,4,6]",
+    "lucky": "[[8,17,32,45,87],[18,23,28,36,42],[3,7,12,21,32],[2,16,25,37,44],[35,49,52,66,77],[33,43,55,68,88],[58,62,74,81,99]]",
+    "luckItem": "[{\"type\":0,\"code\":2,\"amount\":88}]"
+  },
+  {
+    "id": "00007532",
+    "name": " Arena Rank",
+    "tName": "Wipe Out Your Opponents and Become No.1",
+    "desc": "On the second, fourth, sixth day from the server opening, the top 3 players in the arena rank will each get a bonus reward (According to the rank at 19:30 every day in the arena). Meanwhile, every day there will be 5 lucky players, and they will receive a lucky gift. Rewards will be sent by in-game mail.",
+    "tip": "0",
+    "price": 0,
+    "imageID": 30001,
+    "actAward": "[{\"key\":1,\"value\":[21401094],\"prompt\":\"1st Place\"},{\"key\":2,\"value\":[21401095],\"prompt\":\"2nd Place\"},{\"key\":3,\"value\":[21401096],\"prompt\":\"3rd Place\"}]",
+    "rankDay": "[2,4,6]",
+    "lucky": "[[9,18,33,46,88],[19,24,29,37,46],[4,8,14,22,33],[4,17,26,38,45],[34,48,51,62,74],[34,45,56,63,82],[51,64,75,86,98]]",
+    "luckItem": "[{\"type\":0,\"code\":2,\"amount\":88}]"
+  }
+]

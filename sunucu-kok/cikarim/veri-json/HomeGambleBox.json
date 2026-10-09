@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00000001",
+    "needScore": 50,
+    "boxName": "Lv.1 Point Chest"
+  },
+  {
+    "id": "00000002",
+    "needScore": 500,
+    "boxName": "Lv.2 Point Chest"
+  },
+  {
+    "id": "00000003",
+    "needScore": 2000,
+    "boxName": "Lv.3 Point Chest"
+  }
+]

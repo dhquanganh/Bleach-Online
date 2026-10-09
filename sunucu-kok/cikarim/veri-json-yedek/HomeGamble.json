@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "00000001",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100003,\"amount\":100},{\"type\":1,\"code\":14100010,\"amount\":20}]"
+  },
+  {
+    "id": "00000002",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":100},{\"type\":1,\"code\":14100130,\"amount\":100},{\"type\":1,\"code\":14100074,\"amount\":30}]"
+  },
+  {
+    "id": "00000003",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":4},{\"type\":1,\"code\":14800001,\"amount\":6},{\"type\":1,\"code\":14100017,\"amount\":21},{\"type\":7,\"code\":4,\"amount\":360},{\"type\":1,\"code\":14100074,\"amount\":90}]"
+  },
+  {
+    "id": "00000004",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100010,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":5}]"
+  },
+  {
+    "id": "00000005",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":100},{\"type\":1,\"code\":14800022,\"amount\":4},{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "00000006",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":6},{\"type\":1,\"code\":14800022,\"amount\":32},{\"type\":1,\"code\":14100074,\"amount\":90},{\"type\":1,\"code\":14310001,\"amount\":5},{\"type\":7,\"code\":4,\"amount\":360}]"
+  },
+  {
+    "id": "00000007",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100003,\"amount\":100}]"
+  },
+  {
+    "id": "00000008",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":3},{\"type\":1,\"code\":14100074,\"amount\":30},{\"type\":1,\"code\":14800020,\"amount\":6}]"
+  },
+  {
+    "id": "00000009",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":21},{\"type\":1,\"code\":14820036,\"amount\":1},{\"type\":7,\"code\":4,\"amount\":360},{\"type\":1,\"code\":14100018,\"amount\":9}]"
+  },
+  {
+    "id": "0000000A",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100010,\"amount\":20}]"
+  },
+  {
+    "id": "0000000B",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":100},{\"type\":1,\"code\":14100018,\"amount\":3},{\"type\":1,\"code\":14800020,\"amount\":6}]"
+  },
+  {
+    "id": "0000000C",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":4},{\"type\":1,\"code\":14800022,\"amount\":32},{\"type\":1,\"code\":14310001,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":1},{\"type\":1,\"code\":14100021,\"amount\":21}]"
+  },
+  {
+    "id": "0000000D",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":5}]"
+  },
+  {
+    "id": "0000000E",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":30},{\"type\":1,\"code\":14100130,\"amount\":100},{\"type\":1,\"code\":14800022,\"amount\":4}]"
+  },
+  {
+    "id": "0000000F",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":4,\"amount\":360},{\"type\":1,\"code\":14820036,\"amount\":1},{\"type\":1,\"code\":14800001,\"amount\":6},{\"type\":1,\"code\":14100021,\"amount\":1}]"
+  },
+  {
+    "id": "00000010",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100003,\"amount\":100},{\"type\":1,\"code\":14100010,\"amount\":20}]"
+  },
+  {
+    "id": "00000011",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":100},{\"type\":1,\"code\":14100130,\"amount\":100},{\"type\":1,\"code\":14100074,\"amount\":30}]"
+  },
+  {
+    "id": "00000012",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":4},{\"type\":1,\"code\":14800001,\"amount\":6},{\"type\":1,\"code\":14100017,\"amount\":21},{\"type\":7,\"code\":4,\"amount\":360},{\"type\":1,\"code\":14100074,\"amount\":90}]"
+  },
+  {
+    "id": "00000013",
+    "boxID": 1,
+    "level": 59,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100010,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":5}]"
+  },
+  {
+    "id": "00000014",
+    "boxID": 2,
+    "level": 59,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":100},{\"type\":1,\"code\":14800022,\"amount\":4},{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "00000015",
+    "boxID": 3,
+    "level": 59,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":6},{\"type\":1,\"code\":14800022,\"amount\":32},{\"type\":1,\"code\":14100074,\"amount\":90},{\"type\":1,\"code\":14310001,\"amount\":5},{\"type\":7,\"code\":4,\"amount\":360}]"
+  },
+  {
+    "id": "00000016",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100004,\"amount\":10},{\"type\":1,\"code\":14100011,\"amount\":20}]"
+  },
+  {
+    "id": "00000017",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":120},{\"type\":1,\"code\":14100130,\"amount\":120},{\"type\":1,\"code\":14100074,\"amount\":40}]"
+  },
+  {
+    "id": "00000018",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":6},{\"type\":1,\"code\":14800001,\"amount\":7},{\"type\":1,\"code\":14100017,\"amount\":27},{\"type\":7,\"code\":5,\"amount\":86},{\"type\":1,\"code\":14100074,\"amount\":108}]"
+  },
+  {
+    "id": "00000019",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100011,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":6}]"
+  },
+  {
+    "id": "0000001A",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":120},{\"type\":1,\"code\":14800022,\"amount\":5},{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "0000001B",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":7},{\"type\":1,\"code\":14800022,\"amount\":38},{\"type\":1,\"code\":14100074,\"amount\":108},{\"type\":1,\"code\":14310002,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":86}]"
+  },
+  {
+    "id": "0000001C",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100004,\"amount\":10}]"
+  },
+  {
+    "id": "0000001D",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":3},{\"type\":1,\"code\":14100074,\"amount\":40},{\"type\":1,\"code\":14800020,\"amount\":7}]"
+  },
+  {
+    "id": "0000001E",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":27},{\"type\":1,\"code\":14820036,\"amount\":1},{\"type\":7,\"code\":5,\"amount\":86},{\"type\":1,\"code\":14100018,\"amount\":14}]"
+  },
+  {
+    "id": "0000001F",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100011,\"amount\":20}]"
+  },
+  {
+    "id": "00000020",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":120},{\"type\":1,\"code\":14100018,\"amount\":3},{\"type\":1,\"code\":14800020,\"amount\":7}]"
+  },
+  {
+    "id": "00000021",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":6},{\"type\":1,\"code\":14800022,\"amount\":38},{\"type\":1,\"code\":14310002,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":27},{\"type\":1,\"code\":14100021,\"amount\":27}]"
+  },
+  {
+    "id": "00000022",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":0,\"amount\":6}]"
+  },
+  {
+    "id": "00000023",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":40},{\"type\":1,\"code\":14100130,\"amount\":120},{\"type\":1,\"code\":14800022,\"amount\":5}]"
+  },
+  {
+    "id": "00000024",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":86},{\"type\":1,\"code\":14820036,\"amount\":1},{\"type\":1,\"code\":14800001,\"amount\":7},{\"type\":1,\"code\":14100021,\"amount\":27}]"
+  },
+  {
+    "id": "00000025",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100004,\"amount\":10},{\"type\":1,\"code\":14100011,\"amount\":20}]"
+  },
+  {
+    "id": "00000026",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":120},{\"type\":1,\"code\":14100130,\"amount\":120},{\"type\":1,\"code\":14100074,\"amount\":40}]"
+  },
+  {
+    "id": "00000027",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":6},{\"type\":1,\"code\":14800001,\"amount\":7},{\"type\":1,\"code\":14100017,\"amount\":27},{\"type\":7,\"code\":5,\"amount\":86},{\"type\":1,\"code\":14100074,\"amount\":108}]"
+  },
+  {
+    "id": "00000028",
+    "boxID": 1,
+    "level": 69,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100011,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":6}]"
+  },
+  {
+    "id": "00000029",
+    "boxID": 2,
+    "level": 69,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":120},{\"type\":1,\"code\":14800022,\"amount\":5},{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "0000002A",
+    "boxID": 3,
+    "level": 69,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":7},{\"type\":1,\"code\":14800022,\"amount\":38},{\"type\":1,\"code\":14100074,\"amount\":108},{\"type\":1,\"code\":14310002,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":86}]"
+  },
+  {
+    "id": "0000002B",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":2},{\"type\":1,\"code\":14100012,\"amount\":20}]"
+  },
+  {
+    "id": "0000002C",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":140},{\"type\":1,\"code\":14100130,\"amount\":140},{\"type\":1,\"code\":14100074,\"amount\":50}]"
+  },
+  {
+    "id": "0000002D",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":7},{\"type\":1,\"code\":14800001,\"amount\":8},{\"type\":1,\"code\":14100017,\"amount\":32},{\"type\":7,\"code\":5,\"amount\":101},{\"type\":1,\"code\":14100074,\"amount\":126}]"
+  },
+  {
+    "id": "0000002E",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100012,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":7}]"
+  },
+  {
+    "id": "0000002F",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":140},{\"type\":1,\"code\":14800022,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":4}]"
+  },
+  {
+    "id": "00000030",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":8},{\"type\":1,\"code\":14800022,\"amount\":44},{\"type\":1,\"code\":14100074,\"amount\":126},{\"type\":1,\"code\":14310003,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":101}]"
+  },
+  {
+    "id": "00000031",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":2}]"
+  },
+  {
+    "id": "00000032",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":4},{\"type\":1,\"code\":14100074,\"amount\":50},{\"type\":1,\"code\":14800020,\"amount\":8}]"
+  },
+  {
+    "id": "00000033",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":32},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":7,\"code\":5,\"amount\":101},{\"type\":1,\"code\":14100018,\"amount\":16}]"
+  },
+  {
+    "id": "00000034",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100012,\"amount\":20}]"
+  },
+  {
+    "id": "00000035",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":140},{\"type\":1,\"code\":14100018,\"amount\":4},{\"type\":1,\"code\":14800020,\"amount\":8}]"
+  },
+  {
+    "id": "00000036",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":7},{\"type\":1,\"code\":14800022,\"amount\":44},{\"type\":1,\"code\":14310003,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":32},{\"type\":1,\"code\":14100021,\"amount\":32}]"
+  },
+  {
+    "id": "00000037",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":7}]"
+  },
+  {
+    "id": "00000038",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":50},{\"type\":1,\"code\":14100130,\"amount\":140},{\"type\":1,\"code\":14800022,\"amount\":6}]"
+  },
+  {
+    "id": "00000039",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":101},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":1,\"code\":14800001,\"amount\":8},{\"type\":1,\"code\":14100021,\"amount\":32}]"
+  },
+  {
+    "id": "0000003A",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":2},{\"type\":1,\"code\":14100012,\"amount\":20}]"
+  },
+  {
+    "id": "0000003B",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":140},{\"type\":1,\"code\":14100130,\"amount\":140},{\"type\":1,\"code\":14100074,\"amount\":50}]"
+  },
+  {
+    "id": "0000003C",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100100,\"amount\":7},{\"type\":1,\"code\":14800001,\"amount\":8},{\"type\":1,\"code\":14100017,\"amount\":32},{\"type\":7,\"code\":5,\"amount\":101},{\"type\":1,\"code\":14100074,\"amount\":126}]"
+  },
+  {
+    "id": "0000003D",
+    "boxID": 1,
+    "level": 79,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100012,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":7}]"
+  },
+  {
+    "id": "0000003E",
+    "boxID": 2,
+    "level": 79,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":140},{\"type\":1,\"code\":14800022,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":4}]"
+  },
+  {
+    "id": "0000003F",
+    "boxID": 3,
+    "level": 79,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":8},{\"type\":1,\"code\":14800022,\"amount\":44},{\"type\":1,\"code\":14100074,\"amount\":126},{\"type\":1,\"code\":14310003,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":101}]"
+  },
+  {
+    "id": "00000040",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":3},{\"type\":1,\"code\":14100013,\"amount\":20}]"
+  },
+  {
+    "id": "00000041",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":160},{\"type\":1,\"code\":14100130,\"amount\":160},{\"type\":1,\"code\":14100074,\"amount\":61}]"
+  },
+  {
+    "id": "00000042",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":4},{\"type\":1,\"code\":14800001,\"amount\":10},{\"type\":1,\"code\":14100017,\"amount\":36},{\"type\":7,\"code\":5,\"amount\":115},{\"type\":1,\"code\":14100074,\"amount\":144}]"
+  },
+  {
+    "id": "00000043",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100013,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":8}]"
+  },
+  {
+    "id": "00000044",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":160},{\"type\":1,\"code\":14800022,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":5}]"
+  },
+  {
+    "id": "00000045",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":10},{\"type\":1,\"code\":14800022,\"amount\":50},{\"type\":1,\"code\":14100074,\"amount\":144},{\"type\":1,\"code\":14310004,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":115}]"
+  },
+  {
+    "id": "00000046",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":3}]"
+  },
+  {
+    "id": "00000047",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":5},{\"type\":1,\"code\":14100074,\"amount\":61},{\"type\":1,\"code\":14800020,\"amount\":10}]"
+  },
+  {
+    "id": "00000048",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":36},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":7,\"code\":5,\"amount\":115},{\"type\":1,\"code\":14100018,\"amount\":18}]"
+  },
+  {
+    "id": "00000049",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100013,\"amount\":20}]"
+  },
+  {
+    "id": "0000004A",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":160},{\"type\":1,\"code\":14100018,\"amount\":5},{\"type\":1,\"code\":14800020,\"amount\":10}]"
+  },
+  {
+    "id": "0000004B",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":4},{\"type\":1,\"code\":14800022,\"amount\":50},{\"type\":1,\"code\":14310004,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":36},{\"type\":1,\"code\":14100021,\"amount\":36}]"
+  },
+  {
+    "id": "0000004C",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":8}]"
+  },
+  {
+    "id": "0000004D",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":61},{\"type\":1,\"code\":14100130,\"amount\":160},{\"type\":1,\"code\":14800022,\"amount\":6}]"
+  },
+  {
+    "id": "0000004E",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":115},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":1,\"code\":14800001,\"amount\":10},{\"type\":1,\"code\":14100021,\"amount\":36}]"
+  },
+  {
+    "id": "0000004F",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":3},{\"type\":1,\"code\":14100013,\"amount\":20}]"
+  },
+  {
+    "id": "00000050",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":160},{\"type\":1,\"code\":14100130,\"amount\":160},{\"type\":1,\"code\":14100074,\"amount\":61}]"
+  },
+  {
+    "id": "00000051",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":4},{\"type\":1,\"code\":14800001,\"amount\":10},{\"type\":1,\"code\":14100017,\"amount\":36},{\"type\":7,\"code\":5,\"amount\":115},{\"type\":1,\"code\":14100074,\"amount\":144}]"
+  },
+  {
+    "id": "00000052",
+    "boxID": 1,
+    "level": 89,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100013,\"amount\":20},{\"type\":3,\"code\":0,\"amount\":8}]"
+  },
+  {
+    "id": "00000053",
+    "boxID": 2,
+    "level": 89,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":160},{\"type\":1,\"code\":14800022,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":5}]"
+  },
+  {
+    "id": "00000054",
+    "boxID": 3,
+    "level": 89,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":10},{\"type\":1,\"code\":14800022,\"amount\":50},{\"type\":1,\"code\":14100074,\"amount\":144},{\"type\":1,\"code\":14310004,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":115}]"
+  },
+  {
+    "id": "00000055",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":4},{\"type\":1,\"code\":14100014,\"amount\":10}]"
+  },
+  {
+    "id": "00000056",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":180},{\"type\":1,\"code\":14100130,\"amount\":180},{\"type\":1,\"code\":14100074,\"amount\":70}]"
+  },
+  {
+    "id": "00000057",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":5},{\"type\":1,\"code\":14800001,\"amount\":11},{\"type\":1,\"code\":14100017,\"amount\":41},{\"type\":7,\"code\":5,\"amount\":130},{\"type\":1,\"code\":14100074,\"amount\":162}]"
+  },
+  {
+    "id": "00000058",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100014,\"amount\":10},{\"type\":3,\"code\":0,\"amount\":9}]"
+  },
+  {
+    "id": "00000059",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":180},{\"type\":1,\"code\":14800022,\"amount\":7},{\"type\":1,\"code\":14100018,\"amount\":6}]"
+  },
+  {
+    "id": "0000005A",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":11},{\"type\":1,\"code\":14800022,\"amount\":57},{\"type\":1,\"code\":14100074,\"amount\":62},{\"type\":1,\"code\":14310005,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":130}]"
+  },
+  {
+    "id": "0000005B",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":4}]"
+  },
+  {
+    "id": "0000005C",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":6},{\"type\":1,\"code\":14100074,\"amount\":70},{\"type\":1,\"code\":14800020,\"amount\":11}]"
+  },
+  {
+    "id": "0000005D",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":41},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":7,\"code\":5,\"amount\":130},{\"type\":1,\"code\":14100018,\"amount\":20}]"
+  },
+  {
+    "id": "0000005E",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100014,\"amount\":10}]"
+  },
+  {
+    "id": "0000005F",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":180},{\"type\":1,\"code\":14100018,\"amount\":6},{\"type\":1,\"code\":14800020,\"amount\":11}]"
+  },
+  {
+    "id": "00000060",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":5},{\"type\":1,\"code\":14800022,\"amount\":57},{\"type\":1,\"code\":14310005,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":41},{\"type\":1,\"code\":14100021,\"amount\":41}]"
+  },
+  {
+    "id": "00000061",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":9}]"
+  },
+  {
+    "id": "00000062",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":70},{\"type\":1,\"code\":14100130,\"amount\":180},{\"type\":1,\"code\":14800022,\"amount\":7}]"
+  },
+  {
+    "id": "00000063",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":130},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":1,\"code\":14800001,\"amount\":11},{\"type\":1,\"code\":14100021,\"amount\":41}]"
+  },
+  {
+    "id": "00000064",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":4},{\"type\":1,\"code\":14100014,\"amount\":10}]"
+  },
+  {
+    "id": "00000065",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":180},{\"type\":1,\"code\":14100130,\"amount\":180},{\"type\":1,\"code\":14100074,\"amount\":70}]"
+  },
+  {
+    "id": "00000066",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100101,\"amount\":5},{\"type\":1,\"code\":14800001,\"amount\":11},{\"type\":1,\"code\":14100017,\"amount\":41},{\"type\":7,\"code\":5,\"amount\":130},{\"type\":1,\"code\":14100074,\"amount\":162}]"
+  },
+  {
+    "id": "00000067",
+    "boxID": 1,
+    "level": 99,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100014,\"amount\":10},{\"type\":3,\"code\":0,\"amount\":9}]"
+  },
+  {
+    "id": "00000068",
+    "boxID": 2,
+    "level": 99,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":180},{\"type\":1,\"code\":14800022,\"amount\":7},{\"type\":1,\"code\":14100018,\"amount\":6}]"
+  },
+  {
+    "id": "00000069",
+    "boxID": 3,
+    "level": 99,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":11},{\"type\":1,\"code\":14800022,\"amount\":57},{\"type\":1,\"code\":14100074,\"amount\":162},{\"type\":1,\"code\":14310005,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":130}]"
+  },
+  {
+    "id": "0000006A",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":5},{\"type\":1,\"code\":14100015,\"amount\":7}]"
+  },
+  {
+    "id": "0000006B",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":200},{\"type\":1,\"code\":14100130,\"amount\":200},{\"type\":1,\"code\":14100074,\"amount\":80}]"
+  },
+  {
+    "id": "0000006C",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":5},{\"type\":1,\"code\":14800001,\"amount\":12},{\"type\":1,\"code\":14100017,\"amount\":45},{\"type\":7,\"code\":5,\"amount\":144},{\"type\":1,\"code\":14100074,\"amount\":180}]"
+  },
+  {
+    "id": "0000006D",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":7},{\"type\":3,\"code\":0,\"amount\":10}]"
+  },
+  {
+    "id": "0000006E",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":200},{\"type\":1,\"code\":14800022,\"amount\":8},{\"type\":1,\"code\":14100018,\"amount\":6}]"
+  },
+  {
+    "id": "0000006F",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":12},{\"type\":1,\"code\":14800022,\"amount\":63},{\"type\":1,\"code\":14100074,\"amount\":180},{\"type\":1,\"code\":14310006,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":144}]"
+  },
+  {
+    "id": "00000070",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":5}]"
+  },
+  {
+    "id": "00000071",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":6},{\"type\":1,\"code\":14100074,\"amount\":80},{\"type\":1,\"code\":14800020,\"amount\":12}]"
+  },
+  {
+    "id": "00000072",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":45},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":7,\"code\":5,\"amount\":144},{\"type\":1,\"code\":14100018,\"amount\":23}]"
+  },
+  {
+    "id": "00000073",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":7}]"
+  },
+  {
+    "id": "00000074",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":200},{\"type\":1,\"code\":14100018,\"amount\":6},{\"type\":1,\"code\":14800020,\"amount\":12}]"
+  },
+  {
+    "id": "00000075",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":5},{\"type\":1,\"code\":14800022,\"amount\":63},{\"type\":1,\"code\":14310006,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":45},{\"type\":1,\"code\":14100021,\"amount\":45}]"
+  },
+  {
+    "id": "00000076",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":10}]"
+  },
+  {
+    "id": "00000077",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":80},{\"type\":1,\"code\":14100130,\"amount\":200},{\"type\":1,\"code\":14800022,\"amount\":8}]"
+  },
+  {
+    "id": "00000078",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":144},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":1,\"code\":14800001,\"amount\":12},{\"type\":1,\"code\":14100021,\"amount\":45}]"
+  },
+  {
+    "id": "00000079",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":5},{\"type\":1,\"code\":14100015,\"amount\":7}]"
+  },
+  {
+    "id": "0000007A",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":200},{\"type\":1,\"code\":14100130,\"amount\":200},{\"type\":1,\"code\":14100074,\"amount\":80}]"
+  },
+  {
+    "id": "0000007B",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":5},{\"type\":1,\"code\":14800001,\"amount\":12},{\"type\":1,\"code\":14100017,\"amount\":45},{\"type\":7,\"code\":5,\"amount\":144},{\"type\":1,\"code\":14100074,\"amount\":180}]"
+  },
+  {
+    "id": "0000007C",
+    "boxID": 1,
+    "level": 109,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":7},{\"type\":3,\"code\":0,\"amount\":10}]"
+  },
+  {
+    "id": "0000007D",
+    "boxID": 2,
+    "level": 109,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":200},{\"type\":1,\"code\":14800022,\"amount\":8},{\"type\":1,\"code\":14100018,\"amount\":6}]"
+  },
+  {
+    "id": "0000007E",
+    "boxID": 3,
+    "level": 109,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":12},{\"type\":1,\"code\":14800022,\"amount\":63},{\"type\":1,\"code\":14100074,\"amount\":180},{\"type\":1,\"code\":14310006,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":144}]"
+  },
+  {
+    "id": "0000007F",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6},{\"type\":1,\"code\":14100015,\"amount\":9}]"
+  },
+  {
+    "id": "00000080",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":220},{\"type\":1,\"code\":14100130,\"amount\":220},{\"type\":1,\"code\":14100074,\"amount\":66}]"
+  },
+  {
+    "id": "00000081",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":6},{\"type\":1,\"code\":14800001,\"amount\":13},{\"type\":1,\"code\":14100017,\"amount\":50},{\"type\":7,\"code\":5,\"amount\":158},{\"type\":1,\"code\":14100018,\"amount\":25}]"
+  },
+  {
+    "id": "00000082",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":9},{\"type\":3,\"code\":0,\"amount\":12}]"
+  },
+  {
+    "id": "00000083",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":220},{\"type\":1,\"code\":14800022,\"amount\":9},{\"type\":1,\"code\":14100018,\"amount\":7}]"
+  },
+  {
+    "id": "00000084",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":13},{\"type\":1,\"code\":14800022,\"amount\":69},{\"type\":1,\"code\":14100018,\"amount\":25},{\"type\":1,\"code\":14310007,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":158}]"
+  },
+  {
+    "id": "00000085",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6}]"
+  },
+  {
+    "id": "00000086",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":7},{\"type\":1,\"code\":14100074,\"amount\":66},{\"type\":1,\"code\":14800020,\"amount\":13}]"
+  },
+  {
+    "id": "00000087",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":50},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":7,\"code\":5,\"amount\":158},{\"type\":1,\"code\":14100018,\"amount\":25}]"
+  },
+  {
+    "id": "00000088",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":9}]"
+  },
+  {
+    "id": "00000089",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":220},{\"type\":1,\"code\":14100018,\"amount\":7},{\"type\":1,\"code\":14800020,\"amount\":13}]"
+  },
+  {
+    "id": "0000008A",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":6},{\"type\":1,\"code\":14800022,\"amount\":69},{\"type\":1,\"code\":14310007,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":50},{\"type\":1,\"code\":14100074,\"amount\":198}]"
+  },
+  {
+    "id": "0000008B",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":12}]"
+  },
+  {
+    "id": "0000008C",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":66},{\"type\":1,\"code\":14100130,\"amount\":220},{\"type\":1,\"code\":14800022,\"amount\":9}]"
+  },
+  {
+    "id": "0000008D",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":158},{\"type\":1,\"code\":14820036,\"amount\":2},{\"type\":1,\"code\":14800001,\"amount\":13},{\"type\":1,\"code\":14100074,\"amount\":198}]"
+  },
+  {
+    "id": "0000008E",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6},{\"type\":1,\"code\":14100015,\"amount\":9}]"
+  },
+  {
+    "id": "0000008F",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":220},{\"type\":1,\"code\":14100130,\"amount\":220},{\"type\":1,\"code\":14100074,\"amount\":66}]"
+  },
+  {
+    "id": "00000090",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":6},{\"type\":1,\"code\":14800001,\"amount\":13},{\"type\":1,\"code\":14100017,\"amount\":50},{\"type\":7,\"code\":5,\"amount\":158},{\"type\":1,\"code\":14100018,\"amount\":25}]"
+  },
+  {
+    "id": "00000091",
+    "boxID": 1,
+    "level": 119,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":9},{\"type\":3,\"code\":0,\"amount\":12}]"
+  },
+  {
+    "id": "00000092",
+    "boxID": 2,
+    "level": 119,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":220},{\"type\":1,\"code\":14800022,\"amount\":9},{\"type\":1,\"code\":14100018,\"amount\":7}]"
+  },
+  {
+    "id": "00000093",
+    "boxID": 3,
+    "level": 119,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":13},{\"type\":1,\"code\":14800022,\"amount\":69},{\"type\":1,\"code\":14100018,\"amount\":25},{\"type\":1,\"code\":14310007,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":158}]"
+  },
+  {
+    "id": "00000094",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6},{\"type\":1,\"code\":14100015,\"amount\":10}]"
+  },
+  {
+    "id": "00000095",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":240},{\"type\":1,\"code\":14100130,\"amount\":240},{\"type\":1,\"code\":14100074,\"amount\":72}]"
+  },
+  {
+    "id": "00000096",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":7},{\"type\":1,\"code\":14800001,\"amount\":14},{\"type\":1,\"code\":14100017,\"amount\":54},{\"type\":7,\"code\":5,\"amount\":173},{\"type\":1,\"code\":14100018,\"amount\":27}]"
+  },
+  {
+    "id": "00000097",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":10},{\"type\":3,\"code\":0,\"amount\":13}]"
+  },
+  {
+    "id": "00000098",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":240},{\"type\":1,\"code\":14800022,\"amount\":10},{\"type\":1,\"code\":14100018,\"amount\":8}]"
+  },
+  {
+    "id": "00000099",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":14},{\"type\":1,\"code\":14800022,\"amount\":73},{\"type\":1,\"code\":14100018,\"amount\":27},{\"type\":1,\"code\":14310008,\"amount\":4},{\"type\":7,\"code\":5,\"amount\":173}]"
+  },
+  {
+    "id": "0000009A",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6}]"
+  },
+  {
+    "id": "0000009B",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":8},{\"type\":1,\"code\":14100074,\"amount\":72},{\"type\":1,\"code\":14800020,\"amount\":14}]"
+  },
+  {
+    "id": "0000009C",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":54},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":7,\"code\":5,\"amount\":173},{\"type\":1,\"code\":14100018,\"amount\":27}]"
+  },
+  {
+    "id": "0000009D",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":10}]"
+  },
+  {
+    "id": "0000009E",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":240},{\"type\":1,\"code\":14100018,\"amount\":8},{\"type\":1,\"code\":14800020,\"amount\":14}]"
+  },
+  {
+    "id": "0000009F",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":7},{\"type\":1,\"code\":14800022,\"amount\":73},{\"type\":1,\"code\":14310008,\"amount\":4},{\"type\":1,\"code\":14100017,\"amount\":54},{\"type\":1,\"code\":14100074,\"amount\":216}]"
+  },
+  {
+    "id": "000000A0",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":13}]"
+  },
+  {
+    "id": "000000A1",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":72},{\"type\":1,\"code\":14100130,\"amount\":240},{\"type\":1,\"code\":14800022,\"amount\":10}]"
+  },
+  {
+    "id": "000000A2",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":173},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":1,\"code\":14800001,\"amount\":14},{\"type\":1,\"code\":14100074,\"amount\":216}]"
+  },
+  {
+    "id": "000000A3",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":6},{\"type\":1,\"code\":14100015,\"amount\":10}]"
+  },
+  {
+    "id": "000000A4",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":240},{\"type\":1,\"code\":14100130,\"amount\":240},{\"type\":1,\"code\":14100074,\"amount\":72}]"
+  },
+  {
+    "id": "000000A5",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":7},{\"type\":1,\"code\":14800001,\"amount\":14},{\"type\":1,\"code\":14100017,\"amount\":54},{\"type\":7,\"code\":5,\"amount\":173},{\"type\":1,\"code\":14100018,\"amount\":27}]"
+  },
+  {
+    "id": "000000A6",
+    "boxID": 1,
+    "level": 129,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":10},{\"type\":3,\"code\":0,\"amount\":13}]"
+  },
+  {
+    "id": "000000A7",
+    "boxID": 2,
+    "level": 129,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":240},{\"type\":1,\"code\":14800022,\"amount\":10},{\"type\":1,\"code\":14100018,\"amount\":8}]"
+  },
+  {
+    "id": "000000A8",
+    "boxID": 3,
+    "level": 129,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":14},{\"type\":1,\"code\":14800022,\"amount\":73},{\"type\":1,\"code\":14100018,\"amount\":27},{\"type\":1,\"code\":14310008,\"amount\":4},{\"type\":7,\"code\":5,\"amount\":173}]"
+  },
+  {
+    "id": "000000A9",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":7},{\"type\":1,\"code\":14100015,\"amount\":11}]"
+  },
+  {
+    "id": "000000AA",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":260},{\"type\":1,\"code\":14100130,\"amount\":260},{\"type\":1,\"code\":14100074,\"amount\":78}]"
+  },
+  {
+    "id": "000000AB",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":8},{\"type\":1,\"code\":14800001,\"amount\":16},{\"type\":1,\"code\":14100017,\"amount\":59},{\"type\":7,\"code\":5,\"amount\":187},{\"type\":1,\"code\":14100018,\"amount\":29}]"
+  },
+  {
+    "id": "000000AC",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":11},{\"type\":3,\"code\":0,\"amount\":14}]"
+  },
+  {
+    "id": "000000AD",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":260},{\"type\":1,\"code\":14800022,\"amount\":10},{\"type\":1,\"code\":14100018,\"amount\":8}]"
+  },
+  {
+    "id": "000000AE",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":16},{\"type\":1,\"code\":14800022,\"amount\":75},{\"type\":1,\"code\":14100018,\"amount\":29},{\"type\":1,\"code\":14310009,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":187}]"
+  },
+  {
+    "id": "000000AF",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":7}]"
+  },
+  {
+    "id": "000000B0",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":8},{\"type\":1,\"code\":14100074,\"amount\":78},{\"type\":1,\"code\":14800020,\"amount\":16}]"
+  },
+  {
+    "id": "000000B1",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":59},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":7,\"code\":5,\"amount\":187},{\"type\":1,\"code\":14100018,\"amount\":29}]"
+  },
+  {
+    "id": "000000B2",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":11}]"
+  },
+  {
+    "id": "000000B3",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":260},{\"type\":1,\"code\":14100018,\"amount\":8},{\"type\":1,\"code\":14800020,\"amount\":16}]"
+  },
+  {
+    "id": "000000B4",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":8},{\"type\":1,\"code\":14800022,\"amount\":75},{\"type\":1,\"code\":14310009,\"amount\":5},{\"type\":1,\"code\":14100017,\"amount\":59},{\"type\":1,\"code\":14100074,\"amount\":234}]"
+  },
+  {
+    "id": "000000B5",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":14}]"
+  },
+  {
+    "id": "000000B6",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":78},{\"type\":1,\"code\":14100130,\"amount\":260},{\"type\":1,\"code\":14800022,\"amount\":10}]"
+  },
+  {
+    "id": "000000B7",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":187},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":1,\"code\":14800001,\"amount\":16},{\"type\":1,\"code\":14100074,\"amount\":234}]"
+  },
+  {
+    "id": "000000B8",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":7},{\"type\":1,\"code\":14100015,\"amount\":11}]"
+  },
+  {
+    "id": "000000B9",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":260},{\"type\":1,\"code\":14100130,\"amount\":260},{\"type\":1,\"code\":14100074,\"amount\":78}]"
+  },
+  {
+    "id": "000000BA",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":8},{\"type\":1,\"code\":14800001,\"amount\":16},{\"type\":1,\"code\":14100017,\"amount\":59},{\"type\":7,\"code\":5,\"amount\":187},{\"type\":1,\"code\":14100018,\"amount\":29}]"
+  },
+  {
+    "id": "000000BB",
+    "boxID": 1,
+    "level": 139,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":11},{\"type\":3,\"code\":0,\"amount\":14}]"
+  },
+  {
+    "id": "000000BC",
+    "boxID": 2,
+    "level": 139,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":260},{\"type\":1,\"code\":14800022,\"amount\":10},{\"type\":1,\"code\":14100018,\"amount\":8}]"
+  },
+  {
+    "id": "000000BD",
+    "boxID": 3,
+    "level": 139,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":16},{\"type\":1,\"code\":14800022,\"amount\":75},{\"type\":1,\"code\":14100018,\"amount\":29},{\"type\":1,\"code\":14310009,\"amount\":5},{\"type\":7,\"code\":5,\"amount\":187}]"
+  },
+  {
+    "id": "000000BE",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":8},{\"type\":1,\"code\":14100015,\"amount\":12}]"
+  },
+  {
+    "id": "000000BF",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":300},{\"type\":1,\"code\":14100130,\"amount\":300},{\"type\":1,\"code\":14100074,\"amount\":90}]"
+  },
+  {
+    "id": "000000C0",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 0,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":9},{\"type\":1,\"code\":14800001,\"amount\":18},{\"type\":7,\"code\":5,\"amount\":216},{\"type\":1,\"code\":14100017,\"amount\":68},{\"type\":1,\"code\":14100018,\"amount\":34}]"
+  },
+  {
+    "id": "000000C1",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":12},{\"type\":3,\"code\":0,\"amount\":16}]"
+  },
+  {
+    "id": "000000C2",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":300},{\"type\":1,\"code\":14800022,\"amount\":12},{\"type\":1,\"code\":14100018,\"amount\":10}]"
+  },
+  {
+    "id": "000000C3",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 1,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":18},{\"type\":1,\"code\":14800022,\"amount\":81},{\"type\":1,\"code\":14310010,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":34},{\"type\":7,\"code\":5,\"amount\":216}]"
+  },
+  {
+    "id": "000000C4",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":8}]"
+  },
+  {
+    "id": "000000C5",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100018,\"amount\":10},{\"type\":1,\"code\":14100074,\"amount\":90},{\"type\":1,\"code\":14800020,\"amount\":18}]"
+  },
+  {
+    "id": "000000C6",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 2,
+    "awardBox": "[{\"type\":1,\"code\":14100017,\"amount\":68},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":1,\"code\":14100018,\"amount\":34},{\"type\":7,\"code\":5,\"amount\":216}]"
+  },
+  {
+    "id": "000000C7",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":12}]"
+  },
+  {
+    "id": "000000C8",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":300},{\"type\":1,\"code\":14100018,\"amount\":10},{\"type\":1,\"code\":14800020,\"amount\":18}]"
+  },
+  {
+    "id": "000000C9",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 3,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":9},{\"type\":1,\"code\":14800022,\"amount\":81},{\"type\":1,\"code\":14100017,\"amount\":68},{\"type\":1,\"code\":14310010,\"amount\":6},{\"type\":1,\"code\":14100074,\"amount\":270}]"
+  },
+  {
+    "id": "000000CA",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":3,\"code\":0,\"amount\":16}]"
+  },
+  {
+    "id": "000000CB",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":1,\"code\":14100074,\"amount\":90},{\"type\":1,\"code\":14100130,\"amount\":300},{\"type\":1,\"code\":14800022,\"amount\":12}]"
+  },
+  {
+    "id": "000000CC",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 4,
+    "awardBox": "[{\"type\":7,\"code\":5,\"amount\":216},{\"type\":1,\"code\":14820036,\"amount\":3},{\"type\":1,\"code\":14100074,\"amount\":270},{\"type\":1,\"code\":14800001,\"amount\":18}]"
+  },
+  {
+    "id": "000000CD",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100005,\"amount\":8},{\"type\":1,\"code\":14100015,\"amount\":12}]"
+  },
+  {
+    "id": "000000CE",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":0,\"code\":2,\"amount\":300},{\"type\":1,\"code\":14100130,\"amount\":300},{\"type\":1,\"code\":14100074,\"amount\":90}]"
+  },
+  {
+    "id": "000000CF",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 5,
+    "awardBox": "[{\"type\":1,\"code\":14100102,\"amount\":9},{\"type\":1,\"code\":14800001,\"amount\":18},{\"type\":7,\"code\":5,\"amount\":216},{\"type\":1,\"code\":14100017,\"amount\":68},{\"type\":1,\"code\":14100018,\"amount\":34}]"
+  },
+  {
+    "id": "000000D0",
+    "boxID": 1,
+    "level": 159,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100015,\"amount\":12},{\"type\":3,\"code\":0,\"amount\":16}]"
+  },
+  {
+    "id": "000000D1",
+    "boxID": 2,
+    "level": 159,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14100130,\"amount\":300},{\"type\":1,\"code\":14800022,\"amount\":12},{\"type\":1,\"code\":14100018,\"amount\":10}]"
+  },
+  {
+    "id": "000000D2",
+    "boxID": 3,
+    "level": 159,
+    "weekDay": 6,
+    "awardBox": "[{\"type\":1,\"code\":14800001,\"amount\":18},{\"type\":1,\"code\":14800022,\"amount\":81},{\"type\":1,\"code\":14310010,\"amount\":6},{\"type\":1,\"code\":14100018,\"amount\":34},{\"type\":7,\"code\":5,\"amount\":216}]"
+  }
+]

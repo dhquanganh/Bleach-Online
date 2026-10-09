@@ -1,0 +1,25 @@
+[
+  {
+    "id": "000E57E1",
+    "name": "勇闯瀞灵廷",
+    "tName": "勇闯瀞灵廷",
+    "desc": "During the event, spend Vitality to exchange attack chances and deal damage on NPCs within stages\nInsufficient damage will lead to a failed attack and attack chances won't be consumed.\nThe NPCs in different stages have different HP and you'll receive corresponding reward and point after finished\nYou can exchange for items in the shop with the points you get.\nAfter the event, rewards will be sent according to the final point ranking.",
+    "tip": "5",
+    "price": 0,
+    "imageID": 900001,
+    "refreshIndex": "[{\"index\":1,\"awardIds\":[21405749,21405749],\"hp\":20,\"score\":5,\"pic\":40077},{\"index\":2,\"awardIds\":[21405750,21405750],\"hp\":30,\"score\":5,\"pic\":40022},{\"index\":3,\"awardIds\":[21405751,21405751],\"hp\":40,\"score\":5,\"pic\":40075},{\"index\":4,\"awardIds\":[21405752,21405752],\"hp\":40,\"score\":5,\"pic\":40067},{\"index\":5,\"awardIds\":[21405753,21405753],\"hp\":40,\"score\":5,\"pic\":40093},{\"index\":6,\"awardIds\":[21405754,21405754],\"hp\":50,\"score\":5,\"pic\":40079},{\"index\":7,\"awardIds\":[21405755,21405755],\"hp\":60,\"score\":5,\"pic\":40044},{\"index\":8,\"awardIds\":[21405756,21405756],\"hp\":60,\"score\":5,\"pic\":40088},{\"index\":9,\"awardIds\":[21405757,21405757],\"hp\":100,\"score\":5,\"pic\":40055},{\"index\":10,\"awardIds\":[21405758,21405758],\"hp\":100,\"score\":5,\"pic\":40087},{\"index\":11,\"awardIds\":[21405759,21405759],\"hp\":120,\"score\":5,\"pic\":40064},{\"index\":12,\"awardIds\":[21405760,21405760],\"hp\":140,\"score\":5,\"pic\":40065},{\"index\":13,\"awardIds\":[21405761,21405761],\"hp\":200,\"score\":5,\"pic\":40066}]",
+    "attackIndex": "{\"index\":60,\"military\":10,\"hurt\":20}",
+    "scoreIndex": 65,
+    "totalScoreIndex": "{\"index\":61,\"military\":20,\"hurt\":45}",
+    "rankNum": 66,
+    "f11": 63,
+    "f12": 62,
+    "f13": "[{\"index\":70,\"awardId\":21405762,\"score\":10},{\"index\":71,\"awardId\":21405763,\"score\":20},{\"index\":72,\"awardId\":21405764,\"score\":35},{\"index\":73,\"awardId\":21405765,\"score\":20},{\"index\":74,\"awardId\":21405766,\"score\":10},{\"index\":75,\"awardId\":21405767,\"score\":10},{\"index\":76,\"awardId\":21405768,\"score\":20},{\"index\":77,\"awardId\":21405769,\"score\":60},{\"index\":78,\"awardId\":21405770,\"score\":35}]",
+    "f14": 64,
+    "f15": 67,
+    "f16": 200,
+    "f17": "[{\"key\":3,\"value\":21405771,\"title\":6003056,\"prompt\":\"NO.1-3\"},{\"key\":10,\"value\":21405772,\"title\":6003057,\"prompt\":\"NO.4-10\"},{\"key\":20,\"value\":21405773,\"title\":6003058,\"prompt\":\"NO.11-20\"},{\"key\":50,\"value\":21405774,\"title\":0,\"prompt\":\"NO.21-50\"},{\"key\":100,\"value\":21405775,\"title\":0,\"prompt\":\"NO.51-100\"},{\"key\":200,\"value\":21405776,\"title\":0,\"prompt\":\"NO.101-200\"}]",
+    "f18": "{\"showID\":1719150}",
+    "f19": "[\"Spend %0 Vitality to deal %1 damage\",\"HP: %0\",\"Please exchange for battle chances\",\"Are you sure to spend %0 Vitality to exchange for %1?\",\"Conduct normal attack once\",\"Conduct normal attack for 10 times\",\"Conduct special attack once\",\"Conduct special attack for 10 times\"]"
+  }
+]

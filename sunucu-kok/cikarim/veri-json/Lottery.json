@@ -1,0 +1,17 @@
+[
+  {
+    "id": "0008B291",
+    "name": "聚财进宝",
+    "tName": "聚财金宝",
+    "desc": "1. Durant les 5 premiers jours, les joueurs peuvent acheter des coffres avec de l'Or.\n2. Chaque Ticket consommera 500 Points. Les Tickets seront valides pour une journée.\n3. Durant l'évènement, 10% de l'Or dépensé sera ajouté dans la cagnote.\n4. Les 5 premiers jours, le joueur avec le Ticket gagnant sera désigné à 00:00 et il pourra recevoir tous les prix !",
+    "tip": "1",
+    "price": 0,
+    "imageID": 570001,
+    "goldRate": "[{\"index\":100,\"cost\":1500,\"award\":21402820},{\"index\":101,\"cost\":2000,\"award\":21402821},{\"index\":102,\"cost\":3000,\"award\":21402822},{\"index\":103,\"cost\":400,\"award\":21402823},{\"index\":104,\"cost\":600,\"award\":21402824},{\"index\":105,\"cost\":1000,\"award\":21402825},{\"index\":106,\"cost\":100,\"award\":21402826},{\"index\":107,\"cost\":200,\"award\":21402827},{\"index\":108,\"cost\":300,\"award\":21402828}]",
+    "goldPoolRate": 1,
+    "day": "{\"index\":109,\"costScore\":500}",
+    "f9": 10,
+    "f10": 5,
+    "f11": "[14210081,14210082,14210083,14210084,14210085,14210086,14210087,14210088]"
+  }
+]

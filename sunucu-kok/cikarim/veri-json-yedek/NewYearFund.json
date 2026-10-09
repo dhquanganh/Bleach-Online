@@ -1,0 +1,14 @@
+[
+  {
+    "id": "00120161",
+    "name": "新年签到",
+    "tName": "新年签到",
+    "desc": "1.During the event,accumulated top-up reaches certain amount can receive corresponding gift money rewards.\n2.Accumulated top-up reaches certain amount can purchase fund. The rewards will be returned in 100 days.\n3.Players can receive the fund from the in-game mail from the next day.\n4.Players can only purchase one fund. The fund can only be purchased for one time.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "springFund": "[{\"index\" : 0,\"reward\":12000,\"active\":10000,\"duration\":100,\"cost\":10000, \"awardId\" : 21406031},{\"index\" : 1,\"reward\":28000,\"active\":20000,\"duration\":100,\"cost\":20000, \"awardId\" : 21406032},{\"index\" : 2,\"reward\":65000,\"active\":40000,\"duration\":100,\"cost\":40000, \"awardId\" : 21406033}]",
+    "redBag": "[{\"index\" : 3,\"active\":200,\"reward\":21406034},{\"index\":4,\"active\":400,\"reward\":21406035},\n{\"index\" : 5,\"active\":800,\"reward\":21406036},\n{\"index\" : 6,\"active\":1200,\"reward\":21406037},\n{\"index\" : 7,\"active\":2000,\"reward\":21406038},\n{\"index\" : 8,\"active\":4000,\"reward\":21406039},\n{\"index\" : 9,\"active\":6000,\"reward\":21406040},\n{\"index\" : 10,\"active\":8000,\"reward\":21406041},\n{\"index\" : 11,\"active\":10000,\"reward\":21406042}]",
+    "reChargeIndex": 12
+  }
+]

@@ -1,0 +1,802 @@
+[
+  {
+    "id": "00000001",
+    "playerLv": 1,
+    "baseMoney": 4300
+  },
+  {
+    "id": "00000002",
+    "playerLv": 2,
+    "baseMoney": 4300
+  },
+  {
+    "id": "00000003",
+    "playerLv": 3,
+    "baseMoney": 4500
+  },
+  {
+    "id": "00000004",
+    "playerLv": 4,
+    "baseMoney": 4500
+  },
+  {
+    "id": "00000005",
+    "playerLv": 5,
+    "baseMoney": 4700
+  },
+  {
+    "id": "00000006",
+    "playerLv": 6,
+    "baseMoney": 4800
+  },
+  {
+    "id": "00000007",
+    "playerLv": 7,
+    "baseMoney": 4800
+  },
+  {
+    "id": "00000008",
+    "playerLv": 8,
+    "baseMoney": 5000
+  },
+  {
+    "id": "00000009",
+    "playerLv": 9,
+    "baseMoney": 5200
+  },
+  {
+    "id": "0000000A",
+    "playerLv": 10,
+    "baseMoney": 5200
+  },
+  {
+    "id": "0000000B",
+    "playerLv": 11,
+    "baseMoney": 5300
+  },
+  {
+    "id": "0000000C",
+    "playerLv": 12,
+    "baseMoney": 5500
+  },
+  {
+    "id": "0000000D",
+    "playerLv": 13,
+    "baseMoney": 5700
+  },
+  {
+    "id": "0000000E",
+    "playerLv": 14,
+    "baseMoney": 5800
+  },
+  {
+    "id": "0000000F",
+    "playerLv": 15,
+    "baseMoney": 5800
+  },
+  {
+    "id": "00000010",
+    "playerLv": 16,
+    "baseMoney": 6000
+  },
+  {
+    "id": "00000011",
+    "playerLv": 17,
+    "baseMoney": 6200
+  },
+  {
+    "id": "00000012",
+    "playerLv": 18,
+    "baseMoney": 6300
+  },
+  {
+    "id": "00000013",
+    "playerLv": 19,
+    "baseMoney": 6500
+  },
+  {
+    "id": "00000014",
+    "playerLv": 20,
+    "baseMoney": 6700
+  },
+  {
+    "id": "00000015",
+    "playerLv": 21,
+    "baseMoney": 6800
+  },
+  {
+    "id": "00000016",
+    "playerLv": 22,
+    "baseMoney": 7000
+  },
+  {
+    "id": "00000017",
+    "playerLv": 23,
+    "baseMoney": 7200
+  },
+  {
+    "id": "00000018",
+    "playerLv": 24,
+    "baseMoney": 7300
+  },
+  {
+    "id": "00000019",
+    "playerLv": 25,
+    "baseMoney": 7500
+  },
+  {
+    "id": "0000001A",
+    "playerLv": 26,
+    "baseMoney": 7700
+  },
+  {
+    "id": "0000001B",
+    "playerLv": 27,
+    "baseMoney": 7800
+  },
+  {
+    "id": "0000001C",
+    "playerLv": 28,
+    "baseMoney": 8000
+  },
+  {
+    "id": "0000001D",
+    "playerLv": 29,
+    "baseMoney": 8200
+  },
+  {
+    "id": "0000001E",
+    "playerLv": 30,
+    "baseMoney": 8300
+  },
+  {
+    "id": "0000001F",
+    "playerLv": 31,
+    "baseMoney": 8500
+  },
+  {
+    "id": "00000020",
+    "playerLv": 32,
+    "baseMoney": 8700
+  },
+  {
+    "id": "00000021",
+    "playerLv": 33,
+    "baseMoney": 9000
+  },
+  {
+    "id": "00000022",
+    "playerLv": 34,
+    "baseMoney": 9200
+  },
+  {
+    "id": "00000023",
+    "playerLv": 35,
+    "baseMoney": 9300
+  },
+  {
+    "id": "00000024",
+    "playerLv": 36,
+    "baseMoney": 9500
+  },
+  {
+    "id": "00000025",
+    "playerLv": 37,
+    "baseMoney": 9800
+  },
+  {
+    "id": "00000026",
+    "playerLv": 38,
+    "baseMoney": 10000
+  },
+  {
+    "id": "00000027",
+    "playerLv": 39,
+    "baseMoney": 10300
+  },
+  {
+    "id": "00000028",
+    "playerLv": 40,
+    "baseMoney": 10500
+  },
+  {
+    "id": "00000029",
+    "playerLv": 41,
+    "baseMoney": 10700
+  },
+  {
+    "id": "0000002A",
+    "playerLv": 42,
+    "baseMoney": 11000
+  },
+  {
+    "id": "0000002B",
+    "playerLv": 43,
+    "baseMoney": 11300
+  },
+  {
+    "id": "0000002C",
+    "playerLv": 44,
+    "baseMoney": 11500
+  },
+  {
+    "id": "0000002D",
+    "playerLv": 45,
+    "baseMoney": 11800
+  },
+  {
+    "id": "0000002E",
+    "playerLv": 46,
+    "baseMoney": 12000
+  },
+  {
+    "id": "0000002F",
+    "playerLv": 47,
+    "baseMoney": 12300
+  },
+  {
+    "id": "00000030",
+    "playerLv": 48,
+    "baseMoney": 12700
+  },
+  {
+    "id": "00000031",
+    "playerLv": 49,
+    "baseMoney": 13000
+  },
+  {
+    "id": "00000032",
+    "playerLv": 50,
+    "baseMoney": 13200
+  },
+  {
+    "id": "00000033",
+    "playerLv": 51,
+    "baseMoney": 13500
+  },
+  {
+    "id": "00000034",
+    "playerLv": 52,
+    "baseMoney": 13800
+  },
+  {
+    "id": "00000035",
+    "playerLv": 53,
+    "baseMoney": 14200
+  },
+  {
+    "id": "00000036",
+    "playerLv": 54,
+    "baseMoney": 14500
+  },
+  {
+    "id": "00000037",
+    "playerLv": 55,
+    "baseMoney": 14800
+  },
+  {
+    "id": "00000038",
+    "playerLv": 56,
+    "baseMoney": 15200
+  },
+  {
+    "id": "00000039",
+    "playerLv": 57,
+    "baseMoney": 15500
+  },
+  {
+    "id": "0000003A",
+    "playerLv": 58,
+    "baseMoney": 15800
+  },
+  {
+    "id": "0000003B",
+    "playerLv": 59,
+    "baseMoney": 16300
+  },
+  {
+    "id": "0000003C",
+    "playerLv": 60,
+    "baseMoney": 16700
+  },
+  {
+    "id": "0000003D",
+    "playerLv": 61,
+    "baseMoney": 17000
+  },
+  {
+    "id": "0000003E",
+    "playerLv": 62,
+    "baseMoney": 17500
+  },
+  {
+    "id": "0000003F",
+    "playerLv": 63,
+    "baseMoney": 17800
+  },
+  {
+    "id": "00000040",
+    "playerLv": 64,
+    "baseMoney": 18300
+  },
+  {
+    "id": "00000041",
+    "playerLv": 65,
+    "baseMoney": 18700
+  },
+  {
+    "id": "00000042",
+    "playerLv": 66,
+    "baseMoney": 19200
+  },
+  {
+    "id": "00000043",
+    "playerLv": 67,
+    "baseMoney": 19700
+  },
+  {
+    "id": "00000044",
+    "playerLv": 68,
+    "baseMoney": 20000
+  },
+  {
+    "id": "00000045",
+    "playerLv": 69,
+    "baseMoney": 20500
+  },
+  {
+    "id": "00000046",
+    "playerLv": 70,
+    "baseMoney": 21000
+  },
+  {
+    "id": "00000047",
+    "playerLv": 71,
+    "baseMoney": 21500
+  },
+  {
+    "id": "00000048",
+    "playerLv": 72,
+    "baseMoney": 22000
+  },
+  {
+    "id": "00000049",
+    "playerLv": 73,
+    "baseMoney": 22500
+  },
+  {
+    "id": "0000004A",
+    "playerLv": 74,
+    "baseMoney": 23000
+  },
+  {
+    "id": "0000004B",
+    "playerLv": 75,
+    "baseMoney": 23500
+  },
+  {
+    "id": "0000004C",
+    "playerLv": 76,
+    "baseMoney": 24200
+  },
+  {
+    "id": "0000004D",
+    "playerLv": 77,
+    "baseMoney": 24700
+  },
+  {
+    "id": "0000004E",
+    "playerLv": 78,
+    "baseMoney": 25300
+  },
+  {
+    "id": "0000004F",
+    "playerLv": 79,
+    "baseMoney": 25800
+  },
+  {
+    "id": "00000050",
+    "playerLv": 80,
+    "baseMoney": 26500
+  },
+  {
+    "id": "00000051",
+    "playerLv": 81,
+    "baseMoney": 27000
+  },
+  {
+    "id": "00000052",
+    "playerLv": 82,
+    "baseMoney": 27700
+  },
+  {
+    "id": "00000053",
+    "playerLv": 83,
+    "baseMoney": 28300
+  },
+  {
+    "id": "00000054",
+    "playerLv": 84,
+    "baseMoney": 29000
+  },
+  {
+    "id": "00000055",
+    "playerLv": 85,
+    "baseMoney": 29700
+  },
+  {
+    "id": "00000056",
+    "playerLv": 86,
+    "baseMoney": 30300
+  },
+  {
+    "id": "00000057",
+    "playerLv": 87,
+    "baseMoney": 31200
+  },
+  {
+    "id": "00000058",
+    "playerLv": 88,
+    "baseMoney": 31800
+  },
+  {
+    "id": "00000059",
+    "playerLv": 89,
+    "baseMoney": 32500
+  },
+  {
+    "id": "0000005A",
+    "playerLv": 90,
+    "baseMoney": 33300
+  },
+  {
+    "id": "0000005B",
+    "playerLv": 91,
+    "baseMoney": 34200
+  },
+  {
+    "id": "0000005C",
+    "playerLv": 92,
+    "baseMoney": 34800
+  },
+  {
+    "id": "0000005D",
+    "playerLv": 93,
+    "baseMoney": 35700
+  },
+  {
+    "id": "0000005E",
+    "playerLv": 94,
+    "baseMoney": 36500
+  },
+  {
+    "id": "0000005F",
+    "playerLv": 95,
+    "baseMoney": 37300
+  },
+  {
+    "id": "00000060",
+    "playerLv": 96,
+    "baseMoney": 38300
+  },
+  {
+    "id": "00000061",
+    "playerLv": 97,
+    "baseMoney": 39200
+  },
+  {
+    "id": "00000062",
+    "playerLv": 98,
+    "baseMoney": 40200
+  },
+  {
+    "id": "00000063",
+    "playerLv": 99,
+    "baseMoney": 41000
+  },
+  {
+    "id": "00000064",
+    "playerLv": 100,
+    "baseMoney": 42000
+  },
+  {
+    "id": "00000065",
+    "playerLv": 101,
+    "baseMoney": 43000
+  },
+  {
+    "id": "00000066",
+    "playerLv": 102,
+    "baseMoney": 44000
+  },
+  {
+    "id": "00000067",
+    "playerLv": 103,
+    "baseMoney": 45000
+  },
+  {
+    "id": "00000068",
+    "playerLv": 104,
+    "baseMoney": 46000
+  },
+  {
+    "id": "00000069",
+    "playerLv": 105,
+    "baseMoney": 47200
+  },
+  {
+    "id": "0000006A",
+    "playerLv": 106,
+    "baseMoney": 48200
+  },
+  {
+    "id": "0000006B",
+    "playerLv": 107,
+    "baseMoney": 49300
+  },
+  {
+    "id": "0000006C",
+    "playerLv": 108,
+    "baseMoney": 50500
+  },
+  {
+    "id": "0000006D",
+    "playerLv": 109,
+    "baseMoney": 51700
+  },
+  {
+    "id": "0000006E",
+    "playerLv": 110,
+    "baseMoney": 51700
+  },
+  {
+    "id": "0000006F",
+    "playerLv": 111,
+    "baseMoney": 51800
+  },
+  {
+    "id": "00000070",
+    "playerLv": 112,
+    "baseMoney": 52000
+  },
+  {
+    "id": "00000071",
+    "playerLv": 113,
+    "baseMoney": 52200
+  },
+  {
+    "id": "00000072",
+    "playerLv": 114,
+    "baseMoney": 52300
+  },
+  {
+    "id": "00000073",
+    "playerLv": 115,
+    "baseMoney": 52500
+  },
+  {
+    "id": "00000074",
+    "playerLv": 116,
+    "baseMoney": 52700
+  },
+  {
+    "id": "00000075",
+    "playerLv": 117,
+    "baseMoney": 52800
+  },
+  {
+    "id": "00000076",
+    "playerLv": 118,
+    "baseMoney": 53000
+  },
+  {
+    "id": "00000077",
+    "playerLv": 119,
+    "baseMoney": 53200
+  },
+  {
+    "id": "00000078",
+    "playerLv": 120,
+    "baseMoney": 53300
+  },
+  {
+    "id": "00000079",
+    "playerLv": 121,
+    "baseMoney": 53500
+  },
+  {
+    "id": "0000007A",
+    "playerLv": 122,
+    "baseMoney": 53700
+  },
+  {
+    "id": "0000007B",
+    "playerLv": 123,
+    "baseMoney": 53800
+  },
+  {
+    "id": "0000007C",
+    "playerLv": 124,
+    "baseMoney": 54000
+  },
+  {
+    "id": "0000007D",
+    "playerLv": 125,
+    "baseMoney": 54200
+  },
+  {
+    "id": "0000007E",
+    "playerLv": 126,
+    "baseMoney": 54300
+  },
+  {
+    "id": "0000007F",
+    "playerLv": 127,
+    "baseMoney": 54500
+  },
+  {
+    "id": "00000080",
+    "playerLv": 128,
+    "baseMoney": 54700
+  },
+  {
+    "id": "00000081",
+    "playerLv": 129,
+    "baseMoney": 54800
+  },
+  {
+    "id": "00000082",
+    "playerLv": 130,
+    "baseMoney": 55000
+  },
+  {
+    "id": "00000083",
+    "playerLv": 131,
+    "baseMoney": 55200
+  },
+  {
+    "id": "00000084",
+    "playerLv": 132,
+    "baseMoney": 55300
+  },
+  {
+    "id": "00000085",
+    "playerLv": 133,
+    "baseMoney": 55500
+  },
+  {
+    "id": "00000086",
+    "playerLv": 134,
+    "baseMoney": 55700
+  },
+  {
+    "id": "00000087",
+    "playerLv": 135,
+    "baseMoney": 55800
+  },
+  {
+    "id": "00000088",
+    "playerLv": 136,
+    "baseMoney": 56000
+  },
+  {
+    "id": "00000089",
+    "playerLv": 137,
+    "baseMoney": 56200
+  },
+  {
+    "id": "0000008A",
+    "playerLv": 138,
+    "baseMoney": 56300
+  },
+  {
+    "id": "0000008B",
+    "playerLv": 139,
+    "baseMoney": 56500
+  },
+  {
+    "id": "0000008C",
+    "playerLv": 140,
+    "baseMoney": 56700
+  },
+  {
+    "id": "0000008D",
+    "playerLv": 141,
+    "baseMoney": 56800
+  },
+  {
+    "id": "0000008E",
+    "playerLv": 142,
+    "baseMoney": 57000
+  },
+  {
+    "id": "0000008F",
+    "playerLv": 143,
+    "baseMoney": 57200
+  },
+  {
+    "id": "00000090",
+    "playerLv": 144,
+    "baseMoney": 57300
+  },
+  {
+    "id": "00000091",
+    "playerLv": 145,
+    "baseMoney": 57500
+  },
+  {
+    "id": "00000092",
+    "playerLv": 146,
+    "baseMoney": 57700
+  },
+  {
+    "id": "00000093",
+    "playerLv": 147,
+    "baseMoney": 57800
+  },
+  {
+    "id": "00000094",
+    "playerLv": 148,
+    "baseMoney": 58000
+  },
+  {
+    "id": "00000095",
+    "playerLv": 149,
+    "baseMoney": 58200
+  },
+  {
+    "id": "00000096",
+    "playerLv": 150,
+    "baseMoney": 58300
+  },
+  {
+    "id": "00000097",
+    "playerLv": 151,
+    "baseMoney": 62300
+  },
+  {
+    "id": "00000098",
+    "playerLv": 152,
+    "baseMoney": 62700
+  },
+  {
+    "id": "00000099",
+    "playerLv": 153,
+    "baseMoney": 63200
+  },
+  {
+    "id": "0000009A",
+    "playerLv": 154,
+    "baseMoney": 63600
+  },
+  {
+    "id": "0000009B",
+    "playerLv": 155,
+    "baseMoney": 64000
+  },
+  {
+    "id": "0000009C",
+    "playerLv": 156,
+    "baseMoney": 64500
+  },
+  {
+    "id": "0000009D",
+    "playerLv": 157,
+    "baseMoney": 64900
+  },
+  {
+    "id": "0000009E",
+    "playerLv": 158,
+    "baseMoney": 65400
+  },
+  {
+    "id": "0000009F",
+    "playerLv": 159,
+    "baseMoney": 65800
+  },
+  {
+    "id": "000000A0",
+    "playerLv": 160,
+    "baseMoney": 66200
+  }
+]

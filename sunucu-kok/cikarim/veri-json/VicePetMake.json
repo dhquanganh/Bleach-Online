@@ -1,0 +1,122 @@
+[
+  {
+    "id": "000004B1",
+    "needSilver": "[14100411,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained from events."
+  },
+  {
+    "id": "000004B2",
+    "needSilver": "[14100412,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained from events."
+  },
+  {
+    "id": "000004B3",
+    "needSilver": "[14100413,60]",
+    "pathWay": 500000,
+    "f2": "Daily task points reward"
+  },
+  {
+    "id": "000004B4",
+    "needSilver": "[14100414,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained from events."
+  },
+  {
+    "id": "000004B5",
+    "needSilver": "[14100415,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained in Events"
+  },
+  {
+    "id": "000004B7",
+    "needSilver": "[14100429,60]",
+    "pathWay": 200000,
+    "f2": "Can only be obtained in events"
+  },
+  {
+    "id": "000004B8",
+    "needSilver": "[14100430,20]",
+    "pathWay": 10000,
+    "f2": "Lv. 30 and 50 instance loots"
+  },
+  {
+    "id": "000004B9",
+    "needSilver": "[14100431,20]",
+    "pathWay": 200000,
+    "f2": "Lv. 70 and 80 instance loots"
+  },
+  {
+    "id": "000004BA",
+    "needSilver": "[14100432,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained in events."
+  },
+  {
+    "id": "000004BB",
+    "needSilver": "[14100433,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained in events."
+  },
+  {
+    "id": "000004BC",
+    "needSilver": "[14100434,20]",
+    "pathWay": 200000,
+    "f2": "Daily task points reward"
+  },
+  {
+    "id": "000004BD",
+    "needSilver": "[14120009,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained from events."
+  },
+  {
+    "id": "000004BE",
+    "needSilver": "[14100436,60]",
+    "pathWay": 500000,
+    "f2": "Can be obtained in New Year Event"
+  },
+  {
+    "id": "000004BF",
+    "needSilver": "[14100437,40]",
+    "pathWay": 200000,
+    "f2": "Lv. 90 and 100 instance loots"
+  },
+  {
+    "id": "000004C0",
+    "needSilver": "[14100438,40]",
+    "pathWay": 200000,
+    "f2": "Daily task points reward"
+  },
+  {
+    "id": "000004C1",
+    "needSilver": "[14100439,40]",
+    "pathWay": 200000,
+    "f2": "Lv. 110 and above instances loots"
+  },
+  {
+    "id": "000004C2",
+    "needSilver": "[14120002,60]",
+    "pathWay": 200000,
+    "f2": "Can be obtained in events."
+  },
+  {
+    "id": "000004C3",
+    "needSilver": "[14120004,60]",
+    "pathWay": 200000,
+    "f2": "Can be obtained in events."
+  },
+  {
+    "id": "000004C4",
+    "needSilver": "[14120006,60]",
+    "pathWay": 200000,
+    "f2": "Activate Monthly Card"
+  },
+  {
+    "id": "000004C5",
+    "needSilver": "[14120007,60]",
+    "pathWay": 200000,
+    "f2": "Can be obtained in events."
+  }
+]

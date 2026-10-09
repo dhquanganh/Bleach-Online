@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00009C41",
+    "name": "Recruit Partners",
+    "tName": "Recruit Purple Partners and get Coupons",
+    "desc": "During the event period, recruit corresponding Purple partners to get extra reward",
+    "tip": "3",
+    "price": 0,
+    "imageID": 40001,
+    "condition": "[{\"quality\":4,\"count\":1,\"reward\":[21401049],\"prompt\":\"Purple Partners\"},{\"quality\":4,\"count\":2,\"reward\":[21401050],\"prompt\":\"Purple Partners\"}]"
+  },
+  {
+    "id": "00009C42",
+    "name": "Recruit Partners",
+    "tName": "Recruit Purple Partners and get Coupons",
+    "desc": "During the event period, recruit corresponding Purple partners to get extra reward",
+    "tip": "3",
+    "price": 0,
+    "imageID": 40001,
+    "condition": "[{\"quality\":5,\"count\":1,\"reward\":[21401051],\"prompt\":\"Gold Partners\"},{\"quality\":5,\"count\":2,\"reward\":[21401052],\"prompt\":\"Gold Partners\"}]"
+  }
+]

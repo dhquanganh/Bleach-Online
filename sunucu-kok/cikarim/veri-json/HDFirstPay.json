@@ -1,0 +1,13 @@
+[
+  {
+    "id": "0001FBD1",
+    "name": "First Top Up Gift Pack",
+    "tName": "First Top Up Gift Pack! Strike of Ichimaru!",
+    "desc": "",
+    "tip": "1",
+    "price": 0,
+    "imageID": 130001,
+    "returnRate": "[{\"key\":1,\"value\":[21401018],\"prompt\":\"100Gold\"},{\"key\":200,\"value\":[21401019],\"prompt\":\"200Gold\"},{\"key\":500,\"value\":[21401020],\"prompt\":\"500Gold\"},{\"key\":1000,\"value\":[21401021],\"prompt\":\"1000Gold\"},{\"key\":5000,\"value\":[21401022],\"prompt\":\"5000Gold\"},{\"key\":500000,\"value\":[21401023],\"prompt\":\"500000Gold\"}]",
+    "f7": 10
+  }
+]

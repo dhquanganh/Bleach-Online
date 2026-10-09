@@ -1,0 +1,442 @@
+[
+  {
+    "id": "00D8ACFD",
+    "gotEquipId": 14200071,
+    "datum": "14310001_15"
+  },
+  {
+    "id": "00D8ACFE",
+    "gotEquipId": 14200072,
+    "datum": "14310001_15"
+  },
+  {
+    "id": "00D8ACFF",
+    "gotEquipId": 14200073,
+    "datum": "14310001_15"
+  },
+  {
+    "id": "00D8AD00",
+    "gotEquipId": 14200074,
+    "datum": "14310001_9"
+  },
+  {
+    "id": "00D8AD01",
+    "gotEquipId": 14200075,
+    "datum": "14310001_9"
+  },
+  {
+    "id": "00D8AD02",
+    "gotEquipId": 14200076,
+    "datum": "14310001_9"
+  },
+  {
+    "id": "00D8AD03",
+    "gotEquipId": 14200077,
+    "datum": "14310001_9"
+  },
+  {
+    "id": "00D8AD04",
+    "gotEquipId": 14200078,
+    "datum": "14310001_9"
+  },
+  {
+    "id": "00D8AD1B",
+    "gotEquipId": 14200101,
+    "datum": "14310002_25"
+  },
+  {
+    "id": "00D8AD1C",
+    "gotEquipId": 14200102,
+    "datum": "14310002_25"
+  },
+  {
+    "id": "00D8AD1D",
+    "gotEquipId": 14200103,
+    "datum": "14310002_25"
+  },
+  {
+    "id": "00D8AD1E",
+    "gotEquipId": 14200104,
+    "datum": "14310002_15"
+  },
+  {
+    "id": "00D8AD1F",
+    "gotEquipId": 14200105,
+    "datum": "14310002_15"
+  },
+  {
+    "id": "00D8AD20",
+    "gotEquipId": 14200106,
+    "datum": "14310002_15"
+  },
+  {
+    "id": "00D8AD21",
+    "gotEquipId": 14200107,
+    "datum": "14310002_15"
+  },
+  {
+    "id": "00D8AD22",
+    "gotEquipId": 14200108,
+    "datum": "14310002_15"
+  },
+  {
+    "id": "00D8AD39",
+    "gotEquipId": 14200131,
+    "datum": "14310003_25"
+  },
+  {
+    "id": "00D8AD3A",
+    "gotEquipId": 14200132,
+    "datum": "14310003_25"
+  },
+  {
+    "id": "00D8AD3B",
+    "gotEquipId": 14200133,
+    "datum": "14310003_25"
+  },
+  {
+    "id": "00D8AD3C",
+    "gotEquipId": 14200134,
+    "datum": "14310003_15"
+  },
+  {
+    "id": "00D8AD3D",
+    "gotEquipId": 14200135,
+    "datum": "14310003_15"
+  },
+  {
+    "id": "00D8AD3E",
+    "gotEquipId": 14200136,
+    "datum": "14310003_15"
+  },
+  {
+    "id": "00D8AD3F",
+    "gotEquipId": 14200137,
+    "datum": "14310003_15"
+  },
+  {
+    "id": "00D8AD40",
+    "gotEquipId": 14200138,
+    "datum": "14310003_15"
+  },
+  {
+    "id": "00D8AD57",
+    "gotEquipId": 14200161,
+    "datum": "14310004_25"
+  },
+  {
+    "id": "00D8AD58",
+    "gotEquipId": 14200162,
+    "datum": "14310004_25"
+  },
+  {
+    "id": "00D8AD59",
+    "gotEquipId": 14200163,
+    "datum": "14310004_25"
+  },
+  {
+    "id": "00D8AD5A",
+    "gotEquipId": 14200164,
+    "datum": "14310004_15"
+  },
+  {
+    "id": "00D8AD5B",
+    "gotEquipId": 14200165,
+    "datum": "14310004_15"
+  },
+  {
+    "id": "00D8AD5C",
+    "gotEquipId": 14200166,
+    "datum": "14310004_15"
+  },
+  {
+    "id": "00D8AD5D",
+    "gotEquipId": 14200167,
+    "datum": "14310004_15"
+  },
+  {
+    "id": "00D8AD5E",
+    "gotEquipId": 14200168,
+    "datum": "14310004_15"
+  },
+  {
+    "id": "00D8AD75",
+    "gotEquipId": 14200191,
+    "datum": "14310005_30"
+  },
+  {
+    "id": "00D8AD76",
+    "gotEquipId": 14200192,
+    "datum": "14310005_30"
+  },
+  {
+    "id": "00D8AD77",
+    "gotEquipId": 14200193,
+    "datum": "14310005_30"
+  },
+  {
+    "id": "00D8AD78",
+    "gotEquipId": 14200194,
+    "datum": "14310005_18"
+  },
+  {
+    "id": "00D8AD79",
+    "gotEquipId": 14200195,
+    "datum": "14310005_18"
+  },
+  {
+    "id": "00D8AD7A",
+    "gotEquipId": 14200196,
+    "datum": "14310005_18"
+  },
+  {
+    "id": "00D8AD7B",
+    "gotEquipId": 14200197,
+    "datum": "14310005_18"
+  },
+  {
+    "id": "00D8AD7C",
+    "gotEquipId": 14200198,
+    "datum": "14310005_18"
+  },
+  {
+    "id": "00D8AD93",
+    "gotEquipId": 14200221,
+    "datum": "14310006_50"
+  },
+  {
+    "id": "00D8AD94",
+    "gotEquipId": 14200222,
+    "datum": "14310006_50"
+  },
+  {
+    "id": "00D8AD95",
+    "gotEquipId": 14200223,
+    "datum": "14310006_50"
+  },
+  {
+    "id": "00D8AD96",
+    "gotEquipId": 14200224,
+    "datum": "14310006_30"
+  },
+  {
+    "id": "00D8AD97",
+    "gotEquipId": 14200225,
+    "datum": "14310006_30"
+  },
+  {
+    "id": "00D8AD98",
+    "gotEquipId": 14200226,
+    "datum": "14310006_30"
+  },
+  {
+    "id": "00D8AD99",
+    "gotEquipId": 14200227,
+    "datum": "14310006_30"
+  },
+  {
+    "id": "00D8AD9A",
+    "gotEquipId": 14200228,
+    "datum": "14310006_30"
+  },
+  {
+    "id": "00D8ADB1",
+    "gotEquipId": 14200251,
+    "datum": "14310007_70"
+  },
+  {
+    "id": "00D8ADB2",
+    "gotEquipId": 14200252,
+    "datum": "14310007_70"
+  },
+  {
+    "id": "00D8ADB3",
+    "gotEquipId": 14200253,
+    "datum": "14310007_70"
+  },
+  {
+    "id": "00D8ADB4",
+    "gotEquipId": 14200254,
+    "datum": "14310007_45"
+  },
+  {
+    "id": "00D8ADB5",
+    "gotEquipId": 14200255,
+    "datum": "14310007_45"
+  },
+  {
+    "id": "00D8ADB6",
+    "gotEquipId": 14200256,
+    "datum": "14310007_45"
+  },
+  {
+    "id": "00D8ADB7",
+    "gotEquipId": 14200257,
+    "datum": "14310007_45"
+  },
+  {
+    "id": "00D8ADB8",
+    "gotEquipId": 14200258,
+    "datum": "14310007_45"
+  },
+  {
+    "id": "00D8ADCF",
+    "gotEquipId": 14200281,
+    "datum": "14310008_90"
+  },
+  {
+    "id": "00D8ADD0",
+    "gotEquipId": 14200282,
+    "datum": "14310008_90"
+  },
+  {
+    "id": "00D8ADD1",
+    "gotEquipId": 14200283,
+    "datum": "14310008_90"
+  },
+  {
+    "id": "00D8ADD2",
+    "gotEquipId": 14200284,
+    "datum": "14310008_60"
+  },
+  {
+    "id": "00D8ADD3",
+    "gotEquipId": 14200285,
+    "datum": "14310008_60"
+  },
+  {
+    "id": "00D8ADD4",
+    "gotEquipId": 14200286,
+    "datum": "14310008_60"
+  },
+  {
+    "id": "00D8ADD5",
+    "gotEquipId": 14200287,
+    "datum": "14310008_60"
+  },
+  {
+    "id": "00D8ADD6",
+    "gotEquipId": 14200288,
+    "datum": "14310008_60"
+  },
+  {
+    "id": "00D8ADED",
+    "gotEquipId": 14200311,
+    "datum": "14310009_120"
+  },
+  {
+    "id": "00D8ADEE",
+    "gotEquipId": 14200312,
+    "datum": "14310009_120"
+  },
+  {
+    "id": "00D8ADEF",
+    "gotEquipId": 14200313,
+    "datum": "14310009_120"
+  },
+  {
+    "id": "00D8ADF0",
+    "gotEquipId": 14200314,
+    "datum": "14310009_90"
+  },
+  {
+    "id": "00D8ADF1",
+    "gotEquipId": 14200315,
+    "datum": "14310009_90"
+  },
+  {
+    "id": "00D8ADF2",
+    "gotEquipId": 14200316,
+    "datum": "14310009_90"
+  },
+  {
+    "id": "00D8ADF3",
+    "gotEquipId": 14200317,
+    "datum": "14310009_90"
+  },
+  {
+    "id": "00D8ADF4",
+    "gotEquipId": 14200318,
+    "datum": "14310009_90"
+  },
+  {
+    "id": "00D8AE0B",
+    "gotEquipId": 14200341,
+    "datum": "14310010_150"
+  },
+  {
+    "id": "00D8AE0C",
+    "gotEquipId": 14200342,
+    "datum": "14310010_150"
+  },
+  {
+    "id": "00D8AE0D",
+    "gotEquipId": 14200343,
+    "datum": "14310010_150"
+  },
+  {
+    "id": "00D8AE0E",
+    "gotEquipId": 14200344,
+    "datum": "14310010_120"
+  },
+  {
+    "id": "00D8AE0F",
+    "gotEquipId": 14200345,
+    "datum": "14310010_120"
+  },
+  {
+    "id": "00D8AE10",
+    "gotEquipId": 14200346,
+    "datum": "14310010_120"
+  },
+  {
+    "id": "00D8AE11",
+    "gotEquipId": 14200347,
+    "datum": "14310010_120"
+  },
+  {
+    "id": "00D8AE12",
+    "gotEquipId": 14200348,
+    "datum": "14310010_120"
+  },
+  {
+    "id": "00D8AE29",
+    "gotEquipId": 14200371,
+    "datum": "14310011_180"
+  },
+  {
+    "id": "00D8AE2A",
+    "gotEquipId": 14200372,
+    "datum": "14310011_180"
+  },
+  {
+    "id": "00D8AE2B",
+    "gotEquipId": 14200373,
+    "datum": "14310011_180"
+  },
+  {
+    "id": "00D8AE2C",
+    "gotEquipId": 14200374,
+    "datum": "14310011_150"
+  },
+  {
+    "id": "00D8AE2D",
+    "gotEquipId": 14200375,
+    "datum": "14310011_150"
+  },
+  {
+    "id": "00D8AE2E",
+    "gotEquipId": 14200376,
+    "datum": "14310011_150"
+  },
+  {
+    "id": "00D8AE2F",
+    "gotEquipId": 14200377,
+    "datum": "14310011_150"
+  },
+  {
+    "id": "00D8AE30",
+    "gotEquipId": 14200378,
+    "datum": "14310011_150"
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "0106738C",
+    "name": "The 1st Soul Map",
+    "profession": 4,
+    "quality": 2,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17110001
+  },
+  {
+    "id": "0106738D",
+    "name": "The 2nd Soul Map",
+    "profession": 4,
+    "quality": 3,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17111001
+  },
+  {
+    "id": "0106738E",
+    "name": "The 3rd Soul Map",
+    "profession": 4,
+    "quality": 4,
+    "pointCount": 15,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17112001
+  },
+  {
+    "id": "0106738F",
+    "name": "The 4th Soul Map",
+    "profession": 4,
+    "quality": 5,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17113001
+  },
+  {
+    "id": "01067390",
+    "name": "The 5th Soul Map",
+    "profession": 4,
+    "quality": 6,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17114001
+  },
+  {
+    "id": "01067396",
+    "name": "The 1st Soul Map",
+    "profession": 1,
+    "quality": 2,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17120001
+  },
+  {
+    "id": "01067397",
+    "name": "The 2nd Soul Map",
+    "profession": 1,
+    "quality": 3,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17121001
+  },
+  {
+    "id": "01067398",
+    "name": "The 3rd Soul Map",
+    "profession": 1,
+    "quality": 4,
+    "pointCount": 15,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17122001
+  },
+  {
+    "id": "01067399",
+    "name": "The 4th Soul Map",
+    "profession": 1,
+    "quality": 5,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17123001
+  },
+  {
+    "id": "0106739A",
+    "name": "The 5th Soul Map",
+    "profession": 1,
+    "quality": 6,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17124001
+  },
+  {
+    "id": "010673A0",
+    "name": "The 1st Soul Map",
+    "profession": 3,
+    "quality": 2,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17130001
+  },
+  {
+    "id": "010673A1",
+    "name": "The 2nd Soul Map",
+    "profession": 3,
+    "quality": 3,
+    "pointCount": 10,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17131001
+  },
+  {
+    "id": "010673A2",
+    "name": "The 3rd Soul Map",
+    "profession": 3,
+    "quality": 4,
+    "pointCount": 15,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17132001
+  },
+  {
+    "id": "010673A3",
+    "name": "The 4th Soul Map",
+    "profession": 3,
+    "quality": 5,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17133001
+  },
+  {
+    "id": "010673A4",
+    "name": "The 5th Soul Map",
+    "profession": 3,
+    "quality": 6,
+    "pointCount": 20,
+    "pic": "1001.jpg",
+    "desc": "Soul Points requires souls to light up",
+    "startID": 17134001
+  }
+]

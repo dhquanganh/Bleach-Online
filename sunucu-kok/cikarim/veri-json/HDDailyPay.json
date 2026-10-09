@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00015F91",
+    "name": "Daily Top-up",
+    "tName": "Daily Top-up Rewards",
+    "desc": "Daily top-up 500 Gold to get rewards",
+    "tip": "1",
+    "price": 0,
+    "imageID": 90001,
+    "f6": "[{\"key\":500,\"value\":[21401048],\"prompt\":\"500\"}]"
+  },
+  {
+    "id": "00015F92",
+    "name": "Daily Top-up",
+    "tName": "Daily Top-up Rewards",
+    "desc": "Event starting time is based on the time of the event appears in the game.\nTop-up prior to event starting time does not count towards the event.\nDuring event , top-up 888 Gold or above to get super value rewards.\nEvent rewards will reset at 00:00 daily, players need to claim the rewards before reset. Unclaimed rewards will not be compensated.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 90002,
+    "f6": "[{\"key\":200,\"value\":[21401499],\"prompt\":\"200\"}]"
+  }
+]

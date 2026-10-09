@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0000272E",
+    "name": "Tensō  - Zanpakuto",
+    "lvLimit": 30,
+    "needSilver": 100000,
+    "diffArg": 1,
+    "rewardTxt": 15
+  },
+  {
+    "id": "00002742",
+    "name": "Tensō - Agent of the Shinigami",
+    "lvLimit": 50,
+    "needSilver": 200000,
+    "diffArg": 2,
+    "rewardTxt": 20
+  },
+  {
+    "id": "00002756",
+    "name": "Tensō - Soul Society",
+    "lvLimit": 70,
+    "needSilver": 500000,
+    "diffArg": 3,
+    "rewardTxt": 25
+  },
+  {
+    "id": "0000276A",
+    "name": "Tensō - Hueco Mundo",
+    "lvLimit": 90,
+    "needSilver": 1000000,
+    "diffArg": 5,
+    "rewardTxt": 30
+  },
+  {
+    "id": "0000277E",
+    "name": "Tensō - Espada",
+    "lvLimit": 110,
+    "needSilver": 2000000,
+    "diffArg": 7,
+    "rewardTxt": 35
+  },
+  {
+    "id": "00002792",
+    "name": "Tensō - Aizen",
+    "lvLimit": 130,
+    "needSilver": 5000000,
+    "diffArg": 10,
+    "rewardTxt": 40
+  }
+]

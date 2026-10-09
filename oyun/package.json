@@ -1,0 +1,6 @@
+{
+  "name": "bleach-yerel",
+  "version": "1.0.0",
+  "description": "Bleach Online - yerel (Electron + Flash 22)",
+  "main": "main-yerel.js"
+}

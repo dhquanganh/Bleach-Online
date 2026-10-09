@@ -1,0 +1,14 @@
+[
+  {
+    "id": "00004E21",
+    "name": "Battle Power Ranking",
+    "tName": "Super Battle Power Surpasses All",
+    "desc": "Event ends at 23:59 hrs, players who are top 5 in Battle Power Ranking will receive one Battle Power Gift Pack (Reward will be sent via mail). During the event period, if you reached the Target Battle Power and obtain Target Battle Power Gift Pack.",
+    "tip": "2",
+    "price": 0,
+    "imageID": 20001,
+    "actAward": "[{\"key\":1,\"value\":[21401088],\"prompt\":\"1st Place\"},{\"key\":2,\"value\":[21401089],\"prompt\":\"2nd Place\"},{\"key\":3,\"value\":[21401090],\"prompt\":\"3rd Place\"},{\"key\":4,\"value\":[21401091],\"prompt\":\"4th Place\"},{\"key\":5,\"value\":[21401092],\"prompt\":\"5th Place\"}]",
+    "targetPower": "[{\"key\":55555,\"value\":[21401081],\"prompt\":\"Target Battle Power\"},{\"key\":88888,\"value\":[21401082],\"prompt\":\"Target Battle Power\"}]",
+    "rankNum": 50
+  }
+]

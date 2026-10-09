@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0010EFF1",
+    "name": "雪战",
+    "tName": "雪战",
+    "desc": "1. Click on start to enter countdown, snowball will be thrown overtime.\n2. When game starts, click on Space to throw snowball, hit different positions to get different points.\n3. Each day players can get 1 free game chance, chance will be reset at midnight each day.\n4. During the event, points will not be reset, cumulative points can receive corresponding rewards.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1110001,
+    "candy": 0,
+    "buyIndex": 2,
+    "notify": 20,
+    "resultType": "[1,2,3,4]",
+    "titleGift": "{\"index\":3,\"award\":21407270,\"candy\":24}",
+    "gift": "[{\"index\":4,\"candy\":6,\"award\":21407266},{\"index\":5,\"candy\":12,\"award\":21407267},{\"index\":6,\"candy\":20,\"award\":21407268},{\"index\":7,\"candy\":48,\"award\":21407269}]",
+    "turn": 10,
+    "gold": 50,
+    "countdown": 60
+  }
+]

@@ -1,0 +1,1939 @@
+[
+  {
+    "db": "Article",
+    "durum": "OK",
+    "kayit": 5145,
+    "alan": 17,
+    "complex": true
+  },
+  {
+    "db": "Award",
+    "durum": "OK",
+    "kayit": 9923,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "SevenHeroLittleStar",
+    "durum": "OK",
+    "kayit": 42,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "SevenHeroStar",
+    "durum": "OK",
+    "kayit": 7,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "SevenHeroArmy",
+    "durum": "OK",
+    "kayit": 21,
+    "alan": 12,
+    "complex": false
+  },
+  {
+    "db": "SevenHeroDailyAward",
+    "durum": "OK",
+    "kayit": 7,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "SevenHeroSoul",
+    "durum": "OK",
+    "kayit": 8,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "HDIcon",
+    "durum": "OK",
+    "kayit": 128,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "HDArenaRank",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1388. Received 30383",
+    "complex": true
+  },
+  {
+    "db": "HDCampBattle",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 641. Received 25961",
+    "complex": true
+  },
+  {
+    "db": "HDKillHero",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1242. Received 29799",
+    "complex": true
+  },
+  {
+    "db": "HDLevelRank",
+    "durum": "kalan=501",
+    "kayit": 1,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "HDPowerRank",
+    "durum": "kalan=645",
+    "kayit": 1,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "HDRecruitPartner",
+    "durum": "kalan=-28709",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGBOnline",
+    "durum": "kalan=310",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGBGold",
+    "durum": "kalan=266",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGBSevenDay",
+    "durum": "kalan=-25534",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGBOpenSever",
+    "durum": "kalan=74",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGBCollectgame",
+    "durum": "kalan=61",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDSinglePay",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 3992. Received 26512",
+    "complex": true
+  },
+  {
+    "db": "HDTotalPay",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 4313. Received 30089",
+    "complex": true
+  },
+  {
+    "db": "HDDailyPay",
+    "durum": "kalan=-27193",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDTotalCost",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1774. Received 27075",
+    "complex": true
+  },
+  {
+    "db": "HDDailyCost",
+    "durum": "kalan=235",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDVipBox",
+    "durum": "kalan=-4275",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDFirstPay",
+    "durum": "kalan=367",
+    "kayit": 1,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "HDYDDailyGiftBag",
+    "id": "0x100007c",
+    "durum": "VO yok (THDYDDailyGiftBag)"
+  },
+  {
+    "db": "HDYDGrowGiftBag",
+    "id": "0x100007d",
+    "durum": "VO yok (THDYDGrowGiftBag)"
+  },
+  {
+    "db": "HDYDLevelGiftBag",
+    "id": "0x100007e",
+    "durum": "VO yok (THDYDLevelGiftBag)"
+  },
+  {
+    "db": "HDYDFreshGiftBag",
+    "id": "0x100007f",
+    "durum": "VO yok (THDYDFreshGiftBag)"
+  },
+  {
+    "db": "HDYDBuyGold",
+    "id": "0x1000080",
+    "durum": "VO yok (THDYDBuyGold)"
+  },
+  {
+    "db": "HDDailyTotalPay",
+    "durum": "kalan=466",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDDailyTotalCost",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1913. Received 27802",
+    "complex": true
+  },
+  {
+    "db": "SoundConfig",
+    "durum": "OK",
+    "kayit": 141,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "HDEquipCollection",
+    "id": "0x1000084",
+    "durum": "VO yok (THDEquipCollection)"
+  },
+  {
+    "db": "HDMilitary",
+    "id": "0x1000085",
+    "durum": "VO yok (THDMilitary)"
+  },
+  {
+    "db": "HDStone",
+    "id": "0x1000086",
+    "durum": "VO yok (THDStone)"
+  },
+  {
+    "db": "HDTreasure",
+    "id": "0x1000087",
+    "durum": "VO yok (THDTreasure)"
+  },
+  {
+    "db": "HDGrowFundLv",
+    "durum": "kalan=609",
+    "kayit": 1,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "HDGrowFundGamble",
+    "durum": "kalan=314",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGrowFundShop",
+    "durum": "kalan=936",
+    "kayit": 1,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "Achievement",
+    "durum": "OK",
+    "kayit": 164,
+    "alan": 9,
+    "complex": true
+  },
+  {
+    "db": "AchievementGroup",
+    "durum": "OK",
+    "kayit": 30,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "AchievementClass",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "AchievementTitle",
+    "durum": "OK",
+    "kayit": 78,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "HDSuperTreasure",
+    "durum": "kalan=960",
+    "kayit": 1,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "HDCityDefence",
+    "durum": "kalan=-25345",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGroupLv",
+    "durum": "kalan=-25665",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDGroupWar",
+    "durum": "kalan=-27112",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDPetSoulDefence",
+    "durum": "kalan=-7677",
+    "kayit": 2,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDPay",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 3587. Received 28600",
+    "complex": true
+  },
+  {
+    "db": "LeagueMapPve",
+    "durum": "OK",
+    "kayit": 12,
+    "alan": 12,
+    "complex": true
+  },
+  {
+    "db": "LeagueMapPvp",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "NewYear",
+    "id": "0x1000098",
+    "durum": "VO yok (TNewYear)"
+  },
+  {
+    "db": "Espada",
+    "id": "0x1000099",
+    "durum": "VO yok (TEspada)"
+  },
+  {
+    "db": "OrnamentValue",
+    "durum": "OK",
+    "kayit": 15200,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "OrnamentUpgrade",
+    "durum": "OK",
+    "kayit": 48,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "LeaguePointPath",
+    "durum": "OK",
+    "kayit": 12,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "LeagueAction",
+    "durum": "OK",
+    "kayit": 78,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDExchangeChip",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 14098. Received 22475",
+    "complex": true
+  },
+  {
+    "db": "Beauty",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "BeautifulClothes",
+    "durum": "OK",
+    "kayit": 25,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "HDSinglePayTime",
+    "durum": "kalan=477",
+    "kayit": 1,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "HDChineseYearSignIn",
+    "durum": "kalan=729",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "HDDoubleFish",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1428. Received 43196",
+    "complex": true
+  },
+  {
+    "db": "HDChineseYearLukia",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 5427. Received 26093",
+    "complex": true
+  },
+  {
+    "db": "GirlsRecommend",
+    "durum": "OK",
+    "kayit": 8,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "GirlQuestion",
+    "id": "0x10000a6",
+    "durum": "VO yok (TGirlQuestion)"
+  },
+  {
+    "db": "GirlStrategy",
+    "durum": "OK",
+    "kayit": 33,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "HDMoneyPenny",
+    "durum": "kalan=-28844",
+    "kayit": 1,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "GrowRoadDayTask",
+    "durum": "OK",
+    "kayit": 26,
+    "alan": 7,
+    "complex": false
+  },
+  {
+    "db": "GrowRoadTask",
+    "durum": "OK",
+    "kayit": 184,
+    "alan": 12,
+    "complex": true
+  },
+  {
+    "db": "GrowRoadGift",
+    "durum": "OK",
+    "kayit": 3,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "HDGambling",
+    "durum": "kalan=1313",
+    "kayit": 1,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "HDLimitBuy",
+    "id": "0x10000ad",
+    "durum": "VO yok (THDLimitBuy)"
+  },
+  {
+    "db": "HDIceHeros",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 2935. Received 57775",
+    "complex": true
+  },
+  {
+    "db": "TemplePoint",
+    "durum": "OK",
+    "kayit": 360,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "TemplePVP",
+    "durum": "OK",
+    "kayit": 39,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "TempleValue",
+    "durum": "OK",
+    "kayit": 1320,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "GSPVP_DailyAward",
+    "id": "0x10000b2",
+    "durum": "VO yok (TGSPVP_DailyAward)"
+  },
+  {
+    "db": "GSPVP_Reward",
+    "durum": "OK",
+    "kayit": 110,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "TeamMemberExpand",
+    "durum": "OK",
+    "kayit": 500,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "HDTeamBuy",
+    "durum": "kalan=941",
+    "kayit": 1,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "HDJigsaw",
+    "id": "0x10000b6",
+    "durum": "VO yok (THDJigsaw)"
+  },
+  {
+    "db": "HDLevelGiftBag",
+    "id": "0x10000b7",
+    "durum": "VO yok (THDLevelGiftBag)"
+  },
+  {
+    "db": "HDBigTurnTable",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 9676. Received 59577",
+    "complex": true
+  },
+  {
+    "db": "HDOrder",
+    "id": "0x10000b9",
+    "durum": "VO yok (THDOrder)"
+  },
+  {
+    "db": "DrillHoleCost",
+    "id": "0x10000ba",
+    "durum": "VO yok (TDrillHoleCost)"
+  },
+  {
+    "db": "HDServerPay",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 5833. Received 9093",
+    "complex": true
+  },
+  {
+    "db": "CrashJade",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "DailyGetBackReward",
+    "durum": "OK",
+    "kayit": 160,
+    "alan": 8,
+    "complex": false
+  },
+  {
+    "db": "DailyWelfareReward",
+    "durum": "OK",
+    "kayit": 160,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "DailyCrashJadeKind",
+    "id": "0x10000c0",
+    "durum": "VO yok (TDailyCrashJadeKind)"
+  },
+  {
+    "db": "HDRandCard",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 2568. Received 29274",
+    "complex": true
+  },
+  {
+    "db": "SpiritSchool",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "SpiritSchoolExp",
+    "durum": "OK",
+    "kayit": 3018,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "HDTreasureShop",
+    "durum": "kalan=1200",
+    "kayit": 1,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "BleachJigsaw",
+    "id": "0x10000c5",
+    "durum": "VO yok (TBleachJigsaw)"
+  },
+  {
+    "db": "HDChess",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 2464. Received 14245",
+    "complex": true
+  },
+  {
+    "db": "HDWorldCup",
+    "durum": "kalan=1784",
+    "kayit": 1,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "HDHerosMarket",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 2975. Received 35960",
+    "complex": true
+  },
+  {
+    "db": "PartnerChange",
+    "durum": "OK",
+    "kayit": 917,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "ChangeHeroPoint",
+    "durum": "OK",
+    "kayit": 1965,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "BlackMarket",
+    "durum": "OK",
+    "kayit": 1071,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "HeroChangeAttr",
+    "durum": "OK",
+    "kayit": 131,
+    "alan": 10,
+    "complex": true
+  },
+  {
+    "db": "Lottery",
+    "id": "0x10000cd",
+    "durum": "VO yok (TLottery)"
+  },
+  {
+    "db": "MainPetRankUp",
+    "durum": "OK",
+    "kayit": 15,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "PetFamilyBag",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 5,
+    "complex": false
+  },
+  {
+    "db": "PetLevelUp",
+    "durum": "OK",
+    "kayit": 4500,
+    "alan": 12,
+    "complex": true
+  },
+  {
+    "db": "VicePetMake",
+    "durum": "OK",
+    "kayit": 20,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "VicePetRankUp",
+    "durum": "OK",
+    "kayit": 100,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "VicePetTrain",
+    "durum": "OK",
+    "kayit": 3,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "JoyfunPay",
+    "durum": "OK",
+    "kayit": 1,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "Partner",
+    "id": "0x10000d5",
+    "durum": "VO yok (TPartner)"
+  },
+  {
+    "db": "LuckyJoy",
+    "id": "0x10000d6",
+    "durum": "VO yok (TLuckyJoy)"
+  },
+  {
+    "db": "FighterDetail",
+    "durum": "OK",
+    "kayit": 14,
+    "alan": 9,
+    "complex": true
+  },
+  {
+    "db": "SwiftChange",
+    "id": "0x10000d8",
+    "durum": "VO yok (TSwiftChange)"
+  },
+  {
+    "db": "PrivilegeLease",
+    "id": "0x10000da",
+    "durum": "VO yok (TPrivilegeLease)"
+  },
+  {
+    "db": "TimeHero",
+    "durum": "OK",
+    "kayit": 31,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "HalloweenPay",
+    "id": "0x10000dc",
+    "durum": "VO yok (THalloweenPay)"
+  },
+  {
+    "db": "HalloweenTree",
+    "id": "0x10000dd",
+    "durum": "VO yok (THalloweenTree)"
+  },
+  {
+    "db": "HalloweenPumpkin",
+    "id": "0x10000de",
+    "durum": "VO yok (THalloweenPumpkin)"
+  },
+  {
+    "db": "HalloweenShop",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "OrgPointInfo",
+    "durum": "OK",
+    "kayit": 180,
+    "alan": 11,
+    "complex": true
+  },
+  {
+    "db": "CircleTrial",
+    "id": "0x10000e1",
+    "durum": "VO yok (TCircleTrial)"
+  },
+  {
+    "db": "CircleHero",
+    "id": "0x10000e2",
+    "durum": "VO yok (TCircleHero)"
+  },
+  {
+    "db": "KingLegend",
+    "id": "0x10000e3",
+    "durum": "VO yok (TKingLegend)"
+  },
+  {
+    "db": "KingGuard",
+    "id": "0x10000e4",
+    "durum": "VO yok (TKingGuard)"
+  },
+  {
+    "db": "ChristmasGift",
+    "id": "0x10000e5",
+    "durum": "VO yok (TChristmasGift)"
+  },
+  {
+    "db": "ChristmasWish",
+    "id": "0x10000e6",
+    "durum": "VO yok (TChristmasWish)"
+  },
+  {
+    "db": "ChristmasCarnival",
+    "id": "0x10000e7",
+    "durum": "VO yok (TChristmasCarnival)"
+  },
+  {
+    "db": "NewYearDropEgg",
+    "id": "0x10000e8",
+    "durum": "VO yok (TNewYearDropEgg)"
+  },
+  {
+    "db": "NewYearFly",
+    "id": "0x10000e9",
+    "durum": "VO yok (TNewYearFly)"
+  },
+  {
+    "db": "UniteTask",
+    "id": "0x10000ea",
+    "durum": "VO yok (TUniteTask)"
+  },
+  {
+    "db": "DreamsComeTrue",
+    "id": "0x10000eb",
+    "durum": "VO yok (TDreamsComeTrue)"
+  },
+  {
+    "db": "PetYear",
+    "id": "0x10000ec",
+    "durum": "VO yok (TPetYear)"
+  },
+  {
+    "db": "NewYearRedPacket",
+    "id": "0x10000ed",
+    "durum": "VO yok (TNewYearRedPacket)"
+  },
+  {
+    "db": "Firecrackers",
+    "id": "0x10000ee",
+    "durum": "VO yok (TFirecrackers)"
+  },
+  {
+    "db": "SheepGoodSell",
+    "id": "0x10000ef",
+    "durum": "VO yok (TSheepGoodSell)"
+  },
+  {
+    "db": "TimeLimitTurntable",
+    "id": "0x10000f0",
+    "durum": "VO yok (TTimeLimitTurntable)"
+  },
+  {
+    "db": "Feedback",
+    "id": "0x10000f1",
+    "durum": "VO yok (TFeedback)"
+  },
+  {
+    "db": "DayBack",
+    "id": "0x10000f2",
+    "durum": "VO yok (TDayBack)"
+  },
+  {
+    "db": "WakeUpEquip",
+    "durum": "OK",
+    "kayit": 160,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "WakeUp",
+    "durum": "OK",
+    "kayit": 145,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "OrgPointAward",
+    "durum": "OK",
+    "kayit": 20,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "GrowthPlan",
+    "id": "0x10000f9",
+    "durum": "VO yok (TGrowthPlan)"
+  },
+  {
+    "db": "Easter",
+    "id": "0x10000fa",
+    "durum": "VO yok (TEaster)"
+  },
+  {
+    "db": "BleachBag",
+    "id": "0x10000fb",
+    "durum": "VO yok (TBleachBag)"
+  },
+  {
+    "db": "RelatedPartner",
+    "durum": "OK",
+    "kayit": 1131,
+    "alan": 6,
+    "complex": false
+  },
+  {
+    "db": "RelatedPartnerType",
+    "durum": "OK",
+    "kayit": 7440,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "RelatedCondition",
+    "durum": "OK",
+    "kayit": 51,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "RelatedPartnerPoint",
+    "durum": "hata: The value of \"offset\" is out of range. It must be >= 0 and <= 1075. Received 12418",
+    "complex": true
+  },
+  {
+    "db": "Gallery",
+    "id": "0x1000101",
+    "durum": "VO yok (TGallery)"
+  },
+  {
+    "db": "DailyHero",
+    "id": "0x1000102",
+    "durum": "VO yok (TDailyHero)"
+  },
+  {
+    "db": "Pyramid",
+    "id": "0x1000103",
+    "durum": "VO yok (TPyramid)"
+  },
+  {
+    "db": "RushInSeireitei",
+    "id": "0x1000104",
+    "durum": "VO yok (TRushInSeireitei)"
+  },
+  {
+    "db": "Astrology",
+    "id": "0x1000105",
+    "durum": "VO yok (TAstrology)"
+  },
+  {
+    "db": "KnifeHeroCollect",
+    "id": "0x1000106",
+    "durum": "VO yok (TKnifeHeroCollect)"
+  },
+  {
+    "db": "CoolSummer",
+    "id": "0x1000107",
+    "durum": "VO yok (TCoolSummer)"
+  },
+  {
+    "db": "EveryDayAward",
+    "id": "0x1000108",
+    "durum": "VO yok (TEveryDayAward)"
+  },
+  {
+    "db": "NightmareTrialPoint",
+    "id": "0x1000109",
+    "durum": "VO yok (TNightmareTrialPoint)"
+  },
+  {
+    "db": "NightmareTrial",
+    "id": "0x100010a",
+    "durum": "VO yok (TNightmareTrial)"
+  },
+  {
+    "db": "NightmareTrialCity",
+    "id": "0x100010b",
+    "durum": "VO yok (TNightmareTrialCity)"
+  },
+  {
+    "db": "KnifeStrengExp",
+    "durum": "OK",
+    "kayit": 400,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "KnifeStrengthen",
+    "durum": "OK",
+    "kayit": 72,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "FirstPayBag",
+    "id": "0x100010e",
+    "durum": "VO yok (TFirstPayBag)"
+  },
+  {
+    "db": "LeaderWakeUp",
+    "durum": "OK",
+    "kayit": 104,
+    "alan": 11,
+    "complex": true
+  },
+  {
+    "db": "BrushHappy",
+    "id": "0x1000110",
+    "durum": "VO yok (TBrushHappy)"
+  },
+  {
+    "db": "NewServerDraw",
+    "id": "0x1000111",
+    "durum": "VO yok (TNewServerDraw)"
+  },
+  {
+    "db": "NewHalloweenGame",
+    "id": "0x1000112",
+    "durum": "VO yok (TNewHalloweenGame)"
+  },
+  {
+    "db": "NewHalloweenRecharge",
+    "id": "0x1000113",
+    "durum": "VO yok (TNewHalloweenRecharge)"
+  },
+  {
+    "db": "NewHalloweenConsume",
+    "id": "0x1000114",
+    "durum": "VO yok (TNewHalloweenConsume)"
+  },
+  {
+    "db": "ThankYou",
+    "id": "0x1000115",
+    "durum": "VO yok (TThankYou)"
+  },
+  {
+    "db": "ThanksFeast",
+    "id": "0x1000116",
+    "durum": "VO yok (TThanksFeast)"
+  },
+  {
+    "db": "ThanksTreasure",
+    "id": "0x1000117",
+    "durum": "VO yok (TThanksTreasure)"
+  },
+  {
+    "db": "ExpDuplicate",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 5,
+    "complex": false
+  },
+  {
+    "db": "CustomHeros",
+    "id": "0x1000119",
+    "durum": "VO yok (TCustomHeros)"
+  },
+  {
+    "db": "CustomHeroExp",
+    "durum": "OK",
+    "kayit": 101,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "SnowBattle",
+    "id": "0x1000121",
+    "durum": "VO yok (TSnowBattle)"
+  },
+  {
+    "db": "Christmas2015Tree",
+    "id": "0x1000122",
+    "durum": "VO yok (TChristmas2015Tree)"
+  },
+  {
+    "db": "Sock",
+    "id": "0x1000123",
+    "durum": "VO yok (TSock)"
+  },
+  {
+    "db": "Sled",
+    "id": "0x1000124",
+    "durum": "VO yok (TSled)"
+  },
+  {
+    "db": "SoulCollectionRnd",
+    "durum": "OK",
+    "kayit": 633,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "SoulCollectionShop",
+    "durum": "OK",
+    "kayit": 18,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "SoulCollectionBase",
+    "durum": "OK",
+    "kayit": 3,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "Check",
+    "id": "0x1000128",
+    "durum": "VO yok (TCheck)"
+  },
+  {
+    "db": "Nian",
+    "id": "0x1000129",
+    "durum": "VO yok (TNian)"
+  },
+  {
+    "db": "Pocket",
+    "id": "0x100012a",
+    "durum": "VO yok (TPocket)"
+  },
+  {
+    "db": "NewYearFund",
+    "id": "0x100012b",
+    "durum": "VO yok (TNewYearFund)"
+  },
+  {
+    "db": "NewYearChess",
+    "id": "0x100012c",
+    "durum": "VO yok (TNewYearChess)"
+  },
+  {
+    "db": "Easter2016_0",
+    "id": "0x100012d",
+    "durum": "VO yok (TEaster2016_0)"
+  },
+  {
+    "db": "Easter2016_1",
+    "id": "0x100012e",
+    "durum": "VO yok (TEaster2016_1)"
+  },
+  {
+    "db": "Easter2016_2",
+    "id": "0x100012f",
+    "durum": "VO yok (TEaster2016_2)"
+  },
+  {
+    "db": "GhostKingForg",
+    "id": "0x1000130",
+    "durum": "VO yok (TGhostKingForg)"
+  },
+  {
+    "db": "LaborDayCultivation",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "LaborLaborDayPet",
+    "id": "0x1000132",
+    "durum": "VO yok (TLaborLaborDayPet)"
+  },
+  {
+    "db": "LaborConsume",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "DuanwujiePet",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "DuanwujieBoat",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "TreasureHunt",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "TreasureShop",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "SoulDraw",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "SoulBuy",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "SoulRecharge",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "EquipForge",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "EquipAdvance",
+    "id": "0x100013c",
+    "durum": "VO yok (TEquipAdvance)"
+  },
+  {
+    "db": "KnifeChessRecharge",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "KnifeChessBuy",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "AdvanceChange",
+    "id": "0x100013f",
+    "durum": "VO yok (TAdvanceChange)"
+  },
+  {
+    "db": "NationalDayOne",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "NationalDayTwo",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "HalloweenVip",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "HalloweenRoundShop",
+    "id": "0x1000143",
+    "durum": "VO yok (THalloweenRoundShop)"
+  },
+  {
+    "db": "ThanksGivingDay2016One",
+    "id": "0x1000144",
+    "durum": "VO yok (TThanksGivingDay2016One)"
+  },
+  {
+    "db": "ThanksGivingDay2016Two",
+    "id": "0x1000145",
+    "durum": "VO yok (TThanksGivingDay2016Two)"
+  },
+  {
+    "db": "ThanksGivingDay2016Three",
+    "id": "0x1000146",
+    "durum": "VO yok (TThanksGivingDay2016Three)"
+  },
+  {
+    "db": "NewYear2017Task",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "NewYear2017Bags",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "NewYear2017Discount",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "FoolsDayRecharge",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "FoolsDayShop",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "ChildrenDayShop",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "ChildrenDayHero",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "ChildrenDayCollect",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "AnniversaryOne",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "AnniversaryTwo",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "AnniversaryThree",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "NationalDayOne2017",
+    "id": "0x1000152",
+    "durum": "VO yok (TNationalDayOne2017)"
+  },
+  {
+    "db": "NationalDayTwo2017",
+    "id": "0x1000153",
+    "durum": "VO yok (TNationalDayTwo2017)"
+  },
+  {
+    "db": "NationalDayThree2017",
+    "id": "0x1000154",
+    "durum": "VO yok (TNationalDayThree2017)"
+  },
+  {
+    "db": "ProfessionRefine",
+    "durum": "ReadDataByStream yok"
+  },
+  {
+    "db": "StarPoint",
+    "durum": "OK",
+    "kayit": 225,
+    "alan": 8,
+    "complex": false
+  },
+  {
+    "db": "StarPointDesc",
+    "durum": "OK",
+    "kayit": 76,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "Suit",
+    "durum": "OK",
+    "kayit": 158,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "SystemLanguage",
+    "durum": "OK",
+    "kayit": 1852,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "Task",
+    "durum": "OK",
+    "kayit": 591,
+    "alan": 22,
+    "complex": true
+  },
+  {
+    "db": "TaskDramaDialogue",
+    "durum": "OK",
+    "kayit": 335,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "Tavern_Grade",
+    "id": "0x1000047",
+    "durum": "VO yok (TTavern_Grade)"
+  },
+  {
+    "db": "Tavern_PayConfig",
+    "id": "0x1000048",
+    "durum": "VO yok (TTavern_PayConfig)"
+  },
+  {
+    "db": "Tavern_Warrior",
+    "id": "0x1000049",
+    "durum": "VO yok (TTavern_Warrior)"
+  },
+  {
+    "db": "TreasureLevelup",
+    "durum": "OK",
+    "kayit": 108,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "TreasureUpgrade",
+    "durum": "OK",
+    "kayit": 924,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "VipConfig",
+    "durum": "OK",
+    "kayit": 11,
+    "alan": 44,
+    "complex": false
+  },
+  {
+    "db": "SoulSkill",
+    "durum": "OK",
+    "kayit": 930,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "MagicStone",
+    "durum": "OK",
+    "kayit": 10,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "WeaponSkillConfig",
+    "durum": "OK",
+    "kayit": 80,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "Knife",
+    "durum": "OK",
+    "kayit": 24,
+    "alan": 16,
+    "complex": true
+  },
+  {
+    "db": "KnifeExpand",
+    "durum": "OK",
+    "kayit": 96,
+    "alan": 14,
+    "complex": true
+  },
+  {
+    "db": "RecommendHero",
+    "durum": "OK",
+    "kayit": 19,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "SlaveGainExp",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "SlaveMessage",
+    "durum": "OK",
+    "kayit": 24,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "SlaveBleed",
+    "durum": "OK",
+    "kayit": 24,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "HomeLevel",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 18,
+    "complex": true
+  },
+  {
+    "db": "Butterfly",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "ButterflyFeeding",
+    "durum": "OK",
+    "kayit": 1749,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "HomeGirlFriend",
+    "durum": "OK",
+    "kayit": 10,
+    "alan": 13,
+    "complex": true
+  },
+  {
+    "db": "HomeGirlAward",
+    "durum": "OK",
+    "kayit": 24,
+    "alan": 5,
+    "complex": true
+  },
+  {
+    "db": "HomeGirlInteract",
+    "durum": "OK",
+    "kayit": 8,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "HomeGamble",
+    "durum": "OK",
+    "kayit": 210,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "HomeGambleCost",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "HomeGambleBox",
+    "durum": "OK",
+    "kayit": 3,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "HomeSoulAward",
+    "durum": "OK",
+    "kayit": 795,
+    "alan": 4,
+    "complex": true
+  },
+  {
+    "db": "HomeFortune",
+    "durum": "OK",
+    "kayit": 160,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "HomeGirlMood",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "AutoActivityGain",
+    "durum": "OK",
+    "kayit": 150,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "BaseEquip",
+    "durum": "OK",
+    "kayit": 800,
+    "alan": 11,
+    "complex": true
+  },
+  {
+    "db": "BaseHero",
+    "durum": "OK",
+    "kayit": 148,
+    "alan": 49,
+    "complex": true
+  },
+  {
+    "db": "BaseStone",
+    "durum": "OK",
+    "kayit": 132,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "BlockPoint",
+    "durum": "OK",
+    "kayit": 545,
+    "alan": 16,
+    "complex": true
+  },
+  {
+    "db": "BuffEffect",
+    "durum": "OK",
+    "kayit": 91,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "BuildConsume",
+    "durum": "OK",
+    "kayit": 1400,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "BuildValue",
+    "durum": "OK",
+    "kayit": 8400,
+    "alan": 5,
+    "complex": false
+  },
+  {
+    "db": "BuyMoney",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "ChannelChet",
+    "durum": "OK",
+    "kayit": 10,
+    "alan": 11,
+    "complex": true
+  },
+  {
+    "db": "City",
+    "durum": "OK",
+    "kayit": 234,
+    "alan": 8,
+    "complex": false
+  },
+  {
+    "db": "ConfigValue",
+    "durum": "OK",
+    "kayit": 730,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "DailyActivity",
+    "durum": "OK",
+    "kayit": 7,
+    "alan": 6,
+    "complex": true
+  },
+  {
+    "db": "DailyAward",
+    "durum": "OK",
+    "kayit": 50,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "DailyTask",
+    "durum": "OK",
+    "kayit": 29,
+    "alan": 12,
+    "complex": true
+  },
+  {
+    "db": "DialogueScript",
+    "durum": "OK",
+    "kayit": 95,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "Digging",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 18,
+    "complex": true
+  },
+  {
+    "db": "EnemyArmy",
+    "durum": "OK",
+    "kayit": 4113,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "Enemy",
+    "durum": "OK",
+    "kayit": 19590,
+    "alan": 23,
+    "complex": true
+  },
+  {
+    "db": "EquipAdditional",
+    "durum": "OK",
+    "kayit": 144,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "EquipGenerate",
+    "durum": "OK",
+    "kayit": 196,
+    "alan": 3,
+    "complex": true
+  },
+  {
+    "db": "EquipUpgrade",
+    "durum": "OK",
+    "kayit": 88,
+    "alan": 2,
+    "complex": true
+  },
+  {
+    "db": "ErrorCode",
+    "durum": "OK",
+    "kayit": 448,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "Exchange_ExpCard",
+    "id": "0x100001c",
+    "durum": "VO yok (TExchange_ExpCard)"
+  },
+  {
+    "db": "FreshGuide",
+    "durum": "OK",
+    "kayit": 206,
+    "alan": 13,
+    "complex": false
+  },
+  {
+    "db": "FunctionSwitch",
+    "durum": "OK",
+    "kayit": 77,
+    "alan": 8,
+    "complex": false
+  },
+  {
+    "db": "HDActivity",
+    "durum": "OK",
+    "kayit": 6874,
+    "alan": 12,
+    "complex": true
+  },
+  {
+    "db": "HeroExp",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "HeroReplacement",
+    "durum": "OK",
+    "kayit": 26,
+    "alan": 7,
+    "complex": false
+  },
+  {
+    "db": "HeroTalent",
+    "durum": "OK",
+    "kayit": 203,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "KnifeSoul",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 8,
+    "complex": false
+  },
+  {
+    "db": "Mall",
+    "durum": "OK",
+    "kayit": 164,
+    "alan": 21,
+    "complex": true
+  },
+  {
+    "db": "Map",
+    "durum": "OK",
+    "kayit": 3,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "Maskword",
+    "durum": "OK",
+    "kayit": 249,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "Military",
+    "durum": "OK",
+    "kayit": 36,
+    "alan": 9,
+    "complex": true
+  },
+  {
+    "db": "MusicConfig",
+    "durum": "OK",
+    "kayit": 63,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "NPC",
+    "durum": "OK",
+    "kayit": 28,
+    "alan": 14,
+    "complex": false
+  },
+  {
+    "db": "OrganizationAddition",
+    "durum": "OK",
+    "kayit": 52,
+    "alan": 11,
+    "complex": false
+  },
+  {
+    "db": "OrganizationBase",
+    "durum": "OK",
+    "kayit": 51,
+    "alan": 11,
+    "complex": false
+  },
+  {
+    "db": "OrganizationDevotion",
+    "durum": "OK",
+    "kayit": 159,
+    "alan": 2,
+    "complex": false
+  },
+  {
+    "db": "PopTips",
+    "durum": "OK",
+    "kayit": 35,
+    "alan": 9,
+    "complex": true
+  },
+  {
+    "db": "Post",
+    "durum": "OK",
+    "kayit": 178,
+    "alan": 7,
+    "complex": true
+  },
+  {
+    "db": "RaidersDailyConfig",
+    "durum": "OK",
+    "kayit": 55,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "RankComposeQuality",
+    "durum": "OK",
+    "kayit": 9,
+    "alan": 4,
+    "complex": false
+  },
+  {
+    "db": "RankExpendCost",
+    "durum": "OK",
+    "kayit": 100,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "RankMoney",
+    "durum": "OK",
+    "kayit": 5000,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "RankReward",
+    "durum": "OK",
+    "kayit": 1113,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "RecommendStone",
+    "durum": "OK",
+    "kayit": 182,
+    "alan": 1,
+    "complex": true
+  },
+  {
+    "db": "RoleModel",
+    "durum": "OK",
+    "kayit": 20171,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "ServenStarExp",
+    "durum": "OK",
+    "kayit": 707,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "ServenStar",
+    "durum": "OK",
+    "kayit": 7,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "SignReward",
+    "durum": "OK",
+    "kayit": 5,
+    "alan": 3,
+    "complex": false
+  },
+  {
+    "db": "SinglePointPath",
+    "durum": "OK",
+    "kayit": 466,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "SingleResetCharge",
+    "durum": "OK",
+    "kayit": 6,
+    "alan": 1,
+    "complex": false
+  },
+  {
+    "db": "Single",
+    "durum": "OK",
+    "kayit": 22,
+    "alan": 8,
+    "complex": true
+  },
+  {
+    "db": "SkillConfig",
+    "durum": "OK",
+    "kayit": 7999,
+    "alan": 5,
+    "complex": false
+  },
+  {
+    "db": "StarMap",
+    "durum": "OK",
+    "kayit": 15,
+    "alan": 7,
+    "complex": false
+  },
+  {
+    "db": "TemplePliesNumber",
+    "durum": "OK",
+    "kayit": 12,
+    "alan": 2,
+    "complex": false
+  }
+]

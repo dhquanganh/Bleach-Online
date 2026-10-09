@@ -1,0 +1,26 @@
+[
+  {
+    "id": "00127691",
+    "name": "礼从天降",
+    "tName": "大富翁",
+    "desc": "1. Top up certain amount to get Blue Egg, which can be used for exchanging Ultimate Reward and Easter Gift.\n2. Spend corresponding amount of gold to get Purple Egg, which can be used for Snap Up and exchanging Ultimate Reward.\n3. Exchanging giftpacks will consume corresponding eggs, when you don’t have enough eggs for the exchange, the system will use Almighty Eggs for completion.\n4. During the event, eggs you have will not be emptied and you can't use Almighty Eggs to complement for the Ultimate Reward.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "rechargeTask": "[{\"index\" : 0, \"gold\" : 200, \"code\" : 14100704, \"amount\" : 1}, {\"index\" : 1, \"gold\" : 4000, \"code\" : 14100704, \"amount\" : 25}, {\"index\" : 2, \"gold\" : 20000, \"code\" : 14100704, \"amount\" : 200}]",
+    "consumeTask": "[{\"index\" :3, \"gold\" : 1000, \"code\" : 14100704, \"amount\" : 10}, {\"index\" : 4, \"gold\" : 2000, \"code\" : 14100704, \"amount\" : 20}, {\"index\" :5, \"gold\" : 4000, \"code\" : 14100704, \"amount\" : 40}]",
+    "rechargeGift": "[{\"index\" : 6, \"awardId\" : 21403990, \"amount\" : 5}, {\"index\" : 7, \"awardId\" : 21403991, \"amount\" : 20}, {\"index\" : 8, \"awardId\" : 21403992, \"amount\" : 50}]",
+    "consumeGift": "[{\"index\" : 10, \"awardId\" : 21403993, \"amount\" : 10}, {\"index\" : 11, \"awardId\" : 21403994, \"amount\" : 20}, {\"index\" : 12, \"awardId\" : 21403995, \"amount\" : 40}]",
+    "bigAward": "{\"index\" : 14, \"awardId\" : 21404029, \"amount\" : [2, 600, 30],\"showId\":2000201,\"showType\":1,\"reportId\":\"\"}",
+    "egg02Index": 15,
+    "egg02Id": 14100704,
+    "egg03Index": 16,
+    "egg03Id": 14100704,
+    "egg01Index": 17,
+    "rate": 4000,
+    "rechargeIndex": 95,
+    "consumeIndex": 96,
+    "pageIndex": 97,
+    "text": "[\"Need %0 more Red Easter Egg to exchange\",\"Blue Easter Egg not enough\",\"Purple Easter Egg not enough\",\"Blue Easter Egg*%0\",\"Purple Easter Egg*%0\"]"
+  }
+]

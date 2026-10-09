@@ -1,0 +1,13 @@
+[
+  {
+    "id": "00094ED1",
+    "name": "特权租赁",
+    "tName": "特权租赁",
+    "desc": "1. Players can use gold to hire partners.\n2. If the partner is expired, then s/he will be unable to join battles. You can renew the partner with gold.\n3. The partner you hired will have the same level with the main character, once you spend enough gold \n4. You can dismiss the hired partner, after you've dismissed a hired partner, the accumulated gold ",
+    "tip": "1",
+    "price": 0,
+    "imageID": 610001,
+    "f6": "[{\"index\":0,\"hero\":11120004},{\"index\":1,\"hero\":11120005},{\"index\":2,\"hero\":11120006},{\"index\":3,\"hero\":11120007},{\"index\":4,\"hero\":11120010},{\"index\":5,\"hero\":11120011},{\"index\":6,\"hero\":11120012},{\"index\":7,\"hero\":11120013},{\"index\":8,\"hero\":11140011},{\"index\":9,\"hero\":11140012},{\"index\":10,\"hero\":11150002},{\"index\":11,\"hero\":11120009},{\"index\":12,\"hero\":11120008},{\"index\":13,\"hero\":11150009},{\"index\":14,\"hero\":11140013},{\"index\":15,\"hero\":11140008},{\"index\":16,\"hero\":11150010},{\"index\":17,\"hero\":11150019}]",
+    "f7": "[\"Own permanently\",\"Hire for %0 days\"]"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00035B61",
+    "name": "Equipment Collection",
+    "tName": "You collect equipment, we give away rewards!",
+    "desc": "During the event, obtain one corresponding purple equipment set to get extra rewards.",
+    "tip": "3",
+    "price": 0,
+    "imageID": 220001,
+    "f6": "[{\"condition\":[{\"id\":14200041,\"type\":1},{\"id\":14200042,\"type\":1},{\"id\":14200043,\"type\":1},{\"id\":14200044,\"type\":2},{\"id\":14200045, \"type\":3},{\"id\":14200046,\"type\":4},{\"id\":14200047,\"type\":5},{\"id\":14200048,\"type\":6}],\"award\":[21401079],\"prompt\":\"Lvl 30 Purple Grade Equipment\"},{\"condition\":[{\"id\":14200061,\"type\":1},{\"id\":14200062,\"type\":1},{\"id\":14200063,\"type\":1},{\"id\":14200064,\"type\":2},{\"id\":14200065, \"type\":3},{\"id\":14200066,\"type\":4},{\"id\":14200067,\"type\":5},{\"id\":14200068,\"type\":6}],\"award\":[21401080],\"prompt\":\"Lvl 50 Purple Grade Equipment\"}]"
+  },
+  {
+    "id": "00035B62",
+    "name": "Equipment Collection",
+    "tName": "You collect equipment, we give away rewards!",
+    "desc": "During the event, obtain one corresponding purple equipment set to get extra rewards.",
+    "tip": "3",
+    "price": 0,
+    "imageID": 220001,
+    "f6": "[{\"condition\":[{\"id\":14200091,\"type\":1},{\"id\":14200092,\"type\":1},{\"id\":14200093,\"type\":1},{\"id\":14200094,\"type\":2},{\"id\":14200095, \"type\":3},{\"id\":14200096,\"type\":4},{\"id\":14200097,\"type\":5},{\"id\":14200098,\"type\":6}],\"award\":[21401125],\"prompt\":\"Lvl 70 Golden Grade Equipment\"},{\"condition\":[{\"id\":14200121,\"type\":1},{\"id\":14200122,\"type\":1},{\"id\":14200123,\"type\":1},{\"id\":14200124,\"type\":2},{\"id\":14200125, \"type\":3},{\"id\":14200126,\"type\":4},{\"id\":14200127,\"type\":5},{\"id\":14200128,\"type\":6}],\"award\":[21401126],\"prompt\":\"Lvl 80 Golden Grade Equipment\"}]"
+  }
+]

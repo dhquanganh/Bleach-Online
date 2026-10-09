@@ -1,0 +1,262 @@
+[
+  {
+    "id": "03473C25",
+    "desc": "",
+    "name": "日向宁次",
+    "isOpen": 1,
+    "heroID": 11200001,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200001
+  },
+  {
+    "id": "03473C89",
+    "desc": "",
+    "name": "桃地再不斩",
+    "isOpen": 1,
+    "heroID": 11200002,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200002
+  },
+  {
+    "id": "03473CED",
+    "desc": "",
+    "name": "宇智波佐助",
+    "isOpen": 1,
+    "heroID": 11200003,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200003
+  },
+  {
+    "id": "03473D51",
+    "desc": "",
+    "name": "漩涡鸣人",
+    "isOpen": 1,
+    "heroID": 11200004,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200004
+  },
+  {
+    "id": "03473DB5",
+    "desc": "",
+    "name": "我爱罗",
+    "isOpen": 1,
+    "heroID": 11200005,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200005
+  },
+  {
+    "id": "03473E19",
+    "desc": "",
+    "name": "大蛇丸",
+    "isOpen": 1,
+    "heroID": 11200006,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200006
+  },
+  {
+    "id": "03473E7D",
+    "desc": "",
+    "name": "卡卡西",
+    "isOpen": 1,
+    "heroID": 11200007,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200007
+  },
+  {
+    "id": "03473EE1",
+    "desc": "",
+    "name": "自来也",
+    "isOpen": 1,
+    "heroID": 11200008,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200008
+  },
+  {
+    "id": "03473F45",
+    "desc": "",
+    "name": "鼬",
+    "isOpen": 1,
+    "heroID": 11200009,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200009
+  },
+  {
+    "id": "03473FA9",
+    "desc": "",
+    "name": "波风水门",
+    "isOpen": 1,
+    "heroID": 11200010,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200010
+  },
+  {
+    "id": "0347400D",
+    "desc": "",
+    "name": "灰衣佐助",
+    "isOpen": 1,
+    "heroID": 11200011,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200011
+  },
+  {
+    "id": "03474071",
+    "desc": "",
+    "name": "佩恩",
+    "isOpen": 1,
+    "heroID": 11200012,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200012
+  },
+  {
+    "id": "034740D5",
+    "desc": "",
+    "name": "仙人鸣人",
+    "isOpen": 1,
+    "heroID": 11200013,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11200013
+  },
+  {
+    "id": "0347FF75",
+    "desc": "",
+    "name": "八卦宁次",
+    "isOpen": 1,
+    "heroID": 11210001,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210001
+  },
+  {
+    "id": "0347FFD9",
+    "desc": "",
+    "name": "鬼人再不斩",
+    "isOpen": 1,
+    "heroID": 11210002,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210002
+  },
+  {
+    "id": "0348003D",
+    "desc": "",
+    "name": "黑衣佐助",
+    "isOpen": 1,
+    "heroID": 11210003,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210003
+  },
+  {
+    "id": "034800A1",
+    "desc": "",
+    "name": "尾兽鸣人",
+    "isOpen": 1,
+    "heroID": 11210004,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210004
+  },
+  {
+    "id": "03480105",
+    "desc": "",
+    "name": "风影我爱罗",
+    "isOpen": 1,
+    "heroID": 11210005,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210005
+  },
+  {
+    "id": "03480169",
+    "desc": "",
+    "name": "万罗大蛇丸",
+    "isOpen": 1,
+    "heroID": 11210006,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210006
+  },
+  {
+    "id": "034801CD",
+    "desc": "",
+    "name": "神威卡卡西",
+    "isOpen": 1,
+    "heroID": 11210007,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210007
+  },
+  {
+    "id": "03480231",
+    "desc": "",
+    "name": "仙人自来也",
+    "isOpen": 1,
+    "heroID": 11210008,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210008
+  },
+  {
+    "id": "03480295",
+    "desc": "",
+    "name": "幻神鼬",
+    "isOpen": 1,
+    "heroID": 11210009,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210009
+  },
+  {
+    "id": "034802F9",
+    "desc": "",
+    "name": "时空水门",
+    "isOpen": 1,
+    "heroID": 11210010,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210010
+  },
+  {
+    "id": "0348035D",
+    "desc": "",
+    "name": "轮回佐助",
+    "isOpen": 1,
+    "heroID": 11210011,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210011
+  },
+  {
+    "id": "034803C1",
+    "desc": "",
+    "name": "佩恩六道",
+    "isOpen": 1,
+    "heroID": 11210012,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210012
+  },
+  {
+    "id": "03480425",
+    "desc": "",
+    "name": "六道鸣人",
+    "isOpen": 1,
+    "heroID": 11210013,
+    "modelLv": 1,
+    "timeLimit": 30,
+    "newModelHeroId": 11210013
+  }
+]

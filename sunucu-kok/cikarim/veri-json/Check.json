@@ -1,0 +1,15 @@
+[
+  {
+    "id": "00118C31",
+    "name": "新年签到",
+    "tName": "New Year Sign-in",
+    "desc": "1. Sign in everyday to get rewards, late sign-in will consume gold or coupons.\n2. Meet requirements to get corresponding giftpacks, all giftpacks can be claimed once only during the event.\n3. Special sales will all be limited sales that subject to current price. The chances will reset at 0:00, midnight.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "preferentialGifts": "[{\"index\" : 0, \"awardId\" : 21403761, \"count\" : 2, \"OriginalGold\" : 100, \"RealGold\" : 40}, {\"index\" : 1, \"awardId\" : 21403762, \"count\" : 2, \"OriginalGold\" : 100, \"RealGold\" : 30},{\"index\" : 2, \"awardId\" : 21403763, \"count\" : 2, \"OriginalGold\" : 500, \"RealGold\" : 200},{\"index\" : 3, \"awardId\" : 21403764, \"count\" : 2, \"OriginalGold\" : 500, \"RealGold\" : 200}]",
+    "signIn": "{\"index\" : 5, \"awardIds\" : [21403765,21403766,21403767,21403768,21403769,21403770,21403771,21403772,21403773,21403774],\"gold\":10}",
+    "offSet": 6,
+    "signInGifts": "[{\"index\" : 7, \"awardId\" : 21403775, \"days\" : 2}, {\"index\" : 8, \"awardId\" : 21403776, \"days\" : 4}, {\"index\" : 9, \"awardId\" : 21403777, \"days\" : 6}, {\"index\" : 10, \"awardId\" : 21403778, \"days\" : 10}]"
+  }
+]

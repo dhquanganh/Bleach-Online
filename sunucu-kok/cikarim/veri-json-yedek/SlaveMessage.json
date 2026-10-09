@@ -1,0 +1,170 @@
+[
+  {
+    "id": "00000001",
+    "type": 1,
+    "masterTemplateId": 81004001,
+    "slaveTemplateId": 81004002,
+    "eventName": "Passion Novel"
+  },
+  {
+    "id": "00000002",
+    "type": 1,
+    "masterTemplateId": 81004003,
+    "slaveTemplateId": 81004004,
+    "eventName": "I like Hot Spring"
+  },
+  {
+    "id": "00000003",
+    "type": 1,
+    "masterTemplateId": 81004005,
+    "slaveTemplateId": 81004006,
+    "eventName": "I'm hungry"
+  },
+  {
+    "id": "00000004",
+    "type": 1,
+    "masterTemplateId": 81004007,
+    "slaveTemplateId": 81004008,
+    "eventName": "Sweet Words"
+  },
+  {
+    "id": "00000005",
+    "type": 1,
+    "masterTemplateId": 81004009,
+    "slaveTemplateId": 81004010,
+    "eventName": "Warm Nest"
+  },
+  {
+    "id": "00000006",
+    "type": 1,
+    "masterTemplateId": 81004011,
+    "slaveTemplateId": 81004012,
+    "eventName": "Gift Items"
+  },
+  {
+    "id": "00000007",
+    "type": 2,
+    "masterTemplateId": 81004013,
+    "slaveTemplateId": 81004014,
+    "eventName": "Become Stake"
+  },
+  {
+    "id": "00000008",
+    "type": 2,
+    "masterTemplateId": 81004015,
+    "slaveTemplateId": 81004016,
+    "eventName": "The Art of Seduction"
+  },
+  {
+    "id": "00000009",
+    "type": 2,
+    "masterTemplateId": 81004017,
+    "slaveTemplateId": 81004018,
+    "eventName": "Eliminate Locust"
+  },
+  {
+    "id": "0000000A",
+    "type": 2,
+    "masterTemplateId": 81004019,
+    "slaveTemplateId": 81004020,
+    "eventName": "Write Letter For You"
+  },
+  {
+    "id": "0000000B",
+    "type": 2,
+    "masterTemplateId": 81004021,
+    "slaveTemplateId": 81004022,
+    "eventName": "Hotel Worker"
+  },
+  {
+    "id": "0000000C",
+    "type": 2,
+    "masterTemplateId": 81004023,
+    "slaveTemplateId": 81004024,
+    "eventName": "Reduce Appetite"
+  },
+  {
+    "id": "0000000D",
+    "type": 3,
+    "masterTemplateId": 81004025,
+    "slaveTemplateId": 81004026,
+    "eventName": "Read Novel"
+  },
+  {
+    "id": "0000000E",
+    "type": 3,
+    "masterTemplateId": 81004027,
+    "slaveTemplateId": 81004028,
+    "eventName": "Bedtime Stories"
+  },
+  {
+    "id": "0000000F",
+    "type": 3,
+    "masterTemplateId": 81004029,
+    "slaveTemplateId": 81004030,
+    "eventName": "Praise Master"
+  },
+  {
+    "id": "00000010",
+    "type": 3,
+    "masterTemplateId": 81004031,
+    "slaveTemplateId": 81004032,
+    "eventName": "Dance"
+  },
+  {
+    "id": "00000011",
+    "type": 3,
+    "masterTemplateId": 81004033,
+    "slaveTemplateId": 81004034,
+    "eventName": "Write Poem"
+  },
+  {
+    "id": "00000012",
+    "type": 3,
+    "masterTemplateId": 81004035,
+    "slaveTemplateId": 81004036,
+    "eventName": "Send Sweater"
+  },
+  {
+    "id": "00000013",
+    "type": 4,
+    "masterTemplateId": 81004037,
+    "slaveTemplateId": 81004038,
+    "eventName": "Draw Circles"
+  },
+  {
+    "id": "00000014",
+    "type": 4,
+    "masterTemplateId": 81004039,
+    "slaveTemplateId": 81004040,
+    "eventName": "Toilet Trap"
+  },
+  {
+    "id": "00000015",
+    "type": 4,
+    "masterTemplateId": 81004041,
+    "slaveTemplateId": 81004042,
+    "eventName": "Midnight Ghost"
+  },
+  {
+    "id": "00000016",
+    "type": 4,
+    "masterTemplateId": 81004043,
+    "slaveTemplateId": 81004044,
+    "eventName": "Steal Clothes"
+  },
+  {
+    "id": "00000017",
+    "type": 4,
+    "masterTemplateId": 81004045,
+    "slaveTemplateId": 81004046,
+    "eventName": "Fake Panacea"
+  },
+  {
+    "id": "00000018",
+    "type": 4,
+    "masterTemplateId": 81004047,
+    "slaveTemplateId": 81004048,
+    "eventName": "Scarecrow Curse"
+  }
+]

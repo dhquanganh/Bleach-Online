@@ -1,0 +1,18 @@
+[
+  {
+    "id": "000900B1",
+    "name": "Lucky Slot Machine",
+    "tName": "Lucky Slot Machine",
+    "desc": "1. Players have 2 free chances of pulling each day.\n2. The winning percentage is 100% and players will obtain 10 points in each time of pulling.\n3. The points will be doubled once there is a Kon Head in the result.\n4. Players can exchange exclusive equipment with points obtained.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 590001,
+    "scoreIndex": "[{\"index\":0,\"cost\":50,\"getScore\":10,\"count\":1},{\"index\":1,\"cost\":450,\"getScore\":10,\"count\":10},{\"index\":2,\"cost\":2000,\"getScore\":10,\"count\":50}]",
+    "freeTimeIndex": "[{\"seqId\":1,\"rateValue\":3,\"rateType\":[1,1,1],\"award\":21405846,\"critRate\":2},{\"seqId\":2,\"rateValue\":10,\"rateType\":[2,2,2],\"award\":21405847,\"critRate\":1},{\"seqId\":3,\"rateValue\":30,\"rateType\":[3,3,3],\"award\":21405848,\"critRate\":1},{\"seqId\":4,\"rateValue\":57,\"rateType\":[4,4,4],\"award\":21405849,\"critRate\":1},{\"seqId\":5,\"rateValue\":75,\"rateType\":[1,1,2],\"award\":21405850,\"critRate\":2},{\"seqId\":6,\"rateValue\":75,\"rateType\":[1,1,3],\"award\":21405850,\"critRate\":2},{\"seqId\":7,\"rateValue\":75,\"rateType\":[1,1,4],\"award\":21405850,\"critRate\":2},{\"seqId\":8,\"rateValue\":75,\"rateType\":[2,2,1],\"award\":21405851,\"critRate\":2},{\"seqId\":9,\"rateValue\":75,\"rateType\":[2,2,3],\"award\":21405851,\"critRate\":1},{\"seqId\":10,\"rateValue\":75,\"rateType\":[2,2,4],\"award\":21405851,\"critRate\":1},{\"seqId\":11,\"rateValue\":75,\"rateType\":[3,3,1],\"award\":21405852,\"critRate\":2},{\"seqId\":12,\"rateValue\":75,\"rateType\":[3,3,2],\"award\":21405852,\"critRate\":1},{\"seqId\":13,\"rateValue\":75,\"rateType\":[3,3,4],\"award\":21405852,\"critRate\":1},{\"seqId\":14,\"rateValue\":75,\"rateType\":[4,4,1],\"award\":21405853,\"critRate\":2},{\"seqId\":15,\"rateValue\":75,\"rateType\":[4,4,2],\"award\":21405853,\"critRate\":1},{\"seqId\":16,\"rateValue\":75,\"rateType\":[4,4,3],\"award\":21405853,\"critRate\":1}]",
+    "freeTimeEveryDay": "[{\"index\":3,\"costScore\":70,\"award\":21405854},{\"index\":4,\"costScore\":70,\"award\":21405855},{\"index\":5,\"costScore\":70,\"award\":21405856},{\"index\":6,\"costScore\":70,\"award\":21405857},{\"index\":7,\"costScore\":70,\"award\":21405858},{\"index\":8,\"costScore\":70,\"award\":21405859},{\"index\":9,\"costScore\":70,\"award\":21405860},{\"index\":10,\"costScore\":70,\"award\":21405861},{\"index\":11,\"costScore\":70,\"award\":21405862},{\"index\":12,\"costScore\":70,\"award\":21405863},{\"index\":13,\"costScore\":70,\"award\":21405864},{\"index\":14,\"costScore\":70,\"award\":21405865},{\"index\":15,\"costScore\":70,\"award\":21405866},{\"index\":16,\"costScore\":70,\"award\":21405867},{\"index\":17,\"costScore\":70,\"award\":21405868},{\"index\":18,\"costScore\":70,\"award\":21405869},{\"index\":19,\"costScore\":70,\"award\":21405870},{\"index\":20,\"costScore\":70,\"award\":21405871},{\"index\":21,\"costScore\":70,\"award\":21405872},{\"index\":22,\"costScore\":70,\"award\":21405873},{\"index\":23,\"costScore\":70,\"award\":21405874},{\"index\":24,\"costScore\":70,\"award\":21405875},{\"index\":25,\"costScore\":70,\"award\":21405876},{\"index\":26,\"costScore\":70,\"award\":21405877}]\n",
+    "rollResultIndex": 27,
+    "f10": 28,
+    "f11": 2,
+    "f12": 29
+  }
+]

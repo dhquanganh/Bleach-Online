@@ -1,0 +1,26 @@
+[
+  {
+    "id": "0000C351",
+    "name": "Trial Tower Clearing",
+    "tName": "Premium Treassure Awaits!",
+    "desc": "During the event, unlocking Trial Tower level can receive rewards. Reward limit: 30",
+    "tip": "4",
+    "price": 0,
+    "imageID": 50001,
+    "condition": "[{\"key\":15301002,\"value\":[21401059],\"prompt\":\"Meru Realm Lvl 2\"},{\"key\":15301003,\"value\":[21401060],\"prompt\":\"Meru Realm Lvl 3\"},{\"key\":15301005,\"value\":[21401061],\"prompt\":\"Meru Realm Lvl 5\"},{\"key\":15302001,\"value\":[21401062],\"prompt\":\"Nothingness Lvl 1\"},{\"key\":15302003,\"value\":[21401063],\"prompt\":\"Nothingness Lvl 3\"},{\"key\":15302005,\"value\":[21401064],\"prompt\":\"Nothingness Lvl 5\"},{\"key\":15303001,\"value\":[21401065],\"prompt\":\"Desperate Lvl 1\"}]",
+    "carbonLine": "Level Text",
+    "prizeNum": 30
+  },
+  {
+    "id": "0000C352",
+    "name": "Trial Tower Clearing",
+    "tName": "Premium Treassure Awaits!",
+    "desc": "During the event, unlocking Trial Tower level can receive rewards. Reward limit: 30",
+    "tip": "4",
+    "price": 0,
+    "imageID": 50001,
+    "condition": "[{\"key\":15303002,\"value\":[21401107],\"prompt\":\"Desperate Lvl 2\"},{\"key\":15303003,\"value\":[21401108],\"prompt\":\"Desperate Lvl 3\"},{\"key\":15303004,\"value\":[21401109],\"prompt\":\"Desperate Lvl 4\"},{\"key\":15303005,\"value\":[21401110],\"prompt\":\"Desperate Lvl 5\"},{\"key\":15304001,\"value\":[21401111],\"prompt\":\"Greedy Realm Lvl 1\"},{\"key\":15304002,\"value\":[21401112],\"prompt\":\"Greedy Realm Lvl 2\"},{\"key\":15304003,\"value\":[21401113],\"prompt\":\"Greedy Realm Lvl 3\"}]",
+    "carbonLine": "Level Text",
+    "prizeNum": 30
+  }
+]

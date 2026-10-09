@@ -1,0 +1,92 @@
+[
+  {
+    "id": "00B71B01",
+    "exchangeReward": "{\"type\":1,\"code\":14100427,\"amount\":1}",
+    "frequency": 1
+  },
+  {
+    "id": "00B71B02",
+    "exchangeReward": "{\"type\":1,\"code\":14100408,\"amount\":1}",
+    "frequency": 1
+  },
+  {
+    "id": "00B71B03",
+    "exchangeReward": "{\"type\":1,\"code\":14800010,\"amount\":4}",
+    "frequency": 1
+  },
+  {
+    "id": "00B71B04",
+    "exchangeReward": "{\"type\":1,\"code\":14800037,\"amount\":2}",
+    "frequency": 1
+  },
+  {
+    "id": "00B71B05",
+    "exchangeReward": "{\"type\":1,\"code\":14800038,\"amount\":1}",
+    "frequency": 1
+  },
+  {
+    "id": "00B71B06",
+    "exchangeReward": "{\"type\":1,\"code\":14100690,\"amount\":1000}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B07",
+    "exchangeReward": "{\"type\":1,\"code\":14100600,\"amount\":200}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B08",
+    "exchangeReward": "{\"type\":1,\"code\":14100594,\"amount\":300}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B09",
+    "exchangeReward": "{\"type\":1,\"code\":14100595,\"amount\":200}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0A",
+    "exchangeReward": "{\"type\":1,\"code\":14100593,\"amount\":200}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0B",
+    "exchangeReward": "{\"type\":1,\"code\":14100589,\"amount\":400}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0C",
+    "exchangeReward": "{\"type\":1,\"code\":14120008,\"amount\":10}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0D",
+    "exchangeReward": "{\"type\":1,\"code\":14151504,\"amount\":1}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0E",
+    "exchangeReward": "{\"type\":1,\"code\":14320093,\"amount\":24}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B0F",
+    "exchangeReward": "{\"type\":1,\"code\":14320094,\"amount\":20}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B10",
+    "exchangeReward": "{\"type\":1,\"code\":14320095,\"amount\":16}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B11",
+    "exchangeReward": "{\"type\":1,\"code\":14320096,\"amount\":12}",
+    "frequency": 0
+  },
+  {
+    "id": "00B71B12",
+    "exchangeReward": "{\"type\":1,\"code\":14320097,\"amount\":8}",
+    "frequency": 0
+  }
+]

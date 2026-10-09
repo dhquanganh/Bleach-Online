@@ -1,0 +1,30 @@
+[
+  {
+    "id": "00061A81",
+    "name": "祈福镰刀",
+    "tName": "祈福镰刀",
+    "desc": "1.花费金币购买超值礼包进行抽奖，可获得镰刀碎片及金鲤鱼，每日首次抽奖半价优惠\n2.玩家每日可免费领取一个福袋，后续福袋需要花费金币购买\n3.每种福袋每日只可购买或领取一次，每日24点刷新\n4.镰刀碎片可用于兑换黑暗露琪亚及特别礼包",
+    "tip": "1",
+    "price": 0,
+    "imageID": 400001,
+    "f6": "[{\"index\":0,\"indexType\":0,\"getType\":2,\"limit\":1,\"cost\":[50,100],\"chip\":[{\"id\":0,\"chipIndex\":12,\"type\":17,\"code\":14100265,\"rateData\":[{\"rate\":50,\"range\":[0,1]},{\"rate\":80,\"range\":[1,1]},{\"rate\":95,\"range\":[2,2]},{\"rate\":100,\"range\":[3,3]}]},{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":50,\"range\":[1,20]},{\"rate\":80,\"range\":[21,30]},{\"rate\":95,\"range\":[31,40]},{\"rate\":100,\"range\":[41,50]}]}],\"title\":\"超值碎片礼包\",\"description\":[\"每日首开价格\",\"礼包价格\"],\"rewardInfor\":\"购买后可活动以下奖励#镰刀碎片:0~3个#金鲤鱼1~50个\"},{\"index\":1,\"indexType\":0,\"getType\":2,\"limit\":1,\"cost\":[500,1000],\"chip\":[{\"id\":0,\"chipIndex\":12,\"type\":17,\"code\":14100265,\"rateData\":[{\"rate\":43,\"range\":[8,9]},{\"rate\":73,\"range\":[10,11]},{\"rate\":85,\"range\":[12,14]},{\"rate\":90,\"range\":[15,17]},{\"rate\":94,\"range\":[18,20]},{\"rate\":97,\"range\":[21,23]},{\"rate\":99,\"range\":[24,26]},{\"rate\":100,\"range\":[27,30]}]},{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":43,\"range\":[50,175]},{\"rate\":73,\"range\":[175,225]},{\"rate\":85,\"range\":[225,275]},{\"rate\":90,\"range\":[275,325]},{\"rate\":94,\"range\":[325,375]},{\"rate\":97,\"range\":[375,425]},{\"rate\":99,\"range\":[425,475]},{\"rate\":100,\"range\":[450,500]}]}],\"title\":\"超级碎片礼包\",\"description\":[\"每日首开价格\",\"礼包价格\"],\"rewardInfor\":\"购买后可活动以下奖励#镰刀碎片:8~30个#金鲤鱼50~500个\"}]",
+    "f7": "[{\"index\":3,\"indexType\":0,\"getType\":1,\"lastOrderIndex\":99,\"limit\":1,\"cost\":0,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[10,10]}]}],\"rewardInfor\":\"免费领取#领取后可活动以下奖励:#金鲤鱼10个\"},{\"index\":4,\"indexType\":0,\"getType\":2,\"lastOrderIndex\":3,\"limit\":1,\"cost\":10,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[20,20]}]}],\"rewardInfor\":\"消耗10金币购买#购买后可活动以下奖励:#金鲤鱼20个\"},{\"index\":5,\"indexType\":0,\"getType\":2,\"lastOrderIndex\":4,\"limit\":1,\"cost\":50,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[110,110]}]}],\"rewardInfor\":\"消耗50金币购买#购买后可活动以下奖励:#金鲤鱼110个\"},{\"index\":6,\"indexType\":0,\"getType\":2,\"lastOrderIndex\":5,\"limit\":1,\"cost\":100,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[230,230]}]}],\"rewardInfor\":\"消耗100金币购买#购买后可活动以下奖励:#金鲤鱼230个\"},{\"index\":7,\"indexType\":0,\"getType\":2,\"lastOrderIndex\":6,\"limit\":1,\"cost\":200,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[480,480]}]}],\"rewardInfor\":\"消耗200金币购买#购买后可活动以下奖励:#金鲤鱼480个\"},{\"index\":8,\"indexType\":0,\"getType\":2,\"lastOrderIndex\":7,\"limit\":1,\"cost\":500,\"chip\":[{\"id\":80,\"chipIndex\":96,\"type\":17,\"code\":14100264,\"rateData\":[{\"rate\":100,\"range\":[1200,1200]}]}],\"rewardInfor\":\"消耗500金币购买#购买后可活动以下奖励:#金鲤鱼1200个\"}]",
+    "f8": "[{\"index\":9,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":12,\"amount\":5}],\"award\":[21401347]},{\"index\":10,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":12,\"amount\":10}],\"award\":[21401348]},{\"index\":11,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":12,\"amount\":20}],\"award\":[21401349]}]",
+    "f9": "{\"index\":13,\"indexType\":3,\"getType\":1,\"limit\":1,\"keys\":[{\"chipIndex\":12,\"amount\":100}],\"award\":[21401393],\"heroID\":11120004}",
+    "f10": "{\"index\":12,\"indexType\":3,\"getType\":4}"
+  },
+  {
+    "id": "00061A82",
+    "name": "冰龙出世",
+    "tName": "冰龙出世",
+    "desc": "1.花费金币购买冰屑礼包及超级冰屑礼包进行抽奖，可获得冰屑，每日首次抽奖半价优惠。\n2.冰屑可用于兑换冰轮丸原刃及特别礼包，冰轮丸限兑一次，特别礼包无限兑换。\n3.兑换冰轮丸成功后，多余的冰屑可以换取右边三个档次的特别礼包。",
+    "tip": "1",
+    "price": 0,
+    "imageID": 400002,
+    "f6": "[{\"index\":0,\"indexType\":0,\"getType\":2,\"limit\":1,\"cost\":[50,100],\"chip\":[{\"id\":0,\"chipIndex\":6,\"type\":17,\"code\":14100281,\"rateData\":[{\"rate\":90,\"range\":[1,1]},{\"rate\":99,\"range\":[2,2]},{\"rate\":100,\"range\":[3,3]}]}],\"title\":\"冰屑礼包\",\"description\":[\"每日首开价格\",\"礼包价格\"],\"rewardInfor\":\"购买后可获得以下奖励#冰屑:0~3个\"},{\"index\":1,\"indexType\":0,\"getType\":2,\"limit\":1,\"cost\":[500,1000],\"chip\":[{\"id\":0,\"chipIndex\":6,\"type\":17,\"code\":14100281,\"rateData\":[{\"rate\":30,\"range\":[8,9]},{\"rate\":70,\"range\":[10,11]},{\"rate\":94,\"range\":[12,15]},{\"rate\":99,\"range\":[16,19]},{\"rate\":100,\"range\":[20,30]}]}],\"title\":\"超级冰屑礼包\",\"description\":[\"每日首开价格\",\"礼包价格\"],\"rewardInfor\":\"购买后可获得以下奖励#冰屑:8~30个\"}]",
+    "f7": "[]",
+    "f8": "[{\"index\":2,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":6,\"amount\":5}],\"award\":[21401347]},{\"index\":3,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":6,\"amount\":10}],\"award\":[21401348]},{\"index\":4,\"indexType\":3,\"getType\":1,\"keys\":[{\"chipIndex\":6,\"amount\":20}],\"award\":[21401349]}]",
+    "f9": "{\"index\":5,\"indexType\":3,\"getType\":1,\"limit\":1,\"keys\":[{\"chipIndex\":6,\"amount\":128}],\"award\":[21401439],\"heroID\":2000154}",
+    "f10": "{\"index\":6,\"indexType\":3,\"getType\":4}"
+  }
+]

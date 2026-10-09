@@ -1,0 +1,4454 @@
+[
+  {
+    "id": "00000001",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000002",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000003",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000004",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000005",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000006",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000007",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000008",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000009",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000000A",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000000B",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000000C",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000000D",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000000E",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000000F",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000010",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000011",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000012",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000013",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000014",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000015",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000016",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000017",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000018",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000019",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000001A",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000001B",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000001C",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000001D",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000001E",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000001F",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000020",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000021",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000022",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000023",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000024",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000025",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000026",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000027",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000028",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000029",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000002A",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000002B",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000002C",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000002D",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000002E",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000002F",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000030",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000031",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000032",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000033",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000034",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000035",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000036",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000037",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000038",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000039",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000003A",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000003B",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000003C",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000003D",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000003E",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000003F",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000040",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000041",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000042",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000043",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000044",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000045",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000046",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000047",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000048",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000049",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000004A",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000004B",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000004C",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000004D",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000004E",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000004F",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000050",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000051",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000052",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000053",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000054",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000055",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000056",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000057",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000058",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000059",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000005A",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000005B",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000005C",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000005D",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000005E",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000005F",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000060",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000061",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000062",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000063",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000064",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000065",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000066",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000067",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000068",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000069",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000006A",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000006B",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000006C",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000006D",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000006E",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000006F",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000070",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000071",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000072",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000073",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000074",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000075",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000076",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000077",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000078",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000079",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000007A",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000007B",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000007C",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000007D",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000007E",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000007F",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000080",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000081",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000082",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000083",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000084",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000085",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000086",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000087",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000088",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000089",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000008A",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000008B",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000008C",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000008D",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000008E",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000008F",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000090",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000091",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000092",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000093",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000094",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000095",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000096",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000097",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000098",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000099",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000009A",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000009B",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000009C",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000009D",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000009E",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000009F",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A0",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A1",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A2",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000A3",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000A4",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000A5",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A6",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A7",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A8",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000A9",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000AA",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000AB",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000AC",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000AD",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000AE",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000AF",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000B0",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000B1",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000B2",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000B3",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000B4",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000B5",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000B6",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000B7",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000B8",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000B9",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000BA",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000BB",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000BC",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000BD",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000BE",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000BF",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000C0",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000C1",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000C2",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000C3",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000C4",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000C5",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000C6",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000C7",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000C8",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000C9",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000CA",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000CB",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000CC",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000CD",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000CE",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000CF",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D0",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D1",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D2",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D3",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000D4",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000D5",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000D6",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D7",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D8",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000D9",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000DA",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000DB",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000DC",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000DD",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000DE",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000DF",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E0",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E1",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000E2",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000E3",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000E4",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E5",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E6",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E7",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000E8",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000E9",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000EA",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000EB",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000EC",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000ED",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000EE",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000EF",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F0",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F1",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F2",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000F3",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000F4",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000F5",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000F6",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F7",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F8",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000F9",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000FA",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000FB",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000FC",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000000FD",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000FE",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000000FF",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000100",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000101",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000102",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000103",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000104",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000105",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000106",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000107",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000108",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000109",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000010A",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000010B",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000010C",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000010D",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000010E",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000010F",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000110",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000111",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000112",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000113",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000114",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000115",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000116",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000117",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000118",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000119",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000011A",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000011B",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000011C",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000011D",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000011E",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000011F",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000120",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000121",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000122",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000123",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000124",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000125",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000126",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000127",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000128",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000129",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000012A",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000012B",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000012C",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000012D",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000012E",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000012F",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000130",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000131",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000132",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000133",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000134",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000135",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000136",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000137",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000138",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000139",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000013A",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000013B",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000013C",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000013D",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000013E",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000013F",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000140",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000141",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000142",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000143",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000144",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000145",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000146",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000147",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000148",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000149",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000014A",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000014B",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000014C",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000014D",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000014E",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000014F",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000150",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000151",
+    "tips": "White Chest contains: \\n 1 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000152",
+    "tips": "Green Chest contains: \\n 2 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000153",
+    "tips": "Blue Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000154",
+    "tips": "Purple Chest contains: \\n 3 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000155",
+    "tips": "Golden Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000156",
+    "tips": "Red Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000157",
+    "tips": "Orange Chest contains: \\n 7 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000158",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000159",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000015A",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000015B",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000015C",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000015D",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000015E",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000015F",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000160",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000161",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000162",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000163",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000164",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000165",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000166",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000167",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000168",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000169",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000016A",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000016B",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000016C",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000016D",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000016E",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000016F",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000170",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000171",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000172",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000173",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000174",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000175",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000176",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000177",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000178",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000179",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000017A",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000017B",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000017C",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000017D",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000017E",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000017F",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000180",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000181",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000182",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000183",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000184",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000185",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000186",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000187",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000188",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000189",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000018A",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000018B",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000018C",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000018D",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000018E",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000018F",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000190",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000191",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000192",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000193",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000194",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000195",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000196",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000197",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000198",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "00000199",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000019A",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000019B",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000019C",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000019D",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000019E",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "0000019F",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001A0",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001A1",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001A2",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001A3",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001A4",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001A5",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001A6",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001A7",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001A8",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001A9",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001AA",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001AB",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001AC",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001AD",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001AE",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001AF",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B0",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B1",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B2",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B3",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001B4",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001B5",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001B6",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B7",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B8",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001B9",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001BA",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001BB",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001BC",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001BD",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001BE",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001BF",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C0",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C1",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001C2",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001C3",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001C4",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C5",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C6",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C7",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001C8",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001C9",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001CA",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001CB",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001CC",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001CD",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001CE",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001CF",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D0",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D1",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D2",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001D3",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001D4",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001D5",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001D6",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D7",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D8",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001D9",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001DA",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001DB",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001DC",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001DD",
+    "tips": "White Chest contains: \\n 3 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001DE",
+    "tips": "Green Chest contains: \\n 4 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001DF",
+    "tips": "Blue Chest contains: \\n 6 Blue Equipment Material Chest"
+  },
+  {
+    "id": "000001E0",
+    "tips": "Purple Chest contains: \\n 5 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E1",
+    "tips": "Golden Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E2",
+    "tips": "Red Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E3",
+    "tips": "Orange Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E4",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E5",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E6",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001E7",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001E8",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001E9",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001EA",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001EB",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001EC",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001ED",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001EE",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001EF",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F0",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F1",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F2",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001F3",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001F4",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001F5",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F6",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F7",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F8",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001F9",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001FA",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001FB",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000001FC",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001FD",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001FE",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000001FF",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000200",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000201",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000202",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000203",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000204",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000205",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000206",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000207",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000208",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000209",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000020A",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000020B",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000020C",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000020D",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000020E",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000020F",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000210",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000211",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000212",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000213",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000214",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000215",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000216",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000217",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000218",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000219",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000021A",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000021B",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000021C",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000021D",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000021E",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000021F",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000220",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000221",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000222",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000223",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000224",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000225",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000226",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000227",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000228",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000229",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000022A",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000022B",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000022C",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000022D",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000022E",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000022F",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000230",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000231",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000232",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000233",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000234",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000235",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000236",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000237",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000238",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000239",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000023A",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000023B",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000023C",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000023D",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000023E",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000023F",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000240",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000241",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000242",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000243",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000244",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000245",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000246",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000247",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000248",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000249",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000024A",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000024B",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000024C",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000024D",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000024E",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000024F",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000250",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000251",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000252",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000253",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000254",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000255",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000256",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000257",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000258",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000259",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000025A",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000025B",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000025C",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000025D",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000025E",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000025F",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000260",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000261",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000262",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000263",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000264",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000265",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000266",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000267",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000268",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000269",
+    "tips": "White Chest contains: \\n 4 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000026A",
+    "tips": "Green Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000026B",
+    "tips": "Blue Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000026C",
+    "tips": "Purple Chest contains: \\n 6 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000026D",
+    "tips": "Golden Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000026E",
+    "tips": "Red Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000026F",
+    "tips": "Orange Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000270",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000271",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000272",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000273",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000274",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000275",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000276",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000277",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000278",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000279",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000027A",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000027B",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000027C",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000027D",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000027E",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000027F",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000280",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000281",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000282",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000283",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000284",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000285",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000286",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000287",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000288",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000289",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000028A",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000028B",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000028C",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000028D",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000028E",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000028F",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000290",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000291",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000292",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000293",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000294",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000295",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000296",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000297",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000298",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000299",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000029A",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000029B",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000029C",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000029D",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000029E",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000029F",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A0",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A1",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002A2",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002A3",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002A4",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A5",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A6",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A7",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002A8",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002A9",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002AA",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002AB",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002AC",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002AD",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002AE",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002AF",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B0",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B1",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B2",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002B3",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002B4",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002B5",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002B6",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B7",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B8",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002B9",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002BA",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002BB",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002BC",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002BD",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002BE",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002BF",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002C0",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C1",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C2",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C3",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C4",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002C5",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002C6",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002C7",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C8",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002C9",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002CA",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002CB",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002CC",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002CD",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002CE",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002CF",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D0",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D1",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D2",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002D3",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002D4",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002D5",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D6",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D7",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D8",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002D9",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002DA",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002DB",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002DC",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002DD",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002DE",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002DF",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002E0",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002E1",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002E2",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002E3",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002E4",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002E5",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002E6",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002E7",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002E8",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002E9",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002EA",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002EB",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002EC",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002ED",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002EE",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002EF",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002F0",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002F1",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002F2",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002F3",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002F4",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002F5",
+    "tips": "White Chest contains: \\n 6 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002F6",
+    "tips": "Green Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002F7",
+    "tips": "Blue Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002F8",
+    "tips": "Purple Chest contains: \\n 8 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002F9",
+    "tips": "Golden Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002FA",
+    "tips": "Red Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002FB",
+    "tips": "Orange Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000002FC",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002FD",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002FE",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000002FF",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000300",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000301",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000302",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000303",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000304",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000305",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000306",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000307",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000308",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000309",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000030A",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000030B",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000030C",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000030D",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000030E",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000030F",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000310",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000311",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000312",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000313",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000314",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000315",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000316",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000317",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000318",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000319",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000031A",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000031B",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000031C",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000031D",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000031E",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000031F",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000320",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000321",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000322",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000323",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000324",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000325",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000326",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000327",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000328",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000329",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000032A",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000032B",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000032C",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000032D",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000032E",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000032F",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000330",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000331",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000332",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000333",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000334",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000335",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000336",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000337",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000338",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000339",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000033A",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000033B",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000033C",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000033D",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000033E",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000033F",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000340",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000341",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000342",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000343",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000344",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000345",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000346",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000347",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000348",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000349",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000034A",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000034B",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000034C",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000034D",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000034E",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000034F",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000350",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000351",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000352",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000353",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000354",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000355",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000356",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000357",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000358",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000359",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000035A",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000035B",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000035C",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000035D",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000035E",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000035F",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000360",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000361",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000362",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000363",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000364",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000365",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000366",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000367",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000368",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000369",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000036A",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000036B",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000036C",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000036D",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000036E",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000036F",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000370",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000371",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000372",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000373",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000374",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000375",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000376",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000377",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000378",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000379",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000037A",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000037B",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000037C",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000037D",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000037E",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000037F",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000380",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000381",
+    "tips": "White Chest contains: \\n 8 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000382",
+    "tips": "Green Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000383",
+    "tips": "Blue Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000384",
+    "tips": "Purple Chest contains: \\n 10 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000385",
+    "tips": "Golden Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000386",
+    "tips": "Red Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000387",
+    "tips": "Orange Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000388",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000389",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000038A",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000038B",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000038C",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000038D",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000038E",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000038F",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000390",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000391",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000392",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000393",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000394",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000395",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000396",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000397",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000398",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000399",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000039A",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000039B",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000039C",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000039D",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000039E",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000039F",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003A0",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A1",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A2",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A3",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A4",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003A5",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003A6",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003A7",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A8",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003A9",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003AA",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003AB",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003AC",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003AD",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003AE",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003AF",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B0",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B1",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B2",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003B3",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003B4",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003B5",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B6",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B7",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B8",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003B9",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003BA",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003BB",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003BC",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003BD",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003BE",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003BF",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003C0",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003C1",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003C2",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003C3",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003C4",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003C5",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003C6",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003C7",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003C8",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003C9",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003CA",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003CB",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003CC",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003CD",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003CE",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003CF",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003D0",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003D1",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003D2",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003D3",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003D4",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003D5",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003D6",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003D7",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003D8",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003D9",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003DA",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003DB",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003DC",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003DD",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003DE",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003DF",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E0",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E1",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E2",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E3",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003E4",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003E5",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003E6",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E7",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E8",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003E9",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003EA",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003EB",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003EC",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003ED",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003EE",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003EF",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F0",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F1",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003F2",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003F3",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003F4",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F5",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F6",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F7",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003F8",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003F9",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003FA",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "000003FB",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003FC",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003FD",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003FE",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "000003FF",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000400",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000401",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000402",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000403",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000404",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000405",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000406",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000407",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000408",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000409",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000040A",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000040B",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000040C",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000040D",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000040E",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "0000040F",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000410",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000411",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000412",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000413",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000414",
+    "tips": "White Chest contains: \\n 10 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000415",
+    "tips": "Green Chest contains: \\n 12 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000416",
+    "tips": "Blue Chest contains: \\n 14 Purple Equipment Material Chest"
+  },
+  {
+    "id": "00000417",
+    "tips": "Purple Chest contains: \\n 12 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000418",
+    "tips": "Golden Chest contains: \\n 14 Golden Equipment Material Chest"
+  },
+  {
+    "id": "00000419",
+    "tips": "Red Chest contains: \\n 16 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000041A",
+    "tips": "Orange Chest contains: \\n 18 Golden Equipment Material Chest"
+  },
+  {
+    "id": "0000041B",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000041C",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000041D",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000041E",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "0000041F",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000420",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000421",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000422",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000423",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000424",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000425",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000426",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000427",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000428",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000429",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000042A",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000042B",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000042C",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "0000042D",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "0000042E",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "0000042F",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000430",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000431",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000432",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000433",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000434",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000435",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000436",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000437",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000438",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000439",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000043A",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "0000043B",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "0000043C",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "0000043D",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "0000043E",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000043F",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000440",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000441",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000442",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000443",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000444",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000445",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000446",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000447",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000448",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000449",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "0000044A",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "0000044B",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "0000044C",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000044D",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000044E",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "0000044F",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000450",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000451",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000452",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  },
+  {
+    "id": "00000453",
+    "tips": "白色宝箱可以获得:\\n十个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000454",
+    "tips": "绿色宝箱可以获得:\\n十二个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000455",
+    "tips": "蓝色宝箱可以获得:\\n十四个紫色装备材料宝箱"
+  },
+  {
+    "id": "00000456",
+    "tips": "紫色宝箱可以获得:\\n十二个金色装备材料宝箱"
+  },
+  {
+    "id": "00000457",
+    "tips": "金色宝箱可以获得:\\n十四个金色装备材料宝箱"
+  },
+  {
+    "id": "00000458",
+    "tips": "红色宝箱可以获得:\\n十六个金色装备材料宝箱"
+  },
+  {
+    "id": "00000459",
+    "tips": "橙色宝箱可以获得:\\n十八个金色装备材料宝箱"
+  }
+]

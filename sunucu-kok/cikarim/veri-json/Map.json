@@ -1,0 +1,20 @@
+[
+  {
+    "id": "01513821",
+    "name": "Soul Society",
+    "type": 2,
+    "openTask": 16100029
+  },
+  {
+    "id": "01513822",
+    "name": "Human World",
+    "type": 1,
+    "openTask": 0
+  },
+  {
+    "id": "01513823",
+    "name": "Hueco Mundo",
+    "type": 3,
+    "openTask": 16100069
+  }
+]

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "00000001",
+    "cost": 100,
+    "phyAtk": 0.007,
+    "magicAtk": 0.007,
+    "phyDef": 0.007,
+    "magicDef": 0.007,
+    "hp": 0.007,
+    "speed": 0.007
+  },
+  {
+    "id": "00000002",
+    "cost": 180,
+    "phyAtk": 0.014,
+    "magicAtk": 0.014,
+    "phyDef": 0.014,
+    "magicDef": 0.014,
+    "hp": 0.014,
+    "speed": 0.014
+  },
+  {
+    "id": "00000003",
+    "cost": 260,
+    "phyAtk": 0.021,
+    "magicAtk": 0.021,
+    "phyDef": 0.021,
+    "magicDef": 0.021,
+    "hp": 0.021,
+    "speed": 0.021
+  },
+  {
+    "id": "00000004",
+    "cost": 340,
+    "phyAtk": 0.028,
+    "magicAtk": 0.028,
+    "phyDef": 0.028,
+    "magicDef": 0.028,
+    "hp": 0.028,
+    "speed": 0.028
+  },
+  {
+    "id": "00000005",
+    "cost": 420,
+    "phyAtk": 0.035,
+    "magicAtk": 0.035,
+    "phyDef": 0.035,
+    "magicDef": 0.035,
+    "hp": 0.035,
+    "speed": 0.035
+  },
+  {
+    "id": "00000006",
+    "cost": 500,
+    "phyAtk": 0.042,
+    "magicAtk": 0.042,
+    "phyDef": 0.042,
+    "magicDef": 0.042,
+    "hp": 0.042,
+    "speed": 0.042
+  },
+  {
+    "id": "00000007",
+    "cost": 580,
+    "phyAtk": 0.049,
+    "magicAtk": 0.049,
+    "phyDef": 0.049,
+    "magicDef": 0.049,
+    "hp": 0.049,
+    "speed": 0.049
+  },
+  {
+    "id": "00000008",
+    "cost": 660,
+    "phyAtk": 0.056,
+    "magicAtk": 0.056,
+    "phyDef": 0.056,
+    "magicDef": 0.056,
+    "hp": 0.056,
+    "speed": 0.056
+  },
+  {
+    "id": "00000009",
+    "cost": 740,
+    "phyAtk": 0.063,
+    "magicAtk": 0.063,
+    "phyDef": 0.063,
+    "magicDef": 0.063,
+    "hp": 0.063,
+    "speed": 0.063
+  },
+  {
+    "id": "0000000A",
+    "cost": 820,
+    "phyAtk": 0.07,
+    "magicAtk": 0.07,
+    "phyDef": 0.07,
+    "magicDef": 0.07,
+    "hp": 0.07,
+    "speed": 0.07
+  },
+  {
+    "id": "0000000B",
+    "cost": 900,
+    "phyAtk": 0.077,
+    "magicAtk": 0.077,
+    "phyDef": 0.077,
+    "magicDef": 0.077,
+    "hp": 0.077,
+    "speed": 0.077
+  },
+  {
+    "id": "0000000C",
+    "cost": 980,
+    "phyAtk": 0.084,
+    "magicAtk": 0.084,
+    "phyDef": 0.084,
+    "magicDef": 0.084,
+    "hp": 0.084,
+    "speed": 0.084
+  },
+  {
+    "id": "0000000D",
+    "cost": 1060,
+    "phyAtk": 0.091,
+    "magicAtk": 0.091,
+    "phyDef": 0.091,
+    "magicDef": 0.091,
+    "hp": 0.091,
+    "speed": 0.091
+  },
+  {
+    "id": "0000000E",
+    "cost": 1140,
+    "phyAtk": 0.098,
+    "magicAtk": 0.098,
+    "phyDef": 0.098,
+    "magicDef": 0.098,
+    "hp": 0.098,
+    "speed": 0.098
+  },
+  {
+    "id": "0000000F",
+    "cost": 1220,
+    "phyAtk": 0.105,
+    "magicAtk": 0.105,
+    "phyDef": 0.105,
+    "magicDef": 0.105,
+    "hp": 0.105,
+    "speed": 0.105
+  },
+  {
+    "id": "00000010",
+    "cost": 1300,
+    "phyAtk": 0.112,
+    "magicAtk": 0.112,
+    "phyDef": 0.112,
+    "magicDef": 0.112,
+    "hp": 0.112,
+    "speed": 0.112
+  },
+  {
+    "id": "00000011",
+    "cost": 1380,
+    "phyAtk": 0.119,
+    "magicAtk": 0.119,
+    "phyDef": 0.119,
+    "magicDef": 0.119,
+    "hp": 0.119,
+    "speed": 0.119
+  },
+  {
+    "id": "00000012",
+    "cost": 1460,
+    "phyAtk": 0.126,
+    "magicAtk": 0.126,
+    "phyDef": 0.126,
+    "magicDef": 0.126,
+    "hp": 0.126,
+    "speed": 0.126
+  },
+  {
+    "id": "00000013",
+    "cost": 1540,
+    "phyAtk": 0.133,
+    "magicAtk": 0.133,
+    "phyDef": 0.133,
+    "magicDef": 0.133,
+    "hp": 0.133,
+    "speed": 0.133
+  },
+  {
+    "id": "00000014",
+    "cost": 1920,
+    "phyAtk": 0.14,
+    "magicAtk": 0.14,
+    "phyDef": 0.14,
+    "magicDef": 0.14,
+    "hp": 0.14,
+    "speed": 0.14
+  },
+  {
+    "id": "00000015",
+    "cost": 2015,
+    "phyAtk": 0.147,
+    "magicAtk": 0.147,
+    "phyDef": 0.147,
+    "magicDef": 0.147,
+    "hp": 0.147,
+    "speed": 0.147
+  },
+  {
+    "id": "00000016",
+    "cost": 2110,
+    "phyAtk": 0.154,
+    "magicAtk": 0.154,
+    "phyDef": 0.154,
+    "magicDef": 0.154,
+    "hp": 0.154,
+    "speed": 0.154
+  },
+  {
+    "id": "00000017",
+    "cost": 2205,
+    "phyAtk": 0.161,
+    "magicAtk": 0.161,
+    "phyDef": 0.161,
+    "magicDef": 0.161,
+    "hp": 0.161,
+    "speed": 0.161
+  },
+  {
+    "id": "00000018",
+    "cost": 2300,
+    "phyAtk": 0.168,
+    "magicAtk": 0.168,
+    "phyDef": 0.168,
+    "magicDef": 0.168,
+    "hp": 0.168,
+    "speed": 0.168
+  },
+  {
+    "id": "00000019",
+    "cost": 2395,
+    "phyAtk": 0.175,
+    "magicAtk": 0.175,
+    "phyDef": 0.175,
+    "magicDef": 0.175,
+    "hp": 0.175,
+    "speed": 0.175
+  },
+  {
+    "id": "0000001A",
+    "cost": 2490,
+    "phyAtk": 0.182,
+    "magicAtk": 0.182,
+    "phyDef": 0.182,
+    "magicDef": 0.182,
+    "hp": 0.182,
+    "speed": 0.182
+  },
+  {
+    "id": "0000001B",
+    "cost": 2585,
+    "phyAtk": 0.189,
+    "magicAtk": 0.189,
+    "phyDef": 0.189,
+    "magicDef": 0.189,
+    "hp": 0.189,
+    "speed": 0.189
+  },
+  {
+    "id": "0000001C",
+    "cost": 2680,
+    "phyAtk": 0.196,
+    "magicAtk": 0.196,
+    "phyDef": 0.196,
+    "magicDef": 0.196,
+    "hp": 0.196,
+    "speed": 0.196
+  },
+  {
+    "id": "0000001D",
+    "cost": 2775,
+    "phyAtk": 0.203,
+    "magicAtk": 0.203,
+    "phyDef": 0.203,
+    "magicDef": 0.203,
+    "hp": 0.203,
+    "speed": 0.203
+  },
+  {
+    "id": "0000001E",
+    "cost": 2870,
+    "phyAtk": 0.21,
+    "magicAtk": 0.21,
+    "phyDef": 0.21,
+    "magicDef": 0.21,
+    "hp": 0.21,
+    "speed": 0.21
+  },
+  {
+    "id": "0000001F",
+    "cost": 2965,
+    "phyAtk": 0.219,
+    "magicAtk": 0.219,
+    "phyDef": 0.219,
+    "magicDef": 0.219,
+    "hp": 0.219,
+    "speed": 0.219
+  },
+  {
+    "id": "00000020",
+    "cost": 3060,
+    "phyAtk": 0.228,
+    "magicAtk": 0.228,
+    "phyDef": 0.228,
+    "magicDef": 0.228,
+    "hp": 0.228,
+    "speed": 0.228
+  },
+  {
+    "id": "00000021",
+    "cost": 3155,
+    "phyAtk": 0.237,
+    "magicAtk": 0.237,
+    "phyDef": 0.237,
+    "magicDef": 0.237,
+    "hp": 0.237,
+    "speed": 0.237
+  },
+  {
+    "id": "00000022",
+    "cost": 3250,
+    "phyAtk": 0.246,
+    "magicAtk": 0.246,
+    "phyDef": 0.246,
+    "magicDef": 0.246,
+    "hp": 0.246,
+    "speed": 0.246
+  },
+  {
+    "id": "00000023",
+    "cost": 4045,
+    "phyAtk": 0.255,
+    "magicAtk": 0.255,
+    "phyDef": 0.255,
+    "magicDef": 0.255,
+    "hp": 0.255,
+    "speed": 0.255
+  },
+  {
+    "id": "00000024",
+    "cost": 4160,
+    "phyAtk": 0.264,
+    "magicAtk": 0.264,
+    "phyDef": 0.264,
+    "magicDef": 0.264,
+    "hp": 0.264,
+    "speed": 0.264
+  },
+  {
+    "id": "00000025",
+    "cost": 4275,
+    "phyAtk": 0.273,
+    "magicAtk": 0.273,
+    "phyDef": 0.273,
+    "magicDef": 0.273,
+    "hp": 0.273,
+    "speed": 0.273
+  },
+  {
+    "id": "00000026",
+    "cost": 4390,
+    "phyAtk": 0.282,
+    "magicAtk": 0.282,
+    "phyDef": 0.282,
+    "magicDef": 0.282,
+    "hp": 0.282,
+    "speed": 0.282
+  },
+  {
+    "id": "00000027",
+    "cost": 4505,
+    "phyAtk": 0.291,
+    "magicAtk": 0.291,
+    "phyDef": 0.291,
+    "magicDef": 0.291,
+    "hp": 0.291,
+    "speed": 0.291
+  },
+  {
+    "id": "00000028",
+    "cost": 4620,
+    "phyAtk": 0.3,
+    "magicAtk": 0.3,
+    "phyDef": 0.3,
+    "magicDef": 0.3,
+    "hp": 0.3,
+    "speed": 0.3
+  },
+  {
+    "id": "00000029",
+    "cost": 4735,
+    "phyAtk": 0.309,
+    "magicAtk": 0.309,
+    "phyDef": 0.309,
+    "magicDef": 0.309,
+    "hp": 0.309,
+    "speed": 0.309
+  },
+  {
+    "id": "0000002A",
+    "cost": 4850,
+    "phyAtk": 0.318,
+    "magicAtk": 0.318,
+    "phyDef": 0.318,
+    "magicDef": 0.318,
+    "hp": 0.318,
+    "speed": 0.318
+  },
+  {
+    "id": "0000002B",
+    "cost": 4965,
+    "phyAtk": 0.327,
+    "magicAtk": 0.327,
+    "phyDef": 0.327,
+    "magicDef": 0.327,
+    "hp": 0.327,
+    "speed": 0.327
+  },
+  {
+    "id": "0000002C",
+    "cost": 5080,
+    "phyAtk": 0.336,
+    "magicAtk": 0.336,
+    "phyDef": 0.336,
+    "magicDef": 0.336,
+    "hp": 0.336,
+    "speed": 0.336
+  },
+  {
+    "id": "0000002D",
+    "cost": 5195,
+    "phyAtk": 0.345,
+    "magicAtk": 0.345,
+    "phyDef": 0.345,
+    "magicDef": 0.345,
+    "hp": 0.345,
+    "speed": 0.345
+  },
+  {
+    "id": "0000002E",
+    "cost": 5310,
+    "phyAtk": 0.354,
+    "magicAtk": 0.354,
+    "phyDef": 0.354,
+    "magicDef": 0.354,
+    "hp": 0.354,
+    "speed": 0.354
+  },
+  {
+    "id": "0000002F",
+    "cost": 5425,
+    "phyAtk": 0.363,
+    "magicAtk": 0.363,
+    "phyDef": 0.363,
+    "magicDef": 0.363,
+    "hp": 0.363,
+    "speed": 0.363
+  },
+  {
+    "id": "00000030",
+    "cost": 5540,
+    "phyAtk": 0.372,
+    "magicAtk": 0.372,
+    "phyDef": 0.372,
+    "magicDef": 0.372,
+    "hp": 0.372,
+    "speed": 0.372
+  },
+  {
+    "id": "00000031",
+    "cost": 5655,
+    "phyAtk": 0.381,
+    "magicAtk": 0.381,
+    "phyDef": 0.381,
+    "magicDef": 0.381,
+    "hp": 0.381,
+    "speed": 0.381
+  },
+  {
+    "id": "00000032",
+    "cost": 5770,
+    "phyAtk": 0.39,
+    "magicAtk": 0.39,
+    "phyDef": 0.39,
+    "magicDef": 0.39,
+    "hp": 0.39,
+    "speed": 0.39
+  },
+  {
+    "id": "00000033",
+    "cost": 7670,
+    "phyAtk": 0.399,
+    "magicAtk": 0.399,
+    "phyDef": 0.399,
+    "magicDef": 0.399,
+    "hp": 0.399,
+    "speed": 0.399
+  },
+  {
+    "id": "00000034",
+    "cost": 7820,
+    "phyAtk": 0.408,
+    "magicAtk": 0.408,
+    "phyDef": 0.408,
+    "magicDef": 0.408,
+    "hp": 0.408,
+    "speed": 0.408
+  },
+  {
+    "id": "00000035",
+    "cost": 7970,
+    "phyAtk": 0.417,
+    "magicAtk": 0.417,
+    "phyDef": 0.417,
+    "magicDef": 0.417,
+    "hp": 0.417,
+    "speed": 0.417
+  },
+  {
+    "id": "00000036",
+    "cost": 8120,
+    "phyAtk": 0.426,
+    "magicAtk": 0.426,
+    "phyDef": 0.426,
+    "magicDef": 0.426,
+    "hp": 0.426,
+    "speed": 0.426
+  },
+  {
+    "id": "00000037",
+    "cost": 8270,
+    "phyAtk": 0.435,
+    "magicAtk": 0.435,
+    "phyDef": 0.435,
+    "magicDef": 0.435,
+    "hp": 0.435,
+    "speed": 0.435
+  },
+  {
+    "id": "00000038",
+    "cost": 8420,
+    "phyAtk": 0.444,
+    "magicAtk": 0.444,
+    "phyDef": 0.444,
+    "magicDef": 0.444,
+    "hp": 0.444,
+    "speed": 0.444
+  },
+  {
+    "id": "00000039",
+    "cost": 8570,
+    "phyAtk": 0.453,
+    "magicAtk": 0.453,
+    "phyDef": 0.453,
+    "magicDef": 0.453,
+    "hp": 0.453,
+    "speed": 0.453
+  },
+  {
+    "id": "0000003A",
+    "cost": 8720,
+    "phyAtk": 0.462,
+    "magicAtk": 0.462,
+    "phyDef": 0.462,
+    "magicDef": 0.462,
+    "hp": 0.462,
+    "speed": 0.462
+  },
+  {
+    "id": "0000003B",
+    "cost": 8870,
+    "phyAtk": 0.471,
+    "magicAtk": 0.471,
+    "phyDef": 0.471,
+    "magicDef": 0.471,
+    "hp": 0.471,
+    "speed": 0.471
+  },
+  {
+    "id": "0000003C",
+    "cost": 9020,
+    "phyAtk": 0.48,
+    "magicAtk": 0.48,
+    "phyDef": 0.48,
+    "magicDef": 0.48,
+    "hp": 0.48,
+    "speed": 0.48
+  },
+  {
+    "id": "0000003D",
+    "cost": 9170,
+    "phyAtk": 0.489,
+    "magicAtk": 0.489,
+    "phyDef": 0.489,
+    "magicDef": 0.489,
+    "hp": 0.489,
+    "speed": 0.489
+  },
+  {
+    "id": "0000003E",
+    "cost": 9320,
+    "phyAtk": 0.498,
+    "magicAtk": 0.498,
+    "phyDef": 0.498,
+    "magicDef": 0.498,
+    "hp": 0.498,
+    "speed": 0.498
+  },
+  {
+    "id": "0000003F",
+    "cost": 9470,
+    "phyAtk": 0.507,
+    "magicAtk": 0.507,
+    "phyDef": 0.507,
+    "magicDef": 0.507,
+    "hp": 0.507,
+    "speed": 0.507
+  },
+  {
+    "id": "00000040",
+    "cost": 9620,
+    "phyAtk": 0.516,
+    "magicAtk": 0.516,
+    "phyDef": 0.516,
+    "magicDef": 0.516,
+    "hp": 0.516,
+    "speed": 0.516
+  },
+  {
+    "id": "00000041",
+    "cost": 9770,
+    "phyAtk": 0.525,
+    "magicAtk": 0.525,
+    "phyDef": 0.525,
+    "magicDef": 0.525,
+    "hp": 0.525,
+    "speed": 0.525
+  },
+  {
+    "id": "00000042",
+    "cost": 9920,
+    "phyAtk": 0.538,
+    "magicAtk": 0.538,
+    "phyDef": 0.538,
+    "magicDef": 0.538,
+    "hp": 0.538,
+    "speed": 0.538
+  },
+  {
+    "id": "00000043",
+    "cost": 10070,
+    "phyAtk": 0.551,
+    "magicAtk": 0.551,
+    "phyDef": 0.551,
+    "magicDef": 0.551,
+    "hp": 0.551,
+    "speed": 0.551
+  },
+  {
+    "id": "00000044",
+    "cost": 10220,
+    "phyAtk": 0.564,
+    "magicAtk": 0.564,
+    "phyDef": 0.564,
+    "magicDef": 0.564,
+    "hp": 0.564,
+    "speed": 0.564
+  },
+  {
+    "id": "00000045",
+    "cost": 10370,
+    "phyAtk": 0.577,
+    "magicAtk": 0.577,
+    "phyDef": 0.577,
+    "magicDef": 0.577,
+    "hp": 0.577,
+    "speed": 0.577
+  },
+  {
+    "id": "00000046",
+    "cost": 10520,
+    "phyAtk": 0.59,
+    "magicAtk": 0.59,
+    "phyDef": 0.59,
+    "magicDef": 0.59,
+    "hp": 0.59,
+    "speed": 0.59
+  },
+  {
+    "id": "00000047",
+    "cost": 10670,
+    "phyAtk": 0.603,
+    "magicAtk": 0.603,
+    "phyDef": 0.603,
+    "magicDef": 0.603,
+    "hp": 0.603,
+    "speed": 0.603
+  },
+  {
+    "id": "00000048",
+    "cost": 10820,
+    "phyAtk": 0.616,
+    "magicAtk": 0.616,
+    "phyDef": 0.616,
+    "magicDef": 0.616,
+    "hp": 0.616,
+    "speed": 0.616
+  },
+  {
+    "id": "00000049",
+    "cost": 10970,
+    "phyAtk": 0.629,
+    "magicAtk": 0.629,
+    "phyDef": 0.629,
+    "magicDef": 0.629,
+    "hp": 0.629,
+    "speed": 0.629
+  },
+  {
+    "id": "0000004A",
+    "cost": 11120,
+    "phyAtk": 0.642,
+    "magicAtk": 0.642,
+    "phyDef": 0.642,
+    "magicDef": 0.642,
+    "hp": 0.642,
+    "speed": 0.642
+  },
+  {
+    "id": "0000004B",
+    "cost": 11270,
+    "phyAtk": 0.655,
+    "magicAtk": 0.655,
+    "phyDef": 0.655,
+    "magicDef": 0.655,
+    "hp": 0.655,
+    "speed": 0.655
+  },
+  {
+    "id": "0000004C",
+    "cost": 11420,
+    "phyAtk": 0.668,
+    "magicAtk": 0.668,
+    "phyDef": 0.668,
+    "magicDef": 0.668,
+    "hp": 0.668,
+    "speed": 0.668
+  },
+  {
+    "id": "0000004D",
+    "cost": 11570,
+    "phyAtk": 0.681,
+    "magicAtk": 0.681,
+    "phyDef": 0.681,
+    "magicDef": 0.681,
+    "hp": 0.681,
+    "speed": 0.681
+  },
+  {
+    "id": "0000004E",
+    "cost": 11720,
+    "phyAtk": 0.694,
+    "magicAtk": 0.694,
+    "phyDef": 0.694,
+    "magicDef": 0.694,
+    "hp": 0.694,
+    "speed": 0.694
+  },
+  {
+    "id": "0000004F",
+    "cost": 11870,
+    "phyAtk": 0.707,
+    "magicAtk": 0.707,
+    "phyDef": 0.707,
+    "magicDef": 0.707,
+    "hp": 0.707,
+    "speed": 0.707
+  },
+  {
+    "id": "00000050",
+    "cost": 12020,
+    "phyAtk": 0.72,
+    "magicAtk": 0.72,
+    "phyDef": 0.72,
+    "magicDef": 0.72,
+    "hp": 0.72,
+    "speed": 0.72
+  },
+  {
+    "id": "00000051",
+    "cost": 12170,
+    "phyAtk": 0.733,
+    "magicAtk": 0.733,
+    "phyDef": 0.733,
+    "magicDef": 0.733,
+    "hp": 0.733,
+    "speed": 0.733
+  },
+  {
+    "id": "00000052",
+    "cost": 12320,
+    "phyAtk": 0.746,
+    "magicAtk": 0.746,
+    "phyDef": 0.746,
+    "magicDef": 0.746,
+    "hp": 0.746,
+    "speed": 0.746
+  },
+  {
+    "id": "00000053",
+    "cost": 12470,
+    "phyAtk": 0.759,
+    "magicAtk": 0.759,
+    "phyDef": 0.759,
+    "magicDef": 0.759,
+    "hp": 0.759,
+    "speed": 0.759
+  },
+  {
+    "id": "00000054",
+    "cost": 12620,
+    "phyAtk": 0.772,
+    "magicAtk": 0.772,
+    "phyDef": 0.772,
+    "magicDef": 0.772,
+    "hp": 0.772,
+    "speed": 0.772
+  },
+  {
+    "id": "00000055",
+    "cost": 12770,
+    "phyAtk": 0.785,
+    "magicAtk": 0.785,
+    "phyDef": 0.785,
+    "magicDef": 0.785,
+    "hp": 0.785,
+    "speed": 0.785
+  },
+  {
+    "id": "00000056",
+    "cost": 15070,
+    "phyAtk": 0.799,
+    "magicAtk": 0.799,
+    "phyDef": 0.799,
+    "magicDef": 0.799,
+    "hp": 0.799,
+    "speed": 0.799
+  },
+  {
+    "id": "00000057",
+    "cost": 15245,
+    "phyAtk": 0.813,
+    "magicAtk": 0.813,
+    "phyDef": 0.813,
+    "magicDef": 0.813,
+    "hp": 0.813,
+    "speed": 0.813
+  },
+  {
+    "id": "00000058",
+    "cost": 15420,
+    "phyAtk": 0.827,
+    "magicAtk": 0.827,
+    "phyDef": 0.827,
+    "magicDef": 0.827,
+    "hp": 0.827,
+    "speed": 0.827
+  },
+  {
+    "id": "00000059",
+    "cost": 15595,
+    "phyAtk": 0.841,
+    "magicAtk": 0.841,
+    "phyDef": 0.841,
+    "magicDef": 0.841,
+    "hp": 0.841,
+    "speed": 0.841
+  },
+  {
+    "id": "0000005A",
+    "cost": 15770,
+    "phyAtk": 0.855,
+    "magicAtk": 0.855,
+    "phyDef": 0.855,
+    "magicDef": 0.855,
+    "hp": 0.855,
+    "speed": 0.855
+  },
+  {
+    "id": "0000005B",
+    "cost": 15945,
+    "phyAtk": 0.869,
+    "magicAtk": 0.869,
+    "phyDef": 0.869,
+    "magicDef": 0.869,
+    "hp": 0.869,
+    "speed": 0.869
+  },
+  {
+    "id": "0000005C",
+    "cost": 16120,
+    "phyAtk": 0.883,
+    "magicAtk": 0.883,
+    "phyDef": 0.883,
+    "magicDef": 0.883,
+    "hp": 0.883,
+    "speed": 0.883
+  },
+  {
+    "id": "0000005D",
+    "cost": 16295,
+    "phyAtk": 0.897,
+    "magicAtk": 0.897,
+    "phyDef": 0.897,
+    "magicDef": 0.897,
+    "hp": 0.897,
+    "speed": 0.897
+  },
+  {
+    "id": "0000005E",
+    "cost": 16470,
+    "phyAtk": 0.911,
+    "magicAtk": 0.911,
+    "phyDef": 0.911,
+    "magicDef": 0.911,
+    "hp": 0.911,
+    "speed": 0.911
+  },
+  {
+    "id": "0000005F",
+    "cost": 16645,
+    "phyAtk": 0.925,
+    "magicAtk": 0.925,
+    "phyDef": 0.925,
+    "magicDef": 0.925,
+    "hp": 0.925,
+    "speed": 0.925
+  },
+  {
+    "id": "00000060",
+    "cost": 16820,
+    "phyAtk": 0.939,
+    "magicAtk": 0.939,
+    "phyDef": 0.939,
+    "magicDef": 0.939,
+    "hp": 0.939,
+    "speed": 0.939
+  },
+  {
+    "id": "00000061",
+    "cost": 16995,
+    "phyAtk": 0.953,
+    "magicAtk": 0.953,
+    "phyDef": 0.953,
+    "magicDef": 0.953,
+    "hp": 0.953,
+    "speed": 0.953
+  },
+  {
+    "id": "00000062",
+    "cost": 17170,
+    "phyAtk": 0.967,
+    "magicAtk": 0.967,
+    "phyDef": 0.967,
+    "magicDef": 0.967,
+    "hp": 0.967,
+    "speed": 0.967
+  },
+  {
+    "id": "00000063",
+    "cost": 17345,
+    "phyAtk": 0.981,
+    "magicAtk": 0.981,
+    "phyDef": 0.981,
+    "magicDef": 0.981,
+    "hp": 0.981,
+    "speed": 0.981
+  },
+  {
+    "id": "00000064",
+    "cost": 17520,
+    "phyAtk": 1,
+    "magicAtk": 1,
+    "phyDef": 1,
+    "magicDef": 1,
+    "hp": 1,
+    "speed": 1
+  }
+]

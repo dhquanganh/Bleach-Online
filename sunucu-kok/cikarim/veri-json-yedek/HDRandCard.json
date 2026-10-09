@@ -1,0 +1,27 @@
+[
+  {
+    "id": "0007C831",
+    "name": "充值排行",
+    "tName": "充值排行",
+    "desc": "1. Les joueurs reçoivent une Carte Dorée toutes les 12 heures.\n2. Retourner une carte dorée consomme 100 Or pour obtenir 2 points,\ntous les 100 points vous pouvez retourner une carte gratuitement. \n3. Lorsque vous retournez une carte dorée vous pouvez éliminer les récompenses qui ne vous plaisent pas,\nchaque élimination coûte 25 Or, vous pouvez en élimer 2 maximum.",
+    "tip": "2",
+    "price": 0,
+    "imageID": 510001,
+    "selectCost": "[[{\"rate\":30,\"award\":21401533},{\"rate\":30,\"award\":21401534},{\"rate\":20,\"award\":21401535},{\"rate\":10,\"award\":21401536},{\"rate\":10,\"award\":21401537}],[{\"rate\":30,\"award\":21401538},{\"rate\":20,\"award\":21401539},{\"rate\":30,\"award\":21401540},{\"rate\":10,\"award\":21401543},{\"rate\":10,\"award\":21401544}],[{\"rate\":30,\"award\":21401541},{\"rate\":30,\"award\":21401534},{\"rate\":20,\"award\":21401535},{\"rate\":10,\"award\":21401542},{\"rate\":10,\"award\":21401537}],[{\"rate\":30,\"award\":21401538},{\"rate\":20,\"award\":21401539},{\"rate\":30,\"award\":21401540},{\"rate\":10,\"award\":21401545},{\"rate\":10,\"award\":21401544}],[{\"rate\":30,\"award\":21401541},{\"rate\":30,\"award\":21401534},{\"rate\":20,\"award\":21401535},{\"rate\":10,\"award\":21401542},{\"rate\":10,\"award\":21401537}],[{\"rate\":30,\"award\":21401538},{\"rate\":20,\"award\":21401539},{\"rate\":30,\"award\":21401540},{\"rate\":10,\"award\":21401545},{\"rate\":10,\"award\":21401544}],[{\"rate\":30,\"award\":21401533},{\"rate\":30,\"award\":21401534},{\"rate\":20,\"award\":21401535},{\"rate\":10,\"award\":21401536},{\"rate\":10,\"award\":21401537}],[{\"rate\":30,\"award\":21401538},{\"rate\":20,\"award\":21401539},{\"rate\":30,\"award\":21401540},{\"rate\":10,\"award\":21401543},{\"rate\":10,\"award\":21401544}],[{\"rate\":30,\"award\":21401541},{\"rate\":30,\"award\":21401534},{\"rate\":20,\"award\":21401535},{\"rate\":10,\"award\":21401542},{\"rate\":10,\"award\":21401537}],[{\"rate\":30,\"award\":21401538},{\"rate\":20,\"award\":21401539},{\"rate\":30,\"award\":21401540},{\"rate\":10,\"award\":21401545},{\"rate\":10,\"award\":21401544}]]",
+    "deleteCost": "{\"fixAward\":21402247,\"randAward\":[{\"rate\":25,\"award\":21401550},{\"rate\":25,\"award\":21401551},{\"rate\":25,\"award\":21401552},{\"rate\":25,\"award\":21401553}]}",
+    "refreshCost": 100,
+    "canDeleteCount": 25,
+    "freeTime": 20,
+    "goldStartBtn": 2,
+    "goldRefreshbtn": "{\"index\":97,\"indexType\":3,\"getType\":4,\"condition\":100}",
+    "goldSelectBtn": 98,
+    "goldRestartBtn": 100,
+    "superStartBtn": 101,
+    "superSelectBtn": 102,
+    "superRestartBtn": 103,
+    "f18": 104,
+    "f19": 105,
+    "f20": 106,
+    "f21": "{\"prompt0\":\"CD Time: %0\",\"prompt1\":\"Chances Restantes: %0\",\"prompt2\":\"Retourner une carte dorée consomme 100 Or pour obtenir 2 points\",\"prompt3\":\"%0 Obtiens %1*%2\",\"prompt4\":\"Cliquez pour éliminer\",\"prompt5\":\"Cliquez pour annuler\",\"prompt6\":\"Confirmez pour dépensser %0 Or pour rafraîchir ?\",\"prompt7\":\"Confirmez pour dépensser %0 Or pour commencer?\",\"prompt8\":\"Or Insuffisant\",\"prompt9\":\"Consommez %0 Or\"}"
+  }
+]

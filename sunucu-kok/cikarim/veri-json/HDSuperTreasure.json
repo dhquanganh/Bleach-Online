@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00053021",
+    "name": "瀞灵宝库",
+    "tName": "",
+    "desc": "1. Vous ne pouvez utiliser que de l'Or pour acheter le Pack.\n2. Vous avez un total limité d'achat possible pour chaque Pack.\n3. Vous pouvez acheter le Pack Hõgu qu'une seule fois.\n4. Vous ne pouvez acheter qu'un seul des 4 Hõgu.",
+    "tip": "",
+    "price": 0,
+    "imageID": 340001,
+    "f6": "[{\"index\":0,\"count\":3,\"gold\":200,\"award\":[21401157],\"prompt\":\"\"},{\"index\":1,\"count\":2,\"gold\":400,\"award\":[21401158],\"prompt\":\"\"},{\"index\":2,\"count\":1,\"gold\":800,\"award\":[21401159],\"prompt\":\"\"}]",
+    "f7": "[{\"index\":3,\"count\":3,\"gold\":300,\"award\":[21401160],\"prompt\":\"\"},{\"index\":4,\"count\":2,\"gold\":600,\"award\":[21401161],\"prompt\":\"\"},{\"index\":5,\"count\":1,\"gold\":1000,\"award\":[21401162],\"prompt\":\"\"}]",
+    "f8": "[{\"totalCount\":2,\"value\":[{\"index\":6,\"count\":1,\"gold\":3500,\"award\":[21401163],\"prompt\":\"Super Pack Hõgu\",\"prompt1\":\"Contient un Hõgu qualité 8\"},{\"index\":7,\"count\":1,\"gold\":4000,\"award\":[21401164],\"prompt\":[]},{\"index\":8,\"count\":1,\"gold\":4000,\"award\":[21401165],\"prompt\":\"dfadf\"},{\"index\":9,\"count\":1,\"gold\":4000,\"award\":[21401166],\"prompt\":\"\"},{\"index\":10,\"count\":1,\"gold\":4000,\"award\":[21401167],\"prompt\":\"\"}]}]",
+    "f9": "[[\"Pack Hōgu \",\"Disponible une fois\"],[\"Hōgu Rang 6\",\"Un seul achat disponible !\"]]",
+    "f10": "[\"Super Objet de Valeur\",\"Achat Limité\",\"Hōgu Epique\"]"
+  }
+]

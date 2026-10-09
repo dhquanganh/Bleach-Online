@@ -1,0 +1,35 @@
+[
+  {
+    "id": "00989681",
+    "nameDesc": "Zanpakuto",
+    "normalCityId": 15600001,
+    "hardCityId": 15600002,
+    "nightmareCityId": 15600003,
+    "deadCityId": 15600004,
+    "chapterSwitch": "[14100592]",
+    "f6": 1,
+    "f7": "[70510019,70510020]"
+  },
+  {
+    "id": "00989682",
+    "nameDesc": "Agent of the Shinigami",
+    "normalCityId": 15600005,
+    "hardCityId": 15600006,
+    "nightmareCityId": 15600007,
+    "deadCityId": 15600008,
+    "chapterSwitch": "[14151505]",
+    "f6": 1,
+    "f7": "[70510021,70510022]"
+  },
+  {
+    "id": "00989683",
+    "nameDesc": "Soul Society",
+    "normalCityId": 15600009,
+    "hardCityId": 15600010,
+    "nightmareCityId": 15600011,
+    "deadCityId": 15600012,
+    "chapterSwitch": "[14100698]",
+    "f6": 1,
+    "f7": "[70510023,70510024]"
+  }
+]

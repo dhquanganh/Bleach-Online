@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00077A11",
+    "name": "团购",
+    "tName": "团购",
+    "desc": "During the event period, you can register to join Group Purchase; after successfully registered, then you can buy.\nThe more people registered for the event means the price will become cheaper.                                                                                                                             Registered time is everyday from Midnight to 9 PM, purchase time is everyday from 9:01 PM to 11:59 PM.",
+    "tip": "",
+    "price": 0,
+    "imageID": 490001,
+    "f6": "[{\"cost\":3000,\"award\":[21406026],\"title\":\"Group Purchase Phase 1\"},{\"cost\":5000,\"award\":[21406027],\"title\":\"Group Purchase Phase 2\"},{\"cost\":10000,\"award\":[21406028],\"title\":\"Group Purchase Phase 3\"},{\"cost\":15000,\"award\":[21406029],\"title\":\"Group Purchase Phase 4\"},{\"cost\":20000,\"award\":[21406030],\"title\":\"Group Purchase Phase 5\"}]",
+    "f7": "[{\"condition\":50,\"value\":100,\"sort\":5},{\"condition\":40,\"value\":400,\"sort\":4},{\"condition\":20,\"value\":600,\"sort\":3},{\"condition\":10,\"value\":700,\"sort\":2},{\"condition\":5,\"value\":800,\"sort\":1}]",
+    "f8": "[[0,0],[21,0]]",
+    "f9": "[[21,01],[23,59]]",
+    "f10": "{\"strNoSign\":\"Registration not yet started\",\"strEndSign\":\"Registration ended\",\"strPeople\":\"%0 people\",\"strEndBuy\":\"Sorry, Group Purchase ended already, please wait for next phase.\",\"strBoughtPeople\":\"%0 people already purchased successfully\",\"strBtnSign\":\"Start Registration\",\"strBtnSigned\":\"Already registered\",\"strBtnBuy\":\"Purchase\",\"strBtnBought\":\"Already Purchased\"}"
+  }
+]

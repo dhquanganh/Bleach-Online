@@ -1,0 +1,702 @@
+[
+  {
+    "id": "000004B1",
+    "nextPetId": 1301,
+    "condition": "[14100411,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000515",
+    "nextPetId": 1401,
+    "condition": "[14100411,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000579",
+    "nextPetId": 1501,
+    "condition": "[14100411,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005DD",
+    "nextPetId": 1601,
+    "condition": "[14100411,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000641",
+    "nextPetId": 1701,
+    "condition": "[14100411,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B2",
+    "nextPetId": 1302,
+    "condition": "[14100412,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000516",
+    "nextPetId": 1402,
+    "condition": "[14100412,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000057A",
+    "nextPetId": 1502,
+    "condition": "[14100412,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005DE",
+    "nextPetId": 1602,
+    "condition": "[14100412,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000642",
+    "nextPetId": 1702,
+    "condition": "[14100412,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B3",
+    "nextPetId": 1303,
+    "condition": "[14100413,60]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000517",
+    "nextPetId": 1403,
+    "condition": "[14100413,140]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000057B",
+    "nextPetId": 1503,
+    "condition": "[14100413,300]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005DF",
+    "nextPetId": 1603,
+    "condition": "[14100413,500]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000643",
+    "nextPetId": 1703,
+    "condition": "[14100413,800]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B4",
+    "nextPetId": 1304,
+    "condition": "[14100414,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000518",
+    "nextPetId": 1404,
+    "condition": "[14100414,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000057C",
+    "nextPetId": 1504,
+    "condition": "[14100414,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E0",
+    "nextPetId": 1604,
+    "condition": "[14100414,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000644",
+    "nextPetId": 1704,
+    "condition": "[14100414,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B5",
+    "nextPetId": 1305,
+    "condition": "[14100415,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000519",
+    "nextPetId": 1405,
+    "condition": "[14100415,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000057D",
+    "nextPetId": 1505,
+    "condition": "[14100415,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E1",
+    "nextPetId": 1605,
+    "condition": "[14100415,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000645",
+    "nextPetId": 1705,
+    "condition": "[14100415,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B7",
+    "nextPetId": 1307,
+    "condition": "[14100429,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "0000051B",
+    "nextPetId": 1407,
+    "condition": "[14100429,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000057F",
+    "nextPetId": 1507,
+    "condition": "[14100429,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E3",
+    "nextPetId": 1607,
+    "condition": "[14100429,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000647",
+    "nextPetId": 1707,
+    "condition": "[14100429,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B8",
+    "nextPetId": 1308,
+    "condition": "[14100430,20]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "0000051C",
+    "nextPetId": 1408,
+    "condition": "[14100430,40]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000580",
+    "nextPetId": 1508,
+    "condition": "[14100430,100]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E4",
+    "nextPetId": 1608,
+    "condition": "[14100430,160]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000648",
+    "nextPetId": 1708,
+    "condition": "[14100430,200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004B9",
+    "nextPetId": 1309,
+    "condition": "[14100431,20]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "0000051D",
+    "nextPetId": 1409,
+    "condition": "[14100431,40]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000581",
+    "nextPetId": 1509,
+    "condition": "[14100431,100]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E5",
+    "nextPetId": 1609,
+    "condition": "[14100431,160]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000649",
+    "nextPetId": 1709,
+    "condition": "[14100431,200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BA",
+    "nextPetId": 1310,
+    "condition": "[14100432,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "0000051E",
+    "nextPetId": 1410,
+    "condition": "[14100432,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000582",
+    "nextPetId": 1510,
+    "condition": "[14100432,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E6",
+    "nextPetId": 1610,
+    "condition": "[14100432,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064A",
+    "nextPetId": 1710,
+    "condition": "[14100432,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BB",
+    "nextPetId": 1311,
+    "condition": "[14100433,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "0000051F",
+    "nextPetId": 1411,
+    "condition": "[14100433,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000583",
+    "nextPetId": 1511,
+    "condition": "[14100433,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E7",
+    "nextPetId": 1611,
+    "condition": "[14100433,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064B",
+    "nextPetId": 1711,
+    "condition": "[14100433,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BC",
+    "nextPetId": 1312,
+    "condition": "[14100434,20]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000520",
+    "nextPetId": 1412,
+    "condition": "[14100434,40]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000584",
+    "nextPetId": 1512,
+    "condition": "[14100434,100]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E8",
+    "nextPetId": 1612,
+    "condition": "[14100434,160]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064C",
+    "nextPetId": 1712,
+    "condition": "[14100434,200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BD",
+    "nextPetId": 1313,
+    "condition": "[14120009,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000521",
+    "nextPetId": 1413,
+    "condition": "[14120009,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000585",
+    "nextPetId": 1513,
+    "condition": "[14120009,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005E9",
+    "nextPetId": 1613,
+    "condition": "[14120009,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064D",
+    "nextPetId": 1713,
+    "condition": "[14120009,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BE",
+    "nextPetId": 1314,
+    "condition": "[14100436,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000522",
+    "nextPetId": 1414,
+    "condition": "[14100436,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000586",
+    "nextPetId": 1514,
+    "condition": "[14100436,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005EA",
+    "nextPetId": 1614,
+    "condition": "[14100436,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064E",
+    "nextPetId": 1714,
+    "condition": "[14100436,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004BF",
+    "nextPetId": 1315,
+    "condition": "[14100437,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000523",
+    "nextPetId": 1415,
+    "condition": "[14100437,100]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000587",
+    "nextPetId": 1515,
+    "condition": "[14100437,200]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005EB",
+    "nextPetId": 1615,
+    "condition": "[14100437,400]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "0000064F",
+    "nextPetId": 1715,
+    "condition": "[14100437,600]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C0",
+    "nextPetId": 1316,
+    "condition": "[14100438,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000524",
+    "nextPetId": 1416,
+    "condition": "[14100438,100]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000588",
+    "nextPetId": 1516,
+    "condition": "[14100438,200]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005EC",
+    "nextPetId": 1616,
+    "condition": "[14100438,400]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000650",
+    "nextPetId": 1716,
+    "condition": "[14100438,600]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C1",
+    "nextPetId": 1317,
+    "condition": "[14100439,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000525",
+    "nextPetId": 1417,
+    "condition": "[14100439,100]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "00000589",
+    "nextPetId": 1517,
+    "condition": "[14100439,200]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005ED",
+    "nextPetId": 1617,
+    "condition": "[14100439,400]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000651",
+    "nextPetId": 1717,
+    "condition": "[14100439,600]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C2",
+    "nextPetId": 1318,
+    "condition": "[14120002,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000526",
+    "nextPetId": 1418,
+    "condition": "[14120002,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000058A",
+    "nextPetId": 1518,
+    "condition": "[14120002,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005EE",
+    "nextPetId": 1618,
+    "condition": "[14120002,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000652",
+    "nextPetId": 1718,
+    "condition": "[14120002,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C3",
+    "nextPetId": 1319,
+    "condition": "[14120004,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000527",
+    "nextPetId": 1419,
+    "condition": "[14120004,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000058B",
+    "nextPetId": 1519,
+    "condition": "[14120004,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005EF",
+    "nextPetId": 1619,
+    "condition": "[14120004,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000653",
+    "nextPetId": 1719,
+    "condition": "[14120004,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C4",
+    "nextPetId": 1320,
+    "condition": "[14120006,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000528",
+    "nextPetId": 1420,
+    "condition": "[14120006,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000058C",
+    "nextPetId": 1520,
+    "condition": "[14120006,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005F0",
+    "nextPetId": 1620,
+    "condition": "[14120006,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000654",
+    "nextPetId": 1720,
+    "condition": "[14120006,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  },
+  {
+    "id": "000004C5",
+    "nextPetId": 1321,
+    "condition": "[14120007,40]",
+    "petLevel": 30,
+    "needSilver": 100000
+  },
+  {
+    "id": "00000529",
+    "nextPetId": 1421,
+    "condition": "[14120007,200]",
+    "petLevel": 50,
+    "needSilver": 200000
+  },
+  {
+    "id": "0000058D",
+    "nextPetId": 1521,
+    "condition": "[14120007,400]",
+    "petLevel": 80,
+    "needSilver": 300000
+  },
+  {
+    "id": "000005F1",
+    "nextPetId": 1621,
+    "condition": "[14120007,800]",
+    "petLevel": 100,
+    "needSilver": 400000
+  },
+  {
+    "id": "00000655",
+    "nextPetId": 1721,
+    "condition": "[14120007,1200]",
+    "petLevel": 120,
+    "needSilver": 500000
+  }
+]

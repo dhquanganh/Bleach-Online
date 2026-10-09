@@ -1,0 +1,382 @@
+[
+  {
+    "id": "010B0761",
+    "desc": "Strength",
+    "viewType": 0
+  },
+  {
+    "id": "010B0762",
+    "desc": "Agility",
+    "viewType": 0
+  },
+  {
+    "id": "010B0763",
+    "desc": "Wisdom",
+    "viewType": 0
+  },
+  {
+    "id": "010B0764",
+    "desc": "Stamina",
+    "viewType": 0
+  },
+  {
+    "id": "010B076B",
+    "desc": "Speed",
+    "viewType": 0
+  },
+  {
+    "id": "010B076C",
+    "desc": "Strength Growth Rate",
+    "viewType": 0
+  },
+  {
+    "id": "010B076D",
+    "desc": "Agility Growth Rate",
+    "viewType": 0
+  },
+  {
+    "id": "010B076E",
+    "desc": "Int Growth Rate",
+    "viewType": 0
+  },
+  {
+    "id": "010B076F",
+    "desc": "Stamina Growth Rate",
+    "viewType": 0
+  },
+  {
+    "id": "010B0770",
+    "desc": "Physical Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0771",
+    "desc": "Physical Defense",
+    "viewType": 0
+  },
+  {
+    "id": "010B0772",
+    "desc": "Character's Ranged Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0773",
+    "desc": "Character's Defense against Ranged Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0774",
+    "desc": "Kido Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0775",
+    "desc": "Kido Defense",
+    "viewType": 0
+  },
+  {
+    "id": "010B0776",
+    "desc": "Hit Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0777",
+    "desc": "Dodge Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0778",
+    "desc": "Crit Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0779",
+    "desc": "Block Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077A",
+    "desc": "Combo Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077B",
+    "desc": "Aid Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077C",
+    "desc": "Damage Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077D",
+    "desc": "Damage Immunity Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077E",
+    "desc": "Break Defense Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B077F",
+    "desc": "Counter Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0780",
+    "desc": "Attack Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0781",
+    "desc": "Defense Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0782",
+    "desc": "Recovery Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0783",
+    "desc": "Reduce Enemy Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0784",
+    "desc": "Reduce Enemy Defense",
+    "viewType": 0
+  },
+  {
+    "id": "010B0785",
+    "desc": "Silence Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0786",
+    "desc": "Anti-silence Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0787",
+    "desc": "Stun Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0788",
+    "desc": "Anti-stun Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0789",
+    "desc": "Fury Deduction Percentage",
+    "viewType": 1
+  },
+  {
+    "id": "010B078A",
+    "desc": "Anti-fury-restriction Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B078B",
+    "desc": "Increase Crit Damage",
+    "viewType": 1
+  },
+  {
+    "id": "010B078C",
+    "desc": "Physical Damage Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B078D",
+    "desc": "Physical Damage Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B078E",
+    "desc": "Physical Damage Immune Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B078F",
+    "desc": "Spell Immunity Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0790",
+    "desc": "Attack",
+    "viewType": 0
+  },
+  {
+    "id": "010B0791",
+    "desc": "Defense",
+    "viewType": 0
+  },
+  {
+    "id": "010B0792",
+    "desc": "Strength Spirit Stone Growth Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0793",
+    "desc": "Intelligence Spirit Stone Growth Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0794",
+    "desc": "Agility Spirit Stone Growth Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B0795",
+    "desc": "Stamina Spirit Stone Growth Rate",
+    "viewType": 1
+  },
+  {
+    "id": "010B07C5",
+    "desc": "Max HP",
+    "viewType": 0
+  },
+  {
+    "id": "010B07C6",
+    "desc": "Current HP",
+    "viewType": 0
+  },
+  {
+    "id": "010B07C7",
+    "desc": "Max Fury",
+    "viewType": 0
+  },
+  {
+    "id": "010B07C8",
+    "desc": "Current Fury Fury",
+    "viewType": 0
+  },
+  {
+    "id": "010B07C9",
+    "desc": "Character function module immunity",
+    "viewType": 0
+  },
+  {
+    "id": "010B07CA",
+    "desc": "In-battle Temporary Buff",
+    "viewType": 0
+  },
+  {
+    "id": "010B07CB",
+    "desc": "For loading chatacter skill only",
+    "viewType": 0
+  },
+  {
+    "id": "010B0828",
+    "desc": "Starting Skill",
+    "viewType": 0
+  },
+  {
+    "id": "010B0829",
+    "desc": "Passive Skill",
+    "viewType": 0
+  },
+  {
+    "id": "010B082A",
+    "desc": "Skill after Death",
+    "viewType": 0
+  },
+  {
+    "id": "010B082B",
+    "desc": "Halo",
+    "viewType": 0
+  },
+  {
+    "id": "010B0AE5",
+    "desc": "Hit",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AE6",
+    "desc": "Dodge",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AE7",
+    "desc": "Crit Hit",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AE8",
+    "desc": "Block",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AE9",
+    "desc": "Combo",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AEA",
+    "desc": "Aid",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AEB",
+    "desc": "Damage",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AEC",
+    "desc": "Damage Immune",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AED",
+    "desc": "Break Defense",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AEE",
+    "desc": "Counter",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AEF",
+    "desc": "Attack",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AF0",
+    "desc": "Defense",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AF1",
+    "desc": "Recovery",
+    "viewType": 1
+  },
+  {
+    "id": "010B0AF2",
+    "desc": "HP",
+    "viewType": 0
+  },
+  {
+    "id": "010C8E01",
+    "desc": "Captain",
+    "viewType": 0
+  },
+  {
+    "id": "010C8E02",
+    "desc": "Vanguard",
+    "viewType": 0
+  },
+  {
+    "id": "010C8E03",
+    "desc": "Assaulter",
+    "viewType": 0
+  },
+  {
+    "id": "010C8E04",
+    "desc": "Support",
+    "viewType": 0
+  }
+]

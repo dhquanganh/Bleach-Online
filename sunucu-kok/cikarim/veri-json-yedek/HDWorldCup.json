@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00086471",
+    "name": "World Cup",
+    "tName": "浦原商店 超值回馈(限购一种)",
+    "desc": "Please select team to sponsor within the first 5 days of the event.\nPlayers cannot change the team again once select and sponsor a team.\nPlayers cannot change the team again once select and sponsor a team.                                                                                                                  If the supported team wins, all the sponsored Gold will be returned and players can get corresponding Coupon rebate.\nTop up required amount of Gold within the first 5 days of the event to obtain powerful partner.",
+    "tip": "1.购买成长基金后不可购买其他基金2.每天00:30分通过系统邮件返还基金奖励%0礼券3.返还次数为30次4.活动下线不影响奖励发放，直至奖励发放完毕",
+    "price": 0,
+    "imageID": 550001,
+    "tips": "[{\"id\":1,\"country\":\"Russia\"},{\"id\":2,\"country\":\"Saudi Arabia\"},{\"id\":3,\"country\":\"Egypt\"},{\"id\":4,\"country\":\"Uruguay\"},{\"id\":5,\"country\":\"Portugal\"},{\"id\":6,\"country\":\"Spain\"},{\"id\":7,\"country\":\"Morocco\"},{\"id\":8,\"country\":\"Iran\"},{\"id\":9,\"country\":\"France\"},{\"id\":10,\"country\":\"Australia\"},{\"id\":11,\"country\":\"Peru\"},{\"id\":12,\"country\":\"Denmark\"},{\"id\":13,\"country\":\"Argentina\"},{\"id\":14,\"country\":\"Iceland\"},{\"id\":15,\"country\":\"Croatia\"},{\"id\":16,\"country\":\"Nigeria\"},{\"id\":17,\"country\":\"Brazil\"},{\"id\":18,\"country\":\"Switzerland\"},{\"id\":19,\"country\":\"Costa Rica\"},{\"id\":20,\"country\":\"Serbia\"},{\"id\":21,\"country\":\"Germany\"},{\"id\":22,\"country\":\"Mexico\"},{\"id\":23,\"country\":\"Sweden\"},{\"id\":24,\"country\":\"South Korea\"},{\"id\":25,\"country\":\"Belgium\"},{\"id\":26,\"country\":\"Panama\"},{\"id\":27,\"country\":\"Tunisia\"},{\"id\":28,\"country\":\"England\"},{\"id\":29,\"country\":\"Poland\"},{\"id\":30,\"country\":\"Senegal\"},{\"id\":31,\"country\":\"Columbia\"},{\"id\":32,\"country\":\"Japan\"}]",
+    "f7": "[{\"index\":33,\"indexType\":3,\"getType\":2,\"cost\":0,\"isDefaultAward\":1,\"timeActive\":432000},{\"index\":34,\"indexType\":3,\"getType\":2,\"cost\":1000,\"isDefaultAward\":0,\"timeActive\":432000,\"tips\":\"Cost 1000 Gold\"}]",
+    "f8": " {\"index\":35,\"indexType\":3,\"getType\":1,\"condition\":40000,\"award\":[21401713],\"heroid\":11150047}",
+    "f9": "[{\"index\":100,\"cost\":100,\"award\":[21401714],\"tips\":[21401718]},{\"index\":101,\"cost\":500,\"award\":[21401715],\"tips\":[21401719]},{\"index\":102,\"cost\":1000,\"award\":[21401716],\"tips\":[21401720]},{\"index\":103,\"cost\":5000,\"award\":[21401717],\"tips\":[21401721]}]",
+    "f10": " [{\"key\":20000,\"rate\":400,\"tips\":\"more than 20000\"},{\"key\":10000,\"rate\":300,\"tips\":\"10001-20000\"},{\"key\":5000,\"rate\":250,\"tips\":\"5001-10000\"},{\"key\":1000,\"rate\":200,\"tips\":\"1001-5000\"},{\"key\":0,\"rate\":150,\"tips\":\"0-1000\"}]",
+    "f11": "Cannot support the same team at the same time"
+  }
+]

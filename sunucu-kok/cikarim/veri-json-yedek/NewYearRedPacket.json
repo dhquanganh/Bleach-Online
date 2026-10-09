@@ -1,0 +1,24 @@
+[
+  {
+    "id": "000C8321",
+    "name": "新年活动2",
+    "tName": "新年活动2",
+    "desc": "1、活动时间内玩家通过点灯笼可以获得道具奖励以及积分，积分可以用来兑换奖励。\n2、玩家点完全部灯笼，必须重置才能继续进行游戏。积分不会被重置。\n3、玩家每天都有一定的免费次数和免费重置的次数。\n4、全服积分达到一定程度可以领取相应的奖励，该奖励只能领取一次。",
+    "tip": "1",
+    "price": 0,
+    "imageID": 820001,
+    "myselfFavoutIndex": 90,
+    "randomPropsIndex": "[{\"award\":21402614,\"rate\":100},{\"award\":21402615,\"rate\":100},{\"award\":21402616,\"rate\":90},{\"award\":21402617,\"rate\":90},{\"award\":21402618,\"rate\":90},{\"award\":21402619,\"rate\":90},{\"award\":21402620,\"rate\":95},{\"award\":21402621,\"rate\":60},{\"award\":21402622,\"rate\":60},{\"award\":21402623,\"rate\":50},{\"award\":21402624,\"rate\":50},{\"award\":21402625,\"rate\":20},{\"award\":21402626,\"rate\":20},{\"award\":21402627,\"rate\":20},{\"award\":21402628,\"rate\":20},{\"award\":21402629,\"rate\":20},{\"award\":21402630,\"rate\":10},{\"award\":21402631,\"rate\":10},{\"award\":21402632,\"rate\":1},{\"award\":21402633,\"rate\":1},{\"award\":21402634,\"rate\":1},{\"award\":21402635,\"rate\":1},{\"award\":21402636,\"rate\":1}]",
+    "favourValue": "[{\"index\":21,\"condition\":600,\"award\":21402643},{\"index\":22,\"condition\":1500,\"award\":21402644},{\"index\":23,\"condition\":2000,\"award\":21402645},{\"index\":24,\"condition\":3000,\"award\":21402646},{\"index\":25,\"condition\":5000,\"award\":21402647},{\"index\":26,\"condition\":10000,\"award\":21402648}]",
+    "allServiceIndex": "[{\"index\":31,\"costFavour\":270,\"limit\":9999,\"award\":21402637},\n{\"index\":32,\"costFavour\":150,\"limit\":9999,\"award\":21402638},\n{\"index\":33,\"costFavour\":150,\"limit\":9999,\"award\":21402639},\n{\"index\":34,\"costFavour\":150,\"limit\":9999,\"award\":21402640},\n{\"index\":35,\"costFavour\":150,\"limit\":9999,\"award\":21402641},\n{\"index\":36,\"costFavour\":6,\"limit\":9999,\"award\":21402642}]",
+    "f10": "{\"resetFreeTimeIndex\":92,\"giveAwardIndex\":93}",
+    "f11": "{\"resetValue\":1,\"giveAwardValue\":2}",
+    "f12": "{\"index\":94,\"costGold\":50}",
+    "f13": "{\"index\":95,\"costGold\":20}",
+    "f14": "[21402633,21402634,21402635,21402636,21402632,21402630]",
+    "f15": 98,
+    "f16": 2,
+    "f17": "{\"sendPacketPrompt\":\"需要花费%0金币\",\"resetPrompt\":\"需要花费%0金币重置\",\"favourPrompt\":\"积分不够\",\"sendFinishPrompt\":\"请点击重置按钮，进行新的一轮游戏\",\"freeReset\":\"确定花费免费重置次数重置吗？\"}",
+    "f18": 80
+  }
+]

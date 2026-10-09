@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0013AF11",
+    "name": "虚圈探宝",
+    "tName": "虚圈探宝",
+    "desc": "1. Based on your VIP level, different maps will be unlocked. Before start botting, please choose the reward type and duration of botting. After starting botting, you can't change them.\n2. You can only choose one map for botting. Botting will consume certain amount of silver.\n3. When botting is finished, you can claim rewards. Claiming rewards with gold will give you a chance to obtain double reward, and 1 extra Talisman of Dark and 1 extra Fragment of Light.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "vipIndex": 0,
+    "itemIndex": 1,
+    "timeIndex": 2,
+    "uTCIndex": 3,
+    "startIndex": 4,
+    "finishIndex": 5,
+    "score": 6,
+    "items": "[{\"awardId\" : 21405590, \"type\" : 1}, {\"awardId\" : 21405591, \"type\" : 1}, {\"awardId\" : 21405592, \"type\" : 1}, {\"awardId\" : 21405593, \"type\" : 1}, {\"awardId\" : 21405594, \"type\" : 2}, {\"awardId\" : 21405595, \"type\" : 2}, {\"awardId\" : 21405596, \"type\" : 2}, {\"awardId\" : 21405597, \"type\" : 2}, {\"awardId\" : 21405598, \"type\" : 3}, {\"awardId\" : 21405599, \"type\" : 3}, {\"awardId\" : 21405600, \"type\" : 3}, {\"awardId\" : 21405601, \"type\" : 3}]",
+    "events": "[{\"id\": 100, \"type\" : 1, \"time\" : 1, \"cost\" : 800000}, {\"id\": 101, \"type\" : 1, \"time\" : 3, \"cost\" : 2500000}, {\"id\": 102, \"type\" : 1, \"time\" : 10, \"cost\" : 9000000}, {\"id\": 103, \"type\" : 2, \"time\" : 1, \"cost\" : 800000}, {\"id\": 104, \"type\" : 2, \"time\" : 3, \"cost\" : 2500000}, {\"id\": 105, \"type\" : 2, \"time\" : 10, \"cost\" : 9000000}, {\"id\": 106, \"type\" : 3, \"time\" : 1, \"cost\" : 800000}, {\"id\": 107, \"type\" : 3, \"time\" : 3, \"cost\" : 2500000}, {\"id\": 108, \"type\" : 3, \"time\" : 10, \"cost\" : 9000000}]",
+    "golds": "[100,100,100]",
+    "hint": "Obtained Fragment of Light and Fragment of Dark"
+  }
+]

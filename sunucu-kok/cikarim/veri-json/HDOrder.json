@@ -1,0 +1,12 @@
+[
+  {
+    "id": "000F4242",
+    "name": "Vitality at Set Time",
+    "tName": "Vitality at Set Time",
+    "desc": "Vitality at Set Time",
+    "tip": "2",
+    "price": 0,
+    "imageID": 1000002,
+    "f6": "[{\"condition\":[12,14,18,20], \"award\":[22100001],\"prompt\":\"Everyday at 12 - 2 PM and 6 - 8 PM, you can receive 20 Vitality points\"}]"
+  }
+]

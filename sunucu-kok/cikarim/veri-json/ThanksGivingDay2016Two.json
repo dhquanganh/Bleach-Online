@@ -1,0 +1,24 @@
+[
+  {
+    "id": "001583D1",
+    "name": "感恩节2",
+    "tName": "感恩节2",
+    "desc": "1. Click cards to flip them. Each flip will randomly result in a set of rewards and a colored card\n2. Use Red Cards to exchange rewards in Card Shop. Exchange other colored cards for Red Cards3. When top-up reaches a certain amount, can have a certain times to freely flip the cards",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1410001,
+    "refreshIndex": 90,
+    "buyCostGold": 100,
+    "refreshCostGold": 20,
+    "allBuyIndex": 91,
+    "cardInfo": "[{\"index\":92,\"ratio\":0,\"weight\":1000},{\"index\":93,\"ratio\":2,\"weight\":180},{\"index\":94,\"ratio\":2,\"weight\":30},{\"index\":95,\"ratio\":2,\"weight\":1}]",
+    "blueIndex": 92,
+    "purpleIndex": 93,
+    "goldIndex": 94,
+    "redIndex": 95,
+    "freeIndex": 96,
+    "items": "[{\"index\":10,\"award\":21406706,\"weight\":10},{\"index\":11,\"award\":21406707,\"weight\":5},{\"index\":12,\"award\":21406708,\"weight\":10},{\"index\":13,\"award\":21406709,\"weight\":10},{\"index\":14,\"award\":21406710,\"weight\":10},{\"index\":15,\"award\":21406711,\"weight\":10},{\"index\":16,\"award\":21406712,\"weight\":10},{\"index\":17,\"award\":21406713,\"weight\":10},{\"index\":18,\"award\":21406714,\"weight\":10},{\"index\":19,\"award\":21406715,\"weight\":10},{\"index\":20,\"award\":21406716,\"weight\":10},{\"index\":21,\"award\":21406717,\"weight\":10},{\"index\":22,\"award\":21406718,\"weight\":10},{\"index\":23,\"award\":21406719,\"weight\":10},{\"index\":24,\"award\":21406720,\"weight\":10},{\"index\":25,\"award\":21406721,\"weight\":10}]",
+    "mall": "[{\"index\":52,\"costCardType\":95,\"costScore\":60,\"award\":21406724,\"numLimit\":1},{\"index\":53,\"costCardType\":95,\"costScore\":60,\"award\":21406725,\"numLimit\":1},{\"index\":54,\"costCardType\":95,\"costScore\":60,\"award\":21406726,\"numLimit\":1},{\"index\":55,\"costCardType\":95,\"costScore\":60,\"award\":21406727,\"numLimit\":1},{\"index\":56,\"costCardType\":95,\"costScore\":60,\"award\":21406728,\"numLimit\":1},{\"index\":57,\"costCardType\":95,\"costScore\":50,\"award\":21406729,\"numLimit\":1},{\"index\":58,\"costCardType\":95,\"costScore\":50,\"award\":21406730,\"numLimit\":1},{\"index\":59,\"costCardType\":95,\"costScore\":50,\"award\":21406731,\"numLimit\":1},{\"index\":60,\"costCardType\":95,\"costScore\":50,\"award\":21406732,\"numLimit\":1},{\"index\":61,\"costCardType\":95,\"costScore\":50,\"award\":21406733,\"numLimit\":1},{\"index\":62,\"costCardType\":95,\"costScore\":50,\"award\":21406734,\"numLimit\":1},{\"index\":63,\"costCardType\":95,\"costScore\":40,\"award\":21406735,\"numLimit\":1},{\"index\":64,\"costCardType\":95,\"costScore\":40,\"award\":21406736,\"numLimit\":1},{\"index\":65,\"costCardType\":95,\"costScore\":40,\"award\":21406737,\"numLimit\":1},{\"index\":66,\"costCardType\":95,\"costScore\":40,\"award\":21406738,\"numLimit\":1},{\"index\":67,\"costCardType\":95,\"costScore\":1,\"award\":21406739,\"numLimit\":0},{\"index\":68,\"costCardType\":95,\"costScore\":1,\"award\":21406740,\"numLimit\":0},{\"index\":69,\"costCardType\":95,\"costScore\":1,\"award\":21406741,\"numLimit\":0},{\"index\":70,\"costCardType\":95,\"costScore\":1,\"award\":21406742,\"numLimit\":0},{\"index\":71,\"costCardType\":95,\"costScore\":1,\"award\":21406743,\"numLimit\":0},{\"index\":72,\"costCardType\":95,\"costScore\":1,\"award\":21406744,\"numLimit\":0},{\"index\":73,\"costCardType\":95,\"costScore\":1,\"award\":21406745,\"numLimit\":0},{\"index\":74,\"costCardType\":95,\"costScore\":10,\"award\":21406746,\"numLimit\":0},{\"index\":75,\"costCardType\":95,\"costScore\":2,\"award\":21406747,\"numLimit\":0}]",
+    "curItems": "[1,2,3,4,5]"
+  }
+]

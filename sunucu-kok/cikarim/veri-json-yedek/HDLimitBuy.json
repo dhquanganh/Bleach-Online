@@ -1,0 +1,14 @@
+[
+  {
+    "id": "0006B6C1",
+    "name": "Whole Server Limited Purchase",
+    "tName": "Whole Server Limited Purchase",
+    "desc": "1. During the 8 days of event, players can participate.\n2. There is a daily limited chances of purchase for each player. Player cannot purchase when purchase chance is 0.\n3. There is a limited amount of each item pack(this amount is for all server). Player cannot purchase when amount is 0.\n4. During event, when the amount of Gold or Coupons spent reaches certain requirement, players will be qualified to purchase some item packs.\n5. The amount of item packs and purchase chances reset at 18:30 daily.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 440001,
+    "f6": "[{\"boxIndex\":0,\"indexType\":3,\"getType\":2,\"limit\":10,\"cost\":150,\"serverLimit\":200,\"condition\":[{\"type\":6,\"value\":0}],\"award\":[21405261]},{\"boxIndex\":1,\"indexType\":3,\"getType\":2,\"limit\":10,\"cost\":300,\"serverLimit\":150,\"condition\":[{\"type\":6,\"value\":0}],\"award\":[21405262]},{\"boxIndex\":2,\"indexType\":3,\"getType\":2,\"limit\":8,\"cost\":600,\"serverLimit\":120,\"condition\":[{\"type\":6,\"value\":0}],\"award\":[21405263]},{\"boxIndex\":3,\"indexType\":3,\"getType\":2,\"limit\":8,\"cost\":1200,\"serverLimit\":100,\"condition\":[{\"type\":6,\"value\":0}],\"award\":[21405264]},{\"boxIndex\":4,\"indexType\":3,\"getType\":2,\"limit\":6,\"cost\":1500,\"serverLimit\":150,\"condition\":[{\"type\":6,\"value\":500}],\"award\":[21405265]},{\"boxIndex\":5,\"indexType\":3,\"getType\":2,\"limit\":6,\"cost\":2000,\"serverLimit\":100,\"condition\":[{\"type\":6,\"value\":1000}],\"award\":[21405266]},{\"boxIndex\":6,\"indexType\":3,\"getType\":2,\"limit\":3,\"cost\":3000,\"serverLimit\":80,\"condition\":[{\"type\":6,\"value\":1500}],\"award\":[21405267]},{\"boxIndex\":7,\"inde0xType\":3,\"getType\":2,\"limit\":2,\"cost\":5000,\"serverLimit\":50,\"condition\":[{\"type\":6,\"value\":2000}],\"award\":[21405268]}]",
+    "f7": "[18,30]",
+    "f8": "[\"Confirm to spend %0 to purchase this gift pack? \",\"Spend %0 Gold/Coupons\"]"
+  }
+]

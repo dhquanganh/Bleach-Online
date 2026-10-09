@@ -1,0 +1,15 @@
+[
+  {
+    "id": "00072BF1",
+    "name": "Mysterious Puzzle",
+    "tName": "Mysterious Puzzle",
+    "desc": "During event, top-up can get points. Points can activate puzzles and redeem gift\nActivate all puzzles can get Yoruichi Title, title will last for 10 days\nPuzzles will be activated in sequence\nActivate puzzle or redeem rewards will cost points",
+    "tip": "",
+    "price": 0,
+    "imageID": 470001,
+    "titleID": "{\"index\":0,\"indexType\":3,\"getType\":4}",
+    "f7": "[{\"index\":18,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":3000}],\"award\":[21405716]},{\"index\":19,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":3000}],\"award\":[21405717]},{\"index\":20,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":100}],\"award\":[21405718]},{\"index\":21,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":100}],\"award\":[21405719]},{\"index\":22,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":100}],\"award\":[21405720]},{\"index\":23,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":100}],\"award\":[21405721]},{\"index\":24,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":4}],\"award\":[21405722]},{\"index\":25,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":4}],\"award\":[21405723]},{\"index\":26,\"indexType\":3,\"getType\":2,\"costChip\":[{\"index\":0,\"value\":10}],\"award\":[21405724]}]",
+    "f8": "[{\"index\":9,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":99,\"costChip\":[{\"index\":0,\"value\":100}],\"award\":[21405740]},{\"index\":10,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":9,\"costChip\":[{\"index\":0,\"value\":200}],\"award\":[21405741]},{\"index\":11,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":10,\"costChip\":[{\"index\":0,\"value\":300}],\"award\":[21405742]},{\"index\":12,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":11,\"costChip\":[{\"index\":0,\"value\":400}],\"award\":[21405743]},{\"index\":13,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":12,\"costChip\":[{\"index\":0,\"value\":600}],\"award\":[21405744]},{\"index\":14,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":13,\"costChip\":[{\"index\":0,\"value\":900}],\"award\":[21405745]},{\"index\":15,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":14,\"costChip\":[{\"index\":0,\"value\":1100}],\"award\":[21405746]},{\"index\":16,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":15,\"costChip\":[{\"index\":0,\"value\":1900}],\"award\":[21405747]},{\"index\":17,\"indexType\":3,\"getType\":1,\"limit\":1,\"lastOrderIndex\":16,\"costChip\":[{\"index\":0,\"value\":2500}],\"award\":[21405748]}]",
+    "f9": 6003073
+  }
+]

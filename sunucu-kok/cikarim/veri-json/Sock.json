@@ -1,0 +1,18 @@
+[
+  {
+    "id": "00113E11",
+    "name": "圣诞袜",
+    "tName": "圣诞袜",
+    "desc": "1. Finissez les quetes quotidiennes pour recevoir des recompenses et des Boulettes de Riz.\n2. Collectez des Boulettes de Riz pour recevoir des recompenses.\n3. A la fin de l'event, en fonction de votre classement dans les Boulettes de Riz vous recevrez des recompenses.\n4. 10 minutes avant la fin de l'event le classement ne sera plus mis a jour, les joueurs du Top 3 recevront le titre \"Reunion de Famille\".\n5. Collectez suffisamment de Boulette de Riz pour recevoir des Recompenses Ultimes.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1130001,
+    "taskAwards": "[{\"index\":0,\"goto\":18,\"type\":15,\"value\":1,\"getSocks\":1,\"award\":21403654,\"prompt1\":\"Quete connexion\",\"prompt2\":\"Deja fini：\"},{\"index\":1,\"goto\":13,\"type\":2,\"value\":5,\"getSocks\":2,\"award\":21403655,\"prompt1\":\"Quete d'instance\",\"prompt2\":\"Deja fini：\"},{\"index\":2,\"goto\":31,\"type\":17,\"value\":2,\"getSocks\":3,\"award\":21403656,\"prompt1\":\"Quete Jeu de Beaute\",\"prompt2\":\"Deja fini：\"},{\"index\":3,\"goto\":6,\"type\":18,\"value\":5,\"getSocks\":5,\"award\":21403657,\"prompt1\":\"Quete Jigokucho\",\"prompt2\":\"Deja fini：\"},{\"index\":4,\"goto\":31,\"type\":19,\"value\":2,\"getSocks\":4,\"award\":21403658,\"prompt1\":\"Quete Maison\",\"prompt2\":\"Deja fini：\"},{\"index\":5,\"goto\":11,\"type\":13,\"value\":5,\"getSocks\":5,\"award\":21403659,\"prompt1\":\"Quete Arene\",\"prompt2\":\"Deja fini：\"}]",
+    "rankAwards": "[{\"key\":1,\"value\":21403665,\"title\":6003078,\"prompt\":\"NO.1\"},{\"key\":2,\"value\":21403666,\"title\":6003078,\"prompt\":\"NO.2\"},{\"key\":3,\"value\":21403667,\"title\":6003078,\"prompt\":\"NO.3\"},{\"key\":10,\"value\":21403668,\"title\":0,\"prompt\":\"NO.4-10\"},{\"key\":20,\"value\":21403669,\"title\":0,\"prompt\":\"NO.11-20\"},{\"key\":50,\"value\":21403670,\"title\":0,\"prompt\":\"NO.21-50\"}]",
+    "sockAwards": "{\"index\":6, \"code\":14100704, \"rateData\":[{\"rate\":39,\"amount\":3},{\"rate\":90,\"amount\":4},{\"rate\":99,\"amount\":5},{\"rate\":100,\"amount\":6}]}",
+    "round": "[{\"index\":20,\"award\":21403660,\"value\":500},{\"index\":21,\"award\":21403661,\"value\":1000},{\"index\":22,\"award\":21403662,\"value\":2000},{\"index\":23,\"award\":21403663,\"value\":3000},{\"index\":24,\"award\":21403664,\"value\":5000}]",
+    "rankNum": 10,
+    "jackPoint": 50,
+    "f12": "{\"index\":11,\"socks\":20000,\"award\":21403947,\"showID\":2000154,\"showType\":1,\"fightReportAddr\":\"\"}"
+  }
+]

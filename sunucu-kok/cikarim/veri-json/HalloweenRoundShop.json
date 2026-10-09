@@ -1,0 +1,22 @@
+[
+  {
+    "id": "001535B1",
+    "name": "万圣大礼2",
+    "tName": "Ghost Mask",
+    "desc": "1. Consume Gold to spin the plate once and you will randomly obtain a giftpack and a Ghost Mask\n2. The system will not refresh a new wave of rewards unless all the rewards in the plate are spinned and claimed\n3. Each time when rewards are refreshed there're always 8 random Tool packs appearing in the plate\n4. Ghost Masks can be exchanged into Tools in Point Shop, which will consume a number of Ghost Masks\n5. All the status will be refreshed and reset at 12 am daily and the number of masks you have will be reserved till the end of the event",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1390001,
+    "refreshIndex": 95,
+    "totalScoreIndex": 96,
+    "buyIndex": 97,
+    "buyCostGold": 500,
+    "refreshCostGold": 20,
+    "allBuyIndex": 99,
+    "items": "[{\"index\":1,\"award\":21404571,\"weight\":10},{\"index\":2,\"award\":21404572,\"weight\":10},{\"index\":3,\"award\":21404573,\"weight\":10},{\"index\":4,\"award\":21404574,\"weight\":10},{\"index\":5,\"award\":21404575,\"weight\":10},{\"index\":6,\"award\":21404576,\"weight\":10},{\"index\":7,\"award\":21404577,\"weight\":10},{\"index\":8,\"award\":21404578,\"weight\":10},{\"index\":9,\"award\":21404579,\"weight\":10},{\"index\":10,\"award\":21404580,\"weight\":10},{\"index\":11,\"award\":21404581,\"weight\":10},{\"index\":12,\"award\":21404582,\"weight\":10},{\"index\":13,\"award\":21404583,\"weight\":10},{\"index\":14,\"award\":21404584,\"weight\":10},{\"index\":15,\"award\":21404585,\"weight\":10},{\"index\":16,\"award\":21404586,\"weight\":10},{\"index\":17,\"award\":21404587,\"weight\":10},{\"index\":18,\"award\":21404588,\"weight\":10}]",
+    "mall": "[{\"index\":51,\"costScore\":120,\"award\":21404591,\"numLimit\":1},{\"index\":52,\"costScore\":120,\"award\":21404592,\"numLimit\":1},{\"index\":53,\"costScore\":120,\"award\":21404593,\"numLimit\":1},{\"index\":54,\"costScore\":120,\"award\":21404594,\"numLimit\":1},{\"index\":55,\"costScore\":100,\"award\":21404595,\"numLimit\":1},{\"index\":56,\"costScore\":100,\"award\":21404596,\"numLimit\":1},{\"index\":57,\"costScore\":100,\"award\":21404597,\"numLimit\":1},{\"index\":58,\"costScore\":100,\"award\":21404598,\"numLimit\":1},{\"index\":59,\"costScore\":100,\"award\":21404599,\"numLimit\":1},{\"index\":60,\"costScore\":100,\"award\":21404600,\"numLimit\":1},{\"index\":61,\"costScore\":100,\"award\":21404601,\"numLimit\":1},{\"index\":62,\"costScore\":80,\"award\":21404602,\"numLimit\":1},{\"index\":63,\"costScore\":80,\"award\":21404603,\"numLimit\":1},{\"index\":64,\"costScore\":80,\"award\":21404604,\"numLimit\":1},{\"index\":65,\"costScore\":80,\"award\":21404605,\"numLimit\":1},{\"index\":66,\"costScore\":1,\"award\":21404606,\"numLimit\":0},{\"index\":67,\"costScore\":25,\"award\":21404607,\"numLimit\":0},{\"index\":68,\"costScore\":10,\"award\":21404608,\"numLimit\":0},{\"index\":69,\"costScore\":10,\"award\":21404609,\"numLimit\":0},{\"index\":70,\"costScore\":10,\"award\":21404610,\"numLimit\":0},{\"index\":71,\"costScore\":10,\"award\":21404611,\"numLimit\":0},{\"index\":72,\"costScore\":10,\"award\":21404612,\"numLimit\":0},{\"index\":73,\"costScore\":10,\"award\":21404613,\"numLimit\":0},{\"index\":74,\"costScore\":16,\"award\":21404614,\"numLimit\":0}]",
+    "bag": "{\"index\" : 94, \"gold\" : 8000, \"petId\" : 1713,\"showId\":1713150}",
+    "curItemsIndex": "[80,81,82,83,84,85,86,87]",
+    "maskName": "Ghost Mask"
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "00A95FC5",
+    "ability": "Defense Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 1
+  },
+  {
+    "id": "00A95FC6",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 2
+  },
+  {
+    "id": "00A98671",
+    "ability": "Attack Type",
+    "ifRecommend": 1,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 3
+  },
+  {
+    "id": "00A98672",
+    "ability": "Attack Type",
+    "ifRecommend": 1,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 4
+  },
+  {
+    "id": "00A98673",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 5
+  },
+  {
+    "id": "00A98674",
+    "ability": "Attack Type",
+    "ifRecommend": 1,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 6
+  },
+  {
+    "id": "00A98675",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 7
+  },
+  {
+    "id": "00A98676",
+    "ability": "Attack Type",
+    "ifRecommend": 1,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 8
+  },
+  {
+    "id": "00A98677",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 9
+  },
+  {
+    "id": "00A98678",
+    "ability": "Defense Type",
+    "ifRecommend": 1,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 10
+  },
+  {
+    "id": "00A98679",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 11
+  },
+  {
+    "id": "00A9867A",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 12
+  },
+  {
+    "id": "00A9867B",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 13
+  },
+  {
+    "id": "00A9867C",
+    "ability": "Defense Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 14
+  },
+  {
+    "id": "00A9867D",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 15
+  },
+  {
+    "id": "00A9867E",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 16
+  },
+  {
+    "id": "00A9867F",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 17
+  },
+  {
+    "id": "00A98680",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 18
+  },
+  {
+    "id": "00A98681",
+    "ability": "Attack Type",
+    "ifRecommend": 0,
+    "getRode": "Tavern",
+    "friends": "[11100102,11110001]",
+    "sortID": 19
+  }
+]

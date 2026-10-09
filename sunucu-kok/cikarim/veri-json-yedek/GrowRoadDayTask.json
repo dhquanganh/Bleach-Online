@@ -1,0 +1,262 @@
+[
+  {
+    "id": "008ADAE1",
+    "name": "Jigokuchō",
+    "description": "Today you can summon %0 chances",
+    "unlockCondition": 1000,
+    "isGoto": 6,
+    "picture": 9000143,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">, Jigokuchō can offering silver daily, each collecting Jigokuchō amounts according to player's level increases,daily chances according to home's level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Jigokuchō Summoning Received<font color=\"#00ff00\">Silver</font></font></p>"
+  },
+  {
+    "id": "008ADAE2",
+    "name": "Guild Donate",
+    "description": "Today you can donate %0 silver",
+    "unlockCondition": 109,
+    "isGoto": 7,
+    "picture": 9000074,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily guild donate can accumulative guild assets, it can upgrade guild's level</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Guild Donate Received<font color=\"#00ff00\">Guild Merits</font>, Guild Merits can upgrade all players<font color=\"#00ff00\">Attributes</font></font></p>"
+  },
+  {
+    "id": "008ADAE3",
+    "name": "Sign-in",
+    "description": "Today you can sign-in %0 chances",
+    "unlockCondition": 303,
+    "isGoto": 18,
+    "picture": 9000006,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily sign-in can get rewards from exchange items</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Sign-in Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Sign-in Points</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Items Exchanged:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Silver Bag</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Experiences Book</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul Refining Pill<font face=\"Arial\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul Treasure Box</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Bikini</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Skill Scroll</font></p>"
+  },
+  {
+    "id": "008ADAE4",
+    "name": "Daily Task",
+    "description": "Today you can complete%0task",
+    "unlockCondition": 300,
+    "isGoto": 19,
+    "picture": 9000098,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Complete daily task can get task points,accumulative task points can receive items rewards</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily Task Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Task Points</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Exchanged Items:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Silver Bag</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Coupons</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul Refining Pill</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul Treasure Box</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Materials Treasure Box</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Comrade Contract</font></p>"
+  },
+  {
+    "id": "008ADAE5",
+    "name": "Master/Slave Catch",
+    "description": "Today you can catch slave %0 chances",
+    "unlockCondition": 1002,
+    "isGoto": 23,
+    "picture": 9000137,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Catch slave can improve upgrade expieriences, speed up upgrade</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Catch Slave Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Experiences</font></p>"
+  },
+  {
+    "id": "008ADAE6",
+    "name": "Master/Slave Interaction",
+    "description": "Today you can interaction%0chances",
+    "unlockCondition": 1002,
+    "isGoto": 23,
+    "picture": 9000141,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily Master/Slave Interaction Experiences Received,Experiences amount according to bilateral level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Master/Slave Interaction Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Experiences</font></p>"
+  },
+  {
+    "id": "008ADAE7",
+    "name": "Master/Slave Experiences",
+    "description": "Today you can get%0experiences",
+    "unlockCondition": 1002,
+    "isGoto": 23,
+    "picture": 9000142,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Master can extract slave accumulative experiences daily,daily extract max experiences according to players level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Master Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Experiences</font></p>"
+  },
+  {
+    "id": "008ADAE8",
+    "name": "Seireitei Soul Palace",
+    "description": "Today you can attack %0 chances seireiteiのexperiences",
+    "unlockCondition": 0,
+    "isGoto": 24,
+    "picture": 0,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Seireitei Soul Palace can get Infusing Spirit Stone, Infusing Spirit Stone can upgrade equipment attributes significantly</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Challenge Seireitei Soul Palace Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Infusing Spirit Stone</font></p>"
+  },
+  {
+    "id": "008ADAE9",
+    "name": "King of Hallow Souls",
+    "description": "Today you can swallow %0 chances",
+    "unlockCondition": 403,
+    "isGoto": 27,
+    "picture": 9000112,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">King of Hallow can swallow to get spirit star daily, spirit star can increase player's attributes significantly</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">King of Hallow Swallow Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">spirit star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Spirit star can upgrade player<font color=\"#00ff00\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Attributes</font></p>"
+  },
+  {
+    "id": "008ADAEA",
+    "name": "Cross Server Battle Challenge",
+    "description": "Today you can challenge %0 chances",
+    "unlockCondition": 0,
+    "isGoto": 28,
+    "picture": 0,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily cross server battle challenge, The Higher rank you have that  will get better rewards</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Cross server Battle Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Peak Stone</font></p>"
+  },
+  {
+    "id": "008ADAEB",
+    "name": "Cross Server Battle Leaprog Challenge",
+    "description": "Today you can leaprog challenge %0 chances",
+    "unlockCondition": 0,
+    "isGoto": 28,
+    "picture": 0,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Leaprog Challenge can get extra points, upgrade player's cross server rank</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Cross Server Challenge Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Peak Stone</font></p>"
+  },
+  {
+    "id": "008ADAEC",
+    "name": "Instance Challenge",
+    "description": "Today you can defeat current highest level instance %0 chances",
+    "unlockCondition": 0,
+    "isGoto": 13,
+    "picture": 9000144,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Instance Challenge can get equipment materials daily, creat higher level equipment</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Challenge Instance Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Casting Materials</font></p>"
+  },
+  {
+    "id": "008ADAED",
+    "name": "Instance Reset",
+    "description": "Today you can use gold to reset current highest level instance %0 chances",
+    "unlockCondition": 0,
+    "isGoto": 13,
+    "picture": 0,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily Instance challenge chances according to VIP level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Challenge Instance Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Casting Materials</font></p>"
+  },
+  {
+    "id": "008ADAEE",
+    "name": "Soul Hunt",
+    "description": "Today you can get free hunt %0 chances",
+    "unlockCondition": 204,
+    "isGoto": 17,
+    "picture": 9000084,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily Soul Hunt can get red and blue star, red and blue star can exchange equipment spirit forging material</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Soul Hunt Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Blue Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Red Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Blue Star and Red star Exchanged<font color=\"#00ff00\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Spirit Forging Material</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Weapon Enchant Stone</font></p>"
+  },
+  {
+    "id": "008ADAEF",
+    "name": "Soul Hunting Chances",
+    "description": "Today you can purchase hunt%0chances",
+    "unlockCondition": 204,
+    "isGoto": 17,
+    "picture": 9000084,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily Purchase Extra Soul Hunt Chances,Chances according VIP level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Soul Hunt Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Blue Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Red Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Blue and Red Star Exchanged<font color=\"#00ff00\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Spirit Forging Material</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Weapon Enchant Stone</font></p>"
+  },
+  {
+    "id": "008ADAF0",
+    "name": "Soul Hunt robbing Chances",
+    "description": "Today you can rob %0 chances",
+    "unlockCondition": 204,
+    "isGoto": 17,
+    "picture": 9000091,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">You can rob other hunters, get extra red and blue star</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Soul Hunt Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Blue Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Red Star</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Blue and Red Star Exchanged<font color=\"#00ff00\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Spirit Forging Material</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Weapon Enchant Stone</font></p>"
+  },
+  {
+    "id": "008ADAF1",
+    "name": "Arena Challenge",
+    "description": "Today you can get free challenge %0 chances",
+    "unlockCondition": 400,
+    "isGoto": 11,
+    "picture": 9000063,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily arena challenge can get prestige, and daily arena rank rewards, prestige can upgrade player's ranks</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Arena Challenge Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Prestige</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Arena Rank Rewards<font color=\"#00ff00\"></font></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Prestige</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Material Treasure Box</font></p>"
+  },
+  {
+    "id": "008ADAF2",
+    "name": "Exchange with Girlfriend",
+    "description": "Today you can exchange with girlfriend %0 chances",
+    "unlockCondition": 1005,
+    "isGoto": 32,
+    "picture": 9000178,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Exchange with girlfriend can get skill scrolls, skill scrolls can upgrade player's skill level</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Exchange With Girlfriend Reveiced:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Skill Scrolls</font></p>"
+  },
+  {
+    "id": "008ADAF3",
+    "name": "Party with Girlfriend",
+    "description": "Today you can party with girlfriend %0 chances",
+    "unlockCondition": 1005,
+    "isGoto": 32,
+    "picture": 9000183,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Party with girlfriend can reply extra vitality, chances according to level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Party With Girlfriend Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Vitality</font></p>"
+  },
+  {
+    "id": "008ADAF4",
+    "name": "Soul Interaction with Girlfriend",
+    "description": "Today you can have soul interaction with girlfriend %0 chances",
+    "unlockCondition": 1005,
+    "isGoto": 32,
+    "picture": 9000184,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Soul Interaction can get skill scrolls, use to upgrade skill level, interaction chances according to level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Interaction with Girlfriend Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Skill Scrolls</font></p>"
+  },
+  {
+    "id": "008ADAF5",
+    "name": "Home Daily Konsō",
+    "description": "Today you can kill Konsō %0 chances",
+    "unlockCondition": 1005,
+    "isGoto": 31,
+    "picture": 9000171,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily killing Konsō can get every kind material items, Konsō chances according to level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Killing Konsō Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Equipment Casting Material</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Weapon Enchant Stone</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul Refining Pill</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Silver Bag</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Skill Scrolls</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Bikini</font></p>"
+  },
+  {
+    "id": "008ADAF6",
+    "name": "Throw Dice",
+    "description": "Today you can throw dice %0 chances left",
+    "unlockCondition": 1003,
+    "isGoto": 33,
+    "picture": 9000175,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Throw Dise can get silver or coupons, daily chances according to home level increases</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Throw Dice Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Silver</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Coupons</font></p>"
+  },
+  {
+    "id": "008ADAF7",
+    "name": "Alliance War",
+    "description": "Today you can have remaining rewards of alliance war %0 chances",
+    "unlockCondition": 401,
+    "isGoto": 34,
+    "picture": 9000150,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Alliance War can get accessories items and upgrade material, accessories can increase players and main characters attributes significantly</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Alliance War Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Crystal Nucleus</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Accessories</font></p>"
+  },
+  {
+    "id": "008ADAF8",
+    "name": "Alliance Blood Battle",
+    "description": "Today you can have alliance blood battle remaining rewards %0 chances",
+    "unlockCondition": 401,
+    "isGoto": 34,
+    "picture": 9000151,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Alliance Blood Battle can get advanced accessories material, advanced accessories can upgrade accessories attributes significantly</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Alliance Blood Battle Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Clever Stone</font></p>"
+  },
+  {
+    "id": "008ADAF9",
+    "name": "Trial Tower",
+    "description": "Today you can ues gold to reset current highest trial level %0  chances",
+    "unlockCondition": 402,
+    "isGoto": 36,
+    "picture": 9000122,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Daily trial can get relic, relic can uprade players and main characters attributes significantly</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Trial Tower Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Each Level Relic</font></p>"
+  },
+  {
+    "id": "008ADAFA",
+    "name": "Beauty Game",
+    "description": "Today you can play the remaining Beauty Game %0 chances",
+    "unlockCondition": 600,
+    "isGoto": 35,
+    "picture": 9000169,
+    "describeText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Beauty Game can get extra item materials</font></p>",
+    "dropOutText": "<p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">Beauty Game Received:</font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Vitality</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Silver Bag</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Prestige</font></p></font></p><p align=\"left\"><font face=\"Arial\" size=\"12\" color=\"#00ff00\" letterspacing=\"0\" kerning=\"0\">Soul</font></p>"
+  }
+]

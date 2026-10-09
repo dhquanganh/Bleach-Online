@@ -1,0 +1,17 @@
+[
+  {
+    "id": "0012EBC1",
+    "name": "劳动节耕耘",
+    "tName": "劳动节耕耘",
+    "desc": "1. Each time you weed or water you'll get Growth Points, which will be calculated into Total Growth.\n2. Each day you have free watering chances and by auto clearing stages, you'll get extra herbicides.\n3. When Total Growth reached required amount, you can claim corresponding giftpacks.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "water": "{\"index\" : 0, \"count\" : 2, \"score\" : 1}",
+    "weeding": "{\"index\" : 1, \"score\" : 2}",
+    "score": "{\"index\" : 2,  \"rateData\":[{\"rate\":39,\"amount\":3},{\"rate\":90,\"amount\":4},{\"rate\":99,\"amount\":5},{\"rate\":100,\"amount\":6}]}",
+    "gift": "{\"index\" : 4, \"conditon\" : [10000,20000,40000,60000,80000,100000,160000,200000], \"awardId\" : [21404161,21404162,21404163,21404164,21404165,21404166,21404167,21404168]}",
+    "itemId": 14100716,
+    "text": "Growth:"
+  }
+]

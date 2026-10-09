@@ -1,0 +1,30 @@
+[
+  {
+    "id": "00116521",
+    "name": "雪橇",
+    "tName": "雪橇",
+    "desc": "1. Click start to enter convey countdown, receive extra Xmas cards according to sledge quality when it ended.\n2. Players can cost gold to refresh sledge quality before conveyance, being robbed will lose Xmas cards.\n3. There're certain rob chances each day, rob others successfully can get extra Xmas cards.\n4. You can only rob visible sledge in the snow, use one-click reach will not be robbed and ignore countdown.\n5. All Xmas cards can exchange gifts in shop, consume 1 gold can receive 1 Xmas card.\n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1140001,
+    "robbery": "{\"index\" : 0, \"cout\" : 2}",
+    "transport": "{\"index\" : 1, \"cout\" : 2}",
+    "christmasCardsIndex": 2,
+    "refreshQuality": "{\"index\" : 3, \"gold\" : 10}",
+    "oneKeyRed": "{\"index\": 4, \"gold\" : 1000}",
+    "beginTransport": "{\"index\": 5, \"gold\": [50,200,1000,3000]}",
+    "sledInfos": "{\"index\" : 6, \"infos\" : [{\"type\" : 0, \"rate\" : 40, \"cards\" : 10, \"awardId\": 21407301, \"name\":\"White Sledge\"}, {\"type\" : 1, \"rate\" : 50, \"cards\" : 50, \"awardId\": 21407302,\"name\":\"Purple Sledge\"}, {\"type\" : 2, \"rate\" : 10, \"cards\" : 250, \"awardId\": 21407303,\"name\":\"Golden Sledge\"}, {\"type\" : 3, \"rate\" : 0, \"cards\" : 1000,\"awardId\": 21407304, \"name\":\"Red Sledge\"}]}",
+    "robberyInterfaceIndex": 7,
+    "onekeyArrival": "{\"index\" : 8, \"gold\" : 100}",
+    "receiveAwardIndex": 9,
+    "bigGift": "{\"index\" : 10, \"awardId\" : 21407271, \"showID\":11150059,\"showType\":0,\"fightReportAddr\":\"\",\"gold\" : 60000}",
+    "maxSize": 15,
+    "transportTime": 300,
+    "transportProtect": 30,
+    "robberyPersonIndex": 11,
+    "robberyIndex": "{\"index\" : 12, \"rate\" : 50}",
+    "shop": "[{\"index\" : 20, \"awardId\" : 21407271, \"cost\" : 60000, \"count\" : 1},{\"index\" : 21, \"awardId\" : 21407272, \"cost\" : 50000, \"count\" : 1},{\"index\" : 22, \"awardId\" : 21407273, \"cost\" : 50000, \"count\" : 1},{\"index\" : 23, \"awardId\" : 21407274, \"cost\" : 50000, \"count\" : 1},{\"index\" : 24, \"awardId\" : 21407275, \"cost\" : 40000, \"count\" : 1},{\"index\" : 25, \"awardId\" : 21407276, \"cost\" : 40000, \"count\" : 1},{\"index\" : 26, \"awardId\" : 21407277, \"cost\" : 40000, \"count\" : 1},{\"index\" : 27, \"awardId\" : 21407278, \"cost\" : 40000, \"count\" : 1},{\"index\" : 28, \"awardId\" : 21407279, \"cost\" : 40000, \"count\" : 1}, {\"index\" : 29, \"awardId\" : 21407280, \"cost\" : 40000, \"count\" : 1}, {\"index\" : 30, \"awardId\" : 21407281, \"cost\" : 40000, \"count\" : 1}, {\"index\" : 31, \"awardId\" : 21407282, \"cost\" : 40000, \"count\" : 1}, {\"index\" : 32, \"awardId\" : 21407283, \"cost\" : 40000, \"count\" : 1}, {\"index\" : 33, \"awardId\" : 21407284, \"cost\" : 30000, \"count\" : 1}, {\"index\" : 34, \"awardId\" : 21407285, \"cost\" : 30000, \"count\" : 1}, {\"index\" : 35, \"awardId\" : 21407286, \"cost\" : 30000, \"count\" : 1}, {\"index\" : 36, \"awardId\" : 21407287, \"cost\" : 30000, \"count\" : 1}, {\"index\" : 37, \"awardId\" : 21407288, \"cost\" : 6000, \"count\" : -1}, {\"index\" : 38, \"awardId\" : 21407289, \"cost\" : 20, \"count\" : -1}, {\"index\" : 39, \"awardId\" : 21407290, \"cost\" : 20, \"count\" : -1}, {\"index\" : 40, \"awardId\" : 21407291, \"cost\" : 100, \"count\" : -1}, {\"index\" : 41, \"awardId\" : 21407292, \"cost\" : 100, \"count\" : -1}, {\"index\" : 42, \"awardId\" : 21407293, \"cost\" : 50, \"count\" : -1}, {\"index\" : 43, \"awardId\" : 21407294, \"cost\" : 50, \"count\" : -1}, {\"index\" : 44, \"awardId\" : 21407295, \"cost\" : 50, \"count\" : -1}, {\"index\" : 45, \"awardId\" : 21407296, \"cost\" : 50, \"count\" : -1}, {\"index\" : 46, \"awardId\" : 21407297, \"cost\" : 30000, \"count\" : 1}, {\"index\" : 47, \"awardId\" : 21407298, \"cost\" : 5, \"count\" : -1}, {\"index\" : 48, \"awardId\" : 21407299, \"cost\" : 5, \"count\" : -1}, {\"index\" : 49, \"awardId\" : 21407300, \"cost\" : 100, \"count\" : -1}]",
+    "goldCards": "[1,1]",
+    "language": "{\"superTime\":\"Currently you are invincible\",\"scoreLess\":\"Not enough Xmas cards\",\"snatchTimesLess\":\"Today remaining rob chances used up\",\"curWheelSnatched\":\"Have robbed this round, can not rob again\",\"snatchState\":[\"Rob successfully\", \"Rob failed\", \"This sledge has robbed by others\"],\"log1\":\"%0 robbed you,%1 Xmas card was stolen.\",\"log2\":\"You robbed sledge of %0,get %1 Xmas card\",\"getCards\":\"Xmas card*%0\"}"
+  }
+]

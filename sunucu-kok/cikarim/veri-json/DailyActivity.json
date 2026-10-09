@@ -1,0 +1,65 @@
+[
+  {
+    "id": "042F2AC1",
+    "activityName": "Shinigami Evil Spirit",
+    "activityType": 3,
+    "activityTime": "[\"Event Start Time: \",\"00:00 - 23:59\"]",
+    "activityDescription": "Defeat Shinigami clan's Devil Spirit at any time (open all day for testing)",
+    "activityRewards": "Participate in defeating Shinigami clan's Devil Spirit can get a large amount of silver; Kill the Devil Spirit can get additional silver reward; Top ten players who deal the highest damage can get large amount of silver, souls and material chest.",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
+  },
+  {
+    "id": "042F2AC2",
+    "activityName": "Quincy Evil Spirit",
+    "activityType": 3,
+    "activityTime": "[\"Event Start Time: \",\"00:00 - 23:59\"]",
+    "activityDescription": "Defeat Quincy clan's Devil Spirit at any time (open all day for testing)",
+    "activityRewards": "Participate in defeating Quincy clan's Devil Spirit can get a large amount of silver; Kill the Devil Spirit can get additional silver reward; Top ten players who deal the highest damage can get large amount of silver, souls and material chest.",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
+  },
+  {
+    "id": "042F2AC3",
+    "activityName": "Arrancar Evil Spirit",
+    "activityType": 3,
+    "activityTime": "[\"Event Start Time: \",\"00:00 - 23:59\"]",
+    "activityDescription": "Defeat Arrancar clan's Devil Spirit at any time (open all day for testing)",
+    "activityRewards": "Participate in defeating Arrancar clan's Devil Spirit can get a large amount of silver; Kill the Devil Spirit can get additional silver reward; Top ten players who deal the highest damage can get large amount of silver, souls and material chest.",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
+  },
+  {
+    "id": "042F2AC4",
+    "activityName": "Guild War",
+    "activityType": 4,
+    "activityTime": "[\"Event Start Time: \",\"19:30 - 20:00\",\"Register Time: \",\"19:00 - 19:25\"]",
+    "activityDescription": "Register during 19:00--19:25, battle starts at 19:30",
+    "activityRewards": "Players will receive massive Merits, EXP and Coupons based on their rankings in Guild Wars; The top ten guilds will each receive additional guild chests.",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\",\"Register\",\"Register finished\",\"Registered\"]"
+  },
+  {
+    "id": "042F2AC5",
+    "activityName": "Protect Seireitei",
+    "activityType": 2,
+    "activityTime": "[\"Event Start Time: \",\"00:00 - 24:00\"]",
+    "activityDescription": "Open all day. Attack both Seireitei gates. Each valid battle rewards 10 Nguyen thach; wait 20 seconds between battles.",
+    "activityRewards": "Receive 10 Nguyen thach after every valid battle, including a defeat. Rewards appear immediately in your bag. Replaying reports or entering the event does not grant rewards.",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
+  },
+  {
+    "id": "042F2AC6",
+    "activityName": "Ryoka Attack",
+    "activityType": 8,
+    "activityTime": "[\"Event Start Time: \",\"20:15 - 20:45\"]",
+    "activityDescription": "Battle duration: 20:15 -- 20:45",
+    "activityRewards": "Participate in Ryoka Attacks can get large amount of silver, EXP, souls, common material chests, epic material chests, spirit stones, coupons and soul talisman",
+    "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
+  },
+  {
+    "id": "042F2AC7",
+    "activityName": "Void Region",
+    "activityType": 9,
+    "activityTime": "[\"Event Start Time: \",\"00:00-23:59\"]",
+    "activityDescription": "Minimum required level of Void Region is Lv.100.\nVoid Region is open all day for testing.\nAttendants of Void Region will receive participating rewards.\nTop 100 players on damage ranking list will receive ranking rewards.\nRewards for Void Region will be different each time, based on players' ranking, No.1 player will receive 10* corresponding reward, No.2 player will receive 9* corresponding reward, No.3 player will receive 8* corresponding reward, No.4 player will receive 7* corresponding reward, No.5 player will receive 6* corresponding reward, No.6-7 players will receive 5* corresponding reward, No.8-10 players will receive 4* corresponding reward and No.11-100 players will receive 2* corresponding reward.",
+    "activityRewards": "Attendants of Void Region will receive participating rewards. Players who made list during the event will receive extra ranking rewards.",
+    "buttonState": "[\"Join\",\"Join\",\"Join\"]"
+  }
+]

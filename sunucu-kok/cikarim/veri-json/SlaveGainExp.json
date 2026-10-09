@@ -1,0 +1,1115 @@
+[
+  {
+    "id": "00000001",
+    "level": 1,
+    "extractable": 50,
+    "pressible": 31800,
+    "operation": 5300
+  },
+  {
+    "id": "00000002",
+    "level": 2,
+    "extractable": 100,
+    "pressible": 32800,
+    "operation": 5500
+  },
+  {
+    "id": "00000003",
+    "level": 3,
+    "extractable": 150,
+    "pressible": 33800,
+    "operation": 5600
+  },
+  {
+    "id": "00000004",
+    "level": 4,
+    "extractable": 225,
+    "pressible": 34800,
+    "operation": 5800
+  },
+  {
+    "id": "00000005",
+    "level": 5,
+    "extractable": 300,
+    "pressible": 35800,
+    "operation": 6000
+  },
+  {
+    "id": "00000006",
+    "level": 6,
+    "extractable": 375,
+    "pressible": 36900,
+    "operation": 6100
+  },
+  {
+    "id": "00000007",
+    "level": 7,
+    "extractable": 450,
+    "pressible": 38000,
+    "operation": 6300
+  },
+  {
+    "id": "00000008",
+    "level": 8,
+    "extractable": 525,
+    "pressible": 39100,
+    "operation": 6500
+  },
+  {
+    "id": "00000009",
+    "level": 9,
+    "extractable": 600,
+    "pressible": 40300,
+    "operation": 6700
+  },
+  {
+    "id": "0000000A",
+    "level": 10,
+    "extractable": 675,
+    "pressible": 41500,
+    "operation": 6900
+  },
+  {
+    "id": "0000000B",
+    "level": 11,
+    "extractable": 750,
+    "pressible": 42800,
+    "operation": 7100
+  },
+  {
+    "id": "0000000C",
+    "level": 12,
+    "extractable": 825,
+    "pressible": 44100,
+    "operation": 7300
+  },
+  {
+    "id": "0000000D",
+    "level": 13,
+    "extractable": 900,
+    "pressible": 45400,
+    "operation": 7600
+  },
+  {
+    "id": "0000000E",
+    "level": 14,
+    "extractable": 1000,
+    "pressible": 46700,
+    "operation": 7800
+  },
+  {
+    "id": "0000000F",
+    "level": 15,
+    "extractable": 1100,
+    "pressible": 48100,
+    "operation": 8000
+  },
+  {
+    "id": "00000010",
+    "level": 16,
+    "extractable": 1200,
+    "pressible": 49600,
+    "operation": 8300
+  },
+  {
+    "id": "00000011",
+    "level": 17,
+    "extractable": 1300,
+    "pressible": 51100,
+    "operation": 8500
+  },
+  {
+    "id": "00000012",
+    "level": 18,
+    "extractable": 1400,
+    "pressible": 52600,
+    "operation": 8800
+  },
+  {
+    "id": "00000013",
+    "level": 19,
+    "extractable": 1500,
+    "pressible": 54200,
+    "operation": 9000
+  },
+  {
+    "id": "00000014",
+    "level": 20,
+    "extractable": 1600,
+    "pressible": 55800,
+    "operation": 9300
+  },
+  {
+    "id": "00000015",
+    "level": 21,
+    "extractable": 1700,
+    "pressible": 57500,
+    "operation": 9600
+  },
+  {
+    "id": "00000016",
+    "level": 22,
+    "extractable": 1800,
+    "pressible": 59200,
+    "operation": 9900
+  },
+  {
+    "id": "00000017",
+    "level": 23,
+    "extractable": 1900,
+    "pressible": 61000,
+    "operation": 10200
+  },
+  {
+    "id": "00000018",
+    "level": 24,
+    "extractable": 2000,
+    "pressible": 62800,
+    "operation": 10500
+  },
+  {
+    "id": "00000019",
+    "level": 25,
+    "extractable": 3300,
+    "pressible": 64700,
+    "operation": 10800
+  },
+  {
+    "id": "0000001A",
+    "level": 26,
+    "extractable": 3450,
+    "pressible": 66600,
+    "operation": 11100
+  },
+  {
+    "id": "0000001B",
+    "level": 27,
+    "extractable": 3600,
+    "pressible": 68600,
+    "operation": 11400
+  },
+  {
+    "id": "0000001C",
+    "level": 28,
+    "extractable": 3750,
+    "pressible": 70700,
+    "operation": 11800
+  },
+  {
+    "id": "0000001D",
+    "level": 29,
+    "extractable": 10000,
+    "pressible": 72800,
+    "operation": 12100
+  },
+  {
+    "id": "0000001E",
+    "level": 30,
+    "extractable": 21000,
+    "pressible": 75000,
+    "operation": 12500
+  },
+  {
+    "id": "0000001F",
+    "level": 31,
+    "extractable": 26260,
+    "pressible": 77300,
+    "operation": 12900
+  },
+  {
+    "id": "00000020",
+    "level": 32,
+    "extractable": 41408,
+    "pressible": 79600,
+    "operation": 13300
+  },
+  {
+    "id": "00000021",
+    "level": 33,
+    "extractable": 60255,
+    "pressible": 82000,
+    "operation": 13700
+  },
+  {
+    "id": "00000022",
+    "level": 34,
+    "extractable": 83130,
+    "pressible": 84400,
+    "operation": 14100
+  },
+  {
+    "id": "00000023",
+    "level": 35,
+    "extractable": 110379,
+    "pressible": 86900,
+    "operation": 14500
+  },
+  {
+    "id": "00000024",
+    "level": 36,
+    "extractable": 142416,
+    "pressible": 89600,
+    "operation": 14900
+  },
+  {
+    "id": "00000025",
+    "level": 37,
+    "extractable": 179595,
+    "pressible": 92200,
+    "operation": 15400
+  },
+  {
+    "id": "00000026",
+    "level": 38,
+    "extractable": 222000,
+    "pressible": 95000,
+    "operation": 15800
+  },
+  {
+    "id": "00000027",
+    "level": 39,
+    "extractable": 228000,
+    "pressible": 97900,
+    "operation": 16300
+  },
+  {
+    "id": "00000028",
+    "level": 40,
+    "extractable": 235000,
+    "pressible": 100800,
+    "operation": 16800
+  },
+  {
+    "id": "00000029",
+    "level": 41,
+    "extractable": 242000,
+    "pressible": 103800,
+    "operation": 17300
+  },
+  {
+    "id": "0000002A",
+    "level": 42,
+    "extractable": 250000,
+    "pressible": 106900,
+    "operation": 17800
+  },
+  {
+    "id": "0000002B",
+    "level": 43,
+    "extractable": 257000,
+    "pressible": 110100,
+    "operation": 18400
+  },
+  {
+    "id": "0000002C",
+    "level": 44,
+    "extractable": 265000,
+    "pressible": 113400,
+    "operation": 18900
+  },
+  {
+    "id": "0000002D",
+    "level": 45,
+    "extractable": 273000,
+    "pressible": 116800,
+    "operation": 19500
+  },
+  {
+    "id": "0000002E",
+    "level": 46,
+    "extractable": 281000,
+    "pressible": 120400,
+    "operation": 20100
+  },
+  {
+    "id": "0000002F",
+    "level": 47,
+    "extractable": 289000,
+    "pressible": 124000,
+    "operation": 20700
+  },
+  {
+    "id": "00000030",
+    "level": 48,
+    "extractable": 298000,
+    "pressible": 127700,
+    "operation": 21300
+  },
+  {
+    "id": "00000031",
+    "level": 49,
+    "extractable": 307000,
+    "pressible": 131500,
+    "operation": 21900
+  },
+  {
+    "id": "00000032",
+    "level": 50,
+    "extractable": 316000,
+    "pressible": 135500,
+    "operation": 22600
+  },
+  {
+    "id": "00000033",
+    "level": 51,
+    "extractable": 326000,
+    "pressible": 139500,
+    "operation": 23300
+  },
+  {
+    "id": "00000034",
+    "level": 52,
+    "extractable": 335000,
+    "pressible": 143700,
+    "operation": 24000
+  },
+  {
+    "id": "00000035",
+    "level": 53,
+    "extractable": 345000,
+    "pressible": 148000,
+    "operation": 24700
+  },
+  {
+    "id": "00000036",
+    "level": 54,
+    "extractable": 356000,
+    "pressible": 152500,
+    "operation": 25400
+  },
+  {
+    "id": "00000037",
+    "level": 55,
+    "extractable": 366000,
+    "pressible": 157000,
+    "operation": 26200
+  },
+  {
+    "id": "00000038",
+    "level": 56,
+    "extractable": 377000,
+    "pressible": 161700,
+    "operation": 27000
+  },
+  {
+    "id": "00000039",
+    "level": 57,
+    "extractable": 389000,
+    "pressible": 166600,
+    "operation": 27800
+  },
+  {
+    "id": "0000003A",
+    "level": 58,
+    "extractable": 400000,
+    "pressible": 171600,
+    "operation": 28600
+  },
+  {
+    "id": "0000003B",
+    "level": 59,
+    "extractable": 412000,
+    "pressible": 176700,
+    "operation": 29500
+  },
+  {
+    "id": "0000003C",
+    "level": 60,
+    "extractable": 425000,
+    "pressible": 182000,
+    "operation": 30300
+  },
+  {
+    "id": "0000003D",
+    "level": 61,
+    "extractable": 438000,
+    "pressible": 187500,
+    "operation": 31300
+  },
+  {
+    "id": "0000003E",
+    "level": 62,
+    "extractable": 451000,
+    "pressible": 193100,
+    "operation": 32200
+  },
+  {
+    "id": "0000003F",
+    "level": 63,
+    "extractable": 464000,
+    "pressible": 198900,
+    "operation": 33200
+  },
+  {
+    "id": "00000040",
+    "level": 64,
+    "extractable": 478000,
+    "pressible": 204900,
+    "operation": 34100
+  },
+  {
+    "id": "00000041",
+    "level": 65,
+    "extractable": 492000,
+    "pressible": 211000,
+    "operation": 35200
+  },
+  {
+    "id": "00000042",
+    "level": 66,
+    "extractable": 507000,
+    "pressible": 217400,
+    "operation": 36200
+  },
+  {
+    "id": "00000043",
+    "level": 67,
+    "extractable": 522000,
+    "pressible": 223900,
+    "operation": 37300
+  },
+  {
+    "id": "00000044",
+    "level": 68,
+    "extractable": 538000,
+    "pressible": 230600,
+    "operation": 38400
+  },
+  {
+    "id": "00000045",
+    "level": 69,
+    "extractable": 554000,
+    "pressible": 237500,
+    "operation": 39600
+  },
+  {
+    "id": "00000046",
+    "level": 70,
+    "extractable": 571000,
+    "pressible": 244700,
+    "operation": 40800
+  },
+  {
+    "id": "00000047",
+    "level": 71,
+    "extractable": 588000,
+    "pressible": 252000,
+    "operation": 42000
+  },
+  {
+    "id": "00000048",
+    "level": 72,
+    "extractable": 606000,
+    "pressible": 259600,
+    "operation": 43300
+  },
+  {
+    "id": "00000049",
+    "level": 73,
+    "extractable": 624000,
+    "pressible": 267300,
+    "operation": 44600
+  },
+  {
+    "id": "0000004A",
+    "level": 74,
+    "extractable": 643000,
+    "pressible": 275400,
+    "operation": 45900
+  },
+  {
+    "id": "0000004B",
+    "level": 75,
+    "extractable": 662000,
+    "pressible": 283600,
+    "operation": 47300
+  },
+  {
+    "id": "0000004C",
+    "level": 76,
+    "extractable": 682000,
+    "pressible": 292100,
+    "operation": 48700
+  },
+  {
+    "id": "0000004D",
+    "level": 77,
+    "extractable": 702000,
+    "pressible": 300900,
+    "operation": 50100
+  },
+  {
+    "id": "0000004E",
+    "level": 78,
+    "extractable": 723000,
+    "pressible": 309900,
+    "operation": 51700
+  },
+  {
+    "id": "0000004F",
+    "level": 79,
+    "extractable": 745000,
+    "pressible": 319200,
+    "operation": 53200
+  },
+  {
+    "id": "00000050",
+    "level": 80,
+    "extractable": 767000,
+    "pressible": 328800,
+    "operation": 54800
+  },
+  {
+    "id": "00000051",
+    "level": 81,
+    "extractable": 790000,
+    "pressible": 338700,
+    "operation": 56400
+  },
+  {
+    "id": "00000052",
+    "level": 82,
+    "extractable": 814000,
+    "pressible": 348800,
+    "operation": 58100
+  },
+  {
+    "id": "00000053",
+    "level": 83,
+    "extractable": 838000,
+    "pressible": 359300,
+    "operation": 59900
+  },
+  {
+    "id": "00000054",
+    "level": 84,
+    "extractable": 863000,
+    "pressible": 370100,
+    "operation": 61700
+  },
+  {
+    "id": "00000055",
+    "level": 85,
+    "extractable": 889000,
+    "pressible": 381200,
+    "operation": 63500
+  },
+  {
+    "id": "00000056",
+    "level": 86,
+    "extractable": 916000,
+    "pressible": 392600,
+    "operation": 65400
+  },
+  {
+    "id": "00000057",
+    "level": 87,
+    "extractable": 944000,
+    "pressible": 404400,
+    "operation": 67400
+  },
+  {
+    "id": "00000058",
+    "level": 88,
+    "extractable": 972000,
+    "pressible": 416500,
+    "operation": 69400
+  },
+  {
+    "id": "00000059",
+    "level": 89,
+    "extractable": 1001000,
+    "pressible": 429000,
+    "operation": 71500
+  },
+  {
+    "id": "0000005A",
+    "level": 90,
+    "extractable": 1031000,
+    "pressible": 441900,
+    "operation": 73600
+  },
+  {
+    "id": "0000005B",
+    "level": 91,
+    "extractable": 1062000,
+    "pressible": 455100,
+    "operation": 75900
+  },
+  {
+    "id": "0000005C",
+    "level": 92,
+    "extractable": 1094000,
+    "pressible": 468800,
+    "operation": 78100
+  },
+  {
+    "id": "0000005D",
+    "level": 93,
+    "extractable": 1127000,
+    "pressible": 482800,
+    "operation": 80500
+  },
+  {
+    "id": "0000005E",
+    "level": 94,
+    "extractable": 1160000,
+    "pressible": 497300,
+    "operation": 82900
+  },
+  {
+    "id": "0000005F",
+    "level": 95,
+    "extractable": 1195000,
+    "pressible": 512200,
+    "operation": 85400
+  },
+  {
+    "id": "00000060",
+    "level": 96,
+    "extractable": 1231000,
+    "pressible": 527600,
+    "operation": 87900
+  },
+  {
+    "id": "00000061",
+    "level": 97,
+    "extractable": 1268000,
+    "pressible": 543400,
+    "operation": 90600
+  },
+  {
+    "id": "00000062",
+    "level": 98,
+    "extractable": 1306000,
+    "pressible": 559700,
+    "operation": 93300
+  },
+  {
+    "id": "00000063",
+    "level": 99,
+    "extractable": 1345000,
+    "pressible": 576500,
+    "operation": 96100
+  },
+  {
+    "id": "00000064",
+    "level": 100,
+    "extractable": 1386000,
+    "pressible": 593800,
+    "operation": 99000
+  },
+  {
+    "id": "00000065",
+    "level": 101,
+    "extractable": 1427000,
+    "pressible": 611700,
+    "operation": 101900
+  },
+  {
+    "id": "00000066",
+    "level": 102,
+    "extractable": 1470000,
+    "pressible": 630000,
+    "operation": 105000
+  },
+  {
+    "id": "00000067",
+    "level": 103,
+    "extractable": 1514000,
+    "pressible": 648900,
+    "operation": 108200
+  },
+  {
+    "id": "00000068",
+    "level": 104,
+    "extractable": 1560000,
+    "pressible": 668400,
+    "operation": 111400
+  },
+  {
+    "id": "00000069",
+    "level": 105,
+    "extractable": 1606000,
+    "pressible": 688400,
+    "operation": 114700
+  },
+  {
+    "id": "0000006A",
+    "level": 106,
+    "extractable": 1655000,
+    "pressible": 709100,
+    "operation": 118200
+  },
+  {
+    "id": "0000006B",
+    "level": 107,
+    "extractable": 1704000,
+    "pressible": 730300,
+    "operation": 121700
+  },
+  {
+    "id": "0000006C",
+    "level": 108,
+    "extractable": 1755000,
+    "pressible": 752300,
+    "operation": 125400
+  },
+  {
+    "id": "0000006D",
+    "level": 109,
+    "extractable": 1808000,
+    "pressible": 774800,
+    "operation": 129100
+  },
+  {
+    "id": "0000006E",
+    "level": 110,
+    "extractable": 1862000,
+    "pressible": 798100,
+    "operation": 133000
+  },
+  {
+    "id": "0000006F",
+    "level": 111,
+    "extractable": 1918000,
+    "pressible": 822000,
+    "operation": 137000
+  },
+  {
+    "id": "00000070",
+    "level": 112,
+    "extractable": 1976000,
+    "pressible": 846700,
+    "operation": 141100
+  },
+  {
+    "id": "00000071",
+    "level": 113,
+    "extractable": 2035000,
+    "pressible": 872100,
+    "operation": 145300
+  },
+  {
+    "id": "00000072",
+    "level": 114,
+    "extractable": 2096000,
+    "pressible": 898200,
+    "operation": 149700
+  },
+  {
+    "id": "00000073",
+    "level": 115,
+    "extractable": 2159000,
+    "pressible": 925200,
+    "operation": 154200
+  },
+  {
+    "id": "00000074",
+    "level": 116,
+    "extractable": 2224000,
+    "pressible": 952900,
+    "operation": 158800
+  },
+  {
+    "id": "00000075",
+    "level": 117,
+    "extractable": 2290000,
+    "pressible": 981500,
+    "operation": 163600
+  },
+  {
+    "id": "00000076",
+    "level": 118,
+    "extractable": 2359000,
+    "pressible": 1011000,
+    "operation": 168500
+  },
+  {
+    "id": "00000077",
+    "level": 119,
+    "extractable": 2430000,
+    "pressible": 1041300,
+    "operation": 173500
+  },
+  {
+    "id": "00000078",
+    "level": 120,
+    "extractable": 2503000,
+    "pressible": 1072500,
+    "operation": 178800
+  },
+  {
+    "id": "00000079",
+    "level": 121,
+    "extractable": 2578000,
+    "pressible": 1104700,
+    "operation": 184100
+  },
+  {
+    "id": "0000007A",
+    "level": 122,
+    "extractable": 2655000,
+    "pressible": 1137900,
+    "operation": 189600
+  },
+  {
+    "id": "0000007B",
+    "level": 123,
+    "extractable": 2735000,
+    "pressible": 1172000,
+    "operation": 195300
+  },
+  {
+    "id": "0000007C",
+    "level": 124,
+    "extractable": 2817000,
+    "pressible": 1207100,
+    "operation": 201200
+  },
+  {
+    "id": "0000007D",
+    "level": 125,
+    "extractable": 2901000,
+    "pressible": 1243400,
+    "operation": 207200
+  },
+  {
+    "id": "0000007E",
+    "level": 126,
+    "extractable": 2988000,
+    "pressible": 1280700,
+    "operation": 213400
+  },
+  {
+    "id": "0000007F",
+    "level": 127,
+    "extractable": 3078000,
+    "pressible": 1319100,
+    "operation": 219800
+  },
+  {
+    "id": "00000080",
+    "level": 128,
+    "extractable": 3170000,
+    "pressible": 1358700,
+    "operation": 226400
+  },
+  {
+    "id": "00000081",
+    "level": 129,
+    "extractable": 3265000,
+    "pressible": 1399400,
+    "operation": 233200
+  },
+  {
+    "id": "00000082",
+    "level": 130,
+    "extractable": 3363000,
+    "pressible": 1441400,
+    "operation": 240200
+  },
+  {
+    "id": "00000083",
+    "level": 131,
+    "extractable": 3464000,
+    "pressible": 1484600,
+    "operation": 247400
+  },
+  {
+    "id": "00000084",
+    "level": 132,
+    "extractable": 3568000,
+    "pressible": 1529200,
+    "operation": 254900
+  },
+  {
+    "id": "00000085",
+    "level": 133,
+    "extractable": 3675000,
+    "pressible": 1575100,
+    "operation": 262500
+  },
+  {
+    "id": "00000086",
+    "level": 134,
+    "extractable": 3785000,
+    "pressible": 1622300,
+    "operation": 270400
+  },
+  {
+    "id": "00000087",
+    "level": 135,
+    "extractable": 3899000,
+    "pressible": 1671000,
+    "operation": 278500
+  },
+  {
+    "id": "00000088",
+    "level": 136,
+    "extractable": 4016000,
+    "pressible": 1721100,
+    "operation": 286900
+  },
+  {
+    "id": "00000089",
+    "level": 137,
+    "extractable": 4136000,
+    "pressible": 1772700,
+    "operation": 295500
+  },
+  {
+    "id": "0000008A",
+    "level": 138,
+    "extractable": 4260000,
+    "pressible": 1825900,
+    "operation": 304300
+  },
+  {
+    "id": "0000008B",
+    "level": 139,
+    "extractable": 4388000,
+    "pressible": 1880700,
+    "operation": 313400
+  },
+  {
+    "id": "0000008C",
+    "level": 140,
+    "extractable": 4520000,
+    "pressible": 1937100,
+    "operation": 322900
+  },
+  {
+    "id": "0000008D",
+    "level": 141,
+    "extractable": 4656000,
+    "pressible": 1995200,
+    "operation": 332500
+  },
+  {
+    "id": "0000008E",
+    "level": 142,
+    "extractable": 4795000,
+    "pressible": 2055100,
+    "operation": 342500
+  },
+  {
+    "id": "0000008F",
+    "level": 143,
+    "extractable": 4939000,
+    "pressible": 2116700,
+    "operation": 352800
+  },
+  {
+    "id": "00000090",
+    "level": 144,
+    "extractable": 5087000,
+    "pressible": 2180200,
+    "operation": 363400
+  },
+  {
+    "id": "00000091",
+    "level": 145,
+    "extractable": 5240000,
+    "pressible": 2245700,
+    "operation": 374300
+  },
+  {
+    "id": "00000092",
+    "level": 146,
+    "extractable": 5397000,
+    "pressible": 2313000,
+    "operation": 385500
+  },
+  {
+    "id": "00000093",
+    "level": 147,
+    "extractable": 5559000,
+    "pressible": 2382400,
+    "operation": 397100
+  },
+  {
+    "id": "00000094",
+    "level": 148,
+    "extractable": 5726000,
+    "pressible": 2453900,
+    "operation": 409000
+  },
+  {
+    "id": "00000095",
+    "level": 149,
+    "extractable": 5897000,
+    "pressible": 2527500,
+    "operation": 421200
+  },
+  {
+    "id": "00000096",
+    "level": 150,
+    "extractable": 6074000,
+    "pressible": 2603300,
+    "operation": 433900
+  },
+  {
+    "id": "00000097",
+    "level": 151,
+    "extractable": 6164142,
+    "pressible": 2668542,
+    "operation": 440305
+  },
+  {
+    "id": "00000098",
+    "level": 152,
+    "extractable": 6312942,
+    "pressible": 2739035,
+    "operation": 450933
+  },
+  {
+    "id": "00000099",
+    "level": 153,
+    "extractable": 6461743,
+    "pressible": 2809528,
+    "operation": 461562
+  },
+  {
+    "id": "0000009A",
+    "level": 154,
+    "extractable": 6610542,
+    "pressible": 2880021,
+    "operation": 472190
+  },
+  {
+    "id": "0000009B",
+    "level": 155,
+    "extractable": 6759342,
+    "pressible": 2950514,
+    "operation": 482818
+  },
+  {
+    "id": "0000009C",
+    "level": 156,
+    "extractable": 6908142,
+    "pressible": 3021007,
+    "operation": 493447
+  },
+  {
+    "id": "0000009D",
+    "level": 157,
+    "extractable": 7056942,
+    "pressible": 3091500,
+    "operation": 504075
+  },
+  {
+    "id": "0000009E",
+    "level": 158,
+    "extractable": 7205742,
+    "pressible": 3161992,
+    "operation": 514703
+  },
+  {
+    "id": "0000009F",
+    "level": 159,
+    "extractable": 7354542,
+    "pressible": 3232485,
+    "operation": 525332
+  }
+]

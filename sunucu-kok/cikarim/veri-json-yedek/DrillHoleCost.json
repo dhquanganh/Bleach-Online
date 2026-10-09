@@ -1,0 +1,82 @@
+[
+  {
+    "id": "00010D89",
+    "equipLv": 69,
+    "drillNum": 1,
+    "drillCostMoney": 100000,
+    "costItemNum": "[14320093,14320098]",
+    "f4": 2
+  },
+  {
+    "id": "00015BA9",
+    "equipLv": 89,
+    "drillNum": 1,
+    "drillCostMoney": 200000,
+    "costItemNum": "[14320094,14320098]",
+    "f4": 6
+  },
+  {
+    "id": "0001D0D9",
+    "equipLv": 119,
+    "drillNum": 1,
+    "drillCostMoney": 500000,
+    "costItemNum": "[14320095,14320098]",
+    "f4": 11
+  },
+  {
+    "id": "00021EF9",
+    "equipLv": 139,
+    "drillNum": 1,
+    "drillCostMoney": 1000000,
+    "costItemNum": "[14320096,14320098]",
+    "f4": 17
+  },
+  {
+    "id": "0002BB39",
+    "equipLv": 179,
+    "drillNum": 1,
+    "drillCostMoney": 3000000,
+    "costItemNum": "[14320097,14320098]",
+    "f4": 24
+  },
+  {
+    "id": "00010D8A",
+    "equipLv": 69,
+    "drillNum": 2,
+    "drillCostMoney": 200000,
+    "costItemNum": "[14320093,14320098]",
+    "f4": 4
+  },
+  {
+    "id": "00015BAA",
+    "equipLv": 89,
+    "drillNum": 2,
+    "drillCostMoney": 400000,
+    "costItemNum": "[14320094,14320098]",
+    "f4": 12
+  },
+  {
+    "id": "0001D0DA",
+    "equipLv": 119,
+    "drillNum": 2,
+    "drillCostMoney": 1000000,
+    "costItemNum": "[14320095,14320098]",
+    "f4": 22
+  },
+  {
+    "id": "00021EFA",
+    "equipLv": 139,
+    "drillNum": 2,
+    "drillCostMoney": 2000000,
+    "costItemNum": "[14320096,14320098]",
+    "f4": 34
+  },
+  {
+    "id": "0002BB3A",
+    "equipLv": 179,
+    "drillNum": 2,
+    "drillCostMoney": 6000000,
+    "costItemNum": "[14320097,14320098]",
+    "f4": 48
+  }
+]

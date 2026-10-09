@@ -1,0 +1,15 @@
+[
+  {
+    "id": "0016BC51",
+    "name": "空座町庆典",
+    "tName": "2. 尸魂护廷",
+    "desc": "1. You have unlimited chances to use sugar to rent partner for a duration\n2. Owned partner can't be rent or buy again.\n3. You can buy partners that you haven't owned yet. Accumulatively rent a partner for required time to own it permanently.    \n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1490001,
+    "buyScoreIndex": 1,
+    "buyGoldIndex": 2,
+    "scale": 50,
+    "relatedId": 1480001
+  }
+]

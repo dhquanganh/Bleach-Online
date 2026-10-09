@@ -1,0 +1,281 @@
+[
+  {
+    "id": "00A9AD84",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD85",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD86",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD87",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD8A",
+    "oneDayCost": 60,
+    "threeDayCost": 100,
+    "sevenDayCost": 300,
+    "foreverCost": 7000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 6
+  },
+  {
+    "id": "00A9AD8B",
+    "oneDayCost": 60,
+    "threeDayCost": 100,
+    "sevenDayCost": 300,
+    "foreverCost": 7000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 6
+  },
+  {
+    "id": "00A9AD8C",
+    "oneDayCost": 60,
+    "threeDayCost": 100,
+    "sevenDayCost": 300,
+    "foreverCost": 7000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 6
+  },
+  {
+    "id": "00A9AD8D",
+    "oneDayCost": 60,
+    "threeDayCost": 100,
+    "sevenDayCost": 300,
+    "foreverCost": 7000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 6
+  },
+  {
+    "id": "00A9FBAC",
+    "oneDayCost": 30,
+    "threeDayCost": 60,
+    "sevenDayCost": 135,
+    "foreverCost": 4000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 3
+  },
+  {
+    "id": "00A9FBAB",
+    "oneDayCost": 30,
+    "threeDayCost": 60,
+    "sevenDayCost": 135,
+    "foreverCost": 4000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 3
+  },
+  {
+    "id": "00AA22B2",
+    "oneDayCost": 50,
+    "threeDayCost": 80,
+    "sevenDayCost": 250,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD89",
+    "oneDayCost": 150,
+    "threeDayCost": 250,
+    "sevenDayCost": 600,
+    "foreverCost": 10000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 12
+  },
+  {
+    "id": "00A9AD88",
+    "oneDayCost": 150,
+    "threeDayCost": 250,
+    "sevenDayCost": 600,
+    "foreverCost": 10000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 12
+  },
+  {
+    "id": "00AA22B9",
+    "oneDayCost": 50,
+    "threeDayCost": 80,
+    "sevenDayCost": 250,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9FBA8",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 30000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22BA",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 20000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22C3",
+    "oneDayCost": 90,
+    "threeDayCost": 200,
+    "sevenDayCost": 450,
+    "foreverCost": 20000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 9
+  },
+  {
+    "id": "00AA22BB",
+    "oneDayCost": 300,
+    "threeDayCost": 500,
+    "sevenDayCost": 1200,
+    "foreverCost": 30000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 24
+  },
+  {
+    "id": "00AA22B8",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 20000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22BC",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 12000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22BD",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 12000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22BE",
+    "oneDayCost": 200,
+    "threeDayCost": 350,
+    "sevenDayCost": 900,
+    "foreverCost": 12000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 18
+  },
+  {
+    "id": "00AA22CE",
+    "oneDayCost": 300,
+    "threeDayCost": 500,
+    "sevenDayCost": 1300,
+    "foreverCost": 50000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 26
+  },
+  {
+    "id": "00AA22C0",
+    "oneDayCost": 300,
+    "threeDayCost": 500,
+    "sevenDayCost": 1300,
+    "foreverCost": 40000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 26
+  },
+  {
+    "id": "00A9FBAD",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9FBAE",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD81",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 5000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD82",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 5000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A9AD83",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A95FC5",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  },
+  {
+    "id": "00A95FC6",
+    "oneDayCost": 50,
+    "threeDayCost": 90,
+    "sevenDayCost": 270,
+    "foreverCost": 6000,
+    "timeList": "[86400,259200,604800,0]",
+    "needCandy": 5
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0013D621",
+    "name": "虚圈探宝",
+    "tName": "虚圈探宝",
+    "desc": "1. Each time you draw in Dark Altar you will obtain a Talisman of Dark and in Light Altar you'll get a Fragment of Light.\n2. You can exchange for rewards in Shop of Dark with Talisman of Dark as well as using Fragment of Light in Shop of Light.\n3. Exchanging Partner will consume corresponding items.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "darkIndex": 0,
+    "lightIndex": 1,
+    "darkItemIndex": 2,
+    "lightItemIndex": 3,
+    "items": "[{\"awardId\" : 21405560, \"rate\" : 15, \"type\" : 0}, {\"awardId\" : 21405561, \"rate\" : 15, \"type\" : 0}, {\"awardId\" : 21405562, \"rate\" : 10, \"type\" : 0}, {\"awardId\" : 21405563, \"rate\" : 20, \"type\" : 0}, {\"awardId\" : 21405564, \"rate\" : 20, \"type\" : 0}, {\"awardId\" : 21405565, \"rate\" : 20, \"type\" : 0}, {\"awardId\" : 21405566, \"rate\" : 15, \"type\" : 1}, {\"awardId\" : 21405567, \"rate\" : 15, \"type\" : 1},{\"awardId\" : 21405568, \"rate\" : 10, \"type\" : 1},{\"awardId\" : 21405569, \"rate\" : 20, \"type\" : 1},{\"awardId\" : 21405570, \"rate\" : 20, \"type\" : 1},{\"awardId\" : 21405571, \"rate\" : 20, \"type\" : 1}]",
+    "shop": "[{\"index\" : 10, \"awardId\":21405572, \"num\":0, \"cost\":1, \"type\":0}, {\"index\" : 11, \"awardId\":21405573, \"num\":0, \"cost\":50, \"type\":0}, {\"index\" : 12, \"awardId\":21405574, \"num\":0, \"cost\":80, \"type\":0}, {\"index\" : 13, \"awardId\":21405575, \"num\":0, \"cost\":100, \"type\":0},{\"index\" : 14, \"awardId\":21405576, \"num\":0, \"cost\":50, \"type\":0},{\"index\" : 15, \"awardId\":21405577, \"num\":0, \"cost\":2, \"type\":0},{\"index\" : 16, \"awardId\":21405578, \"num\":1, \"cost\":200, \"type\":1},{\"index\" : 17, \"awardId\":21405579, \"num\":1, \"cost\":200, \"type\":1},{\"index\" : 18, \"awardId\":21405580, \"num\":1, \"cost\":200, \"type\":1},{\"index\" : 19, \"awardId\":21405581, \"num\":1, \"cost\":200, \"type\":1},{\"index\" : 20, \"awardId\":21405582, \"num\":0, \"cost\":5, \"type\":1},{\"index\" : 21, \"awardId\":21405583, \"num\":0, \"cost\":10, \"type\":1}]",
+    "bigAward": "{\"index\" : 50, \"awardId\" : 21405584, \"cost\":300, \"showType\": \"0\", \"showId\":11150044,\"fightReportAddr\":\"\"}",
+    "cost": 100,
+    "texts": "[\"Talisman de Lumiere\",\"Talisman Sombre\"]"
+  }
+]

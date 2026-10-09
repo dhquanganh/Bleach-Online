@@ -1,0 +1,19 @@
+[
+  {
+    "id": "0015D1F1",
+    "name": "活动1",
+    "tName": "大鸡大礼",
+    "desc": "1. Complete the quests every day to receive points. The quests will be reset at 00:00 each day.\n2. Use your points to exchange them for chests. Only 1 per day.\n3. The same quest will not give you extra points.\n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1430001,
+    "tasks": "[{\"index\":1,\"type\":20,\"value\":1},{\"index\":2,\"type\":1,\"value\":200},{\"index\":3,\"type\":14,\"value\":200},{\"index\":4,\"type\":13,\"value\":3},{\"index\":5,\"type\":17,\"value\":1},{\"index\":6,\"type\":2,\"value\":1}]",
+    "scoreIndex": 90,
+    "threeIndex": 91,
+    "sixIndex": 92,
+    "threeAward": 21404683,
+    "sixAward": 21404684,
+    "threeNum": 3,
+    "sixNum": 6
+  }
+]

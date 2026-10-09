@@ -1,0 +1,32 @@
+[
+  {
+    "id": "00162011",
+    "name": "活动3",
+    "tName": "神秘灯笼",
+    "desc": "1. Each lantern contains different rewards. Refresh the lanterns to reset the rewards.\n2. You can only select one of the rewards from a lantern, and buy after having selected all the rewards of the lanterns.\n3. The price varies according to discounts. Use refresh discount to lower the price.\n4. Spend gold in this events will give you points. Gather certain points to exchange Gifts",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1450001,
+    "oneAward": "[{\"index\":1,\"awardid\":21404725,\"weight\":10,\"cost\":1000},{\"index\":2,\"awardid\":21404726,\"weight\":10,\"cost\":500},{\"index\":3,\"awardid\":21404727,\"weight\":10,\"cost\":1000},{\"index\":4,\"awardid\":21404728,\"weight\":10,\"cost\":6400},{\"index\":5,\"awardid\":21404729,\"weight\":10,\"cost\":8000},{\"index\":6,\"awardid\":21404730,\"weight\":10,\"cost\":1600}]",
+    "twoAward": "[{\"index\":10,\"awardid\":21404731,\"weight\":10,\"cost\":1000},{\"index\":11,\"awardid\":21404732,\"weight\":10,\"cost\":500},{\"index\":12,\"awardid\":21404733,\"weight\":10,\"cost\":500},{\"index\":13,\"awardid\":21404734,\"weight\":10,\"cost\":1000},{\"index\":14,\"awardid\":21404735,\"weight\":10,\"cost\":12000},{\"index\":15,\"awardid\":21404736,\"weight\":10,\"cost\":3200}]\n",
+    "threeAward": "[{\"index\":20,\"awardid\":21404737,\"weight\":10,\"cost\":800},{\"index\":21,\"awardid\":21404738,\"weight\":10,\"cost\":500},{\"index\":22,\"awardid\":21404739,\"weight\":10,\"cost\":500},{\"index\":23,\"awardid\":21404740,\"weight\":10,\"cost\":1000},{\"index\":24,\"awardid\":21404741,\"weight\":10,\"cost\":12000},{\"index\":25,\"awardid\":21404742,\"weight\":10,\"cost\":6400}]",
+    "scoreRatio": 1,
+    "oneMall": "[70,71,72]",
+    "twoMall": "[73,74,75]",
+    "threeMall": "[76,77,78]",
+    "chargeOrgIndex": 90,
+    "chargeRedIndex": 91,
+    "scoreIndex": 92,
+    "freshOneAward": 93,
+    "freshTwoAward": 94,
+    "freshThreeAward": 95,
+    "buyIndex": 96,
+    "saleIndex": 97,
+    "saleCost": 100,
+    "awardCost": 20,
+    "orgRatio": 300,
+    "redRatio": 1500,
+    "rand": "[5,9]",
+    "text": "Point"
+  }
+]

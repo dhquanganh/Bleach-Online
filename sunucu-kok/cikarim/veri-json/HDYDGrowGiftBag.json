@@ -1,0 +1,12 @@
+[
+  {
+    "id": "00002713",
+    "name": "Growth Pack",
+    "front": "Super Battle Power Surpass All",
+    "middle": "At the end of event at Midnight, top 5 Battle Power players will receive one Battle Power Gift Pack (Reward will be sent via email). At the same time, players who reached the target Battle Power will also get Designated Battle Power Gift Pack.",
+    "back": "2",
+    "leaderID": 0,
+    "awardId": 20001,
+    "text": "[{\"key\":20,\"value\":[30000041],\"prompt\":\"20级\"},{\"key\":40,\"value\":[30000042],\"prompt\":\"40级\"},{\"key\":60,\"value\":[30000043],\"prompt\":\"60级\"},{\"key\":80,\"value\":[30000044],\"prompt\":\"80级\"}]"
+  }
+]

@@ -1,0 +1,8402 @@
+[
+  {
+    "id": "000003E8",
+    "buildLevel": 0,
+    "quality": 1,
+    "consume": 328
+  },
+  {
+    "id": "000003E9",
+    "buildLevel": 1,
+    "quality": 1,
+    "consume": 355
+  },
+  {
+    "id": "000003EA",
+    "buildLevel": 2,
+    "quality": 1,
+    "consume": 384
+  },
+  {
+    "id": "000003EB",
+    "buildLevel": 3,
+    "quality": 1,
+    "consume": 415
+  },
+  {
+    "id": "000003EC",
+    "buildLevel": 4,
+    "quality": 1,
+    "consume": 448
+  },
+  {
+    "id": "000003ED",
+    "buildLevel": 5,
+    "quality": 1,
+    "consume": 484
+  },
+  {
+    "id": "000003EE",
+    "buildLevel": 6,
+    "quality": 1,
+    "consume": 524
+  },
+  {
+    "id": "000003EF",
+    "buildLevel": 7,
+    "quality": 1,
+    "consume": 567
+  },
+  {
+    "id": "000003F0",
+    "buildLevel": 8,
+    "quality": 1,
+    "consume": 613
+  },
+  {
+    "id": "000003F1",
+    "buildLevel": 9,
+    "quality": 1,
+    "consume": 662
+  },
+  {
+    "id": "000003F2",
+    "buildLevel": 10,
+    "quality": 1,
+    "consume": 716
+  },
+  {
+    "id": "000003F3",
+    "buildLevel": 11,
+    "quality": 1,
+    "consume": 774
+  },
+  {
+    "id": "000003F4",
+    "buildLevel": 12,
+    "quality": 1,
+    "consume": 836
+  },
+  {
+    "id": "000003F5",
+    "buildLevel": 13,
+    "quality": 1,
+    "consume": 903
+  },
+  {
+    "id": "000003F6",
+    "buildLevel": 14,
+    "quality": 1,
+    "consume": 976
+  },
+  {
+    "id": "000003F7",
+    "buildLevel": 15,
+    "quality": 1,
+    "consume": 1056
+  },
+  {
+    "id": "000003F8",
+    "buildLevel": 16,
+    "quality": 1,
+    "consume": 1141
+  },
+  {
+    "id": "000003F9",
+    "buildLevel": 17,
+    "quality": 1,
+    "consume": 1233
+  },
+  {
+    "id": "000003FA",
+    "buildLevel": 18,
+    "quality": 1,
+    "consume": 1333
+  },
+  {
+    "id": "000003FB",
+    "buildLevel": 19,
+    "quality": 1,
+    "consume": 1440
+  },
+  {
+    "id": "000003FC",
+    "buildLevel": 20,
+    "quality": 1,
+    "consume": 1555
+  },
+  {
+    "id": "000003FD",
+    "buildLevel": 21,
+    "quality": 1,
+    "consume": 1680
+  },
+  {
+    "id": "000003FE",
+    "buildLevel": 22,
+    "quality": 1,
+    "consume": 1814
+  },
+  {
+    "id": "000003FF",
+    "buildLevel": 23,
+    "quality": 1,
+    "consume": 1959
+  },
+  {
+    "id": "00000400",
+    "buildLevel": 24,
+    "quality": 1,
+    "consume": 2116
+  },
+  {
+    "id": "00000401",
+    "buildLevel": 25,
+    "quality": 1,
+    "consume": 2287
+  },
+  {
+    "id": "00000402",
+    "buildLevel": 26,
+    "quality": 1,
+    "consume": 2470
+  },
+  {
+    "id": "00000403",
+    "buildLevel": 27,
+    "quality": 1,
+    "consume": 2668
+  },
+  {
+    "id": "00000404",
+    "buildLevel": 28,
+    "quality": 1,
+    "consume": 2882
+  },
+  {
+    "id": "00000405",
+    "buildLevel": 29,
+    "quality": 1,
+    "consume": 3114
+  },
+  {
+    "id": "00000406",
+    "buildLevel": 30,
+    "quality": 1,
+    "consume": 3363
+  },
+  {
+    "id": "00000407",
+    "buildLevel": 31,
+    "quality": 1,
+    "consume": 3633
+  },
+  {
+    "id": "00000408",
+    "buildLevel": 32,
+    "quality": 1,
+    "consume": 3925
+  },
+  {
+    "id": "00000409",
+    "buildLevel": 33,
+    "quality": 1,
+    "consume": 4869
+  },
+  {
+    "id": "0000040A",
+    "buildLevel": 34,
+    "quality": 1,
+    "consume": 5804
+  },
+  {
+    "id": "0000040B",
+    "buildLevel": 35,
+    "quality": 1,
+    "consume": 6732
+  },
+  {
+    "id": "0000040C",
+    "buildLevel": 36,
+    "quality": 1,
+    "consume": 7656
+  },
+  {
+    "id": "0000040D",
+    "buildLevel": 37,
+    "quality": 1,
+    "consume": 8577
+  },
+  {
+    "id": "0000040E",
+    "buildLevel": 38,
+    "quality": 1,
+    "consume": 9496
+  },
+  {
+    "id": "0000040F",
+    "buildLevel": 39,
+    "quality": 1,
+    "consume": 10416
+  },
+  {
+    "id": "00000410",
+    "buildLevel": 40,
+    "quality": 1,
+    "consume": 11335
+  },
+  {
+    "id": "00000411",
+    "buildLevel": 41,
+    "quality": 1,
+    "consume": 12260
+  },
+  {
+    "id": "00000412",
+    "buildLevel": 42,
+    "quality": 1,
+    "consume": 13194
+  },
+  {
+    "id": "00000413",
+    "buildLevel": 43,
+    "quality": 1,
+    "consume": 14127
+  },
+  {
+    "id": "00000414",
+    "buildLevel": 44,
+    "quality": 1,
+    "consume": 15070
+  },
+  {
+    "id": "00000415",
+    "buildLevel": 45,
+    "quality": 1,
+    "consume": 16024
+  },
+  {
+    "id": "00000416",
+    "buildLevel": 46,
+    "quality": 1,
+    "consume": 16986
+  },
+  {
+    "id": "00000417",
+    "buildLevel": 47,
+    "quality": 1,
+    "consume": 17960
+  },
+  {
+    "id": "00000418",
+    "buildLevel": 48,
+    "quality": 1,
+    "consume": 18943
+  },
+  {
+    "id": "00000419",
+    "buildLevel": 49,
+    "quality": 1,
+    "consume": 19940
+  },
+  {
+    "id": "0000041A",
+    "buildLevel": 50,
+    "quality": 1,
+    "consume": 20948
+  },
+  {
+    "id": "0000041B",
+    "buildLevel": 51,
+    "quality": 1,
+    "consume": 22417
+  },
+  {
+    "id": "0000041C",
+    "buildLevel": 52,
+    "quality": 1,
+    "consume": 23932
+  },
+  {
+    "id": "0000041D",
+    "buildLevel": 53,
+    "quality": 1,
+    "consume": 25514
+  },
+  {
+    "id": "0000041E",
+    "buildLevel": 54,
+    "quality": 1,
+    "consume": 27159
+  },
+  {
+    "id": "0000041F",
+    "buildLevel": 55,
+    "quality": 1,
+    "consume": 28860
+  },
+  {
+    "id": "00000420",
+    "buildLevel": 56,
+    "quality": 1,
+    "consume": 30626
+  },
+  {
+    "id": "00000421",
+    "buildLevel": 57,
+    "quality": 1,
+    "consume": 32468
+  },
+  {
+    "id": "00000422",
+    "buildLevel": 58,
+    "quality": 1,
+    "consume": 34370
+  },
+  {
+    "id": "00000423",
+    "buildLevel": 59,
+    "quality": 1,
+    "consume": 36812
+  },
+  {
+    "id": "00000424",
+    "buildLevel": 60,
+    "quality": 1,
+    "consume": 39360
+  },
+  {
+    "id": "00000425",
+    "buildLevel": 61,
+    "quality": 1,
+    "consume": 41994
+  },
+  {
+    "id": "00000426",
+    "buildLevel": 62,
+    "quality": 1,
+    "consume": 44738
+  },
+  {
+    "id": "00000427",
+    "buildLevel": 63,
+    "quality": 1,
+    "consume": 47584
+  },
+  {
+    "id": "00000428",
+    "buildLevel": 64,
+    "quality": 1,
+    "consume": 50538
+  },
+  {
+    "id": "00000429",
+    "buildLevel": 65,
+    "quality": 1,
+    "consume": 53598
+  },
+  {
+    "id": "0000042A",
+    "buildLevel": 66,
+    "quality": 1,
+    "consume": 56781
+  },
+  {
+    "id": "0000042B",
+    "buildLevel": 67,
+    "quality": 1,
+    "consume": 60091
+  },
+  {
+    "id": "0000042C",
+    "buildLevel": 68,
+    "quality": 1,
+    "consume": 63518
+  },
+  {
+    "id": "0000042D",
+    "buildLevel": 69,
+    "quality": 1,
+    "consume": 67951
+  },
+  {
+    "id": "0000042E",
+    "buildLevel": 70,
+    "quality": 1,
+    "consume": 72561
+  },
+  {
+    "id": "0000042F",
+    "buildLevel": 71,
+    "quality": 1,
+    "consume": 77354
+  },
+  {
+    "id": "00000430",
+    "buildLevel": 72,
+    "quality": 1,
+    "consume": 82336
+  },
+  {
+    "id": "00000431",
+    "buildLevel": 73,
+    "quality": 1,
+    "consume": 87495
+  },
+  {
+    "id": "00000432",
+    "buildLevel": 74,
+    "quality": 1,
+    "consume": 92853
+  },
+  {
+    "id": "00000433",
+    "buildLevel": 75,
+    "quality": 1,
+    "consume": 98414
+  },
+  {
+    "id": "00000434",
+    "buildLevel": 76,
+    "quality": 1,
+    "consume": 104202
+  },
+  {
+    "id": "00000435",
+    "buildLevel": 77,
+    "quality": 1,
+    "consume": 110186
+  },
+  {
+    "id": "00000436",
+    "buildLevel": 78,
+    "quality": 1,
+    "consume": 116390
+  },
+  {
+    "id": "00000437",
+    "buildLevel": 79,
+    "quality": 1,
+    "consume": 122839
+  },
+  {
+    "id": "00000438",
+    "buildLevel": 80,
+    "quality": 1,
+    "consume": 130381
+  },
+  {
+    "id": "00000439",
+    "buildLevel": 81,
+    "quality": 1,
+    "consume": 138146
+  },
+  {
+    "id": "0000043A",
+    "buildLevel": 82,
+    "quality": 1,
+    "consume": 146095
+  },
+  {
+    "id": "0000043B",
+    "buildLevel": 83,
+    "quality": 1,
+    "consume": 154298
+  },
+  {
+    "id": "0000043C",
+    "buildLevel": 84,
+    "quality": 1,
+    "consume": 162716
+  },
+  {
+    "id": "0000043D",
+    "buildLevel": 85,
+    "quality": 1,
+    "consume": 171374
+  },
+  {
+    "id": "0000043E",
+    "buildLevel": 86,
+    "quality": 1,
+    "consume": 180252
+  },
+  {
+    "id": "0000043F",
+    "buildLevel": 87,
+    "quality": 1,
+    "consume": 189405
+  },
+  {
+    "id": "00000440",
+    "buildLevel": 88,
+    "quality": 1,
+    "consume": 198787
+  },
+  {
+    "id": "00000441",
+    "buildLevel": 89,
+    "quality": 1,
+    "consume": 208453
+  },
+  {
+    "id": "00000442",
+    "buildLevel": 90,
+    "quality": 1,
+    "consume": 220587
+  },
+  {
+    "id": "00000443",
+    "buildLevel": 91,
+    "quality": 1,
+    "consume": 233031
+  },
+  {
+    "id": "00000444",
+    "buildLevel": 92,
+    "quality": 1,
+    "consume": 245875
+  },
+  {
+    "id": "00000445",
+    "buildLevel": 93,
+    "quality": 1,
+    "consume": 259070
+  },
+  {
+    "id": "00000446",
+    "buildLevel": 94,
+    "quality": 1,
+    "consume": 272619
+  },
+  {
+    "id": "00000447",
+    "buildLevel": 95,
+    "quality": 1,
+    "consume": 286563
+  },
+  {
+    "id": "00000448",
+    "buildLevel": 96,
+    "quality": 1,
+    "consume": 300907
+  },
+  {
+    "id": "00000449",
+    "buildLevel": 97,
+    "quality": 1,
+    "consume": 315657
+  },
+  {
+    "id": "0000044A",
+    "buildLevel": 98,
+    "quality": 1,
+    "consume": 330824
+  },
+  {
+    "id": "0000044B",
+    "buildLevel": 99,
+    "quality": 1,
+    "consume": 346412
+  },
+  {
+    "id": "0000044C",
+    "buildLevel": 100,
+    "quality": 1,
+    "consume": 365018
+  },
+  {
+    "id": "0000044D",
+    "buildLevel": 101,
+    "quality": 1,
+    "consume": 384142
+  },
+  {
+    "id": "0000044E",
+    "buildLevel": 102,
+    "quality": 1,
+    "consume": 403873
+  },
+  {
+    "id": "0000044F",
+    "buildLevel": 103,
+    "quality": 1,
+    "consume": 530131
+  },
+  {
+    "id": "00000450",
+    "buildLevel": 104,
+    "quality": 1,
+    "consume": 667444
+  },
+  {
+    "id": "00000451",
+    "buildLevel": 105,
+    "quality": 1,
+    "consume": 816164
+  },
+  {
+    "id": "00000452",
+    "buildLevel": 106,
+    "quality": 1,
+    "consume": 976893
+  },
+  {
+    "id": "00000453",
+    "buildLevel": 107,
+    "quality": 1,
+    "consume": 1073288
+  },
+  {
+    "id": "00000454",
+    "buildLevel": 108,
+    "quality": 1,
+    "consume": 1175691
+  },
+  {
+    "id": "00000455",
+    "buildLevel": 109,
+    "quality": 1,
+    "consume": 1284331
+  },
+  {
+    "id": "00000456",
+    "buildLevel": 110,
+    "quality": 1,
+    "consume": 1399332
+  },
+  {
+    "id": "00000457",
+    "buildLevel": 111,
+    "quality": 1,
+    "consume": 1521027
+  },
+  {
+    "id": "00000458",
+    "buildLevel": 112,
+    "quality": 1,
+    "consume": 1649538
+  },
+  {
+    "id": "00000459",
+    "buildLevel": 113,
+    "quality": 1,
+    "consume": 1785349
+  },
+  {
+    "id": "0000045A",
+    "buildLevel": 114,
+    "quality": 1,
+    "consume": 1928592
+  },
+  {
+    "id": "0000045B",
+    "buildLevel": 115,
+    "quality": 1,
+    "consume": 2079667
+  },
+  {
+    "id": "0000045C",
+    "buildLevel": 116,
+    "quality": 1,
+    "consume": 2238698
+  },
+  {
+    "id": "0000045D",
+    "buildLevel": 117,
+    "quality": 1,
+    "consume": 2406109
+  },
+  {
+    "id": "0000045E",
+    "buildLevel": 118,
+    "quality": 1,
+    "consume": 2582185
+  },
+  {
+    "id": "0000045F",
+    "buildLevel": 119,
+    "quality": 1,
+    "consume": 2767218
+  },
+  {
+    "id": "00000460",
+    "buildLevel": 120,
+    "quality": 1,
+    "consume": 2961686
+  },
+  {
+    "id": "00000461",
+    "buildLevel": 121,
+    "quality": 1,
+    "consume": 3165528
+  },
+  {
+    "id": "00000462",
+    "buildLevel": 122,
+    "quality": 1,
+    "consume": 3379624
+  },
+  {
+    "id": "00000463",
+    "buildLevel": 123,
+    "quality": 1,
+    "consume": 3604123
+  },
+  {
+    "id": "00000464",
+    "buildLevel": 124,
+    "quality": 1,
+    "consume": 3839359
+  },
+  {
+    "id": "00000465",
+    "buildLevel": 125,
+    "quality": 1,
+    "consume": 4085672
+  },
+  {
+    "id": "00000466",
+    "buildLevel": 126,
+    "quality": 1,
+    "consume": 4343641
+  },
+  {
+    "id": "00000467",
+    "buildLevel": 127,
+    "quality": 1,
+    "consume": 4500873
+  },
+  {
+    "id": "00000468",
+    "buildLevel": 128,
+    "quality": 1,
+    "consume": 4662661
+  },
+  {
+    "id": "00000469",
+    "buildLevel": 129,
+    "quality": 1,
+    "consume": 4828824
+  },
+  {
+    "id": "0000046A",
+    "buildLevel": 130,
+    "quality": 1,
+    "consume": 4999412
+  },
+  {
+    "id": "0000046B",
+    "buildLevel": 131,
+    "quality": 1,
+    "consume": 5174731
+  },
+  {
+    "id": "0000046C",
+    "buildLevel": 132,
+    "quality": 1,
+    "consume": 5355093
+  },
+  {
+    "id": "0000046D",
+    "buildLevel": 133,
+    "quality": 1,
+    "consume": 5540052
+  },
+  {
+    "id": "0000046E",
+    "buildLevel": 134,
+    "quality": 1,
+    "consume": 5730174
+  },
+  {
+    "id": "0000046F",
+    "buildLevel": 135,
+    "quality": 1,
+    "consume": 5925523
+  },
+  {
+    "id": "00000470",
+    "buildLevel": 136,
+    "quality": 1,
+    "consume": 6126160
+  },
+  {
+    "id": "00000471",
+    "buildLevel": 137,
+    "quality": 1,
+    "consume": 6332148
+  },
+  {
+    "id": "00000472",
+    "buildLevel": 138,
+    "quality": 1,
+    "consume": 6543816
+  },
+  {
+    "id": "00000473",
+    "buildLevel": 139,
+    "quality": 1,
+    "consume": 6761227
+  },
+  {
+    "id": "00000474",
+    "buildLevel": 140,
+    "quality": 1,
+    "consume": 6984450
+  },
+  {
+    "id": "00000475",
+    "buildLevel": 141,
+    "quality": 1,
+    "consume": 7213821
+  },
+  {
+    "id": "00000476",
+    "buildLevel": 142,
+    "quality": 1,
+    "consume": 7449134
+  },
+  {
+    "id": "00000477",
+    "buildLevel": 143,
+    "quality": 1,
+    "consume": 7691012
+  },
+  {
+    "id": "00000478",
+    "buildLevel": 144,
+    "quality": 1,
+    "consume": 7939244
+  },
+  {
+    "id": "00000479",
+    "buildLevel": 145,
+    "quality": 1,
+    "consume": 8194183
+  },
+  {
+    "id": "0000047A",
+    "buildLevel": 146,
+    "quality": 1,
+    "consume": 8456191
+  },
+  {
+    "id": "0000047B",
+    "buildLevel": 147,
+    "quality": 1,
+    "consume": 8725050
+  },
+  {
+    "id": "0000047C",
+    "buildLevel": 148,
+    "quality": 1,
+    "consume": 9000830
+  },
+  {
+    "id": "0000047D",
+    "buildLevel": 149,
+    "quality": 1,
+    "consume": 9284487
+  },
+  {
+    "id": "0000047E",
+    "buildLevel": 150,
+    "quality": 1,
+    "consume": 9576179
+  },
+  {
+    "id": "0000047F",
+    "buildLevel": 151,
+    "quality": 1,
+    "consume": 9876064
+  },
+  {
+    "id": "00000480",
+    "buildLevel": 152,
+    "quality": 1,
+    "consume": 10184300
+  },
+  {
+    "id": "00000481",
+    "buildLevel": 153,
+    "quality": 1,
+    "consume": 10501045
+  },
+  {
+    "id": "00000482",
+    "buildLevel": 154,
+    "quality": 1,
+    "consume": 10826457
+  },
+  {
+    "id": "00000483",
+    "buildLevel": 155,
+    "quality": 1,
+    "consume": 11160694
+  },
+  {
+    "id": "00000484",
+    "buildLevel": 156,
+    "quality": 1,
+    "consume": 11503914
+  },
+  {
+    "id": "00000485",
+    "buildLevel": 157,
+    "quality": 1,
+    "consume": 11856275
+  },
+  {
+    "id": "00000486",
+    "buildLevel": 158,
+    "quality": 1,
+    "consume": 12217935
+  },
+  {
+    "id": "00000487",
+    "buildLevel": 159,
+    "quality": 1,
+    "consume": 12589052
+  },
+  {
+    "id": "00000488",
+    "buildLevel": 160,
+    "quality": 1,
+    "consume": 12969784
+  },
+  {
+    "id": "00000489",
+    "buildLevel": 161,
+    "quality": 1,
+    "consume": 13360289
+  },
+  {
+    "id": "0000048A",
+    "buildLevel": 162,
+    "quality": 1,
+    "consume": 13760725
+  },
+  {
+    "id": "0000048B",
+    "buildLevel": 163,
+    "quality": 1,
+    "consume": 14171250
+  },
+  {
+    "id": "0000048C",
+    "buildLevel": 164,
+    "quality": 1,
+    "consume": 14592022
+  },
+  {
+    "id": "0000048D",
+    "buildLevel": 165,
+    "quality": 1,
+    "consume": 15023199
+  },
+  {
+    "id": "0000048E",
+    "buildLevel": 166,
+    "quality": 1,
+    "consume": 15464939
+  },
+  {
+    "id": "0000048F",
+    "buildLevel": 167,
+    "quality": 1,
+    "consume": 15917400
+  },
+  {
+    "id": "00000490",
+    "buildLevel": 168,
+    "quality": 1,
+    "consume": 16380740
+  },
+  {
+    "id": "00000491",
+    "buildLevel": 169,
+    "quality": 1,
+    "consume": 16855117
+  },
+  {
+    "id": "00000492",
+    "buildLevel": 170,
+    "quality": 1,
+    "consume": 17340689
+  },
+  {
+    "id": "00000493",
+    "buildLevel": 171,
+    "quality": 1,
+    "consume": 17837614
+  },
+  {
+    "id": "00000494",
+    "buildLevel": 172,
+    "quality": 1,
+    "consume": 18346050
+  },
+  {
+    "id": "00000495",
+    "buildLevel": 173,
+    "quality": 1,
+    "consume": 18866155
+  },
+  {
+    "id": "00000496",
+    "buildLevel": 174,
+    "quality": 1,
+    "consume": 19398087
+  },
+  {
+    "id": "00000497",
+    "buildLevel": 175,
+    "quality": 1,
+    "consume": 19942004
+  },
+  {
+    "id": "00000498",
+    "buildLevel": 176,
+    "quality": 1,
+    "consume": 20498064
+  },
+  {
+    "id": "00000499",
+    "buildLevel": 177,
+    "quality": 1,
+    "consume": 21066425
+  },
+  {
+    "id": "0000049A",
+    "buildLevel": 178,
+    "quality": 1,
+    "consume": 21647245
+  },
+  {
+    "id": "0000049B",
+    "buildLevel": 179,
+    "quality": 1,
+    "consume": 22240682
+  },
+  {
+    "id": "0000049C",
+    "buildLevel": 180,
+    "quality": 1,
+    "consume": 22846894
+  },
+  {
+    "id": "0000049D",
+    "buildLevel": 181,
+    "quality": 1,
+    "consume": 23466039
+  },
+  {
+    "id": "0000049E",
+    "buildLevel": 182,
+    "quality": 1,
+    "consume": 24098275
+  },
+  {
+    "id": "0000049F",
+    "buildLevel": 183,
+    "quality": 1,
+    "consume": 24743760
+  },
+  {
+    "id": "000004A0",
+    "buildLevel": 184,
+    "quality": 1,
+    "consume": 25402652
+  },
+  {
+    "id": "000004A1",
+    "buildLevel": 185,
+    "quality": 1,
+    "consume": 26075109
+  },
+  {
+    "id": "000004A2",
+    "buildLevel": 186,
+    "quality": 1,
+    "consume": 26761289
+  },
+  {
+    "id": "000004A3",
+    "buildLevel": 187,
+    "quality": 1,
+    "consume": 27461350
+  },
+  {
+    "id": "000004A4",
+    "buildLevel": 188,
+    "quality": 1,
+    "consume": 28175450
+  },
+  {
+    "id": "000004A5",
+    "buildLevel": 189,
+    "quality": 1,
+    "consume": 28903747
+  },
+  {
+    "id": "000004A6",
+    "buildLevel": 190,
+    "quality": 1,
+    "consume": 29646399
+  },
+  {
+    "id": "000004A7",
+    "buildLevel": 191,
+    "quality": 1,
+    "consume": 30403564
+  },
+  {
+    "id": "000004A8",
+    "buildLevel": 192,
+    "quality": 1,
+    "consume": 31175400
+  },
+  {
+    "id": "000004A9",
+    "buildLevel": 193,
+    "quality": 1,
+    "consume": 31962065
+  },
+  {
+    "id": "000004AA",
+    "buildLevel": 194,
+    "quality": 1,
+    "consume": 32763717
+  },
+  {
+    "id": "000004AB",
+    "buildLevel": 195,
+    "quality": 1,
+    "consume": 33580514
+  },
+  {
+    "id": "000004AC",
+    "buildLevel": 196,
+    "quality": 1,
+    "consume": 34412614
+  },
+  {
+    "id": "000004AD",
+    "buildLevel": 197,
+    "quality": 1,
+    "consume": 35260175
+  },
+  {
+    "id": "000004AE",
+    "buildLevel": 198,
+    "quality": 1,
+    "consume": 36123355
+  },
+  {
+    "id": "000004AF",
+    "buildLevel": 199,
+    "quality": 1,
+    "consume": 37002312
+  },
+  {
+    "id": "000007D0",
+    "buildLevel": 0,
+    "quality": 2,
+    "consume": 411
+  },
+  {
+    "id": "000007D1",
+    "buildLevel": 1,
+    "quality": 2,
+    "consume": 444
+  },
+  {
+    "id": "000007D2",
+    "buildLevel": 2,
+    "quality": 2,
+    "consume": 480
+  },
+  {
+    "id": "000007D3",
+    "buildLevel": 3,
+    "quality": 2,
+    "consume": 519
+  },
+  {
+    "id": "000007D4",
+    "buildLevel": 4,
+    "quality": 2,
+    "consume": 561
+  },
+  {
+    "id": "000007D5",
+    "buildLevel": 5,
+    "quality": 2,
+    "consume": 606
+  },
+  {
+    "id": "000007D6",
+    "buildLevel": 6,
+    "quality": 2,
+    "consume": 655
+  },
+  {
+    "id": "000007D7",
+    "buildLevel": 7,
+    "quality": 2,
+    "consume": 709
+  },
+  {
+    "id": "000007D8",
+    "buildLevel": 8,
+    "quality": 2,
+    "consume": 766
+  },
+  {
+    "id": "000007D9",
+    "buildLevel": 9,
+    "quality": 2,
+    "consume": 828
+  },
+  {
+    "id": "000007DA",
+    "buildLevel": 10,
+    "quality": 2,
+    "consume": 895
+  },
+  {
+    "id": "000007DB",
+    "buildLevel": 11,
+    "quality": 2,
+    "consume": 967
+  },
+  {
+    "id": "000007DC",
+    "buildLevel": 12,
+    "quality": 2,
+    "consume": 1045
+  },
+  {
+    "id": "000007DD",
+    "buildLevel": 13,
+    "quality": 2,
+    "consume": 1129
+  },
+  {
+    "id": "000007DE",
+    "buildLevel": 14,
+    "quality": 2,
+    "consume": 1221
+  },
+  {
+    "id": "000007DF",
+    "buildLevel": 15,
+    "quality": 2,
+    "consume": 1320
+  },
+  {
+    "id": "000007E0",
+    "buildLevel": 16,
+    "quality": 2,
+    "consume": 1426
+  },
+  {
+    "id": "000007E1",
+    "buildLevel": 17,
+    "quality": 2,
+    "consume": 1542
+  },
+  {
+    "id": "000007E2",
+    "buildLevel": 18,
+    "quality": 2,
+    "consume": 1666
+  },
+  {
+    "id": "000007E3",
+    "buildLevel": 19,
+    "quality": 2,
+    "consume": 1800
+  },
+  {
+    "id": "000007E4",
+    "buildLevel": 20,
+    "quality": 2,
+    "consume": 1944
+  },
+  {
+    "id": "000007E5",
+    "buildLevel": 21,
+    "quality": 2,
+    "consume": 2100
+  },
+  {
+    "id": "000007E6",
+    "buildLevel": 22,
+    "quality": 2,
+    "consume": 2268
+  },
+  {
+    "id": "000007E7",
+    "buildLevel": 23,
+    "quality": 2,
+    "consume": 2449
+  },
+  {
+    "id": "000007E8",
+    "buildLevel": 24,
+    "quality": 2,
+    "consume": 2646
+  },
+  {
+    "id": "000007E9",
+    "buildLevel": 25,
+    "quality": 2,
+    "consume": 2859
+  },
+  {
+    "id": "000007EA",
+    "buildLevel": 26,
+    "quality": 2,
+    "consume": 3088
+  },
+  {
+    "id": "000007EB",
+    "buildLevel": 27,
+    "quality": 2,
+    "consume": 3336
+  },
+  {
+    "id": "000007EC",
+    "buildLevel": 28,
+    "quality": 2,
+    "consume": 3603
+  },
+  {
+    "id": "000007ED",
+    "buildLevel": 29,
+    "quality": 2,
+    "consume": 3892
+  },
+  {
+    "id": "000007EE",
+    "buildLevel": 30,
+    "quality": 2,
+    "consume": 4204
+  },
+  {
+    "id": "000007EF",
+    "buildLevel": 31,
+    "quality": 2,
+    "consume": 4542
+  },
+  {
+    "id": "000007F0",
+    "buildLevel": 32,
+    "quality": 2,
+    "consume": 4906
+  },
+  {
+    "id": "000007F1",
+    "buildLevel": 33,
+    "quality": 2,
+    "consume": 6087
+  },
+  {
+    "id": "000007F2",
+    "buildLevel": 34,
+    "quality": 2,
+    "consume": 7255
+  },
+  {
+    "id": "000007F3",
+    "buildLevel": 35,
+    "quality": 2,
+    "consume": 8415
+  },
+  {
+    "id": "000007F4",
+    "buildLevel": 36,
+    "quality": 2,
+    "consume": 9570
+  },
+  {
+    "id": "000007F5",
+    "buildLevel": 37,
+    "quality": 2,
+    "consume": 10722
+  },
+  {
+    "id": "000007F6",
+    "buildLevel": 38,
+    "quality": 2,
+    "consume": 11871
+  },
+  {
+    "id": "000007F7",
+    "buildLevel": 39,
+    "quality": 2,
+    "consume": 13020
+  },
+  {
+    "id": "000007F8",
+    "buildLevel": 40,
+    "quality": 2,
+    "consume": 14169
+  },
+  {
+    "id": "000007F9",
+    "buildLevel": 41,
+    "quality": 2,
+    "consume": 15325
+  },
+  {
+    "id": "000007FA",
+    "buildLevel": 42,
+    "quality": 2,
+    "consume": 16492
+  },
+  {
+    "id": "000007FB",
+    "buildLevel": 43,
+    "quality": 2,
+    "consume": 17659
+  },
+  {
+    "id": "000007FC",
+    "buildLevel": 44,
+    "quality": 2,
+    "consume": 18838
+  },
+  {
+    "id": "000007FD",
+    "buildLevel": 45,
+    "quality": 2,
+    "consume": 20031
+  },
+  {
+    "id": "000007FE",
+    "buildLevel": 46,
+    "quality": 2,
+    "consume": 21232
+  },
+  {
+    "id": "000007FF",
+    "buildLevel": 47,
+    "quality": 2,
+    "consume": 22450
+  },
+  {
+    "id": "00000800",
+    "buildLevel": 48,
+    "quality": 2,
+    "consume": 23679
+  },
+  {
+    "id": "00000801",
+    "buildLevel": 49,
+    "quality": 2,
+    "consume": 24925
+  },
+  {
+    "id": "00000802",
+    "buildLevel": 50,
+    "quality": 2,
+    "consume": 26185
+  },
+  {
+    "id": "00000803",
+    "buildLevel": 51,
+    "quality": 2,
+    "consume": 28021
+  },
+  {
+    "id": "00000804",
+    "buildLevel": 52,
+    "quality": 2,
+    "consume": 29916
+  },
+  {
+    "id": "00000805",
+    "buildLevel": 53,
+    "quality": 2,
+    "consume": 31893
+  },
+  {
+    "id": "00000806",
+    "buildLevel": 54,
+    "quality": 2,
+    "consume": 33949
+  },
+  {
+    "id": "00000807",
+    "buildLevel": 55,
+    "quality": 2,
+    "consume": 36075
+  },
+  {
+    "id": "00000808",
+    "buildLevel": 56,
+    "quality": 2,
+    "consume": 38283
+  },
+  {
+    "id": "00000809",
+    "buildLevel": 57,
+    "quality": 2,
+    "consume": 40585
+  },
+  {
+    "id": "0000080A",
+    "buildLevel": 58,
+    "quality": 2,
+    "consume": 42963
+  },
+  {
+    "id": "0000080B",
+    "buildLevel": 59,
+    "quality": 2,
+    "consume": 46015
+  },
+  {
+    "id": "0000080C",
+    "buildLevel": 60,
+    "quality": 2,
+    "consume": 49200
+  },
+  {
+    "id": "0000080D",
+    "buildLevel": 61,
+    "quality": 2,
+    "consume": 52492
+  },
+  {
+    "id": "0000080E",
+    "buildLevel": 62,
+    "quality": 2,
+    "consume": 55923
+  },
+  {
+    "id": "0000080F",
+    "buildLevel": 63,
+    "quality": 2,
+    "consume": 59481
+  },
+  {
+    "id": "00000810",
+    "buildLevel": 64,
+    "quality": 2,
+    "consume": 63172
+  },
+  {
+    "id": "00000811",
+    "buildLevel": 65,
+    "quality": 2,
+    "consume": 66997
+  },
+  {
+    "id": "00000812",
+    "buildLevel": 66,
+    "quality": 2,
+    "consume": 70977
+  },
+  {
+    "id": "00000813",
+    "buildLevel": 67,
+    "quality": 2,
+    "consume": 75114
+  },
+  {
+    "id": "00000814",
+    "buildLevel": 68,
+    "quality": 2,
+    "consume": 79398
+  },
+  {
+    "id": "00000815",
+    "buildLevel": 69,
+    "quality": 2,
+    "consume": 84939
+  },
+  {
+    "id": "00000816",
+    "buildLevel": 70,
+    "quality": 2,
+    "consume": 90702
+  },
+  {
+    "id": "00000817",
+    "buildLevel": 71,
+    "quality": 2,
+    "consume": 96693
+  },
+  {
+    "id": "00000818",
+    "buildLevel": 72,
+    "quality": 2,
+    "consume": 102921
+  },
+  {
+    "id": "00000819",
+    "buildLevel": 73,
+    "quality": 2,
+    "consume": 109369
+  },
+  {
+    "id": "0000081A",
+    "buildLevel": 74,
+    "quality": 2,
+    "consume": 116067
+  },
+  {
+    "id": "0000081B",
+    "buildLevel": 75,
+    "quality": 2,
+    "consume": 123018
+  },
+  {
+    "id": "0000081C",
+    "buildLevel": 76,
+    "quality": 2,
+    "consume": 130252
+  },
+  {
+    "id": "0000081D",
+    "buildLevel": 77,
+    "quality": 2,
+    "consume": 137733
+  },
+  {
+    "id": "0000081E",
+    "buildLevel": 78,
+    "quality": 2,
+    "consume": 145488
+  },
+  {
+    "id": "0000081F",
+    "buildLevel": 79,
+    "quality": 2,
+    "consume": 153549
+  },
+  {
+    "id": "00000820",
+    "buildLevel": 80,
+    "quality": 2,
+    "consume": 162976
+  },
+  {
+    "id": "00000821",
+    "buildLevel": 81,
+    "quality": 2,
+    "consume": 172683
+  },
+  {
+    "id": "00000822",
+    "buildLevel": 82,
+    "quality": 2,
+    "consume": 182619
+  },
+  {
+    "id": "00000823",
+    "buildLevel": 83,
+    "quality": 2,
+    "consume": 192873
+  },
+  {
+    "id": "00000824",
+    "buildLevel": 84,
+    "quality": 2,
+    "consume": 203395
+  },
+  {
+    "id": "00000825",
+    "buildLevel": 85,
+    "quality": 2,
+    "consume": 214218
+  },
+  {
+    "id": "00000826",
+    "buildLevel": 86,
+    "quality": 2,
+    "consume": 225315
+  },
+  {
+    "id": "00000827",
+    "buildLevel": 87,
+    "quality": 2,
+    "consume": 236757
+  },
+  {
+    "id": "00000828",
+    "buildLevel": 88,
+    "quality": 2,
+    "consume": 248484
+  },
+  {
+    "id": "00000829",
+    "buildLevel": 89,
+    "quality": 2,
+    "consume": 260566
+  },
+  {
+    "id": "0000082A",
+    "buildLevel": 90,
+    "quality": 2,
+    "consume": 275734
+  },
+  {
+    "id": "0000082B",
+    "buildLevel": 91,
+    "quality": 2,
+    "consume": 291289
+  },
+  {
+    "id": "0000082C",
+    "buildLevel": 92,
+    "quality": 2,
+    "consume": 307344
+  },
+  {
+    "id": "0000082D",
+    "buildLevel": 93,
+    "quality": 2,
+    "consume": 323838
+  },
+  {
+    "id": "0000082E",
+    "buildLevel": 94,
+    "quality": 2,
+    "consume": 340774
+  },
+  {
+    "id": "0000082F",
+    "buildLevel": 95,
+    "quality": 2,
+    "consume": 358204
+  },
+  {
+    "id": "00000830",
+    "buildLevel": 96,
+    "quality": 2,
+    "consume": 376134
+  },
+  {
+    "id": "00000831",
+    "buildLevel": 97,
+    "quality": 2,
+    "consume": 394572
+  },
+  {
+    "id": "00000832",
+    "buildLevel": 98,
+    "quality": 2,
+    "consume": 413530
+  },
+  {
+    "id": "00000833",
+    "buildLevel": 99,
+    "quality": 2,
+    "consume": 433015
+  },
+  {
+    "id": "00000834",
+    "buildLevel": 100,
+    "quality": 2,
+    "consume": 456273
+  },
+  {
+    "id": "00000835",
+    "buildLevel": 101,
+    "quality": 2,
+    "consume": 480178
+  },
+  {
+    "id": "00000836",
+    "buildLevel": 102,
+    "quality": 2,
+    "consume": 504841
+  },
+  {
+    "id": "00000837",
+    "buildLevel": 103,
+    "quality": 2,
+    "consume": 662664
+  },
+  {
+    "id": "00000838",
+    "buildLevel": 104,
+    "quality": 2,
+    "consume": 834306
+  },
+  {
+    "id": "00000839",
+    "buildLevel": 105,
+    "quality": 2,
+    "consume": 1020205
+  },
+  {
+    "id": "0000083A",
+    "buildLevel": 106,
+    "quality": 2,
+    "consume": 1221117
+  },
+  {
+    "id": "0000083B",
+    "buildLevel": 107,
+    "quality": 2,
+    "consume": 1341610
+  },
+  {
+    "id": "0000083C",
+    "buildLevel": 108,
+    "quality": 2,
+    "consume": 1469614
+  },
+  {
+    "id": "0000083D",
+    "buildLevel": 109,
+    "quality": 2,
+    "consume": 1605414
+  },
+  {
+    "id": "0000083E",
+    "buildLevel": 110,
+    "quality": 2,
+    "consume": 1749165
+  },
+  {
+    "id": "0000083F",
+    "buildLevel": 111,
+    "quality": 2,
+    "consume": 1901284
+  },
+  {
+    "id": "00000840",
+    "buildLevel": 112,
+    "quality": 2,
+    "consume": 2061922
+  },
+  {
+    "id": "00000841",
+    "buildLevel": 113,
+    "quality": 2,
+    "consume": 2231686
+  },
+  {
+    "id": "00000842",
+    "buildLevel": 114,
+    "quality": 2,
+    "consume": 2410740
+  },
+  {
+    "id": "00000843",
+    "buildLevel": 115,
+    "quality": 2,
+    "consume": 2599584
+  },
+  {
+    "id": "00000844",
+    "buildLevel": 116,
+    "quality": 2,
+    "consume": 2798373
+  },
+  {
+    "id": "00000845",
+    "buildLevel": 117,
+    "quality": 2,
+    "consume": 3007636
+  },
+  {
+    "id": "00000846",
+    "buildLevel": 118,
+    "quality": 2,
+    "consume": 3227731
+  },
+  {
+    "id": "00000847",
+    "buildLevel": 119,
+    "quality": 2,
+    "consume": 3459022
+  },
+  {
+    "id": "00000848",
+    "buildLevel": 120,
+    "quality": 2,
+    "consume": 3702108
+  },
+  {
+    "id": "00000849",
+    "buildLevel": 121,
+    "quality": 2,
+    "consume": 3956910
+  },
+  {
+    "id": "0000084A",
+    "buildLevel": 122,
+    "quality": 2,
+    "consume": 4224531
+  },
+  {
+    "id": "0000084B",
+    "buildLevel": 123,
+    "quality": 2,
+    "consume": 4505154
+  },
+  {
+    "id": "0000084C",
+    "buildLevel": 124,
+    "quality": 2,
+    "consume": 4799199
+  },
+  {
+    "id": "0000084D",
+    "buildLevel": 125,
+    "quality": 2,
+    "consume": 5107090
+  },
+  {
+    "id": "0000084E",
+    "buildLevel": 126,
+    "quality": 2,
+    "consume": 5429551
+  },
+  {
+    "id": "0000084F",
+    "buildLevel": 127,
+    "quality": 2,
+    "consume": 5626092
+  },
+  {
+    "id": "00000850",
+    "buildLevel": 128,
+    "quality": 2,
+    "consume": 5828326
+  },
+  {
+    "id": "00000851",
+    "buildLevel": 129,
+    "quality": 2,
+    "consume": 6036030
+  },
+  {
+    "id": "00000852",
+    "buildLevel": 130,
+    "quality": 2,
+    "consume": 6249265
+  },
+  {
+    "id": "00000853",
+    "buildLevel": 131,
+    "quality": 2,
+    "consume": 6468414
+  },
+  {
+    "id": "00000854",
+    "buildLevel": 132,
+    "quality": 2,
+    "consume": 6693867
+  },
+  {
+    "id": "00000855",
+    "buildLevel": 133,
+    "quality": 2,
+    "consume": 6925065
+  },
+  {
+    "id": "00000856",
+    "buildLevel": 134,
+    "quality": 2,
+    "consume": 7162717
+  },
+  {
+    "id": "00000857",
+    "buildLevel": 135,
+    "quality": 2,
+    "consume": 7406904
+  },
+  {
+    "id": "00000858",
+    "buildLevel": 136,
+    "quality": 2,
+    "consume": 7657701
+  },
+  {
+    "id": "00000859",
+    "buildLevel": 137,
+    "quality": 2,
+    "consume": 7915185
+  },
+  {
+    "id": "0000085A",
+    "buildLevel": 138,
+    "quality": 2,
+    "consume": 8179770
+  },
+  {
+    "id": "0000085B",
+    "buildLevel": 139,
+    "quality": 2,
+    "consume": 8451534
+  },
+  {
+    "id": "0000085C",
+    "buildLevel": 140,
+    "quality": 2,
+    "consume": 8730562
+  },
+  {
+    "id": "0000085D",
+    "buildLevel": 141,
+    "quality": 2,
+    "consume": 9017277
+  },
+  {
+    "id": "0000085E",
+    "buildLevel": 142,
+    "quality": 2,
+    "consume": 9311418
+  },
+  {
+    "id": "0000085F",
+    "buildLevel": 143,
+    "quality": 2,
+    "consume": 9613765
+  },
+  {
+    "id": "00000860",
+    "buildLevel": 144,
+    "quality": 2,
+    "consume": 9924055
+  },
+  {
+    "id": "00000861",
+    "buildLevel": 145,
+    "quality": 2,
+    "consume": 10242729
+  },
+  {
+    "id": "00000862",
+    "buildLevel": 146,
+    "quality": 2,
+    "consume": 10570239
+  },
+  {
+    "id": "00000863",
+    "buildLevel": 147,
+    "quality": 2,
+    "consume": 10906312
+  },
+  {
+    "id": "00000864",
+    "buildLevel": 148,
+    "quality": 2,
+    "consume": 11251038
+  },
+  {
+    "id": "00000865",
+    "buildLevel": 149,
+    "quality": 2,
+    "consume": 11605609
+  },
+  {
+    "id": "00000866",
+    "buildLevel": 150,
+    "quality": 2,
+    "consume": 11970223
+  },
+  {
+    "id": "00000867",
+    "buildLevel": 151,
+    "quality": 2,
+    "consume": 12345078
+  },
+  {
+    "id": "00000868",
+    "buildLevel": 152,
+    "quality": 2,
+    "consume": 12730372
+  },
+  {
+    "id": "00000869",
+    "buildLevel": 153,
+    "quality": 2,
+    "consume": 13126303
+  },
+  {
+    "id": "0000086A",
+    "buildLevel": 154,
+    "quality": 2,
+    "consume": 13533069
+  },
+  {
+    "id": "0000086B",
+    "buildLevel": 155,
+    "quality": 2,
+    "consume": 13950868
+  },
+  {
+    "id": "0000086C",
+    "buildLevel": 156,
+    "quality": 2,
+    "consume": 14379898
+  },
+  {
+    "id": "0000086D",
+    "buildLevel": 157,
+    "quality": 2,
+    "consume": 14820357
+  },
+  {
+    "id": "0000086E",
+    "buildLevel": 158,
+    "quality": 2,
+    "consume": 15272443
+  },
+  {
+    "id": "0000086F",
+    "buildLevel": 159,
+    "quality": 2,
+    "consume": 15736354
+  },
+  {
+    "id": "00000870",
+    "buildLevel": 160,
+    "quality": 2,
+    "consume": 16212288
+  },
+  {
+    "id": "00000871",
+    "buildLevel": 161,
+    "quality": 2,
+    "consume": 16700443
+  },
+  {
+    "id": "00000872",
+    "buildLevel": 162,
+    "quality": 2,
+    "consume": 17201017
+  },
+  {
+    "id": "00000873",
+    "buildLevel": 163,
+    "quality": 2,
+    "consume": 17714208
+  },
+  {
+    "id": "00000874",
+    "buildLevel": 164,
+    "quality": 2,
+    "consume": 18240214
+  },
+  {
+    "id": "00000875",
+    "buildLevel": 165,
+    "quality": 2,
+    "consume": 18779233
+  },
+  {
+    "id": "00000876",
+    "buildLevel": 166,
+    "quality": 2,
+    "consume": 19331463
+  },
+  {
+    "id": "00000877",
+    "buildLevel": 167,
+    "quality": 2,
+    "consume": 19897102
+  },
+  {
+    "id": "00000878",
+    "buildLevel": 168,
+    "quality": 2,
+    "consume": 20476348
+  },
+  {
+    "id": "00000879",
+    "buildLevel": 169,
+    "quality": 2,
+    "consume": 21069399
+  },
+  {
+    "id": "0000087A",
+    "buildLevel": 170,
+    "quality": 2,
+    "consume": 21676453
+  },
+  {
+    "id": "0000087B",
+    "buildLevel": 171,
+    "quality": 2,
+    "consume": 22297708
+  },
+  {
+    "id": "0000087C",
+    "buildLevel": 172,
+    "quality": 2,
+    "consume": 22933362
+  },
+  {
+    "id": "0000087D",
+    "buildLevel": 173,
+    "quality": 2,
+    "consume": 23583613
+  },
+  {
+    "id": "0000087E",
+    "buildLevel": 174,
+    "quality": 2,
+    "consume": 24248659
+  },
+  {
+    "id": "0000087F",
+    "buildLevel": 175,
+    "quality": 2,
+    "consume": 24928698
+  },
+  {
+    "id": "00000880",
+    "buildLevel": 176,
+    "quality": 2,
+    "consume": 25623928
+  },
+  {
+    "id": "00000881",
+    "buildLevel": 177,
+    "quality": 2,
+    "consume": 26334547
+  },
+  {
+    "id": "00000882",
+    "buildLevel": 178,
+    "quality": 2,
+    "consume": 27060753
+  },
+  {
+    "id": "00000883",
+    "buildLevel": 179,
+    "quality": 2,
+    "consume": 27802744
+  },
+  {
+    "id": "00000884",
+    "buildLevel": 180,
+    "quality": 2,
+    "consume": 28560718
+  },
+  {
+    "id": "00000885",
+    "buildLevel": 181,
+    "quality": 2,
+    "consume": 29334873
+  },
+  {
+    "id": "00000886",
+    "buildLevel": 182,
+    "quality": 2,
+    "consume": 30125407
+  },
+  {
+    "id": "00000887",
+    "buildLevel": 183,
+    "quality": 2,
+    "consume": 30932518
+  },
+  {
+    "id": "00000888",
+    "buildLevel": 184,
+    "quality": 2,
+    "consume": 31756404
+  },
+  {
+    "id": "00000889",
+    "buildLevel": 185,
+    "quality": 2,
+    "consume": 32597263
+  },
+  {
+    "id": "0000088A",
+    "buildLevel": 186,
+    "quality": 2,
+    "consume": 33455293
+  },
+  {
+    "id": "0000088B",
+    "buildLevel": 187,
+    "quality": 2,
+    "consume": 34330692
+  },
+  {
+    "id": "0000088C",
+    "buildLevel": 188,
+    "quality": 2,
+    "consume": 35223658
+  },
+  {
+    "id": "0000088D",
+    "buildLevel": 189,
+    "quality": 2,
+    "consume": 36134389
+  },
+  {
+    "id": "0000088E",
+    "buildLevel": 190,
+    "quality": 2,
+    "consume": 37063083
+  },
+  {
+    "id": "0000088F",
+    "buildLevel": 191,
+    "quality": 2,
+    "consume": 38009938
+  },
+  {
+    "id": "00000890",
+    "buildLevel": 192,
+    "quality": 2,
+    "consume": 38975152
+  },
+  {
+    "id": "00000891",
+    "buildLevel": 193,
+    "quality": 2,
+    "consume": 39958923
+  },
+  {
+    "id": "00000892",
+    "buildLevel": 194,
+    "quality": 2,
+    "consume": 40961449
+  },
+  {
+    "id": "00000893",
+    "buildLevel": 195,
+    "quality": 2,
+    "consume": 41982928
+  },
+  {
+    "id": "00000894",
+    "buildLevel": 196,
+    "quality": 2,
+    "consume": 43023558
+  },
+  {
+    "id": "00000895",
+    "buildLevel": 197,
+    "quality": 2,
+    "consume": 44083537
+  },
+  {
+    "id": "00000896",
+    "buildLevel": 198,
+    "quality": 2,
+    "consume": 45163063
+  },
+  {
+    "id": "00000897",
+    "buildLevel": 199,
+    "quality": 2,
+    "consume": 46262334
+  },
+  {
+    "id": "00000BB8",
+    "buildLevel": 0,
+    "quality": 3,
+    "consume": 520
+  },
+  {
+    "id": "00000BB9",
+    "buildLevel": 1,
+    "quality": 3,
+    "consume": 562
+  },
+  {
+    "id": "00000BBA",
+    "buildLevel": 2,
+    "quality": 3,
+    "consume": 608
+  },
+  {
+    "id": "00000BBB",
+    "buildLevel": 3,
+    "quality": 3,
+    "consume": 657
+  },
+  {
+    "id": "00000BBC",
+    "buildLevel": 4,
+    "quality": 3,
+    "consume": 710
+  },
+  {
+    "id": "00000BBD",
+    "buildLevel": 5,
+    "quality": 3,
+    "consume": 767
+  },
+  {
+    "id": "00000BBE",
+    "buildLevel": 6,
+    "quality": 3,
+    "consume": 830
+  },
+  {
+    "id": "00000BBF",
+    "buildLevel": 7,
+    "quality": 3,
+    "consume": 898
+  },
+  {
+    "id": "00000BC0",
+    "buildLevel": 8,
+    "quality": 3,
+    "consume": 970
+  },
+  {
+    "id": "00000BC1",
+    "buildLevel": 9,
+    "quality": 3,
+    "consume": 1048
+  },
+  {
+    "id": "00000BC2",
+    "buildLevel": 10,
+    "quality": 3,
+    "consume": 1134
+  },
+  {
+    "id": "00000BC3",
+    "buildLevel": 11,
+    "quality": 3,
+    "consume": 1225
+  },
+  {
+    "id": "00000BC4",
+    "buildLevel": 12,
+    "quality": 3,
+    "consume": 1324
+  },
+  {
+    "id": "00000BC5",
+    "buildLevel": 13,
+    "quality": 3,
+    "consume": 1430
+  },
+  {
+    "id": "00000BC6",
+    "buildLevel": 14,
+    "quality": 3,
+    "consume": 1546
+  },
+  {
+    "id": "00000BC7",
+    "buildLevel": 15,
+    "quality": 3,
+    "consume": 1672
+  },
+  {
+    "id": "00000BC8",
+    "buildLevel": 16,
+    "quality": 3,
+    "consume": 1806
+  },
+  {
+    "id": "00000BC9",
+    "buildLevel": 17,
+    "quality": 3,
+    "consume": 1953
+  },
+  {
+    "id": "00000BCA",
+    "buildLevel": 18,
+    "quality": 3,
+    "consume": 2110
+  },
+  {
+    "id": "00000BCB",
+    "buildLevel": 19,
+    "quality": 3,
+    "consume": 2280
+  },
+  {
+    "id": "00000BCC",
+    "buildLevel": 20,
+    "quality": 3,
+    "consume": 2462
+  },
+  {
+    "id": "00000BCD",
+    "buildLevel": 21,
+    "quality": 3,
+    "consume": 2660
+  },
+  {
+    "id": "00000BCE",
+    "buildLevel": 22,
+    "quality": 3,
+    "consume": 2872
+  },
+  {
+    "id": "00000BCF",
+    "buildLevel": 23,
+    "quality": 3,
+    "consume": 3102
+  },
+  {
+    "id": "00000BD0",
+    "buildLevel": 24,
+    "quality": 3,
+    "consume": 3351
+  },
+  {
+    "id": "00000BD1",
+    "buildLevel": 25,
+    "quality": 3,
+    "consume": 3621
+  },
+  {
+    "id": "00000BD2",
+    "buildLevel": 26,
+    "quality": 3,
+    "consume": 3912
+  },
+  {
+    "id": "00000BD3",
+    "buildLevel": 27,
+    "quality": 3,
+    "consume": 4225
+  },
+  {
+    "id": "00000BD4",
+    "buildLevel": 28,
+    "quality": 3,
+    "consume": 4563
+  },
+  {
+    "id": "00000BD5",
+    "buildLevel": 29,
+    "quality": 3,
+    "consume": 4930
+  },
+  {
+    "id": "00000BD6",
+    "buildLevel": 30,
+    "quality": 3,
+    "consume": 5325
+  },
+  {
+    "id": "00000BD7",
+    "buildLevel": 31,
+    "quality": 3,
+    "consume": 5753
+  },
+  {
+    "id": "00000BD8",
+    "buildLevel": 32,
+    "quality": 3,
+    "consume": 6214
+  },
+  {
+    "id": "00000BD9",
+    "buildLevel": 33,
+    "quality": 3,
+    "consume": 7710
+  },
+  {
+    "id": "00000BDA",
+    "buildLevel": 34,
+    "quality": 3,
+    "consume": 9190
+  },
+  {
+    "id": "00000BDB",
+    "buildLevel": 35,
+    "quality": 3,
+    "consume": 10659
+  },
+  {
+    "id": "00000BDC",
+    "buildLevel": 36,
+    "quality": 3,
+    "consume": 12122
+  },
+  {
+    "id": "00000BDD",
+    "buildLevel": 37,
+    "quality": 3,
+    "consume": 13581
+  },
+  {
+    "id": "00000BDE",
+    "buildLevel": 38,
+    "quality": 3,
+    "consume": 15036
+  },
+  {
+    "id": "00000BDF",
+    "buildLevel": 39,
+    "quality": 3,
+    "consume": 16492
+  },
+  {
+    "id": "00000BE0",
+    "buildLevel": 40,
+    "quality": 3,
+    "consume": 17947
+  },
+  {
+    "id": "00000BE1",
+    "buildLevel": 41,
+    "quality": 3,
+    "consume": 19412
+  },
+  {
+    "id": "00000BE2",
+    "buildLevel": 42,
+    "quality": 3,
+    "consume": 20890
+  },
+  {
+    "id": "00000BE3",
+    "buildLevel": 43,
+    "quality": 3,
+    "consume": 22368
+  },
+  {
+    "id": "00000BE4",
+    "buildLevel": 44,
+    "quality": 3,
+    "consume": 23862
+  },
+  {
+    "id": "00000BE5",
+    "buildLevel": 45,
+    "quality": 3,
+    "consume": 25372
+  },
+  {
+    "id": "00000BE6",
+    "buildLevel": 46,
+    "quality": 3,
+    "consume": 26894
+  },
+  {
+    "id": "00000BE7",
+    "buildLevel": 47,
+    "quality": 3,
+    "consume": 28437
+  },
+  {
+    "id": "00000BE8",
+    "buildLevel": 48,
+    "quality": 3,
+    "consume": 29993
+  },
+  {
+    "id": "00000BE9",
+    "buildLevel": 49,
+    "quality": 3,
+    "consume": 31572
+  },
+  {
+    "id": "00000BEA",
+    "buildLevel": 50,
+    "quality": 3,
+    "consume": 33168
+  },
+  {
+    "id": "00000BEB",
+    "buildLevel": 51,
+    "quality": 3,
+    "consume": 35493
+  },
+  {
+    "id": "00000BEC",
+    "buildLevel": 52,
+    "quality": 3,
+    "consume": 37893
+  },
+  {
+    "id": "00000BED",
+    "buildLevel": 53,
+    "quality": 3,
+    "consume": 40397
+  },
+  {
+    "id": "00000BEE",
+    "buildLevel": 54,
+    "quality": 3,
+    "consume": 43002
+  },
+  {
+    "id": "00000BEF",
+    "buildLevel": 55,
+    "quality": 3,
+    "consume": 45695
+  },
+  {
+    "id": "00000BF0",
+    "buildLevel": 56,
+    "quality": 3,
+    "consume": 48491
+  },
+  {
+    "id": "00000BF1",
+    "buildLevel": 57,
+    "quality": 3,
+    "consume": 51408
+  },
+  {
+    "id": "00000BF2",
+    "buildLevel": 58,
+    "quality": 3,
+    "consume": 54419
+  },
+  {
+    "id": "00000BF3",
+    "buildLevel": 59,
+    "quality": 3,
+    "consume": 58286
+  },
+  {
+    "id": "00000BF4",
+    "buildLevel": 60,
+    "quality": 3,
+    "consume": 62320
+  },
+  {
+    "id": "00000BF5",
+    "buildLevel": 61,
+    "quality": 3,
+    "consume": 66490
+  },
+  {
+    "id": "00000BF6",
+    "buildLevel": 62,
+    "quality": 3,
+    "consume": 70835
+  },
+  {
+    "id": "00000BF7",
+    "buildLevel": 63,
+    "quality": 3,
+    "consume": 75342
+  },
+  {
+    "id": "00000BF8",
+    "buildLevel": 64,
+    "quality": 3,
+    "consume": 80018
+  },
+  {
+    "id": "00000BF9",
+    "buildLevel": 65,
+    "quality": 3,
+    "consume": 84863
+  },
+  {
+    "id": "00000BFA",
+    "buildLevel": 66,
+    "quality": 3,
+    "consume": 89904
+  },
+  {
+    "id": "00000BFB",
+    "buildLevel": 67,
+    "quality": 3,
+    "consume": 95144
+  },
+  {
+    "id": "00000BFC",
+    "buildLevel": 68,
+    "quality": 3,
+    "consume": 100570
+  },
+  {
+    "id": "00000BFD",
+    "buildLevel": 69,
+    "quality": 3,
+    "consume": 107589
+  },
+  {
+    "id": "00000BFE",
+    "buildLevel": 70,
+    "quality": 3,
+    "consume": 114889
+  },
+  {
+    "id": "00000BFF",
+    "buildLevel": 71,
+    "quality": 3,
+    "consume": 122477
+  },
+  {
+    "id": "00000C00",
+    "buildLevel": 72,
+    "quality": 3,
+    "consume": 130366
+  },
+  {
+    "id": "00000C01",
+    "buildLevel": 73,
+    "quality": 3,
+    "consume": 138534
+  },
+  {
+    "id": "00000C02",
+    "buildLevel": 74,
+    "quality": 3,
+    "consume": 147018
+  },
+  {
+    "id": "00000C03",
+    "buildLevel": 75,
+    "quality": 3,
+    "consume": 155822
+  },
+  {
+    "id": "00000C04",
+    "buildLevel": 76,
+    "quality": 3,
+    "consume": 164986
+  },
+  {
+    "id": "00000C05",
+    "buildLevel": 77,
+    "quality": 3,
+    "consume": 174461
+  },
+  {
+    "id": "00000C06",
+    "buildLevel": 78,
+    "quality": 3,
+    "consume": 184284
+  },
+  {
+    "id": "00000C07",
+    "buildLevel": 79,
+    "quality": 3,
+    "consume": 194495
+  },
+  {
+    "id": "00000C08",
+    "buildLevel": 80,
+    "quality": 3,
+    "consume": 206436
+  },
+  {
+    "id": "00000C09",
+    "buildLevel": 81,
+    "quality": 3,
+    "consume": 218731
+  },
+  {
+    "id": "00000C0A",
+    "buildLevel": 82,
+    "quality": 3,
+    "consume": 231317
+  },
+  {
+    "id": "00000C0B",
+    "buildLevel": 83,
+    "quality": 3,
+    "consume": 244305
+  },
+  {
+    "id": "00000C0C",
+    "buildLevel": 84,
+    "quality": 3,
+    "consume": 257634
+  },
+  {
+    "id": "00000C0D",
+    "buildLevel": 85,
+    "quality": 3,
+    "consume": 271342
+  },
+  {
+    "id": "00000C0E",
+    "buildLevel": 86,
+    "quality": 3,
+    "consume": 285399
+  },
+  {
+    "id": "00000C0F",
+    "buildLevel": 87,
+    "quality": 3,
+    "consume": 299892
+  },
+  {
+    "id": "00000C10",
+    "buildLevel": 88,
+    "quality": 3,
+    "consume": 314746
+  },
+  {
+    "id": "00000C11",
+    "buildLevel": 89,
+    "quality": 3,
+    "consume": 330050
+  },
+  {
+    "id": "00000C12",
+    "buildLevel": 90,
+    "quality": 3,
+    "consume": 349263
+  },
+  {
+    "id": "00000C13",
+    "buildLevel": 91,
+    "quality": 3,
+    "consume": 368966
+  },
+  {
+    "id": "00000C14",
+    "buildLevel": 92,
+    "quality": 3,
+    "consume": 389302
+  },
+  {
+    "id": "00000C15",
+    "buildLevel": 93,
+    "quality": 3,
+    "consume": 410194
+  },
+  {
+    "id": "00000C16",
+    "buildLevel": 94,
+    "quality": 3,
+    "consume": 431647
+  },
+  {
+    "id": "00000C17",
+    "buildLevel": 95,
+    "quality": 3,
+    "consume": 453725
+  },
+  {
+    "id": "00000C18",
+    "buildLevel": 96,
+    "quality": 3,
+    "consume": 476436
+  },
+  {
+    "id": "00000C19",
+    "buildLevel": 97,
+    "quality": 3,
+    "consume": 499791
+  },
+  {
+    "id": "00000C1A",
+    "buildLevel": 98,
+    "quality": 3,
+    "consume": 523805
+  },
+  {
+    "id": "00000C1B",
+    "buildLevel": 99,
+    "quality": 3,
+    "consume": 548486
+  },
+  {
+    "id": "00000C1C",
+    "buildLevel": 100,
+    "quality": 3,
+    "consume": 577945
+  },
+  {
+    "id": "00000C1D",
+    "buildLevel": 101,
+    "quality": 3,
+    "consume": 608226
+  },
+  {
+    "id": "00000C1E",
+    "buildLevel": 102,
+    "quality": 3,
+    "consume": 639465
+  },
+  {
+    "id": "00000C1F",
+    "buildLevel": 103,
+    "quality": 3,
+    "consume": 839374
+  },
+  {
+    "id": "00000C20",
+    "buildLevel": 104,
+    "quality": 3,
+    "consume": 1056787
+  },
+  {
+    "id": "00000C21",
+    "buildLevel": 105,
+    "quality": 3,
+    "consume": 1292260
+  },
+  {
+    "id": "00000C22",
+    "buildLevel": 106,
+    "quality": 3,
+    "consume": 1546748
+  },
+  {
+    "id": "00000C23",
+    "buildLevel": 107,
+    "quality": 3,
+    "consume": 1699373
+  },
+  {
+    "id": "00000C24",
+    "buildLevel": 108,
+    "quality": 3,
+    "consume": 1861511
+  },
+  {
+    "id": "00000C25",
+    "buildLevel": 109,
+    "quality": 3,
+    "consume": 2033524
+  },
+  {
+    "id": "00000C26",
+    "buildLevel": 110,
+    "quality": 3,
+    "consume": 2215609
+  },
+  {
+    "id": "00000C27",
+    "buildLevel": 111,
+    "quality": 3,
+    "consume": 2408293
+  },
+  {
+    "id": "00000C28",
+    "buildLevel": 112,
+    "quality": 3,
+    "consume": 2611768
+  },
+  {
+    "id": "00000C29",
+    "buildLevel": 113,
+    "quality": 3,
+    "consume": 2826802
+  },
+  {
+    "id": "00000C2A",
+    "buildLevel": 114,
+    "quality": 3,
+    "consume": 3053604
+  },
+  {
+    "id": "00000C2B",
+    "buildLevel": 115,
+    "quality": 3,
+    "consume": 3292806
+  },
+  {
+    "id": "00000C2C",
+    "buildLevel": 116,
+    "quality": 3,
+    "consume": 3544605
+  },
+  {
+    "id": "00000C2D",
+    "buildLevel": 117,
+    "quality": 3,
+    "consume": 3809672
+  },
+  {
+    "id": "00000C2E",
+    "buildLevel": 118,
+    "quality": 3,
+    "consume": 4088459
+  },
+  {
+    "id": "00000C2F",
+    "buildLevel": 119,
+    "quality": 3,
+    "consume": 4381428
+  },
+  {
+    "id": "00000C30",
+    "buildLevel": 120,
+    "quality": 3,
+    "consume": 4689336
+  },
+  {
+    "id": "00000C31",
+    "buildLevel": 121,
+    "quality": 3,
+    "consume": 5012086
+  },
+  {
+    "id": "00000C32",
+    "buildLevel": 122,
+    "quality": 3,
+    "consume": 5351072
+  },
+  {
+    "id": "00000C33",
+    "buildLevel": 123,
+    "quality": 3,
+    "consume": 5706528
+  },
+  {
+    "id": "00000C34",
+    "buildLevel": 124,
+    "quality": 3,
+    "consume": 6078985
+  },
+  {
+    "id": "00000C35",
+    "buildLevel": 125,
+    "quality": 3,
+    "consume": 6468981
+  },
+  {
+    "id": "00000C36",
+    "buildLevel": 126,
+    "quality": 3,
+    "consume": 6877431
+  },
+  {
+    "id": "00000C37",
+    "buildLevel": 127,
+    "quality": 3,
+    "consume": 7126383
+  },
+  {
+    "id": "00000C38",
+    "buildLevel": 128,
+    "quality": 3,
+    "consume": 7382546
+  },
+  {
+    "id": "00000C39",
+    "buildLevel": 129,
+    "quality": 3,
+    "consume": 7645638
+  },
+  {
+    "id": "00000C3A",
+    "buildLevel": 130,
+    "quality": 3,
+    "consume": 7915736
+  },
+  {
+    "id": "00000C3B",
+    "buildLevel": 131,
+    "quality": 3,
+    "consume": 8193324
+  },
+  {
+    "id": "00000C3C",
+    "buildLevel": 132,
+    "quality": 3,
+    "consume": 8478898
+  },
+  {
+    "id": "00000C3D",
+    "buildLevel": 133,
+    "quality": 3,
+    "consume": 8771749
+  },
+  {
+    "id": "00000C3E",
+    "buildLevel": 134,
+    "quality": 3,
+    "consume": 9072775
+  },
+  {
+    "id": "00000C3F",
+    "buildLevel": 135,
+    "quality": 3,
+    "consume": 9382078
+  },
+  {
+    "id": "00000C40",
+    "buildLevel": 136,
+    "quality": 3,
+    "consume": 9699754
+  },
+  {
+    "id": "00000C41",
+    "buildLevel": 137,
+    "quality": 3,
+    "consume": 10025901
+  },
+  {
+    "id": "00000C42",
+    "buildLevel": 138,
+    "quality": 3,
+    "consume": 10361042
+  },
+  {
+    "id": "00000C43",
+    "buildLevel": 139,
+    "quality": 3,
+    "consume": 10705276
+  },
+  {
+    "id": "00000C44",
+    "buildLevel": 140,
+    "quality": 3,
+    "consume": 11058712
+  },
+  {
+    "id": "00000C45",
+    "buildLevel": 141,
+    "quality": 3,
+    "consume": 11421884
+  },
+  {
+    "id": "00000C46",
+    "buildLevel": 142,
+    "quality": 3,
+    "consume": 11794462
+  },
+  {
+    "id": "00000C47",
+    "buildLevel": 143,
+    "quality": 3,
+    "consume": 12177436
+  },
+  {
+    "id": "00000C48",
+    "buildLevel": 144,
+    "quality": 3,
+    "consume": 12570470
+  },
+  {
+    "id": "00000C49",
+    "buildLevel": 145,
+    "quality": 3,
+    "consume": 12974123
+  },
+  {
+    "id": "00000C4A",
+    "buildLevel": 146,
+    "quality": 3,
+    "consume": 13388969
+  },
+  {
+    "id": "00000C4B",
+    "buildLevel": 147,
+    "quality": 3,
+    "consume": 13814662
+  },
+  {
+    "id": "00000C4C",
+    "buildLevel": 148,
+    "quality": 3,
+    "consume": 14251314
+  },
+  {
+    "id": "00000C4D",
+    "buildLevel": 149,
+    "quality": 3,
+    "consume": 14700438
+  },
+  {
+    "id": "00000C4E",
+    "buildLevel": 150,
+    "quality": 3,
+    "consume": 15162285
+  },
+  {
+    "id": "00000C4F",
+    "buildLevel": 151,
+    "quality": 3,
+    "consume": 15637106
+  },
+  {
+    "id": "00000C50",
+    "buildLevel": 152,
+    "quality": 3,
+    "consume": 16125152
+  },
+  {
+    "id": "00000C51",
+    "buildLevel": 153,
+    "quality": 3,
+    "consume": 16626674
+  },
+  {
+    "id": "00000C52",
+    "buildLevel": 154,
+    "quality": 3,
+    "consume": 17141923
+  },
+  {
+    "id": "00000C53",
+    "buildLevel": 155,
+    "quality": 3,
+    "consume": 17671150
+  },
+  {
+    "id": "00000C54",
+    "buildLevel": 156,
+    "quality": 3,
+    "consume": 18214606
+  },
+  {
+    "id": "00000C55",
+    "buildLevel": 157,
+    "quality": 3,
+    "consume": 18772542
+  },
+  {
+    "id": "00000C56",
+    "buildLevel": 158,
+    "quality": 3,
+    "consume": 19345209
+  },
+  {
+    "id": "00000C57",
+    "buildLevel": 159,
+    "quality": 3,
+    "consume": 19932858
+  },
+  {
+    "id": "00000C58",
+    "buildLevel": 160,
+    "quality": 3,
+    "consume": 20535740
+  },
+  {
+    "id": "00000C59",
+    "buildLevel": 161,
+    "quality": 3,
+    "consume": 21154106
+  },
+  {
+    "id": "00000C5A",
+    "buildLevel": 162,
+    "quality": 3,
+    "consume": 21788207
+  },
+  {
+    "id": "00000C5B",
+    "buildLevel": 163,
+    "quality": 3,
+    "consume": 22438294
+  },
+  {
+    "id": "00000C5C",
+    "buildLevel": 164,
+    "quality": 3,
+    "consume": 23104618
+  },
+  {
+    "id": "00000C5D",
+    "buildLevel": 165,
+    "quality": 3,
+    "consume": 23787430
+  },
+  {
+    "id": "00000C5E",
+    "buildLevel": 166,
+    "quality": 3,
+    "consume": 24486981
+  },
+  {
+    "id": "00000C5F",
+    "buildLevel": 167,
+    "quality": 3,
+    "consume": 25203522
+  },
+  {
+    "id": "00000C60",
+    "buildLevel": 168,
+    "quality": 3,
+    "consume": 25937304
+  },
+  {
+    "id": "00000C61",
+    "buildLevel": 169,
+    "quality": 3,
+    "consume": 26688578
+  },
+  {
+    "id": "00000C62",
+    "buildLevel": 170,
+    "quality": 3,
+    "consume": 27457595
+  },
+  {
+    "id": "00000C63",
+    "buildLevel": 171,
+    "quality": 3,
+    "consume": 28244606
+  },
+  {
+    "id": "00000C64",
+    "buildLevel": 172,
+    "quality": 3,
+    "consume": 29049862
+  },
+  {
+    "id": "00000C65",
+    "buildLevel": 173,
+    "quality": 3,
+    "consume": 29873614
+  },
+  {
+    "id": "00000C66",
+    "buildLevel": 174,
+    "quality": 3,
+    "consume": 30716113
+  },
+  {
+    "id": "00000C67",
+    "buildLevel": 175,
+    "quality": 3,
+    "consume": 31577610
+  },
+  {
+    "id": "00000C68",
+    "buildLevel": 176,
+    "quality": 3,
+    "consume": 32458356
+  },
+  {
+    "id": "00000C69",
+    "buildLevel": 177,
+    "quality": 3,
+    "consume": 33358602
+  },
+  {
+    "id": "00000C6A",
+    "buildLevel": 178,
+    "quality": 3,
+    "consume": 34278599
+  },
+  {
+    "id": "00000C6B",
+    "buildLevel": 179,
+    "quality": 3,
+    "consume": 35218598
+  },
+  {
+    "id": "00000C6C",
+    "buildLevel": 180,
+    "quality": 3,
+    "consume": 36178850
+  },
+  {
+    "id": "00000C6D",
+    "buildLevel": 181,
+    "quality": 3,
+    "consume": 37159606
+  },
+  {
+    "id": "00000C6E",
+    "buildLevel": 182,
+    "quality": 3,
+    "consume": 38161117
+  },
+  {
+    "id": "00000C6F",
+    "buildLevel": 183,
+    "quality": 3,
+    "consume": 39183634
+  },
+  {
+    "id": "00000C70",
+    "buildLevel": 184,
+    "quality": 3,
+    "consume": 40227408
+  },
+  {
+    "id": "00000C71",
+    "buildLevel": 185,
+    "quality": 3,
+    "consume": 41292690
+  },
+  {
+    "id": "00000C72",
+    "buildLevel": 186,
+    "quality": 3,
+    "consume": 42379731
+  },
+  {
+    "id": "00000C73",
+    "buildLevel": 187,
+    "quality": 3,
+    "consume": 43488782
+  },
+  {
+    "id": "00000C74",
+    "buildLevel": 188,
+    "quality": 3,
+    "consume": 44620094
+  },
+  {
+    "id": "00000C75",
+    "buildLevel": 189,
+    "quality": 3,
+    "consume": 45773918
+  },
+  {
+    "id": "00000C76",
+    "buildLevel": 190,
+    "quality": 3,
+    "consume": 46950505
+  },
+  {
+    "id": "00000C77",
+    "buildLevel": 191,
+    "quality": 3,
+    "consume": 48150106
+  },
+  {
+    "id": "00000C78",
+    "buildLevel": 192,
+    "quality": 3,
+    "consume": 49372972
+  },
+  {
+    "id": "00000C79",
+    "buildLevel": 193,
+    "quality": 3,
+    "consume": 50619354
+  },
+  {
+    "id": "00000C7A",
+    "buildLevel": 194,
+    "quality": 3,
+    "consume": 51889503
+  },
+  {
+    "id": "00000C7B",
+    "buildLevel": 195,
+    "quality": 3,
+    "consume": 53183670
+  },
+  {
+    "id": "00000C7C",
+    "buildLevel": 196,
+    "quality": 3,
+    "consume": 54502106
+  },
+  {
+    "id": "00000C7D",
+    "buildLevel": 197,
+    "quality": 3,
+    "consume": 55845062
+  },
+  {
+    "id": "00000C7E",
+    "buildLevel": 198,
+    "quality": 3,
+    "consume": 57212789
+  },
+  {
+    "id": "00000C7F",
+    "buildLevel": 199,
+    "quality": 3,
+    "consume": 58605538
+  },
+  {
+    "id": "00000FA0",
+    "buildLevel": 0,
+    "quality": 4,
+    "consume": 657
+  },
+  {
+    "id": "00000FA1",
+    "buildLevel": 1,
+    "quality": 4,
+    "consume": 710
+  },
+  {
+    "id": "00000FA2",
+    "buildLevel": 2,
+    "quality": 4,
+    "consume": 768
+  },
+  {
+    "id": "00000FA3",
+    "buildLevel": 3,
+    "quality": 4,
+    "consume": 830
+  },
+  {
+    "id": "00000FA4",
+    "buildLevel": 4,
+    "quality": 4,
+    "consume": 897
+  },
+  {
+    "id": "00000FA5",
+    "buildLevel": 5,
+    "quality": 4,
+    "consume": 969
+  },
+  {
+    "id": "00000FA6",
+    "buildLevel": 6,
+    "quality": 4,
+    "consume": 1048
+  },
+  {
+    "id": "00000FA7",
+    "buildLevel": 7,
+    "quality": 4,
+    "consume": 1135
+  },
+  {
+    "id": "00000FA8",
+    "buildLevel": 8,
+    "quality": 4,
+    "consume": 1226
+  },
+  {
+    "id": "00000FA9",
+    "buildLevel": 9,
+    "quality": 4,
+    "consume": 1324
+  },
+  {
+    "id": "00000FAA",
+    "buildLevel": 10,
+    "quality": 4,
+    "consume": 1432
+  },
+  {
+    "id": "00000FAB",
+    "buildLevel": 11,
+    "quality": 4,
+    "consume": 1548
+  },
+  {
+    "id": "00000FAC",
+    "buildLevel": 12,
+    "quality": 4,
+    "consume": 1672
+  },
+  {
+    "id": "00000FAD",
+    "buildLevel": 13,
+    "quality": 4,
+    "consume": 1807
+  },
+  {
+    "id": "00000FAE",
+    "buildLevel": 14,
+    "quality": 4,
+    "consume": 1953
+  },
+  {
+    "id": "00000FAF",
+    "buildLevel": 15,
+    "quality": 4,
+    "consume": 2112
+  },
+  {
+    "id": "00000FB0",
+    "buildLevel": 16,
+    "quality": 4,
+    "consume": 2282
+  },
+  {
+    "id": "00000FB1",
+    "buildLevel": 17,
+    "quality": 4,
+    "consume": 2467
+  },
+  {
+    "id": "00000FB2",
+    "buildLevel": 18,
+    "quality": 4,
+    "consume": 2666
+  },
+  {
+    "id": "00000FB3",
+    "buildLevel": 19,
+    "quality": 4,
+    "consume": 2880
+  },
+  {
+    "id": "00000FB4",
+    "buildLevel": 20,
+    "quality": 4,
+    "consume": 3110
+  },
+  {
+    "id": "00000FB5",
+    "buildLevel": 21,
+    "quality": 4,
+    "consume": 3360
+  },
+  {
+    "id": "00000FB6",
+    "buildLevel": 22,
+    "quality": 4,
+    "consume": 3628
+  },
+  {
+    "id": "00000FB7",
+    "buildLevel": 23,
+    "quality": 4,
+    "consume": 3919
+  },
+  {
+    "id": "00000FB8",
+    "buildLevel": 24,
+    "quality": 4,
+    "consume": 4233
+  },
+  {
+    "id": "00000FB9",
+    "buildLevel": 25,
+    "quality": 4,
+    "consume": 4574
+  },
+  {
+    "id": "00000FBA",
+    "buildLevel": 26,
+    "quality": 4,
+    "consume": 4941
+  },
+  {
+    "id": "00000FBB",
+    "buildLevel": 27,
+    "quality": 4,
+    "consume": 5337
+  },
+  {
+    "id": "00000FBC",
+    "buildLevel": 28,
+    "quality": 4,
+    "consume": 5764
+  },
+  {
+    "id": "00000FBD",
+    "buildLevel": 29,
+    "quality": 4,
+    "consume": 6228
+  },
+  {
+    "id": "00000FBE",
+    "buildLevel": 30,
+    "quality": 4,
+    "consume": 6727
+  },
+  {
+    "id": "00000FBF",
+    "buildLevel": 31,
+    "quality": 4,
+    "consume": 7267
+  },
+  {
+    "id": "00000FC0",
+    "buildLevel": 32,
+    "quality": 4,
+    "consume": 7850
+  },
+  {
+    "id": "00000FC1",
+    "buildLevel": 33,
+    "quality": 4,
+    "consume": 9739
+  },
+  {
+    "id": "00000FC2",
+    "buildLevel": 34,
+    "quality": 4,
+    "consume": 11608
+  },
+  {
+    "id": "00000FC3",
+    "buildLevel": 35,
+    "quality": 4,
+    "consume": 13464
+  },
+  {
+    "id": "00000FC4",
+    "buildLevel": 36,
+    "quality": 4,
+    "consume": 15312
+  },
+  {
+    "id": "00000FC5",
+    "buildLevel": 37,
+    "quality": 4,
+    "consume": 17155
+  },
+  {
+    "id": "00000FC6",
+    "buildLevel": 38,
+    "quality": 4,
+    "consume": 18993
+  },
+  {
+    "id": "00000FC7",
+    "buildLevel": 39,
+    "quality": 4,
+    "consume": 20832
+  },
+  {
+    "id": "00000FC8",
+    "buildLevel": 40,
+    "quality": 4,
+    "consume": 22670
+  },
+  {
+    "id": "00000FC9",
+    "buildLevel": 41,
+    "quality": 4,
+    "consume": 24520
+  },
+  {
+    "id": "00000FCA",
+    "buildLevel": 42,
+    "quality": 4,
+    "consume": 26388
+  },
+  {
+    "id": "00000FCB",
+    "buildLevel": 43,
+    "quality": 4,
+    "consume": 28255
+  },
+  {
+    "id": "00000FCC",
+    "buildLevel": 44,
+    "quality": 4,
+    "consume": 30141
+  },
+  {
+    "id": "00000FCD",
+    "buildLevel": 45,
+    "quality": 4,
+    "consume": 32049
+  },
+  {
+    "id": "00000FCE",
+    "buildLevel": 46,
+    "quality": 4,
+    "consume": 33972
+  },
+  {
+    "id": "00000FCF",
+    "buildLevel": 47,
+    "quality": 4,
+    "consume": 35920
+  },
+  {
+    "id": "00000FD0",
+    "buildLevel": 48,
+    "quality": 4,
+    "consume": 37886
+  },
+  {
+    "id": "00000FD1",
+    "buildLevel": 49,
+    "quality": 4,
+    "consume": 39880
+  },
+  {
+    "id": "00000FD2",
+    "buildLevel": 50,
+    "quality": 4,
+    "consume": 41896
+  },
+  {
+    "id": "00000FD3",
+    "buildLevel": 51,
+    "quality": 4,
+    "consume": 44834
+  },
+  {
+    "id": "00000FD4",
+    "buildLevel": 52,
+    "quality": 4,
+    "consume": 47865
+  },
+  {
+    "id": "00000FD5",
+    "buildLevel": 53,
+    "quality": 4,
+    "consume": 51028
+  },
+  {
+    "id": "00000FD6",
+    "buildLevel": 54,
+    "quality": 4,
+    "consume": 54319
+  },
+  {
+    "id": "00000FD7",
+    "buildLevel": 55,
+    "quality": 4,
+    "consume": 57720
+  },
+  {
+    "id": "00000FD8",
+    "buildLevel": 56,
+    "quality": 4,
+    "consume": 61252
+  },
+  {
+    "id": "00000FD9",
+    "buildLevel": 57,
+    "quality": 4,
+    "consume": 64936
+  },
+  {
+    "id": "00000FDA",
+    "buildLevel": 58,
+    "quality": 4,
+    "consume": 68740
+  },
+  {
+    "id": "00000FDB",
+    "buildLevel": 59,
+    "quality": 4,
+    "consume": 73624
+  },
+  {
+    "id": "00000FDC",
+    "buildLevel": 60,
+    "quality": 4,
+    "consume": 78720
+  },
+  {
+    "id": "00000FDD",
+    "buildLevel": 61,
+    "quality": 4,
+    "consume": 83988
+  },
+  {
+    "id": "00000FDE",
+    "buildLevel": 62,
+    "quality": 4,
+    "consume": 89476
+  },
+  {
+    "id": "00000FDF",
+    "buildLevel": 63,
+    "quality": 4,
+    "consume": 95169
+  },
+  {
+    "id": "00000FE0",
+    "buildLevel": 64,
+    "quality": 4,
+    "consume": 101076
+  },
+  {
+    "id": "00000FE1",
+    "buildLevel": 65,
+    "quality": 4,
+    "consume": 107196
+  },
+  {
+    "id": "00000FE2",
+    "buildLevel": 66,
+    "quality": 4,
+    "consume": 113563
+  },
+  {
+    "id": "00000FE3",
+    "buildLevel": 67,
+    "quality": 4,
+    "consume": 120182
+  },
+  {
+    "id": "00000FE4",
+    "buildLevel": 68,
+    "quality": 4,
+    "consume": 127036
+  },
+  {
+    "id": "00000FE5",
+    "buildLevel": 69,
+    "quality": 4,
+    "consume": 135902
+  },
+  {
+    "id": "00000FE6",
+    "buildLevel": 70,
+    "quality": 4,
+    "consume": 145123
+  },
+  {
+    "id": "00000FE7",
+    "buildLevel": 71,
+    "quality": 4,
+    "consume": 154708
+  },
+  {
+    "id": "00000FE8",
+    "buildLevel": 72,
+    "quality": 4,
+    "consume": 164673
+  },
+  {
+    "id": "00000FE9",
+    "buildLevel": 73,
+    "quality": 4,
+    "consume": 174991
+  },
+  {
+    "id": "00000FEA",
+    "buildLevel": 74,
+    "quality": 4,
+    "consume": 185707
+  },
+  {
+    "id": "00000FEB",
+    "buildLevel": 75,
+    "quality": 4,
+    "consume": 196828
+  },
+  {
+    "id": "00000FEC",
+    "buildLevel": 76,
+    "quality": 4,
+    "consume": 208404
+  },
+  {
+    "id": "00000FED",
+    "buildLevel": 77,
+    "quality": 4,
+    "consume": 220372
+  },
+  {
+    "id": "00000FEE",
+    "buildLevel": 78,
+    "quality": 4,
+    "consume": 232780
+  },
+  {
+    "id": "00000FEF",
+    "buildLevel": 79,
+    "quality": 4,
+    "consume": 245678
+  },
+  {
+    "id": "00000FF0",
+    "buildLevel": 80,
+    "quality": 4,
+    "consume": 260762
+  },
+  {
+    "id": "00000FF1",
+    "buildLevel": 81,
+    "quality": 4,
+    "consume": 276292
+  },
+  {
+    "id": "00000FF2",
+    "buildLevel": 82,
+    "quality": 4,
+    "consume": 292190
+  },
+  {
+    "id": "00000FF3",
+    "buildLevel": 83,
+    "quality": 4,
+    "consume": 308596
+  },
+  {
+    "id": "00000FF4",
+    "buildLevel": 84,
+    "quality": 4,
+    "consume": 325432
+  },
+  {
+    "id": "00000FF5",
+    "buildLevel": 85,
+    "quality": 4,
+    "consume": 342748
+  },
+  {
+    "id": "00000FF6",
+    "buildLevel": 86,
+    "quality": 4,
+    "consume": 360504
+  },
+  {
+    "id": "00000FF7",
+    "buildLevel": 87,
+    "quality": 4,
+    "consume": 378811
+  },
+  {
+    "id": "00000FF8",
+    "buildLevel": 88,
+    "quality": 4,
+    "consume": 397574
+  },
+  {
+    "id": "00000FF9",
+    "buildLevel": 89,
+    "quality": 4,
+    "consume": 416906
+  },
+  {
+    "id": "00000FFA",
+    "buildLevel": 90,
+    "quality": 4,
+    "consume": 441175
+  },
+  {
+    "id": "00000FFB",
+    "buildLevel": 91,
+    "quality": 4,
+    "consume": 466063
+  },
+  {
+    "id": "00000FFC",
+    "buildLevel": 92,
+    "quality": 4,
+    "consume": 491750
+  },
+  {
+    "id": "00000FFD",
+    "buildLevel": 93,
+    "quality": 4,
+    "consume": 518140
+  },
+  {
+    "id": "00000FFE",
+    "buildLevel": 94,
+    "quality": 4,
+    "consume": 545239
+  },
+  {
+    "id": "00000FFF",
+    "buildLevel": 95,
+    "quality": 4,
+    "consume": 573127
+  },
+  {
+    "id": "00001000",
+    "buildLevel": 96,
+    "quality": 4,
+    "consume": 601814
+  },
+  {
+    "id": "00001001",
+    "buildLevel": 97,
+    "quality": 4,
+    "consume": 631315
+  },
+  {
+    "id": "00001002",
+    "buildLevel": 98,
+    "quality": 4,
+    "consume": 661648
+  },
+  {
+    "id": "00001003",
+    "buildLevel": 99,
+    "quality": 4,
+    "consume": 692824
+  },
+  {
+    "id": "00001004",
+    "buildLevel": 100,
+    "quality": 4,
+    "consume": 730036
+  },
+  {
+    "id": "00001005",
+    "buildLevel": 101,
+    "quality": 4,
+    "consume": 768285
+  },
+  {
+    "id": "00001006",
+    "buildLevel": 102,
+    "quality": 4,
+    "consume": 807746
+  },
+  {
+    "id": "00001007",
+    "buildLevel": 103,
+    "quality": 4,
+    "consume": 1060262
+  },
+  {
+    "id": "00001008",
+    "buildLevel": 104,
+    "quality": 4,
+    "consume": 1334889
+  },
+  {
+    "id": "00001009",
+    "buildLevel": 105,
+    "quality": 4,
+    "consume": 1632328
+  },
+  {
+    "id": "0000100A",
+    "buildLevel": 106,
+    "quality": 4,
+    "consume": 1953787
+  },
+  {
+    "id": "0000100B",
+    "buildLevel": 107,
+    "quality": 4,
+    "consume": 2146576
+  },
+  {
+    "id": "0000100C",
+    "buildLevel": 108,
+    "quality": 4,
+    "consume": 2351383
+  },
+  {
+    "id": "0000100D",
+    "buildLevel": 109,
+    "quality": 4,
+    "consume": 2568662
+  },
+  {
+    "id": "0000100E",
+    "buildLevel": 110,
+    "quality": 4,
+    "consume": 2798664
+  },
+  {
+    "id": "0000100F",
+    "buildLevel": 111,
+    "quality": 4,
+    "consume": 3042055
+  },
+  {
+    "id": "00001010",
+    "buildLevel": 112,
+    "quality": 4,
+    "consume": 3299076
+  },
+  {
+    "id": "00001011",
+    "buildLevel": 113,
+    "quality": 4,
+    "consume": 3570698
+  },
+  {
+    "id": "00001012",
+    "buildLevel": 114,
+    "quality": 4,
+    "consume": 3857184
+  },
+  {
+    "id": "00001013",
+    "buildLevel": 115,
+    "quality": 4,
+    "consume": 4159334
+  },
+  {
+    "id": "00001014",
+    "buildLevel": 116,
+    "quality": 4,
+    "consume": 4477396
+  },
+  {
+    "id": "00001015",
+    "buildLevel": 117,
+    "quality": 4,
+    "consume": 4812218
+  },
+  {
+    "id": "00001016",
+    "buildLevel": 118,
+    "quality": 4,
+    "consume": 5164370
+  },
+  {
+    "id": "00001017",
+    "buildLevel": 119,
+    "quality": 4,
+    "consume": 5534436
+  },
+  {
+    "id": "00001018",
+    "buildLevel": 120,
+    "quality": 4,
+    "consume": 5923372
+  },
+  {
+    "id": "00001019",
+    "buildLevel": 121,
+    "quality": 4,
+    "consume": 6331056
+  },
+  {
+    "id": "0000101A",
+    "buildLevel": 122,
+    "quality": 4,
+    "consume": 6759249
+  },
+  {
+    "id": "0000101B",
+    "buildLevel": 123,
+    "quality": 4,
+    "consume": 7208246
+  },
+  {
+    "id": "0000101C",
+    "buildLevel": 124,
+    "quality": 4,
+    "consume": 7678718
+  },
+  {
+    "id": "0000101D",
+    "buildLevel": 125,
+    "quality": 4,
+    "consume": 8171344
+  },
+  {
+    "id": "0000101E",
+    "buildLevel": 126,
+    "quality": 4,
+    "consume": 8687282
+  },
+  {
+    "id": "0000101F",
+    "buildLevel": 127,
+    "quality": 4,
+    "consume": 9001747
+  },
+  {
+    "id": "00001020",
+    "buildLevel": 128,
+    "quality": 4,
+    "consume": 9325322
+  },
+  {
+    "id": "00001021",
+    "buildLevel": 129,
+    "quality": 4,
+    "consume": 9657648
+  },
+  {
+    "id": "00001022",
+    "buildLevel": 130,
+    "quality": 4,
+    "consume": 9998824
+  },
+  {
+    "id": "00001023",
+    "buildLevel": 131,
+    "quality": 4,
+    "consume": 10349462
+  },
+  {
+    "id": "00001024",
+    "buildLevel": 132,
+    "quality": 4,
+    "consume": 10710187
+  },
+  {
+    "id": "00001025",
+    "buildLevel": 133,
+    "quality": 4,
+    "consume": 11080104
+  },
+  {
+    "id": "00001026",
+    "buildLevel": 134,
+    "quality": 4,
+    "consume": 11460348
+  },
+  {
+    "id": "00001027",
+    "buildLevel": 135,
+    "quality": 4,
+    "consume": 11851046
+  },
+  {
+    "id": "00001028",
+    "buildLevel": 136,
+    "quality": 4,
+    "consume": 12252321
+  },
+  {
+    "id": "00001029",
+    "buildLevel": 137,
+    "quality": 4,
+    "consume": 12664296
+  },
+  {
+    "id": "0000102A",
+    "buildLevel": 138,
+    "quality": 4,
+    "consume": 13087632
+  },
+  {
+    "id": "0000102B",
+    "buildLevel": 139,
+    "quality": 4,
+    "consume": 13522454
+  },
+  {
+    "id": "0000102C",
+    "buildLevel": 140,
+    "quality": 4,
+    "consume": 13968900
+  },
+  {
+    "id": "0000102D",
+    "buildLevel": 141,
+    "quality": 4,
+    "consume": 14427643
+  },
+  {
+    "id": "0000102E",
+    "buildLevel": 142,
+    "quality": 4,
+    "consume": 14898268
+  },
+  {
+    "id": "0000102F",
+    "buildLevel": 143,
+    "quality": 4,
+    "consume": 15382024
+  },
+  {
+    "id": "00001030",
+    "buildLevel": 144,
+    "quality": 4,
+    "consume": 15878488
+  },
+  {
+    "id": "00001031",
+    "buildLevel": 145,
+    "quality": 4,
+    "consume": 16388366
+  },
+  {
+    "id": "00001032",
+    "buildLevel": 146,
+    "quality": 4,
+    "consume": 16912382
+  },
+  {
+    "id": "00001033",
+    "buildLevel": 147,
+    "quality": 4,
+    "consume": 17450100
+  },
+  {
+    "id": "00001034",
+    "buildLevel": 148,
+    "quality": 4,
+    "consume": 18001660
+  },
+  {
+    "id": "00001035",
+    "buildLevel": 149,
+    "quality": 4,
+    "consume": 18568975
+  },
+  {
+    "id": "00001036",
+    "buildLevel": 150,
+    "quality": 4,
+    "consume": 19152361
+  },
+  {
+    "id": "00001037",
+    "buildLevel": 151,
+    "quality": 4,
+    "consume": 19752134
+  },
+  {
+    "id": "00001038",
+    "buildLevel": 152,
+    "quality": 4,
+    "consume": 20368610
+  },
+  {
+    "id": "00001039",
+    "buildLevel": 153,
+    "quality": 4,
+    "consume": 21002105
+  },
+  {
+    "id": "0000103A",
+    "buildLevel": 154,
+    "quality": 4,
+    "consume": 21652935
+  },
+  {
+    "id": "0000103B",
+    "buildLevel": 155,
+    "quality": 4,
+    "consume": 22321416
+  },
+  {
+    "id": "0000103C",
+    "buildLevel": 156,
+    "quality": 4,
+    "consume": 23007864
+  },
+  {
+    "id": "0000103D",
+    "buildLevel": 157,
+    "quality": 4,
+    "consume": 23712595
+  },
+  {
+    "id": "0000103E",
+    "buildLevel": 158,
+    "quality": 4,
+    "consume": 24435925
+  },
+  {
+    "id": "0000103F",
+    "buildLevel": 159,
+    "quality": 4,
+    "consume": 25178170
+  },
+  {
+    "id": "00001040",
+    "buildLevel": 160,
+    "quality": 4,
+    "consume": 25939646
+  },
+  {
+    "id": "00001041",
+    "buildLevel": 161,
+    "quality": 4,
+    "consume": 26720669
+  },
+  {
+    "id": "00001042",
+    "buildLevel": 162,
+    "quality": 4,
+    "consume": 27521555
+  },
+  {
+    "id": "00001043",
+    "buildLevel": 163,
+    "quality": 4,
+    "consume": 28342620
+  },
+  {
+    "id": "00001044",
+    "buildLevel": 164,
+    "quality": 4,
+    "consume": 29184180
+  },
+  {
+    "id": "00001045",
+    "buildLevel": 165,
+    "quality": 4,
+    "consume": 30046551
+  },
+  {
+    "id": "00001046",
+    "buildLevel": 166,
+    "quality": 4,
+    "consume": 30930049
+  },
+  {
+    "id": "00001047",
+    "buildLevel": 167,
+    "quality": 4,
+    "consume": 31834990
+  },
+  {
+    "id": "00001048",
+    "buildLevel": 168,
+    "quality": 4,
+    "consume": 32761690
+  },
+  {
+    "id": "00001049",
+    "buildLevel": 169,
+    "quality": 4,
+    "consume": 33710465
+  },
+  {
+    "id": "0000104A",
+    "buildLevel": 170,
+    "quality": 4,
+    "consume": 34681631
+  },
+  {
+    "id": "0000104B",
+    "buildLevel": 171,
+    "quality": 4,
+    "consume": 35675504
+  },
+  {
+    "id": "0000104C",
+    "buildLevel": 172,
+    "quality": 4,
+    "consume": 36692400
+  },
+  {
+    "id": "0000104D",
+    "buildLevel": 173,
+    "quality": 4,
+    "consume": 37732635
+  },
+  {
+    "id": "0000104E",
+    "buildLevel": 174,
+    "quality": 4,
+    "consume": 38796525
+  },
+  {
+    "id": "0000104F",
+    "buildLevel": 175,
+    "quality": 4,
+    "consume": 39884386
+  },
+  {
+    "id": "00001050",
+    "buildLevel": 176,
+    "quality": 4,
+    "consume": 40996534
+  },
+  {
+    "id": "00001051",
+    "buildLevel": 177,
+    "quality": 4,
+    "consume": 42133285
+  },
+  {
+    "id": "00001052",
+    "buildLevel": 178,
+    "quality": 4,
+    "consume": 43294955
+  },
+  {
+    "id": "00001053",
+    "buildLevel": 179,
+    "quality": 4,
+    "consume": 44481860
+  },
+  {
+    "id": "00001054",
+    "buildLevel": 180,
+    "quality": 4,
+    "consume": 45694316
+  },
+  {
+    "id": "00001055",
+    "buildLevel": 181,
+    "quality": 4,
+    "consume": 46932639
+  },
+  {
+    "id": "00001056",
+    "buildLevel": 182,
+    "quality": 4,
+    "consume": 48197145
+  },
+  {
+    "id": "00001057",
+    "buildLevel": 183,
+    "quality": 4,
+    "consume": 49488150
+  },
+  {
+    "id": "00001058",
+    "buildLevel": 184,
+    "quality": 4,
+    "consume": 50805970
+  },
+  {
+    "id": "00001059",
+    "buildLevel": 185,
+    "quality": 4,
+    "consume": 52150921
+  },
+  {
+    "id": "0000105A",
+    "buildLevel": 186,
+    "quality": 4,
+    "consume": 53523319
+  },
+  {
+    "id": "0000105B",
+    "buildLevel": 187,
+    "quality": 4,
+    "consume": 54923480
+  },
+  {
+    "id": "0000105C",
+    "buildLevel": 188,
+    "quality": 4,
+    "consume": 56351720
+  },
+  {
+    "id": "0000105D",
+    "buildLevel": 189,
+    "quality": 4,
+    "consume": 57808355
+  },
+  {
+    "id": "0000105E",
+    "buildLevel": 190,
+    "quality": 4,
+    "consume": 59293701
+  },
+  {
+    "id": "0000105F",
+    "buildLevel": 191,
+    "quality": 4,
+    "consume": 60808074
+  },
+  {
+    "id": "00001060",
+    "buildLevel": 192,
+    "quality": 4,
+    "consume": 62351790
+  },
+  {
+    "id": "00001061",
+    "buildLevel": 193,
+    "quality": 4,
+    "consume": 63925165
+  },
+  {
+    "id": "00001062",
+    "buildLevel": 194,
+    "quality": 4,
+    "consume": 65528515
+  },
+  {
+    "id": "00001063",
+    "buildLevel": 195,
+    "quality": 4,
+    "consume": 67162156
+  },
+  {
+    "id": "00001064",
+    "buildLevel": 196,
+    "quality": 4,
+    "consume": 68826404
+  },
+  {
+    "id": "00001065",
+    "buildLevel": 197,
+    "quality": 4,
+    "consume": 70521575
+  },
+  {
+    "id": "00001066",
+    "buildLevel": 198,
+    "quality": 4,
+    "consume": 72247985
+  },
+  {
+    "id": "00001067",
+    "buildLevel": 199,
+    "quality": 4,
+    "consume": 74005950
+  },
+  {
+    "id": "00001388",
+    "buildLevel": 0,
+    "quality": 5,
+    "consume": 822
+  },
+  {
+    "id": "00001389",
+    "buildLevel": 1,
+    "quality": 5,
+    "consume": 888
+  },
+  {
+    "id": "0000138A",
+    "buildLevel": 2,
+    "quality": 5,
+    "consume": 960
+  },
+  {
+    "id": "0000138B",
+    "buildLevel": 3,
+    "quality": 5,
+    "consume": 1038
+  },
+  {
+    "id": "0000138C",
+    "buildLevel": 4,
+    "quality": 5,
+    "consume": 1122
+  },
+  {
+    "id": "0000138D",
+    "buildLevel": 5,
+    "quality": 5,
+    "consume": 1212
+  },
+  {
+    "id": "0000138E",
+    "buildLevel": 6,
+    "quality": 5,
+    "consume": 1311
+  },
+  {
+    "id": "0000138F",
+    "buildLevel": 7,
+    "quality": 5,
+    "consume": 1419
+  },
+  {
+    "id": "00001390",
+    "buildLevel": 8,
+    "quality": 5,
+    "consume": 1533
+  },
+  {
+    "id": "00001391",
+    "buildLevel": 9,
+    "quality": 5,
+    "consume": 1656
+  },
+  {
+    "id": "00001392",
+    "buildLevel": 10,
+    "quality": 5,
+    "consume": 1791
+  },
+  {
+    "id": "00001393",
+    "buildLevel": 11,
+    "quality": 5,
+    "consume": 1935
+  },
+  {
+    "id": "00001394",
+    "buildLevel": 12,
+    "quality": 5,
+    "consume": 2091
+  },
+  {
+    "id": "00001395",
+    "buildLevel": 13,
+    "quality": 5,
+    "consume": 2259
+  },
+  {
+    "id": "00001396",
+    "buildLevel": 14,
+    "quality": 5,
+    "consume": 2442
+  },
+  {
+    "id": "00001397",
+    "buildLevel": 15,
+    "quality": 5,
+    "consume": 2640
+  },
+  {
+    "id": "00001398",
+    "buildLevel": 16,
+    "quality": 5,
+    "consume": 2853
+  },
+  {
+    "id": "00001399",
+    "buildLevel": 17,
+    "quality": 5,
+    "consume": 3084
+  },
+  {
+    "id": "0000139A",
+    "buildLevel": 18,
+    "quality": 5,
+    "consume": 3333
+  },
+  {
+    "id": "0000139B",
+    "buildLevel": 19,
+    "quality": 5,
+    "consume": 3600
+  },
+  {
+    "id": "0000139C",
+    "buildLevel": 20,
+    "quality": 5,
+    "consume": 3888
+  },
+  {
+    "id": "0000139D",
+    "buildLevel": 21,
+    "quality": 5,
+    "consume": 4200
+  },
+  {
+    "id": "0000139E",
+    "buildLevel": 22,
+    "quality": 5,
+    "consume": 4536
+  },
+  {
+    "id": "0000139F",
+    "buildLevel": 23,
+    "quality": 5,
+    "consume": 4899
+  },
+  {
+    "id": "000013A0",
+    "buildLevel": 24,
+    "quality": 5,
+    "consume": 5292
+  },
+  {
+    "id": "000013A1",
+    "buildLevel": 25,
+    "quality": 5,
+    "consume": 5718
+  },
+  {
+    "id": "000013A2",
+    "buildLevel": 26,
+    "quality": 5,
+    "consume": 6177
+  },
+  {
+    "id": "000013A3",
+    "buildLevel": 27,
+    "quality": 5,
+    "consume": 6672
+  },
+  {
+    "id": "000013A4",
+    "buildLevel": 28,
+    "quality": 5,
+    "consume": 7206
+  },
+  {
+    "id": "000013A5",
+    "buildLevel": 29,
+    "quality": 5,
+    "consume": 7785
+  },
+  {
+    "id": "000013A6",
+    "buildLevel": 30,
+    "quality": 5,
+    "consume": 8409
+  },
+  {
+    "id": "000013A7",
+    "buildLevel": 31,
+    "quality": 5,
+    "consume": 9084
+  },
+  {
+    "id": "000013A8",
+    "buildLevel": 32,
+    "quality": 5,
+    "consume": 9813
+  },
+  {
+    "id": "000013A9",
+    "buildLevel": 33,
+    "quality": 5,
+    "consume": 12174
+  },
+  {
+    "id": "000013AA",
+    "buildLevel": 34,
+    "quality": 5,
+    "consume": 14511
+  },
+  {
+    "id": "000013AB",
+    "buildLevel": 35,
+    "quality": 5,
+    "consume": 16830
+  },
+  {
+    "id": "000013AC",
+    "buildLevel": 36,
+    "quality": 5,
+    "consume": 19140
+  },
+  {
+    "id": "000013AD",
+    "buildLevel": 37,
+    "quality": 5,
+    "consume": 21444
+  },
+  {
+    "id": "000013AE",
+    "buildLevel": 38,
+    "quality": 5,
+    "consume": 23742
+  },
+  {
+    "id": "000013AF",
+    "buildLevel": 39,
+    "quality": 5,
+    "consume": 26040
+  },
+  {
+    "id": "000013B0",
+    "buildLevel": 40,
+    "quality": 5,
+    "consume": 28338
+  },
+  {
+    "id": "000013B1",
+    "buildLevel": 41,
+    "quality": 5,
+    "consume": 30651
+  },
+  {
+    "id": "000013B2",
+    "buildLevel": 42,
+    "quality": 5,
+    "consume": 32985
+  },
+  {
+    "id": "000013B3",
+    "buildLevel": 43,
+    "quality": 5,
+    "consume": 35319
+  },
+  {
+    "id": "000013B4",
+    "buildLevel": 44,
+    "quality": 5,
+    "consume": 37677
+  },
+  {
+    "id": "000013B5",
+    "buildLevel": 45,
+    "quality": 5,
+    "consume": 40062
+  },
+  {
+    "id": "000013B6",
+    "buildLevel": 46,
+    "quality": 5,
+    "consume": 42465
+  },
+  {
+    "id": "000013B7",
+    "buildLevel": 47,
+    "quality": 5,
+    "consume": 44901
+  },
+  {
+    "id": "000013B8",
+    "buildLevel": 48,
+    "quality": 5,
+    "consume": 47358
+  },
+  {
+    "id": "000013B9",
+    "buildLevel": 49,
+    "quality": 5,
+    "consume": 49851
+  },
+  {
+    "id": "000013BA",
+    "buildLevel": 50,
+    "quality": 5,
+    "consume": 52371
+  },
+  {
+    "id": "000013BB",
+    "buildLevel": 51,
+    "quality": 5,
+    "consume": 56043
+  },
+  {
+    "id": "000013BC",
+    "buildLevel": 52,
+    "quality": 5,
+    "consume": 59832
+  },
+  {
+    "id": "000013BD",
+    "buildLevel": 53,
+    "quality": 5,
+    "consume": 63786
+  },
+  {
+    "id": "000013BE",
+    "buildLevel": 54,
+    "quality": 5,
+    "consume": 67899
+  },
+  {
+    "id": "000013BF",
+    "buildLevel": 55,
+    "quality": 5,
+    "consume": 72150
+  },
+  {
+    "id": "000013C0",
+    "buildLevel": 56,
+    "quality": 5,
+    "consume": 76566
+  },
+  {
+    "id": "000013C1",
+    "buildLevel": 57,
+    "quality": 5,
+    "consume": 81171
+  },
+  {
+    "id": "000013C2",
+    "buildLevel": 58,
+    "quality": 5,
+    "consume": 85926
+  },
+  {
+    "id": "000013C3",
+    "buildLevel": 59,
+    "quality": 5,
+    "consume": 92031
+  },
+  {
+    "id": "000013C4",
+    "buildLevel": 60,
+    "quality": 5,
+    "consume": 98400
+  },
+  {
+    "id": "000013C5",
+    "buildLevel": 61,
+    "quality": 5,
+    "consume": 104985
+  },
+  {
+    "id": "000013C6",
+    "buildLevel": 62,
+    "quality": 5,
+    "consume": 111846
+  },
+  {
+    "id": "000013C7",
+    "buildLevel": 63,
+    "quality": 5,
+    "consume": 118962
+  },
+  {
+    "id": "000013C8",
+    "buildLevel": 64,
+    "quality": 5,
+    "consume": 126345
+  },
+  {
+    "id": "000013C9",
+    "buildLevel": 65,
+    "quality": 5,
+    "consume": 133995
+  },
+  {
+    "id": "000013CA",
+    "buildLevel": 66,
+    "quality": 5,
+    "consume": 141954
+  },
+  {
+    "id": "000013CB",
+    "buildLevel": 67,
+    "quality": 5,
+    "consume": 150228
+  },
+  {
+    "id": "000013CC",
+    "buildLevel": 68,
+    "quality": 5,
+    "consume": 158796
+  },
+  {
+    "id": "000013CD",
+    "buildLevel": 69,
+    "quality": 5,
+    "consume": 169878
+  },
+  {
+    "id": "000013CE",
+    "buildLevel": 70,
+    "quality": 5,
+    "consume": 181404
+  },
+  {
+    "id": "000013CF",
+    "buildLevel": 71,
+    "quality": 5,
+    "consume": 193386
+  },
+  {
+    "id": "000013D0",
+    "buildLevel": 72,
+    "quality": 5,
+    "consume": 205842
+  },
+  {
+    "id": "000013D1",
+    "buildLevel": 73,
+    "quality": 5,
+    "consume": 218739
+  },
+  {
+    "id": "000013D2",
+    "buildLevel": 74,
+    "quality": 5,
+    "consume": 232134
+  },
+  {
+    "id": "000013D3",
+    "buildLevel": 75,
+    "quality": 5,
+    "consume": 246036
+  },
+  {
+    "id": "000013D4",
+    "buildLevel": 76,
+    "quality": 5,
+    "consume": 260505
+  },
+  {
+    "id": "000013D5",
+    "buildLevel": 77,
+    "quality": 5,
+    "consume": 275466
+  },
+  {
+    "id": "000013D6",
+    "buildLevel": 78,
+    "quality": 5,
+    "consume": 290976
+  },
+  {
+    "id": "000013D7",
+    "buildLevel": 79,
+    "quality": 5,
+    "consume": 307098
+  },
+  {
+    "id": "000013D8",
+    "buildLevel": 80,
+    "quality": 5,
+    "consume": 325953
+  },
+  {
+    "id": "000013D9",
+    "buildLevel": 81,
+    "quality": 5,
+    "consume": 345366
+  },
+  {
+    "id": "000013DA",
+    "buildLevel": 82,
+    "quality": 5,
+    "consume": 365238
+  },
+  {
+    "id": "000013DB",
+    "buildLevel": 83,
+    "quality": 5,
+    "consume": 385746
+  },
+  {
+    "id": "000013DC",
+    "buildLevel": 84,
+    "quality": 5,
+    "consume": 406791
+  },
+  {
+    "id": "000013DD",
+    "buildLevel": 85,
+    "quality": 5,
+    "consume": 428436
+  },
+  {
+    "id": "000013DE",
+    "buildLevel": 86,
+    "quality": 5,
+    "consume": 450630
+  },
+  {
+    "id": "000013DF",
+    "buildLevel": 87,
+    "quality": 5,
+    "consume": 473514
+  },
+  {
+    "id": "000013E0",
+    "buildLevel": 88,
+    "quality": 5,
+    "consume": 496968
+  },
+  {
+    "id": "000013E1",
+    "buildLevel": 89,
+    "quality": 5,
+    "consume": 521133
+  },
+  {
+    "id": "000013E2",
+    "buildLevel": 90,
+    "quality": 5,
+    "consume": 551469
+  },
+  {
+    "id": "000013E3",
+    "buildLevel": 91,
+    "quality": 5,
+    "consume": 582579
+  },
+  {
+    "id": "000013E4",
+    "buildLevel": 92,
+    "quality": 5,
+    "consume": 614688
+  },
+  {
+    "id": "000013E5",
+    "buildLevel": 93,
+    "quality": 5,
+    "consume": 647676
+  },
+  {
+    "id": "000013E6",
+    "buildLevel": 94,
+    "quality": 5,
+    "consume": 681549
+  },
+  {
+    "id": "000013E7",
+    "buildLevel": 95,
+    "quality": 5,
+    "consume": 716409
+  },
+  {
+    "id": "000013E8",
+    "buildLevel": 96,
+    "quality": 5,
+    "consume": 752268
+  },
+  {
+    "id": "000013E9",
+    "buildLevel": 97,
+    "quality": 5,
+    "consume": 789144
+  },
+  {
+    "id": "000013EA",
+    "buildLevel": 98,
+    "quality": 5,
+    "consume": 827061
+  },
+  {
+    "id": "000013EB",
+    "buildLevel": 99,
+    "quality": 5,
+    "consume": 866031
+  },
+  {
+    "id": "000013EC",
+    "buildLevel": 100,
+    "quality": 5,
+    "consume": 912546
+  },
+  {
+    "id": "000013ED",
+    "buildLevel": 101,
+    "quality": 5,
+    "consume": 960357
+  },
+  {
+    "id": "000013EE",
+    "buildLevel": 102,
+    "quality": 5,
+    "consume": 1009683
+  },
+  {
+    "id": "000013EF",
+    "buildLevel": 103,
+    "quality": 5,
+    "consume": 1325328
+  },
+  {
+    "id": "000013F0",
+    "buildLevel": 104,
+    "quality": 5,
+    "consume": 1668612
+  },
+  {
+    "id": "000013F1",
+    "buildLevel": 105,
+    "quality": 5,
+    "consume": 2040411
+  },
+  {
+    "id": "000013F2",
+    "buildLevel": 106,
+    "quality": 5,
+    "consume": 2442234
+  },
+  {
+    "id": "000013F3",
+    "buildLevel": 107,
+    "quality": 5,
+    "consume": 2683221
+  },
+  {
+    "id": "000013F4",
+    "buildLevel": 108,
+    "quality": 5,
+    "consume": 2939229
+  },
+  {
+    "id": "000013F5",
+    "buildLevel": 109,
+    "quality": 5,
+    "consume": 3210828
+  },
+  {
+    "id": "000013F6",
+    "buildLevel": 110,
+    "quality": 5,
+    "consume": 3498330
+  },
+  {
+    "id": "000013F7",
+    "buildLevel": 111,
+    "quality": 5,
+    "consume": 3802569
+  },
+  {
+    "id": "000013F8",
+    "buildLevel": 112,
+    "quality": 5,
+    "consume": 4123845
+  },
+  {
+    "id": "000013F9",
+    "buildLevel": 113,
+    "quality": 5,
+    "consume": 4463373
+  },
+  {
+    "id": "000013FA",
+    "buildLevel": 114,
+    "quality": 5,
+    "consume": 4821480
+  },
+  {
+    "id": "000013FB",
+    "buildLevel": 115,
+    "quality": 5,
+    "consume": 5199168
+  },
+  {
+    "id": "000013FC",
+    "buildLevel": 116,
+    "quality": 5,
+    "consume": 5596746
+  },
+  {
+    "id": "000013FD",
+    "buildLevel": 117,
+    "quality": 5,
+    "consume": 6015273
+  },
+  {
+    "id": "000013FE",
+    "buildLevel": 118,
+    "quality": 5,
+    "consume": 6455463
+  },
+  {
+    "id": "000013FF",
+    "buildLevel": 119,
+    "quality": 5,
+    "consume": 6918045
+  },
+  {
+    "id": "00001400",
+    "buildLevel": 120,
+    "quality": 5,
+    "consume": 7404216
+  },
+  {
+    "id": "00001401",
+    "buildLevel": 121,
+    "quality": 5,
+    "consume": 7913820
+  },
+  {
+    "id": "00001402",
+    "buildLevel": 122,
+    "quality": 5,
+    "consume": 8449062
+  },
+  {
+    "id": "00001403",
+    "buildLevel": 123,
+    "quality": 5,
+    "consume": 9010308
+  },
+  {
+    "id": "00001404",
+    "buildLevel": 124,
+    "quality": 5,
+    "consume": 9598398
+  },
+  {
+    "id": "00001405",
+    "buildLevel": 125,
+    "quality": 5,
+    "consume": 10214181
+  },
+  {
+    "id": "00001406",
+    "buildLevel": 126,
+    "quality": 5,
+    "consume": 10859103
+  },
+  {
+    "id": "00001407",
+    "buildLevel": 127,
+    "quality": 5,
+    "consume": 11252184
+  },
+  {
+    "id": "00001408",
+    "buildLevel": 128,
+    "quality": 5,
+    "consume": 11656653
+  },
+  {
+    "id": "00001409",
+    "buildLevel": 129,
+    "quality": 5,
+    "consume": 12072060
+  },
+  {
+    "id": "0000140A",
+    "buildLevel": 130,
+    "quality": 5,
+    "consume": 12498531
+  },
+  {
+    "id": "0000140B",
+    "buildLevel": 131,
+    "quality": 5,
+    "consume": 12936828
+  },
+  {
+    "id": "0000140C",
+    "buildLevel": 132,
+    "quality": 5,
+    "consume": 13387734
+  },
+  {
+    "id": "0000140D",
+    "buildLevel": 133,
+    "quality": 5,
+    "consume": 13850130
+  },
+  {
+    "id": "0000140E",
+    "buildLevel": 134,
+    "quality": 5,
+    "consume": 14325435
+  },
+  {
+    "id": "0000140F",
+    "buildLevel": 135,
+    "quality": 5,
+    "consume": 14813808
+  },
+  {
+    "id": "00001410",
+    "buildLevel": 136,
+    "quality": 5,
+    "consume": 15315402
+  },
+  {
+    "id": "00001411",
+    "buildLevel": 137,
+    "quality": 5,
+    "consume": 15830370
+  },
+  {
+    "id": "00001412",
+    "buildLevel": 138,
+    "quality": 5,
+    "consume": 16359540
+  },
+  {
+    "id": "00001413",
+    "buildLevel": 139,
+    "quality": 5,
+    "consume": 16903068
+  },
+  {
+    "id": "00001414",
+    "buildLevel": 140,
+    "quality": 5,
+    "consume": 17461125
+  },
+  {
+    "id": "00001415",
+    "buildLevel": 141,
+    "quality": 5,
+    "consume": 18034554
+  },
+  {
+    "id": "00001416",
+    "buildLevel": 142,
+    "quality": 5,
+    "consume": 18622836
+  },
+  {
+    "id": "00001417",
+    "buildLevel": 143,
+    "quality": 5,
+    "consume": 19227531
+  },
+  {
+    "id": "00001418",
+    "buildLevel": 144,
+    "quality": 5,
+    "consume": 19848111
+  },
+  {
+    "id": "00001419",
+    "buildLevel": 145,
+    "quality": 5,
+    "consume": 20485458
+  },
+  {
+    "id": "0000141A",
+    "buildLevel": 146,
+    "quality": 5,
+    "consume": 21140478
+  },
+  {
+    "id": "0000141B",
+    "buildLevel": 147,
+    "quality": 5,
+    "consume": 21812625
+  },
+  {
+    "id": "0000141C",
+    "buildLevel": 148,
+    "quality": 5,
+    "consume": 22502076
+  },
+  {
+    "id": "0000141D",
+    "buildLevel": 149,
+    "quality": 5,
+    "consume": 23211219
+  },
+  {
+    "id": "0000141E",
+    "buildLevel": 150,
+    "quality": 5,
+    "consume": 23940449
+  },
+  {
+    "id": "0000141F",
+    "buildLevel": 151,
+    "quality": 5,
+    "consume": 24690161
+  },
+  {
+    "id": "00001420",
+    "buildLevel": 152,
+    "quality": 5,
+    "consume": 25460750
+  },
+  {
+    "id": "00001421",
+    "buildLevel": 153,
+    "quality": 5,
+    "consume": 26252611
+  },
+  {
+    "id": "00001422",
+    "buildLevel": 154,
+    "quality": 5,
+    "consume": 27066139
+  },
+  {
+    "id": "00001423",
+    "buildLevel": 155,
+    "quality": 5,
+    "consume": 27901729
+  },
+  {
+    "id": "00001424",
+    "buildLevel": 156,
+    "quality": 5,
+    "consume": 28759776
+  },
+  {
+    "id": "00001425",
+    "buildLevel": 157,
+    "quality": 5,
+    "consume": 29640675
+  },
+  {
+    "id": "00001426",
+    "buildLevel": 158,
+    "quality": 5,
+    "consume": 30544821
+  },
+  {
+    "id": "00001427",
+    "buildLevel": 159,
+    "quality": 5,
+    "consume": 31472609
+  },
+  {
+    "id": "00001428",
+    "buildLevel": 160,
+    "quality": 5,
+    "consume": 32424434
+  },
+  {
+    "id": "00001429",
+    "buildLevel": 161,
+    "quality": 5,
+    "consume": 33400691
+  },
+  {
+    "id": "0000142A",
+    "buildLevel": 162,
+    "quality": 5,
+    "consume": 34401775
+  },
+  {
+    "id": "0000142B",
+    "buildLevel": 163,
+    "quality": 5,
+    "consume": 35428081
+  },
+  {
+    "id": "0000142C",
+    "buildLevel": 164,
+    "quality": 5,
+    "consume": 36480004
+  },
+  {
+    "id": "0000142D",
+    "buildLevel": 165,
+    "quality": 5,
+    "consume": 37557939
+  },
+  {
+    "id": "0000142E",
+    "buildLevel": 166,
+    "quality": 5,
+    "consume": 38662281
+  },
+  {
+    "id": "0000142F",
+    "buildLevel": 167,
+    "quality": 5,
+    "consume": 39793425
+  },
+  {
+    "id": "00001430",
+    "buildLevel": 168,
+    "quality": 5,
+    "consume": 40951766
+  },
+  {
+    "id": "00001431",
+    "buildLevel": 169,
+    "quality": 5,
+    "consume": 42137699
+  },
+  {
+    "id": "00001432",
+    "buildLevel": 170,
+    "quality": 5,
+    "consume": 43351619
+  },
+  {
+    "id": "00001433",
+    "buildLevel": 171,
+    "quality": 5,
+    "consume": 44593921
+  },
+  {
+    "id": "00001434",
+    "buildLevel": 172,
+    "quality": 5,
+    "consume": 45865000
+  },
+  {
+    "id": "00001435",
+    "buildLevel": 173,
+    "quality": 5,
+    "consume": 47165251
+  },
+  {
+    "id": "00001436",
+    "buildLevel": 174,
+    "quality": 5,
+    "consume": 48495069
+  },
+  {
+    "id": "00001437",
+    "buildLevel": 175,
+    "quality": 5,
+    "consume": 49854849
+  },
+  {
+    "id": "00001438",
+    "buildLevel": 176,
+    "quality": 5,
+    "consume": 51244986
+  },
+  {
+    "id": "00001439",
+    "buildLevel": 177,
+    "quality": 5,
+    "consume": 52665875
+  },
+  {
+    "id": "0000143A",
+    "buildLevel": 178,
+    "quality": 5,
+    "consume": 54117911
+  },
+  {
+    "id": "0000143B",
+    "buildLevel": 179,
+    "quality": 5,
+    "consume": 55601489
+  },
+  {
+    "id": "0000143C",
+    "buildLevel": 180,
+    "quality": 5,
+    "consume": 57117004
+  },
+  {
+    "id": "0000143D",
+    "buildLevel": 181,
+    "quality": 5,
+    "consume": 58664851
+  },
+  {
+    "id": "0000143E",
+    "buildLevel": 182,
+    "quality": 5,
+    "consume": 60245425
+  },
+  {
+    "id": "0000143F",
+    "buildLevel": 183,
+    "quality": 5,
+    "consume": 61859121
+  },
+  {
+    "id": "00001440",
+    "buildLevel": 184,
+    "quality": 5,
+    "consume": 63506334
+  },
+  {
+    "id": "00001441",
+    "buildLevel": 185,
+    "quality": 5,
+    "consume": 65187459
+  },
+  {
+    "id": "00001442",
+    "buildLevel": 186,
+    "quality": 5,
+    "consume": 66902891
+  },
+  {
+    "id": "00001443",
+    "buildLevel": 187,
+    "quality": 5,
+    "consume": 68653025
+  },
+  {
+    "id": "00001444",
+    "buildLevel": 188,
+    "quality": 5,
+    "consume": 70438256
+  },
+  {
+    "id": "00001445",
+    "buildLevel": 189,
+    "quality": 5,
+    "consume": 72258979
+  },
+  {
+    "id": "00001446",
+    "buildLevel": 190,
+    "quality": 5,
+    "consume": 74115589
+  },
+  {
+    "id": "00001447",
+    "buildLevel": 191,
+    "quality": 5,
+    "consume": 76008481
+  },
+  {
+    "id": "00001448",
+    "buildLevel": 192,
+    "quality": 5,
+    "consume": 77938050
+  },
+  {
+    "id": "00001449",
+    "buildLevel": 193,
+    "quality": 5,
+    "consume": 79904691
+  },
+  {
+    "id": "0000144A",
+    "buildLevel": 194,
+    "quality": 5,
+    "consume": 81908799
+  },
+  {
+    "id": "0000144B",
+    "buildLevel": 195,
+    "quality": 5,
+    "consume": 83950769
+  },
+  {
+    "id": "0000144C",
+    "buildLevel": 196,
+    "quality": 5,
+    "consume": 86030996
+  },
+  {
+    "id": "0000144D",
+    "buildLevel": 197,
+    "quality": 5,
+    "consume": 88149875
+  },
+  {
+    "id": "0000144E",
+    "buildLevel": 198,
+    "quality": 5,
+    "consume": 90307801
+  },
+  {
+    "id": "0000144F",
+    "buildLevel": 199,
+    "quality": 5,
+    "consume": 92505169
+  },
+  {
+    "id": "00001770",
+    "buildLevel": 0,
+    "quality": 6,
+    "consume": 1096
+  },
+  {
+    "id": "00001771",
+    "buildLevel": 1,
+    "quality": 6,
+    "consume": 1184
+  },
+  {
+    "id": "00001772",
+    "buildLevel": 2,
+    "quality": 6,
+    "consume": 1280
+  },
+  {
+    "id": "00001773",
+    "buildLevel": 3,
+    "quality": 6,
+    "consume": 1384
+  },
+  {
+    "id": "00001774",
+    "buildLevel": 4,
+    "quality": 6,
+    "consume": 1496
+  },
+  {
+    "id": "00001775",
+    "buildLevel": 5,
+    "quality": 6,
+    "consume": 1616
+  },
+  {
+    "id": "00001776",
+    "buildLevel": 6,
+    "quality": 6,
+    "consume": 1748
+  },
+  {
+    "id": "00001777",
+    "buildLevel": 7,
+    "quality": 6,
+    "consume": 1892
+  },
+  {
+    "id": "00001778",
+    "buildLevel": 8,
+    "quality": 6,
+    "consume": 2044
+  },
+  {
+    "id": "00001779",
+    "buildLevel": 9,
+    "quality": 6,
+    "consume": 2208
+  },
+  {
+    "id": "0000177A",
+    "buildLevel": 10,
+    "quality": 6,
+    "consume": 2388
+  },
+  {
+    "id": "0000177B",
+    "buildLevel": 11,
+    "quality": 6,
+    "consume": 2580
+  },
+  {
+    "id": "0000177C",
+    "buildLevel": 12,
+    "quality": 6,
+    "consume": 2788
+  },
+  {
+    "id": "0000177D",
+    "buildLevel": 13,
+    "quality": 6,
+    "consume": 3012
+  },
+  {
+    "id": "0000177E",
+    "buildLevel": 14,
+    "quality": 6,
+    "consume": 3256
+  },
+  {
+    "id": "0000177F",
+    "buildLevel": 15,
+    "quality": 6,
+    "consume": 3520
+  },
+  {
+    "id": "00001780",
+    "buildLevel": 16,
+    "quality": 6,
+    "consume": 3804
+  },
+  {
+    "id": "00001781",
+    "buildLevel": 17,
+    "quality": 6,
+    "consume": 4112
+  },
+  {
+    "id": "00001782",
+    "buildLevel": 18,
+    "quality": 6,
+    "consume": 4444
+  },
+  {
+    "id": "00001783",
+    "buildLevel": 19,
+    "quality": 6,
+    "consume": 4800
+  },
+  {
+    "id": "00001784",
+    "buildLevel": 20,
+    "quality": 6,
+    "consume": 5184
+  },
+  {
+    "id": "00001785",
+    "buildLevel": 21,
+    "quality": 6,
+    "consume": 5600
+  },
+  {
+    "id": "00001786",
+    "buildLevel": 22,
+    "quality": 6,
+    "consume": 6048
+  },
+  {
+    "id": "00001787",
+    "buildLevel": 23,
+    "quality": 6,
+    "consume": 6532
+  },
+  {
+    "id": "00001788",
+    "buildLevel": 24,
+    "quality": 6,
+    "consume": 7056
+  },
+  {
+    "id": "00001789",
+    "buildLevel": 25,
+    "quality": 6,
+    "consume": 7624
+  },
+  {
+    "id": "0000178A",
+    "buildLevel": 26,
+    "quality": 6,
+    "consume": 8236
+  },
+  {
+    "id": "0000178B",
+    "buildLevel": 27,
+    "quality": 6,
+    "consume": 8896
+  },
+  {
+    "id": "0000178C",
+    "buildLevel": 28,
+    "quality": 6,
+    "consume": 9608
+  },
+  {
+    "id": "0000178D",
+    "buildLevel": 29,
+    "quality": 6,
+    "consume": 10380
+  },
+  {
+    "id": "0000178E",
+    "buildLevel": 30,
+    "quality": 6,
+    "consume": 11212
+  },
+  {
+    "id": "0000178F",
+    "buildLevel": 31,
+    "quality": 6,
+    "consume": 12112
+  },
+  {
+    "id": "00001790",
+    "buildLevel": 32,
+    "quality": 6,
+    "consume": 13084
+  },
+  {
+    "id": "00001791",
+    "buildLevel": 33,
+    "quality": 6,
+    "consume": 16232
+  },
+  {
+    "id": "00001792",
+    "buildLevel": 34,
+    "quality": 6,
+    "consume": 19348
+  },
+  {
+    "id": "00001793",
+    "buildLevel": 35,
+    "quality": 6,
+    "consume": 22440
+  },
+  {
+    "id": "00001794",
+    "buildLevel": 36,
+    "quality": 6,
+    "consume": 25520
+  },
+  {
+    "id": "00001795",
+    "buildLevel": 37,
+    "quality": 6,
+    "consume": 28592
+  },
+  {
+    "id": "00001796",
+    "buildLevel": 38,
+    "quality": 6,
+    "consume": 31656
+  },
+  {
+    "id": "00001797",
+    "buildLevel": 39,
+    "quality": 6,
+    "consume": 34720
+  },
+  {
+    "id": "00001798",
+    "buildLevel": 40,
+    "quality": 6,
+    "consume": 37784
+  },
+  {
+    "id": "00001799",
+    "buildLevel": 41,
+    "quality": 6,
+    "consume": 40868
+  },
+  {
+    "id": "0000179A",
+    "buildLevel": 42,
+    "quality": 6,
+    "consume": 43980
+  },
+  {
+    "id": "0000179B",
+    "buildLevel": 43,
+    "quality": 6,
+    "consume": 47092
+  },
+  {
+    "id": "0000179C",
+    "buildLevel": 44,
+    "quality": 6,
+    "consume": 50236
+  },
+  {
+    "id": "0000179D",
+    "buildLevel": 45,
+    "quality": 6,
+    "consume": 53416
+  },
+  {
+    "id": "0000179E",
+    "buildLevel": 46,
+    "quality": 6,
+    "consume": 56620
+  },
+  {
+    "id": "0000179F",
+    "buildLevel": 47,
+    "quality": 6,
+    "consume": 59868
+  },
+  {
+    "id": "000017A0",
+    "buildLevel": 48,
+    "quality": 6,
+    "consume": 63144
+  },
+  {
+    "id": "000017A1",
+    "buildLevel": 49,
+    "quality": 6,
+    "consume": 66468
+  },
+  {
+    "id": "000017A2",
+    "buildLevel": 50,
+    "quality": 6,
+    "consume": 69828
+  },
+  {
+    "id": "000017A3",
+    "buildLevel": 51,
+    "quality": 6,
+    "consume": 74724
+  },
+  {
+    "id": "000017A4",
+    "buildLevel": 52,
+    "quality": 6,
+    "consume": 79776
+  },
+  {
+    "id": "000017A5",
+    "buildLevel": 53,
+    "quality": 6,
+    "consume": 85048
+  },
+  {
+    "id": "000017A6",
+    "buildLevel": 54,
+    "quality": 6,
+    "consume": 90532
+  },
+  {
+    "id": "000017A7",
+    "buildLevel": 55,
+    "quality": 6,
+    "consume": 96200
+  },
+  {
+    "id": "000017A8",
+    "buildLevel": 56,
+    "quality": 6,
+    "consume": 102088
+  },
+  {
+    "id": "000017A9",
+    "buildLevel": 57,
+    "quality": 6,
+    "consume": 108228
+  },
+  {
+    "id": "000017AA",
+    "buildLevel": 58,
+    "quality": 6,
+    "consume": 114568
+  },
+  {
+    "id": "000017AB",
+    "buildLevel": 59,
+    "quality": 6,
+    "consume": 122708
+  },
+  {
+    "id": "000017AC",
+    "buildLevel": 60,
+    "quality": 6,
+    "consume": 131200
+  },
+  {
+    "id": "000017AD",
+    "buildLevel": 61,
+    "quality": 6,
+    "consume": 139980
+  },
+  {
+    "id": "000017AE",
+    "buildLevel": 62,
+    "quality": 6,
+    "consume": 149128
+  },
+  {
+    "id": "000017AF",
+    "buildLevel": 63,
+    "quality": 6,
+    "consume": 158616
+  },
+  {
+    "id": "000017B0",
+    "buildLevel": 64,
+    "quality": 6,
+    "consume": 168460
+  },
+  {
+    "id": "000017B1",
+    "buildLevel": 65,
+    "quality": 6,
+    "consume": 178660
+  },
+  {
+    "id": "000017B2",
+    "buildLevel": 66,
+    "quality": 6,
+    "consume": 189272
+  },
+  {
+    "id": "000017B3",
+    "buildLevel": 67,
+    "quality": 6,
+    "consume": 200304
+  },
+  {
+    "id": "000017B4",
+    "buildLevel": 68,
+    "quality": 6,
+    "consume": 211728
+  },
+  {
+    "id": "000017B5",
+    "buildLevel": 69,
+    "quality": 6,
+    "consume": 226504
+  },
+  {
+    "id": "000017B6",
+    "buildLevel": 70,
+    "quality": 6,
+    "consume": 241872
+  },
+  {
+    "id": "000017B7",
+    "buildLevel": 71,
+    "quality": 6,
+    "consume": 257848
+  },
+  {
+    "id": "000017B8",
+    "buildLevel": 72,
+    "quality": 6,
+    "consume": 274456
+  },
+  {
+    "id": "000017B9",
+    "buildLevel": 73,
+    "quality": 6,
+    "consume": 291652
+  },
+  {
+    "id": "000017BA",
+    "buildLevel": 74,
+    "quality": 6,
+    "consume": 309512
+  },
+  {
+    "id": "000017BB",
+    "buildLevel": 75,
+    "quality": 6,
+    "consume": 328048
+  },
+  {
+    "id": "000017BC",
+    "buildLevel": 76,
+    "quality": 6,
+    "consume": 347340
+  },
+  {
+    "id": "000017BD",
+    "buildLevel": 77,
+    "quality": 6,
+    "consume": 367288
+  },
+  {
+    "id": "000017BE",
+    "buildLevel": 78,
+    "quality": 6,
+    "consume": 387968
+  },
+  {
+    "id": "000017BF",
+    "buildLevel": 79,
+    "quality": 6,
+    "consume": 409464
+  },
+  {
+    "id": "000017C0",
+    "buildLevel": 80,
+    "quality": 6,
+    "consume": 434604
+  },
+  {
+    "id": "000017C1",
+    "buildLevel": 81,
+    "quality": 6,
+    "consume": 460488
+  },
+  {
+    "id": "000017C2",
+    "buildLevel": 82,
+    "quality": 6,
+    "consume": 486984
+  },
+  {
+    "id": "000017C3",
+    "buildLevel": 83,
+    "quality": 6,
+    "consume": 514328
+  },
+  {
+    "id": "000017C4",
+    "buildLevel": 84,
+    "quality": 6,
+    "consume": 542388
+  },
+  {
+    "id": "000017C5",
+    "buildLevel": 85,
+    "quality": 6,
+    "consume": 571248
+  },
+  {
+    "id": "000017C6",
+    "buildLevel": 86,
+    "quality": 6,
+    "consume": 600840
+  },
+  {
+    "id": "000017C7",
+    "buildLevel": 87,
+    "quality": 6,
+    "consume": 631352
+  },
+  {
+    "id": "000017C8",
+    "buildLevel": 88,
+    "quality": 6,
+    "consume": 662624
+  },
+  {
+    "id": "000017C9",
+    "buildLevel": 89,
+    "quality": 6,
+    "consume": 694844
+  },
+  {
+    "id": "000017CA",
+    "buildLevel": 90,
+    "quality": 6,
+    "consume": 735292
+  },
+  {
+    "id": "000017CB",
+    "buildLevel": 91,
+    "quality": 6,
+    "consume": 776772
+  },
+  {
+    "id": "000017CC",
+    "buildLevel": 92,
+    "quality": 6,
+    "consume": 819584
+  },
+  {
+    "id": "000017CD",
+    "buildLevel": 93,
+    "quality": 6,
+    "consume": 863568
+  },
+  {
+    "id": "000017CE",
+    "buildLevel": 94,
+    "quality": 6,
+    "consume": 908732
+  },
+  {
+    "id": "000017CF",
+    "buildLevel": 95,
+    "quality": 6,
+    "consume": 955212
+  },
+  {
+    "id": "000017D0",
+    "buildLevel": 96,
+    "quality": 6,
+    "consume": 1003024
+  },
+  {
+    "id": "000017D1",
+    "buildLevel": 97,
+    "quality": 6,
+    "consume": 1052192
+  },
+  {
+    "id": "000017D2",
+    "buildLevel": 98,
+    "quality": 6,
+    "consume": 1102748
+  },
+  {
+    "id": "000017D3",
+    "buildLevel": 99,
+    "quality": 6,
+    "consume": 1154708
+  },
+  {
+    "id": "000017D4",
+    "buildLevel": 100,
+    "quality": 6,
+    "consume": 1216728
+  },
+  {
+    "id": "000017D5",
+    "buildLevel": 101,
+    "quality": 6,
+    "consume": 1280476
+  },
+  {
+    "id": "000017D6",
+    "buildLevel": 102,
+    "quality": 6,
+    "consume": 1346244
+  },
+  {
+    "id": "000017D7",
+    "buildLevel": 103,
+    "quality": 6,
+    "consume": 1767104
+  },
+  {
+    "id": "000017D8",
+    "buildLevel": 104,
+    "quality": 6,
+    "consume": 2224816
+  },
+  {
+    "id": "000017D9",
+    "buildLevel": 105,
+    "quality": 6,
+    "consume": 2720548
+  },
+  {
+    "id": "000017DA",
+    "buildLevel": 106,
+    "quality": 6,
+    "consume": 3256312
+  },
+  {
+    "id": "000017DB",
+    "buildLevel": 107,
+    "quality": 6,
+    "consume": 3577628
+  },
+  {
+    "id": "000017DC",
+    "buildLevel": 108,
+    "quality": 6,
+    "consume": 3918972
+  },
+  {
+    "id": "000017DD",
+    "buildLevel": 109,
+    "quality": 6,
+    "consume": 4281104
+  },
+  {
+    "id": "000017DE",
+    "buildLevel": 110,
+    "quality": 6,
+    "consume": 4664440
+  },
+  {
+    "id": "000017DF",
+    "buildLevel": 111,
+    "quality": 6,
+    "consume": 5070092
+  },
+  {
+    "id": "000017E0",
+    "buildLevel": 112,
+    "quality": 6,
+    "consume": 5498460
+  },
+  {
+    "id": "000017E1",
+    "buildLevel": 113,
+    "quality": 6,
+    "consume": 5951164
+  },
+  {
+    "id": "000017E2",
+    "buildLevel": 114,
+    "quality": 6,
+    "consume": 6428640
+  },
+  {
+    "id": "000017E3",
+    "buildLevel": 115,
+    "quality": 6,
+    "consume": 6932224
+  },
+  {
+    "id": "000017E4",
+    "buildLevel": 116,
+    "quality": 6,
+    "consume": 7462328
+  },
+  {
+    "id": "000017E5",
+    "buildLevel": 117,
+    "quality": 6,
+    "consume": 8020364
+  },
+  {
+    "id": "000017E6",
+    "buildLevel": 118,
+    "quality": 6,
+    "consume": 8607284
+  },
+  {
+    "id": "000017E7",
+    "buildLevel": 119,
+    "quality": 6,
+    "consume": 9224060
+  },
+  {
+    "id": "000017E8",
+    "buildLevel": 120,
+    "quality": 6,
+    "consume": 9872288
+  },
+  {
+    "id": "000017E9",
+    "buildLevel": 121,
+    "quality": 6,
+    "consume": 10551760
+  },
+  {
+    "id": "000017EA",
+    "buildLevel": 122,
+    "quality": 6,
+    "consume": 11265416
+  },
+  {
+    "id": "000017EB",
+    "buildLevel": 123,
+    "quality": 6,
+    "consume": 12013744
+  },
+  {
+    "id": "000017EC",
+    "buildLevel": 124,
+    "quality": 6,
+    "consume": 12797864
+  },
+  {
+    "id": "000017ED",
+    "buildLevel": 125,
+    "quality": 6,
+    "consume": 13618908
+  },
+  {
+    "id": "000017EE",
+    "buildLevel": 126,
+    "quality": 6,
+    "consume": 14478804
+  },
+  {
+    "id": "000017EF",
+    "buildLevel": 127,
+    "quality": 6,
+    "consume": 15002912
+  },
+  {
+    "id": "000017F0",
+    "buildLevel": 128,
+    "quality": 6,
+    "consume": 15542204
+  },
+  {
+    "id": "000017F1",
+    "buildLevel": 129,
+    "quality": 6,
+    "consume": 16096080
+  },
+  {
+    "id": "000017F2",
+    "buildLevel": 130,
+    "quality": 6,
+    "consume": 16664708
+  },
+  {
+    "id": "000017F3",
+    "buildLevel": 131,
+    "quality": 6,
+    "consume": 17249104
+  },
+  {
+    "id": "000017F4",
+    "buildLevel": 132,
+    "quality": 6,
+    "consume": 17850312
+  },
+  {
+    "id": "000017F5",
+    "buildLevel": 133,
+    "quality": 6,
+    "consume": 18466840
+  },
+  {
+    "id": "000017F6",
+    "buildLevel": 134,
+    "quality": 6,
+    "consume": 19100580
+  },
+  {
+    "id": "000017F7",
+    "buildLevel": 135,
+    "quality": 6,
+    "consume": 19751744
+  },
+  {
+    "id": "000017F8",
+    "buildLevel": 136,
+    "quality": 6,
+    "consume": 20420536
+  },
+  {
+    "id": "000017F9",
+    "buildLevel": 137,
+    "quality": 6,
+    "consume": 21107160
+  },
+  {
+    "id": "000017FA",
+    "buildLevel": 138,
+    "quality": 6,
+    "consume": 21812720
+  },
+  {
+    "id": "000017FB",
+    "buildLevel": 139,
+    "quality": 6,
+    "consume": 22537424
+  },
+  {
+    "id": "000017FC",
+    "buildLevel": 140,
+    "quality": 6,
+    "consume": 23281500
+  },
+  {
+    "id": "000017FD",
+    "buildLevel": 141,
+    "quality": 6,
+    "consume": 24046072
+  },
+  {
+    "id": "000017FE",
+    "buildLevel": 142,
+    "quality": 6,
+    "consume": 24830448
+  },
+  {
+    "id": "000017FF",
+    "buildLevel": 143,
+    "quality": 6,
+    "consume": 25636708
+  },
+  {
+    "id": "00001800",
+    "buildLevel": 144,
+    "quality": 6,
+    "consume": 26464148
+  },
+  {
+    "id": "00001801",
+    "buildLevel": 145,
+    "quality": 6,
+    "consume": 27313944
+  },
+  {
+    "id": "00001802",
+    "buildLevel": 146,
+    "quality": 6,
+    "consume": 28187304
+  },
+  {
+    "id": "00001803",
+    "buildLevel": 147,
+    "quality": 6,
+    "consume": 29083500
+  },
+  {
+    "id": "00001804",
+    "buildLevel": 148,
+    "quality": 6,
+    "consume": 30002768
+  },
+  {
+    "id": "00001805",
+    "buildLevel": 149,
+    "quality": 6,
+    "consume": 30948292
+  },
+  {
+    "id": "00001806",
+    "buildLevel": 150,
+    "quality": 6,
+    "consume": 31920599
+  },
+  {
+    "id": "00001807",
+    "buildLevel": 151,
+    "quality": 6,
+    "consume": 32920216
+  },
+  {
+    "id": "00001808",
+    "buildLevel": 152,
+    "quality": 6,
+    "consume": 33947670
+  },
+  {
+    "id": "00001809",
+    "buildLevel": 153,
+    "quality": 6,
+    "consume": 35003488
+  },
+  {
+    "id": "0000180A",
+    "buildLevel": 154,
+    "quality": 6,
+    "consume": 36088197
+  },
+  {
+    "id": "0000180B",
+    "buildLevel": 155,
+    "quality": 6,
+    "consume": 37202324
+  },
+  {
+    "id": "0000180C",
+    "buildLevel": 156,
+    "quality": 6,
+    "consume": 38346396
+  },
+  {
+    "id": "0000180D",
+    "buildLevel": 157,
+    "quality": 6,
+    "consume": 39520940
+  },
+  {
+    "id": "0000180E",
+    "buildLevel": 158,
+    "quality": 6,
+    "consume": 40726483
+  },
+  {
+    "id": "0000180F",
+    "buildLevel": 159,
+    "quality": 6,
+    "consume": 41963552
+  },
+  {
+    "id": "00001810",
+    "buildLevel": 160,
+    "quality": 6,
+    "consume": 43232674
+  },
+  {
+    "id": "00001811",
+    "buildLevel": 161,
+    "quality": 6,
+    "consume": 44534376
+  },
+  {
+    "id": "00001812",
+    "buildLevel": 162,
+    "quality": 6,
+    "consume": 45869185
+  },
+  {
+    "id": "00001813",
+    "buildLevel": 163,
+    "quality": 6,
+    "consume": 47237628
+  },
+  {
+    "id": "00001814",
+    "buildLevel": 164,
+    "quality": 6,
+    "consume": 48640232
+  },
+  {
+    "id": "00001815",
+    "buildLevel": 165,
+    "quality": 6,
+    "consume": 50077524
+  },
+  {
+    "id": "00001816",
+    "buildLevel": 166,
+    "quality": 6,
+    "consume": 51550031
+  },
+  {
+    "id": "00001817",
+    "buildLevel": 167,
+    "quality": 6,
+    "consume": 53058280
+  },
+  {
+    "id": "00001818",
+    "buildLevel": 168,
+    "quality": 6,
+    "consume": 54602798
+  },
+  {
+    "id": "00001819",
+    "buildLevel": 169,
+    "quality": 6,
+    "consume": 56184112
+  },
+  {
+    "id": "0000181A",
+    "buildLevel": 170,
+    "quality": 6,
+    "consume": 57802749
+  },
+  {
+    "id": "0000181B",
+    "buildLevel": 171,
+    "quality": 6,
+    "consume": 59459236
+  },
+  {
+    "id": "0000181C",
+    "buildLevel": 172,
+    "quality": 6,
+    "consume": 61154100
+  },
+  {
+    "id": "0000181D",
+    "buildLevel": 173,
+    "quality": 6,
+    "consume": 62887868
+  },
+  {
+    "id": "0000181E",
+    "buildLevel": 174,
+    "quality": 6,
+    "consume": 64661067
+  },
+  {
+    "id": "0000181F",
+    "buildLevel": 175,
+    "quality": 6,
+    "consume": 66474224
+  },
+  {
+    "id": "00001820",
+    "buildLevel": 176,
+    "quality": 6,
+    "consume": 68327866
+  },
+  {
+    "id": "00001821",
+    "buildLevel": 177,
+    "quality": 6,
+    "consume": 70222520
+  },
+  {
+    "id": "00001822",
+    "buildLevel": 178,
+    "quality": 6,
+    "consume": 72158713
+  },
+  {
+    "id": "00001823",
+    "buildLevel": 179,
+    "quality": 6,
+    "consume": 74136972
+  },
+  {
+    "id": "00001824",
+    "buildLevel": 180,
+    "quality": 6,
+    "consume": 76157824
+  },
+  {
+    "id": "00001825",
+    "buildLevel": 181,
+    "quality": 6,
+    "consume": 78221796
+  },
+  {
+    "id": "00001826",
+    "buildLevel": 182,
+    "quality": 6,
+    "consume": 80329415
+  },
+  {
+    "id": "00001827",
+    "buildLevel": 183,
+    "quality": 6,
+    "consume": 82481208
+  },
+  {
+    "id": "00001828",
+    "buildLevel": 184,
+    "quality": 6,
+    "consume": 84677702
+  },
+  {
+    "id": "00001829",
+    "buildLevel": 185,
+    "quality": 6,
+    "consume": 86919424
+  },
+  {
+    "id": "0000182A",
+    "buildLevel": 186,
+    "quality": 6,
+    "consume": 89206901
+  },
+  {
+    "id": "0000182B",
+    "buildLevel": 187,
+    "quality": 6,
+    "consume": 91540660
+  },
+  {
+    "id": "0000182C",
+    "buildLevel": 188,
+    "quality": 6,
+    "consume": 93921228
+  },
+  {
+    "id": "0000182D",
+    "buildLevel": 189,
+    "quality": 6,
+    "consume": 96349132
+  },
+  {
+    "id": "0000182E",
+    "buildLevel": 190,
+    "quality": 6,
+    "consume": 98824899
+  },
+  {
+    "id": "0000182F",
+    "buildLevel": 191,
+    "quality": 6,
+    "consume": 101349056
+  },
+  {
+    "id": "00001830",
+    "buildLevel": 192,
+    "quality": 6,
+    "consume": 103922130
+  },
+  {
+    "id": "00001831",
+    "buildLevel": 193,
+    "quality": 6,
+    "consume": 106544648
+  },
+  {
+    "id": "00001832",
+    "buildLevel": 194,
+    "quality": 6,
+    "consume": 109217137
+  },
+  {
+    "id": "00001833",
+    "buildLevel": 195,
+    "quality": 6,
+    "consume": 111940124
+  },
+  {
+    "id": "00001834",
+    "buildLevel": 196,
+    "quality": 6,
+    "consume": 114714136
+  },
+  {
+    "id": "00001835",
+    "buildLevel": 197,
+    "quality": 6,
+    "consume": 117539700
+  },
+  {
+    "id": "00001836",
+    "buildLevel": 198,
+    "quality": 6,
+    "consume": 120417343
+  },
+  {
+    "id": "00001837",
+    "buildLevel": 199,
+    "quality": 6,
+    "consume": 123347592
+  },
+  {
+    "id": "00001B58",
+    "buildLevel": 0,
+    "quality": 7,
+    "consume": 1370
+  },
+  {
+    "id": "00001B59",
+    "buildLevel": 1,
+    "quality": 7,
+    "consume": 1480
+  },
+  {
+    "id": "00001B5A",
+    "buildLevel": 2,
+    "quality": 7,
+    "consume": 1600
+  },
+  {
+    "id": "00001B5B",
+    "buildLevel": 3,
+    "quality": 7,
+    "consume": 1730
+  },
+  {
+    "id": "00001B5C",
+    "buildLevel": 4,
+    "quality": 7,
+    "consume": 1870
+  },
+  {
+    "id": "00001B5D",
+    "buildLevel": 5,
+    "quality": 7,
+    "consume": 2020
+  },
+  {
+    "id": "00001B5E",
+    "buildLevel": 6,
+    "quality": 7,
+    "consume": 2185
+  },
+  {
+    "id": "00001B5F",
+    "buildLevel": 7,
+    "quality": 7,
+    "consume": 2365
+  },
+  {
+    "id": "00001B60",
+    "buildLevel": 8,
+    "quality": 7,
+    "consume": 2555
+  },
+  {
+    "id": "00001B61",
+    "buildLevel": 9,
+    "quality": 7,
+    "consume": 2760
+  },
+  {
+    "id": "00001B62",
+    "buildLevel": 10,
+    "quality": 7,
+    "consume": 2985
+  },
+  {
+    "id": "00001B63",
+    "buildLevel": 11,
+    "quality": 7,
+    "consume": 3225
+  },
+  {
+    "id": "00001B64",
+    "buildLevel": 12,
+    "quality": 7,
+    "consume": 3485
+  },
+  {
+    "id": "00001B65",
+    "buildLevel": 13,
+    "quality": 7,
+    "consume": 3765
+  },
+  {
+    "id": "00001B66",
+    "buildLevel": 14,
+    "quality": 7,
+    "consume": 4070
+  },
+  {
+    "id": "00001B67",
+    "buildLevel": 15,
+    "quality": 7,
+    "consume": 4400
+  },
+  {
+    "id": "00001B68",
+    "buildLevel": 16,
+    "quality": 7,
+    "consume": 4755
+  },
+  {
+    "id": "00001B69",
+    "buildLevel": 17,
+    "quality": 7,
+    "consume": 5140
+  },
+  {
+    "id": "00001B6A",
+    "buildLevel": 18,
+    "quality": 7,
+    "consume": 5555
+  },
+  {
+    "id": "00001B6B",
+    "buildLevel": 19,
+    "quality": 7,
+    "consume": 6000
+  },
+  {
+    "id": "00001B6C",
+    "buildLevel": 20,
+    "quality": 7,
+    "consume": 6480
+  },
+  {
+    "id": "00001B6D",
+    "buildLevel": 21,
+    "quality": 7,
+    "consume": 7000
+  },
+  {
+    "id": "00001B6E",
+    "buildLevel": 22,
+    "quality": 7,
+    "consume": 7560
+  },
+  {
+    "id": "00001B6F",
+    "buildLevel": 23,
+    "quality": 7,
+    "consume": 8165
+  },
+  {
+    "id": "00001B70",
+    "buildLevel": 24,
+    "quality": 7,
+    "consume": 8820
+  },
+  {
+    "id": "00001B71",
+    "buildLevel": 25,
+    "quality": 7,
+    "consume": 9530
+  },
+  {
+    "id": "00001B72",
+    "buildLevel": 26,
+    "quality": 7,
+    "consume": 10295
+  },
+  {
+    "id": "00001B73",
+    "buildLevel": 27,
+    "quality": 7,
+    "consume": 11120
+  },
+  {
+    "id": "00001B74",
+    "buildLevel": 28,
+    "quality": 7,
+    "consume": 12010
+  },
+  {
+    "id": "00001B75",
+    "buildLevel": 29,
+    "quality": 7,
+    "consume": 12975
+  },
+  {
+    "id": "00001B76",
+    "buildLevel": 30,
+    "quality": 7,
+    "consume": 14015
+  },
+  {
+    "id": "00001B77",
+    "buildLevel": 31,
+    "quality": 7,
+    "consume": 15140
+  },
+  {
+    "id": "00001B78",
+    "buildLevel": 32,
+    "quality": 7,
+    "consume": 16355
+  },
+  {
+    "id": "00001B79",
+    "buildLevel": 33,
+    "quality": 7,
+    "consume": 20290
+  },
+  {
+    "id": "00001B7A",
+    "buildLevel": 34,
+    "quality": 7,
+    "consume": 24185
+  },
+  {
+    "id": "00001B7B",
+    "buildLevel": 35,
+    "quality": 7,
+    "consume": 28050
+  },
+  {
+    "id": "00001B7C",
+    "buildLevel": 36,
+    "quality": 7,
+    "consume": 31900
+  },
+  {
+    "id": "00001B7D",
+    "buildLevel": 37,
+    "quality": 7,
+    "consume": 35740
+  },
+  {
+    "id": "00001B7E",
+    "buildLevel": 38,
+    "quality": 7,
+    "consume": 39570
+  },
+  {
+    "id": "00001B7F",
+    "buildLevel": 39,
+    "quality": 7,
+    "consume": 43400
+  },
+  {
+    "id": "00001B80",
+    "buildLevel": 40,
+    "quality": 7,
+    "consume": 47230
+  },
+  {
+    "id": "00001B81",
+    "buildLevel": 41,
+    "quality": 7,
+    "consume": 51085
+  },
+  {
+    "id": "00001B82",
+    "buildLevel": 42,
+    "quality": 7,
+    "consume": 54975
+  },
+  {
+    "id": "00001B83",
+    "buildLevel": 43,
+    "quality": 7,
+    "consume": 58865
+  },
+  {
+    "id": "00001B84",
+    "buildLevel": 44,
+    "quality": 7,
+    "consume": 62795
+  },
+  {
+    "id": "00001B85",
+    "buildLevel": 45,
+    "quality": 7,
+    "consume": 66770
+  },
+  {
+    "id": "00001B86",
+    "buildLevel": 46,
+    "quality": 7,
+    "consume": 70775
+  },
+  {
+    "id": "00001B87",
+    "buildLevel": 47,
+    "quality": 7,
+    "consume": 74835
+  },
+  {
+    "id": "00001B88",
+    "buildLevel": 48,
+    "quality": 7,
+    "consume": 78930
+  },
+  {
+    "id": "00001B89",
+    "buildLevel": 49,
+    "quality": 7,
+    "consume": 83085
+  },
+  {
+    "id": "00001B8A",
+    "buildLevel": 50,
+    "quality": 7,
+    "consume": 87285
+  },
+  {
+    "id": "00001B8B",
+    "buildLevel": 51,
+    "quality": 7,
+    "consume": 93405
+  },
+  {
+    "id": "00001B8C",
+    "buildLevel": 52,
+    "quality": 7,
+    "consume": 99720
+  },
+  {
+    "id": "00001B8D",
+    "buildLevel": 53,
+    "quality": 7,
+    "consume": 106310
+  },
+  {
+    "id": "00001B8E",
+    "buildLevel": 54,
+    "quality": 7,
+    "consume": 113165
+  },
+  {
+    "id": "00001B8F",
+    "buildLevel": 55,
+    "quality": 7,
+    "consume": 120250
+  },
+  {
+    "id": "00001B90",
+    "buildLevel": 56,
+    "quality": 7,
+    "consume": 127610
+  },
+  {
+    "id": "00001B91",
+    "buildLevel": 57,
+    "quality": 7,
+    "consume": 135285
+  },
+  {
+    "id": "00001B92",
+    "buildLevel": 58,
+    "quality": 7,
+    "consume": 143210
+  },
+  {
+    "id": "00001B93",
+    "buildLevel": 59,
+    "quality": 7,
+    "consume": 153385
+  },
+  {
+    "id": "00001B94",
+    "buildLevel": 60,
+    "quality": 7,
+    "consume": 164000
+  },
+  {
+    "id": "00001B95",
+    "buildLevel": 61,
+    "quality": 7,
+    "consume": 174975
+  },
+  {
+    "id": "00001B96",
+    "buildLevel": 62,
+    "quality": 7,
+    "consume": 186410
+  },
+  {
+    "id": "00001B97",
+    "buildLevel": 63,
+    "quality": 7,
+    "consume": 198270
+  },
+  {
+    "id": "00001B98",
+    "buildLevel": 64,
+    "quality": 7,
+    "consume": 210575
+  },
+  {
+    "id": "00001B99",
+    "buildLevel": 65,
+    "quality": 7,
+    "consume": 223325
+  },
+  {
+    "id": "00001B9A",
+    "buildLevel": 66,
+    "quality": 7,
+    "consume": 236590
+  },
+  {
+    "id": "00001B9B",
+    "buildLevel": 67,
+    "quality": 7,
+    "consume": 250380
+  },
+  {
+    "id": "00001B9C",
+    "buildLevel": 68,
+    "quality": 7,
+    "consume": 264660
+  },
+  {
+    "id": "00001B9D",
+    "buildLevel": 69,
+    "quality": 7,
+    "consume": 283130
+  },
+  {
+    "id": "00001B9E",
+    "buildLevel": 70,
+    "quality": 7,
+    "consume": 302340
+  },
+  {
+    "id": "00001B9F",
+    "buildLevel": 71,
+    "quality": 7,
+    "consume": 322310
+  },
+  {
+    "id": "00001BA0",
+    "buildLevel": 72,
+    "quality": 7,
+    "consume": 343070
+  },
+  {
+    "id": "00001BA1",
+    "buildLevel": 73,
+    "quality": 7,
+    "consume": 364565
+  },
+  {
+    "id": "00001BA2",
+    "buildLevel": 74,
+    "quality": 7,
+    "consume": 386890
+  },
+  {
+    "id": "00001BA3",
+    "buildLevel": 75,
+    "quality": 7,
+    "consume": 410060
+  },
+  {
+    "id": "00001BA4",
+    "buildLevel": 76,
+    "quality": 7,
+    "consume": 434175
+  },
+  {
+    "id": "00001BA5",
+    "buildLevel": 77,
+    "quality": 7,
+    "consume": 459110
+  },
+  {
+    "id": "00001BA6",
+    "buildLevel": 78,
+    "quality": 7,
+    "consume": 484960
+  },
+  {
+    "id": "00001BA7",
+    "buildLevel": 79,
+    "quality": 7,
+    "consume": 511830
+  },
+  {
+    "id": "00001BA8",
+    "buildLevel": 80,
+    "quality": 7,
+    "consume": 543255
+  },
+  {
+    "id": "00001BA9",
+    "buildLevel": 81,
+    "quality": 7,
+    "consume": 575610
+  },
+  {
+    "id": "00001BAA",
+    "buildLevel": 82,
+    "quality": 7,
+    "consume": 608730
+  },
+  {
+    "id": "00001BAB",
+    "buildLevel": 83,
+    "quality": 7,
+    "consume": 642910
+  },
+  {
+    "id": "00001BAC",
+    "buildLevel": 84,
+    "quality": 7,
+    "consume": 677985
+  },
+  {
+    "id": "00001BAD",
+    "buildLevel": 85,
+    "quality": 7,
+    "consume": 714060
+  },
+  {
+    "id": "00001BAE",
+    "buildLevel": 86,
+    "quality": 7,
+    "consume": 751050
+  },
+  {
+    "id": "00001BAF",
+    "buildLevel": 87,
+    "quality": 7,
+    "consume": 789190
+  },
+  {
+    "id": "00001BB0",
+    "buildLevel": 88,
+    "quality": 7,
+    "consume": 828280
+  },
+  {
+    "id": "00001BB1",
+    "buildLevel": 89,
+    "quality": 7,
+    "consume": 868555
+  },
+  {
+    "id": "00001BB2",
+    "buildLevel": 90,
+    "quality": 7,
+    "consume": 919115
+  },
+  {
+    "id": "00001BB3",
+    "buildLevel": 91,
+    "quality": 7,
+    "consume": 970965
+  },
+  {
+    "id": "00001BB4",
+    "buildLevel": 92,
+    "quality": 7,
+    "consume": 1024480
+  },
+  {
+    "id": "00001BB5",
+    "buildLevel": 93,
+    "quality": 7,
+    "consume": 1079460
+  },
+  {
+    "id": "00001BB6",
+    "buildLevel": 94,
+    "quality": 7,
+    "consume": 1135915
+  },
+  {
+    "id": "00001BB7",
+    "buildLevel": 95,
+    "quality": 7,
+    "consume": 1194015
+  },
+  {
+    "id": "00001BB8",
+    "buildLevel": 96,
+    "quality": 7,
+    "consume": 1253780
+  },
+  {
+    "id": "00001BB9",
+    "buildLevel": 97,
+    "quality": 7,
+    "consume": 1315240
+  },
+  {
+    "id": "00001BBA",
+    "buildLevel": 98,
+    "quality": 7,
+    "consume": 1378435
+  },
+  {
+    "id": "00001BBB",
+    "buildLevel": 99,
+    "quality": 7,
+    "consume": 1443385
+  },
+  {
+    "id": "00001BBC",
+    "buildLevel": 100,
+    "quality": 7,
+    "consume": 1520910
+  },
+  {
+    "id": "00001BBD",
+    "buildLevel": 101,
+    "quality": 7,
+    "consume": 1600595
+  },
+  {
+    "id": "00001BBE",
+    "buildLevel": 102,
+    "quality": 7,
+    "consume": 1682805
+  },
+  {
+    "id": "00001BBF",
+    "buildLevel": 103,
+    "quality": 7,
+    "consume": 2208880
+  },
+  {
+    "id": "00001BC0",
+    "buildLevel": 104,
+    "quality": 7,
+    "consume": 2781020
+  },
+  {
+    "id": "00001BC1",
+    "buildLevel": 105,
+    "quality": 7,
+    "consume": 3400685
+  },
+  {
+    "id": "00001BC2",
+    "buildLevel": 106,
+    "quality": 7,
+    "consume": 4070390
+  },
+  {
+    "id": "00001BC3",
+    "buildLevel": 107,
+    "quality": 7,
+    "consume": 4472035
+  },
+  {
+    "id": "00001BC4",
+    "buildLevel": 108,
+    "quality": 7,
+    "consume": 4898715
+  },
+  {
+    "id": "00001BC5",
+    "buildLevel": 109,
+    "quality": 7,
+    "consume": 5351380
+  },
+  {
+    "id": "00001BC6",
+    "buildLevel": 110,
+    "quality": 7,
+    "consume": 5830550
+  },
+  {
+    "id": "00001BC7",
+    "buildLevel": 111,
+    "quality": 7,
+    "consume": 6337615
+  },
+  {
+    "id": "00001BC8",
+    "buildLevel": 112,
+    "quality": 7,
+    "consume": 6873075
+  },
+  {
+    "id": "00001BC9",
+    "buildLevel": 113,
+    "quality": 7,
+    "consume": 7438955
+  },
+  {
+    "id": "00001BCA",
+    "buildLevel": 114,
+    "quality": 7,
+    "consume": 8035800
+  },
+  {
+    "id": "00001BCB",
+    "buildLevel": 115,
+    "quality": 7,
+    "consume": 8665280
+  },
+  {
+    "id": "00001BCC",
+    "buildLevel": 116,
+    "quality": 7,
+    "consume": 9327910
+  },
+  {
+    "id": "00001BCD",
+    "buildLevel": 117,
+    "quality": 7,
+    "consume": 10025455
+  },
+  {
+    "id": "00001BCE",
+    "buildLevel": 118,
+    "quality": 7,
+    "consume": 10759105
+  },
+  {
+    "id": "00001BCF",
+    "buildLevel": 119,
+    "quality": 7,
+    "consume": 11530075
+  },
+  {
+    "id": "00001BD0",
+    "buildLevel": 120,
+    "quality": 7,
+    "consume": 12340360
+  },
+  {
+    "id": "00001BD1",
+    "buildLevel": 121,
+    "quality": 7,
+    "consume": 13189700
+  },
+  {
+    "id": "00001BD2",
+    "buildLevel": 122,
+    "quality": 7,
+    "consume": 14081770
+  },
+  {
+    "id": "00001BD3",
+    "buildLevel": 123,
+    "quality": 7,
+    "consume": 15017180
+  },
+  {
+    "id": "00001BD4",
+    "buildLevel": 124,
+    "quality": 7,
+    "consume": 15997330
+  },
+  {
+    "id": "00001BD5",
+    "buildLevel": 125,
+    "quality": 7,
+    "consume": 17023635
+  },
+  {
+    "id": "00001BD6",
+    "buildLevel": 126,
+    "quality": 7,
+    "consume": 18098505
+  },
+  {
+    "id": "00001BD7",
+    "buildLevel": 127,
+    "quality": 7,
+    "consume": 18753640
+  },
+  {
+    "id": "00001BD8",
+    "buildLevel": 128,
+    "quality": 7,
+    "consume": 19427755
+  },
+  {
+    "id": "00001BD9",
+    "buildLevel": 129,
+    "quality": 7,
+    "consume": 20120100
+  },
+  {
+    "id": "00001BDA",
+    "buildLevel": 130,
+    "quality": 7,
+    "consume": 20830885
+  },
+  {
+    "id": "00001BDB",
+    "buildLevel": 131,
+    "quality": 7,
+    "consume": 21561380
+  },
+  {
+    "id": "00001BDC",
+    "buildLevel": 132,
+    "quality": 7,
+    "consume": 22312890
+  },
+  {
+    "id": "00001BDD",
+    "buildLevel": 133,
+    "quality": 7,
+    "consume": 23083550
+  },
+  {
+    "id": "00001BDE",
+    "buildLevel": 134,
+    "quality": 7,
+    "consume": 23875725
+  },
+  {
+    "id": "00001BDF",
+    "buildLevel": 135,
+    "quality": 7,
+    "consume": 24689680
+  },
+  {
+    "id": "00001BE0",
+    "buildLevel": 136,
+    "quality": 7,
+    "consume": 25525670
+  },
+  {
+    "id": "00001BE1",
+    "buildLevel": 137,
+    "quality": 7,
+    "consume": 26383950
+  },
+  {
+    "id": "00001BE2",
+    "buildLevel": 138,
+    "quality": 7,
+    "consume": 27265900
+  },
+  {
+    "id": "00001BE3",
+    "buildLevel": 139,
+    "quality": 7,
+    "consume": 28171780
+  },
+  {
+    "id": "00001BE4",
+    "buildLevel": 140,
+    "quality": 7,
+    "consume": 29101875
+  },
+  {
+    "id": "00001BE5",
+    "buildLevel": 141,
+    "quality": 7,
+    "consume": 30057590
+  },
+  {
+    "id": "00001BE6",
+    "buildLevel": 142,
+    "quality": 7,
+    "consume": 31038060
+  },
+  {
+    "id": "00001BE7",
+    "buildLevel": 143,
+    "quality": 7,
+    "consume": 32045885
+  },
+  {
+    "id": "00001BE8",
+    "buildLevel": 144,
+    "quality": 7,
+    "consume": 33080185
+  },
+  {
+    "id": "00001BE9",
+    "buildLevel": 145,
+    "quality": 7,
+    "consume": 34142430
+  },
+  {
+    "id": "00001BEA",
+    "buildLevel": 146,
+    "quality": 7,
+    "consume": 35234130
+  },
+  {
+    "id": "00001BEB",
+    "buildLevel": 147,
+    "quality": 7,
+    "consume": 36354375
+  },
+  {
+    "id": "00001BEC",
+    "buildLevel": 148,
+    "quality": 7,
+    "consume": 37503460
+  },
+  {
+    "id": "00001BED",
+    "buildLevel": 149,
+    "quality": 7,
+    "consume": 38685365
+  },
+  {
+    "id": "00001BEE",
+    "buildLevel": 150,
+    "quality": 7,
+    "consume": 39900749
+  },
+  {
+    "id": "00001BEF",
+    "buildLevel": 151,
+    "quality": 7,
+    "consume": 41150271
+  },
+  {
+    "id": "00001BF0",
+    "buildLevel": 152,
+    "quality": 7,
+    "consume": 42434590
+  },
+  {
+    "id": "00001BF1",
+    "buildLevel": 153,
+    "quality": 7,
+    "consume": 43754365
+  },
+  {
+    "id": "00001BF2",
+    "buildLevel": 154,
+    "quality": 7,
+    "consume": 45110255
+  },
+  {
+    "id": "00001BF3",
+    "buildLevel": 155,
+    "quality": 7,
+    "consume": 46502919
+  },
+  {
+    "id": "00001BF4",
+    "buildLevel": 156,
+    "quality": 7,
+    "consume": 47933016
+  },
+  {
+    "id": "00001BF5",
+    "buildLevel": 157,
+    "quality": 7,
+    "consume": 49401205
+  },
+  {
+    "id": "00001BF6",
+    "buildLevel": 158,
+    "quality": 7,
+    "consume": 50908145
+  },
+  {
+    "id": "00001BF7",
+    "buildLevel": 159,
+    "quality": 7,
+    "consume": 52454495
+  },
+  {
+    "id": "00001BF8",
+    "buildLevel": 160,
+    "quality": 7,
+    "consume": 54040914
+  },
+  {
+    "id": "00001BF9",
+    "buildLevel": 161,
+    "quality": 7,
+    "consume": 55668061
+  },
+  {
+    "id": "00001BFA",
+    "buildLevel": 162,
+    "quality": 7,
+    "consume": 57336595
+  },
+  {
+    "id": "00001BFB",
+    "buildLevel": 163,
+    "quality": 7,
+    "consume": 59047175
+  },
+  {
+    "id": "00001BFC",
+    "buildLevel": 164,
+    "quality": 7,
+    "consume": 60800460
+  },
+  {
+    "id": "00001BFD",
+    "buildLevel": 165,
+    "quality": 7,
+    "consume": 62597109
+  },
+  {
+    "id": "00001BFE",
+    "buildLevel": 166,
+    "quality": 7,
+    "consume": 64437781
+  },
+  {
+    "id": "00001BFF",
+    "buildLevel": 167,
+    "quality": 7,
+    "consume": 66323135
+  },
+  {
+    "id": "00001C00",
+    "buildLevel": 168,
+    "quality": 7,
+    "consume": 68253830
+  },
+  {
+    "id": "00001C01",
+    "buildLevel": 169,
+    "quality": 7,
+    "consume": 70230525
+  },
+  {
+    "id": "00001C02",
+    "buildLevel": 170,
+    "quality": 7,
+    "consume": 72253879
+  },
+  {
+    "id": "00001C03",
+    "buildLevel": 171,
+    "quality": 7,
+    "consume": 74324551
+  },
+  {
+    "id": "00001C04",
+    "buildLevel": 172,
+    "quality": 7,
+    "consume": 76443200
+  },
+  {
+    "id": "00001C05",
+    "buildLevel": 173,
+    "quality": 7,
+    "consume": 78610485
+  },
+  {
+    "id": "00001C06",
+    "buildLevel": 174,
+    "quality": 7,
+    "consume": 80827065
+  },
+  {
+    "id": "00001C07",
+    "buildLevel": 175,
+    "quality": 7,
+    "consume": 83093599
+  },
+  {
+    "id": "00001C08",
+    "buildLevel": 176,
+    "quality": 7,
+    "consume": 85410746
+  },
+  {
+    "id": "00001C09",
+    "buildLevel": 177,
+    "quality": 7,
+    "consume": 87779165
+  },
+  {
+    "id": "00001C0A",
+    "buildLevel": 178,
+    "quality": 7,
+    "consume": 90199515
+  },
+  {
+    "id": "00001C0B",
+    "buildLevel": 179,
+    "quality": 7,
+    "consume": 92672455
+  },
+  {
+    "id": "00001C0C",
+    "buildLevel": 180,
+    "quality": 7,
+    "consume": 95198644
+  },
+  {
+    "id": "00001C0D",
+    "buildLevel": 181,
+    "quality": 7,
+    "consume": 97778741
+  },
+  {
+    "id": "00001C0E",
+    "buildLevel": 182,
+    "quality": 7,
+    "consume": 100413405
+  },
+  {
+    "id": "00001C0F",
+    "buildLevel": 183,
+    "quality": 7,
+    "consume": 103103295
+  },
+  {
+    "id": "00001C10",
+    "buildLevel": 184,
+    "quality": 7,
+    "consume": 105849070
+  },
+  {
+    "id": "00001C11",
+    "buildLevel": 185,
+    "quality": 7,
+    "consume": 108651389
+  },
+  {
+    "id": "00001C12",
+    "buildLevel": 186,
+    "quality": 7,
+    "consume": 111510911
+  },
+  {
+    "id": "00001C13",
+    "buildLevel": 187,
+    "quality": 7,
+    "consume": 114428295
+  },
+  {
+    "id": "00001C14",
+    "buildLevel": 188,
+    "quality": 7,
+    "consume": 117404200
+  },
+  {
+    "id": "00001C15",
+    "buildLevel": 189,
+    "quality": 7,
+    "consume": 120439285
+  },
+  {
+    "id": "00001C16",
+    "buildLevel": 190,
+    "quality": 7,
+    "consume": 123534209
+  },
+  {
+    "id": "00001C17",
+    "buildLevel": 191,
+    "quality": 7,
+    "consume": 126689631
+  },
+  {
+    "id": "00001C18",
+    "buildLevel": 192,
+    "quality": 7,
+    "consume": 129906210
+  },
+  {
+    "id": "00001C19",
+    "buildLevel": 193,
+    "quality": 7,
+    "consume": 133184605
+  },
+  {
+    "id": "00001C1A",
+    "buildLevel": 194,
+    "quality": 7,
+    "consume": 136525475
+  },
+  {
+    "id": "00001C1B",
+    "buildLevel": 195,
+    "quality": 7,
+    "consume": 139929479
+  },
+  {
+    "id": "00001C1C",
+    "buildLevel": 196,
+    "quality": 7,
+    "consume": 143397276
+  },
+  {
+    "id": "00001C1D",
+    "buildLevel": 197,
+    "quality": 7,
+    "consume": 146929525
+  },
+  {
+    "id": "00001C1E",
+    "buildLevel": 198,
+    "quality": 7,
+    "consume": 150526885
+  },
+  {
+    "id": "00001C1F",
+    "buildLevel": 199,
+    "quality": 7,
+    "consume": 154190015
+  }
+]

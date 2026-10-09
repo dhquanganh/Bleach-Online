@@ -1,0 +1,20 @@
+[
+  {
+    "id": "00100591",
+    "name": "游戏",
+    "tName": "游戏",
+    "desc": "1. Cliquez sur \"Jouer\" pour débuter le jeu. Chaque lancer de Citrouille utilisera 1 Chance et activera le Chrono. Vous pouvez lancer 1 Citrouille par Jeu.\n2. Appuyez sur Espace pour lancer la Citrouille, si vous touchez le fantome vous recevrez 1 Bonbon. La Citrouille sera automatiquement lancée à la fin du Chrono.\n3. Collectez des Bonbons pour les echanger contre des récompenses.\n4. Vous avez 2 chances gratuites par jour, chaque chance supplémentaire coutera 50 Or.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1050001,
+    "candyIndex": 0,
+    "buyIndex": 2,
+    "notifyIndex": 20,
+    "turnIndex": "{\"index\":3,\"award\":21403431,\"candy\":8}",
+    "buyGameGold": "[{\"index\":4,\"candy\":1,\"award\":21403432},{\"index\":5,\"candy\":3,\"award\":21403433},{\"index\":6,\"candy\":5,\"award\":21403434},{\"index\":7,\"candy\":12,\"award\":21403435}]",
+    "countdown": 10,
+    "f12": 50,
+    "f13": 60,
+    "f14": "{\"index\":1,\"award\":1221,\"templateID\":1221,\"petListID\":1221001}"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00013881",
+    "name": "Accumulate Top-up ",
+    "tName": "Accumulate Top-up, Receive Great Treasure",
+    "desc": "During the event period, accumulate top-up to corresponding amount to received great value gifts",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80001,
+    "f6": "[{\"type\":1,\"key\":1000,\"value\":[21401023],\"prompt\":\"1000\"},{\"type\":1,\"key\":3000,\"value\":[21401024],\"prompt\":\"3000\"},{\"type\":1,\"key\":10000,\"value\":[21401025],\"prompt\":\"10000\"},{\"type\":1,\"key\":30000,\"value\":[21401026],\"prompt\":\"30000\"},{\"type\":1,\"key\":50000,\"value\":[21401027],\"prompt\":\"50000\"},{\"type\":1,\"key\":100000,\"value\":[21401028],\"prompt\":\"100000\"},{\"type\":1,\"key\":500000,\"value\":[21401029],\"prompt\":\"500000\"}]"
+  },
+  {
+    "id": "00013882",
+    "name": "Accumulate Top-up ",
+    "tName": "Acumulate Top-up to Win Advanced Items",
+    "desc": "Event starting time is when the event appears within the game.\nTop-up prior to event starting time does not count towards the event.                                                                         During the event period, accumulate top-up to corresponding amount to received great value rewards.\nReward will be sent out immediately via in-game mail.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80006,
+    "f6": "[{\"type\":3,\"key\":1000,\"value\":[21401275],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401276],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401277],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401278],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401279],\"prompt\":\"50000 Gold\"},{\"type\":3,\"key\":100000,\"value\":[21401280],\"prompt\":\"100000 Gold\"},{\"type\":3,\"key\":200000,\"value\":[21401281],\"prompt\":\"200000 Gold\"}]"
+  },
+  {
+    "id": "00013883",
+    "name": "Accumulate Top-up ",
+    "tName": "Accumulate Top-up, Receive Great Treasure",
+    "desc": "During the event period, accumulate top-up to corresponding amount to received great value gifts",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80001,
+    "f6": "[{\"type\":3,\"key\":1000,\"value\":[21401275],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401276],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401277],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401278],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401279],\"prompt\":\"50000 Gold\"},{\"type\":3,\"key\":100000,\"value\":[21401280],\"prompt\":\"100000 Gold\"},{\"type\":3,\"key\":200000,\"value\":[21401281],\"prompt\":\"200000 Gold\"}]"
+  },
+  {
+    "id": "00013884",
+    "name": "Accumulate Top-up ",
+    "tName": "Accumulate Top-up, Receive Great Treasure",
+    "desc": "During the event period, accumulate top-up to corresponding amount to received great value gifts",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80001,
+    "f6": "[{\"type\":3,\"key\":1000,\"value\":[21401379],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401380],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401381],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401382],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401383],\"prompt\":\"50000 Gold\"},{\"type\":3,\"key\":100000,\"value\":[21401384],\"prompt\":\"100000 Gold\"},{\"type\":3,\"key\":200000,\"value\":[21401385],\"prompt\":\"200000 Gold\"}]"
+  },
+  {
+    "id": "00013885",
+    "name": "Accumulate Top-up ",
+    "tName": "Accumulate Top-up, Receive Great Treasure",
+    "desc": "During the event period, accumulate top-up to corresponding amount to received great value gifts",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80001,
+    "f6": "[{\"type\":3,\"key\":1000,\"value\":[21401386],\"prompt\":\"1000 Gold\"},{\"type\":3,\"key\":5000,\"value\":[21401387],\"prompt\":\"5000 Gold\"},{\"type\":3,\"key\":10000,\"value\":[21401388],\"prompt\":\"10000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401389],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401390],\"prompt\":\"50000 Gold\"},{\"type\":3,\"key\":100000,\"value\":[21401391],\"prompt\":\"100000 Gold\"},{\"type\":3,\"key\":200000,\"value\":[21401392],\"prompt\":\"200000 Gold\"}]"
+  },
+  {
+    "id": "00013886",
+    "name": "Accumulate Top-up ",
+    "tName": "Acumulate Top-up to Win Advanced Items",
+    "desc": "Event starting time is when the event appears within the game.\nTop-up prior to event starting time does not count towards the event.                                                                         During the event period, accumulate top-up to corresponding amount to received great value rewards.\nReward will be sent out immediately via in-game mail.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 80006,
+    "f6": "[{\"type\":3,\"key\":600,\"value\":[21401506],\"prompt\":\"600 Gold\"},{\"type\":3,\"key\":1200,\"value\":[21401507],\"prompt\":\"1200 Gold\"},{\"type\":3,\"key\":2000,\"value\":[21401508],\"prompt\":\"2000 Gold\"},{\"type\":3,\"key\":6000,\"value\":[21401509],\"prompt\":\"6000 Gold\"},{\"type\":3,\"key\":20000,\"value\":[21401510],\"prompt\":\"20000 Gold\"},{\"type\":3,\"key\":50000,\"value\":[21401511],\"prompt\":\"50000 Gold\"},{\"type\":3,\"key\":100000,\"value\":[21401512],\"prompt\":\"100000 Gold\"}]"
+  }
+]

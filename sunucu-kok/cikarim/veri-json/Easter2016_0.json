@@ -1,0 +1,24 @@
+[
+  {
+    "id": "00124F81",
+    "name": "礼从天降",
+    "tName": "大富翁",
+    "desc": "1. Stay online for required time to get online giftpack and win the qualification of buying supervalue giftpack!\n2. You can get Almighty Egg from the online giftpack and you can buy the supervalue giftpack twice each day.\n3. Login everyday during the event to get free giftpack. The giftpack is limited and don’t miss it!\n4. You can buy the ultimate giftpack once each day and all giftpacks will reset on 0:00 midnight.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "timeAwardIndex": 0,
+    "timeAwardObj": "{\"index\" : 1, \"infos\" : [{\"lastTime\" : 60, \"amount\" : 1}, {\"lastTime\" : 3600, \"amount\" : 2}, {\"lastTime\" : 7200, \"amount\" : 3}]}",
+    "gift00": "{\"index\" : 2, \"awardId\" : 21403981, \"num\" : 999}",
+    "gift01": "{\"index\" : 3, \"awardId\" : [21403982,21403982,21403982,21403982,21403982], \"gold\" : 500, \"num\" : 2}",
+    "gift02": "{\"index\" : 4, \"awardId\" : [21403983,21403983,21403983,21403983,21403983], \"gold\" : 1000,  \"num\" : 2}",
+    "gift03": "{\"index\" : 5, \"awardId\" : [21403984,21403984,21403984,21403984,21403984], \"gold\" : 2000, \"num\" : 2}",
+    "bigAward": "{\"index\":6,\"awardId\":[21403985,21403986,21403987,21403988,21403989],\"showId\":[21403985,21403986,21403987,21403988,21403989],\"showType\":[2,2,2,2,2],\"reportId\":[\"\",\"\",\"\",\"\",\"\"],\"nums\":[1,1,1,1,1],\"gold\":[6000,8000,6000,20000,4000]}",
+    "eggIndex": 7,
+    "serverLimit": 8,
+    "egg02Index": 9,
+    "egg03Index": 10,
+    "eggId": 14100704,
+    "text": "Red Easter Egg*%0"
+  }
+]

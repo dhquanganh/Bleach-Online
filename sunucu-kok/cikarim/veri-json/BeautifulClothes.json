@@ -1,0 +1,177 @@
+[
+  {
+    "id": "05697FE4",
+    "factor": 0,
+    "question": "[[0,0,0]]",
+    "f2": "0",
+    "f3": "0"
+  },
+  {
+    "id": "05697FE5",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05697FE6",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05697FE7",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05697FE8",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698048",
+    "factor": 0,
+    "question": "[[0,0,0]]",
+    "f2": "0",
+    "f3": "0"
+  },
+  {
+    "id": "05698049",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "0569804A",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "0569804B",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "0569804C",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "056980AC",
+    "factor": 0,
+    "question": "[[0,0,0]]",
+    "f2": "0",
+    "f3": "0"
+  },
+  {
+    "id": "056980AD",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "056980AE",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "056980AF",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "056980B0",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698110",
+    "factor": 0,
+    "question": "[[0,0,0]]",
+    "f2": "0",
+    "f3": "0"
+  },
+  {
+    "id": "05698111",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698112",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698113",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698114",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698174",
+    "factor": 0,
+    "question": "[[0,0,0]]",
+    "f2": "0",
+    "f3": "0"
+  },
+  {
+    "id": "05698175",
+    "factor": 3,
+    "question": "[[30,20,0],[30,20,0],[40,20,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698176",
+    "factor": 3,
+    "question": "[[30,20,0],[30,20,0],[40,20,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698177",
+    "factor": 2,
+    "question": "[[40,30,0],[60,30,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  },
+  {
+    "id": "05698178",
+    "factor": 1,
+    "question": "[[100,60,0]]",
+    "f2": "Start",
+    "f3": "[\"1:Thank you\",\"2:Thank you\",\"3:Thank you\"]"
+  }
+]

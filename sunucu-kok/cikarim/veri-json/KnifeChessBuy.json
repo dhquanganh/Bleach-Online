@@ -1,0 +1,25 @@
+[
+  {
+    "id": "00149971",
+    "name": "斩魄刀2合1",
+    "tName": "斩魄刀2合1",
+    "desc": "1. Recharge to unlock corresponding zanpakuto puzzle and win free moves.\n2. Use gold to unlock puzzles or move.\n3. Each move gives you 1 point, which can be used for exchanging for items in the shop.\n4. In each round there will be 40 moves and after that the next round will begin.\n5. Total moves will be counted till the end of the event.\n6. Each puzzle will sum up, example: to unlock 4 puzzles will cost 4250 gold total.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1350001,
+    "recharge": 100,
+    "stepGold": 100,
+    "stepIndex": 0,
+    "curStep": 1,
+    "stageIndex": 2,
+    "openStageIndex": 3,
+    "operIndex": 4,
+    "onekeyIndex": 100,
+    "normalAward": 21405049,
+    "stageAward": "[21405050,21405051,21405052,21405053]",
+    "stageGold": "[250,500,1000,2500]",
+    "stageScore": "[9,14,19,24]",
+    "stageScoreID": 14100575,
+    "mall": "[{\"index\":21,\"score\":1500,\"award\":21405054,\"limit\":1},\n{\"index\":22,\"score\":1500,\"award\":21405055,\"limit\":1},\n{\"index\":23,\"score\":1200,\"award\":21405056,\"limit\":1},\n{\"index\":24,\"score\":800,\"award\":21405057,\"limit\":1},\n{\"index\":25,\"score\":1000,\"award\":21405058,\"limit\":1},\n{\"index\":26,\"score\":800,\"award\":21405059,\"limit\":1},\n{\"index\":27,\"score\":1000,\"award\":21405060,\"limit\":1},\n{\"index\":28,\"score\":1200,\"award\":21405061,\"limit\":1},\n{\"index\":29,\"score\":1200,\"award\":21405062,\"limit\":1},\n{\"index\":30,\"score\":1500,\"award\":21405063,\"limit\":1},\n{\"index\":31,\"score\":1500,\"award\":21405064,\"limit\":1},\n{\"index\":32,\"score\":1500,\"award\":21405065,\"limit\":1},\n{\"index\":33,\"score\":1500,\"award\":21405066,\"limit\":1},\n{\"index\":34,\"score\":1500,\"award\":21405067,\"limit\":1},\n{\"index\":35,\"score\":1500,\"award\":21405068,\"limit\":1},\n{\"index\":36,\"score\":1500,\"award\":21405069,\"limit\":1},\n{\"index\":37,\"score\":1200,\"award\":21405070,\"limit\":1},\n{\"index\":38,\"score\":800,\"award\":21405071,\"limit\":1},\n{\"index\":39,\"score\":800,\"award\":21405072,\"limit\":1},\n{\"index\":40,\"score\":800,\"award\":21405073,\"limit\":1},\n{\"index\":41,\"score\":2,\"award\":21405074,\"limit\":0},\n{\"index\":42,\"score\":2,\"award\":21405075,\"limit\":0},\n{\"index\":43,\"score\":2,\"award\":21405076,\"limit\":0},\n{\"index\":44,\"score\":2,\"award\":21405077,\"limit\":0}]"
+  }
+]

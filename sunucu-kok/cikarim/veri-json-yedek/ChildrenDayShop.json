@@ -1,0 +1,18 @@
+[
+  {
+    "id": "00169541",
+    "name": "空座町庆典",
+    "tName": "1. 虚圈糖果",
+    "desc": "1. Log in or top-up everyday to claim sugar giftpack.\n2. Top-up required amount to claim each giftpack once per day.\n3. Login giftpack must be claimed in time once per day.\n4. Top-up giftpack can be claim before event ends. Sugar only accumulates when event is open.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1480001,
+    "scoreIndex": 1,
+    "payIndex": 2,
+    "loginAward": "[{\"index\":3,\"awardid\":21406500,\"addScore\":1}]",
+    "payAward": "[{\"index\":4,\"cond\":0,\"awardid\":21406501,\"addScore\":2},{\"index\":5,\"cond\":400,\"awardid\":21406502,\"addScore\":4},{\"index\":6,\"cond\":800,\"awardid\":21406503,\"addScore\":8},{\"index\":7,\"cond\":2000,\"awardid\":21406504,\"addScore\":20},{\"index\":8,\"cond\":4000,\"awardid\":21406505,\"addScore\":40}]",
+    "goldMall": "[{\"index\":60,\"cost\":5000,\"awardid\":21406506,\"numLimit\":1},{\"index\":61,\"cost\":5000,\"awardid\":21406507,\"numLimit\":1},{\"index\":62,\"cost\":5000,\"awardid\":21406508,\"numLimit\":1},{\"index\":63,\"cost\":5000,\"awardid\":21406509,\"numLimit\":1},{\"index\":64,\"cost\":5000,\"awardid\":21406510,\"numLimit\":1},{\"index\":65,\"cost\":10000,\"awardid\":21406511,\"numLimit\":1},{\"index\":66,\"cost\":20000,\"awardid\":21406512,\"numLimit\":1},{\"index\":67,\"cost\":30000,\"awardid\":21406513,\"numLimit\":1},{\"index\":68,\"cost\":30000,\"awardid\":21406514,\"numLimit\":1}]",
+    "scoreMall": "[{\"index\":80,\"cost\":1,\"awardid\":21406525,\"numLimit\":0},{\"index\":81,\"cost\":1,\"awardid\":21406526,\"numLimit\":0},{\"index\":82,\"cost\":2,\"awardid\":21406527,\"numLimit\":0},{\"index\":83,\"cost\":1,\"awardid\":21406528,\"numLimit\":0},{\"index\":84,\"cost\":2,\"awardid\":21406529,\"numLimit\":0},{\"index\":85,\"cost\":2,\"awardid\":21406530,\"numLimit\":0},{\"index\":86,\"cost\":1,\"awardid\":21406531,\"numLimit\":0},{\"index\":87,\"cost\":1,\"awardid\":21406532,\"numLimit\":0},{\"index\":88,\"cost\":4,\"awardid\":21406533,\"numLimit\":0},{\"index\":89,\"cost\":3,\"awardid\":21406534,\"numLimit\":0},{\"index\":90,\"cost\":1,\"awardid\":21406535,\"numLimit\":0},{\"index\":91,\"cost\":2,\"awardid\":21406536,\"numLimit\":0},{\"index\":92,\"cost\":3,\"awardid\":21406537,\"numLimit\":0},{\"index\":93,\"cost\":1,\"awardid\":21406538,\"numLimit\":0},{\"index\":94,\"cost\":100,\"awardid\":21406539,\"numLimit\":0}]",
+    "candyID": 14100744
+  }
+]

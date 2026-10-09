@@ -1,0 +1,32 @@
+[
+  {
+    "id": "00000001",
+    "day": 3,
+    "desc": "3-Day Sign-In Pack: \\n Blue Reishi*20 \\n Lv.5 Silver Pack*10 \\n Skill Scroll*3000 \\n Deed: Mansion",
+    "signForReward": "[{\"type\":1,\"code\":14100074,\"amount\":3000},{\"type\":1,\"code\":14100010,\"amount\":10},{\"type\":7,\"code\":3,\"amount\":20},{\"type\":1,\"code\":14100122,\"amount\":1}]"
+  },
+  {
+    "id": "00000002",
+    "day": 7,
+    "desc": "7-Day Sign-In Pack: \\n Purple Reishi*50 \\n Reiatsu Cultivating Pill*150 \\n Lv.6 Silver Pack*10",
+    "signForReward": "[{\"type\":1,\"code\":14100017,\"amount\":150},{\"type\":1,\"code\":14100011,\"amount\":10},{\"type\":7,\"code\":4,\"amount\":50}]"
+  },
+  {
+    "id": "00000003",
+    "day": 14,
+    "desc": "14-Day Sign-In Pack: \\n Golden Reishi*30 \\n Lv.7 Silver Pack*10 \\n Soul Talisman*2",
+    "signForReward": "[{\"type\":1,\"code\":14100018,\"amount\":2},{\"type\":1,\"code\":14100012,\"amount\":10},{\"type\":7,\"code\":5,\"amount\":30}]"
+  },
+  {
+    "id": "00000004",
+    "day": 21,
+    "desc": "21-Day Sign-In Pack: \\n Soul Hunting Red Star*175 \\n Lv.2 Spirit Stone Box*3 \\n Soul Talisman*3",
+    "signForReward": "[{\"type\":1,\"code\":14800002,\"amount\":2},{\"type\":1,\"code\":14100018,\"amount\":3},{\"type\":13,\"code\":9,\"amount\":175}]"
+  },
+  {
+    "id": "00000005",
+    "day": 30,
+    "desc": "30-Day Sign-In Pack: \\n Hōgu Enhance Talisman*5 \\n Hōgu Convert Talisman*1 \\n Lv.3 Spirit Stone Box*2 \\n Soul Talisman*10",
+    "signForReward": "[{\"type\":1,\"code\":14800003,\"amount\":2},{\"type\":1,\"code\":14100019,\"amount\":5},{\"type\":1,\"code\":14100020,\"amount\":1},{\"type\":1,\"code\":14100018,\"amount\":10}]"
+  }
+]

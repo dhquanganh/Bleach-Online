@@ -1,0 +1,32 @@
+[
+  {
+    "id": "00000001",
+    "mood": 1,
+    "normalCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":79}]",
+    "goldCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":87}]"
+  },
+  {
+    "id": "00000002",
+    "mood": 2,
+    "normalCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":82}]",
+    "goldCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":91}]"
+  },
+  {
+    "id": "00000003",
+    "mood": 3,
+    "normalCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":84}]",
+    "goldCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":93}]"
+  },
+  {
+    "id": "00000004",
+    "mood": 4,
+    "normalCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":86}]",
+    "goldCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":95}]"
+  },
+  {
+    "id": "00000005",
+    "mood": 5,
+    "normalCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":89}]",
+    "goldCommunicateReward": "[{\"type\":1,\"code\":14100074,\"amount\":98}]"
+  }
+]

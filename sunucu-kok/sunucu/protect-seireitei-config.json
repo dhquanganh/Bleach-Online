@@ -1,0 +1,9 @@
+{
+  "rewardItem": 14900001,
+  "rewardAmount": 10,
+  "fightCooldownSeconds": 20,
+  "deathSeconds": 59,
+  "historyLimit": 20,
+  "outerEnemyBase": 12810000,
+  "innerEnemyBase": 12820000
+}

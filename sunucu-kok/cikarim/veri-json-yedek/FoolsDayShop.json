@@ -1,0 +1,25 @@
+[
+  {
+    "id": "00166E31",
+    "name": "愚人节2",
+    "tName": "Fools' Event",
+    "desc": "1. You have 1 free Roll chance everyday. Activating Fools' Box gives an extra Roll chance.\n2. Spend required Gold to get Roll chance. You can possibly roll a smiling faces to get high points. \n3. You can refresh items and points before you exchange for diaplayed rewards.\n4. You can possibly get Roll chance after you exchange for rewards. Points are used to exchange for diaplayed rewards and Shop rewards.    ",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1470001,
+    "playOnceIndex": 1,
+    "playFiveIndex": 2,
+    "scoreIndex": 3,
+    "reItemIndex": 4,
+    "rePriceIndex": 5,
+    "curPriceIndex": 6,
+    "reStart": 7,
+    "luckIndex": 8,
+    "playCost": 100,
+    "reItemCost": 5,
+    "rePriceCost": 5,
+    "curItems": "[80,81,82]",
+    "curItemsIndex": "[9,10,11]",
+    "scoreShop": "[{\"index\":56,\"cost\":2000,\"awardid\":21404769,\"numLimit\":1},{\"index\":57,\"cost\":2000,\"awardid\":21404770,\"numLimit\":1},{\"index\":58,\"cost\":2000,\"awardid\":21404771,\"numLimit\":1},{\"index\":59,\"cost\":2000,\"awardid\":21404772,\"numLimit\":1},{\"index\":60,\"cost\":1600,\"awardid\":21404773,\"numLimit\":1},{\"index\":61,\"cost\":1600,\"awardid\":21404774,\"numLimit\":1},{\"index\":62,\"cost\":1600,\"awardid\":21404775,\"numLimit\":1},{\"index\":63,\"cost\":1600,\"awardid\":21404776,\"numLimit\":1},{\"index\":64,\"cost\":1600,\"awardid\":21404777,\"numLimit\":1},{\"index\":65,\"cost\":1600,\"awardid\":21404778,\"numLimit\":1},{\"index\":66,\"cost\":1600,\"awardid\":21404779,\"numLimit\":1},{\"index\":67,\"cost\":1600,\"awardid\":21404780,\"numLimit\":1},{\"index\":68,\"cost\":800,\"awardid\":21404781,\"numLimit\":1},{\"index\":69,\"cost\":800,\"awardid\":21404782,\"numLimit\":1},{\"index\":70,\"cost\":300,\"awardid\":21404783,\"numLimit\":0},{\"index\":71,\"cost\":1,\"awardid\":21404784,\"numLimit\":0},{\"index\":72,\"cost\":1,\"awardid\":21404785,\"numLimit\":0},{\"index\":73,\"cost\":4,\"awardid\":21404786,\"numLimit\":0},{\"index\":74,\"cost\":4,\"awardid\":21404787,\"numLimit\":0},{\"index\":75,\"cost\":1,\"awardid\":21404788,\"numLimit\":0},{\"index\":76,\"cost\":20,\"awardid\":21404789,\"numLimit\":0},{\"index\":77,\"cost\":20,\"awardid\":21404790,\"numLimit\":0},{\"index\":78,\"cost\":4,\"awardid\":21404791,\"numLimit\":0},{\"index\":79,\"cost\":2,\"awardid\":21404792,\"numLimit\":0}]"
+  }
+]

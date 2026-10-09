@@ -1,0 +1,13 @@
+[
+  {
+    "id": "000927C1",
+    "name": "疾速改造",
+    "tName": "疾速改造",
+    "desc": "1. There'll be a 20% discount on the reset price of partner modification dojo.\n2. The loot of modifying fragments for the partners in the event will be doubled and the reset price of them will enjoy a 50% discount.\n3. In the fragment shop players can buy modifying fragments for the partners in the event and the chances will reset at 0:00.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 600001,
+    "f6": "[11150058,11150057,11150059]",
+    "f7": "[{\"index\":0,\"cost\":36,\"award\":21406062,\"limit\":5,\"heroId\":11120004},{\"index\":1,\"cost\":36,\"award\":21406063,\"limit\":5,\"heroId\":11120005},{\"index\":2,\"cost\":36,\"award\":21406064,\"limit\":5,\"heroId\":11120006},{\"index\":3,\"cost\":36,\"award\":21406065,\"limit\":5,\"heroId\":11120007},{\"index\":4,\"cost\":36,\"award\":21406066,\"limit\":5,\"heroId\":11140011},{\"index\":5,\"cost\":44,\"award\":21406067,\"limit\":5,\"heroId\":11140012},{\"index\":6,\"cost\":44,\"award\":21406068,\"limit\":5,\"heroId\":11120010},{\"index\":7,\"cost\":44,\"award\":21406069,\"limit\":5,\"heroId\":11120011},{\"index\":8,\"cost\":44,\"award\":21406070,\"limit\":5,\"heroId\":11120012},{\"index\":9,\"cost\":44,\"award\":21406071,\"limit\":5,\"heroId\":11120013},{\"index\":10,\"cost\":92,\"award\":21406072,\"limit\":5,\"heroId\":11120009},{\"index\":11,\"cost\":92,\"award\":21406073,\"limit\":5,\"heroId\":11140008},{\"index\":12,\"cost\":92,\"award\":21406074,\"limit\":5,\"heroId\":11120008},{\"index\":13,\"cost\":92,\"award\":21406075,\"limit\":5,\"heroId\":11150002},{\"index\":14,\"cost\":92,\"award\":21406076,\"limit\":5,\"heroId\":11140013}]"
+  }
+]

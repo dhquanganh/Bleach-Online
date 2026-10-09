@@ -1,0 +1,980 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bleach Online (yerel)</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      background: #000;
+      color: #c8c8c8;
+      font: 15px/1.5 system-ui, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Oyun sahnesi: 1250x650 mantiksal boyut, pencereye SIGDIRILARAK olceklenir (CSS transform).
+     Client stage'i NO_SCALE kullandigi icin nesne boyutunu buyutmek degil, olceklemek gerekir. */
+    #sahne {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1250px;
+      height: 650px;
+      transform-origin: 0 0;
+    }
+
+    #flashContent {
+      width: 1250px;
+      height: 650px;
+    }
+
+    #uyari {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40%;
+      text-align: center;
+      padding: 0 16px;
+    }
+
+    /* ---- oyun-ici katman (HTML, Flash'in ustunde; wmode=transparent) ---- */
+    #ust {
+      position: fixed;
+      right: 12px;
+      top: 10px;
+      z-index: 50;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .btn-k {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(180deg, #2a1d12, #120c07);
+      border: 1px solid #b8892f;
+      border-radius: 8px;
+      padding: 4px 10px 4px 4px;
+      color: #f3dfa8;
+      cursor: pointer;
+      box-shadow: 0 0 14px rgba(255, 170, 60, .25);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: .3px;
+    }
+
+    .btn-k:hover {
+      border-color: #ffd166;
+      box-shadow: 0 0 20px rgba(255, 200, 80, .5);
+    }
+
+    .btn-k img {
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      display: block;
+    }
+
+    .arena-badge {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 6px;
+      background: radial-gradient(circle, #653b23, #1a0d0a);
+      font-size: 23px;
+    }
+
+    #arenaMatchingModal {
+      position: fixed;
+      inset: 0;
+      z-index: 110;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      background: rgba(0, 0, 0, .82);
+    }
+
+    #arenaMatchingModal.acik {
+      display: flex;
+    }
+
+    .arena-window {
+      width: min(760px, 96vw);
+      height: min(620px, 92dvh);
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 2px solid #b8892f;
+      border-radius: 12px;
+      background: #0d0b09;
+      box-shadow: 0 0 40px rgba(255, 100, 50, .3);
+    }
+
+    .arena-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 16px;
+      border-bottom: 1px solid #3a2c18;
+      color: #c8b27e;
+      font-size: 12px;
+    }
+
+    .arena-bots {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      align-content: start;
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .arena-bot {
+      padding: 12px;
+      border: 1px solid #5a4520;
+      border-radius: 8px;
+      background: linear-gradient(180deg, #1b1611, #0f0c09);
+      color: #f3e6c8;
+    }
+
+    .arena-bot strong {
+      color: #ffd166;
+      font-size: 14px;
+    }
+
+    .arena-bot p {
+      margin: 5px 0 10px;
+      color: #a08a5a;
+      font-size: 11px;
+    }
+
+    .arena-bot button,
+    #arenaRandom {
+      background: linear-gradient(180deg, #b8892f, #7a5516);
+      border: 1px solid #d0a348;
+      border-radius: 6px;
+      color: #fff5d6;
+      padding: 7px 11px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .arena-bot button:disabled,
+    #arenaRandom:disabled {
+      opacity: .5;
+      cursor: wait;
+    }
+
+    #arenaStatus {
+      color: #ffd166;
+    }
+
+    .btn-s {
+      background: #1a1a1a;
+      border: 1px solid #444;
+      color: #ccc;
+      border-radius: 6px;
+      padding: 6px 9px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    #modal {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, .78);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #modal.acik {
+      display: flex;
+    }
+
+    #modal>.pencere {
+      width: min(640px, 86vw);
+      height: min(560px, 78vh);
+      height: min(560px, 78dvh);
+      max-width: calc(100vw - 16px);
+      max-height: calc(100dvh - 16px);
+      border-width: 1px;
+      border-radius: 8px;
+      box-shadow: 0 0 28px rgba(255, 180, 60, .3);
+    }
+
+    .pencere {
+      width: min(1040px, 96vw);
+      height: min(760px, 94vh);
+      height: min(760px, 94dvh);
+      min-height: 0;
+      background: #0d0b09;
+      border: 2px solid #b8892f;
+      border-radius: 12px;
+      box-shadow: 0 0 40px rgba(255, 180, 60, .35);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .banner {
+      height: clamp(58px, 9vh, 78px);
+      background: #000 center/cover no-repeat;
+      position: relative;
+      flex: none;
+    }
+
+    .banner h1 {
+      position: absolute;
+      left: 12px;
+      bottom: 7px;
+      margin: 0;
+      font-size: 17px;
+      color: #ffe3a3;
+      text-shadow: 0 2px 8px #000, 0 0 18px rgba(255, 190, 80, .6);
+      letter-spacing: 1px;
+    }
+
+    .banner .kapat {
+      position: absolute;
+      right: 12px;
+      top: 10px;
+      background: rgba(0, 0, 0, .6);
+      border: 1px solid #b8892f;
+      color: #ffe3a3;
+      border-radius: 6px;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+
+    .shop-tabs {
+      display: flex;
+      gap: 2px;
+      height: 28px;
+      padding: 0 8px;
+      background: #171210;
+      border-bottom: 1px solid #3a2c18;
+      flex: none;
+      align-items: stretch;
+    }
+
+    .shop-tab {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      color: #a08a5a;
+      height: 28px;
+      padding: 0 7px;
+      cursor: pointer;
+      font-size: 10px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .bar {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 6px 9px;
+      background: #171210;
+      border-bottom: 1px solid #3a2c18;
+      flex: none;
+      flex-wrap: wrap;
+    }
+
+    .altin {
+      color: #ffd166;
+      font-weight: 700;
+    }
+
+    .altin small {
+      color: #a08a5a;
+      font-weight: 400;
+    }
+
+    .bar input {
+      background: #0a0908;
+      border: 1px solid #4a3a20;
+      color: #eee;
+      padding: 6px 10px;
+      border-radius: 6px;
+      min-width: 100px;
+      max-width: 190px;
+      flex: 1;
+    }
+
+    .bar select {
+      background: #0a0908;
+      border: 1px solid #4a3a20;
+      color: #eee;
+      padding: 4px;
+      font-size: 11px;
+      border-radius: 6px;
+    }
+
+    .shop-tab.active {
+      color: #ffd166;
+      border-bottom-color: #ffd166;
+    }
+
+    .liste {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      overscroll-behavior: contain;
+      cursor: grab;
+      user-select: none;
+      touch-action: pan-y;
+      padding: 7px 9px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
+      gap: 5px;
+      align-content: start;
+    }
+
+    .phantrang {
+      display: none;
+      flex: none;
+      min-height: 34px;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 3px 8px;
+      background: #171210;
+      border-top: 1px solid #3a2c18;
+      color: #c8b27e;
+      font-size: 11px;
+    }
+
+    .phantrang.active {
+      display: flex;
+    }
+
+    .phantrang button,
+    .phantrang select {
+      height: 26px;
+      min-width: 30px;
+      padding: 2px 7px;
+      background: #211a11;
+      border: 1px solid #5a4520;
+      border-radius: 5px;
+      color: #f3dfa8;
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .phantrang button:disabled {
+      opacity: .4;
+      cursor: default;
+    }
+
+    .liste.darigi {
+      cursor: grabbing;
+    }
+
+    .kart {
+      background: linear-gradient(180deg, #1b1611, #0f0c09);
+      border: 1px solid #3a2c18;
+      border-radius: 7px;
+      padding: 4px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .kart.sahip {
+      border-color: #2f7a4a;
+      background: linear-gradient(180deg, #14201a, #0b100d);
+    }
+
+    .kart img {
+      width: 44px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #5a4520;
+      margin: 0 auto;
+      background: #000;
+    }
+
+    .kart .esya-ikon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto;
+      border: 1px solid #5a4520;
+      border-radius: 6px;
+      background: radial-gradient(circle, #463116, #100c08 72%);
+      color: #ffd166;
+      font-size: 22px;
+    }
+
+    .kart .ad {
+      color: #f3e6c8;
+      font-weight: 600;
+      font-size: 10px;
+      min-height: 24px;
+    }
+
+    .kart .meta {
+      color: #a08a5a;
+      font-size: 9px;
+    }
+
+    .yildiz {
+      color: #ffb347;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .kart button {
+      background: linear-gradient(180deg, #b8892f, #7a5516);
+      border: 0;
+      color: #fff5d6;
+      border-radius: 6px;
+      padding: 4px 5px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 10px;
+    }
+
+    .kart button:disabled {
+      background: #2b2b2b;
+      color: #777;
+      cursor: default;
+    }
+
+    .kart button.sahipBtn {
+      background: #1f4d31;
+      color: #9fe3b5;
+    }
+
+    #mesaj {
+      position: fixed;
+      left: 50%;
+      top: 60px;
+      transform: translateX(-50%);
+      z-index: 200;
+      background: #1a1409;
+      border: 1px solid #ffd166;
+      color: #ffe3a3;
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: none;
+      font-weight: 600;
+      box-shadow: 0 0 20px rgba(255, 200, 80, .4);
+    }
+
+    @media (max-width: 640px) {
+      #modal>.pencere {
+        width: min(560px, 90vw);
+        height: min(500px, 82vh);
+        height: min(500px, 82dvh);
+      }
+
+      .pencere {
+        width: 98vw;
+        height: 96vh;
+        height: 96dvh;
+      }
+
+      .banner {
+        height: 68px;
+      }
+
+      .banner h1 {
+        left: 12px;
+        bottom: 8px;
+        font-size: 18px;
+      }
+
+      .bar {
+        padding: 7px 9px;
+        gap: 6px;
+      }
+
+      .bar input {
+        min-width: 120px;
+      }
+
+      .bar select {
+        max-width: 145px;
+      }
+
+      .liste {
+        padding: 6px;
+        grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+        gap: 5px;
+      }
+
+      .kart img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .kart .esya-ikon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+  <script src="/api/js/swfobject.js"></script>
+</head>
+
+<body>
+  <div id="sahne">
+    <div id="flashContent"></div>
+  </div>
+  <div id="uyari"></div>
+
+  <!-- ---- oyun-ici ek katman: karakter magazasi + gorunum ---- -->
+  <div id="ust">
+    <button class="btn-s" id="btnSigdir" title="Pencereye sığdır / orijinal boyut (Ctrl+Shift+F)">⤢ Sığdır</button>
+    <button class="btn-k" id="btnMagaza" title="Mua nhân vật bằng vàng"><img src="/gorsel/shop-ikon.png"
+        alt=""><span>Cửa hàng nhân vật</span></button>
+    <button class="btn-k" id="btnVip" title="Altın yükle, VIP seviyesi yükselt (yükleme etkinliklerini tetikler)"><span
+        style="font-size:22px;padding:0 6px">👑</span><span>VIP / Altın Yükle</span></button>
+    <button class="btn-k" id="btnArenaMatching" title="Ngẫu nhiên ghép trận với bot"><span class="arena-badge">⚔️</span><span>Arena Matching</span></button>
+  </div>
+  <div id="arenaMatchingModal" role="dialog" aria-modal="true" aria-labelledby="arenaTitle">
+    <section class="arena-window">
+        <div class="banner" style="height:90px;background:linear-gradient(90deg,#401a12,#0d0b09)">
+          <h1 id="arenaTitle">⚔ Arena Matching</h1>
+          <button class="kapat" id="btnArenaClose" type="button">✕ Đóng</button>
+        </div>
+        <div class="arena-controls">
+          <span id="arenaStatus" aria-live="polite">Đang kiểm tra kết nối game…</span>
+          <button id="arenaRandom" type="button">Chọn bot ngẫu nhiên</button>
+        </div>
+        <div style="padding:9px 16px;color:#a08a5a;font-size:11px;border-bottom:1px solid #3a2c18">
+          Chọn bot tại đây, sau đó mở Đấu trường trong game và bấm Challenge. Client phải tự bắt đầu trận để nhận và phát chiến báo đúng luồng.
+        </div>
+        <div id="arenaBots" class="arena-bots"></div>
+    </section>
+  </div>
+  <div id="vipModal"
+    style="position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.78);display:none;align-items:center;justify-content:center">
+    <div class="pencere" style="width:min(560px,96vw);height:auto">
+      <div class="banner" style="height:90px;background:linear-gradient(90deg,#3a2408,#0d0b09)">
+        <h1>👑 VIP / Altın Yükle</h1><button class="kapat" id="btnVipKapat">✕ Kapat</button>
+      </div>
+      <div style="padding:16px 18px;color:#e8d9b5;font-size:14px">
+        <div id="vipDurum" style="margin-bottom:12px;color:#ffd166">…</div>
+        <div style="color:#a08a5a;font-size:12px;margin-bottom:10px">Yükleme sahte ödeme sayılır: altın ve VIP puanı
+          eklenir, Daily Presents / Make Money / yükleme etkinlikleri "bugün yüklendi" sayacını görür. VIP eşikleri:
+          100, 500, 1000, 2000, 5000, 10000, 30000, 50000, 100000, 200000.</div>
+        <div id="vipTutar" style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px"></div>
+        <div style="display:flex;gap:8px;align-items:center"><input id="vipOzel" type="number" min="1"
+            placeholder="özel miktar"
+            style="background:#0a0908;border:1px solid #4a3a20;color:#eee;padding:6px 10px;border-radius:6px;width:160px"><button
+            class="btn-s" id="btnVipOzel">Yükle</button></div>
+      </div>
+    </div>
+  </div>
+  <div id="modal">
+    <div class="pencere">
+      <div class="banner" style="background-image:url('/gorsel/shop-banner.png')">
+        <h1>Cửa hàng nhân vật</h1>
+        <button class="kapat" id="btnKapat">✕ Đóng</button>
+      </div>
+      <div class="shop-tabs" role="tablist" aria-label="Danh mục cửa hàng">
+        <button class="shop-tab active" type="button" role="tab" aria-selected="true" data-shop-tab="hot">Nổi
+          bật</button>
+        <button class="shop-tab" type="button" role="tab" aria-selected="false" data-shop-tab="all">Tất cả nhân
+          vật</button>
+        <button class="shop-tab" type="button" role="tab" aria-selected="false" data-shop-tab="equipment">Bán thiết
+          bị</button>
+      </div>
+      <div class="bar">
+        <span class="altin">💰 <span id="altin">…</span> <small id="loaiTien">vàng</small></span>
+        <input type="search" id="ara" placeholder="Tìm nhân vật…">
+        <select id="filtre">
+          <option value="hepsi">Mọi trạng thái</option>
+          <option value="alinabilir">Có thể mua</option>
+          <option value="sahip">Đã sở hữu</option>
+        </select>
+        <select id="sirala">
+          <option value="kalite">Phẩm chất</option>
+          <option value="ad">Tên A-Z</option>
+          <option value="fiyat">Giá thấp đến cao</option>
+        </select>
+        <span id="say" style="color:#a08a5a;font-size:12px;margin-left:auto"></span>
+      </div>
+      <div class="liste" id="liste"></div>
+      <div class="phantrang" id="shopPagination" aria-label="Phân trang danh sách">
+        <button type="button" id="pagePrev" aria-label="Trang trước" title="Trang trước">‹</button>
+        <span id="pageInfo"></span>
+        <button type="button" id="pageNext" aria-label="Trang sau" title="Trang sau">›</button>
+      </div>
+    </div>
+  </div>
+  <div id="mesaj"></div>
+
+  <script>
+    // ================= OYUN =================
+    var base = location.origin + '/public/';
+    var oturum = null;
+    try { var x = new XMLHttpRequest(); x.open('GET', '/yerel/oturum.json', false); x.send(); if (x.status === 200) oturum = JSON.parse(x.responseText); } catch (e) { }
+    var dil = null;
+    try { var y = new XMLHttpRequest(); y.open('GET', '/yerel/dil', false); y.send(); if (y.status === 200) dil = JSON.parse(y.responseText); } catch (e) { }
+
+    if (!swfobject.hasFlashPlayerVersion('11.0.0')) {
+      document.getElementById('uyari').textContent = 'Bu tarayıcıda Flash çalışmıyor. Oyun yalnız kendi Flash 22 çalışma zamanıyla (OYUNU-BASLAT.bat) açılır.';
+    } else {
+      var flashvars = oturum || {
+        gatewayIP: '127.0.0.1', gatewayPort: '10025', isCombin: '0', cdnRoot: base,
+        username: 'yerel', flag: '1', isAdult: '1', time: String(Math.floor(Date.now() / 1000)),
+        agent: '54', server: '974', version: '2026090619', token: 'yerel',
+        // isNew=1 SART: client karakter-yaratma ekranini (TProcessorCreateChar) YALNIZ bu bayrakla kurar;
+        // 0 iken sunucunun CreateCharCmd'i bosa gider ve "Currently initializing player data" ekraninda kalinir.
+        // Karakteri olan hesapta zararsiz: ekran gizli kurulur, giris normal devam eder.
+        payurl: 'http://127.0.0.1:7421/topup', fightreporturl: '', support: '', officeurl: '', isNew: '1', lang: (dil && dil.kod) || 'en'
+      };
+      swfobject.embedSWF(base + flashvars.version + '/index.swf', 'flashContent', '1250', '650', '11.0.0', false, flashvars,
+        { quality: 'high', bgcolor: '#000000', allowfullscreen: 'true', allowscriptaccess: 'always', wmode: 'transparent' },
+        { id: 'loading', name: 'loading', align: 'middle' });
+    }
+
+    // ================= SIGDIRMA (tam ekran destegi) =================
+    var SIGDIR = true;
+    try { SIGDIR = localStorage.getItem('bleach.sigdir') !== '0'; } catch (e) { }
+    function yerlestir() {
+      var W = window.innerWidth, H = window.innerHeight;
+      var k = SIGDIR ? Math.min(W / 1250, H / 650) : 1;
+      var s = document.getElementById('sahne');
+      var x = Math.max(0, (W - 1250 * k) / 2), y = Math.max(0, (H - 650 * k) / 2);
+      s.style.transform = 'translate(' + x + 'px,' + y + 'px) scale(' + k + ')';
+      document.getElementById('btnSigdir').textContent = SIGDIR ? '⤢ Orijinal boyut' : '⤢ Sığdır';
+    }
+    function sigdirDegistir() { SIGDIR = !SIGDIR; try { localStorage.setItem('bleach.sigdir', SIGDIR ? '1' : '0'); } catch (e) { } yerlestir(); }
+    window.addEventListener('resize', yerlestir);
+    document.getElementById('btnSigdir').addEventListener('click', sigdirDegistir);
+    document.addEventListener('keydown', function (e) { if (e.ctrlKey && e.shiftKey && (e.key === 'F' || e.key === 'f')) sigdirDegistir(); });
+    yerlestir();
+
+    // ================= KARAKTER MAGAZASI =================
+    var ADMIN = 'http://127.0.0.1:7421';
+    var VERI = null;
+    var THIET_BI = null;
+    var SHOP_TAB = 'hot';
+    var TRANG_HIEN_TAI = 1;
+    var SO_MOI_TRANG = 30;
+    function mesaj(t, sure) { var m = document.getElementById('mesaj'); m.textContent = t; m.style.display = 'block'; clearTimeout(m._t); m._t = setTimeout(function () { m.style.display = 'none'; }, sure || 2500); }
+    function yildiz(q) { var n = Math.max(1, Math.min(q || 1, 7)); return '★'.repeat(n) + '☆'.repeat(7 - n); }
+    function para(n) { return (Number(n) || 0).toLocaleString('tr-TR'); }
+    function metinGuvende(s) { var d = document.createElement('div'); d.textContent = String(s || ''); return d.innerHTML; }
+    function ciz() {
+      if (SHOP_TAB === 'equipment') return cizThietBi();
+      if (SHOP_TAB !== 'all') document.getElementById('shopPagination').classList.remove('active');
+      if (!VERI) return;
+      var q = (document.getElementById('ara').value || '').toLowerCase();
+      var f = document.getElementById('filtre').value, s = document.getElementById('sirala').value;
+      var l = VERI.liste.filter(function (h) {
+        if (SHOP_TAB === 'hot' && !h.hot) return false;
+        if (q && !(String(h.name).toLowerCase().indexOf(q) >= 0 || String(h.id).indexOf(q) >= 0)) return false;
+        if (f === 'sahip') return h.sahip;
+        if (f === 'alinabilir') return !h.sahip && h.fiyat <= VERI.altin;
+        return true;
+      });
+      l.sort(function (a, b) { return s === 'ad' ? String(a.name).localeCompare(String(b.name)) : s === 'fiyat' ? a.fiyat - b.fiyat : (b.quality - a.quality) || String(a.name).localeCompare(String(b.name)); });
+      document.getElementById('altin').textContent = para(VERI.altin);
+      document.getElementById('say').textContent = VERI.liste.filter(function (h) { return h.sahip; }).length + ' / ' + VERI.liste.length + ' nhân vật đã sở hữu';
+      if (SHOP_TAB === 'all') {
+        var tongTrang = Math.max(1, Math.ceil(l.length / SO_MOI_TRANG));
+        TRANG_HIEN_TAI = Math.min(TRANG_HIEN_TAI, tongTrang);
+        var trangDau = (TRANG_HIEN_TAI - 1) * SO_MOI_TRANG;
+        l = l.slice(trangDau, trangDau + SO_MOI_TRANG);
+        document.getElementById('shopPagination').classList.add('active');
+        document.getElementById('pageInfo').textContent = 'Trang ' + TRANG_HIEN_TAI + ' / ' + tongTrang;
+        document.getElementById('pagePrev').disabled = TRANG_HIEN_TAI <= 1;
+        document.getElementById('pageNext').disabled = TRANG_HIEN_TAI >= tongTrang;
+      }
+      document.getElementById('liste').innerHTML = l.map(function (h) {
+        var yeter = VERI.altin >= h.fiyat;
+        return '<div class="kart ' + (h.sahip ? 'sahip' : '') + '">' +
+          '<img src="' + ADMIN + '/api/ikon/' + h.id + '" onerror="this.style.visibility=\'hidden\'" alt="">' +
+          '<div class="ad">' + h.name + '</div>' +
+          '<div class="yildiz">' + yildiz(h.quality) + '</div>' +
+          '<div class="meta">' + (h.meslek || '') + (h.assess ? ' · ' + h.assess : '') + '</div>' +
+          (h.sahip ? '<button class="sahipBtn" disabled>✓ Đã sở hữu</button>'
+            : '<button ' + (yeter ? '' : 'disabled') + ' onclick="satinAl(' + h.id + ')">' + para(h.fiyat) + ' vàng</button>') +
+          '</div>';
+      }).join('');
+    }
+    function cizThietBi() {
+      if (!THIET_BI) return;
+      var q = (document.getElementById('ara').value || '').toLowerCase();
+      var f = document.getElementById('filtre').value, s = document.getElementById('sirala').value;
+      var l = THIET_BI.liste.filter(function (x) {
+        if (f !== 'hepsi' && String(x.quality) !== f) return false;
+        return !q || String(x.name).toLowerCase().indexOf(q) >= 0 || String(x.id).indexOf(q) >= 0 || String(x.level).indexOf(q) >= 0;
+      });
+      l.sort(function (a, b) {
+        if (s === 'ad') return String(a.name).localeCompare(String(b.name));
+        if (s === 'fiyat') return a.price - b.price;
+        if (s === 'level-desc') return (b.level - a.level) || (b.quality - a.quality) || String(a.name).localeCompare(String(b.name));
+        if (s === 'level') return (a.level - b.level) || (b.quality - a.quality) || String(a.name).localeCompare(String(b.name));
+        return (b.quality - a.quality) || (a.level - b.level) || String(a.name).localeCompare(String(b.name));
+      });
+      document.getElementById('altin').textContent = para(THIET_BI.altin);
+      document.getElementById('say').textContent = l.length + ' / ' + THIET_BI.liste.length + ' thiết bị · ' + THIET_BI.toplamSahip + ' đang sở hữu';
+      var tongTrang = Math.max(1, Math.ceil(l.length / SO_MOI_TRANG));
+      TRANG_HIEN_TAI = Math.min(TRANG_HIEN_TAI, tongTrang);
+      var trangDau = (TRANG_HIEN_TAI - 1) * SO_MOI_TRANG;
+      var hienThi = l.slice(trangDau, trangDau + SO_MOI_TRANG);
+      document.getElementById('shopPagination').classList.add('active');
+      document.getElementById('pageInfo').textContent = 'Trang ' + TRANG_HIEN_TAI + ' / ' + tongTrang;
+      document.getElementById('pagePrev').disabled = TRANG_HIEN_TAI <= 1;
+      document.getElementById('pageNext').disabled = TRANG_HIEN_TAI >= tongTrang;
+      document.getElementById('liste').innerHTML = hienThi.map(function (x) {
+        var nutGiaoDich = x.instance
+          ? '<button onclick="banThietBi(' + x.instance + ')">' + para(x.price) + ' vàng · Bán</button>'
+          : x.ownedCount
+            ? '<button disabled>Đang mặc</button>'
+            : '<button ' + (THIET_BI.altin >= x.buyPrice ? '' : 'disabled') + ' onclick="muaThietBi(' + x.id + ')">' + para(x.buyPrice) + ' vàng · Mua</button>';
+        return '<div class="kart">' +
+          '<img loading="lazy" src="' + ADMIN + '/api/item-ikon/' + x.picture + '" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'" alt="' + metinGuvende(x.name) + '">' +
+          '<div class="esya-ikon" style="display:none">✦</div>' +
+          '<div class="ad">' + metinGuvende(x.name) + '</div>' +
+          '<div class="yildiz">' + yildiz(x.quality) + '</div>' +
+          '<div class="meta">' + metinGuvende(x.type) + ' · Cấp ' + x.level + ' · Sở hữu: ' + x.ownedCount + '</div>' +
+          nutGiaoDich +
+          '</div>';
+      }).join('');
+    }
+    function thietBiYukle() {
+      fetch(ADMIN + '/api/thiet-bi').then(function (r) { return r.json(); }).then(function (d) {
+        THIET_BI = d;
+        TRANG_HIEN_TAI = 1;
+        var qualities = d.liste.map(function (x) { return x.quality; }).filter(function (x, i, a) { return a.indexOf(x) === i; }).sort(function (a, b) { return b - a; });
+        document.getElementById('filtre').innerHTML = '<option value="hepsi">Mọi phẩm chất</option>' + qualities.map(function (x) { return '<option value="' + x + '">Phẩm chất ' + x + '</option>'; }).join('');
+        ciz();
+      }).catch(function () { document.getElementById('liste').innerHTML = '<div style="color:#e88;padding:20px">Không tải được kho thiết bị.</div>'; });
+    }
+    function banThietBi(instance) {
+      var item = THIET_BI && THIET_BI.liste.filter(function (x) { return x.instance === instance; })[0];
+      if (!item || !confirm('Bán ' + item.name + ' (phẩm chất ' + item.quality + ') với giá ' + para(item.price) + ' vàng?\n\nThiết bị sẽ bị xóa khỏi túi. Trò chơi sẽ tải lại để cập nhật.')) return;
+      fetch(ADMIN + '/api/thiet-bi/ban', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ instance: instance }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d.ok) { mesaj('✗ ' + (d.hata || 'Không thể bán')); return; }
+          mesaj('✓ Đã bán ' + d.name + ', nhận ' + para(d.received) + ' vàng. Đang tải lại trò chơi…', 4000);
+          setTimeout(function () { location.reload(); }, 1800);
+        }).catch(function () { mesaj('✗ Không kết nối được cửa hàng.'); });
+    }
+    function muaThietBi(id) {
+      var item = THIET_BI && THIET_BI.liste.filter(function (x) { return x.id === id; })[0];
+      if (!item || item.ownedCount || item.instance || !confirm('Mua ' + item.name + ' (phẩm chất ' + item.quality + ', cấp ' + item.level + ') với giá ' + para(item.buyPrice) + ' vàng?\n\nThiết bị sẽ được thêm vào túi. Trò chơi sẽ tải lại để cập nhật.')) return;
+      fetch(ADMIN + '/api/thiet-bi/mua', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: id }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d.ok) { mesaj('✗ ' + (d.hata || 'Không thể mua')); return; }
+          mesaj('✓ Đã mua ' + d.name + ', trừ ' + para(d.price) + ' vàng. Đang tải lại trò chơi…', 4000);
+          setTimeout(function () { location.reload(); }, 1800);
+        }).catch(function () { mesaj('✗ Không kết nối được cửa hàng.'); });
+    }
+    (function kichHoatKeoCuon() {
+      var list = document.getElementById('liste');
+      var windowShop = document.querySelector('#modal .pencere');
+      var keo = false, daKeo = false, batDauY = 0, batDauScroll = 0;
+      windowShop.addEventListener('wheel', function (e) {
+        if (SHOP_TAB !== 'all' || !e.target.closest('#liste')) return;
+        var delta = e.deltaY;
+        if (!delta) return;
+        if (e.deltaMode === 1) delta *= 16;
+        else if (e.deltaMode === 2) delta *= list.clientHeight;
+        list.scrollTop += delta;
+        e.preventDefault();
+        e.stopPropagation();
+      }, { capture: true, passive: false });
+      list.addEventListener('pointerdown', function (e) {
+        if (e.button !== 0 || e.target.closest('button, input, select, a')) return;
+        keo = true;
+        daKeo = false;
+        batDauY = e.clientY;
+        batDauScroll = list.scrollTop;
+        list.classList.add('darigi');
+        list.setPointerCapture(e.pointerId);
+      });
+      list.addEventListener('pointermove', function (e) {
+        if (!keo) return;
+        var delta = e.clientY - batDauY;
+        if (Math.abs(delta) > 3) daKeo = true;
+        if (daKeo) {
+          list.scrollTop = batDauScroll - delta;
+          e.preventDefault();
+        }
+      });
+      function dungKeo(e) {
+        if (!keo) return;
+        keo = false;
+        list.classList.remove('darigi');
+        if (daKeo) {
+          list.addEventListener('click', function (click) {
+            click.preventDefault();
+            click.stopPropagation();
+          }, { capture: true, once: true });
+        }
+        if (e && list.hasPointerCapture(e.pointerId)) list.releasePointerCapture(e.pointerId);
+      }
+      list.addEventListener('pointerup', dungKeo);
+      list.addEventListener('pointercancel', dungKeo);
+      list.addEventListener('lostpointercapture', function () { keo = false; list.classList.remove('darigi'); });
+    })();
+    function yukle() {
+      fetch(ADMIN + '/api/karakterler').then(function (r) { return r.json(); }).then(function (d) { VERI = d; ciz(); })
+        .catch(function () { document.getElementById('liste').innerHTML = '<div style="color:#e88;padding:20px">Không kết nối được máy chủ cửa hàng (127.0.0.1:7421). Hãy khởi động lại máy chủ trò chơi.</div>'; });
+    }
+    function satinAl(id) {
+      var h = VERI && VERI.liste.filter(function (x) { return x.id === id; })[0]; if (!h) return;
+      if (!confirm('Mua nhân vật ' + h.name + ' với giá ' + para(h.fiyat) + ' vàng?\n\nGiao dịch sẽ được lưu. Trò chơi sẽ tải lại để nhân vật xuất hiện.')) return;
+      fetch(ADMIN + '/api/satin-al', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ id: id }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d.ok) { mesaj('✗ ' + (d.hata || 'olmadı')); return; }
+          mesaj('✓ Đã thêm ' + d.name + ' vào tài khoản. Đang tải lại trò chơi…', 4000);
+          setTimeout(function () { location.reload(); }, 1800);
+        }).catch(function () { mesaj('✗ Không kết nối được cửa hàng.'); });
+    }
+    document.getElementById('btnMagaza').addEventListener('click', function () { document.getElementById('modal').classList.add('acik'); yukle(); });
+    document.getElementById('btnKapat').addEventListener('click', function () { document.getElementById('modal').classList.remove('acik'); });
+    document.getElementById('ara').addEventListener('input', function () { if (SHOP_TAB !== 'hot') TRANG_HIEN_TAI = 1; ciz(); });
+    document.getElementById('filtre').addEventListener('change', function () { if (SHOP_TAB !== 'hot') TRANG_HIEN_TAI = 1; ciz(); });
+    document.getElementById('sirala').addEventListener('change', function () { if (SHOP_TAB !== 'hot') TRANG_HIEN_TAI = 1; ciz(); });
+    document.getElementById('pagePrev').addEventListener('click', function () { TRANG_HIEN_TAI = Math.max(1, TRANG_HIEN_TAI - 1); document.getElementById('liste').scrollTop = 0; ciz(); });
+    document.getElementById('pageNext').addEventListener('click', function () { TRANG_HIEN_TAI += 1; document.getElementById('liste').scrollTop = 0; ciz(); });
+    document.querySelectorAll('[data-shop-tab]').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        SHOP_TAB = tab.getAttribute('data-shop-tab');
+        TRANG_HIEN_TAI = 1;
+        document.getElementById('liste').scrollTop = 0;
+        document.getElementById('ara').value = '';
+        document.getElementById('loaiTien').textContent = 'vàng';
+        document.getElementById('ara').placeholder = SHOP_TAB === 'equipment' ? 'Tìm thiết bị…' : 'Tìm nhân vật…';
+        if (SHOP_TAB === 'equipment') {
+          document.getElementById('filtre').innerHTML = '<option value="hepsi">Mọi phẩm chất</option>';
+          document.getElementById('sirala').innerHTML = '<option value="kalite">Phẩm chất</option><option value="level">Cấp thấp đến cao</option><option value="level-desc">Cấp cao đến thấp</option><option value="ad">Tên A-Z</option><option value="fiyat">Giá thấp đến cao</option>';
+          thietBiYukle();
+        } else {
+          document.getElementById('filtre').innerHTML = '<option value="hepsi">Mọi trạng thái</option><option value="alinabilir">Có thể mua</option><option value="sahip">Đã sở hữu</option>';
+          document.getElementById('sirala').innerHTML = '<option value="kalite">Phẩm chất</option><option value="ad">Tên A-Z</option><option value="fiyat">Giá thấp đến cao</option>';
+        }
+        document.querySelectorAll('[data-shop-tab]').forEach(function (x) {
+          var active = x === tab;
+          x.classList.toggle('active', active);
+          x.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        ciz();
+      });
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { document.getElementById('modal').classList.remove('acik'); document.getElementById('vipModal').style.display = 'none'; document.getElementById('arenaMatchingModal').classList.remove('acik'); } });
+
+    // ================= VIP / ALTIN YUKLE (oyun-sunucu kontrol ucu 10027) =================
+    var KONTROL = 'http://127.0.0.1:' + (((oturum && Number(oturum.gatewayPort)) || 10025) + 2);
+    var TUTARLAR = [100, 500, 1000, 2000, 5000, 10000, 30000, 50000, 100000, 200000];
+    function vipDurumYaz(d) {
+      document.getElementById('vipDurum').innerHTML = d
+        ? '💰 Altın: <b>' + para(d.altin) + '</b> &nbsp; 👑 VIP <b>' + d.vipLevel + '</b> (puan ' + para(d.vipExp) + ') &nbsp; 📅 Bugün yüklenen: <b>' + para(d.bugun) + '</b>' + (d.bagli ? '' : ' &nbsp; <span style="color:#e88">(oyun bağlı değil, giriş yapınca yansır)</span>')
+        : '<span style="color:#e88">Oyun sunucusuna ulaşılamadı (' + KONTROL + ')</span>';
+    }
+    function vipYenile() { fetch(KONTROL + '/hesap').then(function (r) { return r.json(); }).then(vipDurumYaz).catch(function () { vipDurumYaz(null); }); }
+    function yukle2(n) {
+      n = Math.floor(Number(n) || 0); if (!(n > 0)) return;
+      fetch(KONTROL + '/topup', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ altin: n }) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) { if (!d.ok) { mesaj('✗ ' + (d.hata || 'olmadı')); return; } mesaj('✓ ' + para(n) + ' altın yüklendi — VIP ' + d.vipLevel, 3500); vipDurumYaz(d); })
+        .catch(function () { mesaj('✗ oyun sunucusuna ulaşılamadı'); });
+    }
+    document.getElementById('vipTutar').innerHTML = TUTARLAR.map(function (n) { return '<button class="btn-s" style="font-size:13px;padding:8px 12px" onclick="yukle2(' + n + ')">' + para(n) + ' altın</button>'; }).join('');
+    document.getElementById('btnVip').addEventListener('click', function () { document.getElementById('vipModal').style.display = 'flex'; vipYenile(); });
+    document.getElementById('btnVipKapat').addEventListener('click', function () { document.getElementById('vipModal').style.display = 'none'; });
+    document.getElementById('btnVipOzel').addEventListener('click', function () { yukle2(document.getElementById('vipOzel').value); });
+
+    document.getElementById('btnVoidReplay').addEventListener('click', function () {
+      if (voidReplayReport) voidReplay(voidReplayReport, voidReplayWon);
+    });
+
+    // ================= ARENA MATCHING (launcher bridge) =================
+    var arenaModal = document.getElementById('arenaMatchingModal');
+    var arenaStatus = document.getElementById('arenaStatus');
+    var arenaRandom = document.getElementById('arenaRandom');
+    var arenaBots = document.getElementById('arenaBots');
+    function arenaReady(connected) {
+      var ready = connected === 1;
+      arenaStatus.textContent = ready
+        ? 'Game đã đăng nhập — sẵn sàng ghép trận.'
+        : connected > 1
+          ? 'Có nhiều client đang đăng nhập; hãy chỉ giữ một client.'
+          : 'Chưa có game đăng nhập — hãy vào game trước.';
+      arenaRandom.disabled = !ready;
+      Array.prototype.forEach.call(arenaBots.querySelectorAll('button'), function (button) { button.disabled = !ready; });
+    }
+    function arenaYenile() {
+      fetch(KONTROL + '/arena-matching/opponents').then(function (response) {
+        return response.json().then(function (data) { if (!response.ok || !data.ok) throw new Error(data.hata || 'Không tải được danh sách bot.'); return data; });
+      }).then(function (data) {
+        arenaBots.textContent = '';
+        data.opponents.forEach(function (bot) {
+          var card = document.createElement('article');
+          card.className = 'arena-bot';
+          var title = document.createElement('strong');
+          title.textContent = bot.name;
+          var details = document.createElement('p');
+          details.textContent = 'Cấp ' + bot.level + ' · Hạng ' + bot.ranking + ' · Sức mạnh ' + bot.power + ' · Form: ' + bot.formation + ' · Đội: ' + bot.heroes.map(function (id, index) { return '#' + id.toString(16).toUpperCase() + '@' + bot.positions[index]; }).join(', ');
+          var challenge = document.createElement('button');
+          challenge.type = 'button';
+          challenge.textContent = 'Đấu bot này';
+          challenge.addEventListener('click', function () { arenaChallenge({ id0: bot.id0, id1: bot.id1 }); });
+          card.appendChild(title);
+          card.appendChild(details);
+          card.appendChild(challenge);
+          arenaBots.appendChild(card);
+        });
+        arenaReady(data.connected);
+      }).catch(function (error) {
+        arenaStatus.textContent = error.message || 'Không kết nối được máy chủ game.';
+        arenaRandom.disabled = true;
+        arenaBots.textContent = '';
+      });
+    }
+    function arenaChallenge(target) {
+      arenaRandom.disabled = true;
+      Array.prototype.forEach.call(arenaBots.querySelectorAll('button'), function (button) { button.disabled = true; });
+      arenaStatus.textContent = 'Đang ghép trận…';
+      fetch(KONTROL + '/arena-matching/match', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(target || {})
+      }).then(function (response) {
+        return response.json().then(function (data) { if (!response.ok || !data.ok) throw new Error(data.hata || 'Không thể ghép trận.'); return data; });
+      }).then(function (data) {
+        arenaStatus.textContent = 'Đã chọn ' + data.opponent.name + ' (cấp ' + data.opponent.level + '). Vào Đấu trường trong game rồi bấm Challenge để bắt đầu.';
+      }).catch(function (error) {
+        arenaStatus.textContent = error.message || 'Không thể kết nối máy chủ game.';
+        arenaYenile();
+      });
+    }
+    document.getElementById('btnArenaMatching').addEventListener('click', function () {
+      arenaModal.classList.add('acik');
+      arenaYenile();
+    });
+    document.getElementById('btnArenaClose').addEventListener('click', function () { arenaModal.classList.remove('acik'); });
+    arenaRandom.addEventListener('click', function () { arenaChallenge(null); });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0003D091",
+    "name": "Guild Level",
+    "tName": "King's Royal Guard",
+    "desc": "Each clan's guild level top 3 guilds can get rewards when event ends. Rewards will be sent by mail after event. If guild level is same, guild experience will be compared. Guild members will only be counted before event ends.",
+    "tip": "3",
+    "price": 0,
+    "imageID": 250001,
+    "f6": "[{\"key\":1, \"value\":[21401117],\"prompt\":\"Num.1\"},{\"key\":2, \"value\":[21401118],\"prompt\":\"Num.2\"},{\"key\":3, \"value\":[21401119],\"prompt\":\"Num.3\"}]"
+  },
+  {
+    "id": "0003D092",
+    "name": "Guild Level",
+    "tName": "King's Royal Guard",
+    "desc": "Each clan's guild level top 3 guilds can get rewards when event ends. Rewards will be sent by mail after event. If guild level is same, guild experience will be compared. Guild members will only be counted before event ends.",
+    "tip": "3",
+    "price": 0,
+    "imageID": 250001,
+    "f6": "[{\"key\":1, \"value\":[21401117],\"prompt\":\"Num.1\"},{\"key\":2, \"value\":[21401118],\"prompt\":\"Num.2\"},{\"key\":3, \"value\":[21401119],\"prompt\":\"Num.3\"}]"
+  }
+]

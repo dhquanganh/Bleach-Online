@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "04D3FA2D",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline$ recruited $HeroNameQualityUnderline$ from $1250$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1250\":[\"Tavern\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA2E",
+    "channel": 3,
+    "templateTaskFront": "3",
+    "textColor": "$PlayerQualityUnderline$ has joined $Country$. ",
+    "textSize": "0xFFFF66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA2F",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline$ activated Soul Map \"$EventName$\", his character greatly powered up!",
+    "textSize": "0xFFFF66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA35",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "With great luck, $PlayerQualityUnderline$ received $CityQuality$'s $1190$!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1190\":[\"Hunting Qualification\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA36",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ is so powerful and defeated [$OutlandArmy$]in $1220$",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1220\":[\"Trial Tower\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA37",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ is so invincible and defeated [$OutlandArmy$] in $1220$, won the honor of best kill",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1220\":[\"Trial Tower\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA3B",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ recruited $HeroNameQualityUnderline$ from $1180$ and became stronger!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1180\":[\"名忍会馆\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA3C",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has upgarded $HeroNameQualityUnderline_0$ to $HeroNameQualityUnderline_1$ in $1180$!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1180\":[\"名忍会馆\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA3D",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ successfully upgrade Reiatsu to $Pet$, and greatly powered up!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA3E",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$'s $1160$ amazingly reached $Number$, and will receive $Reward$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1160\":[\"Today's Task Points\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FA3F",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$OutLineUnderline$",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE11",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ donated $Number$ Gold to the guild",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE12",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ joined the guild",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE13",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ exited the guild",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE14",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline_0$ removed $PlayerQualityUnderline_1$ from the guild",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE15",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline_0$ transferred guild leader to $PlayerQualityUnderline_1$",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE16",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline_0$ assigned $Reward$ to $PlayerQualityUnderline_1$",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE17",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ summoned $Boss$ - $1132$",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "{\"1132\":[\"Summon Beast\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE18",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ has sealed $Boss$",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE19",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ become the new leader",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE1A",
+    "channel": 4,
+    "templateTaskFront": "4",
+    "textColor": "$PlayerQualityUnderline$ is now a(n) $Job$",
+    "textSize": "0x66CC00",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D3FE1B",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Congratulations! Members of $Corps$ increased its level to Lv. $Number$ through unremitting efforts.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D401FA",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Suddenly, the earthcracked. $Boss_0$, $Boss_1$, and $Boss_2$ show up! $1242$",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1242\":[\"【evil spirit】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D401FB",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline_0$ finally defeated $Boss$ with the united efforts. The top three damage dealers are $PlayerQualityUnderline_1$, $PlayerQualityUnderline_2$ and $PlayerQualityUnderline_3$. Let's go and congratulate them!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D401FC",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "Evil Spirits will turn up in 10 mins. Please get ready",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[12,50]"
+  },
+  {
+    "id": "04D401FD",
+    "channel": 1,
+    "templateTaskFront": "1,7",
+    "textColor": "Evil Spirits turn up in 1 min. Prepare yourself!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[12,59]"
+  },
+  {
+    "id": "04D401FE",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "$PlayerQualityUnderline$ gave $Boss$ the final blow and got $Reward$",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D401FF",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "$Boss$ left the world with the damage given by $CountryColor$ heroes. The top three damage dealers are $PlayerQualityUnderline_0$, $PlayerQualityUnderline_1$ and $PlayerQualityUnderline_2$. Let's wish them success next time!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E1",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You gave $PlayerQualityUnderline$ an adult novel. S/he had the nose bleeding while reading.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E2",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ gave you an adult novel. You had the nose bleeding while reading. ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E3",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] It was snowy outside, so you took slave $PlayerQualityUnderline$ to the hot spring. S/he was happy and rubbed your back.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E4",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] It was snowy outside, so master $PlayerQualityUnderline$ took you to the hot spring. You rubbed the master's back while bathing in the hot spring",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E5",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You threw the slave $PlayerQualityUnderline$ bread you haven't finished. S/he smelled, complaining why it was not the cream flavor, but s/he still ate it and said that your drool was more delicious than the cream ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E6",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ rewarded you a small piece of bread. Though it was not your favorite cream bread, you still ate it and didn't forget to please the master by saying that the master's drool is more delicious than the cream ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E7",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You said to the slave $PlayerQualityUnderline$: \"All that I did is out of love. I hate anyone that tries to steal you. Be with me. I don't want to lose you.\" S/he was moved to tears after hearing it. ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E8",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ said to you: \"All that I did is out of love. I hate anyone that tries to steal you. Be with me. I don't want to lose you.\" You pretended to be moved after hearing it.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405E9",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You took another slave $PlayerQualityUnderline$. As there was not enough rooms for him/her, you built a cabin with hay inside near the doghouse in the backyard. S/he was happy.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405EA",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Your new master $PlayerQualityUnderline$ was afraid that you didn't have a comfortable residence, so s/he built a cabin with hay inside near the doghouse in the backyard. Now you had your own space.  ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405EB",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] One day, you met a masked female ninja in a stroll. After a intense battle, you defeated her and got a broken ninjutsu scroll. You gave it to the slave $PlayerQualityUnderline$. Seeing it, s/he decided to train herself/himself.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405EC",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ send you a ninjutsu scroll today, claiming that this was got from a masked female ninja. Seeing it, you decided to train yourself. ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405ED",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You were bored. Seeing the slave $PlayerQualityUnderline$ listlessly lying on the ground, you hung him/her up and practiced punching.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405EE",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ wanted to practice punching on a whim, and asked you to find a stake. As there is no stake here, the master hung you up",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405EF",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You wanted to see a beautiful girl and forced the slave $PlayerQualityUnderline$ to release sexy jutsu",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F0",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ wanted to see a beautiful girl. As there was no beautiful girl around, you had to release sexy jutsu. ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F1",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Your rice field was found Locust Kings, so you sent the slave $PlayerQualityUnderline$ to eliminate them",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F2",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ compelled you to eliminate Locust Kings in the rice field. To vent your resentment, you cut all the paddy rice ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F3",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Your manuscript was blown away, so you asked the slave $PlayerQualityUnderline$ to write one. S/he spent several nights and finally nailed it ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F4",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$’s manuscript was blown away, so S/he asked you to write one. You spent several nights and finally nailed it",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F5",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] A friend of you asked you to help with his restaurant, so you sent the slave $PlayerQualityUnderline$ to do the chores. S/he was very capable and finished the work that required 10 more people's labor",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F6",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] A friend of the master $PlayerQualityUnderline$ opened a new restaurant, requesting your help. You finished the work that required 10 more people's labor",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F7",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] To save expenses, you said to $PlayerQualityUnderline$:\"You are too fat.  From now on, you are allowed to have one meal per day.\" After a period, the slave was skinny",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F8",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] To save expenses, the master $PlayerQualityUnderline$ said to you: \"You are too fat.  From now on, you are allowed to have one meal per day” After a period, you were skinny",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405F9",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Slave $PlayerQualityUnderline$ read a novel for you today. You felt comfortable and fell asleep",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FA",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You read a novel for the master $PlayerQualityUnderline$ today. The master fell asleep with great joy ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FB",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You couldn’t fall asleep, so you asked the slave $PlayerQualityUnderline$ to tell a story……Then you slept  ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FC",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ said that s/he couldn’t fall asleep, insisting that you tell a story……Then, master slept ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FD",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Slave $PlayerQualityUnderline$ said to you: you are as unique as that flower in the bush",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FE",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You said to $PlayerQualityUnderline$: you are as unique as that flower in the bush",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D405FF",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Today slave $PlayerQualityUnderline$ released sexy jutsu to make you happy ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40600",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Today you released sexy jutsu to make the master $PlayerQualityUnderline$ happy",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40601",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You failed to go on writing a novel today, so the slave $PlayerQualityUnderline$ went to the street being a beggar to inspire you ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40602",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ failed to go on writing the novel, so you decided to dress like a beggar on the street to inspire the master ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40603",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You caught a cold. Slave $PlayerQualityUnderline$ made a coat for you. You were moved to tears.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40604",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ caught a gold again. You especially made a coat for the master. S/he was moved to tears",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40605",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Slave $PlayerQualityUnderline$ was squatting in the corner today, which made you uncomfortable. S/he was drawing circles to curse you",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40606",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You squatted in the corner drawing circles to curse the master $PlayerQualityUnderline$. Soon you saw the master trembling, which made you happy",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40607",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Today slave $PlayerQualityUnderline$ cleaned the toilet again. Maybe it was too clean. You slipped ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40608",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ forced you to clean the toilet again. You put some oil on the ground. The master slipped as you expected ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40609",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You read a ghost story today, as a result of which you lost sleep. When you got up and went to the toilet, you saw a ghost in white and wetted the bed. Later you found it was the slave $PlayerQualityUnderline$’s prank",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060A",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ has been out of sleep since s/he read a ghost story, so you dressed like a ghost and scared the master to death ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060B",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You found all your clothes gone while you were bathing in the hot spring and went back home naked. Later, you found it was the slave$PlayerQualityUnderline$’s prank ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060C",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Master $PlayerQualityUnderline$ was in the hot spring. You took his/her clothes away. The master had to go back home naked. ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060D",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Slave $PlayerQualityUnderline$ asked you to drink a small bottle of oil, claiming that this is the latest Indian oil. You drank it and had diarrhea.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060E",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You gave a newly made laxative\nto the master $PlayerQualityUnderline$, claiming this is the latest Indian oil. The master drank it and had diarrhea ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4060F",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] Slave $PlayerQualityUnderline$ grabbed a handful of your hair while cleaning your room this morning and went back to make the curse doll",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40610",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Interaction] You learned how to make a curse doll from the book, so you grabbed a handful of master $PlayerQualityUnderline$'s hair and went back to make it.  ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40644",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Plunder] You plundered $PlayerQualityUnderline_0$'s slave successfully and got his/her slave $PlayerQualityUnderline_1$",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40645",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Plunder] $PlayerQualityUnderline_0$ successfully plundered your slave and got your slave $PlayerQualityUnderline_1$",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40646",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Plunder] Your master $PlayerQualityUnderline_0$ was defeated. $PlayerQualityUnderline_1$ became your new master",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40647",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Plunder] You failed to plunder $PlayerQualityUnderline$'s slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40648",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Plunder] $PlayerQualityUnderline$ failed to plunder your slave ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40649",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] You saved $PlayerQualityUnderline_0$'s slave $PlayerQualityUnderline_1$. S/he is free now! ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064A",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] $PlayerQualityUnderline_0$ saved your slave $PlayerQualityUnderline_1$. S/he is free now!",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064B",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] $PlayerQualityUnderline$ saved you. You are free now!  ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064C",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] You failed to save $PlayerQualityUnderline_0$'s slave $PlayerQualityUnderline_1$",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064D",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] $PlayerQualityUnderline_0$ failed to save your slave $PlayerQualityUnderline_1$",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064E",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Rescue] $PlayerQualityUnderline_0$ failed to save you. You are still $PlayerQualityUnderline_1$'s slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4064F",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] You asked $PlayerQualityUnderline_0$ for help. S/he defeated your master $PlayerQualityUnderline_1$. You are free now!",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40650",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] $PlayerQualityUnderline_0$ asked you for help. You defeated his/her master $PlayerQualityUnderline_1$. S/he is free now!",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40651",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] Your slave $PlayerQualityUnderline_0$ asked $PlayerQualityUnderline_1$ for help. S/he defeated you. $PlayerQualityUnderline_2$ is free now!",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40652",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] You asked $PlayerQualityUnderline_0$ for help. Your master defeated him/her. You are still $PlayerQualityUnderline_1$'s slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40653",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] $PlayerQualityUnderline_0$ asked you for help. His/her master $PlayerQualityUnderline_1$ defeated you. S/he is still a slave ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40654",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Seek Help] Your slave $PlayerQualityUnderline_0$ asked $PlayerQualityUnderline_1$ for help. You defeated him/her. $PlayerQualityUnderline_2$ is still your slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40655",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Capture] You captured $PlayerQualityUnderline$. S/he is your slave now.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40656",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Capture] $PlayerQualityUnderline$ captured you. You are his/her slave now ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40657",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Capture] You failed to capture $PlayerQualityUnderline$ and got no slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40658",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Capture] $PlayerQualityUnderline$ failed to capture you. You are still free ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40659",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Resist] You resisted $PlayerQualityUnderline$ and won. You are free now",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065A",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Resist] Your slave $PlayerQualityUnderline$ resisted you. S/he is free now ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065B",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Resist] You failed to resist $PlayerQualityUnderline$. You are still his/her slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065C",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Resist] Your slave $PlayerQualityUnderline$ failed to resist. S/he is still your slave",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065D",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Ransom] You spent 100 Gold bribing the guards, and gaining the freedom. Your master $PlayerQualityUnderline$ beat the guards and searched out 50 Coupons",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065E",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Ransom] Your slave $PlayerQualityUnderline$ spent 100 Gold bribing the guards and gained the freedom. You beat the guards and searched out 50 Coupons",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4065F",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Release] You drove away the useless slave $PlayerQualityUnderline$. S/he is free now",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D40660",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "[Release] Your master $PlayerQualityUnderline$ drives you away. You are free now!",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409C9",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline$ is dominating the game, and has won 10 matches in a row in $1230$!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409CA",
+    "channel": 1,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline_0$has ended $PlayerQualityUnderline_1$'s $Number$ $1230$ winning streaks!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409CD",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline_0$ has defeated $PlayerQualityUnderline_1$ and won the first place in  $1230$ !",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409CF",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed  20 winning streaks. It's just a piece of cake.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D0",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 30 winning streaks. He/She must be possessed by God of War.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D1",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 50 winning streaks. He/She is remarkable.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D2",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 70 winning streaks. He/She is invincible!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D3",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 100 winning streaks. He/She is the God of destruction!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D4",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 150 winning streaks. Even the gods are shocked by his/her power!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D5",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 200 winning streaks. He/She is legendary!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D409D6",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$in$1230$ has completed 300 winning streaks.  Unbelievable!!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1230\":[\"Arena\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41199",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Guild War has started! Who will be the final winner?$1241$",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1241\":[\"Battle\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4119A",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Congratulations! The Guild [$Corps$] has showed its great strength in today's Guild War, and won the first place.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4119B",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Guild War enrollment begins!  Register Now!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[19,00]"
+  },
+  {
+    "id": "04D4119C",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Guild War enrollment has closed! The war is about to break out! Which Guild will stands out in today's contest? We'll see.  Don't go away. The war will start at 20:00 right away!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4119D",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Congratulations to them! In this Guild War $PlayerQualityUnderline_0$ got the most personal credits and won the first place, $PlayerQualityUnderline_1$ won the second place, and the third place is $PlayerQualityUnderline_2$!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4119E",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "After all guild members' unremitting efforts, [$Corps$] is upgraded to Lv. $Number$!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4119F",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline_0$ just ended $PlayerQualityUnderline_1$'s $Number$ winning streak!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A0",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 5 wining streaks in Guild War! Good start!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A1",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 10 wining streaks in Guild War! Good job!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A2",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 15 wining streaks in Guild War!  Amazing…",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A3",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 20 wining streaks in Guild War! He/She is invincible.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A4",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 30 wining streaks in Guild War! He/She is the God of destruction!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A5",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 50 wining streaks in Guild War! Even the gods are shocked!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A6",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 100 wining streaks in Guild War! He/She is legendary!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D411A7",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has completed 200 wining streaks in Guild War! Unbelievable!!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41581",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Protect Seireitei is about to start. All the guild members please enter the scene and get ready!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41582",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Result of Protect Seireitei: The attacking side wins the game!  In the Guild Credit ranking, the guild [$Corps_0$] got No.1 ,obtained $Reward_0$ and won the Captain Commander Yamato's favor, who reward the guild with Buff; Guild [$Corps_1$] got No.2 and obtained $Reward_1$; Guild [$Corps_2$] got No.3 and obtained $Reward_2$; the defending team [$Corps_3$] got $Reward_3$ as reward.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41583",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Result of Protect Seireitei: The defending side wins! The guild [$Corps_0$] has protected Seireitei, got $Reward_0$ as reward, and also received the Buff for occupying. In the Guild Credit ranking, the attacking guild[$Corps_1$] got No.1  and obtained $Reward_1$,[$Corps_2$] got No.2 and obtained  $Reward_2$, [$Corps_3$] is No.3 and obtained $Reward_3$",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41584",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline_0$ just ended $PlayerQualityUnderline_1$'s $Number$ winning streak!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41585",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 5 winning streaks in Konoha Defense War! Good start!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41586",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 10 winning streaks in Konoha Defense War! Good job!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41587",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 15 winning streaks in Konoha Defense War!  Amazing…",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41588",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 20 winning streaks in Konoha Defense War!  He/She is invincible.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41589",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 30 winning streaks in Konoha Defense War!  He/She is the God of destruction!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4158A",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 50 winning streaks!  Even the gods are shocked!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4158B",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ in Protect Seireitei completed a stunning 100 winning streak, legendary!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4158C",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ just completed 200 winning streaks!  Unbelievable!!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41969",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Ryoka will attack the village in 15 minutes. Please get ready for the war.",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[20,10]"
+  },
+  {
+    "id": "04D4196A",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Ryoka will appear in 1 minute. All the guild members, please get ready for the war.",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[20,14]"
+  },
+  {
+    "id": "04D4196B",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Lots of Ryokas are in the village now, the battle has started!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[20,15]"
+  },
+  {
+    "id": "04D4196C",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has killed $Boss$ and obtained $Reward$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4196D",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "All the Ryokas in the village have been slain. In this defense battle [$CountryColor_0$] got No.1, [$CountryColor_1$] got No.2, [$CountryColor_2$] got No.3",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4196E",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "In this defense battle, $PlayerQualityUnderline_0$ has dealt the most damages to the Ryoka, the second most damage is dealt by $PlayerQualityUnderline_1$, and the third is $PlayerQualityUnderline_2$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D51",
+    "channel": 6,
+    "templateTaskFront": "6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ come to your home and plunder you $HeroNameQuality_2$, did not leave anything for you.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D52",
+    "channel": 6,
+    "templateTaskFront": "6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ came to your Home and purchased lingerie for your Girlfriend, your Girlfriend was very shy.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D53",
+    "channel": 6,
+    "templateTaskFront": "6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ came to your Home and touched your Girlfriend, then he/she purchased new clothes for your Girlfriend as compensation.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D54",
+    "channel": 6,
+    "templateTaskFront": "6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ came to your Home and touched your Girlfriend's waist. Your Girlfriend got mad and forced him/her to treat her to a meal.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D55",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "[Throw Dice] $HeroNameQuality$ wins $Number$ coupons at Throw Dice.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D56",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ went to $HeroNameQuality_2$'s home and touched the Girlfriend, then he/she purchased new clothes for the Girlfriend as compensation.",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D41D57",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$HeroNameQuality_0$'s $HeroNameQuality_1$ went to $HeroNameQuality_2$'s Home and touched his/her Girlfriend's waist. His/Her Girlfriend got mad and forced him/her to treat her to a meal.  ",
+    "textSize": "0x33CC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42139",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ defeats $Boss$ alone and wins the first kill.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4213A",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ has superior strength and defeats $Boss$ wins the first kill!",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4213B",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ overawes all people and defeats $Boss$ alone with the biggest advantage and gets the best kill record.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4213C",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ defeats $Boss$ with the biggest advantage and gets the best kill record.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4213D",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ overcomes $Boss$ in Hollow Soul King, gains $Reward$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42521",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ activated \"$Difficulty$\" $LeagueMap$, waiting for you to $1281$!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1281\":[\"【Alliance War】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42522",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline$ activated Level $Number$ Battle, and waiting for you$1282$!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1282\":[\"【Alliance War】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42523",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline$ invited you to join $LeagueMap$ \"$Difficulty$\", click to join$1281$!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1281\":[\"【Alliance War】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42524",
+    "channel": 6,
+    "templateTaskFront": "1",
+    "textColor": "$PlayerQualityUnderline$ invited you to join Level $Number$ battle, click to join$1282$!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "{\"1282\":[\"【Alliance War】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D42525",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle will be activated in 5 minutes, please be prepared!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[13,40]"
+  },
+  {
+    "id": "04D42526",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle will be activated in 1 minute, please be prepared!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[13,44]"
+  },
+  {
+    "id": "04D42527",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle is activated already, go now!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[13,45]"
+  },
+  {
+    "id": "04D42528",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle will be activated in 5 minutes, please be prepared!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[20,55]"
+  },
+  {
+    "id": "04D42529",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle will be activated in 1 minute, please be prepared!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[20,59]"
+  },
+  {
+    "id": "04D4252A",
+    "channel": 1,
+    "templateTaskFront": "1,6,7",
+    "textColor": "Alliance Blood Battle is activated already, go now!",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[21,00]"
+  },
+  {
+    "id": "04D42909",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "$PlayerQualityUnderline_0$ at $BableTowerName$ challenged $PlayerQualityUnderline_1$ and wins; $PlayerQualityUnderline_2$ becomes the new $ArenaName$",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D4290A",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "No one has yet overtaken $BableTowerName$'s $ArenaName$, $PlayerQualityUnderline$ becomes the new Winner.",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D44C31",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "[All Servers] Today's Cross-Server Battle comes to an end with $PlayerQualityUnderline$ taking the throne. Heroes calls him/her \"The Greatest Fighter\".",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D44C32",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "[All Servers] $PlayerQualityUnderline_0$ defeated $playersQuality_1$ after an intense battle and ranked No.$Number$.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D44C33",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Today's Cross Server Battle has started. Demonstrate your power now!$1290$",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "{\"1290\":[\"【进入】\"]}",
+    "f6": "[]"
+  },
+  {
+    "id": "04D44C34",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "Today's Cross Server Battle has ended. Don't forget to register for tomorrow's match.",
+    "textSize": "0xCCCC66",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  },
+  {
+    "id": "04D45019",
+    "channel": 1,
+    "templateTaskFront": "1,6",
+    "textColor": "The current reward in the Prize Pool is $Number$ gold.",
+    "textSize": "0xFF6600",
+    "f4": 12,
+    "f5": "",
+    "f6": "[]"
+  }
+]

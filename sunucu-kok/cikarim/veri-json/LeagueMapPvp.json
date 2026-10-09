@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00F73141",
+    "name": "Alliance War",
+    "desc": "Joint operation against the ninjas come for the Chunin Exam",
+    "sortIndex": 1,
+    "openLevel": 40,
+    "mapID": 30501,
+    "imageID": 16200001,
+    "f6": "[14860010]"
+  },
+  {
+    "id": "00F73142",
+    "name": "Alliance War",
+    "desc": "Joint operation against Akatsuki members",
+    "sortIndex": 2,
+    "openLevel": 60,
+    "mapID": 30501,
+    "imageID": 16200002,
+    "f6": "[14860010]"
+  },
+  {
+    "id": "00F73143",
+    "name": "Alliance War",
+    "desc": "Joint operation against the resurrected kages",
+    "sortIndex": 3,
+    "openLevel": 80,
+    "mapID": 30501,
+    "imageID": 16200003,
+    "f6": "[14860010]"
+  },
+  {
+    "id": "00F73144",
+    "name": "Alliance War",
+    "desc": "Go deep into the Realms and challenge the ninjas there",
+    "sortIndex": 4,
+    "openLevel": 100,
+    "mapID": 30501,
+    "imageID": 16200004,
+    "f6": "[14860010]"
+  },
+  {
+    "id": "00F73145",
+    "name": "Alliance War",
+    "desc": "Joint operation against the phantom ninjas created by Mount Myōboku's Toad Sage",
+    "sortIndex": 5,
+    "openLevel": 120,
+    "mapID": 30501,
+    "imageID": 16200005,
+    "f6": "[14860010]"
+  },
+  {
+    "id": "00F73146",
+    "name": "Alliance War",
+    "desc": "Reanimated Itachi controlled Sage Kabuto and created lots of reanimated ninjas. By challenging those ninjas, you can boost your power quickly.",
+    "sortIndex": 6,
+    "openLevel": 140,
+    "mapID": 30501,
+    "imageID": 16200006,
+    "f6": "[14860010]"
+  }
+]

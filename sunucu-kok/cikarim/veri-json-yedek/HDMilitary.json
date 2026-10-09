@@ -1,0 +1,24 @@
+[
+  {
+    "id": "00030D41",
+    "name": "Rank Upgrade",
+    "tName": "Rank Upgrade to Success",
+    "desc": "During event upgrade your rank to get rewards, the amount of rewards is limited to 30. ",
+    "tip": "5",
+    "price": 0,
+    "imageID": 200001,
+    "prizeNum": "[{\"id\":40100007,\"award\":[21401121],\"prompt\":\"Lieutenant of the 12th Division\"},{\"id\":40100012,\"award\":[21401122],\"prompt\":\"Captain of the 10th Division\"},{\"id\":40100017,\"award\":[21401123],\"prompt\":\"Lieutenant of the 7th Division\"}]",
+    "f7": 30
+  },
+  {
+    "id": "00030D42",
+    "name": "Rank Upgrade",
+    "tName": "Rank Upgrade to Success",
+    "desc": "During event upgrade your rank to get rewards, the amount of rewards is limited to 30. ",
+    "tip": "5",
+    "price": 0,
+    "imageID": 200001,
+    "prizeNum": "[{\"id\":40100016,\"award\":[21401121],\"prompt\":\"Captain of the 8th Division\"},{\"id\":40100019,\"award\":[21401122],\"prompt\":\"Lieutenant of the 6th Division\"},{\"id\":40100022,\"award\":[21401123],\"prompt\":\"Captain of the 5th Division\"}]",
+    "f7": 30
+  }
+]

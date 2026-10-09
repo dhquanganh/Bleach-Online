@@ -1,0 +1,86 @@
+[
+  {
+    "id": "00000016",
+    "desc": "Hit Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Hit Rate",
+    "viewList": "Add Extra Hit Rate(2-12)%"
+  },
+  {
+    "id": "00000017",
+    "desc": "Dodge Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Dodge Rate",
+    "viewList": "Add Extra Dodge Rate(2-12)%"
+  },
+  {
+    "id": "00000018",
+    "desc": "Crit Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Crit Rate",
+    "viewList": "Add Extra Crit Rate(2-12)%"
+  },
+  {
+    "id": "00000019",
+    "desc": "Block Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Block Rate",
+    "viewList": "Add Extra Block Rate(2-12)%"
+  },
+  {
+    "id": "0000001C",
+    "desc": "Damage Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Damage Rate",
+    "viewList": "Add Extra Damage Rate(2-12)%"
+  },
+  {
+    "id": "0000001E",
+    "desc": "Break DEF Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Break DEF Rate",
+    "viewList": "Add Extra Break DEF Rate(2-12)%"
+  },
+  {
+    "id": "0000001F",
+    "desc": "Counter Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Counter Rate",
+    "viewList": "Add Extra Counter Rate(2-12)%"
+  },
+  {
+    "id": "00000022",
+    "desc": "Recovery Rate",
+    "value": "[2,12]",
+    "clientDeec": "Add Extra Recovery Rate",
+    "viewList": "Add Extra Recovery Rate(2-12)%"
+  },
+  {
+    "id": "00000027",
+    "desc": "Control Rate",
+    "value": "[1,6]",
+    "clientDeec": "Add Extra Control Rate",
+    "viewList": "Add Extra Control Rate(1-6)%"
+  },
+  {
+    "id": "00000028",
+    "desc": "Control Resistance",
+    "value": "[1,6]",
+    "clientDeec": "Add Extra Control Resistance",
+    "viewList": "Add Extra Control Resistance(1-6)%"
+  },
+  {
+    "id": "00000029",
+    "desc": "Fury Deduction",
+    "value": "[1,10]",
+    "clientDeec": "Add Extra Fury Deduction",
+    "viewList": "Add Extra Fury Deduction(1-10)%"
+  },
+  {
+    "id": "0000002A",
+    "desc": "Fury Deduction Resistance",
+    "value": "[1,10]",
+    "clientDeec": "Add Extra Fury Deduction Resistance",
+    "viewList": "Add Extra Fury Deduction Resistance(1-10)%"
+  }
+]

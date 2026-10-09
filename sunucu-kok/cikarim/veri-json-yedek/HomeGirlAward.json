@@ -1,0 +1,194 @@
+[
+  {
+    "id": "00000001",
+    "titleLevel": 0,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000002",
+    "titleLevel": 1,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000003",
+    "titleLevel": 2,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000004",
+    "titleLevel": 3,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000005",
+    "titleLevel": 4,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000006",
+    "titleLevel": 5,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000007",
+    "titleLevel": 6,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":5}]"
+  },
+  {
+    "id": "00000008",
+    "titleLevel": 7,
+    "interactiveType": 1,
+    "interactiveCost": "[{\"type\":0,\"code\":0,\"amount\":20000}]",
+    "interactiveGetScore": 2,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":6}]"
+  },
+  {
+    "id": "00000009",
+    "titleLevel": 0,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":23}]"
+  },
+  {
+    "id": "0000000A",
+    "titleLevel": 1,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":23}]"
+  },
+  {
+    "id": "0000000B",
+    "titleLevel": 2,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":23}]"
+  },
+  {
+    "id": "0000000C",
+    "titleLevel": 3,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":23}]"
+  },
+  {
+    "id": "0000000D",
+    "titleLevel": 4,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":24}]"
+  },
+  {
+    "id": "0000000E",
+    "titleLevel": 5,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":24}]"
+  },
+  {
+    "id": "0000000F",
+    "titleLevel": 6,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":25}]"
+  },
+  {
+    "id": "00000010",
+    "titleLevel": 7,
+    "interactiveType": 2,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":9}]",
+    "interactiveGetScore": 9,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":26}]"
+  },
+  {
+    "id": "00000011",
+    "titleLevel": 0,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":245}]"
+  },
+  {
+    "id": "00000012",
+    "titleLevel": 1,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":246}]"
+  },
+  {
+    "id": "00000013",
+    "titleLevel": 2,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":248}]"
+  },
+  {
+    "id": "00000014",
+    "titleLevel": 3,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":250}]"
+  },
+  {
+    "id": "00000015",
+    "titleLevel": 4,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":254}]"
+  },
+  {
+    "id": "00000016",
+    "titleLevel": 5,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":259}]"
+  },
+  {
+    "id": "00000017",
+    "titleLevel": 6,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":268}]"
+  },
+  {
+    "id": "00000018",
+    "titleLevel": 7,
+    "interactiveType": 3,
+    "interactiveCost": "[{\"type\":0,\"code\":1,\"amount\":99}]",
+    "interactiveGetScore": 99,
+    "interactiveAward": "[{\"type\":1,\"code\":14100074,\"amount\":280}]"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "000222E1",
+    "name": "OnlineGift",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "OnlineGift",
+    "tip": "1",
+    "price": 0,
+    "imageID": 140001,
+    "actAward": "[{\"key\":60,\"value\":[21401001]},{\"key\":180,\"value\":[21401002]},{\"key\":300,\"value\":[21401003]},{\"key\":480,\"value\":[21401004]},{\"key\":600,\"value\":[21401005]},{\"key\":1800,\"value\":[21401006]},{\"key\":3600,\"value\":[21401007]},{\"key\":7200,\"value\":[21401008]}]"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "000E30D1",
+    "name": " 金字塔",
+    "tName": " 金字塔",
+    "desc": "1. Top up 200 gold to win a draw chance. Player must top up multiple of 200 to win lottery chances.\n2. You can win items and points by conduct lottery draws. Regardless of the results, lottery chances will be consumed. You can use points to exchange rewards.\n3. When a player has won the item on the far left of each row, the next draw will be in the upper row.\n4. If a player has failed to do so, s/he will return to the bottom and start over.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 930001,
+    "smashFifty": "[{\"recharge\":1000,\"awardRate\":[[{\"rate\":40,\"awardId\":21403055},{\"rate\":15,\"awardId\":21403056},{\"rate\":15,\"awardId\":21403057},{\"rate\":15,\"awardId\":21403058},{\"rate\":15,\"awardId\":21403059}],[{\"rate\":0,\"awardId\":21403060},{\"rate\":30,\"awardId\":21403061},{\"rate\":40,\"awardId\":21403062},{\"rate\":40,\"awardId\":21403063}],[{\"rate\":0,\"awardId\":21403064},{\"rate\":90,\"awardId\":21403065},{\"rate\":10,\"awardId\":21403066}],[{\"rate\":0,\"awardId\":21403067},{\"rate\":100,\"awardId\":21403068}],[{\"rate\":100,\"awardId\":21403069}]]},{\"recharge\":10000,\"awardRate\":[[{\"rate\":60,\"awardId\":21403055},{\"rate\":10,\"awardId\":21403056},{\"rate\":10,\"awardId\":21403057},{\"rate\":10,\"awardId\":21403058},{\"rate\":10,\"awardId\":21403059}],[{\"rate\":20,\"awardId\":21403060},{\"rate\":25,\"awardId\":21403061},{\"rate\":25,\"awardId\":21403062},{\"rate\":30,\"awardId\":21403063}],[{\"rate\":0,\"awardId\":21403064},{\"rate\":50,\"awardId\":21403065},{\"rate\":50,\"awardId\":21403066}],[{\"rate\":0,\"awardId\":21403067},{\"rate\":100,\"awardId\":21403068}],[{\"rate\":100,\"awardId\":21403069}]]},{\"recharge\":28000,\"awardRate\":[[{\"rate\":80,\"awardId\":21403055},{\"rate\":5,\"awardId\":21403056},{\"rate\":5,\"awardId\":21403057},{\"rate\":5,\"awardId\":21403058},{\"rate\":5,\"awardId\":21403059}],[{\"rate\":25,\"awardId\":21403060},{\"rate\":25,\"awardId\":21403061},{\"rate\":25,\"awardId\":21403062},{\"rate\":25,\"awardId\":21403063}],[{\"rate\":10,\"awardId\":21403064},{\"rate\":45,\"awardId\":21403065},{\"rate\":45,\"awardId\":21403066}],[{\"rate\":0,\"awardId\":21403067},{\"rate\":100,\"awardId\":21403068}],[{\"rate\":100,\"awardId\":21403069}]]},{\"recharge\":40000,\"awardRate\":[[{\"rate\":100,\"awardId\":21403055},{\"rate\":0,\"awardId\":21403056},{\"rate\":0,\"awardId\":21403057},{\"rate\":0,\"awardId\":21403058},{\"rate\":0,\"awardId\":21403059}],[{\"rate\":50,\"awardId\":21403060},{\"rate\":20,\"awardId\":21403061},{\"rate\":15,\"awardId\":21403062},{\"rate\":15,\"awardId\":21403063}],[{\"rate\":10,\"awardId\":21403064},{\"rate\":45,\"awardId\":21403065},{\"rate\":45,\"awardId\":21403066}],[{\"rate\":1,\"awardId\":21403067},{\"rate\":99,\"awardId\":21403068}],[{\"rate\":100,\"awardId\":21403069}]]},{\"recharge\":1000000,\"awardRate\":[[{\"rate\":100,\"awardId\":21403055},{\"rate\":0,\"awardId\":21403056},{\"rate\":0,\"awardId\":21403057},{\"rate\":0,\"awardId\":21403058},{\"rate\":0,\"awardId\":21403059}],[{\"rate\":70,\"awardId\":21403060},{\"rate\":10,\"awardId\":21403061},{\"rate\":10,\"awardId\":21403062},{\"rate\":10,\"awardId\":21403063}],[{\"rate\":10,\"awardId\":21403064},{\"rate\":50,\"awardId\":21403065},{\"rate\":40,\"awardId\":21403066}],[{\"rate\":5,\"awardId\":21403067},{\"rate\":95,\"awardId\":21403068}],[{\"rate\":100,\"awardId\":21403069}]]}]",
+    "smashTen": 91,
+    "smashOne": 92,
+    "rechargeIndex": 93,
+    "extractIndex": "[{\"index\":30,\"awardId\":21405000,\"limit\":999,\"costScore\":80},{\"index\":31,\"awardId\":21405001,\"limit\":999,\"costScore\":50},{\"index\":39,\"awardId\":21405002,\"limit\":999,\"costScore\":1},{\"index\":32,\"awardId\":21405003,\"limit\":999,\"costScore\":10},{\"index\":33,\"awardId\":21405004,\"limit\":999,\"costScore\":10},{\"index\":34,\"awardId\":21405005,\"limit\":999,\"costScore\":10},{\"index\":35,\"awardId\":21405006,\"limit\":999,\"costScore\":10},{\"index\":36,\"awardId\":21405007,\"limit\":999,\"costScore\":1},{\"index\":37,\"awardId\":21405008,\"limit\":999,\"costScore\":1}]",
+    "scoreIndex": 94,
+    "positionIndex": 95,
+    "proportion": 96,
+    "f14": 97,
+    "f15": 200,
+    "f16": "[{\"awardId\":21405008,\"showID\":11150037,\"showType\":0,\"fightReportAddr\":\"\"}]"
+  }
+]

@@ -1,0 +1,9242 @@
+[
+  {
+    "id": "000003E8",
+    "itemid": 14840001,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000003E9",
+    "itemid": 14840001,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[50]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000003EA",
+    "itemid": 14840001,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000003EB",
+    "itemid": 14840001,
+    "level": 3,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000003EC",
+    "itemid": 14840001,
+    "level": 4,
+    "costItemCount": 1,
+    "costGold": "[250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000003ED",
+    "itemid": 14840001,
+    "level": 5,
+    "costItemCount": 2,
+    "costGold": "[350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D0",
+    "itemid": 14840002,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D1",
+    "itemid": 14840002,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[50]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D2",
+    "itemid": 14840002,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D3",
+    "itemid": 14840002,
+    "level": 3,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D4",
+    "itemid": 14840002,
+    "level": 4,
+    "costItemCount": 1,
+    "costGold": "[250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000007D5",
+    "itemid": 14840002,
+    "level": 5,
+    "costItemCount": 2,
+    "costGold": "[350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BB8",
+    "itemid": 14840003,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BB9",
+    "itemid": 14840003,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[50]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BBA",
+    "itemid": 14840003,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BBB",
+    "itemid": 14840003,
+    "level": 3,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BBC",
+    "itemid": 14840003,
+    "level": 4,
+    "costItemCount": 1,
+    "costGold": "[250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000BBD",
+    "itemid": 14840003,
+    "level": 5,
+    "costItemCount": 2,
+    "costGold": "[350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA0",
+    "itemid": 14840004,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA1",
+    "itemid": 14840004,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA2",
+    "itemid": 14840004,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA3",
+    "itemid": 14840004,
+    "level": 3,
+    "costItemCount": 1,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA4",
+    "itemid": 14840004,
+    "level": 4,
+    "costItemCount": 1,
+    "costGold": "[750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00000FA5",
+    "itemid": 14840004,
+    "level": 5,
+    "costItemCount": 2,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001388",
+    "itemid": 14840005,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001389",
+    "itemid": 14840005,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000138A",
+    "itemid": 14840005,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000138B",
+    "itemid": 14840005,
+    "level": 3,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000138C",
+    "itemid": 14840005,
+    "level": 4,
+    "costItemCount": 4,
+    "costGold": "[500]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000138D",
+    "itemid": 14840005,
+    "level": 5,
+    "costItemCount": 6,
+    "costGold": "[700]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000138E",
+    "itemid": 14840005,
+    "level": 6,
+    "costItemCount": 10,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001770",
+    "itemid": 14840006,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001771",
+    "itemid": 14840006,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001772",
+    "itemid": 14840006,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001773",
+    "itemid": 14840006,
+    "level": 3,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001774",
+    "itemid": 14840006,
+    "level": 4,
+    "costItemCount": 4,
+    "costGold": "[500]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001775",
+    "itemid": 14840006,
+    "level": 5,
+    "costItemCount": 6,
+    "costGold": "[700]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001776",
+    "itemid": 14840006,
+    "level": 6,
+    "costItemCount": 10,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B58",
+    "itemid": 14840007,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B59",
+    "itemid": 14840007,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[100]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B5A",
+    "itemid": 14840007,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B5B",
+    "itemid": 14840007,
+    "level": 3,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B5C",
+    "itemid": 14840007,
+    "level": 4,
+    "costItemCount": 4,
+    "costGold": "[500]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B5D",
+    "itemid": 14840007,
+    "level": 5,
+    "costItemCount": 6,
+    "costGold": "[700]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001B5E",
+    "itemid": 14840007,
+    "level": 6,
+    "costItemCount": 10,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F40",
+    "itemid": 14840008,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F41",
+    "itemid": 14840008,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[320]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F42",
+    "itemid": 14840008,
+    "level": 2,
+    "costItemCount": 1,
+    "costGold": "[640]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F43",
+    "itemid": 14840008,
+    "level": 3,
+    "costItemCount": 2,
+    "costGold": "[960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F44",
+    "itemid": 14840008,
+    "level": 4,
+    "costItemCount": 4,
+    "costGold": "[1600]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F45",
+    "itemid": 14840008,
+    "level": 5,
+    "costItemCount": 6,
+    "costGold": "[2240]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00001F46",
+    "itemid": 14840008,
+    "level": 6,
+    "costItemCount": 10,
+    "costGold": "[2880]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002328",
+    "itemid": 14840009,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002329",
+    "itemid": 14840009,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232A",
+    "itemid": 14840009,
+    "level": 2,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232B",
+    "itemid": 14840009,
+    "level": 3,
+    "costItemCount": 4,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232C",
+    "itemid": 14840009,
+    "level": 4,
+    "costItemCount": 10,
+    "costGold": "[750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232D",
+    "itemid": 14840009,
+    "level": 5,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232E",
+    "itemid": 14840009,
+    "level": 6,
+    "costItemCount": 20,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000232F",
+    "itemid": 14840009,
+    "level": 7,
+    "costItemCount": 25,
+    "costGold": "[1650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002330",
+    "itemid": 14840009,
+    "level": 8,
+    "costItemCount": 30,
+    "costGold": "[1950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002710",
+    "itemid": 14840010,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002711",
+    "itemid": 14840010,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002712",
+    "itemid": 14840010,
+    "level": 2,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002713",
+    "itemid": 14840010,
+    "level": 3,
+    "costItemCount": 4,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002714",
+    "itemid": 14840010,
+    "level": 4,
+    "costItemCount": 10,
+    "costGold": "[750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002715",
+    "itemid": 14840010,
+    "level": 5,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002716",
+    "itemid": 14840010,
+    "level": 6,
+    "costItemCount": 20,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002717",
+    "itemid": 14840010,
+    "level": 7,
+    "costItemCount": 25,
+    "costGold": "[1650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002718",
+    "itemid": 14840010,
+    "level": 8,
+    "costItemCount": 30,
+    "costGold": "[1950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AF8",
+    "itemid": 14840011,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AF9",
+    "itemid": 14840011,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFA",
+    "itemid": 14840011,
+    "level": 2,
+    "costItemCount": 2,
+    "costGold": "[300]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFB",
+    "itemid": 14840011,
+    "level": 3,
+    "costItemCount": 4,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFC",
+    "itemid": 14840011,
+    "level": 4,
+    "costItemCount": 10,
+    "costGold": "[750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFD",
+    "itemid": 14840011,
+    "level": 5,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFE",
+    "itemid": 14840011,
+    "level": 6,
+    "costItemCount": 20,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002AFF",
+    "itemid": 14840011,
+    "level": 7,
+    "costItemCount": 25,
+    "costGold": "[1650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002B00",
+    "itemid": 14840011,
+    "level": 8,
+    "costItemCount": 30,
+    "costGold": "[1950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE0",
+    "itemid": 14840012,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE1",
+    "itemid": 14840012,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[510]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE2",
+    "itemid": 14840012,
+    "level": 2,
+    "costItemCount": 2,
+    "costGold": "[1020]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE3",
+    "itemid": 14840012,
+    "level": 3,
+    "costItemCount": 4,
+    "costGold": "[1530]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE4",
+    "itemid": 14840012,
+    "level": 4,
+    "costItemCount": 10,
+    "costGold": "[2550]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE5",
+    "itemid": 14840012,
+    "level": 5,
+    "costItemCount": 15,
+    "costGold": "[3570]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE6",
+    "itemid": 14840012,
+    "level": 6,
+    "costItemCount": 20,
+    "costGold": "[4590]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE7",
+    "itemid": 14840012,
+    "level": 7,
+    "costItemCount": 25,
+    "costGold": "[5610]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00002EE8",
+    "itemid": 14840012,
+    "level": 8,
+    "costItemCount": 30,
+    "costGold": "[6630]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032C8",
+    "itemid": 14840013,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032C9",
+    "itemid": 14840013,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[210]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CA",
+    "itemid": 14840013,
+    "level": 2,
+    "costItemCount": 3,
+    "costGold": "[420]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CB",
+    "itemid": 14840013,
+    "level": 3,
+    "costItemCount": 6,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CC",
+    "itemid": 14840013,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CD",
+    "itemid": 14840013,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1470]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CE",
+    "itemid": 14840013,
+    "level": 6,
+    "costItemCount": 24,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032CF",
+    "itemid": 14840013,
+    "level": 7,
+    "costItemCount": 28,
+    "costGold": "[2310]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032D0",
+    "itemid": 14840013,
+    "level": 8,
+    "costItemCount": 32,
+    "costGold": "[2730]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000032D1",
+    "itemid": 14840013,
+    "level": 9,
+    "costItemCount": 36,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B0",
+    "itemid": 14840014,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B1",
+    "itemid": 14840014,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[210]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B2",
+    "itemid": 14840014,
+    "level": 2,
+    "costItemCount": 3,
+    "costGold": "[420]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B3",
+    "itemid": 14840014,
+    "level": 3,
+    "costItemCount": 6,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B4",
+    "itemid": 14840014,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B5",
+    "itemid": 14840014,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1470]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B6",
+    "itemid": 14840014,
+    "level": 6,
+    "costItemCount": 24,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B7",
+    "itemid": 14840014,
+    "level": 7,
+    "costItemCount": 28,
+    "costGold": "[2310]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B8",
+    "itemid": 14840014,
+    "level": 8,
+    "costItemCount": 32,
+    "costGold": "[2730]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000036B9",
+    "itemid": 14840014,
+    "level": 9,
+    "costItemCount": 36,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A98",
+    "itemid": 14840015,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A99",
+    "itemid": 14840015,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[210]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9A",
+    "itemid": 14840015,
+    "level": 2,
+    "costItemCount": 3,
+    "costGold": "[420]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9B",
+    "itemid": 14840015,
+    "level": 3,
+    "costItemCount": 6,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9C",
+    "itemid": 14840015,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9D",
+    "itemid": 14840015,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1470]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9E",
+    "itemid": 14840015,
+    "level": 6,
+    "costItemCount": 24,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003A9F",
+    "itemid": 14840015,
+    "level": 7,
+    "costItemCount": 28,
+    "costGold": "[2310]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003AA0",
+    "itemid": 14840015,
+    "level": 8,
+    "costItemCount": 32,
+    "costGold": "[2730]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003AA1",
+    "itemid": 14840015,
+    "level": 9,
+    "costItemCount": 36,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E80",
+    "itemid": 14840016,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E81",
+    "itemid": 14840016,
+    "level": 1,
+    "costItemCount": 1,
+    "costGold": "[756]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E82",
+    "itemid": 14840016,
+    "level": 2,
+    "costItemCount": 3,
+    "costGold": "[1512]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E83",
+    "itemid": 14840016,
+    "level": 3,
+    "costItemCount": 6,
+    "costGold": "[2268]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E84",
+    "itemid": 14840016,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E85",
+    "itemid": 14840016,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[5292]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E86",
+    "itemid": 14840016,
+    "level": 6,
+    "costItemCount": 24,
+    "costGold": "[6804]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E87",
+    "itemid": 14840016,
+    "level": 7,
+    "costItemCount": 28,
+    "costGold": "[8316]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E88",
+    "itemid": 14840016,
+    "level": 8,
+    "costItemCount": 32,
+    "costGold": "[9828]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00003E89",
+    "itemid": 14840016,
+    "level": 9,
+    "costItemCount": 36,
+    "costGold": "[11340]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004268",
+    "itemid": 14840017,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004269",
+    "itemid": 14840017,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[280]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426A",
+    "itemid": 14840017,
+    "level": 2,
+    "costItemCount": 4,
+    "costGold": "[560]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426B",
+    "itemid": 14840017,
+    "level": 3,
+    "costItemCount": 7,
+    "costGold": "[840]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426C",
+    "itemid": 14840017,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426D",
+    "itemid": 14840017,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426E",
+    "itemid": 14840017,
+    "level": 6,
+    "costItemCount": 25,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000426F",
+    "itemid": 14840017,
+    "level": 7,
+    "costItemCount": 30,
+    "costGold": "[3080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004270",
+    "itemid": 14840017,
+    "level": 8,
+    "costItemCount": 35,
+    "costGold": "[3640]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004271",
+    "itemid": 14840017,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[4200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004272",
+    "itemid": 14840017,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[4760]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004650",
+    "itemid": 14840018,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004651",
+    "itemid": 14840018,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[280]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004652",
+    "itemid": 14840018,
+    "level": 2,
+    "costItemCount": 4,
+    "costGold": "[560]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004653",
+    "itemid": 14840018,
+    "level": 3,
+    "costItemCount": 7,
+    "costGold": "[840]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004654",
+    "itemid": 14840018,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004655",
+    "itemid": 14840018,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004656",
+    "itemid": 14840018,
+    "level": 6,
+    "costItemCount": 25,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004657",
+    "itemid": 14840018,
+    "level": 7,
+    "costItemCount": 30,
+    "costGold": "[3080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004658",
+    "itemid": 14840018,
+    "level": 8,
+    "costItemCount": 35,
+    "costGold": "[3640]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004659",
+    "itemid": 14840018,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[4200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000465A",
+    "itemid": 14840018,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[4760]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A38",
+    "itemid": 14840019,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A39",
+    "itemid": 14840019,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[280]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3A",
+    "itemid": 14840019,
+    "level": 2,
+    "costItemCount": 4,
+    "costGold": "[560]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3B",
+    "itemid": 14840019,
+    "level": 3,
+    "costItemCount": 7,
+    "costGold": "[840]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3C",
+    "itemid": 14840019,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[1400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3D",
+    "itemid": 14840019,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[1960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3E",
+    "itemid": 14840019,
+    "level": 6,
+    "costItemCount": 25,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A3F",
+    "itemid": 14840019,
+    "level": 7,
+    "costItemCount": 30,
+    "costGold": "[3080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A40",
+    "itemid": 14840019,
+    "level": 8,
+    "costItemCount": 35,
+    "costGold": "[3640]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A41",
+    "itemid": 14840019,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[4200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004A42",
+    "itemid": 14840019,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[4760]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E20",
+    "itemid": 14840020,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E21",
+    "itemid": 14840020,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[1064]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E22",
+    "itemid": 14840020,
+    "level": 2,
+    "costItemCount": 4,
+    "costGold": "[2128]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E23",
+    "itemid": 14840020,
+    "level": 3,
+    "costItemCount": 7,
+    "costGold": "[3192]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E24",
+    "itemid": 14840020,
+    "level": 4,
+    "costItemCount": 15,
+    "costGold": "[5320]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E25",
+    "itemid": 14840020,
+    "level": 5,
+    "costItemCount": 20,
+    "costGold": "[7448]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E26",
+    "itemid": 14840020,
+    "level": 6,
+    "costItemCount": 25,
+    "costGold": "[9576]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E27",
+    "itemid": 14840020,
+    "level": 7,
+    "costItemCount": 30,
+    "costGold": "[11704]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E28",
+    "itemid": 14840020,
+    "level": 8,
+    "costItemCount": 35,
+    "costGold": "[13832]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E29",
+    "itemid": 14840020,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[15960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00004E2A",
+    "itemid": 14840020,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[18088]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005208",
+    "itemid": 14840021,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005209",
+    "itemid": 14840021,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[360]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520A",
+    "itemid": 14840021,
+    "level": 2,
+    "costItemCount": 5,
+    "costGold": "[720]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520B",
+    "itemid": 14840021,
+    "level": 3,
+    "costItemCount": 8,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520C",
+    "itemid": 14840021,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[1800]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520D",
+    "itemid": 14840021,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520E",
+    "itemid": 14840021,
+    "level": 6,
+    "costItemCount": 28,
+    "costGold": "[3240]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000520F",
+    "itemid": 14840021,
+    "level": 7,
+    "costItemCount": 32,
+    "costGold": "[3960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005210",
+    "itemid": 14840021,
+    "level": 8,
+    "costItemCount": 36,
+    "costGold": "[4680]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005211",
+    "itemid": 14840021,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[5400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005212",
+    "itemid": 14840021,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[6120]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F0",
+    "itemid": 14840022,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F1",
+    "itemid": 14840022,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[360]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F2",
+    "itemid": 14840022,
+    "level": 2,
+    "costItemCount": 5,
+    "costGold": "[720]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F3",
+    "itemid": 14840022,
+    "level": 3,
+    "costItemCount": 8,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F4",
+    "itemid": 14840022,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[1800]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F5",
+    "itemid": 14840022,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F6",
+    "itemid": 14840022,
+    "level": 6,
+    "costItemCount": 28,
+    "costGold": "[3240]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F7",
+    "itemid": 14840022,
+    "level": 7,
+    "costItemCount": 32,
+    "costGold": "[3960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F8",
+    "itemid": 14840022,
+    "level": 8,
+    "costItemCount": 36,
+    "costGold": "[4680]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055F9",
+    "itemid": 14840022,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[5400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000055FA",
+    "itemid": 14840022,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[6120]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059D8",
+    "itemid": 14840023,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059D9",
+    "itemid": 14840023,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[360]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DA",
+    "itemid": 14840023,
+    "level": 2,
+    "costItemCount": 5,
+    "costGold": "[720]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DB",
+    "itemid": 14840023,
+    "level": 3,
+    "costItemCount": 8,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DC",
+    "itemid": 14840023,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[1800]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DD",
+    "itemid": 14840023,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[2520]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DE",
+    "itemid": 14840023,
+    "level": 6,
+    "costItemCount": 28,
+    "costGold": "[3240]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059DF",
+    "itemid": 14840023,
+    "level": 7,
+    "costItemCount": 32,
+    "costGold": "[3960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059E0",
+    "itemid": 14840023,
+    "level": 8,
+    "costItemCount": 36,
+    "costGold": "[4680]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059E1",
+    "itemid": 14840023,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[5400]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000059E2",
+    "itemid": 14840023,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[6120]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC0",
+    "itemid": 14840024,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC1",
+    "itemid": 14840024,
+    "level": 1,
+    "costItemCount": 2,
+    "costGold": "[1440]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC2",
+    "itemid": 14840024,
+    "level": 2,
+    "costItemCount": 5,
+    "costGold": "[2880]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC3",
+    "itemid": 14840024,
+    "level": 3,
+    "costItemCount": 8,
+    "costGold": "[4320]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC4",
+    "itemid": 14840024,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[7200]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC5",
+    "itemid": 14840024,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[10080]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC6",
+    "itemid": 14840024,
+    "level": 6,
+    "costItemCount": 28,
+    "costGold": "[12960]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC7",
+    "itemid": 14840024,
+    "level": 7,
+    "costItemCount": 32,
+    "costGold": "[15840]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC8",
+    "itemid": 14840024,
+    "level": 8,
+    "costItemCount": 36,
+    "costGold": "[18720]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DC9",
+    "itemid": 14840024,
+    "level": 9,
+    "costItemCount": 40,
+    "costGold": "[21600]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00005DCA",
+    "itemid": 14840024,
+    "level": 10,
+    "costItemCount": 50,
+    "costGold": "[24480]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061A8",
+    "itemid": 14840025,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061A9",
+    "itemid": 14840025,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AA",
+    "itemid": 14840025,
+    "level": 2,
+    "costItemCount": 6,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AB",
+    "itemid": 14840025,
+    "level": 3,
+    "costItemCount": 10,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AC",
+    "itemid": 14840025,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[2250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AD",
+    "itemid": 14840025,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AE",
+    "itemid": 14840025,
+    "level": 6,
+    "costItemCount": 30,
+    "costGold": "[4050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061AF",
+    "itemid": 14840025,
+    "level": 7,
+    "costItemCount": 36,
+    "costGold": "[4950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061B0",
+    "itemid": 14840025,
+    "level": 8,
+    "costItemCount": 42,
+    "costGold": "[5850]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061B1",
+    "itemid": 14840025,
+    "level": 9,
+    "costItemCount": 50,
+    "costGold": "[6750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "000061B2",
+    "itemid": 14840025,
+    "level": 10,
+    "costItemCount": 60,
+    "costGold": "[7650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006590",
+    "itemid": 14840026,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006591",
+    "itemid": 14840026,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006592",
+    "itemid": 14840026,
+    "level": 2,
+    "costItemCount": 6,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006593",
+    "itemid": 14840026,
+    "level": 3,
+    "costItemCount": 10,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006594",
+    "itemid": 14840026,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[2250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006595",
+    "itemid": 14840026,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006596",
+    "itemid": 14840026,
+    "level": 6,
+    "costItemCount": 30,
+    "costGold": "[4050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006597",
+    "itemid": 14840026,
+    "level": 7,
+    "costItemCount": 36,
+    "costGold": "[4950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006598",
+    "itemid": 14840026,
+    "level": 8,
+    "costItemCount": 42,
+    "costGold": "[5850]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006599",
+    "itemid": 14840026,
+    "level": 9,
+    "costItemCount": 50,
+    "costGold": "[6750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000659A",
+    "itemid": 14840026,
+    "level": 10,
+    "costItemCount": 60,
+    "costGold": "[7650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006978",
+    "itemid": 14840027,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006979",
+    "itemid": 14840027,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697A",
+    "itemid": 14840027,
+    "level": 2,
+    "costItemCount": 6,
+    "costGold": "[900]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697B",
+    "itemid": 14840027,
+    "level": 3,
+    "costItemCount": 10,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697C",
+    "itemid": 14840027,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[2250]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697D",
+    "itemid": 14840027,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697E",
+    "itemid": 14840027,
+    "level": 6,
+    "costItemCount": 30,
+    "costGold": "[4050]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000697F",
+    "itemid": 14840027,
+    "level": 7,
+    "costItemCount": 36,
+    "costGold": "[4950]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006980",
+    "itemid": 14840027,
+    "level": 8,
+    "costItemCount": 42,
+    "costGold": "[5850]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006981",
+    "itemid": 14840027,
+    "level": 9,
+    "costItemCount": 50,
+    "costGold": "[6750]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006982",
+    "itemid": 14840027,
+    "level": 10,
+    "costItemCount": 60,
+    "costGold": "[7650]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D60",
+    "itemid": 14840028,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D61",
+    "itemid": 14840028,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D62",
+    "itemid": 14840028,
+    "level": 2,
+    "costItemCount": 6,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D63",
+    "itemid": 14840028,
+    "level": 3,
+    "costItemCount": 10,
+    "costGold": "[5670]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D64",
+    "itemid": 14840028,
+    "level": 4,
+    "costItemCount": 18,
+    "costGold": "[9450]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D65",
+    "itemid": 14840028,
+    "level": 5,
+    "costItemCount": 24,
+    "costGold": "[13230]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D66",
+    "itemid": 14840028,
+    "level": 6,
+    "costItemCount": 30,
+    "costGold": "[17010]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D67",
+    "itemid": 14840028,
+    "level": 7,
+    "costItemCount": 36,
+    "costGold": "[20790]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D68",
+    "itemid": 14840028,
+    "level": 8,
+    "costItemCount": 42,
+    "costGold": "[24570]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D69",
+    "itemid": 14840028,
+    "level": 9,
+    "costItemCount": 50,
+    "costGold": "[28350]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00006D6A",
+    "itemid": 14840028,
+    "level": 10,
+    "costItemCount": 60,
+    "costGold": "[32130]",
+    "productCount": 100,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "00007148",
+    "itemid": 14840029,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 200,
+    "f6": 0
+  },
+  {
+    "id": "00007149",
+    "itemid": 14840029,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[540]",
+    "productCount": 100,
+    "costStoneCount": 230,
+    "f6": 0
+  },
+  {
+    "id": "0000714A",
+    "itemid": 14840029,
+    "level": 2,
+    "costItemCount": 7,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "0000714B",
+    "itemid": 14840029,
+    "level": 3,
+    "costItemCount": 12,
+    "costGold": "[1620]",
+    "productCount": 100,
+    "costStoneCount": 420,
+    "f6": 0
+  },
+  {
+    "id": "0000714C",
+    "itemid": 14840029,
+    "level": 4,
+    "costItemCount": 20,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 620,
+    "f6": 0
+  },
+  {
+    "id": "0000714D",
+    "itemid": 14840029,
+    "level": 5,
+    "costItemCount": 26,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 880,
+    "f6": 0
+  },
+  {
+    "id": "0000714E",
+    "itemid": 14840029,
+    "level": 6,
+    "costItemCount": 32,
+    "costGold": "[4860]",
+    "productCount": 100,
+    "costStoneCount": 1200,
+    "f6": 0
+  },
+  {
+    "id": "0000714F",
+    "itemid": 14840029,
+    "level": 7,
+    "costItemCount": 40,
+    "costGold": "[5940]",
+    "productCount": 100,
+    "costStoneCount": 1600,
+    "f6": 0
+  },
+  {
+    "id": "00007150",
+    "itemid": 14840029,
+    "level": 8,
+    "costItemCount": 46,
+    "costGold": "[7020]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "00007151",
+    "itemid": 14840029,
+    "level": 9,
+    "costItemCount": 54,
+    "costGold": "[8100]",
+    "productCount": 100,
+    "costStoneCount": 2600,
+    "f6": 0
+  },
+  {
+    "id": "00007152",
+    "itemid": 14840029,
+    "level": 10,
+    "costItemCount": 68,
+    "costGold": "[9180]",
+    "productCount": 100,
+    "costStoneCount": 3280,
+    "f6": 0
+  },
+  {
+    "id": "00007530",
+    "itemid": 14840030,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 200,
+    "f6": 0
+  },
+  {
+    "id": "00007531",
+    "itemid": 14840030,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[540]",
+    "productCount": 100,
+    "costStoneCount": 230,
+    "f6": 0
+  },
+  {
+    "id": "00007532",
+    "itemid": 14840030,
+    "level": 2,
+    "costItemCount": 7,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "00007533",
+    "itemid": 14840030,
+    "level": 3,
+    "costItemCount": 12,
+    "costGold": "[1620]",
+    "productCount": 100,
+    "costStoneCount": 420,
+    "f6": 0
+  },
+  {
+    "id": "00007534",
+    "itemid": 14840030,
+    "level": 4,
+    "costItemCount": 20,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 620,
+    "f6": 0
+  },
+  {
+    "id": "00007535",
+    "itemid": 14840030,
+    "level": 5,
+    "costItemCount": 26,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 880,
+    "f6": 0
+  },
+  {
+    "id": "00007536",
+    "itemid": 14840030,
+    "level": 6,
+    "costItemCount": 32,
+    "costGold": "[4860]",
+    "productCount": 100,
+    "costStoneCount": 1200,
+    "f6": 0
+  },
+  {
+    "id": "00007537",
+    "itemid": 14840030,
+    "level": 7,
+    "costItemCount": 40,
+    "costGold": "[5940]",
+    "productCount": 100,
+    "costStoneCount": 1600,
+    "f6": 0
+  },
+  {
+    "id": "00007538",
+    "itemid": 14840030,
+    "level": 8,
+    "costItemCount": 46,
+    "costGold": "[7020]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "00007539",
+    "itemid": 14840030,
+    "level": 9,
+    "costItemCount": 54,
+    "costGold": "[8100]",
+    "productCount": 100,
+    "costStoneCount": 2600,
+    "f6": 0
+  },
+  {
+    "id": "0000753A",
+    "itemid": 14840030,
+    "level": 10,
+    "costItemCount": 68,
+    "costGold": "[9180]",
+    "productCount": 100,
+    "costStoneCount": 3280,
+    "f6": 0
+  },
+  {
+    "id": "00007918",
+    "itemid": 14840031,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 200,
+    "f6": 0
+  },
+  {
+    "id": "00007919",
+    "itemid": 14840031,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[540]",
+    "productCount": 100,
+    "costStoneCount": 230,
+    "f6": 0
+  },
+  {
+    "id": "0000791A",
+    "itemid": 14840031,
+    "level": 2,
+    "costItemCount": 7,
+    "costGold": "[1080]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "0000791B",
+    "itemid": 14840031,
+    "level": 3,
+    "costItemCount": 12,
+    "costGold": "[1620]",
+    "productCount": 100,
+    "costStoneCount": 420,
+    "f6": 0
+  },
+  {
+    "id": "0000791C",
+    "itemid": 14840031,
+    "level": 4,
+    "costItemCount": 20,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 620,
+    "f6": 0
+  },
+  {
+    "id": "0000791D",
+    "itemid": 14840031,
+    "level": 5,
+    "costItemCount": 26,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 880,
+    "f6": 0
+  },
+  {
+    "id": "0000791E",
+    "itemid": 14840031,
+    "level": 6,
+    "costItemCount": 32,
+    "costGold": "[4860]",
+    "productCount": 100,
+    "costStoneCount": 1200,
+    "f6": 0
+  },
+  {
+    "id": "0000791F",
+    "itemid": 14840031,
+    "level": 7,
+    "costItemCount": 40,
+    "costGold": "[5940]",
+    "productCount": 100,
+    "costStoneCount": 1600,
+    "f6": 0
+  },
+  {
+    "id": "00007920",
+    "itemid": 14840031,
+    "level": 8,
+    "costItemCount": 46,
+    "costGold": "[7020]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "00007921",
+    "itemid": 14840031,
+    "level": 9,
+    "costItemCount": 54,
+    "costGold": "[8100]",
+    "productCount": 100,
+    "costStoneCount": 2600,
+    "f6": 0
+  },
+  {
+    "id": "00007922",
+    "itemid": 14840031,
+    "level": 10,
+    "costItemCount": 68,
+    "costGold": "[9180]",
+    "productCount": 100,
+    "costStoneCount": 3280,
+    "f6": 0
+  },
+  {
+    "id": "00007D00",
+    "itemid": 14840032,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 200,
+    "f6": 0
+  },
+  {
+    "id": "00007D01",
+    "itemid": 14840032,
+    "level": 1,
+    "costItemCount": 3,
+    "costGold": "[2340]",
+    "productCount": 100,
+    "costStoneCount": 230,
+    "f6": 0
+  },
+  {
+    "id": "00007D02",
+    "itemid": 14840032,
+    "level": 2,
+    "costItemCount": 7,
+    "costGold": "[4680]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "00007D03",
+    "itemid": 14840032,
+    "level": 3,
+    "costItemCount": 12,
+    "costGold": "[7020]",
+    "productCount": 100,
+    "costStoneCount": 420,
+    "f6": 0
+  },
+  {
+    "id": "00007D04",
+    "itemid": 14840032,
+    "level": 4,
+    "costItemCount": 20,
+    "costGold": "[11700]",
+    "productCount": 100,
+    "costStoneCount": 620,
+    "f6": 0
+  },
+  {
+    "id": "00007D05",
+    "itemid": 14840032,
+    "level": 5,
+    "costItemCount": 26,
+    "costGold": "[16380]",
+    "productCount": 100,
+    "costStoneCount": 880,
+    "f6": 0
+  },
+  {
+    "id": "00007D06",
+    "itemid": 14840032,
+    "level": 6,
+    "costItemCount": 32,
+    "costGold": "[21060]",
+    "productCount": 100,
+    "costStoneCount": 1200,
+    "f6": 0
+  },
+  {
+    "id": "00007D07",
+    "itemid": 14840032,
+    "level": 7,
+    "costItemCount": 40,
+    "costGold": "[25740]",
+    "productCount": 100,
+    "costStoneCount": 1600,
+    "f6": 0
+  },
+  {
+    "id": "00007D08",
+    "itemid": 14840032,
+    "level": 8,
+    "costItemCount": 46,
+    "costGold": "[30420]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "00007D09",
+    "itemid": 14840032,
+    "level": 9,
+    "costItemCount": 54,
+    "costGold": "[35100]",
+    "productCount": 100,
+    "costStoneCount": 2600,
+    "f6": 0
+  },
+  {
+    "id": "00007D0A",
+    "itemid": 14840032,
+    "level": 10,
+    "costItemCount": 68,
+    "costGold": "[39780]",
+    "productCount": 100,
+    "costStoneCount": 3280,
+    "f6": 0
+  },
+  {
+    "id": "000080E8",
+    "itemid": 14840033,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "000080E9",
+    "itemid": 14840033,
+    "level": 1,
+    "costItemCount": 5,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 350,
+    "f6": 0
+  },
+  {
+    "id": "000080EA",
+    "itemid": 14840033,
+    "level": 2,
+    "costItemCount": 9,
+    "costGold": "[1260]",
+    "productCount": 100,
+    "costStoneCount": 440,
+    "f6": 0
+  },
+  {
+    "id": "000080EB",
+    "itemid": 14840033,
+    "level": 3,
+    "costItemCount": 15,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 590,
+    "f6": 0
+  },
+  {
+    "id": "000080EC",
+    "itemid": 14840033,
+    "level": 4,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 830,
+    "f6": 0
+  },
+  {
+    "id": "000080ED",
+    "itemid": 14840033,
+    "level": 5,
+    "costItemCount": 29,
+    "costGold": "[4410]",
+    "productCount": 100,
+    "costStoneCount": 1120,
+    "f6": 0
+  },
+  {
+    "id": "000080EE",
+    "itemid": 14840033,
+    "level": 6,
+    "costItemCount": 35,
+    "costGold": "[5670]",
+    "productCount": 100,
+    "costStoneCount": 1470,
+    "f6": 0
+  },
+  {
+    "id": "000080EF",
+    "itemid": 14840033,
+    "level": 7,
+    "costItemCount": 44,
+    "costGold": "[6930]",
+    "productCount": 100,
+    "costStoneCount": 1910,
+    "f6": 0
+  },
+  {
+    "id": "000080F0",
+    "itemid": 14840033,
+    "level": 8,
+    "costItemCount": 49,
+    "costGold": "[8190]",
+    "productCount": 100,
+    "costStoneCount": 2400,
+    "f6": 0
+  },
+  {
+    "id": "000080F1",
+    "itemid": 14840033,
+    "level": 9,
+    "costItemCount": 58,
+    "costGold": "[9450]",
+    "productCount": 100,
+    "costStoneCount": 2980,
+    "f6": 0
+  },
+  {
+    "id": "000080F2",
+    "itemid": 14840033,
+    "level": 10,
+    "costItemCount": 75,
+    "costGold": "[10710]",
+    "productCount": 100,
+    "costStoneCount": 3730,
+    "f6": 0
+  },
+  {
+    "id": "000084D0",
+    "itemid": 14840034,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "000084D1",
+    "itemid": 14840034,
+    "level": 1,
+    "costItemCount": 5,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 350,
+    "f6": 0
+  },
+  {
+    "id": "000084D2",
+    "itemid": 14840034,
+    "level": 2,
+    "costItemCount": 9,
+    "costGold": "[1260]",
+    "productCount": 100,
+    "costStoneCount": 440,
+    "f6": 0
+  },
+  {
+    "id": "000084D3",
+    "itemid": 14840034,
+    "level": 3,
+    "costItemCount": 15,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 590,
+    "f6": 0
+  },
+  {
+    "id": "000084D4",
+    "itemid": 14840034,
+    "level": 4,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 830,
+    "f6": 0
+  },
+  {
+    "id": "000084D5",
+    "itemid": 14840034,
+    "level": 5,
+    "costItemCount": 29,
+    "costGold": "[4410]",
+    "productCount": 100,
+    "costStoneCount": 1120,
+    "f6": 0
+  },
+  {
+    "id": "000084D6",
+    "itemid": 14840034,
+    "level": 6,
+    "costItemCount": 35,
+    "costGold": "[5670]",
+    "productCount": 100,
+    "costStoneCount": 1470,
+    "f6": 0
+  },
+  {
+    "id": "000084D7",
+    "itemid": 14840034,
+    "level": 7,
+    "costItemCount": 44,
+    "costGold": "[6930]",
+    "productCount": 100,
+    "costStoneCount": 1910,
+    "f6": 0
+  },
+  {
+    "id": "000084D8",
+    "itemid": 14840034,
+    "level": 8,
+    "costItemCount": 49,
+    "costGold": "[8190]",
+    "productCount": 100,
+    "costStoneCount": 2400,
+    "f6": 0
+  },
+  {
+    "id": "000084D9",
+    "itemid": 14840034,
+    "level": 9,
+    "costItemCount": 58,
+    "costGold": "[9450]",
+    "productCount": 100,
+    "costStoneCount": 2980,
+    "f6": 0
+  },
+  {
+    "id": "000084DA",
+    "itemid": 14840034,
+    "level": 10,
+    "costItemCount": 75,
+    "costGold": "[10710]",
+    "productCount": 100,
+    "costStoneCount": 3730,
+    "f6": 0
+  },
+  {
+    "id": "000088B8",
+    "itemid": 14840035,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "000088B9",
+    "itemid": 14840035,
+    "level": 1,
+    "costItemCount": 5,
+    "costGold": "[630]",
+    "productCount": 100,
+    "costStoneCount": 350,
+    "f6": 0
+  },
+  {
+    "id": "000088BA",
+    "itemid": 14840035,
+    "level": 2,
+    "costItemCount": 9,
+    "costGold": "[1260]",
+    "productCount": 100,
+    "costStoneCount": 440,
+    "f6": 0
+  },
+  {
+    "id": "000088BB",
+    "itemid": 14840035,
+    "level": 3,
+    "costItemCount": 15,
+    "costGold": "[1890]",
+    "productCount": 100,
+    "costStoneCount": 590,
+    "f6": 0
+  },
+  {
+    "id": "000088BC",
+    "itemid": 14840035,
+    "level": 4,
+    "costItemCount": 24,
+    "costGold": "[3150]",
+    "productCount": 100,
+    "costStoneCount": 830,
+    "f6": 0
+  },
+  {
+    "id": "000088BD",
+    "itemid": 14840035,
+    "level": 5,
+    "costItemCount": 29,
+    "costGold": "[4410]",
+    "productCount": 100,
+    "costStoneCount": 1120,
+    "f6": 0
+  },
+  {
+    "id": "000088BE",
+    "itemid": 14840035,
+    "level": 6,
+    "costItemCount": 35,
+    "costGold": "[5670]",
+    "productCount": 100,
+    "costStoneCount": 1470,
+    "f6": 0
+  },
+  {
+    "id": "000088BF",
+    "itemid": 14840035,
+    "level": 7,
+    "costItemCount": 44,
+    "costGold": "[6930]",
+    "productCount": 100,
+    "costStoneCount": 1910,
+    "f6": 0
+  },
+  {
+    "id": "000088C0",
+    "itemid": 14840035,
+    "level": 8,
+    "costItemCount": 49,
+    "costGold": "[8190]",
+    "productCount": 100,
+    "costStoneCount": 2400,
+    "f6": 0
+  },
+  {
+    "id": "000088C1",
+    "itemid": 14840035,
+    "level": 9,
+    "costItemCount": 58,
+    "costGold": "[9450]",
+    "productCount": 100,
+    "costStoneCount": 2980,
+    "f6": 0
+  },
+  {
+    "id": "000088C2",
+    "itemid": 14840035,
+    "level": 10,
+    "costItemCount": 75,
+    "costGold": "[10710]",
+    "productCount": 100,
+    "costStoneCount": 3730,
+    "f6": 0
+  },
+  {
+    "id": "00008CA0",
+    "itemid": 14840036,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 300,
+    "f6": 0
+  },
+  {
+    "id": "00008CA1",
+    "itemid": 14840036,
+    "level": 1,
+    "costItemCount": 5,
+    "costGold": "[2790]",
+    "productCount": 100,
+    "costStoneCount": 350,
+    "f6": 0
+  },
+  {
+    "id": "00008CA2",
+    "itemid": 14840036,
+    "level": 2,
+    "costItemCount": 9,
+    "costGold": "[5580]",
+    "productCount": 100,
+    "costStoneCount": 440,
+    "f6": 0
+  },
+  {
+    "id": "00008CA3",
+    "itemid": 14840036,
+    "level": 3,
+    "costItemCount": 15,
+    "costGold": "[8370]",
+    "productCount": 100,
+    "costStoneCount": 590,
+    "f6": 0
+  },
+  {
+    "id": "00008CA4",
+    "itemid": 14840036,
+    "level": 4,
+    "costItemCount": 24,
+    "costGold": "[13950]",
+    "productCount": 100,
+    "costStoneCount": 830,
+    "f6": 0
+  },
+  {
+    "id": "00008CA5",
+    "itemid": 14840036,
+    "level": 5,
+    "costItemCount": 29,
+    "costGold": "[19530]",
+    "productCount": 100,
+    "costStoneCount": 1120,
+    "f6": 0
+  },
+  {
+    "id": "00008CA6",
+    "itemid": 14840036,
+    "level": 6,
+    "costItemCount": 35,
+    "costGold": "[25110]",
+    "productCount": 100,
+    "costStoneCount": 1470,
+    "f6": 0
+  },
+  {
+    "id": "00008CA7",
+    "itemid": 14840036,
+    "level": 7,
+    "costItemCount": 44,
+    "costGold": "[30690]",
+    "productCount": 100,
+    "costStoneCount": 1910,
+    "f6": 0
+  },
+  {
+    "id": "00008CA8",
+    "itemid": 14840036,
+    "level": 8,
+    "costItemCount": 49,
+    "costGold": "[36270]",
+    "productCount": 100,
+    "costStoneCount": 2400,
+    "f6": 0
+  },
+  {
+    "id": "00008CA9",
+    "itemid": 14840036,
+    "level": 9,
+    "costItemCount": 58,
+    "costGold": "[41850]",
+    "productCount": 100,
+    "costStoneCount": 2980,
+    "f6": 0
+  },
+  {
+    "id": "00008CAA",
+    "itemid": 14840036,
+    "level": 10,
+    "costItemCount": 75,
+    "costGold": "[47430]",
+    "productCount": 100,
+    "costStoneCount": 3730,
+    "f6": 0
+  },
+  {
+    "id": "00009088",
+    "itemid": 14840037,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 400,
+    "f6": 0
+  },
+  {
+    "id": "00009089",
+    "itemid": 14840037,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[756]",
+    "productCount": 100,
+    "costStoneCount": 470,
+    "f6": 0
+  },
+  {
+    "id": "0000908A",
+    "itemid": 14840037,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1512]",
+    "productCount": 100,
+    "costStoneCount": 580,
+    "f6": 0
+  },
+  {
+    "id": "0000908B",
+    "itemid": 14840037,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2268]",
+    "productCount": 100,
+    "costStoneCount": 760,
+    "f6": 0
+  },
+  {
+    "id": "0000908C",
+    "itemid": 14840037,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 1040,
+    "f6": 0
+  },
+  {
+    "id": "0000908D",
+    "itemid": 14840037,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[5292]",
+    "productCount": 100,
+    "costStoneCount": 1360,
+    "f6": 0
+  },
+  {
+    "id": "0000908E",
+    "itemid": 14840037,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[6804]",
+    "productCount": 100,
+    "costStoneCount": 1740,
+    "f6": 0
+  },
+  {
+    "id": "0000908F",
+    "itemid": 14840037,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[8316]",
+    "productCount": 100,
+    "costStoneCount": 2220,
+    "f6": 0
+  },
+  {
+    "id": "00009090",
+    "itemid": 14840037,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[9828]",
+    "productCount": 100,
+    "costStoneCount": 2740,
+    "f6": 0
+  },
+  {
+    "id": "00009091",
+    "itemid": 14840037,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[11340]",
+    "productCount": 100,
+    "costStoneCount": 3360,
+    "f6": 0
+  },
+  {
+    "id": "00009092",
+    "itemid": 14840037,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[12852]",
+    "productCount": 100,
+    "costStoneCount": 4180,
+    "f6": 0
+  },
+  {
+    "id": "00009470",
+    "itemid": 14840038,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 400,
+    "f6": 0
+  },
+  {
+    "id": "00009471",
+    "itemid": 14840038,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[756]",
+    "productCount": 100,
+    "costStoneCount": 470,
+    "f6": 0
+  },
+  {
+    "id": "00009472",
+    "itemid": 14840038,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1512]",
+    "productCount": 100,
+    "costStoneCount": 580,
+    "f6": 0
+  },
+  {
+    "id": "00009473",
+    "itemid": 14840038,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2268]",
+    "productCount": 100,
+    "costStoneCount": 760,
+    "f6": 0
+  },
+  {
+    "id": "00009474",
+    "itemid": 14840038,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 1040,
+    "f6": 0
+  },
+  {
+    "id": "00009475",
+    "itemid": 14840038,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[5292]",
+    "productCount": 100,
+    "costStoneCount": 1360,
+    "f6": 0
+  },
+  {
+    "id": "00009476",
+    "itemid": 14840038,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[6804]",
+    "productCount": 100,
+    "costStoneCount": 1740,
+    "f6": 0
+  },
+  {
+    "id": "00009477",
+    "itemid": 14840038,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[8316]",
+    "productCount": 100,
+    "costStoneCount": 2220,
+    "f6": 0
+  },
+  {
+    "id": "00009478",
+    "itemid": 14840038,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[9828]",
+    "productCount": 100,
+    "costStoneCount": 2740,
+    "f6": 0
+  },
+  {
+    "id": "00009479",
+    "itemid": 14840038,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[11340]",
+    "productCount": 100,
+    "costStoneCount": 3360,
+    "f6": 0
+  },
+  {
+    "id": "0000947A",
+    "itemid": 14840038,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[12852]",
+    "productCount": 100,
+    "costStoneCount": 4180,
+    "f6": 0
+  },
+  {
+    "id": "00009858",
+    "itemid": 14840039,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 400,
+    "f6": 0
+  },
+  {
+    "id": "00009859",
+    "itemid": 14840039,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[756]",
+    "productCount": 100,
+    "costStoneCount": 470,
+    "f6": 0
+  },
+  {
+    "id": "0000985A",
+    "itemid": 14840039,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1512]",
+    "productCount": 100,
+    "costStoneCount": 580,
+    "f6": 0
+  },
+  {
+    "id": "0000985B",
+    "itemid": 14840039,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2268]",
+    "productCount": 100,
+    "costStoneCount": 760,
+    "f6": 0
+  },
+  {
+    "id": "0000985C",
+    "itemid": 14840039,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[3780]",
+    "productCount": 100,
+    "costStoneCount": 1040,
+    "f6": 0
+  },
+  {
+    "id": "0000985D",
+    "itemid": 14840039,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[5292]",
+    "productCount": 100,
+    "costStoneCount": 1360,
+    "f6": 0
+  },
+  {
+    "id": "0000985E",
+    "itemid": 14840039,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[6804]",
+    "productCount": 100,
+    "costStoneCount": 1740,
+    "f6": 0
+  },
+  {
+    "id": "0000985F",
+    "itemid": 14840039,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[8316]",
+    "productCount": 100,
+    "costStoneCount": 2220,
+    "f6": 0
+  },
+  {
+    "id": "00009860",
+    "itemid": 14840039,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[9828]",
+    "productCount": 100,
+    "costStoneCount": 2740,
+    "f6": 0
+  },
+  {
+    "id": "00009861",
+    "itemid": 14840039,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[11340]",
+    "productCount": 100,
+    "costStoneCount": 3360,
+    "f6": 0
+  },
+  {
+    "id": "00009862",
+    "itemid": 14840039,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[12852]",
+    "productCount": 100,
+    "costStoneCount": 4180,
+    "f6": 0
+  },
+  {
+    "id": "00009C40",
+    "itemid": 14840040,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 400,
+    "f6": 0
+  },
+  {
+    "id": "00009C41",
+    "itemid": 14840040,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[3402]",
+    "productCount": 100,
+    "costStoneCount": 470,
+    "f6": 0
+  },
+  {
+    "id": "00009C42",
+    "itemid": 14840040,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[6804]",
+    "productCount": 100,
+    "costStoneCount": 580,
+    "f6": 0
+  },
+  {
+    "id": "00009C43",
+    "itemid": 14840040,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[10206]",
+    "productCount": 100,
+    "costStoneCount": 760,
+    "f6": 0
+  },
+  {
+    "id": "00009C44",
+    "itemid": 14840040,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[17010]",
+    "productCount": 100,
+    "costStoneCount": 1040,
+    "f6": 0
+  },
+  {
+    "id": "00009C45",
+    "itemid": 14840040,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[23814]",
+    "productCount": 100,
+    "costStoneCount": 1360,
+    "f6": 0
+  },
+  {
+    "id": "00009C46",
+    "itemid": 14840040,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[30618]",
+    "productCount": 100,
+    "costStoneCount": 1740,
+    "f6": 0
+  },
+  {
+    "id": "00009C47",
+    "itemid": 14840040,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[37422]",
+    "productCount": 100,
+    "costStoneCount": 2220,
+    "f6": 0
+  },
+  {
+    "id": "00009C48",
+    "itemid": 14840040,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[44226]",
+    "productCount": 100,
+    "costStoneCount": 2740,
+    "f6": 0
+  },
+  {
+    "id": "00009C49",
+    "itemid": 14840040,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[51030]",
+    "productCount": 100,
+    "costStoneCount": 3360,
+    "f6": 0
+  },
+  {
+    "id": "00009C4A",
+    "itemid": 14840040,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[57834]",
+    "productCount": 100,
+    "costStoneCount": 4180,
+    "f6": 0
+  },
+  {
+    "id": "0000A028",
+    "itemid": 14840041,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 500,
+    "f6": 0
+  },
+  {
+    "id": "0000A029",
+    "itemid": 14840041,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[918]",
+    "productCount": 100,
+    "costStoneCount": 570,
+    "f6": 0
+  },
+  {
+    "id": "0000A02A",
+    "itemid": 14840041,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1836]",
+    "productCount": 100,
+    "costStoneCount": 680,
+    "f6": 0
+  },
+  {
+    "id": "0000A02B",
+    "itemid": 14840041,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2754]",
+    "productCount": 100,
+    "costStoneCount": 860,
+    "f6": 0
+  },
+  {
+    "id": "0000A02C",
+    "itemid": 14840041,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[4590]",
+    "productCount": 100,
+    "costStoneCount": 1140,
+    "f6": 0
+  },
+  {
+    "id": "0000A02D",
+    "itemid": 14840041,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[6426]",
+    "productCount": 100,
+    "costStoneCount": 1460,
+    "f6": 0
+  },
+  {
+    "id": "0000A02E",
+    "itemid": 14840041,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[8262]",
+    "productCount": 100,
+    "costStoneCount": 1840,
+    "f6": 0
+  },
+  {
+    "id": "0000A02F",
+    "itemid": 14840041,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[10098]",
+    "productCount": 100,
+    "costStoneCount": 2320,
+    "f6": 0
+  },
+  {
+    "id": "0000A030",
+    "itemid": 14840041,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[11934]",
+    "productCount": 100,
+    "costStoneCount": 2840,
+    "f6": 0
+  },
+  {
+    "id": "0000A031",
+    "itemid": 14840041,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[13770]",
+    "productCount": 100,
+    "costStoneCount": 3460,
+    "f6": 0
+  },
+  {
+    "id": "0000A032",
+    "itemid": 14840041,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[15606]",
+    "productCount": 100,
+    "costStoneCount": 4280,
+    "f6": 0
+  },
+  {
+    "id": "0000A410",
+    "itemid": 14840042,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 500,
+    "f6": 0
+  },
+  {
+    "id": "0000A411",
+    "itemid": 14840042,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[918]",
+    "productCount": 100,
+    "costStoneCount": 570,
+    "f6": 0
+  },
+  {
+    "id": "0000A412",
+    "itemid": 14840042,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1836]",
+    "productCount": 100,
+    "costStoneCount": 680,
+    "f6": 0
+  },
+  {
+    "id": "0000A413",
+    "itemid": 14840042,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2754]",
+    "productCount": 100,
+    "costStoneCount": 860,
+    "f6": 0
+  },
+  {
+    "id": "0000A414",
+    "itemid": 14840042,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[4590]",
+    "productCount": 100,
+    "costStoneCount": 1140,
+    "f6": 0
+  },
+  {
+    "id": "0000A415",
+    "itemid": 14840042,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[6426]",
+    "productCount": 100,
+    "costStoneCount": 1460,
+    "f6": 0
+  },
+  {
+    "id": "0000A416",
+    "itemid": 14840042,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[8262]",
+    "productCount": 100,
+    "costStoneCount": 1840,
+    "f6": 0
+  },
+  {
+    "id": "0000A417",
+    "itemid": 14840042,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[10098]",
+    "productCount": 100,
+    "costStoneCount": 2320,
+    "f6": 0
+  },
+  {
+    "id": "0000A418",
+    "itemid": 14840042,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[11934]",
+    "productCount": 100,
+    "costStoneCount": 2840,
+    "f6": 0
+  },
+  {
+    "id": "0000A419",
+    "itemid": 14840042,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[13770]",
+    "productCount": 100,
+    "costStoneCount": 3460,
+    "f6": 0
+  },
+  {
+    "id": "0000A41A",
+    "itemid": 14840042,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[15606]",
+    "productCount": 100,
+    "costStoneCount": 4280,
+    "f6": 0
+  },
+  {
+    "id": "0000A7F8",
+    "itemid": 14840043,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 500,
+    "f6": 0
+  },
+  {
+    "id": "0000A7F9",
+    "itemid": 14840043,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[918]",
+    "productCount": 100,
+    "costStoneCount": 570,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FA",
+    "itemid": 14840043,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[1836]",
+    "productCount": 100,
+    "costStoneCount": 680,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FB",
+    "itemid": 14840043,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[2754]",
+    "productCount": 100,
+    "costStoneCount": 860,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FC",
+    "itemid": 14840043,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[4590]",
+    "productCount": 100,
+    "costStoneCount": 1140,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FD",
+    "itemid": 14840043,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[6426]",
+    "productCount": 100,
+    "costStoneCount": 1460,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FE",
+    "itemid": 14840043,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[8262]",
+    "productCount": 100,
+    "costStoneCount": 1840,
+    "f6": 0
+  },
+  {
+    "id": "0000A7FF",
+    "itemid": 14840043,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[10098]",
+    "productCount": 100,
+    "costStoneCount": 2320,
+    "f6": 0
+  },
+  {
+    "id": "0000A800",
+    "itemid": 14840043,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[11934]",
+    "productCount": 100,
+    "costStoneCount": 2840,
+    "f6": 0
+  },
+  {
+    "id": "0000A801",
+    "itemid": 14840043,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[13770]",
+    "productCount": 100,
+    "costStoneCount": 3460,
+    "f6": 0
+  },
+  {
+    "id": "0000A802",
+    "itemid": 14840043,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[15606]",
+    "productCount": 100,
+    "costStoneCount": 4280,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE0",
+    "itemid": 14840044,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 500,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE1",
+    "itemid": 14840044,
+    "level": 1,
+    "costItemCount": 7,
+    "costGold": "[4176]",
+    "productCount": 100,
+    "costStoneCount": 570,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE2",
+    "itemid": 14840044,
+    "level": 2,
+    "costItemCount": 11,
+    "costGold": "[8352]",
+    "productCount": 100,
+    "costStoneCount": 680,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE3",
+    "itemid": 14840044,
+    "level": 3,
+    "costItemCount": 18,
+    "costGold": "[12528]",
+    "productCount": 100,
+    "costStoneCount": 860,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE4",
+    "itemid": 14840044,
+    "level": 4,
+    "costItemCount": 28,
+    "costGold": "[20880]",
+    "productCount": 100,
+    "costStoneCount": 1140,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE5",
+    "itemid": 14840044,
+    "level": 5,
+    "costItemCount": 32,
+    "costGold": "[29232]",
+    "productCount": 100,
+    "costStoneCount": 1460,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE6",
+    "itemid": 14840044,
+    "level": 6,
+    "costItemCount": 38,
+    "costGold": "[37584]",
+    "productCount": 100,
+    "costStoneCount": 1840,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE7",
+    "itemid": 14840044,
+    "level": 7,
+    "costItemCount": 48,
+    "costGold": "[45936]",
+    "productCount": 100,
+    "costStoneCount": 2320,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE8",
+    "itemid": 14840044,
+    "level": 8,
+    "costItemCount": 52,
+    "costGold": "[54288]",
+    "productCount": 100,
+    "costStoneCount": 2840,
+    "f6": 0
+  },
+  {
+    "id": "0000ABE9",
+    "itemid": 14840044,
+    "level": 9,
+    "costItemCount": 62,
+    "costGold": "[62640]",
+    "productCount": 100,
+    "costStoneCount": 3460,
+    "f6": 0
+  },
+  {
+    "id": "0000ABEA",
+    "itemid": 14840044,
+    "level": 10,
+    "costItemCount": 82,
+    "costGold": "[70992]",
+    "productCount": 100,
+    "costStoneCount": 4280,
+    "f6": 0
+  },
+  {
+    "id": "0000AFC8",
+    "itemid": 14840045,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 600,
+    "f6": 0
+  },
+  {
+    "id": "0000AFC9",
+    "itemid": 14840045,
+    "level": 1,
+    "costItemCount": 9,
+    "costGold": "[1180]",
+    "productCount": 100,
+    "costStoneCount": 690,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCA",
+    "itemid": 14840045,
+    "level": 2,
+    "costItemCount": 13,
+    "costGold": "[2360]",
+    "productCount": 100,
+    "costStoneCount": 820,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCB",
+    "itemid": 14840045,
+    "level": 3,
+    "costItemCount": 21,
+    "costGold": "[3540]",
+    "productCount": 100,
+    "costStoneCount": 1030,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCC",
+    "itemid": 14840045,
+    "level": 4,
+    "costItemCount": 32,
+    "costGold": "[5800]",
+    "productCount": 100,
+    "costStoneCount": 1350,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCD",
+    "itemid": 14840045,
+    "level": 5,
+    "costItemCount": 35,
+    "costGold": "[8060]",
+    "productCount": 100,
+    "costStoneCount": 1700,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCE",
+    "itemid": 14840045,
+    "level": 6,
+    "costItemCount": 41,
+    "costGold": "[10320]",
+    "productCount": 100,
+    "costStoneCount": 2110,
+    "f6": 0
+  },
+  {
+    "id": "0000AFCF",
+    "itemid": 14840045,
+    "level": 7,
+    "costItemCount": 52,
+    "costGold": "[12580]",
+    "productCount": 100,
+    "costStoneCount": 2630,
+    "f6": 0
+  },
+  {
+    "id": "0000AFD0",
+    "itemid": 14840045,
+    "level": 8,
+    "costItemCount": 55,
+    "costGold": "[14840]",
+    "productCount": 100,
+    "costStoneCount": 3180,
+    "f6": 0
+  },
+  {
+    "id": "0000AFD1",
+    "itemid": 14840045,
+    "level": 9,
+    "costItemCount": 66,
+    "costGold": "[17100]",
+    "productCount": 100,
+    "costStoneCount": 3840,
+    "f6": 0
+  },
+  {
+    "id": "0000AFD2",
+    "itemid": 14840045,
+    "level": 10,
+    "costItemCount": 89,
+    "costGold": "[19360]",
+    "productCount": 100,
+    "costStoneCount": 4730,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B0",
+    "itemid": 14840046,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 600,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B1",
+    "itemid": 14840046,
+    "level": 1,
+    "costItemCount": 9,
+    "costGold": "[1180]",
+    "productCount": 100,
+    "costStoneCount": 690,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B2",
+    "itemid": 14840046,
+    "level": 2,
+    "costItemCount": 13,
+    "costGold": "[2360]",
+    "productCount": 100,
+    "costStoneCount": 820,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B3",
+    "itemid": 14840046,
+    "level": 3,
+    "costItemCount": 21,
+    "costGold": "[3540]",
+    "productCount": 100,
+    "costStoneCount": 1030,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B4",
+    "itemid": 14840046,
+    "level": 4,
+    "costItemCount": 32,
+    "costGold": "[5800]",
+    "productCount": 100,
+    "costStoneCount": 1350,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B5",
+    "itemid": 14840046,
+    "level": 5,
+    "costItemCount": 35,
+    "costGold": "[8060]",
+    "productCount": 100,
+    "costStoneCount": 1700,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B6",
+    "itemid": 14840046,
+    "level": 6,
+    "costItemCount": 41,
+    "costGold": "[10320]",
+    "productCount": 100,
+    "costStoneCount": 2110,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B7",
+    "itemid": 14840046,
+    "level": 7,
+    "costItemCount": 52,
+    "costGold": "[12580]",
+    "productCount": 100,
+    "costStoneCount": 2630,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B8",
+    "itemid": 14840046,
+    "level": 8,
+    "costItemCount": 55,
+    "costGold": "[14840]",
+    "productCount": 100,
+    "costStoneCount": 3180,
+    "f6": 0
+  },
+  {
+    "id": "0000B3B9",
+    "itemid": 14840046,
+    "level": 9,
+    "costItemCount": 66,
+    "costGold": "[17100]",
+    "productCount": 100,
+    "costStoneCount": 3840,
+    "f6": 0
+  },
+  {
+    "id": "0000B3BA",
+    "itemid": 14840046,
+    "level": 10,
+    "costItemCount": 89,
+    "costGold": "[19360]",
+    "productCount": 100,
+    "costStoneCount": 4730,
+    "f6": 0
+  },
+  {
+    "id": "0000B798",
+    "itemid": 14840047,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 600,
+    "f6": 0
+  },
+  {
+    "id": "0000B799",
+    "itemid": 14840047,
+    "level": 1,
+    "costItemCount": 9,
+    "costGold": "[1180]",
+    "productCount": 100,
+    "costStoneCount": 690,
+    "f6": 0
+  },
+  {
+    "id": "0000B79A",
+    "itemid": 14840047,
+    "level": 2,
+    "costItemCount": 13,
+    "costGold": "[2360]",
+    "productCount": 100,
+    "costStoneCount": 820,
+    "f6": 0
+  },
+  {
+    "id": "0000B79B",
+    "itemid": 14840047,
+    "level": 3,
+    "costItemCount": 21,
+    "costGold": "[3540]",
+    "productCount": 100,
+    "costStoneCount": 1030,
+    "f6": 0
+  },
+  {
+    "id": "0000B79C",
+    "itemid": 14840047,
+    "level": 4,
+    "costItemCount": 32,
+    "costGold": "[5800]",
+    "productCount": 100,
+    "costStoneCount": 1350,
+    "f6": 0
+  },
+  {
+    "id": "0000B79D",
+    "itemid": 14840047,
+    "level": 5,
+    "costItemCount": 35,
+    "costGold": "[8060]",
+    "productCount": 100,
+    "costStoneCount": 1700,
+    "f6": 0
+  },
+  {
+    "id": "0000B79E",
+    "itemid": 14840047,
+    "level": 6,
+    "costItemCount": 41,
+    "costGold": "[10320]",
+    "productCount": 100,
+    "costStoneCount": 2110,
+    "f6": 0
+  },
+  {
+    "id": "0000B79F",
+    "itemid": 14840047,
+    "level": 7,
+    "costItemCount": 52,
+    "costGold": "[12580]",
+    "productCount": 100,
+    "costStoneCount": 2630,
+    "f6": 0
+  },
+  {
+    "id": "0000B7A0",
+    "itemid": 14840047,
+    "level": 8,
+    "costItemCount": 55,
+    "costGold": "[14840]",
+    "productCount": 100,
+    "costStoneCount": 3180,
+    "f6": 0
+  },
+  {
+    "id": "0000B7A1",
+    "itemid": 14840047,
+    "level": 9,
+    "costItemCount": 66,
+    "costGold": "[17100]",
+    "productCount": 100,
+    "costStoneCount": 3840,
+    "f6": 0
+  },
+  {
+    "id": "0000B7A2",
+    "itemid": 14840047,
+    "level": 10,
+    "costItemCount": 89,
+    "costGold": "[19360]",
+    "productCount": 100,
+    "costStoneCount": 4730,
+    "f6": 0
+  },
+  {
+    "id": "0000BB80",
+    "itemid": 14840048,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 600,
+    "f6": 0
+  },
+  {
+    "id": "0000BB81",
+    "itemid": 14840048,
+    "level": 1,
+    "costItemCount": 9,
+    "costGold": "[5350]",
+    "productCount": 100,
+    "costStoneCount": 690,
+    "f6": 0
+  },
+  {
+    "id": "0000BB82",
+    "itemid": 14840048,
+    "level": 2,
+    "costItemCount": 13,
+    "costGold": "[10700]",
+    "productCount": 100,
+    "costStoneCount": 820,
+    "f6": 0
+  },
+  {
+    "id": "0000BB83",
+    "itemid": 14840048,
+    "level": 3,
+    "costItemCount": 21,
+    "costGold": "[16050]",
+    "productCount": 100,
+    "costStoneCount": 1030,
+    "f6": 0
+  },
+  {
+    "id": "0000BB84",
+    "itemid": 14840048,
+    "level": 4,
+    "costItemCount": 32,
+    "costGold": "[26350]",
+    "productCount": 100,
+    "costStoneCount": 1350,
+    "f6": 0
+  },
+  {
+    "id": "0000BB85",
+    "itemid": 14840048,
+    "level": 5,
+    "costItemCount": 35,
+    "costGold": "[36650]",
+    "productCount": 100,
+    "costStoneCount": 1700,
+    "f6": 0
+  },
+  {
+    "id": "0000BB86",
+    "itemid": 14840048,
+    "level": 6,
+    "costItemCount": 41,
+    "costGold": "[46950]",
+    "productCount": 100,
+    "costStoneCount": 2110,
+    "f6": 0
+  },
+  {
+    "id": "0000BB87",
+    "itemid": 14840048,
+    "level": 7,
+    "costItemCount": 52,
+    "costGold": "[57250]",
+    "productCount": 100,
+    "costStoneCount": 2630,
+    "f6": 0
+  },
+  {
+    "id": "0000BB88",
+    "itemid": 14840048,
+    "level": 8,
+    "costItemCount": 55,
+    "costGold": "[67550]",
+    "productCount": 100,
+    "costStoneCount": 3180,
+    "f6": 0
+  },
+  {
+    "id": "0000BB89",
+    "itemid": 14840048,
+    "level": 9,
+    "costItemCount": 66,
+    "costGold": "[77850]",
+    "productCount": 100,
+    "costStoneCount": 3840,
+    "f6": 0
+  },
+  {
+    "id": "0000BB8A",
+    "itemid": 14840048,
+    "level": 10,
+    "costItemCount": 89,
+    "costGold": "[88150]",
+    "productCount": 100,
+    "costStoneCount": 4730,
+    "f6": 0
+  },
+  {
+    "id": "0000BF68",
+    "itemid": 14840049,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 800,
+    "f6": 0
+  },
+  {
+    "id": "0000BF69",
+    "itemid": 14840049,
+    "level": 1,
+    "costItemCount": 11,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 910,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6A",
+    "itemid": 14840049,
+    "level": 2,
+    "costItemCount": 15,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 1060,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6B",
+    "itemid": 14840049,
+    "level": 3,
+    "costItemCount": 25,
+    "costGold": "[4250]",
+    "productCount": 100,
+    "costStoneCount": 1310,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6C",
+    "itemid": 14840049,
+    "level": 4,
+    "costItemCount": 35,
+    "costGold": "[7100]",
+    "productCount": 100,
+    "costStoneCount": 1660,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6D",
+    "itemid": 14840049,
+    "level": 5,
+    "costItemCount": 40,
+    "costGold": "[9700]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6E",
+    "itemid": 14840049,
+    "level": 6,
+    "costItemCount": 47,
+    "costGold": "[12180]",
+    "productCount": 100,
+    "costStoneCount": 2530,
+    "f6": 0
+  },
+  {
+    "id": "0000BF6F",
+    "itemid": 14840049,
+    "level": 7,
+    "costItemCount": 58,
+    "costGold": "[15800]",
+    "productCount": 100,
+    "costStoneCount": 3110,
+    "f6": 0
+  },
+  {
+    "id": "0000BF70",
+    "itemid": 14840049,
+    "level": 8,
+    "costItemCount": 60,
+    "costGold": "[17800]",
+    "productCount": 100,
+    "costStoneCount": 3710,
+    "f6": 0
+  },
+  {
+    "id": "0000BF71",
+    "itemid": 14840049,
+    "level": 9,
+    "costItemCount": 75,
+    "costGold": "[21020]",
+    "productCount": 100,
+    "costStoneCount": 4460,
+    "f6": 0
+  },
+  {
+    "id": "0000BF72",
+    "itemid": 14840049,
+    "level": 10,
+    "costItemCount": 95,
+    "costGold": "[22150]",
+    "productCount": 100,
+    "costStoneCount": 5410,
+    "f6": 0
+  },
+  {
+    "id": "0000C350",
+    "itemid": 14840050,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 800,
+    "f6": 0
+  },
+  {
+    "id": "0000C351",
+    "itemid": 14840050,
+    "level": 1,
+    "costItemCount": 11,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 910,
+    "f6": 0
+  },
+  {
+    "id": "0000C352",
+    "itemid": 14840050,
+    "level": 2,
+    "costItemCount": 15,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 1060,
+    "f6": 0
+  },
+  {
+    "id": "0000C353",
+    "itemid": 14840050,
+    "level": 3,
+    "costItemCount": 25,
+    "costGold": "[4250]",
+    "productCount": 100,
+    "costStoneCount": 1310,
+    "f6": 0
+  },
+  {
+    "id": "0000C354",
+    "itemid": 14840050,
+    "level": 4,
+    "costItemCount": 35,
+    "costGold": "[7100]",
+    "productCount": 100,
+    "costStoneCount": 1660,
+    "f6": 0
+  },
+  {
+    "id": "0000C355",
+    "itemid": 14840050,
+    "level": 5,
+    "costItemCount": 40,
+    "costGold": "[9700]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "0000C356",
+    "itemid": 14840050,
+    "level": 6,
+    "costItemCount": 47,
+    "costGold": "[12180]",
+    "productCount": 100,
+    "costStoneCount": 2530,
+    "f6": 0
+  },
+  {
+    "id": "0000C357",
+    "itemid": 14840050,
+    "level": 7,
+    "costItemCount": 58,
+    "costGold": "[15800]",
+    "productCount": 100,
+    "costStoneCount": 3110,
+    "f6": 0
+  },
+  {
+    "id": "0000C358",
+    "itemid": 14840050,
+    "level": 8,
+    "costItemCount": 60,
+    "costGold": "[17800]",
+    "productCount": 100,
+    "costStoneCount": 3710,
+    "f6": 0
+  },
+  {
+    "id": "0000C359",
+    "itemid": 14840050,
+    "level": 9,
+    "costItemCount": 75,
+    "costGold": "[21020]",
+    "productCount": 100,
+    "costStoneCount": 4460,
+    "f6": 0
+  },
+  {
+    "id": "0000C35A",
+    "itemid": 14840050,
+    "level": 10,
+    "costItemCount": 95,
+    "costGold": "[22150]",
+    "productCount": 100,
+    "costStoneCount": 5410,
+    "f6": 0
+  },
+  {
+    "id": "0000C738",
+    "itemid": 14840051,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 800,
+    "f6": 0
+  },
+  {
+    "id": "0000C739",
+    "itemid": 14840051,
+    "level": 1,
+    "costItemCount": 11,
+    "costGold": "[1350]",
+    "productCount": 100,
+    "costStoneCount": 910,
+    "f6": 0
+  },
+  {
+    "id": "0000C73A",
+    "itemid": 14840051,
+    "level": 2,
+    "costItemCount": 15,
+    "costGold": "[2700]",
+    "productCount": 100,
+    "costStoneCount": 1060,
+    "f6": 0
+  },
+  {
+    "id": "0000C73B",
+    "itemid": 14840051,
+    "level": 3,
+    "costItemCount": 25,
+    "costGold": "[4250]",
+    "productCount": 100,
+    "costStoneCount": 1310,
+    "f6": 0
+  },
+  {
+    "id": "0000C73C",
+    "itemid": 14840051,
+    "level": 4,
+    "costItemCount": 35,
+    "costGold": "[7100]",
+    "productCount": 100,
+    "costStoneCount": 1660,
+    "f6": 0
+  },
+  {
+    "id": "0000C73D",
+    "itemid": 14840051,
+    "level": 5,
+    "costItemCount": 40,
+    "costGold": "[9700]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "0000C73E",
+    "itemid": 14840051,
+    "level": 6,
+    "costItemCount": 47,
+    "costGold": "[12180]",
+    "productCount": 100,
+    "costStoneCount": 2530,
+    "f6": 0
+  },
+  {
+    "id": "0000C73F",
+    "itemid": 14840051,
+    "level": 7,
+    "costItemCount": 58,
+    "costGold": "[15800]",
+    "productCount": 100,
+    "costStoneCount": 3110,
+    "f6": 0
+  },
+  {
+    "id": "0000C740",
+    "itemid": 14840051,
+    "level": 8,
+    "costItemCount": 60,
+    "costGold": "[17800]",
+    "productCount": 100,
+    "costStoneCount": 3710,
+    "f6": 0
+  },
+  {
+    "id": "0000C741",
+    "itemid": 14840051,
+    "level": 9,
+    "costItemCount": 75,
+    "costGold": "[21020]",
+    "productCount": 100,
+    "costStoneCount": 4460,
+    "f6": 0
+  },
+  {
+    "id": "0000C742",
+    "itemid": 14840051,
+    "level": 10,
+    "costItemCount": 95,
+    "costGold": "[22150]",
+    "productCount": 100,
+    "costStoneCount": 5410,
+    "f6": 0
+  },
+  {
+    "id": "0000CB20",
+    "itemid": 14840052,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0]",
+    "productCount": 100,
+    "costStoneCount": 800,
+    "f6": 0
+  },
+  {
+    "id": "0000CB21",
+    "itemid": 14840052,
+    "level": 1,
+    "costItemCount": 11,
+    "costGold": "[6540]",
+    "productCount": 100,
+    "costStoneCount": 910,
+    "f6": 0
+  },
+  {
+    "id": "0000CB22",
+    "itemid": 14840052,
+    "level": 2,
+    "costItemCount": 15,
+    "costGold": "[12030]",
+    "productCount": 100,
+    "costStoneCount": 1060,
+    "f6": 0
+  },
+  {
+    "id": "0000CB23",
+    "itemid": 14840052,
+    "level": 3,
+    "costItemCount": 25,
+    "costGold": "[20140]",
+    "productCount": 100,
+    "costStoneCount": 1310,
+    "f6": 0
+  },
+  {
+    "id": "0000CB24",
+    "itemid": 14840052,
+    "level": 4,
+    "costItemCount": 35,
+    "costGold": "[33240]",
+    "productCount": 100,
+    "costStoneCount": 1660,
+    "f6": 0
+  },
+  {
+    "id": "0000CB25",
+    "itemid": 14840052,
+    "level": 5,
+    "costItemCount": 40,
+    "costGold": "[44500]",
+    "productCount": 100,
+    "costStoneCount": 2060,
+    "f6": 0
+  },
+  {
+    "id": "0000CB26",
+    "itemid": 14840052,
+    "level": 6,
+    "costItemCount": 47,
+    "costGold": "[55360]",
+    "productCount": 100,
+    "costStoneCount": 2530,
+    "f6": 0
+  },
+  {
+    "id": "0000CB27",
+    "itemid": 14840052,
+    "level": 7,
+    "costItemCount": 58,
+    "costGold": "[70100]",
+    "productCount": 100,
+    "costStoneCount": 3110,
+    "f6": 0
+  },
+  {
+    "id": "0000CB28",
+    "itemid": 14840052,
+    "level": 8,
+    "costItemCount": 60,
+    "costGold": "[80200]",
+    "productCount": 100,
+    "costStoneCount": 3710,
+    "f6": 0
+  },
+  {
+    "id": "0000CB29",
+    "itemid": 14840052,
+    "level": 9,
+    "costItemCount": 75,
+    "costGold": "[92400]",
+    "productCount": 100,
+    "costStoneCount": 4460,
+    "f6": 0
+  },
+  {
+    "id": "0000CB2A",
+    "itemid": 14840052,
+    "level": 10,
+    "costItemCount": 95,
+    "costGold": "[100250]",
+    "productCount": 100,
+    "costStoneCount": 5410,
+    "f6": 0
+  },
+  {
+    "id": "0000DEA8",
+    "itemid": 14840057,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0,0]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000DEA9",
+    "itemid": 14840057,
+    "level": 1,
+    "costItemCount": 0,
+    "costGold": "[149,149]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 49
+  },
+  {
+    "id": "0000DEAA",
+    "itemid": 14840057,
+    "level": 2,
+    "costItemCount": 0,
+    "costGold": "[630,630]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 88
+  },
+  {
+    "id": "0000DEAB",
+    "itemid": 14840057,
+    "level": 3,
+    "costItemCount": 0,
+    "costGold": "[1089,1089]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 126
+  },
+  {
+    "id": "0000DEAC",
+    "itemid": 14840057,
+    "level": 4,
+    "costItemCount": 0,
+    "costGold": "[1529,1529]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 162
+  },
+  {
+    "id": "0000DEAD",
+    "itemid": 14840057,
+    "level": 5,
+    "costItemCount": 0,
+    "costGold": "[1949,1949]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 196
+  },
+  {
+    "id": "0000DEAE",
+    "itemid": 14840057,
+    "level": 6,
+    "costItemCount": 0,
+    "costGold": "[2353,2353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 230
+  },
+  {
+    "id": "0000DEAF",
+    "itemid": 14840057,
+    "level": 7,
+    "costItemCount": 0,
+    "costGold": "[2741,2741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 262
+  },
+  {
+    "id": "0000DEB0",
+    "itemid": 14840057,
+    "level": 8,
+    "costItemCount": 0,
+    "costGold": "[3115,3115]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 293
+  },
+  {
+    "id": "0000DEB1",
+    "itemid": 14840057,
+    "level": 9,
+    "costItemCount": 0,
+    "costGold": "[3475,3475]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 323
+  },
+  {
+    "id": "0000DEB2",
+    "itemid": 14840057,
+    "level": 10,
+    "costItemCount": 0,
+    "costGold": "[3823,3823]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 352
+  },
+  {
+    "id": "0000DEB3",
+    "itemid": 14840057,
+    "level": 11,
+    "costItemCount": 0,
+    "costGold": "[4159,4159]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 422
+  },
+  {
+    "id": "0000DEB4",
+    "itemid": 14840057,
+    "level": 12,
+    "costItemCount": 0,
+    "costGold": "[4643,4643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 461
+  },
+  {
+    "id": "0000DEB5",
+    "itemid": 14840057,
+    "level": 13,
+    "costItemCount": 0,
+    "costGold": "[5104,5104]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 498
+  },
+  {
+    "id": "0000DEB6",
+    "itemid": 14840057,
+    "level": 14,
+    "costItemCount": 0,
+    "costGold": "[5545,5545]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 533
+  },
+  {
+    "id": "0000DEB7",
+    "itemid": 14840057,
+    "level": 15,
+    "costItemCount": 0,
+    "costGold": "[5968,5968]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 567
+  },
+  {
+    "id": "0000DEB8",
+    "itemid": 14840057,
+    "level": 16,
+    "costItemCount": 0,
+    "costGold": "[6373,6373]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 600
+  },
+  {
+    "id": "0000DEB9",
+    "itemid": 14840057,
+    "level": 17,
+    "costItemCount": 0,
+    "costGold": "[6763,6763]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 632
+  },
+  {
+    "id": "0000DEBA",
+    "itemid": 14840057,
+    "level": 18,
+    "costItemCount": 0,
+    "costGold": "[7138,7138]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 662
+  },
+  {
+    "id": "0000DEBB",
+    "itemid": 14840057,
+    "level": 19,
+    "costItemCount": 0,
+    "costGold": "[7500,7500]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 692
+  },
+  {
+    "id": "0000DEBC",
+    "itemid": 14840057,
+    "level": 20,
+    "costItemCount": 0,
+    "costGold": "[7848,7848]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 721
+  },
+  {
+    "id": "0000DEBD",
+    "itemid": 14840057,
+    "level": 21,
+    "costItemCount": 0,
+    "costGold": "[8186,8186]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 729
+  },
+  {
+    "id": "0000DEBE",
+    "itemid": 14840057,
+    "level": 22,
+    "costItemCount": 0,
+    "costGold": "[8512,8512]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 757
+  },
+  {
+    "id": "0000DEBF",
+    "itemid": 14840057,
+    "level": 23,
+    "costItemCount": 0,
+    "costGold": "[8992,8992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 784
+  },
+  {
+    "id": "0000DEC0",
+    "itemid": 14840057,
+    "level": 24,
+    "costItemCount": 0,
+    "costGold": "[9450,9450]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 819
+  },
+  {
+    "id": "0000DEC1",
+    "itemid": 14840057,
+    "level": 25,
+    "costItemCount": 0,
+    "costGold": "[9889,9889]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 852
+  },
+  {
+    "id": "0000DEC2",
+    "itemid": 14840057,
+    "level": 26,
+    "costItemCount": 0,
+    "costGold": "[10309,10309]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 884
+  },
+  {
+    "id": "0000DEC3",
+    "itemid": 14840057,
+    "level": 27,
+    "costItemCount": 0,
+    "costGold": "[10712,10712]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 915
+  },
+  {
+    "id": "0000DEC4",
+    "itemid": 14840057,
+    "level": 28,
+    "costItemCount": 0,
+    "costGold": "[11099,11099]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 945
+  },
+  {
+    "id": "0000DEC5",
+    "itemid": 14840057,
+    "level": 29,
+    "costItemCount": 0,
+    "costGold": "[11472,11472]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 974
+  },
+  {
+    "id": "0000DEC6",
+    "itemid": 14840057,
+    "level": 30,
+    "costItemCount": 0,
+    "costGold": "[11832,11832]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1002
+  },
+  {
+    "id": "0000DEC7",
+    "itemid": 14840057,
+    "level": 31,
+    "costItemCount": 0,
+    "costGold": "[12179,12179]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 877
+  },
+  {
+    "id": "0000DEC8",
+    "itemid": 14840057,
+    "level": 32,
+    "costItemCount": 0,
+    "costGold": "[12514,12514]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 901
+  },
+  {
+    "id": "0000DEC9",
+    "itemid": 14840057,
+    "level": 33,
+    "costItemCount": 0,
+    "costGold": "[12839,12839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 924
+  },
+  {
+    "id": "0000DECA",
+    "itemid": 14840057,
+    "level": 34,
+    "costItemCount": 0,
+    "costGold": "[13300,13300]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 946
+  },
+  {
+    "id": "0000DECB",
+    "itemid": 14840057,
+    "level": 35,
+    "costItemCount": 0,
+    "costGold": "[13741,13741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 976
+  },
+  {
+    "id": "0000DECC",
+    "itemid": 14840057,
+    "level": 36,
+    "costItemCount": 0,
+    "costGold": "[14164,14164]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1006
+  },
+  {
+    "id": "0000DECD",
+    "itemid": 14840057,
+    "level": 37,
+    "costItemCount": 0,
+    "costGold": "[14569,14569]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1034
+  },
+  {
+    "id": "0000DECE",
+    "itemid": 14840057,
+    "level": 38,
+    "costItemCount": 0,
+    "costGold": "[14959,14959]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1061
+  },
+  {
+    "id": "0000DECF",
+    "itemid": 14840057,
+    "level": 39,
+    "costItemCount": 0,
+    "costGold": "[15334,15334]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1088
+  },
+  {
+    "id": "0000DED0",
+    "itemid": 14840057,
+    "level": 40,
+    "costItemCount": 0,
+    "costGold": "[15695,15695]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1113
+  },
+  {
+    "id": "0000DED1",
+    "itemid": 14840057,
+    "level": 41,
+    "costItemCount": 0,
+    "costGold": "[16044,16044]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1143
+  },
+  {
+    "id": "0000DED2",
+    "itemid": 14840057,
+    "level": 42,
+    "costItemCount": 0,
+    "costGold": "[16381,16381]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1167
+  },
+  {
+    "id": "0000DED3",
+    "itemid": 14840057,
+    "level": 43,
+    "costItemCount": 0,
+    "costGold": "[16707,16707]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1191
+  },
+  {
+    "id": "0000DED4",
+    "itemid": 14840057,
+    "level": 44,
+    "costItemCount": 0,
+    "costGold": "[17023,17023]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1213
+  },
+  {
+    "id": "0000DED5",
+    "itemid": 14840057,
+    "level": 45,
+    "costItemCount": 0,
+    "costGold": "[17452,17452]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1235
+  },
+  {
+    "id": "0000DED6",
+    "itemid": 14840057,
+    "level": 46,
+    "costItemCount": 0,
+    "costGold": "[17864,17864]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1264
+  },
+  {
+    "id": "0000DED7",
+    "itemid": 14840057,
+    "level": 47,
+    "costItemCount": 0,
+    "costGold": "[18260,18260]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1291
+  },
+  {
+    "id": "0000DED8",
+    "itemid": 14840057,
+    "level": 48,
+    "costItemCount": 0,
+    "costGold": "[18641,18641]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1318
+  },
+  {
+    "id": "0000DED9",
+    "itemid": 14840057,
+    "level": 49,
+    "costItemCount": 0,
+    "costGold": "[19007,19007]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1344
+  },
+  {
+    "id": "0000DEDA",
+    "itemid": 14840057,
+    "level": 50,
+    "costItemCount": 0,
+    "costGold": "[19361,19361]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1369
+  },
+  {
+    "id": "0000DEDB",
+    "itemid": 14840057,
+    "level": 51,
+    "costItemCount": 0,
+    "costGold": "[19702,19702]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1399
+  },
+  {
+    "id": "0000DEDC",
+    "itemid": 14840057,
+    "level": 52,
+    "costItemCount": 0,
+    "costGold": "[20033,20033]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1423
+  },
+  {
+    "id": "0000DEDD",
+    "itemid": 14840057,
+    "level": 53,
+    "costItemCount": 0,
+    "costGold": "[20353,20353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1445
+  },
+  {
+    "id": "0000DEDE",
+    "itemid": 14840057,
+    "level": 54,
+    "costItemCount": 0,
+    "costGold": "[20662,20662]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1468
+  },
+  {
+    "id": "0000DEDF",
+    "itemid": 14840057,
+    "level": 55,
+    "costItemCount": 0,
+    "costGold": "[20963,20963]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1489
+  },
+  {
+    "id": "0000DEE0",
+    "itemid": 14840057,
+    "level": 56,
+    "costItemCount": 0,
+    "costGold": "[21327,21327]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1510
+  },
+  {
+    "id": "0000DEE1",
+    "itemid": 14840057,
+    "level": 57,
+    "costItemCount": 0,
+    "costGold": "[21677,21677]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1534
+  },
+  {
+    "id": "0000DEE2",
+    "itemid": 14840057,
+    "level": 58,
+    "costItemCount": 0,
+    "costGold": "[22016,22016]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1558
+  },
+  {
+    "id": "0000DEE3",
+    "itemid": 14840057,
+    "level": 59,
+    "costItemCount": 0,
+    "costGold": "[22344,22344]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1581
+  },
+  {
+    "id": "0000DEE4",
+    "itemid": 14840057,
+    "level": 60,
+    "costItemCount": 0,
+    "costGold": "[22661,22661]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1603
+  },
+  {
+    "id": "0000DEE5",
+    "itemid": 14840057,
+    "level": 61,
+    "costItemCount": 0,
+    "costGold": "[22969,22969]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000DEE6",
+    "itemid": 14840057,
+    "level": 62,
+    "costItemCount": 0,
+    "costGold": "[23267,23267]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1653
+  },
+  {
+    "id": "0000DEE7",
+    "itemid": 14840057,
+    "level": 63,
+    "costItemCount": 0,
+    "costGold": "[23557,23557]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1674
+  },
+  {
+    "id": "0000DEE8",
+    "itemid": 14840057,
+    "level": 64,
+    "costItemCount": 0,
+    "costGold": "[23839,23839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1694
+  },
+  {
+    "id": "0000DEE9",
+    "itemid": 14840057,
+    "level": 65,
+    "costItemCount": 0,
+    "costGold": "[24113,24113]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1713
+  },
+  {
+    "id": "0000DEEA",
+    "itemid": 14840057,
+    "level": 66,
+    "costItemCount": 0,
+    "costGold": "[24380,24380]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1732
+  },
+  {
+    "id": "0000DEEB",
+    "itemid": 14840057,
+    "level": 67,
+    "costItemCount": 0,
+    "costGold": "[24639,24639]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1751
+  },
+  {
+    "id": "0000DEEC",
+    "itemid": 14840057,
+    "level": 68,
+    "costItemCount": 0,
+    "costGold": "[25025,25025]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1769
+  },
+  {
+    "id": "0000DEED",
+    "itemid": 14840057,
+    "level": 69,
+    "costItemCount": 0,
+    "costGold": "[25396,25396]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1794
+  },
+  {
+    "id": "0000DEEE",
+    "itemid": 14840057,
+    "level": 70,
+    "costItemCount": 0,
+    "costGold": "[25754,25754]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1819
+  },
+  {
+    "id": "0000DEEF",
+    "itemid": 14840057,
+    "level": 71,
+    "costItemCount": 0,
+    "costGold": "[26100,26100]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1612
+  },
+  {
+    "id": "0000DEF0",
+    "itemid": 14840057,
+    "level": 72,
+    "costItemCount": 0,
+    "costGold": "[26434,26434]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000DEF1",
+    "itemid": 14840057,
+    "level": 73,
+    "costItemCount": 0,
+    "costGold": "[26757,26757]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1652
+  },
+  {
+    "id": "0000DEF2",
+    "itemid": 14840057,
+    "level": 74,
+    "costItemCount": 0,
+    "costGold": "[27071,27071]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1671
+  },
+  {
+    "id": "0000DEF3",
+    "itemid": 14840057,
+    "level": 75,
+    "costItemCount": 0,
+    "costGold": "[27374,27374]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1690
+  },
+  {
+    "id": "0000DEF4",
+    "itemid": 14840057,
+    "level": 76,
+    "costItemCount": 0,
+    "costGold": "[27669,27669]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1708
+  },
+  {
+    "id": "0000DEF5",
+    "itemid": 14840057,
+    "level": 77,
+    "costItemCount": 0,
+    "costGold": "[27956,27956]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1725
+  },
+  {
+    "id": "0000DEF6",
+    "itemid": 14840057,
+    "level": 78,
+    "costItemCount": 0,
+    "costGold": "[28234,28234]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1742
+  },
+  {
+    "id": "0000DEF7",
+    "itemid": 14840057,
+    "level": 79,
+    "costItemCount": 0,
+    "costGold": "[28597,28597]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1759
+  },
+  {
+    "id": "0000DEF8",
+    "itemid": 14840057,
+    "level": 80,
+    "costItemCount": 0,
+    "costGold": "[28948,28948]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1780
+  },
+  {
+    "id": "0000DEF9",
+    "itemid": 14840057,
+    "level": 81,
+    "costItemCount": 0,
+    "costGold": "[29287,29287]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1808
+  },
+  {
+    "id": "0000DEFA",
+    "itemid": 14840057,
+    "level": 82,
+    "costItemCount": 0,
+    "costGold": "[29615,29615]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1828
+  },
+  {
+    "id": "0000DEFB",
+    "itemid": 14840057,
+    "level": 83,
+    "costItemCount": 0,
+    "costGold": "[29932,29932]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1847
+  },
+  {
+    "id": "0000DEFC",
+    "itemid": 14840057,
+    "level": 84,
+    "costItemCount": 0,
+    "costGold": "[30239,30239]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1866
+  },
+  {
+    "id": "0000DEFD",
+    "itemid": 14840057,
+    "level": 85,
+    "costItemCount": 0,
+    "costGold": "[30538,30538]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1884
+  },
+  {
+    "id": "0000DEFE",
+    "itemid": 14840057,
+    "level": 86,
+    "costItemCount": 0,
+    "costGold": "[30828,30828]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1902
+  },
+  {
+    "id": "0000DEFF",
+    "itemid": 14840057,
+    "level": 87,
+    "costItemCount": 0,
+    "costGold": "[31109,31109]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1920
+  },
+  {
+    "id": "0000DF00",
+    "itemid": 14840057,
+    "level": 88,
+    "costItemCount": 0,
+    "costGold": "[31383,31383]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1937
+  },
+  {
+    "id": "0000DF01",
+    "itemid": 14840057,
+    "level": 89,
+    "costItemCount": 0,
+    "costGold": "[31650,31650]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1953
+  },
+  {
+    "id": "0000DF02",
+    "itemid": 14840057,
+    "level": 90,
+    "costItemCount": 0,
+    "costGold": "[31992,31992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1969
+  },
+  {
+    "id": "0000DF03",
+    "itemid": 14840057,
+    "level": 91,
+    "costItemCount": 0,
+    "costGold": "[32323,32323]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1998
+  },
+  {
+    "id": "0000DF04",
+    "itemid": 14840057,
+    "level": 92,
+    "costItemCount": 0,
+    "costGold": "[32643,32643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2018
+  },
+  {
+    "id": "0000DF05",
+    "itemid": 14840057,
+    "level": 93,
+    "costItemCount": 0,
+    "costGold": "[32953,32953]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2037
+  },
+  {
+    "id": "0000DF06",
+    "itemid": 14840057,
+    "level": 94,
+    "costItemCount": 0,
+    "costGold": "[33254,33254]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2056
+  },
+  {
+    "id": "0000DF07",
+    "itemid": 14840057,
+    "level": 95,
+    "costItemCount": 0,
+    "costGold": "[33546,33546]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2074
+  },
+  {
+    "id": "0000DF08",
+    "itemid": 14840057,
+    "level": 96,
+    "costItemCount": 0,
+    "costGold": "[33830,33830]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2092
+  },
+  {
+    "id": "0000DF09",
+    "itemid": 14840057,
+    "level": 97,
+    "costItemCount": 0,
+    "costGold": "[34106,34106]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2109
+  },
+  {
+    "id": "0000DF0A",
+    "itemid": 14840057,
+    "level": 98,
+    "costItemCount": 0,
+    "costGold": "[34375,34375]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2126
+  },
+  {
+    "id": "0000DF0B",
+    "itemid": 14840057,
+    "level": 99,
+    "costItemCount": 0,
+    "costGold": "[34636,34636]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2143
+  },
+  {
+    "id": "0000E290",
+    "itemid": 14840058,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0,0]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000E291",
+    "itemid": 14840058,
+    "level": 1,
+    "costItemCount": 0,
+    "costGold": "[149,1897]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 49
+  },
+  {
+    "id": "0000E292",
+    "itemid": 14840058,
+    "level": 2,
+    "costItemCount": 0,
+    "costGold": "[630,8025]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 88
+  },
+  {
+    "id": "0000E293",
+    "itemid": 14840058,
+    "level": 3,
+    "costItemCount": 0,
+    "costGold": "[1089,13871]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 126
+  },
+  {
+    "id": "0000E294",
+    "itemid": 14840058,
+    "level": 4,
+    "costItemCount": 0,
+    "costGold": "[1529,19461]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 162
+  },
+  {
+    "id": "0000E295",
+    "itemid": 14840058,
+    "level": 5,
+    "costItemCount": 0,
+    "costGold": "[1949,24816]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 196
+  },
+  {
+    "id": "0000E296",
+    "itemid": 14840058,
+    "level": 6,
+    "costItemCount": 0,
+    "costGold": "[2353,29956]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 230
+  },
+  {
+    "id": "0000E297",
+    "itemid": 14840058,
+    "level": 7,
+    "costItemCount": 0,
+    "costGold": "[2741,34895]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 262
+  },
+  {
+    "id": "0000E298",
+    "itemid": 14840058,
+    "level": 8,
+    "costItemCount": 0,
+    "costGold": "[3115,39651]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 293
+  },
+  {
+    "id": "0000E299",
+    "itemid": 14840058,
+    "level": 9,
+    "costItemCount": 0,
+    "costGold": "[3475,44235]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 323
+  },
+  {
+    "id": "0000E29A",
+    "itemid": 14840058,
+    "level": 10,
+    "costItemCount": 0,
+    "costGold": "[3823,48661]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 352
+  },
+  {
+    "id": "0000E29B",
+    "itemid": 14840058,
+    "level": 11,
+    "costItemCount": 0,
+    "costGold": "[4159,52937]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 422
+  },
+  {
+    "id": "0000E29C",
+    "itemid": 14840058,
+    "level": 12,
+    "costItemCount": 0,
+    "costGold": "[4643,59095]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 461
+  },
+  {
+    "id": "0000E29D",
+    "itemid": 14840058,
+    "level": 13,
+    "costItemCount": 0,
+    "costGold": "[5104,64968]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 498
+  },
+  {
+    "id": "0000E29E",
+    "itemid": 14840058,
+    "level": 14,
+    "costItemCount": 0,
+    "costGold": "[5545,70583]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 533
+  },
+  {
+    "id": "0000E29F",
+    "itemid": 14840058,
+    "level": 15,
+    "costItemCount": 0,
+    "costGold": "[5968,75961]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 567
+  },
+  {
+    "id": "0000E2A0",
+    "itemid": 14840058,
+    "level": 16,
+    "costItemCount": 0,
+    "costGold": "[6373,81121]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 600
+  },
+  {
+    "id": "0000E2A1",
+    "itemid": 14840058,
+    "level": 17,
+    "costItemCount": 0,
+    "costGold": "[6763,86080]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 632
+  },
+  {
+    "id": "0000E2A2",
+    "itemid": 14840058,
+    "level": 18,
+    "costItemCount": 0,
+    "costGold": "[7138,90853]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 662
+  },
+  {
+    "id": "0000E2A3",
+    "itemid": 14840058,
+    "level": 19,
+    "costItemCount": 0,
+    "costGold": "[7500,95454]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 692
+  },
+  {
+    "id": "0000E2A4",
+    "itemid": 14840058,
+    "level": 20,
+    "costItemCount": 0,
+    "costGold": "[7848,99895]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 721
+  },
+  {
+    "id": "0000E2A5",
+    "itemid": 14840058,
+    "level": 21,
+    "costItemCount": 0,
+    "costGold": "[8186,104186]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 729
+  },
+  {
+    "id": "0000E2A6",
+    "itemid": 14840058,
+    "level": 22,
+    "costItemCount": 0,
+    "costGold": "[8512,108337]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 757
+  },
+  {
+    "id": "0000E2A7",
+    "itemid": 14840058,
+    "level": 23,
+    "costItemCount": 0,
+    "costGold": "[8992,114451]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 784
+  },
+  {
+    "id": "0000E2A8",
+    "itemid": 14840058,
+    "level": 24,
+    "costItemCount": 0,
+    "costGold": "[9450,120285]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 819
+  },
+  {
+    "id": "0000E2A9",
+    "itemid": 14840058,
+    "level": 25,
+    "costItemCount": 0,
+    "costGold": "[9889,125863]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 852
+  },
+  {
+    "id": "0000E2AA",
+    "itemid": 14840058,
+    "level": 26,
+    "costItemCount": 0,
+    "costGold": "[10309,131207]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 884
+  },
+  {
+    "id": "0000E2AB",
+    "itemid": 14840058,
+    "level": 27,
+    "costItemCount": 0,
+    "costGold": "[10712,136337]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 915
+  },
+  {
+    "id": "0000E2AC",
+    "itemid": 14840058,
+    "level": 28,
+    "costItemCount": 0,
+    "costGold": "[11099,141268]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 945
+  },
+  {
+    "id": "0000E2AD",
+    "itemid": 14840058,
+    "level": 29,
+    "costItemCount": 0,
+    "costGold": "[11472,146015]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 974
+  },
+  {
+    "id": "0000E2AE",
+    "itemid": 14840058,
+    "level": 30,
+    "costItemCount": 0,
+    "costGold": "[11832,150591]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1002
+  },
+  {
+    "id": "0000E2AF",
+    "itemid": 14840058,
+    "level": 31,
+    "costItemCount": 0,
+    "costGold": "[12179,155009]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 877
+  },
+  {
+    "id": "0000E2B0",
+    "itemid": 14840058,
+    "level": 32,
+    "costItemCount": 0,
+    "costGold": "[12514,159279]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 901
+  },
+  {
+    "id": "0000E2B1",
+    "itemid": 14840058,
+    "level": 33,
+    "costItemCount": 0,
+    "costGold": "[12839,163410]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 924
+  },
+  {
+    "id": "0000E2B2",
+    "itemid": 14840058,
+    "level": 34,
+    "costItemCount": 0,
+    "costGold": "[13300,169282]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 946
+  },
+  {
+    "id": "0000E2B3",
+    "itemid": 14840058,
+    "level": 35,
+    "costItemCount": 0,
+    "costGold": "[13741,174895]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 976
+  },
+  {
+    "id": "0000E2B4",
+    "itemid": 14840058,
+    "level": 36,
+    "costItemCount": 0,
+    "costGold": "[14164,180272]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1006
+  },
+  {
+    "id": "0000E2B5",
+    "itemid": 14840058,
+    "level": 37,
+    "costItemCount": 0,
+    "costGold": "[14569,185431]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1034
+  },
+  {
+    "id": "0000E2B6",
+    "itemid": 14840058,
+    "level": 38,
+    "costItemCount": 0,
+    "costGold": "[14959,190389]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1061
+  },
+  {
+    "id": "0000E2B7",
+    "itemid": 14840058,
+    "level": 39,
+    "costItemCount": 0,
+    "costGold": "[15334,195161]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1088
+  },
+  {
+    "id": "0000E2B8",
+    "itemid": 14840058,
+    "level": 40,
+    "costItemCount": 0,
+    "costGold": "[15695,199761]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1113
+  },
+  {
+    "id": "0000E2B9",
+    "itemid": 14840058,
+    "level": 41,
+    "costItemCount": 0,
+    "costGold": "[16044,204201]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1143
+  },
+  {
+    "id": "0000E2BA",
+    "itemid": 14840058,
+    "level": 42,
+    "costItemCount": 0,
+    "costGold": "[16381,208491]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1167
+  },
+  {
+    "id": "0000E2BB",
+    "itemid": 14840058,
+    "level": 43,
+    "costItemCount": 0,
+    "costGold": "[16707,212641]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1191
+  },
+  {
+    "id": "0000E2BC",
+    "itemid": 14840058,
+    "level": 44,
+    "costItemCount": 0,
+    "costGold": "[17023,216661]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1213
+  },
+  {
+    "id": "0000E2BD",
+    "itemid": 14840058,
+    "level": 45,
+    "costItemCount": 0,
+    "costGold": "[17452,222128]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1235
+  },
+  {
+    "id": "0000E2BE",
+    "itemid": 14840058,
+    "level": 46,
+    "costItemCount": 0,
+    "costGold": "[17864,227370]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1264
+  },
+  {
+    "id": "0000E2BF",
+    "itemid": 14840058,
+    "level": 47,
+    "costItemCount": 0,
+    "costGold": "[18260,232405]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1291
+  },
+  {
+    "id": "0000E2C0",
+    "itemid": 14840058,
+    "level": 48,
+    "costItemCount": 0,
+    "costGold": "[18641,237249]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1318
+  },
+  {
+    "id": "0000E2C1",
+    "itemid": 14840058,
+    "level": 49,
+    "costItemCount": 0,
+    "costGold": "[19007,241915]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1344
+  },
+  {
+    "id": "0000E2C2",
+    "itemid": 14840058,
+    "level": 50,
+    "costItemCount": 0,
+    "costGold": "[19361,246417]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1369
+  },
+  {
+    "id": "0000E2C3",
+    "itemid": 14840058,
+    "level": 51,
+    "costItemCount": 0,
+    "costGold": "[19702,250765]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1399
+  },
+  {
+    "id": "0000E2C4",
+    "itemid": 14840058,
+    "level": 52,
+    "costItemCount": 0,
+    "costGold": "[20033,254969]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1423
+  },
+  {
+    "id": "0000E2C5",
+    "itemid": 14840058,
+    "level": 53,
+    "costItemCount": 0,
+    "costGold": "[20353,259039]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1445
+  },
+  {
+    "id": "0000E2C6",
+    "itemid": 14840058,
+    "level": 54,
+    "costItemCount": 0,
+    "costGold": "[20662,262983]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1468
+  },
+  {
+    "id": "0000E2C7",
+    "itemid": 14840058,
+    "level": 55,
+    "costItemCount": 0,
+    "costGold": "[20963,266809]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1489
+  },
+  {
+    "id": "0000E2C8",
+    "itemid": 14840058,
+    "level": 56,
+    "costItemCount": 0,
+    "costGold": "[21327,271435]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1510
+  },
+  {
+    "id": "0000E2C9",
+    "itemid": 14840058,
+    "level": 57,
+    "costItemCount": 0,
+    "costGold": "[21677,275899]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1534
+  },
+  {
+    "id": "0000E2CA",
+    "itemid": 14840058,
+    "level": 58,
+    "costItemCount": 0,
+    "costGold": "[22016,280212]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1558
+  },
+  {
+    "id": "0000E2CB",
+    "itemid": 14840058,
+    "level": 59,
+    "costItemCount": 0,
+    "costGold": "[22344,284383]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1581
+  },
+  {
+    "id": "0000E2CC",
+    "itemid": 14840058,
+    "level": 60,
+    "costItemCount": 0,
+    "costGold": "[22661,288423]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1603
+  },
+  {
+    "id": "0000E2CD",
+    "itemid": 14840058,
+    "level": 61,
+    "costItemCount": 0,
+    "costGold": "[22969,292338]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000E2CE",
+    "itemid": 14840058,
+    "level": 62,
+    "costItemCount": 0,
+    "costGold": "[23267,296137]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1653
+  },
+  {
+    "id": "0000E2CF",
+    "itemid": 14840058,
+    "level": 63,
+    "costItemCount": 0,
+    "costGold": "[23557,299825]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1674
+  },
+  {
+    "id": "0000E2D0",
+    "itemid": 14840058,
+    "level": 64,
+    "costItemCount": 0,
+    "costGold": "[23839,303410]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1694
+  },
+  {
+    "id": "0000E2D1",
+    "itemid": 14840058,
+    "level": 65,
+    "costItemCount": 0,
+    "costGold": "[24113,306897]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1713
+  },
+  {
+    "id": "0000E2D2",
+    "itemid": 14840058,
+    "level": 66,
+    "costItemCount": 0,
+    "costGold": "[24380,310291]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1732
+  },
+  {
+    "id": "0000E2D3",
+    "itemid": 14840058,
+    "level": 67,
+    "costItemCount": 0,
+    "costGold": "[24639,313597]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1751
+  },
+  {
+    "id": "0000E2D4",
+    "itemid": 14840058,
+    "level": 68,
+    "costItemCount": 0,
+    "costGold": "[25025,318505]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1769
+  },
+  {
+    "id": "0000E2D5",
+    "itemid": 14840058,
+    "level": 69,
+    "costItemCount": 0,
+    "costGold": "[25396,323231]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1794
+  },
+  {
+    "id": "0000E2D6",
+    "itemid": 14840058,
+    "level": 70,
+    "costItemCount": 0,
+    "costGold": "[25754,327788]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1819
+  },
+  {
+    "id": "0000E2D7",
+    "itemid": 14840058,
+    "level": 71,
+    "costItemCount": 0,
+    "costGold": "[26100,332187]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1612
+  },
+  {
+    "id": "0000E2D8",
+    "itemid": 14840058,
+    "level": 72,
+    "costItemCount": 0,
+    "costGold": "[26434,336440]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000E2D9",
+    "itemid": 14840058,
+    "level": 73,
+    "costItemCount": 0,
+    "costGold": "[26757,340556]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1652
+  },
+  {
+    "id": "0000E2DA",
+    "itemid": 14840058,
+    "level": 74,
+    "costItemCount": 0,
+    "costGold": "[27071,344542]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1671
+  },
+  {
+    "id": "0000E2DB",
+    "itemid": 14840058,
+    "level": 75,
+    "costItemCount": 0,
+    "costGold": "[27374,348408]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1690
+  },
+  {
+    "id": "0000E2DC",
+    "itemid": 14840058,
+    "level": 76,
+    "costItemCount": 0,
+    "costGold": "[27669,352160]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1708
+  },
+  {
+    "id": "0000E2DD",
+    "itemid": 14840058,
+    "level": 77,
+    "costItemCount": 0,
+    "costGold": "[27956,355805]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1725
+  },
+  {
+    "id": "0000E2DE",
+    "itemid": 14840058,
+    "level": 78,
+    "costItemCount": 0,
+    "costGold": "[28234,359348]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1742
+  },
+  {
+    "id": "0000E2DF",
+    "itemid": 14840058,
+    "level": 79,
+    "costItemCount": 0,
+    "costGold": "[28597,363973]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1759
+  },
+  {
+    "id": "0000E2E0",
+    "itemid": 14840058,
+    "level": 80,
+    "costItemCount": 0,
+    "costGold": "[28948,368436]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1780
+  },
+  {
+    "id": "0000E2E1",
+    "itemid": 14840058,
+    "level": 81,
+    "costItemCount": 0,
+    "costGold": "[29287,372748]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1808
+  },
+  {
+    "id": "0000E2E2",
+    "itemid": 14840058,
+    "level": 82,
+    "costItemCount": 0,
+    "costGold": "[29615,376919]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1828
+  },
+  {
+    "id": "0000E2E3",
+    "itemid": 14840058,
+    "level": 83,
+    "costItemCount": 0,
+    "costGold": "[29932,380957]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1847
+  },
+  {
+    "id": "0000E2E4",
+    "itemid": 14840058,
+    "level": 84,
+    "costItemCount": 0,
+    "costGold": "[30239,384872]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1866
+  },
+  {
+    "id": "0000E2E5",
+    "itemid": 14840058,
+    "level": 85,
+    "costItemCount": 0,
+    "costGold": "[30538,388670]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1884
+  },
+  {
+    "id": "0000E2E6",
+    "itemid": 14840058,
+    "level": 86,
+    "costItemCount": 0,
+    "costGold": "[30828,392358]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1902
+  },
+  {
+    "id": "0000E2E7",
+    "itemid": 14840058,
+    "level": 87,
+    "costItemCount": 0,
+    "costGold": "[31109,395942]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1920
+  },
+  {
+    "id": "0000E2E8",
+    "itemid": 14840058,
+    "level": 88,
+    "costItemCount": 0,
+    "costGold": "[31383,399428]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1937
+  },
+  {
+    "id": "0000E2E9",
+    "itemid": 14840058,
+    "level": 89,
+    "costItemCount": 0,
+    "costGold": "[31650,402821]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1953
+  },
+  {
+    "id": "0000E2EA",
+    "itemid": 14840058,
+    "level": 90,
+    "costItemCount": 0,
+    "costGold": "[31992,407175]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1969
+  },
+  {
+    "id": "0000E2EB",
+    "itemid": 14840058,
+    "level": 91,
+    "costItemCount": 0,
+    "costGold": "[32323,411384]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1998
+  },
+  {
+    "id": "0000E2EC",
+    "itemid": 14840058,
+    "level": 92,
+    "costItemCount": 0,
+    "costGold": "[32643,415459]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2018
+  },
+  {
+    "id": "0000E2ED",
+    "itemid": 14840058,
+    "level": 93,
+    "costItemCount": 0,
+    "costGold": "[32953,419408]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2037
+  },
+  {
+    "id": "0000E2EE",
+    "itemid": 14840058,
+    "level": 94,
+    "costItemCount": 0,
+    "costGold": "[33254,423238]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2056
+  },
+  {
+    "id": "0000E2EF",
+    "itemid": 14840058,
+    "level": 95,
+    "costItemCount": 0,
+    "costGold": "[33546,426957]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2074
+  },
+  {
+    "id": "0000E2F0",
+    "itemid": 14840058,
+    "level": 96,
+    "costItemCount": 0,
+    "costGold": "[33830,430569]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2092
+  },
+  {
+    "id": "0000E2F1",
+    "itemid": 14840058,
+    "level": 97,
+    "costItemCount": 0,
+    "costGold": "[34106,434083]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2109
+  },
+  {
+    "id": "0000E2F2",
+    "itemid": 14840058,
+    "level": 98,
+    "costItemCount": 0,
+    "costGold": "[34375,437502]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2126
+  },
+  {
+    "id": "0000E2F3",
+    "itemid": 14840058,
+    "level": 99,
+    "costItemCount": 0,
+    "costGold": "[34636,440831]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2143
+  },
+  {
+    "id": "0000E678",
+    "itemid": 14840059,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0,0]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000E679",
+    "itemid": 14840059,
+    "level": 1,
+    "costItemCount": 0,
+    "costGold": "[149,149]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 49
+  },
+  {
+    "id": "0000E67A",
+    "itemid": 14840059,
+    "level": 2,
+    "costItemCount": 0,
+    "costGold": "[630,630]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 88
+  },
+  {
+    "id": "0000E67B",
+    "itemid": 14840059,
+    "level": 3,
+    "costItemCount": 0,
+    "costGold": "[1089,1089]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 126
+  },
+  {
+    "id": "0000E67C",
+    "itemid": 14840059,
+    "level": 4,
+    "costItemCount": 0,
+    "costGold": "[1529,1529]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 162
+  },
+  {
+    "id": "0000E67D",
+    "itemid": 14840059,
+    "level": 5,
+    "costItemCount": 0,
+    "costGold": "[1949,1949]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 196
+  },
+  {
+    "id": "0000E67E",
+    "itemid": 14840059,
+    "level": 6,
+    "costItemCount": 0,
+    "costGold": "[2353,2353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 230
+  },
+  {
+    "id": "0000E67F",
+    "itemid": 14840059,
+    "level": 7,
+    "costItemCount": 0,
+    "costGold": "[2741,2741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 262
+  },
+  {
+    "id": "0000E680",
+    "itemid": 14840059,
+    "level": 8,
+    "costItemCount": 0,
+    "costGold": "[3115,3115]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 293
+  },
+  {
+    "id": "0000E681",
+    "itemid": 14840059,
+    "level": 9,
+    "costItemCount": 0,
+    "costGold": "[3475,3475]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 323
+  },
+  {
+    "id": "0000E682",
+    "itemid": 14840059,
+    "level": 10,
+    "costItemCount": 0,
+    "costGold": "[3823,3823]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 352
+  },
+  {
+    "id": "0000E683",
+    "itemid": 14840059,
+    "level": 11,
+    "costItemCount": 0,
+    "costGold": "[4159,4159]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 422
+  },
+  {
+    "id": "0000E684",
+    "itemid": 14840059,
+    "level": 12,
+    "costItemCount": 0,
+    "costGold": "[4643,4643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 461
+  },
+  {
+    "id": "0000E685",
+    "itemid": 14840059,
+    "level": 13,
+    "costItemCount": 0,
+    "costGold": "[5104,5104]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 498
+  },
+  {
+    "id": "0000E686",
+    "itemid": 14840059,
+    "level": 14,
+    "costItemCount": 0,
+    "costGold": "[5545,5545]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 533
+  },
+  {
+    "id": "0000E687",
+    "itemid": 14840059,
+    "level": 15,
+    "costItemCount": 0,
+    "costGold": "[5968,5968]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 567
+  },
+  {
+    "id": "0000E688",
+    "itemid": 14840059,
+    "level": 16,
+    "costItemCount": 0,
+    "costGold": "[6373,6373]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 600
+  },
+  {
+    "id": "0000E689",
+    "itemid": 14840059,
+    "level": 17,
+    "costItemCount": 0,
+    "costGold": "[6763,6763]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 632
+  },
+  {
+    "id": "0000E68A",
+    "itemid": 14840059,
+    "level": 18,
+    "costItemCount": 0,
+    "costGold": "[7138,7138]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 662
+  },
+  {
+    "id": "0000E68B",
+    "itemid": 14840059,
+    "level": 19,
+    "costItemCount": 0,
+    "costGold": "[7500,7500]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 692
+  },
+  {
+    "id": "0000E68C",
+    "itemid": 14840059,
+    "level": 20,
+    "costItemCount": 0,
+    "costGold": "[7848,7848]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 721
+  },
+  {
+    "id": "0000E68D",
+    "itemid": 14840059,
+    "level": 21,
+    "costItemCount": 0,
+    "costGold": "[8186,8186]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 729
+  },
+  {
+    "id": "0000E68E",
+    "itemid": 14840059,
+    "level": 22,
+    "costItemCount": 0,
+    "costGold": "[8512,8512]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 757
+  },
+  {
+    "id": "0000E68F",
+    "itemid": 14840059,
+    "level": 23,
+    "costItemCount": 0,
+    "costGold": "[8992,8992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 784
+  },
+  {
+    "id": "0000E690",
+    "itemid": 14840059,
+    "level": 24,
+    "costItemCount": 0,
+    "costGold": "[9450,9450]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 819
+  },
+  {
+    "id": "0000E691",
+    "itemid": 14840059,
+    "level": 25,
+    "costItemCount": 0,
+    "costGold": "[9889,9889]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 852
+  },
+  {
+    "id": "0000E692",
+    "itemid": 14840059,
+    "level": 26,
+    "costItemCount": 0,
+    "costGold": "[10309,10309]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 884
+  },
+  {
+    "id": "0000E693",
+    "itemid": 14840059,
+    "level": 27,
+    "costItemCount": 0,
+    "costGold": "[10712,10712]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 915
+  },
+  {
+    "id": "0000E694",
+    "itemid": 14840059,
+    "level": 28,
+    "costItemCount": 0,
+    "costGold": "[11099,11099]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 945
+  },
+  {
+    "id": "0000E695",
+    "itemid": 14840059,
+    "level": 29,
+    "costItemCount": 0,
+    "costGold": "[11472,11472]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 974
+  },
+  {
+    "id": "0000E696",
+    "itemid": 14840059,
+    "level": 30,
+    "costItemCount": 0,
+    "costGold": "[11832,11832]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1002
+  },
+  {
+    "id": "0000E697",
+    "itemid": 14840059,
+    "level": 31,
+    "costItemCount": 0,
+    "costGold": "[12179,12179]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 877
+  },
+  {
+    "id": "0000E698",
+    "itemid": 14840059,
+    "level": 32,
+    "costItemCount": 0,
+    "costGold": "[12514,12514]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 901
+  },
+  {
+    "id": "0000E699",
+    "itemid": 14840059,
+    "level": 33,
+    "costItemCount": 0,
+    "costGold": "[12839,12839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 924
+  },
+  {
+    "id": "0000E69A",
+    "itemid": 14840059,
+    "level": 34,
+    "costItemCount": 0,
+    "costGold": "[13300,13300]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 946
+  },
+  {
+    "id": "0000E69B",
+    "itemid": 14840059,
+    "level": 35,
+    "costItemCount": 0,
+    "costGold": "[13741,13741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 976
+  },
+  {
+    "id": "0000E69C",
+    "itemid": 14840059,
+    "level": 36,
+    "costItemCount": 0,
+    "costGold": "[14164,14164]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1006
+  },
+  {
+    "id": "0000E69D",
+    "itemid": 14840059,
+    "level": 37,
+    "costItemCount": 0,
+    "costGold": "[14569,14569]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1034
+  },
+  {
+    "id": "0000E69E",
+    "itemid": 14840059,
+    "level": 38,
+    "costItemCount": 0,
+    "costGold": "[14959,14959]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1061
+  },
+  {
+    "id": "0000E69F",
+    "itemid": 14840059,
+    "level": 39,
+    "costItemCount": 0,
+    "costGold": "[15334,15334]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1088
+  },
+  {
+    "id": "0000E6A0",
+    "itemid": 14840059,
+    "level": 40,
+    "costItemCount": 0,
+    "costGold": "[15695,15695]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1113
+  },
+  {
+    "id": "0000E6A1",
+    "itemid": 14840059,
+    "level": 41,
+    "costItemCount": 0,
+    "costGold": "[16044,16044]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1143
+  },
+  {
+    "id": "0000E6A2",
+    "itemid": 14840059,
+    "level": 42,
+    "costItemCount": 0,
+    "costGold": "[16381,16381]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1167
+  },
+  {
+    "id": "0000E6A3",
+    "itemid": 14840059,
+    "level": 43,
+    "costItemCount": 0,
+    "costGold": "[16707,16707]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1191
+  },
+  {
+    "id": "0000E6A4",
+    "itemid": 14840059,
+    "level": 44,
+    "costItemCount": 0,
+    "costGold": "[17023,17023]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1213
+  },
+  {
+    "id": "0000E6A5",
+    "itemid": 14840059,
+    "level": 45,
+    "costItemCount": 0,
+    "costGold": "[17452,17452]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1235
+  },
+  {
+    "id": "0000E6A6",
+    "itemid": 14840059,
+    "level": 46,
+    "costItemCount": 0,
+    "costGold": "[17864,17864]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1264
+  },
+  {
+    "id": "0000E6A7",
+    "itemid": 14840059,
+    "level": 47,
+    "costItemCount": 0,
+    "costGold": "[18260,18260]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1291
+  },
+  {
+    "id": "0000E6A8",
+    "itemid": 14840059,
+    "level": 48,
+    "costItemCount": 0,
+    "costGold": "[18641,18641]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1318
+  },
+  {
+    "id": "0000E6A9",
+    "itemid": 14840059,
+    "level": 49,
+    "costItemCount": 0,
+    "costGold": "[19007,19007]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1344
+  },
+  {
+    "id": "0000E6AA",
+    "itemid": 14840059,
+    "level": 50,
+    "costItemCount": 0,
+    "costGold": "[19361,19361]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1369
+  },
+  {
+    "id": "0000E6AB",
+    "itemid": 14840059,
+    "level": 51,
+    "costItemCount": 0,
+    "costGold": "[19702,19702]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1399
+  },
+  {
+    "id": "0000E6AC",
+    "itemid": 14840059,
+    "level": 52,
+    "costItemCount": 0,
+    "costGold": "[20033,20033]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1423
+  },
+  {
+    "id": "0000E6AD",
+    "itemid": 14840059,
+    "level": 53,
+    "costItemCount": 0,
+    "costGold": "[20353,20353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1445
+  },
+  {
+    "id": "0000E6AE",
+    "itemid": 14840059,
+    "level": 54,
+    "costItemCount": 0,
+    "costGold": "[20662,20662]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1468
+  },
+  {
+    "id": "0000E6AF",
+    "itemid": 14840059,
+    "level": 55,
+    "costItemCount": 0,
+    "costGold": "[20963,20963]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1489
+  },
+  {
+    "id": "0000E6B0",
+    "itemid": 14840059,
+    "level": 56,
+    "costItemCount": 0,
+    "costGold": "[21327,21327]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1510
+  },
+  {
+    "id": "0000E6B1",
+    "itemid": 14840059,
+    "level": 57,
+    "costItemCount": 0,
+    "costGold": "[21677,21677]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1534
+  },
+  {
+    "id": "0000E6B2",
+    "itemid": 14840059,
+    "level": 58,
+    "costItemCount": 0,
+    "costGold": "[22016,22016]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1558
+  },
+  {
+    "id": "0000E6B3",
+    "itemid": 14840059,
+    "level": 59,
+    "costItemCount": 0,
+    "costGold": "[22344,22344]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1581
+  },
+  {
+    "id": "0000E6B4",
+    "itemid": 14840059,
+    "level": 60,
+    "costItemCount": 0,
+    "costGold": "[22661,22661]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1603
+  },
+  {
+    "id": "0000E6B5",
+    "itemid": 14840059,
+    "level": 61,
+    "costItemCount": 0,
+    "costGold": "[22969,22969]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000E6B6",
+    "itemid": 14840059,
+    "level": 62,
+    "costItemCount": 0,
+    "costGold": "[23267,23267]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1653
+  },
+  {
+    "id": "0000E6B7",
+    "itemid": 14840059,
+    "level": 63,
+    "costItemCount": 0,
+    "costGold": "[23557,23557]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1674
+  },
+  {
+    "id": "0000E6B8",
+    "itemid": 14840059,
+    "level": 64,
+    "costItemCount": 0,
+    "costGold": "[23839,23839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1694
+  },
+  {
+    "id": "0000E6B9",
+    "itemid": 14840059,
+    "level": 65,
+    "costItemCount": 0,
+    "costGold": "[24113,24113]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1713
+  },
+  {
+    "id": "0000E6BA",
+    "itemid": 14840059,
+    "level": 66,
+    "costItemCount": 0,
+    "costGold": "[24380,24380]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1732
+  },
+  {
+    "id": "0000E6BB",
+    "itemid": 14840059,
+    "level": 67,
+    "costItemCount": 0,
+    "costGold": "[24639,24639]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1751
+  },
+  {
+    "id": "0000E6BC",
+    "itemid": 14840059,
+    "level": 68,
+    "costItemCount": 0,
+    "costGold": "[25025,25025]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1769
+  },
+  {
+    "id": "0000E6BD",
+    "itemid": 14840059,
+    "level": 69,
+    "costItemCount": 0,
+    "costGold": "[25396,25396]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1794
+  },
+  {
+    "id": "0000E6BE",
+    "itemid": 14840059,
+    "level": 70,
+    "costItemCount": 0,
+    "costGold": "[25754,25754]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1819
+  },
+  {
+    "id": "0000E6BF",
+    "itemid": 14840059,
+    "level": 71,
+    "costItemCount": 0,
+    "costGold": "[26100,26100]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1612
+  },
+  {
+    "id": "0000E6C0",
+    "itemid": 14840059,
+    "level": 72,
+    "costItemCount": 0,
+    "costGold": "[26434,26434]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000E6C1",
+    "itemid": 14840059,
+    "level": 73,
+    "costItemCount": 0,
+    "costGold": "[26757,26757]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1652
+  },
+  {
+    "id": "0000E6C2",
+    "itemid": 14840059,
+    "level": 74,
+    "costItemCount": 0,
+    "costGold": "[27071,27071]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1671
+  },
+  {
+    "id": "0000E6C3",
+    "itemid": 14840059,
+    "level": 75,
+    "costItemCount": 0,
+    "costGold": "[27374,27374]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1690
+  },
+  {
+    "id": "0000E6C4",
+    "itemid": 14840059,
+    "level": 76,
+    "costItemCount": 0,
+    "costGold": "[27669,27669]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1708
+  },
+  {
+    "id": "0000E6C5",
+    "itemid": 14840059,
+    "level": 77,
+    "costItemCount": 0,
+    "costGold": "[27956,27956]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1725
+  },
+  {
+    "id": "0000E6C6",
+    "itemid": 14840059,
+    "level": 78,
+    "costItemCount": 0,
+    "costGold": "[28234,28234]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1742
+  },
+  {
+    "id": "0000E6C7",
+    "itemid": 14840059,
+    "level": 79,
+    "costItemCount": 0,
+    "costGold": "[28597,28597]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1759
+  },
+  {
+    "id": "0000E6C8",
+    "itemid": 14840059,
+    "level": 80,
+    "costItemCount": 0,
+    "costGold": "[28948,28948]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1780
+  },
+  {
+    "id": "0000E6C9",
+    "itemid": 14840059,
+    "level": 81,
+    "costItemCount": 0,
+    "costGold": "[29287,29287]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1808
+  },
+  {
+    "id": "0000E6CA",
+    "itemid": 14840059,
+    "level": 82,
+    "costItemCount": 0,
+    "costGold": "[29615,29615]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1828
+  },
+  {
+    "id": "0000E6CB",
+    "itemid": 14840059,
+    "level": 83,
+    "costItemCount": 0,
+    "costGold": "[29932,29932]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1847
+  },
+  {
+    "id": "0000E6CC",
+    "itemid": 14840059,
+    "level": 84,
+    "costItemCount": 0,
+    "costGold": "[30239,30239]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1866
+  },
+  {
+    "id": "0000E6CD",
+    "itemid": 14840059,
+    "level": 85,
+    "costItemCount": 0,
+    "costGold": "[30538,30538]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1884
+  },
+  {
+    "id": "0000E6CE",
+    "itemid": 14840059,
+    "level": 86,
+    "costItemCount": 0,
+    "costGold": "[30828,30828]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1902
+  },
+  {
+    "id": "0000E6CF",
+    "itemid": 14840059,
+    "level": 87,
+    "costItemCount": 0,
+    "costGold": "[31109,31109]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1920
+  },
+  {
+    "id": "0000E6D0",
+    "itemid": 14840059,
+    "level": 88,
+    "costItemCount": 0,
+    "costGold": "[31383,31383]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1937
+  },
+  {
+    "id": "0000E6D1",
+    "itemid": 14840059,
+    "level": 89,
+    "costItemCount": 0,
+    "costGold": "[31650,31650]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1953
+  },
+  {
+    "id": "0000E6D2",
+    "itemid": 14840059,
+    "level": 90,
+    "costItemCount": 0,
+    "costGold": "[31992,31992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1969
+  },
+  {
+    "id": "0000E6D3",
+    "itemid": 14840059,
+    "level": 91,
+    "costItemCount": 0,
+    "costGold": "[32323,32323]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1998
+  },
+  {
+    "id": "0000E6D4",
+    "itemid": 14840059,
+    "level": 92,
+    "costItemCount": 0,
+    "costGold": "[32643,32643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2018
+  },
+  {
+    "id": "0000E6D5",
+    "itemid": 14840059,
+    "level": 93,
+    "costItemCount": 0,
+    "costGold": "[32953,32953]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2037
+  },
+  {
+    "id": "0000E6D6",
+    "itemid": 14840059,
+    "level": 94,
+    "costItemCount": 0,
+    "costGold": "[33254,33254]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2056
+  },
+  {
+    "id": "0000E6D7",
+    "itemid": 14840059,
+    "level": 95,
+    "costItemCount": 0,
+    "costGold": "[33546,33546]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2074
+  },
+  {
+    "id": "0000E6D8",
+    "itemid": 14840059,
+    "level": 96,
+    "costItemCount": 0,
+    "costGold": "[33830,33830]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2092
+  },
+  {
+    "id": "0000E6D9",
+    "itemid": 14840059,
+    "level": 97,
+    "costItemCount": 0,
+    "costGold": "[34106,34106]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2109
+  },
+  {
+    "id": "0000E6DA",
+    "itemid": 14840059,
+    "level": 98,
+    "costItemCount": 0,
+    "costGold": "[34375,34375]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2126
+  },
+  {
+    "id": "0000E6DB",
+    "itemid": 14840059,
+    "level": 99,
+    "costItemCount": 0,
+    "costGold": "[34636,34636]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2143
+  },
+  {
+    "id": "0000EA60",
+    "itemid": 14840060,
+    "level": 0,
+    "costItemCount": 0,
+    "costGold": "[0,0]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 0
+  },
+  {
+    "id": "0000EA61",
+    "itemid": 14840060,
+    "level": 1,
+    "costItemCount": 0,
+    "costGold": "[1897,149]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 49
+  },
+  {
+    "id": "0000EA62",
+    "itemid": 14840060,
+    "level": 2,
+    "costItemCount": 0,
+    "costGold": "[8025,630]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 88
+  },
+  {
+    "id": "0000EA63",
+    "itemid": 14840060,
+    "level": 3,
+    "costItemCount": 0,
+    "costGold": "[13871,1089]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 126
+  },
+  {
+    "id": "0000EA64",
+    "itemid": 14840060,
+    "level": 4,
+    "costItemCount": 0,
+    "costGold": "[19461,1529]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 162
+  },
+  {
+    "id": "0000EA65",
+    "itemid": 14840060,
+    "level": 5,
+    "costItemCount": 0,
+    "costGold": "[24816,1949]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 196
+  },
+  {
+    "id": "0000EA66",
+    "itemid": 14840060,
+    "level": 6,
+    "costItemCount": 0,
+    "costGold": "[29956,2353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 230
+  },
+  {
+    "id": "0000EA67",
+    "itemid": 14840060,
+    "level": 7,
+    "costItemCount": 0,
+    "costGold": "[34895,2741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 262
+  },
+  {
+    "id": "0000EA68",
+    "itemid": 14840060,
+    "level": 8,
+    "costItemCount": 0,
+    "costGold": "[39651,3115]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 293
+  },
+  {
+    "id": "0000EA69",
+    "itemid": 14840060,
+    "level": 9,
+    "costItemCount": 0,
+    "costGold": "[44235,3475]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 323
+  },
+  {
+    "id": "0000EA6A",
+    "itemid": 14840060,
+    "level": 10,
+    "costItemCount": 0,
+    "costGold": "[48661,3823]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 352
+  },
+  {
+    "id": "0000EA6B",
+    "itemid": 14840060,
+    "level": 11,
+    "costItemCount": 0,
+    "costGold": "[52937,4159]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 422
+  },
+  {
+    "id": "0000EA6C",
+    "itemid": 14840060,
+    "level": 12,
+    "costItemCount": 0,
+    "costGold": "[59095,4643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 461
+  },
+  {
+    "id": "0000EA6D",
+    "itemid": 14840060,
+    "level": 13,
+    "costItemCount": 0,
+    "costGold": "[64968,5104]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 498
+  },
+  {
+    "id": "0000EA6E",
+    "itemid": 14840060,
+    "level": 14,
+    "costItemCount": 0,
+    "costGold": "[70583,5545]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 533
+  },
+  {
+    "id": "0000EA6F",
+    "itemid": 14840060,
+    "level": 15,
+    "costItemCount": 0,
+    "costGold": "[75961,5968]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 567
+  },
+  {
+    "id": "0000EA70",
+    "itemid": 14840060,
+    "level": 16,
+    "costItemCount": 0,
+    "costGold": "[81121,6373]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 600
+  },
+  {
+    "id": "0000EA71",
+    "itemid": 14840060,
+    "level": 17,
+    "costItemCount": 0,
+    "costGold": "[86080,6763]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 632
+  },
+  {
+    "id": "0000EA72",
+    "itemid": 14840060,
+    "level": 18,
+    "costItemCount": 0,
+    "costGold": "[90853,7138]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 662
+  },
+  {
+    "id": "0000EA73",
+    "itemid": 14840060,
+    "level": 19,
+    "costItemCount": 0,
+    "costGold": "[95454,7500]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 692
+  },
+  {
+    "id": "0000EA74",
+    "itemid": 14840060,
+    "level": 20,
+    "costItemCount": 0,
+    "costGold": "[99895,7848]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 721
+  },
+  {
+    "id": "0000EA75",
+    "itemid": 14840060,
+    "level": 21,
+    "costItemCount": 0,
+    "costGold": "[104186,8186]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 729
+  },
+  {
+    "id": "0000EA76",
+    "itemid": 14840060,
+    "level": 22,
+    "costItemCount": 0,
+    "costGold": "[108337,8512]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 757
+  },
+  {
+    "id": "0000EA77",
+    "itemid": 14840060,
+    "level": 23,
+    "costItemCount": 0,
+    "costGold": "[114451,8992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 784
+  },
+  {
+    "id": "0000EA78",
+    "itemid": 14840060,
+    "level": 24,
+    "costItemCount": 0,
+    "costGold": "[120285,9450]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 819
+  },
+  {
+    "id": "0000EA79",
+    "itemid": 14840060,
+    "level": 25,
+    "costItemCount": 0,
+    "costGold": "[125863,9889]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 852
+  },
+  {
+    "id": "0000EA7A",
+    "itemid": 14840060,
+    "level": 26,
+    "costItemCount": 0,
+    "costGold": "[131207,10309]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 884
+  },
+  {
+    "id": "0000EA7B",
+    "itemid": 14840060,
+    "level": 27,
+    "costItemCount": 0,
+    "costGold": "[136337,10712]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 915
+  },
+  {
+    "id": "0000EA7C",
+    "itemid": 14840060,
+    "level": 28,
+    "costItemCount": 0,
+    "costGold": "[141268,11099]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 945
+  },
+  {
+    "id": "0000EA7D",
+    "itemid": 14840060,
+    "level": 29,
+    "costItemCount": 0,
+    "costGold": "[146015,11472]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 974
+  },
+  {
+    "id": "0000EA7E",
+    "itemid": 14840060,
+    "level": 30,
+    "costItemCount": 0,
+    "costGold": "[150591,11832]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1002
+  },
+  {
+    "id": "0000EA7F",
+    "itemid": 14840060,
+    "level": 31,
+    "costItemCount": 0,
+    "costGold": "[155009,12179]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 877
+  },
+  {
+    "id": "0000EA80",
+    "itemid": 14840060,
+    "level": 32,
+    "costItemCount": 0,
+    "costGold": "[159279,12514]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 901
+  },
+  {
+    "id": "0000EA81",
+    "itemid": 14840060,
+    "level": 33,
+    "costItemCount": 0,
+    "costGold": "[163410,12839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 924
+  },
+  {
+    "id": "0000EA82",
+    "itemid": 14840060,
+    "level": 34,
+    "costItemCount": 0,
+    "costGold": "[169282,13300]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 946
+  },
+  {
+    "id": "0000EA83",
+    "itemid": 14840060,
+    "level": 35,
+    "costItemCount": 0,
+    "costGold": "[174895,13741]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 976
+  },
+  {
+    "id": "0000EA84",
+    "itemid": 14840060,
+    "level": 36,
+    "costItemCount": 0,
+    "costGold": "[180272,14164]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1006
+  },
+  {
+    "id": "0000EA85",
+    "itemid": 14840060,
+    "level": 37,
+    "costItemCount": 0,
+    "costGold": "[185431,14569]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1034
+  },
+  {
+    "id": "0000EA86",
+    "itemid": 14840060,
+    "level": 38,
+    "costItemCount": 0,
+    "costGold": "[190389,14959]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1061
+  },
+  {
+    "id": "0000EA87",
+    "itemid": 14840060,
+    "level": 39,
+    "costItemCount": 0,
+    "costGold": "[195161,15334]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1088
+  },
+  {
+    "id": "0000EA88",
+    "itemid": 14840060,
+    "level": 40,
+    "costItemCount": 0,
+    "costGold": "[199761,15695]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1113
+  },
+  {
+    "id": "0000EA89",
+    "itemid": 14840060,
+    "level": 41,
+    "costItemCount": 0,
+    "costGold": "[204201,16044]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1143
+  },
+  {
+    "id": "0000EA8A",
+    "itemid": 14840060,
+    "level": 42,
+    "costItemCount": 0,
+    "costGold": "[208491,16381]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1167
+  },
+  {
+    "id": "0000EA8B",
+    "itemid": 14840060,
+    "level": 43,
+    "costItemCount": 0,
+    "costGold": "[212641,16707]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1191
+  },
+  {
+    "id": "0000EA8C",
+    "itemid": 14840060,
+    "level": 44,
+    "costItemCount": 0,
+    "costGold": "[216661,17023]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1213
+  },
+  {
+    "id": "0000EA8D",
+    "itemid": 14840060,
+    "level": 45,
+    "costItemCount": 0,
+    "costGold": "[222128,17452]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1235
+  },
+  {
+    "id": "0000EA8E",
+    "itemid": 14840060,
+    "level": 46,
+    "costItemCount": 0,
+    "costGold": "[227370,17864]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1264
+  },
+  {
+    "id": "0000EA8F",
+    "itemid": 14840060,
+    "level": 47,
+    "costItemCount": 0,
+    "costGold": "[232405,18260]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1291
+  },
+  {
+    "id": "0000EA90",
+    "itemid": 14840060,
+    "level": 48,
+    "costItemCount": 0,
+    "costGold": "[237249,18641]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1318
+  },
+  {
+    "id": "0000EA91",
+    "itemid": 14840060,
+    "level": 49,
+    "costItemCount": 0,
+    "costGold": "[241915,19007]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1344
+  },
+  {
+    "id": "0000EA92",
+    "itemid": 14840060,
+    "level": 50,
+    "costItemCount": 0,
+    "costGold": "[246417,19361]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1369
+  },
+  {
+    "id": "0000EA93",
+    "itemid": 14840060,
+    "level": 51,
+    "costItemCount": 0,
+    "costGold": "[250765,19702]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1399
+  },
+  {
+    "id": "0000EA94",
+    "itemid": 14840060,
+    "level": 52,
+    "costItemCount": 0,
+    "costGold": "[254969,20033]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1423
+  },
+  {
+    "id": "0000EA95",
+    "itemid": 14840060,
+    "level": 53,
+    "costItemCount": 0,
+    "costGold": "[259039,20353]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1445
+  },
+  {
+    "id": "0000EA96",
+    "itemid": 14840060,
+    "level": 54,
+    "costItemCount": 0,
+    "costGold": "[262983,20662]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1468
+  },
+  {
+    "id": "0000EA97",
+    "itemid": 14840060,
+    "level": 55,
+    "costItemCount": 0,
+    "costGold": "[266809,20963]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1489
+  },
+  {
+    "id": "0000EA98",
+    "itemid": 14840060,
+    "level": 56,
+    "costItemCount": 0,
+    "costGold": "[271435,21327]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1510
+  },
+  {
+    "id": "0000EA99",
+    "itemid": 14840060,
+    "level": 57,
+    "costItemCount": 0,
+    "costGold": "[275899,21677]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1534
+  },
+  {
+    "id": "0000EA9A",
+    "itemid": 14840060,
+    "level": 58,
+    "costItemCount": 0,
+    "costGold": "[280212,22016]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1558
+  },
+  {
+    "id": "0000EA9B",
+    "itemid": 14840060,
+    "level": 59,
+    "costItemCount": 0,
+    "costGold": "[284383,22344]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1581
+  },
+  {
+    "id": "0000EA9C",
+    "itemid": 14840060,
+    "level": 60,
+    "costItemCount": 0,
+    "costGold": "[288423,22661]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1603
+  },
+  {
+    "id": "0000EA9D",
+    "itemid": 14840060,
+    "level": 61,
+    "costItemCount": 0,
+    "costGold": "[292338,22969]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000EA9E",
+    "itemid": 14840060,
+    "level": 62,
+    "costItemCount": 0,
+    "costGold": "[296137,23267]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1653
+  },
+  {
+    "id": "0000EA9F",
+    "itemid": 14840060,
+    "level": 63,
+    "costItemCount": 0,
+    "costGold": "[299825,23557]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1674
+  },
+  {
+    "id": "0000EAA0",
+    "itemid": 14840060,
+    "level": 64,
+    "costItemCount": 0,
+    "costGold": "[303410,23839]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1694
+  },
+  {
+    "id": "0000EAA1",
+    "itemid": 14840060,
+    "level": 65,
+    "costItemCount": 0,
+    "costGold": "[306897,24113]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1713
+  },
+  {
+    "id": "0000EAA2",
+    "itemid": 14840060,
+    "level": 66,
+    "costItemCount": 0,
+    "costGold": "[310291,24380]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1732
+  },
+  {
+    "id": "0000EAA3",
+    "itemid": 14840060,
+    "level": 67,
+    "costItemCount": 0,
+    "costGold": "[313597,24639]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1751
+  },
+  {
+    "id": "0000EAA4",
+    "itemid": 14840060,
+    "level": 68,
+    "costItemCount": 0,
+    "costGold": "[318505,25025]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1769
+  },
+  {
+    "id": "0000EAA5",
+    "itemid": 14840060,
+    "level": 69,
+    "costItemCount": 0,
+    "costGold": "[323231,25396]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1794
+  },
+  {
+    "id": "0000EAA6",
+    "itemid": 14840060,
+    "level": 70,
+    "costItemCount": 0,
+    "costGold": "[327788,25754]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1819
+  },
+  {
+    "id": "0000EAA7",
+    "itemid": 14840060,
+    "level": 71,
+    "costItemCount": 0,
+    "costGold": "[332187,26100]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1612
+  },
+  {
+    "id": "0000EAA8",
+    "itemid": 14840060,
+    "level": 72,
+    "costItemCount": 0,
+    "costGold": "[336440,26434]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1632
+  },
+  {
+    "id": "0000EAA9",
+    "itemid": 14840060,
+    "level": 73,
+    "costItemCount": 0,
+    "costGold": "[340556,26757]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1652
+  },
+  {
+    "id": "0000EAAA",
+    "itemid": 14840060,
+    "level": 74,
+    "costItemCount": 0,
+    "costGold": "[344542,27071]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1671
+  },
+  {
+    "id": "0000EAAB",
+    "itemid": 14840060,
+    "level": 75,
+    "costItemCount": 0,
+    "costGold": "[348408,27374]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1690
+  },
+  {
+    "id": "0000EAAC",
+    "itemid": 14840060,
+    "level": 76,
+    "costItemCount": 0,
+    "costGold": "[352160,27669]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1708
+  },
+  {
+    "id": "0000EAAD",
+    "itemid": 14840060,
+    "level": 77,
+    "costItemCount": 0,
+    "costGold": "[355805,27956]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1725
+  },
+  {
+    "id": "0000EAAE",
+    "itemid": 14840060,
+    "level": 78,
+    "costItemCount": 0,
+    "costGold": "[359348,28234]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1742
+  },
+  {
+    "id": "0000EAAF",
+    "itemid": 14840060,
+    "level": 79,
+    "costItemCount": 0,
+    "costGold": "[363973,28597]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1759
+  },
+  {
+    "id": "0000EAB0",
+    "itemid": 14840060,
+    "level": 80,
+    "costItemCount": 0,
+    "costGold": "[368436,28948]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1780
+  },
+  {
+    "id": "0000EAB1",
+    "itemid": 14840060,
+    "level": 81,
+    "costItemCount": 0,
+    "costGold": "[372748,29287]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1808
+  },
+  {
+    "id": "0000EAB2",
+    "itemid": 14840060,
+    "level": 82,
+    "costItemCount": 0,
+    "costGold": "[376919,29615]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1828
+  },
+  {
+    "id": "0000EAB3",
+    "itemid": 14840060,
+    "level": 83,
+    "costItemCount": 0,
+    "costGold": "[380957,29932]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1847
+  },
+  {
+    "id": "0000EAB4",
+    "itemid": 14840060,
+    "level": 84,
+    "costItemCount": 0,
+    "costGold": "[384872,30239]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1866
+  },
+  {
+    "id": "0000EAB5",
+    "itemid": 14840060,
+    "level": 85,
+    "costItemCount": 0,
+    "costGold": "[388670,30538]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1884
+  },
+  {
+    "id": "0000EAB6",
+    "itemid": 14840060,
+    "level": 86,
+    "costItemCount": 0,
+    "costGold": "[392358,30828]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1902
+  },
+  {
+    "id": "0000EAB7",
+    "itemid": 14840060,
+    "level": 87,
+    "costItemCount": 0,
+    "costGold": "[395942,31109]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1920
+  },
+  {
+    "id": "0000EAB8",
+    "itemid": 14840060,
+    "level": 88,
+    "costItemCount": 0,
+    "costGold": "[399428,31383]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1937
+  },
+  {
+    "id": "0000EAB9",
+    "itemid": 14840060,
+    "level": 89,
+    "costItemCount": 0,
+    "costGold": "[402821,31650]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1953
+  },
+  {
+    "id": "0000EABA",
+    "itemid": 14840060,
+    "level": 90,
+    "costItemCount": 0,
+    "costGold": "[407175,31992]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1969
+  },
+  {
+    "id": "0000EABB",
+    "itemid": 14840060,
+    "level": 91,
+    "costItemCount": 0,
+    "costGold": "[411384,32323]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 1998
+  },
+  {
+    "id": "0000EABC",
+    "itemid": 14840060,
+    "level": 92,
+    "costItemCount": 0,
+    "costGold": "[415459,32643]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2018
+  },
+  {
+    "id": "0000EABD",
+    "itemid": 14840060,
+    "level": 93,
+    "costItemCount": 0,
+    "costGold": "[419408,32953]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2037
+  },
+  {
+    "id": "0000EABE",
+    "itemid": 14840060,
+    "level": 94,
+    "costItemCount": 0,
+    "costGold": "[423238,33254]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2056
+  },
+  {
+    "id": "0000EABF",
+    "itemid": 14840060,
+    "level": 95,
+    "costItemCount": 0,
+    "costGold": "[426957,33546]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2074
+  },
+  {
+    "id": "0000EAC0",
+    "itemid": 14840060,
+    "level": 96,
+    "costItemCount": 0,
+    "costGold": "[430569,33830]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2092
+  },
+  {
+    "id": "0000EAC1",
+    "itemid": 14840060,
+    "level": 97,
+    "costItemCount": 0,
+    "costGold": "[434083,34106]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2109
+  },
+  {
+    "id": "0000EAC2",
+    "itemid": 14840060,
+    "level": 98,
+    "costItemCount": 0,
+    "costGold": "[437502,34375]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2126
+  },
+  {
+    "id": "0000EAC3",
+    "itemid": 14840060,
+    "level": 99,
+    "costItemCount": 0,
+    "costGold": "[440831,34636]",
+    "productCount": 10,
+    "costStoneCount": 0,
+    "f6": 2143
+  }
+]

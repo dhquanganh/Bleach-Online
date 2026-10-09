@@ -1,0 +1,19 @@
+[
+  {
+    "id": "000EF421",
+    "name": "天天好礼",
+    "tName": "天天好礼",
+    "desc": "1. When your daily top-up reached a certain amount, you can unlock giftpacks.\n2. When daily top-up and the number of players who topped up reached a certain amount, the corresponding giftpack will be unlocked.\n3. When the topping up players are not enough to unlock the giftpack, you need to spend gold to get the giftpack.\n4. You can also buy server giftpack with gold directly.\n5. All data will refresh at midnight each day.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 980001,
+    "rechargeGift": "[{\"cost\":200,\"award\":21405841},{\"cost\":200,\"award\":21405841},{\"cost\":200,\"award\":21405841},{\"cost\":200,\"award\":21405841},{\"cost\":200,\"award\":21405841}]",
+    "rechargeIndex": 2,
+    "rechargeGiftIndex": 3,
+    "participateIndex": 4,
+    "shareGift": "[[{\"cost\":50,\"condition\":5,\"award\":21405842},{\"cost\":100,\"condition\":10,\"award\":21405843},{\"cost\":300,\"condition\":20,\"award\":21405844},{\"cost\":600,\"condition\":50,\"award\":21405845}],[{\"cost\":50,\"condition\":5,\"award\":21405842},{\"cost\":100,\"condition\":10,\"award\":21405843},{\"cost\":300,\"condition\":20,\"award\":21405844},{\"cost\":600,\"condition\":50,\"award\":21405845}],[{\"cost\":50,\"condition\":5,\"award\":21405842},{\"cost\":100,\"condition\":10,\"award\":21405843},{\"cost\":300,\"condition\":20,\"award\":21405844},{\"cost\":600,\"condition\":50,\"award\":21405845}],[{\"cost\":50,\"condition\":5,\"award\":21405842},{\"cost\":100,\"condition\":10,\"award\":21405843},{\"cost\":300,\"condition\":20,\"award\":21405844},{\"cost\":600,\"condition\":50,\"award\":21405845}],[{\"cost\":50,\"condition\":5,\"award\":21405842},{\"cost\":100,\"condition\":10,\"award\":21405843},{\"cost\":300,\"condition\":20,\"award\":21405844},{\"cost\":600,\"condition\":50,\"award\":21405845}]]",
+    "rechargeIndexs": "[5,6,7,8]",
+    "buyIndexs": "[9,10,11,12]",
+    "language": "{\"shareGiftDesc\":\"Need %0 topping up players to unlock\"}"
+  }
+]

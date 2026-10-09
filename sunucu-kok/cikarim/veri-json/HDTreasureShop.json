@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0007EF41",
+    "name": "Urahara Shop",
+    "tName": "Urahara Shop Super Value Discount (Can only purchase once)",
+    "desc": "1. Players can spend gold to upgrade Hōgu to higher Tier; 2. If you equip the Hōgu on to Partners, you cannot upgrade to higher tier; please unequipp and place in backpack to upgrade Hōgu; 3. Tier 3 - 12 Hōgu can at most upgrade to Tier 12 Hōgu; 4. If you want to upgrade Tier 5 or above Hōgu to higher Tier, you need to upgrade to max level first; 5. Players can purchase limited amount of discount price Hōgu Enhancement Talisman。",
+    "tip": "1. If you purchase growth fund then you cannot purchase other funds. 2. The growth funds reward of %0 coupons will be sent everyday at 12:30 AM via system mail 3. The reward will be sent 30 times. 4. Even if you log off during the event period, you'll still receive the reward until all 30 installments are sent",
+    "price": 0,
+    "imageID": 520001,
+    "f6": "[{\"gold\":180,\"index\":0,\"getType\":2,\"limit\":15,\"award\":[21405994],\"name\":\"Hōgu Enhance Talisman*2\",\"discount\":7,\"price\":200},{\"gold\":400,\"index\":1,\"getType\":2,\"limit\":10,\"award\":[21405995],\"name\":\"Hōgu Enhance Talisman*5\",\"discount\":6,\"price\":500},{\"gold\":700,\"index\":2,\"getType\":2,\"limit\":2,\"award\":[21405996],\"name\":\"Hōgu Enhance Talisman*10\",\"discount\":5,\"price\":1000}]"
+  }
+]

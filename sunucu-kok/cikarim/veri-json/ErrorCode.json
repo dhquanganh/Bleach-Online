@@ -1,0 +1,2242 @@
+[
+  {
+    "id": "00000000",
+    "desc": "Success",
+    "type": 0
+  },
+  {
+    "id": "00000001",
+    "desc": "Failure",
+    "type": 0
+  },
+  {
+    "id": "00000002",
+    "desc": "Please upgrade your rank first",
+    "type": 1
+  },
+  {
+    "id": "00000003",
+    "desc": "Wrong weapon slot",
+    "type": 1
+  },
+  {
+    "id": "00000004",
+    "desc": "Item not found",
+    "type": 1
+  },
+  {
+    "id": "00000005",
+    "desc": "Failed to delete the item",
+    "type": 1
+  },
+  {
+    "id": "00000006",
+    "desc": "Bag is full",
+    "type": 1
+  },
+  {
+    "id": "00000007",
+    "desc": "You can't equip this item",
+    "type": 1
+  },
+  {
+    "id": "00000008",
+    "desc": "Equipment type does not match target partner's class",
+    "type": 1
+  },
+  {
+    "id": "00000009",
+    "desc": "Source item and target item cannot be the same",
+    "type": 1
+  },
+  {
+    "id": "0000000A",
+    "desc": "Wrong server static data",
+    "type": 2
+  },
+  {
+    "id": "0000000B",
+    "desc": "Wrong number of slots",
+    "type": 1
+  },
+  {
+    "id": "0000000C",
+    "desc": "Equipment grade too low",
+    "type": 1
+  },
+  {
+    "id": "0000000D",
+    "desc": "Not enough silver",
+    "type": 1
+  },
+  {
+    "id": "0000000E",
+    "desc": "Player level too low",
+    "type": 1
+  },
+  {
+    "id": "0000000F",
+    "desc": "Enhancement CD",
+    "type": 1
+  },
+  {
+    "id": "00000010",
+    "desc": "Not enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "00000011",
+    "desc": "No refining result",
+    "type": 1
+  },
+  {
+    "id": "00000012",
+    "desc": "Not enough materials",
+    "type": 1
+  },
+  {
+    "id": "00000013",
+    "desc": "Equipment level too low",
+    "type": 1
+  },
+  {
+    "id": "00000014",
+    "desc": "Cannot add more",
+    "type": 2
+  },
+  {
+    "id": "00000015",
+    "desc": "Not enough items",
+    "type": 1
+  },
+  {
+    "id": "00000016",
+    "desc": "Maximum bag space reached",
+    "type": 1
+  },
+  {
+    "id": "00000017",
+    "desc": "Data error",
+    "type": 1
+  },
+  {
+    "id": "00000018",
+    "desc": "Already in battle",
+    "type": 1
+  },
+  {
+    "id": "00000019",
+    "desc": "You cannot add yourself into friends list or blacklist",
+    "type": 1
+  },
+  {
+    "id": "0000001A",
+    "desc": "Friends list is full",
+    "type": 1
+  },
+  {
+    "id": "0000001B",
+    "desc": "Friends list is full",
+    "type": 1
+  },
+  {
+    "id": "0000001C",
+    "desc": "Already in friends list or blacklist",
+    "type": 1
+  },
+  {
+    "id": "0000001D",
+    "desc": "Player is not in the list",
+    "type": 1
+  },
+  {
+    "id": "0000001E",
+    "desc": "GM command format error",
+    "type": 1
+  },
+  {
+    "id": "0000001F",
+    "desc": "Too many items",
+    "type": 1
+  },
+  {
+    "id": "00000020",
+    "desc": "Main hero cannot be deleted",
+    "type": 1
+  },
+  {
+    "id": "00000021",
+    "desc": "Please remove equipment from the partner first",
+    "type": 1
+  },
+  {
+    "id": "00000022",
+    "desc": "Quest level too low",
+    "type": 1
+  },
+  {
+    "id": "00000023",
+    "desc": "Prerequisite not completed yet",
+    "type": 1
+  },
+  {
+    "id": "00000024",
+    "desc": "Task completed",
+    "type": 1
+  },
+  {
+    "id": "00000025",
+    "desc": "Task accepted",
+    "type": 1
+  },
+  {
+    "id": "00000026",
+    "desc": "Player not found",
+    "type": 1
+  },
+  {
+    "id": "00000027",
+    "desc": "Target inbox is full",
+    "type": 1
+  },
+  {
+    "id": "00000028",
+    "desc": "Task not accepted",
+    "type": 1
+  },
+  {
+    "id": "00000029",
+    "desc": "Task stage not completed",
+    "type": 1
+  },
+  {
+    "id": "0000002A",
+    "desc": "Enhancement CD is 0",
+    "type": 1
+  },
+  {
+    "id": "0000002B",
+    "desc": "Reishi not enough",
+    "type": 1
+  },
+  {
+    "id": "0000002C",
+    "desc": "Requirement for recruiting not reached",
+    "type": 1
+  },
+  {
+    "id": "0000002D",
+    "desc": "Partner recruited",
+    "type": 1
+  },
+  {
+    "id": "0000002E",
+    "desc": "Recruit cap reached",
+    "type": 1
+  },
+  {
+    "id": "0000002F",
+    "desc": "Recruit status error",
+    "type": 1
+  },
+  {
+    "id": "00000030",
+    "desc": "Not in the normal page",
+    "type": 1
+  },
+  {
+    "id": "00000031",
+    "desc": "Abnormal tavern status",
+    "type": 1
+  },
+  {
+    "id": "00000032",
+    "desc": "Janken page 1",
+    "type": 1
+  },
+  {
+    "id": "00000033",
+    "desc": "Janken last page",
+    "type": 1
+  },
+  {
+    "id": "00000034",
+    "desc": "You can't turn pages while in Janken",
+    "type": 1
+  },
+  {
+    "id": "00000035",
+    "desc": "This account is not registered",
+    "type": 1
+  },
+  {
+    "id": "00000036",
+    "desc": "This name is already in use",
+    "type": 1
+  },
+  {
+    "id": "00000037",
+    "desc": "Check-in failed",
+    "type": 1
+  },
+  {
+    "id": "00000038",
+    "desc": "Not enough gold",
+    "type": 1
+  },
+  {
+    "id": "00000039",
+    "desc": "Check-in days not enough",
+    "type": 1
+  },
+  {
+    "id": "0000003A",
+    "desc": "Points not enough",
+    "type": 1
+  },
+  {
+    "id": "0000003B",
+    "desc": "Not check-in points",
+    "type": 1
+  },
+  {
+    "id": "0000003C",
+    "desc": "Tavern already exists",
+    "type": 1
+  },
+  {
+    "id": "0000003D",
+    "desc": "Janken type error",
+    "type": 1
+  },
+  {
+    "id": "0000003E",
+    "desc": "Janken gesture error",
+    "type": 1
+  },
+  {
+    "id": "0000003F",
+    "desc": "Janken ended",
+    "type": 1
+  },
+  {
+    "id": "00000040",
+    "desc": "Illegal character",
+    "type": 1
+  },
+  {
+    "id": "00000041",
+    "desc": "VIP level too low",
+    "type": 1
+  },
+  {
+    "id": "00000042",
+    "desc": "Counter exceeds maximum value",
+    "type": 1
+  },
+  {
+    "id": "00000043",
+    "desc": "Wrong counter type",
+    "type": 1
+  },
+  {
+    "id": "00000044",
+    "desc": "No transformation card found",
+    "type": 1
+  },
+  {
+    "id": "00000045",
+    "desc": "Transformation not enough",
+    "type": 1
+  },
+  {
+    "id": "00000047",
+    "desc": "Level too low to activate dailies",
+    "type": 1
+  },
+  {
+    "id": "00000048",
+    "desc": "Only one daily task can be accepted at a time",
+    "type": 1
+  },
+  {
+    "id": "00000049",
+    "desc": "Max number of daily tasks reached",
+    "type": 1
+  },
+  {
+    "id": "0000004A",
+    "desc": "Task does not exist",
+    "type": 1
+  },
+  {
+    "id": "0000004B",
+    "desc": "You haven't accepted this task",
+    "type": 1
+  },
+  {
+    "id": "0000004C",
+    "desc": "Not enough gold to finish the task",
+    "type": 1
+  },
+  {
+    "id": "0000004D",
+    "desc": "Generate task failed",
+    "type": 1
+  },
+  {
+    "id": "0000004E",
+    "desc": "Reward doesn't exist",
+    "type": 1
+  },
+  {
+    "id": "0000004F",
+    "desc": "Level too low to receive the reward",
+    "type": 1
+  },
+  {
+    "id": "00000050",
+    "desc": "Not enough points to receive the reward",
+    "type": 1
+  },
+  {
+    "id": "00000052",
+    "desc": "Reward already claimed",
+    "type": 1
+  },
+  {
+    "id": "00000051",
+    "desc": "You haven't used up all transformation chances",
+    "type": 1
+  },
+  {
+    "id": "00000056",
+    "desc": "Not enough Vitality",
+    "type": 1
+  },
+  {
+    "id": "00000053",
+    "desc": "Level too low",
+    "type": 1
+  },
+  {
+    "id": "00000054",
+    "desc": "Prerequisite stage not cleared",
+    "type": 1
+  },
+  {
+    "id": "00000055",
+    "desc": "Combat data initialization failed",
+    "type": 1
+  },
+  {
+    "id": "00000057",
+    "desc": "Stage cleared",
+    "type": 1
+  },
+  {
+    "id": "00000058",
+    "desc": "Wrong difficulty level",
+    "type": 1
+  },
+  {
+    "id": "00000059",
+    "desc": "Event not available",
+    "type": 1
+  },
+  {
+    "id": "0000005A",
+    "desc": "Reward ID not found",
+    "type": 1
+  },
+  {
+    "id": "0000005B",
+    "desc": "Jigokuchō summon chances not enough",
+    "type": 1
+  },
+  {
+    "id": "0000005C",
+    "desc": "Combat is cooling down",
+    "type": 1
+  },
+  {
+    "id": "0000005D",
+    "desc": "Not enough online pack hours",
+    "type": 1
+  },
+  {
+    "id": "0000005E",
+    "desc": "Not the right online pack hours",
+    "type": 1
+  },
+  {
+    "id": "0000005F",
+    "desc": "Maximum value exceeded",
+    "type": 1
+  },
+  {
+    "id": "00000060",
+    "desc": "Gold Pack of the day already received",
+    "type": 1
+  },
+  {
+    "id": "00000061",
+    "desc": "First day pack already received",
+    "type": 1
+  },
+  {
+    "id": "00000062",
+    "desc": "You can't claim 7-Day Pack right now",
+    "type": 1
+  },
+  {
+    "id": "00000063",
+    "desc": "Reward already received",
+    "type": 1
+  },
+  {
+    "id": "00000064",
+    "desc": "Event is not yet open",
+    "type": 1
+  },
+  {
+    "id": "00000065",
+    "desc": "Highest spirit stone level reached",
+    "type": 1
+  },
+  {
+    "id": "00000066",
+    "desc": "Condition not met",
+    "type": 1
+  },
+  {
+    "id": "00000067",
+    "desc": "No attachment exists",
+    "type": 1
+  },
+  {
+    "id": "00000068",
+    "desc": "Chest has been received",
+    "type": 1
+  },
+  {
+    "id": "00000069",
+    "desc": "Not enough number of Souls",
+    "type": 1
+  },
+  {
+    "id": "0000006A",
+    "desc": "Failed to update attribute skill",
+    "type": 1
+  },
+  {
+    "id": "0000006B",
+    "desc": "Parameter error",
+    "type": 1
+  },
+  {
+    "id": "0000006C",
+    "desc": "Invalid CDK",
+    "type": 1
+  },
+  {
+    "id": "0000006D",
+    "desc": "CDK binds the user",
+    "type": 1
+  },
+  {
+    "id": "0000006E",
+    "desc": "Reward of this type has been claimed",
+    "type": 1
+  },
+  {
+    "id": "0000006F",
+    "desc": "Unknown error",
+    "type": 1
+  },
+  {
+    "id": "00000070",
+    "desc": "You can't register now",
+    "type": 1
+  },
+  {
+    "id": "00000071",
+    "desc": "Already registered",
+    "type": 1
+  },
+  {
+    "id": "00000072",
+    "desc": "Illegal character",
+    "type": 1
+  },
+  {
+    "id": "00000073",
+    "desc": "This guild name is already in use",
+    "type": 1
+  },
+  {
+    "id": "00000074",
+    "desc": "Event is not yet open or has ended",
+    "type": 1
+  },
+  {
+    "id": "00000075",
+    "desc": "Choose Evil Spirit error",
+    "type": 1
+  },
+  {
+    "id": "00000076",
+    "desc": "You are dead. Please wait for revival",
+    "type": 1
+  },
+  {
+    "id": "00000077",
+    "desc": "You are in punishment CD and cannot attack",
+    "type": 1
+  },
+  {
+    "id": "00000078",
+    "desc": "Number of Inspire used up",
+    "type": 1
+  },
+  {
+    "id": "00000079",
+    "desc": "Evil Spirit Attack ended",
+    "type": 1
+  },
+  {
+    "id": "0000007A",
+    "desc": "You are in resurrection",
+    "type": 1
+  },
+  {
+    "id": "0000007B",
+    "desc": "Not enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "0000007C",
+    "desc": "Resurrection CD",
+    "type": 1
+  },
+  {
+    "id": "0000007D",
+    "desc": "Joined the guild",
+    "type": 1
+  },
+  {
+    "id": "0000007E",
+    "desc": "Not joined the guild yet",
+    "type": 1
+  },
+  {
+    "id": "0000007F",
+    "desc": "You don't have permission to act this operation",
+    "type": 1
+  },
+  {
+    "id": "00000080",
+    "desc": "Application sent",
+    "type": 1
+  },
+  {
+    "id": "00000081",
+    "desc": "Guild does not exist",
+    "type": 1
+  },
+  {
+    "id": "00000083",
+    "desc": "Not the right time",
+    "type": 1
+  },
+  {
+    "id": "00000084",
+    "desc": "Cooldown",
+    "type": 1
+  },
+  {
+    "id": "00000085",
+    "desc": "Max number of Inspire reached",
+    "type": 1
+  },
+  {
+    "id": "00000086",
+    "desc": "Not registered yet",
+    "type": 1
+  },
+  {
+    "id": "00000087",
+    "desc": "Protect Seireitei is not open",
+    "type": 1
+  },
+  {
+    "id": "00000082",
+    "desc": "No guild application sent",
+    "type": 1
+  },
+  {
+    "id": "00000088",
+    "desc": "Unknown user",
+    "type": 1
+  },
+  {
+    "id": "00000089",
+    "desc": "No permission",
+    "type": 1
+  },
+  {
+    "id": "0000008A",
+    "desc": "Data error",
+    "type": 1
+  },
+  {
+    "id": "0000008B",
+    "desc": "Target lost",
+    "type": 1
+  },
+  {
+    "id": "0000008C",
+    "desc": "Player is ready",
+    "type": 1
+  },
+  {
+    "id": "0000008D",
+    "desc": "Guild technology has reached the cap",
+    "type": 1
+  },
+  {
+    "id": "0000008E",
+    "desc": "Wrong guild technology ID",
+    "type": 1
+  },
+  {
+    "id": "0000008F",
+    "desc": "Not enough guild contribution",
+    "type": 1
+  },
+  {
+    "id": "00000090",
+    "desc": "Failed to clear CD",
+    "type": 1
+  },
+  {
+    "id": "00000091",
+    "desc": "Upgrade guild camp type error",
+    "type": 1
+  },
+  {
+    "id": "00000092",
+    "desc": "Upgrading of guild camp has reached highest level",
+    "type": 1
+  },
+  {
+    "id": "00000093",
+    "desc": "Not enough guild assets",
+    "type": 1
+  },
+  {
+    "id": "00000094",
+    "desc": "Guild leader cannot quit",
+    "type": 1
+  },
+  {
+    "id": "00000095",
+    "desc": "Donation has reached the daily cap",
+    "type": 1
+  },
+  {
+    "id": "00000096",
+    "desc": "You must defeat evil spirit of your clan first",
+    "type": 1
+  },
+  {
+    "id": "00000097",
+    "desc": "Tasks of the Road to Hokage not available yet",
+    "type": 1
+  },
+  {
+    "id": "00000098",
+    "desc": "In progress",
+    "type": 1
+  },
+  {
+    "id": "00000099",
+    "desc": "Reward received",
+    "type": 1
+  },
+  {
+    "id": "0000009A",
+    "desc": "Gift packs claimed maximum number",
+    "type": 1
+  },
+  {
+    "id": "0000009B",
+    "desc": "You haven't joined any clan",
+    "type": 1
+  },
+  {
+    "id": "0000009C",
+    "desc": "You can't quit or dismiss a guild while in guild task",
+    "type": 1
+  },
+  {
+    "id": "0000009D",
+    "desc": "Team error",
+    "type": 1
+  },
+  {
+    "id": "0000009E",
+    "desc": "Length of announcement too long",
+    "type": 1
+  },
+  {
+    "id": "000000A0",
+    "desc": "Guild name too long",
+    "type": 1
+  },
+  {
+    "id": "000000A1",
+    "desc": "Guild is full",
+    "type": 1
+  },
+  {
+    "id": "000000A2",
+    "desc": "Not enough luck progress",
+    "type": 1
+  },
+  {
+    "id": "000000A3",
+    "desc": "Not enough gold progress",
+    "type": 1
+  },
+  {
+    "id": "000000A4",
+    "desc": "Not enough time",
+    "type": 1
+  },
+  {
+    "id": "000000A5",
+    "desc": "Item not found",
+    "type": 1
+  },
+  {
+    "id": "000000A6",
+    "desc": "Max redeem amount reached",
+    "type": 1
+  },
+  {
+    "id": "000000A7",
+    "desc": "Not enough points",
+    "type": 1
+  },
+  {
+    "id": "000000A8",
+    "desc": "Insufficient Activity",
+    "type": 1
+  },
+  {
+    "id": "000000A9",
+    "desc": "Please clear corresponding Personal Instance",
+    "type": 1
+  },
+  {
+    "id": "000000AA",
+    "desc": "Please clear previous Instance",
+    "type": 1
+  },
+  {
+    "id": "000000AB",
+    "desc": "Instance already unlocked",
+    "type": 1
+  },
+  {
+    "id": "000000AC",
+    "desc": "Failed to open",
+    "type": 1
+  },
+  {
+    "id": "000000AD",
+    "desc": "Not within Time Limit",
+    "type": 1
+  },
+  {
+    "id": "000000AE",
+    "desc": "Reset failed!",
+    "type": 1
+  },
+  {
+    "id": "000000CC",
+    "desc": "Skill not found",
+    "type": 1
+  },
+  {
+    "id": "000000CD",
+    "desc": "This weapon cannot enchant",
+    "type": 1
+  },
+  {
+    "id": "000000CE",
+    "desc": "Maximum skill level reached",
+    "type": 1
+  },
+  {
+    "id": "000000CF",
+    "desc": "Maximum VIP increase number reached",
+    "type": 1
+  },
+  {
+    "id": "000000D0",
+    "desc": "Not enough points",
+    "type": 1
+  },
+  {
+    "id": "000000D1",
+    "desc": "Friend not found",
+    "type": 1
+  },
+  {
+    "id": "000000D2",
+    "desc": "Zanpakutō not found",
+    "type": 1
+  },
+  {
+    "id": "000000D3",
+    "desc": "Cannot find cultivation type",
+    "type": 1
+  },
+  {
+    "id": "000000D4",
+    "desc": "Wrong upgrade",
+    "type": 1
+  },
+  {
+    "id": "000000D5",
+    "desc": "Zanpakutō not found",
+    "type": 1
+  },
+  {
+    "id": "000000D6",
+    "desc": "Requested item not found",
+    "type": 1
+  },
+  {
+    "id": "000000D7",
+    "desc": "Cannot use this item twice",
+    "type": 1
+  },
+  {
+    "id": "000000D8",
+    "desc": "Player not found",
+    "type": 1
+  },
+  {
+    "id": "000000D9",
+    "desc": "Not enough soul",
+    "type": 1
+  },
+  {
+    "id": "000000DA",
+    "desc": "Note enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "000000DB",
+    "desc": "Zanpakutō max level reached",
+    "type": 1
+  },
+  {
+    "id": "000000DC",
+    "desc": "MAX",
+    "type": 1
+  },
+  {
+    "id": "000000DD",
+    "desc": "VIP level too low",
+    "type": 1
+  },
+  {
+    "id": "000000DE",
+    "desc": "level too low",
+    "type": 1
+  },
+  {
+    "id": "000000E0",
+    "desc": "Guild already exists",
+    "type": 1
+  },
+  {
+    "id": "000000E1",
+    "desc": "Konsō chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000E2",
+    "desc": "Friend's Konsō chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000E3",
+    "desc": "Friend's Konsō chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000E4",
+    "desc": "Throw dice chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000E5",
+    "desc": "Friend's Jigokuchō is fed",
+    "type": 1
+  },
+  {
+    "id": "000000E6",
+    "desc": "Lucky Cat chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000E7",
+    "desc": "Girlfriend maximum level reached",
+    "type": 1
+  },
+  {
+    "id": "000000E8",
+    "desc": "Home level too low",
+    "type": 1
+  },
+  {
+    "id": "000000E9",
+    "desc": "Not enough items",
+    "type": 1
+  },
+  {
+    "id": "000000EA",
+    "desc": "Cooldown",
+    "type": 1
+  },
+  {
+    "id": "000000EB",
+    "desc": "Soul Interaction chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000EC",
+    "desc": "Money not enough",
+    "type": 1
+  },
+  {
+    "id": "000000ED",
+    "desc": "Party chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000000EE",
+    "desc": "Not enough girlfriend interaction chances",
+    "type": 1
+  },
+  {
+    "id": "000000EF",
+    "desc": "Not enough interaction chances with own girlfriend",
+    "type": 1
+  },
+  {
+    "id": "000000F0",
+    "desc": "She's too tired",
+    "type": 1
+  },
+  {
+    "id": "000000F1",
+    "desc": "Ryoka Attacks is not open or has ended",
+    "type": 1
+  },
+  {
+    "id": "000000F2",
+    "desc": "Rebeller's Attack has ended",
+    "type": 1
+  },
+  {
+    "id": "000000F3",
+    "desc": "Dead status",
+    "type": 1
+  },
+  {
+    "id": "000000F4",
+    "desc": "In punish CD",
+    "type": 1
+  },
+  {
+    "id": "000000F5",
+    "desc": "In resurrection CD",
+    "type": 1
+  },
+  {
+    "id": "000000F6",
+    "desc": "Not enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "000000F7",
+    "desc": "In killing CD",
+    "type": 1
+  },
+  {
+    "id": "000000F8",
+    "desc": "Level restriction",
+    "type": 1
+  },
+  {
+    "id": "000000F9",
+    "desc": "Clan restriction",
+    "type": 1
+  },
+  {
+    "id": "000000FA",
+    "desc": "Master & Slave relation information error",
+    "type": 1
+  },
+  {
+    "id": "000000FB",
+    "desc": "Your status is changed",
+    "type": 1
+  },
+  {
+    "id": "000000FC",
+    "desc": "Max number of times changed",
+    "type": 1
+  },
+  {
+    "id": "000000FD",
+    "desc": "Level difference is too large",
+    "type": 1
+  },
+  {
+    "id": "000000FE",
+    "desc": "Under protection period, cannot be caught",
+    "type": 1
+  },
+  {
+    "id": "000000FF",
+    "desc": "Player is in interaction CD",
+    "type": 1
+  },
+  {
+    "id": "00000100",
+    "desc": "Battle failed",
+    "type": 1
+  },
+  {
+    "id": "00000101",
+    "desc": "Already being saved today",
+    "type": 1
+  },
+  {
+    "id": "00000102",
+    "desc": "The target is not your slave",
+    "type": 1
+  },
+  {
+    "id": "00000103",
+    "desc": "Monsters is in CD",
+    "type": 1
+  },
+  {
+    "id": "00000104",
+    "desc": "Slave EXP CD",
+    "type": 1
+  },
+  {
+    "id": "00000105",
+    "desc": "The target is your slave, no action allowed",
+    "type": 1
+  },
+  {
+    "id": "00000106",
+    "desc": "Slave is drained",
+    "type": 1
+  },
+  {
+    "id": "00000107",
+    "desc": "Not enough gold",
+    "type": 1
+  },
+  {
+    "id": "00000108",
+    "desc": "Resistance failed",
+    "type": 1
+  },
+  {
+    "id": "00000109",
+    "desc": "Your master",
+    "type": 1
+  },
+  {
+    "id": "0000010A",
+    "desc": "No permission to save",
+    "type": 1
+  },
+  {
+    "id": "0000010B",
+    "desc": "Event is not open",
+    "type": 1
+  },
+  {
+    "id": "0000010C",
+    "desc": "Can top up now",
+    "type": 1
+  },
+  {
+    "id": "0000010D",
+    "desc": "Received",
+    "type": 1
+  },
+  {
+    "id": "0000010E",
+    "desc": "Cannot receive",
+    "type": 1
+  },
+  {
+    "id": "0000010F",
+    "desc": "Max number of times reached",
+    "type": 1
+  },
+  {
+    "id": "00000110",
+    "desc": "Target ID is yourself",
+    "type": 1
+  },
+  {
+    "id": "00000111",
+    "desc": "The target is not a slave",
+    "type": 1
+  },
+  {
+    "id": "00000112",
+    "desc": "Your guild didn't join Guild War today or is not among top 10",
+    "type": 1
+  },
+  {
+    "id": "00000113",
+    "desc": "Max number of EXP earned today",
+    "type": 1
+  },
+  {
+    "id": "00000114",
+    "desc": "Already joined the clan",
+    "type": 1
+  },
+  {
+    "id": "00000115",
+    "desc": "Max number of challenges reached today",
+    "type": 1
+  },
+  {
+    "id": "00000116",
+    "desc": "Not enough level",
+    "type": 1
+  },
+  {
+    "id": "00000117",
+    "desc": "Partner does not exist",
+    "type": 1
+  },
+  {
+    "id": "00000118",
+    "desc": "Combat logic error",
+    "type": 1
+  },
+  {
+    "id": "00000119",
+    "desc": "Battle report logic error",
+    "type": 1
+  },
+  {
+    "id": "0000011A",
+    "desc": "Configuration error",
+    "type": 1
+  },
+  {
+    "id": "0000011B",
+    "desc": "Army ID error",
+    "type": 1
+  },
+  {
+    "id": "0000011C",
+    "desc": "Partner does not exist",
+    "type": 1
+  },
+  {
+    "id": "0000011D",
+    "desc": "Please defeat corresponding attributes partner",
+    "type": 1
+  },
+  {
+    "id": "0000011E",
+    "desc": "Configuration error",
+    "type": 1
+  },
+  {
+    "id": "0000011F",
+    "desc": "Previous Spirit Star is not lighted",
+    "type": 1
+  },
+  {
+    "id": "00000120",
+    "desc": "Not enough hollow souls",
+    "type": 1
+  },
+  {
+    "id": "00000121",
+    "desc": "Partner on the left does not exist",
+    "type": 1
+  },
+  {
+    "id": "00000122",
+    "desc": "Partner on the right does not exist",
+    "type": 1
+  },
+  {
+    "id": "00000123",
+    "desc": "Wrong Seven Shadow Type",
+    "type": 1
+  },
+  {
+    "id": "00000124",
+    "desc": "Wrong progress",
+    "type": 1
+  },
+  {
+    "id": "00000125",
+    "desc": "Configuration error",
+    "type": 1
+  },
+  {
+    "id": "00000126",
+    "desc": "Wrong target",
+    "type": 1
+  },
+  {
+    "id": "00000127",
+    "desc": "No more attempts left today",
+    "type": 1
+  },
+  {
+    "id": "00000128",
+    "desc": "Target not defeated yet",
+    "type": 1
+  },
+  {
+    "id": "00000129",
+    "desc": "Not enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "0000012A",
+    "desc": "Reward not claimed yet, cannot train",
+    "type": 1
+  },
+  {
+    "id": "0000012B",
+    "desc": "Reward not claimed yet, cannot guess",
+    "type": 1
+  },
+  {
+    "id": "0000012C",
+    "desc": "//Max number of partner slots reached",
+    "type": 1
+  },
+  {
+    "id": "0000012D",
+    "desc": "Wrong auto-fight type",
+    "type": 1
+  },
+  {
+    "id": "0000012E",
+    "desc": "Cannot submit or cancel auto battle right now",
+    "type": 1
+  },
+  {
+    "id": "00000130",
+    "desc": "In combat CD",
+    "type": 1
+  },
+  {
+    "id": "00000131",
+    "desc": "Equipment inlayed jade",
+    "type": 1
+  },
+  {
+    "id": "00000132",
+    "desc": "Already in auto-enter mode",
+    "type": 1
+  },
+  {
+    "id": "00000133",
+    "desc": "Player who has enabled Auto Enter cannot enter",
+    "type": 1
+  },
+  {
+    "id": "00000134",
+    "desc": "VIP level too low to auto-enter",
+    "type": 1
+  },
+  {
+    "id": "00000135",
+    "desc": "VIP data error",
+    "type": 1
+  },
+  {
+    "id": "00000136",
+    "desc": "Not enough gold or coupons",
+    "type": 1
+  },
+  {
+    "id": "00000137",
+    "desc": "Set effect error",
+    "type": 1
+  },
+  {
+    "id": "00000138",
+    "desc": "Purchase finished",
+    "type": 1
+  },
+  {
+    "id": "00000139",
+    "desc": "Maximum number of slots reached",
+    "type": 1
+  },
+  {
+    "id": "0000013A",
+    "desc": "Socket Stone not enough",
+    "type": 1
+  },
+  {
+    "id": "0000013B",
+    "desc": "Highest enhancement level reached",
+    "type": 1
+  },
+  {
+    "id": "0000013C",
+    "desc": "Registration not open yet",
+    "type": 1
+  },
+  {
+    "id": "0000013D",
+    "desc": "You can't register repeatedly",
+    "type": 1
+  },
+  {
+    "id": "0000013E",
+    "desc": "Data submission failed",
+    "type": 1
+  },
+  {
+    "id": "0000013F",
+    "desc": "Wrong challenge type",
+    "type": 1
+  },
+  {
+    "id": "00000140",
+    "desc": "You didn't register for the elite match",
+    "type": 1
+  },
+  {
+    "id": "00000141",
+    "desc": "Cross server match' s server closed",
+    "type": 1
+  },
+  {
+    "id": "00000142",
+    "desc": "Elite Match not started yet",
+    "type": 1
+  },
+  {
+    "id": "00000143",
+    "desc": "Wrong target to challenge",
+    "type": 1
+  },
+  {
+    "id": "00000144",
+    "desc": "Waiting",
+    "type": 1
+  },
+  {
+    "id": "00000145",
+    "desc": "Wrong requested data",
+    "type": 1
+  },
+  {
+    "id": "00000146",
+    "desc": "Creating GameClient error",
+    "type": 1
+  },
+  {
+    "id": "00000147",
+    "desc": "Battle error",
+    "type": 1
+  },
+  {
+    "id": "00000148",
+    "desc": "Battle report error",
+    "type": 1
+  },
+  {
+    "id": "00000149",
+    "desc": "Legitimate player data not found",
+    "type": 1
+  },
+  {
+    "id": "0000014A",
+    "desc": "Wrong toast type",
+    "type": 1
+  },
+  {
+    "id": "0000014B",
+    "desc": "Only one toast is allowed per day",
+    "type": 1
+  },
+  {
+    "id": "0000014C",
+    "desc": "Level too low",
+    "type": 1
+  },
+  {
+    "id": "0000014D",
+    "desc": "You have already defeated this player",
+    "type": 1
+  },
+  {
+    "id": "0000014E",
+    "desc": "You can't challenge yourself",
+    "type": 1
+  },
+  {
+    "id": "0000014F",
+    "desc": "Wrong toast type",
+    "type": 1
+  },
+  {
+    "id": "00000150",
+    "desc": "Toast configuration error",
+    "type": 1
+  },
+  {
+    "id": "00000151",
+    "desc": "Not enough silver or gold",
+    "type": 1
+  },
+  {
+    "id": "00000152",
+    "desc": "ID configuration error",
+    "type": 1
+  },
+  {
+    "id": "00000153",
+    "desc": "VIP level too low",
+    "type": 1
+  },
+  {
+    "id": "00000154",
+    "desc": "Challenge Order not enough",
+    "type": 1
+  },
+  {
+    "id": "00000155",
+    "desc": "Top Stone not enough",
+    "type": 1
+  },
+  {
+    "id": "00000156",
+    "desc": "Adding hero failed",
+    "type": 1
+  },
+  {
+    "id": "00000157",
+    "desc": "Already possessed this title",
+    "type": 1
+  },
+  {
+    "id": "00000158",
+    "desc": "This title is used before",
+    "type": 1
+  },
+  {
+    "id": "00000159",
+    "desc": "This title hasn't been achieved",
+    "type": 1
+  },
+  {
+    "id": "0000015A",
+    "desc": "Already enabled",
+    "type": 1
+  },
+  {
+    "id": "0000015B",
+    "desc": "Maximum number of slaves reached",
+    "type": 1
+  },
+  {
+    "id": "0000015C",
+    "desc": "Player is not online",
+    "type": 1
+  },
+  {
+    "id": "0000015D",
+    "desc": "Lucky Cat in CD",
+    "type": 1
+  },
+  {
+    "id": "0000015E",
+    "desc": "Maximum level of Home reached",
+    "type": 1
+  },
+  {
+    "id": "0000015F",
+    "desc": "Friend function is not available",
+    "type": 1
+  },
+  {
+    "id": "00000160",
+    "desc": "Not enough number of challenges",
+    "type": 1
+  },
+  {
+    "id": "00000161",
+    "desc": "Gift pack of this type has been claimed before",
+    "type": 1
+  },
+  {
+    "id": "00000162",
+    "desc": "Yellow Diamond level not fit",
+    "type": 1
+  },
+  {
+    "id": "00000163",
+    "desc": "You're not annual fee yellow diamond",
+    "type": 1
+  },
+  {
+    "id": "00000164",
+    "desc": "Maximum number of purchase is reached",
+    "type": 1
+  },
+  {
+    "id": "00000165",
+    "desc": "The item you want to purchase does not match your class",
+    "type": 1
+  },
+  {
+    "id": "00000166",
+    "desc": "Cannot claim",
+    "type": 1
+  },
+  {
+    "id": "00000167",
+    "desc": "Cannot purchase",
+    "type": 1
+  },
+  {
+    "id": "00000168",
+    "desc": "Already in blacklist",
+    "type": 1
+  },
+  {
+    "id": "00000169",
+    "desc": "The room is full",
+    "type": 1
+  },
+  {
+    "id": "0000016A",
+    "desc": "Player not found",
+    "type": 1
+  },
+  {
+    "id": "0000016B",
+    "desc": "Player is not host",
+    "type": 1
+  },
+  {
+    "id": "0000016C",
+    "desc": "Room status not match",
+    "type": 1
+  },
+  {
+    "id": "0000016D",
+    "desc": "Wrong password",
+    "type": 1
+  },
+  {
+    "id": "0000016E",
+    "desc": "You haven't enabled battles for this room",
+    "type": 1
+  },
+  {
+    "id": "0000016F",
+    "desc": "Not enough players",
+    "type": 1
+  },
+  {
+    "id": "00000170",
+    "desc": "Some players are not ready yet",
+    "type": 1
+  },
+  {
+    "id": "00000171",
+    "desc": "The player is already in this room",
+    "type": 1
+  },
+  {
+    "id": "00000172",
+    "desc": "Room creation failed",
+    "type": 1
+  },
+  {
+    "id": "00000173",
+    "desc": "Room join failed",
+    "type": 1
+  },
+  {
+    "id": "00000174",
+    "desc": "Room host is busy",
+    "type": 1
+  },
+  {
+    "id": "00000175",
+    "desc": "Not enough Honor points",
+    "type": 1
+  },
+  {
+    "id": "00000176",
+    "desc": "Title overdue error",
+    "type": 1
+  },
+  {
+    "id": "00000177",
+    "desc": "Today's Championship not yet activated",
+    "type": 1
+  },
+  {
+    "id": "00000178",
+    "desc": "Cross server is closed",
+    "type": 1
+  },
+  {
+    "id": "00000179",
+    "desc": "Waiting to enter",
+    "type": 1
+  },
+  {
+    "id": "0000017A",
+    "desc": "Wrong player data",
+    "type": 1
+  },
+  {
+    "id": "0000017B",
+    "desc": "You are not qualified to join in today's Championship",
+    "type": 1
+  },
+  {
+    "id": "0000017C",
+    "desc": "Today's max purchases reach the max",
+    "type": 1
+  },
+  {
+    "id": "0000017D",
+    "desc": "Not enough Gold or Coupons to buy purchase chances",
+    "type": 1
+  },
+  {
+    "id": "0000017E",
+    "desc": "Not in CD, cannot clear",
+    "type": 1
+  },
+  {
+    "id": "0000017F",
+    "desc": "Today's Championship not yet activated or already ended",
+    "type": 1
+  },
+  {
+    "id": "00000180",
+    "desc": "Illegal operation-maliciously change the frontend data",
+    "type": 1
+  },
+  {
+    "id": "00000181",
+    "desc": "Target player not exist",
+    "type": 1
+  },
+  {
+    "id": "00000182",
+    "desc": "Target's server is closed",
+    "type": 1
+  },
+  {
+    "id": "00000183",
+    "desc": "Starter's Gs fails to register Fs",
+    "type": 1
+  },
+  {
+    "id": "00000184",
+    "desc": "Pulling player data failed",
+    "type": 1
+  },
+  {
+    "id": "00000185",
+    "desc": "Today's challenge chances used up",
+    "type": 1
+  },
+  {
+    "id": "00000186",
+    "desc": "Start Challenge in CD",
+    "type": 1
+  },
+  {
+    "id": "00000187",
+    "desc": "Challenge in CD",
+    "type": 1
+  },
+  {
+    "id": "00000188",
+    "desc": "Cannot challenge this rank",
+    "type": 1
+  },
+  {
+    "id": "00000189",
+    "desc": "Waiting to challenge",
+    "type": 1
+  },
+  {
+    "id": "0000018A",
+    "desc": "Fail to create the challenge target",
+    "type": 1
+  },
+  {
+    "id": "0000018B",
+    "desc": "Battle error",
+    "type": 1
+  },
+  {
+    "id": "0000018C",
+    "desc": "Battle report error",
+    "type": 1
+  },
+  {
+    "id": "0000018D",
+    "desc": "Cannot challenge yourself",
+    "type": 1
+  },
+  {
+    "id": "0000018E",
+    "desc": "Cannot view yourself",
+    "type": 1
+  },
+  {
+    "id": "0000018F",
+    "desc": "Please wait for a while to view",
+    "type": 1
+  },
+  {
+    "id": "00000190",
+    "desc": "You are being challenged, please wait",
+    "type": 1
+  },
+  {
+    "id": "00000191",
+    "desc": "The opponent is battling, please wait",
+    "type": 1
+  },
+  {
+    "id": "00000192",
+    "desc": "Start View CD",
+    "type": 1
+  },
+  {
+    "id": "00000193",
+    "desc": "View CD",
+    "type": 1
+  },
+  {
+    "id": "00000194",
+    "desc": "Starter's battle status error",
+    "type": 1
+  },
+  {
+    "id": "00000195",
+    "desc": "The challenged's status error",
+    "type": 1
+  },
+  {
+    "id": "00000196",
+    "desc": "Challenge status error",
+    "type": 1
+  },
+  {
+    "id": "00000197",
+    "desc": "Championship",
+    "type": 1
+  },
+  {
+    "id": "00000198",
+    "desc": "Championship",
+    "type": 1
+  },
+  {
+    "id": "000001A0",
+    "desc": "Championship",
+    "type": 1
+  },
+  {
+    "id": "000001A7",
+    "desc": "Level too high",
+    "type": 1
+  },
+  {
+    "id": "000001A8",
+    "desc": "No chances, please try again next time",
+    "type": 1
+  },
+  {
+    "id": "000001A9",
+    "desc": "Maximum level of Infuse Spirit reached",
+    "type": 1
+  },
+  {
+    "id": "000001AA",
+    "desc": "Infuse Spirit failed",
+    "type": 1
+  },
+  {
+    "id": "000001AB",
+    "desc": "Illegal tower data",
+    "type": 1
+  },
+  {
+    "id": "000001AC",
+    "desc": "This tower has been cleared",
+    "type": 1
+  },
+  {
+    "id": "000001AD",
+    "desc": "Level is too low",
+    "type": 1
+  },
+  {
+    "id": "000001AE",
+    "desc": "Battle chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000001AF",
+    "desc": "Enter condition not achieved",
+    "type": 1
+  },
+  {
+    "id": "000001B0",
+    "desc": "Purchase chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000001B1",
+    "desc": "Battle chances not finished",
+    "type": 1
+  },
+  {
+    "id": "000001B2",
+    "desc": "This stage has not been cleared before",
+    "type": 1
+  },
+  {
+    "id": "000001A1",
+    "desc": "Challenge chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000001A2",
+    "desc": "Challenge in CD",
+    "type": 1
+  },
+  {
+    "id": "000001A3",
+    "desc": "Season status",
+    "type": 1
+  },
+  {
+    "id": "000001A4",
+    "desc": "Not enough Gold or Coupons",
+    "type": 1
+  },
+  {
+    "id": "000001A5",
+    "desc": "Today's purchase chances used up",
+    "type": 1
+  },
+  {
+    "id": "000001A6",
+    "desc": "Not enough Gold",
+    "type": 1
+  },
+  {
+    "id": "000001B3",
+    "desc": "Event server busy",
+    "type": 1
+  },
+  {
+    "id": "000001B4",
+    "desc": "Register succeeded",
+    "type": 1
+  },
+  {
+    "id": "000001B5",
+    "desc": "Register failed",
+    "type": 1
+  },
+  {
+    "id": "000001B6",
+    "desc": "Daily Purchase Chance Max Value",
+    "type": 1
+  },
+  {
+    "id": "000001B7",
+    "desc": "Hōgyoku not yet activated",
+    "type": 1
+  },
+  {
+    "id": "000001B8",
+    "desc": "Hōgyoku Warehouse already full",
+    "type": 1
+  },
+  {
+    "id": "000001B9",
+    "desc": "Obtain Hōgyoku chances not enough",
+    "type": 1
+  },
+  {
+    "id": "000001BA",
+    "desc": "Partner already has Hōgyoku, please remove first",
+    "type": 1
+  },
+  {
+    "id": "000001BB",
+    "desc": "Wrong Hōgyoku Tab",
+    "type": 1
+  },
+  {
+    "id": "000001BC",
+    "desc": "Hōgyoku Tab not yet activated",
+    "type": 1
+  },
+  {
+    "id": "000001BD",
+    "desc": "Hōgyoku backpack already full",
+    "type": 1
+  },
+  {
+    "id": "000001BE",
+    "desc": "Cannot find Hōgyoku",
+    "type": 1
+  },
+  {
+    "id": "000001BF",
+    "desc": "Hōgyoku quality not enough",
+    "type": 1
+  },
+  {
+    "id": "000001C0",
+    "desc": "Hōgyoku Fragments not enough",
+    "type": 1
+  },
+  {
+    "id": "000001C1",
+    "desc": "Hōgyoku level not enough",
+    "type": 1
+  },
+  {
+    "id": "000001C2",
+    "desc": "EXP pills not enough",
+    "type": 1
+  },
+  {
+    "id": "000001C3",
+    "desc": "Player name too long",
+    "type": 1
+  },
+  {
+    "id": "000001C4",
+    "desc": "Already equipped with this type of Jade",
+    "type": 1
+  },
+  {
+    "id": "000001C5",
+    "desc": "Hogyouku already reached Max Level!",
+    "type": 1
+  },
+  {
+    "id": "000001C6",
+    "desc": "The Mysterious shop is not available now, please try later.",
+    "type": 1
+  },
+  {
+    "id": "000001C7",
+    "desc": "Mysterious shop is not available now.",
+    "type": 1
+  },
+  {
+    "id": "000001C8",
+    "desc": "Not enough chances",
+    "type": 1
+  },
+  {
+    "id": "000001C9",
+    "desc": "Max Level reached!",
+    "type": 1
+  },
+  {
+    "id": "000001CA",
+    "desc": "In CD",
+    "type": 1
+  },
+  {
+    "id": "000001CB",
+    "desc": "Requirements didn’t meet",
+    "type": 1
+  },
+  {
+    "id": "000001CC",
+    "desc": "Please complete previous stages and claim previous chests to continue",
+    "type": 1
+  },
+  {
+    "id": "000001CD",
+    "desc": "Not enough reviving chances",
+    "type": 1
+  },
+  {
+    "id": "000001CE",
+    "desc": "Not enough reset chances",
+    "type": 1
+  },
+  {
+    "id": "000001CF",
+    "desc": "Partner expired",
+    "type": 1
+  },
+  {
+    "id": "000001D0",
+    "desc": "Partners in formation can't be upgraded",
+    "type": 1
+  },
+  {
+    "id": "000001D1",
+    "desc": "Partners in assistant teams can't join battle",
+    "type": 1
+  },
+  {
+    "id": "000001D2",
+    "desc": "Please move the Hollow Soul points to other partners",
+    "type": 1
+  },
+  {
+    "id": "000001F4",
+    "desc": "Current stages not cleared",
+    "type": 1
+  },
+  {
+    "id": "000001F5",
+    "desc": "Reward not claimed yet",
+    "type": 1
+  },
+  {
+    "id": "000001F6",
+    "desc": "Point Not Enough",
+    "type": 1
+  },
+  {
+    "id": "000001F7",
+    "desc": "You can buy once only each day",
+    "type": 1
+  },
+  {
+    "id": "000001F8",
+    "desc": "Current stages are all cleared",
+    "type": 1
+  },
+  {
+    "id": "000001F9",
+    "desc": "Wrong battle info",
+    "type": 1
+  },
+  {
+    "id": "000001FA",
+    "desc": "Failure",
+    "type": 1
+  },
+  {
+    "id": "000001FB",
+    "desc": "Please close the Skill-selecting Board before using.",
+    "type": 1
+  },
+  {
+    "id": "000001FC",
+    "desc": "Please leave your current Guild before using.",
+    "type": 1
+  },
+  {
+    "id": "000001FF",
+    "desc": "Please upload formation info first",
+    "type": 1
+  },
+  {
+    "id": "00000200",
+    "desc": "Formation is full, please try later",
+    "type": 1
+  },
+  {
+    "id": "00000201",
+    "desc": "Queue is full!",
+    "type": 1
+  },
+  {
+    "id": "00000202",
+    "desc": "Adventure in progress!",
+    "type": 1
+  },
+  {
+    "id": "00000203",
+    "desc": "Already in the queue!",
+    "type": 1
+  },
+  {
+    "id": "00000204",
+    "desc": "Coupons not enough!",
+    "type": 1
+  },
+  {
+    "id": "00000205",
+    "desc": "You can't bet anymore!",
+    "type": 1
+  },
+  {
+    "id": "00000206",
+    "desc": "Please remove the partner first!",
+    "type": 1
+  },
+  {
+    "id": "00000207",
+    "desc": "折扣未开启",
+    "type": 1
+  },
+  {
+    "id": "00000208",
+    "desc": "You cannot join again until this round ends! ",
+    "type": 1
+  },
+  {
+    "id": "00000209",
+    "desc": "No reward to claim",
+    "type": 1
+  },
+  {
+    "id": "0000020A",
+    "desc": "Event is over",
+    "type": 1
+  }
+]

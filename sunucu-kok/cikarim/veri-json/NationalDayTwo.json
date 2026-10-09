@@ -1,0 +1,21 @@
+[
+  {
+    "id": "0014E791",
+    "name": "全民疯抢2",
+    "tName": "全民疯抢2",
+    "desc": "1. Players can freely purchase a gift-pack for once daily in Event 1\n2. All gift-packs will be reset at 0:00 daily\n3. Purchased gift-packs can be replaced by refreshing\n4. A successfully purchasesd gift-pack will result in 1 credit which can be used to exchange rewards in Shop",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1370001,
+    "freeIndex": 99,
+    "discount": 5,
+    "scoreIndex": 98,
+    "discountIndex": 97,
+    "refreshIndex": 96,
+    "refreshCost": 50,
+    "items": "[{\"index\":1,\"gold\":6400,\"award\":21405390,\"weight\":1},{\"index\":2,\"gold\":6400,\"award\":21405391,\"weight\":5},{\"index\":3,\"gold\":3200,\"award\":21405392,\"weight\":10},{\"index\":4,\"gold\":1600,\"award\":21405393,\"weight\":15},{\"index\":5,\"gold\":2000,\"award\":21405394,\"weight\":15},{\"index\":6,\"gold\":6000,\"award\":21405395,\"weight\":10},{\"index\":7,\"gold\":2000,\"award\":21405396,\"weight\":15},{\"index\":8,\"gold\":2000,\"award\":21405397,\"weight\":15},{\"index\":9,\"gold\":3000,\"award\":21405398,\"weight\":15},{\"index\":10,\"gold\":6000,\"award\":21405399,\"weight\":2},{\"index\":11,\"gold\":5000,\"award\":21405400,\"weight\":10},{\"index\":12,\"gold\":2000,\"award\":21405401,\"weight\":15},{\"index\":13,\"gold\":1600,\"award\":21405402,\"weight\":15},{\"index\":14,\"gold\":3000,\"award\":21405403,\"weight\":15},{\"index\":15,\"gold\":2000,\"award\":21405404,\"weight\":20},{\"index\":16,\"gold\":2000,\"award\":21405405,\"weight\":20},{\"index\":17,\"gold\":6000,\"award\":21405406,\"weight\":15},{\"index\":18,\"gold\":3000,\"award\":21405407,\"weight\":15}]",
+    "mall": "[{\"index\":51,\"score\":80,\"award\":21405410,\"limit\":1},{\"index\":52,\"score\":60,\"award\":21405411,\"limit\":1},{\"index\":53,\"score\":50,\"award\":21405412,\"limit\":1},{\"index\":54,\"score\":50,\"award\":21405413,\"limit\":1},{\"index\":55,\"score\":50,\"award\":21405414,\"limit\":1},{\"index\":56,\"score\":50,\"award\":21405415,\"limit\":1},{\"index\":57,\"score\":60,\"award\":21405416,\"limit\":1},{\"index\":58,\"score\":60,\"award\":21405417,\"limit\":1},{\"index\":59,\"score\":60,\"award\":21405418,\"limit\":1},{\"index\":60,\"score\":60,\"award\":21405419,\"limit\":1},{\"index\":61,\"score\":60,\"award\":21405420,\"limit\":1},{\"index\":62,\"score\":60,\"award\":21405421,\"limit\":1},{\"index\":63,\"score\":1,\"award\":21405422,\"limit\":0},{\"index\":64,\"score\":8,\"award\":21405423,\"limit\":0},{\"index\":65,\"score\":1,\"award\":21405424,\"limit\":0},{\"index\":66,\"score\":1,\"award\":21405425,\"limit\":0},{\"index\":67,\"score\":1,\"award\":21405426,\"limit\":0},{\"index\":68,\"score\":1,\"award\":21405427,\"limit\":0}]",
+    "bag": "{\"index\":95,\"awardId\" : 21405410, \"gold\" : 40000, \"showID\":2000212,\"showType\":1,\"fightReportAddr\":\"\"}",
+    "curPoolIndex": "[80,81,82,83,84,85]"
+  }
+]

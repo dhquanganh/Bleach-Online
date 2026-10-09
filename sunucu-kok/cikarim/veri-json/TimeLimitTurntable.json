@@ -1,0 +1,19 @@
+[
+  {
+    "id": "000CF851",
+    "name": "限时抽奖",
+    "tName": "限时抽奖",
+    "desc": "1. Each day players can conduct normal gold draw once when topped up for a certain amount of gold.\n2. During the event, players can conduct advanced gold draw each day when topped up a certain amount.\n3. There're chance limits for both normal and advanced draws.\n4. Draw chances, chance limits and top-up records will reset at midnight each day",
+    "tip": "1",
+    "price": 0,
+    "imageID": 850001,
+    "rechargeIndex": "[{\"index\":0,\"gold\":28,\"rate\":50},{\"index\":1,\"gold\":38,\"rate\":40},{\"index\":2,\"gold\":58,\"rate\":9},{\"index\":3,\"gold\":108,\"rate\":1},{\"index\":4,\"gold\":188,\"rate\":0},{\"index\":5,\"gold\":288,\"rate\":0}]",
+    "recordMaxNum": "[{\"index\":6,\"gold\":102,\"rate\":50},{\"index\":7,\"gold\":122,\"rate\":34},{\"index\":8,\"gold\":152,\"rate\":15},{\"index\":9,\"gold\":202,\"rate\":1},{\"index\":10,\"gold\":312,\"rate\":0},{\"index\":11,\"gold\":512,\"rate\":0}]",
+    "f8": "[{\"maxTime\":5,\"rechargeGold\":200},{\"maxTime\":1,\"rechargeGold\":1000}]",
+    "f9": "{\"lowIndex\":12,\"highIndex\":13}",
+    "f10": "{\"lowFinishIndex\":14,\"highFinishIndex\":15}",
+    "f11": 16,
+    "f12": 200,
+    "f13": "{\"lowDesc\":\"Recharge %0 aujourd'hui pour lancer une fois\",\"lowMaxDesc\":\"Tu peux lancer %0 fois aujourd'hui\",\"extractMaxDesc\":\"Maximum de lancer atteint\",\"extractLackDesc\":\"Pas assez de chance de lancer\"}"
+  }
+]

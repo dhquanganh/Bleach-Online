@@ -1,0 +1,42 @@
+[
+  {
+    "id": 11110033,
+    "name": "Sōgyo no Kotowari Ukitake",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11110034,
+    "name": "Kyōkotsu Kyōraku",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11110035,
+    "name": "Nelliel Tu Odelschwanck",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11110036,
+    "name": "Sōgyo no Kotowari Ukitake Changed",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11110037,
+    "name": "Kyōkotsu Kyōraku Changed",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11110038,
+    "name": "Nelliel Tu Odelschwanck Changed",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11140002,
+    "name": "Gamuza Nelliel Tu Odelschwanck",
+    "reason": "Missing local animation sequences: 10,11,12,13,14"
+  },
+  {
+    "id": 11160008,
+    "name": "Gamuza Nelliel Tu",
+    "reason": "Gamuza Nelliel Tu: invisible combat model reported in Tower of Gold"
+  }
+]

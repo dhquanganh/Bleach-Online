@@ -1,0 +1,1194 @@
+{
+ "10000": {
+  "ad": "LevelRank",
+  "tablo": "HDLevelRank",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "20000": {
+  "ad": "PowerRank",
+  "tablo": "HDPowerRank",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "30000": {
+  "ad": "ArenaRank",
+  "tablo": "HDArenaRank",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "40000": {
+  "ad": "RecruitPartner",
+  "tablo": "HDRecruitPartner",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 5,
+  "actToplam": 5
+ },
+ "50000": {
+  "ad": "KillHero",
+  "tablo": "HDKillHero",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 5,
+  "actToplam": 5
+ },
+ "60000": {
+  "ad": "CampBattle",
+  "tablo": "HDCampBattle",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 4,
+  "actToplam": 4
+ },
+ "70000": {
+  "ad": "SinglePay",
+  "tablo": "HDSinglePay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 433,
+  "actToplam": 433
+ },
+ "80000": {
+  "ad": "TotalePay",
+  "tablo": "HDTotalPay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 431,
+  "actToplam": 431
+ },
+ "90000": {
+  "ad": "DailyPay",
+  "tablo": "HDDailyPay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 427,
+  "actToplam": 427
+ },
+ "100000": {
+  "ad": "TotaleCost",
+  "tablo": "HDTotalCost",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 73,
+  "actToplam": 73
+ },
+ "110000": {
+  "ad": "DailyCost",
+  "tablo": "HDDailyCost",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "120000": {
+  "ad": "VipBox",
+  "tablo": "HDVipBox",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "130000": {
+  "ad": "FirstPay",
+  "tablo": "HDFirstPay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "140000": {
+  "ad": "OnlineGiftBag",
+  "tablo": "HDGBOnline",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "150000": {
+  "ad": "GoldGiftBag",
+  "tablo": "HDGBGold",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "160000": {
+  "ad": "SevenDayGiftBag",
+  "tablo": "HDGBSevenDay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "170000": {
+  "ad": "OpenServerGiftBag",
+  "tablo": "HDGBOpenSever",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "180000": {
+  "ad": "CollectGameGiftBag",
+  "tablo": "HDGBCollectgame",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "200000": {
+  "ad": "LevelSeat",
+  "tablo": "HDMilitary",
+  "var": true,
+  "kademeAlan": "prizeNum",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "210000": {
+  "ad": "CompoundStone",
+  "tablo": "HDStone",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "220000": {
+  "ad": "EquipCollection",
+  "tablo": "HDEquipCollection",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "230000": {
+  "ad": "LevelTalisman",
+  "tablo": "HDTreasure",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "240000": {
+  "ad": "PetSoulDefence",
+  "tablo": "HDPetSoulDefence",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "250000": {
+  "ad": "GroupLv",
+  "tablo": "HDGroupLv",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "260000": {
+  "ad": "GroupWar",
+  "tablo": "HDGroupWar",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "270000": {
+  "ad": "CityDefence",
+  "tablo": "HDCityDefence",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "280000": {
+  "ad": "DailyTotalePay",
+  "tablo": "HDDailyTotalPay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "290000": {
+  "ad": "DailyTotaleCost",
+  "tablo": "HDDailyTotalCost",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 74,
+  "actToplam": 74
+ },
+ "300000": {
+  "ad": "FundLv",
+  "tablo": "HDGrowFundLv",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "310000": {
+  "ad": "FundShop",
+  "tablo": "HDGrowFundShop",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "320000": {
+  "ad": "FundInvestment",
+  "tablo": "HDGrowFundGamble",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "330000": {
+  "ad": "Espada",
+  "tablo": "Espada",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "340000": {
+  "ad": "SuperTreasure",
+  "tablo": "HDSuperTreasure",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "350000": {
+  "ad": "EquipmentShop",
+  "tablo": "HDExchangeChip",
+  "var": true,
+  "kademeAlan": "page2Desc",
+  "actEsleyen": 141,
+  "actToplam": 141
+ },
+ "360000": {
+  "ad": "PayReturn",
+  "tablo": "HDPay",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 430,
+  "actToplam": 430
+ },
+ "370000": {
+  "ad": "NewYear",
+  "tablo": "NewYear",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 139,
+  "actToplam": 141
+ },
+ "380000": {
+  "ad": "SinglePayTime",
+  "tablo": "HDSinglePayTime",
+  "var": true,
+  "kademeAlan": "payDay",
+  "actEsleyen": 112,
+  "actToplam": 112
+ },
+ "390000": {
+  "ad": "ChineseYearSignIn",
+  "tablo": "HDChineseYearSignIn",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "400000": {
+  "ad": "ChineseYearLukia",
+  "tablo": "HDChineseYearLukia",
+  "var": true,
+  "kademeAlan": "f8",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "410000": {
+  "ad": "DoubleFish",
+  "tablo": "HDDoubleFish",
+  "var": true,
+  "kademeAlan": "totalPlayer",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "420000": {
+  "ad": "MoneyPenny",
+  "tablo": "HDMoneyPenny",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 139,
+  "actToplam": 139
+ },
+ "430000": {
+  "ad": "Gambling",
+  "tablo": "HDGambling",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "440000": {
+  "ad": "LimitBuy",
+  "tablo": "HDLimitBuy",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "450000": {
+  "ad": "IceHeros",
+  "tablo": "HDIceHeros",
+  "var": true,
+  "kademeAlan": "rankDesc",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "470000": {
+  "ad": "JigSaw",
+  "tablo": "HDJigsaw",
+  "var": true,
+  "kademeAlan": "f7",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "480000": {
+  "ad": "BigTurnTable",
+  "tablo": "HDBigTurnTable",
+  "var": true,
+  "kademeAlan": "f8",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "490000": {
+  "ad": "TeamBuy",
+  "tablo": "HDTeamBuy",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "500000": {
+  "ad": "ServerPay",
+  "tablo": "HDServerPay",
+  "var": true,
+  "kademeAlan": "rankDesc",
+  "actEsleyen": 72,
+  "actToplam": 72
+ },
+ "510000": {
+  "ad": "RandCard",
+  "tablo": "HDRandCard",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "520000": {
+  "ad": "TreasureAwake",
+  "tablo": "HDTreasureShop",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "530000": {
+  "ad": "BleachJigsaw",
+  "tablo": "BleachJigsaw",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "540000": {
+  "ad": "Chess",
+  "tablo": "HDChess",
+  "var": true,
+  "kademeAlan": "controlCost",
+  "actEsleyen": 136,
+  "actToplam": 136
+ },
+ "550000": {
+  "ad": "WorldCup",
+  "tablo": "HDWorldCup",
+  "var": true,
+  "kademeAlan": "f9",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "560000": {
+  "ad": "HerosMarkets",
+  "tablo": "HDHerosMarket",
+  "var": true,
+  "kademeAlan": "tabSwitch",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "570000": {
+  "ad": "Lottery",
+  "tablo": "Lottery",
+  "var": true,
+  "kademeAlan": "goldRate",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "580000": {
+  "ad": "Partner",
+  "tablo": "Partner",
+  "var": true,
+  "kademeAlan": "f9",
+  "actEsleyen": 10,
+  "actToplam": 10
+ },
+ "590000": {
+  "ad": "LuckyJoy",
+  "tablo": "LuckyJoy",
+  "var": true,
+  "kademeAlan": "freeTimeIndex",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "600000": {
+  "ad": "SwiftChange",
+  "tablo": "SwiftChange",
+  "var": true,
+  "kademeAlan": "f7",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "610000": {
+  "ad": "PrivilegeLease",
+  "tablo": "PrivilegeLease",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "620000": {
+  "ad": "HalloweenPay",
+  "tablo": "HalloweenPay",
+  "var": true,
+  "kademeAlan": "f9",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "630000": {
+  "ad": "HalloweenTree",
+  "tablo": "HalloweenTree",
+  "var": true,
+  "kademeAlan": "rechargeGold",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "640000": {
+  "ad": "HalloweenPumpkin",
+  "tablo": "HalloweenPumpkin",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "650000": {
+  "ad": "HalloweenShop",
+  "tablo": "HalloweenShop",
+  "var": true,
+  "kademeAlan": "freeTimesIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "660000": {
+  "ad": "CircleTrial",
+  "tablo": "CircleTrial",
+  "var": true,
+  "kademeAlan": "f12",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "670000": {
+  "ad": "CirCleHero",
+  "tablo": "CircleHero",
+  "var": true,
+  "kademeAlan": "f15",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "680000": {
+  "ad": "KingLegend",
+  "tablo": "KingLegend",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "690000": {
+  "ad": "KingGuard",
+  "tablo": "KingGuard",
+  "var": true,
+  "kademeAlan": "lastResultIndex",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "700000": {
+  "ad": "ChristmasGift",
+  "tablo": "ChristmasGift",
+  "var": true,
+  "kademeAlan": "f8",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "710000": {
+  "ad": "ChristmasWish",
+  "tablo": "ChristmasWish",
+  "var": true,
+  "kademeAlan": "totalBellIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "720000": {
+  "ad": "ChristmasCarnival",
+  "tablo": "ChristmasCarnival",
+  "var": true,
+  "kademeAlan": "allItems",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "730000": {
+  "ad": "NewYearDropEgg",
+  "tablo": "NewYearDropEgg",
+  "var": true,
+  "kademeAlan": "loginAward",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "740000": {
+  "ad": "NewYearFly",
+  "tablo": "NewYearFly",
+  "var": true,
+  "kademeAlan": "charmCountIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "750000": {
+  "ad": "UniteTask",
+  "tablo": "UniteTask",
+  "var": true,
+  "kademeAlan": "tasks",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "800000": {
+  "ad": "DreamsComeTrue",
+  "tablo": "DreamsComeTrue",
+  "var": true,
+  "kademeAlan": "f11",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "810000": {
+  "ad": "SheepPetYear",
+  "tablo": "PetYear",
+  "var": true,
+  "kademeAlan": "chipBox",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "820000": {
+  "ad": "SheepRedPacket",
+  "tablo": "NewYearRedPacket",
+  "var": true,
+  "kademeAlan": "randomPropsIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "830000": {
+  "ad": "SheepFirecrackers",
+  "tablo": "Firecrackers",
+  "var": true,
+  "kademeAlan": "firecrackersAward",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "840000": {
+  "ad": "SheepSellGood",
+  "tablo": "SheepGoodSell",
+  "var": true,
+  "kademeAlan": "activityNumIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "850000": {
+  "ad": "TimeLimitTurntable",
+  "tablo": "TimeLimitTurntable",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 172,
+  "actToplam": 172
+ },
+ "860000": {
+  "ad": "Feedback",
+  "tablo": "Feedback",
+  "var": true,
+  "kademeAlan": "signInGift",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "870000": {
+  "ad": "DayBack",
+  "tablo": "DayBack",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "880000": {
+  "ad": "GrowthPlan",
+  "tablo": "GrowthPlan",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "890000": {
+  "ad": "Easter",
+  "tablo": "Easter",
+  "var": true,
+  "kademeAlan": "titleID",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "900000": {
+  "ad": "BleachBag",
+  "tablo": "BleachBag",
+  "var": true,
+  "kademeAlan": "f7",
+  "actEsleyen": 196,
+  "actToplam": 196
+ },
+ "910000": {
+  "ad": "Gallery",
+  "tablo": "Gallery",
+  "var": true,
+  "kademeAlan": "disCount",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "920000": {
+  "ad": "DailyHero",
+  "tablo": "DailyHero",
+  "var": true,
+  "kademeAlan": "scoreIndex",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "930000": {
+  "ad": "Pyramid",
+  "tablo": "Pyramid",
+  "var": true,
+  "kademeAlan": "smashFifty",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "940000": {
+  "ad": "RushInSeireitei",
+  "tablo": "RushInSeireitei",
+  "var": true,
+  "kademeAlan": "refreshIndex",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "950000": {
+  "ad": "AstrologyHouse",
+  "tablo": "Astrology",
+  "var": true,
+  "kademeAlan": "f16",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "960000": {
+  "ad": "KnifeHeroCollect",
+  "tablo": "KnifeHeroCollect",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "970000": {
+  "ad": "CoolSummer",
+  "tablo": "CoolSummer",
+  "var": true,
+  "kademeAlan": "repository",
+  "actEsleyen": 68,
+  "actToplam": 68
+ },
+ "980000": {
+  "ad": "EveryDayAward",
+  "tablo": "EveryDayAward",
+  "var": true,
+  "kademeAlan": "rechargeGift",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "990000": {
+  "ad": "LevelGiftBag",
+  "tablo": "HDLevelGiftBag",
+  "var": true,
+  "kademeAlan": "text",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1000000": {
+  "ad": "OrderGiftBag",
+  "tablo": "HDOrder",
+  "var": true,
+  "kademeAlan": "f6",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1020000": {
+  "ad": "FirstPayBag",
+  "tablo": "FirstPayBag",
+  "var": true,
+  "kademeAlan": "f7",
+  "actEsleyen": 0,
+  "actToplam": 0
+ },
+ "1030000": {
+  "ad": "BrushHappy",
+  "tablo": "BrushHappy",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "1040000": {
+  "ad": "NewServerDraw",
+  "tablo": "NewServerDraw",
+  "var": true,
+  "kademeAlan": "giftIndexs",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "1050000": {
+  "ad": "NewHalloweenGame",
+  "tablo": "NewHalloweenGame",
+  "var": true,
+  "kademeAlan": "buyGameGold",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1060000": {
+  "ad": "NewHalloweenRecharge",
+  "tablo": "NewHalloweenRecharge",
+  "var": true,
+  "kademeAlan": "dayRechargeIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1070000": {
+  "ad": "NewHalloweenConsume",
+  "tablo": "NewHalloweenConsume",
+  "var": true,
+  "kademeAlan": "buyShopIndex",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1080000": {
+  "ad": "ThankYou",
+  "tablo": "ThankYou",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1090000": {
+  "ad": "ThanksFeast",
+  "tablo": "ThanksFeast",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1100000": {
+  "ad": "ThanksTreasure",
+  "tablo": "ThanksTreasure",
+  "var": true,
+  "kademeAlan": "goldRate",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1110000": {
+  "ad": "SnowBattle",
+  "tablo": "SnowBattle",
+  "var": true,
+  "kademeAlan": "gift",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1120000": {
+  "ad": "Tree",
+  "tablo": "Christmas2015Tree",
+  "var": true,
+  "kademeAlan": "challengeInfo",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1130000": {
+  "ad": "Sock",
+  "tablo": "Sock",
+  "var": true,
+  "kademeAlan": "taskAwards",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "1140000": {
+  "ad": "Sled",
+  "tablo": "Sled",
+  "var": true,
+  "kademeAlan": "shop",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1150000": {
+  "ad": "NewYearCheck",
+  "tablo": "Check",
+  "var": true,
+  "kademeAlan": "preferentialGifts",
+  "actEsleyen": 44,
+  "actToplam": 44
+ },
+ "1160000": {
+  "ad": "NewYearNian",
+  "tablo": "Nian",
+  "var": true,
+  "kademeAlan": "onceFund",
+  "actEsleyen": 44,
+  "actToplam": 44
+ },
+ "1170000": {
+  "ad": "NewYearPocket",
+  "tablo": "Pocket",
+  "var": true,
+  "kademeAlan": "pocketsBin",
+  "actEsleyen": 44,
+  "actToplam": 44
+ },
+ "1180000": {
+  "ad": "NewYearFund",
+  "tablo": "NewYearFund",
+  "var": true,
+  "kademeAlan": "springFund",
+  "actEsleyen": 65,
+  "actToplam": 65
+ },
+ "1190000": {
+  "ad": "NewYearChess",
+  "tablo": "NewYearChess",
+  "var": true,
+  "kademeAlan": "awardBins",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1200000": {
+  "ad": "Easter2016_0",
+  "tablo": "Easter2016_0",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "1210000": {
+  "ad": "Easter2016_1",
+  "tablo": "Easter2016_1",
+  "var": true,
+  "kademeAlan": "rechargeGift",
+  "actEsleyen": 2,
+  "actToplam": 2
+ },
+ "1220000": {
+  "ad": "Easter2016_2",
+  "tablo": "Easter2016_2",
+  "var": true,
+  "kademeAlan": "awards",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1230000": {
+  "ad": "GhostKingForg",
+  "tablo": "GhostKingForg",
+  "var": true,
+  "kademeAlan": "scoreShop",
+  "actEsleyen": 134,
+  "actToplam": 134
+ },
+ "1240000": {
+  "ad": "LaborCultivation",
+  "tablo": "LaborDayCultivation",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 20,
+  "actToplam": 20
+ },
+ "1250000": {
+  "ad": "LaborPet",
+  "tablo": "LaborLaborDayPet",
+  "var": true,
+  "kademeAlan": "fund",
+  "actEsleyen": 20,
+  "actToplam": 20
+ },
+ "1260000": {
+  "ad": "LaborConsume",
+  "tablo": "LaborConsume",
+  "var": true,
+  "kademeAlan": "banner",
+  "actEsleyen": 20,
+  "actToplam": 20
+ },
+ "1270000": {
+  "ad": "DuanwujiePet",
+  "tablo": "DuanwujiePet",
+  "var": true,
+  "kademeAlan": "fund",
+  "actEsleyen": 31,
+  "actToplam": 31
+ },
+ "1280000": {
+  "ad": "DuanwujieBoat",
+  "tablo": "DuanwujieBoat",
+  "var": true,
+  "kademeAlan": "mall",
+  "actEsleyen": 31,
+  "actToplam": 31
+ },
+ "1290000": {
+  "ad": "TreasureHunt",
+  "tablo": "TreasureHunt",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 135,
+  "actToplam": 135
+ },
+ "1300000": {
+  "ad": "TreasureShop",
+  "tablo": "TreasureShop",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 135,
+  "actToplam": 135
+ },
+ "1310000": {
+  "ad": "SoulDraw",
+  "tablo": "SoulDraw",
+  "var": true,
+  "kademeAlan": "freeAward",
+  "actEsleyen": 136,
+  "actToplam": 136
+ },
+ "1320000": {
+  "ad": "SoulBuy",
+  "tablo": "SoulBuy",
+  "var": true,
+  "kademeAlan": "buyAward",
+  "actEsleyen": 136,
+  "actToplam": 136
+ },
+ "1330000": {
+  "ad": "SoulRecharge",
+  "tablo": "SoulRecharge",
+  "var": true,
+  "kademeAlan": "recharge",
+  "actEsleyen": 136,
+  "actToplam": 136
+ },
+ "1340000": {
+  "ad": "KnifeChessRecharge",
+  "tablo": "KnifeChessRecharge",
+  "var": true,
+  "kademeAlan": "recharge",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "1350000": {
+  "ad": "KnifeChessBuy",
+  "tablo": "KnifeChessBuy",
+  "var": true,
+  "kademeAlan": "mall",
+  "actEsleyen": 140,
+  "actToplam": 140
+ },
+ "1360000": {
+  "ad": "NationalOne",
+  "tablo": "NationalDayOne",
+  "var": true,
+  "kademeAlan": "dayGifts",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "1370000": {
+  "ad": "NationalTwo",
+  "tablo": "NationalDayTwo",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 71,
+  "actToplam": 71
+ },
+ "1380000": {
+  "ad": "HalloweenVip",
+  "tablo": "HalloweenVip",
+  "var": true,
+  "kademeAlan": "dayFreeGifts",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1390000": {
+  "ad": "HalloweenRoundShop",
+  "tablo": "HalloweenRoundShop",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1400000": {
+  "ad": "TGD_1",
+  "tablo": "ThanksGivingDay2016One",
+  "var": true,
+  "kademeAlan": "dayFreeGifts",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1410000": {
+  "ad": "TGD_2",
+  "tablo": "ThanksGivingDay2016Two",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1420000": {
+  "ad": "TGD_3",
+  "tablo": "ThanksGivingDay2016Three",
+  "var": true,
+  "kademeAlan": "awardInfo",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1430000": {
+  "ad": "NewYearTask",
+  "tablo": "NewYear2017Task",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 31,
+  "actToplam": 31
+ },
+ "1440000": {
+  "ad": "NewYearBags",
+  "tablo": "NewYear2017Bags",
+  "var": true,
+  "kademeAlan": "orangeAward",
+  "actEsleyen": 31,
+  "actToplam": 31
+ },
+ "1450000": {
+  "ad": "NewYearDiscount",
+  "tablo": "NewYear2017Discount",
+  "var": true,
+  "kademeAlan": "oneAward",
+  "actEsleyen": 31,
+  "actToplam": 31
+ },
+ "1460000": {
+  "ad": "FoolsDayRecharge",
+  "tablo": "FoolsDayRecharge",
+  "var": true,
+  "kademeAlan": "dayAward",
+  "actEsleyen": 9,
+  "actToplam": 9
+ },
+ "1470000": {
+  "ad": "FoolsDayShop",
+  "tablo": "FoolsDayShop",
+  "var": true,
+  "kademeAlan": "scoreShop",
+  "actEsleyen": 9,
+  "actToplam": 9
+ },
+ "1480000": {
+  "ad": "ChildrenDayShop",
+  "tablo": "ChildrenDayShop",
+  "var": true,
+  "kademeAlan": "loginAward",
+  "actEsleyen": 70,
+  "actToplam": 70
+ },
+ "1490000": {
+  "ad": "ChildrenDayHero",
+  "tablo": "ChildrenDayHero",
+  "var": true,
+  "kademeAlan": null,
+  "actEsleyen": 70,
+  "actToplam": 70
+ },
+ "1500000": {
+  "ad": "ChildrenDayCollect",
+  "tablo": "ChildrenDayCollect",
+  "var": true,
+  "kademeAlan": "items",
+  "actEsleyen": 70,
+  "actToplam": 70
+ },
+ "1510000": {
+  "ad": "AnniversaryOne",
+  "tablo": "AnniversaryOne",
+  "var": true,
+  "kademeAlan": "loginAwardList",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1520000": {
+  "ad": "AnniversaryTwo",
+  "tablo": "AnniversaryTwo",
+  "var": true,
+  "kademeAlan": "dayAward",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1530000": {
+  "ad": "AnniversaryThree",
+  "tablo": "AnniversaryThree",
+  "var": true,
+  "kademeAlan": "mall",
+  "actEsleyen": 1,
+  "actToplam": 1
+ },
+ "1540000": {
+  "ad": "NationalOne2017",
+  "tablo": "NationalDayOne2017",
+  "var": true,
+  "kademeAlan": "signList",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1550000": {
+  "ad": "NationalTwo2017",
+  "tablo": "NationalDayTwo2017",
+  "var": true,
+  "kademeAlan": "singleAward",
+  "actEsleyen": 7,
+  "actToplam": 7
+ },
+ "1560000": {
+  "ad": "NationalThree2017",
+  "tablo": "NationalDayThree2017",
+  "var": true,
+  "kademeAlan": "pool",
+  "actEsleyen": 7,
+  "actToplam": 7
+ }
+}

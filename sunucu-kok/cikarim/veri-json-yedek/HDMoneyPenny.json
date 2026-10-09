@@ -1,0 +1,16 @@
+[
+  {
+    "id": "000668A1",
+    "name": "Make Money",
+    "tName": "Make Money",
+    "desc": "During the 5 days of event, top up a certain amount of Gold to get Gold rebate. Rebate Gold can be claimed on the 6th day.\nTop up for continuously 5 days to get an extra 5% of the total top-up Gold rebate\n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 420001,
+    "payDay": "[{\"index\":0,\"indexType\":3,\"getType\":4,\"limit\":0},{\"index\":1,\"indexType\":3,\"getType\":4,\"limit\":0},{\"index\":2,\"indexType\":3,\"getType\":4,\"limit\":0},{\"index\":3,\"indexType\":3,\"getType\":4,\"limit\":0},{\"index\":4,\"indexType\":3,\"getType\":4,\"limit\":0},{\"index\":5,\"indexType\":3,\"getType\":1,\"limit\":1}]",
+    "additional": "[{\"condition\":10,\"rate\":0,\"prompt\":\"10~999\"},{\"condition\":1000,\"rate\":8,\"prompt\":\"1000~4999\"},{\"condition\":5000,\"rate\":12,\"prompt\":\"5000~9999\"},{\"condition\":10000,\"rate\":15,\"prompt\":\"10000~19999\"},{\"condition\":20000,\"rate\":20,\"prompt\":\"20000~49999\"},{\"condition\":50000,\"rate\":25,\"prompt\":\"50000+\"}]",
+    "f8": 6,
+    "f9": 5,
+    "f10": "[\"Pas Recharger\",\"%0%\",\"Recharger %0 or\",\"Retour %0 or\",\"%0 or\",\"%0~%1 or\"]"
+  }
+]

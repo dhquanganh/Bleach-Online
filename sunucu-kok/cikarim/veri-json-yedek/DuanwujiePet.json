@@ -1,0 +1,19 @@
+[
+  {
+    "id": "001360F1",
+    "name": "劳动节消费",
+    "tName": "粽望所归",
+    "desc": "1. When single topup has reached corresponding amount, you can receive reward and rice dumpling.\n2. You can use rice dumplings to exchange rewards in the shop and rice dumplings you've collected will be calculated into total dumplings collected.\n3. Receive all-server dumpling rewards will not cost dumplings, the giftpack can be received only once.\n4. During the event, accumulate top up any amount for 5 days to get rewards.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "fund": "[{\"index\":0, \"awardId\":21405890, \"gold\":200}, {\"index\":1, \"awardId\":21405891, \"gold\":800}, {\"index\":2, \"awardId\":21405892, \"gold\":2000}, {\"index\":3, \"awardId\":21405893, \"gold\":4000}]",
+    "fundGift": "{\"index\":4, \"days\":5, \"awardId\":21405894}",
+    "zongziId": 5,
+    "serverZongziId": 6,
+    "pet": "{\"index\":7, \"zongZi\":8000, \"petId\" : 1213, \"showId\":1213001}",
+    "zongZiGift": "{\"index\":8, \"zongZi\" : [5000,10000,20000,30000,50000,80000,120000,200000], \"awardIds\":[21405895, 21405896,21405897, 21405898, 21405899, 21405900, 21405901, 21405902]}",
+    "mall": "[{\"index\":30,\"awardId\":21407305,\"score\":400,\"count\":0},\n{\"index\":31,\"awardId\":21407306,\"score\":400,\"count\":0},\n{\"index\":32,\"awardId\":21407307,\"score\":100,\"count\":0},\n{\"index\":33,\"awardId\":21407308,\"score\":80,\"count\":0},\n{\"index\":34,\"awardId\":21407309,\"score\":600, \"count\":0},\n{\"index\":35,\"awardId\":21407310,\"score\":600, \"count\":0},\n{\"index\":36,\"awardId\":21407311,\"score\":300, \"count\":0},\n{\"index\":37,\"awardId\":21407312,\"score\":100, \"count\":0},\n{\"index\":38,\"awardId\":21407313,\"score\":400, \"count\":0},\n{\"index\":39,\"awardId\":21407314,\"score\":500, \"count\":0},\n{\"index\":40,\"awardId\":21407315,\"score\":6000, \"count\":0},\n{\"index\":41,\"awardId\":21407316,\"score\":10000, \"count\":0}]",
+    "text": "\"Not enough Dumplings\""
+  }
+]

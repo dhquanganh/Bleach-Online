@@ -1,0 +1,29 @@
+{
+  "refreshSeconds": 36000,
+  "refreshGold": 10,
+  "offers": [
+    {
+      "id": 20000001,
+      "itemID": 14100005,
+      "number": 50,
+      "price": {
+        "type": 0,
+        "code": 1,
+        "amount": 50
+      },
+      "totalTimes": 1
+    },
+    {
+      "id": 20000002,
+      "itemID": 14100698,
+      "number": 1,
+      "price": {
+        "type": 0,
+        "code": 1,
+        "amount": 500
+      },
+      "totalTimes": 1
+    }
+  ],
+  "revision": 3
+}

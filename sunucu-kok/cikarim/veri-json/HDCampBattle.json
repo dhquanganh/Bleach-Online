@@ -1,0 +1,26 @@
+[
+  {
+    "id": "0000EA61",
+    "name": "Clear Instance",
+    "tName": "Clear Instances and Get Materials",
+    "desc": "During event, clear corresponding instances can obtain rewards. Rewards limit: 30",
+    "tip": "5",
+    "price": 0,
+    "imageID": 60001,
+    "condition": "[{\"key\":15200002,\"value\":[21401057],\"prompt\":\"Sneak Attack Human World—Hard\"},{\"key\":15200004,\"value\":[21401058],\"prompt\":\"Shinigami's Power—Hard\"}]",
+    "carbonLine": "Level Text",
+    "prizeNum": 30
+  },
+  {
+    "id": "0000EA62",
+    "name": "Clear Instance",
+    "tName": "Clear Instances and Get Materials",
+    "desc": "During event, clear corresponding instances can obtain rewards. Rewards limit: 30",
+    "tip": "5",
+    "price": 0,
+    "imageID": 60001,
+    "condition": "[{\"key\":15200005,\"value\":[21401114],\"prompt\":\"Nightmare Execution—Easy\"},{\"key\":15200006,\"value\":[21401115],\"prompt\":\"Nightmare Execution—Hard\"}]",
+    "carbonLine": "Level Text",
+    "prizeNum": 30
+  }
+]

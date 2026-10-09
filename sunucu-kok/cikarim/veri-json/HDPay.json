@@ -1,0 +1,90 @@
+[
+  {
+    "id": "00057E41",
+    "name": "Top Up Rebate",
+    "tName": "",
+    "desc": "",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360001,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"}]",
+    "f7": "[1,2,3,4]"
+  },
+  {
+    "id": "00057E42",
+    "name": "Top Up Rebate",
+    "tName": "Top up and Get 10% Rebate",
+    "desc": " Top up will be only counted duiring event time.\n Duiring event, top up any amount of Gold and click the chest to get 10% Gold rebate.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360006,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://http://sskc.mx175.com\"}]",
+    "f7": "[1,2,3]"
+  },
+  {
+    "id": "00057E43",
+    "name": "Top Up Rebate",
+    "tName": "Super Value Rewards",
+    "desc": "",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360002,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://sskc.mx175.com\"},{\"agent\":10,\"link\":\"http://sskc.g1080.com/news/news_l.html\"},{\"agent\":11,\"link\":\"http://web.2144.cn\"}]",
+    "f7": "[1,2,3,23,6]"
+  },
+  {
+    "id": "00057E44",
+    "name": "Top Up Rebate",
+    "tName": "111",
+    "desc": "",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360003,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://sskc.mx175.com\"},{\"agent\":10,\"link\":\"http://sskc.g1080.com/news/news_l.html\"},{\"agent\":11,\"link\":\"http://web.2144.cn\"}]",
+    "f7": "[1,2,3,16,7]"
+  },
+  {
+    "id": "00057E45",
+    "name": "Top Up Rebate",
+    "tName": "Super Rewards Right Now",
+    "desc": "",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360004,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"}]",
+    "f7": "[1,2,3,14,13,11,12]"
+  },
+  {
+    "id": "00057E46",
+    "name": "Top Up Rebate",
+    "tName": "Top up and Get 100% Rebate",
+    "desc": " Top up will be only counted duiring event time.\n Duiring event, top up any amount of Gold and click the chest to get 100% Gold rebate.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360006,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://http://sskc.mx175.com\"}]",
+    "f7": "[1,2,3]"
+  },
+  {
+    "id": "00057E47",
+    "name": "Top Up Rebate",
+    "tName": "Top up and Get 200% Rebate",
+    "desc": " Top up will be only counted duiring event time.\n During event, top up any amount of Gold and click the chest to get 200% Gold rebate.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360006,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://http://sskc.mx175.com\"}]",
+    "f7": "[1,2,3]"
+  },
+  {
+    "id": "00057E49",
+    "name": "Top Up Rebate",
+    "tName": "Top up and Get 300% Rebate",
+    "desc": " Top up will be only counted duiring event time.\n During event, top up any amount of Gold and click the chest to get 300% Gold rebate.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 360006,
+    "f6": "[{\"agent\":3,\"link\":\"http://sskc.game.weibo.com/news/type-special.html\"},{\"agent\":2,\"link\":\"http://www.1377.com/bleach/html/news/activities\"},{\"agent\":6,\"link\":\"http://bleach.wan.360.cn/list/13-1\"},{\"agent\":7,\"link\":\"http://sskc.91wan.com/youxihuodong\"},{\"agent\":9,\"link\":\"http://http://sskc.mx175.com\"}]",
+    "f7": "[1,2,3]"
+  }
+]

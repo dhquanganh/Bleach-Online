@@ -1,0 +1,13 @@
+[
+  {
+    "id": "00155CC1",
+    "name": "感恩节1",
+    "tName": "感恩节1",
+    "desc": "1. During the event, log in everyday to receive a Thanksgiving Gift Pack\n2. Thanksgiving Gift Packs can only be claimed orderly. Log in for 5 days to claim the Ultimate Chest",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1400001,
+    "dayFreeGifts": "[{\"index\":1,\"award\":21406700,\"type\":0,\"add\":1},{\"index\":2,\"award\":21406701,\"type\":0,\"add\":1},{\"index\":3,\"award\":21406702,\"type\":0,\"add\":1},{\"index\":4,\"award\":21406703,\"type\":0,\"add\":1},{\"index\":5,\"award\":21406704,\"type\":0,\"add\":1}]",
+    "bag": "{\"index\" :95, \"awardId\" : 21406724, \"gold\" : 40000, \"showID\":11150059,\"showType\":0,\"fightReportAddr\":\"\"}\n"
+  }
+]

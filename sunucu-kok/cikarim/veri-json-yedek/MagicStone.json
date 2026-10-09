@@ -1,0 +1,52 @@
+[
+  {
+    "id": "00D72684",
+    "name": "White Enchant Stone",
+    "func": "[{\"weaponSkillid\":13700001,\"rate\":380},{\"weaponSkillid\":13701001,\"rate\":580},{\"weaponSkillid\":13702001,\"rate\":600},{\"weaponSkillid\":13703001,\"rate\":800},{\"weaponSkillid\":13711001,\"rate\":1000}]"
+  },
+  {
+    "id": "00D72685",
+    "name": "Green Enchant Stone",
+    "func": "[{\"weaponSkillid\":13700002,\"rate\":390},{\"weaponSkillid\":13701002,\"rate\":590},{\"weaponSkillid\":13702002,\"rate\":600},{\"weaponSkillid\":13703002,\"rate\":800},{\"weaponSkillid\":13711002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D72686",
+    "name": "Blue Enchant Stone",
+    "func": "[{\"weaponSkillid\":13700002,\"rate\":250},{\"weaponSkillid\":13701002,\"rate\":500},{\"weaponSkillid\":13707001,\"rate\":650},{\"weaponSkillid\":13703003,\"rate\":750},{\"weaponSkillid\":13711002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D72687",
+    "name": "Purple Enchant Stone",
+    "func": "[{\"weaponSkillid\":13700003,\"rate\":250},{\"weaponSkillid\":13701002,\"rate\":600},{\"weaponSkillid\":13704002,\"rate\":650},{\"weaponSkillid\":13703003,\"rate\":900},{\"weaponSkillid\":13707002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D72688",
+    "name": "Gold Enchant Stone",
+    "func": "[{\"weaponSkillid\":13709002,\"rate\":300},{\"weaponSkillid\":13712002,\"rate\":600},{\"weaponSkillid\":13713002,\"rate\":800},{\"weaponSkillid\":13714002,\"rate\":900},{\"weaponSkillid\":13715002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D72689",
+    "name": "Red Enchant Stone",
+    "func": "[{\"weaponSkillid\":13702004,\"rate\":250},{\"weaponSkillid\":13704003,\"rate\":500},{\"weaponSkillid\":13708002,\"rate\":700},{\"weaponSkillid\":13709004,\"rate\":900},{\"weaponSkillid\":13711003,\"rate\":1000}]"
+  },
+  {
+    "id": "00D7268A",
+    "name": "Engetsu Enchant Stone",
+    "func": "[{\"weaponSkillid\":13706001,\"rate\":500},{\"weaponSkillid\":13700002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D7268B",
+    "name": "Mugetsu Enchant Stone",
+    "func": "[{\"weaponSkillid\":13707001,\"rate\":500},{\"weaponSkillid\":13700002,\"rate\":1000}]"
+  },
+  {
+    "id": "00D7268C",
+    "name": "Fiend Enchant Stone",
+    "func": "[{\"weaponSkillid\":13708001,\"rate\":500},{\"weaponSkillid\":13710001,\"rate\":1000}]"
+  },
+  {
+    "id": "00D7268D",
+    "name": "Holy Enchant Stone",
+    "func": "[{\"weaponSkillid\":13709001,\"rate\":500},{\"weaponSkillid\":13711001,\"rate\":1000}]"
+  }
+]

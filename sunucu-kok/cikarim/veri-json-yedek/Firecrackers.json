@@ -1,0 +1,26 @@
+[
+  {
+    "id": "000CAA31",
+    "name": "新年爆竹",
+    "tName": "新年爆竹",
+    "desc": "1、活动时间内玩家点爆竹可以获得道具奖励。\n2、当每横行、纵列及斜角的爆竹全部点燃时即可领取对应的礼包\n3、玩家点完全部爆竹，必须重置才能继续进行游戏。\n4、点燃一定的爆竹可以获得终极大奖，终极大奖通过邮件发送。",
+    "tip": "1",
+    "price": 0,
+    "imageID": 830001,
+    "firecrackersAward": "[{\"rate\":40,\"awardId\":21402649},{\"rate\":40,\"awardId\":21402650},{\"rate\":40,\"awardId\":21402651},{\"rate\":40,\"awardId\":21402652},{\"rate\":40,\"awardId\":21402653},{\"rate\":40,\"awardId\":21402654},{\"rate\":40,\"awardId\":21402655},{\"rate\":40,\"awardId\":21402656},{\"rate\":40,\"awardId\":21402657},{\"rate\":40,\"awardId\":21402658},{\"rate\":40,\"awardId\":21402659},{\"rate\":40,\"awardId\":21402660},{\"rate\":40,\"awardId\":21402661},{\"rate\":40,\"awardId\":21402662},{\"rate\":40,\"awardId\":21402663},{\"rate\":40,\"awardId\":21402664},{\"rate\":40,\"awardId\":21402665},{\"rate\":40,\"awardId\":21402666},{\"rate\":40,\"awardId\":21402667},{\"rate\":40,\"awardId\":21402668},{\"rate\":40,\"awardId\":21402669},{\"rate\":40,\"awardId\":21402670},{\"rate\":40,\"awardId\":21402671},{\"rate\":40,\"awardId\":21402672},{\"rate\":40,\"awardId\":21402673}]",
+    "packageAward": "[21402674,21402675,21402676,21402677,21402678,21402679,21402680,21402681,21402682,21402683,21402684,21402685,21402674,21402679,21402678,21402677,21402676,21402675,21402680,21402685,21402684,21402683,21402682,21402681]",
+    "firecrackersRelate": "[{\"condition\":17043521,\"relate\":[0,12]},{\"condition\":1082401,\"relate\":[1,17]},{\"condition\":2164802,\"relate\":[2,16]},{\"condition\":4329604,\"relate\":[3,15]},{\"condition\":8659208,\"relate\":[4,14]},{\"condition\":17318416,\"relate\":[5,13]},{\"condition\":1118480,\"relate\":[6,18]},{\"condition\":31,\"relate\":[7,23]},{\"condition\":992,\"relate\":[8,22]},{\"condition\":31744,\"relate\":[9,21]},{\"condition\":1015808,\"relate\":[10,20]},{\"condition\":32505856,\"relate\":[11,19]}]",
+    "finalAward": "[{\"condition\":500,\"award\":21402686,\"showID\":11150009,\"showType\":0,\"fightReportAddr\":\"http://bleachfight.gametrees.com/?rid=844424935848888566&aid=2&t=1\"},{\"condition\":150,\"award\":21402687,\"showID\":2000124,\"showType\":1},{\"condition\":75,\"award\":21402688,\"showID\":21402688,\"showType\":2},{\"condition\":375,\"award\":21402689,\"showID\":21402689,\"showType\":2},{\"condition\":150,\"award\":21402690,\"showID\":21402690,\"showType\":2}]",
+    "lightingAndReset": "[{\"lightingIndex\":90,\"costGold\":100},{\"resetIndex\":91,\"costGold\":20}]",
+    "freeTimeIndex": "[{\"lightingFreeIndex\":92},{\"resetFreeIndex\":93}]",
+    "freeTime": "[{\"lightingFreeTime\":2},{\"resetFreeTime\":1}]",
+    "finalAwardState": 94,
+    "firecrackersNumIndex": 95,
+    "insideAwardState": 96,
+    "outsideAwardState": 97,
+    "oneKeyLighting": 102,
+    "oneKeyDraw": 103,
+    "discount": 90,
+    "language": "{\"freeReset\":\"确定花费免费重置次数重置吗？\",\"resetTip\":\"请先领取奖励\",\"costTip\":\"需要花费%0金币\"}"
+  }
+]

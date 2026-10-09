@@ -1,0 +1,22 @@
+[
+  {
+    "id": "001053B1",
+    "name": "购物车",
+    "tName": "购物车",
+    "desc": "1. During the event, each time you spend 2 gold, you'll get 1 point -- the point will stack with the top-up points and can be used for exchanging rewards in Point Shop.\n2. All giftpacks in \"Candy Zone\" and \"Pumpkin Garden\" shall be added to the Cart before buying, which means they can't be bought directly.\n3. When your total consumption reaches 5,000 gold, you can get a 1,500 gold discount. Please be sure that the discount won't stack.\n4. Please be noticed that the discount giftpack in \"Pumpkin Garden\" can only be used for single consumption and the \"Double Point\" reward in \"Candy Zone\" can be stacked.\n5. When buying the items in \"Super Rewards\", you won't get cart discounts and point rewards.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1070001,
+    "scoreIndex": "{\"index\":0,\"gold\":12000,\"award\":21403477,\"showID\":11150019,\"showType\":0,\"fightReportAddr\":\"http://bleachjf.gametrees.com/fightreport/?rid=844424944462995012&aid=54&t=1&lang=en_US\"}",
+    "buyShopIndex": "[{\"index\":1,\"gold\":100,\"award\":21403461},{\"index\":2,\"gold\":100,\"award\":21403462},{\"index\":3,\"gold\":100,\"award\":21403463},{\"index\":4,\"gold\":100,\"award\":21403464},{\"index\":5,\"gold\":100,\"award\":21403465},{\"index\":6,\"gold\":100,\"award\":21403466},{\"index\":7,\"gold\":100,\"award\":21403467},{\"index\":8,\"gold\":100,\"award\":21403468}]",
+    "rate": "[[1,7],[2,8],[3,7],[4,8],[5,6]]",
+    "f9": "[{\"index\":11,\"gold\":200,\"award\":21403469,\"name\":\"Trick for Treat 1\"},{\"index\":12,\"gold\":200,\"award\":21403470,\"name\":\"Trick for Treat 2\"},{\"index\":13,\"gold\":200,\"award\":21403471,\"name\":\"Trick for Treat 3\"},{\"index\":14,\"gold\":200,\"award\":21403472,\"name\":\"Trick for Treat 4\"},{\"index\":15,\"gold\":4000,\"award\":21403473,\"name\":\"Trick for Treat 5\"},{\"index\":16,\"gold\":4000,\"award\":21403474,\"name\":\"Trick for Treat 6\"},{\"index\":17,\"gold\":4000,\"award\":21403475,\"name\":\"Trick for Treat 7\"},{\"index\":18,\"gold\":5000,\"award\":21403476,\"name\":\"Trick for Treat 8\"}]",
+    "f10": "[{\"index\":[11,13],\"type\":[1,1]},{\"index\":[11,14],\"type\":[1,1]},{\"index\":[12,13],\"type\":[1,1]},{\"index\":[12,14],\"type\":[1,1]},{\"index\":[11,12],\"type\":[1,1]}]",
+    "f11": "[{\"type\":1,\"condition\":400,\"discount\":150}]",
+    "f12": "{\"condition\":5000,\"discount\":1500}",
+    "f13": 10,
+    "f14": 20,
+    "f15": 2,
+    "f16": "{\"prompt1\":\"Succeeded!\",\"prompt2\":\"Still need %0 Gold\"}"
+  }
+]

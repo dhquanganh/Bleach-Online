@@ -1,0 +1,257 @@
+[
+  {
+    "id": "00989681",
+    "condition": "Win within 10 rounds",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win within <font color=\"#009900\">10</font> rounds</font></p>"
+  },
+  {
+    "id": "00989682",
+    "condition": "Win and keep all allies' HP above 30%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and keep all allies' HP above <font color=\"#009900\">30%</font></font></p>"
+  },
+  {
+    "id": "00989683",
+    "condition": "Win and make sure at least 2 partners survived",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">2</font> partners survived</font></p>"
+  },
+  {
+    "id": "00989684",
+    "condition": "Win and make sure at least 1 female partner survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">1</font> female partner survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "00989685",
+    "condition": "Win and make sure at least 1 male partner survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">1</font> male partner survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "00989686",
+    "condition": "Damage dealt is no less than 30% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no less than <font color=\"#009900\">30%</font> of total damage</font></p>"
+  },
+  {
+    "id": "00989687",
+    "condition": "Remaining HP is no less than 30% of the team's total HP",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no less than <font color=\"#009900\">30%</font> of the team's total HP</font></p>"
+  },
+  {
+    "id": "00989688",
+    "condition": "Win and make sure all 3 Assaulters survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure all <font color=\"#009900\">3</font> Assaulters survive the battle</font></p>"
+  },
+  {
+    "id": "00989689",
+    "condition": "Win and make sure all 3 Supporters survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure all <font color=\"#009900\">3</font> Supporters survive the battle</font></p>"
+  },
+  {
+    "id": "0098968A",
+    "condition": "Win within 5 rounds",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win within <font color=\"#009900\">5</font> rounds</font></p>"
+  },
+  {
+    "id": "0098968B",
+    "condition": "Win with only 3 characters",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win with only <font color=\"#009900\">3</font> characters</font></p>"
+  },
+  {
+    "id": "0098968C",
+    "condition": "Win and make sure only 3 characters survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure only <font color=\"#009900\">3</font> characters survive the battle</font></p>"
+  },
+  {
+    "id": "0098968D",
+    "condition": "Win and make sure the team's total HP is no less than 50%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the team's total HP is no less than <font color=\"#009900\">50%</font></font></p>"
+  },
+  {
+    "id": "0098968E",
+    "condition": "Win and make sure the team's total HP is no less than 80%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the team's total HP is no less than <font color=\"#009900\">80%</font></font></p>"
+  },
+  {
+    "id": "0098968F",
+    "condition": "Win and make sure at least 4 characters survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">4</font> characters survive the battle</font></p>"
+  },
+  {
+    "id": "00989690",
+    "condition": "Win with the Main Character's HP at 50% or higher",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win with the Main Character's HP at <font color=\"#009900\">50%</font> or higher</font></p>"
+  },
+  {
+    "id": "00989691",
+    "condition": "Win with the Main Character's HP at 80% or higher",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win with the Main Character's HP at <font color=\"#009900\">80%</font> or higher</font></p>"
+  },
+  {
+    "id": "00989692",
+    "condition": "Win and make sure the damage dealt by Main Character is no less than 50% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the damage dealt by Main Character is no less than <font color=\"#009900\">50%</font> of total damage</font></p>"
+  },
+  {
+    "id": "00989693",
+    "condition": "Win and make sure the damage dealt by Main Character is no less than 80% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the damage dealt by Main Character is no less than <font color=\"#009900\">80%</font> of total damage</font></p>"
+  },
+  {
+    "id": "00989694",
+    "condition": "Win and make sure at least 2 female partners survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">2</font> female partners survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "00989695",
+    "condition": "Win and make sure at least 2 male partners survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">2</font> male partners survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "00989696",
+    "condition": "Remaining HP is no less than 50% after the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no less than <font color=\"#009900\">50%</font> after the battle</font></p>"
+  },
+  {
+    "id": "00989697",
+    "condition": "Remaining HP is no less than 70% after the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no less than <font color=\"#009900\">80%</font> after the battle</font></p>"
+  },
+  {
+    "id": "00989698",
+    "condition": "Damage dealt is no less than 50% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no less than <font color=\"#009900\">50%</font> of total damage</font></p>"
+  },
+  {
+    "id": "00989699",
+    "condition": "Damage dealt is no less than 70% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no less than <font color=\"#009900\">70%</font> of total damage</font></p>"
+  },
+  {
+    "id": "0098969A",
+    "condition": "Remaining HP is no more than 50% of total HP",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no more than <font color=\"#009900\">50%</font> of total HP</font></p>"
+  },
+  {
+    "id": "0098969B",
+    "condition": "Damage dealt is no more than 50% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no more than <font color=\"#009900\">50%</font> of total damage</font></p>"
+  },
+  {
+    "id": "0098969C",
+    "condition": "Win and make sure Main Character's HP is no more than 70%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure Main Character's HP is no more than <font color=\"#009900\">70%</font></font></p>"
+  },
+  {
+    "id": "0098969D",
+    "condition": "Win and make sure the damage dealt by Main Character is no more than 70% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the damage dealt by Main Character is no more than <font color=\"#009900\">70%</font> of total damage</font></p>"
+  },
+  {
+    "id": "0098969E",
+    "condition": "Win and make sure total HP is no more than 70%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure total HP is no more than <font color=\"#009900\">70%</font></font></p>"
+  },
+  {
+    "id": "0098969F",
+    "condition": "Remaining HP is no more than 25% after the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no more than <font color=\"#009900\">25%</font> after the battle</font></p>"
+  },
+  {
+    "id": "009896A0",
+    "condition": "Damage dealt is no more than 25% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no more than <font color=\"#009900\">25%</font> of total damage</font></p>"
+  },
+  {
+    "id": "009896A1",
+    "condition": "Win and make sure Main Character's HP is no less than 95%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure Main Character's HP is no less than <font color=\"#009900\">95%</font></font></p>"
+  },
+  {
+    "id": "009896A2",
+    "condition": "Win and make sure the damage dealt by Main Character is no less than 95% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the damage dealt by Main Character is no less than <font color=\"#009900\">95%</font> of total damage</font></p>"
+  },
+  {
+    "id": "009896A3",
+    "condition": "Win and make sure total HP is no less than 95%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure total HP is no less than <font color=\"#009900\">95%</font></font></p>"
+  },
+  {
+    "id": "009896A4",
+    "condition": "Win and make sure all of own Supporters were killed during the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure all of own Supporters were killed during the battle<font color=\"#009900\"></font></font></p>"
+  },
+  {
+    "id": "009896A5",
+    "condition": "Remaining HP is no less than 85% after the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no less than <font color=\"#009900\">85%</font> after the battle</font></p>"
+  },
+  {
+    "id": "009896A6",
+    "condition": "Win and make sure Main Character's HP is no less than 95%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure Main Character's HP is no less than <font color=\"#009900\">95%</font></font></p>"
+  },
+  {
+    "id": "009896A7",
+    "condition": "Win and make sure 5 partners survived.",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure <font color=\"#009900\">5</font> partners survived.</font></p>"
+  },
+  {
+    "id": "009896A8",
+    "condition": "Win with only 2 characters",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win with only <font color=\"#009900\">2</font> characters</font></p>"
+  },
+  {
+    "id": "009896A9",
+    "condition": "Win and make sure only 2 characters survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure only <font color=\"#009900\">2</font> characters survive the battle</font></p>"
+  },
+  {
+    "id": "009896AA",
+    "condition": "Damage dealt is no less than 85% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Damage dealt is no less than <font color=\"#009900\">85%</font> of total damage</font></p>"
+  },
+  {
+    "id": "009896AB",
+    "condition": "Win and make sure the damage dealt by Main Character is no less than 95% of total damage",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure the damage dealt by Main Character is no less than <font color=\"#009900\">95%</font> of total damage</font></p>"
+  },
+  {
+    "id": "009896AC",
+    "condition": "Win and make sure total HP is no less than 95%",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure total HP is no less than <font color=\"#009900\">95%</font></font></p>"
+  },
+  {
+    "id": "009896AD",
+    "condition": "Win and make sure at least 4 female partners survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">4</font> female partners survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "009896AE",
+    "condition": "Win and make sure at least 4 male partners survived (except Main Character)",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure at least <font color=\"#009900\">4</font> male partners survived (except Main Character)</font></p>"
+  },
+  {
+    "id": "009896AF",
+    "condition": "Win and make sure your Vanguard survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure your Vanguard survive the battle<font color=\"#009900\"></font></font></p>"
+  },
+  {
+    "id": "009896B0",
+    "condition": "Win and make sure only 1 Assaulter survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure only <font color=\"#009900\">1</font> Assaulter survive the battle</font></p>"
+  },
+  {
+    "id": "009896B1",
+    "condition": "Win and make sure only 1 Supporter survive the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win and make sure only <font color=\"#009900\">1</font> Supporter survive the battle</font></p>"
+  },
+  {
+    "id": "009896B2",
+    "condition": "Win within 3 rounds",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Win within <font color=\"#009900\">3</font> rounds</font></p>"
+  },
+  {
+    "id": "009896B3",
+    "condition": "Remaining HP is no less than 10% after the battle",
+    "condtionHtml": "<p align=\"left\"><font face=\"宋体\" size=\"12\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"1\">Remaining HP is no less than <font color=\"#009900\">10%</font> after the battle</font></p>"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "0015AAE1",
+    "name": "感恩节3",
+    "tName": "感恩节3",
+    "desc": "1. Personal and overall daily top-up will be recorded in the bar below, which will be reset at 0:00 daily\n2. If the overall top-up amount reaches a certain ratio, every player is able to claim gift packs\n3. Players who top-up a certain amount in a day can receive two gift packs at one time\n4. 0 Top-up players in a day can claim the gift packs on the left only\n5. The number on the bar indicates current claiming times of gift packs. Invalid when expired",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1400003,
+    "dayPayIndex": 4,
+    "totalIndex": 3,
+    "awardInfo": "[{\"index\":1,\"awardId\":21406754},{\"index\":2,\"awardId\":21406755}]",
+    "payInfo": "[{\"pay\":5000,\"awardCount\":1},{\"pay\":10000,\"awardCount\":2},{\"pay\":20000,\"awardCount\":3},{\"pay\":40000,\"awardCount\":4},{\"pay\":60000,\"awardCount\":5},{\"pay\":100000,\"awardCount\":6}]"
+  }
+]

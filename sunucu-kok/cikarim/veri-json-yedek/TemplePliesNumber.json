@@ -1,0 +1,62 @@
+[
+  {
+    "id": "00F31291",
+    "numberPlies": 5,
+    "awardID": 21910001
+  },
+  {
+    "id": "00F31292",
+    "numberPlies": 10,
+    "awardID": 21910002
+  },
+  {
+    "id": "00F31293",
+    "numberPlies": 15,
+    "awardID": 21910003
+  },
+  {
+    "id": "00F31294",
+    "numberPlies": 20,
+    "awardID": 21910004
+  },
+  {
+    "id": "00F31295",
+    "numberPlies": 50,
+    "awardID": 21910005
+  },
+  {
+    "id": "00F31296",
+    "numberPlies": 100,
+    "awardID": 21910006
+  },
+  {
+    "id": "00F31297",
+    "numberPlies": 150,
+    "awardID": 21910007
+  },
+  {
+    "id": "00F31298",
+    "numberPlies": 200,
+    "awardID": 21910008
+  },
+  {
+    "id": "00F31299",
+    "numberPlies": 250,
+    "awardID": 21910009
+  },
+  {
+    "id": "00F3129A",
+    "numberPlies": 300,
+    "awardID": 21910010
+  },
+  {
+    "id": "00F3129B",
+    "numberPlies": 330,
+    "awardID": 21910011
+  },
+  {
+    "id": "00F3129C",
+    "numberPlies": 360,
+    "awardID": 21910012
+  }
+]

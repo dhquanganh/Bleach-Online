@@ -1,0 +1,27 @@
+[
+  {
+    "id": "0010C8E1",
+    "name": "寻宝",
+    "tName": "寻宝",
+    "desc": "1. Cliquez sur Explorer pour chercher les trésors. Vous pouvez les déterrer gratuitement une fois par jour.\n2. Si vous trouvez une Bombe l'Exploration s'arrete. Vous devez alors refresh et commencer une nouvelle chasse.\n3. Cliquez sur Tout-Ouvrir pour obtenir tous les trésors. Cela demande de l'Or.\n4. 1 Or = 1 Points. Vous pouvez utiliser les points dans le Magasin.\n5. Les trésors et les chances gratuites sont remis à zéro à minuit. Vous pouvez acheter vos Trésors directement. L'Or ainsi utilisé sera ajouté à vos Points.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1100001,
+    "scoreIndex": 0,
+    "rate": 1,
+    "freeTreasure": 2,
+    "freeIndex": 1,
+    "treasureIndex": 2,
+    "treasureGold": 50,
+    "onekeyTreasureGold": 1000,
+    "oneKeyIndex": 3,
+    "refreshIndex": 4,
+    "refreshGold": 10,
+    "goldRate": "[{\"seq\":1,\"weight\":2,\"award\":21403594},{\"seq\":2,\"weight\":2,\"award\":21403595},{\"seq\":3,\"weight\":1,\"award\":21403596},{\"seq\":4,\"weight\":2,\"award\":21403597},{\"seq\":5,\"weight\":2,\"award\":21403598},{\"seq\":6,\"weight\":2,\"award\":21403599},{\"seq\":7,\"weight\":2,\"award\":21403600},{\"seq\":8,\"weight\":2,\"award\":21403601}]",
+    "silverRate": "[{\"seq\":11,\"weight\":20000,\"award\":21403566},{\"seq\":12,\"weight\":20000,\"award\":21403567},{\"seq\":13,\"weight\":20000,\"award\":21403568},{\"seq\":14,\"weight\":10000,\"award\":21403569},{\"seq\":15,\"weight\":10000,\"award\":21403570},{\"seq\":16,\"weight\":10000,\"award\":21403571},{\"seq\":17,\"weight\":10000,\"award\":21403572},{\"seq\":18,\"weight\":10000,\"award\":21403573},{\"seq\":19,\"weight\":10000,\"award\":21403574},{\"seq\":20,\"weight\":10000,\"award\":21403575},{\"seq\":21,\"weight\":10000,\"award\":21403576},{\"seq\":22,\"weight\":10000,\"award\":21403577},{\"seq\":23,\"weight\":10000,\"award\":21403578},{\"seq\":24,\"weight\":10000,\"award\":21403579},{\"seq\":25,\"weight\":10000,\"award\":21403580},{\"seq\":26,\"weight\":10000,\"award\":21403581},{\"seq\":27,\"weight\":10000,\"award\":21403582},{\"seq\":28,\"weight\":10000,\"award\":21403583},{\"seq\":29,\"weight\":10000,\"award\":21403584},{\"seq\":30,\"weight\":5000,\"award\":21403585},{\"seq\":31,\"weight\":5000,\"award\":21403586},{\"seq\":32,\"weight\":5000,\"award\":21403587},{\"seq\":33,\"weight\":5000,\"award\":21403588},{\"seq\":34,\"weight\":5000,\"award\":21403589},{\"seq\":35,\"weight\":5000,\"award\":21403590},{\"seq\":36,\"weight\":2000,\"award\":21403591}]",
+    "awardIndex": "[10,19]",
+    "heroGift": "{\"index\":5,\"gold\":40000,\"award\":21403618,\"showID\":11140008,\"showType\":0,\"fightReportAddr\":\"http://mybankai.game.ggcorp.me/fightreport/?rid=844424944465219253&aid=77&t=1&lang=fr_FR\"}",
+    "scoreMall": "[{\"index\":20,\"costScore\":40000,\"limit\":1,\"award\":21403602},{\"index\":21,\"costScore\":28000,\"limit\":1,\"award\":21403603},{\"index\":22,\"costScore\":24000,\"limit\":1,\"award\":21403604},{\"index\":23,\"costScore\":24000,\"limit\":1,\"award\":21403605},{\"index\":24,\"costScore\":24000,\"limit\":1,\"award\":21403606},{\"index\":25,\"costScore\":20000,\"limit\":1,\"award\":21403607},{\"index\":26,\"costScore\":16000,\"limit\":1,\"award\":21403608},{\"index\":27,\"costScore\":6000,\"limit\":1,\"award\":21403609},{\"index\":28,\"costScore\":6000,\"limit\":1,\"award\":21403610},{\"index\":29,\"costScore\":6000,\"limit\":1,\"award\":21403611},{\"index\":30,\"costScore\":6000,\"limit\":1,\"award\":21403612},{\"index\":31,\"costScore\":6000,\"limit\":1,\"award\":21403613},{\"index\":32,\"costScore\":4000,\"limit\":0,\"award\":21403614},{\"index\":33,\"costScore\":100,\"limit\":0,\"award\":21403615},{\"index\":34,\"costScore\":5,\"limit\":0,\"award\":21403616},{\"index\":35,\"costScore\":5,\"limit\":0,\"award\":21403617}]",
+    "language": "{\"showBomb\":\"Vous avez découvert une Bombe, cliquez sur Refresh pour commencer une nouvelle chasse.！\",\"allDig\":\"Se débloque quand vous avez tout découvert！\",\"scoreLess\":\"Pas assez de Points！\"}"
+  }
+]

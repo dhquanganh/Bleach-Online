@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00038271",
+    "name": "Treasure Upgrades",
+    "tName": "Treasure Upgrades, Rewards Awaits!",
+    "desc": "During the event, upgrade treasure to corresponding level receive rewards",
+    "tip": "3",
+    "price": 0,
+    "imageID": 230001,
+    "f6": "[{\"id\":14840005,\"lv\":6,\"count\":1,\"award\":[21401067],\"prompt\":\"Tier 2 Lvl 6 Strength Hogu\"},{\"id\":14840006,\"lv\":6,\"count\":1,\"award\":[21401068],\"prompt\":\"Tier 2 Lvl 6 Wisdom Hogu\"},{\"id\":14840007,\"lv\":6,\"count\":1,\"award\":[21401069],\"prompt\":\"Tier 2 Lvl 6 Agility Hogu\"},{\"id\":14840008,\"lv\":6,\"count\":1,\"award\":[21401070],\"prompt\":\"Tier 2 Lvl 6 Stamina Hogu\"}]"
+  },
+  {
+    "id": "00038272",
+    "name": "Treasure Upgrades",
+    "tName": "Treasure Upgrades, Rewards Awaits!",
+    "desc": "During the event, upgrade treasure to corresponding level receive rewards",
+    "tip": "3",
+    "price": 0,
+    "imageID": 230001,
+    "f6": "[{\"id\":14840009,\"lv\":6,\"count\":1,\"award\":[21401127],\"prompt\":\"Tier 3 Lvl 6 Strength Hogu\"},{\"id\":14840010,\"lv\":6,\"count\":1,\"award\":[21401128],\"prompt\":\"Tier 3 Lvl 6 Wisdom Hogu\"},{\"id\":14840011,\"lv\":6,\"count\":1,\"award\":[21401129],\"prompt\":\"Tier 3 Lvl 6 Agility Hogu\"},{\"id\":14840012,\"lv\":6,\"count\":1,\"award\":[21401129],\"prompt\":\"Tier 3 Lvl 6 Stamina Hogu\"}]"
+  }
+]

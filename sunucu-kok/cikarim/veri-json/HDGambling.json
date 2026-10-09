@@ -1,0 +1,19 @@
+[
+  {
+    "id": "00068FB1",
+    "name": "开坛进宝",
+    "tName": "开坛进宝",
+    "desc": "活动期间内玩家可参与竞猜，每天有3次免费参与机会和3次免费容错机会\n当连胜达到一定次数时可领取对应的连胜奖励\n活动时间：2014/3/1-2014/3/5",
+    "tip": "1",
+    "price": 0,
+    "imageID": 430001,
+    "f6": "[{\"index\":0,\"indexType\":3,\"getType\":1,\"condition\":10,\"prompt\":\"十连胜\",\"award\":[21401418]},{\"index\":1,\"indexType\":3,\"getType\":1,\"condition\":20,\"prompt\":\"二十连胜\",\"award\":[21401419]},{\"index\":2,\"indexType\":3,\"getType\":1,\"condition\":30,\"prompt\":\"三十连胜\",\"award\":[21401420]},{\"index\":3,\"indexType\":3,\"getType\":1,\"condition\":40,\"prompt\":\"四十连胜\",\"award\":[21401421]},{\"index\":4,\"indexType\":3,\"getType\":1,\"condition\":50,\"prompt\":\"五十连胜\",\"award\":[21401422]},{\"index\":5,\"indexType\":3,\"getType\":1,\"condition\":60,\"prompt\":\"六十连胜\",\"award\":[21401423]},{\"index\":6,\"indexType\":3,\"getType\":1,\"condition\":70,\"prompt\":\"七十连胜\",\"award\":[21401424]},{\"index\":7,\"indexType\":3,\"getType\":1,\"condition\":80,\"prompt\":\"八十连胜\",\"award\":[21401425]},{\"index\":8,\"indexType\":3,\"getType\":1,\"condition\":90,\"prompt\":\"九十连胜\",\"award\":[21401426]},{\"index\":9,\"indexType\":3,\"getType\":1,\"condition\":100,\"prompt\":\"一百连胜\",\"award\":[21401427]}]",
+    "f7": "{\"index\":10,\"indexType\":0,\"getType\":4,\"limit\":3,\"cost\":30}",
+    "f8": "{\"index\":11,\"indexType\":0,\"getType\":4,\"limit\":3,\"cost\":5}",
+    "f9": "{\"index\":12,\"indexType\":0,\"getType\":4}",
+    "f10": "[\"今日剩余%0次免费竞猜机会\",\"%0次免费容错机会\",\"%0,%1连胜\",\"勾选后消耗%0金币自动购买一次参加资格\",\"勾选后消耗%0金币自动购买容错次数\"]",
+    "f11": 100,
+    "f12": 101,
+    "f13": 102
+  }
+]

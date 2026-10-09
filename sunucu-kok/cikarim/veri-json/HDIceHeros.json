@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0006DDD1",
+    "name": "Ultimate BP",
+    "tName": "Ultimate BP",
+    "desc": "<p align=\"left\"><font face=\"Arial\" size=\"10\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">1. After event starts<font color=\"#ffff00\"><b>clear stages</b></font>can randomly get different amount of Ice Crystal Pieces. Use it to redeem gift pack and partners.</font></p><p align=\"left\"><font face=\"Arial\" size=\"10\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">2. Gift packs are cycle rewards, redeem partners and claim gift pack<font color=\"#ffff00\"><b>does not consume Ice Crystal Pieces</b></font>, there will be a suprising gift pack on the fifth day after event starts.</font></p><p align=\"left\"><font face=\"Arial\" size=\"10\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">3. Collecting enough Ice Crystal Pieces to join<font color=\"#ffff00\"><b>rank</b></font>, can obtain rank gift pack.</font></p><p align=\"left\"><font face=\"Arial\" size=\"10\" color=\"#ffffff\" letterspacing=\"0\" kerning=\"0\">4.The title will be expired by 30 days</font></p>\n",
+    "tip": "2",
+    "price": 0,
+    "imageID": 450001,
+    "totalPlayer": "[{\"key\":1,\"value\":[21405161],\"title\":6003056,\"prompt\":\"No.1\"},{\"key\":2,\"value\":[21405162],\"title\":6003057,\"prompt\":\"No.2\"},{\"key\":3,\"value\":[21405163],\"title\":6003058,\"prompt\":\"No.3\"},{\"key\":10,\"value\":[21405164],\"title\":0,\"prompt\":\"No.4-No.10\"},{\"key\":20,\"value\":[21405165],\"title\":0,\"prompt\":\"No.11-No.20\"},{\"key\":50,\"value\":[21405166],\"title\":0,\"prompt\":\"No.21-No.50\"}]",
+    "rankDesc": "[{\"index\":0,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":60000,\"award\":[21405167]},{\"index\":1,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":999999,\"award\":[21405168]},{\"index\":2,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":500,\"award\":[21405169]},{\"index\":3,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":1000,\"award\":[21405170]},{\"index\":4,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":2000,\"award\":[21405171]},{\"index\":5,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":3000,\"award\":[21405172]},{\"index\":6,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":5000,\"award\":[21405173]}]",
+    "addValue": "[{\"index\":7,\"indexType\":3,\"getType\":2,\"cost\":100,\"timeActive\":7200,\"award\":[21405174],\"name\":\"SupervalueGiftPack\",\"prompt\":\"IceCrystalFragmentsx100\",\"chip\":[{\"id\":0,\"chipIndex\":96,\"type\":17,\"code\":14100279,\"rateData\":[{\"rate\":100,\"range\":[100,100]}]}]}\n,{\"index\":8,\"indexType\":3,\"getType\":2,\"cost\":500,\"timeActive\":7200,\"award\":[21405175],\"name\":\"GrandGiftPack\",\"prompt\":\"IceCrystalFragmentsx550\",\"chip\":[{\"id\":0,\"chipIndex\":96,\"type\":17,\"code\":14100279,\"rateData\":[{\"rate\":100,\"range\":[550,550]}]}]}]",
+    "isRankShow": "[{\"awardType\":1,\"awardID\":11150037}]",
+    "f10": 200,
+    "f11": "1. Les Cristaux de Glace ne seront plus comptés 5 minutes avant la fin de l'évènement.\n2. Le classement sera mis à jour toutes les 5 minutes.\n3. Quand l'évènement se termine les récompenses du classement seront envoyées par mail.",
+    "f12": "{\"index\":96,\"indexType\":3,\"getType\":4,\"type\":17,\"code\":14100279,\"rateData\":[{\"rate\":39,\"amount\":3},{\"rate\":90,\"amount\":4},{\"rate\":99,\"amount\":5},{\"rate\":100,\"amount\":6}],\"chipFrame\":1}",
+    "f13": 5000,
+    "f14": 1
+  }
+]

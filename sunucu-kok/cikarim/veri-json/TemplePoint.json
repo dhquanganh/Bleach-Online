@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "00F2C471",
+    "name": "13th Division Floor 1",
+    "nextPointID": 15910002,
+    "battleScene": "{\"army\":[20600001]}",
+    "akeyPrice": 30000,
+    "f4": 13
+  },
+  {
+    "id": "00F2C472",
+    "name": "13th Division Floor 2",
+    "nextPointID": 15910003,
+    "battleScene": "{\"army\":[20600002]}",
+    "akeyPrice": 30002,
+    "f4": 27
+  },
+  {
+    "id": "00F2C473",
+    "name": "13th Division Floor 3",
+    "nextPointID": 15910004,
+    "battleScene": "{\"army\":[20600003]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C474",
+    "name": "13th Division Floor 4",
+    "nextPointID": 15910005,
+    "battleScene": "{\"army\":[20600004]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C475",
+    "name": "13th Division Floor 5",
+    "nextPointID": 15910006,
+    "battleScene": "{\"army\":[20600005]}",
+    "akeyPrice": 30003,
+    "f4": 67
+  },
+  {
+    "id": "00F2C476",
+    "name": "13th Division Floor 6",
+    "nextPointID": 15910007,
+    "battleScene": "{\"army\":[20600006]}",
+    "akeyPrice": 30013,
+    "f4": 80
+  },
+  {
+    "id": "00F2C477",
+    "name": "13th Division Floor 7",
+    "nextPointID": 15910008,
+    "battleScene": "{\"army\":[20600007]}",
+    "akeyPrice": 30013,
+    "f4": 93
+  },
+  {
+    "id": "00F2C478",
+    "name": "13th Division Floor 8",
+    "nextPointID": 15910009,
+    "battleScene": "{\"army\":[20600008]}",
+    "akeyPrice": 30000,
+    "f4": 107
+  },
+  {
+    "id": "00F2C479",
+    "name": "13th Division Floor 9",
+    "nextPointID": 15910010,
+    "battleScene": "{\"army\":[20600009]}",
+    "akeyPrice": 30002,
+    "f4": 120
+  },
+  {
+    "id": "00F2C47A",
+    "name": "13th Division Floor 10",
+    "nextPointID": 15910011,
+    "battleScene": "{\"army\":[20600010]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C47B",
+    "name": "13th Division Floor 11",
+    "nextPointID": 15910012,
+    "battleScene": "{\"army\":[20600011]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C47C",
+    "name": "13th Division Floor 12",
+    "nextPointID": 15910013,
+    "battleScene": "{\"army\":[20600012]}",
+    "akeyPrice": 30003,
+    "f4": 160
+  },
+  {
+    "id": "00F2C47D",
+    "name": "13th Division Floor 13",
+    "nextPointID": 15910014,
+    "battleScene": "{\"army\":[20600013]}",
+    "akeyPrice": 30013,
+    "f4": 173
+  },
+  {
+    "id": "00F2C47E",
+    "name": "13th Division Floor 14",
+    "nextPointID": 15910015,
+    "battleScene": "{\"army\":[20600014]}",
+    "akeyPrice": 30013,
+    "f4": 187
+  },
+  {
+    "id": "00F2C47F",
+    "name": "13th Division Floor 15",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600015]}",
+    "akeyPrice": 30000,
+    "f4": 200
+  },
+  {
+    "id": "00F2C4D5",
+    "name": "12th Division Floor 1",
+    "nextPointID": 15910102,
+    "battleScene": "{\"army\":[20600101]}",
+    "akeyPrice": 30002,
+    "f4": 13
+  },
+  {
+    "id": "00F2C4D6",
+    "name": "12th Division Floor 2",
+    "nextPointID": 15910103,
+    "battleScene": "{\"army\":[20600102]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C4D7",
+    "name": "12th Division Floor 3",
+    "nextPointID": 15910104,
+    "battleScene": "{\"army\":[20600103]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C4D8",
+    "name": "12th Division Floor 4",
+    "nextPointID": 15910105,
+    "battleScene": "{\"army\":[20600104]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C4D9",
+    "name": "12th Division Floor 5",
+    "nextPointID": 15910106,
+    "battleScene": "{\"army\":[20600105]}",
+    "akeyPrice": 30013,
+    "f4": 67
+  },
+  {
+    "id": "00F2C4DA",
+    "name": "12th Division Floor 6",
+    "nextPointID": 15910107,
+    "battleScene": "{\"army\":[20600106]}",
+    "akeyPrice": 30013,
+    "f4": 80
+  },
+  {
+    "id": "00F2C4DB",
+    "name": "12th Division Floor 7",
+    "nextPointID": 15910108,
+    "battleScene": "{\"army\":[20600107]}",
+    "akeyPrice": 30000,
+    "f4": 93
+  },
+  {
+    "id": "00F2C4DC",
+    "name": "12th Division Floor 8",
+    "nextPointID": 15910109,
+    "battleScene": "{\"army\":[20600108]}",
+    "akeyPrice": 30002,
+    "f4": 107
+  },
+  {
+    "id": "00F2C4DD",
+    "name": "12th Division Floor 9",
+    "nextPointID": 15910110,
+    "battleScene": "{\"army\":[20600109]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C4DE",
+    "name": "12th Division Floor 10",
+    "nextPointID": 15910111,
+    "battleScene": "{\"army\":[20600110]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C4DF",
+    "name": "12th Division Floor 11",
+    "nextPointID": 15910112,
+    "battleScene": "{\"army\":[20600111]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C4E0",
+    "name": "12th Division Floor 12",
+    "nextPointID": 15910113,
+    "battleScene": "{\"army\":[20600112]}",
+    "akeyPrice": 30013,
+    "f4": 160
+  },
+  {
+    "id": "00F2C4E1",
+    "name": "12th Division Floor 13",
+    "nextPointID": 15910114,
+    "battleScene": "{\"army\":[20600113]}",
+    "akeyPrice": 30013,
+    "f4": 173
+  },
+  {
+    "id": "00F2C4E2",
+    "name": "12th Division Floor 14",
+    "nextPointID": 15910115,
+    "battleScene": "{\"army\":[20600114]}",
+    "akeyPrice": 30000,
+    "f4": 187
+  },
+  {
+    "id": "00F2C4E3",
+    "name": "12th Division Floor 15",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600115]}",
+    "akeyPrice": 30002,
+    "f4": 200
+  },
+  {
+    "id": "00F2C539",
+    "name": "11th Division Floor 1",
+    "nextPointID": 15910202,
+    "battleScene": "{\"army\":[20600201]}",
+    "akeyPrice": 30003,
+    "f4": 13
+  },
+  {
+    "id": "00F2C53A",
+    "name": "11th Division Floor 2",
+    "nextPointID": 15910203,
+    "battleScene": "{\"army\":[20600202]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C53B",
+    "name": "11th Division Floor 3",
+    "nextPointID": 15910204,
+    "battleScene": "{\"army\":[20600203]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C53C",
+    "name": "11th Division Floor 4",
+    "nextPointID": 15910205,
+    "battleScene": "{\"army\":[20600204]}",
+    "akeyPrice": 30013,
+    "f4": 53
+  },
+  {
+    "id": "00F2C53D",
+    "name": "11th Division Floor 5",
+    "nextPointID": 15910206,
+    "battleScene": "{\"army\":[20600205]}",
+    "akeyPrice": 30013,
+    "f4": 67
+  },
+  {
+    "id": "00F2C53E",
+    "name": "11th Division Floor 6",
+    "nextPointID": 15910207,
+    "battleScene": "{\"army\":[20600206]}",
+    "akeyPrice": 30000,
+    "f4": 80
+  },
+  {
+    "id": "00F2C53F",
+    "name": "11th Division Floor 7",
+    "nextPointID": 15910208,
+    "battleScene": "{\"army\":[20600207]}",
+    "akeyPrice": 30002,
+    "f4": 93
+  },
+  {
+    "id": "00F2C540",
+    "name": "11th Division Floor 8",
+    "nextPointID": 15910209,
+    "battleScene": "{\"army\":[20600208]}",
+    "akeyPrice": 30003,
+    "f4": 107
+  },
+  {
+    "id": "00F2C541",
+    "name": "11th Division Floor 9",
+    "nextPointID": 15910210,
+    "battleScene": "{\"army\":[20600209]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C542",
+    "name": "11th Division Floor 10",
+    "nextPointID": 15910211,
+    "battleScene": "{\"army\":[20600210]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C543",
+    "name": "11th Division Floor 11",
+    "nextPointID": 15910212,
+    "battleScene": "{\"army\":[20600211]}",
+    "akeyPrice": 30013,
+    "f4": 147
+  },
+  {
+    "id": "00F2C544",
+    "name": "11th Division Floor 12",
+    "nextPointID": 15910213,
+    "battleScene": "{\"army\":[20600212]}",
+    "akeyPrice": 30013,
+    "f4": 160
+  },
+  {
+    "id": "00F2C545",
+    "name": "11th Division Floor 13",
+    "nextPointID": 15910214,
+    "battleScene": "{\"army\":[20600213]}",
+    "akeyPrice": 30000,
+    "f4": 173
+  },
+  {
+    "id": "00F2C546",
+    "name": "11th Division Floor 14",
+    "nextPointID": 15910215,
+    "battleScene": "{\"army\":[20600214]}",
+    "akeyPrice": 30002,
+    "f4": 187
+  },
+  {
+    "id": "00F2C547",
+    "name": "11th Division Floor 15",
+    "nextPointID": 15910216,
+    "battleScene": "{\"army\":[20600215]}",
+    "akeyPrice": 30003,
+    "f4": 200
+  },
+  {
+    "id": "00F2C548",
+    "name": "11th Division Floor 16",
+    "nextPointID": 15910217,
+    "battleScene": "{\"army\":[20600216]}",
+    "akeyPrice": 30003,
+    "f4": 213
+  },
+  {
+    "id": "00F2C549",
+    "name": "11th Division Floor 17",
+    "nextPointID": 15910218,
+    "battleScene": "{\"army\":[20600217]}",
+    "akeyPrice": 30003,
+    "f4": 227
+  },
+  {
+    "id": "00F2C54A",
+    "name": "11th Division Floor 18",
+    "nextPointID": 15910219,
+    "battleScene": "{\"army\":[20600218]}",
+    "akeyPrice": 30013,
+    "f4": 240
+  },
+  {
+    "id": "00F2C54B",
+    "name": "11th Division Floor 19",
+    "nextPointID": 15910220,
+    "battleScene": "{\"army\":[20600219]}",
+    "akeyPrice": 30013,
+    "f4": 253
+  },
+  {
+    "id": "00F2C54C",
+    "name": "11th Division Floor 20",
+    "nextPointID": 15910221,
+    "battleScene": "{\"army\":[20600220]}",
+    "akeyPrice": 30000,
+    "f4": 267
+  },
+  {
+    "id": "00F2C54D",
+    "name": "11th Division Floor 21",
+    "nextPointID": 15910222,
+    "battleScene": "{\"army\":[20600221]}",
+    "akeyPrice": 30002,
+    "f4": 280
+  },
+  {
+    "id": "00F2C54E",
+    "name": "11th Division Floor 22",
+    "nextPointID": 15910223,
+    "battleScene": "{\"army\":[20600222]}",
+    "akeyPrice": 30003,
+    "f4": 293
+  },
+  {
+    "id": "00F2C54F",
+    "name": "11th Division Floor 23",
+    "nextPointID": 15910224,
+    "battleScene": "{\"army\":[20600223]}",
+    "akeyPrice": 30003,
+    "f4": 307
+  },
+  {
+    "id": "00F2C550",
+    "name": "11th Division Floor 24",
+    "nextPointID": 15910225,
+    "battleScene": "{\"army\":[20600224]}",
+    "akeyPrice": 30003,
+    "f4": 320
+  },
+  {
+    "id": "00F2C551",
+    "name": "11th Division Floor 25",
+    "nextPointID": 15910226,
+    "battleScene": "{\"army\":[20600225]}",
+    "akeyPrice": 30013,
+    "f4": 333
+  },
+  {
+    "id": "00F2C552",
+    "name": "11th Division Floor 26",
+    "nextPointID": 15910227,
+    "battleScene": "{\"army\":[20600226]}",
+    "akeyPrice": 30013,
+    "f4": 347
+  },
+  {
+    "id": "00F2C553",
+    "name": "11th Division Floor 27",
+    "nextPointID": 15910228,
+    "battleScene": "{\"army\":[20600227]}",
+    "akeyPrice": 30000,
+    "f4": 360
+  },
+  {
+    "id": "00F2C554",
+    "name": "11th Division Floor 28",
+    "nextPointID": 15910229,
+    "battleScene": "{\"army\":[20600228]}",
+    "akeyPrice": 30002,
+    "f4": 373
+  },
+  {
+    "id": "00F2C555",
+    "name": "11th Division Floor 29",
+    "nextPointID": 15910230,
+    "battleScene": "{\"army\":[20600229]}",
+    "akeyPrice": 30003,
+    "f4": 387
+  },
+  {
+    "id": "00F2C556",
+    "name": "11th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600230]}",
+    "akeyPrice": 30003,
+    "f4": 400
+  },
+  {
+    "id": "00F2C59D",
+    "name": "10th Division Floor 1",
+    "nextPointID": 15910302,
+    "battleScene": "{\"army\":[20600301]}",
+    "akeyPrice": 30003,
+    "f4": 13
+  },
+  {
+    "id": "00F2C59E",
+    "name": "10th Division Floor 2",
+    "nextPointID": 15910303,
+    "battleScene": "{\"army\":[20600302]}",
+    "akeyPrice": 30013,
+    "f4": 27
+  },
+  {
+    "id": "00F2C59F",
+    "name": "10th Division Floor 3",
+    "nextPointID": 15910304,
+    "battleScene": "{\"army\":[20600303]}",
+    "akeyPrice": 30013,
+    "f4": 40
+  },
+  {
+    "id": "00F2C5A0",
+    "name": "10th Division Floor 4",
+    "nextPointID": 15910305,
+    "battleScene": "{\"army\":[20600304]}",
+    "akeyPrice": 30000,
+    "f4": 53
+  },
+  {
+    "id": "00F2C5A1",
+    "name": "10th Division Floor 5",
+    "nextPointID": 15910306,
+    "battleScene": "{\"army\":[20600305]}",
+    "akeyPrice": 30002,
+    "f4": 67
+  },
+  {
+    "id": "00F2C5A2",
+    "name": "10th Division Floor 6",
+    "nextPointID": 15910307,
+    "battleScene": "{\"army\":[20600306]}",
+    "akeyPrice": 30003,
+    "f4": 80
+  },
+  {
+    "id": "00F2C5A3",
+    "name": "10th Division Floor 7",
+    "nextPointID": 15910308,
+    "battleScene": "{\"army\":[20600307]}",
+    "akeyPrice": 30003,
+    "f4": 93
+  },
+  {
+    "id": "00F2C5A4",
+    "name": "10th Division Floor 8",
+    "nextPointID": 15910309,
+    "battleScene": "{\"army\":[20600308]}",
+    "akeyPrice": 30003,
+    "f4": 107
+  },
+  {
+    "id": "00F2C5A5",
+    "name": "10th Division Floor 9",
+    "nextPointID": 15910310,
+    "battleScene": "{\"army\":[20600309]}",
+    "akeyPrice": 30013,
+    "f4": 120
+  },
+  {
+    "id": "00F2C5A6",
+    "name": "10th Division Floor 10",
+    "nextPointID": 15910311,
+    "battleScene": "{\"army\":[20600310]}",
+    "akeyPrice": 30013,
+    "f4": 133
+  },
+  {
+    "id": "00F2C5A7",
+    "name": "10th Division Floor 11",
+    "nextPointID": 15910312,
+    "battleScene": "{\"army\":[20600311]}",
+    "akeyPrice": 30000,
+    "f4": 147
+  },
+  {
+    "id": "00F2C5A8",
+    "name": "10th Division Floor 12",
+    "nextPointID": 15910313,
+    "battleScene": "{\"army\":[20600312]}",
+    "akeyPrice": 30002,
+    "f4": 160
+  },
+  {
+    "id": "00F2C5A9",
+    "name": "10th Division Floor 13",
+    "nextPointID": 15910314,
+    "battleScene": "{\"army\":[20600313]}",
+    "akeyPrice": 30003,
+    "f4": 173
+  },
+  {
+    "id": "00F2C5AA",
+    "name": "10th Division Floor 14",
+    "nextPointID": 15910315,
+    "battleScene": "{\"army\":[20600314]}",
+    "akeyPrice": 30003,
+    "f4": 187
+  },
+  {
+    "id": "00F2C5AB",
+    "name": "10th Division Floor 15",
+    "nextPointID": 15910316,
+    "battleScene": "{\"army\":[20600315]}",
+    "akeyPrice": 30003,
+    "f4": 200
+  },
+  {
+    "id": "00F2C5AC",
+    "name": "10th Division Floor 16",
+    "nextPointID": 15910317,
+    "battleScene": "{\"army\":[20600316]}",
+    "akeyPrice": 30013,
+    "f4": 213
+  },
+  {
+    "id": "00F2C5AD",
+    "name": "10th Division Floor 17",
+    "nextPointID": 15910318,
+    "battleScene": "{\"army\":[20600317]}",
+    "akeyPrice": 30013,
+    "f4": 227
+  },
+  {
+    "id": "00F2C5AE",
+    "name": "10th Division Floor 18",
+    "nextPointID": 15910319,
+    "battleScene": "{\"army\":[20600318]}",
+    "akeyPrice": 30000,
+    "f4": 240
+  },
+  {
+    "id": "00F2C5AF",
+    "name": "10th Division Floor 19",
+    "nextPointID": 15910320,
+    "battleScene": "{\"army\":[20600319]}",
+    "akeyPrice": 30002,
+    "f4": 253
+  },
+  {
+    "id": "00F2C5B0",
+    "name": "10th Division Floor 20",
+    "nextPointID": 15910321,
+    "battleScene": "{\"army\":[20600320]}",
+    "akeyPrice": 30003,
+    "f4": 267
+  },
+  {
+    "id": "00F2C5B1",
+    "name": "10th Division Floor 21",
+    "nextPointID": 15910322,
+    "battleScene": "{\"army\":[20600321]}",
+    "akeyPrice": 30003,
+    "f4": 280
+  },
+  {
+    "id": "00F2C5B2",
+    "name": "10th Division Floor 22",
+    "nextPointID": 15910323,
+    "battleScene": "{\"army\":[20600322]}",
+    "akeyPrice": 30003,
+    "f4": 293
+  },
+  {
+    "id": "00F2C5B3",
+    "name": "10th Division Floor 23",
+    "nextPointID": 15910324,
+    "battleScene": "{\"army\":[20600323]}",
+    "akeyPrice": 30013,
+    "f4": 307
+  },
+  {
+    "id": "00F2C5B4",
+    "name": "10th Division Floor 24",
+    "nextPointID": 15910325,
+    "battleScene": "{\"army\":[20600324]}",
+    "akeyPrice": 30013,
+    "f4": 320
+  },
+  {
+    "id": "00F2C5B5",
+    "name": "10th Division Floor 25",
+    "nextPointID": 15910326,
+    "battleScene": "{\"army\":[20600325]}",
+    "akeyPrice": 30000,
+    "f4": 333
+  },
+  {
+    "id": "00F2C5B6",
+    "name": "10th Division Floor 26",
+    "nextPointID": 15910327,
+    "battleScene": "{\"army\":[20600326]}",
+    "akeyPrice": 30002,
+    "f4": 347
+  },
+  {
+    "id": "00F2C5B7",
+    "name": "10th Division Floor 27",
+    "nextPointID": 15910328,
+    "battleScene": "{\"army\":[20600327]}",
+    "akeyPrice": 30003,
+    "f4": 360
+  },
+  {
+    "id": "00F2C5B8",
+    "name": "10th Division Floor 28",
+    "nextPointID": 15910329,
+    "battleScene": "{\"army\":[20600328]}",
+    "akeyPrice": 30003,
+    "f4": 373
+  },
+  {
+    "id": "00F2C5B9",
+    "name": "10th Division Floor 29",
+    "nextPointID": 15910330,
+    "battleScene": "{\"army\":[20600329]}",
+    "akeyPrice": 30003,
+    "f4": 387
+  },
+  {
+    "id": "00F2C5BA",
+    "name": "10th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600330]}",
+    "akeyPrice": 30013,
+    "f4": 400
+  },
+  {
+    "id": "00F2C601",
+    "name": "9th Division Floor 1",
+    "nextPointID": 15910402,
+    "battleScene": "{\"army\":[20600401]}",
+    "akeyPrice": 30013,
+    "f4": 13
+  },
+  {
+    "id": "00F2C602",
+    "name": "9th Division Floor 2",
+    "nextPointID": 15910403,
+    "battleScene": "{\"army\":[20600402]}",
+    "akeyPrice": 30000,
+    "f4": 27
+  },
+  {
+    "id": "00F2C603",
+    "name": "9th Division Floor 3",
+    "nextPointID": 15910404,
+    "battleScene": "{\"army\":[20600403]}",
+    "akeyPrice": 30002,
+    "f4": 40
+  },
+  {
+    "id": "00F2C604",
+    "name": "9th Division Floor 4",
+    "nextPointID": 15910405,
+    "battleScene": "{\"army\":[20600404]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C605",
+    "name": "9th Division Floor 5",
+    "nextPointID": 15910406,
+    "battleScene": "{\"army\":[20600405]}",
+    "akeyPrice": 30003,
+    "f4": 67
+  },
+  {
+    "id": "00F2C606",
+    "name": "9th Division Floor 6",
+    "nextPointID": 15910407,
+    "battleScene": "{\"army\":[20600406]}",
+    "akeyPrice": 30003,
+    "f4": 80
+  },
+  {
+    "id": "00F2C607",
+    "name": "9th Division Floor 7",
+    "nextPointID": 15910408,
+    "battleScene": "{\"army\":[20600407]}",
+    "akeyPrice": 30013,
+    "f4": 93
+  },
+  {
+    "id": "00F2C608",
+    "name": "9th Division Floor 8",
+    "nextPointID": 15910409,
+    "battleScene": "{\"army\":[20600408]}",
+    "akeyPrice": 30013,
+    "f4": 107
+  },
+  {
+    "id": "00F2C609",
+    "name": "9th Division Floor 9",
+    "nextPointID": 15910410,
+    "battleScene": "{\"army\":[20600409]}",
+    "akeyPrice": 30000,
+    "f4": 120
+  },
+  {
+    "id": "00F2C60A",
+    "name": "9th Division Floor 10",
+    "nextPointID": 15910411,
+    "battleScene": "{\"army\":[20600410]}",
+    "akeyPrice": 30002,
+    "f4": 133
+  },
+  {
+    "id": "00F2C60B",
+    "name": "9th Division Floor 11",
+    "nextPointID": 15910412,
+    "battleScene": "{\"army\":[20600411]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C60C",
+    "name": "9th Division Floor 12",
+    "nextPointID": 15910413,
+    "battleScene": "{\"army\":[20600412]}",
+    "akeyPrice": 30003,
+    "f4": 160
+  },
+  {
+    "id": "00F2C60D",
+    "name": "9th Division Floor 13",
+    "nextPointID": 15910414,
+    "battleScene": "{\"army\":[20600413]}",
+    "akeyPrice": 30003,
+    "f4": 173
+  },
+  {
+    "id": "00F2C60E",
+    "name": "9th Division Floor 14",
+    "nextPointID": 15910415,
+    "battleScene": "{\"army\":[20600414]}",
+    "akeyPrice": 30013,
+    "f4": 187
+  },
+  {
+    "id": "00F2C60F",
+    "name": "9th Division Floor 15",
+    "nextPointID": 15910416,
+    "battleScene": "{\"army\":[20600415]}",
+    "akeyPrice": 30013,
+    "f4": 200
+  },
+  {
+    "id": "00F2C610",
+    "name": "9th Division Floor 16",
+    "nextPointID": 15910417,
+    "battleScene": "{\"army\":[20600416]}",
+    "akeyPrice": 30000,
+    "f4": 213
+  },
+  {
+    "id": "00F2C611",
+    "name": "9th Division Floor 17",
+    "nextPointID": 15910418,
+    "battleScene": "{\"army\":[20600417]}",
+    "akeyPrice": 30002,
+    "f4": 227
+  },
+  {
+    "id": "00F2C612",
+    "name": "9th Division Floor 18",
+    "nextPointID": 15910419,
+    "battleScene": "{\"army\":[20600418]}",
+    "akeyPrice": 30003,
+    "f4": 240
+  },
+  {
+    "id": "00F2C613",
+    "name": "9th Division Floor 19",
+    "nextPointID": 15910420,
+    "battleScene": "{\"army\":[20600419]}",
+    "akeyPrice": 30003,
+    "f4": 253
+  },
+  {
+    "id": "00F2C614",
+    "name": "9th Division Floor 20",
+    "nextPointID": 15910421,
+    "battleScene": "{\"army\":[20600420]}",
+    "akeyPrice": 30003,
+    "f4": 267
+  },
+  {
+    "id": "00F2C615",
+    "name": "9th Division Floor 21",
+    "nextPointID": 15910422,
+    "battleScene": "{\"army\":[20600421]}",
+    "akeyPrice": 30013,
+    "f4": 280
+  },
+  {
+    "id": "00F2C616",
+    "name": "9th Division Floor 22",
+    "nextPointID": 15910423,
+    "battleScene": "{\"army\":[20600422]}",
+    "akeyPrice": 30013,
+    "f4": 293
+  },
+  {
+    "id": "00F2C617",
+    "name": "9th Division Floor 23",
+    "nextPointID": 15910424,
+    "battleScene": "{\"army\":[20600423]}",
+    "akeyPrice": 30000,
+    "f4": 307
+  },
+  {
+    "id": "00F2C618",
+    "name": "9th Division Floor 24",
+    "nextPointID": 15910425,
+    "battleScene": "{\"army\":[20600424]}",
+    "akeyPrice": 30002,
+    "f4": 320
+  },
+  {
+    "id": "00F2C619",
+    "name": "9th Division Floor 25",
+    "nextPointID": 15910426,
+    "battleScene": "{\"army\":[20600425]}",
+    "akeyPrice": 30003,
+    "f4": 333
+  },
+  {
+    "id": "00F2C61A",
+    "name": "9th Division Floor 26",
+    "nextPointID": 15910427,
+    "battleScene": "{\"army\":[20600426]}",
+    "akeyPrice": 30003,
+    "f4": 347
+  },
+  {
+    "id": "00F2C61B",
+    "name": "9th Division Floor 27",
+    "nextPointID": 15910428,
+    "battleScene": "{\"army\":[20600427]}",
+    "akeyPrice": 30003,
+    "f4": 360
+  },
+  {
+    "id": "00F2C61C",
+    "name": "9th Division Floor 28",
+    "nextPointID": 15910429,
+    "battleScene": "{\"army\":[20600428]}",
+    "akeyPrice": 30013,
+    "f4": 373
+  },
+  {
+    "id": "00F2C61D",
+    "name": "9th Division Floor 29",
+    "nextPointID": 15910430,
+    "battleScene": "{\"army\":[20600429]}",
+    "akeyPrice": 30013,
+    "f4": 387
+  },
+  {
+    "id": "00F2C61E",
+    "name": "9th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600430]}",
+    "akeyPrice": 30000,
+    "f4": 400
+  },
+  {
+    "id": "00F2C665",
+    "name": "8th Division Floor 1",
+    "nextPointID": 15910502,
+    "battleScene": "{\"army\":[20600501]}",
+    "akeyPrice": 30002,
+    "f4": 13
+  },
+  {
+    "id": "00F2C666",
+    "name": "8th Division Floor 2",
+    "nextPointID": 15910503,
+    "battleScene": "{\"army\":[20600502]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C667",
+    "name": "8th Division Floor 3",
+    "nextPointID": 15910504,
+    "battleScene": "{\"army\":[20600503]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C668",
+    "name": "8th Division Floor 4",
+    "nextPointID": 15910505,
+    "battleScene": "{\"army\":[20600504]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C669",
+    "name": "8th Division Floor 5",
+    "nextPointID": 15910506,
+    "battleScene": "{\"army\":[20600505]}",
+    "akeyPrice": 30013,
+    "f4": 67
+  },
+  {
+    "id": "00F2C66A",
+    "name": "8th Division Floor 6",
+    "nextPointID": 15910507,
+    "battleScene": "{\"army\":[20600506]}",
+    "akeyPrice": 30013,
+    "f4": 80
+  },
+  {
+    "id": "00F2C66B",
+    "name": "8th Division Floor 7",
+    "nextPointID": 15910508,
+    "battleScene": "{\"army\":[20600507]}",
+    "akeyPrice": 30000,
+    "f4": 93
+  },
+  {
+    "id": "00F2C66C",
+    "name": "8th Division Floor 8",
+    "nextPointID": 15910509,
+    "battleScene": "{\"army\":[20600508]}",
+    "akeyPrice": 30002,
+    "f4": 107
+  },
+  {
+    "id": "00F2C66D",
+    "name": "8th Division Floor 9",
+    "nextPointID": 15910510,
+    "battleScene": "{\"army\":[20600509]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C66E",
+    "name": "8th Division Floor 10",
+    "nextPointID": 15910511,
+    "battleScene": "{\"army\":[20600510]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C66F",
+    "name": "8th Division Floor 11",
+    "nextPointID": 15910512,
+    "battleScene": "{\"army\":[20600511]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C670",
+    "name": "8th Division Floor 12",
+    "nextPointID": 15910513,
+    "battleScene": "{\"army\":[20600512]}",
+    "akeyPrice": 30013,
+    "f4": 160
+  },
+  {
+    "id": "00F2C671",
+    "name": "8th Division Floor 13",
+    "nextPointID": 15910514,
+    "battleScene": "{\"army\":[20600513]}",
+    "akeyPrice": 30013,
+    "f4": 173
+  },
+  {
+    "id": "00F2C672",
+    "name": "8th Division Floor 14",
+    "nextPointID": 15910515,
+    "battleScene": "{\"army\":[20600514]}",
+    "akeyPrice": 30000,
+    "f4": 187
+  },
+  {
+    "id": "00F2C673",
+    "name": "8th Division Floor 15",
+    "nextPointID": 15910516,
+    "battleScene": "{\"army\":[20600515]}",
+    "akeyPrice": 30002,
+    "f4": 200
+  },
+  {
+    "id": "00F2C674",
+    "name": "8th Division Floor 16",
+    "nextPointID": 15910517,
+    "battleScene": "{\"army\":[20600516]}",
+    "akeyPrice": 30003,
+    "f4": 213
+  },
+  {
+    "id": "00F2C675",
+    "name": "8th Division Floor 17",
+    "nextPointID": 15910518,
+    "battleScene": "{\"army\":[20600517]}",
+    "akeyPrice": 30003,
+    "f4": 227
+  },
+  {
+    "id": "00F2C676",
+    "name": "8th Division Floor 18",
+    "nextPointID": 15910519,
+    "battleScene": "{\"army\":[20600518]}",
+    "akeyPrice": 30003,
+    "f4": 240
+  },
+  {
+    "id": "00F2C677",
+    "name": "8th Division Floor 19",
+    "nextPointID": 15910520,
+    "battleScene": "{\"army\":[20600519]}",
+    "akeyPrice": 30013,
+    "f4": 253
+  },
+  {
+    "id": "00F2C678",
+    "name": "8th Division Floor 20",
+    "nextPointID": 15910521,
+    "battleScene": "{\"army\":[20600520]}",
+    "akeyPrice": 30013,
+    "f4": 267
+  },
+  {
+    "id": "00F2C679",
+    "name": "8th Division Floor 21",
+    "nextPointID": 15910522,
+    "battleScene": "{\"army\":[20600521]}",
+    "akeyPrice": 30000,
+    "f4": 280
+  },
+  {
+    "id": "00F2C67A",
+    "name": "8th Division Floor 22",
+    "nextPointID": 15910523,
+    "battleScene": "{\"army\":[20600522]}",
+    "akeyPrice": 30002,
+    "f4": 293
+  },
+  {
+    "id": "00F2C67B",
+    "name": "8th Division Floor 23",
+    "nextPointID": 15910524,
+    "battleScene": "{\"army\":[20600523]}",
+    "akeyPrice": 30003,
+    "f4": 307
+  },
+  {
+    "id": "00F2C67C",
+    "name": "8th Division Floor 24",
+    "nextPointID": 15910525,
+    "battleScene": "{\"army\":[20600524]}",
+    "akeyPrice": 30003,
+    "f4": 320
+  },
+  {
+    "id": "00F2C67D",
+    "name": "8th Division Floor 25",
+    "nextPointID": 15910526,
+    "battleScene": "{\"army\":[20600525]}",
+    "akeyPrice": 30003,
+    "f4": 333
+  },
+  {
+    "id": "00F2C67E",
+    "name": "8th Division Floor 26",
+    "nextPointID": 15910527,
+    "battleScene": "{\"army\":[20600526]}",
+    "akeyPrice": 30013,
+    "f4": 347
+  },
+  {
+    "id": "00F2C67F",
+    "name": "8th Division Floor 27",
+    "nextPointID": 15910528,
+    "battleScene": "{\"army\":[20600527]}",
+    "akeyPrice": 30013,
+    "f4": 360
+  },
+  {
+    "id": "00F2C680",
+    "name": "8th Division Floor 28",
+    "nextPointID": 15910529,
+    "battleScene": "{\"army\":[20600528]}",
+    "akeyPrice": 30000,
+    "f4": 373
+  },
+  {
+    "id": "00F2C681",
+    "name": "8th Division Floor 29",
+    "nextPointID": 15910530,
+    "battleScene": "{\"army\":[20600529]}",
+    "akeyPrice": 30002,
+    "f4": 387
+  },
+  {
+    "id": "00F2C682",
+    "name": "8th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600530]}",
+    "akeyPrice": 30003,
+    "f4": 400
+  },
+  {
+    "id": "00F2C6C9",
+    "name": "7th Division Floor 1",
+    "nextPointID": 15910602,
+    "battleScene": "{\"army\":[20600601]}",
+    "akeyPrice": 30003,
+    "f4": 13
+  },
+  {
+    "id": "00F2C6CA",
+    "name": "7th Division Floor 2",
+    "nextPointID": 15910603,
+    "battleScene": "{\"army\":[20600602]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C6CB",
+    "name": "7th Division Floor 3",
+    "nextPointID": 15910604,
+    "battleScene": "{\"army\":[20600603]}",
+    "akeyPrice": 30013,
+    "f4": 40
+  },
+  {
+    "id": "00F2C6CC",
+    "name": "7th Division Floor 4",
+    "nextPointID": 15910605,
+    "battleScene": "{\"army\":[20600604]}",
+    "akeyPrice": 30013,
+    "f4": 53
+  },
+  {
+    "id": "00F2C6CD",
+    "name": "7th Division Floor 5",
+    "nextPointID": 15910606,
+    "battleScene": "{\"army\":[20600605]}",
+    "akeyPrice": 30000,
+    "f4": 67
+  },
+  {
+    "id": "00F2C6CE",
+    "name": "7th Division Floor 6",
+    "nextPointID": 15910607,
+    "battleScene": "{\"army\":[20600606]}",
+    "akeyPrice": 30002,
+    "f4": 80
+  },
+  {
+    "id": "00F2C6CF",
+    "name": "7th Division Floor 7",
+    "nextPointID": 15910608,
+    "battleScene": "{\"army\":[20600607]}",
+    "akeyPrice": 30003,
+    "f4": 93
+  },
+  {
+    "id": "00F2C6D0",
+    "name": "7th Division Floor 8",
+    "nextPointID": 15910609,
+    "battleScene": "{\"army\":[20600608]}",
+    "akeyPrice": 30003,
+    "f4": 107
+  },
+  {
+    "id": "00F2C6D1",
+    "name": "7th Division Floor 9",
+    "nextPointID": 15910610,
+    "battleScene": "{\"army\":[20600609]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C6D2",
+    "name": "7th Division Floor 10",
+    "nextPointID": 15910611,
+    "battleScene": "{\"army\":[20600610]}",
+    "akeyPrice": 30013,
+    "f4": 133
+  },
+  {
+    "id": "00F2C6D3",
+    "name": "7th Division Floor 11",
+    "nextPointID": 15910612,
+    "battleScene": "{\"army\":[20600611]}",
+    "akeyPrice": 30013,
+    "f4": 147
+  },
+  {
+    "id": "00F2C6D4",
+    "name": "7th Division Floor 12",
+    "nextPointID": 15910613,
+    "battleScene": "{\"army\":[20600612]}",
+    "akeyPrice": 30000,
+    "f4": 160
+  },
+  {
+    "id": "00F2C6D5",
+    "name": "7th Division Floor 13",
+    "nextPointID": 15910614,
+    "battleScene": "{\"army\":[20600613]}",
+    "akeyPrice": 30002,
+    "f4": 173
+  },
+  {
+    "id": "00F2C6D6",
+    "name": "7th Division Floor 14",
+    "nextPointID": 15910615,
+    "battleScene": "{\"army\":[20600614]}",
+    "akeyPrice": 30003,
+    "f4": 187
+  },
+  {
+    "id": "00F2C6D7",
+    "name": "7th Division Floor 15",
+    "nextPointID": 15910616,
+    "battleScene": "{\"army\":[20600615]}",
+    "akeyPrice": 30003,
+    "f4": 200
+  },
+  {
+    "id": "00F2C6D8",
+    "name": "7th Division Floor 16",
+    "nextPointID": 15910617,
+    "battleScene": "{\"army\":[20600616]}",
+    "akeyPrice": 30003,
+    "f4": 213
+  },
+  {
+    "id": "00F2C6D9",
+    "name": "7th Division Floor 17",
+    "nextPointID": 15910618,
+    "battleScene": "{\"army\":[20600617]}",
+    "akeyPrice": 30013,
+    "f4": 227
+  },
+  {
+    "id": "00F2C6DA",
+    "name": "7th Division Floor 18",
+    "nextPointID": 15910619,
+    "battleScene": "{\"army\":[20600618]}",
+    "akeyPrice": 30013,
+    "f4": 240
+  },
+  {
+    "id": "00F2C6DB",
+    "name": "7th Division Floor 19",
+    "nextPointID": 15910620,
+    "battleScene": "{\"army\":[20600619]}",
+    "akeyPrice": 30000,
+    "f4": 253
+  },
+  {
+    "id": "00F2C6DC",
+    "name": "7th Division Floor 20",
+    "nextPointID": 15910621,
+    "battleScene": "{\"army\":[20600620]}",
+    "akeyPrice": 30002,
+    "f4": 267
+  },
+  {
+    "id": "00F2C6DD",
+    "name": "7th Division Floor 21",
+    "nextPointID": 15910622,
+    "battleScene": "{\"army\":[20600621]}",
+    "akeyPrice": 30003,
+    "f4": 280
+  },
+  {
+    "id": "00F2C6DE",
+    "name": "7th Division Floor 22",
+    "nextPointID": 15910623,
+    "battleScene": "{\"army\":[20600622]}",
+    "akeyPrice": 30003,
+    "f4": 293
+  },
+  {
+    "id": "00F2C6DF",
+    "name": "7th Division Floor 23",
+    "nextPointID": 15910624,
+    "battleScene": "{\"army\":[20600623]}",
+    "akeyPrice": 30003,
+    "f4": 307
+  },
+  {
+    "id": "00F2C6E0",
+    "name": "7th Division Floor 24",
+    "nextPointID": 15910625,
+    "battleScene": "{\"army\":[20600624]}",
+    "akeyPrice": 30013,
+    "f4": 320
+  },
+  {
+    "id": "00F2C6E1",
+    "name": "7th Division Floor 25",
+    "nextPointID": 15910626,
+    "battleScene": "{\"army\":[20600625]}",
+    "akeyPrice": 30013,
+    "f4": 333
+  },
+  {
+    "id": "00F2C6E2",
+    "name": "7th Division Floor 26",
+    "nextPointID": 15910627,
+    "battleScene": "{\"army\":[20600626]}",
+    "akeyPrice": 30000,
+    "f4": 347
+  },
+  {
+    "id": "00F2C6E3",
+    "name": "7th Division Floor 27",
+    "nextPointID": 15910628,
+    "battleScene": "{\"army\":[20600627]}",
+    "akeyPrice": 30002,
+    "f4": 360
+  },
+  {
+    "id": "00F2C6E4",
+    "name": "7th Division Floor 28",
+    "nextPointID": 15910629,
+    "battleScene": "{\"army\":[20600628]}",
+    "akeyPrice": 30003,
+    "f4": 373
+  },
+  {
+    "id": "00F2C6E5",
+    "name": "7th Division Floor 29",
+    "nextPointID": 15910630,
+    "battleScene": "{\"army\":[20600629]}",
+    "akeyPrice": 30003,
+    "f4": 387
+  },
+  {
+    "id": "00F2C6E6",
+    "name": "7th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600630]}",
+    "akeyPrice": 30003,
+    "f4": 400
+  },
+  {
+    "id": "00F2C72D",
+    "name": "6th Division Floor 1",
+    "nextPointID": 15910702,
+    "battleScene": "{\"army\":[20600701]}",
+    "akeyPrice": 30013,
+    "f4": 13
+  },
+  {
+    "id": "00F2C72E",
+    "name": "6th Division Floor 2",
+    "nextPointID": 15910703,
+    "battleScene": "{\"army\":[20600702]}",
+    "akeyPrice": 30013,
+    "f4": 27
+  },
+  {
+    "id": "00F2C72F",
+    "name": "6th Division Floor 3",
+    "nextPointID": 15910704,
+    "battleScene": "{\"army\":[20600703]}",
+    "akeyPrice": 30000,
+    "f4": 40
+  },
+  {
+    "id": "00F2C730",
+    "name": "6th Division Floor 4",
+    "nextPointID": 15910705,
+    "battleScene": "{\"army\":[20600704]}",
+    "akeyPrice": 30002,
+    "f4": 53
+  },
+  {
+    "id": "00F2C731",
+    "name": "6th Division Floor 5",
+    "nextPointID": 15910706,
+    "battleScene": "{\"army\":[20600705]}",
+    "akeyPrice": 30003,
+    "f4": 67
+  },
+  {
+    "id": "00F2C732",
+    "name": "6th Division Floor 6",
+    "nextPointID": 15910707,
+    "battleScene": "{\"army\":[20600706]}",
+    "akeyPrice": 30003,
+    "f4": 80
+  },
+  {
+    "id": "00F2C733",
+    "name": "6th Division Floor 7",
+    "nextPointID": 15910708,
+    "battleScene": "{\"army\":[20600707]}",
+    "akeyPrice": 30003,
+    "f4": 93
+  },
+  {
+    "id": "00F2C734",
+    "name": "6th Division Floor 8",
+    "nextPointID": 15910709,
+    "battleScene": "{\"army\":[20600708]}",
+    "akeyPrice": 30013,
+    "f4": 107
+  },
+  {
+    "id": "00F2C735",
+    "name": "6th Division Floor 9",
+    "nextPointID": 15910710,
+    "battleScene": "{\"army\":[20600709]}",
+    "akeyPrice": 30013,
+    "f4": 120
+  },
+  {
+    "id": "00F2C736",
+    "name": "6th Division Floor 10",
+    "nextPointID": 15910711,
+    "battleScene": "{\"army\":[20600710]}",
+    "akeyPrice": 30000,
+    "f4": 133
+  },
+  {
+    "id": "00F2C737",
+    "name": "6th Division Floor 11",
+    "nextPointID": 15910712,
+    "battleScene": "{\"army\":[20600711]}",
+    "akeyPrice": 30002,
+    "f4": 147
+  },
+  {
+    "id": "00F2C738",
+    "name": "6th Division Floor 12",
+    "nextPointID": 15910713,
+    "battleScene": "{\"army\":[20600712]}",
+    "akeyPrice": 30003,
+    "f4": 160
+  },
+  {
+    "id": "00F2C739",
+    "name": "6th Division Floor 13",
+    "nextPointID": 15910714,
+    "battleScene": "{\"army\":[20600713]}",
+    "akeyPrice": 30003,
+    "f4": 173
+  },
+  {
+    "id": "00F2C73A",
+    "name": "6th Division Floor 14",
+    "nextPointID": 15910715,
+    "battleScene": "{\"army\":[20600714]}",
+    "akeyPrice": 30003,
+    "f4": 187
+  },
+  {
+    "id": "00F2C73B",
+    "name": "6th Division Floor 15",
+    "nextPointID": 15910716,
+    "battleScene": "{\"army\":[20600715]}",
+    "akeyPrice": 30013,
+    "f4": 200
+  },
+  {
+    "id": "00F2C73C",
+    "name": "6th Division Floor 16",
+    "nextPointID": 15910717,
+    "battleScene": "{\"army\":[20600716]}",
+    "akeyPrice": 30013,
+    "f4": 213
+  },
+  {
+    "id": "00F2C73D",
+    "name": "6th Division Floor 17",
+    "nextPointID": 15910718,
+    "battleScene": "{\"army\":[20600717]}",
+    "akeyPrice": 30000,
+    "f4": 227
+  },
+  {
+    "id": "00F2C73E",
+    "name": "6th Division Floor 18",
+    "nextPointID": 15910719,
+    "battleScene": "{\"army\":[20600718]}",
+    "akeyPrice": 30002,
+    "f4": 240
+  },
+  {
+    "id": "00F2C73F",
+    "name": "6th Division Floor 19",
+    "nextPointID": 15910720,
+    "battleScene": "{\"army\":[20600719]}",
+    "akeyPrice": 30003,
+    "f4": 253
+  },
+  {
+    "id": "00F2C740",
+    "name": "6th Division Floor 20",
+    "nextPointID": 15910721,
+    "battleScene": "{\"army\":[20600720]}",
+    "akeyPrice": 30003,
+    "f4": 267
+  },
+  {
+    "id": "00F2C741",
+    "name": "6th Division Floor 21",
+    "nextPointID": 15910722,
+    "battleScene": "{\"army\":[20600721]}",
+    "akeyPrice": 30003,
+    "f4": 280
+  },
+  {
+    "id": "00F2C742",
+    "name": "6th Division Floor 22",
+    "nextPointID": 15910723,
+    "battleScene": "{\"army\":[20600722]}",
+    "akeyPrice": 30013,
+    "f4": 293
+  },
+  {
+    "id": "00F2C743",
+    "name": "6th Division Floor 23",
+    "nextPointID": 15910724,
+    "battleScene": "{\"army\":[20600723]}",
+    "akeyPrice": 30013,
+    "f4": 307
+  },
+  {
+    "id": "00F2C744",
+    "name": "6th Division Floor 24",
+    "nextPointID": 15910725,
+    "battleScene": "{\"army\":[20600724]}",
+    "akeyPrice": 30000,
+    "f4": 320
+  },
+  {
+    "id": "00F2C745",
+    "name": "6th Division Floor 25",
+    "nextPointID": 15910726,
+    "battleScene": "{\"army\":[20600725]}",
+    "akeyPrice": 30002,
+    "f4": 333
+  },
+  {
+    "id": "00F2C746",
+    "name": "6th Division Floor 26",
+    "nextPointID": 15910727,
+    "battleScene": "{\"army\":[20600726]}",
+    "akeyPrice": 30003,
+    "f4": 347
+  },
+  {
+    "id": "00F2C747",
+    "name": "6th Division Floor 27",
+    "nextPointID": 15910728,
+    "battleScene": "{\"army\":[20600727]}",
+    "akeyPrice": 30003,
+    "f4": 360
+  },
+  {
+    "id": "00F2C748",
+    "name": "6th Division Floor 28",
+    "nextPointID": 15910729,
+    "battleScene": "{\"army\":[20600728]}",
+    "akeyPrice": 30003,
+    "f4": 373
+  },
+  {
+    "id": "00F2C749",
+    "name": "6th Division Floor 29",
+    "nextPointID": 15910730,
+    "battleScene": "{\"army\":[20600729]}",
+    "akeyPrice": 30013,
+    "f4": 387
+  },
+  {
+    "id": "00F2C74A",
+    "name": "6th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600730]}",
+    "akeyPrice": 30013,
+    "f4": 400
+  },
+  {
+    "id": "00F2C791",
+    "name": "5th Division Floor 1",
+    "nextPointID": 15910802,
+    "battleScene": "{\"army\":[20600801]}",
+    "akeyPrice": 30000,
+    "f4": 13
+  },
+  {
+    "id": "00F2C792",
+    "name": "5th Division Floor 2",
+    "nextPointID": 15910803,
+    "battleScene": "{\"army\":[20600802]}",
+    "akeyPrice": 30002,
+    "f4": 27
+  },
+  {
+    "id": "00F2C793",
+    "name": "5th Division Floor 3",
+    "nextPointID": 15910804,
+    "battleScene": "{\"army\":[20600803]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C794",
+    "name": "5th Division Floor 4",
+    "nextPointID": 15910805,
+    "battleScene": "{\"army\":[20600804]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C795",
+    "name": "5th Division Floor 5",
+    "nextPointID": 15910806,
+    "battleScene": "{\"army\":[20600805]}",
+    "akeyPrice": 30003,
+    "f4": 67
+  },
+  {
+    "id": "00F2C796",
+    "name": "5th Division Floor 6",
+    "nextPointID": 15910807,
+    "battleScene": "{\"army\":[20600806]}",
+    "akeyPrice": 30013,
+    "f4": 80
+  },
+  {
+    "id": "00F2C797",
+    "name": "5th Division Floor 7",
+    "nextPointID": 15910808,
+    "battleScene": "{\"army\":[20600807]}",
+    "akeyPrice": 30013,
+    "f4": 93
+  },
+  {
+    "id": "00F2C798",
+    "name": "5th Division Floor 8",
+    "nextPointID": 15910809,
+    "battleScene": "{\"army\":[20600808]}",
+    "akeyPrice": 30000,
+    "f4": 107
+  },
+  {
+    "id": "00F2C799",
+    "name": "5th Division Floor 9",
+    "nextPointID": 15910810,
+    "battleScene": "{\"army\":[20600809]}",
+    "akeyPrice": 30002,
+    "f4": 120
+  },
+  {
+    "id": "00F2C79A",
+    "name": "5th Division Floor 10",
+    "nextPointID": 15910811,
+    "battleScene": "{\"army\":[20600810]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C79B",
+    "name": "5th Division Floor 11",
+    "nextPointID": 15910812,
+    "battleScene": "{\"army\":[20600811]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C79C",
+    "name": "5th Division Floor 12",
+    "nextPointID": 15910813,
+    "battleScene": "{\"army\":[20600812]}",
+    "akeyPrice": 30003,
+    "f4": 160
+  },
+  {
+    "id": "00F2C79D",
+    "name": "5th Division Floor 13",
+    "nextPointID": 15910814,
+    "battleScene": "{\"army\":[20600813]}",
+    "akeyPrice": 30013,
+    "f4": 173
+  },
+  {
+    "id": "00F2C79E",
+    "name": "5th Division Floor 14",
+    "nextPointID": 15910815,
+    "battleScene": "{\"army\":[20600814]}",
+    "akeyPrice": 30013,
+    "f4": 187
+  },
+  {
+    "id": "00F2C79F",
+    "name": "5th Division Floor 15",
+    "nextPointID": 15910816,
+    "battleScene": "{\"army\":[20600815]}",
+    "akeyPrice": 30000,
+    "f4": 200
+  },
+  {
+    "id": "00F2C7A0",
+    "name": "5th Division Floor 16",
+    "nextPointID": 15910817,
+    "battleScene": "{\"army\":[20600816]}",
+    "akeyPrice": 30002,
+    "f4": 213
+  },
+  {
+    "id": "00F2C7A1",
+    "name": "5th Division Floor 17",
+    "nextPointID": 15910818,
+    "battleScene": "{\"army\":[20600817]}",
+    "akeyPrice": 30003,
+    "f4": 227
+  },
+  {
+    "id": "00F2C7A2",
+    "name": "5th Division Floor 18",
+    "nextPointID": 15910819,
+    "battleScene": "{\"army\":[20600818]}",
+    "akeyPrice": 30003,
+    "f4": 240
+  },
+  {
+    "id": "00F2C7A3",
+    "name": "5th Division Floor 19",
+    "nextPointID": 15910820,
+    "battleScene": "{\"army\":[20600819]}",
+    "akeyPrice": 30003,
+    "f4": 253
+  },
+  {
+    "id": "00F2C7A4",
+    "name": "5th Division Floor 20",
+    "nextPointID": 15910821,
+    "battleScene": "{\"army\":[20600820]}",
+    "akeyPrice": 30013,
+    "f4": 267
+  },
+  {
+    "id": "00F2C7A5",
+    "name": "5th Division Floor 21",
+    "nextPointID": 15910822,
+    "battleScene": "{\"army\":[20600821]}",
+    "akeyPrice": 30013,
+    "f4": 280
+  },
+  {
+    "id": "00F2C7A6",
+    "name": "5th Division Floor 22",
+    "nextPointID": 15910823,
+    "battleScene": "{\"army\":[20600822]}",
+    "akeyPrice": 30000,
+    "f4": 293
+  },
+  {
+    "id": "00F2C7A7",
+    "name": "5th Division Floor 23",
+    "nextPointID": 15910824,
+    "battleScene": "{\"army\":[20600823]}",
+    "akeyPrice": 30002,
+    "f4": 307
+  },
+  {
+    "id": "00F2C7A8",
+    "name": "5th Division Floor 24",
+    "nextPointID": 15910825,
+    "battleScene": "{\"army\":[20600824]}",
+    "akeyPrice": 30003,
+    "f4": 320
+  },
+  {
+    "id": "00F2C7A9",
+    "name": "5th Division Floor 25",
+    "nextPointID": 15910826,
+    "battleScene": "{\"army\":[20600825]}",
+    "akeyPrice": 30003,
+    "f4": 333
+  },
+  {
+    "id": "00F2C7AA",
+    "name": "5th Division Floor 26",
+    "nextPointID": 15910827,
+    "battleScene": "{\"army\":[20600826]}",
+    "akeyPrice": 30003,
+    "f4": 347
+  },
+  {
+    "id": "00F2C7AB",
+    "name": "5th Division Floor 27",
+    "nextPointID": 15910828,
+    "battleScene": "{\"army\":[20600827]}",
+    "akeyPrice": 30013,
+    "f4": 360
+  },
+  {
+    "id": "00F2C7AC",
+    "name": "5th Division Floor 28",
+    "nextPointID": 15910829,
+    "battleScene": "{\"army\":[20600828]}",
+    "akeyPrice": 30013,
+    "f4": 373
+  },
+  {
+    "id": "00F2C7AD",
+    "name": "5th Division Floor 29",
+    "nextPointID": 15910830,
+    "battleScene": "{\"army\":[20600829]}",
+    "akeyPrice": 30000,
+    "f4": 387
+  },
+  {
+    "id": "00F2C7AE",
+    "name": "5th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600830]}",
+    "akeyPrice": 30002,
+    "f4": 400
+  },
+  {
+    "id": "00F2C7F5",
+    "name": "4th Division Floor 1",
+    "nextPointID": 15910902,
+    "battleScene": "{\"army\":[20600901]}",
+    "akeyPrice": 30003,
+    "f4": 13
+  },
+  {
+    "id": "00F2C7F6",
+    "name": "4th Division Floor 2",
+    "nextPointID": 15910903,
+    "battleScene": "{\"army\":[20600902]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C7F7",
+    "name": "4th Division Floor 3",
+    "nextPointID": 15910904,
+    "battleScene": "{\"army\":[20600903]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C7F8",
+    "name": "4th Division Floor 4",
+    "nextPointID": 15910905,
+    "battleScene": "{\"army\":[20600904]}",
+    "akeyPrice": 30013,
+    "f4": 53
+  },
+  {
+    "id": "00F2C7F9",
+    "name": "4th Division Floor 5",
+    "nextPointID": 15910906,
+    "battleScene": "{\"army\":[20600905]}",
+    "akeyPrice": 30013,
+    "f4": 67
+  },
+  {
+    "id": "00F2C7FA",
+    "name": "4th Division Floor 6",
+    "nextPointID": 15910907,
+    "battleScene": "{\"army\":[20600906]}",
+    "akeyPrice": 30000,
+    "f4": 80
+  },
+  {
+    "id": "00F2C7FB",
+    "name": "4th Division Floor 7",
+    "nextPointID": 15910908,
+    "battleScene": "{\"army\":[20600907]}",
+    "akeyPrice": 30002,
+    "f4": 93
+  },
+  {
+    "id": "00F2C7FC",
+    "name": "4th Division Floor 8",
+    "nextPointID": 15910909,
+    "battleScene": "{\"army\":[20600908]}",
+    "akeyPrice": 30003,
+    "f4": 107
+  },
+  {
+    "id": "00F2C7FD",
+    "name": "4th Division Floor 9",
+    "nextPointID": 15910910,
+    "battleScene": "{\"army\":[20600909]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C7FE",
+    "name": "4th Division Floor 10",
+    "nextPointID": 15910911,
+    "battleScene": "{\"army\":[20600910]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C7FF",
+    "name": "4th Division Floor 11",
+    "nextPointID": 15910912,
+    "battleScene": "{\"army\":[20600911]}",
+    "akeyPrice": 30013,
+    "f4": 147
+  },
+  {
+    "id": "00F2C800",
+    "name": "4th Division Floor 12",
+    "nextPointID": 15910913,
+    "battleScene": "{\"army\":[20600912]}",
+    "akeyPrice": 30013,
+    "f4": 160
+  },
+  {
+    "id": "00F2C801",
+    "name": "4th Division Floor 13",
+    "nextPointID": 15910914,
+    "battleScene": "{\"army\":[20600913]}",
+    "akeyPrice": 30000,
+    "f4": 173
+  },
+  {
+    "id": "00F2C802",
+    "name": "4th Division Floor 14",
+    "nextPointID": 15910915,
+    "battleScene": "{\"army\":[20600914]}",
+    "akeyPrice": 30002,
+    "f4": 187
+  },
+  {
+    "id": "00F2C803",
+    "name": "4th Division Floor 15",
+    "nextPointID": 15910916,
+    "battleScene": "{\"army\":[20600915]}",
+    "akeyPrice": 30003,
+    "f4": 200
+  },
+  {
+    "id": "00F2C804",
+    "name": "4th Division Floor 16",
+    "nextPointID": 15910917,
+    "battleScene": "{\"army\":[20600916]}",
+    "akeyPrice": 30003,
+    "f4": 213
+  },
+  {
+    "id": "00F2C805",
+    "name": "4th Division Floor 17",
+    "nextPointID": 15910918,
+    "battleScene": "{\"army\":[20600917]}",
+    "akeyPrice": 30003,
+    "f4": 227
+  },
+  {
+    "id": "00F2C806",
+    "name": "4th Division Floor 18",
+    "nextPointID": 15910919,
+    "battleScene": "{\"army\":[20600918]}",
+    "akeyPrice": 30013,
+    "f4": 240
+  },
+  {
+    "id": "00F2C807",
+    "name": "4th Division Floor 19",
+    "nextPointID": 15910920,
+    "battleScene": "{\"army\":[20600919]}",
+    "akeyPrice": 30013,
+    "f4": 253
+  },
+  {
+    "id": "00F2C808",
+    "name": "4th Division Floor 20",
+    "nextPointID": 15910921,
+    "battleScene": "{\"army\":[20600920]}",
+    "akeyPrice": 30000,
+    "f4": 267
+  },
+  {
+    "id": "00F2C809",
+    "name": "4th Division Floor 21",
+    "nextPointID": 15910922,
+    "battleScene": "{\"army\":[20600921]}",
+    "akeyPrice": 30002,
+    "f4": 280
+  },
+  {
+    "id": "00F2C80A",
+    "name": "4th Division Floor 22",
+    "nextPointID": 15910923,
+    "battleScene": "{\"army\":[20600922]}",
+    "akeyPrice": 30003,
+    "f4": 293
+  },
+  {
+    "id": "00F2C80B",
+    "name": "4th Division Floor 23",
+    "nextPointID": 15910924,
+    "battleScene": "{\"army\":[20600923]}",
+    "akeyPrice": 30003,
+    "f4": 307
+  },
+  {
+    "id": "00F2C80C",
+    "name": "4th Division Floor 24",
+    "nextPointID": 15910925,
+    "battleScene": "{\"army\":[20600924]}",
+    "akeyPrice": 30003,
+    "f4": 320
+  },
+  {
+    "id": "00F2C80D",
+    "name": "4th Division Floor 25",
+    "nextPointID": 15910926,
+    "battleScene": "{\"army\":[20600925]}",
+    "akeyPrice": 30013,
+    "f4": 333
+  },
+  {
+    "id": "00F2C80E",
+    "name": "4th Division Floor 26",
+    "nextPointID": 15910927,
+    "battleScene": "{\"army\":[20600926]}",
+    "akeyPrice": 30013,
+    "f4": 347
+  },
+  {
+    "id": "00F2C80F",
+    "name": "4th Division Floor 27",
+    "nextPointID": 15910928,
+    "battleScene": "{\"army\":[20600927]}",
+    "akeyPrice": 30000,
+    "f4": 360
+  },
+  {
+    "id": "00F2C810",
+    "name": "4th Division Floor 28",
+    "nextPointID": 15910929,
+    "battleScene": "{\"army\":[20600928]}",
+    "akeyPrice": 30002,
+    "f4": 373
+  },
+  {
+    "id": "00F2C811",
+    "name": "4th Division Floor 29",
+    "nextPointID": 15910930,
+    "battleScene": "{\"army\":[20600929]}",
+    "akeyPrice": 30003,
+    "f4": 387
+  },
+  {
+    "id": "00F2C812",
+    "name": "4th Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20600930]}",
+    "akeyPrice": 30003,
+    "f4": 400
+  },
+  {
+    "id": "00F2C859",
+    "name": "3rd Division Floor 1",
+    "nextPointID": 15911002,
+    "battleScene": "{\"army\":[20601001]}",
+    "akeyPrice": 30003,
+    "f4": 13
+  },
+  {
+    "id": "00F2C85A",
+    "name": "3rd Division Floor 2",
+    "nextPointID": 15911003,
+    "battleScene": "{\"army\":[20601002]}",
+    "akeyPrice": 30013,
+    "f4": 27
+  },
+  {
+    "id": "00F2C85B",
+    "name": "3rd Division Floor 3",
+    "nextPointID": 15911004,
+    "battleScene": "{\"army\":[20601003]}",
+    "akeyPrice": 30013,
+    "f4": 40
+  },
+  {
+    "id": "00F2C85C",
+    "name": "3rd Division Floor 4",
+    "nextPointID": 15911005,
+    "battleScene": "{\"army\":[20601004]}",
+    "akeyPrice": 30000,
+    "f4": 53
+  },
+  {
+    "id": "00F2C85D",
+    "name": "3rd Division Floor 5",
+    "nextPointID": 15911006,
+    "battleScene": "{\"army\":[20601005]}",
+    "akeyPrice": 30002,
+    "f4": 67
+  },
+  {
+    "id": "00F2C85E",
+    "name": "3rd Division Floor 6",
+    "nextPointID": 15911007,
+    "battleScene": "{\"army\":[20601006]}",
+    "akeyPrice": 30003,
+    "f4": 80
+  },
+  {
+    "id": "00F2C85F",
+    "name": "3rd Division Floor 7",
+    "nextPointID": 15911008,
+    "battleScene": "{\"army\":[20601007]}",
+    "akeyPrice": 30003,
+    "f4": 93
+  },
+  {
+    "id": "00F2C860",
+    "name": "3rd Division Floor 8",
+    "nextPointID": 15911009,
+    "battleScene": "{\"army\":[20601008]}",
+    "akeyPrice": 30003,
+    "f4": 107
+  },
+  {
+    "id": "00F2C861",
+    "name": "3rd Division Floor 9",
+    "nextPointID": 15911010,
+    "battleScene": "{\"army\":[20601009]}",
+    "akeyPrice": 30013,
+    "f4": 120
+  },
+  {
+    "id": "00F2C862",
+    "name": "3rd Division Floor 10",
+    "nextPointID": 15911011,
+    "battleScene": "{\"army\":[20601010]}",
+    "akeyPrice": 30013,
+    "f4": 133
+  },
+  {
+    "id": "00F2C863",
+    "name": "3rd Division Floor 11",
+    "nextPointID": 15911012,
+    "battleScene": "{\"army\":[20601011]}",
+    "akeyPrice": 30000,
+    "f4": 147
+  },
+  {
+    "id": "00F2C864",
+    "name": "3rd Division Floor 12",
+    "nextPointID": 15911013,
+    "battleScene": "{\"army\":[20601012]}",
+    "akeyPrice": 30002,
+    "f4": 160
+  },
+  {
+    "id": "00F2C865",
+    "name": "3rd Division Floor 13",
+    "nextPointID": 15911014,
+    "battleScene": "{\"army\":[20601013]}",
+    "akeyPrice": 30003,
+    "f4": 173
+  },
+  {
+    "id": "00F2C866",
+    "name": "3rd Division Floor 14",
+    "nextPointID": 15911015,
+    "battleScene": "{\"army\":[20601014]}",
+    "akeyPrice": 30003,
+    "f4": 187
+  },
+  {
+    "id": "00F2C867",
+    "name": "3rd Division Floor 15",
+    "nextPointID": 15911016,
+    "battleScene": "{\"army\":[20601015]}",
+    "akeyPrice": 30003,
+    "f4": 200
+  },
+  {
+    "id": "00F2C868",
+    "name": "3rd Division Floor 16",
+    "nextPointID": 15911017,
+    "battleScene": "{\"army\":[20601016]}",
+    "akeyPrice": 30013,
+    "f4": 213
+  },
+  {
+    "id": "00F2C869",
+    "name": "3rd Division Floor 17",
+    "nextPointID": 15911018,
+    "battleScene": "{\"army\":[20601017]}",
+    "akeyPrice": 30013,
+    "f4": 227
+  },
+  {
+    "id": "00F2C86A",
+    "name": "3rd Division Floor 18",
+    "nextPointID": 15911019,
+    "battleScene": "{\"army\":[20601018]}",
+    "akeyPrice": 30000,
+    "f4": 240
+  },
+  {
+    "id": "00F2C86B",
+    "name": "3rd Division Floor 19",
+    "nextPointID": 15911020,
+    "battleScene": "{\"army\":[20601019]}",
+    "akeyPrice": 30002,
+    "f4": 253
+  },
+  {
+    "id": "00F2C86C",
+    "name": "3rd Division Floor 20",
+    "nextPointID": 15911021,
+    "battleScene": "{\"army\":[20601020]}",
+    "akeyPrice": 30003,
+    "f4": 267
+  },
+  {
+    "id": "00F2C86D",
+    "name": "3rd Division Floor 21",
+    "nextPointID": 15911022,
+    "battleScene": "{\"army\":[20601021]}",
+    "akeyPrice": 30003,
+    "f4": 280
+  },
+  {
+    "id": "00F2C86E",
+    "name": "3rd Division Floor 22",
+    "nextPointID": 15911023,
+    "battleScene": "{\"army\":[20601022]}",
+    "akeyPrice": 30003,
+    "f4": 293
+  },
+  {
+    "id": "00F2C86F",
+    "name": "3rd Division Floor 23",
+    "nextPointID": 15911024,
+    "battleScene": "{\"army\":[20601023]}",
+    "akeyPrice": 30013,
+    "f4": 307
+  },
+  {
+    "id": "00F2C870",
+    "name": "3rd Division Floor 24",
+    "nextPointID": 15911025,
+    "battleScene": "{\"army\":[20601024]}",
+    "akeyPrice": 30013,
+    "f4": 320
+  },
+  {
+    "id": "00F2C871",
+    "name": "3rd Division Floor 25",
+    "nextPointID": 15911026,
+    "battleScene": "{\"army\":[20601025]}",
+    "akeyPrice": 30000,
+    "f4": 333
+  },
+  {
+    "id": "00F2C872",
+    "name": "3rd Division Floor 26",
+    "nextPointID": 15911027,
+    "battleScene": "{\"army\":[20601026]}",
+    "akeyPrice": 30002,
+    "f4": 347
+  },
+  {
+    "id": "00F2C873",
+    "name": "3rd Division Floor 27",
+    "nextPointID": 15911028,
+    "battleScene": "{\"army\":[20601027]}",
+    "akeyPrice": 30003,
+    "f4": 360
+  },
+  {
+    "id": "00F2C874",
+    "name": "3rd Division Floor 28",
+    "nextPointID": 15911029,
+    "battleScene": "{\"army\":[20601028]}",
+    "akeyPrice": 30003,
+    "f4": 373
+  },
+  {
+    "id": "00F2C875",
+    "name": "3rd Division Floor 29",
+    "nextPointID": 15911030,
+    "battleScene": "{\"army\":[20601029]}",
+    "akeyPrice": 30003,
+    "f4": 387
+  },
+  {
+    "id": "00F2C876",
+    "name": "3rd Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20601030]}",
+    "akeyPrice": 30013,
+    "f4": 400
+  },
+  {
+    "id": "00F2C8BD",
+    "name": "2nd Division Floor 1",
+    "nextPointID": 15911102,
+    "battleScene": "{\"army\":[20601101]}",
+    "akeyPrice": 30013,
+    "f4": 13
+  },
+  {
+    "id": "00F2C8BE",
+    "name": "2nd Division Floor 2",
+    "nextPointID": 15911103,
+    "battleScene": "{\"army\":[20601102]}",
+    "akeyPrice": 30000,
+    "f4": 27
+  },
+  {
+    "id": "00F2C8BF",
+    "name": "2nd Division Floor 3",
+    "nextPointID": 15911104,
+    "battleScene": "{\"army\":[20601103]}",
+    "akeyPrice": 30002,
+    "f4": 40
+  },
+  {
+    "id": "00F2C8C0",
+    "name": "2nd Division Floor 4",
+    "nextPointID": 15911105,
+    "battleScene": "{\"army\":[20601104]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C8C1",
+    "name": "2nd Division Floor 5",
+    "nextPointID": 15911106,
+    "battleScene": "{\"army\":[20601105]}",
+    "akeyPrice": 30003,
+    "f4": 67
+  },
+  {
+    "id": "00F2C8C2",
+    "name": "2nd Division Floor 6",
+    "nextPointID": 15911107,
+    "battleScene": "{\"army\":[20601106]}",
+    "akeyPrice": 30003,
+    "f4": 80
+  },
+  {
+    "id": "00F2C8C3",
+    "name": "2nd Division Floor 7",
+    "nextPointID": 15911108,
+    "battleScene": "{\"army\":[20601107]}",
+    "akeyPrice": 30013,
+    "f4": 93
+  },
+  {
+    "id": "00F2C8C4",
+    "name": "2nd Division Floor 8",
+    "nextPointID": 15911109,
+    "battleScene": "{\"army\":[20601108]}",
+    "akeyPrice": 30013,
+    "f4": 107
+  },
+  {
+    "id": "00F2C8C5",
+    "name": "2nd Division Floor 9",
+    "nextPointID": 15911110,
+    "battleScene": "{\"army\":[20601109]}",
+    "akeyPrice": 30000,
+    "f4": 120
+  },
+  {
+    "id": "00F2C8C6",
+    "name": "2nd Division Floor 10",
+    "nextPointID": 15911111,
+    "battleScene": "{\"army\":[20601110]}",
+    "akeyPrice": 30002,
+    "f4": 133
+  },
+  {
+    "id": "00F2C8C7",
+    "name": "2nd Division Floor 11",
+    "nextPointID": 15911112,
+    "battleScene": "{\"army\":[20601111]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C8C8",
+    "name": "2nd Division Floor 12",
+    "nextPointID": 15911113,
+    "battleScene": "{\"army\":[20601112]}",
+    "akeyPrice": 30003,
+    "f4": 160
+  },
+  {
+    "id": "00F2C8C9",
+    "name": "2nd Division Floor 13",
+    "nextPointID": 15911114,
+    "battleScene": "{\"army\":[20601113]}",
+    "akeyPrice": 30003,
+    "f4": 173
+  },
+  {
+    "id": "00F2C8CA",
+    "name": "2nd Division Floor 14",
+    "nextPointID": 15911115,
+    "battleScene": "{\"army\":[20601114]}",
+    "akeyPrice": 30013,
+    "f4": 187
+  },
+  {
+    "id": "00F2C8CB",
+    "name": "2nd Division Floor 15",
+    "nextPointID": 15911116,
+    "battleScene": "{\"army\":[20601115]}",
+    "akeyPrice": 30013,
+    "f4": 200
+  },
+  {
+    "id": "00F2C8CC",
+    "name": "2nd Division Floor 16",
+    "nextPointID": 15911117,
+    "battleScene": "{\"army\":[20601116]}",
+    "akeyPrice": 30000,
+    "f4": 213
+  },
+  {
+    "id": "00F2C8CD",
+    "name": "2nd Division Floor 17",
+    "nextPointID": 15911118,
+    "battleScene": "{\"army\":[20601117]}",
+    "akeyPrice": 30002,
+    "f4": 227
+  },
+  {
+    "id": "00F2C8CE",
+    "name": "2nd Division Floor 18",
+    "nextPointID": 15911119,
+    "battleScene": "{\"army\":[20601118]}",
+    "akeyPrice": 30003,
+    "f4": 240
+  },
+  {
+    "id": "00F2C8CF",
+    "name": "2nd Division Floor 19",
+    "nextPointID": 15911120,
+    "battleScene": "{\"army\":[20601119]}",
+    "akeyPrice": 30003,
+    "f4": 253
+  },
+  {
+    "id": "00F2C8D0",
+    "name": "2nd Division Floor 20",
+    "nextPointID": 15911121,
+    "battleScene": "{\"army\":[20601120]}",
+    "akeyPrice": 30003,
+    "f4": 267
+  },
+  {
+    "id": "00F2C8D1",
+    "name": "2nd Division Floor 21",
+    "nextPointID": 15911122,
+    "battleScene": "{\"army\":[20601121]}",
+    "akeyPrice": 30013,
+    "f4": 280
+  },
+  {
+    "id": "00F2C8D2",
+    "name": "2nd Division Floor 22",
+    "nextPointID": 15911123,
+    "battleScene": "{\"army\":[20601122]}",
+    "akeyPrice": 30013,
+    "f4": 293
+  },
+  {
+    "id": "00F2C8D3",
+    "name": "2nd Division Floor 23",
+    "nextPointID": 15911124,
+    "battleScene": "{\"army\":[20601123]}",
+    "akeyPrice": 30000,
+    "f4": 307
+  },
+  {
+    "id": "00F2C8D4",
+    "name": "2nd Division Floor 24",
+    "nextPointID": 15911125,
+    "battleScene": "{\"army\":[20601124]}",
+    "akeyPrice": 30002,
+    "f4": 320
+  },
+  {
+    "id": "00F2C8D5",
+    "name": "2nd Division Floor 25",
+    "nextPointID": 15911126,
+    "battleScene": "{\"army\":[20601125]}",
+    "akeyPrice": 30003,
+    "f4": 333
+  },
+  {
+    "id": "00F2C8D6",
+    "name": "2nd Division Floor 26",
+    "nextPointID": 15911127,
+    "battleScene": "{\"army\":[20601126]}",
+    "akeyPrice": 30003,
+    "f4": 347
+  },
+  {
+    "id": "00F2C8D7",
+    "name": "2nd Division Floor 27",
+    "nextPointID": 15911128,
+    "battleScene": "{\"army\":[20601127]}",
+    "akeyPrice": 30003,
+    "f4": 360
+  },
+  {
+    "id": "00F2C8D8",
+    "name": "2nd Division Floor 28",
+    "nextPointID": 15911129,
+    "battleScene": "{\"army\":[20601128]}",
+    "akeyPrice": 30013,
+    "f4": 373
+  },
+  {
+    "id": "00F2C8D9",
+    "name": "2nd Division Floor 29",
+    "nextPointID": 15911130,
+    "battleScene": "{\"army\":[20601129]}",
+    "akeyPrice": 30013,
+    "f4": 387
+  },
+  {
+    "id": "00F2C8DA",
+    "name": "2nd Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20601130]}",
+    "akeyPrice": 30000,
+    "f4": 400
+  },
+  {
+    "id": "00F2C921",
+    "name": "1st Division Floor 1",
+    "nextPointID": 15911202,
+    "battleScene": "{\"army\":[20601201]}",
+    "akeyPrice": 30002,
+    "f4": 13
+  },
+  {
+    "id": "00F2C922",
+    "name": "1st Division Floor 2",
+    "nextPointID": 15911203,
+    "battleScene": "{\"army\":[20601202]}",
+    "akeyPrice": 30003,
+    "f4": 27
+  },
+  {
+    "id": "00F2C923",
+    "name": "1st Division Floor 3",
+    "nextPointID": 15911204,
+    "battleScene": "{\"army\":[20601203]}",
+    "akeyPrice": 30003,
+    "f4": 40
+  },
+  {
+    "id": "00F2C924",
+    "name": "1st Division Floor 4",
+    "nextPointID": 15911205,
+    "battleScene": "{\"army\":[20601204]}",
+    "akeyPrice": 30003,
+    "f4": 53
+  },
+  {
+    "id": "00F2C925",
+    "name": "1st Division Floor 5",
+    "nextPointID": 15911206,
+    "battleScene": "{\"army\":[20601205]}",
+    "akeyPrice": 30013,
+    "f4": 67
+  },
+  {
+    "id": "00F2C926",
+    "name": "1st Division Floor 6",
+    "nextPointID": 15911207,
+    "battleScene": "{\"army\":[20601206]}",
+    "akeyPrice": 30013,
+    "f4": 80
+  },
+  {
+    "id": "00F2C927",
+    "name": "1st Division Floor 7",
+    "nextPointID": 15911208,
+    "battleScene": "{\"army\":[20601207]}",
+    "akeyPrice": 30000,
+    "f4": 93
+  },
+  {
+    "id": "00F2C928",
+    "name": "1st Division Floor 8",
+    "nextPointID": 15911209,
+    "battleScene": "{\"army\":[20601208]}",
+    "akeyPrice": 30002,
+    "f4": 107
+  },
+  {
+    "id": "00F2C929",
+    "name": "1st Division Floor 9",
+    "nextPointID": 15911210,
+    "battleScene": "{\"army\":[20601209]}",
+    "akeyPrice": 30003,
+    "f4": 120
+  },
+  {
+    "id": "00F2C92A",
+    "name": "1st Division Floor 10",
+    "nextPointID": 15911211,
+    "battleScene": "{\"army\":[20601210]}",
+    "akeyPrice": 30003,
+    "f4": 133
+  },
+  {
+    "id": "00F2C92B",
+    "name": "1st Division Floor 11",
+    "nextPointID": 15911212,
+    "battleScene": "{\"army\":[20601211]}",
+    "akeyPrice": 30003,
+    "f4": 147
+  },
+  {
+    "id": "00F2C92C",
+    "name": "1st Division Floor 12",
+    "nextPointID": 15911213,
+    "battleScene": "{\"army\":[20601212]}",
+    "akeyPrice": 30013,
+    "f4": 160
+  },
+  {
+    "id": "00F2C92D",
+    "name": "1st Division Floor 13",
+    "nextPointID": 15911214,
+    "battleScene": "{\"army\":[20601213]}",
+    "akeyPrice": 30013,
+    "f4": 173
+  },
+  {
+    "id": "00F2C92E",
+    "name": "1st Division Floor 14",
+    "nextPointID": 15911215,
+    "battleScene": "{\"army\":[20601214]}",
+    "akeyPrice": 30000,
+    "f4": 187
+  },
+  {
+    "id": "00F2C92F",
+    "name": "1st Division Floor 15",
+    "nextPointID": 15911216,
+    "battleScene": "{\"army\":[20601215]}",
+    "akeyPrice": 30002,
+    "f4": 200
+  },
+  {
+    "id": "00F2C930",
+    "name": "1st Division Floor 16",
+    "nextPointID": 15911217,
+    "battleScene": "{\"army\":[20601216]}",
+    "akeyPrice": 30003,
+    "f4": 213
+  },
+  {
+    "id": "00F2C931",
+    "name": "1st Division Floor 17",
+    "nextPointID": 15911218,
+    "battleScene": "{\"army\":[20601217]}",
+    "akeyPrice": 30003,
+    "f4": 227
+  },
+  {
+    "id": "00F2C932",
+    "name": "1st Division Floor 18",
+    "nextPointID": 15911219,
+    "battleScene": "{\"army\":[20601218]}",
+    "akeyPrice": 30003,
+    "f4": 240
+  },
+  {
+    "id": "00F2C933",
+    "name": "1st Division Floor 19",
+    "nextPointID": 15911220,
+    "battleScene": "{\"army\":[20601219]}",
+    "akeyPrice": 30013,
+    "f4": 253
+  },
+  {
+    "id": "00F2C934",
+    "name": "1st Division Floor 20",
+    "nextPointID": 15911221,
+    "battleScene": "{\"army\":[20601220]}",
+    "akeyPrice": 30013,
+    "f4": 267
+  },
+  {
+    "id": "00F2C935",
+    "name": "1st Division Floor 21",
+    "nextPointID": 15911222,
+    "battleScene": "{\"army\":[20601221]}",
+    "akeyPrice": 30000,
+    "f4": 280
+  },
+  {
+    "id": "00F2C936",
+    "name": "1st Division Floor 22",
+    "nextPointID": 15911223,
+    "battleScene": "{\"army\":[20601222]}",
+    "akeyPrice": 30002,
+    "f4": 293
+  },
+  {
+    "id": "00F2C937",
+    "name": "1st Division Floor 23",
+    "nextPointID": 15911224,
+    "battleScene": "{\"army\":[20601223]}",
+    "akeyPrice": 30003,
+    "f4": 307
+  },
+  {
+    "id": "00F2C938",
+    "name": "1st Division Floor 24",
+    "nextPointID": 15911225,
+    "battleScene": "{\"army\":[20601224]}",
+    "akeyPrice": 30003,
+    "f4": 320
+  },
+  {
+    "id": "00F2C939",
+    "name": "1st Division Floor 25",
+    "nextPointID": 15911226,
+    "battleScene": "{\"army\":[20601225]}",
+    "akeyPrice": 30003,
+    "f4": 333
+  },
+  {
+    "id": "00F2C93A",
+    "name": "1st Division Floor 26",
+    "nextPointID": 15911227,
+    "battleScene": "{\"army\":[20601226]}",
+    "akeyPrice": 30013,
+    "f4": 347
+  },
+  {
+    "id": "00F2C93B",
+    "name": "1st Division Floor 27",
+    "nextPointID": 15911228,
+    "battleScene": "{\"army\":[20601227]}",
+    "akeyPrice": 30013,
+    "f4": 360
+  },
+  {
+    "id": "00F2C93C",
+    "name": "1st Division Floor 28",
+    "nextPointID": 15911229,
+    "battleScene": "{\"army\":[20601228]}",
+    "akeyPrice": 30000,
+    "f4": 373
+  },
+  {
+    "id": "00F2C93D",
+    "name": "1st Division Floor 29",
+    "nextPointID": 15911230,
+    "battleScene": "{\"army\":[20601229]}",
+    "akeyPrice": 30002,
+    "f4": 387
+  },
+  {
+    "id": "00F2C93E",
+    "name": "1st Division Floor 30",
+    "nextPointID": 0,
+    "battleScene": "{\"army\":[20601230]}",
+    "akeyPrice": 30003,
+    "f4": 400
+  }
+]

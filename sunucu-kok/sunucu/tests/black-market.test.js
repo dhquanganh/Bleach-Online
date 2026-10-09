@@ -1,0 +1,21 @@
+"use strict";
+const assert=require('assert'),fs=require('fs'),path=require('path'),env=require('../envanter'),{Y,O}=require('../paket'),market=require('../black-market');
+let gold=100,packets=[],refunds=0;
+const y={paraHarca:aw=>{const n=aw.reduce((s,a)=>s+a.amount,0);assert(aw.every(a=>a.type===0&&a.code===1));if(gold<n)return null;gold-=n;return Buffer.alloc(4);},paraIcinOdul:aw=>{gold+=aw[0].amount;refunds++;},ekSonra:(id,payload)=>packets.push({id,payload})};
+const H=market.kur(y),d=JSON.parse(fs.readFileSync(path.join(__dirname,'../oyuncu.json')));delete d.blackMarket;
+const req=id=>new Y().u32(0).u32(id).done(),ctx=payload=>({payload,durum:d,kaydet:()=>{}});
+let p=H['0x01817a00'](ctx(new Y().u32(0).done())),o=new O(p);assert.equal(o.u32(),0);assert.equal(o.u32(),0);o.u32();o.u32();o.u32();assert.equal(o.u16(),2);assert.equal(o.u32(),20000001);assert.equal(o.u32(),0);assert.equal(o.u32(),20000002);assert.equal(o.u32(),0);const c=JSON.parse(o.utf());assert.equal(c.offers[0].itemID,14100005);assert.equal(c.offers[0].number,50);assert.equal(c.offers[0].price.amount,50);assert.equal(o.kalan(),0);
+const before=env.mevcut(d,14100005);assert.equal(H['0x01817a02'](ctx(req(20000001))).readUInt32BE(0),0);assert.equal(gold,50);assert.equal(env.mevcut(d,14100005),before+50);assert(packets.some(p=>p.id===0x01180f00&&p.payload.equals(env.loadBagPaketi(d))));
+assert.notEqual(H['0x01817a02'](ctx(req(20000001))).readUInt32BE(0),0);assert.equal(gold,50);
+assert.notEqual(H['0x01817a02'](ctx(req(999))).readUInt32BE(0),0);assert.equal(gold,50);
+assert.equal(H['0x01817a01'](ctx(new Y().u32(0).done())).readUInt32BE(0),0);assert.equal(gold,40);gold=49;assert.equal(H['0x01817a02'](ctx(req(20000001))).readUInt32BE(0),16);assert.equal(env.mevcut(d,14100005),before+50);
+gold=100;const broken=ctx(req(20000001));broken.kaydet=()=>{throw Error('disk');};assert.notEqual(H['0x01817a02'](broken).readUInt32BE(0),0);assert.equal(gold,100);assert.equal(refunds,1);assert.equal(env.mevcut(d,14100005),before+50);
+d.blackMarket.born-=market.config.refreshSeconds;assert.equal(market.state(d).refresh,0);assert.deepEqual(d.blackMarket.bought,{});
+const registered=require('../handlers');registered.ekAl();p=registered.byReq['0x01817a00'](ctx(new Y().u32(0).done()));assert.equal(p.readUInt16BE(20),2);registered.ekAl();
+console.log('PASS: actual TimeMall routing, authoritative offer metadata, 50 scrolls for exactly 50 gold, duplicate/invalid/insufficient requests, refund on save failure, refresh/reset and immediate full bag packet. No player files changed.');
+
+const stoneBefore=env.mevcut(d,14100698);gold=499;
+assert.equal(H['0x01817a02'](ctx(req(20000002))).readUInt32BE(0),16);assert.equal(env.mevcut(d,14100698),stoneBefore);
+gold=500;assert.equal(H['0x01817a02'](ctx(req(20000002))).readUInt32BE(0),0);assert.equal(gold,0);assert.equal(env.mevcut(d,14100698),stoneBefore+1);
+assert.notEqual(H['0x01817a02'](ctx(req(20000002))).readUInt32BE(0),0);assert.equal(env.mevcut(d,14100698),stoneBefore+1);
+console.log('PASS: Reincarnation Stone costs exactly 500 gold for one stone; insufficient funds and repeat purchases do not grant items.');

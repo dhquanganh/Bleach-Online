@@ -1,0 +1,19 @@
+[
+  {
+    "id": "0011B341",
+    "name": "新年签到",
+    "tName": "New Year Beast",
+    "desc": "1. Single top-up will randomly give you gold or fund giftpack. Single giftpack can be claimed unlimitedly.\n2. Rewards won't stack, so don’t forget to claim your rewards when the button is lit.\n3. Shoot arrows towards New Year Beasts to randomly get rewards, each shot will consume 1 arrow.\n4. When you’ve topped up for a certain amount, you can get corresponding giftpacks and they'll reset on 0:00 at midnight.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "onceFund": "[{\"index\" : 0, \"awardId\" : 21403779, \"arrow\" : 1, \"gold\" : 200,\"text\":\"50-100\"}, {\"index\" : 1, \"awardId\" : 21403780, \"arrow\" : 2, \"gold\" : 800,\"text\":\"100-200\"}, {\"index\" : 2, \"awardId\" : 21403781, \"arrow\" : 4, \"gold\" : 2000,\"text\":\"200-400\"}, {\"index\" : 3, \"awardId\" : 21403782, \"arrow\" : 10, \"gold\" : 4000,\"text\":\"500-1000\"}]",
+    "dailyFund": "[{\"index\" : 4, \"awardId\" : 21403783, \"gold\" : 1000}, {\"index\" : 5, \"awardId\" : 21403784, \"gold\" : 2000}, {\"index\" : 6, \"awardId\" : 21403785, \"gold\" : 5000}, {\"index\" : 7, \"awardId\" : 21403786, \"gold\" : 8000}]",
+    "activityFund": "{\"index\" : 8, \"gold\" : 8000, \"petID\" : 1213,\"showId\":1213001}",
+    "arrowIndex": 9,
+    "arrowAwards": "[{\"awardId\" : 21403787, \"rate\" : 12}, {\"awardId\" : 21403788, \"rate\" : 10}, {\"awardId\" : 21403789, \"rate\" : 12}, {\"awardId\" : 21403790, \"rate\" : 12}, {\"awardId\" : 21403791, \"rate\" : 12}, {\"awardId\" : 21403792, \"rate\" : 12}, {\"awardId\" : 21403793, \"rate\" : 12}, {\"awardId\" : 21403794, \"rate\" : 6}, {\"awardId\" : 21403795, \"rate\" : 12}]",
+    "dayRechargeIndex": 10,
+    "totalRechargeIndex": 11,
+    "arrowId": 14100705
+  }
+]

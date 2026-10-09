@@ -1,0 +1,18 @@
+{
+  "currencyID": 14900001,
+  "currencyName": "Nguyên thạch",
+  "offers": [
+    {
+      "id": 20900001,
+      "model": 1,
+      "itemID": 14130055,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    }
+  ]
+}

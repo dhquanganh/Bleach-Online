@@ -1,0 +1,12 @@
+[
+  {
+    "id": "00002714",
+    "name": "Level Gift Pack",
+    "front": "Super Battle Power Surpasses All",
+    "middle": "At the end of event at Midnight, top 5 Battle Power players will receive one Battle Power Gift Pack (Reward will be sent via email). At the same time, players who reached the target Battle Power will also get Designated Battle Power Gift Pack.",
+    "back": "2",
+    "leaderID": 0,
+    "awardId": 20001,
+    "text": "[{\"key\":2,\"value\":[30000036],\"prompt\":\"Lv2\"},{\"key\":3,\"value\":[30000037],\"prompt\":\"Lv3\"},{\"key\":4,\"value\":[30000038],\"prompt\":\"Lv4\"},{\"key\":5,\"value\":[30000039],\"prompt\":\"Lv5\"},{\"key\":6,\"value\":[30000040],\"prompt\":\"Lv6\"}]"
+  }
+]

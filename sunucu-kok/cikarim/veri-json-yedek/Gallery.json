@@ -1,0 +1,27 @@
+[
+  {
+    "id": "000DE2B1",
+    "name": "百宝箱",
+    "tName": "百宝箱",
+    "desc": "1. Players will have free draws each day and items will be refreshed after each draw.\n2. All event data will be refreshed on 0:00 at midnight except the points you get in the event;\n3. Uncovering reward zones will consume gold and you're required to refresh before you uncover them. The action can't be reverted.\n4. You'll get 1 point each time you spend 1 gold, and you can use points to exchange items.\n",
+    "tip": "5",
+    "price": 0,
+    "imageID": 900001,
+    "extractTenIndex": "{\"index\":60,\"awardId\":[20406200,20406201,20406202,20406203,20406204]}",
+    "extractFiftyIndex": "{\"index\":61,\"rewards\":[{\"awardId\":20406205,\"rate\":1500},{\"awardId\":20406206,\"rate\":1500},{\"awardId\":20406207,\"rate\":1500},{\"awardId\":20406208,\"rate\":1000},{\"awardId\":20406209,\"rate\":2500},{\"awardId\":20406210,\"rate\":2500},{\"awardId\":20406211,\"rate\":2500},{\"awardId\":20406212,\"rate\":2500},{\"awardId\":20406213,\"rate\":2000},{\"awardId\":20406214,\"rate\":2000},{\"awardId\":20406215,\"rate\":2000},{\"awardId\":20406216,\"rate\":2000},{\"awardId\":20406217,\"rate\":2000},{\"awardId\":20406218,\"rate\":1500},{\"awardId\":20406219,\"rate\":1500},{\"awardId\":20406220,\"rate\":1500},{\"awardId\":20406221,\"rate\":3000},{\"awardId\":20406222,\"rate\":3000},{\"awardId\":20406223,\"rate\":3000},{\"awardId\":20406224,\"rate\":3000}]}",
+    "scoreIndex": "{\"index\":62,\"rewards\":[{\"awardId\":20406225,\"rate\":50},{\"awardId\":20406226,\"rate\":50},{\"awardId\":20406227,\"rate\":50},{\"awardId\":20406228,\"rate\":50},{\"awardId\":20406229,\"rate\":400},{\"awardId\":20406230,\"rate\":400},{\"awardId\":20406231,\"rate\":400},{\"awardId\":20406232,\"rate\":400},{\"awardId\":20406233,\"rate\":400},{\"awardId\":20406234,\"rate\":400},{\"awardId\":20406235,\"rate\":400},{\"awardId\":20406236,\"rate\":100},{\"awardId\":20406237,\"rate\":100},{\"awardId\":20406238,\"rate\":100},{\"awardId\":20406239,\"rate\":100},{\"awardId\":20406240,\"rate\":100},{\"awardId\":20406241,\"rate\":100},{\"awardId\":20406242,\"rate\":100},{\"awardId\":20406243,\"rate\":400},{\"awardId\":20406244,\"rate\":400}]}",
+    "freeTimeIndex": "{\"index\":63,\"rewards\":[{\"awardId\":20406245,\"rate\":1},{\"awardId\":20406246,\"rate\":2},{\"awardId\":20406247,\"rate\":2},{\"awardId\":20406248,\"rate\":1},{\"awardId\":20406249,\"rate\":45},{\"awardId\":20406250,\"rate\":45},{\"awardId\":20406251,\"rate\":45},{\"awardId\":20406252,\"rate\":15},{\"awardId\":20406253,\"rate\":15},{\"awardId\":20406254,\"rate\":15},{\"awardId\":20406255,\"rate\":15},{\"awardId\":20406256,\"rate\":15},{\"awardId\":20406257,\"rate\":45},{\"awardId\":20406258,\"rate\":45},{\"awardId\":20406259,\"rate\":45},{\"awardId\":20406260,\"rate\":45}]}",
+    "freeTime": "{\"index\":64,\"rewards\":[{\"awardId\":20406261,\"rate\":5},{\"awardId\":20406262,\"rate\":5},{\"awardId\":20406263,\"rate\":5},{\"awardId\":20406264,\"rate\":4},{\"awardId\":20406265,\"rate\":5},{\"awardId\":20406266,\"rate\":1},{\"awardId\":20406267,\"rate\":5}]}",
+    "disCount": "[{\"index\":1,\"award\":20406268,\"costScore\":100},{\"index\":2,\"award\":20406269,\"costScore\":1000},{\"index\":3,\"award\":20406270,\"costScore\":1500},{\"index\":4,\"award\":20406271,\"costScore\":3000},{\"index\":5,\"award\":20406272,\"costScore\":5000},{\"index\":6,\"award\":20406273,\"costScore\":10000},{\"index\":7,\"award\":20406274,\"costScore\":14000},{\"index\":8,\"award\":20406275,\"costScore\":14000},{\"index\":9,\"award\":20406276,\"costScore\":20000}]",
+    "f12": "{\"index\":80,\"cost\":20}",
+    "f13": 81,
+    "f14": 82,
+    "f15": "{\"index\":83,\"cost\":10}",
+    "f16": "{\"index\":84,\"cost\":[130,1250,3600]}",
+    "f17": 85,
+    "f18": 86,
+    "f19": 2,
+    "f20": 90,
+    "f21": "[\"Zone Hilangkan Bleue\",\"Zone Hilangkan Violette\",\"Zone Hilangkan Dorée\"]"
+  }
+]

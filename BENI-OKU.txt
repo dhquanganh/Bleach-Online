@@ -1,0 +1,33 @@
+BLEACH ONLINE - Yerel Surum (Tasinabilir)
+==========================================
+
+NASIL OYNANIR
+-------------
+1. Bu klasoru oldugu gibi bilgisayarina kopyala (nereye olursa olur).
+2. OYUNU-BASLAT.bat dosyasina cift tikla.
+3. Acilan menuden dil sec (1-9, 0, A, B): Ingilizce, Turkce, Almanca,
+   Fransizca, Ispanyolca, Portekizce, Italyanca, Rusca, Endonezce,
+   Vietnamca, Japonca, Cince. 15 saniye beklersen Ingilizce acilir.
+4. Bu kadar. Oyun kendi kendine acilir.
+
+KURULUM GEREKMEZ
+----------------
+- Node.js kurmana GEREK YOK  (klasordeki node\ icinde gelir)
+- Flash kurmana GEREK YOK     (oyun\runtime icinde Flash 22 gomulu gelir)
+- Internet GEREKMEZ           (her sey bilgisayarinda calisir)
+
+Ilk tiklamada iki kucuk siyah pencere (sunucular) acilir ve kucultulur,
+ardindan oyun penceresi gelir. Oyunu kapatinca o iki pencere de kapanir.
+Tekrar oynamak icin yine ayni OYUNU-BASLAT.bat dosyasina tikla.
+
+WINDOWS UYARISI
+---------------
+Windows "Bilinmeyen yayimci" uyarisi verirse: "Daha fazla bilgi" -> "Yine de calistir".
+Antivirus electron.exe'yi sorarsa izin ver (guvenli, oyun motoru).
+
+SORUN OLURSA
+------------
+- Oyun acilmadi / beyaz kaldi: OYUNU-BASLAT.bat'i kapatip tekrar ac.
+- "Port kullanimda" gibi bir sey: bilgisayari yeniden baslatip tekrar dene.
+
+Iyi oyunlar!

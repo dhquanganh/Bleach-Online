@@ -1,0 +1,14 @@
+[
+  {
+    "id": "00989681",
+    "lotteryConsume": "{\"type\":0,\"code\":0,\"amount\":300000}"
+  },
+  {
+    "id": "00989682",
+    "lotteryConsume": "{\"type\":0,\"code\":1,\"amount\":100}"
+  },
+  {
+    "id": "00989683",
+    "lotteryConsume": "{\"type\":0,\"code\":1,\"amount\":100}"
+  }
+]

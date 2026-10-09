@@ -1,0 +1,2127 @@
+{
+ "cevap": {
+  "0x01548002": [
+   "0x01458002"
+  ],
+  "0x01810000": [
+   "0x01180000"
+  ],
+  "0x01810100": [
+   "0x01180101"
+  ],
+  "0x01810101": [
+   "0x01180104"
+  ],
+  "0x01810102": [
+   "0x01180103"
+  ],
+  "0x01810105": [
+   "0x01180105"
+  ],
+  "0x01810200": [
+   "0x01180200"
+  ],
+  "0x01810201": [
+   "0x01180201"
+  ],
+  "0x01810202": [
+   "0x01180202"
+  ],
+  "0x01810203": [
+   "0x01180203"
+  ],
+  "0x01810204": [
+   "0x01180204"
+  ],
+  "0x01810205": [
+   "0x01180205"
+  ],
+  "0x01810206": [
+   "0x01180206"
+  ],
+  "0x01810207": [
+   "0x01180207"
+  ],
+  "0x01810208": [
+   "0x01180208"
+  ],
+  "0x01810209": [
+   "0x01180209"
+  ],
+  "0x0181020a": [
+   "0x0118020a"
+  ],
+  "0x0181020b": [
+   "0x0118020b"
+  ],
+  "0x0181020c": [
+   "0x0118020c"
+  ],
+  "0x0181020d": [
+   "0x0118020d"
+  ],
+  "0x0181020e": [
+   "0x0118020e"
+  ],
+  "0x0181020f": [
+   "0x0118020f"
+  ],
+  "0x01810210": [
+   "0x01180210"
+  ],
+  "0x01810211": [
+   "0x01180212"
+  ],
+  "0x01810213": [
+   "0x01180213"
+  ],
+  "0x01810215": [
+   "0x01180215"
+  ],
+  "0x01810300": [
+   "0x01180300"
+  ],
+  "0x01810400": [
+   "0x01180400"
+  ],
+  "0x01810500": [
+   "0x01180501"
+  ],
+  "0x01810501": [
+   "0x01180502"
+  ],
+  "0x01810502": [
+   "0x01180503"
+  ],
+  "0x01810504": [
+   "0x01180504"
+  ],
+  "0x01810505": [
+   "0x01180505"
+  ],
+  "0x01810506": [
+   "0x01180506"
+  ],
+  "0x01810600": [
+   "0x01180600"
+  ],
+  "0x01810601": [
+   "0x01180601"
+  ],
+  "0x01810602": [
+   "0x01180602"
+  ],
+  "0x01810701": [
+   "0x01180701"
+  ],
+  "0x01810800": [
+   "0x01180800"
+  ],
+  "0x01810801": [
+   "0x01180801"
+  ],
+  "0x01810802": [
+   "0x01180802"
+  ],
+  "0x01810900": [
+   "0x01180900"
+  ],
+  "0x01810a01": [
+   "0x01180a01"
+  ],
+  "0x01810a02": [
+   "0x01180a02"
+  ],
+  "0x01810a03": [
+   "0x01180a03"
+  ],
+  "0x01810a04": [
+   "0x01180a04"
+  ],
+  "0x01810a05": [
+   "0x01180a05"
+  ],
+  "0x01810a06": [
+   "0x01180a07"
+  ],
+  "0x01810a07": [
+   "0x01180a08"
+  ],
+  "0x01810b00": [
+   "0x01180b00"
+  ],
+  "0x01810b01": [
+   "0x01180b01"
+  ],
+  "0x01810b02": [
+   "0x01180b02"
+  ],
+  "0x01810b03": [
+   "0x01180b03"
+  ],
+  "0x01810b04": [
+   "0x01180b04"
+  ],
+  "0x01810b05": [
+   "0x01180b05"
+  ],
+  "0x01810b06": [
+   "0x01180b06"
+  ],
+  "0x01810c00": [
+   "0x01180c00"
+  ],
+  "0x01810c01": [
+   "0x01180c01"
+  ],
+  "0x01810c02": [
+   "0x01180c02"
+  ],
+  "0x01810c03": [
+   "0x01180c03"
+  ],
+  "0x01810d00": [
+   "0x01180d00"
+  ],
+  "0x01810e00": [
+   "0x01180e00"
+  ],
+  "0x01810e01": [
+   "0x01180e01"
+  ],
+  "0x01810e02": [
+   "0x01180e02"
+  ],
+  "0x01810e03": [
+   "0x01180e03"
+  ],
+  "0x01810e04": [
+   "0x01180e04"
+  ],
+  "0x01810e05": [
+   "0x01180e05"
+  ],
+  "0x01810e06": [
+   "0x01180e06"
+  ],
+  "0x01810e07": [
+   "0x01180e07"
+  ],
+  "0x01810e08": [
+   "0x01180e08"
+  ],
+  "0x01810e09": [
+   "0x01180e09"
+  ],
+  "0x01810e10": [
+   "0x01180e10"
+  ],
+  "0x01810f00": [
+   "0x01180f00"
+  ],
+  "0x01810f01": [
+   "0x01180f08"
+  ],
+  "0x01810f03": [
+   "0x01180f05"
+  ],
+  "0x01810f07": [
+   "0x01180f07"
+  ],
+  "0x01811001": [
+   "0x01181001"
+  ],
+  "0x01811002": [
+   "0x01181002"
+  ],
+  "0x01811003": [
+   "0x01181003"
+  ],
+  "0x01811004": [
+   "0x01181004"
+  ],
+  "0x01811005": [
+   "0x01181005"
+  ],
+  "0x01811006": [
+   "0x01181006"
+  ],
+  "0x01811007": [
+   "0x01181007"
+  ],
+  "0x01811008": [
+   "0x01181008"
+  ],
+  "0x01811009": [
+   "0x01181009"
+  ],
+  "0x0181100a": [
+   "0x0118100a"
+  ],
+  "0x01811100": [
+   "0x01181100"
+  ],
+  "0x01811101": [
+   "0x01181101"
+  ],
+  "0x01811102": [
+   "0x01181102"
+  ],
+  "0x01811200": [
+   "0x01181200"
+  ],
+  "0x01811201": [
+   "0x01181201"
+  ],
+  "0x01811301": [
+   "0x01181301"
+  ],
+  "0x01811302": [
+   "0x01181302"
+  ],
+  "0x01811303": [
+   "0x01181303"
+  ],
+  "0x01811304": [
+   "0x01181304"
+  ],
+  "0x01811400": [
+   "0x01181400"
+  ],
+  "0x01811404": [
+   "0x01181404"
+  ],
+  "0x01811405": [
+   "0x01181405"
+  ],
+  "0x01811406": [
+   "0x01181406"
+  ],
+  "0x01811407": [
+   "0x01181407"
+  ],
+  "0x01811500": [
+   "0x01181500"
+  ],
+  "0x01811501": [
+   "0x01181501"
+  ],
+  "0x01811502": [
+   "0x01181502"
+  ],
+  "0x01811503": [
+   "0x01181503"
+  ],
+  "0x01811504": [
+   "0x01181504"
+  ],
+  "0x01811600": [
+   "0x01181600"
+  ],
+  "0x01811601": [
+   "0x01181601"
+  ],
+  "0x01811602": [
+   "0x01181602"
+  ],
+  "0x01811603": [
+   "0x01181603"
+  ],
+  "0x01811900": [
+   "0x01181900"
+  ],
+  "0x01811901": [
+   "0x01181901"
+  ],
+  "0x01811902": [
+   "0x01181902"
+  ],
+  "0x01811903": [
+   "0x01181903"
+  ],
+  "0x01811904": [
+   "0x01181904"
+  ],
+  "0x01811905": [
+   "0x01181905"
+  ],
+  "0x01811906": [
+   "0x01181908"
+  ],
+  "0x01811a00": [
+   "0x01181a00"
+  ],
+  "0x01811a01": [
+   "0x01181a01"
+  ],
+  "0x01811a02": [
+   "0x01181a02"
+  ],
+  "0x01811a04": [
+   "0x01181a04"
+  ],
+  "0x01811b00": [
+   "0x01181b00"
+  ],
+  "0x01811b01": [
+   "0x01181b01"
+  ],
+  "0x01811b02": [
+   "0x01181b02"
+  ],
+  "0x01811b03": [
+   "0x01181b03"
+  ],
+  "0x01811e01": [
+   "0x01181e01"
+  ],
+  "0x01811f00": [
+   "0x01181f00"
+  ],
+  "0x01811f01": [
+   "0x01181f01"
+  ],
+  "0x01811f02": [
+   "0x01181f02"
+  ],
+  "0x01811f03": [
+   "0x01181f03"
+  ],
+  "0x01811f04": [
+   "0x01181f04"
+  ],
+  "0x01811f05": [
+   "0x01181f09"
+  ],
+  "0x01812000": [
+   "0x01182000"
+  ],
+  "0x01812001": [
+   "0x01182001"
+  ],
+  "0x01812002": [
+   "0x01182002"
+  ],
+  "0x01812003": [
+   "0x01182003"
+  ],
+  "0x01812100": [
+   "0x01182100"
+  ],
+  "0x01812101": [
+   "0x01182101"
+  ],
+  "0x01812200": [
+   "0x01182200"
+  ],
+  "0x01812300": [
+   "0x01182300"
+  ],
+  "0x01812302": [
+   "0x01182302"
+  ],
+  "0x01812303": [
+   "0x01182303"
+  ],
+  "0x01812304": [
+   "0x01182304"
+  ],
+  "0x01812401": [
+   "0x01182401"
+  ],
+  "0x01812402": [
+   "0x01182402"
+  ],
+  "0x01812500": [
+   "0x01182500"
+  ],
+  "0x01812501": [
+   "0x01182501"
+  ],
+  "0x01812502": [
+   "0x01182502"
+  ],
+  "0x01812503": [
+   "0x01182503"
+  ],
+  "0x01812504": [
+   "0x01182504"
+  ],
+  "0x01812505": [
+   "0x01182505"
+  ],
+  "0x01812506": [
+   "0x01182506"
+  ],
+  "0x01812507": [
+   "0x01182507"
+  ],
+  "0x01812508": [
+   "0x01182508"
+  ],
+  "0x01812509": [
+   "0x01182509"
+  ],
+  "0x01812510": [
+   "0x01182510"
+  ],
+  "0x01812511": [
+   "0x01182511"
+  ],
+  "0x01812512": [
+   "0x01182512"
+  ],
+  "0x01812513": [
+   "0x01182513"
+  ],
+  "0x01812514": [
+   "0x01182514"
+  ],
+  "0x01812515": [
+   "0x01182515"
+  ],
+  "0x01812516": [
+   "0x01182516"
+  ],
+  "0x01812517": [
+   "0x01182517"
+  ],
+  "0x01812518": [
+   "0x01182518"
+  ],
+  "0x01812519": [
+   "0x01182519"
+  ],
+  "0x01812521": [
+   "0x01182521"
+  ],
+  "0x01812522": [
+   "0x01182522"
+  ],
+  "0x01812523": [
+   "0x01182523"
+  ],
+  "0x01812524": [
+   "0x01182524"
+  ],
+  "0x01812526": [
+   "0x01182526"
+  ],
+  "0x01812527": [
+   "0x01182527"
+  ],
+  "0x01812528": [
+   "0x01182528"
+  ],
+  "0x01812529": [
+   "0x01182529"
+  ],
+  "0x01812600": [
+   "0x01182600"
+  ],
+  "0x01812605": [
+   "0x01182605"
+  ],
+  "0x01812606": [
+   "0x01182606"
+  ],
+  "0x01812607": [
+   "0x01182607"
+  ],
+  "0x01812700": [
+   "0x01182700"
+  ],
+  "0x01812900": [
+   "0x01182900"
+  ],
+  "0x01812901": [
+   "0x01182901"
+  ],
+  "0x01813400": [
+   "0x01183400"
+  ],
+  "0x01813402": [
+   "0x01183402"
+  ],
+  "0x01813500": [
+   "0x01183500"
+  ],
+  "0x01813501": [
+   "0x01183501"
+  ],
+  "0x01813502": [
+   "0x01183502"
+  ],
+  "0x01813503": [
+   "0x01183503"
+  ],
+  "0x01813504": [
+   "0x01183504"
+  ],
+  "0x01813505": [
+   "0x01183505"
+  ],
+  "0x01813801": [
+   "0x01183801"
+  ],
+  "0x01813802": [
+   "0x01183802"
+  ],
+  "0x01813803": [
+   "0x01183803"
+  ],
+  "0x01813901": [
+   "0x01183901"
+  ],
+  "0x01813902": [
+   "0x01183902"
+  ],
+  "0x01813903": [
+   "0x01183903"
+  ],
+  "0x01813904": [
+   "0x01183904"
+  ],
+  "0x01813b00": [
+   "0x01183b00"
+  ],
+  "0x01813b01": [
+   "0x01183b01"
+  ],
+  "0x01813b02": [
+   "0x01183b02"
+  ],
+  "0x01813d01": [
+   "0x01183d01"
+  ],
+  "0x01813d02": [
+   "0x01183d02"
+  ],
+  "0x01813d03": [
+   "0x01183d03"
+  ],
+  "0x01813d04": [
+   "0x01183d04"
+  ],
+  "0x01813d05": [
+   "0x01183d05"
+  ],
+  "0x01813d06": [
+   "0x01183d06"
+  ],
+  "0x01813d07": [
+   "0x01183d07"
+  ],
+  "0x01813d09": [
+   "0x01183d09"
+  ],
+  "0x01813d0a": [
+   "0x01183d0a"
+  ],
+  "0x01813d0b": [
+   "0x01183d0b"
+  ],
+  "0x01813d0c": [
+   "0x01183d0c"
+  ],
+  "0x01813d0d": [
+   "0x01183d0d"
+  ],
+  "0x01813d0e": [
+   "0x01183d0e"
+  ],
+  "0x01813d11": [
+   "0x01183d11"
+  ],
+  "0x01814101": [
+   "0x01184101"
+  ],
+  "0x01814102": [
+   "0x01184102"
+  ],
+  "0x01814103": [
+   "0x01184103"
+  ],
+  "0x01814104": [
+   "0x01184104"
+  ],
+  "0x01814105": [
+   "0x01184105"
+  ],
+  "0x01814200": [
+   "0x01184200"
+  ],
+  "0x01814202": [
+   "0x01184202"
+  ],
+  "0x01814214": [
+   "0x01184214"
+  ],
+  "0x01814228": [
+   "0x01184228"
+  ],
+  "0x01814229": [
+   "0x01184229"
+  ],
+  "0x0181423c": [
+   "0x0118423c"
+  ],
+  "0x0181423d": [
+   "0x0118423d"
+  ],
+  "0x0181423e": [
+   "0x0118423e"
+  ],
+  "0x0181423f": [
+   "0x0118423f"
+  ],
+  "0x01814240": [
+   "0x01184240"
+  ],
+  "0x01814241": [
+   "0x01184241"
+  ],
+  "0x01814242": [
+   "0x01184242"
+  ],
+  "0x01814244": [
+   "0x01184244"
+  ],
+  "0x01814301": [
+   "0x01184301"
+  ],
+  "0x01814302": [
+   "0x01184302"
+  ],
+  "0x01814303": [
+   "0x01184303"
+  ],
+  "0x01814304": [
+   "0x01184304"
+  ],
+  "0x01814400": [
+   "0x01184400"
+  ],
+  "0x01814401": [
+   "0x01184401"
+  ],
+  "0x01814402": [
+   "0x01184402"
+  ],
+  "0x01815100": [
+   "0x01185100"
+  ],
+  "0x01815101": [
+   "0x01185101"
+  ],
+  "0x01815200": [
+   "0x01185200"
+  ],
+  "0x01815201": [
+   "0x01185201"
+  ],
+  "0x01815203": [
+   "0x01185203"
+  ],
+  "0x01815204": [
+   "0x01185204"
+  ],
+  "0x01815207": [
+   "0x01185207"
+  ],
+  "0x01816001": [
+   "0x01186003"
+  ],
+  "0x01816002": [
+   "0x01186004"
+  ],
+  "0x01816003": [
+   "0x01186006"
+  ],
+  "0x01816100": [
+   "0x01186100"
+  ],
+  "0x01816101": [
+   "0x01186105"
+  ],
+  "0x01816102": [
+   "0x01186106"
+  ],
+  "0x01816103": [
+   "0x01186107"
+  ],
+  "0x01816104": [
+   "0x01186108"
+  ],
+  "0x01816105": [
+   "0x01186109"
+  ],
+  "0x01816106": [
+   "0x0118610a"
+  ],
+  "0x01816107": [
+   "0x0118610c"
+  ],
+  "0x01816108": [
+   "0x0118610d"
+  ],
+  "0x01816109": [
+   "0x0118610e"
+  ],
+  "0x0181610a": [
+   "0x0118610f"
+  ],
+  "0x0181610b": [
+   "0x01186111"
+  ],
+  "0x01816400": [
+   "0x01186400"
+  ],
+  "0x01816401": [
+   "0x01186401"
+  ],
+  "0x01816600": [
+   "0x01186600"
+  ],
+  "0x01816601": [
+   "0x01186601"
+  ],
+  "0x01816602": [
+   "0x01186602"
+  ],
+  "0x01816701": [
+   "0x01186701"
+  ],
+  "0x01816800": [
+   "0x01186800"
+  ],
+  "0x01816900": [
+   "0x01186900"
+  ],
+  "0x01816b00": [
+   "0x01186b00"
+  ],
+  "0x01816b01": [
+   "0x01186b01"
+  ],
+  "0x01816c00": [
+   "0x01186c00"
+  ],
+  "0x01816c01": [
+   "0x01186c01"
+  ],
+  "0x01816c02": [
+   "0x01186c02"
+  ],
+  "0x01816c03": [
+   "0x01186c03"
+  ],
+  "0x01816c04": [
+   "0x01186c04"
+  ],
+  "0x01816c05": [
+   "0x01186c05"
+  ],
+  "0x01816c06": [
+   "0x01186c06"
+  ],
+  "0x01816c07": [
+   "0x01186c07"
+  ],
+  "0x01816c08": [
+   "0x01186c08"
+  ],
+  "0x01816c0a": [
+   "0x01186c0a"
+  ],
+  "0x01816c0b": [
+   "0x01186c0b"
+  ],
+  "0x01816c10": [
+   "0x01186c10"
+  ],
+  "0x01816c11": [
+   "0x01186c11"
+  ],
+  "0x01816c12": [
+   "0x01186c12"
+  ],
+  "0x01816c13": [
+   "0x01186c13"
+  ],
+  "0x01816c14": [
+   "0x01186c14"
+  ],
+  "0x01816c15": [
+   "0x01186c15"
+  ],
+  "0x01816d00": [
+   "0x01186d00"
+  ],
+  "0x01816d01": [
+   "0x01186d01"
+  ],
+  "0x01816d02": [
+   "0x01186d02"
+  ],
+  "0x01816d03": [
+   "0x01186d03"
+  ],
+  "0x01816e00": [
+   "0x01186e00"
+  ],
+  "0x01816f00": [
+   "0x01186f00"
+  ],
+  "0x01816f01": [
+   "0x01186f01"
+  ],
+  "0x01816f02": [
+   "0x01186f02"
+  ],
+  "0x01816f03": [
+   "0x01186f03"
+  ],
+  "0x01816f06": [
+   "0x01186f06"
+  ],
+  "0x01816f07": [
+   "0x01186f07"
+  ],
+  "0x01816f08": [
+   "0x01186f08"
+  ],
+  "0x01816f09": [
+   "0x01186f09"
+  ],
+  "0x01816f0a": [
+   "0x01186f0a"
+  ],
+  "0x01816f0b": [
+   "0x01186f0b"
+  ],
+  "0x01816f0c": [
+   "0x01186f0c"
+  ],
+  "0x01816f0d": [
+   "0x01186f0d"
+  ],
+  "0x01817000": [
+   "0x01187000"
+  ],
+  "0x01817001": [
+   "0x01187001"
+  ],
+  "0x01817002": [
+   "0x01187002"
+  ],
+  "0x01817003": [
+   "0x01187003"
+  ],
+  "0x01817100": [
+   "0x01187100"
+  ],
+  "0x01817101": [
+   "0x01187101"
+  ],
+  "0x01817102": [
+   "0x01187102"
+  ],
+  "0x01817103": [
+   "0x01187103"
+  ],
+  "0x01817104": [
+   "0x01187104"
+  ],
+  "0x01817200": [
+   "0x01187200"
+  ],
+  "0x01817201": [
+   "0x01187201"
+  ],
+  "0x01817202": [
+   "0x01187202"
+  ],
+  "0x01817203": [
+   "0x01187203"
+  ],
+  "0x01817204": [
+   "0x01187204"
+  ],
+  "0x01817300": [
+   "0x01187300"
+  ],
+  "0x01817301": [
+   "0x01187301"
+  ],
+  "0x01817302": [
+   "0x01187302"
+  ],
+  "0x01817303": [
+   "0x01187303"
+  ],
+  "0x01817304": [
+   "0x01187304"
+  ],
+  "0x01817305": [
+   "0x01187305"
+  ],
+  "0x01817400": [
+   "0x01187400"
+  ],
+  "0x01817401": [
+   "0x01187401"
+  ],
+  "0x01817402": [
+   "0x01187402"
+  ],
+  "0x01817403": [
+   "0x01187403"
+  ],
+  "0x01817404": [
+   "0x01187404"
+  ],
+  "0x01817405": [
+   "0x01187405"
+  ],
+  "0x01817406": [
+   "0x01187406"
+  ],
+  "0x01817407": [
+   "0x01187407"
+  ],
+  "0x01817408": [
+   "0x01187408"
+  ],
+  "0x01817500": [
+   "0x01187500"
+  ],
+  "0x01817501": [
+   "0x01187501"
+  ],
+  "0x01817600": [
+   "0x01187600"
+  ],
+  "0x01817601": [
+   "0x01187601"
+  ],
+  "0x01817602": [
+   "0x01187602"
+  ],
+  "0x01817603": [
+   "0x01187603"
+  ],
+  "0x01817605": [
+   "0x01187605"
+  ],
+  "0x01817606": [
+   "0x01187606"
+  ],
+  "0x01817607": [
+   "0x01187607"
+  ],
+  "0x01817608": [
+   "0x01187608"
+  ],
+  "0x01817801": [
+   "0x01187801"
+  ],
+  "0x01817802": [
+   "0x01187802"
+  ],
+  "0x01817803": [
+   "0x01187803"
+  ],
+  "0x01817804": [
+   "0x01187804"
+  ],
+  "0x01817900": [
+   "0x01187900"
+  ],
+  "0x01817901": [
+   "0x01187901"
+  ],
+  "0x01817902": [
+   "0x01187902"
+  ],
+  "0x01817903": [
+   "0x01187903"
+  ],
+  "0x01817904": [
+   "0x01187904"
+  ],
+  "0x01817a00": [
+   "0x01187a00"
+  ],
+  "0x01817a01": [
+   "0x01187a01"
+  ],
+  "0x01817a02": [
+   "0x01187a02"
+  ],
+  "0x01817b00": [
+   "0x01187b00"
+  ],
+  "0x01817b01": [
+   "0x01187b01"
+  ],
+  "0x01817b02": [
+   "0x01187b02"
+  ],
+  "0x01817b03": [
+   "0x01187b03"
+  ],
+  "0x01817b04": [
+   "0x01187b04"
+  ],
+  "0x01817b05": [
+   "0x01187b05"
+  ],
+  "0x01817b06": [
+   "0x01187b06"
+  ],
+  "0x01818000": [
+   "0x01188000"
+  ],
+  "0x01818001": [
+   "0x01188001"
+  ],
+  "0x01818002": [
+   "0x01188002"
+  ],
+  "0x01818003": [
+   "0x01188003"
+  ],
+  "0x01818005": [
+   "0x01188005"
+  ],
+  "0x01818006": [
+   "0x01188006"
+  ],
+  "0x01818007": [
+   "0x01188007"
+  ],
+  "0x01818008": [
+   "0x01188008"
+  ],
+  "0x01818300": [
+   "0x01188300"
+  ],
+  "0x01818301": [
+   "0x01188301"
+  ],
+  "0x01818302": [
+   "0x01188302"
+  ],
+  "0x01818400": [
+   "0x01188400"
+  ],
+  "0x01818401": [
+   "0x01188401"
+  ],
+  "0x01818402": [
+   "0x01188402"
+  ],
+  "0x01818403": [
+   "0x01188403"
+  ],
+  "0x01818500": [
+   "0x01188500"
+  ],
+  "0x01818501": [
+   "0x01188501"
+  ],
+  "0x01818502": [
+   "0x01188502"
+  ],
+  "0x01818503": [
+   "0x01188503"
+  ],
+  "0x01818600": [
+   "0x01188600"
+  ],
+  "0x01818601": [
+   "0x01188601"
+  ],
+  "0x01818700": [
+   "0x01188700"
+  ],
+  "0x01818701": [
+   "0x01188701"
+  ],
+  "0x01818702": [
+   "0x01188702"
+  ],
+  "0x01818800": [
+   "0x01188800"
+  ],
+  "0x01818801": [
+   "0x01188801"
+  ],
+  "0x01818802": [
+   "0x01188802"
+  ],
+  "0x01818803": [
+   "0x01188803"
+  ],
+  "0x01818900": [
+   "0x01188900"
+  ],
+  "0x01818a00": [
+   "0x01188a00"
+  ],
+  "0x01818a01": [
+   "0x01188a01"
+  ],
+  "0x01818a02": [
+   "0x01188a02"
+  ],
+  "0x01818a03": [
+   "0x01188a03"
+  ],
+  "0x01818a04": [
+   "0x01188a04"
+  ],
+  "0x01818a05": [
+   "0x01188a05"
+  ],
+  "0x01818a06": [
+   "0x01188a06"
+  ],
+  "0x01818a07": [
+   "0x01188a07"
+  ],
+  "0x01818a08": [
+   "0x01188a08"
+  ],
+  "0x01818b00": [
+   "0x01188b00"
+  ],
+  "0x01818b01": [
+   "0x01188b01"
+  ],
+  "0x01818b02": [
+   "0x01188b02"
+  ],
+  "0x01818b03": [
+   "0x01188b03"
+  ],
+  "0x01818b07": [
+   "0x01188b07"
+  ],
+  "0x01818c00": [
+   "0x01188c00"
+  ],
+  "0x01818c01": [
+   "0x01188c01"
+  ],
+  "0x01818c02": [
+   "0x01188c02"
+  ],
+  "0x01818c03": [
+   "0x01188c03"
+  ],
+  "0x01818c04": [
+   "0x01188c04"
+  ],
+  "0x01818c05": [
+   "0x01188c05"
+  ],
+  "0x01818c06": [
+   "0x01188c06"
+  ],
+  "0x01818d00": [
+   "0x01188d00"
+  ],
+  "0x01818d01": [
+   "0x01188d01"
+  ],
+  "0x01818d02": [
+   "0x01188d02"
+  ],
+  "0x0181a000": [
+   "0x0118a000"
+  ],
+  "0x0181a001": [
+   "0x0118a001"
+  ],
+  "0x0181a002": [
+   "0x0118a002"
+  ],
+  "0x0181a003": [
+   "0x0118a003"
+  ]
+ },
+ "onceki": {
+  "0x01180105": [
+   "0x01182305",
+   "0x01182306"
+  ],
+  "0x01180602": [
+   "0x01180f02"
+  ],
+  "0x01181002": [
+   "0x01180f06"
+  ],
+  "0x01181200": [
+   "0x01181202",
+   "0x01181203"
+  ],
+  "0x01182302": [
+   "0x01180301",
+   "0x01180f02"
+  ],
+  "0x01182303": [
+   "0x01182305"
+  ]
+ },
+ "loginPush": [
+  "0x01186500",
+  "0x01186700"
+ ],
+ "isim": {
+  "0x01548002": "PACKETID_CS_BattleStatistics",
+  "0x01458002": "PACKETID_SC_BattleStatistics",
+  "0x01810000": "PACKETID_CS_Login_StatusServerTransmitToken",
+  "0x01180000": "PACKETID_SC_Login_StatusServerTransmitTokenRet",
+  "0x01810100": "PACKETID_CS_CREATECHAR_CreateChar",
+  "0x01180101": "PACKETID_SC_CREATECHAR_CreateCharRet",
+  "0x01810101": "PACKETID_CS_Account_CharBaseAttributeReq",
+  "0x01180104": "PACKETID_SC_Account_CharBaseAttributeRet",
+  "0x01810102": "PACKETID_CS_Account_CharUpgradeReq",
+  "0x01180103": "PACKETID_SC_Account_CharUpgradeNtf",
+  "0x01810105": "PACKETID_CS_SmithyRequestColdTime",
+  "0x01180105": "PACKETID_SC_Account_CharBaseInfoUpdate",
+  "0x01810200": "PACKETID_CS_LOBBY_Enter_Town",
+  "0x01180200": "PACKETID_SC_Enter_Town",
+  "0x01810201": "PACKETID_CS_Enter_WorldMap",
+  "0x01180201": "PACKETID_SC_Enter_WorldMap",
+  "0x01810202": "PACKETID_CS_Enter_Hurdle",
+  "0x01180202": "PACKETID_SC_Enter_Hurdle",
+  "0x01810203": "PACKETID_CS_Enter_KillHeros",
+  "0x01180203": "PACKETID_SC_Enter_KillHeros",
+  "0x01810204": "PACKETID_CS_Enter_Jade",
+  "0x01180204": "PACKETID_SC_Enter_Jade",
+  "0x01810205": "PACKETID_CS_Enter_Tavern",
+  "0x01180205": "PACKETID_SC_Enter_Tavern",
+  "0x01810206": "PACKETID_CS_Enter_Arena",
+  "0x01180206": "PACKETID_SC_Enter_Arena",
+  "0x01810207": "PACKETID_CS_Enter_TreasureMap",
+  "0x01180207": "PACKETID_SC_Enter_TreasureMap",
+  "0x01810208": "PACKETID_CS_Enter_CityDefend",
+  "0x01180208": "PACKETID_SC_Enter_CityDefend",
+  "0x01810209": "PACKETID_CS_Enter_FightPet",
+  "0x01180209": "PACKETID_SC_Enter_FightPet",
+  "0x0181020a": "PACKETID_CS_Enter_OrganizationWar",
+  "0x0118020a": "PACKETID_SC_Enter_OrganizationWar",
+  "0x0181020b": "PACKETID_CS_Enter_Home",
+  "0x0118020b": "PACKETID_SC_Enter_Home",
+  "0x0181020c": "PACKETID_CS_Enter_TraitorAttack",
+  "0x0118020c": "PACKETID_SC_Enter_TraitorAttack",
+  "0x0181020d": "PACKETID_CS_Enter_SevenKing",
+  "0x0118020d": "PACKETID_SC_Enter_SevenKing",
+  "0x0181020e": "PACKETID_CS_Enter_TeamBattle",
+  "0x0118020e": "PACKETID_SC_Enter_TeamBattle",
+  "0x0181020f": "PACKETID_CS_Enter_TeamBattle_PVP",
+  "0x0118020f": "PACKETID_SC_Enter_TeamBattle_PVP",
+  "0x01810210": "PACKETID_CS_Enter_TeamBattle_PVE",
+  "0x01180210": "PACKETID_SC_Enter_TeamBattle_PVE",
+  "0x01810211": "PACKETID_CS_Enter_SkyTower",
+  "0x01180212": "PACKETID_SC_Enter_SkyTower",
+  "0x01810213": "PACKETID_CS_Enter_GongFuFight",
+  "0x01180213": "PACKETID_SC_Enter_GongFuFight",
+  "0x01810215": "PACKETID_CS_Enter_Pet",
+  "0x01180215": "PACKETID_SC_Enter_Pet",
+  "0x01810300": "PACKETID_CS_LOBBY_Town_Move",
+  "0x01180300": "PACKETID_SC_LOBBY_Town_NewRoleNtf",
+  "0x01810400": "PACKETID_CS_Chat_ChatInfo",
+  "0x01180400": "PACKETID_SC_Chat_ChatInfoRet",
+  "0x01810500": "PACKETID_CS_LOBBY_WorldMap_QueryChest",
+  "0x01180501": "PACKETID_SC_LOBBY_WorldMap_QueryChestRet",
+  "0x01810501": "PACKETID_CS_LOBBY_WorldMap_ReceiveChest",
+  "0x01180502": "PACKETID_SC_LOBBY_WorldMap_ReceiveChestRet",
+  "0x01810502": "PACKETID_CS_LOBBY_WorldMap_ResetFB",
+  "0x01180503": "PACKETID_SC_LOBBY_WorldMap_ResetFB",
+  "0x01810504": "PACKETID_CS_LOBBY_WorldMap_AutoBattle",
+  "0x01180504": "PACKETID_SC_LOBBY_WorldMap_ContinueAutoInfo",
+  "0x01810505": "PACKETID_CS_LOBBY_WorldMap_StopAutoBattle",
+  "0x01180505": "PACKETID_SC_LOBBY_WorldMap_AutoBattleInfo",
+  "0x01810506": "PACKETID_CS_LOBBY_WorldMap_GoldFastAutoBattle",
+  "0x01180506": "PACKETID_SC_LOBBY_WorldMap_AutoBattleFBInfo",
+  "0x01810600": "PACKETID_CS_LOBBY_Hurdle_EnterNextLayer",
+  "0x01180600": "PACKETID_SC_LOBBY_Hurdle_Assessment",
+  "0x01810601": "PACKETID_CS_LOBBY_Hurdle_QueryChest",
+  "0x01180601": "PACKETID_SC_LOBBY_Hurdle_QueryChestRet",
+  "0x01810602": "PACKETID_CS_LOBBY_Hurdle_ReceiveChest",
+  "0x01180602": "PACKETID_SC_LOBBY_Hurdle_ReceiveChestRet",
+  "0x01810701": "PACKETID_CS_LOBBY_KillHeros_ResetReq",
+  "0x01180701": "PACKETID_SC_LOBBY_KillHeros_ResetRet",
+  "0x01810800": "PACKETID_CS_MilitaryRank_MilitaryRankInfoReq",
+  "0x01180800": "PACKETID_SC_MilitaryRank_MilitaryRankInfoRet",
+  "0x01810801": "PACKETID_CS_MilitaryRank_Upgrade",
+  "0x01180801": "PACKETID_SC_MilitaryRank_UpgradeRet",
+  "0x01810802": "PACKETID_CS_MilitaryRank_ReceiveSalary",
+  "0x01180802": "PACKETID_SC_MilitaryRank_ReceiveSalaryRet",
+  "0x01810900": "PACKETID_CS_TacticalDeployment_ChangePositionReq",
+  "0x01180900": "PACKETID_SC_TacticalDeploymentChangePositonRet",
+  "0x01810a01": "PACKETID_CS_SkyTower_Challenge_Req",
+  "0x01180a01": "PACKETID_SC_SkyTower_Challenge_Ret",
+  "0x01810a02": "PACKETID_CS_SkyTower_BuyChallengeCount_Req",
+  "0x01180a02": "PACKETID_SC_SkyTower_BuyChallengeCount_Ret",
+  "0x01810a03": "PACKETID_CS_SkyTower_AutoBattle_Req",
+  "0x01180a03": "PACKETID_SC_SkyTower_AutoBattle_Ret",
+  "0x01810a04": "PACKETID_CS_SkyTower_AKeyPve_Req",
+  "0x01180a04": "PACKETID_SC_SkyTower_AKeyPve_Ret",
+  "0x01810a05": "PACKETID_CS_SkyTower_PvpReceiving_Req",
+  "0x01180a05": "PACKETID_SC_SkyTower_PvpReceiving_Ret",
+  "0x01810a06": "PACKETID_CS_SkyTower_ChestInfo_Req",
+  "0x01180a07": "PACKETID_SC_SkyTower_ChestInfo_Ret",
+  "0x01810a07": "PACKETID_CS_SkyTower_ReceiveChest_Req",
+  "0x01180a08": "PACKETID_SC_SkyTower_ReceiveChest_Ret",
+  "0x01810b00": "PACKETID_CS_GeneralStar_InfoReq",
+  "0x01180b00": "PACKETID_SC_GeneralStar_InforRet",
+  "0x01810b01": "PACKETID_CS_GeneralStar_UpgradeReq",
+  "0x01180b01": "PACKETID_SC_GeneralStar_UpgradeRet",
+  "0x01810b02": "PACKETID_CS_GeneralStar_ChangePageReq",
+  "0x01180b02": "PACKETID_SC_GeneralStarChangePageRet",
+  "0x01810b03": "PACKETID_CS_GeneralStar_PointReq",
+  "0x01180b03": "PACKETID_SC_GeneralStar_PointRet",
+  "0x01810b04": "PACKETID_CS_GeneralStar_SkillUpgradeReq",
+  "0x01180b04": "PACKETID_SC_GeneralStar_SkillUpgradeRet",
+  "0x01810b05": "PACKETID_CS_GeneralStar_SkillListReq",
+  "0x01180b05": "PACKETID_SC_GeneralStar_SkillListRet",
+  "0x01810b06": "PACKETID_CS_GeneralStar_ChangeSkillReq",
+  "0x01180b06": "PACKETID_SC_GeneralStar_ChangeSkillRet",
+  "0x01810c00": "PACKETID_CS_TavernMoraReq",
+  "0x01180c00": "PACKETID_SC_TavernMoraRet",
+  "0x01810c01": "PACKETID_CS_TavernNormalMoraReq",
+  "0x01180c01": "PACKETID_SC_TavernNormalMoraRet",
+  "0x01810c02": "PACKETID_CS_TavernRecruitReq",
+  "0x01180c02": "PACKETID_SC_TavernRecruitRet",
+  "0x01810c03": "PACKETID_CS_TavernChangeCardReq",
+  "0x01180c03": "PACKETID_SC_TavernChangeCardRet",
+  "0x01810d00": "PACKETID_CS_Equip_Make",
+  "0x01180d00": "PACKETID_SC_Equip_Make",
+  "0x01810e00": "PACKETID_CS_SmithyStrengthenRequest",
+  "0x01180e00": "PACKETID_SC_SmithyStrengthenResponse",
+  "0x01810e01": "PACKETID_CS_SmithyRefinedRequest",
+  "0x01180e01": "PACKETID_SC_SmithyRefinedResponse",
+  "0x01810e02": "PACKETID_CS_SmithyInheritRequest",
+  "0x01180e02": "PACKETID_SC_SmithyInheritResponse",
+  "0x01810e03": "PACKETID_CS_SmithyRefinedConfirmRequest",
+  "0x01180e03": "PACKETID_SC_SmithyRefinedConfirmResponse",
+  "0x01810e04": "PACKETID_CS_SmithyStrengthClearTime",
+  "0x01180e04": "PACKETID_SC_SmithyStrengthClearTime",
+  "0x01810e05": "PACKETID_CS_Equip_Advanced",
+  "0x01180e05": "PACKETID_SC_Equip_Advanced",
+  "0x01810e06": "PACKETID_CS_Equip_GetSkill",
+  "0x01180e06": "PACKETID_SC_Equip_GetSkill",
+  "0x01810e07": "PACKETID_CS_FlushSpirit_Req",
+  "0x01180e07": "PACKETID_SC_FlushSpirit_Ret",
+  "0x01810e08": "PACKETID_CS_FlushSpiritBuyStone_Req",
+  "0x01180e08": "PACKETID_SC_FlushSpiritBuyStone_Ret",
+  "0x01810e09": "PACKETID_CS_FlushSpiritFlush_Req",
+  "0x01180e09": "PACKETID_SC_FlushSpiritFlush_Ret",
+  "0x01810e10": "PACKETID_CS_Punch_Req",
+  "0x01180e10": "PACKETID_SC_Punch_Ret",
+  "0x01810f00": "PACKETID_CS_Backpack_LoadBag",
+  "0x01180f00": "PACKETID_SC_Backpack_LoadBagResult",
+  "0x01810f01": "PACKETID_CS_Backpack_UseAppliance",
+  "0x01180f08": "PACKETID_SC_Backpack_UseAppliance",
+  "0x01810f03": "PACKETID_CS_Backpack_SellItem",
+  "0x01180f05": "PACKETID_SC_Backpack_SellItem",
+  "0x01810f07": "PACKETID_CS_Backpack_DepotToBag",
+  "0x01180f07": "PACKETID_SC_Backpack_DepotToBag",
+  "0x01811001": "PACKETID_CS_Heros_Dismount",
+  "0x01181001": "PACKETID_SC_Heros_Dismount",
+  "0x01811002": "PACKETID_CS_Heros_Mount",
+  "0x01181002": "PACKETID_SC_Heros_Mount",
+  "0x01811003": "PACKETID_CS_Heros_DeleteHero",
+  "0x01181003": "PACKETID_SC_Heros_DeleteHero",
+  "0x01811004": "PACKETID_CS_Heros_OneKeySwap",
+  "0x01181004": "PACKETID_SC_Heros_OneKeySwap",
+  "0x01811005": "PACKETID_CS_Heros_BuyHeroCountReq",
+  "0x01181005": "PACKETID_SC_Heros_BuyHeroCountRet",
+  "0x01811006": "PACKETID_CS_Heros_RenewHeroReq",
+  "0x01181006": "PACKETID_SC_Heros_RenewHero",
+  "0x01811007": "PACKETID_CS_WakeUp_ComposeReq",
+  "0x01181007": "PACKETID_SC_WakeUp_ComposeRet",
+  "0x01811008": "PACKETID_CS_WakeUp_DressReq",
+  "0x01181008": "PACKETID_SC_WakeUp_DressRet",
+  "0x01811009": "PACKETID_CS_WakeUp_DoneReq",
+  "0x01181009": "PACKETID_SC_WakeUp_DoneRet",
+  "0x0181100a": "PACKETID_CS_HeroWakeUp_AdvancedOrStrengReq",
+  "0x0118100a": "PACKETID_SC_WakeUp_AdvancedOrStrengRet",
+  "0x01811100": "PACKETID_CS_JadeCombine",
+  "0x01181100": "PACKETID_SC_JadeCombine",
+  "0x01811101": "PACKETID_CS_JadeEquipMount",
+  "0x01181101": "PACKETID_SC_JadeEquipMount",
+  "0x01811102": "PACKETID_CS_JadeEquipUnMount",
+  "0x01181102": "PACKETID_SC_JadeEquipUnMount",
+  "0x01811200": "PACKETID_CS_Task_QuestInforReq",
+  "0x01181200": "PACKETID_SC_Task_CompleteSendInfor",
+  "0x01811201": "PACKETID_CS_Task_QuestActionReq",
+  "0x01181201": "PACKETID_SC_Task_QuestActionRet",
+  "0x01811301": "PACKETID_CS_TalismanUpgradeRequest",
+  "0x01181301": "PACKETID_SC_TalismanUpgradeResponse",
+  "0x01811302": "PACKETID_CS_TalismanTransitionRequest",
+  "0x01181302": "PACKETID_SC_TalismanTransitionResponse",
+  "0x01811303": "PACKETID_CS_TalismanLevelUpRequest",
+  "0x01181303": "PACKETID_SC_TalismanLevelUpResponse",
+  "0x01811304": "PACKETID_CS_TalismanProductRequest",
+  "0x01181304": "PACKETID_SC_TalismanProductResponse",
+  "0x01811400": "PACKETID_CS_KnifeTrainRequest",
+  "0x01181400": "PACKETID_SC_KnifeSoulTrainResponse",
+  "0x01811404": "PACKETID_CS_KnifeSoulShowViewRequest",
+  "0x01181404": "PACKETID_SC_KnifeSoulShowViewResponse",
+  "0x01811405": "PACKETID_CS_KnifeInfoRequest",
+  "0x01181405": "PACKETID_SC_KnifeSoulInfoResponse",
+  "0x01811406": "PACKETID_CS_SpiritSchoolInfoReq",
+  "0x01181406": "PACKETID_SC_SpiritSchoolInfoRet",
+  "0x01811407": "PACKETID_CS_SpiritSchoolTrainReq",
+  "0x01181407": "PACKETID_SC_SpiritSchoolTrainRet",
+  "0x01811500": "PACKETID_CS_Friend_LoadFriend",
+  "0x01181500": "PACKETID_SC_Friend_LoadFriendResult",
+  "0x01811501": "PACKETID_CS_Friend_LoadRecommendFriend",
+  "0x01181501": "PACKETID_SC_Friend_LoadRecommendFriendResult",
+  "0x01811502": "PACKETID_CS_Friend_ProcessFriendReq",
+  "0x01181502": "PACKETID_SC_Friend_ProcessFriendRet",
+  "0x01811503": "PACKETID_CS_Friend_FriendState",
+  "0x01181503": "PACKETID_SC_Friend_FriendState",
+  "0x01811504": "PACKETID_CS_Friend_InquiryFriendIDReq",
+  "0x01181504": "PACKETID_SC_Friend_InquiryFriendIDRet",
+  "0x01811600": "PACKETID_CS_Mail_InitDataReq",
+  "0x01181600": "PACKETID_SC_Mail_InitDataRep",
+  "0x01811601": "PACKETID_CS_Mail_SendMailReq",
+  "0x01181601": "PACKETID_SC_Mail_SendMailRep",
+  "0x01811602": "PACKETID_CS_Mail_DelMailReq",
+  "0x01181602": "PACKETID_SC_Mail_DelMailRep",
+  "0x01811603": "PACKETID_CS_Mail_GetAttachmentReq",
+  "0x01181603": "PACKETID_SC_Mail_GetAttachmentRep",
+  "0x01811900": "PACKETID_CS_Arena_BigFish_Req",
+  "0x01181900": "PACKETID_SC_Arena_BigFish_Ret",
+  "0x01811901": "PACKETID_CS_Arena_GetReward_Req",
+  "0x01181901": "PACKETID_SC_Arena_GetReward_Ret",
+  "0x01811902": "PACKETID_CS_Arena_AddOrder_Req",
+  "0x01181902": "PACKETID_SC_Arena_AddOrder_Ret",
+  "0x01811903": "PACKETID_CS_Arena_Faster_Req",
+  "0x01181903": "PACKETID_SC_Arena_Faster_Ret",
+  "0x01811904": "PACKETID_CS_Arena_Fight_Req",
+  "0x01181904": "PACKETID_SC_Arena_Fight_Ret",
+  "0x01811905": "PACKETID_CS_Arena_Look_Req",
+  "0x01181905": "PACKETID_SC_Arena_Look_Ret",
+  "0x01811906": "PACKETID_CS_Arena_ColdTime_Req",
+  "0x01181908": "PACKETID_SC_Arena_ColdTime_Ret",
+  "0x01811a00": "PACKETID_CS_PurchaseReq",
+  "0x01181a00": "PACKETID_SC_PurchaseRet",
+  "0x01811a01": "PACKETID_CS_Mall_SuperMarketReq",
+  "0x01181a01": "PACKETID_SC_Mall_SuperMarketRet",
+  "0x01811a02": "PACKETID_CS_Mall_HonorShopReq",
+  "0x01181a02": "PACKETID_SC_Mall_HonorShopRet",
+  "0x01811a04": "PACKETID_CS_Mall_VipShopReq",
+  "0x01181a04": "PACKETID_SC_Mall_VipShopRet",
+  "0x01811b00": "PACKETID_CS_Sign_Load",
+  "0x01181b00": "PACKETID_SC_Sign_Load",
+  "0x01811b01": "PACKETID_CS_Sign_Commit",
+  "0x01181b01": "PACKETID_SC_Sign_Commit",
+  "0x01811b02": "PACKETID_CS_Sign_Reward",
+  "0x01181b02": "PACKETID_SC_Sign_Reward",
+  "0x01811b03": "PACKETID_CS_Coupon_Reward",
+  "0x01181b03": "PACKETID_SC_Coupon_Reward",
+  "0x01811e01": "PACKETID_CS_Counter_CounterReq",
+  "0x01181e01": "PACKETID_SC_Counter_CounterRet",
+  "0x01811f00": "PACKETID_CS_TreasureMap_StartReq",
+  "0x01181f00": "PACKETID_SC_TreasureMap_StartRet",
+  "0x01811f01": "PACKETID_CS_TreasureMap_RefreshReq",
+  "0x01181f01": "PACKETID_SC_TreasureMap_RefreshRet",
+  "0x01811f02": "PACKETID_CS_TreasureMap_OpenMapReq",
+  "0x01181f02": "PACKETID_SC_TreasureMap_OpenMapRet",
+  "0x01811f03": "PACKETID_CS_TreasureMap_FastReq",
+  "0x01181f03": "PACKETID_SC_TreasureMap_FastRet",
+  "0x01811f04": "PACKETID_CS_TreasureMap_FightReq",
+  "0x01181f04": "PACKETID_SC_TreasureMap_FightRet",
+  "0x01811f05": "PACKETID_CS_TreasureMap_VipAddTimesReq",
+  "0x01181f09": "PACKETID_SC_TreasureMap_VipAddTimesRet",
+  "0x01812000": "PACKETID_CS_DailyTask_InfoReq",
+  "0x01182000": "PACKETID_SC_DailyTask_InfoRet",
+  "0x01812001": "PACKETID_CS_DailyTask_TaskReq",
+  "0x01182001": "PACKETID_SC_DailyTask_TaskRet",
+  "0x01812002": "PACKETID_CS_DailyTaskp_FreshReq",
+  "0x01182002": "PACKETID_SC_DailyTask_FreshRet",
+  "0x01812003": "PACKETID_CS_DailyTask_RewardReq",
+  "0x01182003": "PACKETID_SC_DailyTask_RewardRet",
+  "0x01812100": "PACKETID_CS_HeroID_DataReq",
+  "0x01182100": "PACKETID_SC_HeroRecruit_DataRet",
+  "0x01812101": "PACKETID_CS_TavernAddQuality_Req",
+  "0x01182101": "PACKETID_SC_TavernAddQuality_Ret",
+  "0x01812200": "PACKETID_CS_Vip_ReceiveReq",
+  "0x01182200": "PACKETID_SC_Vip_ReceiveRet",
+  "0x01812300": "PACKETID_CS_Activity_LoadActivityInfoReq",
+  "0x01182300": "PACKETID_SC_Activity_LoadActivityInfoRet",
+  "0x01812302": "PACKETID_CS_Activity_InitReq",
+  "0x01182302": "PACKETID_SC_Activity_InitRet",
+  "0x01812303": "PACKETID_CS_Activity_OperateReq",
+  "0x01182303": "PACKETID_SC_Activity_OperateRet",
+  "0x01812304": "PACKETID_CS_Activity_CDKReq",
+  "0x01182304": "PACKETID_SC_Activity_CDKRet",
+  "0x01812401": "PACKETID_CS_CityDefend_FightReq",
+  "0x01182401": "PACKETID_SC_CityDefend_FightRet",
+  "0x01812402": "PACKETID_CS_CityDefend_ReviveReq",
+  "0x01182402": "PACKETID_SC_CityDefend_ReviveRet",
+  "0x01812500": "PACKETID_CS_Organization_LoadGulidListReq",
+  "0x01182500": "PACKETID_SC_Organization_LoadGulidListRet",
+  "0x01812501": "PACKETID_CS_Organization_CreateGulidReq",
+  "0x01182501": "PACKETID_SC_Organization_CreateGulidRet",
+  "0x01812502": "PACKETID_CS_Organization_ApplyJoinGulidReq",
+  "0x01182502": "PACKETID_SC_Organization_ApplyJoinGulidRet",
+  "0x01812503": "PACKETID_CS_Organization_UpGradeReq",
+  "0x01182503": "PACKETID_SC_Organization_UpGradeRet",
+  "0x01812504": "PACKETID_CS_Organization_LoadApplyListReq",
+  "0x01182504": "PACKETID_SC_Organization_LoadApplyListRet",
+  "0x01812505": "PACKETID_CS_Organization_UpGradeGuildTechReq",
+  "0x01182505": "PACKETID_SC_Organization_UpGradeGuildTechRet",
+  "0x01812506": "PACKETID_CS_Organization_LoadMemberListReq",
+  "0x01182506": "PACKETID_SC_Organization_LoadMemberListRet",
+  "0x01812507": "PACKETID_CS_Organization_GetGulidInfoReq",
+  "0x01182507": "PACKETID_SC_Organization_GetGulidInfoRet",
+  "0x01812508": "PACKETID_CS_Organization_GetCampReq",
+  "0x01182508": "PACKETID_SC_Organization_GetCampRet",
+  "0x01812509": "PACKETID_CS_Organization_SwitchPowerReq",
+  "0x01182509": "PACKETID_SC_Organization_SwitchPowerRet",
+  "0x01812510": "PACKETID_CS_Organization_MuyeBattleReq",
+  "0x01182510": "PACKETID_SC_Organization_MuyeBattleRet",
+  "0x01812511": "PACKETID_CS_Organization_ConfirmApplyJoinGuildReq",
+  "0x01182511": "PACKETID_SC_Organization_ConfirmApplyJoinGuildRet",
+  "0x01812512": "PACKETID_CS_Organization_LoadGulidDepotReq",
+  "0x01182512": "PACKETID_SC_Organization_LoadGulidDepotRet",
+  "0x01812513": "PACKETID_CS_Organization_AssignGulidDepotReq",
+  "0x01182513": "PACKETID_SC_Organization_AssignGulidDepotRet",
+  "0x01812514": "PACKETID_CS_Organization_DonateReq",
+  "0x01182514": "PACKETID_SC_Organization_DonateRet",
+  "0x01812515": "PACKETID_CS_Organization_QuitGuildReq",
+  "0x01182515": "PACKETID_SC_Organization_QuitGuildRet",
+  "0x01812516": "PACKETID_CS_Organization_DismissGuildReq",
+  "0x01182516": "PACKETID_SC_Organization_DismissGuildRet",
+  "0x01812517": "PACKETID_CS_Organization_ActivityStatusReq",
+  "0x01182517": "PACKETID_SC_Organization_ActivityStatusRet",
+  "0x01812518": "PACKETID_CS_Organization_BoardModifyReq",
+  "0x01182518": "PACKETID_SC_Organization_BoardModifyRet",
+  "0x01812519": "PACKETID_CS_Organization_GuildLogReq",
+  "0x01182519": "PACKETID_SC_Organization_GuildLogRet",
+  "0x01812521": "PACKETID_CS_Organization_KickMemberReq",
+  "0x01182521": "PACKETID_SC_Organization_KickMemberRet",
+  "0x01812522": "PACKETID_CS_Organization_CityDefendInfoReq",
+  "0x01182522": "PACKETID_SC_Organization_CityDefendInfoRet",
+  "0x01812523": "PACKETID_CS_Organization_SingleInitReq",
+  "0x01182523": "PACKETID_SC_Organization_SingleInitRet",
+  "0x01812524": "PACKETID_CS_Organization_SingleEnterReq",
+  "0x01182524": "PACKETID_SC_Organization_SingleEnterRet",
+  "0x01812526": "PACKETID_CS_Organization_GroupInitReq",
+  "0x01182526": "PACKETID_SC_Organization_GroupInitRet",
+  "0x01812527": "PACKETID_CS_Organization_GroupOpenReq",
+  "0x01182527": "PACKETID_SC_Organization_GroupOpenRet",
+  "0x01812528": "PACKETID_CS_Organization_GroupEnterReq",
+  "0x01182528": "PACKETID_SC_Organization_GroupEnterRet",
+  "0x01812529": "PACKETID_CS_Organization_CopyRefreshReq",
+  "0x01182529": "PACKETID_SC_Organization_CopyRefreshRet",
+  "0x01812600": "PACKETID_CS_FightPet_EntetOrNotReq",
+  "0x01182600": "PACKETID_SC_FightPet_EntetOrNotRet",
+  "0x01812605": "PACKETID_CS_FightPet_InspireReq",
+  "0x01182605": "PACKETID_SC_FightPet_InspireRet",
+  "0x01812606": "PACKETID_CS_FightPet_ResurrectionReq",
+  "0x01182606": "PACKETID_SC_FightPet_ResurrectionRet",
+  "0x01812607": "PACKETID_CS_FightPet_FightReq",
+  "0x01182607": "PACKETID_SC_FightPet_FightRet",
+  "0x01812700": "PACKETID_CS_OrganizationWar_CommandReq",
+  "0x01182700": "PACKETID_SC_OrganizationWar_CommandRet",
+  "0x01812900": "PACKETID_CS_FightingShow_ALLFightRankReq",
+  "0x01182900": "PACKETID_SC_FightingShow_ALLFightRankRet",
+  "0x01812901": "PACKETID_CS_FightingShow_SingleFightRankReq",
+  "0x01182901": "PACKETID_SC_FightingShow_SingleFightRankRet",
+  "0x01813400": "PACKETID_CS_TraitorAttack_ReviveReq",
+  "0x01183400": "PACKETID_SC_TraitorAttack_ReviveRet",
+  "0x01813402": "PACKETID_CS_TraitorAttack_BattleReq",
+  "0x01183402": "PACKETID_SC_TraitorAttack_BattleRet",
+  "0x01813500": "PACKETID_CS_Mentorship_LoadBaseDataReq",
+  "0x01183500": "PACKETID_SC_Mentorship_LoadBaseDataRet",
+  "0x01813501": "PACKETID_CS_Mentorship_CatchListReq",
+  "0x01183501": "PACKETID_SC_Mentorship_CatchListRet",
+  "0x01813502": "PACKETID_CS_Mentorship_RescueMembersListReq",
+  "0x01183502": "PACKETID_SC_Mentorship_RescueMembersListRet",
+  "0x01813503": "PACKETID_CS_Mentorship_CommandReq",
+  "0x01183503": "PACKETID_SC_Mentorship_CommandRet",
+  "0x01813504": "PACKETID_CS_Mentorship_SOSListReq",
+  "0x01183504": "PACKETID_SC_Mentorship_SOSListRet",
+  "0x01813505": "PACKETID_CS_Mentorship_InteractionLogReq",
+  "0x01183505": "PACKETID_SC_Mentorship_InteractionLogRet",
+  "0x01813801": "PACKETID_CS_SevenKing_FightReq",
+  "0x01183801": "PACKETID_SC_SevenKing_FightRet",
+  "0x01813802": "PACKETID_CS_SevenKing_RespectReq",
+  "0x01183802": "PACKETID_SC_SevenKing_RespectRet",
+  "0x01813803": "PACKETID_CS_SevenKing_ReportReq",
+  "0x01183803": "PACKETID_SC_SevenKing_ReportRet",
+  "0x01813901": "PACKETID_CS_NijiaStar_NijiaSoulUpdateReq",
+  "0x01183901": "PACKETID_SC_NijiaStar_NijiaSoulUpdate",
+  "0x01813902": "PACKETID_CS_NijiaStar_LevelUpReq",
+  "0x01183902": "PACKETID_SC_NijiaStar_LevelUpRet",
+  "0x01813903": "PACKETID_CS_NijiaStar_ExchangeReq",
+  "0x01183903": "PACKETID_SC_NijiaStar_ExchangeRet",
+  "0x01813904": "PACKETID_CS_NijiaStar_NijiaStarUpdateReq",
+  "0x01183904": "PACKETID_SC_NijiaStar_NijiaStarUpdate",
+  "0x01813b00": "PACKETID_CS_DailyActivity_AutomaticStatusReq",
+  "0x01183b00": "PACKETID_SC_DailyActivity_AutomaticStatusRet",
+  "0x01813b01": "PACKETID_CS_DailyActivity_AutomaticOperateReq",
+  "0x01183b01": "PACKETID_SC_DailyActivity_AutomaticOperateRet",
+  "0x01813b02": "PACKETID_CS_DailyActivity_DailyRewardReq",
+  "0x01183b02": "PACKETID_SC_DailyActivity_DailyRewardRet",
+  "0x01813d01": "PACKETID_CS_GongFuFight_Apply",
+  "0x01183d01": "PACKETID_SC_GongFuFight_ApplyRet",
+  "0x01813d02": "PACKETID_CS_GongFuFight_FightReq",
+  "0x01183d02": "PACKETID_SC_GongFuFight_FightRet",
+  "0x01813d03": "PACKETID_CS_GongFuFight_PayReq",
+  "0x01183d03": "PACKETID_SC_GongFuFight_PayRet",
+  "0x01813d04": "PACKETID_CS_GongFuFight_RankInforReq",
+  "0x01183d04": "PACKETID_SC_GongFuFight_RankInforRet",
+  "0x01813d05": "PACKETID_CS_GongFuFight_ChallengeListReq",
+  "0x01183d05": "PACKETID_SC_GongFuFight_ChallengeListRet",
+  "0x01813d06": "PACKETID_CS_GongFuFight_AwardExchangeReq",
+  "0x01183d06": "PACKETID_SC_GongFuFight_AwardExchangeRet",
+  "0x01813d07": "PACKETID_CS_GongFuFight_BaseInforReq",
+  "0x01183d07": "PACKETID_SC_GongFuFight_BaseInforRet",
+  "0x01813d09": "PACKETID_CS_GongFuFight_TryIn",
+  "0x01183d09": "PACKETID_SC_GongFuFight_TryInRet",
+  "0x01813d0a": "PACKETID_CS_GongFuFight_OpenBeyondLevelFightReq",
+  "0x01183d0a": "PACKETID_SC_GongFuFight_OpenBeyondLevelFightRet",
+  "0x01813d0b": "PACKETID_CS_GongFuFight_PayRecordReq",
+  "0x01183d0b": "PACKETID_SC_GongFuFight_PayRecordRet",
+  "0x01813d0c": "PACKETID_CS_GongFuFight_AddFightTimeReq",
+  "0x01183d0c": "PACKETID_SC_GongFuFight_AddFightTimeRet",
+  "0x01813d0d": "PACKETID_CS_GongFuFight_SeasonInforReq",
+  "0x01183d0d": "PACKETID_SC_GongFuFight_SeasonInforRet",
+  "0x01813d0e": "PACKETID_CS_GongFuFight_FightRecordReq",
+  "0x01183d0e": "PACKETID_SC_GongFuFight_FightRecordRet",
+  "0x01813d11": "PACKETID_CS_GongFuFight_ReciveBox",
+  "0x01183d11": "PACKETID_SC_GongFuFight_ReciveBox",
+  "0x01814101": "PACKETID_CS_KnifeOfKillSoulRequest",
+  "0x01184101": "PACKETID_SC_KnifeInforResponse",
+  "0x01814102": "PACKETID_CS_OpenKnifeRequest",
+  "0x01184102": "PACKETID_SC_OpenKnifeResponse",
+  "0x01814103": "PACKETID_CS_TrainKnifeRequest",
+  "0x01184103": "PACKETID_SC_TrainKnifeResponse",
+  "0x01814104": "PACKETID_CS_ChangeKnifeRequest",
+  "0x01184104": "PACKETID_SC_ChangeKnifeResponse",
+  "0x01814105": "PACKETID_CS_KnifeStrengReq",
+  "0x01184105": "PACKETID_SC_KnifeStrengRet",
+  "0x01814200": "PACKETID_CS_Home_HomeUpgradeReq",
+  "0x01184200": "PACKETID_SC_Home_HomeUpgradeRet",
+  "0x01814202": "PACKETID_CS_Home_InteractiveRecordReq",
+  "0x01184202": "PACKETID_SC_Home_InteractiveRecordRet",
+  "0x01814214": "PACKETID_CS_Home_HZReq",
+  "0x01184214": "PACKETID_SC_Home_HZRet",
+  "0x01814228": "PACKETID_CS_Home_LuckyCatReq",
+  "0x01184228": "PACKETID_SC_Home_LuckyCatRet",
+  "0x01814229": "PACKETID_CS_Home_ClearLuckyCatReq",
+  "0x01184229": "PACKETID_SC_Home_ClearLuckyCatRet",
+  "0x0181423c": "PACKETID_CS_Home_GirlFriendBaseInforReq",
+  "0x0118423c": "PACKETID_SC_Home_GirlFriendBaseInforRet",
+  "0x0181423d": "PACKETID_CS_Home_GirlFriendUpgradeReq",
+  "0x0118423d": "PACKETID_SC_Home_GirlFriendUpgradeRet",
+  "0x0181423e": "PACKETID_CS_Home_GirlFriendMakeTofu",
+  "0x0118423e": "PACKETID_SC_Home_GirlFriendMakeTofu",
+  "0x0181423f": "PACKETID_CS_Home_GirlFriendClearMakeTofuCD",
+  "0x0118423f": "PACKETID_SC_Home_GirlFriendClearMakeTofuCD",
+  "0x01814240": "PACKETID_CS_Home_GirlFriendSpriteCommnicate",
+  "0x01184240": "PACKETID_SC_Home_GirlFriendSpriteCommnicate",
+  "0x01814241": "PACKETID_CS_Home_GirlFriendClearSpriteCommnicateCD",
+  "0x01184241": "PACKETID_SC_Home_GirlFriendClearSpriteCommnicateCD",
+  "0x01814242": "PACKETID_CS_Home_GirlFriendTeaseReq",
+  "0x01184242": "PACKETID_SC_Home_GirlFriendTeaseRet",
+  "0x01814244": "PACKETID_CS_Home_GirlFriendChangeShapeReq",
+  "0x01184244": "PACKETID_SC_Home_GirlFriendChangeShapeRet",
+  "0x01814301": "PACKETID_CS_HellButterfly_BaseDataReq",
+  "0x01184301": "PACKETID_SC_HellButterfly_BaseDataRet",
+  "0x01814302": "PACKETID_CS_HellButterfly_ExchangeReq",
+  "0x01184302": "PACKETID_SC_HellButterfly_ExchangeRet",
+  "0x01814303": "PACKETID_CS_HellButterfly_EatReq",
+  "0x01184303": "PACKETID_SC_HellButterfly_EatRet",
+  "0x01814304": "PACKETID_CS_HellButterfly_HellPowderRewardReq",
+  "0x01184304": "PACKETID_SC_HellButterfly_HellPowderRewardRet",
+  "0x01814400": "PACKETID_CS_QianKunARoll_InitReq",
+  "0x01184400": "PACKETID_SC_QianKunARoll_InitRet",
+  "0x01814401": "PACKETID_CS_QianKunARoll_StartRollReq",
+  "0x01184401": "PACKETID_SC_QianKunARoll_StartRollRet",
+  "0x01814402": "PACKETID_CS_QianKunARoll_GetBoxReq",
+  "0x01184402": "PACKETID_SC_QianKunARoll_GetBoxRet",
+  "0x01815100": "PACKETID_CS_YellowDiamondInfor_Req",
+  "0x01185100": "PACKETID_SC_YellowDiamondInfor_Ret",
+  "0x01815101": "PACKETID_CS_YellowDiamondRecive_Req",
+  "0x01185101": "PACKETID_SC_YellowDiamondState_Ret",
+  "0x01815200": "PACKETID_CS_AchievementInforReq",
+  "0x01185200": "PACKETID_SC_AchievementInforRet",
+  "0x01815201": "PACKETID_CS_AchievementRewardReq",
+  "0x01185201": "PACKETID_SC_AchievementRewardRet",
+  "0x01815203": "PACKETID_CS_AchievenmentTitleInforReq",
+  "0x01185203": "PACKETID_SC_AchievenmentTitleInforRet",
+  "0x01815204": "PACKETID_CS_EquipAchievenmentTitleRep",
+  "0x01185204": "PACKETID_SC_EquipAchievenmentTitleRet",
+  "0x01815207": "PACKETID_CS_OtherUserAchievenmentReq",
+  "0x01185207": "PACKETID_SC_OtherUserAchievenmentRet",
+  "0x01816001": "PACKETID_CS_TeamBattleHall_CreatePlayerRoom",
+  "0x01186003": "PACKETID_SC_TeamBattleHall_CreatePlayerRoom",
+  "0x01816002": "PACKETID_CS_TeamBattleHall_EnterPlayerRoom",
+  "0x01186004": "PACKETID_SC_TeamBattleHall_EnterPlayerRoom",
+  "0x01816003": "PACKETID_CS_TeamBattleHall_LeaveHall",
+  "0x01186006": "PACKETID_SC_TeamBattleHall_LeaveHall",
+  "0x01816100": "PACKETID_CS_TeamBattleRoom_RoomInOperating",
+  "0x01186100": "PACKETID_SC_TeamBattleRoom_RoomInOperating",
+  "0x01816101": "PACKETID_CS_TeamBattleRoom_BattlePveModeChange",
+  "0x01186105": "PACKETID_SC_TeamBattleRoom_BattlePveModeChange",
+  "0x01816102": "PACKETID_CS_TeamBattleRoom_ChangePassword",
+  "0x01186106": "PACKETID_SC_TeamBattleRoom_ChangePassword",
+  "0x01816103": "PACKETID_CS_TeamBattleRoom_StartGame",
+  "0x01186107": "PACKETID_SC_TeamBattleRoom_StartGame",
+  "0x01816104": "PACKETID_CS_TeamBattleRoom_ChangeStation",
+  "0x01186108": "PACKETID_SC_TeamBattleRoom_ChangeStation",
+  "0x01816105": "PACKETID_CS_TeamBattleRoom_BattleMatching",
+  "0x01186109": "PACKETID_SC_TeamBattleRoom_BattleMatching",
+  "0x01816106": "PACKETID_CS_TeamBattleRoom_StartBattlePVE",
+  "0x0118610a": "PACKETID_SC_TeamBattleRoom_StartBattlePVE",
+  "0x01816107": "PACKETID_CS_TeamBattleRoom_FriendListReq",
+  "0x0118610c": "PACKETID_SC_TeamBattleRoom_FriendListReq",
+  "0x01816108": "PACKETID_CS_TeamBattleRoom_BattlePveModeChangeConfirmation",
+  "0x0118610d": "PACKETID_SC_TeamBattleRoom_BattlePveModeChangeConfirmation",
+  "0x01816109": "PACKETID_CS_TeamBattleRoom_BattlePveStartWait",
+  "0x0118610e": "PACKETID_SC_TeamBattleRoom_BattlePveStartWait",
+  "0x0181610a": "PACKETID_CS_TeamBattleRoom_BattlePveReturnRoom",
+  "0x0118610f": "PACKETID_SC_TeamBattleRoom_BattlePveReturnRoom",
+  "0x0181610b": "PACKETID_CS_TeamBattleRoom_BattlePvpStartWait",
+  "0x01186111": "PACKETID_SC_TeamBattleRoom_BattlePvpStartWait",
+  "0x01816400": "PACKETID_CS_Ornament_OrnamentGradeReq",
+  "0x01186400": "PACKETID_SC_Ornament_OrnamentGradeRet",
+  "0x01816401": "PACKETID_CS_Ornament_OrnamentUpgradeReq",
+  "0x01186401": "PACKETID_SC_Ornament_OrnamentUpgradeRet",
+  "0x01816600": "PACKETID_CS_GirlGameInforReq",
+  "0x01186600": "PACKETID_SC_GirlGameInforRet",
+  "0x01816601": "PACKETID_CS_GirlGameUndressReq",
+  "0x01186601": "PACKETID_SC_GirlGameUndressRet",
+  "0x01816602": "PACKETID_CS_UndressOneKeyReq",
+  "0x01186602": "PACKETID_SC_UndressOneKeyRet",
+  "0x01816701": "PACKETID_CS_ReveredBook_QuestionReq",
+  "0x01186701": "PACKETID_SC_ReveredBook_QuestionRet",
+  "0x01816800": "PACKETID_CS_Welcome_NipReq",
+  "0x01186800": "PACKETID_SC_Welcome_NipRet",
+  "0x01816900": "PACKETID_CS_BleachDailyRecord_Req",
+  "0x01186900": "PACKETID_SC_BleachDailyRecord_Ret",
+  "0x01816b00": "PACKETID_CS_Log_Req",
+  "0x01186b00": "PACKETID_SC_Log_Ret",
+  "0x01816b01": "PACKETID_CS_Log_PersonReq",
+  "0x01186b01": "PACKETID_SC_Log_PersonRet",
+  "0x01816c00": "PACKETID_CS_CrashJade_InforReq",
+  "0x01186c00": "PACKETID_SC_CrashJade_InforRet",
+  "0x01816c01": "PACKETID_CS_CrashJade_MakeJadeReq",
+  "0x01186c01": "PACKETID_SC_CrashJade_MakeJadeRet",
+  "0x01816c02": "PACKETID_CS_CrashJade_MakeJadeOneKeyReq",
+  "0x01186c02": "PACKETID_SC_CrashJade_MakeJadeOneKeyRet",
+  "0x01816c03": "PACKETID_CS_CrashJade_PickUpReq",
+  "0x01186c03": "PACKETID_SC_CrashJade_PickUpRet",
+  "0x01816c04": "PACKETID_CS_CrashJade_PickUpOneKeyReq",
+  "0x01186c04": "PACKETID_SC_CrashJade_PickUpOneKeyRet",
+  "0x01816c05": "PACKETID_CS_CrashJade_SellReq",
+  "0x01186c05": "PACKETID_SC_CrashJade_SellRet",
+  "0x01816c06": "PACKETID_CS_CrashJade_SellOneKeyReq",
+  "0x01186c06": "PACKETID_SC_CrashJade_SellOneKeyRet",
+  "0x01816c07": "PACKETID_CS_CrashJade_OpenHighLevelReq",
+  "0x01186c07": "PACKETID_SC_CrashJade_OpenHighLevelRet",
+  "0x01816c08": "PACKETID_CS_CrashJade_BuyTimeReq",
+  "0x01186c08": "PACKETID_SC_CrashJade_BuyTimeRet",
+  "0x01816c0a": "PACKETID_CS_CrashJade_SwallowPelletReq",
+  "0x01186c0a": "PACKETID_SC_CrashJade_SwallowPelletRet",
+  "0x01816c0b": "PACKETID_CS_CrashJade_UnlockSlotReq",
+  "0x01186c0b": "PACKETID_SC_CrashJade_UnlockSlotRet",
+  "0x01816c10": "PACKETID_CS_CrashJade_SwallowReq",
+  "0x01186c10": "PACKETID_SC_CrashJade_SwallowRet",
+  "0x01816c11": "PACKETID_CS_CrashJade_ComposeReq",
+  "0x01186c11": "PACKETID_SC_CrashJade_ComposeRet",
+  "0x01816c12": "PACKETID_CS_CrashJade_EquipJadeReq",
+  "0x01186c12": "PACKETID_SC_CrashJade_EquipJadeRet",
+  "0x01816c13": "PACKETID_CS_CrashJade_InitBackPackReq",
+  "0x01186c13": "PACKETID_SC_CrashJade_InitBackPackRet",
+  "0x01816c14": "PACKETID_CS_CrashJade_UnloadJadeReq",
+  "0x01186c14": "PACKETID_SC_CrashJade_UnloadJadeRet",
+  "0x01816c15": "PACKETID_CS_CrashJade_ShopInfoReq",
+  "0x01186c15": "PACKETID_SC_CrashJade_ShopInfoRet",
+  "0x01816d00": "PACKETID_CS_DailyWelfare_InforReq",
+  "0x01186d00": "PACKETID_SC_DailyWelfare_InforRet",
+  "0x01816d01": "PACKETID_CS_DailyWelfare_GetBackReq",
+  "0x01186d01": "PACKETID_SC_DailyWelfare_GetBackRet",
+  "0x01816d02": "PACKETID_CS_DailyWelfare_OneKeyReq",
+  "0x01186d02": "PACKETID_SC_DailyWelfare_OneKeyRet",
+  "0x01816d03": "PACKETID_CS_DailyWelfare_DailyWelfareReq",
+  "0x01186d03": "PACKETID_SC_DailyWelfare_DailyWelfareRet",
+  "0x01816e00": "PACKETID_CS_TreasureAwake_LevelUpReq",
+  "0x01186e00": "PACKETID_SC_TreasureAwake_LevelUpRet",
+  "0x01816f00": "PACKETID_CS_HeroChange_InforReq",
+  "0x01186f00": "PACKETID_SC_HeroChange_InforRet",
+  "0x01816f01": "PACKETID_CS_HeroChange_ChangeReq",
+  "0x01186f01": "PACKETID_SC_HeroChange_ChangeRet",
+  "0x01816f02": "PACKETID_CS_HeroChange_MakePillReq",
+  "0x01186f02": "PACKETID_SC_HeroChange_MakePillRet",
+  "0x01816f03": "PACKETID_CS_HeroChange_ExchangePillReq",
+  "0x01186f03": "PACKETID_SC_HeroChange_ExchangePillRet",
+  "0x01816f06": "PACKETID_CS_HeroChange_BuyIntoTimeReq",
+  "0x01186f06": "PACKETID_SC_HeroChange_BuyIntoTimeRet",
+  "0x01816f07": "PACKETID_CS_HeroChange_ResetReq",
+  "0x01186f07": "PACKETID_SC_HeroChange_ResetRet",
+  "0x01816f08": "PACKETID_CS_HeroChange_ReliveReq",
+  "0x01186f08": "PACKETID_SC_HeroChange_ReliveRet",
+  "0x01816f09": "PACKETID_CS_HeroChange_FightReq",
+  "0x01186f09": "PACKETID_SC_HeroChange_FightRet",
+  "0x01816f0a": "PACKETID_CS_HeroChange_OneKeyReq",
+  "0x01186f0a": "PACKETID_SC_HeroChange_OneKeyRet",
+  "0x01816f0b": "PACKETID_CS_HeroChange_InheritanceReq",
+  "0x01186f0b": "PACKETID_SC_HeroChange_Inheritance",
+  "0x01816f0c": "PACKETID_CS_HeroChange_AdvanceRefreshReq",
+  "0x01186f0c": "PACKETID_SC_HeroChange_AdvanceRefresh",
+  "0x01816f0d": "PACKETID_CS_HeroChange_AdvanceReturnReq",
+  "0x01186f0d": "PACKETID_SC_HeroChange_AdvanceReturn",
+  "0x01817000": "PACKETID_CS_BlackMarket_GoodsInforReq",
+  "0x01187000": "PACKETID_SC_BlackMarket_GoodsInforRet",
+  "0x01817001": "PACKETID_CS_BlackMarket_FlushGoodsReq",
+  "0x01187001": "PACKETID_SC_BlackMarket_FlushGoodsRet",
+  "0x01817002": "PACKETID_CS_BlackMarket_BuyGoodReq",
+  "0x01187002": "PACKETID_SC_BlackMarket_BuyGoodRet",
+  "0x01817003": "PACKETID_CS_BlackMarket_InitInforReq",
+  "0x01187003": "PACKETID_SC_BlackMarket_InitInforRet",
+  "0x01817100": "PACKETID_CS_Pet_InitInfoReq",
+  "0x01187100": "PACKETID_SC_Pet_InitInfoRet",
+  "0x01817101": "PACKETID_CS_Pet_InteractReq",
+  "0x01187101": "PACKETID_SC_Pet_InteractRet",
+  "0x01817102": "PACKETID_CS_Pet_InteractClearCDReq",
+  "0x01187102": "PACKETID_SC_Pet_InteractClearCDRet",
+  "0x01817103": "PACKETID_CS_Pet_InteractBuyCountReq",
+  "0x01187103": "PACKETID_SC_Pet_InteractBuyCountRet",
+  "0x01817104": "PACKETID_CS_Pet_GetPetBagReq",
+  "0x01187104": "PACKETID_SC_Pet_GetPetBagRet",
+  "0x01817200": "PACKETID_CS_Pet_MainPetFeedReq",
+  "0x01187200": "PACKETID_SC_Pet_MainPetFeedRet",
+  "0x01817201": "PACKETID_CS_Pet_MainPetRankUpReq",
+  "0x01187201": "PACKETID_SC_Pet_MainPetRankUpRet",
+  "0x01817202": "PACKETID_CS_Pet_MainPetDelReq",
+  "0x01187202": "PACKETID_SC_Pet_MainPetDelRet",
+  "0x01817203": "PACKETID_CS_Pet_MainPetChangeReq",
+  "0x01187203": "PACKETID_SC_Pet_MainPetChangeRet",
+  "0x01817204": "PACKETID_CS_Pet_NotiyPetItemReq",
+  "0x01187204": "PACKETID_SC_Pet_NotiyPetItemRet",
+  "0x01817300": "PACKETID_CS_VicePetTrainReq",
+  "0x01187300": "PACKETID_SC_VicePetTrainRet",
+  "0x01817301": "PACKETID_CS_VicePetTrainCancelReq",
+  "0x01187301": "PACKETID_SC_VicePetTrainCancelRet",
+  "0x01817302": "PACKETID_CS_VicePetTrainClearCDReq",
+  "0x01187302": "PACKETID_SC_VicePetTrainClearCDRet",
+  "0x01817303": "PACKETID_CS_VicePetTrainGetReq",
+  "0x01187303": "PACKETID_SC_VicePetTrainGetRet",
+  "0x01817304": "PACKETID_CS_TrainSlotOpenReq",
+  "0x01187304": "PACKETID_SC_TrainSlotOpenRet",
+  "0x01817305": "PACKETID_CS_TrainExpCardReq",
+  "0x01187305": "PACKETID_SC_TrainExpCardRet",
+  "0x01817400": "PACKETID_CS_Pet_VicePetMakeReq",
+  "0x01187400": "PACKETID_SC_Pet_VicePetMakeRet",
+  "0x01817401": "PACKETID_CS_Pet_VicePetEquipReq",
+  "0x01187401": "PACKETID_SC_Pet_VicePetEquipRet",
+  "0x01817402": "PACKETID_CS_Pet_VicePetUnEquipReq",
+  "0x01187402": "PACKETID_SC_Pet_VicePetUnEquipRet",
+  "0x01817403": "PACKETID_CS_Pet_VicePetDelReq",
+  "0x01187403": "PACKETID_SC_Pet_VicePetDelRet",
+  "0x01817404": "PACKETID_CS_Pet_VicePetInheritReq",
+  "0x01187404": "PACKETID_SC_Pet_VicePetInheritRet",
+  "0x01817405": "PACKETID_CS_Pet_VicePetRankUpReq",
+  "0x01187405": "PACKETID_SC_Pet_VicePetRankUpRet",
+  "0x01817406": "PACKETID_CS_Pet_StoreExtendReq",
+  "0x01187406": "PACKETID_SC_Pet_StoreExtendRet",
+  "0x01817407": "PACKETID_CS_Pet_VicePetWashExpReq",
+  "0x01187407": "PACKETID_SC_Pet_VicePetWashExpRet",
+  "0x01817408": "PACKETID_CS_Pet_ExpPoolExtendReq",
+  "0x01187408": "PACKETID_SC_Pet_ExpPoolExtendRet",
+  "0x01817500": "PACKETID_CS_LikeUs_DataReq",
+  "0x01187500": "PACKETID_SC_LikeUs_DataRet",
+  "0x01817501": "PACKETID_CS_LikeUs_ReceiveReq",
+  "0x01187501": "PACKETID_SC_LikeUs_ReceiveRet",
+  "0x01817600": "PACKETID_CS_VainTravel_InitReq",
+  "0x01187600": "PACKETID_SC_VainTravel_InitRet",
+  "0x01817601": "PACKETID_CS_VainTravel_BattleReq",
+  "0x01187601": "PACKETID_SC_VainTravel_BattleRet",
+  "0x01817602": "PACKETID_CS_VainTravel_DailyResetReq",
+  "0x01187602": "PACKETID_SC_VainTravel_DailyResetRet",
+  "0x01817603": "PACKETID_CS_VainTravel_TakeRewardReq",
+  "0x01187603": "PACKETID_SC_VainTravel_TakeRewardRet",
+  "0x01817605": "PACKETID_CS_VainTravel_InitShopReq",
+  "0x01187605": "PACKETID_SC_VainTravel_InitShopRet",
+  "0x01817606": "PACKETID_CS_VainTravel_FlushShopReq",
+  "0x01187606": "PACKETID_SC_VainTravel_FlushShopRet",
+  "0x01817607": "PACKETID_CS_VainTravel_BuyGoodReq",
+  "0x01187607": "PACKETID_SC_VainTravel_BuyGoodRet",
+  "0x01817608": "PACKETID_CS_VainTravel_ReliveReq",
+  "0x01187608": "PACKETID_SC_VainTravel_ReliveRet",
+  "0x01817801": "PACKETID_CS_OrgPointMap_PointRefreshReq",
+  "0x01187801": "PACKETID_SC_OrgPointMap_PointRefreshRet",
+  "0x01817802": "PACKETID_CS_OrgPointMap_AutoFightReq",
+  "0x01187802": "PACKETID_SC_OrgPointMap_AutoFightRet",
+  "0x01817803": "PACKETID_CS_OrgPointMap_GroupChallengeReq",
+  "0x01187803": "PACKETID_SC_OrgPointMap_GroupChallengeRet",
+  "0x01817804": "PACKETID_CS_OrgPointMap_QuitMapReq",
+  "0x01187804": "PACKETID_SC_OrgPointMap_UpDateRet",
+  "0x01817900": "PACKETID_CS_PointMapInfoUI_AllocationReq",
+  "0x01187900": "PACKETID_SC_PointMapInfoUI_AllocationRet",
+  "0x01817901": "PACKETID_CS_PointMapInfoUI_SpoilsReq",
+  "0x01187901": "PACKETID_SC_PointMapInfoUI_SpoilsRet",
+  "0x01817902": "PACKETID_CS_PointMapInfoUI_AttValueReq",
+  "0x01187902": "PACKETID_SC_PointMapInfoUI_AttValueRet",
+  "0x01817903": "PACKETID_CS_PointMapInfoUI_ApplyReq",
+  "0x01187903": "PACKETID_SC_PointMapInfoUI_ApplyReq",
+  "0x01817904": "PACKETID_CS_PointMapInfoUI_ApplyListReq",
+  "0x01187904": "PACKETID_SC_PointMapInfoUI_ApplyListRet",
+  "0x01817a00": "PACKETID_CS_TimeMall_InitDataReq",
+  "0x01187a00": "PACKETID_SC_TimeMall_InitDataRet",
+  "0x01817a01": "PACKETID_CS_TimeMall_RefreshReq",
+  "0x01187a01": "PACKETID_SC_TimeMall_RefreshRet",
+  "0x01817a02": "PACKETID_CS_TimeMall_BuyGoodReq",
+  "0x01187a02": "PACKETID_SC_TimeMall_BuyGoodRet",
+  "0x01817b00": "PACKETID_CS_Companion_InfoReq",
+  "0x01187b00": "PACKETID_SC_Companion_InfoRet",
+  "0x01817b01": "PACKETID_CS_Companion_EmployReq",
+  "0x01187b01": "PACKETID_SC_Companion_EmployRet",
+  "0x01817b02": "PACKETID_CS_Companion_SeatedReq",
+  "0x01187b02": "PACKETID_SC_Companion_SeatedRet",
+  "0x01817b03": "PACKETID_CS_Companion_UnseatedReq",
+  "0x01187b03": "PACKETID_SC_Companion_UnseatedRet",
+  "0x01817b04": "PACKETID_CS_Companion_UpgrateReq",
+  "0x01187b04": "PACKETID_SC_Companion_UpgrateRet",
+  "0x01817b05": "PACKETID_CS_Companion_ComposeReq",
+  "0x01187b05": "PACKETID_SC_Companion_ComposeRet",
+  "0x01817b06": "PACKETID_CS_Companion_ReforgingReq",
+  "0x01187b06": "PACKETID_SC_Companion_ReforgingRet",
+  "0x01818000": "PACKETID_CS_Related_PointInfoReq",
+  "0x01188000": "PACKETID_SC_Related_PointInfoRet",
+  "0x01818001": "PACKETID_CS_Related_FightReq",
+  "0x01188001": "PACKETID_SC_Related_FightRet",
+  "0x01818002": "PACKETID_CS_Related_RewardReq",
+  "0x01188002": "PACKETID_SC_Related_RewardRet",
+  "0x01818003": "PACKETID_CS_Related_DailyTrainReq",
+  "0x01188003": "PACKETID_SC_Related_DailyTrainRet",
+  "0x01818005": "PACKETID_CS_Related_SkillInfoReq",
+  "0x01188005": "PACKETID_SC_Related_SkillInfoRet",
+  "0x01818006": "PACKETID_CS_Related_LevelupReq",
+  "0x01188006": "PACKETID_SC_Related_LevelupRet",
+  "0x01818007": "PACKETID_CS_Related_HeroHelpReq",
+  "0x01188007": "PACKETID_SC_Related_HeroHelpRet",
+  "0x01818008": "PACKETID_CS_Related_HeroHelpCancelReq",
+  "0x01188008": "PACKETID_SC_Related_HeroHelpCancelRet",
+  "0x01818300": "PACKETID_CS_BleachAgent_InitInfoReq",
+  "0x01188300": "PACKETID_SC_BleachAgent_InitInfoRet",
+  "0x01818301": "PACKETID_CS_BleachAgent_BuyReq",
+  "0x01188301": "PACKETID_SC_BleachAgent_BuyRet",
+  "0x01818302": "PACKETID_CS_BleachAgent_UpdateReq",
+  "0x01188302": "PACKETID_SC_BleachAgent_UpdateRet",
+  "0x01818400": "PACKETID_CS_ExpDuplicate_InitInfoReq",
+  "0x01188400": "PACKETID_SC_ExpDuplicate_InitInfoRet",
+  "0x01818401": "PACKETID_CS_ExpDuplicate_SkillReq",
+  "0x01188401": "PACKETID_SC_ExpDuplicate_SkillRet",
+  "0x01818402": "PACKETID_CS_ExpDuplicate_RefreshReq",
+  "0x01188402": "PACKETID_SC_ExpDuplicate_RefreshRet",
+  "0x01818403": "PACKETID_CS_ExpDuplicate_FightReq",
+  "0x01188403": "PACKETID_SC_ExpDuplicate_FigntRet",
+  "0x01818500": "PACKETID_CS_Rebirth_RebirthReq",
+  "0x01188500": "PACKETID_SC_Rebirth_RebirthRet",
+  "0x01818501": "PACKETID_CS_Rebirth_ResetReq",
+  "0x01188501": "PACKETID_SC_Rebirth_ResetRet",
+  "0x01818502": "PACKETID_CS_Rebirth_GetExpBookReq",
+  "0x01188502": "PACKETID_SC_Rebirth_GetExpBookRet",
+  "0x01818503": "PACKETID_CS_Rebirth_InitReq",
+  "0x01188503": "PACKETID_SC_Rebirth_InitRet",
+  "0x01818600": "PACKETID_CS_ChangeInfo_ChangeNameReq",
+  "0x01188600": "PACKETID_SC_ChangeInfo_ChangeNameRet",
+  "0x01818601": "PACKETID_CS_ChangeInfo_ChangeCountryReq",
+  "0x01188601": "PACKETID_SC_ChangeInfo_ChangeCountryRet",
+  "0x01818700": "PACKETID_CS_CustomHero_InitInfoReq",
+  "0x01188700": "PACKETID_SC_CustomHero_InitInfoRet",
+  "0x01818701": "PACKETID_CS_CustomHero_UpdateReq",
+  "0x01188701": "PACKETID_SC_CustomHero_UpdateRet",
+  "0x01818702": "PACKETID_CS_CustomHero_ChangeSkillReq",
+  "0x01188702": "PACKETID_SC_CustomHero_ChangeSkillRet",
+  "0x01818800": "PACKETID_CS_CollectSoul_InitReq",
+  "0x01188800": "PACKETID_SC_CollectSoul_InitRet",
+  "0x01818801": "PACKETID_CS_CollectSoul_OperatorReq",
+  "0x01188801": "PACKETID_SC_CollectSoul_OperatorRet",
+  "0x01818802": "PACKETID_CS_CollectSoul_MallReq",
+  "0x01188802": "PACKETID_SC_CollectSoul_MallRet",
+  "0x01818803": "PACKETID_CS_CollectSoul_VipBuyReq",
+  "0x01188803": "PACKETID_SC_CollectSoul_VipBuyRet",
+  "0x01818900": "PACKETID_CS_Smelt_ResetReq",
+  "0x01188900": "PACKETID_SC_Smelt_ResetRet",
+  "0x01818a00": "PACKETID_CS_KingChallenge_InitFightReq",
+  "0x01188a00": "PACKETID_SC_KingChallenge_InitFightRet",
+  "0x01818a01": "PACKETID_CS_KingChallenge_InitReq",
+  "0x01188a01": "PACKETID_SC_KingChallenge_InitRet",
+  "0x01818a02": "PACKETID_CS_KingChallenge_RankReq",
+  "0x01188a02": "PACKETID_SC_KingChallenge_RankRet",
+  "0x01818a03": "PACKETID_CS_KingChallenge_FightReq",
+  "0x01188a03": "PACKETID_SC_KingChallenge_FightRet",
+  "0x01818a04": "PACKETID_CS_KingChallenge_BoxAwardReq",
+  "0x01188a04": "PACKETID_SC_KingChallenge_BoxAwardRet",
+  "0x01818a05": "PACKETID_CS_KingChallenge_BettingReq",
+  "0x01188a05": "PACKETID_SC_KingChallenge_BettingRet",
+  "0x01818a06": "PACKETID_CS_KingChallenge_BettingAwardReq",
+  "0x01188a06": "PACKETID_SC_KingChallenge_BettingAwardRet",
+  "0x01818a07": "PACKETID_CS_KingChallenge_UploadReq",
+  "0x01188a07": "PACKETID_SC_KingChallenge_UploadRet",
+  "0x01818a08": "PACKETID_CS_KingChallenge_NpcReq",
+  "0x01188a08": "PACKETID_SC_KingChallenge_NpcRet",
+  "0x01818b00": "PACKETID_CS_VoidSoulWorld_InitReq",
+  "0x01188b00": "PACKETID_SC_VoidSoulWorld_InitRet",
+  "0x01818b01": "PACKETID_CS_VoidSoulWorld_InfoSubmitReq",
+  "0x01188b01": "PACKETID_SC_VoidSoulWorld_InfoSubmitRet",
+  "0x01818b02": "PACKETID_CS_VoidSoulWorld_FightEnterReq",
+  "0x01188b02": "PACKETID_SC_VoidSoulWorld_FightEnterRet",
+  "0x01818b03": "PACKETID_CS_VoidSoulWorld_ReviveReq",
+  "0x01188b03": "PACKETID_SC_VoidSoulWorld_ReviveRet",
+  "0x01818b07": "PACKETID_CS_VoidSoulWorld_JoinAwardReq",
+  "0x01188b07": "PACKETID_SC_VoidSoulWorld_JoinAwardRet",
+  "0x01818c00": "PACKETID_CS_UltimateEquip_InitReq",
+  "0x01188c00": "PACKETID_SC_UltimateEquip_InitRet",
+  "0x01818c01": "PACKETID_CS_UltimateEquip_ForgeReq",
+  "0x01188c01": "PACKETID_SC_UltimateEquip_ForgeRet",
+  "0x01818c02": "PACKETID_CS_UltimateEquip_AdvancedReq",
+  "0x01188c02": "PACKETID_SC_UltimateEquip_AdvancedRet",
+  "0x01818c03": "PACKETID_CS_UltimateEquip_WorkReq",
+  "0x01188c03": "PACKETID_SC_UltimateEquip_WorkRet",
+  "0x01818c04": "PACKETID_CS_UltimateEquip_BuyEnergyReq",
+  "0x01188c04": "PACKETID_SC_UltimateEquip_BuyEnergyRet",
+  "0x01818c05": "PACKETID_CS_UltimateEquip_CompleteReq",
+  "0x01188c05": "PACKETID_SC_UltimateEquip_CompleteRet",
+  "0x01818c06": "PACKETID_CS_UltimateEquip_AwardReq",
+  "0x01188c06": "PACKETID_SC_UltimateEquip_AwardRet",
+  "0x01818d00": "PACKETID_CS_ProfessionRefine_Info",
+  "0x01188d00": "PACKETID_SC_ProfessionRefine_Info",
+  "0x01818d01": "PACKETID_CS_ProfessionRefine_Mall",
+  "0x01188d01": "PACKETID_SC_ProfessionRefine_Mall",
+  "0x01818d02": "PACKETID_CS_ProfessionRefine_Levelup",
+  "0x01188d02": "PACKETID_SC_ProfessionRefine_Levelup",
+  "0x0181a000": "PACKETID_CS_Inspector_CharInfoReq",
+  "0x0118a000": "PACKETID_SC_Inspector_CharInfoRet",
+  "0x0181a001": "PACKETID_CS_Inspector_QuertInventoryReq",
+  "0x0118a001": "PACKETID_SC_Inspector_QuertInventoryRet",
+  "0x0181a002": "PACKETID_CS_Inspector_QuertServerTimeReq",
+  "0x0118a002": "PACKETID_SC_Inspector_QuertServerTimeRet",
+  "0x0181a003": "PACKETID_CS_Inspector_QuertInventoryIDReq",
+  "0x0118a003": "PACKETID_SC_Inspector_QuertInventoryIDRet",
+  "0x01186500": "PACKETID_SC_TeamBattle_TeamBattlePvpOnOffNtf",
+  "0x01186700": "PACKETID_SC_ReveredBook_BaseInfor",
+  "0x01182305": "PACKETID_SC_Activity_AwardStatusChangeNotify",
+  "0x01182306": "PACKETID_SC_Activity_ValueStatusChangeNotify",
+  "0x01180f02": "PACKETID_SC_Backpack_InventoryNtf",
+  "0x01180f06": "PACKETID_SC_Backpack_ReduceThings",
+  "0x01181202": "PACKETID_SC_Task_AlreadyAcceptTaskRet",
+  "0x01181203": "PACKETID_SC_Task_AlreadyFinishTaskRet",
+  "0x01180301": "PACKETID_SC_LOBBY_Town_RoleMove"
+ }
+}

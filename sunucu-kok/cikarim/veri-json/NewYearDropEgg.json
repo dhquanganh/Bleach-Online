@@ -1,0 +1,23 @@
+[
+  {
+    "id": "000B2391",
+    "name": "元旦活动1",
+    "tName": "元旦活动1",
+    "desc": "1、活动时间内，可以领取登陆礼包，礼包只能领取一次.礼包内包含道具奖励和一个榔头奖励。\n2、玩家在活动内每笔充值100金币以上，可以免费获得一个榔头，榔头可以用来砸银蛋和金蛋。\n3、玩家每日都有5次免费砸铜蛋的机会，砸完后，进入冷却时间，过后才能再次砸，铜蛋不能用金币和榔头砸。\n4、玩家可以用榔头去砸银蛋和金蛋，如果榔头不足，那么会用金币砸，银蛋20金币一次，金蛋100金币一次。\n5、砸蛋可以获得蛋券，拥有的蛋券达到相应的数量可以领取相应的奖励，奖励只能领取一次。",
+    "tip": "1",
+    "price": 0,
+    "imageID": 730001,
+    "loginAward": "[{\"index\":1,\"condition\":[{\"type\":1,\"value\":1}],\"award\":21402304},{\"index\":2,\"condition\":[{\"type\":1,\"value\":2}],\"award\":21402305},{\"index\":3,\"condition\":[{\"type\":1,\"value\":3}],\"award\":21402306},{\"index\":4,\"condition\":[{\"type\":1,\"value\":4}],\"award\":21402307},{\"index\":5,\"condition\":[{\"type\":1,\"value\":5}],\"award\":21402308}]",
+    "copperEgg": "{\"index\":7,\"condition\":[{\"type\":2,\"value\":2}],\"award\":21402301,\"eggTicket\":1}",
+    "silverEgg": "{\"index\":8,\"award\":21402302,\"eggTicket\":2,\"costHammer\":1}",
+    "goldEgg": "{\"index\":9,\"award\":21402303,\"eggTicket\":10,\"costHammer\":5}",
+    "eggTicketAward": "[{\"index\":10,\"condition\":55,\"award\":21402309},{\"index\":11,\"condition\":85,\"award\":21402310},{\"index\":12,\"condition\":145,\"award\":21402311},{\"index\":13,\"condition\":275,\"award\":21402312},{\"index\":14,\"condition\":555,\"award\":21402313},{\"index\":15,\"condition\":775,\"award\":21402314},{\"index\":16,\"condition\":1000,\"award\":21402315},{\"index\":17,\"condition\":1535,\"award\":21402316}]",
+    "hammerCostGold": 20,
+    "freeTimes": 5,
+    "freeTimeIndex": 90,
+    "hammerIndex": 91,
+    "eggTicketIndex": 92,
+    "timeIndex": 94,
+    "language": "[\"冷却时间未到，不能进行砸蛋\",\"是否花费%0金币砸蛋？\",\"当日免费砸蛋次数已用完\"]"
+  }
+]

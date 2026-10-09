@@ -1,0 +1,14 @@
+[
+  {
+    "id": "000F9061",
+    "name": "首冲大礼",
+    "tName": "首冲大礼",
+    "desc": "1. Top up any amount to receive a reward (first top up only).\n2. When you have cumulated certain amount of top-up, you can claim corresponding giftpack.\n3. All rewards can be claimed only once.",
+    "tip": "5",
+    "price": 0,
+    "imageID": 1020001,
+    "rechargeIndex": "{\"index\":1,\"awardId\":21403301}",
+    "f7": "[{\"index\":2,\"payGold\":400,\"awardId\":21403302},{\"index\":3,\"payGold\":600,\"awardId\":21403303},{\"index\":4,\"payGold\":1200,\"awardId\":21403304}]",
+    "f8": 0
+  }
+]

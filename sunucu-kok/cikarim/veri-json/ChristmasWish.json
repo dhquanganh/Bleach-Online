@@ -1,0 +1,24 @@
+[
+  {
+    "id": "000AD571",
+    "name": "圣诞节活动2",
+    "tName": "圣诞节活动2",
+    "desc": "1、每充值100金币可以获得一次免费许愿次数\n2、玩家没有免费许愿次数，可以花费20金币进行一次许愿。许愿一次可以获得一个铃铛和一件道具奖励。\n3、玩家可以用铃铛换取道具奖励，总共拥有的铃铛数量是前十的玩家会进排行榜，活动结束后通过邮件发送排行奖励。\n4、全服玩家铃铛数累计到一定数量，可以获得相应的奖励。",
+    "tip": "1",
+    "price": 0,
+    "imageID": 710001,
+    "allServerBellIndex": "[{\"key\":1,\"value\":21402285,\"prompt\":\"第1名\"},{\"key\":5,\"value\":21402286,\"prompt\":\"第2-5名\"},{\"key\":10,\"value\":21402287,\"prompt\":\"第6-10名\"}]",
+    "freeValueIndex": "{\"index\":1,\"count\":1,\"goldCost\":20,\"getBell\":1,\"award\":[{\"rate\":210,\"awardId\":21402230,\"greetingCard\":0},{\"rate\":210,\"awardId\":21402231,\"greetingCard\":0},{\"rate\":210,\"awardId\":21402232,\"greetingCard\":0},{\"rate\":200,\"awardId\":21402233,\"greetingCard\":0},{\"rate\":60,\"awardId\":21402234,\"greetingCard\":0},{\"rate\":40,\"awardId\":21402235,\"greetingCard\":0},{\"rate\":20,\"awardId\":0,\"greetingCard\":1},{\"rate\":20,\"awardId\":21402237,\"greetingCard\":0},{\"rate\":20,\"awardId\":21402238,\"greetingCard\":0},{\"rate\":10,\"awardId\":21402239,\"greetingCard\":0}]}",
+    "exchangeBellIdex": "{\"index\":2,\"count\":10,\"getBell\":10}",
+    "totalBellIndex": "[{\"index\":3,\"condition\":300,\"award\":21402240},{\"index\":4,\"condition\":800,\"award\":21402241},{\"index\":5,\"condition\":1500,\"award\":21402242},{\"index\":6,\"condition\":2000,\"award\":21402243},{\"index\":7,\"condition\":2500,\"award\":21402244}]",
+    "rankNum": "{\"index\":8,\"condition\":100,\"freeTime\":1}",
+    "f11": "[{\"index\":9,\"costBell\":225, \"limit\":1,\"award\":21402245,\"greetingCard\":0},\n{\"index\":10,\"costBell\":300, \"limit\":1, \"award\":21402246,\"greetingCard\":0},\n{\"index\":11,\"costBell\":175, \"limit\":1, \"award\":21402247,\"greetingCard\":0},\n{\"index\":12,\"costBell\":100, \"limit\":1, \"award\":21402248,\"greetingCard\":0},\n{\"index\":13,\"costBell\":300, \"limit\":1, \"award\":21402249,\"greetingCard\":0},\n{\"index\":14,\"costBell\":300, \"limit\":1, \"award\":21402250,\"greetingCard\":0},\n{\"index\":15,\"costBell\":5, \"limit\":999, \"award\":21402251,\"greetingCard\":0},                                                                                                         {\"index\":16,\"costBell\":10, \"limit\":999, \"award\":21402252,\"greetingCard\":0},                                                                                                       {\"index\":17,\"costBell\":1, \"limit\":999, \"award\":21402253,\"greetingCard\":0}, \n{\"index\":18,\"costBell\":1, \"limit\":999, \"award\":21402254,\"greetingCard\":0},\n{\"index\":19,\"costBell\":5, \"limit\":999, \"award\":0,\"greetingCard\":1}]",
+    "f12": 91,
+    "f13": 92,
+    "f14": 93,
+    "f15": 94,
+    "f16": "{\"oneKeyWishPrompt\":\"许愿10次,花费%0金币\",\"wishPrompt\":\"花费%0金币许愿一次\",\"bellPrompt\":\"铃铛不足\"}",
+    "f17": 10,
+    "f18": "{\"type\":1,\"code\":14100555,\"amount\":1}"
+  }
+]

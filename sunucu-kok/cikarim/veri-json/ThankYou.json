@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00107AC1",
+    "name": "感谢有你",
+    "tName": "感谢有你",
+    "desc": "1. Pendant l'Event, quand les personnages créés dans la Zone Témoin atteignent un certain nombre de jour, vous pourrez récupérer une récompense.\n2. Pendant l'Event, quand votre niveau atteint un certain palier, vous pourrez récupérer une récompense.\n3. Pendant l'Event, vous ne pourrez récupérer que les récompenses de votre Niv. de VIP. Vous ne pouvez récupérer qu'une seule récompense VIP.\n4. Pendant l'Event, quand le Niv. de VIP atteint le Super VIP, vous pourrez récupérer une récompense.\n5. Pendant l'Event les, toutes les récompenses ne peuvent être reçues qu'un seule fois.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1080001,
+    "witness": "{\"index\":0,\"award\":[{\"awardID\":21403531,\"showID\":21403531,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":5},{\"awardID\":21403532,\"showID\":21403532,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":10},{\"awardID\":21403533,\"showID\":21403533,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":30},{\"awardID\":21403534,\"showID\":21403534,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":60},{\"awardID\":21403535,\"showID\":21403535,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":90},{\"awardID\":21403536,\"showID\":21403536,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":120},{\"awardID\":21403537,\"showID\":21403537,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":150},{\"awardID\":21403538,\"showID\":21403538,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":180}]}",
+    "growth": "{\"index\":1,\"award\":[{\"awardID\":21403539,\"showID\":21403539,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":40},{\"awardID\":21403540,\"showID\":21403540,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":60},{\"awardID\":21403541,\"showID\":21403541,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":80},{\"awardID\":21403542,\"showID\":21403542,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":90}]}",
+    "vip": "{\"index\":2,\"award\":[{\"awardID\":21403543,\"showID\":21403543,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":1},{\"awardID\":21403544,\"showID\":21403544,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":2},{\"awardID\":21403545,\"showID\":21403545,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":4},{\"awardID\":21403546,\"showID\":21403546,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":6},{\"awardID\":21403547,\"showID\":21403547,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":7},{\"awardID\":21403548,\"showID\":21403548,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":8},{\"awardID\":21403549,\"showID\":21403549,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":9},{\"awardID\":21403550,\"showID\":21403550,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":10}]}",
+    "superVip": "{\"index\":3,\"award\":[{\"awardID\":21403551,\"showID\":21403551,\"showType\":2,\"fightReportAddr\":\"\",\"condition\":10}]}",
+    "onlineIndex": 4
+  }
+]

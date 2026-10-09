@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0015F901",
+    "name": "活动2",
+    "tName": "新年福袋",
+    "desc": "1. Depending on the single charge amount you receive a gift or a great gift.\n2. Rewards are random.\n3. There are 2 types of rewards, which can be received several times a day.\n4. The total recharge will reset at 00:00 each day. Use your points to redeem them in the store.\n",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1440001,
+    "orangeAward": "[{\"index\":40,\"awardid\":21404685,\"weight\":30,\"addScore\":5},{\"index\":41,\"awardid\":21404686,\"weight\":20,\"addScore\":0},{\"index\":42,\"awardid\":21404687,\"weight\":10,\"addScore\":0},{\"index\":43,\"awardid\":21404688,\"weight\":20,\"addScore\":0},{\"index\":44,\"awardid\":21404689,\"weight\":20,\"addScore\":0},{\"index\":45,\"awardid\":21404690,\"weight\":20,\"addScore\":0}]",
+    "redAward": "[{\"index\":50,\"awardid\":21404691,\"weight\":30,\"addScore\":20},{\"index\":51,\"awardid\":21404692,\"weight\":20,\"addScore\":0},{\"index\":52,\"awardid\":21404693,\"weight\":20,\"addScore\":0},{\"index\":53,\"awardid\":21404694,\"weight\":20,\"addScore\":0},{\"index\":54,\"awardid\":21404695,\"weight\":10,\"addScore\":0},{\"index\":55,\"awardid\":21404696,\"weight\":10,\"addScore\":0}]",
+    "orangeIndex": 90,
+    "redIndex": 91,
+    "rechargeIndex": 92,
+    "scoreIndex": 93,
+    "orangeCond": 200,
+    "redCond": 1000,
+    "mall": "[{\"index\":60,\"cost\":600,\"awardid\":21404700,\"numLimit\":1},{\"index\":61,\"cost\":600,\"awardid\":21404701,\"numLimit\":1},{\"index\":62,\"cost\":600,\"awardid\":21404702,\"numLimit\":1},{\"index\":63,\"cost\":600,\"awardid\":21404703,\"numLimit\":1},{\"index\":64,\"cost\":500,\"awardid\":21404704,\"numLimit\":1},{\"index\":65,\"cost\":500,\"awardid\":21404705,\"numLimit\":1},{\"index\":66,\"cost\":500,\"awardid\":21404706,\"numLimit\":1},{\"index\":67,\"cost\":500,\"awardid\":21404707,\"numLimit\":1},{\"index\":68,\"cost\":400,\"awardid\":21404708,\"numLimit\":1},{\"index\":69,\"cost\":400,\"awardid\":21404709,\"numLimit\":1},{\"index\":70,\"cost\":400,\"awardid\":21404710,\"numLimit\":1},{\"index\":71,\"cost\":400,\"awardid\":21404711,\"numLimit\":1},{\"index\":72,\"cost\":400,\"awardid\":21404712,\"numLimit\":1},{\"index\":73,\"cost\":400,\"awardid\":21404713,\"numLimit\":1},{\"index\":74,\"cost\":1,\"awardid\":21404714,\"numLimit\":0},{\"index\":75,\"cost\":1,\"awardid\":21404715,\"numLimit\":0},{\"index\":76,\"cost\":5,\"awardid\":21404716,\"numLimit\":0},{\"index\":77,\"cost\":2,\"awardid\":21404717,\"numLimit\":0},{\"index\":78,\"cost\":1,\"awardid\":21404718,\"numLimit\":0},{\"index\":79,\"cost\":1,\"awardid\":21404719,\"numLimit\":0},{\"index\":80,\"cost\":1,\"awardid\":21404720,\"numLimit\":0},{\"index\":81,\"cost\":5,\"awardid\":21404721,\"numLimit\":0},{\"index\":82,\"cost\":100,\"awardid\":21404745,\"numLimit\":0},{\"index\":83,\"cost\":2,\"awardid\":21404746,\"numLimit\":0}]",
+    "bag": "{\"index\" :95, \"awardId\" : 21404700, \"gold\" : 50000, \"showID\":11150058,\"showType\":0,\"fightReportAddr\":\"\"}\n",
+    "text": "Point Cadeau"
+  }
+]

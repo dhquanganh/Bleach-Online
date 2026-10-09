@@ -1,0 +1,12 @@
+[
+  {
+    "id": "000445C1",
+    "name": "Daily Accumulate Top-up",
+    "tName": "Get Great Items for Daily Accumulate Top-up ",
+    "desc": "During the event period, top-up designated gold amount each day to receive super value gifts; this record will be cleared next day. (Please receive reward timely)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 280001,
+    "f6": "[{\"key\":500,\"value\":[21401134],\"prompt\":\"500\"},{\"key\":1000,\"value\":[21401135],\"prompt\":\"1000\"},{\"key\":5000,\"value\":[21401136],\"prompt\":\"5000\"},{\"key\":10000,\"value\":[21401137],\"prompt\":\"10000\"},{\"key\":20000,\"value\":[21401138],\"prompt\":\"20000\"}]"
+  }
+]

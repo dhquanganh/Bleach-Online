@@ -1,0 +1,114 @@
+[
+  {
+    "id": "01CB9841",
+    "grade": 1,
+    "item": 14100003,
+    "quality": 3,
+    "value": 3
+  },
+  {
+    "id": "01CB9842",
+    "grade": 1,
+    "item": 14100004,
+    "quality": 4,
+    "value": 3
+  },
+  {
+    "id": "01CB9843",
+    "grade": 2,
+    "item": 14100003,
+    "quality": 3,
+    "value": 3
+  },
+  {
+    "id": "01CB9844",
+    "grade": 2,
+    "item": 14100004,
+    "quality": 4,
+    "value": 3
+  },
+  {
+    "id": "01CB9845",
+    "grade": 3,
+    "item": 14100004,
+    "quality": 4,
+    "value": 3
+  },
+  {
+    "id": "01CB9846",
+    "grade": 3,
+    "item": 14100005,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB9847",
+    "grade": 4,
+    "item": 14100005,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB9848",
+    "grade": 4,
+    "item": 14100726,
+    "quality": 5,
+    "value": 150
+  },
+  {
+    "id": "01CB9849",
+    "grade": 5,
+    "item": 14100728,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB984A",
+    "grade": 5,
+    "item": 14100726,
+    "quality": 5,
+    "value": 150
+  },
+  {
+    "id": "01CB984B",
+    "grade": 6,
+    "item": 14100728,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB984C",
+    "grade": 6,
+    "item": 14100726,
+    "quality": 5,
+    "value": 150
+  },
+  {
+    "id": "01CB984D",
+    "grade": 7,
+    "item": 14100728,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB984E",
+    "grade": 7,
+    "item": 14100726,
+    "quality": 5,
+    "value": 150
+  },
+  {
+    "id": "01CB984F",
+    "grade": 8,
+    "item": 14100728,
+    "quality": 5,
+    "value": 3
+  },
+  {
+    "id": "01CB9850",
+    "grade": 8,
+    "item": 14100726,
+    "quality": 5,
+    "value": 150
+  }
+]

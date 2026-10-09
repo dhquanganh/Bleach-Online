@@ -1,0 +1,16 @@
+[
+  {
+    "id": "0010A1D1",
+    "name": "感恩盛宴",
+    "tName": "感恩盛宴",
+    "desc": "1. Quand le total des recharges cumulatives atteint le montant requis, vous pouvez allumer le Puzzle. Vous pouvez recevoir les récompenses qu'une seule fois.\n2. Quand le Puzzle est terminé vous pouvez obtenir le Gikon. Le Gikon ne peut être obtenu qu'une fois.\n3. Quand le total des recharges cumulatives atteint le montant requis, vous pouvez obtenir une récompense supplémentaire.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1090001,
+    "puzzle": "{\"index\":0,\"award\":[{\"awardID\":21403552,\"condition\":200},{\"awardID\":21403553,\"condition\":400},{\"awardID\":21403554,\"condition\":600},{\"awardID\":21403555,\"condition\":800},{\"awardID\":21403556,\"condition\":1000},{\"awardID\":21403557,\"condition\":2000},{\"awardID\":21403558,\"condition\":3000},{\"awardID\":21403559,\"condition\":5000},{\"awardID\":21403560,\"condition\":8000}]}",
+    "pet": "{\"index\":1,\"petID\": 1207,\"modelID\":13200022}",
+    "rechargeIndex": 2,
+    "dailyRechargeIndex": 3,
+    "dailyGift": "{\"index\":4,\"award\":[[{\"awardID\":21403561,\"condition\":200},{\"awardID\":21403562,\"condition\":400},{\"awardID\":21403563,\"condition\":600},{\"awardID\":21403564,\"condition\":1000},{\"awardID\":21403565,\"condition\":2000}],[{\"awardID\":21403561,\"condition\":200},{\"awardID\":21403562,\"condition\":400},{\"awardID\":21403563,\"condition\":600},{\"awardID\":21403564,\"condition\":1000},{\"awardID\":21403565,\"condition\":2000}],[{\"awardID\":21403561,\"condition\":200},{\"awardID\":21403562,\"condition\":400},{\"awardID\":21403563,\"condition\":600},{\"awardID\":21403564,\"condition\":1000},{\"awardID\":21403565,\"condition\":2000}],[{\"awardID\":21403561,\"condition\":200},{\"awardID\":21403562,\"condition\":400},{\"awardID\":21403563,\"condition\":600},{\"awardID\":21403564,\"condition\":1000},{\"awardID\":21403565,\"condition\":2000}],[{\"awardID\":21403561,\"condition\":200},{\"awardID\":21403562,\"condition\":400},{\"awardID\":21403563,\"condition\":600},{\"awardID\":21403564,\"condition\":1000},{\"awardID\":21403565,\"condition\":2000}]]}"
+  }
+]

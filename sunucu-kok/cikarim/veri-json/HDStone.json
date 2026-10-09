@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00033451",
+    "name": "Synthesize Spirit Stones",
+    "tName": "Synthesize Spirit Stones, Increases Battle Power",
+    "desc": "During the event period, synthesize Spirit Stones to corresponding target to get great reward",
+    "tip": "3",
+    "price": 0,
+    "imageID": 210001,
+    "f6": "[{\"id\":14500006,\"count\":6,\"award\":[21401071],\"prompt\":\"Level 6 Strength Spirit Stones\"},{\"id\":14500106,\"count\":6,\"award\":[21401072],\"prompt\":\"Level 6 Agility Spirit Stones\"},{\"id\":14500206,\"count\":6,\"award\":[21401073],\"prompt\":\"Level 6 Wisdom Spirit Stones\"},{\"id\":14500306,\"count\":6,\"award\":[21401074],\"prompt\":\"Level 6 Stamina Spirit Stones\"}]"
+  },
+  {
+    "id": "00033452",
+    "name": "Synthesize Spirit Stones",
+    "tName": "Synthesize Spirit Stones, Increases Battle Power",
+    "desc": "During the event period, synthesize Spirit Stones to corresponding target to get great reward",
+    "tip": "3",
+    "price": 0,
+    "imageID": 210001,
+    "f6": "[{\"id\":14500007,\"count\":6,\"award\":[21401071],\"prompt\":\"Level 7 Strength Spirit Stones\"},{\"id\":14500107,\"count\":6,\"award\":[21401072],\"prompt\":\"Level 7 Agility Spirit Stones\"},{\"id\":14500207,\"count\":6,\"award\":[21401073],\"prompt\":\"Level 7 Wisdom Spirit Stones\"},{\"id\":14500307,\"count\":6,\"award\":[21401074],\"prompt\":\"Level 7 Stamina Spirit Stones\"}]"
+  }
+]

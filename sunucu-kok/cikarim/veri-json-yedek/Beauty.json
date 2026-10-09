@@ -1,0 +1,47 @@
+[
+  {
+    "id": "05697FE4",
+    "name": "Kanpanyura",
+    "rewardType": "[{\"type\":0,\"code\":0}]",
+    "rewardCode": "[90800100,90800101,90800102,90800103,90800104]",
+    "clothesID": "[\"oh\",\"yes\",\"god\"]",
+    "successText": "thank you",
+    "failText": 1
+  },
+  {
+    "id": "05698048",
+    "name": "Maria",
+    "rewardType": "[{\"type\":3,\"code\":0}]",
+    "rewardCode": "[90800200,90800201,90800202,90800203,90800204]",
+    "clothesID": "[\"oh\",\"yes\",\"god\"]",
+    "successText": "thank you",
+    "failText": 2
+  },
+  {
+    "id": "056980AC",
+    "name": "Izumo",
+    "rewardType": "[{\"type\":5,\"code\":0}]",
+    "rewardCode": "[90800300,90800301,90800302,90800303,90800304]",
+    "clothesID": "[\"oh\",\"yes\",\"god\"]",
+    "successText": "thank you",
+    "failText": 3
+  },
+  {
+    "id": "05698110",
+    "name": "Linluo",
+    "rewardType": "[{\"type\":6,\"code\":0}]",
+    "rewardCode": "[90800400,90800401,90800402,90800403,90800404]",
+    "clothesID": "[\"oh\",\"yes\",\"god\"]",
+    "successText": "thank you",
+    "failText": 4
+  },
+  {
+    "id": "05698174",
+    "name": "Kusano",
+    "rewardType": "[{\"type\":0,\"code\":0},{\"type\":3,\"code\":0}]",
+    "rewardCode": "[90800500,90800501,90800502,90800503,90800504]",
+    "clothesID": "[\"oh\",\"yes\",\"god\"]",
+    "successText": "thank you",
+    "failText": 5
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "00002711",
+    "name": "Level-Up Ranking",
+    "tName": "Level-up Master Gift Pack",
+    "desc": "Event ends at 23:59 hrs, the top 50 players in level rank will receive valuable reward. (EXP will be compared if players' level is the same. Reward will be sent by system mail)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 10001,
+    "actAward": "[{\"key\":1,\"value\":[21401083],\"prompt\":\"1st Place\"},{\"key\":5,\"value\":[21401084],\"prompt\":\"2nd - 5th Place\"},{\"key\":10,\"value\":[21401085],\"prompt\":\"6th - 10th Place\"},{\"key\":20,\"value\":[21401086],\"prompt\":\"11th - 20th Place\"},{\"key\":50,\"value\":[21401087],\"prompt\":\"21st - 50th Place\"}]",
+    "rankNum": 50
+  }
+]

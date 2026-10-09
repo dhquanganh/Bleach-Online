@@ -1,0 +1,302 @@
+[
+  {
+    "id": "00000001",
+    "mark": 15,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100007,\"amount\":2}]"
+  },
+  {
+    "id": "00000002",
+    "mark": 30,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100440,\"amount\":1}]"
+  },
+  {
+    "id": "00000003",
+    "mark": 45,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100011,\"amount\":2}]"
+  },
+  {
+    "id": "00000004",
+    "mark": 60,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100017,\"amount\":2}]"
+  },
+  {
+    "id": "00000005",
+    "mark": 75,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100012,\"amount\":2}]"
+  },
+  {
+    "id": "00000006",
+    "mark": 90,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14800020,\"amount\":2}]"
+  },
+  {
+    "id": "00000007",
+    "mark": 105,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":1}]"
+  },
+  {
+    "id": "00000008",
+    "mark": 120,
+    "level1": 1,
+    "rewards": "[{\"type\":0,\"code\":2,\"amount\":5}]"
+  },
+  {
+    "id": "00000009",
+    "mark": 135,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":2}]"
+  },
+  {
+    "id": "0000000A",
+    "mark": 150,
+    "level1": 1,
+    "rewards": "[{\"type\":1,\"code\":14100140,\"amount\":2}]"
+  },
+  {
+    "id": "0000000B",
+    "mark": 15,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100008,\"amount\":2}]"
+  },
+  {
+    "id": "0000000C",
+    "mark": 30,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100440,\"amount\":1}]"
+  },
+  {
+    "id": "0000000D",
+    "mark": 45,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100012,\"amount\":2}]"
+  },
+  {
+    "id": "0000000E",
+    "mark": 60,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100017,\"amount\":3}]"
+  },
+  {
+    "id": "0000000F",
+    "mark": 75,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100013,\"amount\":2}]"
+  },
+  {
+    "id": "00000010",
+    "mark": 90,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14800020,\"amount\":5}]"
+  },
+  {
+    "id": "00000011",
+    "mark": 105,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":1}]"
+  },
+  {
+    "id": "00000012",
+    "mark": 120,
+    "level1": 50,
+    "rewards": "[{\"type\":0,\"code\":2,\"amount\":10}]"
+  },
+  {
+    "id": "00000013",
+    "mark": 135,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100074,\"amount\":80}]"
+  },
+  {
+    "id": "00000014",
+    "mark": 150,
+    "level1": 50,
+    "rewards": "[{\"type\":1,\"code\":14100140,\"amount\":2}]"
+  },
+  {
+    "id": "00000015",
+    "mark": 15,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100009,\"amount\":2}]"
+  },
+  {
+    "id": "00000016",
+    "mark": 30,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100441,\"amount\":1}]"
+  },
+  {
+    "id": "00000017",
+    "mark": 45,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100013,\"amount\":2}]"
+  },
+  {
+    "id": "00000018",
+    "mark": 60,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100442,\"amount\":1}]"
+  },
+  {
+    "id": "00000019",
+    "mark": 75,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100014,\"amount\":2}]"
+  },
+  {
+    "id": "0000001A",
+    "mark": 90,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14800020,\"amount\":7}]"
+  },
+  {
+    "id": "0000001B",
+    "mark": 105,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":2}]"
+  },
+  {
+    "id": "0000001C",
+    "mark": 120,
+    "level1": 70,
+    "rewards": "[{\"type\":0,\"code\":2,\"amount\":15}]"
+  },
+  {
+    "id": "0000001D",
+    "mark": 135,
+    "level1": 70,
+    "rewards": "[{\"type\":13,\"code\":8,\"amount\":30}]"
+  },
+  {
+    "id": "0000001E",
+    "mark": 150,
+    "level1": 70,
+    "rewards": "[{\"type\":1,\"code\":14100140,\"amount\":2}]"
+  },
+  {
+    "id": "0000001F",
+    "mark": 15,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100010,\"amount\":2}]"
+  },
+  {
+    "id": "00000020",
+    "mark": 30,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100443,\"amount\":1}]"
+  },
+  {
+    "id": "00000021",
+    "mark": 45,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100014,\"amount\":2}]"
+  },
+  {
+    "id": "00000022",
+    "mark": 60,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100444,\"amount\":1}]"
+  },
+  {
+    "id": "00000023",
+    "mark": 75,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100445,\"amount\":1}]"
+  },
+  {
+    "id": "00000024",
+    "mark": 90,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14800020,\"amount\":8}]"
+  },
+  {
+    "id": "00000025",
+    "mark": 105,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "00000026",
+    "mark": 120,
+    "level1": 90,
+    "rewards": "[{\"type\":0,\"code\":2,\"amount\":20}]"
+  },
+  {
+    "id": "00000027",
+    "mark": 135,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":3}]"
+  },
+  {
+    "id": "00000028",
+    "mark": 150,
+    "level1": 90,
+    "rewards": "[{\"type\":1,\"code\":14100140,\"amount\":2}]"
+  },
+  {
+    "id": "00000029",
+    "mark": 15,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100011,\"amount\":2}]"
+  },
+  {
+    "id": "0000002A",
+    "mark": 30,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100443,\"amount\":1}]"
+  },
+  {
+    "id": "0000002B",
+    "mark": 45,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100015,\"amount\":2}]"
+  },
+  {
+    "id": "0000002C",
+    "mark": 60,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100444,\"amount\":1}]"
+  },
+  {
+    "id": "0000002D",
+    "mark": 75,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100445,\"amount\":1}]"
+  },
+  {
+    "id": "0000002E",
+    "mark": 90,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14800020,\"amount\":10}]"
+  },
+  {
+    "id": "0000002F",
+    "mark": 105,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":5}]"
+  },
+  {
+    "id": "00000030",
+    "mark": 120,
+    "level1": 140,
+    "rewards": "[{\"type\":0,\"code\":2,\"amount\":30}]"
+  },
+  {
+    "id": "00000031",
+    "mark": 135,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100018,\"amount\":5}]"
+  },
+  {
+    "id": "00000032",
+    "mark": 150,
+    "level1": 140,
+    "rewards": "[{\"type\":1,\"code\":14100140,\"amount\":2}]"
+  }
+]

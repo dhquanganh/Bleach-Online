@@ -1,0 +1,13 @@
+[
+  {
+    "id": "000493E1",
+    "name": "Level Up",
+    "tName": "Level Up Gift Pack",
+    "desc": "1. Only Gold can be used to purchase this gift pack 2. Gift pack has activate level 3. Follow-up gift packs will be obtained when opening the original gift pack after purchase 4. Each type of gift pack can be purchased once",
+    "tip": "",
+    "price": 0,
+    "imageID": 300001,
+    "f6": "[{\"lv\":0,\"gold\":1000,\"value\":[21401154],\"prompt\":\"Lv.35-50 Shiba Gift Pack\"},{\"lv\":0,\"gold\":2000,\"value\":[21401155],\"prompt\":\"Lv.55-70 Shihōin Gift Pack\"},{\"lv\":0,\"gold\":5000,\"value\":[21401156],\"prompt\":\"Lv.75-90 Kuchiki Gift Pack\"}]",
+    "f7": "[{\"id\":[14100200,14100201,14100202,14100203]},{\"id\":[14100204,14100205,14100206,14100207]},{\"id\":[14100208,14100209,14100210,14100211]}]"
+  }
+]

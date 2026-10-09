@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0016E361",
+    "name": "空座町庆典",
+    "tName": "3. 瀞灵诀别谭",
+    "desc": "1. You can claim achievement rewards when you meet the activation condition of current chapter.\n2. Achievement rewards can be claimed once per chapter and chapters will update.\n3. You can buy Zanpakutō or rent partner to finish task if you haven't met the activation condition yet.  ",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1500001,
+    "items": "[{\"index\":1,\"hero\":[11150017,11150019,11150015,11150018,11150020],\"knife\":[],\"item\":[],\"itemcount\":[],\"awardid\":21406550,\"Title\":\"Zero Division Chapter\"},\n{\"index\":2,\"hero\":[11150002,11110028,11110027,11110025,11110032],\"knife\":[],\"item\":[],\"itemcount\":[],\"awardid\":21406551,\"Title\":\"Gotei 13 Chapter 1\"},\n{\"index\":3,\"hero\":[11110022,11110013,11110020,11110019],\"knife\":[1000014],\"item\":[21406554],\"itemcount\":[],\"awardid\":21406552,\"Title\":\"Bloody Battle Chapter\"},\n{\"index\":4,\"hero\":[11150016,11150037,11150034,11150029],\"knife\":[1000020],\"item\":[21406555],\"itemcount\":[],\"awardid\":21406553,\"Title\":\"Gotei 13 Chapter 2\"},\n{\"index\":5,\"hero\":[11120005,11110023,11150005,11110021],\"knife\":[1000015,1000017],\"item\":[21406558],\"itemcount\":[],\"awardid\":21406556,\"Title\":\"Gotei 13 Chapter 3\"},\n{\"index\":6,\"hero\":[11140008,11160010,11160006,11160004,11110030],\"knife\":[],\"item\":[],\"itemcount\":[],\"awardid\":21406557,\"Title\":\"Espada Chapter 1\"},\n{\"index\":7,\"hero\":[11160012,11150036,11150038,11150041],\"knife\":[1000005,1000006],\"item\":[21406560],\"itemcount\":[],\"awardid\":21406559,\"Title\":\"Bloody Battle Chapter 2\"},\n{\"index\":8,\"hero\":[11110026,11150041,11110029,11150036,11110024],\"knife\":[1000019,1000005],\"item\":[21406545],\"itemcount\":[],\"awardid\":21406544,\"Title\":\"Espada Chapter 2\"},\n{\"index\":9,\"hero\":[11150016,11150039,11150032,11150029,11150040,11150046],\"knife\":[],\"item\":[],\"itemcount\":[],\"awardid\":21406546,\"Title\":\"The Wandenreich Chapter\"}]"
+  }
+]

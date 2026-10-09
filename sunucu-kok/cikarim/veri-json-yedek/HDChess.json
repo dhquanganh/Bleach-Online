@@ -1,0 +1,28 @@
+[
+  {
+    "id": "00083D61",
+    "name": "Treasure Hunt",
+    "tName": "Clear Instance to Win Mateirals",
+    "desc": "Players can get 1 free chance of Treasure Hunt every 12 hours. You can refresh the final reward before event starts. Free reset is available when you reach the final grid.\nSpend Gold to move random steps on the map. Use Super Hunt to select steps.\nYou can receive random rewards when you step on normal maps. Rewards from golden map is constant. Reach the final grid to receive final rewards including Lv.8 Spirit Stone Box, Lv.6 Hōgu Box, Hōgu Enhance Talisman, Basic Fury Stone, Hōgyoku Hollow Spirit, Golden Reishi.",
+    "tip": "5",
+    "price": 0,
+    "imageID": 540001,
+    "maxDiceNum": "[21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405799,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405800,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405801,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405802,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405803,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405804,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405805,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405806,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405807,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798,21405798]",
+    "normalCost": "{\"totalNum\":100,\"rate\":[10,20,30,45,50,55,60,65,70,80,90,100],\"award\":[21401583,21401584,21401585,21401586,21401587,21401588,21401589,21401590,21401591,21401592,21401589,21401590]}",
+    "controlCost": "[{\"index\":0,\"indexType\":3,\"getType\":1,\"condition\":[1,2,3],\"limit\":1,\"award\":[21405813]},{\"index\":1,\"indexType\":3,\"getType\":1,\"condition\":[4,5,6],\"limit\":1,\"award\":[21405814]},{\"index\":2,\"indexType\":3,\"getType\":1,\"condition\":[1,1,1],\"limit\":1,\"award\":[21405815]},{\"index\":3,\"indexType\":3,\"getType\":1,\"condition\":[2,2,2],\"limit\":1,\"award\":[21405816]},{\"index\":4,\"indexType\":3,\"getType\":1,\"condition\":[3,3,3],\"limit\":1,\"award\":[21405817]},{\"index\":5,\"indexType\":3,\"getType\":1,\"condition\":[4,4,4],\"limit\":1,\"award\":[21405818]},{\"index\":6,\"indexType\":3,\"getType\":1,\"condition\":[5,5,5],\"limit\":1,\"award\":[21405819]},{\"index\":7,\"indexType\":3,\"getType\":1,\"condition\":[6,6,6],\"limit\":1,\"award\":[21405820]}]",
+    "finalCost": 3,
+    "coolDown": 150,
+    "locationIndex": 250,
+    "refreshFinalIndex": 10,
+    "normalIndex": 43200,
+    "controlIndex": 100,
+    "resetIndex": 101,
+    "vistaIndex": 102,
+    "prompt0": 103,
+    "prompt1": 104,
+    "prompt2": 0,
+    "f20": "Require 150 Gold",
+    "f21": "Require 250 Gold",
+    "f22": "Require 10 Gold"
+  }
+]

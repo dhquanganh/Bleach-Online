@@ -1,0 +1,12 @@
+[
+  {
+    "id": "00144B51",
+    "name": "魂之狂欢3",
+    "tName": "魂之狂欢3",
+    "desc": "1. When the single recharge reaches certain amount, you can claim the corresponding rewards for one time and the rewards are stackable.\n2. If the times claiming rewards match the times completing recharges, the player's records in the event will be reset.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1330001,
+    "recharge": "[{\"index\":1,\"gold\":200,\"award\":21405317},{\"index\":2,\"gold\":800,\"award\":21405318},{\"index\":3,\"gold\":2000,\"award\":21405319},{\"index\":4,\"gold\":4000,\"award\":21405320},{\"index\":5,\"gold\":8000,\"award\":21405321}]"
+  }
+]

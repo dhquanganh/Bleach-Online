@@ -1,0 +1,21 @@
+[
+  {
+    "id": "00088B81",
+    "name": "最强王者",
+    "tName": "最强王者",
+    "desc": "Vous pouvez acheter des Partenaires pendant l'event\nVous pouvez egalement acheter des Parchemins d'EXP Epic et des Souls, 2 tirages gratuits par jour\nChaque Partenaire peut etre achete qu'une fois",
+    "tip": "1",
+    "price": 0,
+    "imageID": 560001,
+    "tabSwitch": "[{\"cost\":4000,\"award\":21402092,\"itemId\":14100423,\"id\":11140012,\"reportId\":\"\",\"position\":3},{\"cost\":4000,\"award\":21402093,\"itemId\":14100422,\"id\":11140011,\"reportId\":\"\",\"position\":2},{\"cost\":6000,\"award\":21402094,\"itemId\":14100427,\"id\":11150002,\"reportId\":\"\",\"position\":2},{\"cost\":6000,\"award\":21402095,\"itemId\":14100468,\"id\":11140013,\"reportId\":\"\",\"position\":2},{\"cost\":16000,\"award\":21402096,\"itemId\":14100331,\"id\":11140008,\"reportId\":\"\",\"position\":1},{\"cost\":6000,\"award\":21402097,\"itemId\":14100576,\"id\":11150009,\"reportId\":\"\",\"position\":3},{\"cost\":16000,\"award\":21402098,\"itemId\":14100590,\"id\":11150011,\"reportId\":\"\",\"position\":3},{\"cost\":16000,\"award\":21402099,\"itemId\":14100578,\"id\":11150010,\"reportId\":\"\",\"position\":1},{\"cost\":12000,\"award\":21402100,\"itemId\":14100597,\"id\":11150014,\"reportId\":\"\",\"position\":2},{\"cost\":12000,\"award\":21402101,\"itemId\":14100591,\"id\":11150012,\"reportId\":\"\",\"position\":2},{\"cost\":12000,\"award\":21402102,\"itemId\":14100596,\"id\":11150013,\"reportId\":\" \",\"position\":2},{\"cost\":20000,\"award\":21402103,\"itemId\":14100708,\"id\":11150022,\"reportId\":\" \",\"position\":1}]",
+    "itemTip": "[{\"index\":0,\"indexType\":3,\"getType\":4,\"condition\":11120010},{\"index\":1,\"indexType\":3,\"getType\":4,\"condition\":11120011},{\"index\":2,\"indexType\":3,\"getType\":4,\"condition\":11120012},{\"index\":3,\"indexType\":3,\"getType\":4,\"condition\":11120013}]",
+    "f8": "[{\"index\":4,\"indexType\":3,\"getType\":1,\"condition\":1,\"award\":21401652,\"tips\":\"收集1位指定伙伴\"},{\"index\":5,\"indexType\":3,\"getType\":1,\"condition\":2,\"award\":21401653,\"tips\":\"收集2位指定伙伴\"},{\"index\":6,\"indexType\":3,\"getType\":1,\"condition\":3,\"award\":21401654,\"tips\":\"收集3位指定伙伴\"},{\"index\":7,\"indexType\":3,\"getType\":1,\"condition\":4,\"award\":21401655,\"tips\":\"收集4位指定伙伴\"}]",
+    "f9": "[{\"cost\":8888,\"award\":21401618,\"itemId\":14100081,\"id\":1000012,\"expandId\":[2000121,2000122,2000123,2000124],\"reportId\":\"1011018100059\",\"position\":0},{\"cost\":6000,\"award\":21401611,\"itemId\":14100261,\"id\":1000017,\"expandId\":[2000171,2000172,2000173,2000174],\"reportId\":\"1011018100059\",\"position\":0},{\"cost\":6000,\"award\":21401612,\"itemId\":14100089,\"id\":1000015,\"expandId\":[2000151,2000152,2000153,2000154],\"reportId\":\"1011018100059\",\"position\":0},{\"cost\":10000,\"award\":21401617,\"itemId\":14100080,\"id\":1000011,\"expandId\":[2000111,2000112,2000113,2000114],\"reportId\":\"1011018100059\",\"position\":0}]",
+    "f10": "[{\"index\":8,\"indexType\":3,\"getType\":4,\"condition\":1000011}]",
+    "f11": "[{\"index\":9,\"indexType\":3,\"getType\":1,\"condition\":1,\"award\":21401636,\"tips\":\"收集1把指定斩魄刀\"}]",
+    "f12": "{\"index\":97,\"indexType\":0,\"getType\":1,\"cost\":4,\"limit\":2,\"award\":21401646,\"tips\":\"%0 Or utilise\"}",
+    "f13": "{\"index\":98,\"indexType\":0,\"getType\":1,\"cost\":8,\"limit\":2,\"award\":21401647,\"tips\":\"%0 Or utilise\"}",
+    "f14": 2,
+    "f15": "Dispo %0 fois Gratuitement"
+  }
+]

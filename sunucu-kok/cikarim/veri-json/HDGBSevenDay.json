@@ -1,0 +1,22 @@
+[
+  {
+    "id": "00027101",
+    "name": "sevendays gift",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "Small Win",
+    "tip": "1",
+    "price": 0,
+    "imageID": 160001,
+    "actAward": "[{\"key\":1,\"value\":[21401011],\"prompt\":\"Current days：%0\"},{\"key\":2,\"value\":[21401012],\"prompt\":\"Current days：%0\"},{\"key\":3,\"value\":[21401013],\"prompt\":\"Current days：%0\"},{\"key\":4,\"value\":[21401014],\"prompt\":\"Current days：%0\"},{\"key\":5,\"value\":[21401015],\"prompt\":\"Current days：%0\"},{\"key\":6,\"value\":[21401016],\"prompt\":\"Current days：%0\"},{\"key\":7,\"value\":[21401017],\"prompt\":\"Current days：%0\"}]"
+  },
+  {
+    "id": "00027102",
+    "name": "sevendays gift",
+    "tName": "Single Top-up Super Value Reward",
+    "desc": "Small Win",
+    "tip": "1",
+    "price": 0,
+    "imageID": 160001,
+    "actAward": "[{\"key\":1,\"value\":[22000101],\"prompt\":\"Current days：%0\"},{\"key\":2,\"value\":[22000102],\"prompt\":\"Current days：%0\"},{\"key\":3,\"value\":[22000103],\"prompt\":\"Current days：%0\"},{\"key\":4,\"value\":[22000104],\"prompt\":\"Current days：%0\"},{\"key\":5,\"value\":[22000105],\"prompt\":\"Current days：%0\"},{\"key\":6,\"value\":[22000106],\"prompt\":\"Current days：%0\"},{\"key\":7,\"value\":[22000107],\"prompt\":\"Current days：%0\"}]"
+  }
+]

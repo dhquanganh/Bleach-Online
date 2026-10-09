@@ -1,0 +1,14 @@
+[
+  {
+    "id": "0014C081",
+    "name": "全民疯抢1",
+    "tName": "全民疯抢1",
+    "desc": "1. Receive a gift-pack once daily after logging in. Fail to receive gift-packs consecutively will be regarded as a waiver.\n2. If a single top-up reaches a certain amount, you can freely receive a gift-pack for once daily\n3. Completing the highest top-up amount will give access to freely purchase a gift-pack for once daily in Event 2 ",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1360001,
+    "dayGifts": "[{\"index\":1,\"award\":21405380},{\"index\":2,\"award\":21405381},{\"index\":3,\"award\":21405382},{\"index\":4,\"award\":21405383},{\"index\":5,\"award\":21405384}]",
+    "progressGifts": "[{\"index\":11,\"gold\":1000,\"freeBoxCount\":0,\"award\":21405385},{\"index\":12,\"gold\":4000,\"freeBoxCount\":1,\"award\":21405386}]",
+    "rechargeIndex": 20
+  }
+]

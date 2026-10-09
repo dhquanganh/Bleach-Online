@@ -1,0 +1,1510 @@
+042DA424	0K
+042DA426	Backpack
+042DA42A	Activate at VIP %0
+042DA42B	None
+042DA42C	Year
+042DA42D	Day
+042DA42E	Hour
+042DA42F	Minute
+042DA430	Second
+042DA431	Not enough silver
+042DA432	Not enough Gold
+042DA433	Not enough coupon
+042DA434	Not enough points
+042DA435	Not enough vitality
+042DA436	Not enough Reishi
+042DA437	Vip level not enough
+042DA438	Your Gold is not enough, do you want to top-up?
+042DA439	Gold not enough, you need %0 Gold, do you want to top-up?
+042DA43D	Silver
+042DA43E	Gold
+042DA43F	Coupon
+042DA440	Points
+042DA441	Blue Star
+042DA442	Red Star
+042DA443	EXP
+042DA444	Vitality
+042DA445	Prestige
+042DA446	Soul
+042DA447	Blue Reishi
+042DA448	Purple Reishi
+042DA449	Gold Reishi
+042DA44A	Red Reishi
+042DA44B	Hōgyoku Hollow Spirit
+042DA44C	Espada #4 Hollow Spirit
+042DA44D	Espada #3 Hollow Spirit
+042DA44E	Espada #2 Hollow Spirit
+042DA44F	Espada #1 Hollow Spirit
+042DA450	Tōsen Hollow Spirit
+042DA451	Gin Hollow Spirit
+042DA452	Aizen Hollow Spirit
+042DA453	Merits
+042DA454	Goldfish
+042DA455	Hōgu Quality: %0
+042DA456	Hōgu Type: %0
+042DA457	Bonus Attributes: %0
+042DA458	Hōgu Description: %0
+042DA459	Activate Requirements: Vip %0
+042DA45A	Cost: %0
+042DA45B	Cost: %0 Gold or Coupons
+042DA465	Luck Cat
+042DA466	Lucky Income: %0Silver
+042DA467	Lucky Cat Introduction: 
+042DA468	Click to get Silver
+042DA469	Equipped: %0
+042DA46A	Sells Price: %0
+042DA46B	Countdown until this item is deleted: %0
+042DA46C	Cumulative Flirting Points: %0
+042DA46D	Received Title: %0
+042DA46E	Accumulate %0 points to get Title: [%1], and receive %2 %3% bonus.
+042DA46F	Accumulate Flirting points to get corresponding Title and interaction %0 reward bonus.
+042DA470	Required Level: %0
+042DA471	Equipment Type: %0
+042DA472	Class: %0
+042DA473	%0: %1 (+%2)
+042DA474	%0: %1
+042DA475	Bonus Attributes: 
+042DA476	 %0 +%1
+042DA477	 %0 +%1%
+042DA478	Unknow
+042DA479	Weapon Skill: %0 %1
+042DA47A	Spirit Stone Embed Attributes: 
+042DA47D	%0(%1/%2)
+042DA47E	%0 pieces effect: %1
+042DA47F	Growth Rate: %0
+042DA480	Use Level: Level %0
+042DA481	Function Description: 
+042DA485	Level %0
+042DA486	Refresh
+042DA487	Confirm
+042DA488	Sorry, you disconnected. Please click Confirm button to refresh the page.
+042DA489	Basic
+042DA48A	Infuse Spirit Level: Level %0
+042DA48B	Infuse Spirit Bonus Attributes: %0
+042DA48C	Total
+042DA48D	This name already exists
+042DA48E	Please input the right username
+042DA48F	Spend %0 Gold to take off all of her clothes?
+042DA490	Currently initializing player data…
+042DA491	Login Game Server.....
+042DA492	Recharge Unavailable
+042DA493	Are you sure to change your in-game name to:
+042DA494	Name changed! Please login again to refresh your personal data!
+042DA495	Use Top-up Card Successfully!
+042E86B1	Reiatsu LV.%0
+042E86B2	You've reached the highest level.
+042E86B3	%0/%1
+042E86B4	%0%
+042E86B5	Current Reiatsu Max Level: LV. %0
+042E86B6	*Main Character LV. %0 corresponding Reiatsu Max Level: LV. %1
+042E86B8	Minor Critical Hit * %0! 
+042E86B9	Major Critical Hit * %0! 
+042E86BA	Obtained %0 EXP
+042E86BB	Each refine consumes 15000 Silver With chance of Minor Critical Hit (Obtain 10 times EXP)
+042E86BF	Reach Vip 6 to active One-click Refine
+042E86C0	Reach Vip 6 to activate Ultimate Refine
+042E86C1	Reiatsu already reach max limit
+042E5BB8	Congrats, enhanced successfully! 
+042E5BB9	Equipment already reached max level and cannot upgrade! 
+042E5BBA	Lucky! Double Enhance! 
+042E5BBB	Cool down reset! Enhance now! 
+042E5BBC	Sorry, fortifying failed! Please check if you have enough Gold! 
+042E5BBD	Silver not enough, cannot fortify! 
+042E5BBE	Equipment fortifying level cannot be higher than Main Character's level, cannot fortify! 
+042E5BBF	Successfully clear CD time once! 
+042E5BC0	CD Time is 0, don't need to wait! 
+042E5BC1	Failed to clear CD time! 
+042E5BC2	Successfully clear CD time! 
+042E5BC3	Refine successfully
+042E5BC4	Designated Refine successfully! 
+042E5BC5	Skill Refine successfully! 
+042E5BC6	Bulk Refine successfully! 
+042E5BC7	Replace successfully! 
+042E5BC8	Sorry, replace failed! 
+042E5BC9	Silver not eenough, cannot Refine! 
+042E5BCA	Refine failed! 
+042E5BCB	Equipment inherited! 
+042E5BCC	Equipment's socket holes need to be the same to inherit. Please check your Equipment! 
+042E5BCD	Fail to Inherit! Equipment fortify level cannot be higher than Main Character's level! 
+042E5BD1	Bulk Refine, vip 6 unlock
+042E5BD5	
+042E5BD6	Only Equipment above Level 50 can be Spirit Forge
+042E5BD7	After Spirit Forging, you can Enchant the Weapon
+042E5BD8	Please select Equipment first
+042E5BD9	Enchantment successful
+042E5BDA	Spirit Forging successful 
+042E5BDB	You sure ton consume %0 Gold or Coupons to clear CD time?
+042E5BDC	Backpack
+042E5BDD	Equipment currently is Level %0, can upgrade to Level %1! 
+042E5BDE	Level %0
+042E5BDF	Silver
+042E5BE0	Refine failed, please check if you have enough Silver or Gold.
+042E5BE1	50 Gold or Coupon
+042E5BE2	10 Gold or Coupon
+042E5BE3	10 Gold or Coupon
+042E5BE4	Equipment Spirit Forging is activated at Level %0
+042E5BE5	Equipment Enchantment is activated at Level %0
+042E5BE7	Spirit Forging material source: 
+042E5BE8	This accessory cannot be Spirit Forge
+042E5BE9	This accessory reaches max level
+042E5BEA	Cannot socket holes
+042E5BEB	Socket holes: %0/%1
+042E5BEC	Silver not enough!
+042E5BED	Socket materials not enough! 
+042E5BEE	This socket will consume %0 X %1
+042E5BEF	This socket will consume %0 X %1 and %2 X %3
+042E5BF0	Gold and above level quality equipment can be socked! 
+042E5BF1	Cannot socket this Equipment
+042E5BF2	Socket holes reached maximum! 
+042E5BF3	Socket successfully! 
+042E5BF4	Socket failed! 
+042E5BF5	Fortify Level: 
+042E5BF6	Silver
+042E5BF7	Gold or Coupons
+042E5BF8	White and Green Equipment cannot refine! 
+042E5BF9	Infuse Spirit Level %0
+042E5BFB	You've reached Infuse Spirit max level
+042E5BFC	Purple or above quality equipment can Infuse Spirit
+042E5BFD	Obtained Protection Stone
+042E5BFE	Infuse spirit successfully
+042E5BFF	Infuse spirit failed
+042DAFDB	EXP: %0/%1
+042DAFDC	%0 %1+%2 
+042DAFDD	Lv.%0
+042DAFDE	You sure to dismiss partner?  Tip: please remove the Equipments on the partner
+042DAFE0	Cannot use EXP card on Main Character
+042DAFE1	Partners' level cannot be higher than Main Character's level
+042DAFE2	Cannot give Main Character EXP
+042DAFE3	Please remove partner's Equipment 
+042DAFE4	Please remove partner's Hōgu 
+042DAFE5	x%0
+042DAFE6	Strength Growth Rate: %0 
+042DAFE7	Wisdom Growth Rate: %0 
+042DAFE8	Agility Growth Rate: %0 
+042DAFE9	Stamina Growth Rate: %0 
+042DAFEA	Physical Attack: basic value for dealing damage on enemy, base on Strength
+042DAFEC	Kidō Attack: basic value for dealing damage on enemy, base on Wisdom
+042DAFED	Damage Rate: bonus rate for dealing damage on enemy
+042DAFEE	Kidō Defense: basic value for defense against Kidō Attack damage, affected by Wisdom
+042DAFEF	HP: HP value max limit, when HP is 0 leave battle.
+042DAFF1	One-key exchange successfully! 
+042DAFF2	The two Partners for exchange cannot be the same! 
+042DAFF3	Partners quality did not reach Hōgu's quality requirement, cannot exchange! 
+042DAFF4	Partners level did not reach Equipment level requirement, cannot exchange! 
+042DAFF5	You must have 2 empty slots in the backpack to use one-key exchange! 
+042DAFF7	Please remove partner's Accessory
+042DAFF8	Equipment
+042DAFF9	Item
+042DAFFA	Already expand to max space!
+042DAFFB	Activate at VIP %0
+042DAFFC	You sure to spend %0 Gold to purchase one Partners slot?
+042DAFFD	Purchased successfully
+042DAFFE	You can unlock the equipment attributes by improving them
+042DAFFF	Max level reached!
+042DB000	Level too low to advance!
+042DB001	Insufficient materials for advancing!
+042DB002	You must reach max improving level to advance!
+042DB003	Max improving level reached!
+042DB004	Insufficient materials for improving!
+042DB005	%0(Activate Rank %1)
+042DB006	%0(+%1)
+042DB007	Drop in Shinigami Agent
+042DB008	%0(6 pieces of hollowfied equipment, activate rank %1)
+042E5000	%0%
+042E5001	EXP: %0/%1
+042E5002	Prestige obtaining method: Arena challenge and Arena treasure chest
+042E5003	After upgrading rank, you can receive salary everyday! 
+042E5005	Congratulations on becoming [%0]
+042E5006	Spirit Blade: Physical Attack type Partners 
+042E5007	Wild Blade: Physical Attack type Partners 
+042E5008	Kidō : Kidō Attack type Partners 
+042E5009	Ghost Sword: Physical Attack type Partners 
+042E500A	Mage: Kidō Attack type Partners 
+042DB7A9	Item Sold obtained: Silver +%0!
+042DB7AA	You had obtained: %0*%1
+042DB7AB	Item stored successfully!
+042DB7AC	You Obtained：Sliver +%0
+042DB7AD	Inventory full, please arrange first
+042DB7AE	Expend Bag Successfully!
+042DB7AF	Use successfully:  Reiatsu %0+%1
+042DB7B0	Insufficient Expend Item!
+042DB7B1	Insufficient Level! Please Level up!
+042DB7B2	x %0
+042DB7B4	You already expand to max limit.
+042DB7B5	Confirm to throw away item?
+042DB7B6	Sell %0 x %1 and received %2 Silver.
+042DB7B8	Gold or Coupon not enough
+042DB7B9	There is spirit stone embedded in this Equipment, you sure to sell?
+042DB7BA	Selling List include Spirit Stones, Equipment or Hōgu, you sure to sell?
+042DB7BB	%0 * %1
+042DBB90	占位
+042DBB91	Fighting Formation Joined!
+042DBB92	Main character must in the formation
+042DBB93	Skill Changed!
+042DBB94	Exchange Partners successfully! 
+042DBB95	No Vacancy in Formation
+042DBB96	Partners Rest
+042DBB97	12th Division Lieutenant can have 4 Partners 
+042DBB98	10th Division Captain can have 5 Partners 
+042DBB99	Maximized combatant reached
+042DBB9A	Attack damage\t decrease %0% 
+042DBB9B	%0 \t increase %1% 
+042DBB9C	%0 / %1
+042DBB9D	%0 \t\t increase %1% 
+042DBB9E	Lv. %0 Reiatsu 
+042DBBA5	After Partners join formation, you can close it
+042DBBA6	Damage Rate
+042DBBA7	Damage Rate: -40%
+042DBBA8	Modification Activated
+042E638A	Embed successfully! 
+042E638B	Remove successfully! 
+042E638C	One Equipment cannot embed 2 stones of the same type! 
+042E638D	This Equipment is fully embedded! 
+042E638E	Not enough jades of the same type! Please go to Jade Shop!
+042E638F	Jade synthesized!
+042E6390	Embed failed!
+042E6391	Remove failed!
+042E6392	Current spirit stones reached max level and cannot synthesize! 
+042E6393	When less than 2 spirit stones, cannot synthesize! 
+042E6394	Synthesize failed! 
+042E6395	Backpack full, cannot synthesize! 
+042E6396	Synthesize failed! No spirit stones can be synthesized! 
+042E6397	Fortify Level: 
+042E6398	Not yet embed
+042DC361	Success! %0+%1
+042DC362	Lucky! %0+%1
+042DC363	No same Chakra. Please try next time, %0 Sliver returned
+042DC364	No same Chakra. Please try next time.
+042DC365	All attributes have hit the level cap. Light more S. Abilities to raise the level caps!;
+042DC366	Insufficient Sliver
+042DC367	Successed, Return %0 Sliver
+042DC368	%0+%1
+042DC369	%0+%1\n Level to LV.%2
+042DC749	Upgraded! You are more powerful now!
+042DC74A	Converted Successful!
+042DC74B	Upgrade Success! You have a more powerful Hōgu Now!
+042DC74C	This Hōgu can't be upgraded
+042DC74D	%0+%1
+042DC74E	%0-%1
+042DC74F	Character quality need to be upgraded to equip this Hōgu! Click Soul Map to upgrade!
+042DC750	Hōgu equipped now can't be upgraded
+042DC751	Hōgu Quality 3 and above can be upgraded
+042DC752	Your Hōgu Quality is Maxed!
+042DC753	Hōgu equipped on character can't be converted
+042DC754	Hōgu quality higher than 0 can't be converted
+042DC755	Highest level reached
+042DC756	Hōgu Level: 
+042DC757	Hōgu Quality: 
+042DC758	Require consumption: 
+042DC759	Gold
+042DC75A	Confirm to consume: 
+042DC75C	Hōgu Convert Talisman
+042DC760	Backpack
+042DC761	Hōgu Enhance Talisman
+042DC762	Hōgu Convert Talisman
+042DC763	Current Hogu has already reached the highest tier!
+042DC764	Upgrade tier successful!
+042DC765	%0 discount
+042DC766	Purchase limit %0/%1
+042DC767	Can only upgrade Hogu with max level
+042DC768	Cannot upgrade low-tier Hogu
+042DC76A	Level %0
+042DC76C	Confirm Fortify? Note: Spirit Essence is very valuable, please confirm fortify Hogu.
+042DC76E	Confirm Break Down? This item is very valuable.
+042DC770	Inherit Successful!
+042DC771	Fortify Successful!
+042DC772	Consume Spirit Essence first. If amount insufficient, can consume gold to upgrade Hogu!
+042DCB31	Lights up Soul Point and obtained:  %0+%1
+042DCB32	Lights up Soul Point and obtained:  %0
+042DCB33	Congratulations, the Main Character quality upgrade to %0! 
+042DCB37	LV.%0
+042DCB38	Skill upgrade successfully! 
+042DCB39	Congratulations, the Main Character quality upgrade to 
+042DCB3A	Novice Guide not yet completed, please follow the direction!
+042DF241	Refine successfully, %0 gains %1 EXP! 
+042DF242	%0 Level upgrade successfully! 
+042DF243	Minor Critical Hit*%0, %1 gains %2 EXP! 
+042DF244	Major Critical Hit*%0, %1 Level upgraded! 
+042DF245	Minor Critical Hit*%0, Major Critical Hit*%1, totally gain %2 EXP! 
+042DF246	Minor Critical Hit*%0, totally gain %1 EXP! 
+042DF247	Major Critical Hit*%0! Totally gain %1 EXP! 
+042E1951	Janken with 3 Partner randomly, normal Saka may attract normal Partner.
+042E1952	Janken with 3 partner randomly, senior Saka may attract senior Partner.
+042E1953	Auto Janken 10 times
+042E1954	Auto Janken 10 times, with 100% wins
+042E1956	You lost in Janken, returns %0 Silver.
+042E1957	You won in Janken and receives %0 %1 Reishi!
+042E1958	You already recruited maximum number of Partners and cannot recruit anymore! 
+042E1959	Purchased successfully!
+042E195A	You challenged 30 Partners and obtained %0 %1 Reishi.
+042E195B	"You sure to spend %0 Gold to win?"
+042E195C	Strength Growth Rate: 
+042E195D	Agility Growth Rate: 
+042E195E	HP Growth Rate: 
+042E195F	Wisdom Growth Rate: 
+042E1960	Vanguard
+042E1961	Assaulter
+042E1962	Supporter
+042E1963	Congratulations, you got: 
+042E1964	Recruit successfully! 
+042E1965	Confirm if you want to spend %0 Gold or Coupon and % 1Silver to Auto Win Janken?
+042E1966	Auto Advance Janken
+042E1967	Auto Win Janken
+042E196A	 Gold or Coupon
+042E196B	Successfully advanced!
+042E196C	Not enough red reishi!
+042E7711	Please select mail you want to delete
+042E7712	No attachment found
+042E7713	Attachment received
+042E7714	Player doesn’t exist 
+042E7715	Empty Mailbox!
+042E7716	Please select mail you want to receive attachment
+042E7717	Sender
+042E7718	Receiver
+042E7719	System
+042E771A	Day
+042E771B	Letter from %0
+042E771C	Send Letter to %0
+042E771D	Input Player Name
+042E771E	Input Title
+042E771F	Input Mail Content
+042E7720	Sent successfully!
+042E6770	您今天游戏累计时间已满1小时
+042E6771	您今天游戏累计时间已满2小时
+042E6772	您今天游戏累计时间已满3小时, 物品 reward已经自动减半, 请下线休息, 健康生活! 
+042E6773	您今天游戏累计时间达到3小时50分, 再过10分钟会进入防沉迷模式, 请保持健康游戏时间
+042E6774	您今天游戏累计时间达到3小时59分, 再过1分钟会进入防沉迷模式, 请保持健康游戏时间
+042E6775	您今天累计在线时间已满4小时, 建议您下线休息, 做适当身体活动! 
+042E8E81	The higher the VIP level, the better the benefits!
+042E8E82	Reiatsu will provide Attributes Bonus in the Arena and Activities!
+042E8E84	Play Arena and receive Arena Chest will give you Prestige
+042E8E85	When you cannot see the whole scene, left-click and drag to change your viewpoints.
+042E8E86	Correct Spirit Stones will massively increase your Combat Power!
+042E8E87	Formation is the key to success!
+042E8E88	Switching skills while meeting fierce enemies can give you unexpected result!
+042E8E89	The higher the ninja rank, the more partners you can take to battle!
+042E8E8A	Trial Tower will drop Hōgu! 
+042EDCA4	Get huge growth up to level 6
+042EDCA5	Get huge growth up to level 11
+042EDCA6	Get huge growth up to level 12
+042EDCA7	Get huge growth up to level 13
+042EDCA8	Get huge growth up to level 51
+042EDCAA	Requires Level %0 Guild Camp
+042EDCAB	Already reached highest level
+042EDCAE	Lv%0 
+042EDCAF	Current Attributes:  %0 + %1  
+042EDCB0	Next Level Attributes:  %0 + %1  
+042EDCB1	Attacker Wins
+042EDCB2	Defender Wins
+042EDCB3	Stages EXP provide 30% bonus
+042EDCB4	Silver drops in Stages provide 30% bonus
+042EDCB6	Create guild successfully! 
+042EDCB7	Guild application sent successfully! 
+042EDCB8	Upgrade successfully! 
+042EDCB9	Transfer rights successfully! 
+042EDCBA	Reward sent successfully! 
+042EDCBB	Donate successfully! 
+042EDCBC	Leave guild successfully! 
+042EDCBD	Not yet enter guild
+042EDCBE	You disband the guild! 
+042EDCBF	Guild announcement edited successfully! 
+042EDCC0	Congratulations on registering successfully! 
+042EDCC1	Enter to upgrade Attributes
+042EDCC2	Enter
+042EDCC3	Register
+042EDCC4	Start Battle
+042EDCC5	Current Guild max population
+042EDCC6	Next Level Guild max population
+042EDCC7	Current Protect Seireitei HP Bonus
+042EDCC8	Next Level Protect Seireitei HP Bonus
+042EDCC9	Current Guild War Attack Bonus
+042EDCCA	Next Level Guild War Attack Bonus
+042EDCCB	Currently Guild does not have enough assets
+042EDCCC	Required Guild Level: 
+042EDCCD	Did not select member! 
+042EDCCE	You are not the guild leader, cannot kick out member! 
+042EDCCF	Are you sure to kick
+042EDCD0	out of the Guild?
+042EDCD1	All
+042EDCD2	Please input Announcements, cannot be more than 180 characters! 
+042EDCD3	Leave Guild
+042EDCD4	Disband Guild
+042EDCD7	Stage EXP Bonus: 
+042EDCD8	Stage Silver Bonus: 
+042EDCD9	Guild War Guild Bonus: 
+042EDCDA	All Attack
+042EDCDB	Protect Seireitei Guild Bonus: 
+042EDCDC	All Max HP
+042EDCDD	Guild Application
+042EDCDE	Transfer Rights
+042EDCDF	Confirm to transfer Guild Leader position to this person?
+042EDCE0	Guild name cannot include illegal characters! 
+042EDCE1	Guild name cannot be empty!
+042EDCE2	Today, can still donate Silver: 
+042EDCE3	Gold not enough! 
+042EDCE4	Silver not enough! 
+042EDCEA	Battle Starts at 01:59 PM
+042EDCEB	Register at 6:40 PM
+042EDCEC	Battle starts at 7:00
+042F03B1	Only could jump to the corresponding interface in the main scene !
+042F03B2	In battle, this operation is not avaliable!
+042F2AC1	Today experience gaining from the slave is full.
+042F2AC5	He/She is your slave, you release the He/She, directly go to rescue other slaves.
+042F2AC6	He/She has been exhausted, it can't work for you again.
+042F2AC8	He/She is your host, and can't save you, go find someone else to get help!
+042F2ACA	Master
+042F2ACB	Slave
+042F2ACC	Interact CD
+042F2ACD	Rescue Guild Member
+042F2ACE	Rescue
+042F2ACF	Ask for Help
+042F2AD0	Master's Name
+042F2AD1	Belonging Guild
+042F2AD2	Today, you already rescue 
+042F2AD4	Spend %0 Gold or Coupon to directly get Slave's 1 hour work EXP.
+042F2AD5	Spend %0 Gold or Coupon to directly get all of Slave's remaining work EXP.
+042F2AD6	You sure to release this slave?
+042F2ADD	Interaction CD time, cannot release.
+042F2ADE	(%0 Slave)
+042F2ADF	He/She is a Slave. You sure to battle the Master %0?
+042F2AE0	Successfully released %0 and gained %1 EXP.
+042F2AE1	Successfully press %0 and gained %1 EXP.
+042F2AE2	You interact with %0 and gained %1 EXP
+042F2AE3	You sure to spend %0 Gold or Coupon to redeem yourself?
+042F2AE4	Level gap more than 10 levels
+042F2AE5	Free
+042F2AE6	Extracting and cooling, wait 1 minute.
+042F2AE7	You level gap with He/She is more than 10 level, and can't capture!
+042F2AE8	Number of asking for help has been used up today, come back tomorrow.
+042F2AE9	You used up the resistance chances for today, come back tomorrow.
+042F2AEA	Currently there is no Slave to rescue
+042F2AEB	Currently there is no one who can rescue you
+042F2AEC	Successfully released %0
+042F2AED	You did not join Guild! 
+042F78E1	Silver: %0
+042F78E2	Gold: %0
+042F78E3	Coupon: %0
+042F78E4	Check Main Character Information
+042F78E7	VIP %0
+042F78E8	EXP: %0/%1
+042F78E9	Today, you purchase %0 times, spends %1 Gold or Coupon to purchase %2 Vitality points.
+042F78EB	Click on the underlined words to start auto-pathfinding.
+042F78EC	You used up the chances for today, please upgrade your VIP Level.
+042F78ED	You sure to spend %0 Gold or Coupon to clear CD time?
+042F78EE	Gold clear CD time
+042F78EF	This function not yet available, please wait.
+042F78F3	Home
+042F7903	Task [%0] not yet received
+042F7904	Task [%0] not yet finished
+042F7905	Level did not reach Level %0
+042F7906	, cannot activate %0 function! 
+0430D873	Normal Interaction can obtain %0 Skill Scroll
+0430D874	Soul Interaction can obtain %0 Skill Scroll
+0430D875	Click normal Interaction to obtian Skill Scroll
+0430D876	Spend 5 Gold to Soul Interaction, Skill Scroll will increase 10%
+0430D877	You sure to spend %0 Gold to start?;
+0430D878	%0's Home
+0430D879	My Home
+0430D87A	Already at %0's Home! 
+0430D87B	Return to my Home
+0430D87C	Check all interaction records
+0430D87E	Daily Exchange with Girlfriend chances
+0430D880	Daily chances of killing friend's Home Konsō, chances increase with Home level
+0430D881	You spend %0 %1 to help Girlfriend purchase clothes, you discovered %2 x %3.
+0430D884	Upgrade Girlfriend can increase Party chances and Soul Interaction chances.
+0430D885	Lucky cat is available now
+0430D886	Lucky Cat in CD
+0430D887	spend %0 Gold or Coupon to clear CD?
+0430D888	Get money successfully! Silver+%0
+0430D889	clear CD time successfully
+0430D88A	Cannot use Lucky Cat
+0430D88B	Daily Konsō chances not enough
+0430D88C	Konsō chances not enough
+0430D88D	Konsō chances: %0
+0430D88E	Current Konsō chances %0, spend %1Gold
+0430D88F	Daily Lucky Cat chances are used up
+0430D890	You daily interaction chances are used up
+0430D891	%0 not enough
+0430D892	Today someone came and purchased lingerie for your Girlfriend, she was very shy.
+0430D893	Today someone came to flirt with your Girlfriend, she flirted back.
+0430D895	spend %0 Gold to conduct One-click Konsō?
+0430D896	You can only interact with your Girlfriend once daily
+0430D89A	Daily Girlfriend Soul Interaction chances, chances increase with Girlfriend level.
+0430D89B	Daily Girlfriend Partying chances, chances increase with Girlfriend level.
+04323801	Congratulations challenge successfully, our fury+50, enemy fury-50
+04323802	challenge failed, our fury-50, enemy fury+50
+04323803	Congratulations challenge successfully, you activate %0! 
+04323804	Congratulations challenge successfully, you activate %0! 
+04323805	Challenge failed, please boost your power and come back!
+04323807	Today's free claim %0 x %1
+04323809	One-click Swallow %0 %1 times, totally spend %2 Gold or Coupon
+0432380A	VIP %0 activate
+0432380B	Today's swallow chances are used up
+0432380C	Confirm to spend %0 Gold or Coupon to swallow?
+0432380D	You swallowed once, obtained %0 x %1
+0432380E	You swallowed once, with Critical Hit, obtained %0 x %1
+0432380F	You have done One-click Swallow 10 times, obtained %0 x %1
+04323810	You have done One-click Swallow 10 times, with Critical Hit %0 times, obtained %1 x %2
+04323811	Congratulations you have obtained %0 x %1
+04323812	Congratulations stage cleared
+04323814	Today's challenge chances are used up
+04323815	Today's left chances not enough %0 times
+042DCF19	spend %0 Gold or Coupon to increase one challenge chance
+042DCF1A	Confirm to spend %0 Gold or Coupon to clear CD time?
+042DCF22	Claimable for No.%0 to No.%1 
+042DCF24	Top %0
+042DD301	%0/%1
+042DD303	Confirm to spend %0 Gold or Coupon to refresh?
+042DD304	%0 Gold or Coupon to refresh
+042DD305	Free Refresh
+042DD306	Confirm to abandon this task?
+042DD307	Daily task accepted
+042DD308	Daily task completed
+042DD309	Refresh task successfully
+042DD30A	Today has reached the maximum number of tasks
+042DD30B	Refresh will automatically abandon the accepted task, confirm to refresh?
+042DD30C	Accepting this task will automatically abandon the accepted task, confirm to accept?
+042DD30D	Confirm to spend %0 Gold or Coupon to complete instantly?
+042DD30E	+%0 points
+042DD30F	%0 points
+042DD310	Points+%0
+042DD311	(Completed)
+042DD312	(Unfinished)
+042DD313	Instant complete
+042DD314	Abandon Task
+042DD315	Complete Task
+042DD316	Accept Task
+042DDAD1	Equip Level: 
+042DDAD2	Level
+042DDEB9	You can obtain
+042DDEBA	Sign-in again
+042DDEBB	%0
+042DDEBC	day to obtain
+042DDEBD	Daily Sign-in can obtain %0 points, Level up to redeem more items.
+042DDEBE	Sign-in reward: 
+042DDEBF	%0 Silver
+042DDEC0	%0 Coupon
+042DDEC1	Confirm to spend %0 Gold or Coupon to late sign-in
+042DDEC2	LV.%0 to unlock
+042DDEC3	%0 points
+042DDEC4	Congratulations you have obtained 
+042DDEC6	Receive
+042DDEC7	Already Received
+042DDEC8	op up %0 gold to get
+042DDEC9	Get daily rewards for 30 days!
+042DE2A1	Spend %count% Gold or Coupon to reset
+042DE2A2	Spend %count% Gold or Coupon to reset all
+042DE2A3	There is no available instance to reset
+042DE2A4	%level% level to activate
+042DE2A5	Confirm to spend %count% Gold or Coupon to reset
+042DE689	Cannot cancel auto battle
+042DE68B	Auto register function activate at VIP %0
+042DEA72	Exploration failed. 
+042DEA73	Need to spend %count% silver to refresh
+042DEA74	Need to spend %count% Gold or Coupon to refresh
+042DEA75	Failed to open a new treasure map
+042DEA76	Congratulations, successfully open %name%
+042DEA77	VIP %count% player can open directly
+042DEA78	cannot open this map directly
+042DEA79	Confirm to spend %count% Gold or Coupon to purchase chances
+042DEA7A	Confirm to spend %count% Gold or Coupon to refresh
+042DEA7C	Points not enough! 
+042DEA7D	Purchase successfully! 
+042DEA7E	%Type% Refresh chances: 
+042DEA7F	Refresh cost: %Count% %Type%
+042DEA80	Refresh chances used up
+042DEA81	Already the final target
+042DEA82	Today VIP purchase chances left %count0%, upgrade VIP level can purchase %count1% times.
+042DEA83	Hunting reward: 
+042DEA84	%0 minutes
+042DEA85	Chances to get: 
+042DEA86	You were robbed: 
+042DEA87	Belonging Guild: %0
+042DEA88	Belonging Map: %0
+042DEA89	Rob times: %0
+042DEA8A	Left time: %0
+042DEA8B	Hunting obtained: 
+042DEA8C	You cannot rob this player anymore
+042DEA8D	Need to spend %count% Gold or Coupon to accelerate
+042DEA8E	Hunting in progress…! 
+042DEA8F	Hunting chances used up
+042DEA91	Confirm to spend %count% Gold or Coupon to directly finish hunting?
+042DEA92	Today's hunting chances are used up
+042DEA93	Start hunting now!
+042DEA94	You cannot rob yourself
+042DEA95	You cannot rob this player anymore, let him/her go!
+042DEA96	Rob chances are used up!
+042DEA97	Confirm to rob %name%
+042DEA98	Failed to rob
+042DEA99	Today's VIP purchase chances are used up!
+042DEA9A	Activate Level LV.%0
+042DEA9B	Rob obtained: 
+042DEA9C	Remark: 
+042DEA9D	Redeem successfully! 
+042DEE59	Vitality not enough, please add vitality! 
+042DEE5A	Stage cleared! 
+042DEE5B	No bonus ! 
+042DEE5C	Free reset this time
+042DEE5D	Need to spend %count% Gold or Coupon
+042DEE5E	Confirm to stop the battle?
+042DEE5F	Confirm to spend %count% Gold or Coupon to accelerate?
+042DEE60	Auto battle in acceleration
+042DEE61	Previous stage not cleared!
+042DEE62	Previous instance not cleared!
+042DEE63	Main task completed! Auto path-finding to submit task
+042DEE64	Stage: %0
+042DEE65	Wave No.%0, %1
+042DEE66	Instance: 
+042DEE67	Trial: 
+042DEE68	"Target map not activated"
+042DF629	#GM01
+042DF62A	Game BUG
+042DF62B	Submit successfully!  Thank you for your suggestions, we will take it seriously!
+042DF62C	Submit countdown: %0
+042DFA11	EXP: %0/%1
+042DFA12	%0 Gold
+042DFA13	%0 Silver
+042DFA14	%0 times
+042DFA15	VIP%0 can summon
+042DFA16	Level %0 
+042DFA17	Today's summon chances are used up! 
+042DFA18	Confirm to spend %0 Gold or Coupon to summon?
+042DFA19	Confirm to spend %0 Gold or Coupon to summon %1 times Obtain %2 silver
+042DFA1A	Silver+%0
+042DFA1B	Spend %0 Gold or Coupon, Obtain %1 silver
+042DFA1C	Feed successfully! Obtain silver %0, Jigokuchō obtain EXP%1
+042DFA1D	Feed successfully! Obtain Silver%0
+042DFA1E	Feed %0 friends Jigokuchō successfully, obtain %1 silver
+042DFA1F	Feed %0 friends Jigokuchō successfully, didn't get silver
+042DFA21	Feed in CD
+042DFA22	Don't have friends in your clan!
+042DFA23	Current friend!
+042DFA24	No friends avaible to feed!
+042DFA25	Jigokuchō level cannot exceed player's Level! 
+042DFA27	Feed successfully! 
+042DFA28	Maximum 2 feeds each day
+042DFA29	You can feed friend's Jigokuchō once each day
+042DFA2B	%0's Jigokuchō
+042DFDF9	Spirit Star already activated
+042DFDFA	Temporarily cannot activate this Spirit Star, please activate the previous Spirit Star
+042DFDFB	Spirit Star upgrade successfully! 
+042DFDFC	Spirit Star exchanged successfully! 
+042DFDFD	Same Partners cannot exchange! 
+042DFDFE	%0 %1/%2
+042DFDFF	Partners name: %0
+042DFE00	Level: %0
+042DFE01	Already activated
+042DFE02	Bonus Attributes
+042DFE03	(All activated)
+042DFE04	%0 +%1
+042DFE05	Click to open%0
+042DFE06	Use %0activate %1
+042DFE07	When the whole %0 is activated, you will obtian attributes
+042DFE08	Activate after defeat %0
+042DFE09	When the whole %0 is activated, you will obtian special effects
+042DFE0A	Require %0: %1
+042DFE0B	(Not activated)
+042DFE0C	(Already activated)
+042DFE0D	Bonus attributes after activation
+042E01E1	%0/%1
+042E01E2	LV. %0 Hollowed %1
+042E01E3	Hollowed %0
+042E01E4	%0(%1%)
+042E01E5	%0.%1
+042E01E6	You sure to spend %0 Gold to inspire? Next Level Effect %1
+042E01E7	string
+042E01E8	Entering the scene again will require 60 second, are you sure you want to return to City?
+042E01E9	Inspire successfully 
+042E05C9	Click to start Konsō
+042E05CA	Kill chance reward: 
+042E05CB	Konsō Introduction: 
+042E05CC	Kill standard reward: 
+042E09B1	You input too fast, please wait a moment!
+042E09B2	PM target cannot be empty.
+042E09B3	This player does not exist or not online at the moment!
+042E09B4	You are muted by the system!
+042E09B5	Please input PM target name
+042E09B6	Player is in your Friends List
+042E09B7	Player is in your Black List
+042E09B8	You sure to add %0 to the Black List?
+042E09B9	Player level need to reach Level %0 to chat in %1 channel! 
+042E09BB	Tips:
+042E09BC	You
+042E09BD	whispered 
+042E09BE	to
+042E09BF	:
+042E0D99	Refresh countdown: %0
+042E0D9A	Please input Player name: 
+042E0D9B	You sure to delete %0 from the Friends List?
+042E0D9C	You sure to delete %0 from the Black List?
+042E0D9D	%0 is already in your Black List,  do you want to add as Friends?
+042E0D9E	%0 is your Friend,  do you want to add in the Black List?
+042E0D9F	Friends population reaches Maximum! 
+042E0DA0	Black List population reaches Maximum! 
+042E0DA1	Friends added successfully! 
+042E0DA2	 ["Friends", "Black List"]
+042E0DA3	Black List added successfully! 
+042E0DA4	Friends deleted successfully! 
+042E0DA5	Black List deleted successfully! 
+042E5FA2	You sure to spend %0 Gold or Coupons to clear CD time?
+042E5FA3	You sure to spend %0 Gold or Coupons to Inspire?
+042E5FA4	Bonus successfully Attack+%0% Stamina+%1%
+042E5FA5	Already reached the highest level for Inspire.
+042E5FA6	Cannot enter Guild War
+042E5FA7	Guild Bonus :  Current: Attack+%0%
+042E5FA8	Personal Bonus :  Current: Attack+%0% Stamina+%1% Next Level: Attack+%2% Stamina+%3%
+042E5FA9	Personal Bonus :  Current: Attack+%0% Stamina+%1%
+042E5FAA	Guild War
+042E5FAB	Currently, does not need to clear CD time! 
+042E5FAC	Clear CD time successfully
+042E5FAD	In CD, cannot join the battle
+042E5FAF	Successfully enter battle
+042E5FB0	Today's Guild War is over, click to return to City
+042E5FB2	Did not find the winning player
+042E5FB3	Did not find the losing plaer
+042E5FB4	Queueing Number
+042E5FB5	Name
+042E5FB6	Guild Name
+042E5FB7	Guild Ranking
+042E5FB8	Personal Ranking
+042E53EB	Accept Task
+042E53EC	Task Complted
+042E53ED	Continue
+042E6B59	%0/%1
+042E6B5A	Level %0 Girlfriend
+042E6B5B	Home Level not enough, requires Home: %0
+042E6B5C	Today Partying chances used up
+042E6B5D	Partying in CD
+042E6B5E	Clear Partying CD Time successfully! 
+042E6B5F	Today Soul Interaction chances used up
+042E6B60	Soul Interaction in CD
+042E6B61	Clear Soul Interaction CD Time successfully! 
+042E6B62	Silver not enough
+042E6B63	Gold not enough
+042E6B64	Spend %0 Gold to Soul Interact?
+042E6B65	Upgrade successfully! 
+042E6B66	Partying successfully! Obtained %0%1 points
+042E6B67	Soul Interact successfully! 
+042E6B68	Exchange with Girlfriend successfully, obtained %0 Points!  Obtained %1 * %2
+042E6B69	Change Girlfriend successfully! 
+042E6B6B	%0:  Normal Interaction can obtain %1 %2 Soul Interaction can obtain %3 %4
+042E6B6C	Click on Normal Interaction to get Skill scroll
+042E6B6D	Spend 5 Gold for Soul Interact and gain Skill Scroll bonus 10%
+042E6B6F	Girlfriend mood: [%0], obtained reward: %1 x %2
+042E6B70	Confirm to spend %0 Gold or Coupons to clear CD time?
+042E6B71	VIP 5 and above players don't have CD Time 
+042E6B72	Daily Partying chances
+042E6B73	Daily Interaction chances
+042E6B74	Level %0 Girlfriend
+042E6B76	Upgrade Requirement:  Home Level: %0; Bikini: %1个;
+042E57D7	(Main City）
+042E57D8	EXP: 
+042E57D9	Main Task
+042E57DA	Sub-Task
+042E6F40	Join %0?
+042E6F41	Congratulations, you joined %0 successfully! 
+042E4C18	Successfully activate Zanpakutō [%0]
+042E4C19	Cultivation gained %0 EXP
+042E4C1A	Cultivate successfully
+042E4C1C	Missing Picture Book for activation
+042E4C1D	Activation requires: %0
+042E4C1E	Reiatsu Level not enough
+042E4C1F	Requires: Reiatsu Level %0
+042E4C20	+%0%
+042E4C21	-%0%
+042E4C22	Activate
+042E4C23	Release Cultivate 
+042E4C24	Materialize
+042E4C25	Cancel Materialization 
+042E4C26	Missing [%0] Picture Book to activate Zanpakutō
+042E4C27	Reiatsu Level not enough, requires Reiatsu Level %0
+042E4C28	%0 / %1
+042E4C29	Already reached highest level
+042E4C2A	Currently %0 Bonus 
+042E4C2B	Next Phase %0 upgrade requires Reiatsu Level %1
+042E4C2D	Soul Cultivate, 1 Soul can obtain %0 EXP points
+042E4C2E	One-click cultivation, spend 50 Souls to cultivate 50 times and obtain %0 EXP
+042E4C2F	Gold Cultivate, spend 10 Gold or Coupons obtain %0 EXP
+042E4C30	God-speed Cultivate, spend 500 Gold or Coupons to Cultivate 50 times, and gain %0 EXP
+042E4C31	You sure to spend 10 Gold or Coupons to cultivate?
+042E4C32	You sure to spend 500 Gold or Coupons to cultivate?
+042E4C34	Materialization successfully
+042E4C35	Cancel Materialization successfully
+042E4C36	Close requires you to Materialize Zanpakutō
+042E4C38	Lv%0
+042E4C39	Max Level reached
+042E4C3A	Activated
+042E4C3B	Not activated
+042E4C3C	You can get in Conquest of Might: Zanpakuto Chapter.
+042E4C3D	Insufficient %0!
+042E4C3E	Successfully fortified!
+042E4C3F	Fortify will be available at Lv.%0!
+042E4C41	All 3 attributes reach:
+042E4C42	Automatically activate Phase %0 effect
+042E4C43	Max Attribute reached
+042E4C44	Phase %0 effect
+042E4C45	Activate next phase to continue upgrading!
+042E7EE2	%0's %1
+042E7EE3	Main Character at%0 level available
+042E7EE4	hour
+042E7EE5	minute
+042E7EE6	second
+042E7EE7	day
+042E1181	VIP %0
+042E1182	%0 / %1
+042E1183	%0 Coupon
+042E1184	%0 Gold
+042E1185	Upgrade to VIP %0 and can get %1 Coupons daily
+042E1186	Coupon +%0
+042E156A	You sure to spend %0Gold to purchase this item?
+042E1D39	Growth Rate: 
+042E1D3A	Received successfully
+042E1D3B	Plase satisfy all the requirements for hiring! 
+042E1D3C	Hired Nanao successfully, please check your backpack! 
+042E1D3D	%0  Complete Requirements:  %1
+042E1D3E	You can get title: %0
+042E1D3F	You can get Zanpakutō: %0
+042E1D40	Permanently effective
+042E2121	Need to spend %count% Gold or Coupons
+042E2509	All
+042E250A	Normal 
+042E250B	Hard
+042E250C	(%0) %1 [%2]
+042E250D	Alliance Campaign
+042E250E	Alliance Battle
+042E250F	Room is full
+042E2510	Please input Password At most input 6 numbers as Password
+042E2512	Suitable Level:%0
+042E2513	%0 [%1]
+042E2514	CD: %0 Second
+042E2515	%0 times
+042E2516	LV.%0
+042E2517	Battle Power: %0
+042E2518	%0 apply for Captain  After %1 second will transfer Captain 
+042E2519	Room Owner: %0
+042E251B	Join Successfully
+042E251C	The room is disbanded
+042E251D	Set Password Successfully
+042E251E	Activate Password
+042E251F	Cancel Password
+042E2520	Cannot find this room
+042E2521	You sure to transfer Captain to %0
+042E2522	Are you sure to kick %0 out of Team?
+042E2525	You joined a team with your friend, can get additional %0+%1 reward.
+042E2526	You joined a team with your Guild Members, can get additional %0+%1 reward.
+042E2527	You must have 2 people to start battle
+042E2528	You must have 3 people to start battle
+042E2529	Return will leave this room and return to the Hall
+042E252A	Leave room requires you to click ready again
+042E252C	20s
+042E252D	%0s
+042E252E	Team does not have enough people, you sure to start battle?
+042E2530	%0 Hall
+042E2531	Level reaches %0 can join
+042E2532	You cannot join Hall where the level gap is too great
+042E2533	None
+042E2534	%0 %1
+042E2535	Waiting (%0s)
+042E2536	Start(%0s)
+042E2537	Reset Matching
+042E2538	Reset Matching(%0s)
+042E2539	Click to reset Matching Enemy
+042E253A	Click to cancel this Matching
+042E253B	Wait for 30 seconds then can click to cancel Matching
+042E253C	00: 00
+042E253D	Honor: 
+042E253E	Level reaches: 
+042E253F	Mysterious Partners 
+042E2540	Prestige points reaches %0 can get one additional purchase chances
+042E2541	You used up today's purchase chances, please return tomorrow.
+042E2542	You sure to use Item to recruit Partners?
+042E2543	Recruitment item not enough
+042E2544	You need to spend %0 Gold or Coupons
+042E2545	After you pass Normal Level [%0] then this is actvated
+042E2547	Captain select to reset matching
+042E2548	Captain select to cancel current matching
+042E2549	You did not actiavte this mode
+042E254A	In battle, cannot join
+042E254B	Captain changed Campaign
+042E254C	Round %0 
+042E254D	%0 Team defeat %1 Team
+042E254E	%0 Team loses to %1 Team
+042E2550	Alliance Battle not yet activated
+042E2551	Invite
+042E2552	Invite(%0)
+042E2553	Miss
+042E28F2	Currently, this is the %count% wave of Ryoka
+042E28F3	Obtained: %lv%% Attack Bonus
+042E28F5	Attack Bonus reaches the Maximum amount
+042E2CDA	Pieces of Clothes: %0 
+042E2CDB	The %0 piece: %1 
+042E2CDC	Inside already!
+042E2CDD	Successfully remove and get : %0%1
+042E2CDE	Return
+042E2CDF	Viewing Mode
+042E2CE0	Sign-in %0 days to unlock this Beauty
+042E2CE1	Cannot remove anymore
+042E2CE2	Not enough chances
+042E2CE3	Sign-in %0 days
+042E30C1	Guild Ranking
+042E30C2	Personal Ranking
+042E30C7	Attack List
+042E30C8	Defend List
+042E30C9	Target Hero not enough
+042E30CA	Level %count% Fire Ball
+042E30CB	HP Bonus +%count%%
+042E30CC	Max HP+%count%%
+042E30CD	Immediate revival requires %count% Gold
+042E30CE	Seireitei Main Gate
+042E30CF	Seireitei Inner Gate
+042E30D0	Defender
+042E34A9	You sure to return to City?
+042E34AB	Copy Battle Report
+042E34AC	Replay
+042E34AD	Need to spend %count% Gold to check Chest
+042E34AE	Check Chest for Free
+042E34AF	not yet equipped with Zanpakutō
+042E34B0	Zanpakutō bonus: %0%
+042E34B1	Obtained
+042E34B2	Remaining Round
+042E34B4	Skill release finished
+042E34B6	额外加血%0%
+042E3891	Received successfully
+042E3892	%0 - %1
+042E3894	Starting now until %0
+042E3895	%0 - %1
+042E3896	Confirm to spend %0 Gold to purchase?
+042E3897	%0 * %1
+042E3898	%0 x 30 days
+042E3899	Can receive the following reward:
+042E389A	Have a chance of getting one of the following reward:
+042E389B	Bonus reward:
+042E389C	Today's free chances are used up, confirm to spend %0 Gold to receive?
+042E389D	Event
+042E389E	Discount %0%
+042E389F	Limited purchase %0 times
+042E38A0	Reaches %0 Reiryoku
+042E38A1	Rebate %0 Coupon
+042E38A2	%0/%1%2
+042E38A3	Reiryoku
+042E38A4	Kasō-ryoku
+042E38A5	Need to reach %0 Kasō-ryoku
+042E38A6	Already reached highest
+042E38A7	Event already ended
+042E38A8	Congratulations, you already received all
+042E38A9	Already received today's reward
+042E38AA	Did not make the rank list
+042E38AB	Server %0
+042E38AC	You can receive %0 times
+042E38AD	Send out in %0 times
+042E38AF	Visored Revenge
+042E38B0	Kon's Treasure Chest
+042E38B1	Purchase chances: %0/%1
+042E38B2	%0 / %1
+042E38B3	Not enough fragments, you sure to spend %0 Gold to purchase fragments?
+042E38B4	Tier %0
+042E38B5	Espada #%0
+042E38B6	Soul Resurrection
+042E38B7	Currently received times: 
+042E38B8	Number %0: %1
+042E38B9	Temporarily not in ranking
+042E38BA	Remaining reward: %0 
+042E38BB	Win
+042E38BC	Lost
+042E38BD	Not yet join Guild
+042E38BE	Currently owned %0/%1
+042E38BF	Currently owned %0/6
+042E38C0	>%0 place
+042E38C1	Upgrade rank to %0
+042E38C2	Limited purchase once
+042E38C3	Activate at Vip %0 
+042E38C4	You sure to spend %0 Gold to purchase one fault tolerance chance?
+042E38C5	You want to use one fault-tolerance chance?
+042E38C6	You want to use one guessing chance?
+042E38C7	You sure to spend %0 Gold to purchase one guessing chance?
+042E38C8	No reward to receive.
+042E38C9	Not enough guessing chances.
+042E38CA	Gold not enough
+042E38CB	You sure to spend %0 Gold to purchase this gift pack?
+042E38CC	This type of gift pack can only be received in order.
+042E38CD	You can receive for free once per day.
+042E38CE	You can only purchase once per day.
+042E38CF	Not enough fragments
+042E38D0	Already finished purchasing
+042E38D1	Current rebate: %0 gold
+042E38D2	Lucky draw
+042E38D3	Draw %1 times with %0 gold?
+042E38D4	%0 obtained %1*%2
+042E38D5	In CD
+042E38D6	Still have 0 chances for the lottery
+042E38D7	Insufficient gold
+042E38D8	Still can exchange this item for %0 times
+042E38D9	Insufficient points
+042E38DA	Buy this item with %0 gold
+042E38DB	Can obtain 99 coupons each day at most
+042E38DC	%0 free chances
+042E38DD	Obtained %0 points
+042E38DE	%0 points
+042E3C79	Successfully remove clothes and you can get: %0 %1, %2 %3
+042E7AF9	Current Price
+042E7AFA	Yellow Diamond
+042E82CD	This is the last one.
+042E82CE	Go upgrade before coming back to answer the next question.
+042E8A99	您当前为Level %0 黄钻用户
+042E7329	*You can only get one type out of the following two: Normal and VIP %0 Reward
+042E732A	VIP %0 pack
+042E732B	%0% Off
+042E732C	Finish Level %0 Task - %1
+042E732D	Level reaches %0
+042E732E	Available after complete quest【%0】
+042E732F	Available on Level %0
+0430B161	EXP Level %0
+0430B162	LV. %0
+0430B163	%0/%1
+0430B164	You are currently learning at %0
+0430B165	%0's EXP
+0430B166	Every hour, you can gain %0 x %1
+0430B168	VIP %0 activate One-click Experience
+0430B169	%0 * %1
+0430B16A	Need to pass %0 first
+0430B16B	Currently you can get %0 x %1
+0430B16C	You were challenged and lost, you lose %0 x %1
+0430B16D	At most can receive 24 hours reward
+0430B16E	Challenge and win can get %0 x %1
+0430B16F	Received successfully, the reward is sent to your mail! 
+0430B170	Are you sure to spend %0 Gold to purchase Experiences once?
+0430B171	You sure to spend %0 Gold to add one challenge chances?
+0430B172	You passed!
+0430B173	Cultivating successfully! 
+0430B178	Floor %0
+0430B179	Did not reach 1 hour, cannot receive any reward.
+0430B17A	You already used special favor today.
+0430B17B	Today's remaining chance is 0 then can purchase.
+0430B17C	You used up today's purchase chances.
+0430B17D	One-click Experiences can directly go to the highest floor previously.
+0430B17E	Cultivate time over 1 hour then can start receiving.
+0430B17F	Please receive reward then can continue cultivate.
+0430FF82	Next Season of Cross Server Battle will begin on %0/%1/%2
+0430FF83	You have registered for the challenge match yesterday. Match will start at %0
+0430FF88	You have registered for the challenge match yesterday. Match will start at %0
+0430FF89	Today's challenge match has ended. Please register to join tomrrow's Cross Server Battle
+0430FF8A	Today's challenge match has ended. Match will start Tomorrow at %0
+0430FF90	Offeringsuccessfully
+0430FF91	Registered successfully
+0430FF92	Purchased successfully
+0430FF93	Received Chest successfully
+0430FF94	Congratulations, you gained %0 Points
+0430FF95	Congratulations, you gained %0 Challenge Token
+0430FF96	LV. %0
+0430FF97	Realm %0
+0430FF9A	You sure to spend %0 Gold to Super Challenge?
+0430FF9B	Spend %0 Gold or Coupons to add one more challenge chances
+0430FF9C	This season will end on: %0/%1/%2
+0430FF9D	Level reaches: %0
+0430FF9E	Purchasing %0 will require %1 Challenge Stones, you sure to purchase?
+0430FF9F	Shinigami Order Shop
+0430FFA0	Challenge Stone Shop
+0430FFA3	This season is not yet available.
+0430FFA4	Confirm to spend %1 Inferno Stone to buy %0?
+04312691	Already retrieved all!
+04312692	Silver: %0 Exp: %1
+04312693	Free Receive (%0%)
+04312694	%0 Gold Receive (%1%)
+04312695	Silver: %0
+04312696	EXP: %0
+04312697	Go Top-up
+04312698	You sure to spend %0 Gold to retrieve resources?
+04312699	You sure to spend %0 Gold to receive benefits?
+0431269B	Daily Benefits activates on the second day!
+04314DA1	Synthesized successfully
+04314DA2	Purchased successfully
+04314DA3	Swallowed successfully
+04314DA4	Unlocked successfully
+04314DA5	Equip Hōgyoku
+04314DA6	Remove Hōgyoku
+04314DA7	Activate at Lv%0
+04314DA8	You sure to spend %0 Gold to activate one slot in Hōgyoku Backpack?
+04314DAB	Hōgyoku Power: %0
+04314DAD	Target's Hōgyoku already reached highest level.
+04314DAE	You sure to spend %0 Gold to activate Tier 4 Produce Jade?
+04314DAF	Spend %0 Silver to produce Jade
+04314DB0	You sure to spend %0 Gold or coupons to purchase %1 produce Jade chances
+04314DB1	VIP  Level not enough or already reached today's max purchase
+04314DB4	Swallow Hōgyoku includes Partner equipped Hōgyoku, you sure to continue?
+04314DB5	Remaining produce Jade chances not enough
+04314DB6	Cannot equip with same type of Hōgyoku
+04314DB7	Silver not enough
+04314DB8	Gold or coupons not enough
+04314DB9	VIP  Level not enough
+04314DBB	Sell
+04314DBC	Loot
+04314DBD	One-click sell all Hōgyoku Fragments
+04314DBE	One-click loot all Hōgyoku
+04314DC0	Obtained Hōgyoku Pill fragments!
+04314DC1	%0 Hōgyoku Pill Fragments can synthesize 1 Hōgyoku Pill!
+04314DC2	Hōgyoku level reaches Level %0 can swallow Hōgyoku Pill to upgrade!
+04314DC3	Select any one Hōgyoku, then click on Swallow!
+04314DC4	Hōgyoku space is full!
+04314DC5	Low Quality Hōgyoku cannot swallow High Quality Hōgyoku!
+04314DC6	Spend %0 Gold or Coupons to directly activate Tier 4 Produce Jade!
+04314DC7	EXP: %0/%1
+04314DC8	Already reached highest level
+04314DC9	Upgrade level increases attributes: %0
+04314DCA	Insufficient Red Hogyouku Fragments!
+04314DCB	Successfully exchanged!
+04314DCC	Red Hogyouku Fragment obtained!
+04314DCD	Hogyouku Pill Fragment
+04314DCE	Red Hogyouku Fragment
+04314DCF	Obtained %0* Red Hogyouku Fragments
+04314DD0	Obtained %0* Hogyouku Pill Fragments
+043174B1	Modify successfully
+043174B2	Exchange successfully
+043174B3	Purchase chances successfully
+043174B4	Reset successfully
+043174B5	Purchase challenge chances successfully
+043174B7	Partner not yet recruited
+043174B8	Enter Modification
+043174B9	Recruit Partners
+043174BA	Exchange for it in the Cross-Server Battle Challenge Stone Shop
+043174BB	Plase pay attention to "Bleach" events.
+043174BD	You sure to spend %0 Godl to make Gikongan %1 times?
+043174BE	Spend %0 %1 to make Gikongan %2 times.
+043174BF	%0 Fragments
+043174C0	Already reached highest level
+043174C1	Partner level not enough
+043174C3	Stay tuned
+043174C4	%0 fragments: %1
+043174C6	Purchase chances used up
+043174C7	Already reached highest challenge stage
+043174C8	This reset costs %0 Gold, you can reset %1 times today.
+043174C9	Today's reset chances used up
+043174CB	Today's purchased battle chances used up.
+043174CC	You sure to spend %0 gold to reset? You can still purchase %1 times today.
+043174CD	Today's purchased reset chances used up.
+043174CE	Today's remaining battle chances are out, you sure to spend %0 gold to reset?
+043174CF	Not yet available
+043174D0	Available period: %0 - %1
+043174D1	Modify Tier details
+043174D2	Modify Partner
+043174D3	Modify Lab
+043174D4	vip %0 can reset %1 times daily 
+043174D5	Cannot challenge
+043174D6	Today has no remaining entering chances, cannot reset current Dojo.
+043174D7	本次传承可返还 %0 %1个
+043174D8	本次传承返还 %0 %1个，是否传承？
+043174D9	获得 %0 %1个
+043174DA	本次传承无法获得碎片，传承无效
+043174DB	Almighty Modify Fragmentt
+043174DC	Select and adjust the attribute you want
+04319BC1	Successfully purchased
+04319BC3	Spend %0 gold to buy this item?
+04319BC4	Today's refresh chances used up!
+04319BC5	Spend %0 gold to refresh all items?
+04319BC6	Next refresh time
+04319BC7	Stop countdown
+04319BC8	“OpenMacket”
+0431C2D1	Giftpack content:
+0431C2D2	Requirement of receiving:
+0431C2D4	Successfully purchased chances!
+0431C2D5	Can't interact!
+0431C2D6	Can interact!
+0431C2D7	Already received
+0431C2D8	Receive
+0431C2D9	Successfully synthesized!
+0431C2DA	Successfully joined battle formation!
+0431C2DB	Successfully removed from battle formation!
+0431C2DC	Successfully dismissed!
+0431C2DD	Successfully inherited!
+0431C2DE	Successfully upgraded!
+0431C2DF	Silver %0
+0431C2E0	Level:
+0431C2E1	Returned Mod Soul Pills: %0
+0431C2E2	Currently your number of second Mod Souls has reached the upper limit!
+0431C2E4	Expansion already hit the upper limit!
+0431C2E5	Successfully expanded!
+0431C2E6	Dismiss?
+0431C2E7	Please remove the Mod Soul from battle formation before dismission!
+0431C2E8	Spend %0 to inherit?
+0431C2E9	Spend %0 to open a new slot?
+0431C2EA	Cancel training?
+0431C2EB	Please cancel training before dismission!
+0431C2EC	Feed current Mod Soul 50 pills
+0431C2ED	Feed current Mod Soul 1 pill
+0431C2EE	Training chances used up!
+0431C2EF	Can only dismiss the Mod Souls above Lv. 5!
+0431C2F0	Mod Soul's level already reached the upper limit!
+0431C2F1	VIP %0 can reset %1 times each day
+0431C2F2	VIP %0 can purchase %1 times each day
+0431C2F3	Current training will reward %0 Exp and Mod Soul is Lv. %1.
+0431C2F5	Normal cultivation
+0431C2F6	Advanced cultivation
+0431C2F7	Epic cultivation
+0431C2F8	Can't conduct on current main Mod Soul
+0431C2F9	Reset skill points will cost %0 gold and will obtain %1 Mod Soul Pills
+0431C2FA	Reset skill points will cost %0 silver and will obtain %1 Mod Soul Pills
+0431C2FB	Can still expand %0 times, spend %1 gold to expand the limit of Exp pool to %2.
+0431C2FC	Reset skill points?
+0431C2FD	Inherit?
+0431C2FE	The reset will add %0 Exp to the Exp pool, currently the limit of the pool is %1
+0431C2FF	Already reached the limit of Exp pool expansion
+0431C300	Exp pool obtained %0 Exp
+0431C301	Click to use %0 to directly upgrade your Assistant Mod Soul
+0431C302	Obtained %0 Exp, current level is Lv.%1
+0431C303	Are you sure to use %0 to directly upgrade your Assistant Mod Soul?
+0431C304	Max Exp of your Assistant Mod Soul exceeded, are you sure to continue?
+0431C305	Are you sure to use %0*%1 to directly upgrade your Assistant Mod Soul?
+0431C306	Successfully used %0 to directly upgrade your Assistant Mod Soul, %1 is now available
+0431C307	Please select an Assistant Mod Soul
+0431C308	Click to directly upgrade your Assistant Mod Soul with Exp Card
+0431C309	Click to directly upgrade your Assistant Mod Soul with multiple Exp Cards
+0431C30A	Insufficient %0
+0431C30B	%0 obtained %1 Exp and upgraded to Lv.%2
+0431C30C	Max Level reached!
+0431C30D	没有装备副宠
+0431E9E2	Recruit Successful
+0431E9E3	Upgrade Successful
+0431E9E4	Recruit
+0431E9E5	Upgrade
+0431E9E6	Purchase Successful
+0431E9E7	Refresh Successful
+0431E9E8	Reset Successful
+0431E9E9	%0 challenged %1 and won
+0431E9EA	%0 challenged %1 and failed
+0431E9EB	Congrats, you have received %0
+0431E9EC	Can reset %0 times
+0431E9ED	Previous stages not cleared
+0431E9EE	Reset will consume %0 gold, continue?
+0431E9EF	Purchase revive chances used up!
+0431E9F0	Can revive %0 times
+0431E9F1	Revive will consume %0 gold, continue?
+0431E9F2	Today’s reset chances used up!
+0431E9F3	Use %0%1 to reset?
+0431E9F4	Next reset time %0
+0431E9F5	%0 not enough
+0431E9F6	Confirm reset
+0431E9F7	Server %0 %1 %2 Lv.%3
+043210F1	Today's remaining chance is less than %0 times
+043210F2	Insufficient vitality, please buy it!
+043210F3	Today's reset chances used up!
+043210F4	Insufficient gold!
+043210F5	Resetting will consume %0 gold, today you can reset %1 times.
+043210F6	Successfully reset
+043210F7	Spend 1 Vitality to gain %0 Activity
+043210F8	Each time a guild member spend 1 Vitality, your guild will gain %0 Activity
+043210F9	Entering Requirement: %n Character Level: %0%n Clear Record: %1
+043210FA	Open
+043210FB	Reset
+043210FC	Openeing the Instance will consume %0 Activity, %n are you sure to continue?
+043210FD	Insufficient Activity
+043210FE	Resetting the Instance will consume %0 Activity, %n are you sure to continue?
+043210FF	Successfully opened!
+04321102	Possible Loots:
+04321103	Application: %0
+04321104	Ranking: %0
+04321105	%0Day %1Hour %2Minute
+04321106	Instance [Prelude of Hunger] Guideline:
+04321107	Instance [Hueon Mundo Shinigami] Guideline:
+04321108	Instance [Reality of Nightmare] Guideline:
+04321109	Instance [Dark Memory] Guideline:
+0432110A	Instance [Desperate Visored] Guideline:
+0432110B	Instance [Engetsu Attack] Guideline:
+0432110C	Instance [Shura Twilight] Guideline:
+0432110D	Instance [Prosperous World] Guideline:
+0432110E	Instance [Fading Stars] Guideline:
+0432110F	Instance [Ghost's Scar] Guideline:
+04321110	Instance Guideline [11]
+04321111	Instance Guideline [12]
+04321112	Instance Guideline [13]
+04321113	Previous Instances still locked
+04321114	Previous Instances not cleared
+04321115	%0Month %1Day %2:%3;
+04321116	Possible Loots (Distribute in Guild):
+04321118	Next auto-refresh:
+04321119	Today's refresh chances used up!
+0432111A	Insufficient Guild Coins!
+0432111B	Are you sure to spend %0 Guild Coins to manually refresh?
+0432111C	Already recruited
+0432111D	Are you sure to use items to exchange for the partner?
+0432111E	Insufficient exchanging items
+0432111F	Successfully exchanged!
+04321120	Obtained %0 extra Guild Coins
+04321121	The partner can't wear Evolution Equipment
+04321122	Evolution Equipment already equipped!
+04321124	Lv. %0 Evolution
+04321125	Normal Bonus
+04321126	Reiatsu Attribute
+04321127	Possible Bonus
+04321128	Bonus
+04321129	No Skill
+0432112A	Entering Requirement: %n Character Level: %0
+0432112B	The stage is not available
+0432112C	Successfully evolved
+0432112D	Currently you have %0
+0432112E	Equip level: %0
+0432112F	Guild Coins
+043B11A1	(MAX)
+043B11A3	Confirm %0 to be refined?
+043B11A5	Break Down Sucessful!
+043B11A6	Refine Successful!
+04325F11	Insufficient Stars, can't receive rewards
+04325F12	%0 Star Condition:
+04325F13	%0 chances remaining
+04325F14	Please recruit a partner first
+04325F15	%0 join battle or provide attribute bonus
+04325F16	Mysterious Bond
+04325F17	Mysterious Attribute unavailable
+04325F18	%0 has obtained %1 Star
+04325F19	Insufficient items, can't upgrade
+04325F1A	Recruit a partner to obtain fragments
+04325F1B	Check battle report
+04325F1C	All stages cleared!
+04325F1D	%0
+04325F1F	Please complete in sequence, if %0 
+04325F20	Go Training
+04325F21	You have %0 Bond Fragments, go Bond Training to get more
+04325F22	Only %0 and Main character join the battle, win Battle %1 and %2
+04325F23	Not in battle
+04325F24	Not recruited in Tavern!
+04325F25	Not recruited in Tavern! Please go and recruit manually!
+04325F26	Please recruit in Tavern, click to go to the Tavern!
+04325F27	%0join battle
+0433E5B1	Vanguard Slot
+0433E5B2	Assaulter Upper Slot
+0433E5B3	Assaulter Middle Slot
+0433E5B4	Assaulter Lower Slot
+0433E5B5	Support Upper Slot
+0433E5B6	Support Middle Slot
+0433E5B7	Support Lower Slot
+0433E5B8	You can't change the difficulty before you reset, confirm?
+0433E5B9	*You can only select one difficulty each time!
+0433E5BA	Reset will cost %0 gold!
+0433E5BB	Spend %0 gold to reset, confirm?
+0433E5BC	You can still reset %0 times
+0433E5BD	Formation %0 violated with formation %1, please adjust!
+0433E5BF	Current Monster Status: [Buff refresh in %0]
+0433E5C0	*You can challenge multiple chapters each day!
+0433E5C1	Are you sure to spend %0 gold to refresh the buff?
+0433E5C2	Reinforcement
+0433E5C3	Zanpakuto:
+0433E5C5	Agent of the Shinigami:
+0433E5C7	Soul Society:
+0433E5C9	Clear all stages in Normal Conquest of Might to unlock!
+0433E5CA	Clear all stages in Hard Conquest of Might to unlock!
+0433E5CB	Clear all stages in Nightmare Conquest of Might to unlock!
+0433E5CE	You can't use Mop-up as currently your progress is above stage %0!
+04356C52	Successfully Received
+04356C53	Successfully Purchased
+04356C54	Successfully activated phase 4 jade making for free, and get %0, %1
+04356C55	Successfully obtained %0 Vitality for free
+04356C56	For Free
+04356C57	Top-up %0 gold
+0436F2F1	Can activate when reaches LV.%0
+0436F2F2	EXP+%0
+0436F2F3	Add %0 epic coupons
+04387991	Exclusive skill level reaches Lv.%0
+04387994	Not activated
+04387995	Exclusive %0
+04387999	Current Exclusive Skill Level:Lv.%0
+0438799A	Reach exclusive level:Lv.%0 to activate or improve exclusive skill
+0438799B	Current attack level:Lv.%0
+0438799C	Current defense level:Lv.%0
+0438799D	Current HP level:Lv.%0
+0438799E	Current speed level:Lv.%0
+0438799F	Attack bonus:+%0 Next level+%1 (Max: +%2)
+043879A0	Defense bonus:+%0 Next level+%1 (Max: +%2)
+043879A1	HP bonus:+%0 Next level+%1 (Max: +%2)
+043879A2	Speed bonus:+%0 Next level+%1 (Max: +%2)
+043879A4	Next growth rate bonus require exclusive Lv.%0
+043879A6	The highest exclusive skill level reached!
+043879A7	Partner has no exclusive skill!
+043A0032	Cost silver:%0
+043A0033	After   for free 
+043A0034	Cost silver:Free(%0/%1)
+043A0035	%0 discount
+043A0036	Cost silver:%0
+043A0037	Cost silver:Free(%0/%1)
+043A0038	10-time Cultivation will get exclusive fragments*2
+043A003A	Cultivation Bar is full, continue to cultivate?
+043A003B	Soul Cultivation chances are used up!
+043A003C	Cannot purchase now!
+043A003D	10-time Cultivation will get exclusive fragments*20
+043A003E	Energy bar not filled!
+043A2742	%0 Lv.attack effect, %1
+043A2743	%0Lv.%1, final damage bonus%2%
+043A2745	Receive
+043A2746	Purchase
+043A2747	Lv.%0[Not yet reincarnated]
+043A2748	Lv.%0[%1 Time]
+043A2749	Reset attribute power and additional effect
+043A274A	Can receive freely after the first reincarnation
+043A274B	Each purchase will spend %0 gold to get Epic EXP Book*%1
+043A274C	Cannot reincarnate anymore
+043A274D	Not enough materials!
+043A274F	Level too low for Reincarnation
+043A2750	Are you sure to reincarnate?
+043A2751	Reincarnate main character first!
+043A2752	Required level for Lv.%0 Reincarnation
+043A2753	%0[Lv.%1 RI]
+043A2754	Lv.%0 %1, have %2% final damage reduction
+043A2755	Successfully Purchased!
+043A2756	Successfully Received!
+043A2757	%0 hundred million
+043A2758	Successfully reset attribute power, received %0
+043A2759	Successfully reset attack effect, received %0
+043A4E51	Current Modification Phase: %0
+043A4E52	Current Exclusive Skill Level: %0
+043A4E53	Current Reincarnation Level: %0
+043A4E54	Total Modifying Fragment used: %0
+043A4E55	Total Exclusive Skill Fragment used: %0
+043A4E56	Total Reincarnation Stone used: %0
+043A4E57	Total EXP collected: %0
+043A4E58	Almighty Modifying Fragments obtained: %0
+043A4E59	Exclusive Skill Fragments obtained: %0
+043A4E5A	Reincarnation Stones obtained: %0
+043A4E5B	Epic EXP Scrolls obtained: %0
+043A4E5C	Successfully inherited!
+043A4E5D	The partner must reach phase %0 modification to continue
+043A4E5E	%0 Rebate
+043A4E5F	Bond Fragment consumed: %0
+043A4E60	Crystal Core consumed: %0
+043A4E61	Current Accessory Level: Lv.%0
+043A4E62	Bond Fragment obtained: %0
+043A4E63	Crystal Core obtained: %0
+043A4E64	Current Zanpakuto Maximum Fortify Level: %0
+043A4E65	Total Soul of Conquest used: %0
+043A4E66	Soul of Conquest obtained: *%0
+043A7561	Spend %0 coupons or gold to revive?
+043A7562	Event is not available now
+043A7563	Please don't get too close to the players ahead.
+043A7564	In battle, you can continue after the battle.
+043A7565	%0[%1 Server]
+043A7566	All allies+%0%
+043A7567	No battle formation
+043A7568	%0 s left before submitting the formation again
+043A7569	Formation Uploaded!
+043A756A	Open on Lv. %0!
+043A756B	Please confirm the formation!
+043A756C	Revived!
+043A756E	No.%0
+043A756F	No.%0-No.%1
+043A7570	Wait to revive
+043B38B1	Successfully claimed betting rewards
+043B38B2	Failed to claim betting rewards
+043B38B3	The betting has reached the limit
+043B38B4	Successfully betted
+043B38B5	Successfully received chest
+043B38B6	Failed to receive chest
+043B38B7	Coupon
+043B38B8	%2 Coupon betted on %0 vs %1
+043B38B9	Not on the list
+043B38BA	Successfully uploaded formation
+043B38BB	Failed to upload formation
+043B38BD	2. Competitors can adjust their formations until the battle starts in 5 minutes.
+043B38BE	3. Battle starts at 21:05 every Monday, Wednesday and Friday
+043B38C2	7. The No. 1 player of Master will be worshiped for a week in the map main interface.
+043B38C3	8. The rewards after a seaon ends will be delivered through email
+043A9C71	Forge successful!
+043A9C72	Successfully advanced!
+043A9C73	0
+043A9C74	Use %0 Gold to finish work now?
+043A9C75	Use %0 Gold to buy %1 Vitality now?

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "0007A122",
+    "name": "充值排行",
+    "tName": "充值排行",
+    "desc": "1. Top up gold to get points, 1 gold= 1 point, cumulate certain points to win rewards and partner.\n2. The ranking list will refresh every 5 minutes, system will stop calculating 5 minutes before the end of the event.\n3. The result of the event will come out 5 minutes before the end of the event and rewards will be sent via in-game mail.\n",
+    "tip": "2",
+    "price": 0,
+    "imageID": 500002,
+    "rankNum": "[{\"key\":1,\"value\":[21405780],\"prompt\":\"NO.1\",\"returnGold\":100},{\"key\":2,\"value\":[21405781],\"prompt\":\"NO.2\",\"returnGold\":60},{\"key\":3,\"value\":[21405782],\"prompt\":\"NO.3\",\"returnGold\":30},{\"key\":10,\"value\":[21405783],\"prompt\":\"NO.4-10\",\"returnGold\":15},{\"key\":20,\"value\":[21405784],\"prompt\":\"NO.11-20\",\"returnGold\":12},{\"key\":50,\"value\":[21405785],\"prompt\":\"NO.21-50\",\"returnGold\":8},{\"key\":100,\"value\":[21405786],\"prompt\":\"NO.51-100\",\"returnGold\":5},{\"key\":200,\"value\":[21405787],\"prompt\":\"NO.101-200\",\"returnGold\":3}]",
+    "rankDesc": "[{\"index\":0,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":400,\"award\":[21405788],\"name\":\"400Point\"}\n,{\"index\":1,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":1000,\"award\":[21405789],\"name\":\"1000Point\"},{\"index\":2,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":2200,\"award\":[21405790],\"name\":\"2200Point\"},{\"index\":3,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":4200,\"award\":[21405791],\"name\":\"4200Point\"},{\"index\":4,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":9000,\"award\":[21405792],\"name\":\"9000Point\"},{\"index\":5,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":15000,\"award\":[21405793],\"name\":\"15000Point\"},{\"index\":6,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":34000,\"award\":[21405794],\"name\":\"34000Point\"},{\"index\":7,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":65000,\"award\":[21405795],\"name\":\"65000Point\"},{\"index\":8,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":150000,\"award\":[21405796],\"name\":\"150000Point\"}]",
+    "exchangeDesc": "[{\"index\":9,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":40000,\"award\":[21405797],\"awardType\":2,\"awardID\":2000209,\"reportId\":\"\"}]",
+    "isOpenRank": 200,
+    "f10": "1. 1 Gold= 1 Point.\n2. Reach appointed ranking to win rewards.\n3. If there are tied rankings, then the ranking will be postponed. E.g. If there're 2 players in the first place with same points, then the ranking will be straightly postponed to the third place.\n4. For the players with same points and rankings, system will randomly pick and send rewards, the players who didn't get picked will receive a-notch-below rewards.",
+    "f11": "1. Cumulate certain points to claim rewards.\n2. Claiming rewards and partner won't spend points\n3. You can claim rewards and partners for only once.",
+    "f12": "[\"100% Rebate after the event\",\"60% Rebate after the event\",\"30% Rebate after the event\",\"15% Rebate after the event\",\"12% Rebate after the event\",\"8% Rebate after the event\",\"5% Rebate after the event\",\"3% Rebate after the event\"]",
+    "f13": "{\"promptScore\":\"Points %0\"}",
+    "f14": 1
+  },
+  {
+    "id": "0007A123",
+    "name": "消费排行",
+    "tName": "消费排行",
+    "desc": "1.活动出现后消费金币可获得积分，1金币=1积分，积分到达相应额度可领取伙伴及积分礼物\n2.排行榜5分钟刷新一次，活动结束前5分钟将停止记录排名，积分可在积分礼物界面查看\n3.排行榜及返还金币统计在活动结束前5分钟结算，并且在活动结束后都以邮件形式发放",
+    "tip": "2",
+    "price": 0,
+    "imageID": 500002,
+    "rankNum": "[{\"key\":1,\"value\":[21401759],\"prompt\":\"第1名\",\"returnGold\":100},{\"key\":2,\"value\":[21401760],\"prompt\":\"第2名\",\"returnGold\":60},{\"key\":3,\"value\":[21401761],\"prompt\":\"第3名\",\"returnGold\":30},{\"key\":10,\"value\":[21401762],\"prompt\":\"第4-10名\",\"returnGold\":15},{\"key\":20,\"value\":[21401763],\"prompt\":\"第11-20名\",\"returnGold\":12},{\"key\":50,\"value\":[21401764],\"prompt\":\"第21-50名\",\"returnGold\":8},{\"key\":100,\"value\":[21401765],\"prompt\":\"第51-100名\",\"returnGold\":5},{\"key\":200,\"value\":[21401766],\"prompt\":\"第101-200名\",\"returnGold\":3}]",
+    "rankDesc": "[{\"index\":0,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":500,\"award\":[21401750],\"name\":\"500积分礼包\"}\n,{\"index\":1,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":1000,\"award\":[21401751],\"name\":\"1000积分礼包\"},{\"index\":2,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":2000,\"award\":[21401752],\"name\":\"2000积分礼包\"},{\"index\":3,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":5000,\"award\":[21401753],\"name\":\"5000积分礼包\"},{\"index\":4,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":10000,\"award\":[21401754],\"name\":\"10000积分礼包\"},{\"index\":5,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":20000,\"award\":[21401755],\"name\":\"20000积分礼包\"},{\"index\":6,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":50000,\"award\":[21401756],\"name\":\"50000积分礼包\"},{\"index\":7,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":100000,\"award\":[21401757],\"name\":\"100000积分礼包\"},{\"index\":8,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":200000,\"award\":[21401758],\"name\":\"200000积分礼包\"}]",
+    "exchangeDesc": "[{\"index\":9,\"indexType\":3,\"getType\":1,\"limit\":1,\"condition\":100000,\"award\":[21401767],\"awardType\":1,\"awardID\":11140013,\"reportId\":\"http://bleachfight.gametrees.com/?rid=844424953020291405&aid=51&t=1\"}]",
+    "isOpenRank": 200,
+    "f10": "1.消费1金币获得1积分。\n2.积分在活动结束时间达到指定名次可以获得奖励,以邮件形式发送。\n3.同一名次有多名玩家,之后名次顺延。如第一名2名玩家,无第二名,只有第三名。\n4.活动结束时出现同样积分,相同名次。系统在玩家中随机抽取发放奖励,没有抽取到的玩家获得下一档次奖励。",
+    "f11": "1.达到指定积分可以领取奖励\n2.领取奖励及伙伴不会消耗积分\n3.每档积分礼物和伙伴只可领取一次",
+    "f12": "[\"活动结束后返还100%消费总额\",\"活动结束后返还60%消费总额\",\"活动结束后返还30%消费总额\",\"活动结束后返还15%消费总额\",\"活动结束后返还12%消费总额\",\"活动结束后返还8%消费总额\",\"活动结束后返还5%消费总额\",\"活动结束后返还3%消费总额\"]",
+    "f13": "{\"promptScore\":\"积分达到%0\"}",
+    "f14": 1
+  }
+]

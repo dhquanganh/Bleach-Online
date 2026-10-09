@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00102CA1",
+    "name": "充值",
+    "tName": "充值",
+    "desc": "1. Pendant l'événement 1 Or = 1 Point, utilisez les points dans le Magasin pour recevoir des récompenses.\n2. Rechargez le montant nécessaire pour activer les Araignées, cliquez dessus pour recevoir vos récompenses, elles sont remises à zéro à minuit.\n3. Pendant l'événement, rechargez le montant d'Or requis pour recevoir le Pack Citrouille (Offre unique)",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1060001,
+    "scoreIndex": 0,
+    "dayRechargeIndex": "[{\"index\":1,\"condition\":200,\"award\":21403436},{\"index\":2,\"condition\":400,\"award\":21403437},{\"index\":3,\"condition\":600,\"award\":21403438},{\"index\":4,\"condition\":800,\"award\":21403439},{\"index\":5,\"condition\":1000,\"award\":21403440}]",
+    "totalRechargeIndex": 6,
+    "f9": 7,
+    "f10": "[{\"index\":11,\"condition\":1000,\"award\":21403441},{\"index\":12,\"condition\":2000,\"award\":21403442},{\"index\":13,\"condition\":3000,\"award\":21403443},{\"index\":14,\"condition\":4000,\"award\":21403444},{\"index\":15,\"condition\":5000,\"award\":21403445}]",
+    "f11": "[{\"index\":20,\"costScore\":30000,\"limit\":1,\"award\":21403446},{\"index\":21,\"costScore\":30000,\"limit\":1,\"award\":21403447},{\"index\":22,\"costScore\":30000,\"limit\":1,\"award\":21403448},{\"index\":23,\"costScore\":16000,\"limit\":1,\"award\":21403449},{\"index\":24,\"costScore\":8000,\"limit\":1,\"award\":21403450},{\"index\":25,\"costScore\":8000,\"limit\":1,\"award\":21403451},{\"index\":26,\"costScore\":8000,\"limit\":1,\"award\":21403452},{\"index\":27,\"costScore\":8000,\"limit\":1,\"award\":21403453},{\"index\":28,\"costScore\":8000,\"limit\":1,\"award\":21403454},{\"index\":29,\"costScore\":8000,\"limit\":1,\"award\":21403455},{\"index\":30,\"costScore\":4000,\"limit\":0,\"award\":21403456},{\"index\":31,\"costScore\":2500,\"limit\":0,\"award\":21403457},{\"index\":32,\"costScore\":300,\"limit\":0,\"award\":21403458},{\"index\":33,\"costScore\":100,\"limit\":0,\"award\":21403459},{\"index\":34,\"costScore\":50,\"limit\":0,\"award\":21403460}]"
+  }
+]

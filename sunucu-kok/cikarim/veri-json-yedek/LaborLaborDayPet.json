@@ -1,0 +1,19 @@
+[
+  {
+    "id": "001312D1",
+    "name": "劳动节消费",
+    "tName": "劳动节消费",
+    "desc": "1. For topups, 1 Gold = 1 Nutrition; for consumption, 4 Gold = 1 Nutrition.\n2. When single topup reached required amount, you can claim corresponding giftpacks.\n3. When your Nutrition has reached certain amount you can claim corresponding rewards.\n4. When you have reached claiming requirements for multiple times, the rewards won't stack.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1150001,
+    "fund": "[{\"index\" : 0, \"gold\" : 200, \"awardId\" : 21404169},{\"index\" : 1, \"gold\" : 800, \"awardId\" : 21404170},{\"index\" : 2, \"gold\" : 2000, \"awardId\" : 21404171},{\"index\" : 3, \"gold\" : 4000, \"awardId\" : 21404172}]",
+    "rechargePer": 1,
+    "consumePer": 4,
+    "score": 4,
+    "rechargeIndex": 5,
+    "consumeIndex": 6,
+    "gift": "{\"index\" : 7, \"score\" : [10000,20000,30000,40000,50000,60000], \"awardId\" : [5,10,15,20,25,30]}",
+    "pet": "{\"index\" : 8, \"gold\" : 8000, \"petId\" : 1201,\"showId\":1201001}"
+  }
+]

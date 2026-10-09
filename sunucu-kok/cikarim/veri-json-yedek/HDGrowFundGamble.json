@@ -1,0 +1,12 @@
+[
+  {
+    "id": "0004E201",
+    "name": "Fund Investment",
+    "tName": "Hogyoku Investment, unlimited future!",
+    "desc": "During event",
+    "tip": "1",
+    "price": 0,
+    "imageID": 320001,
+    "f6": "[{\"gold\":100,\"range\":[110,150],\"prompt\":\"100\"},{\"gold\":500,\"range\":[575,900],\"prompt\":\"500\"},{\"gold\":1000,\"range\":[1200,2000],\"prompt\":\"1000\"},{\"gold\":5000,\"range\":[6250,10000],\"prompt\":\"5000\"},{\"gold\":10000,\"range\":[13000,21000],\"prompt\":\"10000\"}]"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "00170A71",
+    "name": "周年庆1",
+    "tName": "Gikon Fever",
+    "desc": "1. Sign-in daily during the event to claim rewards once.\n2. Sign-in reaches required days to open chest.\n3. Top-up card increases your topped up amount in event but won't give you Gold. ",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1510001,
+    "onRushIndex": 1,
+    "loginAwardList": "[{\"index\":2,\"awardid\":21407000},{\"index\":3,\"awardid\":21407001},{\"index\":4,\"awardid\":21407002},{\"index\":5,\"awardid\":21407003},{\"index\":6,\"awardid\":21407004},{\"index\":7,\"awardid\":21407005},{\"index\":8,\"awardid\":21407006},{\"index\":9,\"awardid\":21407007},{\"index\":10,\"awardid\":21407008}]",
+    "extraAwardList": "[{\"index\":11,\"cond\":4,\"awardid\":21407009},{\"index\":12,\"cond\":7,\"awardid\":21407010},{\"index\":13,\"cond\":10,\"awardid\":21407011}]"
+  }
+]

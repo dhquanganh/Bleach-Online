@@ -1,0 +1,79 @@
+[
+  {
+    "id": "01CBBF51",
+    "level": 1,
+    "page": 1,
+    "wineLv": "{\"wineLv\":[3,4,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140001,\"ADVANCED\":30140002}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 1 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF52",
+    "level": 50,
+    "page": 2,
+    "wineLv": "{\"wineLv\":[4,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140003,\"ADVANCED\":30140004}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 50 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF53",
+    "level": 70,
+    "page": 3,
+    "wineLv": "{\"wineLv\":[5,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140005,\"ADVANCED\":30140006}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 70 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF54",
+    "level": 80,
+    "page": 4,
+    "wineLv": "{\"wineLv\":[5,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140007,\"ADVANCED\":30140008}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 80 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF55",
+    "level": 90,
+    "page": 5,
+    "wineLv": "{\"wineLv\":[5,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140009,\"ADVANCED\":30140010}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 90 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF56",
+    "level": 100,
+    "page": 6,
+    "wineLv": "{\"wineLv\":[5,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140009,\"ADVANCED\":30140010}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 100 can recruit this page's partners",
+    "isTavern": 1
+  },
+  {
+    "id": "01CBBF57",
+    "level": 110,
+    "page": 7,
+    "wineLv": "{\"wineLv\":[5,0,0,0]}",
+    "payConfigs": "{\"NORMAL\":30140009,\"ADVANCED\":30140010}",
+    "vips": "{\"ADVANCED\":0,\"AUTO\":0,\"AUTO_CHEST\":0}",
+    "preview": 0,
+    "tips": "When Main Character level reaches 110 can recruit this page's partners",
+    "isTavern": 1
+  }
+]

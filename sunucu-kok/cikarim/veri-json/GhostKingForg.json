@@ -1,0 +1,21 @@
+[
+  {
+    "id": "0012C4B1",
+    "name": "个人充值",
+    "tName": "清凉一夏",
+    "desc": "1. Top up 1 gold to get 1 point of Reio Power, top up certain amount to get free chances in Reio's Treasure.\n2. By using Reio Power you can forge Zanpakutos; by activating each stage of rewards you can get extra giftpacks.\n3. You can exchange for giftpacks with Reio Power in Reio's Treasure, forging Zanpakuto or exchanging for rewards will both cost Reio Power.\n4. Based on the zanpakuto's level, after the event, you can get certain portion of golds you've topped up in return.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 970001,
+    "rechargeIndex": 0,
+    "forging": "{\"index\" : 1, \"cost\" : 1000}",
+    "forgingMax": 100000,
+    "forgingAward": "{\"index\" : 2, \"award\" : [{\"score\" : 4000, \"awardId\" : 21404047, \"discount\" : 10}, {\"score\" : 8000, \"awardId\" : 21404048, \"discount\" : 20}, {\"score\" : 20000, \"awardId\" : 21404049, \"discount\" : 30}, {\"score\" : 40000, \"awardId\" : 21404050, \"discount\" : 50}, {\"score\" : 100000, \"awardId\" : 21404051, \"discount\" : 100}]}",
+    "scoreIndex": 3,
+    "additionalAward": "{\"index\" : 4, \"gold\" : 2000}",
+    "additionalItems": "[21406000,21406001,21406002,21406003,21406004,21406005]",
+    "bigAward": "{\"index\" :5, \"awardId\" : 21406025, \"gold\" : 40000, \"showID\":2000205,\"showType\":1,\"fightReportAddr\":\"\"}",
+    "scoreShop": "[{\"index\":21,\"awardId\":21406011,\"score\":100, \"count\" : 0},{\"index\":22,\"awardId\":21406012,\"score\":200, \"count\" : 0},{\"index\":23,\"awardId\":21406013,\"score\":500, \"count\" : 0},{\"index\":24,\"awardId\":21406014,\"score\":1000, \"count\" : 0},{\"index\":25,\"awardId\":21406015,\"score\":3000, \"count\" : 0},{\"index\":26,\"awardId\":21406016,\"score\":10000, \"count\" : 0}]",
+    "language": "{\"forgNeed\":\"Requires %0 Reio Power\", \"powerLack\":\"Reio Power not enough\"}"
+  }
+]

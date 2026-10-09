@@ -1,0 +1,17 @@
+[
+  {
+    "id": "00150EA1",
+    "name": "万圣大礼1",
+    "tName": "Halloween Gift",
+    "desc": "1. During the event you can claim Halloween gifts for free, which will differ according to your VIP level.\n2. When the top-up reaches a certain amount you can claim top-up giftpacks and the finest Ghost Masks rewards repeatedly\n3. The status of all the rewards will be reset at 12 am daily and the Ghost Masks you have will be reserved till the end of the event.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1380001,
+    "dayFreeGifts": "[{\"index\":1,\"limit\":0,\"award\":21404561,\"add\":1},{\"index\":2,\"limit\":6,\"award\":21404562,\"add\":2},{\"index\":3,\"limit\":10,\"award\":21404563,\"add\":3}]",
+    "dayChargeGifts": "[{\"index\":4,\"limit\":200,\"award\":21404564,\"add\":0},{\"index\":5,\"limit\":400,\"award\":21404565,\"add\":0},{\"index\":6,\"limit\":800,\"award\":21404566,\"add\":0},{\"index\":7,\"limit\":2000,\"award\":21404567,\"add\":1},{\"index\":8,\"limit\":4000,\"award\":21404568,\"add\":5}]",
+    "progressChargeGifts": "[{\"index\":9,\"ratio\":6000,\"award\":21404569,\"add\":10}]",
+    "rechargeIndex": 30,
+    "progressChargeIndex": 40,
+    "maskId": 14100469
+  }
+]

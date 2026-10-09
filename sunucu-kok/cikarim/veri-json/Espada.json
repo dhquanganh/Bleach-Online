@@ -1,0 +1,12 @@
+[
+  {
+    "id": "00050911",
+    "name": "Espada Treasure",
+    "tName": "Espada Treasure",
+    "desc": "1. There are 10 tiers of rewards. Players can claim each tier of reward once when the accumulative top-up amount reaches the requirement.\n2. When Accumulative amount reaches the requested amount, players will be qualified to purchase the Espada recommended super value gift pack.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 330001,
+    "f6": "[{\"index\":0,\"type\":1,\"key\":100,\"limit\":1,\"award\":[21405821]},{\"index\":1,\"type\":2,\"key\":100,\"need\":100,\"limit\":2,\"award\":[21405822]},{\"index\":2,\"type\":1,\"key\":200,\"limit\":1,\"award\":[21405823]},{\"index\":3,\"type\":2,\"key\":200,\"need\":200,\"limit\":2,\"award\":[21405824]},{\"index\":4,\"type\":1,\"key\":400,\"limit\":1,\"award\":[21405825]},{\"index\":5,\"type\":2,\"key\":400,\"need\":400,\"limit\":2,\"award\":[21405826]},{\"index\":6,\"type\":1,\"key\":800,\"limit\":1,\"award\":[21405827]},{\"index\":7,\"type\":2,\"key\":800,\"need\":600,\"limit\":2,\"award\":[21405828]},{\"index\":8,\"type\":1,\"key\":1200,\"limit\":1,\"award\":[21405829]},{\"index\":9,\"type\":2,\"key\":1200,\"need\":1000,\"limit\":2,\"award\":[21405830]},{\"index\":10,\"type\":1,\"key\":2000,\"limit\":1,\"award\":[21405831]},{\"index\":11,\"type\":2,\"key\":2000,\"need\":1500,\"limit\":2,\"award\":[21405832]},{\"index\":12,\"type\":1,\"key\":4000,\"limit\":1,\"award\":[21405833]},{\"index\":13,\"type\":2,\"key\":4000,\"need\":2000,\"limit\":2,\"award\":[21405834]},{\"index\":14,\"type\":1,\"key\":6000,\"limit\":1,\"award\":[21405835]},{\"index\":15,\"type\":2,\"key\":6000,\"need\":3000,\"limit\":2,\"award\":[21405836]},{\"index\":16,\"type\":1,\"key\":8000,\"limit\":1,\"award\":[21405837]},{\"index\":17,\"type\":2,\"key\":8000,\"need\":4000,\"limit\":2,\"award\":[21405838]},{\"index\":18,\"type\":1,\"key\":12000,\"limit\":1,\"award\":[21405839]},{\"index\":19,\"type\":2,\"key\":12000,\"need\":5000,\"limit\":2,\"award\":[21405840]}]"
+  }
+]

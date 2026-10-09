@@ -1,0 +1,797 @@
+[
+  {
+    "id": "00000001",
+    "upgradeExp": 10,
+    "modelId": 1
+  },
+  {
+    "id": "00000002",
+    "upgradeExp": 11,
+    "modelId": 1
+  },
+  {
+    "id": "00000003",
+    "upgradeExp": 12,
+    "modelId": 1
+  },
+  {
+    "id": "00000004",
+    "upgradeExp": 13,
+    "modelId": 1
+  },
+  {
+    "id": "00000005",
+    "upgradeExp": 14,
+    "modelId": 1
+  },
+  {
+    "id": "00000006",
+    "upgradeExp": 15,
+    "modelId": 1
+  },
+  {
+    "id": "00000007",
+    "upgradeExp": 16,
+    "modelId": 1
+  },
+  {
+    "id": "00000008",
+    "upgradeExp": 17,
+    "modelId": 1
+  },
+  {
+    "id": "00000009",
+    "upgradeExp": 18,
+    "modelId": 1
+  },
+  {
+    "id": "0000000A",
+    "upgradeExp": 20,
+    "modelId": 1
+  },
+  {
+    "id": "0000000B",
+    "upgradeExp": 21,
+    "modelId": 1
+  },
+  {
+    "id": "0000000C",
+    "upgradeExp": 22,
+    "modelId": 1
+  },
+  {
+    "id": "0000000D",
+    "upgradeExp": 23,
+    "modelId": 1
+  },
+  {
+    "id": "0000000E",
+    "upgradeExp": 24,
+    "modelId": 1
+  },
+  {
+    "id": "0000000F",
+    "upgradeExp": 25,
+    "modelId": 1
+  },
+  {
+    "id": "00000010",
+    "upgradeExp": 26,
+    "modelId": 1
+  },
+  {
+    "id": "00000011",
+    "upgradeExp": 27,
+    "modelId": 1
+  },
+  {
+    "id": "00000012",
+    "upgradeExp": 28,
+    "modelId": 1
+  },
+  {
+    "id": "00000013",
+    "upgradeExp": 29,
+    "modelId": 1
+  },
+  {
+    "id": "00000014",
+    "upgradeExp": 30,
+    "modelId": 1
+  },
+  {
+    "id": "00000015",
+    "upgradeExp": 32,
+    "modelId": 1
+  },
+  {
+    "id": "00000016",
+    "upgradeExp": 34,
+    "modelId": 1
+  },
+  {
+    "id": "00000017",
+    "upgradeExp": 36,
+    "modelId": 1
+  },
+  {
+    "id": "00000018",
+    "upgradeExp": 38,
+    "modelId": 1
+  },
+  {
+    "id": "00000019",
+    "upgradeExp": 40,
+    "modelId": 1
+  },
+  {
+    "id": "0000001A",
+    "upgradeExp": 42,
+    "modelId": 1
+  },
+  {
+    "id": "0000001B",
+    "upgradeExp": 44,
+    "modelId": 1
+  },
+  {
+    "id": "0000001C",
+    "upgradeExp": 46,
+    "modelId": 1
+  },
+  {
+    "id": "0000001D",
+    "upgradeExp": 48,
+    "modelId": 1
+  },
+  {
+    "id": "0000001E",
+    "upgradeExp": 50,
+    "modelId": 2
+  },
+  {
+    "id": "0000001F",
+    "upgradeExp": 52,
+    "modelId": 2
+  },
+  {
+    "id": "00000020",
+    "upgradeExp": 54,
+    "modelId": 2
+  },
+  {
+    "id": "00000021",
+    "upgradeExp": 56,
+    "modelId": 2
+  },
+  {
+    "id": "00000022",
+    "upgradeExp": 58,
+    "modelId": 2
+  },
+  {
+    "id": "00000023",
+    "upgradeExp": 60,
+    "modelId": 2
+  },
+  {
+    "id": "00000024",
+    "upgradeExp": 62,
+    "modelId": 2
+  },
+  {
+    "id": "00000025",
+    "upgradeExp": 64,
+    "modelId": 2
+  },
+  {
+    "id": "00000026",
+    "upgradeExp": 66,
+    "modelId": 2
+  },
+  {
+    "id": "00000027",
+    "upgradeExp": 68,
+    "modelId": 2
+  },
+  {
+    "id": "00000028",
+    "upgradeExp": 70,
+    "modelId": 2
+  },
+  {
+    "id": "00000029",
+    "upgradeExp": 76,
+    "modelId": 2
+  },
+  {
+    "id": "0000002A",
+    "upgradeExp": 82,
+    "modelId": 2
+  },
+  {
+    "id": "0000002B",
+    "upgradeExp": 88,
+    "modelId": 2
+  },
+  {
+    "id": "0000002C",
+    "upgradeExp": 94,
+    "modelId": 2
+  },
+  {
+    "id": "0000002D",
+    "upgradeExp": 100,
+    "modelId": 2
+  },
+  {
+    "id": "0000002E",
+    "upgradeExp": 106,
+    "modelId": 2
+  },
+  {
+    "id": "0000002F",
+    "upgradeExp": 112,
+    "modelId": 2
+  },
+  {
+    "id": "00000030",
+    "upgradeExp": 118,
+    "modelId": 2
+  },
+  {
+    "id": "00000031",
+    "upgradeExp": 124,
+    "modelId": 2
+  },
+  {
+    "id": "00000032",
+    "upgradeExp": 130,
+    "modelId": 3
+  },
+  {
+    "id": "00000033",
+    "upgradeExp": 140,
+    "modelId": 3
+  },
+  {
+    "id": "00000034",
+    "upgradeExp": 150,
+    "modelId": 3
+  },
+  {
+    "id": "00000035",
+    "upgradeExp": 160,
+    "modelId": 3
+  },
+  {
+    "id": "00000036",
+    "upgradeExp": 170,
+    "modelId": 3
+  },
+  {
+    "id": "00000037",
+    "upgradeExp": 180,
+    "modelId": 3
+  },
+  {
+    "id": "00000038",
+    "upgradeExp": 190,
+    "modelId": 3
+  },
+  {
+    "id": "00000039",
+    "upgradeExp": 200,
+    "modelId": 3
+  },
+  {
+    "id": "0000003A",
+    "upgradeExp": 210,
+    "modelId": 3
+  },
+  {
+    "id": "0000003B",
+    "upgradeExp": 220,
+    "modelId": 3
+  },
+  {
+    "id": "0000003C",
+    "upgradeExp": 230,
+    "modelId": 3
+  },
+  {
+    "id": "0000003D",
+    "upgradeExp": 240,
+    "modelId": 3
+  },
+  {
+    "id": "0000003E",
+    "upgradeExp": 250,
+    "modelId": 3
+  },
+  {
+    "id": "0000003F",
+    "upgradeExp": 260,
+    "modelId": 3
+  },
+  {
+    "id": "00000040",
+    "upgradeExp": 270,
+    "modelId": 3
+  },
+  {
+    "id": "00000041",
+    "upgradeExp": 280,
+    "modelId": 3
+  },
+  {
+    "id": "00000042",
+    "upgradeExp": 290,
+    "modelId": 3
+  },
+  {
+    "id": "00000043",
+    "upgradeExp": 300,
+    "modelId": 3
+  },
+  {
+    "id": "00000044",
+    "upgradeExp": 310,
+    "modelId": 3
+  },
+  {
+    "id": "00000045",
+    "upgradeExp": 320,
+    "modelId": 3
+  },
+  {
+    "id": "00000046",
+    "upgradeExp": 330,
+    "modelId": 4
+  },
+  {
+    "id": "00000047",
+    "upgradeExp": 340,
+    "modelId": 4
+  },
+  {
+    "id": "00000048",
+    "upgradeExp": 350,
+    "modelId": 4
+  },
+  {
+    "id": "00000049",
+    "upgradeExp": 360,
+    "modelId": 4
+  },
+  {
+    "id": "0000004A",
+    "upgradeExp": 370,
+    "modelId": 4
+  },
+  {
+    "id": "0000004B",
+    "upgradeExp": 380,
+    "modelId": 4
+  },
+  {
+    "id": "0000004C",
+    "upgradeExp": 390,
+    "modelId": 4
+  },
+  {
+    "id": "0000004D",
+    "upgradeExp": 400,
+    "modelId": 4
+  },
+  {
+    "id": "0000004E",
+    "upgradeExp": 410,
+    "modelId": 4
+  },
+  {
+    "id": "0000004F",
+    "upgradeExp": 420,
+    "modelId": 4
+  },
+  {
+    "id": "00000050",
+    "upgradeExp": 430,
+    "modelId": 4
+  },
+  {
+    "id": "00000051",
+    "upgradeExp": 440,
+    "modelId": 4
+  },
+  {
+    "id": "00000052",
+    "upgradeExp": 450,
+    "modelId": 4
+  },
+  {
+    "id": "00000053",
+    "upgradeExp": 460,
+    "modelId": 4
+  },
+  {
+    "id": "00000054",
+    "upgradeExp": 470,
+    "modelId": 4
+  },
+  {
+    "id": "00000055",
+    "upgradeExp": 480,
+    "modelId": 4
+  },
+  {
+    "id": "00000056",
+    "upgradeExp": 490,
+    "modelId": 4
+  },
+  {
+    "id": "00000057",
+    "upgradeExp": 500,
+    "modelId": 4
+  },
+  {
+    "id": "00000058",
+    "upgradeExp": 510,
+    "modelId": 4
+  },
+  {
+    "id": "00000059",
+    "upgradeExp": 520,
+    "modelId": 4
+  },
+  {
+    "id": "0000005A",
+    "upgradeExp": 530,
+    "modelId": 4
+  },
+  {
+    "id": "0000005B",
+    "upgradeExp": 540,
+    "modelId": 4
+  },
+  {
+    "id": "0000005C",
+    "upgradeExp": 550,
+    "modelId": 4
+  },
+  {
+    "id": "0000005D",
+    "upgradeExp": 560,
+    "modelId": 4
+  },
+  {
+    "id": "0000005E",
+    "upgradeExp": 570,
+    "modelId": 4
+  },
+  {
+    "id": "0000005F",
+    "upgradeExp": 580,
+    "modelId": 4
+  },
+  {
+    "id": "00000060",
+    "upgradeExp": 590,
+    "modelId": 4
+  },
+  {
+    "id": "00000061",
+    "upgradeExp": 600,
+    "modelId": 4
+  },
+  {
+    "id": "00000062",
+    "upgradeExp": 610,
+    "modelId": 4
+  },
+  {
+    "id": "00000063",
+    "upgradeExp": 620,
+    "modelId": 4
+  },
+  {
+    "id": "00000064",
+    "upgradeExp": 630,
+    "modelId": 5
+  },
+  {
+    "id": "00000065",
+    "upgradeExp": 640,
+    "modelId": 5
+  },
+  {
+    "id": "00000066",
+    "upgradeExp": 650,
+    "modelId": 5
+  },
+  {
+    "id": "00000067",
+    "upgradeExp": 660,
+    "modelId": 5
+  },
+  {
+    "id": "00000068",
+    "upgradeExp": 670,
+    "modelId": 5
+  },
+  {
+    "id": "00000069",
+    "upgradeExp": 680,
+    "modelId": 5
+  },
+  {
+    "id": "0000006A",
+    "upgradeExp": 690,
+    "modelId": 5
+  },
+  {
+    "id": "0000006B",
+    "upgradeExp": 700,
+    "modelId": 5
+  },
+  {
+    "id": "0000006C",
+    "upgradeExp": 710,
+    "modelId": 5
+  },
+  {
+    "id": "0000006D",
+    "upgradeExp": 720,
+    "modelId": 5
+  },
+  {
+    "id": "0000006E",
+    "upgradeExp": 730,
+    "modelId": 5
+  },
+  {
+    "id": "0000006F",
+    "upgradeExp": 750,
+    "modelId": 5
+  },
+  {
+    "id": "00000070",
+    "upgradeExp": 770,
+    "modelId": 5
+  },
+  {
+    "id": "00000071",
+    "upgradeExp": 790,
+    "modelId": 5
+  },
+  {
+    "id": "00000072",
+    "upgradeExp": 810,
+    "modelId": 5
+  },
+  {
+    "id": "00000073",
+    "upgradeExp": 830,
+    "modelId": 5
+  },
+  {
+    "id": "00000074",
+    "upgradeExp": 850,
+    "modelId": 5
+  },
+  {
+    "id": "00000075",
+    "upgradeExp": 870,
+    "modelId": 5
+  },
+  {
+    "id": "00000076",
+    "upgradeExp": 890,
+    "modelId": 5
+  },
+  {
+    "id": "00000077",
+    "upgradeExp": 910,
+    "modelId": 5
+  },
+  {
+    "id": "00000078",
+    "upgradeExp": 930,
+    "modelId": 5
+  },
+  {
+    "id": "00000079",
+    "upgradeExp": 960,
+    "modelId": 5
+  },
+  {
+    "id": "0000007A",
+    "upgradeExp": 990,
+    "modelId": 5
+  },
+  {
+    "id": "0000007B",
+    "upgradeExp": 1020,
+    "modelId": 5
+  },
+  {
+    "id": "0000007C",
+    "upgradeExp": 1050,
+    "modelId": 5
+  },
+  {
+    "id": "0000007D",
+    "upgradeExp": 1080,
+    "modelId": 5
+  },
+  {
+    "id": "0000007E",
+    "upgradeExp": 1110,
+    "modelId": 5
+  },
+  {
+    "id": "0000007F",
+    "upgradeExp": 1140,
+    "modelId": 5
+  },
+  {
+    "id": "00000080",
+    "upgradeExp": 1170,
+    "modelId": 5
+  },
+  {
+    "id": "00000081",
+    "upgradeExp": 1200,
+    "modelId": 5
+  },
+  {
+    "id": "00000082",
+    "upgradeExp": 1230,
+    "modelId": 5
+  },
+  {
+    "id": "00000083",
+    "upgradeExp": 1260,
+    "modelId": 5
+  },
+  {
+    "id": "00000084",
+    "upgradeExp": 1290,
+    "modelId": 5
+  },
+  {
+    "id": "00000085",
+    "upgradeExp": 1320,
+    "modelId": 5
+  },
+  {
+    "id": "00000086",
+    "upgradeExp": 1350,
+    "modelId": 5
+  },
+  {
+    "id": "00000087",
+    "upgradeExp": 1380,
+    "modelId": 5
+  },
+  {
+    "id": "00000088",
+    "upgradeExp": 1410,
+    "modelId": 5
+  },
+  {
+    "id": "00000089",
+    "upgradeExp": 1440,
+    "modelId": 5
+  },
+  {
+    "id": "0000008A",
+    "upgradeExp": 1470,
+    "modelId": 5
+  },
+  {
+    "id": "0000008B",
+    "upgradeExp": 1500,
+    "modelId": 5
+  },
+  {
+    "id": "0000008C",
+    "upgradeExp": 1530,
+    "modelId": 5
+  },
+  {
+    "id": "0000008D",
+    "upgradeExp": 1560,
+    "modelId": 5
+  },
+  {
+    "id": "0000008E",
+    "upgradeExp": 1590,
+    "modelId": 5
+  },
+  {
+    "id": "0000008F",
+    "upgradeExp": 1620,
+    "modelId": 5
+  },
+  {
+    "id": "00000090",
+    "upgradeExp": 1650,
+    "modelId": 5
+  },
+  {
+    "id": "00000091",
+    "upgradeExp": 1680,
+    "modelId": 5
+  },
+  {
+    "id": "00000092",
+    "upgradeExp": 1710,
+    "modelId": 5
+  },
+  {
+    "id": "00000093",
+    "upgradeExp": 1740,
+    "modelId": 5
+  },
+  {
+    "id": "00000094",
+    "upgradeExp": 1770,
+    "modelId": 5
+  },
+  {
+    "id": "00000095",
+    "upgradeExp": 1800,
+    "modelId": 5
+  },
+  {
+    "id": "00000096",
+    "upgradeExp": 1830,
+    "modelId": 5
+  },
+  {
+    "id": "00000097",
+    "upgradeExp": 1860,
+    "modelId": 5
+  },
+  {
+    "id": "00000098",
+    "upgradeExp": 1890,
+    "modelId": 5
+  },
+  {
+    "id": "00000099",
+    "upgradeExp": 1920,
+    "modelId": 5
+  },
+  {
+    "id": "0000009A",
+    "upgradeExp": 1950,
+    "modelId": 5
+  },
+  {
+    "id": "0000009B",
+    "upgradeExp": 1980,
+    "modelId": 5
+  },
+  {
+    "id": "0000009C",
+    "upgradeExp": 2010,
+    "modelId": 5
+  },
+  {
+    "id": "0000009D",
+    "upgradeExp": 2040,
+    "modelId": 5
+  },
+  {
+    "id": "0000009E",
+    "upgradeExp": 2070,
+    "modelId": 5
+  },
+  {
+    "id": "0000009F",
+    "upgradeExp": 2100,
+    "modelId": 5
+  }
+]

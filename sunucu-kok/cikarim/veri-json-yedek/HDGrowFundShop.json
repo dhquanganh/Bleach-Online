@@ -1,0 +1,13 @@
+[
+  {
+    "id": "0004BAF1",
+    "name": "Urahara Shop",
+    "tName": "Urahara Shop Super Value Items(Limited to one purchase)",
+    "desc": "1. Players can only buy one type of Growth Fund (Please choose wisely) \n2. Purchase Growth Fund can get Growth Fund Gift Pack, Growth Fund rewards will be sent in 30 times",
+    "tip": "1.Once Growth Fund is purchased, players cannot purchase other funds 2. Fund rewards %0 coupons will be sent by mail at 00:30 daily 3. There will be 30 rebates 4. Rewards will still be sent even if the player is offline",
+    "price": 0,
+    "imageID": 310001,
+    "f6": "[{\"gold\":1000,\"day\":30,\"award\":[21401144],\"goods\":[21401149]},{\"gold\":5000,\"day\":30,\"award\":[21401145],\"goods\":[21401150]},{\"gold\":10000,\"day\":30,\"award\":[21401146],\"goods\":[21401151]},{\"gold\":20000,\"day\":30,\"award\":[21401147],\"goods\":[21401152]},{\"gold\":50000,\"day\":30,\"award\":[21401148],\"goods\":[21401153]}]",
+    "f7": "[{\"name\":\"Regular Goods\",\"ticket\":50},{\"name\":\"Tessai's Goods\",\"ticket\":250},{\"name\":\"Tsumugiya Ururu's Goods\",\"ticket\":500},{\"name\":\"Hanakari Jinda's Goods\",\"ticket\":1000},{\"name\":\"Urahara Kisuke's Goods\",\"ticket\":2500}]"
+  }
+]

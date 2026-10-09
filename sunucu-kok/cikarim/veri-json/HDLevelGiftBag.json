@@ -1,0 +1,12 @@
+[
+  {
+    "id": "000F1B31",
+    "name": "Level Gift Pack",
+    "front": "Level Gift Pack",
+    "middle": "Level Gift Pack",
+    "back": "2",
+    "leaderID": 0,
+    "awardId": 990001,
+    "text": "[{\"condition\":5,\"award\":[22000008,22000008,22000008],\"prompt\":\"5\"},{\"condition\":10,\"award\":[22000009,22000009,22000009],\"prompt\":\"10\"},{\"condition\":20,\"award\":[22000010,22000010,22000010],\"prompt\":\"20\"},{\"condition\":30,\"award\":[22000011,22000011,22000011],\"prompt\":\"30\"},{\"condition\":40,\"award\":[22000012,22000012,22000012],\"prompt\":\"40\"},{\"condition\":50,\"award\":[22000013,22000014,22000015],\"prompt\":\"50\"},{\"condition\":60,\"award\":[22000016,22000016,22000016],\"prompt\":\"60\"},{\"condition\":70,\"award\":[22000017,22000017,22000017],\"prompt\":\"70\"},{\"condition\":80,\"award\":[22000018,22000018,22000018],\"prompt\":\"80\"}]"
+  }
+]

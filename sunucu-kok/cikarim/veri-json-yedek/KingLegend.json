@@ -1,0 +1,18 @@
+[
+  {
+    "id": "000A6041",
+    "name": "灵王传说",
+    "tName": "灵王传说",
+    "desc": "1. During the event, top up 200 gold to win bonus and top-up gifts.\n2. During the event, consume 500 gold each day to win supervalue gifts.\n3. Players can exchange coupons with vitality once each day.\n4. Join Lucky Turntable to win rewards, each try consumes 50 gold. Complete 4 tasks to unlock the giftpack.",
+    "tip": "4",
+    "price": 0,
+    "imageID": 680001,
+    "curDayIndex": "{\"index\":0,\"gold\":200,\"getGold\":200,\"award\":[21405230,21405231,21405232,21405233,21405234]}",
+    "curCostIndex": "[{\"index\":1,\"order\":350,\"ticket\":200},{\"index\":2,\"order\":900,\"ticket\":300}]",
+    "f8": "{\"index\":3,\"cost\":500,\"award\":[21405235,21405236,21405237,21405238,21405239]}",
+    "f9": "{\"index\":4,\"gold\":50,\"rateNum\":[{\"num\":1,\"rate\":60},{\"num\":2,\"rate\":77},{\"num\":3,\"rate\":85},{\"num\":4,\"rate\":89},{\"num\":5,\"rate\":92},{\"num\":6,\"rate\":95},{\"num\":7,\"rate\":97},{\"num\":8,\"rate\":98},{\"num\":9,\"rate\":99},{\"num\":10,\"rate\":100}],\"award\":[{\"rate\":1,\"awardId\":21405240},{\"rate\":1,\"awardId\":21405241},{\"rate\":1,\"awardId\":21405242},{\"rate\":2,\"awardId\":21405243},{\"rate\":10,\"awardId\":21405244},{\"rate\":10,\"awardId\":21405245},{\"rate\":10,\"awardId\":21405246},{\"rate\":21,\"awardId\":21405247},{\"rate\":22,\"awardId\":21405248},{\"rate\":22,\"awardId\":21405249}]}",
+    "f10": 100,
+    "f11": 6,
+    "f12": "{\"index\":5,\"award\":[21405250,21405251,21405252,21405253,21405254]}"
+  }
+]

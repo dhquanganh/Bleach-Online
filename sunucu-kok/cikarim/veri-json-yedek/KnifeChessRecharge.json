@@ -1,0 +1,16 @@
+[
+  {
+    "id": "00147261",
+    "name": "斩魄刀2合1",
+    "tName": "斩魄刀2合1",
+    "desc": "1. Recharge required gold to claim corresponding giftpack and zanpakuto.\n2. When the players in the server have collected required zanpakuto, server reward will be unlocked.\n3. Players who have collected zanpakuto will be eligible for claiming rewards.\n4. Zanpakuto is an event item. Collection and reward claiming status will reset on 0:00 midnight everyday.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1340001,
+    "globalIndex": 99,
+    "totalGold": 0,
+    "recharge": "[{\"index\":1,\"gold\":1,\"award\":21405089},{\"index\":2,\"gold\":800,\"award\":21405090},{\"index\":3,\"gold\":2000,\"award\":21405091},{\"index\":4,\"gold\":4000,\"award\":21405092}]",
+    "collectBag": "{\"index\":5,\"num\":5,\"award\":21405088}",
+    "dayCollectIndex": 50
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0013D621",
+    "name": "Lv. 30 Mod Soul Giftpack",
+    "useerLevel": 30,
+    "mainPetStage": 0,
+    "vicePetNum": 0,
+    "award": 22500001
+  },
+  {
+    "id": "0013D622",
+    "name": "Lv. 55 Mod Soul Giftpack",
+    "useerLevel": 55,
+    "mainPetStage": 0,
+    "vicePetNum": 2,
+    "award": 22500002
+  },
+  {
+    "id": "0013D623",
+    "name": "Lv. 70 Mod Soul Giftpack",
+    "useerLevel": 70,
+    "mainPetStage": 1,
+    "vicePetNum": 2,
+    "award": 22500003
+  },
+  {
+    "id": "0013D624",
+    "name": "Lv. 80 Mod Soul Giftpack",
+    "useerLevel": 80,
+    "mainPetStage": 1,
+    "vicePetNum": 3,
+    "award": 22500004
+  },
+  {
+    "id": "0013D625",
+    "name": "Lv. 90 Mod Soul Giftpack",
+    "useerLevel": 90,
+    "mainPetStage": 2,
+    "vicePetNum": 3,
+    "award": 22500005
+  },
+  {
+    "id": "0013D626",
+    "name": "Lv. 100 Mod Soul Giftpack",
+    "useerLevel": 100,
+    "mainPetStage": 3,
+    "vicePetNum": 5,
+    "award": 22500006
+  }
+]

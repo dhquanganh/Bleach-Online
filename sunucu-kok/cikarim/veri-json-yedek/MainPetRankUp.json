@@ -1,0 +1,92 @@
+[
+  {
+    "id": "0000044D",
+    "petRankUpCondition": "[{\"petId\":1101,\"level\":1}]",
+    "addExp": 10,
+    "stage": 1
+  },
+  {
+    "id": "0000044E",
+    "petRankUpCondition": "[{\"petId\":1101,\"level\":10}]",
+    "addExp": 10,
+    "stage": 2
+  },
+  {
+    "id": "0000044F",
+    "petRankUpCondition": "[{\"petId\":1101,\"level\":10}]",
+    "addExp": 10,
+    "stage": 2
+  },
+  {
+    "id": "00000450",
+    "petRankUpCondition": "[{\"petId\":1102,\"level\":20}]",
+    "addExp": 10,
+    "stage": 3
+  },
+  {
+    "id": "00000451",
+    "petRankUpCondition": "[{\"petId\":1102,\"level\":20},{\"petId\":1103,\"level\":20}]",
+    "addExp": 10,
+    "stage": 3
+  },
+  {
+    "id": "00000452",
+    "petRankUpCondition": "[{\"petId\":1103,\"level\":20}]",
+    "addExp": 10,
+    "stage": 3
+  },
+  {
+    "id": "00000453",
+    "petRankUpCondition": "[{\"petId\":1104,\"level\":30}]",
+    "addExp": 10,
+    "stage": 4
+  },
+  {
+    "id": "00000454",
+    "petRankUpCondition": "[{\"petId\":1104,\"level\":10},{\"petId\":1105,\"level\":40}]",
+    "addExp": 10,
+    "stage": 4
+  },
+  {
+    "id": "00000455",
+    "petRankUpCondition": "[{\"petId\":1105,\"level\":30},{\"petId\":1106,\"level\":40}]",
+    "addExp": 10,
+    "stage": 4
+  },
+  {
+    "id": "00000456",
+    "petRankUpCondition": "[{\"petId\":1106,\"level\":30}]",
+    "addExp": 10,
+    "stage": 4
+  },
+  {
+    "id": "00000457",
+    "petRankUpCondition": "[{\"petId\":1107,\"level\":50}]",
+    "addExp": 10,
+    "stage": 5
+  },
+  {
+    "id": "00000458",
+    "petRankUpCondition": "[{\"petId\":1107,\"level\":60},{\"petId\":1108,\"level\":80}]",
+    "addExp": 10,
+    "stage": 5
+  },
+  {
+    "id": "00000459",
+    "petRankUpCondition": "[{\"petId\":1108,\"level\":90},{\"petId\":1109,\"level\":90}]",
+    "addExp": 10,
+    "stage": 5
+  },
+  {
+    "id": "0000045A",
+    "petRankUpCondition": "[{\"petId\":1110,\"level\":60},{\"petId\":1109,\"level\":80}]",
+    "addExp": 10,
+    "stage": 5
+  },
+  {
+    "id": "0000045B",
+    "petRankUpCondition": "[{\"petId\":1110,\"level\":50}]",
+    "addExp": 10,
+    "stage": 5
+  }
+]

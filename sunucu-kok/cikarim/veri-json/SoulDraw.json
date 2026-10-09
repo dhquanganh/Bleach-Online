@@ -1,0 +1,17 @@
+[
+  {
+    "id": "0013FD31",
+    "name": "魂之狂欢",
+    "tName": "魂之狂欢",
+    "desc": "1. You can receive 1 gold reward and 3 silver rewards each time you purchase.\n2. You will see all the possible rewards in the Preview Area and you can swap current rewards when refreshed successfully.\n3. The rewards will not be refreshed automatically after your purchase, but you can purchase your current rewards repeatedly.",
+    "tip": "1",
+    "price": 0,
+    "imageID": 1310001,
+    "freeAward": "[{\"seq\":21,\"weight\":10,\"award\":21405302},{\"seq\":22,\"weight\":10,\"award\":21405303},{\"seq\":23,\"weight\":15,\"award\":21405304},{\"seq\":24,\"weight\":10,\"award\":21405305},{\"seq\":25,\"weight\":10,\"award\":21405306},{\"seq\":26,\"weight\":15,\"award\":21405307},{\"seq\":27,\"weight\":15,\"award\":21405308},{\"seq\":28,\"weight\":5,\"award\":21405309},{\"seq\":29,\"weight\":10,\"award\":21405310}]",
+    "goldAward": "[{\"seq\":1,\"weight\":2,\"gold\":4000,\"award\":21405311},{\"seq\":2,\"weight\":25,\"gold\":4000,\"award\":21405312},{\"seq\":3,\"weight\":20,\"gold\":4000,\"award\":21405313},{\"seq\":4,\"weight\":20,\"gold\":4000,\"award\":21405314},{\"seq\":5,\"weight\":10,\"gold\":4000,\"award\":21405315},{\"seq\":6,\"weight\":20,\"gold\":4000,\"award\":21405316}]",
+    "itemIndex": "[0,1,2,3]",
+    "refreshGold": 50,
+    "refreshIndex": 11,
+    "buyIndex": 12
+  }
+]

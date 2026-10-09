@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "00000001",
+    "monsterCoin": 28496,
+    "monsterExp": 17365,
+    "traitorCoin": 57850,
+    "traitorExp": 17365
+  },
+  {
+    "id": "00000002",
+    "monsterCoin": 38302,
+    "monsterExp": 17450,
+    "traitorCoin": 64076,
+    "traitorExp": 17450
+  },
+  {
+    "id": "00000003",
+    "monsterCoin": 48108,
+    "monsterExp": 17535,
+    "traitorCoin": 70302,
+    "traitorExp": 17535
+  },
+  {
+    "id": "00000004",
+    "monsterCoin": 57915,
+    "monsterExp": 17620,
+    "traitorCoin": 76528,
+    "traitorExp": 17620
+  },
+  {
+    "id": "00000005",
+    "monsterCoin": 67721,
+    "monsterExp": 17705,
+    "traitorCoin": 82754,
+    "traitorExp": 17705
+  },
+  {
+    "id": "00000006",
+    "monsterCoin": 77527,
+    "monsterExp": 17790,
+    "traitorCoin": 88980,
+    "traitorExp": 17790
+  },
+  {
+    "id": "00000007",
+    "monsterCoin": 87334,
+    "monsterExp": 17875,
+    "traitorCoin": 95206,
+    "traitorExp": 17875
+  },
+  {
+    "id": "00000008",
+    "monsterCoin": 97140,
+    "monsterExp": 17960,
+    "traitorCoin": 101432,
+    "traitorExp": 17960
+  },
+  {
+    "id": "00000009",
+    "monsterCoin": 106946,
+    "monsterExp": 18045,
+    "traitorCoin": 107658,
+    "traitorExp": 18045
+  },
+  {
+    "id": "0000000A",
+    "monsterCoin": 116753,
+    "monsterExp": 18130,
+    "traitorCoin": 113884,
+    "traitorExp": 18130
+  },
+  {
+    "id": "0000000B",
+    "monsterCoin": 126559,
+    "monsterExp": 18215,
+    "traitorCoin": 120110,
+    "traitorExp": 18215
+  },
+  {
+    "id": "0000000C",
+    "monsterCoin": 136365,
+    "monsterExp": 18300,
+    "traitorCoin": 126336,
+    "traitorExp": 18300
+  },
+  {
+    "id": "0000000D",
+    "monsterCoin": 146172,
+    "monsterExp": 18385,
+    "traitorCoin": 132562,
+    "traitorExp": 18385
+  },
+  {
+    "id": "0000000E",
+    "monsterCoin": 155978,
+    "monsterExp": 18470,
+    "traitorCoin": 138788,
+    "traitorExp": 18470
+  },
+  {
+    "id": "0000000F",
+    "monsterCoin": 165784,
+    "monsterExp": 18555,
+    "traitorCoin": 145014,
+    "traitorExp": 18555
+  },
+  {
+    "id": "00000010",
+    "monsterCoin": 175591,
+    "monsterExp": 18640,
+    "traitorCoin": 151240,
+    "traitorExp": 18640
+  },
+  {
+    "id": "00000011",
+    "monsterCoin": 185397,
+    "monsterExp": 18725,
+    "traitorCoin": 157466,
+    "traitorExp": 18725
+  },
+  {
+    "id": "00000012",
+    "monsterCoin": 195203,
+    "monsterExp": 18810,
+    "traitorCoin": 163692,
+    "traitorExp": 18810
+  },
+  {
+    "id": "00000013",
+    "monsterCoin": 205010,
+    "monsterExp": 18895,
+    "traitorCoin": 169918,
+    "traitorExp": 18895
+  },
+  {
+    "id": "00000014",
+    "monsterCoin": 214816,
+    "monsterExp": 18980,
+    "traitorCoin": 176144,
+    "traitorExp": 18980
+  },
+  {
+    "id": "00000015",
+    "monsterCoin": 224622,
+    "monsterExp": 19065,
+    "traitorCoin": 182370,
+    "traitorExp": 19065
+  },
+  {
+    "id": "00000016",
+    "monsterCoin": 234429,
+    "monsterExp": 19150,
+    "traitorCoin": 188596,
+    "traitorExp": 19150
+  },
+  {
+    "id": "00000017",
+    "monsterCoin": 244235,
+    "monsterExp": 19235,
+    "traitorCoin": 194822,
+    "traitorExp": 19235
+  },
+  {
+    "id": "00000018",
+    "monsterCoin": 254041,
+    "monsterExp": 19320,
+    "traitorCoin": 201048,
+    "traitorExp": 19320
+  },
+  {
+    "id": "00000019",
+    "monsterCoin": 263848,
+    "monsterExp": 19405,
+    "traitorCoin": 207274,
+    "traitorExp": 19405
+  },
+  {
+    "id": "0000001A",
+    "monsterCoin": 273654,
+    "monsterExp": 19490,
+    "traitorCoin": 213500,
+    "traitorExp": 19490
+  },
+  {
+    "id": "0000001B",
+    "monsterCoin": 283460,
+    "monsterExp": 19575,
+    "traitorCoin": 219726,
+    "traitorExp": 19575
+  },
+  {
+    "id": "0000001C",
+    "monsterCoin": 293267,
+    "monsterExp": 19660,
+    "traitorCoin": 225952,
+    "traitorExp": 19660
+  },
+  {
+    "id": "0000001D",
+    "monsterCoin": 303073,
+    "monsterExp": 19745,
+    "traitorCoin": 232178,
+    "traitorExp": 19745
+  },
+  {
+    "id": "0000001E",
+    "monsterCoin": 312879,
+    "monsterExp": 19830,
+    "traitorCoin": 238404,
+    "traitorExp": 19830
+  },
+  {
+    "id": "0000001F",
+    "monsterCoin": 322686,
+    "monsterExp": 19915,
+    "traitorCoin": 244630,
+    "traitorExp": 19915
+  },
+  {
+    "id": "00000020",
+    "monsterCoin": 332492,
+    "monsterExp": 20000,
+    "traitorCoin": 250856,
+    "traitorExp": 20000
+  },
+  {
+    "id": "00000021",
+    "monsterCoin": 347255,
+    "monsterExp": 20085,
+    "traitorCoin": 257226,
+    "traitorExp": 20085
+  },
+  {
+    "id": "00000022",
+    "monsterCoin": 355371,
+    "monsterExp": 24523,
+    "traitorCoin": 263238,
+    "traitorExp": 24523
+  },
+  {
+    "id": "00000023",
+    "monsterCoin": 363678,
+    "monsterExp": 29100,
+    "traitorCoin": 269391,
+    "traitorExp": 29100
+  },
+  {
+    "id": "00000024",
+    "monsterCoin": 372178,
+    "monsterExp": 37206,
+    "traitorCoin": 275688,
+    "traitorExp": 37206
+  },
+  {
+    "id": "00000025",
+    "monsterCoin": 380878,
+    "monsterExp": 45559,
+    "traitorCoin": 282131,
+    "traitorExp": 45559
+  },
+  {
+    "id": "00000026",
+    "monsterCoin": 389780,
+    "monsterExp": 54168,
+    "traitorCoin": 288726,
+    "traitorExp": 54168
+  },
+  {
+    "id": "00000027",
+    "monsterCoin": 398891,
+    "monsterExp": 63031,
+    "traitorCoin": 295475,
+    "traitorExp": 63031
+  },
+  {
+    "id": "00000028",
+    "monsterCoin": 408214,
+    "monsterExp": 73045,
+    "traitorCoin": 302381,
+    "traitorExp": 73045
+  },
+  {
+    "id": "00000029",
+    "monsterCoin": 417756,
+    "monsterExp": 83331,
+    "traitorCoin": 309449,
+    "traitorExp": 83331
+  },
+  {
+    "id": "0000002A",
+    "monsterCoin": 427521,
+    "monsterExp": 93877,
+    "traitorCoin": 316682,
+    "traitorExp": 93877
+  },
+  {
+    "id": "0000002B",
+    "monsterCoin": 437513,
+    "monsterExp": 104673,
+    "traitorCoin": 324084,
+    "traitorExp": 104673
+  },
+  {
+    "id": "0000002C",
+    "monsterCoin": 447740,
+    "monsterExp": 117151,
+    "traitorCoin": 331659,
+    "traitorExp": 115734
+  },
+  {
+    "id": "0000002D",
+    "monsterCoin": 458205,
+    "monsterExp": 135162,
+    "traitorCoin": 339411,
+    "traitorExp": 131866
+  },
+  {
+    "id": "0000002E",
+    "monsterCoin": 468915,
+    "monsterExp": 154045,
+    "traitorCoin": 347345,
+    "traitorExp": 148363
+  },
+  {
+    "id": "0000002F",
+    "monsterCoin": 479876,
+    "monsterExp": 173824,
+    "traitorCoin": 355463,
+    "traitorExp": 165205
+  },
+  {
+    "id": "00000030",
+    "monsterCoin": 491092,
+    "monsterExp": 194524,
+    "traitorCoin": 363772,
+    "traitorExp": 182367
+  },
+  {
+    "id": "00000031",
+    "monsterCoin": 502571,
+    "monsterExp": 216167,
+    "traitorCoin": 372275,
+    "traitorExp": 199818
+  },
+  {
+    "id": "00000032",
+    "monsterCoin": 514318,
+    "monsterExp": 238822,
+    "traitorCoin": 380976,
+    "traitorExp": 217571
+  },
+  {
+    "id": "00000033",
+    "monsterCoin": 526340,
+    "monsterExp": 263697,
+    "traitorCoin": 389881,
+    "traitorExp": 230333
+  },
+  {
+    "id": "00000034",
+    "monsterCoin": 538642,
+    "monsterExp": 271608,
+    "traitorCoin": 398994,
+    "traitorExp": 243215
+  },
+  {
+    "id": "00000035",
+    "monsterCoin": 551232,
+    "monsterExp": 279756,
+    "traitorCoin": 408320,
+    "traitorExp": 256183
+  },
+  {
+    "id": "00000036",
+    "monsterCoin": 564117,
+    "monsterExp": 288149,
+    "traitorCoin": 417864,
+    "traitorExp": 273389
+  },
+  {
+    "id": "00000037",
+    "monsterCoin": 577302,
+    "monsterExp": 296793,
+    "traitorCoin": 427631,
+    "traitorExp": 291231
+  },
+  {
+    "id": "00000038",
+    "monsterCoin": 590796,
+    "monsterExp": 305697,
+    "traitorCoin": 437627,
+    "traitorExp": 309766
+  },
+  {
+    "id": "00000039",
+    "monsterCoin": 604605,
+    "monsterExp": 314868,
+    "traitorCoin": 447856,
+    "traitorExp": 328999
+  },
+  {
+    "id": "0000003A",
+    "monsterCoin": 618737,
+    "monsterExp": 324314,
+    "traitorCoin": 458324,
+    "traitorExp": 348935
+  },
+  {
+    "id": "0000003B",
+    "monsterCoin": 633200,
+    "monsterExp": 334043,
+    "traitorCoin": 469037,
+    "traitorExp": 369576
+  },
+  {
+    "id": "0000003C",
+    "monsterCoin": 648000,
+    "monsterExp": 344064,
+    "traitorCoin": 480000,
+    "traitorExp": 390981
+  },
+  {
+    "id": "0000003D",
+    "monsterCoin": 663146,
+    "monsterExp": 354386,
+    "traitorCoin": 491219,
+    "traitorExp": 413153
+  },
+  {
+    "id": "0000003E",
+    "monsterCoin": 678647,
+    "monsterExp": 365018,
+    "traitorCoin": 502701,
+    "traitorExp": 436092
+  },
+  {
+    "id": "0000003F",
+    "monsterCoin": 694509,
+    "monsterExp": 375969,
+    "traitorCoin": 514451,
+    "traitorExp": 459859
+  },
+  {
+    "id": "00000040",
+    "monsterCoin": 710743,
+    "monsterExp": 387248,
+    "traitorCoin": 526476,
+    "traitorExp": 484454
+  },
+  {
+    "id": "00000041",
+    "monsterCoin": 727355,
+    "monsterExp": 398865,
+    "traitorCoin": 538782,
+    "traitorExp": 509876
+  },
+  {
+    "id": "00000042",
+    "monsterCoin": 744357,
+    "monsterExp": 410831,
+    "traitorCoin": 551375,
+    "traitorExp": 536121
+  },
+  {
+    "id": "00000043",
+    "monsterCoin": 761755,
+    "monsterExp": 423156,
+    "traitorCoin": 564263,
+    "traitorExp": 563248
+  },
+  {
+    "id": "00000044",
+    "monsterCoin": 779560,
+    "monsterExp": 435851,
+    "traitorCoin": 577452,
+    "traitorExp": 591251
+  },
+  {
+    "id": "00000045",
+    "monsterCoin": 797782,
+    "monsterExp": 448926,
+    "traitorCoin": 590949,
+    "traitorExp": 620190
+  },
+  {
+    "id": "00000046",
+    "monsterCoin": 816429,
+    "monsterExp": 462394,
+    "traitorCoin": 604762,
+    "traitorExp": 650057
+  },
+  {
+    "id": "00000047",
+    "monsterCoin": 835512,
+    "monsterExp": 476266,
+    "traitorCoin": 618898,
+    "traitorExp": 713187
+  },
+  {
+    "id": "00000048",
+    "monsterCoin": 855041,
+    "monsterExp": 490554,
+    "traitorCoin": 633364,
+    "traitorExp": 778738
+  },
+  {
+    "id": "00000049",
+    "monsterCoin": 875027,
+    "monsterExp": 505270,
+    "traitorCoin": 648168,
+    "traitorExp": 855180
+  },
+  {
+    "id": "0000004A",
+    "monsterCoin": 895480,
+    "monsterExp": 520428,
+    "traitorCoin": 663318,
+    "traitorExp": 934445
+  },
+  {
+    "id": "0000004B",
+    "monsterCoin": 916410,
+    "monsterExp": 536041,
+    "traitorCoin": 678823,
+    "traitorExp": 1025456
+  },
+  {
+    "id": "0000004C",
+    "monsterCoin": 937830,
+    "monsterExp": 552122,
+    "traitorCoin": 694689,
+    "traitorExp": 1128794
+  },
+  {
+    "id": "0000004D",
+    "monsterCoin": 959751,
+    "monsterExp": 568686,
+    "traitorCoin": 710927,
+    "traitorExp": 1133760
+  },
+  {
+    "id": "0000004E",
+    "monsterCoin": 982184,
+    "monsterExp": 585747,
+    "traitorCoin": 727544,
+    "traitorExp": 1168906
+  },
+  {
+    "id": "0000004F",
+    "monsterCoin": 1005142,
+    "monsterExp": 603319,
+    "traitorCoin": 744549,
+    "traitorExp": 1205142
+  },
+  {
+    "id": "00000050",
+    "monsterCoin": 1028636,
+    "monsterExp": 621419,
+    "traitorCoin": 761953,
+    "traitorExp": 1242502
+  },
+  {
+    "id": "00000051",
+    "monsterCoin": 1052679,
+    "monsterExp": 640061,
+    "traitorCoin": 779762,
+    "traitorExp": 1281019
+  },
+  {
+    "id": "00000052",
+    "monsterCoin": 1077284,
+    "monsterExp": 659263,
+    "traitorCoin": 797988,
+    "traitorExp": 1320731
+  },
+  {
+    "id": "00000053",
+    "monsterCoin": 1102465,
+    "monsterExp": 679041,
+    "traitorCoin": 816640,
+    "traitorExp": 1361674
+  },
+  {
+    "id": "00000054",
+    "monsterCoin": 1128234,
+    "monsterExp": 699412,
+    "traitorCoin": 835729,
+    "traitorExp": 1403886
+  },
+  {
+    "id": "00000055",
+    "monsterCoin": 1154605,
+    "monsterExp": 720395,
+    "traitorCoin": 855263,
+    "traitorExp": 1447406
+  },
+  {
+    "id": "00000056",
+    "monsterCoin": 1181592,
+    "monsterExp": 742006,
+    "traitorCoin": 875254,
+    "traitorExp": 1492276
+  },
+  {
+    "id": "00000057",
+    "monsterCoin": 1209211,
+    "monsterExp": 764267,
+    "traitorCoin": 895712,
+    "traitorExp": 1538560
+  },
+  {
+    "id": "00000058",
+    "monsterCoin": 1237475,
+    "monsterExp": 787195,
+    "traitorCoin": 916648,
+    "traitorExp": 1586130
+  },
+  {
+    "id": "00000059",
+    "monsterCoin": 1266399,
+    "monsterExp": 810810,
+    "traitorCoin": 938074,
+    "traitorExp": 1635338
+  },
+  {
+    "id": "0000005A",
+    "monsterCoin": 1296000,
+    "monsterExp": 835135,
+    "traitorCoin": 960000,
+    "traitorExp": 1686033
+  },
+  {
+    "id": "0000005B",
+    "monsterCoin": 1326293,
+    "monsterExp": 860189,
+    "traitorCoin": 982439,
+    "traitorExp": 1738348
+  },
+  {
+    "id": "0000005C",
+    "monsterCoin": 1357293,
+    "monsterExp": 885994,
+    "traitorCoin": 1005402,
+    "traitorExp": 1792352
+  },
+  {
+    "id": "0000005D",
+    "monsterCoin": 1389018,
+    "monsterExp": 912574,
+    "traitorCoin": 1028903,
+    "traitorExp": 1847941
+  },
+  {
+    "id": "0000005E",
+    "monsterCoin": 1421485,
+    "monsterExp": 939952,
+    "traitorCoin": 1052952,
+    "traitorExp": 1905027
+  },
+  {
+    "id": "0000005F",
+    "monsterCoin": 1454711,
+    "monsterExp": 968150,
+    "traitorCoin": 1077564,
+    "traitorExp": 1964282
+  },
+  {
+    "id": "00000060",
+    "monsterCoin": 1488713,
+    "monsterExp": 997195,
+    "traitorCoin": 1102750,
+    "traitorExp": 2024999
+  },
+  {
+    "id": "00000061",
+    "monsterCoin": 1523510,
+    "monsterExp": 1027110,
+    "traitorCoin": 1128526,
+    "traitorExp": 2087851
+  },
+  {
+    "id": "00000062",
+    "monsterCoin": 1559120,
+    "monsterExp": 1057924,
+    "traitorCoin": 1154904,
+    "traitorExp": 2152349
+  },
+  {
+    "id": "00000063",
+    "monsterCoin": 1595563,
+    "monsterExp": 1089661,
+    "traitorCoin": 1181899,
+    "traitorExp": 2219232
+  },
+  {
+    "id": "00000064",
+    "monsterCoin": 1632858,
+    "monsterExp": 1122351,
+    "traitorCoin": 1209524,
+    "traitorExp": 2288122
+  },
+  {
+    "id": "00000065",
+    "monsterCoin": 1671024,
+    "monsterExp": 1156022,
+    "traitorCoin": 1237795,
+    "traitorExp": 2358785
+  },
+  {
+    "id": "00000066",
+    "monsterCoin": 1710082,
+    "monsterExp": 1190702,
+    "traitorCoin": 1266728,
+    "traitorExp": 2431941
+  },
+  {
+    "id": "00000067",
+    "monsterCoin": 1750054,
+    "monsterExp": 1226424,
+    "traitorCoin": 1296336,
+    "traitorExp": 2507812
+  },
+  {
+    "id": "00000068",
+    "monsterCoin": 1790959,
+    "monsterExp": 1263216,
+    "traitorCoin": 1326636,
+    "traitorExp": 2585265
+  },
+  {
+    "id": "00000069",
+    "monsterCoin": 1832821,
+    "monsterExp": 1301113,
+    "traitorCoin": 1357645,
+    "traitorExp": 2665335
+  },
+  {
+    "id": "0000006A",
+    "monsterCoin": 1875661,
+    "monsterExp": 1340146,
+    "traitorCoin": 1389378,
+    "traitorExp": 2748426
+  },
+  {
+    "id": "0000006B",
+    "monsterCoin": 1919502,
+    "monsterExp": 1380350,
+    "traitorCoin": 1421854,
+    "traitorExp": 2832969
+  },
+  {
+    "id": "0000006C",
+    "monsterCoin": 1964369,
+    "monsterExp": 1421761,
+    "traitorCoin": 1455088,
+    "traitorExp": 2920956
+  },
+  {
+    "id": "0000006D",
+    "monsterCoin": 2002320,
+    "monsterExp": 1464414,
+    "traitorCoin": 1483200,
+    "traitorExp": 3010904
+  },
+  {
+    "id": "0000006E",
+    "monsterCoin": 2008800,
+    "monsterExp": 1508346,
+    "traitorCoin": 1488000,
+    "traitorExp": 3104624
+  },
+  {
+    "id": "0000006F",
+    "monsterCoin": 2015280,
+    "monsterExp": 1553597,
+    "traitorCoin": 1492800,
+    "traitorExp": 3201290
+  },
+  {
+    "id": "00000070",
+    "monsterCoin": 2021760,
+    "monsterExp": 1600205,
+    "traitorCoin": 1497600,
+    "traitorExp": 3300714
+  },
+  {
+    "id": "00000071",
+    "monsterCoin": 2028240,
+    "monsterExp": 1648211,
+    "traitorCoin": 1502400,
+    "traitorExp": 3402674
+  },
+  {
+    "id": "00000072",
+    "monsterCoin": 2034720,
+    "monsterExp": 1697657,
+    "traitorCoin": 1507200,
+    "traitorExp": 3508854
+  },
+  {
+    "id": "00000073",
+    "monsterCoin": 2041200,
+    "monsterExp": 1748587,
+    "traitorCoin": 1512000,
+    "traitorExp": 3617344
+  },
+  {
+    "id": "00000074",
+    "monsterCoin": 2047680,
+    "monsterExp": 1801044,
+    "traitorCoin": 1516800,
+    "traitorExp": 3730013
+  },
+  {
+    "id": "00000075",
+    "monsterCoin": 2054160,
+    "monsterExp": 1855076,
+    "traitorCoin": 1521600,
+    "traitorExp": 3844395
+  },
+  {
+    "id": "00000076",
+    "monsterCoin": 2060640,
+    "monsterExp": 1910728,
+    "traitorCoin": 1526400,
+    "traitorExp": 3962756
+  },
+  {
+    "id": "00000077",
+    "monsterCoin": 2067120,
+    "monsterExp": 1968050,
+    "traitorCoin": 1531200,
+    "traitorExp": 4087832
+  },
+  {
+    "id": "00000078",
+    "monsterCoin": 2073600,
+    "monsterExp": 2027091,
+    "traitorCoin": 1536000,
+    "traitorExp": 4214391
+  },
+  {
+    "id": "00000079",
+    "monsterCoin": 2080080,
+    "monsterExp": 2087904,
+    "traitorCoin": 1540800,
+    "traitorExp": 4344208
+  },
+  {
+    "id": "0000007A",
+    "monsterCoin": 2086560,
+    "monsterExp": 2150541,
+    "traitorCoin": 1545600,
+    "traitorExp": 4477647
+  },
+  {
+    "id": "0000007B",
+    "monsterCoin": 2093040,
+    "monsterExp": 2215057,
+    "traitorCoin": 1550400,
+    "traitorExp": 4619003
+  },
+  {
+    "id": "0000007C",
+    "monsterCoin": 2099520,
+    "monsterExp": 2281509,
+    "traitorCoin": 1555200,
+    "traitorExp": 4762148
+  },
+  {
+    "id": "0000007D",
+    "monsterCoin": 2106000,
+    "monsterExp": 2349954,
+    "traitorCoin": 1560000,
+    "traitorExp": 4907431
+  },
+  {
+    "id": "0000007E",
+    "monsterCoin": 2112480,
+    "monsterExp": 2420453,
+    "traitorCoin": 1564800,
+    "traitorExp": 5058948
+  },
+  {
+    "id": "0000007F",
+    "monsterCoin": 2118960,
+    "monsterExp": 2493067,
+    "traitorCoin": 1569600,
+    "traitorExp": 5217563
+  },
+  {
+    "id": "00000080",
+    "monsterCoin": 2125440,
+    "monsterExp": 2567859,
+    "traitorCoin": 1574400,
+    "traitorExp": 5379950
+  },
+  {
+    "id": "00000081",
+    "monsterCoin": 2131920,
+    "monsterExp": 2644894,
+    "traitorCoin": 1579200,
+    "traitorExp": 5546425
+  },
+  {
+    "id": "00000082",
+    "monsterCoin": 2138400,
+    "monsterExp": 2724241,
+    "traitorCoin": 1584000,
+    "traitorExp": 5717240
+  },
+  {
+    "id": "00000083",
+    "monsterCoin": 2144880,
+    "monsterExp": 2805968,
+    "traitorCoin": 1588800,
+    "traitorExp": 5892965
+  },
+  {
+    "id": "00000084",
+    "monsterCoin": 2151360,
+    "monsterExp": 2890147,
+    "traitorCoin": 1593600,
+    "traitorExp": 6075476
+  },
+  {
+    "id": "00000085",
+    "monsterCoin": 2157840,
+    "monsterExp": 2976852,
+    "traitorCoin": 1598400,
+    "traitorExp": 6268959
+  },
+  {
+    "id": "00000086",
+    "monsterCoin": 2164320,
+    "monsterExp": 3066157,
+    "traitorCoin": 1603200,
+    "traitorExp": 6462258
+  },
+  {
+    "id": "00000087",
+    "monsterCoin": 2170800,
+    "monsterExp": 3158142,
+    "traitorCoin": 1608000,
+    "traitorExp": 6661145
+  },
+  {
+    "id": "00000088",
+    "monsterCoin": 2177280,
+    "monsterExp": 3252886,
+    "traitorCoin": 1612800,
+    "traitorExp": 6866201
+  },
+  {
+    "id": "00000089",
+    "monsterCoin": 2183760,
+    "monsterExp": 3350473,
+    "traitorCoin": 1617600,
+    "traitorExp": 7077771
+  },
+  {
+    "id": "0000008A",
+    "monsterCoin": 2190240,
+    "monsterExp": 3450987,
+    "traitorCoin": 1622400,
+    "traitorExp": 7296352
+  },
+  {
+    "id": "0000008B",
+    "monsterCoin": 2196720,
+    "monsterExp": 3554517,
+    "traitorCoin": 1627200,
+    "traitorExp": 7522504
+  },
+  {
+    "id": "0000008C",
+    "monsterCoin": 2203200,
+    "monsterExp": 3661152,
+    "traitorCoin": 1632000,
+    "traitorExp": 7756762
+  },
+  {
+    "id": "0000008D",
+    "monsterCoin": 2209680,
+    "monsterExp": 3770987,
+    "traitorCoin": 1636800,
+    "traitorExp": 7999927
+  },
+  {
+    "id": "0000008E",
+    "monsterCoin": 2216160,
+    "monsterExp": 3884116,
+    "traitorCoin": 1641600,
+    "traitorExp": 8242919
+  },
+  {
+    "id": "0000008F",
+    "monsterCoin": 2222640,
+    "monsterExp": 4000640,
+    "traitorCoin": 1646400,
+    "traitorExp": 8505790
+  },
+  {
+    "id": "00000090",
+    "monsterCoin": 2229120,
+    "monsterExp": 4120659,
+    "traitorCoin": 1651200,
+    "traitorExp": 8769143
+  },
+  {
+    "id": "00000091",
+    "monsterCoin": 2235600,
+    "monsterExp": 4244279,
+    "traitorCoin": 1656000,
+    "traitorExp": 9044043
+  },
+  {
+    "id": "00000092",
+    "monsterCoin": 2242080,
+    "monsterExp": 4371607,
+    "traitorCoin": 1660800,
+    "traitorExp": 9319042
+  },
+  {
+    "id": "00000093",
+    "monsterCoin": 2248560,
+    "monsterExp": 4502755,
+    "traitorCoin": 1665600,
+    "traitorExp": 9606432
+  },
+  {
+    "id": "00000094",
+    "monsterCoin": 2255040,
+    "monsterExp": 4637838,
+    "traitorCoin": 1670400,
+    "traitorExp": 9907678
+  },
+  {
+    "id": "00000095",
+    "monsterCoin": 2261520,
+    "monsterExp": 4776973,
+    "traitorCoin": 1675200,
+    "traitorExp": 10209472
+  },
+  {
+    "id": "00000096",
+    "monsterCoin": 2268000,
+    "monsterExp": 4920282,
+    "traitorCoin": 1680000,
+    "traitorExp": 10526548
+  }
+]

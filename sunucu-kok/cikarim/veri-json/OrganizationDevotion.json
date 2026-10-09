@@ -1,0 +1,797 @@
+[
+  {
+    "id": "056F9A01",
+    "playerLevel": 1,
+    "devotionSivMax": 26000
+  },
+  {
+    "id": "056F9A02",
+    "playerLevel": 2,
+    "devotionSivMax": 26000
+  },
+  {
+    "id": "056F9A03",
+    "playerLevel": 3,
+    "devotionSivMax": 27000
+  },
+  {
+    "id": "056F9A04",
+    "playerLevel": 4,
+    "devotionSivMax": 27000
+  },
+  {
+    "id": "056F9A05",
+    "playerLevel": 5,
+    "devotionSivMax": 28000
+  },
+  {
+    "id": "056F9A06",
+    "playerLevel": 6,
+    "devotionSivMax": 29000
+  },
+  {
+    "id": "056F9A07",
+    "playerLevel": 7,
+    "devotionSivMax": 29000
+  },
+  {
+    "id": "056F9A08",
+    "playerLevel": 8,
+    "devotionSivMax": 30000
+  },
+  {
+    "id": "056F9A09",
+    "playerLevel": 9,
+    "devotionSivMax": 31000
+  },
+  {
+    "id": "056F9A0A",
+    "playerLevel": 10,
+    "devotionSivMax": 31000
+  },
+  {
+    "id": "056F9A0B",
+    "playerLevel": 11,
+    "devotionSivMax": 32000
+  },
+  {
+    "id": "056F9A0C",
+    "playerLevel": 12,
+    "devotionSivMax": 33000
+  },
+  {
+    "id": "056F9A0D",
+    "playerLevel": 13,
+    "devotionSivMax": 34000
+  },
+  {
+    "id": "056F9A0E",
+    "playerLevel": 14,
+    "devotionSivMax": 35000
+  },
+  {
+    "id": "056F9A0F",
+    "playerLevel": 15,
+    "devotionSivMax": 35000
+  },
+  {
+    "id": "056F9A10",
+    "playerLevel": 16,
+    "devotionSivMax": 36000
+  },
+  {
+    "id": "056F9A11",
+    "playerLevel": 17,
+    "devotionSivMax": 37000
+  },
+  {
+    "id": "056F9A12",
+    "playerLevel": 18,
+    "devotionSivMax": 38000
+  },
+  {
+    "id": "056F9A13",
+    "playerLevel": 19,
+    "devotionSivMax": 39000
+  },
+  {
+    "id": "056F9A14",
+    "playerLevel": 20,
+    "devotionSivMax": 40000
+  },
+  {
+    "id": "056F9A15",
+    "playerLevel": 21,
+    "devotionSivMax": 41000
+  },
+  {
+    "id": "056F9A16",
+    "playerLevel": 22,
+    "devotionSivMax": 42000
+  },
+  {
+    "id": "056F9A17",
+    "playerLevel": 23,
+    "devotionSivMax": 43000
+  },
+  {
+    "id": "056F9A18",
+    "playerLevel": 24,
+    "devotionSivMax": 44000
+  },
+  {
+    "id": "056F9A19",
+    "playerLevel": 25,
+    "devotionSivMax": 45000
+  },
+  {
+    "id": "056F9A1A",
+    "playerLevel": 26,
+    "devotionSivMax": 46000
+  },
+  {
+    "id": "056F9A1B",
+    "playerLevel": 27,
+    "devotionSivMax": 47000
+  },
+  {
+    "id": "056F9A1C",
+    "playerLevel": 28,
+    "devotionSivMax": 48000
+  },
+  {
+    "id": "056F9A1D",
+    "playerLevel": 29,
+    "devotionSivMax": 49000
+  },
+  {
+    "id": "056F9A1E",
+    "playerLevel": 30,
+    "devotionSivMax": 50000
+  },
+  {
+    "id": "056F9A1F",
+    "playerLevel": 31,
+    "devotionSivMax": 51000
+  },
+  {
+    "id": "056F9A20",
+    "playerLevel": 32,
+    "devotionSivMax": 52000
+  },
+  {
+    "id": "056F9A21",
+    "playerLevel": 33,
+    "devotionSivMax": 54000
+  },
+  {
+    "id": "056F9A22",
+    "playerLevel": 34,
+    "devotionSivMax": 55000
+  },
+  {
+    "id": "056F9A23",
+    "playerLevel": 35,
+    "devotionSivMax": 56000
+  },
+  {
+    "id": "056F9A24",
+    "playerLevel": 36,
+    "devotionSivMax": 57000
+  },
+  {
+    "id": "056F9A25",
+    "playerLevel": 37,
+    "devotionSivMax": 59000
+  },
+  {
+    "id": "056F9A26",
+    "playerLevel": 38,
+    "devotionSivMax": 60000
+  },
+  {
+    "id": "056F9A27",
+    "playerLevel": 39,
+    "devotionSivMax": 62000
+  },
+  {
+    "id": "056F9A28",
+    "playerLevel": 40,
+    "devotionSivMax": 63000
+  },
+  {
+    "id": "056F9A29",
+    "playerLevel": 41,
+    "devotionSivMax": 64000
+  },
+  {
+    "id": "056F9A2A",
+    "playerLevel": 42,
+    "devotionSivMax": 66000
+  },
+  {
+    "id": "056F9A2B",
+    "playerLevel": 43,
+    "devotionSivMax": 68000
+  },
+  {
+    "id": "056F9A2C",
+    "playerLevel": 44,
+    "devotionSivMax": 69000
+  },
+  {
+    "id": "056F9A2D",
+    "playerLevel": 45,
+    "devotionSivMax": 71000
+  },
+  {
+    "id": "056F9A2E",
+    "playerLevel": 46,
+    "devotionSivMax": 72000
+  },
+  {
+    "id": "056F9A2F",
+    "playerLevel": 47,
+    "devotionSivMax": 74000
+  },
+  {
+    "id": "056F9A30",
+    "playerLevel": 48,
+    "devotionSivMax": 76000
+  },
+  {
+    "id": "056F9A31",
+    "playerLevel": 49,
+    "devotionSivMax": 78000
+  },
+  {
+    "id": "056F9A32",
+    "playerLevel": 50,
+    "devotionSivMax": 79000
+  },
+  {
+    "id": "056F9A33",
+    "playerLevel": 51,
+    "devotionSivMax": 81000
+  },
+  {
+    "id": "056F9A34",
+    "playerLevel": 52,
+    "devotionSivMax": 83000
+  },
+  {
+    "id": "056F9A35",
+    "playerLevel": 53,
+    "devotionSivMax": 85000
+  },
+  {
+    "id": "056F9A36",
+    "playerLevel": 54,
+    "devotionSivMax": 87000
+  },
+  {
+    "id": "056F9A37",
+    "playerLevel": 55,
+    "devotionSivMax": 89000
+  },
+  {
+    "id": "056F9A38",
+    "playerLevel": 56,
+    "devotionSivMax": 91000
+  },
+  {
+    "id": "056F9A39",
+    "playerLevel": 57,
+    "devotionSivMax": 93000
+  },
+  {
+    "id": "056F9A3A",
+    "playerLevel": 58,
+    "devotionSivMax": 95000
+  },
+  {
+    "id": "056F9A3B",
+    "playerLevel": 59,
+    "devotionSivMax": 98000
+  },
+  {
+    "id": "056F9A3C",
+    "playerLevel": 60,
+    "devotionSivMax": 100000
+  },
+  {
+    "id": "056F9A3D",
+    "playerLevel": 61,
+    "devotionSivMax": 102000
+  },
+  {
+    "id": "056F9A3E",
+    "playerLevel": 62,
+    "devotionSivMax": 105000
+  },
+  {
+    "id": "056F9A3F",
+    "playerLevel": 63,
+    "devotionSivMax": 107000
+  },
+  {
+    "id": "056F9A40",
+    "playerLevel": 64,
+    "devotionSivMax": 110000
+  },
+  {
+    "id": "056F9A41",
+    "playerLevel": 65,
+    "devotionSivMax": 112000
+  },
+  {
+    "id": "056F9A42",
+    "playerLevel": 66,
+    "devotionSivMax": 115000
+  },
+  {
+    "id": "056F9A43",
+    "playerLevel": 67,
+    "devotionSivMax": 118000
+  },
+  {
+    "id": "056F9A44",
+    "playerLevel": 68,
+    "devotionSivMax": 120000
+  },
+  {
+    "id": "056F9A45",
+    "playerLevel": 69,
+    "devotionSivMax": 123000
+  },
+  {
+    "id": "056F9A46",
+    "playerLevel": 70,
+    "devotionSivMax": 126000
+  },
+  {
+    "id": "056F9A47",
+    "playerLevel": 71,
+    "devotionSivMax": 129000
+  },
+  {
+    "id": "056F9A48",
+    "playerLevel": 72,
+    "devotionSivMax": 132000
+  },
+  {
+    "id": "056F9A49",
+    "playerLevel": 73,
+    "devotionSivMax": 135000
+  },
+  {
+    "id": "056F9A4A",
+    "playerLevel": 74,
+    "devotionSivMax": 138000
+  },
+  {
+    "id": "056F9A4B",
+    "playerLevel": 75,
+    "devotionSivMax": 141000
+  },
+  {
+    "id": "056F9A4C",
+    "playerLevel": 76,
+    "devotionSivMax": 145000
+  },
+  {
+    "id": "056F9A4D",
+    "playerLevel": 77,
+    "devotionSivMax": 148000
+  },
+  {
+    "id": "056F9A4E",
+    "playerLevel": 78,
+    "devotionSivMax": 152000
+  },
+  {
+    "id": "056F9A4F",
+    "playerLevel": 79,
+    "devotionSivMax": 155000
+  },
+  {
+    "id": "056F9A50",
+    "playerLevel": 80,
+    "devotionSivMax": 159000
+  },
+  {
+    "id": "056F9A51",
+    "playerLevel": 81,
+    "devotionSivMax": 162000
+  },
+  {
+    "id": "056F9A52",
+    "playerLevel": 82,
+    "devotionSivMax": 166000
+  },
+  {
+    "id": "056F9A53",
+    "playerLevel": 83,
+    "devotionSivMax": 170000
+  },
+  {
+    "id": "056F9A54",
+    "playerLevel": 84,
+    "devotionSivMax": 174000
+  },
+  {
+    "id": "056F9A55",
+    "playerLevel": 85,
+    "devotionSivMax": 178000
+  },
+  {
+    "id": "056F9A56",
+    "playerLevel": 86,
+    "devotionSivMax": 182000
+  },
+  {
+    "id": "056F9A57",
+    "playerLevel": 87,
+    "devotionSivMax": 187000
+  },
+  {
+    "id": "056F9A58",
+    "playerLevel": 88,
+    "devotionSivMax": 191000
+  },
+  {
+    "id": "056F9A59",
+    "playerLevel": 89,
+    "devotionSivMax": 195000
+  },
+  {
+    "id": "056F9A5A",
+    "playerLevel": 90,
+    "devotionSivMax": 200000
+  },
+  {
+    "id": "056F9A5B",
+    "playerLevel": 91,
+    "devotionSivMax": 205000
+  },
+  {
+    "id": "056F9A5C",
+    "playerLevel": 92,
+    "devotionSivMax": 209000
+  },
+  {
+    "id": "056F9A5D",
+    "playerLevel": 93,
+    "devotionSivMax": 214000
+  },
+  {
+    "id": "056F9A5E",
+    "playerLevel": 94,
+    "devotionSivMax": 219000
+  },
+  {
+    "id": "056F9A5F",
+    "playerLevel": 95,
+    "devotionSivMax": 224000
+  },
+  {
+    "id": "056F9A60",
+    "playerLevel": 96,
+    "devotionSivMax": 230000
+  },
+  {
+    "id": "056F9A61",
+    "playerLevel": 97,
+    "devotionSivMax": 235000
+  },
+  {
+    "id": "056F9A62",
+    "playerLevel": 98,
+    "devotionSivMax": 241000
+  },
+  {
+    "id": "056F9A63",
+    "playerLevel": 99,
+    "devotionSivMax": 246000
+  },
+  {
+    "id": "056F9A64",
+    "playerLevel": 100,
+    "devotionSivMax": 252000
+  },
+  {
+    "id": "056F9A65",
+    "playerLevel": 101,
+    "devotionSivMax": 258000
+  },
+  {
+    "id": "056F9A66",
+    "playerLevel": 102,
+    "devotionSivMax": 264000
+  },
+  {
+    "id": "056F9A67",
+    "playerLevel": 103,
+    "devotionSivMax": 270000
+  },
+  {
+    "id": "056F9A68",
+    "playerLevel": 104,
+    "devotionSivMax": 276000
+  },
+  {
+    "id": "056F9A69",
+    "playerLevel": 105,
+    "devotionSivMax": 283000
+  },
+  {
+    "id": "056F9A6A",
+    "playerLevel": 106,
+    "devotionSivMax": 289000
+  },
+  {
+    "id": "056F9A6B",
+    "playerLevel": 107,
+    "devotionSivMax": 296000
+  },
+  {
+    "id": "056F9A6C",
+    "playerLevel": 108,
+    "devotionSivMax": 303000
+  },
+  {
+    "id": "056F9A6D",
+    "playerLevel": 109,
+    "devotionSivMax": 310000
+  },
+  {
+    "id": "056F9A6E",
+    "playerLevel": 110,
+    "devotionSivMax": 310000
+  },
+  {
+    "id": "056F9A6F",
+    "playerLevel": 111,
+    "devotionSivMax": 311000
+  },
+  {
+    "id": "056F9A70",
+    "playerLevel": 112,
+    "devotionSivMax": 312000
+  },
+  {
+    "id": "056F9A71",
+    "playerLevel": 113,
+    "devotionSivMax": 313000
+  },
+  {
+    "id": "056F9A72",
+    "playerLevel": 114,
+    "devotionSivMax": 314000
+  },
+  {
+    "id": "056F9A73",
+    "playerLevel": 115,
+    "devotionSivMax": 315000
+  },
+  {
+    "id": "056F9A74",
+    "playerLevel": 116,
+    "devotionSivMax": 316000
+  },
+  {
+    "id": "056F9A75",
+    "playerLevel": 117,
+    "devotionSivMax": 317000
+  },
+  {
+    "id": "056F9A76",
+    "playerLevel": 118,
+    "devotionSivMax": 318000
+  },
+  {
+    "id": "056F9A77",
+    "playerLevel": 119,
+    "devotionSivMax": 319000
+  },
+  {
+    "id": "056F9A78",
+    "playerLevel": 120,
+    "devotionSivMax": 320000
+  },
+  {
+    "id": "056F9A79",
+    "playerLevel": 121,
+    "devotionSivMax": 321000
+  },
+  {
+    "id": "056F9A7A",
+    "playerLevel": 122,
+    "devotionSivMax": 322000
+  },
+  {
+    "id": "056F9A7B",
+    "playerLevel": 123,
+    "devotionSivMax": 323000
+  },
+  {
+    "id": "056F9A7C",
+    "playerLevel": 124,
+    "devotionSivMax": 324000
+  },
+  {
+    "id": "056F9A7D",
+    "playerLevel": 125,
+    "devotionSivMax": 325000
+  },
+  {
+    "id": "056F9A7E",
+    "playerLevel": 126,
+    "devotionSivMax": 326000
+  },
+  {
+    "id": "056F9A7F",
+    "playerLevel": 127,
+    "devotionSivMax": 327000
+  },
+  {
+    "id": "056F9A80",
+    "playerLevel": 128,
+    "devotionSivMax": 328000
+  },
+  {
+    "id": "056F9A81",
+    "playerLevel": 129,
+    "devotionSivMax": 329000
+  },
+  {
+    "id": "056F9A82",
+    "playerLevel": 130,
+    "devotionSivMax": 330000
+  },
+  {
+    "id": "056F9A83",
+    "playerLevel": 131,
+    "devotionSivMax": 331000
+  },
+  {
+    "id": "056F9A84",
+    "playerLevel": 132,
+    "devotionSivMax": 332000
+  },
+  {
+    "id": "056F9A85",
+    "playerLevel": 133,
+    "devotionSivMax": 333000
+  },
+  {
+    "id": "056F9A86",
+    "playerLevel": 134,
+    "devotionSivMax": 334000
+  },
+  {
+    "id": "056F9A87",
+    "playerLevel": 135,
+    "devotionSivMax": 335000
+  },
+  {
+    "id": "056F9A88",
+    "playerLevel": 136,
+    "devotionSivMax": 336000
+  },
+  {
+    "id": "056F9A89",
+    "playerLevel": 137,
+    "devotionSivMax": 337000
+  },
+  {
+    "id": "056F9A8A",
+    "playerLevel": 138,
+    "devotionSivMax": 338000
+  },
+  {
+    "id": "056F9A8B",
+    "playerLevel": 139,
+    "devotionSivMax": 339000
+  },
+  {
+    "id": "056F9A8C",
+    "playerLevel": 140,
+    "devotionSivMax": 340000
+  },
+  {
+    "id": "056F9A8D",
+    "playerLevel": 141,
+    "devotionSivMax": 341000
+  },
+  {
+    "id": "056F9A8E",
+    "playerLevel": 142,
+    "devotionSivMax": 342000
+  },
+  {
+    "id": "056F9A8F",
+    "playerLevel": 143,
+    "devotionSivMax": 343000
+  },
+  {
+    "id": "056F9A90",
+    "playerLevel": 144,
+    "devotionSivMax": 344000
+  },
+  {
+    "id": "056F9A91",
+    "playerLevel": 145,
+    "devotionSivMax": 345000
+  },
+  {
+    "id": "056F9A92",
+    "playerLevel": 146,
+    "devotionSivMax": 346000
+  },
+  {
+    "id": "056F9A93",
+    "playerLevel": 147,
+    "devotionSivMax": 347000
+  },
+  {
+    "id": "056F9A94",
+    "playerLevel": 148,
+    "devotionSivMax": 348000
+  },
+  {
+    "id": "056F9A95",
+    "playerLevel": 149,
+    "devotionSivMax": 349000
+  },
+  {
+    "id": "056F9A96",
+    "playerLevel": 150,
+    "devotionSivMax": 350000
+  },
+  {
+    "id": "056F9A97",
+    "playerLevel": 151,
+    "devotionSivMax": 351000
+  },
+  {
+    "id": "056F9A98",
+    "playerLevel": 152,
+    "devotionSivMax": 352000
+  },
+  {
+    "id": "056F9A99",
+    "playerLevel": 153,
+    "devotionSivMax": 353000
+  },
+  {
+    "id": "056F9A9A",
+    "playerLevel": 154,
+    "devotionSivMax": 354000
+  },
+  {
+    "id": "056F9A9B",
+    "playerLevel": 155,
+    "devotionSivMax": 355000
+  },
+  {
+    "id": "056F9A9C",
+    "playerLevel": 156,
+    "devotionSivMax": 356000
+  },
+  {
+    "id": "056F9A9D",
+    "playerLevel": 157,
+    "devotionSivMax": 357000
+  },
+  {
+    "id": "056F9A9E",
+    "playerLevel": 158,
+    "devotionSivMax": 358000
+  },
+  {
+    "id": "056F9A9F",
+    "playerLevel": 159,
+    "devotionSivMax": 359000
+  }
+]

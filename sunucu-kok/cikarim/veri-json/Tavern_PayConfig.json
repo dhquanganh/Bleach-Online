@@ -1,0 +1,128 @@
+[
+  {
+    "id": "01CBE661",
+    "key": "TAVERN_GRADE_1_PAY_NORMAL",
+    "types": "{\"types\":[0]}",
+    "value": 100000,
+    "desc": "Phase 1: Normal Janken Deduction"
+  },
+  {
+    "id": "01CBE662",
+    "key": "TAVERN_GRADE_1_PAY_ADVANCED",
+    "types": "{\"types\":[0]}",
+    "value": 150000,
+    "desc": "Phase 1: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE663",
+    "key": "TAVERN_GRADE_2_PAY_NORMAL",
+    "types": "{\"types\":[0]}",
+    "value": 150000,
+    "desc": "Phase 2: Normal Janken Deduction"
+  },
+  {
+    "id": "01CBE664",
+    "key": "TAVERN_GRADE_2_PAY_ADVANCED",
+    "types": "{\"types\":[0]}",
+    "value": 150000,
+    "desc": "Phase 2: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE665",
+    "key": "TAVERN_GRADE_3_PAY_NORMAL",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 3: Normal Janken Deduction"
+  },
+  {
+    "id": "01CBE666",
+    "key": "TAVERN_GRADE_3_PAY_ADVANCED",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 3: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE667",
+    "key": "TAVERN_GRADE_4_PAY_NORMAL",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 4: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE668",
+    "key": "TAVERN_GRADE_4_PAY_ADVANCED",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 4: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE669",
+    "key": "TAVERN_GRADE_5_PAY_NORMAL",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 5: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE66A",
+    "key": "TAVERN_GRADE_5_PAY_ADVANCED",
+    "types": "{\"types\":[0]}",
+    "value": 300000,
+    "desc": "Phase 5: Advanced Janken Deduction"
+  },
+  {
+    "id": "01CBE66B",
+    "key": "TAVERN:MATCH_CHEAT",
+    "types": "{\"types\":[2,1]}",
+    "value": 50,
+    "desc": "Cheating deduction setting"
+  },
+  {
+    "id": "01CBE693",
+    "key": "SEE_CHEST_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 50,
+    "desc": "查看宝箱收费"
+  },
+  {
+    "id": "01CBE694",
+    "key": "SINGLE_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 1,
+    "desc": "(副本)每只怪的加速挂机的收费"
+  },
+  {
+    "id": "01CBE695",
+    "key": "BLOCK_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 3,
+    "desc": "(关卡)每次加速挂机的收费"
+  },
+  {
+    "id": "01CBE696",
+    "key": "EQUIP_GLOD_WASH_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 5,
+    "desc": "(装备)金币洗练费用"
+  },
+  {
+    "id": "01CBE697",
+    "key": "EQUIP_NORMAL_WASH_CHARGE",
+    "types": "{\"types\":[0]}",
+    "value": 1,
+    "desc": "(装备)普通洗练费用"
+  },
+  {
+    "id": "01CBE698",
+    "key": "MILITARY_ORDER_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 5,
+    "desc": "(军令)兵粮丸购买,注意这个是购买的次数，通过计算出来的值，这个值是5的倍数"
+  },
+  {
+    "id": "01CBE699",
+    "key": "CHAT_SHOW_CHARGE",
+    "types": "{\"types\":[2,1]}",
+    "value": 5,
+    "desc": "(聊天)展示忍具、道具等费用"
+  }
+]
