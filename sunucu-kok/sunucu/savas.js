@@ -1365,21 +1365,41 @@ function fightFrames(reqId, payload, durum = null) {
 const OTO_OPS = new Set([0x01810504]);
 function isAutoBattle(reqId) { return OTO_OPS.has(reqId >>> 0); }
 function autoBattleFrames(reqId, payload) {
-  const bpId = stageIdCoz(payload) || sonStage;
+  if (!isAutoBattle(reqId) || !Buffer.isBuffer(payload) || payload.length !== 10) {
+    throw new Error('Invalid world-map Auto-Battle request');
+  }
+  // World-map requests name their stage explicitly; never reward a stale selection.
+  const bpId = stageIdCoz(payload);
+  const cityId = payload.readUInt32BE(0);
+  const city = cityById.get(cityId);
+  if (!city || Number(city.type) !== 1 || !bpId || !worldMapLevel(bpId) ||
+      Number(blockById.get(bpId).campaign) !== cityId) {
+    throw new Error('Invalid world-map Auto-Battle stage');
+  }
+  const n = payload.readUInt16BE(8);
+  if (n < 1 || n > 50) throw new Error('Invalid world-map Auto-Battle count');
   if (bpId) sonStage = bpId;
-  let n = (payload && payload.length >= 10) ? payload.readUInt16BE(8) : 1;
-  n = Math.max(1, Math.min(n || 1, 50));
-  const turlar = [], toplam = [];
+  const turlar = [], totals = new Map();
   for (let i = 0; i < n; i++) {
     const o = bpId ? stageOdulleri(bpId) : [];   // sans havuzu her tur yeniden atilir
     turlar.push({ dalgalar: [o], son: [] });
-    for (const x of o) toplam.push(x);
+    for (const x of o) {
+      const key = `${x.type}:${x.code}`;
+      const total = totals.get(key);
+      if (total) total.amount += x.amount;
+      else totals.set(key, { ...x });
+    }
   }
+  const toplam = [...totals.values()];
   console.log(`[savas] oto-savas: stage ${bpId} x${n} tur, ${toplam.length} odul girdisi`);
   return [{
     id: 0x01180505,
-    payload: kodek.encodeAutoBattle({ costTimer: n * 1000, isWorldLevel: 0, turlar }),
+    // Rewards are committed immediately; Flash expects remaining seconds, not milliseconds.
+    payload: kodek.encodeAutoBattle({ costTimer: 0, isWorldLevel: 0, turlar }),
     odul: toplam,
+    stageId: bpId,
+    count: n,
+    vitalityCost: Math.max(0, Number(blockById.get(bpId).spirit) || 0) * n,
   }];
 }
 
@@ -1395,7 +1415,7 @@ const FIGHT_NAMES = new Set([
   'PACKETID_CS_VainTravel_BattleReq', 'PACKETID_CS_Related_FightReq',
   'PACKETID_CS_OrgPointMap_AutoFightReq', 'PACKETID_CS_ExpDuplicate_FightReq',
   'PACKETID_CS_KingChallenge_InitFightReq', 'PACKETID_CS_KingChallenge_FightReq',
-  'PACKETID_CS_LOBBY_WorldMap_AutoBattle', 'PACKETID_CS_LOBBY_WorldMap_GoldFastAutoBattle',
+  'PACKETID_CS_LOBBY_WorldMap_AutoBattle',
   'PACKETID_CS_LOBBY_Hurdle_EnterNextLayer',
 ]);
 const FIGHT_OPS = new Set();

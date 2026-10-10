@@ -40,7 +40,8 @@ const CHAR_ID = 0x01180102;
 // AutoStatus_End, Updata()), sunucudan cevap BEKLEMİYOR. Swap kurali bu istege 0x01180505 ile
 // cevap veriyordu — o da AutoBattleInfo; elimizde 471B'lik gercek kayit oldugu icin "durdur"a
 // basinca taze bir 10 turluk oto-savas donuyor ve ekran bir daha kapanmiyordu.
-const IGNORE = new Set([0x01811800, 0x01810505]);
+// Sweeps settle immediately; stopping/speeding up the presentation never starts a battle.
+const IGNORE = new Set([0x01811800, 0x01810505, 0x01810506]);
 // gecerli-bos cevap: hep sifir (result=0, count=0, UTF bos) -> panel crash'siz acilir
 const ZERO_ACK = Buffer.alloc(256);
 
@@ -532,25 +533,36 @@ net.createServer(client => {
       // ContinueAutoInfo'ya dusuyor; orada GetDatebase(City, 0).Type null exception veriyor.
       if (savas.isAutoBattle(pk.id)) {
         try {
+          const frames = savas.autoBattleFrames(pk.id, pk.payload);
+          const sweep = frames[0];
+          const costs = [{ type: 3, code: 0, amount: sweep.vitalityCost }];
+          if (handlers.paraEksik(costs)) throw new Error('Not enough vitality for world-map Auto-Battle');
+          const costPacket = sweep.vitalityCost ? handlers.paraHarca(costs) : null;
+          if (sweep.vitalityCost && !costPacket) throw new Error('Unable to charge Auto-Battle vitality');
           try {   // GOREV: oto-savas N tur = N galibiyet
-            const bp = pk.payload && pk.payload.length >= 8 ? pk.payload.readUInt32BE(4) : 0;
-            const n = pk.payload && pk.payload.length >= 10 ? Math.max(1, Math.min(50, pk.payload.readUInt16BE(8))) : 1;
-            const dG = durumMod.yukle(); const ilerleyen = gorev.savasKazanildi(dG, bp, n); olay.say(dG, 'instancePass', n); durumMod.kaydet(dG);
+            const dG = durumMod.yukle(); const ilerleyen = gorev.savasKazanildi(dG, sweep.stageId, sweep.count); durumMod.kaydet(dG);
             for (const g of ilerleyen) send(0x01181204, gorev.schedulePaketi(g.questId, g.kill), 'GOREV-schedule');
           } catch (e) { LOG.note(cid, 'gorev oto-savas hata: ' + e.message); }
-          for (const fr of savas.autoBattleFrames(pk.id, pk.payload)) {
-            send(fr.id, fr.payload, 'OTO-SAVAS');
+          if (costPacket) send(0x01180105, costPacket, 'OTO-vitality');
+          for (const fr of frames) {
+            let inventoryPacket = null, moneyPacket = null;
             if (fr.odul && fr.odul.length) {
               let addedItems = [];
               try { addedItems = handlers.envanterEkleOdul(fr.odul); }
               catch (e) { LOG.note(cid, 'oto odul kalici yazma hata: ' + e.message); }
-              try { const env = handlers.envanterPaketiEkleme(addedItems); if (env) send(0x01180f02, env, 'OTO-odul'); }
+              try { inventoryPacket = handlers.envanterPaketiEkleme(addedItems); }
               catch (e) { LOG.note(cid, 'oto odul hata: ' + e.message); }
-              try { const para = handlers.paraIcinOdul(fr.odul); if (para) send(0x01180105, para, 'OTO-para'); }
+              try { moneyPacket = handlers.paraIcinOdul(fr.odul); }
               catch (e) { LOG.note(cid, 'oto para hata: ' + e.message); }
             }
+            send(fr.id, fr.payload, 'OTO-SAVAS');
+            if (inventoryPacket) send(0x01180f02, inventoryPacket, 'OTO-odul');
+            if (moneyPacket) send(0x01180105, moneyPacket, 'OTO-para');
           }
-        } catch (e) { LOG.note(cid, `oto-savas hata ${reqHex}: ${e.message}`); }
+        } catch (e) {
+          send(0x01180505, Buffer.from([0, 0, 0, 1]), 'OTO-error');
+          LOG.note(cid, `oto-savas hata ${reqHex}: ${e.message}`);
+        }
         continue;
       }
       if ((pk.id >>> 0) === 0x01818b02) {

@@ -483,10 +483,10 @@ function kur(y) {
   const harca = (list) => { const p = paraHarca(list); if (p) ekSonra(OP_PARA, p, 'EKIPMAN-para'); return !!p; };
   const gumus = n => n > 0 ? harca([{ type: 0, code: 0, amount: n }]) : true;
   const altin = n => n > 0 ? harca([{ type: 0, code: 1, amount: n }]) : true;
-  const ntf = (durum, inst) => { const b = kayitBufInst(durum, inst); if (b) ekSonra(OP_NTF, sendPaketi([b]), 'EKIPMAN-ntf'); };
-  const esyaGuncelle = (durum, code, inst) => { try { const g = envanter.guncellemePaketi(durum, code, inst); if (g) ekSonra(g.id, g.payload, 'EKIPMAN-esya'); } catch (e) { } };
+  const ntf = (durum, inst, emit = ekSonra) => { const b = kayitBufInst(durum, inst); if (b) emit(OP_NTF, sendPaketi([b]), 'EKIPMAN-ntf'); };
+  const esyaGuncelle = (durum, code, inst, emit = ekSonra) => { try { const g = envanter.guncellemePaketi(durum, code, inst); if (g) emit(g.id, g.payload, 'EKIPMAN-esya'); } catch (e) { } };
   const esyaHarca = (durum, code, adet) => { if (!envanter.dus(durum, code, adet)) return false; esyaGuncelle(durum, code, 0); return true; };
-  const esyaVer = (durum, code, adet) => { try { const ek = envanter.ekle(durum, [{ code, amount: adet }]); const p = envanter.kazancPaketi(durum, ek); if (p) ekSonra(OP_NTF, p, 'EKIPMAN-kazanc'); } catch (e) { } };
+  const esyaVer = (durum, code, adet, emit = ekSonra, insertNew = false) => { try { const missing = envanter.mevcut(durum, code) === 0; const ek = envanter.ekle(durum, [{ code, amount: adet }]); const p = envanter.kazancPaketi(durum, ek); if (p) emit(insertNew && missing ? OP_SEND : OP_NTF, p, 'EKIPMAN-kazanc'); } catch (e) { } };
   const kaydetS = (kaydet, durum) => { try { kaydet(durum); } catch (e) { } };
   const heroLevel = (durum, heroId) => { try { const v = JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')); return (heroId >>> 0) === (seviye.anaId() >>> 0) ? seviye.anaDurum(v).lv : seviye.heroSeviye(durum, heroId, v); } catch (e) { return 1; } };
   const attrPush = (durum, heroId) => { const p = statPaketi(durum, heroId, heroLevel(durum, heroId)); if (p) ekSonra(OP_ATTR, p, 'EKIPMAN-stat'); };
@@ -680,15 +680,19 @@ function kur(y) {
     if ((r.x.gems || []).length >= kapasite) return new Y().u32(1).done();
     if ((r.x.gems || []).some(g => { const x = article(g); return x && Number(x.minorType) === Number(ga.minorType); })) return new Y().u32(452).done();
     if (!envanter.dus(durum, gTpl, 1)) return new Y().u32(18).done();
-    esyaGuncelle(durum, gTpl, gInst); r.x.gems = [...(r.x.gems || []), gTpl]; kaydetS(kaydet, durum); if (heroId) attrPush(durum, heroId);
-    return mr(durum, 0, heroId, r.inst);
+    r.x.gems = [...(r.x.gems || []), gTpl]; kaydetS(kaydet, durum);
+    // Jade redraws on the result packet: update its inventory model before that packet.
+    esyaGuncelle(durum, gTpl, gInst, ekOnce);
+    if (heroId) attrPush(durum, heroId);
+    return mountedResult(durum, 0, heroId, r.inst, { ntf: i => ntf(durum, i, ekOnce) });
   };
   H['0x01811102'] = ({ payload, durum, kaydet }) => {
     const o = new O(payload); const heroId = o.u32(), sel = o.u32(); o.u32(); o.i8(); const gTpl = o.u32();
     const r = bul(durum, heroId, sel); if (!r) return new Y().u32(4).done();
     const i = (r.x.gems || []).indexOf(gTpl); if (i < 0) return new Y().u32(4).done();
-    r.x.gems.splice(i, 1); esyaVer(durum, gTpl, 1); kaydetS(kaydet, durum); if (heroId) attrPush(durum, heroId);
-    return mr(durum, 0, heroId, r.inst);
+    // InventoryNtf only assigns existing client entries; SendThings inserts a missing stack.
+    r.x.gems.splice(i, 1); esyaVer(durum, gTpl, 1, ekOnce, true); kaydetS(kaydet, durum); if (heroId) attrPush(durum, heroId);
+    return mountedResult(durum, 0, heroId, r.inst, { ntf: i => ntf(durum, i, ekOnce) });
   };
   // --- Tilsim (hazine) ---
   H['0x01811301'] = ({ payload, durum, kaydet }) => {

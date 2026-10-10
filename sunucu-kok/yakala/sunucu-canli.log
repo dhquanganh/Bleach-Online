@@ -1,15 +1,15 @@
-=== sunucu-canli.log  2026-10-10T16:17:37.579Z ===
+=== sunucu-canli.log  2026-10-10T17:48:15.077Z ===
 
-[+] conn1 baglandi  127.0.0.1:63953  @2026-10-10T16:17:48.009Z
+[+] conn1 baglandi  127.0.0.1:51308  @2026-10-10T17:48:25.248Z
   #1 conn1 C2S CS_LOBBY+0x0000 (0x1810000) len=38
-        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 34 39 30 36 34
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 35 34 35 30 32
       -> S2C SC_LOBBY+0x0000 (0x1180000) len=8 [CEVAP-gercek]
-[-] conn1 kapandi  (kapandi)  paket=1 up=38B down=8B sure=613ms
+[-] conn1 kapandi  (kapandi)  paket=1 up=38B down=8B sure=607ms
 
-[+] conn2 baglandi  127.0.0.1:63954  @2026-10-10T16:17:49.149Z
+[+] conn2 baglandi  127.0.0.1:51309  @2026-10-10T17:48:26.396Z
   #2 conn2 C2S CS_LOBBY+0x0001 (0x1810001) len=38
-        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 34 39 30 36 34
-      -> S2C SC_LOBBY+0x0102 (0x1180102) len=2442 [replay[1/2]]
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 35 34 35 30 32
+      -> S2C SC_LOBBY+0x0102 (0x1180102) len=2632 [replay[1/2]]
   #3 conn2 C2S CS_LOBBY+0xa002 (0x181a002) len=0
       -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
   #4 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
@@ -70,12 +70,13 @@
   #24 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
         01 60 7a 61 00 00 00 00
       -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
   #25 conn2 C2S CS_LOBBY+0x1200 (0x1811200) len=0
-      -> S2C SC_LOBBY+0x1202 (0x1181202) len=32 [GOREV-kabul]
-      -> S2C SC_LOBBY+0x1203 (0x1181203) len=202 [GOREV-biten]
+      -> S2C SC_LOBBY+0x1202 (0x1181202) len=38 [GOREV-kabul]
+      -> S2C SC_LOBBY+0x1203 (0x1181203) len=254 [GOREV-biten]
       -> S2C SC_LOBBY+0x1200 (0x1181200) len=0 [GOREV-sendinfo]
   #26 conn2 C2S CS_LOBBY+0x1a01 (0x1811a01) len=0
-      -> S2C SC_LOBBY+0x1a01 (0x1181a01) len=6 [HANDLER]
+      -> S2C SC_LOBBY+0x1a01 (0x1181a01) len=14 [HANDLER]
   #27 conn2 C2S CS_LOBBY+0x5200 (0x1815200) len=0
       -> S2C SC_LOBBY+0x5200 (0x1185200) len=2 [CEVAP-gercek]
   #28 conn2 C2S CS_LOBBY+0x6a00 (0x1816a00) len=0
@@ -112,17 +113,16 @@
   #41 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 fb aa
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
   #42 conn2 C2S CS_LOBBY+0x1b00 (0x1811b00) len=0
       -> S2C SC_LOBBY+0x1b00 (0x1181b00) len=40 [HANDLER]
   #43 conn2 C2S CS_LOBBY+0x1500 (0x1811500) len=0
       -> S2C SC_LOBBY+0x1500 (0x1181500) len=35 [CEVAP-gercek]
   #44 conn2 C2S CS_LOBBY+0x0f00 (0x1810f00) len=1
         00
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=1777 [HANDLER]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [HANDLER]
       -> S2C SC_LOBBY+0x0f7f (0x1180f7f) len=56 [ITEM-state]
   #45 conn2 C2S CS_LOBBY+0x1600 (0x1811600) len=0
-      -> S2C SC_LOBBY+0x1600 (0x1181600) len=181 [HANDLER]
+      -> S2C SC_LOBBY+0x1600 (0x1181600) len=416 [HANDLER]
   #46 conn2 C2S CS_LOBBY+0x0b05 (0x1810b05) len=0
       -> S2C SC_LOBBY+0x0b05 (0x1180b05) len=21 [HANDLER]
   #47 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=10
@@ -139,81 +139,1438 @@
       -> S2C SC_LOBBY+0x3500 (0x1183500) len=142 [HANDLER]
   #51 conn2 C2S CS_LOBBY+0x6d00 (0x1816d00) len=0
       -> S2C SC_LOBBY+0x6d00 (0x1186d00) len=6 [HANDLER]
-  #52 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        04 43 03 f3
-      -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-  #53 conn2 C2S CS_LOBBY+0x7500 (0x1817500) len=0
+  #52 conn2 C2S CS_LOBBY+0x7500 (0x1817500) len=0
       -> S2C SC_LOBBY+0x7500 (0x1187500) len=8 [HANDLER]
-  #54 conn2 C2S CS_LOBBY+0x8700 (0x1818700) len=0
+  #53 conn2 C2S CS_LOBBY+0x8700 (0x1818700) len=0
       -> S2C SC_LOBBY+0x8700 (0x1188700) len=1662 [HANDLER]
-  #55 conn2 C2S CS_LOBBY+0x8a08 (0x1818a08) len=0
+  #54 conn2 C2S CS_LOBBY+0x8a08 (0x1818a08) len=0
       -> S2C SC_LOBBY+0x8a08 (0x1188a08) len=14 [CEVAP-gercek]
+  #55 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        06 0f 03 df
+      -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
   #56 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        04 56 04 35
+        07 1f 03 eb
       -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-  #57 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2839 [HANDLER]
-  #58 conn2 C2S CS_LOBBY+0x0202 (0x1810202) len=8
-        00 e8 16 11 00 e7 ef 01
-      -> S2C SC_LOBBY+0x0202 (0x1180202) len=14 [SAVAS-ack]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1987 [SAVAS]
-      -> S2C CS_CS+0x8001 (0x1458001) len=67 [SAVAS]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=183 [SAVAS-odul]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=1777 [SAVAS-bag-sync]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=28 [SAVAS-para]
-      -> S2C SC_LOBBY+0x0600 (0x1180600) len=13 [SAVAS-stage-assessment]
-      ! conn2 savas gonderildi (0x01810202): ack + 2 frame
+  #57 conn2 C2S CS_LOBBY+0x1101 (0x1811101) len=20
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 10 dd 40 aa 00 dd 40 aa
+      -> S2C SC_LOBBY+0x0f06 (0x1180f06) len=7 [EKIPMAN-esya]
+      -> S2C SC_LOBBY+0x1101 (0x1181101) len=43 [HANDLER]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
       -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
       -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #59 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #60 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #61 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #62 conn2 C2S CS_LOBBY+0x0602 (0x1810602) len=1
-        01
-      -> S2C SC_LOBBY+0x0602 (0x1180602) len=43 [CEVAP-gercek]
-  #63 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #58 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #59 conn2 C2S CS_LOBBY+0x1102 (0x1811102) len=17
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 01 00 dd 40 aa
+      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=33 [EKIPMAN-kazanc]
+      -> S2C SC_LOBBY+0x1102 (0x1181102) len=38 [HANDLER]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+  #60 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+[-] conn2 kapandi  (kapandi)  paket=59 up=199B down=61298B sure=20313ms
+
+[+] conn3 baglandi  127.0.0.1:51324  @2026-10-10T17:48:50.325Z
+  #61 conn3 C2S CS_LOBBY+0x0000 (0x1810000) len=38
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 35 34 35 32 36
+      -> S2C SC_LOBBY+0x0000 (0x1180000) len=8 [CEVAP-gercek]
+[-] conn3 kapandi  (kapandi)  paket=1 up=38B down=8B sure=577ms
+
+[+] conn4 baglandi  127.0.0.1:51326  @2026-10-10T17:48:51.401Z
+  #62 conn4 C2S CS_LOBBY+0x0001 (0x1810001) len=38
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 35 34 35 32 36
+      -> S2C SC_LOBBY+0x0102 (0x1180102) len=2632 [replay[1/2]]
+  #63 conn4 C2S CS_LOBBY+0xa002 (0x181a002) len=0
+      -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
+  #64 conn4 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 11 e1 a3 26
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+      -> S2C SC_LOBBY+0x6700 (0x1186700) len=8 [PUSH-nemu]
+  #65 conn4 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
+        00 01 00 00 00 03
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=10 [HANDLER]
+  #66 conn4 C2S CS_LOBBY+0x2300 (0x1812300) len=0
+      -> S2C SC_LOBBY+0x2300 (0x1182300) len=362 [HANDLER]
+      -> S2C SC_LOBBY+0x6500 (0x1186500) len=1 [PUSH-login]
+  #67 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 0d
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=16 [HANDLER]
+  #68 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 64
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=26 [HANDLER]
+  #69 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 0c
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=106 [HANDLER]
+  #70 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 17
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=124 [HANDLER]
+  #71 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1a
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=26 [HANDLER]
+  #72 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1b
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=92 [HANDLER]
+  #73 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1c
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=48 [HANDLER]
+  #74 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 00 1d
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=152 [HANDLER]
+  #75 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 4f
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=148 [HANDLER]
+  #76 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 50
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=162 [HANDLER]
+  #77 conn4 C2S CS_LOBBY+0x2302 (0x1812302) len=4
+        00 00 20 55
+      -> S2C SC_LOBBY+0x2302 (0x1182302) len=116 [HANDLER]
+  #78 conn4 C2S CS_LOBBY+0x0800 (0x1810800) len=0
+      -> S2C SC_LOBBY+0x0800 (0x1180800) len=9 [HANDLER]
+  #79 conn4 C2S CS_LOBBY+0x5203 (0x1815203) len=0
+      -> S2C SC_LOBBY+0x5203 (0x1185203) len=4 [CEVAP-gercek]
+  #80 conn4 C2S CS_LOBBY+0x7100 (0x1817100) len=0
+      -> S2C SC_LOBBY+0x7100 (0x1187100) len=20 [HANDLER]
+  #81 conn4 C2S CS_LOBBY+0x3d09 (0x1813d09) len=0
+      -> S2C SC_LOBBY+0x3d09 (0x1183d09) len=1 [HANDLER]
+  #82 conn4 C2S CS_LOBBY+0x3d0d (0x1813d0d) len=0
+      -> S2C SC_LOBBY+0x3d0d (0x1183d0d) len=20 [HANDLER]
+  #83 conn4 C2S CS_LOBBY+0x3d07 (0x1813d07) len=0
+      -> S2C SC_LOBBY+0x3d07 (0x1183d07) len=50 [HANDLER]
+  #84 conn4 C2S CS_LOBBY+0x0200 (0x1810200) len=8
         01 60 7a 61 00 00 00 00
       -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
-  #64 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2846 [HANDLER]
-  #65 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
-        01 60 7a 61 00 00 00 00
-      -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
-  #66 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2846 [HANDLER]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #67 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
-        01 60 7a 61 00 00 00 00
-      -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
-  #68 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        04 bd 04 4e
+  #85 conn4 C2S CS_LOBBY+0x1200 (0x1811200) len=0
+      -> S2C SC_LOBBY+0x1202 (0x1181202) len=38 [GOREV-kabul]
+      -> S2C SC_LOBBY+0x1203 (0x1181203) len=254 [GOREV-biten]
+      -> S2C SC_LOBBY+0x1200 (0x1181200) len=0 [GOREV-sendinfo]
+  #86 conn4 C2S CS_LOBBY+0x1a01 (0x1811a01) len=0
+      -> S2C SC_LOBBY+0x1a01 (0x1181a01) len=14 [HANDLER]
+  #87 conn4 C2S CS_LOBBY+0x5200 (0x1815200) len=0
+      -> S2C SC_LOBBY+0x5200 (0x1185200) len=2 [CEVAP-gercek]
+  #88 conn4 C2S CS_LOBBY+0x6a00 (0x1816a00) len=0
+      -> S2C SC_LOBBY+0x6a00 (0x1186a00) len=2212 [HANDLER]
+  #89 conn4 C2S CS_LOBBY+0x2000 (0x1812000) len=0
+      -> S2C SC_LOBBY+0x2000 (0x1182000) len=41 [HANDLER]
+  #90 conn4 C2S CS_LOBBY+0x0105 (0x1810105) len=3
+        00 01 06
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [HANDLER]
+  #91 conn4 C2S CS_LOBBY+0x0e07 (0x1810e07) len=0
+      -> S2C SC_LOBBY+0x0e07 (0x1180e07) len=8 [HANDLER]
+  #92 conn4 C2S CS_LOBBY+0x1906 (0x1811906) len=0
+      -> S2C SC_LOBBY+0x1908 (0x1181908) len=4 [CEVAP-gercek]
+  #93 conn4 C2S CS_LOBBY+0x2507 (0x1812507) len=0
+      -> S2C SC_LOBBY+0x2507 (0x1182507) len=4 [HANDLER]
+  #94 conn4 C2S CS_LOBBY+0x2517 (0x1812517) len=0
+      -> S2C SC_LOBBY+0x2517 (0x1182517) len=7 [HANDLER]
+  #95 conn4 C2S CS_LOBBY+0x1405 (0x1811405) len=0
+      -> S2C SC_LOBBY+0x1405 (0x1181405) len=28 [HANDLER]
+  #96 conn4 C2S CS_LOBBY+0x4101 (0x1814101) len=0
+      -> S2C SC_LOBBY+0x4101 (0x1184101) len=196 [HANDLER]
+  #97 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f 64
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #98 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f c5
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #99 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f c6
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #100 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 86 76
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #101 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #102 conn4 C2S CS_LOBBY+0x1b00 (0x1811b00) len=0
+      -> S2C SC_LOBBY+0x1b00 (0x1181b00) len=40 [HANDLER]
+  #103 conn4 C2S CS_LOBBY+0x1500 (0x1811500) len=0
+      -> S2C SC_LOBBY+0x1500 (0x1181500) len=35 [CEVAP-gercek]
+  #104 conn4 C2S CS_LOBBY+0x0f00 (0x1810f00) len=1
+        00
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [HANDLER]
+      -> S2C SC_LOBBY+0x0f7f (0x1180f7f) len=56 [ITEM-state]
+  #105 conn4 C2S CS_LOBBY+0x1600 (0x1811600) len=0
+      -> S2C SC_LOBBY+0x1600 (0x1181600) len=416 [HANDLER]
+  #106 conn4 C2S CS_LOBBY+0x0b05 (0x1810b05) len=0
+      -> S2C SC_LOBBY+0x0b05 (0x1180b05) len=21 [HANDLER]
+  #107 conn4 C2S CS_LOBBY+0x1e01 (0x1811e01) len=10
+        00 02 00 04 93 e1 00 04 93 e3
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=18 [HANDLER]
+  #108 conn4 C2S CS_LOBBY+0x3904 (0x1813904) len=4
+        00 00 00 00
+      -> S2C SC_LOBBY+0x3904 (0x1183904) len=162 [HANDLER]
+  #109 conn4 C2S CS_LOBBY+0x1e01 (0x1811e01) len=2
+        00 00
+      -> S2C SC_LOBBY+0x1e01 (0x1181e01) len=2 [HANDLER]
+  #110 conn4 C2S CS_LOBBY+0x3500 (0x1813500) len=4
+        00 00 00 00
+      -> S2C SC_LOBBY+0x3500 (0x1183500) len=142 [HANDLER]
+  #111 conn4 C2S CS_LOBBY+0x6d00 (0x1816d00) len=0
+      -> S2C SC_LOBBY+0x6d00 (0x1186d00) len=6 [HANDLER]
+  #112 conn4 C2S CS_LOBBY+0x7500 (0x1817500) len=0
+      -> S2C SC_LOBBY+0x7500 (0x1187500) len=8 [HANDLER]
+  #113 conn4 C2S CS_LOBBY+0x8700 (0x1818700) len=0
+      -> S2C SC_LOBBY+0x8700 (0x1188700) len=1662 [HANDLER]
+  #114 conn4 C2S CS_LOBBY+0x8a08 (0x1818a08) len=0
+      -> S2C SC_LOBBY+0x8a08 (0x1188a08) len=14 [CEVAP-gercek]
+  #115 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        06 3d 03 38
       -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-  #69 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2846 [HANDLER]
-  #70 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #71 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
-        01 60 7a 61 00 00 00 00
-      -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #72 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #73 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #74 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=22981 [ILLUSION-ranking]
-  #75 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        03 d4 03 36
+  #116 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        07 22 04 01
       -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-  #76 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        03 d8 03 65
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #117 conn4 C2S CS_LOBBY+0x1101 (0x1811101) len=20
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 10 dd 40 aa 00 dd 40 aa
+      -> S2C SC_LOBBY+0x0f06 (0x1180f06) len=7 [EKIPMAN-esya]
+      -> S2C SC_LOBBY+0x1101 (0x1181101) len=43 [HANDLER]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #118 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #119 conn4 C2S CS_LOBBY+0x0105 (0x1810105) len=3
+        00 01 06
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [HANDLER]
+  #120 conn4 C2S CS_LOBBY+0x0e07 (0x1810e07) len=0
+      -> S2C SC_LOBBY+0x0e07 (0x1180e07) len=8 [HANDLER]
+  #121 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #122 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #123 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #124 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #125 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #126 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #127 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #128 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #129 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #130 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #131 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #132 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #133 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #134 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #135 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #136 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #137 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #138 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #139 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #140 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #141 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #142 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #143 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #144 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #145 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #146 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #147 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #148 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #149 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #150 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #151 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #152 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #153 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #154 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #155 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #156 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #157 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #158 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4  ⚠️DONGU-BASLADI
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #159 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #160 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #161 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #162 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #163 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #164 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #165 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #166 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #167 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #168 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #169 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15  ⚠️DONGU-BASLADI
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #170 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #171 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #172 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #173 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #174 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #175 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #176 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #177 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #178 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #179 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #180 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #181 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #182 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #183 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #184 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #185 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #186 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #187 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #188 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #189 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #190 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #191 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #192 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #193 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #194 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #195 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #196 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #197 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #198 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #199 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 01 00 d8 d3 fa 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=50 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #200 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #201 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #202 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #203 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #204 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #205 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #206 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #207 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #208 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #209 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4  ⚠️DONGU x50
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #210 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #211 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #212 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #213 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #214 conn4 C2S CS_LOBBY+0x0e00 (0x1810e00) len=15
+        00 a9 fb aa 00 00 00 06 00 d8 d4 00 00 01 01
+      -> S2C SC_LOBBY+0x0e00 (0x1180e00) len=45 [HANDLER]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [EKIPMAN-para]
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [EKIPMAN-stat]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+      -> S2C SC_LOBBY+0x6a02 (0x1186a02) len=8 [BLEACHTRAIN-guncelle]
+  #215 conn4 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #216 conn4 C2S UNK+0x0001 (0x1) len=0
+  #217 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        07 5d 04 2c
       -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-[-] conn2 kapandi  (kapandi)  paket=75 up=207B down=374029B sure=220955ms
+  #218 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        07 89 04 67
+      -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
+  #219 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        07 6f 04 b4
+      -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
+  #220 conn4 C2S CS_LOBBY+0x0300 (0x1810300) len=4
+        07 66 05 0f
+      -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #221 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #222 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #223 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #224 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #225 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #226 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #227 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #228 conn4 C2S UNK+0x0001 (0x1) len=0
+  #229 conn4 C2S CS_LOBBY+0xa002 (0x181a002) len=0
+      -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #230 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #231 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #232 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+  #233 conn4 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23103 [ILLUSION-ranking]
+[-] conn4 kapandi  (kapandi)  paket=172 up=1090B down=720004B sure=429420ms
