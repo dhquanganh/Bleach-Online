@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('assert'),event=require('../infinite-illusion');
+const pool=Array.from({length:250},(_,i)=>({id:i+1,name:'Test bot '+(i+1),levelOffset:i%25-12,heroes:[11150031],positions:[6]}));
+let time=1791700000,calls=0;const d={},ctx={durum:d,kaydet:()=>{}};
+const service=event.service({now:()=>time,bots:()=>pool,random:()=>0.3,simulate:(state,bot)=>{calls++;return {damage:bot.id*100,payload:Buffer.alloc(1),won:false};}});
+service.tick(ctx);assert.equal(calls,100);assert.equal(Object.keys(d.infiniteIllusion.entries).length,100);assert.equal(new Set(Object.values(d.infiniteIllusion.entries).map(r=>r.id)).size,100);
+service.tick(ctx);assert.equal(calls,100);time+=299;service.tick(ctx);assert.equal(calls,100);
+time++;service.tick(ctx);assert.equal(calls,101);assert.equal(Object.keys(d.infiniteIllusion.entries).length,101);
+const copy=JSON.parse(JSON.stringify(d));service.tick({durum:copy,kaydet:()=>{}});assert.equal(calls,101);
+const before=JSON.stringify(d);time+=300;assert.throws(()=>service.tick({durum:d,kaydet:()=>{throw Error('disk');}}),/disk/);assert.equal(JSON.stringify(d),before);
+console.log('PASS boss bots: 100 distinct real formations initially, one new random participant every five minutes, restart deduplication and save rollback.');

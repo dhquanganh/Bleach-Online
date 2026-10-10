@@ -55,8 +55,26 @@ function kur(y) {
   const mailYaz = (w, m, tip) => { w.u32(m.hi).u32(m.lo).utf(m.ad).utf(m.konu).utf(m.metin).u32(m.zaman).i8(m.okundu ? 1 : 0).u32(0); const ek = (m.ek || []).filter(e => e[0] < 10000 ? MAIL_IDX[e[0]] : satir('Article', e[0])); w.u16(ek.length); for (const e of ek) w.u32(e[0]).u32(e[1]); };
   H['0x01811600'] = ({ durum, kaydet }) => { const p = posta(durum); K(kaydet, durum); const w = new Y().u32(0).u16(p.gelen.length); for (const m of p.gelen) mailYaz(w, m, 1); w.u16(p.giden.length); for (const m of p.giden) mailYaz(w, m, 2); return w.done(); };
   H['0x01811601'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const kime = o.utf(), konu = o.utf(), metin = o.utf(); const p = posta(durum); const m = { hi: 0, lo: p.seq++, ad: kime || 'Unknown', konu, metin, zaman: simdi(), okundu: 1, ek: [] }; p.giden.push(m); if (p.giden.length > 30) p.giden.shift(); K(kaydet, durum); const w = new Y().u32(0); mailYaz(w, m, 2); return w.done(); };
-  H['0x01811602'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const box = o.u8(); const n = o.u16(); const p = posta(durum); const ids = []; for (let i = 0; i < n; i++) { const hi = o.u32(), lo = o.u32(); ids.push([hi, lo]); const l = box === 2 ? p.giden : p.gelen; const idx = l.findIndex(m => m.hi === hi && m.lo === lo); if (idx >= 0) l.splice(idx, 1); } K(kaydet, durum); const w = new Y().u32(0).u8(box).u16(ids.length); for (const [hi, lo] of ids) w.u32(hi).u32(lo); return w.done(); };
-  H['0x01811603'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const n = o.u16(); const p = posta(durum); const oduller = []; for (let i = 0; i < n; i++) { const hi = o.u32(), lo = o.u32(); const m = p.gelen.find(x => x.hi === hi && x.lo === lo); if (!m) continue; for (const e of (m.ek || [])) { if (e[0] < 10000) { const t = MAIL_IDX[e[0]]; if (t) oduller.push({ type: t.type, code: t.code, amount: e[1] }); } else oduller.push({ type: 1, code: e[0], amount: e[1] }); } m.ek = []; } ver(durum, oduller); K(kaydet, durum); return new Y().u32(0).done(); };
+  H['0x01811602'] = ({ payload, durum, kaydet }) => {
+    if(!Buffer.isBuffer(payload)||payload.length<3||payload.length!==3+payload.readUInt16BE(1)*8)return new Y().u32(4).done();
+    const o=new O(payload),box=o.u8(),n=o.u16(),p=posta(durum),ids=[];for(let i=0;i<n;i++)ids.push([o.u32(),o.u32()]);
+    const list=box===2?p.giden:p.gelen;
+    if(list.some(m=>m.bossPayoutId&&m.ek.length&&ids.some(([hi,lo])=>hi===m.hi&&lo===m.lo)))return new Y().u32(1).done();
+    for(const [hi,lo] of ids){const i=list.findIndex(m=>m.hi===hi&&m.lo===lo);if(i>=0)list.splice(i,1);}
+    K(kaydet,durum);const w=new Y().u32(0).u8(box).u16(ids.length);for(const [hi,lo] of ids)w.u32(hi).u32(lo);return w.done();
+  };
+  H['0x01811603'] = ({ payload, durum, kaydet }) => {
+    if(!Buffer.isBuffer(payload)||payload.length<2||payload.length!==2+payload.readUInt16BE(0)*8)return new Y().u32(4).done();
+    const o=new O(payload),n=o.u16(),ids=[];for(let i=0;i<n;i++)ids.push([o.u32(),o.u32()]);
+    let claimed;try{claimed=(y.bossRewardMail||require('./boss-reward-mail')).claim({durum,kaydet},ids);}catch(e){return new Y().u32(1).done();}
+    if(claimed.error)return new Y().u32(claimed.error).done();
+    for(const update of claimed.updates)ekSonra(update.id,update.payload,'BOSS-mail-claim');
+    const p=posta(durum),oduller=[];
+    for(const [hi,lo] of ids){const m=p.gelen.find(x=>x.hi===hi&&x.lo===lo);if(!m||m.bossPayoutId)continue;
+      for(const e of m.ek||[]){if(e[0]<10000){const t=MAIL_IDX[e[0]];if(t)oduller.push({type:t.type,code:t.code,amount:e[1]});}else oduller.push({type:1,code:e[0],amount:e[1]});}m.ek=[];
+    }
+    ver(durum,oduller);K(kaydet,durum);return new Y().u32(0).done();
+  };
   H['0x01811604'] = ({ payload, durum, kaydet }) => { const o = new O(payload); o.u8(); const hi = o.u32(), lo = o.u32(); const m = posta(durum).gelen.find(x => x.hi === hi && x.lo === lo); if (m) { m.okundu = 1; K(kaydet, durum); } return false; };
   // ================= FRIEND =================
   H['0x01811501'] = () => new Y().u32(0).u16(0).done();

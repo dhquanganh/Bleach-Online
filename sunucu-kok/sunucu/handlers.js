@@ -751,29 +751,7 @@ const byReq = {
   // Cevap 0x01181400 = [u32 hata][u32 ID][u32 CurrentExp][u8 smallCrit][u8 bigCrit][u32 GainExp] = 18B
   // TUZAK: ID null kontrolsuz KnifeSoul[ID] olarak okunuyor -> gercek id sart (18100001..18100159).
   '0x01811400': ({ payload, durum, kaydet }) => {
-    const adet = payload && payload.length >= 2 ? payload.readInt16BE(0) : 1;
-    const tip = payload && payload.length >= 3 ? payload.readInt8(2) : 0;
-    if (tip !== 1 && tip !== 2) return new W().u32(1).done();
-    const d = knifeDurum(durum);
-    const n = Math.max(1, Math.min(adet || 1, 500));
-    let bakiye;
-    try { bakiye = JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')); }
-    catch (e) { console.log('[knife-soul] bakiye okunamadi:', e.message); return new W().u32(1).done(); }
-    const maliyet = knifeSoulMaliyet(tip, n, bakiye);
-    if (maliyet.hata) return new W().u32(maliyet.hata).done();
-    const paraPaketi = paraHarca(maliyet.oduller);
-    if (!paraPaketi) return new W().u32(tip === 1 ? 0x69 : 0x10).done();
-    ekOnce(0x01180105, paraPaketi, 'KNIFE-SOUL-maliyet');
-    olay.say(durum, 'cultivate', n);                        // "Experiences": Reiatsu cultivate sayaci
-    if (tip === 2) olay.say(durum, 'cultivateGold', n);
-    if (n >= 50) olay.say(durum, 'cultivateOneKey', 1);
-    const kazanc = knifeEgit(d, n);
-    try { kaydet(durum); } catch (e) { }
-    const w = new W();
-    w.u32(0); w.u32(d.id >>> 0); w.u32(d.exp >>> 0);
-    w.u8(0); w.u8(0);                 // smallCrit / bigCrit
-    w.u32(kazanc >>> 0);
-    return w.done();
+    return require('./reiatsu').train({payload,durum,kaydet},{ekOnce,paraHarca,paraIcinOdul,olay},{cost:knifeSoulMaliyet});
   },
 
   // === KNIFE SOUL: info (payload YOK) ===

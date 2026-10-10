@@ -3,3 +3,6 @@
 **/*.db-shm
 **/__pycache__/
 **/*.pyc
+.boss-runtime-test/
+sunucu-kok/gorsel/boss-probe.*
+sunucu-kok/gorsel/boss-test.swf

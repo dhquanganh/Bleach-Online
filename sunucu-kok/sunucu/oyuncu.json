@@ -8,14 +8,14 @@
   "country": 0,
   "militaryRank": 0,
   "prestige": 0,
-  "altin": 0,
-  "gumus": 1568613,
+  "altin": 6599,
+  "gumus": 1674532,
   "gumusHigh": 0,
   "kupon": 500005,
-  "askeriEmir": 500000,
+  "askeriEmir": 500030,
   "vipLevel": 0,
   "vipExp": 0,
-  "generalsSoul": 245,
+  "generalsSoul": 425,
   "karakter": {
     "nick": "dqa",
     "profession": 1,
@@ -48,7 +48,7 @@
         "tpl": 14200012,
         "kat": 2,
         "slot": 1,
-        "lvl": 0,
+        "lvl": 1,
         "hole": 0,
         "app": [],
         "ws": 0,
@@ -444,6 +444,17 @@
         "ws": 0,
         "fl": 0,
         "gems": []
+      },
+      "536870949": {
+        "tpl": 14840001,
+        "kat": 4,
+        "slot": 7,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
       }
     },
     "takili": {
@@ -454,7 +465,7 @@
       }
     },
     "adaylar": {},
-    "sonInst": 536870948,
+    "sonInst": 536870949,
     "cd": 0,
     "koruma": 0,
     "goc": 1
@@ -467,11 +478,11 @@
       },
       {
         "code": 14100025,
-        "amount": 19027
+        "amount": 65535
       },
       {
         "code": 14100027,
-        "amount": 3000
+        "amount": 4200
       },
       {
         "code": 14100003,
@@ -500,6 +511,46 @@
       {
         "code": 14100061,
         "amount": 50
+      },
+      {
+        "code": 14100028,
+        "amount": 30
+      },
+      {
+        "code": 14100006,
+        "amount": 5
+      },
+      {
+        "code": 14100121,
+        "amount": 1
+      },
+      {
+        "code": 14100130,
+        "amount": 500
+      },
+      {
+        "code": 14100026,
+        "amount": 2000
+      },
+      {
+        "code": 14300001,
+        "amount": 3
+      },
+      {
+        "code": 14100023,
+        "amount": 6600
+      },
+      {
+        "code": 14100698,
+        "amount": 66
+      },
+      {
+        "code": 14100779,
+        "amount": 66
+      },
+      {
+        "code": 14900001,
+        "amount": 2
       }
     ],
     "dusulen": {
@@ -513,29 +564,37 @@
   },
   "olay": {
     "sayac": {
-      "gorev": 18,
-      "seviye": 17,
-      "instancePass": 72,
-      "soulmap": 10,
+      "gorev": 43,
+      "seviye": 32,
+      "instancePass": 188,
+      "soulmap": 11,
       "zanpakutoTrain": 4,
-      "cultivate": 5,
+      "cultivate": 25,
       "signin": 1,
-      "autoJanken": 9
+      "autoJanken": 9,
+      "fortifyEquip": 1,
+      "luckyCat": 1,
+      "arenaFight": 1,
+      "dailyActivityProtect": 2
     },
     "gun": "2026-10-10",
     "gunluk": {
-      "gorev": 18,
-      "instancePass": 72,
-      "soulmap": 10,
+      "gorev": 43,
+      "instancePass": 188,
+      "soulmap": 11,
       "zanpakutoTrain": 4,
-      "cultivate": 5,
+      "cultivate": 25,
       "signin": 1,
-      "autoJanken": 9
+      "autoJanken": 9,
+      "fortifyEquip": 1,
+      "luckyCat": 1,
+      "arenaFight": 1,
+      "dailyActivityProtect": 2
     }
   },
   "knifeSoul": {
-    "id": 18100003,
-    "exp": 10
+    "id": 18100005,
+    "exp": 30
   },
   "zanpakuto": {
     "2000209": {
@@ -577,6 +636,18 @@
       "16200001": {
         "kill": 0,
         "taban": 0
+      },
+      "16200002": {
+        "kill": 0,
+        "taban": 0
+      },
+      "16200003": {
+        "kill": 0,
+        "taban": 0
+      },
+      "16200004": {
+        "kill": 0,
+        "taban": 0
       }
     },
     "biten": [
@@ -597,18 +668,43 @@
       16100015,
       16100016,
       16100017,
-      16100018
+      16100018,
+      16100019,
+      16100020,
+      16100021,
+      16100022,
+      16100023,
+      16100024,
+      16100025,
+      16100026,
+      16100027,
+      16100028,
+      16100029,
+      16100030,
+      16100031,
+      16100032,
+      16100033,
+      16100034,
+      16100035,
+      16100036,
+      16100037,
+      16100038,
+      16100039,
+      16100040,
+      16100041,
+      16100042,
+      16100043
     ]
   },
   "seviye": {
     "herolar": {
       "11100101": {
-        "lv": 16,
-        "exp": 2111
+        "lv": 32,
+        "exp": 24768
       },
       "11100102": {
-        "lv": 15,
-        "exp": 928
+        "lv": 32,
+        "exp": 21385
       }
     },
     "bekleyen": {}
@@ -617,19 +713,510 @@
     "gun": "2026-10-10",
     "maas": 1,
     "gorev": {
-      "fresh": 0,
+      "fresh": 1,
       "point": 0,
-      "cur": 0,
+      "cur": 16300007,
       "prog": 0,
       "finish": 0,
       "tasks": [
-        16300025,
-        16300022,
+        16300007,
+        16300015,
         16300028,
-        16300002,
-        16300007
+        16300020,
+        16300016
       ],
       "mask": 0
+    },
+    "ev": {
+      "kedi": 1,
+      "tofu": 0,
+      "konus": 0
+    },
+    "pet": {
+      "fish": 0,
+      "buyFish": 0,
+      "trainCd": 0
+    },
+    "seyahat": {
+      "reset": 0,
+      "resetBuy": 0,
+      "relive": 0,
+      "reliveBuy": 0,
+      "alinan": {},
+      "hp": {},
+      "reports": [],
+      "points": [
+        {
+          "index": 0,
+          "status": 1,
+          "opponent": {
+            "id0": 359,
+            "id1": 80840995,
+            "country": 1,
+            "ranking": 1,
+            "military": 40100005,
+            "level": 24,
+            "name": "Hueco Mundo 1",
+            "power": 0.45,
+            "heroes": [
+              11140011,
+              12308447,
+              11150016,
+              12305622,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              11,
+              12,
+              13
+            ],
+            "formation": "Depressing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 1,
+          "status": 1,
+          "opponent": {
+            "id0": 360,
+            "id1": 80840996,
+            "country": 1,
+            "ranking": 2,
+            "military": 40100006,
+            "level": 28,
+            "name": "Hueco Mundo 2",
+            "power": 0.49,
+            "heroes": [
+              11150016,
+              12308472,
+              12308422
+            ],
+            "positions": [
+              1,
+              6,
+              7
+            ],
+            "formation": "Hollow Assistance Team"
+          },
+          "hp": {}
+        },
+        {
+          "index": 2,
+          "status": 1,
+          "opponent": {
+            "id0": 361,
+            "id1": 80840997,
+            "country": 1,
+            "ranking": 3,
+            "military": 40100007,
+            "level": 32,
+            "name": "Hueco Mundo 3",
+            "power": 0.53,
+            "heroes": [
+              12305672,
+              12308422,
+              12308447,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              8
+            ],
+            "formation": "Evil Spirit Arrancar "
+          },
+          "hp": {}
+        },
+        {
+          "index": 3,
+          "status": 1,
+          "opponent": {
+            "id0": 362,
+            "id1": 80840998,
+            "country": 1,
+            "ranking": 4,
+            "military": 40100008,
+            "level": 36,
+            "name": "Hueco Mundo 4",
+            "power": 0.5700000000000001,
+            "heroes": [
+              12305647,
+              11140011,
+              12305672,
+              12305622
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11
+            ],
+            "formation": "Disappearing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 4,
+          "status": 1,
+          "opponent": {
+            "id0": 363,
+            "id1": 80840999,
+            "country": 1,
+            "ranking": 5,
+            "military": 40100008,
+            "level": 40,
+            "name": "Hueco Mundo 5",
+            "power": 0.61,
+            "heroes": [
+              12308447,
+              12305672,
+              12308472,
+              12305647,
+              11150016
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11,
+              12
+            ],
+            "formation": "Internal Hollow White"
+          },
+          "hp": {}
+        },
+        {
+          "index": 5,
+          "status": 1,
+          "opponent": {
+            "id0": 359,
+            "id1": 80840995,
+            "country": 1,
+            "ranking": 1,
+            "military": 40100005,
+            "level": 24,
+            "name": "Hueco Mundo 6",
+            "power": 0.65,
+            "heroes": [
+              11140011,
+              12308447,
+              11150016,
+              12305622,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              11,
+              12,
+              13
+            ],
+            "formation": "Depressing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 6,
+          "status": 1,
+          "opponent": {
+            "id0": 360,
+            "id1": 80840996,
+            "country": 1,
+            "ranking": 2,
+            "military": 40100006,
+            "level": 28,
+            "name": "Hueco Mundo 7",
+            "power": 0.69,
+            "heroes": [
+              11150016,
+              12308472,
+              12308422
+            ],
+            "positions": [
+              1,
+              6,
+              7
+            ],
+            "formation": "Hollow Assistance Team"
+          },
+          "hp": {}
+        },
+        {
+          "index": 7,
+          "status": 1,
+          "opponent": {
+            "id0": 361,
+            "id1": 80840997,
+            "country": 1,
+            "ranking": 3,
+            "military": 40100007,
+            "level": 32,
+            "name": "Hueco Mundo 8",
+            "power": 0.73,
+            "heroes": [
+              12305672,
+              12308422,
+              12308447,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              8
+            ],
+            "formation": "Evil Spirit Arrancar "
+          },
+          "hp": {}
+        },
+        {
+          "index": 8,
+          "status": 1,
+          "opponent": {
+            "id0": 362,
+            "id1": 80840998,
+            "country": 1,
+            "ranking": 4,
+            "military": 40100008,
+            "level": 36,
+            "name": "Hueco Mundo 9",
+            "power": 0.77,
+            "heroes": [
+              12305647,
+              11140011,
+              12305672,
+              12305622
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11
+            ],
+            "formation": "Disappearing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 9,
+          "status": 1,
+          "opponent": {
+            "id0": 363,
+            "id1": 80840999,
+            "country": 1,
+            "ranking": 5,
+            "military": 40100008,
+            "level": 40,
+            "name": "Hueco Mundo 10",
+            "power": 0.81,
+            "heroes": [
+              12308447,
+              12305672,
+              12308472,
+              12305647,
+              11150016
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11,
+              12
+            ],
+            "formation": "Internal Hollow White"
+          },
+          "hp": {}
+        },
+        {
+          "index": 10,
+          "status": 1,
+          "opponent": {
+            "id0": 359,
+            "id1": 80840995,
+            "country": 1,
+            "ranking": 1,
+            "military": 40100005,
+            "level": 24,
+            "name": "Hueco Mundo 11",
+            "power": 0.8500000000000001,
+            "heroes": [
+              11140011,
+              12308447,
+              11150016,
+              12305622,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              11,
+              12,
+              13
+            ],
+            "formation": "Depressing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 11,
+          "status": 1,
+          "opponent": {
+            "id0": 360,
+            "id1": 80840996,
+            "country": 1,
+            "ranking": 2,
+            "military": 40100006,
+            "level": 28,
+            "name": "Hueco Mundo 12",
+            "power": 0.89,
+            "heroes": [
+              11150016,
+              12308472,
+              12308422
+            ],
+            "positions": [
+              1,
+              6,
+              7
+            ],
+            "formation": "Hollow Assistance Team"
+          },
+          "hp": {}
+        },
+        {
+          "index": 12,
+          "status": 1,
+          "opponent": {
+            "id0": 361,
+            "id1": 80840997,
+            "country": 1,
+            "ranking": 3,
+            "military": 40100007,
+            "level": 32,
+            "name": "Hueco Mundo 13",
+            "power": 0.9299999999999999,
+            "heroes": [
+              12305672,
+              12308422,
+              12308447,
+              12305647
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              8
+            ],
+            "formation": "Evil Spirit Arrancar "
+          },
+          "hp": {}
+        },
+        {
+          "index": 13,
+          "status": 1,
+          "opponent": {
+            "id0": 362,
+            "id1": 80840998,
+            "country": 1,
+            "ranking": 4,
+            "military": 40100008,
+            "level": 36,
+            "name": "Hueco Mundo 14",
+            "power": 0.97,
+            "heroes": [
+              12305647,
+              11140011,
+              12305672,
+              12305622
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11
+            ],
+            "formation": "Disappearing Hollow"
+          },
+          "hp": {}
+        },
+        {
+          "index": 14,
+          "status": 1,
+          "opponent": {
+            "id0": 363,
+            "id1": 80840999,
+            "country": 1,
+            "ranking": 5,
+            "military": 40100008,
+            "level": 40,
+            "name": "Hueco Mundo 15",
+            "power": 1.01,
+            "heroes": [
+              12308447,
+              12305672,
+              12308472,
+              12305647,
+              11150016
+            ],
+            "positions": [
+              1,
+              6,
+              7,
+              11,
+              12
+            ],
+            "formation": "Internal Hollow White"
+          },
+          "hp": {}
+        }
+      ],
+      "shop": {
+        "refresh": 0,
+        "born": 1791623188,
+        "bought": {},
+        "ids": [
+          19000604,
+          19000006,
+          19000609,
+          19000611,
+          19000312,
+          19000512,
+          19000121,
+          19000117,
+          19000620,
+          19000719
+        ]
+      }
+    },
+    "kule": {
+      "pve": 0,
+      "pvp": 0,
+      "pveBuy": 0,
+      "pvpBuy": 0,
+      "akey": 0
+    },
+    "klanBoss": {
+      "hp": {
+        "1": 9993465
+      },
+      "moral": 0,
+      "dirilme": 0,
+      "pendingGoldRewards": {},
+      "damageByClan": {
+        "1": {
+          "359:80840994": {
+            "highId": 359,
+            "lowId": 80840994,
+            "name": "dqa",
+            "damage": 6535
+          }
+        }
+      },
+      "klan": 1,
+      "hasar": 6535
     }
   },
   "gunlukGorev": {
@@ -648,7 +1235,7 @@
     "11100101": 1,
     "11100102": 7
   },
-  "starMapIndex": 17120010,
+  "starMapIndex": 17121001,
   "bicak": {
     "acik": [
       2000209
@@ -661,5 +1248,1747 @@
     "exp": 0,
     "free": 0,
     "freeDate": "2026-10-10"
+  },
+  "ev": {
+    "level": 1,
+    "kediTs": 1791622850,
+    "kiz": 1,
+    "sekil": 1,
+    "tofuTs": 0,
+    "konusTs": 0
+  },
+  "etkinlik": {
+    "13": {
+      "alinan": [
+        1
+      ]
+    }
+  },
+  "pet": {
+    "fishCd": 0,
+    "buyStore": 0,
+    "feed": 0,
+    "mask": 0,
+    "extend": 0,
+    "pool": 0,
+    "train": {},
+    "vice": [],
+    "seq": 1,
+    "heroPet": {}
+  },
+  "kule": {
+    "kat": 0,
+    "integral": 0,
+    "chest": 0,
+    "progress": {},
+    "lockedTowerId": 15900001
+  },
+  "towerGold": {
+    "floor": 12,
+    "records": {
+      "1": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623356,
+          "turns": 1
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623356,
+          "turns": 1
+        }
+      },
+      "2": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623372,
+          "turns": 1
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623372,
+          "turns": 1
+        }
+      },
+      "3": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623395,
+          "turns": 2
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623395,
+          "turns": 2
+        }
+      },
+      "4": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623418,
+          "turns": 2
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623418,
+          "turns": 2
+        }
+      },
+      "5": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623459,
+          "turns": 2
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623459,
+          "turns": 2
+        }
+      },
+      "6": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623494,
+          "turns": 3
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623494,
+          "turns": 3
+        }
+      },
+      "7": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623524,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623524,
+          "turns": 5
+        }
+      },
+      "8": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623574,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623574,
+          "turns": 5
+        }
+      },
+      "9": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623631,
+          "turns": 8
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623631,
+          "turns": 8
+        }
+      },
+      "10": {
+        "first": {
+          "name": "dqa",
+          "time": 1791623698,
+          "turns": 10
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791623698,
+          "turns": 10
+        }
+      },
+      "11": {
+        "first": {
+          "name": "dqa",
+          "time": 1791628836,
+          "turns": 4,
+          "report": "AAEzAAAAAAAAAAAAAAAAAAMGAKlfZAIAIAAAB7kAAAe5AAAAMgDH4/EAA2RxYQABAKlfxQIAIAAABjkAAAY5AAAAMgDH5FQAC0dhbmp1IFNoaWJhAAcAqV/GAgAgAAAEygAABMoAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAKmtgwUACwAAJYAAACWAAAAAMgDH5FIAEENocmlzdG1hcyBJY2hpZ28AAAQAAAABAAQAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAAo0AAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIsAAAAAAEABwIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAC+AAAAAABAAYCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQABhgAAAAAAAUIAAAAAAQEGAgAAAAAAAAD////OAAAAAgAEAAEAx+RUAAAAAgAEAAABAAAAAAEBBoYAAAAAAAcdAAAAAAIAAQIAAAAAzf59AAAAAwEAAQIAAAAAAAAAAAAAZAAHAMfkUwAAAAIABAAABwAAAAABAQaCAAAAAAAEEgAAAAACAAcCAAAAAM3+hQAAAAMBAAcCAAAAAAAAAAAAAGQABgDH4/EAAAACAAQAAAYAAAAAAQEGggAAAAAABdEAAAAAAgAGAgAAAADN/oUAAAADAQAGAgAAAAAAAAAAAABkAQYAx+RSAAAAAQADAAEGAAAAAAEAAYYAAAAAAAFFAAAAAAEBBgIAAAAAAAAA////zgAAAAMABAABAMfkUgAAAAEAAwAAAQAAAAABAQaCAAAAAAACjwAAAAABAAECAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAAmkAAAAAAQAHAgAAAAAAAAD////OAAYAx+PxAAAAAQADAAAGAAAAAAEBBoIAAAAAAAMbAAAAAAEABgIAAAAAAAAA////zgEGAMfkUgAAAAEAAwABBgAAAAABAAGCAAAAAAAA5QAAAAABAQYCAAAAAAAAAP///84AAAAEAAIAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAApwAAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIgAAAAAAEABwIAAAAAAAAA////zg=="
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791628836,
+          "turns": 4,
+          "report": "AAEzAAAAAAAAAAAAAAAAAAMGAKlfZAIAIAAAB7kAAAe5AAAAMgDH4/EAA2RxYQABAKlfxQIAIAAABjkAAAY5AAAAMgDH5FQAC0dhbmp1IFNoaWJhAAcAqV/GAgAgAAAEygAABMoAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAKmtgwUACwAAJYAAACWAAAAAMgDH5FIAEENocmlzdG1hcyBJY2hpZ28AAAQAAAABAAQAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAAo0AAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIsAAAAAAEABwIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAC+AAAAAABAAYCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQABhgAAAAAAAUIAAAAAAQEGAgAAAAAAAAD////OAAAAAgAEAAEAx+RUAAAAAgAEAAABAAAAAAEBBoYAAAAAAAcdAAAAAAIAAQIAAAAAzf59AAAAAwEAAQIAAAAAAAAAAAAAZAAHAMfkUwAAAAIABAAABwAAAAABAQaCAAAAAAAEEgAAAAACAAcCAAAAAM3+hQAAAAMBAAcCAAAAAAAAAAAAAGQABgDH4/EAAAACAAQAAAYAAAAAAQEGggAAAAAABdEAAAAAAgAGAgAAAADN/oUAAAADAQAGAgAAAAAAAAAAAABkAQYAx+RSAAAAAQADAAEGAAAAAAEAAYYAAAAAAAFFAAAAAAEBBgIAAAAAAAAA////zgAAAAMABAABAMfkUgAAAAEAAwAAAQAAAAABAQaCAAAAAAACjwAAAAABAAECAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAAmkAAAAAAQAHAgAAAAAAAAD////OAAYAx+PxAAAAAQADAAAGAAAAAAEBBoIAAAAAAAMbAAAAAAEABgIAAAAAAAAA////zgEGAMfkUgAAAAEAAwABBgAAAAABAAGCAAAAAAAA5QAAAAABAQYCAAAAAAAAAP///84AAAAEAAIAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAApwAAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIgAAAAAAEABwIAAAAAAAAA////zg=="
+        }
+      }
+    }
+  },
+  "infiniteIllusion": {
+    "day": 20736,
+    "entries": {
+      "359:80840994": {
+        "id": "359:80840994",
+        "name": "dqa",
+        "bot": false,
+        "damage": 6,
+        "at": 1791623873
+      },
+      "bot:1793": {
+        "id": "bot:1793",
+        "name": "Bot Ichigo Kurosaki #1793",
+        "bot": true,
+        "level": 112,
+        "heroes": [
+          11140009,
+          12100073,
+          11110019,
+          11110030,
+          11150034
+        ],
+        "damage": 750638,
+        "at": 1791624148
+      },
+      "bot:1564": {
+        "id": "bot:1564",
+        "name": "Bot Última Aizen #1564",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11160014,
+          11150021,
+          11150040,
+          11150020,
+          11150002
+        ],
+        "damage": 2696161,
+        "at": 1791625124
+      },
+      "bot:1945": {
+        "id": "bot:1945",
+        "name": "Bot Coyote Starrk #1945",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11110029,
+          11110020,
+          12100071,
+          11150047,
+          11140004
+        ],
+        "damage": 6905101,
+        "at": 1791627289
+      },
+      "bot:992": {
+        "id": "bot:992",
+        "name": "Bot Shin Tōshirō Hitsugaya #0992",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11160005,
+          11140008,
+          11110032,
+          11110001,
+          11150057
+        ],
+        "damage": 597478,
+        "at": 1791627602
+      },
+      "bot:460": {
+        "id": "bot:460",
+        "name": "Bot Última Aizen #0460",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11160014,
+          11150055,
+          11150047,
+          11150048,
+          11150012
+        ],
+        "damage": 11208023,
+        "at": 1791627902
+      },
+      "bot:1061": {
+        "id": "bot:1061",
+        "name": "Bot Shinigami Urahara #1061",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11140012,
+          11150042,
+          11150002,
+          11150014,
+          11110022
+        ],
+        "damage": 4177907,
+        "at": 1791628716
+      },
+      "bot:321": {
+        "id": "bot:321",
+        "name": "Bot Shin Isshin Kurosaki #0321",
+        "bot": true,
+        "level": 95,
+        "heroes": [
+          11140013,
+          11110005,
+          11120011,
+          11150014,
+          11150021
+        ],
+        "damage": 1870837,
+        "at": 1791628716
+      },
+      "bot:440": {
+        "id": "bot:440",
+        "name": "Bot Shūkurō Tsukishima #0440",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150048,
+          11150044,
+          11120004,
+          11140011,
+          11150002
+        ],
+        "damage": 10069580,
+        "at": 1791628716
+      },
+      "bot:953": {
+        "id": "bot:953",
+        "name": "Bot Human Komamura #0953",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150034,
+          11140005,
+          11150042,
+          11120003,
+          11120011
+        ],
+        "damage": 12001571,
+        "at": 1791628716
+      },
+      "bot:654": {
+        "id": "bot:654",
+        "name": "Bot Bambietta Basterbine #0654",
+        "bot": true,
+        "level": 90,
+        "heroes": [
+          11150029,
+          11150016,
+          11150045,
+          11110016,
+          11110028
+        ],
+        "damage": 4203478,
+        "at": 1791628716
+      },
+      "bot:1371": {
+        "id": "bot:1371",
+        "name": "Bot Murciélago #1371",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11140007,
+          11150003,
+          11150014,
+          11150053,
+          11160013
+        ],
+        "damage": 574112,
+        "at": 1791628716
+      },
+      "bot:1521": {
+        "id": "bot:1521",
+        "name": "Bot Noble Isane #1521",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11150025,
+          11150010,
+          11150059,
+          11150048,
+          11110004
+        ],
+        "damage": 2703115,
+        "at": 1791628716
+      },
+      "bot:1326": {
+        "id": "bot:1326",
+        "name": "Bot Kenpachi Zaraki #1326",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11110023,
+          11110019,
+          11110011,
+          11110032,
+          11160013
+        ],
+        "damage": 15139,
+        "at": 1791628716
+      },
+      "bot:70": {
+        "id": "bot:70",
+        "name": "Bot Blood War Nelliel #0070",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150058,
+          11100101,
+          11150028,
+          11140009,
+          11150032
+        ],
+        "damage": 4222302,
+        "at": 1791628716
+      },
+      "bot:1717": {
+        "id": "bot:1717",
+        "name": "Bot Noble Isane #1717",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150025,
+          11140014,
+          11140010,
+          11160005,
+          11110025
+        ],
+        "damage": 301908,
+        "at": 1791628716
+      },
+      "bot:1210": {
+        "id": "bot:1210",
+        "name": "Bot Raijin Yoruichi #1210",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11150030,
+          11160007,
+          11140014,
+          11160014,
+          11140013
+        ],
+        "damage": 1082686,
+        "at": 1791628716
+      },
+      "bot:1755": {
+        "id": "bot:1755",
+        "name": "Bot Kenpachi Zaraki #1755",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11110023,
+          11110001,
+          11160002,
+          11150026,
+          11150054
+        ],
+        "damage": 2362290,
+        "at": 1791628716
+      },
+      "bot:1015": {
+        "id": "bot:1015",
+        "name": "Bot Kensei Muguruma #1015",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11110014,
+          12100073,
+          11110025,
+          11160009,
+          11140009
+        ],
+        "damage": 1109506,
+        "at": 1791628716
+      },
+      "bot:432": {
+        "id": "bot:432",
+        "name": "Bot Nemu Kurotsuchi #0432",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11110003,
+          11150014,
+          11150021,
+          11110004,
+          11160007
+        ],
+        "damage": 1209114,
+        "at": 1791628716
+      },
+      "bot:1475": {
+        "id": "bot:1475",
+        "name": "Bot Shinsō Gin #1475",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11120009,
+          11150049,
+          11110027,
+          11140009,
+          11110019
+        ],
+        "damage": 319891,
+        "at": 1791628716
+      },
+      "bot:1900": {
+        "id": "bot:1900",
+        "name": "Bot Kokutō #1900",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11150043,
+          11150052,
+          11110016,
+          11140009,
+          11110006
+        ],
+        "damage": 9278938,
+        "at": 1791628716
+      },
+      "bot:251": {
+        "id": "bot:251",
+        "name": "Bot Demon Ichigo #0251",
+        "bot": true,
+        "level": 100,
+        "heroes": [
+          11140008,
+          11150003,
+          11120009,
+          11150052,
+          11110020
+        ],
+        "damage": 3837096,
+        "at": 1791628716
+      },
+      "bot:1756": {
+        "id": "bot:1756",
+        "name": "Bot Byakuya Kuchiki #1756",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11110022,
+          11150024,
+          11150003,
+          11110003,
+          11110032
+        ],
+        "damage": 1232884,
+        "at": 1791628716
+      },
+      "bot:1597": {
+        "id": "bot:1597",
+        "name": "Bot Hollowed Ichigo #1597",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11110030,
+          11150038,
+          11110008,
+          11150041,
+          11160002
+        ],
+        "damage": 1237063,
+        "at": 1791628716
+      },
+      "bot:265": {
+        "id": "bot:265",
+        "name": "Bot Shunkō Suì-Fēng #0265",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150036,
+          11100101,
+          11110025,
+          11140011,
+          11150021
+        ],
+        "damage": 1286644,
+        "at": 1791628716
+      },
+      "bot:1036": {
+        "id": "bot:1036",
+        "name": "Bot Kisuke Urahara #1036",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11110017,
+          11150008,
+          11160011,
+          11150032,
+          11150029
+        ],
+        "damage": 2649122,
+        "at": 1791628716
+      },
+      "bot:377": {
+        "id": "bot:377",
+        "name": "Bot Szayelaporro Granz #0377",
+        "bot": true,
+        "level": 111,
+        "heroes": [
+          11150054,
+          11110004,
+          11160006,
+          11160012,
+          11150015
+        ],
+        "damage": 1048186,
+        "at": 1791628716
+      },
+      "bot:133": {
+        "id": "bot:133",
+        "name": "Bot Shin Grimmjow #0133",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11160003,
+          11150032,
+          11110006,
+          11100102,
+          11110026
+        ],
+        "damage": 544755,
+        "at": 1791628716
+      },
+      "bot:1415": {
+        "id": "bot:1415",
+        "name": "Bot Ulquiorra #1415",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11130002,
+          11120005,
+          11160004,
+          11140011,
+          11150021
+        ],
+        "damage": 395615,
+        "at": 1791628716
+      },
+      "bot:1092": {
+        "id": "bot:1092",
+        "name": "Bot Shin Shura Kenpachi #1092",
+        "bot": true,
+        "level": 89,
+        "heroes": [
+          11160011,
+          11110004,
+          12100073,
+          11150029,
+          11150042
+        ],
+        "damage": 3815257,
+        "at": 1791628716
+      },
+      "bot:1759": {
+        "id": "bot:1759",
+        "name": "Bot Handsome Toshiro #1759",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11150026,
+          11110012,
+          11110006,
+          11120004,
+          11110018
+        ],
+        "damage": 363727,
+        "at": 1791628716
+      },
+      "bot:43": {
+        "id": "bot:43",
+        "name": "Bot Orihime Inoue #0043",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11110006,
+          11150008,
+          11150054,
+          11110029,
+          11160002
+        ],
+        "damage": 932133,
+        "at": 1791628716
+      },
+      "bot:917": {
+        "id": "bot:917",
+        "name": "Bot Nanao Ise #0917",
+        "bot": true,
+        "level": 89,
+        "heroes": [
+          11120002,
+          11110010,
+          11110028,
+          11120005,
+          11150042
+        ],
+        "damage": 1574455,
+        "at": 1791628716
+      },
+      "bot:981": {
+        "id": "bot:981",
+        "name": "Bot Ulquiorra #0981",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11130002,
+          11150039,
+          11140011,
+          11160005,
+          11130001
+        ],
+        "damage": 2181011,
+        "at": 1791628716
+      },
+      "bot:1350": {
+        "id": "bot:1350",
+        "name": "Bot Blood War Grimmjow #1350",
+        "bot": true,
+        "level": 112,
+        "heroes": [
+          11150056,
+          11150029,
+          11150046,
+          11150042,
+          11150018
+        ],
+        "damage": 10314692,
+        "at": 1791628716
+      },
+      "bot:1565": {
+        "id": "bot:1565",
+        "name": "Bot Ishida Ryūken #1565",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11150012,
+          11100102,
+          11110021,
+          11160002,
+          11120008
+        ],
+        "damage": 199951,
+        "at": 1791628716
+      },
+      "bot:736": {
+        "id": "bot:736",
+        "name": "Bot Zabimaru Renji #0736",
+        "bot": true,
+        "level": 88,
+        "heroes": [
+          11120007,
+          11150058,
+          11150055,
+          11130003,
+          11150042
+        ],
+        "damage": 7509647,
+        "at": 1791628716
+      },
+      "bot:628": {
+        "id": "bot:628",
+        "name": "Bot Mugetsu #0628",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11150008,
+          11110008,
+          11140008,
+          11110016,
+          11150013
+        ],
+        "damage": 619395,
+        "at": 1791628716
+      },
+      "bot:170": {
+        "id": "bot:170",
+        "name": "Bot Kirinji Tenjirō #0170",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11150015,
+          11150027,
+          11150052,
+          11150038,
+          11140012
+        ],
+        "damage": 16039119,
+        "at": 1791628716
+      },
+      "bot:380": {
+        "id": "bot:380",
+        "name": "Bot Yumichika Ayasegawa #0380",
+        "bot": true,
+        "level": 112,
+        "heroes": [
+          11110002,
+          11150056,
+          11110020,
+          11110025,
+          11150003
+        ],
+        "damage": 6443570,
+        "at": 1791628716
+      },
+      "bot:1479": {
+        "id": "bot:1479",
+        "name": "Bot Retsu Unohana #1479",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11110025,
+          11150032,
+          11160004,
+          11150045,
+          11110004
+        ],
+        "damage": 9695020,
+        "at": 1791628716
+      },
+      "bot:980": {
+        "id": "bot:980",
+        "name": "Bot Sternritter Uryū Ishida #0980",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11150044,
+          11110029,
+          11150015,
+          11150019,
+          11150012
+        ],
+        "damage": 1901961,
+        "at": 1791628716
+      },
+      "bot:175": {
+        "id": "bot:175",
+        "name": "Bot True-Shikai Ichigo #0175",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150010,
+          11110005,
+          11160010,
+          11160001,
+          11150041
+        ],
+        "damage": 986915,
+        "at": 1791628716
+      },
+      "bot:1951": {
+        "id": "bot:1951",
+        "name": "Bot Retsu Unohana Kenpachi #1951",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11150009,
+          11150020,
+          11100101,
+          11110028,
+          11150047
+        ],
+        "damage": 4351373,
+        "at": 1791628716
+      },
+      "bot:310": {
+        "id": "bot:310",
+        "name": "Bot Shin Ulquiorra #0310",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11160009,
+          11110030,
+          11160014,
+          11150009,
+          11150031
+        ],
+        "damage": 4757887,
+        "at": 1791628716
+      },
+      "bot:1410": {
+        "id": "bot:1410",
+        "name": "Bot Muken Aizen #1410",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150031,
+          11160013,
+          11120010,
+          11150042,
+          11110021
+        ],
+        "damage": 6617990,
+        "at": 1791628716
+      },
+      "bot:362": {
+        "id": "bot:362",
+        "name": "Bot Isshin Kurosaki #0362",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11140014,
+          11110032,
+          11110027,
+          11110002,
+          11100102
+        ],
+        "damage": 8225,
+        "at": 1791628716
+      },
+      "bot:164": {
+        "id": "bot:164",
+        "name": "Bot Zabimaru Renji #0164",
+        "bot": true,
+        "level": 101,
+        "heroes": [
+          11120007,
+          11150013,
+          11150003,
+          11150051,
+          11140010
+        ],
+        "damage": 2270487,
+        "at": 1791628716
+      },
+      "bot:1960": {
+        "id": "bot:1960",
+        "name": "Bot Shunkō Suì-Fēng #1960",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11150036,
+          11120012,
+          11110029,
+          11110017,
+          11150028
+        ],
+        "damage": 5083004,
+        "at": 1791628716
+      },
+      "bot:1937": {
+        "id": "bot:1937",
+        "name": "Bot Handsome Toshiro #1937",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11150026,
+          11150033,
+          11150010,
+          11160007,
+          11120007
+        ],
+        "damage": 3128231,
+        "at": 1791628716
+      },
+      "bot:1859": {
+        "id": "bot:1859",
+        "name": "Bot Shin Shura Kenpachi #1859",
+        "bot": true,
+        "level": 106,
+        "heroes": [
+          11160011,
+          12100071,
+          11160014,
+          11110029,
+          11120013
+        ],
+        "damage": 1164695,
+        "at": 1791628716
+      },
+      "bot:1430": {
+        "id": "bot:1430",
+        "name": "Bot Valkyrie #1430",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11150040,
+          11150032,
+          11110028,
+          11120001,
+          11150029
+        ],
+        "damage": 2552503,
+        "at": 1791628716
+      },
+      "bot:1843": {
+        "id": "bot:1843",
+        "name": "Bot Berserk Renji #1843",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11150013,
+          11120005,
+          11100102,
+          11120011,
+          11110019
+        ],
+        "damage": 1039951,
+        "at": 1791628716
+      },
+      "bot:1219": {
+        "id": "bot:1219",
+        "name": "Bot Jūshirō Ukitake #1219",
+        "bot": true,
+        "level": 100,
+        "heroes": [
+          11110021,
+          11150017,
+          11130001,
+          11110032,
+          11140006
+        ],
+        "damage": 630793,
+        "at": 1791628716
+      },
+      "bot:1193": {
+        "id": "bot:1193",
+        "name": "Bot Kensei Muguruma #1193",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11110014,
+          11150020,
+          11150032,
+          11160005,
+          11120011
+        ],
+        "damage": 4729145,
+        "at": 1791628716
+      },
+      "bot:130": {
+        "id": "bot:130",
+        "name": "Bot Sophisticated Rengiku #0130",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11120010,
+          11150040,
+          11150016,
+          11110022,
+          11140007
+        ],
+        "damage": 5167239,
+        "at": 1791628716
+      },
+      "bot:319": {
+        "id": "bot:319",
+        "name": "Bot Cute Orihime #0319",
+        "bot": true,
+        "level": 95,
+        "heroes": [
+          11120013,
+          11120008,
+          11110025,
+          11160013,
+          11140009
+        ],
+        "damage": 871992,
+        "at": 1791628716
+      },
+      "bot:1320": {
+        "id": "bot:1320",
+        "name": "Bot Iziru Kira #1320",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11100102,
+          11150012,
+          11160005,
+          11150058,
+          11110017
+        ],
+        "damage": 2839754,
+        "at": 1791628716
+      },
+      "bot:1298": {
+        "id": "bot:1298",
+        "name": "Bot Hakuteiken Byakuya #1298",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11140004,
+          11150047,
+          11130001,
+          11110002,
+          11110032
+        ],
+        "damage": 2770181,
+        "at": 1791628716
+      },
+      "bot:700": {
+        "id": "bot:700",
+        "name": "Bot Tōshirō Hitsugaya #0700",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11120005,
+          11150029,
+          11110016,
+          11150033,
+          11120008
+        ],
+        "damage": 2288259,
+        "at": 1791628716
+      },
+      "bot:139": {
+        "id": "bot:139",
+        "name": "Bot Kensei Muguruma #0139",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11110014,
+          11110007,
+          11120003,
+          11140009,
+          11110008
+        ],
+        "damage": 339660,
+        "at": 1791628716
+      },
+      "bot:1376": {
+        "id": "bot:1376",
+        "name": "Bot Mugetsu #1376",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11150008,
+          11150055,
+          11150017,
+          11110009,
+          11140010
+        ],
+        "damage": 7229832,
+        "at": 1791628716
+      },
+      "bot:1165": {
+        "id": "bot:1165",
+        "name": "Bot Valkyrie #1165",
+        "bot": true,
+        "level": 109,
+        "heroes": [
+          11150040,
+          11130003,
+          11150011,
+          11150043,
+          11110010
+        ],
+        "damage": 4468121,
+        "at": 1791628716
+      },
+      "bot:1818": {
+        "id": "bot:1818",
+        "name": "Bot Tessai Tsukabishi #1818",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          12100073,
+          11140006,
+          11120005,
+          11110012,
+          11110031
+        ],
+        "damage": 943066,
+        "at": 1791628716
+      },
+      "bot:1670": {
+        "id": "bot:1670",
+        "name": "Bot Shin Isshin Kurosaki #1670",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11140013,
+          11150058,
+          11110007,
+          11150043,
+          11150040
+        ],
+        "damage": 4905403,
+        "at": 1791628716
+      },
+      "bot:1439": {
+        "id": "bot:1439",
+        "name": "Bot Komamura Sajin #1439",
+        "bot": true,
+        "level": 112,
+        "heroes": [
+          11110013,
+          11150035,
+          11150020,
+          11150025,
+          11110022
+        ],
+        "damage": 4664120,
+        "at": 1791628716
+      },
+      "bot:1049": {
+        "id": "bot:1049",
+        "name": "Bot Bankai Rukia #1049",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11150011,
+          11150046,
+          11150016,
+          11110030,
+          12100073
+        ],
+        "damage": 3949178,
+        "at": 1791628716
+      },
+      "bot:1461": {
+        "id": "bot:1461",
+        "name": "Bot Elegant Unohana #1461",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11150024,
+          11110028,
+          11120002,
+          11110032,
+          11130002
+        ],
+        "damage": 120521,
+        "at": 1791628716
+      },
+      "bot:1718": {
+        "id": "bot:1718",
+        "name": "Bot Byakuya Kuchiki #1718",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11110022,
+          11150057,
+          11120004,
+          11130002,
+          11160005
+        ],
+        "damage": 581153,
+        "at": 1791628716
+      },
+      "bot:1202": {
+        "id": "bot:1202",
+        "name": "Bot Noble Isane #1202",
+        "bot": true,
+        "level": 95,
+        "heroes": [
+          11150025,
+          11110015,
+          11110014,
+          11150014,
+          11120013
+        ],
+        "damage": 964975,
+        "at": 1791628716
+      },
+      "bot:1002": {
+        "id": "bot:1002",
+        "name": "Bot Kaien Shiba #1002",
+        "bot": true,
+        "level": 88,
+        "heroes": [
+          11110005,
+          11150030,
+          11110009,
+          11150053,
+          11110014
+        ],
+        "damage": 2507734,
+        "at": 1791628716
+      },
+      "bot:1566": {
+        "id": "bot:1566",
+        "name": "Bot Lisa Yadoumaru #1566",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11110009,
+          11150043,
+          11110024,
+          11160012,
+          11150017
+        ],
+        "damage": 961535,
+        "at": 1791628716
+      },
+      "bot:773": {
+        "id": "bot:773",
+        "name": "Bot Isane Kotetsu #0773",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11150003,
+          11110024,
+          11140004,
+          11140008,
+          11150033
+        ],
+        "damage": 7024048,
+        "at": 1791628716
+      },
+      "bot:1241": {
+        "id": "bot:1241",
+        "name": "Bot Demon Ichigo #1241",
+        "bot": true,
+        "level": 106,
+        "heroes": [
+          11140008,
+          11150046,
+          11150038,
+          11150040,
+          12100073
+        ],
+        "damage": 13094871,
+        "at": 1791628716
+      },
+      "bot:109": {
+        "id": "bot:109",
+        "name": "Bot Sexy Yoruichi #0109",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11120012,
+          11150028,
+          11110002,
+          11150024,
+          11150014
+        ],
+        "damage": 4169549,
+        "at": 1791628716
+      },
+      "bot:742": {
+        "id": "bot:742",
+        "name": "Bot Blood War Byakuya #0742",
+        "bot": true,
+        "level": 90,
+        "heroes": [
+          11150045,
+          11150015,
+          11110006,
+          11150038,
+          11120003
+        ],
+        "damage": 9405425,
+        "at": 1791628716
+      },
+      "bot:1267": {
+        "id": "bot:1267",
+        "name": "Bot Baraggan Louisenbairn #1267",
+        "bot": true,
+        "level": 88,
+        "heroes": [
+          11110026,
+          11110020,
+          11110006,
+          11160007,
+          11110024
+        ],
+        "damage": 35167,
+        "at": 1791628716
+      },
+      "bot:865": {
+        "id": "bot:865",
+        "name": "Bot Hakuteiken Byakuya #0865",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11140004,
+          11140006,
+          11140012,
+          11140005,
+          11150002
+        ],
+        "damage": 1551039,
+        "at": 1791628716
+      },
+      "bot:1383": {
+        "id": "bot:1383",
+        "name": "Bot Ryūmon Ikkaku Madarame #1383",
+        "bot": true,
+        "level": 96,
+        "heroes": [
+          11130003,
+          11150019,
+          11140009,
+          11150053,
+          11140012
+        ],
+        "damage": 2185513,
+        "at": 1791628716
+      },
+      "bot:1478": {
+        "id": "bot:1478",
+        "name": "Bot Yhwach #1478",
+        "bot": true,
+        "level": 98,
+        "heroes": [
+          11150016,
+          11160006,
+          11160014,
+          11100102,
+          11110023
+        ],
+        "damage": 2235986,
+        "at": 1791628716
+      },
+      "bot:599": {
+        "id": "bot:599",
+        "name": "Bot Blood War Harribel #0599",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150059,
+          11150003,
+          11100101,
+          11150051,
+          11150044
+        ],
+        "damage": 7768615,
+        "at": 1791628716
+      },
+      "bot:876": {
+        "id": "bot:876",
+        "name": "Bot Christmas Ichigo #0876",
+        "bot": true,
+        "level": 103,
+        "heroes": [
+          11120003,
+          11150029,
+          11110029,
+          11110027,
+          11160011
+        ],
+        "damage": 957348,
+        "at": 1791628716
+      },
+      "bot:1525": {
+        "id": "bot:1525",
+        "name": "Bot Ōetsu Nimaiya #1525",
+        "bot": true,
+        "level": 111,
+        "heroes": [
+          11150018,
+          11140006,
+          11150040,
+          11110007,
+          11150002
+        ],
+        "damage": 4412104,
+        "at": 1791628716
+      },
+      "bot:1066": {
+        "id": "bot:1066",
+        "name": "Bot Bambietta Basterbine #1066",
+        "bot": true,
+        "level": 106,
+        "heroes": [
+          11150029,
+          11110006,
+          11150050,
+          11150009,
+          11150021
+        ],
+        "damage": 869352,
+        "at": 1791628716
+      },
+      "bot:1649": {
+        "id": "bot:1649",
+        "name": "Bot Nozarashi Kenpachi #1649",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11160012,
+          11150044,
+          11150056,
+          11150040,
+          11150026
+        ],
+        "damage": 13232340,
+        "at": 1791628716
+      },
+      "bot:307": {
+        "id": "bot:307",
+        "name": "Bot Yasutora Sado #0307",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11110004,
+          11120003,
+          11160009,
+          11150042,
+          11150003
+        ],
+        "damage": 3026248,
+        "at": 1791628716
+      },
+      "bot:257": {
+        "id": "bot:257",
+        "name": "Bot Gentle Byakuya #0257",
+        "bot": true,
+        "level": 102,
+        "heroes": [
+          11150028,
+          11150044,
+          11110017,
+          11140008,
+          11150002
+        ],
+        "damage": 1632109,
+        "at": 1791628716
+      },
+      "bot:661": {
+        "id": "bot:661",
+        "name": "Bot Lisa Yadoumaru #0661",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11110009,
+          11120010,
+          11150003,
+          11150045,
+          11150051
+        ],
+        "damage": 2788007,
+        "at": 1791628716
+      },
+      "bot:1887": {
+        "id": "bot:1887",
+        "name": "Bot Nnoitra Gilga #1887",
+        "bot": true,
+        "level": 89,
+        "heroes": [
+          11110024,
+          11110015,
+          11120006,
+          11160012,
+          11110009
+        ],
+        "damage": 18077,
+        "at": 1791628716
+      },
+      "bot:1042": {
+        "id": "bot:1042",
+        "name": "Bot Dark Rukia #1042",
+        "bot": true,
+        "level": 100,
+        "heroes": [
+          11120004,
+          11150005,
+          11140010,
+          11110026,
+          11150031
+        ],
+        "damage": 6620272,
+        "at": 1791628716
+      },
+      "bot:355": {
+        "id": "bot:355",
+        "name": "Bot Shin Zabimaru Renji #0355",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11160001,
+          11110030,
+          11150015,
+          11150002,
+          11100102
+        ],
+        "damage": 495727,
+        "at": 1791628716
+      },
+      "bot:1808": {
+        "id": "bot:1808",
+        "name": "Bot Sophisticated Rengiku #1808",
+        "bot": true,
+        "level": 92,
+        "heroes": [
+          11120010,
+          11110006,
+          11150024,
+          11120001,
+          11160011
+        ],
+        "damage": 451110,
+        "at": 1791628716
+      },
+      "bot:374": {
+        "id": "bot:374",
+        "name": "Bot Kensei Muguruma #0374",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11110014,
+          11150046,
+          11150049,
+          11130003,
+          11150018
+        ],
+        "damage": 3815937,
+        "at": 1791628716
+      },
+      "bot:1775": {
+        "id": "bot:1775",
+        "name": "Bot White Ichigo #1775",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11120008,
+          11150043,
+          11150029,
+          11120004,
+          11120007
+        ],
+        "damage": 1654989,
+        "at": 1791628716
+      },
+      "bot:471": {
+        "id": "bot:471",
+        "name": "Bot Kyōka Suigetsu Aizen #0471",
+        "bot": true,
+        "level": 88,
+        "heroes": [
+          11140006,
+          11160011,
+          11100102,
+          11150023,
+          11110024
+        ],
+        "damage": 3116349,
+        "at": 1791628716
+      },
+      "bot:1392": {
+        "id": "bot:1392",
+        "name": "Bot Blood War Harribel #1392",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150059,
+          11150005,
+          11150045,
+          11110015,
+          11150054
+        ],
+        "damage": 10923123,
+        "at": 1791628716
+      },
+      "bot:1167": {
+        "id": "bot:1167",
+        "name": "Bot Sexy Yoruichi #1167",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11120012,
+          11110012,
+          11110021,
+          11130001,
+          11150047
+        ],
+        "damage": 2791194,
+        "at": 1791628716
+      },
+      "bot:1278": {
+        "id": "bot:1278",
+        "name": "Bot Kurotsuchi Mayuri #1278",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150005,
+          11110018,
+          11150014,
+          11110031,
+          11110028
+        ],
+        "damage": 641419,
+        "at": 1791628716
+      },
+      "bot:317": {
+        "id": "bot:317",
+        "name": "Bot Sternritter Uryū Ishida #0317",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11150044,
+          11150039,
+          11120006,
+          11110028,
+          11150045
+        ],
+        "damage": 2863984,
+        "at": 1791628716
+      },
+      "bot:833": {
+        "id": "bot:833",
+        "name": "Bot Senjumaru Shutara #0833",
+        "bot": true,
+        "level": 90,
+        "heroes": [
+          11150020,
+          11150015,
+          11110025,
+          11150013,
+          11150043
+        ],
+        "damage": 6675036,
+        "at": 1791628716
+      },
+      "bot:1805": {
+        "id": "bot:1805",
+        "name": "Bot Riruka Dokugamine #1805",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150049,
+          11110013,
+          11150039,
+          11160012,
+          11140009
+        ],
+        "damage": 1674396,
+        "at": 1791630760
+      }
+    },
+    "nextBot": 1791631060,
+    "nextFight": 1791628750,
+    "battles": 4,
+    "payouts": [],
+    "lastDamage": 6
+  },
+  "protectSeireitei": {
+    "day": 20736,
+    "active": false,
+    "atDoor": false,
+    "worldLevel": 32,
+    "doorIndex": 0,
+    "bossMaxHp": 9100002004,
+    "hp": 9099996238,
+    "damage": 5766,
+    "battles": 2,
+    "revives": 1,
+    "deadUntil": 1791628054,
+    "nextFight": 1791628015,
+    "finished": false,
+    "reports": [
+      {
+        "id": "ff9e6a99-8751-4dcc-a86d-9f8ab2f0a897",
+        "won": false,
+        "hp": 9099999053,
+        "maxHp": 9100002004,
+        "report": "AAE0AAAAAAAAAAAAAAAAAAMGAKlfZAIAIECSuAAAAAAAQJK4AAAAAAAAAAAyAMfj8QADZHFhAAEAqV/FAgAgQIl4AAAAAABAiXgAAAAAAAAAADIAx+RUAAtHYW5qdSBTaGliYQAHAKlfxgIAIEB78AAAAAAAQHvwAAAAAAAAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAMN3EQEAIEIA8zgWoAAAQgDzOBagAAAAAAAyAMinfAASSmlkYW5ixY0gSWtrYW56YWthAAADAAAAAQAEAAEAx+RSAAAAAQADAAABAAAAAAEBBoYAAAAAAAHpAAAAAAEAAQIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAB2gAAAAABAAYCAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAARgAAAAAAQAHAgAAAAAAAAD////OAQYAx+RSAAAAAQADAAEGAAAAAAEAAYIAAAAAAAMvAAAAAAEBBgIAAAAAAAAA////zgAAAAIAAwAGAMfj8QAAAAIABAAABgAAAAABAQaCAAAAAAADcQAAAAACAAYCAAAAAM3+hQAAAAMBAAYCAAAAAAAAAAAAAGQABwDH5FMAAAACAAQAAAcAAAAAAQEGggAAAAAAAiYAAAAAAgAHAgAAAADN/oUAAAADAQAHAgAAAAAAAAAAAABkAQYAyKd8AAAAAgADAAEGAAAAAAEABoIAAAAAAASuAAAAAAEBBgIAAAAAAAAAAAAAZAAAAAMAAgAHAMfkUgAAAAEAAwAABwAAAAABAQaCAAAAAAABFQAAAAABAAcCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQAHggAAAAAAAb8AAAAAAQEGAgAAAAAAAAD////O"
+      },
+      {
+        "id": "5c009b22-a7e0-45a3-9d89-502b942b08ff",
+        "won": false,
+        "hp": 9099996238,
+        "maxHp": 9100002004,
+        "report": "AAE0AAAAAAAAAAAAAAAAAAMGAKlfZAIAIECSuAAAAAAAQJK4AAAAAAAAAAAyAMfj8QADZHFhAAEAqV/FAgAgQIl4AAAAAABAiXgAAAAAAAAAADIAx+RUAAtHYW5qdSBTaGliYQAHAKlfxgIAIEB78AAAAAAAQHvwAAAAAAAAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAMN3EQEAIEIA8ze6aAAAQgDzN7poAAAAAAAyAMinfAASSmlkYW5ixY0gSWtrYW56YWthAAADAAAAAQAEAAEAx+RSAAAAAQADAAABAAAAAAEBBoIAAAAAAAFVAAAAAAEAAQIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAB5gAAAAABAAYCAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAATQAAAAAAQAHAgAAAAAAAAD////OAQYAx+RSAAAAAQADAAEGAAAAAAEAAYIAAAAAAAMvAAAAAAEBBgIAAAAAAAAA////zgAAAAIAAwAGAMfj8QAAAAIABAAABgAAAAABAQaCAAAAAAADSQAAAAACAAYCAAAAAM3+hQAAAAMBAAYCAAAAAAAAAAAAAGQABwDH5FMAAAACAAQAAAcAAAAAAQEGggAAAAAAAiYAAAAAAgAHAgAAAADN/oUAAAADAQAHAgAAAAAAAAAAAABkAQYAyKd8AAAAAgADAAEGAAAAAAEABoIAAAAAAASuAAAAAAEBBgIAAAAAAAAAAAAAZAAAAAMAAgAHAMfkUgAAAAEAAwAABwAAAAABAQaCAAAAAAABIQAAAAABAAcCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQAHggAAAAAAAb8AAAAAAQEGAgAAAAAAAAD////O"
+      }
+    ]
+  },
+  "blackMarket": {
+    "revision": 3,
+    "born": 1791628035,
+    "refresh": 0,
+    "bought": {}
   }
 }

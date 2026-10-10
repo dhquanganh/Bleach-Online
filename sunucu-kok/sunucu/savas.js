@@ -731,6 +731,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random) {
     dmg = Math.max(1, dmg);
     if (bitir) dmg = Math.max(dmg, victim.hp);
     dmg = Math.max(0, Math.round(dmg * (1 + (u.damageBonus || 0)) * (1 - (victim.damageReduction || 0)) * (u.damageMultiplier || 1)));
+    if (u.maxHitDamage) dmg = Math.min(u.maxHitDamage, dmg);
     const result = rebirth.hit(u, victim, dmg, random);
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0)) >>> 0;
     targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:status,result:{hurtHp:result.damage,hurtAnger:0}});
@@ -847,6 +848,9 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
     for(const unit of p1){unit[field]=Math.min(1000000000,Math.round(unit[field]*factor));if(field==='maxHp')unit.hp=unit.maxHp;}
   }
+  // Event bots use their own levels and formations through the same combat engine.
+  if (options.playerUnits) p1.splice(0, p1.length, ...options.playerUnits);
+  if (options.maxHitDamage) for (const unit of p1) unit.maxHitDamage = options.maxHitDamage;
   // Arena botu varsa onun gercek kahraman kadrosunu, diger savaslarda stage dusmanlarini kullan.
   // Stage kadrosu bulunmayan diger modlarda varsayilan dusmana dusulur.
   const st = enemyOverride || (!arenaRakip && bpId ? stageDusmanlari(bpId) : null);
@@ -1011,6 +1015,36 @@ function cityDefendBattle(enemyId,currentHp,playerState) {
   const report=kadroRapor(0,null,{ad:enemy.name,birimler:[unit]},{playerState,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});
   if(!report)throw Error('Unable to create CityDefend battle');
   return {...report,damage:SON_OYUNCU_HASARI};
+}
+
+function illusionBattle(playerState, bot = null) {
+  const cfg = require('./infinite-illusion-config.json');
+  const boss = heroBirim(cfg.bossHeroId, 6, cfg.bossLevel, null, null, 0, true);
+  if (!boss) throw Error('Infinite Illusion boss has no playable model');
+  boss.camp = 1;
+  boss.hp = boss.maxHp = cfg.bossHp;
+  boss.atk = cfg.bossAttack;
+  boss.def = cfg.bossDefense;
+  const options = {playerState, scaleEnemy:false, forceWin:false, requireEnemyDefeated:true, battleDataVersion:4, maxHitDamage:0x7fffffff};
+  if (bot) {
+    const level = Math.max(1, Math.min(159, 100 + bot.levelOffset));
+    options.playerUnits = bot.heroes.map((id, i) => heroBirim(id, bot.positions[i], level, null, null, 0, true)).filter(Boolean);
+    for (const unit of options.playerUnits) {
+      unit.atk = Math.round(unit.atk * bot.power * cfg.botAttackMultiplier);
+      unit.hp = unit.maxHp = Math.round(unit.maxHp * bot.power * cfg.botHealthMultiplier);
+    }
+    if (!options.playerUnits.length) throw Error('Infinite Illusion bot has no playable formation');
+  }
+  const previousStats = SON_ISTATISTIK, previousDamage = SON_OYUNCU_HASARI;
+  try {
+    const report = kadroRapor(0, null, {ad:'Infinite Illusion — Muken Aizen', birimler:[boss]}, options);
+    if (!report) throw Error('Cannot simulate Infinite Illusion');
+    // HP lost is authoritative, including overkill, healing and shields.
+    return {...report, damage:Math.min(cfg.bossHp, Math.max(0, cfg.bossHp - boss.hp))};
+  } finally {
+    // Scheduled bot fights must not replace the player's Battle Stats panel.
+    if (bot) { SON_ISTATISTIK = previousStats; SON_OYUNCU_HASARI = previousDamage; }
+  }
 }
 
 // ============ SAVAS ODULLERI (EnemyArmy.awardId -> Award) ============
@@ -1188,6 +1222,7 @@ function fightAck(reqId, payload) {
 }
 
 module.exports = {
+  illusionBattle,
   worldMapLevel, worldMapScale, stageArmyDusmanlari, cityDefendBattle, heroBirim, initiative, vurus, isFight, fightAck, fightFrames, fightPetFrames, sonOyuncuHasari, voidFightFrames,
   isAutoBattle, autoBattleFrames, FIGHT_OPS, synthReport, stageDusmanlari, stageIdCoz,
   instanceStageWon, stageAssessment, stageNextLayer, stageCityType, raidersDailyStageId,

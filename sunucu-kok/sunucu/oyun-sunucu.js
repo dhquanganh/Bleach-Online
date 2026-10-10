@@ -258,6 +258,22 @@ let CONN_SEQ = 0;
 const CLIENTS = new Set();   // canli baglantilarin send() islevleri (disaridan push: yukleme)
 const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
+const illusion = require('./infinite-illusion');
+const illusionService = illusion.service();
+function illusionRefresh() {
+  try {
+    const d=durumMod.yukle();
+    const rewarded=illusionService.tick({durum:d,kaydet:durumMod.kaydet});
+    const payload=illusionService.packet(d);
+    for(const session of loggedInClients()) {
+      session.send(illusion.OP.INFO,payload,'ILLUSION-ranking');
+      if(rewarded){
+        for(const mail of rewarded)session.send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
+      }
+    }
+  }catch(e){console.log('[infinite-illusion]',e.message);}
+}
+setInterval(illusionRefresh,15000).unref();
 
 // === KONTROL HTTP (127.0.0.1:GATE_PORT+2, portatif 10027): launcher "VIP / Altin Yukle" ===
 // POST /topup {altin:N} -> veri.json altin/vipExp/vipLevel + durum.topup gunluk sayaci + canli client'a CharBaseInfoUpdate.
@@ -682,6 +698,27 @@ net.createServer(client => {
           if(result.error){const p=Buffer.alloc(4);p.writeUInt32BE(result.error);send(0x01183d02,p,'CROSS-error');}
           else{send(0x01183d02,result.ack,'CROSS-ack');send(kodek.OP.REPORT,result.report,'CROSS-report');send(kodek.OP.RESULT,result.result,'CROSS-result');const q=handlers.ekAl();for(const p of q.once.concat(q.sonra))send(p.id,p.payload,p.kaynak);}
         }catch(e){LOG.note(cid,'Cross Server: '+e.message);send(0x01183d02,Buffer.from([0,0,0,1]),'CROSS-error');}continue;
+      }
+      if((pk.id>>>0)===illusion.OP.INFO_REQ || (pk.id>>>0)===illusion.OP.FIGHT_REQ){
+        if(!session.authenticated)continue;
+        try {
+          const d=durumMod.yukle(),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet};
+          if((pk.id>>>0)===illusion.OP.INFO_REQ){
+            if(pk.payload.length){send(illusion.OP.INFO,new (require('./paket').Y)().utf('{"error":4}').done(),'ILLUSION-error');continue;}
+            const rewarded=illusionService.tick(ctx);
+            send(illusion.OP.INFO,illusionService.packet(d),'ILLUSION-info');
+            if(rewarded)for(const mail of rewarded)send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
+          }else{
+            const result=illusionService.fight(ctx),ack=Buffer.alloc(4);ack.writeUInt32BE(result.error||0);
+            send(illusion.OP.FIGHT,ack,'ILLUSION-ack');
+            if(result.rewarded)for(const mail of result.rewarded)send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
+            if(!result.error){
+              if(!result.sweep){send(kodek.OP.REPORT,result.report,'ILLUSION-report');send(kodek.OP.RESULT,kodek.encodeSingleResult(result.won,[]),'ILLUSION-result');}
+              for(const peer of loggedInClients())peer.send(illusion.OP.INFO,result.info,'ILLUSION-ranking');
+            }
+          }
+        }catch(e){LOG.note(cid,'Infinite Illusion: '+e.message);send(illusion.OP.FIGHT,Buffer.from([0,0,0,1]),'ILLUSION-error');}
+        continue;
       }
       if((pk.id>>>0)===0x01818201){
         try{const d=durumMod.yukle(),result=require('./conquest').kur(handlers).fight({durum:d,payload:pk.payload,kaydet:durumMod.kaydet});

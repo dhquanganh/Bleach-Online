@@ -1,0 +1,199 @@
+      protected var FIllusionWindow:Sprite;
+      protected var FIllusionIcon:Sprite;
+      protected var FIllusionRows:Sprite;
+      protected var FIllusionMine:Sprite;
+      protected var FIllusionCountdown:TextField;
+      protected var FIllusionStatus:TextField;
+      protected var FIllusionData:Object;
+      protected var FIllusionOffset:int = 0;
+      protected var FIllusionPending:Boolean = false;
+      protected var FIllusionSweep:Boolean = false;
+      protected var FIllusionRequestedAt:int = 0;
+      protected var FIllusionReceivedAt:int = 0;
+      protected var FIllusionResume:Boolean = false;
+
+      protected function IllusionText(parent:Sprite, text:String, x:Number, y:Number, width:Number, size:int = 14, color:uint = 0xFFFFFF, bold:Boolean = false) : TextField
+      {
+         var field:TextField = new TextField();
+         var format:TextFormat = new TextFormat("Tahoma",size,color,bold);
+         if(bold && width < 180)format.align="center";
+         field.defaultTextFormat = format;
+         field.text = text; field.x = x; field.y = y; field.width = width; field.height = size + 10;
+         field.selectable = false; field.mouseEnabled = false;
+         field.filters = [new DropShadowFilter(1,90,0,1,2,2,2)];
+         parent.addChild(field); return field;
+      }
+
+      protected function IllusionBox(parent:Sprite,x:Number,y:Number,w:Number,h:Number,fill:uint,alpha:Number = 1) : Sprite
+      {
+         var box:Sprite = new Sprite(); box.x=x; box.y=y;
+         box.graphics.lineStyle(1,0x080707); box.graphics.beginFill(fill,alpha);
+         box.graphics.drawRect(0,0,w,h); box.graphics.endFill();
+         if(h>50){box.graphics.lineStyle(1,0x65513C,0.9);box.graphics.drawRect(2,2,w-4,h-4);}
+         parent.addChild(box);
+         if(h>100)this.IllusionImage(box,"boss-native-panel.png",0,0,w,h);
+         if(fill==0x7E3519)this.IllusionImage(box,"boss-native-button.png",0,0,w,h);
+         if(fill==0x173A54 || fill==0x1A3D59)this.IllusionImage(box,"boss-native-button-small.png",0,0,w,h);
+         if(fill==0x8C271D)this.IllusionImage(box,"boss-native-close.png",2,2,w-4,h-4);
+         return box;
+      }
+
+      protected function IllusionImage(parent:Sprite,name:String,x:Number,y:Number,w:Number,h:Number) : void
+      {
+         var loader:Loader = new Loader(); loader.x=x;loader.y=y; loader.mouseEnabled=false;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void {loader.width=w;loader.height=h;});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void {});
+         parent.addChild(loader);loader.load(new URLRequest("/gorsel/"+name));
+      }
+
+      protected function IllusionButton(parent:Sprite,label:String,x:Number,y:Number,w:Number,h:Number,action:Function,fill:uint = 0x7E3519) : Sprite
+      {
+         var button:Sprite = this.IllusionBox(parent,x,y,w,h,fill);
+         this.IllusionText(button,label,4,(h-20)/2,w-8,13,0xFFF6CE,true);
+         button.buttonMode=true; button.mouseChildren=false;
+         button.addEventListener(MouseEvent.CLICK,action);
+         button.addEventListener(MouseEvent.ROLL_OVER,function(event:MouseEvent):void {button.alpha=0.85;});
+         button.addEventListener(MouseEvent.ROLL_OUT,function(event:MouseEvent):void {button.alpha=1;}); return button;
+      }
+
+      protected function IllusionConstruct() : void
+      {
+         this.FIllusionIcon=new Sprite();this.FMountPointIcons.addChild(this.FIllusionIcon);
+         this.FIllusionIcon.graphics.beginFill(0,0);this.FIllusionIcon.graphics.drawRect(0,0,64,70);this.FIllusionIcon.graphics.endFill();
+         this.IllusionImage(this.FIllusionIcon,"aizen-event.png",4,0,56,54);
+         this.IllusionText(this.FIllusionIcon,"Đánh Boss",0,54,64,11,0xFFE48B,true);
+         this.FIllusionIcon.buttonMode=true;this.FIllusionIcon.mouseChildren=false;
+         this.FIllusionIcon.addEventListener(MouseEvent.CLICK,this.IllusionOpen);
+         this.FIllusionIcon.visible=false;
+         this.FIllusionWindow = new Sprite();this.FIllusionWindow.x=85;this.FIllusionWindow.y=36;
+         this.FMountPointWindow.addChild(this.FIllusionWindow);
+         this.FIllusionWindow.graphics.beginFill(0x000000,0.65);
+         this.FIllusionWindow.graphics.drawRect(-85,-36,1250,650);this.FIllusionWindow.graphics.endFill();
+         this.IllusionBox(this.FIllusionWindow,0,0,1080,570,0x171311);
+         this.IllusionImage(this.FIllusionWindow,"infinite-illusion.png",5,40,1070,474);
+         var header:Sprite=this.IllusionBox(this.FIllusionWindow,5,5,1070,34,0x241515);
+         this.IllusionText(header,"ẢO CẢNH VÔ HẠN",16,3,460,18,0xFFE6A6,true);
+         this.IllusionText(header,"Muken Aizen · SSS",704,7,270,12,0xE3BE84);
+         this.IllusionButton(this.FIllusionWindow,"?",1009,10,24,24,this.IllusionHelp,0x1A3D59);
+         this.IllusionButton(this.FIllusionWindow,"",1044,10,24,24,this.IllusionClose,0x8C271D);
+         var intro:Sprite=this.IllusionBox(this.FIllusionWindow,24,63,454,54,0x211D18,0.94);
+         this.IllusionText(intro,"THỬ THÁCH AIZEN",12,7,420,16,0xF6CF79,true);
+         this.IllusionText(intro,"Xếp hạng theo sát thương cao nhất trong ngày",12,31,428,11,0xBDB3A2);
+         var board:Sprite=this.IllusionBox(this.FIllusionWindow,24,130,454,376,0x102235);
+         this.IllusionText(board,"BẢNG XẾP HẠNG",14,9,420,14,0xF1D3A1,true);
+         this.IllusionText(board,"Hạng",8,36,42,11,0xD8BF91,true);
+         this.IllusionText(board,"Người chơi",57,36,148,11,0xD8BF91);
+         this.IllusionText(board,"Sát thương",213,36,90,11,0xD8BF91);
+         this.IllusionText(board,"Thưởng",319,36,114,11,0xD8BF91,true);
+         this.FIllusionRows=new Sprite();this.FIllusionRows.x=9;this.FIllusionRows.y=60;board.addChild(this.FIllusionRows);
+         this.FIllusionMine=new Sprite();this.FIllusionMine.x=9;this.FIllusionMine.y=309;board.addChild(this.FIllusionMine);
+         this.FIllusionCountdown=this.IllusionText(board,"Đang đồng bộ thời gian máy chủ...",12,347,434,11,0xD8BA81);
+         board.addEventListener(MouseEvent.MOUSE_WHEEL,this.IllusionScroll);
+         this.IllusionButton(board,"▲",428,57,18,22,this.IllusionScrollUp,0x173A54);
+         this.IllusionButton(board,"▼",428,278,18,22,this.IllusionScrollDown,0x173A54);
+         var boss:Sprite=this.IllusionBox(this.FIllusionWindow,550,336,488,87,0x14120F,0.85);
+         this.IllusionText(boss,"MUKEN AIZEN",14,8,450,24,0xF5D174,true);
+         this.IllusionText(boss,"HP: 10.000.000.000",14,39,450,16,0xF4E9D5,true);
+         this.IllusionText(boss,"Boss hồi đầy HP mỗi lượt · Chốt thưởng lúc 00:00",14,66,450,11,0xC9BDAA);
+         var rewards:Sprite=this.IllusionBox(this.FIllusionWindow,518,445,286,62,0x211D18,0.96);
+         this.IllusionText(rewards,"THƯỞNG XẾP HẠNG HẰNG NGÀY",10,6,270,12,0xE4CA91,true);
+         this.IllusionImage(rewards,"boss-native-gold.png",12,31,22,23);
+         this.IllusionText(rewards,"Vàng",39,34,62,12,0xE6C16F);
+         this.IllusionImage(rewards,"nguyen-thach.png",105,28,30,30);
+         this.IllusionText(rewards,"Nguyên thạch",141,34,132,12,0xE6D5B6);
+         this.IllusionButton(this.FIllusionWindow,"Quét nhanh",824,465,99,34,this.IllusionSweepClick);
+         this.IllusionButton(this.FIllusionWindow,"Khiêu chiến",935,453,121,46,this.IllusionChallenge);
+         this.IllusionBox(this.FIllusionWindow,6,521,1068,42,0x171411);
+         this.FIllusionStatus=this.IllusionText(this.FIllusionWindow,"Đang đồng bộ bảng xếp hạng...",24,532,1030,12,0xCDBD9D);
+         this.FIllusionWindow.visible=false;
+      }
+
+
+      protected function IllusionOpen(event:MouseEvent = null) : void
+      {
+         this.FIllusionWindow.visible=true;this.FMountPointWindow.setChildIndex(this.FIllusionWindow,this.FMountPointWindow.numChildren-1);
+         this.FIllusionOffset=0;this.IllusionRequest(0);
+      }
+      protected function IllusionClose(event:MouseEvent) : void {this.FIllusionWindow.visible=false;}
+      protected function IllusionHelp(event:MouseEvent) : void
+      {
+         this.FIllusionStatus.text="Mỗi lượt hồi đầy HP. Lưu lượt cao nhất. Bot đánh mỗi 5 phút. Thưởng tự động lúc 00:00 UTC+7.";
+      }
+      protected function IllusionRequest(mode:int) : void
+      {
+         var packet:TPacket=SNetworkCore.PacketAcquire(mode==0?0x01817E00:0x01817E01);
+         if(mode!=0)packet.Data.writeByte(mode==2?1:0);
+         SNetworkCore.Transceiver.PacketTransmit(packet);
+      }
+      protected function IllusionChallenge(event:MouseEvent) : void {this.IllusionStart(false);}
+      protected function IllusionSweepClick(event:MouseEvent) : void {this.IllusionStart(true);}
+      protected function IllusionStart(sweep:Boolean) : void
+      {
+         if(this.FIllusionPending||TBattleHandle.IsInBattle)return;
+         if(this.FIllusionData!=null&&this.FIllusionData.nextFight>this.FIllusionData.now+(getTimer()-this.FIllusionReceivedAt)/1000)return;
+         this.FIllusionPending=true;this.FIllusionSweep=sweep;this.FIllusionRequestedAt=getTimer();
+         this.FIllusionStatus.text="Đang chiến đấu...";this.IllusionRequest(sweep?2:1);
+      }
+      protected function IllusionFightRet(packet:TPacket) : void
+      {
+         var pending:Boolean=this.FIllusionPending;this.FIllusionPending=false;
+         if(packet.Data.readUnsignedInt()!=0){this.FIllusionStatus.text="Chưa thể đánh boss. Hãy chờ lượt hồi và thử lại.";return;}
+         if(!pending)return;
+         if(!this.FIllusionSweep){
+            this.FIllusionWindow.visible=false;this.FIllusionResume=true;
+            this.ProcessorOnSetBattleStatus(this,CONST_BATTLE.BattleType_Replay,0);
+            TBattleHandle.IsInBattle=false;TBattleHandle.AutoCloseBattle(false);
+            this.ProcessorLobbyOnInitBattle(this);
+         }
+      }
+      protected function IllusionInfoRet(packet:TPacket) : void
+      {
+         try {var data:Object=JSON.parse(packet.Data.readUTF());if(data.error!=null)return;this.FIllusionData=data;this.FIllusionReceivedAt=getTimer();this.IllusionRender();}
+         catch(error:Error){this.FIllusionStatus.text="Không tải được bảng xếp hạng.";}
+      }
+      protected function IllusionDamage(value:Number) : String
+      {
+         if(value>=1000000000)return (value/1000000000).toFixed(2)+"B";
+         if(value>=1000000)return (value/1000000).toFixed(2)+"M";
+         if(value>=1000)return (value/1000).toFixed(2)+"K";return value.toFixed(0);
+      }
+      protected function IllusionRow(parent:Sprite,row:Object,y:Number,mine:Boolean = false) : void
+      {
+         var colors:Array=[0x4B3D24,0x383A3C,0x413029];
+         var fill:uint=mine?0x443027:(row.rank<=3?colors[row.rank-1]:(row.rank%2==0?0x292826:0x1C1C1B));
+         var item:Sprite=this.IllusionBox(parent,0,y,414,23,fill,0.97);
+         this.IllusionText(item,String(row.rank),0,2,40,13,row.rank<=3?0xEEC86B:0xB7AB97,true);
+         this.IllusionText(item,String(row.name),48,3,148,11,0xE6DFD3);
+         this.IllusionText(item,this.IllusionDamage(row.damage),204,3,90,11,0xEEE3C6);
+         this.IllusionText(item,String(row.reward.gold)+" V",306,3,54,10,0xE9C96E);
+         this.IllusionText(item,String(row.reward.stones)+" NT",363,3,51,10,0xA9CDE3);
+      }
+      protected function IllusionRender() : void
+      {
+         if(this.FIllusionRows==null||this.FIllusionData==null)return;
+         while(this.FIllusionRows.numChildren)this.FIllusionRows.removeChildAt(0);
+         while(this.FIllusionMine.numChildren)this.FIllusionMine.removeChildAt(0);
+         var rows:Array=this.FIllusionData.rows as Array;
+         this.FIllusionOffset=Math.max(0,Math.min(this.FIllusionOffset,Math.max(0,rows.length-10)));
+         for(var i:int=0;i<10&&i+this.FIllusionOffset<rows.length;i++)this.IllusionRow(this.FIllusionRows,rows[i+this.FIllusionOffset],i*24);
+         if(rows.length==0)this.IllusionText(this.FIllusionRows,"Chưa có xếp hạng. Khiêu chiến để ghi tên!",12,74,390,12,0xBDAF95);
+         if(this.FIllusionData.mine!=null)this.IllusionRow(this.FIllusionMine,this.FIllusionData.mine,0,true);
+         else this.IllusionText(this.FIllusionMine,"Bạn chưa có sát thương trong hôm nay",12,0,390,11,0xC6AD7D);
+         this.FIllusionStatus.text="Số lượt: "+this.FIllusionData.battles+"  ·  Lượt vừa đánh: "+this.IllusionDamage(this.FIllusionData.lastDamage);
+      }
+      protected function IllusionScroll(event:MouseEvent) : void {this.FIllusionOffset-=event.delta;this.IllusionRender();}
+      protected function IllusionScrollUp(event:MouseEvent) : void {this.FIllusionOffset--;this.IllusionRender();}
+      protected function IllusionScrollDown(event:MouseEvent) : void {this.FIllusionOffset++;this.IllusionRender();}
+      protected function IllusionUpdate() : void
+      {
+         if(this.FIllusionIcon==null)return;
+         var anchor:Point=this.FProcessorShortcuts.IllusionAnchor();
+         this.FIllusionIcon.visible=anchor!=null && !this.BattleQueryActive();
+         if(anchor!=null){anchor=this.FMountPointIcons.globalToLocal(anchor);this.FIllusionIcon.x=anchor.x;this.FIllusionIcon.y=anchor.y;}
+         if(this.FIllusionPending&&getTimer()-this.FIllusionRequestedAt>15000){this.FIllusionPending=false;this.FIllusionStatus.text="Yêu cầu quá hạn. Hãy thử lại.";}
+         if(this.FIllusionResume&&!TBattleHandle.IsInBattle&&!this.BattleQueryActive()){this.FIllusionResume=false;this.IllusionOpen();}
+         if(this.FIllusionData!=null){
+            var remaining:int=Math.max(0,this.FIllusionData.resetAt-this.FIllusionData.now-(getTimer()-this.FIllusionReceivedAt)/1000);
+            this.FIllusionCountdown.text="Trao thưởng sau: "+int(remaining/3600)+":"+("0"+int(remaining/60)%60).substr(-2)+":"+("0"+remaining%60).substr(-2)+"  (00:00 UTC+7)";
+         }
+      }

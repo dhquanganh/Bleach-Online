@@ -58,6 +58,7 @@ function hit(attacker,target,amount,rng=Math.random){
   let absorbed=0;
   if(target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
   const heal=proc(target,6,rng);
+  if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
   damage=Math.min(Math.max(0,target.hp-(heal?1:0)),damage);
   target.hp-=damage;
   let recovered=0;if(heal){recovered=target.maxHp-target.hp;target.hp=target.maxHp;}

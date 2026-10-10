@@ -1,232 +1,137 @@
-{"t":1791605544376,"ev":"open","conn":1,"peer":"127.0.0.1:65120"}
-{"t":1791605544936,"ev":"c2s","seq":1,"conn":1,"id":"0x1810000","name":"CS_LOBBY+0x0000","len":38,"hex":"00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 30 35 35 34 31","loop":1}
-{"t":1791605544977,"ev":"s2c","conn":1,"id":"0x1180000","name":"SC_LOBBY+0x0000","len":8,"kaynak":"CEVAP-gercek"}
-{"t":1791605545012,"ev":"close","conn":1,"reason":"kapandi","up":38,"down":8,"packets":1,"opened":1791605544376}
-{"t":1791605545538,"ev":"open","conn":2,"peer":"127.0.0.1:65121"}
-{"t":1791605545571,"ev":"c2s","seq":2,"conn":2,"id":"0x1810001","name":"CS_LOBBY+0x0001","len":38,"hex":"00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 30 35 35 34 31","loop":1}
-{"t":1791605545629,"ev":"s2c","conn":2,"id":"0x1180102","name":"SC_LOBBY+0x0102","len":1360,"kaynak":"replay[1/2]"}
-{"t":1791605547406,"ev":"c2s","seq":3,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":1}
-{"t":1791605547409,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
-{"t":1791605547652,"ev":"c2s","seq":4,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 11 e1 a3 26","loop":1}
-{"t":1791605547653,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
-{"t":1791605547654,"ev":"s2c","conn":2,"id":"0x1186700","name":"SC_LOBBY+0x6700","len":8,"kaynak":"PUSH-nemu"}
-{"t":1791605547659,"ev":"c2s","seq":5,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 00 00 00 03","loop":2}
-{"t":1791605547660,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
-{"t":1791605547876,"ev":"c2s","seq":6,"conn":2,"id":"0x1812300","name":"CS_LOBBY+0x2300","len":0,"hex":"","loop":1}
-{"t":1791605547900,"ev":"s2c","conn":2,"id":"0x1182300","name":"SC_LOBBY+0x2300","len":362,"kaynak":"HANDLER"}
-{"t":1791605547901,"ev":"s2c","conn":2,"id":"0x1186500","name":"SC_LOBBY+0x6500","len":1,"kaynak":"PUSH-login"}
-{"t":1791605547922,"ev":"c2s","seq":7,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0d","loop":1}
-{"t":1791605547926,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":16,"kaynak":"HANDLER"}
-{"t":1791605547933,"ev":"c2s","seq":8,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 64","loop":2}
-{"t":1791605547934,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
-{"t":1791605547947,"ev":"c2s","seq":9,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0c","loop":3}
-{"t":1791605547949,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":106,"kaynak":"HANDLER"}
-{"t":1791605547949,"ev":"c2s","seq":10,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 17","loop":4}
-{"t":1791605547951,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":124,"kaynak":"HANDLER"}
-{"t":1791605547951,"ev":"c2s","seq":11,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1a","loop":5}
-{"t":1791605547952,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
-{"t":1791605547952,"ev":"c2s","seq":12,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1b","loop":6}
-{"t":1791605547953,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":92,"kaynak":"HANDLER"}
-{"t":1791605547954,"ev":"c2s","seq":13,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1c","loop":7}
-{"t":1791605547954,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":48,"kaynak":"HANDLER"}
-{"t":1791605547955,"ev":"c2s","seq":14,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1d","loop":8}
-{"t":1791605547956,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":152,"kaynak":"HANDLER"}
-{"t":1791605547956,"ev":"c2s","seq":15,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 4f","loop":9}
-{"t":1791605547957,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":148,"kaynak":"HANDLER"}
-{"t":1791605547958,"ev":"c2s","seq":16,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 50","loop":10}
-{"t":1791605547958,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":162,"kaynak":"HANDLER"}
-{"t":1791605547959,"ev":"c2s","seq":17,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 55","loop":11}
-{"t":1791605547982,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":116,"kaynak":"HANDLER"}
-{"t":1791605547983,"ev":"c2s","seq":18,"conn":2,"id":"0x1810800","name":"CS_LOBBY+0x0800","len":0,"hex":"","loop":1}
-{"t":1791605547984,"ev":"s2c","conn":2,"id":"0x1180800","name":"SC_LOBBY+0x0800","len":9,"kaynak":"HANDLER"}
-{"t":1791605548090,"ev":"c2s","seq":19,"conn":2,"id":"0x1815203","name":"CS_LOBBY+0x5203","len":0,"hex":"","loop":1}
-{"t":1791605548091,"ev":"s2c","conn":2,"id":"0x1185203","name":"SC_LOBBY+0x5203","len":4,"kaynak":"CEVAP-gercek"}
-{"t":1791605548141,"ev":"c2s","seq":20,"conn":2,"id":"0x1817100","name":"CS_LOBBY+0x7100","len":0,"hex":"","loop":1}
-{"t":1791605548144,"ev":"s2c","conn":2,"id":"0x1187100","name":"SC_LOBBY+0x7100","len":20,"kaynak":"HANDLER"}
-{"t":1791605548425,"ev":"c2s","seq":21,"conn":2,"id":"0x1813d09","name":"CS_LOBBY+0x3d09","len":0,"hex":"","loop":1}
-{"t":1791605548426,"ev":"s2c","conn":2,"id":"0x1183d09","name":"SC_LOBBY+0x3d09","len":1,"kaynak":"HANDLER"}
-{"t":1791605548426,"ev":"c2s","seq":22,"conn":2,"id":"0x1813d0d","name":"CS_LOBBY+0x3d0d","len":0,"hex":"","loop":1}
-{"t":1791605548464,"ev":"s2c","conn":2,"id":"0x1183d0d","name":"SC_LOBBY+0x3d0d","len":20,"kaynak":"HANDLER"}
-{"t":1791605548465,"ev":"c2s","seq":23,"conn":2,"id":"0x1813d07","name":"CS_LOBBY+0x3d07","len":0,"hex":"","loop":1}
-{"t":1791605548468,"ev":"s2c","conn":2,"id":"0x1183d07","name":"SC_LOBBY+0x3d07","len":50,"kaynak":"HANDLER"}
-{"t":1791605548468,"ev":"c2s","seq":24,"conn":2,"id":"0x1810200","name":"CS_LOBBY+0x0200","len":8,"hex":"01 60 7a 61 00 00 00 00","loop":1}
-{"t":1791605548469,"ev":"s2c","conn":2,"id":"0x1180200","name":"SC_LOBBY+0x0200","len":8,"kaynak":"CEVAP-gercek"}
-{"t":1791605548645,"ev":"c2s","seq":25,"conn":2,"id":"0x1811200","name":"CS_LOBBY+0x1200","len":0,"hex":"","loop":1}
-{"t":1791605548647,"ev":"s2c","conn":2,"id":"0x1181202","name":"SC_LOBBY+0x1202","len":8,"kaynak":"GOREV-kabul"}
-{"t":1791605548648,"ev":"s2c","conn":2,"id":"0x1181203","name":"SC_LOBBY+0x1203","len":74,"kaynak":"GOREV-biten"}
-{"t":1791605548649,"ev":"s2c","conn":2,"id":"0x1181200","name":"SC_LOBBY+0x1200","len":0,"kaynak":"GOREV-sendinfo"}
-{"t":1791605548686,"ev":"c2s","seq":26,"conn":2,"id":"0x1811a01","name":"CS_LOBBY+0x1a01","len":0,"hex":"","loop":1}
-{"t":1791605548687,"ev":"s2c","conn":2,"id":"0x1181a01","name":"SC_LOBBY+0x1a01","len":6,"kaynak":"HANDLER"}
-{"t":1791605548727,"ev":"c2s","seq":27,"conn":2,"id":"0x1815200","name":"CS_LOBBY+0x5200","len":0,"hex":"","loop":1}
-{"t":1791605548728,"ev":"s2c","conn":2,"id":"0x1185200","name":"SC_LOBBY+0x5200","len":2,"kaynak":"CEVAP-gercek"}
-{"t":1791605548935,"ev":"c2s","seq":28,"conn":2,"id":"0x1816a00","name":"CS_LOBBY+0x6a00","len":0,"hex":"","loop":1}
-{"t":1791605548955,"ev":"s2c","conn":2,"id":"0x1186a00","name":"SC_LOBBY+0x6a00","len":2212,"kaynak":"HANDLER"}
-{"t":1791605549006,"ev":"c2s","seq":29,"conn":2,"id":"0x1812000","name":"CS_LOBBY+0x2000","len":0,"hex":"","loop":1}
-{"t":1791605549011,"ev":"s2c","conn":2,"id":"0x1182000","name":"SC_LOBBY+0x2000","len":41,"kaynak":"HANDLER"}
-{"t":1791605549041,"ev":"c2s","seq":30,"conn":2,"id":"0x1810105","name":"CS_LOBBY+0x0105","len":3,"hex":"00 01 06","loop":1}
-{"t":1791605549043,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":15,"kaynak":"HANDLER"}
-{"t":1791605549058,"ev":"c2s","seq":31,"conn":2,"id":"0x1810e07","name":"CS_LOBBY+0x0e07","len":0,"hex":"","loop":1}
-{"t":1791605549059,"ev":"s2c","conn":2,"id":"0x1180e07","name":"SC_LOBBY+0x0e07","len":8,"kaynak":"HANDLER"}
-{"t":1791605549061,"ev":"c2s","seq":32,"conn":2,"id":"0x1811906","name":"CS_LOBBY+0x1906","len":0,"hex":"","loop":1}
-{"t":1791605549062,"ev":"s2c","conn":2,"id":"0x1181908","name":"SC_LOBBY+0x1908","len":4,"kaynak":"CEVAP-gercek"}
-{"t":1791605549079,"ev":"c2s","seq":33,"conn":2,"id":"0x1812507","name":"CS_LOBBY+0x2507","len":0,"hex":"","loop":1}
-{"t":1791605549081,"ev":"s2c","conn":2,"id":"0x1182507","name":"SC_LOBBY+0x2507","len":4,"kaynak":"HANDLER"}
-{"t":1791605549099,"ev":"c2s","seq":34,"conn":2,"id":"0x1812517","name":"CS_LOBBY+0x2517","len":0,"hex":"","loop":1}
-{"t":1791605549100,"ev":"s2c","conn":2,"id":"0x1182517","name":"SC_LOBBY+0x2517","len":7,"kaynak":"HANDLER"}
-{"t":1791605549112,"ev":"c2s","seq":35,"conn":2,"id":"0x1811405","name":"CS_LOBBY+0x1405","len":0,"hex":"","loop":1}
-{"t":1791605549118,"ev":"s2c","conn":2,"id":"0x1181405","name":"SC_LOBBY+0x1405","len":28,"kaynak":"HANDLER"}
-{"t":1791605549119,"ev":"c2s","seq":36,"conn":2,"id":"0x1814101","name":"CS_LOBBY+0x4101","len":0,"hex":"","loop":1}
-{"t":1791605549152,"ev":"s2c","conn":2,"id":"0x1184101","name":"SC_LOBBY+0x4101","len":196,"kaynak":"HANDLER"}
-{"t":1791605549152,"ev":"c2s","seq":37,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 64","loop":1}
-{"t":1791605549154,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791605549155,"ev":"c2s","seq":38,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c5","loop":2}
-{"t":1791605549157,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791605549158,"ev":"c2s","seq":39,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c6","loop":3}
-{"t":1791605549158,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791605549402,"ev":"c2s","seq":40,"conn":2,"id":"0x1811b00","name":"CS_LOBBY+0x1b00","len":0,"hex":"","loop":1}
-{"t":1791605549407,"ev":"s2c","conn":2,"id":"0x1181b00","name":"SC_LOBBY+0x1b00","len":40,"kaynak":"HANDLER"}
-{"t":1791605549426,"ev":"c2s","seq":41,"conn":2,"id":"0x1811500","name":"CS_LOBBY+0x1500","len":0,"hex":"","loop":1}
-{"t":1791605549427,"ev":"s2c","conn":2,"id":"0x1181500","name":"SC_LOBBY+0x1500","len":35,"kaynak":"CEVAP-gercek"}
-{"t":1791605549504,"ev":"c2s","seq":42,"conn":2,"id":"0x1810f00","name":"CS_LOBBY+0x0f00","len":1,"hex":"00","loop":1}
-{"t":1791605549562,"ev":"s2c","conn":2,"id":"0x1180f00","name":"SC_LOBBY+0x0f00","len":1537,"kaynak":"HANDLER"}
-{"t":1791605549562,"ev":"s2c","conn":2,"id":"0x1180f7f","name":"SC_LOBBY+0x0f7f","len":56,"kaynak":"ITEM-state"}
-{"t":1791605549567,"ev":"c2s","seq":43,"conn":2,"id":"0x1811600","name":"CS_LOBBY+0x1600","len":0,"hex":"","loop":1}
-{"t":1791605549570,"ev":"s2c","conn":2,"id":"0x1181600","name":"SC_LOBBY+0x1600","len":181,"kaynak":"HANDLER"}
-{"t":1791605549597,"ev":"c2s","seq":44,"conn":2,"id":"0x1810b05","name":"CS_LOBBY+0x0b05","len":0,"hex":"","loop":1}
-{"t":1791605549603,"ev":"s2c","conn":2,"id":"0x1180b05","name":"SC_LOBBY+0x0b05","len":21,"kaynak":"HANDLER"}
-{"t":1791605549629,"ev":"c2s","seq":45,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":10,"hex":"00 02 00 04 93 e1 00 04 93 e3","loop":3}
-{"t":1791605549632,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":18,"kaynak":"HANDLER"}
-{"t":1791605549674,"ev":"c2s","seq":46,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":2,"hex":"00 00","loop":4}
-{"t":1791605549678,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":2,"kaynak":"HANDLER"}
-{"t":1791605549913,"ev":"c2s","seq":47,"conn":2,"id":"0x1813904","name":"CS_LOBBY+0x3904","len":4,"hex":"00 00 00 00","loop":1}
-{"t":1791605549915,"ev":"s2c","conn":2,"id":"0x1183904","name":"SC_LOBBY+0x3904","len":98,"kaynak":"HANDLER"}
-{"t":1791605549931,"ev":"c2s","seq":48,"conn":2,"id":"0x1813500","name":"CS_LOBBY+0x3500","len":4,"hex":"00 00 00 00","loop":1}
-{"t":1791605549932,"ev":"s2c","conn":2,"id":"0x1183500","name":"SC_LOBBY+0x3500","len":142,"kaynak":"HANDLER"}
-{"t":1791605550060,"ev":"c2s","seq":49,"conn":2,"id":"0x1816d00","name":"CS_LOBBY+0x6d00","len":0,"hex":"","loop":1}
-{"t":1791605550068,"ev":"s2c","conn":2,"id":"0x1186d00","name":"SC_LOBBY+0x6d00","len":6,"kaynak":"HANDLER"}
-{"t":1791605550108,"ev":"c2s","seq":50,"conn":2,"id":"0x1817500","name":"CS_LOBBY+0x7500","len":0,"hex":"","loop":1}
-{"t":1791605550109,"ev":"s2c","conn":2,"id":"0x1187500","name":"SC_LOBBY+0x7500","len":8,"kaynak":"HANDLER"}
-{"t":1791605550400,"ev":"c2s","seq":51,"conn":2,"id":"0x1818700","name":"CS_LOBBY+0x8700","len":0,"hex":"","loop":1}
-{"t":1791605550433,"ev":"s2c","conn":2,"id":"0x1188700","name":"SC_LOBBY+0x8700","len":1662,"kaynak":"HANDLER"}
-{"t":1791605550433,"ev":"c2s","seq":52,"conn":2,"id":"0x1818a08","name":"CS_LOBBY+0x8a08","len":0,"hex":"","loop":1}
-{"t":1791605550434,"ev":"s2c","conn":2,"id":"0x1188a08","name":"SC_LOBBY+0x8a08","len":14,"kaynak":"CEVAP-gercek"}
-{"t":1791605557162,"ev":"c2s","seq":53,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"07 31 04 0b","loop":1}
-{"t":1791605557166,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791605557184,"ev":"c2s","seq":54,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"02 59 01 e9","loop":2}
-{"t":1791605557184,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791605557814,"ev":"c2s","seq":55,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"07 36 03 9f","loop":3}
-{"t":1791605557815,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791605558259,"ev":"c2s","seq":56,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"07 a8 03 df","loop":4}
-{"t":1791605558261,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791605559483,"ev":"c2s","seq":57,"conn":2,"id":"0x1810205","name":"CS_LOBBY+0x0205","len":0,"hex":"","loop":1}
-{"t":1791605559488,"ev":"s2c","conn":2,"id":"0x1180205","name":"SC_LOBBY+0x0205","len":7,"kaynak":"HANDLER"}
-{"t":1791605561362,"ev":"c2s","seq":58,"conn":2,"id":"0x1810c00","name":"CS_LOBBY+0x0c00","len":5,"hex":"00 01 cb bf 51","loop":1}
-{"t":1791605561369,"ev":"s2c","conn":2,"id":"0x1180c00","name":"SC_LOBBY+0x0c00","len":34,"kaynak":"HANDLER"}
-{"t":1791605561370,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791605561375,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791605566017,"ev":"c2s","seq":59,"conn":2,"id":"0x1810c01","name":"CS_LOBBY+0x0c01","len":1,"hex":"00","loop":1}
-{"t":1791605566028,"ev":"s2c","conn":2,"id":"0x1180c01","name":"SC_LOBBY+0x0c01","len":13,"kaynak":"HANDLER"}
-{"t":1791605566028,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791605566035,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791605573673,"ev":"c2s","seq":60,"conn":2,"id":"0x1810c01","name":"CS_LOBBY+0x0c01","len":1,"hex":"00","loop":2}
-{"t":1791605573683,"ev":"s2c","conn":2,"id":"0x1180c01","name":"SC_LOBBY+0x0c01","len":13,"kaynak":"HANDLER"}
-{"t":1791605573684,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791605573689,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791605575594,"ev":"c2s","seq":61,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":1}
-{"t":1791605605604,"ev":"c2s","seq":62,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":2}
-{"t":1791605635635,"ev":"c2s","seq":63,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":3}
-{"t":1791605665672,"ev":"c2s","seq":64,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":4}
-{"t":1791605695693,"ev":"c2s","seq":65,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":5}
-{"t":1791605725704,"ev":"c2s","seq":66,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":6}
-{"t":1791605755703,"ev":"c2s","seq":67,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":7}
-{"t":1791605785705,"ev":"c2s","seq":68,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":8}
-{"t":1791605815730,"ev":"c2s","seq":69,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":9}
-{"t":1791605845759,"ev":"c2s","seq":70,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":10}
-{"t":1791605847407,"ev":"c2s","seq":71,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":2}
-{"t":1791605847411,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
-{"t":1791605875763,"ev":"c2s","seq":72,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":11}
-{"t":1791605905765,"ev":"c2s","seq":73,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":12}
-{"t":1791605935772,"ev":"c2s","seq":74,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":13}
-{"t":1791605965800,"ev":"c2s","seq":75,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":14}
-{"t":1791605995803,"ev":"c2s","seq":76,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":15}
-{"t":1791606025825,"ev":"c2s","seq":77,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":16}
-{"t":1791606055829,"ev":"c2s","seq":78,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":17}
-{"t":1791606069173,"ev":"c2s","seq":79,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"06 18 04 cf","loop":5}
-{"t":1791606069203,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606071319,"ev":"c2s","seq":80,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"02 4b 01 e8","loop":6}
-{"t":1791606071319,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606073498,"ev":"c2s","seq":81,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"03 20 02 c3","loop":7}
-{"t":1791606073500,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606085837,"ev":"c2s","seq":82,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":18}
-{"t":1791606115859,"ev":"c2s","seq":83,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":19}
-{"t":1791606145902,"ev":"c2s","seq":84,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":20}
-{"t":1791606147428,"ev":"c2s","seq":85,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":3}
-{"t":1791606147431,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
-{"t":1791606175926,"ev":"c2s","seq":86,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":21}
-{"t":1791606205972,"ev":"c2s","seq":87,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":22}
-{"t":1791606235994,"ev":"c2s","seq":88,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":23}
-{"t":1791606266001,"ev":"c2s","seq":89,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":24}
-{"t":1791606296023,"ev":"c2s","seq":90,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":25}
-{"t":1791606299905,"ev":"c2s","seq":91,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"06 50 03 8e","loop":8}
-{"t":1791606299906,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606300631,"ev":"c2s","seq":92,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"07 5f 04 10","loop":9}
-{"t":1791606300632,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606302337,"ev":"c2s","seq":93,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 64","loop":4}
-{"t":1791606302343,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606302606,"ev":"c2s","seq":94,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c5","loop":5}
-{"t":1791606302608,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606302678,"ev":"c2s","seq":95,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c6","loop":6}
-{"t":1791606302679,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606310706,"ev":"c2s","seq":96,"conn":2,"id":"0x1814101","name":"CS_LOBBY+0x4101","len":0,"hex":"","loop":2}
-{"t":1791606310713,"ev":"s2c","conn":2,"id":"0x1184101","name":"SC_LOBBY+0x4101","len":196,"kaynak":"HANDLER"}
-{"t":1791606312011,"ev":"c2s","seq":97,"conn":2,"id":"0x1814104","name":"CS_LOBBY+0x4104","len":5,"hex":"01 00 1e 85 51","loop":1}
-{"t":1791606312014,"ev":"s2c","conn":2,"id":"0x1184104","name":"SC_LOBBY+0x4104","len":9,"kaynak":"HANDLER"}
-{"t":1791606312032,"ev":"c2s","seq":98,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 64","loop":7}
-{"t":1791606312033,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606312078,"ev":"c2s","seq":99,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c5","loop":8}
-{"t":1791606312080,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606312081,"ev":"c2s","seq":100,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c6","loop":9}
-{"t":1791606312082,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606312619,"ev":"c2s","seq":101,"conn":2,"id":"0x1814104","name":"CS_LOBBY+0x4104","len":5,"hex":"00 00 1e 85 51","loop":2}
-{"t":1791606312649,"ev":"s2c","conn":2,"id":"0x1184104","name":"SC_LOBBY+0x4104","len":9,"kaynak":"HANDLER"}
-{"t":1791606312679,"ev":"c2s","seq":102,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 64","loop":10}
-{"t":1791606312682,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606312707,"ev":"c2s","seq":103,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c5","loop":11}
-{"t":1791606312710,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606312727,"ev":"c2s","seq":104,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c6","loop":12}
-{"t":1791606312728,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
-{"t":1791606326070,"ev":"c2s","seq":105,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":26}
-{"t":1791606337896,"ev":"c2s","seq":106,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"07 a0 03 e4","loop":10}
-{"t":1791606337923,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
-{"t":1791606346728,"ev":"c2s","seq":107,"conn":2,"id":"0x1810c00","name":"CS_LOBBY+0x0c00","len":5,"hex":"01 01 cb bf 51","loop":2}
-{"t":1791606346814,"ev":"s2c","conn":2,"id":"0x1180c00","name":"SC_LOBBY+0x0c00","len":34,"kaynak":"HANDLER"}
-{"t":1791606346815,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791606346817,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791606356089,"ev":"c2s","seq":108,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":27}
-{"t":1791606361952,"ev":"c2s","seq":109,"conn":2,"id":"0x1810c01","name":"CS_LOBBY+0x0c01","len":1,"hex":"00","loop":3}
-{"t":1791606361962,"ev":"s2c","conn":2,"id":"0x1180c01","name":"SC_LOBBY+0x0c01","len":13,"kaynak":"HANDLER"}
-{"t":1791606361963,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791606361968,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791606366605,"ev":"c2s","seq":110,"conn":2,"id":"0x1810c01","name":"CS_LOBBY+0x0c01","len":1,"hex":"00","loop":4}
-{"t":1791606366608,"ev":"s2c","conn":2,"id":"0x1180c01","name":"SC_LOBBY+0x0c01","len":13,"kaynak":"HANDLER"}
-{"t":1791606366608,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791606366611,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791606370452,"ev":"c2s","seq":111,"conn":2,"id":"0x1810c01","name":"CS_LOBBY+0x0c01","len":1,"hex":"00","loop":5}
-{"t":1791606370466,"ev":"s2c","conn":2,"id":"0x1180c01","name":"SC_LOBBY+0x0c01","len":13,"kaynak":"HANDLER"}
-{"t":1791606370467,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":41,"kaynak":"TAVERN-money"}
-{"t":1791606370475,"ev":"s2c","conn":2,"id":"0x1186a02","name":"SC_LOBBY+0x6a02","len":8,"kaynak":"BLEACHTRAIN-guncelle"}
-{"t":1791606386098,"ev":"c2s","seq":112,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":28}
-{"t":1791606416136,"ev":"c2s","seq":113,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":29}
-{"t":1791606446164,"ev":"c2s","seq":114,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":30}
-{"t":1791606447437,"ev":"c2s","seq":115,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":4}
-{"t":1791606447439,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
-{"t":1791606476193,"ev":"c2s","seq":116,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":31}
-{"t":1791606506199,"ev":"c2s","seq":117,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":32}
-{"t":1791606536227,"ev":"c2s","seq":118,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":33}
-{"t":1791606566230,"ev":"c2s","seq":119,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":34}
-{"t":1791606596239,"ev":"c2s","seq":120,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":35}
-{"t":1791606626267,"ev":"c2s","seq":121,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":36}
-{"t":1791606656290,"ev":"c2s","seq":122,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":37}
-{"t":1791606686292,"ev":"c2s","seq":123,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":38}
-{"t":1791606716304,"ev":"c2s","seq":124,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":39}
-{"t":1791606730170,"ev":"close","conn":2,"reason":"kapandi","up":239,"down":16431,"packets":123,"opened":1791605545537}
+{"t":1791630756819,"ev":"open","conn":1,"peer":"127.0.0.1:52274"}
+{"t":1791630757382,"ev":"c2s","seq":1,"conn":1,"id":"0x1810000","name":"CS_LOBBY+0x0000","len":38,"hex":"00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 33 30 37 35 33","loop":1}
+{"t":1791630757406,"ev":"s2c","conn":1,"id":"0x1180000","name":"SC_LOBBY+0x0000","len":8,"kaynak":"CEVAP-gercek"}
+{"t":1791630757424,"ev":"close","conn":1,"reason":"kapandi","up":38,"down":8,"packets":1,"opened":1791630756819}
+{"t":1791630757963,"ev":"open","conn":2,"peer":"127.0.0.1:52276"}
+{"t":1791630757994,"ev":"c2s","seq":2,"conn":2,"id":"0x1810001","name":"CS_LOBBY+0x0001","len":38,"hex":"00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 31 36 33 30 37 35 33","loop":1}
+{"t":1791630758084,"ev":"s2c","conn":2,"id":"0x1180102","name":"SC_LOBBY+0x0102","len":1360,"kaynak":"replay[1/2]"}
+{"t":1791630759794,"ev":"c2s","seq":3,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":1}
+{"t":1791630759797,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
+{"t":1791630760008,"ev":"c2s","seq":4,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 11 e1 a3 26","loop":1}
+{"t":1791630760011,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
+{"t":1791630760012,"ev":"s2c","conn":2,"id":"0x1186700","name":"SC_LOBBY+0x6700","len":8,"kaynak":"PUSH-nemu"}
+{"t":1791630760013,"ev":"c2s","seq":5,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 00 00 00 03","loop":2}
+{"t":1791630760014,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
+{"t":1791630760221,"ev":"c2s","seq":6,"conn":2,"id":"0x1812300","name":"CS_LOBBY+0x2300","len":0,"hex":"","loop":1}
+{"t":1791630760251,"ev":"s2c","conn":2,"id":"0x1182300","name":"SC_LOBBY+0x2300","len":362,"kaynak":"HANDLER"}
+{"t":1791630760252,"ev":"s2c","conn":2,"id":"0x1186500","name":"SC_LOBBY+0x6500","len":1,"kaynak":"PUSH-login"}
+{"t":1791630760397,"ev":"c2s","seq":7,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0d","loop":1}
+{"t":1791630760433,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":16,"kaynak":"HANDLER"}
+{"t":1791630760435,"ev":"c2s","seq":8,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 64","loop":2}
+{"t":1791630760439,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
+{"t":1791630760440,"ev":"c2s","seq":9,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0c","loop":3}
+{"t":1791630760443,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":106,"kaynak":"HANDLER"}
+{"t":1791630760444,"ev":"c2s","seq":10,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 17","loop":4}
+{"t":1791630760447,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":124,"kaynak":"HANDLER"}
+{"t":1791630760448,"ev":"c2s","seq":11,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1a","loop":5}
+{"t":1791630760450,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
+{"t":1791630760452,"ev":"c2s","seq":12,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1b","loop":6}
+{"t":1791630760454,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":92,"kaynak":"HANDLER"}
+{"t":1791630760478,"ev":"c2s","seq":13,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1c","loop":7}
+{"t":1791630760479,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":48,"kaynak":"HANDLER"}
+{"t":1791630760491,"ev":"c2s","seq":14,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1d","loop":8}
+{"t":1791630760493,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":152,"kaynak":"HANDLER"}
+{"t":1791630760494,"ev":"c2s","seq":15,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 4f","loop":9}
+{"t":1791630760496,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":148,"kaynak":"HANDLER"}
+{"t":1791630760497,"ev":"c2s","seq":16,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 50","loop":10}
+{"t":1791630760499,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":162,"kaynak":"HANDLER"}
+{"t":1791630760499,"ev":"c2s","seq":17,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 55","loop":11}
+{"t":1791630760526,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":116,"kaynak":"HANDLER"}
+{"t":1791630760537,"ev":"c2s","seq":18,"conn":2,"id":"0x1810800","name":"CS_LOBBY+0x0800","len":0,"hex":"","loop":1}
+{"t":1791630760539,"ev":"s2c","conn":2,"id":"0x1180800","name":"SC_LOBBY+0x0800","len":9,"kaynak":"HANDLER"}
+{"t":1791630760702,"ev":"s2c","conn":2,"id":"0x1187e00","name":"SC_LOBBY+0x7e00","len":22990,"kaynak":"ILLUSION-ranking"}
+{"t":1791630760728,"ev":"c2s","seq":19,"conn":2,"id":"0x1815203","name":"CS_LOBBY+0x5203","len":0,"hex":"","loop":1}
+{"t":1791630760730,"ev":"s2c","conn":2,"id":"0x1185203","name":"SC_LOBBY+0x5203","len":4,"kaynak":"CEVAP-gercek"}
+{"t":1791630760749,"ev":"c2s","seq":20,"conn":2,"id":"0x1817100","name":"CS_LOBBY+0x7100","len":0,"hex":"","loop":1}
+{"t":1791630760755,"ev":"s2c","conn":2,"id":"0x1187100","name":"SC_LOBBY+0x7100","len":20,"kaynak":"HANDLER"}
+{"t":1791630761049,"ev":"c2s","seq":21,"conn":2,"id":"0x1813d09","name":"CS_LOBBY+0x3d09","len":0,"hex":"","loop":1}
+{"t":1791630761051,"ev":"s2c","conn":2,"id":"0x1183d09","name":"SC_LOBBY+0x3d09","len":1,"kaynak":"HANDLER"}
+{"t":1791630761053,"ev":"c2s","seq":22,"conn":2,"id":"0x1813d0d","name":"CS_LOBBY+0x3d0d","len":0,"hex":"","loop":1}
+{"t":1791630761054,"ev":"s2c","conn":2,"id":"0x1183d0d","name":"SC_LOBBY+0x3d0d","len":20,"kaynak":"HANDLER"}
+{"t":1791630761055,"ev":"c2s","seq":23,"conn":2,"id":"0x1813d07","name":"CS_LOBBY+0x3d07","len":0,"hex":"","loop":1}
+{"t":1791630761057,"ev":"s2c","conn":2,"id":"0x1183d07","name":"SC_LOBBY+0x3d07","len":50,"kaynak":"HANDLER"}
+{"t":1791630761081,"ev":"c2s","seq":24,"conn":2,"id":"0x1810200","name":"CS_LOBBY+0x0200","len":8,"hex":"01 60 7a 61 00 00 00 00","loop":1}
+{"t":1791630761087,"ev":"s2c","conn":2,"id":"0x1180200","name":"SC_LOBBY+0x0200","len":8,"kaynak":"CEVAP-gercek"}
+{"t":1791630761520,"ev":"c2s","seq":25,"conn":2,"id":"0x1811200","name":"CS_LOBBY+0x1200","len":0,"hex":"","loop":1}
+{"t":1791630761523,"ev":"s2c","conn":2,"id":"0x1181202","name":"SC_LOBBY+0x1202","len":26,"kaynak":"GOREV-kabul"}
+{"t":1791630761524,"ev":"s2c","conn":2,"id":"0x1181203","name":"SC_LOBBY+0x1203","len":174,"kaynak":"GOREV-biten"}
+{"t":1791630761524,"ev":"s2c","conn":2,"id":"0x1181200","name":"SC_LOBBY+0x1200","len":0,"kaynak":"GOREV-sendinfo"}
+{"t":1791630761578,"ev":"c2s","seq":26,"conn":2,"id":"0x1811a01","name":"CS_LOBBY+0x1a01","len":0,"hex":"","loop":1}
+{"t":1791630761579,"ev":"s2c","conn":2,"id":"0x1181a01","name":"SC_LOBBY+0x1a01","len":6,"kaynak":"HANDLER"}
+{"t":1791630761641,"ev":"c2s","seq":27,"conn":2,"id":"0x1815200","name":"CS_LOBBY+0x5200","len":0,"hex":"","loop":1}
+{"t":1791630761643,"ev":"s2c","conn":2,"id":"0x1185200","name":"SC_LOBBY+0x5200","len":2,"kaynak":"CEVAP-gercek"}
+{"t":1791630761662,"ev":"c2s","seq":28,"conn":2,"id":"0x1816a00","name":"CS_LOBBY+0x6a00","len":0,"hex":"","loop":1}
+{"t":1791630761679,"ev":"s2c","conn":2,"id":"0x1186a00","name":"SC_LOBBY+0x6a00","len":2212,"kaynak":"HANDLER"}
+{"t":1791630761680,"ev":"c2s","seq":29,"conn":2,"id":"0x1812000","name":"CS_LOBBY+0x2000","len":0,"hex":"","loop":1}
+{"t":1791630761686,"ev":"s2c","conn":2,"id":"0x1182000","name":"SC_LOBBY+0x2000","len":41,"kaynak":"HANDLER"}
+{"t":1791630761711,"ev":"c2s","seq":30,"conn":2,"id":"0x1810105","name":"CS_LOBBY+0x0105","len":3,"hex":"00 01 06","loop":1}
+{"t":1791630761713,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":15,"kaynak":"HANDLER"}
+{"t":1791630761729,"ev":"c2s","seq":31,"conn":2,"id":"0x1810e07","name":"CS_LOBBY+0x0e07","len":0,"hex":"","loop":1}
+{"t":1791630761731,"ev":"s2c","conn":2,"id":"0x1180e07","name":"SC_LOBBY+0x0e07","len":8,"kaynak":"HANDLER"}
+{"t":1791630761732,"ev":"c2s","seq":32,"conn":2,"id":"0x1811906","name":"CS_LOBBY+0x1906","len":0,"hex":"","loop":1}
+{"t":1791630761733,"ev":"s2c","conn":2,"id":"0x1181908","name":"SC_LOBBY+0x1908","len":4,"kaynak":"CEVAP-gercek"}
+{"t":1791630761748,"ev":"c2s","seq":33,"conn":2,"id":"0x1812507","name":"CS_LOBBY+0x2507","len":0,"hex":"","loop":1}
+{"t":1791630761751,"ev":"s2c","conn":2,"id":"0x1182507","name":"SC_LOBBY+0x2507","len":4,"kaynak":"HANDLER"}
+{"t":1791630761757,"ev":"c2s","seq":34,"conn":2,"id":"0x1812517","name":"CS_LOBBY+0x2517","len":0,"hex":"","loop":1}
+{"t":1791630761759,"ev":"s2c","conn":2,"id":"0x1182517","name":"SC_LOBBY+0x2517","len":7,"kaynak":"HANDLER"}
+{"t":1791630762023,"ev":"c2s","seq":35,"conn":2,"id":"0x1811405","name":"CS_LOBBY+0x1405","len":0,"hex":"","loop":1}
+{"t":1791630762030,"ev":"s2c","conn":2,"id":"0x1181405","name":"SC_LOBBY+0x1405","len":28,"kaynak":"HANDLER"}
+{"t":1791630762035,"ev":"c2s","seq":36,"conn":2,"id":"0x1814101","name":"CS_LOBBY+0x4101","len":0,"hex":"","loop":1}
+{"t":1791630762064,"ev":"s2c","conn":2,"id":"0x1184101","name":"SC_LOBBY+0x4101","len":196,"kaynak":"HANDLER"}
+{"t":1791630762065,"ev":"c2s","seq":37,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 64","loop":1}
+{"t":1791630762067,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1791630762071,"ev":"c2s","seq":38,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c5","loop":2}
+{"t":1791630762072,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1791630762073,"ev":"c2s","seq":39,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f c6","loop":3}
+{"t":1791630762075,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1791630762092,"ev":"c2s","seq":40,"conn":2,"id":"0x1811b00","name":"CS_LOBBY+0x1b00","len":0,"hex":"","loop":1}
+{"t":1791630762099,"ev":"s2c","conn":2,"id":"0x1181b00","name":"SC_LOBBY+0x1b00","len":40,"kaynak":"HANDLER"}
+{"t":1791630762114,"ev":"c2s","seq":41,"conn":2,"id":"0x1811500","name":"CS_LOBBY+0x1500","len":0,"hex":"","loop":1}
+{"t":1791630762115,"ev":"s2c","conn":2,"id":"0x1181500","name":"SC_LOBBY+0x1500","len":35,"kaynak":"CEVAP-gercek"}
+{"t":1791630762187,"ev":"c2s","seq":42,"conn":2,"id":"0x1810f00","name":"CS_LOBBY+0x0f00","len":1,"hex":"00","loop":1}
+{"t":1791630762224,"ev":"s2c","conn":2,"id":"0x1180f00","name":"SC_LOBBY+0x0f00","len":1837,"kaynak":"HANDLER"}
+{"t":1791630762224,"ev":"s2c","conn":2,"id":"0x1180f7f","name":"SC_LOBBY+0x0f7f","len":56,"kaynak":"ITEM-state"}
+{"t":1791630762506,"ev":"c2s","seq":43,"conn":2,"id":"0x1811600","name":"CS_LOBBY+0x1600","len":0,"hex":"","loop":1}
+{"t":1791630762540,"ev":"s2c","conn":2,"id":"0x1181600","name":"SC_LOBBY+0x1600","len":181,"kaynak":"HANDLER"}
+{"t":1791630762544,"ev":"c2s","seq":44,"conn":2,"id":"0x1810b05","name":"CS_LOBBY+0x0b05","len":0,"hex":"","loop":1}
+{"t":1791630762552,"ev":"s2c","conn":2,"id":"0x1180b05","name":"SC_LOBBY+0x0b05","len":21,"kaynak":"HANDLER"}
+{"t":1791630762581,"ev":"c2s","seq":45,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":10,"hex":"00 02 00 04 93 e1 00 04 93 e3","loop":3}
+{"t":1791630762583,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":18,"kaynak":"HANDLER"}
+{"t":1791630762629,"ev":"c2s","seq":46,"conn":2,"id":"0x1813904","name":"CS_LOBBY+0x3904","len":4,"hex":"00 00 00 00","loop":1}
+{"t":1791630762632,"ev":"s2c","conn":2,"id":"0x1183904","name":"SC_LOBBY+0x3904","len":98,"kaynak":"HANDLER"}
+{"t":1791630762646,"ev":"c2s","seq":47,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":2,"hex":"00 00","loop":4}
+{"t":1791630762648,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":2,"kaynak":"HANDLER"}
+{"t":1791630762654,"ev":"c2s","seq":48,"conn":2,"id":"0x1813500","name":"CS_LOBBY+0x3500","len":4,"hex":"00 00 00 00","loop":1}
+{"t":1791630762657,"ev":"s2c","conn":2,"id":"0x1183500","name":"SC_LOBBY+0x3500","len":142,"kaynak":"HANDLER"}
+{"t":1791630763083,"ev":"c2s","seq":49,"conn":2,"id":"0x1816d00","name":"CS_LOBBY+0x6d00","len":0,"hex":"","loop":1}
+{"t":1791630763088,"ev":"s2c","conn":2,"id":"0x1186d00","name":"SC_LOBBY+0x6d00","len":6,"kaynak":"HANDLER"}
+{"t":1791630763111,"ev":"c2s","seq":50,"conn":2,"id":"0x1817500","name":"CS_LOBBY+0x7500","len":0,"hex":"","loop":1}
+{"t":1791630763114,"ev":"s2c","conn":2,"id":"0x1187500","name":"SC_LOBBY+0x7500","len":8,"kaynak":"HANDLER"}
+{"t":1791630763184,"ev":"c2s","seq":51,"conn":2,"id":"0x1818700","name":"CS_LOBBY+0x8700","len":0,"hex":"","loop":1}
+{"t":1791630763216,"ev":"s2c","conn":2,"id":"0x1188700","name":"SC_LOBBY+0x8700","len":1662,"kaynak":"HANDLER"}
+{"t":1791630763217,"ev":"c2s","seq":52,"conn":2,"id":"0x1818a08","name":"CS_LOBBY+0x8a08","len":0,"hex":"","loop":1}
+{"t":1791630763220,"ev":"s2c","conn":2,"id":"0x1188a08","name":"SC_LOBBY+0x8a08","len":14,"kaynak":"CEVAP-gercek"}
+{"t":1791630764053,"ev":"c2s","seq":53,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"03 73 03 5a","loop":1}
+{"t":1791630764054,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630764925,"ev":"c2s","seq":54,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"03 b5 03 3e","loop":2}
+{"t":1791630764930,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630766848,"ev":"c2s","seq":55,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"05 0c 03 84","loop":3}
+{"t":1791630766854,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630767485,"ev":"c2s","seq":56,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"05 45 03 bb","loop":4}
+{"t":1791630767488,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630769574,"ev":"c2s","seq":57,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"06 28 04 0f","loop":5}
+{"t":1791630769616,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630770229,"ev":"c2s","seq":58,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"00 fb 04 81","loop":6}
+{"t":1791630770231,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630770687,"ev":"c2s","seq":59,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"05 94 04 60","loop":7}
+{"t":1791630770688,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630771046,"ev":"c2s","seq":60,"conn":2,"id":"0x1810300","name":"CS_LOBBY+0x0300","len":4,"hex":"05 dc 04 8e","loop":8}
+{"t":1791630771047,"ev":"s2c","conn":2,"id":"0x1180300","name":"SC_LOBBY+0x0300","len":323,"kaynak":"CEVAP-gercek"}
+{"t":1791630772188,"ev":"c2s","seq":61,"conn":2,"id":"0x1817e00","name":"CS_LOBBY+0x7e00","len":0,"hex":"","loop":1}
+{"t":1791630772191,"ev":"s2c","conn":2,"id":"0x1187e00","name":"SC_LOBBY+0x7e00","len":22990,"kaynak":"ILLUSION-info"}
+{"t":1791630775412,"ev":"c2s","seq":62,"conn":2,"id":"0x1817e00","name":"CS_LOBBY+0x7e00","len":0,"hex":"","loop":2}
+{"t":1791630775456,"ev":"s2c","conn":2,"id":"0x1187e00","name":"SC_LOBBY+0x7e00","len":22990,"kaynak":"ILLUSION-info"}
+{"t":1791630775612,"ev":"s2c","conn":2,"id":"0x1187e00","name":"SC_LOBBY+0x7e00","len":22990,"kaynak":"ILLUSION-ranking"}
+{"t":1791630787988,"ev":"c2s","seq":63,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":1}
+{"t":1791630790622,"ev":"s2c","conn":2,"id":"0x1187e00","name":"SC_LOBBY+0x7e00","len":22990,"kaynak":"ILLUSION-ranking"}
+{"t":1791630800880,"ev":"close","conn":2,"reason":"kapandi","up":170,"down":128056,"packets":62,"opened":1791630757962}

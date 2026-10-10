@@ -311,6 +311,17 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
   ek[statlar.IDX.Intelligence] += reiatsu.intelligence;
   ek[statlar.IDX.Agile] += reiatsu.agile;
   ek[statlar.IDX.Life] += reiatsu.life;
+  // Use the same calibrated primary-to-combat conversion as other core bonuses.
+  // A Reiatsu level must improve combat, not only the four displayed primaries.
+  for(const [index,amount,targets] of [
+    [statlar.IDX.Power,reiatsu.power,[statlar.IDX.PhysicalAttack,statlar.IDX.PhysicalDefends]],
+    [statlar.IDX.Intelligence,reiatsu.intelligence,[statlar.IDX.MagicAttack,statlar.IDX.MagicDefends]],
+    [statlar.IDX.Agile,reiatsu.agile,[statlar.IDX.Speed]],
+    [statlar.IDX.Life,reiatsu.life,[statlar.IDX.Health]],
+  ]){
+    const primary=baseValue(index);
+    if(primary>0&&amount>0)for(const target of targets){const combat=baseValue(target);if(combat>0)ek[target]+=Math.round(amount*combat/primary);}
+  }
   for (const [type, value] of Object.entries(statlar.spiritSchoolBonuses(durum))) add(Number(type), value);
   const reincarnation = require('./reincarnation');
   const rebirth = reincarnation.bonuses(reincarnation.record(durum, heroId));

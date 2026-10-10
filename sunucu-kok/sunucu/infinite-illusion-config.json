@@ -1,0 +1,22 @@
+{
+  "bossHeroId": 11150031,
+  "bossHp": 10000000000,
+  "bossLevel": 159,
+  "bossAttack": 2500000,
+  "bossDefense": 1500000,
+  "botIntervalSeconds": 300,
+  "botInitialCount": 100,
+  "botAttackMultiplier": 200,
+  "botHealthMultiplier": 100,
+  "fightCooldownSeconds": 15,
+  "stoneItemId": 14900001,
+  "rewards": [
+    { "through": 1, "gold": 8000, "stones": 800 },
+    { "through": 2, "gold": 7000, "stones": 700 },
+    { "through": 3, "gold": 6000, "stones": 600 },
+    { "through": 10, "gold": 4000, "stones": 400 },
+    { "through": 50, "gold": 3200, "stones": 320 },
+    { "through": 100, "gold": 2000, "stones": 200 },
+    { "through": 1000000, "gold": 1000, "stones": 100 }
+  ]
+}
