@@ -22,7 +22,8 @@ const before=gear.statPaketi({},highHero,158).subarray(4),after=gear.statPaketi(
 let offset=0;
 for(let block=0;block<2;block++) {
  const n=before.readUInt16BE(offset);assert.strictEqual(after.readUInt16BE(offset),n);offset+=2;
- for(let i=0;i<n;i++)if(!stats.OLCEKLI.includes(i))assert(before.subarray(offset+i*4,offset+i*4+4).equals(after.subarray(offset+i*4,offset+i*4+4)),`fixed stat ${i} changed`);
+ for(let i=0;i<n;i++)if(!stats.OLCEKLI.includes(i)&&i!==stats.IDX.Speed)assert(before.subarray(offset+i*4,offset+i*4+4).equals(after.subarray(offset+i*4,offset+i*4+4)),`fixed stat ${i} changed`);
+ assert(after.readUInt32BE(offset+4*stats.IDX.Speed)>before.readUInt32BE(offset+4*stats.IDX.Speed),'BaseHero speed growth must reach the client packet');
  offset+=n*4;
 }
 assert(before.subarray(offset).equals(after.subarray(offset)));

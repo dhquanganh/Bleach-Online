@@ -212,7 +212,7 @@ function charYama(buf, durum, basicEnd) {
 
 // ---------- STAT: taban blok (olcekli) + ekipman katkisi ----------
 // attribute id -> BaseAttributes index
-const ATTR_IDX = { 1: 0, 3: 1, 2: 2, 4: 3, 11: 4, 101: 5, 16: 6, 18: 6, 20: 7, 17: 8, 19: 8, 21: 9, 22: 10, 23: 11, 24: 12, 25: 13, 26: 14, 27: 15, 30: 16, 31: 17, 28: 18, 29: 19, 104: 20, 34: 21, 32: 22, 33: 23 };
+const ATTR_IDX = { 1: 0, 3: 1, 2: 2, 4: 3, 11: 4, 101: 5, 16: 6, 18: 6, 20: 7, 17: 8, 19: 8, 21: 9, 22: 10, 23: 11, 24: 12, 25: 13, 26: 14, 27: 15, 30: 16, 31: 17, 28: 18, 29: 19, 104: 20, 34: 21, 39: 22, 40: 23, 41: 24, 42: 25 };
 function hogyokuBonuses(durum, heroId) {
   const bonus = new Array(27).fill(0);
   const add = (id, value) => {
@@ -244,7 +244,14 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
   const suitCounts = new Map();
   const percentBonuses = new Map();
   const stonePrimaryRates = new Map();
-  const add = (id, v) => { const i = ATTR_IDX[id]; if (i === undefined) return; ek[i] += v; };
+  const add = (id, v) => {
+    // Attack/defense percentage names are not the client's ControlRate/ControlAnti slots.
+    if (Number(id) === 32 || Number(id) === 33) {
+      for (const i of Number(id) === 32 ? [6,7] : [8,9]) percentBonuses.set(i, (percentBonuses.get(i) || 0) + v);
+      return;
+    }
+    const i = ATTR_IDX[id]; if (i === undefined) return; ek[i] += v;
+  };
   for(const [type,value] of require('./hollow-soul-map').bonuses(durum,heroId)) add(type,value);
   const baseValue = index => {
     if (!baseBlock || baseBlock.length < 2) return null;

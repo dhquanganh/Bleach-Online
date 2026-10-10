@@ -1,0 +1,63 @@
+{
+  "passed": [
+    "academy.test.js",
+    "black-market.test.js",
+    "boss-reward-mail.test.js",
+    "crash-jade.test.js",
+    "hero-stars.test.js",
+    "hero-talents.test.js",
+    "hollow-soul-map.test.js",
+    "hueco-mundo.test.js",
+    "illusion-bots.test.js",
+    "infinite-illusion.test.js",
+    "level-stats.test.js",
+    "mystic-shop.test.js",
+    "protect-balance.test.js",
+    "protect-seireitei.test.js",
+    "refinery.test.js",
+    "reiatsu.test.js",
+    "reincarnation.test.js",
+    "soul-hunt.test.js",
+    "tavern.test.js",
+    "tower-gold.test.js",
+    "world-map-levels.test.js"
+  ],
+  "preExistingFailures": [
+    {
+      "file": "chest-live-sync.test.js",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:",
+      "location": "tests\\chest-live-sync.test.js:8:134"
+    },
+    {
+      "file": "conquest.test.js",
+      "error": "AssertionError(obj);",
+      "location": "tests\\conquest.test.js:6:9"
+    },
+    {
+      "file": "cross-server.test.js",
+      "error": "AssertionError(obj);",
+      "location": "tests\\cross-server.test.js:25:343"
+    },
+    {
+      "file": "hollow-soul-stats.test.js",
+      "error": "AssertionError(obj);",
+      "location": "tests\\hollow-soul-stats.test.js:21:259"
+    },
+    {
+      "file": "soul-stone.test.js",
+      "error": "TypeError: Cannot read properties of undefined (reading '1')",
+      "location": "tests\\soul-stone.test.js:6:61"
+    },
+    {
+      "file": "usable-items.test.js",
+      "error": "AssertionError(obj);",
+      "location": "tests\\usable-items.test.js:13:183"
+    },
+    {
+      "file": "void-entry.test.js",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:",
+      "location": "tests\\void-entry.test.js:6:39"
+    }
+  ],
+  "regressions": []
+}

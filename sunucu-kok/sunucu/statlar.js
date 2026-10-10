@@ -12,7 +12,8 @@ const TIP = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1
 const IDX = {
   Power: 0, Intelligence: 1, Agile: 2, Life: 3, Speed: 4, Health: 5, PhysicalAttack: 6,
   MagicAttack: 7, PhysicalDefends: 8, MagicDefends: 9, Hit: 10, Dodge: 11, Crit: 12,
-  Punch: 14, Help: 15, Hurt: 18, StartAnger: 20, FightingPower: 26,
+  Block: 13, Punch: 14, Help: 15, Wreck: 16, Counter: 17, Hurt: 18,
+  AvoidHurt: 19, StartAnger: 20, FightingPower: 26,
 };
 // Karakterle birlikte buyuyen slotlar. Speed(4) ve StartAnger(20) sabit kalir (oyun mekanigi),
 // oran alanlari (float) HIC DOKUNULMAZ -> blogun yapisi/boyu birebir korunur, client kirilmaz.
@@ -80,7 +81,7 @@ function olcek(heroId, lv, anaId, anaLv) {
 
 function olcekler(heroId, lv, anaId, anaLv, durum = null) {
   const quality = Number(durum && durum.meyhane && durum.meyhane.kalite && durum.meyhane.kalite[String(heroId)]) || 0;
-  return require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1, quality);
+  return { ...require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1, quality), heroId, level: lv || 1 };
 }
 
 // Attribute blogunu olcekle. Uzunluk ve alan sayisi DEGISMEZ, sadece OLCEKLI int slotlari.
@@ -107,7 +108,7 @@ function blokOlcekle(blok, k) {
     }
     p += 4 * n;
   }
-  return b;
+  return oran.heroId ? require('./hero-talents').applyBlock(b, oran.heroId, oran.level) : b;
 }
 
 // Bloktan savas icin gereken sayilari oku
@@ -120,9 +121,16 @@ function blokOku(blok) {
     const s = {
       hp: Math.round(v(IDX.Health)),
       atk: Math.round(Math.max(v(IDX.PhysicalAttack), v(IDX.MagicAttack))),
+      magicAtk: Math.round(v(IDX.MagicAttack)),
       def: Math.round(Math.max(v(IDX.PhysicalDefends), v(IDX.MagicDefends))),
       speed: Math.max(0, Math.round(v(IDX.Speed))),
-      anger: Math.round(v(IDX.StartAnger)) || 50,
+      anger: Math.round(v(IDX.StartAnger)),
+      hitRate: v(IDX.Hit), dodgeRate: v(IDX.Dodge), critRate: v(IDX.Crit),
+      blockRate: v(IDX.Block), punchRate: v(IDX.Punch), helpRate: v(IDX.Help),
+      wreckRate: v(IDX.Wreck), antiknockRate: v(IDX.Counter),
+      damageBonus: v(IDX.Hurt), damageReduction: v(IDX.AvoidHurt),
+      recoverRate: v(21),
+      controlRate: v(22), controlResist: v(23), furyEffect: v(24), furyResist: v(25),
       guc: Math.round(v(IDX.FightingPower)),
     };
     return (s.hp > 0 && s.atk > 0) ? s : null;

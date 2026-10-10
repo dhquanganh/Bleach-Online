@@ -49,7 +49,7 @@ const h=local('./harita'),patched=gear.charYama(raw,d,h.basicEnd),start=h.basicE
 assert.strictEqual(patched[field],5);assert.strictEqual(patched[field+1],first.pp);assert.strictEqual(patched[field+2],first.ae);assert(patched.readUInt32BE(field+3)>=159);
 const [a,b]=stats.attrAralik(patched,start);assert(patched.subarray(a,b).equals(gear.statPaketi(d,main,level.heroSeviye(d,main)).subarray(4)));
 const actual=local('./reincarnation'),savas=local('./savas'),kodek=local('./kodek');
-function unit(camp,ae=0,n=0,pp=0){return {id:camp?12101003:main,camp,pos:camp?6:1,hp:1000,maxHp:1000,atk:100,def:100,anger:0,normal:13100114,skill:0,skillId:13100114,rebirth:{n,ae,pp},damageBonus:0,damageReduction:0};}
+function unit(camp,ae=0,n=0,pp=0){return {id:camp?12101003:main,camp,pos:camp?6:1,hp:1000,maxHp:1000,atk:100,def:100,anger:0,normal:13100114,skill:0,skillId:13100114,critRate:.15,rebirth:{n,ae,pp},damageBonus:0,damageReduction:0};}
 assert.strictEqual(actual.restriction({n:1,pp:2},{n:1,pp:1}),.7);assert.strictEqual(actual.restriction({n:0,pp:0},{n:1,pp:5}),.7);assert.strictEqual(actual.bonuses({n:5,pp:4}).reduction,.4);
 for(const effect of [1,3,6,7,8]){
  const a=unit(0,[3,6].includes(effect)?0:effect,[3,6].includes(effect)?0:1),b=unit(1,[3,6].includes(effect)?effect:0,[3,6].includes(effect)?1:0);b.shield=50;b.activeBuffs={1:true};

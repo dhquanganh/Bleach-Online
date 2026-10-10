@@ -13,7 +13,7 @@
 //
 // KURALLAR (ESKIDEN yoktu: her gorev seviye bakilmadan kabul ediliyor, killTime=65535 ile aninda bitiyordu):
 //   ACCEPT   : ana hero seviyesi >= Task.accept, on gorev (preTaskId) bitmis olmali, zaten kabul/bitmis olmamali.
-//   ILERLEME : eventType 2/4 (stage/instance savasi) -> complete.campId = Enter_Hurdle blockPointId; o stage KAZANILINCA kill++.
+//   ILERLEME : eventType 2 -> BlockPoint/SinglePointPath victory; eventType 4 -> completed Single instance ID.
 //              eventType 3,5..14 -> olay sayaci (arena, ekipman, kultivasyon, ev...) kabul anindaki tabana gore delta.
 //              eventType 1 -> sartsiz.
 //   COMPLETE : ilerleme >= value degilse RED (result 1). Odul: para/esya + PARTNER (type 4 -> oyun-sunucu kadroya katar).
@@ -21,6 +21,7 @@
 const fs = require('fs');
 const path = require('path');
 const olay = require('./olay');
+const { satir, tablo } = require('./paket');
 
 const TASK_JSON = path.join(__dirname, '..', 'cikarim', 'veri-json', 'Task.json');
 const ACCEPT = 0, COMPLETE = 1, CANCEL = 2;
@@ -61,6 +62,7 @@ function ilerleme(durum, questId) {
   const g = durumGorev(durum); const k = g.kabul[String(questId)]; const t = TASKS.get(questId >>> 0);
   if (!k || !t) return 0;
   if (t.eventType === 1) return t.value;
+  if (t.eventType === 4 && t.value === 1 && !(Number(k.kill) > 0) && instanceTamamMi(durum,t.campId)) k.kill = 1;
   if (SAVAS_TIP.has(t.eventType)) return Number(k.kill) || 0;
   const anahtar = OLAY_ANAHTAR[t.eventType];
   if (!anahtar) return t.value;                                   // bilinmeyen tip: kilitleme
@@ -143,10 +145,26 @@ function savasKazanildi(durum, bpId, adet) {
   const bp = Number(bpId) >>> 0; if (!bp) return out;
   for (const [id, k] of Object.entries(g.kabul)) {
     const t = TASKS.get(Number(id) >>> 0);
-    if (!t || !SAVAS_TIP.has(t.eventType) || t.campId !== bp) continue;
+    if (!t || t.eventType !== 2 || t.campId !== bp) continue;
     k.kill = Math.min(65535, (Number(k.kill) || 0) + Math.max(1, adet | 0));
     out.push({ questId: Number(id) >>> 0, kill: k.kill });
     console.log(`[gorev] "${t.ad}": stage ${bp} kazanildi -> ${k.kill}/${t.value}`);
+  }
+  return out;
+}
+function instanceTamamMi(durum, campaignId) {
+  const single=satir('Single',campaignId);if(!single)return false;
+  if(Number((durum.instanceStars||{})[campaignId])>0)return true;
+  return tablo('City').liste.some(city=>Number(city.type)===2&&campaignId>=Number(city.start)&&campaignId<=Number(city.last)&&Number((durum.instanceProgress||{})[`${city._id}:${campaignId}`])>Number(single.endId));
+}
+// eventType 4 uses Single.id (15200001), not SinglePointPath.id (152010xx).
+// Also repair accepted one-clear quests already stranded by the old ID mismatch.
+function instanceKazanildi(durum) {
+  const out=[];const g=durumGorev(durum);
+  for(const [id,k]of Object.entries(g.kabul)) {
+    const task=TASKS.get(Number(id));
+    if(!task||task.eventType!==4||task.value!==1||Number(k.kill)>=task.value||!instanceTamamMi(durum,task.campId))continue;
+    k.kill=task.value;out.push({questId:Number(id),kill:k.kill});
   }
   return out;
 }
@@ -162,4 +180,4 @@ olay.abone((durum, anahtar) => {
   return out;
 });
 
-module.exports = { kabulPaketi, bitenPaketi, actionRet, schedulePaketi, aksiyon, durumGorev, savasKazanildi, ilerleme, tamamMi, TASKS, OLAY_ANAHTAR };
+module.exports = { kabulPaketi, bitenPaketi, actionRet, schedulePaketi, aksiyon, durumGorev, savasKazanildi, instanceKazanildi, instanceTamamMi, ilerleme, tamamMi, TASKS, OLAY_ANAHTAR };

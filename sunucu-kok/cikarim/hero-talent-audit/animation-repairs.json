@@ -1,0 +1,106 @@
+{
+  "repairs": [
+    {
+      "id": 11110033,
+      "name": "Sōgyo no Kotowari Ukitake",
+      "normal": 13100114,
+      "active": 13100162,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11110034,
+      "name": "Kyōkotsu Kyōraku",
+      "normal": 13100113,
+      "active": 13100163,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11110035,
+      "name": "Nelliel Tu Odelschwanck",
+      "normal": 13100113,
+      "active": 13100164,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11110036,
+      "name": "Sōgyo no Kotowari Ukitake Changed",
+      "normal": 13100114,
+      "active": 13100165,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11110037,
+      "name": "Kyōkotsu Kyōraku Changed",
+      "normal": 13100114,
+      "active": 13100166,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11110038,
+      "name": "Nelliel Tu Odelschwanck Changed",
+      "normal": 13100113,
+      "active": 13100167,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11140001,
+      "name": "Pantera Grimmjow",
+      "normal": 13100114,
+      "active": 13100172,
+      "repairs": [
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11140002,
+      "name": "Gamuza Nelliel Tu Odelschwanck",
+      "normal": 13100113,
+      "active": 13100173,
+      "repairs": [
+        "active: normal-animation fallback; original animation absent"
+      ]
+    },
+    {
+      "id": 11150001,
+      "name": "Aizen",
+      "normal": 13100114,
+      "active": 13100214,
+      "repairs": [
+        "normal: shared animation for the same skill ID",
+        "active: shared animation for the same skill ID"
+      ]
+    }
+  ],
+  "frontendPackages": [
+    {
+      "file": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\normal\\01000005.bin",
+      "records": 9
+    },
+    {
+      "file": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\combine\\01000005.bin",
+      "records": 9
+    },
+    {
+      "file": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\normal\\01000005.bin",
+      "records": 9
+    }
+  ]
+}

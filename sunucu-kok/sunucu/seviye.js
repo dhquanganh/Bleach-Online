@@ -142,7 +142,7 @@ function depo(durum) {
 function heroKayit(durum, id, varsayilanLv) {
   const d = depo(durum).herolar;
   const k = String(id >>> 0);
-  if (!d[k]) d[k] = { lv: sinirla(varsayilanLv || anaDurum().lv), exp: 0 };
+  if (!d[k]) d[k] = { lv: sinirla(Math.max(varsayilanLv || anaDurum().lv, require('./hero-talents').effect(id).initialLevel || 1)), exp: 0 };
   d[k].lv = sinirla(d[k].lv); d[k].exp = Math.max(0, Number(d[k].exp) || 0);
   return d[k];
 }

@@ -1,0 +1,3674 @@
+{
+  "counts": {
+    "heroes": 148,
+    "talents": 203,
+    "roleModels": 20171,
+    "skills": 7999,
+    "explicitTalentDefinitions": 112,
+    "heroesWithUnspecifiedTalentAmounts": 126,
+    "frontendCopiesVerified": 3,
+    "referenceErrors": 0
+  },
+  "source": {
+    "baseHero": "cikarim/veri-json/BaseHero.json",
+    "frontend": "kaynak/login.gogames.me/public/2026090619/Resources/Bin/normal/01000005.bin",
+    "frontendSha256": "ba6c9f8e9aad5279b6ce141eb2dabd9c704c27f24530d3de69b7441d1493aeff"
+  },
+  "limitations": [
+    "Frontend HeroTalent has only name/description; there is no original server talent formula in this workspace.",
+    "Unspecified percentages and small combo chances retain BaseHero base/growth/rates; no invented percentages are added.",
+    "Aid splits a normal hit 50/50 with a living helper; block halves damage; crit multiplies damage by 1.5. These are explicit local combat rules, not verified original-server formulas.",
+    "Eight missing active animations use normal-animation fallbacks. One active animation was recovered by exact skill ID."
+  ],
+  "issues": [],
+  "heroes": [
+    {
+      "id": 11100001,
+      "name": "Ghostsword Male",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100002,
+      "name": "Ghostsword Female",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100003,
+      "name": "Spiritbow Male",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100004,
+      "name": "Spiritbow Female",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100005,
+      "name": "Hollowblade Male",
+      "talentId": 13200003,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100006,
+      "name": "Hollowblade Female",
+      "talentId": 13200003,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100101,
+      "name": "Ganju Shiba",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0,
+        "blockRate": 0.05000000074505806,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.05000000074505806,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11100102,
+      "name": "Iziru Kira ",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1,
+        "dodgeRate": 0,
+        "critRate": 0.10000000149011612,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110001,
+      "name": "Marechiyo Ōmaeda",
+      "talentId": 13200070,
+      "talentName": "Wealthy",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.003999948501587,
+        "dodgeRate": 0.003000000026077032,
+        "critRate": 0.0020000000949949026,
+        "blockRate": 0.012000000104308128,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110002,
+      "name": "Yumichika Ayasegawa",
+      "talentId": 13200008,
+      "talentName": "Crit. Talent",
+      "description": "Increase Crit Rate by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.003999948501587,
+        "dodgeRate": 0.0020000000949949026,
+        "critRate": 0.013000000268220901,
+        "blockRate": 0.0020000000949949026,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110003,
+      "name": "Nemu Kurotsuchi ",
+      "talentId": 13200003,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0210000276565552,
+        "dodgeRate": 0.0020000000949949026,
+        "critRate": 0.0020000000949949026,
+        "blockRate": 0.0020000000949949026,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110004,
+      "name": "Yasutora Sado",
+      "talentId": 13200072,
+      "talentName": "El Directo",
+      "description": "Increase Block Rate by a certain percent",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.00800000037997961,
+        "critRate": 0.006000000052154064,
+        "blockRate": 0.029999999329447746,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110005,
+      "name": "Kaien Shiba",
+      "talentId": 13200021,
+      "talentName": "Powerful Slash",
+      "description": "Naturally has 50% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.5
+      },
+      "baseRates": {
+        "hitRate": 1.0700000524520874,
+        "dodgeRate": 0.004999999888241291,
+        "critRate": 0.00800000037997961,
+        "blockRate": 0.006000000052154064,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.5,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11110006,
+      "name": "Orihime Inoue",
+      "talentId": 13200003,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0700000524520874,
+        "dodgeRate": 0.004999999888241291,
+        "critRate": 0.03099999949336052,
+        "blockRate": 0.00800000037997961,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110007,
+      "name": "Yachiru Kusajishi",
+      "talentId": 13200074,
+      "talentName": "Kenpachi Inheritor",
+      "description": "Increase Dodge Rate by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.029999999329447746,
+        "critRate": 0.006000000052154064,
+        "blockRate": 0.00800000037997961,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110008,
+      "name": "Renji Abarai",
+      "talentId": 13200001,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.007000000216066837,
+        "critRate": 0.032999999821186066,
+        "blockRate": 0.004000000189989805,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110009,
+      "name": "Lisa Yadoumaru",
+      "talentId": 13200075,
+      "talentName": "Lusty",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0709999799728394,
+        "dodgeRate": 0.007000000216066837,
+        "critRate": 0.029999999329447746,
+        "blockRate": 0.006000000052154064,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110010,
+      "name": "Rukia Kuchiki",
+      "talentId": 13200076,
+      "talentName": "Sode no Shirayuki",
+      "description": "Increase Crit Rate by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.004999999888241291,
+        "critRate": 0.004999999888241291,
+        "blockRate": 0.006000000052154064,
+        "punchRate": 0.017000000923871994,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110011,
+      "name": "Momo Hinamori ",
+      "talentId": 13200077,
+      "talentName": "Peaceful",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0679999589920044,
+        "dodgeRate": 0.004999999888241291,
+        "critRate": 0.032999999821186066,
+        "blockRate": 0.007000000216066837,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110012,
+      "name": "Visored Hirako",
+      "talentId": 13200078,
+      "talentName": "Leader",
+      "description": "Increase Crit Rate by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1349999904632568,
+        "dodgeRate": 0.007000000216066837,
+        "critRate": 0.00800000037997961,
+        "blockRate": 0.0560000017285347,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110013,
+      "name": "Komamura Sajin",
+      "talentId": 13200079,
+      "talentName": "Resolute",
+      "description": "Increase Defense by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1349999904632568,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.007000000216066837,
+        "punchRate": 0,
+        "helpRate": 0.026000000536441803,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.10000000149011612,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110014,
+      "name": "Kensei Muguruma",
+      "talentId": 13200080,
+      "talentName": "Strong Build",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1360000371932983,
+        "dodgeRate": 0.00800000037997961,
+        "critRate": 0.006000000052154064,
+        "blockRate": 0.012000000104308128,
+        "punchRate": 0.026000000536441803,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110015,
+      "name": "Harribel",
+      "talentId": 13200081,
+      "talentName": "Flood Dragon",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1369999647140503,
+        "dodgeRate": 0.008999999612569809,
+        "critRate": 0.050999999046325684,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110016,
+      "name": "Shihōin Yoruichi",
+      "talentId": 13200082,
+      "talentName": "Flash Goddess",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1410000324249268,
+        "dodgeRate": 0.04100000113248825,
+        "critRate": 0.013000000268220901,
+        "blockRate": 0.012000000104308128,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110017,
+      "name": "Kisuke Urahara",
+      "talentId": 13200083,
+      "talentName": "Benihime",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1349999904632568,
+        "dodgeRate": 0.006000000052154064,
+        "critRate": 0.008999999612569809,
+        "blockRate": 0.00800000037997961,
+        "punchRate": 0.028999999165534973,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110018,
+      "name": "Ikkaku Madarame",
+      "talentId": 13200084,
+      "talentName": "Ryūmon Hōzukimaru",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1799999475479126,
+        "dodgeRate": 0.014000000432133675,
+        "critRate": 0.06599999964237213,
+        "blockRate": 0.007000000216066837,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110019,
+      "name": "Kaname Tōsen",
+      "talentId": 13200085,
+      "talentName": "Suzumushi Nishiki",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1740000247955322,
+        "dodgeRate": 0.014000000432133675,
+        "critRate": 0.010999999940395355,
+        "blockRate": 0.01600000075995922,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110020,
+      "name": "Shunsui Kyōraku",
+      "talentId": 13200086,
+      "talentName": "Katen",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1770000457763672,
+        "dodgeRate": 0.057999998331069946,
+        "critRate": 0.014999999664723873,
+        "blockRate": 0.01600000075995922,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110021,
+      "name": "Jūshirō Ukitake",
+      "talentId": 13200087,
+      "talentName": "Pisces",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1779999732971191,
+        "dodgeRate": 0.010999999940395355,
+        "critRate": 0.014000000432133675,
+        "blockRate": 0.008999999612569809,
+        "punchRate": 0.032999999821186066,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110022,
+      "name": "Byakuya Kuchiki",
+      "talentId": 13200088,
+      "talentName": "Senbonzakura",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1100000143051147,
+        "dodgeRate": 0.07500000298023224,
+        "critRate": 0.012000000104308128,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110023,
+      "name": "Kenpachi Zaraki",
+      "talentId": 13200089,
+      "talentName": "Kenpachi",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.184999942779541,
+        "dodgeRate": 0.008999999612569809,
+        "critRate": 0.057999998331069946,
+        "blockRate": 0.017000000923871994,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110024,
+      "name": "Nnoitra Gilga",
+      "talentId": 13200090,
+      "talentName": "Hierro",
+      "description": "Increase HP by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1770000457763672,
+        "dodgeRate": 0.010999999940395355,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.05999999865889549,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110025,
+      "name": "Retsu Unohana",
+      "talentId": 13200091,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1749999523162842,
+        "dodgeRate": 0.01600000075995922,
+        "critRate": 0.010999999940395355,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.032999999821186066,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110026,
+      "name": "Baraggan Louisenbairn",
+      "talentId": 13200092,
+      "talentName": "Arrogante",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1770000457763672,
+        "dodgeRate": 0.008999999612569809,
+        "critRate": 0.010999999940395355,
+        "blockRate": 0.012000000104308128,
+        "punchRate": 0.03400000184774399,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110027,
+      "name": "Gin Ichimaru",
+      "talentId": 13200093,
+      "talentName": "Kamishini no Yari",
+      "description": "Increase agility by a certain percent, and naturally has 5% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.05
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.05,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110028,
+      "name": "Suì-Fēng",
+      "talentId": 13200094,
+      "talentName": "Reverse Demon Kill",
+      "description": "Increase Strength by certain percent, and naturally has 5% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.05
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.05,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110029,
+      "name": "Coyote Starrk",
+      "talentId": 13200095,
+      "talentName": "Split Spirit",
+      "description": "Increase Strength by certain percent, and naturally has 5% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.05
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.05,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110030,
+      "name": "Hollowed Ichigo",
+      "talentId": 13200096,
+      "talentName": "Hollowfication",
+      "description": "Increase Strength by certain percent, and naturally has 7% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.07,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110031,
+      "name": "Quincy Uryū",
+      "talentId": 13200097,
+      "talentName": "True Blood",
+      "description": "Increase Strength by certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110032,
+      "name": "Sōsuke Aizen",
+      "talentId": 13200098,
+      "talentName": "Hōgyoku",
+      "description": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110033,
+      "name": "Sōgyo no Kotowari Ukitake",
+      "talentId": 13200099,
+      "talentName": "Wave Pisces",
+      "description": "Increase Strength by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.08,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110034,
+      "name": "Kyōkotsu Kyōraku",
+      "talentId": 13200100,
+      "talentName": "Kyōkotsu",
+      "description": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.08,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110035,
+      "name": "Nelliel Tu Odelschwanck",
+      "talentId": 13200101,
+      "talentName": "Afinar",
+      "description": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.08,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110036,
+      "name": "Sōgyo no Kotowari Ukitake Changed",
+      "talentId": 13200066,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent, and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110037,
+      "name": "Kyōkotsu Kyōraku Changed",
+      "talentId": 13200035,
+      "talentName": "Strength Talent",
+      "description": "Increase Strength by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.08,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11110038,
+      "name": "Nelliel Tu Odelschwanck Changed",
+      "talentId": 13200036,
+      "talentName": "Wisdom Talent",
+      "description": "Increase Wisdom by certain percent, and naturally has 8% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.08,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120001,
+      "name": "Rangiku Matsumoto",
+      "talentId": 13200102,
+      "talentName": "Haineko",
+      "description": "Increase Crit Rate by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0700000524520874,
+        "dodgeRate": 0.004999999888241291,
+        "critRate": 0.15000000596046448,
+        "blockRate": 0.003000000026077032,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120002,
+      "name": "Nanao Ise ",
+      "talentId": 13200114,
+      "talentName": "Ice Beauty",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0700000524520874,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120003,
+      "name": "Christmas Ichigo",
+      "talentId": 13200115,
+      "talentName": "Christmas",
+      "description": "Increase own Agility and Strength by certain percentage.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120004,
+      "name": "Dark Rukia",
+      "talentId": 13200116,
+      "talentName": "Dark Forces",
+      "description": "Increase Wisdom by certain percent, and naturally has 5% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.05
+      },
+      "baseRates": {
+        "hitRate": 1.1349999904632568,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.004999999888241291,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.05,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120005,
+      "name": "Tōshirō Hitsugaya",
+      "talentId": 13200117,
+      "talentName": "Extreme Ice",
+      "description": "Increase Agility by a higher percent, and naturally has 10% damage rate和10% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1,
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.184999942779541,
+        "dodgeRate": 0.029999999329447746,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120006,
+      "name": "Shinji Hirako",
+      "talentId": 13200118,
+      "talentName": "Sakanade",
+      "description": "Increase agility by a certain percent, and naturally has 7% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.1699999570846558,
+        "dodgeRate": 0.029999999329447746,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120007,
+      "name": "Zabimaru Renji",
+      "talentId": 13200119,
+      "talentName": "Zabimaru",
+      "description": "Increase Strength by certain percent, and naturally has 7% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.1699999570846558,
+        "dodgeRate": 0.029999999329447746,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.07,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120008,
+      "name": "White Ichigo",
+      "talentId": 13200122,
+      "talentName": "Hollow's Force",
+      "description": "Increase Agility by a higher percent and Strength by a certain percent, and naturally has 15% Combo rate.",
+      "explicitEffects": {
+        "punchRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.16999999955296516,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120009,
+      "name": "Shinsō Gin",
+      "talentId": 13200123,
+      "talentName": "Shinsō",
+      "description": "Increase Agility by a higher percent, and naturally has 7% Combo rate and Avoid Injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07,
+        "punchRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.017999999225139618,
+        "critRate": 0.017999999225139618,
+        "blockRate": 0.017999999225139618,
+        "punchRate": 0.09999999932944775,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120010,
+      "name": "Sophisticated Rengiku",
+      "talentId": 13200125,
+      "talentName": "Rinbu",
+      "description": "Increase AGI and DEF by a certain percent, and naturally has 10% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120011,
+      "name": "Smart Nanao",
+      "talentId": 13200128,
+      "talentName": "Hyapporankan",
+      "description": "Increase Wisdom and AGI by a certain percent, and naturally has 7% Combo rate.",
+      "explicitEffects": {
+        "punchRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.08499999966472388,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120012,
+      "name": "Sexy Yoruichi",
+      "talentId": 13200126,
+      "talentName": "Thunderstorm",
+      "description": "Increase Strength and AGI by certain percent, and naturally has 10% Combo rate.",
+      "explicitEffects": {
+        "punchRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.11499999966472388,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11120013,
+      "name": "Cute Orihime",
+      "talentId": 13200127,
+      "talentName": "Barrier",
+      "description": "Increase Wisdom and AGI by a certain percent, and naturally has 7% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11130001,
+      "name": "Grimmjow Jaegerjaquez",
+      "talentId": 13200103,
+      "talentName": "Desgarrón",
+      "description": "Increase Wisdom by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0700000524520874,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.004999999888241291,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11130002,
+      "name": "Ulquiorra",
+      "talentId": 13200104,
+      "talentName": "Chariti",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.1349999904632568,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.004999999888241291,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11130003,
+      "name": "Ryūmon Ikkaku Madarame",
+      "talentId": 13200105,
+      "talentName": "Ryūmon",
+      "description": "Increase Agility by a higher percent, and naturally has 20% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.184999942779541,
+        "dodgeRate": 0.029999999329447746,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.02500000037252903,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140001,
+      "name": "Pantera Grimmjow",
+      "talentId": 13200106,
+      "talentName": "Pantera",
+      "description": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140002,
+      "name": "Gamuza Nelliel Tu Odelschwanck",
+      "talentId": 13200107,
+      "talentName": "Gamuza",
+      "description": "Increase Wisdom by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140003,
+      "name": "Daiguren Hyōrinmaru Hitsugaya",
+      "talentId": 13200108,
+      "talentName": "Daiguren",
+      "description": "Increase Strength by certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140004,
+      "name": "Hakuteiken Byakuya",
+      "talentId": 13200109,
+      "talentName": "Hakuteiken",
+      "description": "Increase Agility by a higher percent, and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.019999999552965164,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140005,
+      "name": "Shura Kenpachi",
+      "talentId": 13200110,
+      "talentName": "Shura",
+      "description": "Increase Strength by a higher percent, and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.019999999552965164,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140006,
+      "name": "Kyōka Suigetsu Aizen",
+      "talentId": 13200111,
+      "talentName": "Kyōka",
+      "description": "Increase Agility by a higher percent, and naturally has 10% Avoid Injry Rate and 7% Combo rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1,
+        "punchRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.08999999955296517,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140007,
+      "name": "Murciélago",
+      "talentId": 13200112,
+      "talentName": "Murciélago",
+      "description": "Increase agility by a certain percent, and naturally has 10% Avoid Injry Rate and small chance of Combo.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.2400000095367432,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140008,
+      "name": "Demon Ichigo",
+      "talentId": 13200124,
+      "talentName": "Power of Hollow King",
+      "description": "Increase Agility by a higher percent and Strength by a certain percent and naturally has 7% Damage and Avoid Injury.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.029999999329447746,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140009,
+      "name": "Ichigo Kurosaki",
+      "talentId": 13200120,
+      "talentName": "Getsuga",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.007000000216066837,
+        "critRate": 0.032999999821186066,
+        "blockRate": 0.004000000189989805,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140010,
+      "name": "Ichigo Kurosaki",
+      "talentId": 13200121,
+      "talentName": "Getsuga",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.069000005722046,
+        "dodgeRate": 0.007000000216066837,
+        "critRate": 0.032999999821186066,
+        "blockRate": 0.004000000189989805,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140011,
+      "name": "Shinigami Yoruichi",
+      "talentId": 13200129,
+      "talentName": "Power of Love",
+      "description": "Increase agility by a certain percent, and naturally has 10% Combo and damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1,
+        "punchRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.11499999966472388,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140012,
+      "name": "Shinigami Urahara",
+      "talentId": 13200130,
+      "talentName": "Power of Love",
+      "description": "Increase Agility by a higher percent, and naturally has 7% Combo and Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07,
+        "punchRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.08499999966472388,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140013,
+      "name": "Shin Isshin Kurosaki",
+      "talentId": 13200146,
+      "talentName": "Engetsu",
+      "description": "Increase certain agility by certain percents, naturally has 12% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11140014,
+      "name": "Isshin Kurosaki",
+      "talentId": 13200148,
+      "talentName": "Engetsu",
+      "description": "Increase certain agility by certain percents, naturally has 12% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150001,
+      "name": "Aizen",
+      "talentId": 13200131,
+      "talentName": "Flame",
+      "description": "Increase Strength by certain percent, and naturally has 12% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150002,
+      "name": "Yamamoto Genryūsai Shigekuni",
+      "talentId": 13200131,
+      "talentName": "Flame",
+      "description": "Increase Strength by certain percent, and naturally has 12% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150003,
+      "name": "Isane Kotetsu",
+      "talentId": 13200163,
+      "talentName": "Itegumo",
+      "description": "Increase Intelligence and Stamina by certain percent, naturally has 15% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.014999999664723873,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.15,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150005,
+      "name": "Kurotsuchi Mayuri",
+      "talentId": 13200162,
+      "talentName": "Semi Kohakū",
+      "description": "Naturally has 15% defense, 15% HP and 35% Block rate.",
+      "explicitEffects": {
+        "defense": 0.15,
+        "hp": 0.15,
+        "blockRate": 0.35
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.36999999955296514,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150008,
+      "name": "Mugetsu",
+      "talentId": 13200147,
+      "talentName": "Getsuga",
+      "description": "Increase certain agility and strength by certain percents, naturally has 12% combo rate.",
+      "explicitEffects": {
+        "punchRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.12999999977648258,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150009,
+      "name": "Retsu Unohana Kenpachi",
+      "talentId": 13200149,
+      "talentName": "Minazuki",
+      "description": "Increase certain agility by certain percents, naturally has 12% combo rate.",
+      "explicitEffects": {
+        "punchRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.014999999664723873,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.13999999955296516,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150010,
+      "name": "True-Shikai Ichigo",
+      "talentId": 13200150,
+      "talentName": "Twin Blade",
+      "description": "Increase Strength and Agility by a certain percentage, naturally has 12% damage rate and avoid injury rate.",
+      "explicitEffects": {
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.014999999664723873,
+        "blockRate": 0.014999999664723873,
+        "punchRate": 0.019999999552965164,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.12,
+        "avoidHurtRate": 0.12,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150011,
+      "name": "Bankai Rukia",
+      "talentId": 13200151,
+      "talentName": "Hakka",
+      "description": "Increase AGI and INT by a certain percent, and naturally has 15% damage rate",
+      "explicitEffects": {
+        "hurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.004999999888241291,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.15,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150012,
+      "name": "Ishida Ryūken",
+      "talentId": 13200152,
+      "talentName": "Spiritual Art",
+      "description": "Increase Strength and Agility by certain percentage, naturally has 30% Dodge and Break DEF Rate.",
+      "explicitEffects": {
+        "dodgeRate": 0.3,
+        "wreckRate": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.3,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0.3,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150013,
+      "name": "Berserk Renji",
+      "talentId": 13200153,
+      "talentName": "Puto",
+      "description": "Increase Strength and Agility by certain percentage, and naturally has 15% crit rate.",
+      "explicitEffects": {
+        "critRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0,
+        "critRate": 0.16999999955296516,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150014,
+      "name": "Shinigami Kensei",
+      "talentId": 13200154,
+      "talentName": "Bending Blade",
+      "description": "Increase Strength and Agility by a certain percent",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150015,
+      "name": "Kirinji Tenjirō",
+      "talentId": 13200155,
+      "talentName": "Tenshō Issen",
+      "description": "Increase certain Intelligence and Agility, and naturally has 10% Speed bonus.",
+      "explicitEffects": {
+        "speed": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.2000000476837158,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0,
+        "blockRate": 0,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150016,
+      "name": "Yhwach",
+      "talentId": 13200156,
+      "talentName": "Self-Blessing",
+      "description": "Incease own strength and agility according to the percentage, and have 15% damage rate。",
+      "explicitEffects": {
+        "hurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.15,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150017,
+      "name": "Hikifune Kirio",
+      "talentId": 13200157,
+      "talentName": "Kokuō",
+      "description": "Increase Agility and Intelligence by a certain percentage.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150018,
+      "name": "Ōetsu Nimaiya",
+      "talentId": 13200159,
+      "talentName": "Sayafushi",
+      "description": "Increase certain percent of Intelligence and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150019,
+      "name": "Ichibē Hyōsube",
+      "talentId": 13200158,
+      "talentName": "Protector of Soul King",
+      "description": "Increase Strength and Intelligence by a certain percentage and have massive extra Stamina.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150020,
+      "name": "Senjumaru Shutara",
+      "talentId": 13200160,
+      "talentName": "Shura",
+      "description": "Increase Agility and Intelligence by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150021,
+      "name": "Kōga Kuchiki ",
+      "talentId": 13200164,
+      "talentName": "Illusory Word",
+      "description": "Add 18% Strength, 15% Agility and 20% Damage Rate",
+      "explicitEffects": {
+        "hurtRate": 0.2,
+        "power": 0.18,
+        "agile": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150022,
+      "name": "Sexy Kūkaku",
+      "talentId": 13200165,
+      "talentName": "Kakaku Hō",
+      "description": "Naturally has 20% defense and 30% stamina.",
+      "explicitEffects": {
+        "defense": 0.2,
+        "life": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150023,
+      "name": "Shy Nemu",
+      "talentId": 13200166,
+      "talentName": "Dormancy",
+      "description": "Increase Agility and Intelligence by certain percentage. ",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150024,
+      "name": "Elegant Unohana",
+      "talentId": 13200168,
+      "talentName": "Kindness",
+      "description": "Increase Agility and Wisdom by certain percentage, and naturally has 10% avoid injury rate. ",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150025,
+      "name": "Noble Isane",
+      "talentId": 13200172,
+      "talentName": "Snowflake",
+      "description": "Increase DEF and Stamina by certain percentage, and naturally has 25% agility.",
+      "explicitEffects": {
+        "agile": 0.25
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150026,
+      "name": "Handsome Toshiro",
+      "talentId": 13200169,
+      "talentName": "Hyosetsu",
+      "description": "Increase Strength and Agility by a certain percent,and naturally has 10% avoid injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150027,
+      "name": "Delicate Yachiru",
+      "talentId": 13200170,
+      "talentName": "Estoque",
+      "description": "Incrase Strength and Agility by certain percentage, and naturally has 10% avoid injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150028,
+      "name": "Gentle Byakuya",
+      "talentId": 13200171,
+      "talentName": "Senkei",
+      "description": "Increase Agility and Stamina by certain percentage, and naturally has 12% speed.",
+      "explicitEffects": {
+        "speed": 0.12
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150029,
+      "name": "Bambietta Basterbine",
+      "talentId": 13200173,
+      "talentName": "Vollständig",
+      "description": "Increase aglity and wisdom by a large percentage and naturally has 15% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.15,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150030,
+      "name": "Raijin Yoruichi",
+      "talentId": 13200174,
+      "talentName": "Raijin Senkei",
+      "description": "Increases massive Agility and Wisdom by a large portion, naturally has 15% avoid injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.15,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150031,
+      "name": "Muken Aizen",
+      "talentId": 13200176,
+      "talentName": "Incomplete Hogyouku",
+      "description": "Massively increase strength and damage rate, naturally has 20% stamina.",
+      "explicitEffects": {
+        "life": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150032,
+      "name": "Haschwalth",
+      "talentId": 13200175,
+      "talentName": "Balance",
+      "description": "Increase Agility and Wisdom by a large portion and naturally has 25% Stamina.",
+      "explicitEffects": {
+        "life": 0.25
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150033,
+      "name": "Bankai Urahara",
+      "talentId": 13200177,
+      "talentName": "Surreal Wisdom",
+      "description": "Massively increase avoid injury rate and wisdom, naturally has 30% agility.",
+      "explicitEffects": {
+        "agile": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150034,
+      "name": "Human Komamura",
+      "talentId": 13200178,
+      "talentName": "Humanization Technique",
+      "description": "Born with 20% defense, stamina and avoid-injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2,
+        "defense": 0.2,
+        "life": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150035,
+      "name": "Bankai Kenpachi",
+      "talentId": 13200179,
+      "talentName": "God of Battle",
+      "description": "Increase Damage rate (20%) and Strength (20%) by certain percentage. Born with 20% Stamina",
+      "explicitEffects": {
+        "hurtRate": 0.2,
+        "life": 0.2,
+        "power": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150036,
+      "name": "Shunkō Suì-Fēng ",
+      "talentId": 13200180,
+      "talentName": "Wind Soul",
+      "description": "Increase strength and agility by certain percentage and the partner was born with 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150037,
+      "name": "Bankai Genryūsai ",
+      "talentId": 13200181,
+      "talentName": "Zanka no Tachi",
+      "description": "Increase strength and agility by certain percentage and the partner was born with 20% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150038,
+      "name": "Shin Daiguren Tōshirō",
+      "talentId": 13200182,
+      "talentName": "Perfect Physique",
+      "description": "Increase wisdom and agility by certain percentage and the partner was born with 20% avoid injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150039,
+      "name": "Bazz-B",
+      "talentId": 13200183,
+      "talentName": "The Heat",
+      "description": "Increase wisdom and agility by certain percentage and the partner was born with 15% Avoid Injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.15,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150040,
+      "name": "Valkyrie",
+      "talentId": 13200185,
+      "talentName": "The Miracle",
+      "description": "Add 20% Stamina, Defense and Avoid Injury Rate",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2,
+        "defense": 0.2,
+        "life": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150041,
+      "name": "Bankai Shunsui Kyōraku",
+      "talentId": 13200186,
+      "talentName": "Withering Pine Lovers' Suicide",
+      "description": "Increase 25% AGI and wisdom, naturally have 15% avoid injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.15,
+        "agile": 0.25,
+        "intelligence": 0.25
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.15,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150042,
+      "name": "Hell Verse Ichigo",
+      "talentId": 13200187,
+      "talentName": "Hell Power",
+      "description": "Increase strength by 30%, agility by 20% and damage rate by 20%. Ichigo's normal attack will release normal skill.",
+      "explicitEffects": {
+        "hurtRate": 0.2,
+        "power": 0.3,
+        "agile": 0.2,
+        "normalSkill": true
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150043,
+      "name": "Kokutō",
+      "talentId": 13200188,
+      "talentName": "Togabito",
+      "description": "Increase wisdom and agility by certain percentage and naturally has 20% Avoid Injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150045,
+      "name": "Blood War Byakuya",
+      "talentId": 13200189,
+      "talentName": "Senkei",
+      "description": "Increase wisdom and agility by certain percentage and naturally has 20% Avoid Injury rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150044,
+      "name": "Sternritter Uryū Ishida",
+      "talentId": 13200190,
+      "talentName": "Silver of Stillness",
+      "description": "Born with massive strength, Avoid Injury Rate and damage rate. Normal Attack will deal damage to 2 enemies with the highest attack (100% hit).",
+      "explicitEffects": {
+        "highestAttackTargets": 2,
+        "guaranteedHit": true
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150046,
+      "name": "Askin",
+      "talentId": 13200191,
+      "talentName": "Deathdealing",
+      "description": "Born with massive Wisdom, Agility and Avoid Injury Rate.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150047,
+      "name": "Kūgo Ginjō",
+      "talentId": 13200192,
+      "talentName": "Fullbring",
+      "description": "Born with massive Stamina, Strength and Avoid Injury Rate.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150048,
+      "name": "Shūkurō Tsukishima",
+      "talentId": 13200193,
+      "talentName": "Fullbring",
+      "description": "Born with massive Wisdom, Agility and Avoid Injury Rate.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11150049,
+      "name": "Riruka Dokugamine",
+      "talentId": 13200194,
+      "talentName": "Fullbring",
+      "description": "Increase Wisdom and Agility by 30%. Born with 20% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2,
+        "intelligence": 0.3,
+        "agile": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150050,
+      "name": "Yukio Hans Vorarlberna",
+      "talentId": 13200195,
+      "talentName": "Fullbring",
+      "description": "Increase Wisdom and Agility by 30%. Born with 20% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2,
+        "intelligence": 0.3,
+        "agile": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150051,
+      "name": "Moe Shishigawara",
+      "talentId": 13200196,
+      "talentName": "Fullbring",
+      "description": "Increase Strength 30%, Agility 20%. Born with Damage Rate 20%. Normal Attack cause 200% damage.",
+      "explicitEffects": {
+        "hurtRate": 0.2,
+        "power": 0.3,
+        "agile": 0.2,
+        "normalMultiplier": 2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150052,
+      "name": "Fullbring Ichigo",
+      "talentId": 13200197,
+      "talentName": "Fullbring",
+      "description": "Increase 30% Wisdom and 30% Agility, born with 20% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.2,
+        "intelligence": 0.3,
+        "agile": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.2,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150053,
+      "name": "Blood War Mayuri",
+      "talentId": 13200198,
+      "talentName": "Mad Science",
+      "description": "Increase 35% Wisdom and 30% Agility. Born with 50% Avoid Injury Rate. Initial Starting Level at 159.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.5,
+        "intelligence": 0.35,
+        "agile": 0.3,
+        "initialLevel": 159
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.5,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150054,
+      "name": "Szayelaporro Granz",
+      "talentId": 13200199,
+      "talentName": "Crazy Experiment",
+      "description": "Increase 35% Wisdom and 30% Agility, born with 30% Avoid Injury Rate",
+      "explicitEffects": {
+        "avoidHurtRate": 0.3,
+        "intelligence": 0.35,
+        "agile": 0.3
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.3,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150055,
+      "name": "Yammy Llargo",
+      "talentId": 13200200,
+      "talentName": "Angry Beast",
+      "description": "Increase Strength by 20% and Stamina by 40%",
+      "explicitEffects": {
+        "power": 0.2,
+        "life": 0.4
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150056,
+      "name": "Blood War Grimmjow",
+      "talentId": 13200201,
+      "talentName": "Destroy",
+      "description": "Born with 30% Strength, Increase 30% Damage Rate. Normal Attack target Assaulters first.",
+      "explicitEffects": {
+        "power": 0.3,
+        "hurtRate": 0.3,
+        "assaultersFirst": true
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.3,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150057,
+      "name": "Blood War Ulquiorra",
+      "talentId": 13200202,
+      "talentName": "Void",
+      "description": "Increase Strength by 35% and Attack by 40%, Normal Attack will release skill",
+      "explicitEffects": {
+        "normalSkill": true,
+        "power": 0.35,
+        "attack": 0.4
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150058,
+      "name": "Blood War Nelliel",
+      "talentId": 13200203,
+      "talentName": "Gamuza",
+      "description": "Increase Wisdom by 40% and Agility by 40%, Born with 50% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.5,
+        "intelligence": 0.4,
+        "agile": 0.4
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.5,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11150059,
+      "name": "Blood War Harribel",
+      "talentId": 13200204,
+      "talentName": "Tiburón",
+      "description": "Increase Wisdom by 40% and Agility by 40%, Born with 20% Stamina.",
+      "explicitEffects": {
+        "life": 0.2,
+        "intelligence": 0.4,
+        "agile": 0.4
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.014999999664723873,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 12100071,
+      "name": "Shūhei Hisagi",
+      "talentId": 13200161,
+      "talentName": "Kazeshini",
+      "description": "Increase Strength by certain percent, naturally has 20% Damage Rate and 10% Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1,
+        "hurtRate": 0.2
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.02500000037252903,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 12100073,
+      "name": "Tessai Tsukabishi",
+      "talentId": 13200167,
+      "talentName": "Space",
+      "description": "Increase Strength by certain percentage and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.25,
+        "dodgeRate": 0.019999999552965164,
+        "critRate": 0.02500000037252903,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 1
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160001,
+      "name": "Shin Zabimaru Renji",
+      "talentId": 13200132,
+      "talentName": "Zabi",
+      "description": "Increase Strength by certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.004999999888241291,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160002,
+      "name": "Sōō Zabimaru Renji",
+      "talentId": 13200133,
+      "talentName": "Sōō",
+      "description": "Increase Strength by a higher percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160003,
+      "name": "Shin Grimmjow",
+      "talentId": 13200134,
+      "talentName": "Damage",
+      "description": "Naturally has 15% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.15
+      },
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.004999999888241291,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.15,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11160004,
+      "name": "Pantera Grimmjow",
+      "talentId": 13200135,
+      "talentName": "Pantera",
+      "description": "Naturally has 20% damage rate and 5% Combo rate.",
+      "explicitEffects": {
+        "hurtRate": 0.2,
+        "punchRate": 0.05
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.059999999776482585,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.2,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": false,
+      "errors": []
+    },
+    {
+      "id": 11160005,
+      "name": "Shin Tōshirō Hitsugaya",
+      "talentId": 13200136,
+      "talentName": "Frozen",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.004999999888241291,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160006,
+      "name": "Daiguren Tōshirō Hitsugaya",
+      "talentId": 13200137,
+      "talentName": "Daiguren",
+      "description": "Increase Agility by a higher percent, and naturally has 7% Avoid Injry Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160007,
+      "name": "Shin Nel Tu",
+      "talentId": 13200138,
+      "talentName": "Naive",
+      "description": "Increase agility by a certain percent.",
+      "explicitEffects": {},
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.004999999888241291,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160008,
+      "name": "Gamuza Nelliel Tu",
+      "talentId": 13200139,
+      "talentName": "Gamuza",
+      "description": "Increase Agility by a higher percent, and naturally has 10% Aid Rate",
+      "explicitEffects": {
+        "helpRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0.1,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160009,
+      "name": "Shin Ulquiorra",
+      "talentId": 13200140,
+      "talentName": "Nothingness",
+      "description": "Increase Strength by a higher percent, and naturally has 8% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.08
+      },
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.004999999888241291,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.08,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160010,
+      "name": "Resurrección Ulquiorra",
+      "talentId": 13200141,
+      "talentName": "Relámpago ",
+      "description": "Increase Strength by a higher percent, and naturally has 10% damage rate.",
+      "explicitEffects": {
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.009999999776482582,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160011,
+      "name": "Shin Shura Kenpachi",
+      "talentId": 13200142,
+      "talentName": "Shura",
+      "description": "Increase Strength by a higher percent, and naturally has 7% damage rate and Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0.07,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160012,
+      "name": "Nozarashi Kenpachi",
+      "talentId": 13200143,
+      "talentName": "Kenpachi",
+      "description": "Increase Strength by a higher percent, and naturally has 10% damage rate and Avoid Injury Rate.",
+      "explicitEffects": {
+        "avoidHurtRate": 0.1,
+        "hurtRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0,
+        "helpRate": 0,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0.1,
+        "avoidHurtRate": 0.1,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160013,
+      "name": "Shin Kyōka Suigetsu Aizen",
+      "talentId": 13200144,
+      "talentName": "Suigetsu",
+      "description": "Increase Agility by a higher percent, and naturally has 7% Combo rate and Aid Rate",
+      "explicitEffects": {
+        "punchRate": 0.07,
+        "helpRate": 0.07
+      },
+      "baseRates": {
+        "hitRate": 1.0499999523162842,
+        "dodgeRate": 0.009999999776482582,
+        "critRate": 0.009999999776482582,
+        "blockRate": 0.009999999776482582,
+        "punchRate": 0.0749999998882413,
+        "helpRate": 0.07,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    },
+    {
+      "id": 11160014,
+      "name": "Última Aizen",
+      "talentId": 13200145,
+      "talentName": "Última",
+      "description": "Increase certain agility by certain percents, naturally has 10% combo rate and aid rate.",
+      "explicitEffects": {
+        "punchRate": 0.1,
+        "helpRate": 0.1
+      },
+      "baseRates": {
+        "hitRate": 1.149999976158142,
+        "dodgeRate": 0.014999999664723873,
+        "critRate": 0.019999999552965164,
+        "blockRate": 0.019999999552965164,
+        "punchRate": 0.10999999977648259,
+        "helpRate": 0.1,
+        "wreckRate": 0,
+        "antiknockRate": 0,
+        "hurtRate": 0,
+        "avoidHurtRate": 0,
+        "recoverRate": 0
+      },
+      "usesExistingBaseGrowthForUnspecifiedEffects": true,
+      "errors": []
+    }
+  ]
+}

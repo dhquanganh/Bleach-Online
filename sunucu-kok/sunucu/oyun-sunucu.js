@@ -756,7 +756,7 @@ net.createServer(client => {
             continue;
           }
           const hurdleCityType = isHurdle ? savas.stageCityType(raidersCityId) : 0;
-          if (isHurdle && [1, 2].includes(hurdleCityType) && !savas.stageIdCoz(pk.payload)) {
+          if (isHurdle && [1, 2].includes(hurdleCityType) && !savas.stageIdCoz(pk.payload, hurdleCityType === 2 ? durumMod.yukle() : null)) {
             const rejected = Buffer.alloc(4);
             rejected.writeUInt32BE(4, 0);
             send(0x01180202, rejected, 'HURDLE-invalid-stage');
@@ -852,6 +852,7 @@ net.createServer(client => {
             const ilerleyen = eligible && !isHeroChangeFight
               ? gorev.savasKazanildi(dG, isSkyTowerPve ? (pk.payload.readUInt32BE(6) >>> 0) : bp, 1)
               : [];
+            if (isHurdle && hurdleCityType === 2 && stageWon) ilerleyen.push(...gorev.instanceKazanildi(dG));
             if (towerWon) olay.say(dG, 'trialWin', 1);
             if ((pk.id >>> 0) === 0x01810202 && stageWon) olay.say(dG, 'instancePass', 1);
             durumMod.kaydet(dG);
@@ -878,7 +879,10 @@ net.createServer(client => {
             }
             send(fr.id, fr.payload, 'SAVAS');
             // Deliver inventory and currency updates after the persistent reward grant.
-            if (inventoryPacket) send(0x01180f02, inventoryPacket, 'SAVAS-odul');
+            if (inventoryPacket) {
+              send(0x01180f02, inventoryPacket, 'SAVAS-odul');
+              send(0x01180f00, handlers.envanterDepo.loadBagPaketi(durumMod.yukle()), 'SAVAS-bag-sync');
+            }
             if (moneyPacket) send(0x01180105, moneyPacket, 'SAVAS-para');
             if (fr.heroChangeFragmentId && addedItems.some(item =>
               (item.code >>> 0) === (fr.heroChangeFragmentId >>> 0))) {

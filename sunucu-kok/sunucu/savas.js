@@ -11,6 +11,10 @@ const kodek = require('./kodek');
 const statlar = require('./statlar');
 const arenaBot = require('./arena-bot');
 const envanter = require('./envanter');
+const heroTalents = require('./hero-talents');
+const heroSkills = require('./hero-skills');
+const partnerSkills = require('./partner-skills');
+const weaponSkills = require('./weapon-skills');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 const REPLAY_DIR = path.join(__dirname, 'savas');
@@ -61,8 +65,8 @@ function enemyValid(id) {
   const e = enemyById.get(id); if (!e) return false;
   const eff = tryParse(e.effects); if (!eff) return false;
   if (eff[String(e.normal)] == null) return false;
-  if (e.skill == null || !skillSet.has(Number(e.skill))) return false;
-  if (eff[String(e.skill)] == null) return false;
+  // Missing active-skill effects disable that skill in dusmanBirim; they must
+  // not remove the enemy from the stage formation shown by the client.
   return true;
 }
 function pickEnemy() {
@@ -270,9 +274,9 @@ function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
     if (!e) return null;
     const u = dusmanBirim(e, pos);
     if (localBattleEffects && u.skill && !DOKU.has(u.skill >>> 0)) {
-      u.skill = 0;
+      u.skillEffect = u.normal;
       u.skillId = u.normal;
-      u.buff = null;
+      u.skillHealsVisually = false;
     }
     const baseLevel = Math.max(1, Number(e.level) || 1);
     const ratio = Math.max(0.5, Math.min(2, (Number(lv) || baseLevel) / baseLevel));
@@ -286,8 +290,8 @@ function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
   const eff = tryParse(h.attackEffect); if (!eff) return null;
   const normal = efektSec(eff, Number(h.normalAttack) || 0); if (!normal) return null;
   const aktif = Number(h.active) || 0;
-  const skillOk = aktif && eff[String(aktif)] != null && skillSet.has(aktif) &&
-    (!localBattleEffects || DOKU.has(aktif >>> 0));
+  const skillValid = aktif && eff[String(aktif)] != null && skillSet.has(aktif);
+  const skillOk = skillValid && (!localBattleEffects || DOKU.has(aktif >>> 0));
   const ol = k && typeof k === 'object' ? k : (k > 0 ? k : 1);
   let hp, atk, def = 0, anger = 50;
   if (stat) {
@@ -296,18 +300,37 @@ function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
     def = Math.max(0, Math.round(stat.def * atkOlcek));
     hp = Math.max(1, Math.round(stat.hp * hpOlcek));
     atk = Math.max(1, Math.round(stat.atk * atkOlcek));
-    anger = stat.anger || 50;
+    anger = stat.anger == null ? 50 : stat.anger;
   } else {
     const growth = require('./seviye').buyumeTemeli(id, lv);
     if (!growth) return null;
     hp = Math.max(600, Math.round(growth.life * 6));
     atk = Math.max(20, Math.round(growth.combat * 0.6));
   }
+  const talent = heroTalents.effect(id);
+  const rates = stat || heroTalents.rates(id);
+  if (!stat) {
+    const growth = require('./seviye').buyumeTemeli(id, lv);
+    const combat = Math.max(growth.power * (1 + (talent.power || 0)), growth.agile * (1 + (talent.agile || 0)), growth.intelligence * (1 + (talent.intelligence || 0)));
+    atk = Math.max(1, Math.round(atk * (combat / growth.combat) * (1 + (talent.attack || 0))));
+    hp = Math.max(1, Math.round(hp * (1 + (talent.life || 0)) * (1 + (talent.hp || 0))));
+    def = Math.round(def * (1 + (talent.defense || 0)));
+  }
   return {
     camp: 0, pos, id, hp, maxHp: hp, anger, atk, def,
-    speed: stat ? stat.speed : Math.max(0, (Number(h.speed) || 0) + (Number(h.speedGrow) || 0) * Math.max(0, lv - 1)),
-    buff: skillOk ? skillBuff(aktif) : null,
-    normal, skill: skillOk ? aktif : 0, skillId: localBattleEffects ? (skillOk ? aktif : normal) : (aktif || normal),
+    profession: Number(h.profession), sex: Number(h.sex),
+    ...Object.fromEntries(['hitRate','dodgeRate','critRate','blockRate','punchRate','helpRate','wreckRate','antiknockRate'].map(field => [field, rates[field]])),
+    damageBonus: stat ? stat.damageBonus : rates.hurtRate,
+    damageReduction: stat ? stat.damageReduction : rates.avoidHurtRate,
+    magicAtk: stat && stat.magicAtk != null ? Math.max(0,Math.round(stat.magicAtk * (typeof ol==='object'?ol.genel:ol))) : atk,
+    recoverRate: stat ? stat.recoverRate : rates.recoverRate,
+    controlRate: stat ? stat.controlRate : 0, controlResist: stat ? stat.controlResist : 0,
+    furyEffect: stat ? stat.furyEffect : 0, furyResist: stat ? stat.furyResist : 0,
+    speed: stat ? stat.speed : Math.max(0, ((Number(h.speed) || 0) + (Number(h.speedGrow) || 0) * Math.max(0, lv - 1)) * (1 + (talent.speed || 0))),
+    buff: skillValid ? skillBuff(aktif) : null,
+    normal, skill: skillValid ? aktif : 0, skillEffect: skillOk ? aktif : normal,
+    skillHealsVisually: !!(skillOk && JSON.stringify(eff[String(aktif)]).includes('"friendhp"')),
+    skillId: localBattleEffects ? (skillOk ? aktif : normal) : (aktif || normal),
     quality: Number(h.quality) || 2, level: lv, isim: isim != null && isim !== '' ? isim : (h.name || ''),
   };
 }
@@ -319,15 +342,24 @@ function dusmanBirim(e, pos) {
   const skillOk = skill && eff[String(skill)] != null && skillSet.has(skill);
   const a = tryParse(e.attacks) || {};
   const d = tryParse(e.defenses) || {};
+  const rates = tryParse(e.rates) || {};
   const hp = Math.max(200, Number(e.hp) || 500);
   const guc = Math.max(Number(a.strength) || 0, Number(a.agility) || 0, Number(a.intellect) || 0);
   return {
-    camp: 1, pos, id: idNum(e.id), hp, maxHp: hp, anger: Number(e.anger) || 50,
+    camp: 1, pos, id: idNum(e.id), hp, maxHp: hp, anger: e.anger == null ? 50 : (Number(e.anger) || 0),
+    profession: Number(e.profession), sex: Number(e.sex),
+    hitRate: rates.hit == null ? 1 : Number(rates.hit), dodgeRate: Number(rates.dodgy) || 0,
+    critRate: Number(rates.fatal) || 0, blockRate: Number(rates.block) || 0,
+    punchRate: Number(rates.joint) || 0, helpRate: Number(rates.recourse) || 0,
+    damageReduction: Number(rates.avoidhurtrate) || 0,
+    damageMultiplier: rates.hurt == null ? 1 : Number(rates.hurt),
+    recoverRate: Number(rates.recover) || 0,
     speed: Math.max(0, Number(e.speed) || 0),
     atk: Math.max(5, Math.round(guc * 0.45)),
     def: Math.max(Number(d.strength) || 0, Number(d.agility) || 0, Number(d.intellect) || 0),
     buff: skillOk ? skillBuff(skill) : null,
     normal, skill: skillOk ? skill : 0, skillId: skill || normal,
+    skillHealsVisually: !!(skillOk && JSON.stringify(eff[String(skill)]).includes('"friendhp"')),
     quality: Number(e.quality) || 3, level: Number(e.level) || 1, isim: '',
   };
 }
@@ -619,7 +651,15 @@ function stageIdCoz(payload, durum = null) {
     if (campaign && bpId >= Number(city.start) && bpId <= Number(city.last)) {
       const progressKey = `${cityId}:${bpId}`;
       const savedStage = Number(durum && durum.instanceProgress && durum.instanceProgress[progressKey]) >>> 0;
-      const stageId = savedStage || (Number(campaign.startId) >>> 0);
+      let stageId = savedStage || (Number(campaign.startId) >>> 0);
+      // Flash keeps one LayerIndex per city when switching Easy/Hard.
+      const selectedId = Number(durum && durum.instanceCampaign && durum.instanceCampaign[cityId]);
+      const selected = singleById.get(selectedId);
+      const selectedStage = Number(durum && durum.instanceProgress && durum.instanceProgress[`${cityId}:${selectedId}`]);
+      if (selected && selectedId !== bpId && selectedStage &&
+        selectedId >= Number(city.start) && selectedId <= Number(city.last)) {
+        stageId = Number(campaign.startId) + selectedStage - Number(selected.startId);
+      }
       return stageId >= Number(campaign.startId) && stageId <= Number(campaign.endId) &&
         singlePointById.has(stageId) ? stageId : 0;
     }
@@ -643,9 +683,15 @@ function instanceStageWon(durum, payload, stageId) {
     stageId < Number(campaign.startId) || stageId > Number(campaign.endId)) return false;
   durum.instanceProgress = durum.instanceProgress || {};
   const key = `${cityId}:${campaignId}`;
-  const current = Number(durum.instanceProgress[key]) || Number(campaign.startId);
+  const current = stageIdCoz(payload, durum);
   if (stageId !== current) return false;
-  durum.instanceProgress[key] = Math.min(Number(campaign.endId), stageId + 1);
+  durum.instanceProgress[key] = stageId + 1;
+  if (stageId === Number(campaign.endId)) {
+    durum.instanceStars = durum.instanceStars || {};
+    durum.instanceStars[campaignId] = 3;
+  }
+  durum.instanceCampaign = durum.instanceCampaign || {};
+  durum.instanceCampaign[cityId] = campaignId;
   return true;
 }
 function stageAssessment(payload, won, resolvedStageId = 0) {
@@ -654,10 +700,18 @@ function stageAssessment(payload, won, resolvedStageId = 0) {
   const stageId = resolvedStageId || stageIdCoz(payload);
   const city = cityById.get(cityId);
   if (!stageId || !city || ![1, 2].includes(Number(city.type))) return null;
+  let assessmentId = stageId;
+  if (Number(city.type) === 2) {
+    const campaign = Single.find(row => idNum(row.id) >= Number(city.start) && idNum(row.id) <= Number(city.last) && stageId >= Number(row.startId) && stageId <= Number(row.endId));
+    if (!campaign || stageId !== Number(campaign.endId)) return null;
+    // Flash resolves this ID through Single, not SinglePointPath, to open
+    // the completion/chest window and unlock the next difficulty/map.
+    assessmentId = idNum(campaign.id);
+  }
   const body = Buffer.alloc(13);
   body.writeUInt32BE(0, 0);
   body.writeUInt32BE(cityId, 4);
-  body.writeUInt32BE(stageId, 8);
+  body.writeUInt32BE(assessmentId, 8);
   body.writeUInt8(3, 12);
   return { id: Number(city.type) === 2 ? 0x01180600 : 0x01180500, payload: body };
 }
@@ -672,7 +726,7 @@ function stageNextLayer(payload, won, resolvedStageId = 0) {
     return id >= Number(city.start) && id <= Number(city.last) &&
       stageId >= Number(row.startId) && stageId <= Number(row.endId);
   });
-  if (!campaign) return null;
+  if (!campaign || stageId === Number(campaign.endId)) return null;
   const body = Buffer.alloc(12);
   body.writeUInt32BE(0, 0);
   body.writeUInt32BE(cityId, 4);
@@ -709,41 +763,114 @@ function skyTowerStatScale(layerId) {
 
 const rolBilgisi = u => ({
   pos: u.pos, roleId: u.id, quality: u.quality, level: u.reportLevel || u.level,
-  curHealth: u.hp, totalHealth: u.maxHp, curAnger: 50, skillId: u.skillId,
+  curHealth: u.hp, totalHealth: u.maxHp, curAnger: u.anger, skillId: u.skillId,
   name: u.isim || '', rebirthNum: (u.rebirth || {}).n || 0,
 });
 
 // Tek bir vurus (active) uret + HP/ofkeyi guncelle
-function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random) {
+function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra = false, allies = [u]) {
   const rebirth = require('./reincarnation');
-  const skillAt = !!u.skill && u.anger >= 100;
-  const eff = skillAt ? u.skill : u.normal;
+  const talent = heroTalents.effect(u.id);
+  const skillAt = !extra && !!u.skill && !heroSkills.status(u,'silence') && (u.anger >= 100 || talent.normalSkill);
+  const plan = skillAt ? heroSkills.get(u.skill) : null;
+  const eff = skillAt ? (u.skillEffect || u.skill) : u.normal;
   const targets = [{ cmd: kodek.CMD.NONE, targetCamp: u.camp, targetPos: u.pos, reportTargetStatus: 0, result: {} }];
+  const reactions = [];
+  const appendHit = (list, victim, result, status) => {
+    list.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:status>>>0,result:{hurtHp:result.damage,hurtAnger:0}});
+    if (result.recovered) list.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:-result.recovered,hurtAnger:0}});
+    if (result.clearShield || result.absorbed) list.push({cmd:kodek.CMD.SHIELD,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:victim.shield||0}});
+    if (result.clearBuffs) heroSkills.remove(victim,false,list);
+  };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
-  const victims = aoe ? opponents.filter(target => target.hp > 0) : [hedef];
+  const selected = heroTalents.selectTargets(u, opponents);
+  const victims = plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
+    : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
+  const hitTargets = [];
+  // Spend rage before restoration: Urahara/Unohana recover it after casting.
+  const rageRecords = [];
+  heroSkills.changeFury(u,extra ? 0 : skillAt ? (talent.normalSkill && u.anger < 100 ? 0 : -100) : 50,rageRecords);
   const triple = rebirth.proc(u, 2, random);
   const ignoreDefense = rebirth.proc(u, 5, random);
+  const castAttack = heroSkills.value(u,'atk');
   for (const victim of victims) {
-    let dmg = Math.round(u.atk * (skillAt ? 1.8 : 1) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
-    const critical = !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < 0.15;
-    if (critical) dmg = Math.round(dmg * 1.5);
-    if (victim.def > 0 && !ignoreDefense) dmg = Math.round(dmg * u.atk / (u.atk + victim.def));
+    const chance = value => Math.max(0, Math.min(1, Number(value) || 0));
+    const hitChance = chance((u.hitRate == null ? 1 : heroSkills.value(u,'hitRate')) - heroSkills.value(victim,'dodgeRate'));
+    if (!bitir && !talent.guaranteedHit && hitChance < 1 && random() >= hitChance) {
+      targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
+      continue;
+    }
+    hitTargets.push(victim);
+    const attack = castAttack, defense = heroSkills.value(victim,'def') * (1-Math.max(0,Math.min(1,heroSkills.value(u,'ignoreDefense'))));
+    let dmg = Math.round(attack * (skillAt ? (plan ? plan.multiplier : 1.8) : (talent.normalMultiplier || 1)) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
+    const critical = !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate'));
+    if (critical) dmg = Math.round(dmg * Math.max(0,1.5+heroSkills.value(u,'critDamage')));
+    const breakDefense = chance(heroSkills.value(u,'wreckRate')) > 0 && random() < chance(heroSkills.value(u,'wreckRate'));
+    if (defense > 0 && !ignoreDefense && !breakDefense) dmg = Math.round(dmg * attack / Math.max(1,attack + defense));
+    const blocked = chance(heroSkills.value(victim,'blockRate')) > 0 && random() < chance(heroSkills.value(victim,'blockRate'));
+    if (blocked) dmg = Math.round(dmg * .5);
     dmg = Math.max(1, dmg);
     if (bitir) dmg = Math.max(dmg, victim.hp);
-    dmg = Math.max(0, Math.round(dmg * (1 + (u.damageBonus || 0)) * (1 - (victim.damageReduction || 0)) * (u.damageMultiplier || 1)));
+    dmg = Math.max(0, Math.round(dmg * Math.max(0, 1 + heroSkills.value(u,'damageBonus')) * (1 - chance(heroSkills.value(victim,'damageReduction'))) * Math.max(0,1+heroSkills.value(victim,'vulnerability')) * weaponSkills.damageMultiplier(u,victim) * (u.damageMultiplier == null ? 1 : Math.max(0, u.damageMultiplier))));
+    if (heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void')) dmg = 0;
     if (u.maxHitDamage) dmg = Math.min(u.maxHitDamage, dmg);
-    const result = rebirth.hit(u, victim, dmg, random);
-    const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0)) >>> 0;
-    targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:status,result:{hurtHp:result.damage,hurtAnger:0}});
-    if (result.recovered) targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:-result.recovered,hurtAnger:0}});
-    if (result.clearShield || result.absorbed) targets.push({cmd:kodek.CMD.SHIELD,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:victim.shield||0}});
-    if (result.clearBuffs) targets.push({cmd:kodek.CMD.ATTRBUFF,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:0}});
+    // Local aid rule: a living ally with Help rate intercepts half a normal hit.
+    // Both HP changes are transmitted, so rendered HP and server HP stay equal.
+    const helper = !skillAt && !extra && !bitir && opponents.find(other => other !== victim && !victims.includes(other) && other.camp === victim.camp && other.hp > 0 && !heroSkills.status(other,'invincible') && chance(heroSkills.value(other,'helpRate')) > 0 && random() < chance(heroSkills.value(other,'helpRate')));
+    if (helper) {
+      const shared = Math.floor(dmg / 2); dmg -= shared;
+      const aided = rebirth.hit(u, helper, Math.round(shared * (1 - chance(heroSkills.value(helper,'damageReduction')))), random);
+      appendHit(targets,helper,aided,ST.TARGET_EFFECT | ST.HIT | ST.HELP | (helper.hp<=0?ST.DIED:0));
+    }
+    const immune = heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void');
+    const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random);
+    const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
+    appendHit(targets,victim,result,status);
+    const passiveRecords = [];
+    partnerSkills.trigger('hpLoss',victim,opponents,allies,[u],passiveRecords,random);
+    if (victim.hp > 0 && !immune) partnerSkills.trigger('hit',victim,opponents,allies,[u],passiveRecords,random);
+    if (passiveRecords.length) reactions.push({activeCamp:victim.camp,activePos:victim.pos,skillEffectId:0,activeType:4,targets:passiveRecords});
+    if (heroSkills.status(victim,'freeze') && result.damage > 0) heroSkills.removeField(victim,'freeze',targets);
+    if (heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
+      const reflected = Math.min(u.hp,result.damage); u.hp -= reflected;
+      targets.push(heroSkills.hpRecord(u,reflected,false));
+    }
+    if (blocked && victim.hp > 0) {
+      // TBattleStage resolves every BLOCK flag through an Active_Block record.
+      // Omitting it interrupts command construction for the rest of the attack.
+      let counterDamage = 0;
+      const counterTargets = [];
+      if (!extra && u.hp > 0 && random() < chance(heroSkills.value(victim,'antiknockRate'))) {
+        const counterAtk=heroSkills.value(victim,'atk');
+        const amount = heroSkills.status(u,'invincible') ? 0 : Math.max(0, Math.round(counterAtk * counterAtk / Math.max(1,counterAtk + heroSkills.value(u,'def')) * Math.max(0,1 + heroSkills.value(victim,'damageBonus')) * (1 - chance(heroSkills.value(u,'damageReduction')))));
+        const counterResult = heroSkills.status(u,'invincible') ? {damage:0} : rebirth.hit(victim,u,amount,random);
+        counterDamage = counterResult.damage;
+        appendHit(counterTargets,u,counterResult,ST.HIT | (u.hp<=0?ST.DIED:0));
+        victim.verdi = (victim.verdi || 0) + counterDamage;
+      }
+      if (!counterTargets.length) counterTargets.push({cmd:kodek.CMD.ATTACK,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:0}});
+      reactions.push({activeCamp:victim.camp,activePos:victim.pos,skillEffectId:victim.normal,activeType:3,targets:counterTargets});
+    }
   }
-  if (skillAt && u.buff && u.buff.id > 0) targets.push({
+  targets.push(...rageRecords);
+  if (plan) {
+    const effectRecords = [];
+    heroSkills.apply(plan,u,allies,opponents,hitTargets,effectRecords,random);
+    const mainHeals = plan.healOnly && u.skillHealsVisually!==false ? effectRecords.filter(record=>record.cmd===kodek.CMD.ATTACK && record.result.hurtHp<0) : [];
+    targets.push(...mainHeals);
+    const immediate = effectRecords.filter(record=>!mainHeals.includes(record));
+    if(immediate.length)reactions.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:immediate});
+  }
+  const attackPassive = [];
+  if(u.hp>0)partnerSkills.trigger('attack',u,allies,opponents,hitTargets,attackPassive,random);
+  const outgoingDamage=targets.filter(record=>record.targetCamp!==u.camp).reduce((sum,record)=>sum+Math.max(0,Number(record.result.hurtHp)||0),0);
+  weaponSkills.after(u,allies,opponents,hitTargets,outgoingDamage,attackPassive,random);
+  if(attackPassive.length)reactions.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:attackPassive});
+  if (skillAt && !plan && u.buff && u.buff.id > 0) targets.push({
     cmd:kodek.CMD.ATTRBUFF,targetCamp:u.buff.kendine?u.camp:hedef.camp,targetPos:u.buff.kendine?u.pos:hedef.pos,
     reportTargetStatus:ST.HIT>>>0,result:{buffId:u.buff.id,buffTurn:u.buff.tur}
   });
-  if (rebirth.proc(u,10,random)) {
+  if (!extra && rebirth.proc(u,10,random)) {
     const alive = opponents.filter(target => target.hp > 0);
     if (alive.length >= 2) {
       const first=alive[0],second=alive[1],oldFirst=first.pos,oldSecond=second.pos;
@@ -752,10 +879,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random) {
       first.pos=oldSecond;second.pos=oldFirst;
     }
   }
-  const anger=skillAt?100:-50;
-  u.anger=Math.max(0,Math.min(100,u.anger-anger));
-  targets.push({cmd:kodek.CMD.ATTACK,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:anger}});
-  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets};
+  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:extra?kodek.ACTIVE.NORMAL_EX:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets,reactions};
 }
 
 // --- WORLD MAP ZORLUK DENGESI ---
@@ -794,7 +918,7 @@ function sonIstatistik() { return SON_ISTATISTIK; }
 function sonOyuncuHasari() { return SON_OYUNCU_HASARI; }
 // Speed bonuses affect initiative; stable camp/slot order resolves equal speeds.
 function initiative(units) {
-  return units.slice().sort((a,b) => (Number(b.speed)||0) - (Number(a.speed)||0) || a.camp-b.camp || a.pos-b.pos);
+  return units.slice().sort((a,b) => heroSkills.value(b,'speed') - heroSkills.value(a,'speed') || a.camp-b.camp || a.pos-b.pos);
 }
 
 function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
@@ -823,6 +947,14 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const bas = heroBirim(ana.id, anaPos, lv, nick, anaStat || ana.stat, anaStat ? 1 : kOl(ana.id, lv));
   if (!bas) return null;
   p1.push(bas);
+  const selectedSkill = require('./beceri').ana(durumK);
+  const selectedRow = SkillConfig.find(row=>idNum(row.id)===selectedSkill);
+  if (selectedRow && heroSkills.get(selectedSkill)) {
+    const animationId = Number(selectedRow.skillId) || selectedSkill;
+    const effects = tryParse((heroById.get(ana.id)||{}).attackEffect) || {};
+    bas.skill=selectedSkill; bas.skillId=selectedSkill;
+    bas.skillEffect=effects[String(animationId)]!=null?animationId:bas.normal;
+  }
   for (const [k, p] of Object.entries(kadro)) {
     const id = Number(k), pos = Number(p);
     if (!id || pos <= 0 || p1.some(t => t.id === id)) continue;
@@ -841,8 +973,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       unit.atk += Math.max(0, bonus[6] || 0, bonus[7] || 0);
       unit.def = Math.max(0, unit.def || 0) + Math.max(0, bonus[8] || 0, bonus[9] || 0);
     }
-    unit.damageBonus = bonus[18] || 0;
-    unit.damageReduction = bonus[19] || 0;
+    if (!statPaketleri.has(unit.id >>> 0)) {
+      unit.damageBonus = (unit.damageBonus || 0) + (bonus[18] || 0);
+      unit.damageReduction = (unit.damageReduction || 0) + (bonus[19] || 0);
+    }
   }
   if(options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
     const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
@@ -910,7 +1044,30 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   }
   // roller simulasyondan ONCE (curHealth = baslangic HP'si)
   const roles1 = p1.map(rolBilgisi), roles2 = p2.map(rolBilgisi);
-  const sirali = arr => arr.slice().sort((a, b) => a.pos - b.pos);
+  const initialActives = [];
+  for (const unit of p1.concat(p2)) {
+    unit.pvp = !!arenaRakip;
+    if (!unit.partnerSkills) unit.partnerSkills = unit.camp === 0 ? partnerSkills.unlocked(durumK,unit.id) : [];
+    if (!unit.weaponSkills) unit.weaponSkills = unit.camp === 0 ? weaponSkills.equipped(durumK,unit.id) : [];
+    const records = [];
+    partnerSkills.trigger('start',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
+    partnerSkills.trigger('hpLoss',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
+    weaponSkills.start(unit,records);
+    initialActives.push(...heroSkills.eventFrames(unit,records));
+  }
+  for (const [team, roles] of [[p1,roles1],[p2,roles2]]) team.forEach((unit,index)=>{
+    roles[index].curHealth=unit.hp; roles[index].totalHealth=unit.maxHp;
+  });
+  const deathTriggered = new Set(p1.concat(p2).filter(unit=>unit.hp<=0));
+  const appendDeaths = actives => {
+    let unit;
+    while ((unit=p1.concat(p2).find(other=>other.hp<=0&&!deathTriggered.has(other)))) {
+      deathTriggered.add(unit);
+      const records=[];
+      partnerSkills.trigger('death',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
+      if(records.length)actives.push({activeCamp:unit.camp,activePos:unit.pos,skillEffectId:0,activeType:5,targets:records});
+    }
+  };
   const turns = [];
   for (let t = 1; t <= MAX_TUR; t++) {
     let arenaFinisher = 0;
@@ -921,18 +1078,54 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       };
       arenaFinisher = hpRatio(p2) > hpRatio(p1) ? 1 : 0;
     }
-    const actives = [];
+    const actives = t===1 ? [...initialActives] : [];
+    for (const unit of p1.concat(p2)) {
+      unit.battleRound=t;
+      if(unit.hp<=0)continue;
+      const records=[];
+      partnerSkills.trigger('round',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
+      actives.push(...heroSkills.eventFrames(unit,records));
+    }
+    actives.push(...heroSkills.startRound(p1.concat(p2)));
+    appendDeaths(actives);
     for (const u of initiative(p1.concat(p2))) {
       if (u.hp <= 0) continue;
+      if (['stun','fossilize','void','freeze'].some(field=>heroSkills.status(u,field))) continue;
+      const canSkill = u.skill && !heroSkills.status(u,'silence') && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
+      if (!canSkill && heroSkills.status(u,'disarm')) continue;
       const ayakta = (u.camp === 0 ? p2 : p1).filter(x => x.hp > 0);
-      const rakip = sirali(ayakta)[0];
+      const rakip = heroTalents.selectTargets(u, ayakta)[0];
       if (!rakip) break;
       const bitir = options.forceWin !== false && t === MAX_TUR && (arenaRakip ? u.camp === arenaFinisher : u.camp === 0);
-      const act = vurus(u, rakip, bitir, u.camp === 0 ? p2 : p1);
-      // targets[1] = hasar satiri (targets[0] self-trigger) -> istatistik icin topla
+      const allies = u.camp === 0 ? p1 : p2;
+      const opponents = heroSkills.status(u,'chaos') ? allies.filter(other=>other!==u) : u.camp === 0 ? p2 : p1;
+      if (!opponents.some(other=>other.hp>0)) continue;
+      const target = heroSkills.status(u,'chaos') ? heroSkills.select(opponents,'random1')[0] : rakip;
+      const act = vurus(u, target, bitir, opponents, Math.random, false, allies);
+      // Sum all outgoing damage, including multi-target and aid results.
       u.verdi = (u.verdi || 0) + act.targets.filter(target => target.targetCamp !== u.camp).reduce((sum, target) => sum + Math.max(0, Number(target.result.hurtHp) || 0), 0);
       actives.push(act);
+      actives.push(...act.reactions);
+      appendDeaths(actives);
+      // Combo is BASEATTRIBUTEINDEX_Punch (14), not a fixed global chance.
+      // Extra attacks neither spend nor generate rage and never chain recursively.
+      if (act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && Math.random() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {
+        const next = heroTalents.selectTargets(u, opponents)[0];
+        if (next) {
+          const combo = vurus(u, next, false, opponents, Math.random, true, allies);
+          u.verdi += combo.targets.filter(target => target.targetCamp !== u.camp).reduce((sum,target) => sum + Math.max(0, Number(target.result.hurtHp) || 0),0);
+          actives.push(combo);
+          actives.push(...combo.reactions);
+          appendDeaths(actives);
+        }
+      }
       if (p2.every(x => x.hp <= 0)) break;
+    }
+    actives.push(...heroSkills.endRound(p1.concat(p2)));
+    for(const unit of p1.concat(p2))if(unit.hp>0){
+      const records=[];
+      partnerSkills.trigger('roundEnd',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
+      actives.push(...heroSkills.eventFrames(unit,records));
     }
     if (actives.length) turns.push({ curTurn: t, actives });
     if (p2.every(x => x.hp <= 0) || p1.every(x => x.hp <= 0)) break;
@@ -1101,6 +1294,9 @@ function fightFrames(reqId, payload, durum = null) {
   const bpId = heroChangeFight ? heroChangeStage
     : voidBoss || towerChallenge ? (towerPve ? towerStageId : 0)
     : (raidersChallenge ? raidersStageId : (stageIdCoz(payload, durum) || sonStage));
+  if (hurdleChallenge && stageCityType(hurdleCityId) === 2 && !stageIdCoz(payload, durum)) {
+    throw new Error('Instance is complete or the stage is invalid; reset before challenging again');
+  }
   const stageBattle = !!stageById(bpId);
   if (bpId && !heroChangeFight) sonStage = bpId;
   const durumArena = (reqId >>> 0) === 0x01811904 ? require('./durum').yukle() : null;

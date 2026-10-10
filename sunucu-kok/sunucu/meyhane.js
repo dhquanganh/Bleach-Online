@@ -252,11 +252,11 @@ function recruitPaketi(warriorId, durum, level, supplied) {
   accountSave(account, supplied);
   d.alinan[String(s.heroId)] = 1;
   d.harcanan[String(s.soul.type)] = (Number(d.harcanan[String(s.soul.type)]) || 0) + s.recruitSoul;
-  try { require('./seviye').heroKayit(durum, s.heroId, level); } catch (e) { }
+  const recruitLevel = require('./seviye').heroKayit(durum, s.heroId, level).lv;
   const w = new W();
   w.u32(0);
   w.u32(s.heroId >>> 0);     // HERO id (warrior satir id'si DEGIL)
-  w.u32(Math.max(1, Number(level) || 1) >>> 0);   // RebirthLevel = ana heronun seviyesi
+  w.u32(recruitLevel);   // Includes talent-defined initial level; matches persisted state.
   w.u32(0);                  // HeroOverTime (0 = suresiz)
   w.u32(0);                  // HeroCostGold
   return w.done();
@@ -274,9 +274,9 @@ function itemRecruitPaketi(heroId, durum, level) {
   if ((Array.isArray(v.herolar) && v.herolar.map(Number).includes(id)) || v.tumKarakterler === true || v.tumKarakterler === 'true') return null;
 
   d.alinan[String(id)] = 1;
-  try { require('./seviye').heroKayit(durum, id, level); } catch (e) { }
+  const recruitLevel = require('./seviye').heroKayit(durum, id, level).lv;
   const w = new W();
-  w.u32(0).u32(id).u32(Math.max(1, Number(level) || 1)).u32(0).u32(0);
+  w.u32(0).u32(id).u32(recruitLevel).u32(0).u32(0);
   return w.done();
 }
 /** Devsirilmis (kalici) partner id listesi. */

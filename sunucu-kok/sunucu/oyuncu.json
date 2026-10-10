@@ -8,14 +8,14 @@
   "country": 0,
   "militaryRank": 0,
   "prestige": 0,
-  "altin": 6599,
-  "gumus": 1674532,
+  "altin": 18989,
+  "gumus": 480803,
   "gumusHigh": 0,
-  "kupon": 500005,
+  "kupon": 498655,
   "askeriEmir": 500030,
   "vipLevel": 0,
   "vipExp": 0,
-  "generalsSoul": 425,
+  "generalsSoul": 210,
   "karakter": {
     "nick": "dqa",
     "profession": 1,
@@ -455,17 +455,103 @@
         "ws": 0,
         "fl": 0,
         "gems": []
+      },
+      "536870950": {
+        "tpl": 14200034,
+        "kat": 2,
+        "slot": 2,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
+      },
+      "536870951": {
+        "tpl": 14200035,
+        "kat": 2,
+        "slot": 3,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
+      },
+      "536870952": {
+        "tpl": 14200036,
+        "kat": 2,
+        "slot": 4,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
+      },
+      "536870953": {
+        "tpl": 14200037,
+        "kat": 2,
+        "slot": 5,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
+      },
+      "536870954": {
+        "tpl": 14200038,
+        "kat": 2,
+        "slot": 6,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
+      },
+      "536870955": {
+        "tpl": 14200031,
+        "kat": 2,
+        "slot": 1,
+        "lvl": 0,
+        "hole": 0,
+        "app": [],
+        "ws": 0,
+        "fl": 0,
+        "gems": []
       }
     },
     "takili": {
       "11100004": {
-        "1": 536870914,
-        "2": 536870916,
-        "6": 536870917
+        "1": 536870931,
+        "2": 536870950,
+        "3": 536870951,
+        "4": 536870952,
+        "5": 536870953,
+        "6": 536870954
+      },
+      "11100101": {
+        "1": 536870955,
+        "2": 536870916
+      },
+      "11110006": {
+        "2": 536870936,
+        "3": 536870937,
+        "4": 536870938,
+        "5": 536870939,
+        "6": 536870940
+      },
+      "11140010": {
+        "1": 536870934,
+        "2": 536870943,
+        "3": 536870945,
+        "4": 536870947
       }
     },
     "adaylar": {},
-    "sonInst": 536870949,
+    "sonInst": 536870955,
     "cd": 0,
     "koruma": 0,
     "goc": 1
@@ -494,7 +580,7 @@
       },
       {
         "code": 14100021,
-        "amount": 3
+        "amount": 8
       },
       {
         "code": 14100084,
@@ -534,27 +620,76 @@
       },
       {
         "code": 14300001,
-        "amount": 3
+        "amount": 4
       },
       {
         "code": 14100023,
-        "amount": 6600
+        "amount": 19000
       },
       {
         "code": 14100698,
-        "amount": 66
+        "amount": 190
       },
       {
         "code": 14100779,
-        "amount": 66
+        "amount": 153
       },
       {
         "code": 14900001,
+        "amount": 4
+      },
+      {
+        "code": 14100091,
+        "amount": 1
+      },
+      {
+        "code": 14300003,
+        "amount": 5
+      },
+      {
+        "code": 14300002,
+        "amount": 3
+      },
+      {
+        "code": 14300005,
+        "amount": 5
+      },
+      {
+        "code": 14300006,
+        "amount": 6
+      },
+      {
+        "code": 14300007,
+        "amount": 7
+      },
+      {
+        "code": 14300004,
         "amount": 2
+      },
+      {
+        "code": 14100307,
+        "amount": 1
+      },
+      {
+        "code": 14100010,
+        "amount": 30
+      },
+      {
+        "code": 14100063,
+        "amount": 15
+      },
+      {
+        "code": 14100017,
+        "amount": 5
       }
     ],
     "dusulen": {
-      "14100074": 486
+      "14100003": 5,
+      "14100015": 1,
+      "14100074": 486,
+      "14100307": 1,
+      "14100779": 63,
+      "14300001": 3
     },
     "sonInstance": 5000
   },
@@ -564,36 +699,40 @@
   },
   "olay": {
     "sayac": {
-      "gorev": 43,
-      "seviye": 32,
-      "instancePass": 188,
+      "gorev": 50,
+      "seviye": 34,
+      "instancePass": 207,
       "soulmap": 11,
       "zanpakutoTrain": 4,
-      "cultivate": 25,
+      "cultivate": 241,
       "signin": 1,
-      "autoJanken": 9,
-      "fortifyEquip": 1,
+      "autoJanken": 45,
+      "fortifyEquip": 2,
       "luckyCat": 1,
       "arenaFight": 1,
-      "dailyActivityProtect": 2
+      "dailyActivityProtect": 4,
+      "cultivateGold": 1,
+      "recruit": 1
     },
     "gun": "2026-10-10",
     "gunluk": {
-      "gorev": 43,
-      "instancePass": 188,
+      "gorev": 50,
+      "instancePass": 207,
       "soulmap": 11,
       "zanpakutoTrain": 4,
-      "cultivate": 25,
+      "cultivate": 241,
       "signin": 1,
-      "autoJanken": 9,
-      "fortifyEquip": 1,
+      "autoJanken": 45,
+      "fortifyEquip": 2,
       "luckyCat": 1,
       "arenaFight": 1,
-      "dailyActivityProtect": 2
+      "dailyActivityProtect": 4,
+      "cultivateGold": 1,
+      "recruit": 1
     }
   },
   "knifeSoul": {
-    "id": 18100005,
+    "id": 18100011,
     "exp": 30
   },
   "zanpakuto": {
@@ -633,6 +772,10 @@
   },
   "gorev": {
     "kabul": {
+      "16100051": {
+        "kill": 1,
+        "taban": 0
+      },
       "16200001": {
         "kill": 0,
         "taban": 0
@@ -693,18 +836,33 @@
       16100040,
       16100041,
       16100042,
-      16100043
+      16100043,
+      16100044,
+      16100045,
+      16100046,
+      16100047,
+      16100048,
+      16100049,
+      16100050
     ]
   },
   "seviye": {
     "herolar": {
       "11100101": {
-        "lv": 32,
-        "exp": 24768
+        "lv": 34,
+        "exp": 54472
       },
       "11100102": {
-        "lv": 32,
-        "exp": 21385
+        "lv": 34,
+        "exp": 51089
+      },
+      "11110006": {
+        "lv": 35,
+        "exp": 21120
+      },
+      "11140010": {
+        "lv": 34,
+        "exp": 3750
       }
     },
     "bekleyen": {}
@@ -1225,15 +1383,21 @@
   "meyhane": {
     "alinan": {
       "11100101": 1,
-      "11100102": 1
+      "11100102": 1,
+      "11110006": 1,
+      "11140010": 1
     },
     "kalite": {},
-    "harcanan": {},
+    "harcanan": {
+      "4": 200
+    },
     "pending": []
   },
   "kadro": {
     "11100101": 1,
-    "11100102": 7
+    "11100102": 7,
+    "11110006": 11,
+    "11140010": 8
   },
   "starMapIndex": 17121001,
   "bicak": {
@@ -1262,6 +1426,11 @@
       "alinan": [
         1
       ]
+    },
+    "105": {
+      "alinan": [
+        6
+      ]
     }
   },
   "pet": {
@@ -1284,7 +1453,7 @@
     "lockedTowerId": 15900001
   },
   "towerGold": {
-    "floor": 12,
+    "floor": 20,
     "records": {
       "1": {
         "first": {
@@ -1410,14 +1579,110 @@
         "first": {
           "name": "dqa",
           "time": 1791628836,
-          "turns": 4,
-          "report": "AAEzAAAAAAAAAAAAAAAAAAMGAKlfZAIAIAAAB7kAAAe5AAAAMgDH4/EAA2RxYQABAKlfxQIAIAAABjkAAAY5AAAAMgDH5FQAC0dhbmp1IFNoaWJhAAcAqV/GAgAgAAAEygAABMoAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAKmtgwUACwAAJYAAACWAAAAAMgDH5FIAEENocmlzdG1hcyBJY2hpZ28AAAQAAAABAAQAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAAo0AAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIsAAAAAAEABwIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAC+AAAAAABAAYCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQABhgAAAAAAAUIAAAAAAQEGAgAAAAAAAAD////OAAAAAgAEAAEAx+RUAAAAAgAEAAABAAAAAAEBBoYAAAAAAAcdAAAAAAIAAQIAAAAAzf59AAAAAwEAAQIAAAAAAAAAAAAAZAAHAMfkUwAAAAIABAAABwAAAAABAQaCAAAAAAAEEgAAAAACAAcCAAAAAM3+hQAAAAMBAAcCAAAAAAAAAAAAAGQABgDH4/EAAAACAAQAAAYAAAAAAQEGggAAAAAABdEAAAAAAgAGAgAAAADN/oUAAAADAQAGAgAAAAAAAAAAAABkAQYAx+RSAAAAAQADAAEGAAAAAAEAAYYAAAAAAAFFAAAAAAEBBgIAAAAAAAAA////zgAAAAMABAABAMfkUgAAAAEAAwAAAQAAAAABAQaCAAAAAAACjwAAAAABAAECAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAAmkAAAAAAQAHAgAAAAAAAAD////OAAYAx+PxAAAAAQADAAAGAAAAAAEBBoIAAAAAAAMbAAAAAAEABgIAAAAAAAAA////zgEGAMfkUgAAAAEAAwABBgAAAAABAAGCAAAAAAAA5QAAAAABAQYCAAAAAAAAAP///84AAAAEAAIAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAApwAAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIgAAAAAAEABwIAAAAAAAAA////zg=="
+          "turns": 4
         },
         "best": {
           "name": "dqa",
           "time": 1791628836,
-          "turns": 4,
-          "report": "AAEzAAAAAAAAAAAAAAAAAAMGAKlfZAIAIAAAB7kAAAe5AAAAMgDH4/EAA2RxYQABAKlfxQIAIAAABjkAAAY5AAAAMgDH5FQAC0dhbmp1IFNoaWJhAAcAqV/GAgAgAAAEygAABMoAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAKmtgwUACwAAJYAAACWAAAAAMgDH5FIAEENocmlzdG1hcyBJY2hpZ28AAAQAAAABAAQAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAAo0AAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIsAAAAAAEABwIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAC+AAAAAABAAYCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQABhgAAAAAAAUIAAAAAAQEGAgAAAAAAAAD////OAAAAAgAEAAEAx+RUAAAAAgAEAAABAAAAAAEBBoYAAAAAAAcdAAAAAAIAAQIAAAAAzf59AAAAAwEAAQIAAAAAAAAAAAAAZAAHAMfkUwAAAAIABAAABwAAAAABAQaCAAAAAAAEEgAAAAACAAcCAAAAAM3+hQAAAAMBAAcCAAAAAAAAAAAAAGQABgDH4/EAAAACAAQAAAYAAAAAAQEGggAAAAAABdEAAAAAAgAGAgAAAADN/oUAAAADAQAGAgAAAAAAAAAAAABkAQYAx+RSAAAAAQADAAEGAAAAAAEAAYYAAAAAAAFFAAAAAAEBBgIAAAAAAAAA////zgAAAAMABAABAMfkUgAAAAEAAwAAAQAAAAABAQaCAAAAAAACjwAAAAABAAECAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAAmkAAAAAAQAHAgAAAAAAAAD////OAAYAx+PxAAAAAQADAAAGAAAAAAEBBoIAAAAAAAMbAAAAAAEABgIAAAAAAAAA////zgEGAMfkUgAAAAEAAwABBgAAAAABAAGCAAAAAAAA5QAAAAABAQYCAAAAAAAAAP///84AAAAEAAIAAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAAApwAAAAAAQABAgAAAAAAAAD////OAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAIgAAAAAAEABwIAAAAAAAAA////zg=="
+          "turns": 4
+        }
+      },
+      "12": {
+        "first": {
+          "name": "dqa",
+          "time": 1791637094,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791637094,
+          "turns": 5
+        }
+      },
+      "13": {
+        "first": {
+          "name": "dqa",
+          "time": 1791639020,
+          "turns": 4
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791639020,
+          "turns": 4
+        }
+      },
+      "14": {
+        "first": {
+          "name": "dqa",
+          "time": 1791639065,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791639065,
+          "turns": 5
+        }
+      },
+      "15": {
+        "first": {
+          "name": "dqa",
+          "time": 1791639115,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791639115,
+          "turns": 5
+        }
+      },
+      "16": {
+        "first": {
+          "name": "dqa",
+          "time": 1791639170,
+          "turns": 6
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791639170,
+          "turns": 6
+        }
+      },
+      "17": {
+        "first": {
+          "name": "dqa",
+          "time": 1791639223,
+          "turns": 8
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791639223,
+          "turns": 8
+        }
+      },
+      "18": {
+        "first": {
+          "name": "dqa",
+          "time": 1791648132,
+          "turns": 5
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791648132,
+          "turns": 5
+        }
+      },
+      "19": {
+        "first": {
+          "name": "dqa",
+          "time": 1791648213,
+          "turns": 5,
+          "report": "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"
+        },
+        "best": {
+          "name": "dqa",
+          "time": 1791648213,
+          "turns": 5,
+          "report": "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"
         }
       }
     }
@@ -1429,8 +1694,8 @@
         "id": "359:80840994",
         "name": "dqa",
         "bot": false,
-        "damage": 6,
-        "at": 1791623873
+        "damage": 11,
+        "at": 1791648492
       },
       "bot:1793": {
         "id": "bot:1793",
@@ -2946,13 +3211,343 @@
         ],
         "damage": 1674396,
         "at": 1791630760
+      },
+      "bot:1206": {
+        "id": "bot:1206",
+        "name": "Bot Nnoitra Gilga #1206",
+        "bot": true,
+        "level": 96,
+        "heroes": [
+          11110024,
+          11150017,
+          11150041,
+          11150031,
+          11160001
+        ],
+        "damage": 2125095,
+        "at": 1791637023
+      },
+      "bot:1873": {
+        "id": "bot:1873",
+        "name": "Bot Ōetsu Nimaiya #1873",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11150018,
+          11150009,
+          11120005,
+          11110007,
+          11150046
+        ],
+        "damage": 5338560,
+        "at": 1791637323
+      },
+      "bot:810": {
+        "id": "bot:810",
+        "name": "Bot Ulquiorra #0810",
+        "bot": true,
+        "level": 95,
+        "heroes": [
+          11130002,
+          11110030,
+          11150023,
+          11150047,
+          11110009
+        ],
+        "damage": 878479,
+        "at": 1791638949
+      },
+      "bot:327": {
+        "id": "bot:327",
+        "name": "Bot Kyōka Suigetsu Aizen #0327",
+        "bot": true,
+        "level": 97,
+        "heroes": [
+          11140006,
+          11110017,
+          11110007,
+          11140008,
+          11120006
+        ],
+        "damage": 232895,
+        "at": 1791639249
+      },
+      "bot:1745": {
+        "id": "bot:1745",
+        "name": "Bot Yammy Llargo #1745",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11150055,
+          11140001,
+          11150003,
+          11150054,
+          11150014
+        ],
+        "damage": 10414652,
+        "at": 1791639549
+      },
+      "bot:162": {
+        "id": "bot:162",
+        "name": "Bot Nemu Kurotsuchi #0162",
+        "bot": true,
+        "level": 96,
+        "heroes": [
+          11110003,
+          11110014,
+          11110010,
+          11150023,
+          11110013
+        ],
+        "damage": 301500,
+        "at": 1791639849
+      },
+      "bot:762": {
+        "id": "bot:762",
+        "name": "Bot Rukia Kuchiki #0762",
+        "bot": true,
+        "level": 100,
+        "heroes": [
+          11110010,
+          11150014,
+          12100073,
+          11160012,
+          11110001
+        ],
+        "damage": 103455,
+        "at": 1791640149
+      },
+      "bot:254": {
+        "id": "bot:254",
+        "name": "Bot Isshin Kurosaki #0254",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11140014,
+          11110015,
+          11150034,
+          11150031,
+          11110004
+        ],
+        "damage": 6394836,
+        "at": 1791640449
+      },
+      "bot:386": {
+        "id": "bot:386",
+        "name": "Bot Bazz-B #0386",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150039,
+          11110027,
+          11150043,
+          11110022,
+          11160002
+        ],
+        "damage": 6851906,
+        "at": 1791640749
+      },
+      "bot:446": {
+        "id": "bot:446",
+        "name": "Bot Shin Daiguren Tōshirō #0446",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11150038,
+          11150040,
+          11140004,
+          11150015,
+          11110013
+        ],
+        "damage": 2227490,
+        "at": 1791641061
+      },
+      "bot:1224": {
+        "id": "bot:1224",
+        "name": "Bot Shinsō Gin #1224",
+        "bot": true,
+        "level": 108,
+        "heroes": [
+          11120009,
+          11140006,
+          11110030,
+          11150049,
+          11120008
+        ],
+        "damage": 10246852,
+        "at": 1791641361
+      },
+      "bot:150": {
+        "id": "bot:150",
+        "name": "Bot Lisa Yadoumaru #0150",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11110009,
+          11150038,
+          11150009,
+          11150059,
+          11120002
+        ],
+        "damage": 6606933,
+        "at": 1791641661
+      },
+      "bot:1109": {
+        "id": "bot:1109",
+        "name": "Bot Visored Hirako #1109",
+        "bot": true,
+        "level": 99,
+        "heroes": [
+          11110012,
+          12100073,
+          11150024,
+          11110027,
+          11150038
+        ],
+        "damage": 7484931,
+        "at": 1791641961
+      },
+      "bot:193": {
+        "id": "bot:193",
+        "name": "Bot Bankai Shunsui Kyōraku #0193",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11150041,
+          11150054,
+          11110019,
+          11110010,
+          11110020
+        ],
+        "damage": 5327195,
+        "at": 1791644719
+      },
+      "bot:99": {
+        "id": "bot:99",
+        "name": "Bot Kokutō #0099",
+        "bot": true,
+        "level": 100,
+        "heroes": [
+          11150043,
+          11150057,
+          11160005,
+          11150017,
+          11110002
+        ],
+        "damage": 17341518,
+        "at": 1791645400
+      },
+      "bot:1629": {
+        "id": "bot:1629",
+        "name": "Bot Elegant Unohana #1629",
+        "bot": true,
+        "level": 111,
+        "heroes": [
+          11150024,
+          11150057,
+          11140005,
+          11120005,
+          11110026
+        ],
+        "damage": 8969535,
+        "at": 1791645700
+      },
+      "bot:1248": {
+        "id": "bot:1248",
+        "name": "Bot Shin Nel Tu #1248",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11160007,
+          11160005,
+          11150046,
+          11150009,
+          11120003
+        ],
+        "damage": 5295584,
+        "at": 1791646000
+      },
+      "bot:1477": {
+        "id": "bot:1477",
+        "name": "Bot Bankai Rukia #1477",
+        "bot": true,
+        "level": 88,
+        "heroes": [
+          11150011,
+          11150051,
+          11160005,
+          11130003,
+          11110024
+        ],
+        "damage": 2099632,
+        "at": 1791647741
+      },
+      "bot:376": {
+        "id": "bot:376",
+        "name": "Bot Bazz-B #0376",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150039,
+          11160004,
+          11160002,
+          11150027,
+          11120011
+        ],
+        "damage": 375639,
+        "at": 1791648041
+      },
+      "bot:230": {
+        "id": "bot:230",
+        "name": "Bot Tessai Tsukabishi #0230",
+        "bot": true,
+        "level": 108,
+        "heroes": [
+          12100073,
+          11160002,
+          11100102,
+          11150020,
+          11110019
+        ],
+        "damage": 270498,
+        "at": 1791648341
+      },
+      "bot:1854": {
+        "id": "bot:1854",
+        "name": "Bot Valkyrie #1854",
+        "bot": true,
+        "level": 112,
+        "heroes": [
+          11150040,
+          11160005,
+          11140013,
+          11110026,
+          11120011
+        ],
+        "damage": 879568,
+        "at": 1791648641
+      },
+      "bot:888": {
+        "id": "bot:888",
+        "name": "Bot Ichibē Hyōsube #0888",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150019,
+          11150010,
+          11150036,
+          11160012,
+          11120013
+        ],
+        "damage": 1165753,
+        "at": 1791649072
       }
     },
-    "nextBot": 1791631060,
-    "nextFight": 1791628750,
-    "battles": 4,
+    "nextBot": 1791649372,
+    "nextFight": 1791648507,
+    "battles": 6,
     "payouts": [],
-    "lastDamage": 6
+    "lastDamage": 11
   },
   "protectSeireitei": {
     "day": 20736,
@@ -2961,12 +3556,12 @@
     "worldLevel": 32,
     "doorIndex": 0,
     "bossMaxHp": 9100002004,
-    "hp": 9099996238,
-    "damage": 5766,
-    "battles": 2,
+    "hp": 9099965366,
+    "damage": 36638,
+    "battles": 4,
     "revives": 1,
-    "deadUntil": 1791628054,
-    "nextFight": 1791628015,
+    "deadUntil": 1791648486,
+    "nextFight": 1791648447,
     "finished": false,
     "reports": [
       {
@@ -2982,6 +3577,20 @@
         "hp": 9099996238,
         "maxHp": 9100002004,
         "report": "AAE0AAAAAAAAAAAAAAAAAAMGAKlfZAIAIECSuAAAAAAAQJK4AAAAAAAAAAAyAMfj8QADZHFhAAEAqV/FAgAgQIl4AAAAAABAiXgAAAAAAAAAADIAx+RUAAtHYW5qdSBTaGliYQAHAKlfxgIAIEB78AAAAAAAQHvwAAAAAAAAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAMN3EQEAIEIA8ze6aAAAQgDzN7poAAAAAAAyAMinfAASSmlkYW5ixY0gSWtrYW56YWthAAADAAAAAQAEAAEAx+RSAAAAAQADAAABAAAAAAEBBoIAAAAAAAFVAAAAAAEAAQIAAAAAAAAA////zgAGAMfj8QAAAAEAAwAABgAAAAABAQaCAAAAAAAB5gAAAAABAAYCAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAAATQAAAAAAQAHAgAAAAAAAAD////OAQYAx+RSAAAAAQADAAEGAAAAAAEAAYIAAAAAAAMvAAAAAAEBBgIAAAAAAAAA////zgAAAAIAAwAGAMfj8QAAAAIABAAABgAAAAABAQaCAAAAAAADSQAAAAACAAYCAAAAAM3+hQAAAAMBAAYCAAAAAAAAAAAAAGQABwDH5FMAAAACAAQAAAcAAAAAAQEGggAAAAAAAiYAAAAAAgAHAgAAAADN/oUAAAADAQAHAgAAAAAAAAAAAABkAQYAyKd8AAAAAgADAAEGAAAAAAEABoIAAAAAAASuAAAAAAEBBgIAAAAAAAAAAAAAZAAAAAMAAgAHAMfkUgAAAAEAAwAABwAAAAABAQaCAAAAAAABIQAAAAABAAcCAAAAAAAAAP///84BBgDH5FIAAAABAAMAAQYAAAAAAQAHggAAAAAAAb8AAAAAAQEGAgAAAAAAAAD////O"
+      },
+      {
+        "id": "08b99f1e-de42-46d3-b6d6-6b5b3a52de55",
+        "won": false,
+        "hp": 9099987772,
+        "maxHp": 9100002004,
+        "report": "AAE0AAAAAAAAAAAAAAAAAAMGAKlfZAIAIEClZgAAAAAAQKVmAAAAAAAAAAAyAMfj8QADZHFhAAEAqV/FAgAgQKJkAAAAAABAomQAAAAAAAAAADIAx+RUAAtHYW5qdSBTaGliYQAHAKlfxgIAIECfDAAAAAAAQJ8MAAAAAAAAAAAyAMfkUwALSXppcnUgS2lyYSAAAAAAAAAAAAAAAAAAAAEGAMN3EQEAIEIA8zdicAAAQgDzN2JwAAAAAAAAAMinfAASSmlkYW5ixY0gSWtrYW56YWthAAADAAAAAQAEAAcAx+RSAAAAAQADAAAHAAAAAAEBBoIAAAAAAAQVAAAAAAEABwIAAAAAAAAA////zgABAMfkUgAAAAEAAwAAAQAAAAABAQaCAAAAAAAEmQAAAAABAAECAAAAAAAAAP///84ABgDH4/EAAAABAAMAAAYAAAAAAQEGggAAAAAABbIAAAAAAQAGAgAAAAAAAAD////OAQYAx+RSAAAAAQADAAEGAAAAAAEAAcIAAAAAAAkyAAAAAAEBBgIAAAAAAAAA////zgAAAAIABAAHAMfkUwAAAAIABAAABwAAAAABAQaKAAAAAAAD+AAAAAACAAcCAAAAAM3+hQAAAAMBAAcCAAAAAAAAAAAAAGQBBgDH5FIAAAADAAEBAAcCAAAAAAAAAAAAAAAABgDH4/EAAAACAAQAAAYAAAAAAQEGggAAAAAACo8AAAAAAgAGAgAAAADN/oUAAAADAQAGAgAAAAAAAAAAAABkAQYAx+RSAAAAAQADAAEGAAAAAAEABsYAAAAAAAqzAAAAAAEBBgIAAAAAAAAA////zgAAAAMAAgAHAMfkUgAAAAEAAwAABwAAAAABAQaCAAAAAAAEKwAAAAABAAcCAAAAAAAAAP///84BBgDIp3wAAAACAAMAAQYAAAAAAQAHxgAAAAAAB8MAAAAAAQEGAgAAAAAAAAAAAABk"
+      },
+      {
+        "id": "873fb3a7-b6c4-4086-a9c5-40a7968de8ea",
+        "won": false,
+        "hp": 9099965366,
+        "maxHp": 9100002004,
+        "report": "AAE0AAAAAAAAAAAAAAAAAAUGAKlfZAIAIkCwjwAAAAAAQLCPAAAAAAAAAAAyAMf8qAADZHFhAAEAqV/FAgAiQKWyAAAAAABApbIAAAAAAAAAADIAx+RUAAtHYW5qdSBTaGliYQAHAKlfxgIAIkCi7AAAAAAAQKLsAAAAAAAAAAAyAMfkUwALSXppcnUgS2lyYSAACwCphnYEACNAqFQAAAAAAECoVAAAAAAAAAAAMgDH5BsADU9yaWhpbWUgSW5vdWUACACp+6oFACJApqoAAAAAAECmqgAAAAAAAAAAMgDH5KkAD0ljaGlnbyBLdXJvc2FraQAAAAAAAAAAAAAAAAAAAQYAw3cRAQAgQgDzNlngAABCAPM2WeAAAAAAAAAAyKd8ABJKaWRhbmLFjSBJa2thbnpha2EAAAQAAAABAAYABgDH4/EAAAABAAMAAAYAAAAAAQEGggAAAAAABvMAAAAAAQAGAgAAAAAAAAD////OAAsAx+RRAAAAAQADAAALAAAAAAEBBoIAAAAAAAZpAAAAAAEACwIAAAAAAAAA////zgAHAMfkUgAAAAEAAwAABwAAAAABAQaCAAAAAAAFJwAAAAABAAcCAAAAAAAAAP///84AAQDH5FIAAAABAAMAAAEAAAAAAQEGggAAAAAABVgAAAAAAQABAgAAAAAAAAD////OAAgAx+RSAAAAAQADAAAIAAAAAAEBBoIAAAAAAAllAAAAAAEACAIAAAAAAAAA////zgEGAMfkUgAAAAEAAwABBgAAAAABAAHCAAAAAAAK2QAAAAABAQYCAAAAAAAAAP///84AAAACAAgABgDH4/IAAAACAAMAAAYAAAAAAQEGggAAAAAAC70AAAAAAQAGAgAAAAAAAAAAAABkAAYAAAAAAAAABAABAgEGAgAAAADN/m4AAAAEAAsAx+QbAAAAAgACAAALAAAAAAEACwIAAAAAAAAAAAAAZAAHAMfkUwAAAAIAAwAABwAAAAABAQaCAAAAAAAHyQAAAAABAAcCAAAAAAAAAAAAAGQABwAAAAAAAAAEAAECAAcCAAAAAM3+hQAAAAMACADH5KkAAAACAAMAAAgAAAAAAQEGggAAAAAAB9YAAAAAAQAIAgAAAAAAAAAAAABkAAgAAAAAAAAABAACAgAIAgAAAADN/mkAAAADAQAIAgAAAAAAAAD///+cAQYAx+RSAAAAAQADAAEGAAAAAAEABsIAAAAAABCPAAAAAAEBBgIAAAAAAAAA////zgAAAAMABQALAMfkUQAAAAEAAwAACwAAAAABAQaCAAAAAAAGjAAAAAABAAsCAAAAAAAAAP///84ABwDH5FIAAAABAAMAAAcAAAAAAQEGggAAAAAABSwAAAAAAQAHAgAAAAAAAAD////OAAgAx+SpAAAAAgADAAAIAAAAAAEBBoIAAAAAAAheAAAAAAEACAIAAAAAAAAAAAAAZAAIAAAAAAAAAAQAAgIACAIAAAAAzf5pAAAAAwEACAIAAAAAAAAA////nAEGAMinfAAAAAIABAABBgAAAAABAAfGAAAAAAAJdgAAAAABAAjCAAAAAAALVQAAAAABAQYCAAAAAAAAAAAAAGQAAAAEAAIACwDH5FEAAAABAAMAAAsAAAAAAQEGggAAAAAABtQAAAAAAQALAgAAAAAAAAD////OAQYAx+RSAAAAAQADAAEGAAAAAAEAC8IAAAAAAAwqAAAAAAEBBgIAAAAAAAAA////zg=="
       }
     ]
   },
@@ -2990,5 +3599,20 @@
     "born": 1791628035,
     "refresh": 0,
     "bought": {}
+  },
+  "instanceProgress": {
+    "15210001:15200001": 15201014
+  },
+  "instanceCampaign": {
+    "15210001": 15200001
+  },
+  "meslekAritma": [
+    1,
+    0,
+    0,
+    0
+  ],
+  "instanceStars": {
+    "15200001": 3
   }
 }

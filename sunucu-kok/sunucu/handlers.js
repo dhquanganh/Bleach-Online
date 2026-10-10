@@ -210,7 +210,48 @@ function worldMapPaketi(durum) {
     offset += 5;
   }
   base.copy(out, offset, tailAt);
-  return out;
+  // TNodal reads camp stars (7 bytes each), then campaigns (id + 5 bytes).
+  // Captured campaign positions must not override the persisted battle position.
+  if (tailAt + 2 > base.length) return out;
+  const campaignAt = offset + 2 + out.readUInt16BE(offset) * 7;
+  if (campaignAt + 2 > out.length) return out;
+  const cities = require('./paket').tablo('City').liste.filter(city => Number(city.type) === 2);
+  const campaigns = Buffer.alloc(2 + cities.length * 9);
+  campaigns.writeUInt16BE(cities.length, 0);
+  cities.forEach((city, index) => {
+    const cityId = parseInt(city.id, 16) >>> 0;
+    let campaignId = Number(city.start);
+    for (let id = Number(city.start); id <= Number(city.last); id++) {
+      if (Object.prototype.hasOwnProperty.call(durum.instanceProgress || {}, `${cityId}:${id}`)) campaignId = id;
+    }
+    const selected = Number((durum.instanceCampaign || {})[cityId]);
+    if (selected >= Number(city.start) && selected <= Number(city.last)) campaignId = selected;
+    const single = require('./paket').satir('Single', campaignId);
+    const saved = Number((durum.instanceProgress || {})[`${cityId}:${campaignId}`]);
+    const layer = single ? Math.max(0, Math.min(Number(single.endId) - Number(single.startId) + 1, (saved || Number(single.startId)) - Number(single.startId))) : 0;
+    const pos = 2 + index * 9;
+    campaigns.writeUInt32BE(cityId, pos);
+    campaigns[pos + 4] = saved ? (campaignId === Number(city.last) ? 1 : 0) : 255;
+    campaigns[pos + 5] = layer;
+    campaigns[pos + 8] = 1;
+  });
+  const stars = new Map();
+  const starCount = out.readUInt16BE(offset);
+  for (let i=0;i<starCount;i++) {
+    const pos=offset+2+i*7;
+    stars.set(out.readUInt32BE(pos),Buffer.from(out.subarray(pos,pos+7)));
+  }
+  for (const city of cities) for(let id=Number(city.start);id<=Number(city.last);id++) {
+    const single=require('./paket').satir('Single',id);
+    const saved=Number((durum.instanceProgress||{})[`${city._id}:${id}`]);
+    const rating=Number((durum.instanceStars||{})[id]) || (single && saved>Number(single.endId)?3:0);
+    if(!rating)continue;
+    const record=Buffer.alloc(7);record.writeUInt32BE(id,0);
+    record[4]=Number(single.endId)-Number(single.startId);record[5]=1;record[6]=Math.min(3,rating);
+    stars.set(id,record);
+  }
+  const starHeader=Buffer.alloc(2);starHeader.writeUInt16BE(stars.size,0);
+  return Buffer.concat([out.subarray(0,offset),starHeader,...stars.values(),campaigns]);
 }
 
 // istek->handler (opcode hex).

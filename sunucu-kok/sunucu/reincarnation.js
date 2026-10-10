@@ -57,7 +57,8 @@ function hit(attacker,target,amount,rng=Math.random){
   if(proc(target,3,rng))damage=0;
   let absorbed=0;
   if(target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
-  const heal=proc(target,6,rng);
+  const blockedHeal=(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
+  const heal=!blockedHeal&&proc(target,6,rng);
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
   damage=Math.min(Math.max(0,target.hp-(heal?1:0)),damage);
   target.hp-=damage;

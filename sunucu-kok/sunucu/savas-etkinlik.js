@@ -489,7 +489,18 @@ function kur(y) {
   H['0x01810601'] = ({ durum }) => { const w = new Y(); if (kampMi()) w.i32(0); const k = sandikOdulleri(); ozet(durum).sandik = k; sandikYaz(w, k); return w.done(); };
   H['0x01810500'] = ({ durum }) => { const w = new Y().i32(0); const k = sandikOdulleri(); ozet(durum).sandik = k; sandikYaz(w, k); return w.done(); };
   H['0x01810501'] = ({ payload, durum, kaydet }) => { const idx = Math.min(2, new O(payload).u8()); const k = ozet(durum).sandik || sandikOdulleri(); ver(durum, k[idx]); K(kaydet, durum); const w = new Y().i32(0).u8(idx); sandikYaz(w, k); return w.done(); };
-  H['0x01810502'] = ({ payload, durum, kaydet }) => { const id = new O(payload).i32(); if (!altin(20)) return { id: 0x01180503, payload: new Y().i32(16).i32(id).done() }; return { id: 0x01180503, payload: new Y().i32(0).i32(id).done() }; };
+  H['0x01810502'] = ({ payload, durum, kaydet }) => {
+    const id = new O(payload).i32();
+    const city = satir('City', id);
+    if (!city || Number(city.type) !== 2) return { id: 0x01180503, payload: new Y().i32(4).i32(id).done() };
+    if (!altin(20)) return { id: 0x01180503, payload: new Y().i32(16).i32(id).done() };
+    for (const key of Object.keys(durum.instanceProgress || {})) {
+      if (key.startsWith(`${id}:`)) delete durum.instanceProgress[key];
+    }
+    if (durum.instanceCampaign) delete durum.instanceCampaign[id];
+    K(kaydet, durum);
+    return { id: 0x01180503, payload: new Y().i32(0).i32(id).done() };
+  };
   H['0x01810701'] = ({ payload, durum, kaydet }) => {
     const input = new O(payload);
     const tip = input.u8();
