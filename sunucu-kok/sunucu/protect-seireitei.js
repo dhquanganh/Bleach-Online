@@ -8,24 +8,25 @@ function state(d,now=simdi(),lv=level()){
  let s=d.protectSeireitei;
  if(!s||s.day!==day(now)){
   const previous=s;
-  s=d.protectSeireitei={day:day(now),active:!!(previous&&previous.active),atDoor:!!(previous&&previous.atDoor),worldLevel:previous?previous.worldLevel:lv,doorIndex:previous?previous.doorIndex:0,hp:0,damage:0,battles:0,revives:0,deadUntil:previous?previous.deadUntil:0,nextFight:previous?Number(previous.nextFight)||0:0,finished:!!(previous&&previous.finished),reports:[]};
-  s.hp=previous?previous.hp:Number(enemy(s).hp);
+  s=d.protectSeireitei={day:day(now),active:!!(previous&&previous.active),atDoor:!!(previous&&previous.atDoor),worldLevel:previous?previous.worldLevel:lv,doorIndex:previous?previous.doorIndex:0,bossMaxHp:previous?previous.bossMaxHp:config.bossMaxHp,hp:0,damage:0,battles:0,revives:0,deadUntil:previous?previous.deadUntil:0,nextFight:previous?Number(previous.nextFight)||0:0,finished:!!(previous&&previous.finished),reports:[]};
+  s.hp=previous?previous.hp:config.bossMaxHp;
  }
+ if(s.bossMaxHp!==config.bossMaxHp){s.bossMaxHp=config.bossMaxHp;s.hp=config.bossMaxHp;}
  s.reports=Array.isArray(s.reports)?s.reports:[];return s;
 }
-function ranks(d,s){const w=new Y().u16(0).u16(s.damage>0?1:0);if(s.damage>0)w.utf(d.nick||'Shinigami').u32(s.damage);return w.done();}
+function ranks(d,s){const w=new Y().u16(0).u16(s.damage>0?1:0);if(s.damage>0)w.utf(d.nick||'Shinigami').f64(s.damage);return w.done();}
 function status(d,value){return new Y().u32(d.roleIdHi||0).u32(d.roleIdLo||1).u8(value).u32((d.protectSeireitei||{}).deadUntil||0).u32((d.protectSeireitei||{}).nextFight||0).done();}
-function entry(d,s,now){const w=new Y().u32(0).u8(1).u32(now).utf('Seireitei').u8(s.doorIndex).u32(s.worldLevel).f32(s.hp).u8(0).u32(s.revives);
+function entry(d,s,now){const w=new Y().u32(0).u8(1).u32(now).utf('Seireitei').u8(s.doorIndex).u32(s.worldLevel).f64(s.hp).u8(0).u32(s.revives);
  w.u16(1).u32(d.roleIdHi||0).u32(d.roleIdLo||1).i8(s.deadUntil>now?0:1).utf(d.nick||'Shinigami').u8(3).u32(40100001).u8(0).u32(0).u32(levels.anaId()).u8(1).u16(s.worldLevel).u32(1000).u8(0);
- return w.raw(ranks(d,s)).done();}
-function logPacket(d,row){return new Y().utf(d.nick||'Shinigami').u8(1).u8(row.won?1:0).utf(row.id).f32(row.hp).done();}
+ return w.raw(ranks(d,s)).f64(config.bossMaxHp).done();}
+function logPacket(d,row){return new Y().utf(d.nick||'Shinigami').u8(1).u8(row.won?1:0).utf(row.id).f32(Math.max(0,Math.min(1,row.hp/(row.maxHp||config.bossMaxHp)))).done();}
 function fail(code,ready=0){return {error:code,ack:new Y().u32(code).u32(ready).done()};}
 function kur(y,options={}){
  const now=options.now||simdi,lv=options.level||level,simulate=options.simulate||((id,hp,d)=>require('./savas').cityDefendBattle(id,hp,d));const H={};
  H['0x01810208']=ctx=>{
   if(ctx.payload&&ctx.payload.length)return new Y().u32(4).done();
   const next=clone(ctx.durum),s=state(next,now(),lv());
-  if(s.finished){s.doorIndex=0;s.worldLevel=lv();s.hp=Number(enemy(s).hp);s.finished=false;}
+  if(s.finished){s.doorIndex=0;s.worldLevel=lv();s.hp=config.bossMaxHp;s.finished=false;}
   s.active=true;s.atDoor=false;
   try{ctx.kaydet(next);}catch(e){return new Y().u32(1).done();}Object.assign(ctx.durum,next);
   for(const row of s.reports)y.ekSonra(OP.REPORT,logPacket(next,row),'PROTECT-history');
@@ -59,13 +60,13 @@ function kur(y,options={}){
   const mob=enemy(s),battle=simulate(mob._id||parseInt(mob.id,16),s.hp,next);
   if(!battle||!Buffer.isBuffer(battle.payload)||!Number.isFinite(battle.damage)||battle.damage<0)throw Error('Invalid Protect Seireitei battle report');
   const damage=Math.min(s.hp,Math.max(0,Math.floor(battle.damage))),remaining=Math.max(0,s.hp-damage);
-  s.hp=remaining;s.damage=Math.min(0xffffffff,s.damage+damage);s.battles++;s.nextFight=time+config.fightCooldownSeconds;
+  s.hp=remaining;s.damage=Math.min(Number.MAX_SAFE_INTEGER,s.damage+damage);s.battles++;s.nextFight=time+config.fightCooldownSeconds;
   s.deadUntil=battle.won?0:time+config.deathSeconds;if(!battle.won)s.atDoor=false;
-  const row={id:crypto.randomUUID(),won:!!battle.won,hp:remaining,report:battle.payload.toString('base64')};s.reports.push(row);s.reports=s.reports.slice(-config.historyLimit);
-  const updates=[{id:OP.RANK,payload:ranks(next,s)},{id:OP.REPORT,payload:logPacket(next,row)},{id:OP.HP,payload:new Y().f32(remaining).done()}];
+  const row={id:crypto.randomUUID(),won:!!battle.won,hp:remaining,maxHp:config.bossMaxHp,report:battle.payload.toString('base64')};s.reports.push(row);s.reports=s.reports.slice(-config.historyLimit);
+  const updates=[{id:OP.RANK,payload:ranks(next,s)},{id:OP.REPORT,payload:logPacket(next,row)},{id:OP.HP,payload:new Y().f64(remaining).done()}];
   if(remaining===0){
    s.deadUntil=0;s.atDoor=false;
-   if(s.doorIndex===0){s.doorIndex=1;s.hp=Number(enemy(s).hp);}
+   if(s.doorIndex===0){s.doorIndex=1;s.hp=config.bossMaxHp;}
    else{s.finished=true;s.active=false;updates.push({id:OP.END,payload:Buffer.alloc(0)});}
   }
   updates.push({id:OP.STATUS,payload:status(next,s.deadUntil>time?0:1)},{id:0x01180f00,payload:env.loadBagPaketi(next)});

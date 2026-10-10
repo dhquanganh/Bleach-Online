@@ -12,6 +12,7 @@ class W {
   u16(v) { const b = Buffer.alloc(2); b.writeUInt16BE(v & 0xffff); return this._p(b); }
   i32(v) { const b = Buffer.alloc(4); b.writeInt32BE(v | 0); return this._p(b); }
   u32(v) { const b = Buffer.alloc(4); b.writeUInt32BE(v >>> 0); return this._p(b); }
+  f64(v) { const b = Buffer.alloc(8); b.writeDoubleBE(Number(v) || 0); return this._p(b); }
   f32(v) { const b = Buffer.alloc(4); b.writeFloatBE(Number(v) || 0); return this._p(b); }
   utf(s) { const t = Buffer.from(String(s == null ? '' : s), 'utf8'); const h = Buffer.alloc(2); h.writeUInt16BE(t.length & 0xffff); return this._p(h)._p(t); }
   done() { return Buffer.concat(this.parts, this.len); }
@@ -26,6 +27,7 @@ class R {
   u16() { const v = this.b.readUInt16BE(this.o); this.o += 2; return v; }
   i32() { const v = this.b.readInt32BE(this.o); this.o += 4; return v; }
   u32() { const v = this.b.readUInt32BE(this.o); this.o += 4; return v; }
+  f64() { const v=this.b.readDoubleBE(this.o);this.o+=8;return v; }
   utf() { const n = this.b.readUInt16BE(this.o); this.o += 2; const s = this.b.toString('utf8', this.o, this.o + n); this.o += n; return s; }
   eof() { return this.o >= this.b.length; }
 }
@@ -73,8 +75,8 @@ function writeRole(w, r, version) {
   w.u32(r.roleId >>> 0);
   w.i8(r.quality || 1);
   w.i16(r.level || 1);
-  w.i32(r.curHealth | 0);
-  w.i32(r.totalHealth | 0);
+  if(version>=4){w.f64(r.curHealth);w.f64(r.totalHealth);}
+  else{w.i32(r.curHealth | 0);w.i32(r.totalHealth | 0);}
   w.i32(r.curAnger | 0);
   w.i32(r.skillId | 0);
   w.utf(r.name || '');
@@ -130,7 +132,7 @@ function decodeBattleReport(buf) {
     const g = { knifeOfKillSoulID: rd.i32(), knifeSoulID: rd.i32(), bloodAddRate: rd.i32(), roles: [] };
     const n = rd.i16();
     for (let i = 0; i < n; i++) {
-      const r = { pos: rd.i8(), roleId: rd.u32(), quality: rd.i8(), level: rd.i16(), curHealth: rd.i32(), totalHealth: rd.i32(), curAnger: rd.i32(), skillId: rd.i32(), name: rd.utf() };
+      const r = { pos: rd.i8(), roleId: rd.u32(), quality: rd.i8(), level: rd.i16(), curHealth: version>=4?rd.f64():rd.i32(), totalHealth: version>=4?rd.f64():rd.i32(), curAnger: rd.i32(), skillId: rd.i32(), name: rd.utf() };
       if (version > 2) r.rebirthNum = rd.i8();
       g.roles.push(r);
     }

@@ -5,9 +5,11 @@ package Processors.Game.Lobby.BlackMarket
    import Components.Standard.TUIButton;
    import Foundation.Network.SNetworkCore;
    import Foundation.Network.TPacket;
-   import Foundation.Timing.STimingCore;
+   import Foundation.Resources.SResourcesCore;
+   import Foundation.Resources.Textures.TAnimationSequence;
+   import Foundation.Resources.Textures.TTexture;
    import Foundation.UI.TUIComponent;
-   import Foundation.Utilities.TUtilityString;
+   import Logics.SLogicsCore;
    import Logics.BlackMarket.TBlackMarketTotalData;
    import Logics.DatebaseVO.VO.TArticle;
    import Logics.DatebaseVO.VO.TBlackMarket;
@@ -19,14 +21,9 @@ package Processors.Game.Lobby.BlackMarket
    import Resources.Constants.CONST_BLACKMARKET;
    import Resources.Constants.CONST_COMMON;
    import Resources.Constants.CONST_NETWORK;
-   import Resources.Constants.CONST_SYSTEMLANGUAGE;
-   import Utilities.Timing.TUtilityTiming;
-   import flash.display.MovieClip;
    import flash.display.Bitmap;
    import flash.display.DisplayObjectContainer;
-   import Foundation.Resources.SResourcesCore;
-   import Foundation.Resources.Textures.TTexture;
-   import Foundation.Resources.Textures.TAnimationSequence;
+   import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
    import flash.text.TextField;
@@ -36,8 +33,14 @@ package Processors.Game.Lobby.BlackMarket
    {
       
       protected static const ItemNum:int = 10;
+      
       protected static const CurrencyID:uint = 14900001;
+      
       protected var FCurrencyRequested:Boolean = false;
+      protected var FCatalogHeroes:String = "";
+      protected var FItemBitmaps:Object = {};
+      protected var FRequestedPictures:Object = {};
+      
       protected var FMysticCaptions:Array = [];
       
       protected var FGoodsUI:Vector.<Sprite>;
@@ -84,6 +87,18 @@ package Processors.Game.Lobby.BlackMarket
          super.LogicsPerform();
          if(Visible)
          {
+            var signature:String = "";
+            var index:int = 0;
+            while(index < SLogicsCore.Character.Heros.Count)
+            {
+               signature += SLogicsCore.Character.Heros.GetHeroByIndex(index).Identifier + ":";
+               index++;
+            }
+            if(signature != this.FCatalogHeroes)
+            {
+               this.FCatalogHeroes = signature;
+               this.FlushGoodsReq(this);
+            }
             this.RenderTimeCounter();
             this.UpdateSlot();
          }
@@ -172,13 +187,17 @@ package Processors.Game.Lobby.BlackMarket
             _loc3_ = this.FBlackMarketTotalData.SecretMarketData.Configs[_loc1_];
             this.FGoodsUI[_loc8_].visible = true;
             _loc5_ = this.FBlackMarketTotalData.SecretMarketData.Inventories.GetInventoryByIndex(_loc1_);
-            this.FGoodsNames[_loc8_].text = _loc3_.ItemID == 14130055 ? "M\u1ea3nh BW Ulquiorra" : _loc5_.Name;
+            this.FGoodsNames[_loc8_].text = _loc3_.ItemID == 14130055 ? "Mảnh BW Ulquiorra" : _loc5_.Name;
             this.FGoodsNames[_loc8_].embedFonts = false;
-            this.FGoodsNames[_loc8_].setTextFormat(new TextFormat("Arial",10,0xffd866,true));
+            this.FGoodsNames[_loc8_].setTextFormat(new TextFormat("Arial",10,16767078,true));
+            if(this.FGoodsNames[_loc8_].textWidth > this.FGoodsNames[_loc8_].width - 4) this.FGoodsNames[_loc8_].setTextFormat(new TextFormat("Arial",8,16767078,true));
             this.FGoodsSlots[_loc8_].Context = _loc5_;
+            this.RenderItemIcon(_loc8_,_loc3_.ItemID);
             this.FGoodsPrePrice[_loc8_].text = _loc3_.OldPrice.amount.toString();
             this.FGoodsNowPrice[_loc8_].text = _loc3_.Price.amount.toString();
             this.FGoodsBuyFlag[_loc8_].visible = false;
+            this.FGoodsPrePriceICoin[_loc8_].visible = false;
+            this.FGoodsNowPriceICoin[_loc8_].visible = false;
             switch(CONST_COMMON.RewardIDToTemplateID(_loc3_.OldPrice.type,_loc3_.OldPrice.code))
             {
                case CONST_BLACKMARKET.CoinType_Sliver:
@@ -210,7 +229,7 @@ package Processors.Game.Lobby.BlackMarket
             this.FGoodsUI[_loc1_].visible = false;
             _loc1_++;
          }
-         this.FTimeLable.text = "Nguy\u00ean th\u1ea1ch:";
+         this.FTimeLable.text = "Nguyên thạch:";
          this.RenderCurrencyIcons();
       }
       
@@ -219,7 +238,7 @@ package Processors.Game.Lobby.BlackMarket
          this.FTimeCounter.text = TUtilityLobby.GetArticleQuantity(CurrencyID,1).toString();
          this.RenderCurrencyIcons();
       }
-
+      
       protected function RenderCurrencyIcons() : void
       {
          var texture:TTexture = SResourcesCore.TexturesInventory.GetTextureByIdentifier(CurrencyID);
@@ -228,16 +247,77 @@ package Processors.Game.Lobby.BlackMarket
             if(!this.FCurrencyRequested)
             {
                this.FCurrencyRequested = true;
-               SResourcesCore.TexturesInventory.LoadSecondary(CurrencyID);
+               SResourcesCore.TexturesInventory.LoadAutoSecondary(CurrencyID,this.CurrencyArrive);
             }
             return;
          }
-         var sequence:TAnimationSequence = texture.GetAnimationSequenceByIdentifier(0);
-         if(sequence == null || sequence.Count == 0) return;
-         for(var i:int = 0; i < ItemNum; i++)
+         var sequence:TAnimationSequence = texture.GetAnimationSequenceByIndex(0);
+         if(sequence == null || sequence.Count == 0)
+         {
+            return;
+         }
+         var i:int = 0;
+         while(i < ItemNum)
          {
             this.SetCurrencyIcon(this.FGoodsPrePriceICoin[i],sequence);
             this.SetCurrencyIcon(this.FGoodsNowPriceICoin[i],sequence);
+            i++;
+         }
+      }
+      
+      protected function CurrencyArrive(context:Object, texture:TTexture, id:uint) : void
+      {
+         this.FCurrencyRequested = false;
+         if(Visible) this.RenderCurrencyIcons();
+      }
+
+      protected function RenderItemIcon(index:int, itemID:uint) : void
+      {
+         var article:TArticle = SResourcesCore.ResourceBin.GetDatebase(0x01000002,itemID) as TArticle;
+         if(article == null) return;
+         var picture:uint = article.Picture;
+         var texture:TTexture = SResourcesCore.TexturesInventory.GetTextureByIdentifier(picture);
+         var mount:DisplayObjectContainer = this.FGoodsUI[index]["MC_Slot"];
+         var bitmap:Bitmap = this.FItemBitmaps[index] as Bitmap;
+         if(bitmap == null)
+         {
+            bitmap = new Bitmap();
+            bitmap.x = 4;
+            bitmap.y = 4;
+            mount.addChild(bitmap);
+            this.FItemBitmaps[index] = bitmap;
+         }
+         if(bitmap.parent != mount) mount.addChild(bitmap);
+         mount.setChildIndex(bitmap,mount.numChildren - 1);
+         if(texture == null)
+         {
+            bitmap.bitmapData = null;
+            if(!this.FRequestedPictures[picture])
+            {
+               this.FRequestedPictures[picture] = true;
+               SResourcesCore.TexturesInventory.LoadAutoSecondary(picture,this.ItemArrive);
+            }
+            return;
+         }
+         var sequence:TAnimationSequence = texture.GetAnimationSequenceByIndex(0);
+         if(sequence == null || sequence.Count == 0) return;
+         bitmap.bitmapData = sequence.GetAnimationFrameByIndex(0).Surface;
+         bitmap.smoothing = true;
+         bitmap.width = 40;
+         bitmap.height = 40;
+         bitmap.visible = true;
+      }
+
+      protected function ItemArrive(context:Object, texture:TTexture, picture:uint) : void
+      {
+         this.FRequestedPictures[picture] = false;
+         if(!Visible) return;
+         var start:int = this.FCurrentPageIndex * ItemNum;
+         var index:int = 0;
+         while(index < ItemNum && start + index < this.FBlackMarketTotalData.SecretMarketData.Configs.length)
+         {
+            this.RenderItemIcon(index,this.FBlackMarketTotalData.SecretMarketData.Configs[start + index].ItemID);
+            index++;
          }
       }
 
@@ -259,35 +339,48 @@ package Processors.Game.Lobby.BlackMarket
          bitmap.visible = true;
          coin.visible = false;
       }
-
+      
       protected function RestoreCurrencyIcons() : void
       {
-         for(var i:int = 0; i < ItemNum; i++)
+         var i:int = 0;
+         while(i < ItemNum)
          {
             var coins:Array = [this.FGoodsPrePriceICoin[i],this.FGoodsNowPriceICoin[i]];
             for each(var coin:MovieClip in coins)
             {
                coin.visible = true;
                var bitmap:Object = coin.parent.getChildByName("MysticGem_" + coin.name);
-               if(bitmap != null) bitmap.visible = false;
+               if(bitmap != null)
+               {
+                  bitmap.visible = false;
+               }
             }
+            i++;
          }
       }
-
+      
       protected function SetMysticCaption(root:DisplayObjectContainer) : void
       {
-         for(var i:int = 0; i < root.numChildren; i++)
+         var i:int = 0;
+         while(i < root.numChildren)
          {
             var child:Object = root.getChildAt(i);
             if(child is TextField && String(child.text).toLowerCase().indexOf("coupon") >= 0)
             {
-               this.FMysticCaptions.push({field:child,text:child.text});
-               child.text = "Ch\u1ec9 d\u00f9ng Nguy\u00ean th\u1ea1ch - \u0111\u1ed5i kh\u00f4ng gi\u1edbi h\u1ea1n";
+               this.FMysticCaptions.push({
+                  "field":child,
+                  "text":child.text
+               });
+               child.text = "Chỉ dùng Nguyên thạch - đổi không giới hạn";
             }
-            if(child is DisplayObjectContainer) this.SetMysticCaption(child as DisplayObjectContainer);
+            if(child is DisplayObjectContainer)
+            {
+               this.SetMysticCaption(child as DisplayObjectContainer);
+            }
+            i++;
          }
       }
-
+      
       protected function BuyGoodsReq(param1:Object) : void
       {
          var _loc2_:TPacket = null;
@@ -314,13 +407,21 @@ package Processors.Game.Lobby.BlackMarket
          while(_loc1_ < _loc2_)
          {
             this.FGoodsSlots[_loc1_].Update();
+            var globalIndex:int = this.FCurrentPageIndex * ItemNum + _loc1_;
+            if(this.FGoodsUI[_loc1_].visible && globalIndex < this.FBlackMarketTotalData.SecretMarketData.Configs.length)
+            {
+               this.RenderItemIcon(_loc1_,this.FBlackMarketTotalData.SecretMarketData.Configs[globalIndex].ItemID);
+            }
             _loc1_++;
          }
       }
       
       protected function ResetSlot() : void
       {
-         if(this.FGoodsSlots == null) return;
+         if(this.FGoodsSlots == null)
+         {
+            return;
+         }
          var _loc1_:int = 0;
          var _loc2_:int = 0;
          _loc2_ = int(this.FGoodsSlots.length);
@@ -335,24 +436,27 @@ package Processors.Game.Lobby.BlackMarket
       protected function ItemOnClick(param1:Object, param2:MouseEvent) : void
       {
          var index:int = this.FGoodsButtons.indexOf(param1 as TUIButton) + this.FCurrentPageIndex * ItemNum;
-         if(index < 0 || index >= this.FBlackMarketTotalData.SecretMarketData.Configs.length) return;
+         if(index < 0 || index >= this.FBlackMarketTotalData.SecretMarketData.Configs.length)
+         {
+            return;
+         }
          var offer:TBlackMarket = this.FBlackMarketTotalData.SecretMarketData.Configs[index];
          if(TUtilityLobby.GetArticleQuantity(CurrencyID,1) < offer.Price.amount)
          {
-            SToolReward.ShowMessage("Kh\u00f4ng \u0111\u1ee7 Nguy\u00ean th\u1ea1ch.");
+            SToolReward.ShowMessage("Không đủ Nguyên thạch.");
             return;
          }
          SUtilityOverLayer.UIWindowConfirmation.Tag = offer.Identifier;
-         SUtilityOverLayer.UIWindowConfirmation.Text = "D\u00f9ng " + offer.Price.amount + " Nguy\u00ean th\u1ea1ch \u0111\u1ec3 \u0111\u1ed5i " + offer.Number + " " + this.FBlackMarketTotalData.SecretMarketData.Inventories.GetInventoryByIndex(index).Name + "?";
+         SUtilityOverLayer.UIWindowConfirmation.Text = "Dùng " + offer.Price.amount + " Nguyên thạch để đổi " + offer.Number + " " + this.FBlackMarketTotalData.SecretMarketData.Inventories.GetInventoryByIndex(index).Name + "?";
          SUtilityOverLayer.UIWindowConfirmation.Visible = true;
          SUtilityOverLayer.UIWindowConfirmation.OnOK = this.BuyGoodsReq;
       }
-
+      
       protected function BtnFlushOnClick(param1:Object, param2:MouseEvent) : void
       {
          this.FlushGoodsReq(this);
       }
-
+      
       protected function OnChangePage(param1:Object, param2:int) : void
       {
          this.FCurrentPageIndex = param2;
@@ -395,7 +499,11 @@ package Processors.Game.Lobby.BlackMarket
       {
          this.SetEventBind(false);
          this.RestoreCurrencyIcons();
-         for each(var caption:Object in this.FMysticCaptions) caption.field.text = caption.text;
+         for each(var itemBitmap:Bitmap in this.FItemBitmaps) itemBitmap.visible = false;
+         for each(var caption:Object in this.FMysticCaptions)
+         {
+            caption.field.text = caption.text;
+         }
          this.FMysticCaptions.length = 0;
          Visible = false;
          this.ResetSlot();

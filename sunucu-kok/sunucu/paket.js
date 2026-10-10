@@ -12,6 +12,7 @@ class Y {
   i16(v) { const b = Buffer.alloc(2); b.writeInt16BE(Math.max(-32768, Math.min(32767, v | 0))); this.p.push(b); return this; }
   u32(v) { const b = Buffer.alloc(4); b.writeUInt32BE(Math.max(0, Math.min(0xffffffff, Math.floor(Number(v) || 0))) >>> 0); this.p.push(b); return this; }
   i32(v) { const b = Buffer.alloc(4); b.writeInt32BE(Math.max(-2147483648, Math.min(2147483647, Math.floor(Number(v) || 0))) | 0); this.p.push(b); return this; }
+  f64(v) { const b=Buffer.alloc(8); b.writeDoubleBE(Number(v)||0); this.p.push(b); return this; }
   f32(v) { const b = Buffer.alloc(4); b.writeFloatBE(Number(v) || 0); this.p.push(b); return this; }
   bool(v) { return this.u8(v ? 1 : 0); }
   i64(v) { const n = Math.max(0, Math.floor(Number(v) || 0)); return this.u32(Math.floor(n / 4294967296)).u32(n % 4294967296); }   // high, low

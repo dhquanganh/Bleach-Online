@@ -407,7 +407,7 @@ package Processors.Game.Lobby.CityDefend
          _loc3_ = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.STRING_CITYDEFEND_14);
          _loc4_ = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.STRING_CITYDEFEND_15);
          this.FScene.mc_doorInfo.tf_name.text = "Lv." + this.FCityDefendData.WorldLevel + "  " + (this.FCityDefendData.CityDoorIndex == 0 ? _loc3_ : _loc4_) + "\t" + TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.STRING_CITYDEFEND_16) + this.FCityDefendData.DefendOrganizationName;
-         this.FScene.mc_doorInfo.tf_blood.text = int(Math.max(this.FCityDefendData.CityDoorCurHp,0)) + "/" + this.FCityDefendData.CityDoorTotleHp;
+         this.FScene.mc_doorInfo.tf_blood.text = Math.floor(Math.max(this.FCityDefendData.CityDoorCurHp,0)).toFixed(0) + "/" + this.FCityDefendData.CityDoorTotleHp.toFixed(0);
          _loc1_ = this.FCityDefendData.CityDoorCurHp / this.FCityDefendData.CityDoorTotleHp;
          _loc1_ = Math.min(Math.max(0,_loc1_),1);
          this.FScene.mc_doorInfo.mc_blood.scaleX = _loc1_;

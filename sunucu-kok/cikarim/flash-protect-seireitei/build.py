@@ -10,7 +10,7 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 CLIENT = BASE.parents[1] / 'kaynak/login.gogames.me/public/2026090619/TApplication.swf'
-CLASSES = 'Processors.Game.Battle.TBattleHandle,Logics.CityDefend.TCityDefendReports,Processors.Game.Lobby.CityDefend.TProcessorCityDefend,Processors.Game.Lobby.CityDefend.TProcessorWindowDoorHeroList,Processors.Game.Lobby.CityDefend.TProcessorWindowCityDefned,Processors.Game.Lobby.DailyActivity.TProcessorDailyActivity'
+CLASSES = 'Logics.CityDefend.TCityDefendData,Logics.CityDefend.TCityDefendRank,Logics.Battle.model.TRoleBattleInfo,Logics.Streamization.Battle.TUnstreamizerRoleBattleInfo,Processors.Game.Battle.Character.TBaseRole,Processors.Game.Battle.TBattleStage,Logics.Streamization.CityDefend.TUnstreamizerCityDefend,Processors.Game.Lobby.CityDefend.TProcessorCityDefend,Processors.Game.Lobby.CityDefend.TProcessorWindowCityDefned,Processors.Game.Battle.TBattleHandle,Logics.CityDefend.TCityDefendReports,Processors.Game.Lobby.CityDefend.TProcessorWindowDoorHeroList,Processors.Game.Lobby.DailyActivity.TProcessorDailyActivity'
 
 def swap(data):
     data = bytearray(data)
@@ -60,7 +60,7 @@ def main():
         completed = subprocess.run(['java', '-Xmx2g', '-jar', str(opts.ffdec), *map(str, args)], capture_output=True, text=True, errors='replace')
         if completed.returncode:
             raise RuntimeError(completed.stdout + completed.stderr)
-    order=['Logics/CityDefend/TCityDefendReports.as','Processors/Game/Lobby/CityDefend/TProcessorCityDefend.as','Processors/Game/Lobby/CityDefend/TProcessorWindowDoorHeroList.as','Processors/Game/Lobby/CityDefend/TProcessorWindowCityDefned.as','Processors/Game/Lobby/DailyActivity/TProcessorDailyActivity.as','Processors/Game/Battle/TBattleHandle.as']
+    order=['Logics/CityDefend/TCityDefendData.as', 'Logics/CityDefend/TCityDefendRank.as', 'Logics/Battle/model/TRoleBattleInfo.as', 'Logics/Streamization/Battle/TUnstreamizerRoleBattleInfo.as', 'Processors/Game/Battle/Character/TBaseRole.as', 'Processors/Game/Battle/TBattleStage.as', 'Logics/Streamization/CityDefend/TUnstreamizerCityDefend.as', 'Processors/Game/Lobby/CityDefend/TProcessorCityDefend.as', 'Processors/Game/Lobby/CityDefend/TProcessorWindowCityDefned.as']
     if opts.processor_only: order=['Processors/Game/Lobby/CityDefend/TProcessorCityDefend.as','Processors/Game/Battle/TBattleHandle.as']
     previous = source
     for index, name in enumerate(order):
@@ -95,6 +95,12 @@ def main():
     assert 'TBattleHandle.IsInBattle = true' not in method and 'FightPending = true' in method
     decode=battle[battle.index('protected function PacketPerform_SC_BattleStartReportData'):battle.index('protected function PacketPerform_SC_SingleBattleResult')]
     assert decode.index('FUnstreamizerBattleRepot.Unstreamize') < decode.index('TBattleHandle.IsInBattle = true') < decode.index('this.CheckResources()')
+    role=(scripts/'Logics/Battle/model/TRoleBattleInfo.as').read_text(encoding='utf-8')
+    assert 'get TotleHealth() : Number' in role
+    unstream=(scripts/'Logics/Streamization/Battle/TUnstreamizerRoleBattleInfo.as').read_text(encoding='utf-8')
+    assert 'readDouble()' in unstream and 'CurBattleDataVersion >= 4' in unstream
+    assert 'BossMaxHp:Number = 9100002004' in processor and 'var hp:Number = _loc2_.readDouble()' in processor
+    assert 'CityDoorCurHp,0)).toFixed(0)' in history
     protected = swap(rebuilt)
     assert swap(protected) == rebuilt
     output = BASE / 'TApplication-protected.swf'

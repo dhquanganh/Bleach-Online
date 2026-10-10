@@ -66,6 +66,8 @@ const battleState=JSON.parse(JSON.stringify(source));battleState.yenidenDogus={h
 console.log('PASS: ownership/level/main prerequisite, five stages, exact 64-bit EXP deduction, atomic reset costs, free/paid Epic EXP Books, daily state, login/stat persistence, all ten combat effects and report serialization. No player files changed.');
 
 const plain=fixture();plain.yenidenDogus={hero:{}};plain.meslekAritma=[0,0,0,0];
+// Isolate reincarnation ratios from stars inherited from the live player fixture.
+plain.heroStars={};
 const basePacket=gear.statPaketi(plain,partner,159).subarray(4),baseCount=basePacket.readUInt16BE(0);
 for(const stage of [1,2,5]){
  plain.yenidenDogus.hero[String(partner)]={n:stage,pp:1,ae:1};

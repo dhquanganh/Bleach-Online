@@ -1,0 +1,16 @@
+{
+  "botCount": 2000,
+  "teamSize": 5,
+  "seasonDays": 7,
+  "alwaysOpen": true,
+  "cooldownSeconds": 10,
+  "winScore": 50,
+  "lossScore": 10,
+  "historyLimit": 20,
+  "botSeed": 20261009,
+  "enemyLevelMultiplier": 2,
+  "enemyStatMultiplier": 2,
+  "rowLevelStep": 0.25,
+  "rowStatStep": 0.5,
+  "enemyAttackMultiplier": 2
+}

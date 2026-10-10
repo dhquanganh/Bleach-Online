@@ -69,7 +69,7 @@ function articleYukle() {
         heroId: Number(a.f16) || 0, f16: Number(a.f16) || 0,
         sellPrice: Number(a.itemFunction) || 0, costPrice: Number(a.sellPrice) || 0,
         overlay: Number(a.overlayNumber) || 1, level: Number(a.level) || 1,
-        usable: String(a.costPrice || '').split('_')[0] === '1', description: a.functionDesc || '', quality: Number(a.quality) || 1,
+        usable: String(a.costPrice || '').split('_')[0] === '1', description: a.functionDesc || '', quality: Number.isFinite(Number(a.quality)) ? Number(a.quality) : 1,
       });
     }
   } catch (e) { }

@@ -1,0 +1,11 @@
+"use strict";
+const assert=require('assert'),fs=require('fs'),{Y,O,tablo}=require('../paket'),map=require('../hollow-soul-map'),levels=require('../seviye');
+const main=levels.anaId(),partner=11150057,other=11140008,d={meyhane:{alinan:{[partner]:1}},yildiz:{hero:{}}};
+const roster=map.roster(d,{herolar:[other,other,99999999],tumKarakterler:false});assert(roster.includes(main)&&roster.includes(partner)&&roster.includes(other));assert.equal(roster.length,3);assert(!roster.includes(99999999));
+const point=tablo('SevenHeroLittleStar').liste.find(r=>Number(r.bigStar)%10===1);assert(point);d.yildiz.hero[partner]=[point._id,99999999,0,0,0,0,0];
+const b=map.packet(d,roster),o=new O(b);assert.equal(o.u16(),3);assert.equal(b.length,2+3*(4+7*4));
+for(let i=0;i<3;i++){const id=o.u32();for(let slot=0;slot<7;slot++)assert.equal(o.i32(),id===partner&&slot===0?point._id:0);}assert.equal(o.kalan(),0);
+const real=JSON.parse(fs.readFileSync(require('path').join(__dirname,'../oyuncu.json'),'utf8')),all=map.roster(real),p=map.read(real,new Y().u32(0).done());assert(all.length>0);assert.equal(p.readUInt16BE(0),all.length);assert.equal(p.length,2+all.length*32);
+const one=map.read(real,new Y().u32(main).done());assert.equal(one.readUInt16BE(0),1);assert.equal(one.readUInt32BE(2),main);assert.equal(map.read(real,Buffer.alloc(0)).readUInt16BE(0),0);
+const handlers=require('../handlers');handlers.ekAl();const reply=handlers.byReq['0x01813904']({durum:real,payload:new Y().u32(0).done(),kaydet:()=>{throw Error('read must not save');}});assert(reply.equals(p));handlers.ekAl();
+console.log('PASS Hollow Soul Map: real roster and seven star slots per hero, existing progress, invalid point normalization, targeted/all-hero queries and actual request handler. No player files changed.');

@@ -1,0 +1,9 @@
+# Tavern repair
+
+Backend: `sunucu/meyhane.js` validates native requests, charges configured silver and coupon/gold prices, persists Reishi rewards and purchases in `veri.json`, and stores recruited heroes and Advance stages in player state. Normal/advanced Janken supplies three distinct opponents; a loss ends the round. Bulk Janken plays ten rounds and can return up to thirty results. The request byte for a single result is the paid-win flag, not the player's hand gesture.
+
+Flash: `patched/` contains five rebuilt classes. Soul counters now update the shared character model, recruitment notifications only deduct souls for an actual pending Tavern recruitment, paid-win errors restore the buttons, card quantities fit the signed short protocol, and Advance checks ownership and stage bounds. Unmatched warrior searches no longer reuse the last table row. Advance stages are restored into login packets and affect the common stat calculation used by battle reports.
+
+Build with `python sunucu-kok/cikarim/flash-tavern/build.py` from the workspace root. The script decodes the current client, compiles classes sequentially with FFDec, checks that all non-code SWF tags remain identical, exports and verifies the compiled code, saves a timestamped backup, and updates both `2026090619` and `2026101001` loader paths. It refuses to install if the live client changed during compilation.
+
+Validation: `node sunucu-kok/sunucu/tests/tavern.test.js`, `level-stats.test.js` and `reincarnation.test.js` pass without changing player files. The cross-server, usable-items and hollow-soul-stats tests also fail against the pre-change Git index with the same assertions; `check-baseline.cjs` reproduces that comparison without overwriting source files. End-to-end clicks in the running Flash game remain to be checked after reopening the launcher.

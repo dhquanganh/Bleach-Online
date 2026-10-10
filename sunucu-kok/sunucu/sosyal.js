@@ -91,7 +91,7 @@ function kur(y) {
   H['0x01810801'] = ({ durum, kaydet }) => { const r = rutbe(durum); const nx = satir('Military', r + 1); if (!nx) return new Y().u8(1).u32(r).u32(prestij()).u8(0).done(); const v = veriOku(); if ((Number(v.prestij) || 0) < Number(nx.needCredit)) return new Y().u8(1).u32(r).u32(prestij()).u8(0).done(); v.prestij = (Number(v.prestij) || 0) - (Number(nx.costCredit) || 0); v.rutbe = r + 1; veriYaz(v); durum.militaryRank = r + 1; K(kaydet, durum); const p = baseInfo([{ index: 5, v: v.prestij }]); if (p) ekSonra(0x01180105, p, 'RUTBE-prestij'); return new Y().u8(0).u32(r + 1).u32(v.prestij).u8(gunluk(durum).maas ? 1 : 0).done(); };
   H['0x01810802'] = ({ durum, kaydet }) => { const g = gunluk(durum); if (g.maas) return new Y().u8(1).u32(0).u32(0).u32(0).done(); const m = satir('Military', rutbe(durum)); const aw = m ? (json(m.salary, {}).award || []) : [{ type: 0, code: 0, amount: 40000 }]; ver(durum, aw); g.maas = 1; K(kaydet, durum); const v = veriOku(); return new Y().u8(0).u32(Number(v.gumusHigh) || 0).u32(Number(v.gumus) || 0).u32(Number(v.generalsSoul) || 0).done(); };
   // ================= HEROS =================
-  H['0x01811003'] = ({ payload, durum, kaydet }) => { const id = new O(payload).u32(); if (id === (seviye.anaId() >>> 0)) return new Y().i32(1).i32(id).done(); heroSil(id); try { const m = require('./meyhane').depo(durum); if (m && Array.isArray(m.alinan)) m.alinan = m.alinan.filter(x => Number(x) !== id); } catch (e) { } try { const e = require('./ekipman').depo(durum); const tak = e.takili[String(id)] || {}; const bufs = Object.values(tak).map(i => require('./ekipman').kayitBufInst(durum, i)).filter(Boolean); delete e.takili[String(id)]; if (bufs.length) ekSonra(0x01180f01, require('./ekipman').sendPaketi(bufs), 'HERO-sil-esya'); } catch (e) { } K(kaydet, durum); return new Y().i32(0).i32(id).done(); };
+  H['0x01811003'] = ({ payload, durum, kaydet }) => { const id = new O(payload).u32(); if (id === (seviye.anaId() >>> 0)) return new Y().i32(1).i32(id).done(); heroSil(id); try { const m = require('./meyhane').depo(durum); if (m) { delete m.alinan[String(id)]; delete m.kalite[String(id)]; } delete (durum.kadro || {})[String(id)]; delete ((durum.seviye || {}).herolar || {})[String(id)]; } catch (e) { } try { const e = require('./ekipman').depo(durum); const tak = e.takili[String(id)] || {}; const bufs = Object.values(tak).map(i => require('./ekipman').kayitBufInst(durum, i)).filter(Boolean); delete e.takili[String(id)]; if (bufs.length) ekSonra(0x01180f01, require('./ekipman').sendPaketi(bufs), 'HERO-sil-esya'); } catch (e) { } K(kaydet, durum); return new Y().i32(0).i32(id).done(); };
   H['0x01811005'] = ({ durum, kaydet }) => { durum.heroSlotEk = (Number(durum.heroSlotEk) || 0) + 1; if (!altin(50)) { durum.heroSlotEk--; return new Y().u32(16).done(); } K(kaydet, durum); return new Y().u32(0).u32(durum.heroSlotEk).done(); };
   H['0x01811006'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const id = o.i32(), opt = o.i32(); const th = satir('TimeHero', id); const bedel = th ? [Number(th.oneDayCost), Number(th.threeDayCost), Number(th.sevenDayCost), Number(th.foreverCost)][Math.max(0, Math.min(3, opt))] || 50 : 50; if (!altin(bedel)) return new Y().u32(16).done(); durum.kiralik = durum.kiralik || {}; const sure = [86400, 259200, 604800, 0][Math.max(0, Math.min(3, opt))]; durum.kiralik[String(id)] = sure ? simdi() + sure : 0; K(kaydet, durum); const lv = seviye.heroSeviye(durum, id, veriOku()); ekSonra(0x01180c02, new Y().u32(0).u32(id).u32(lv).u32(durum.kiralik[String(id)]).u32(0).done(), 'HERO-yenile'); return new Y().u32(0).u32(id).done(); };
   // ================= BLACK MARKET / MALL =================
@@ -99,9 +99,9 @@ function kur(y) {
   H['0x01817003'] = () => new Y().u8(1).i32(simdi()).done();
   H['0x01811a02'] = ({ durum }) => { const al = Object.entries((durum.magaza || {}).onur || {}); const w = new Y().u32(0).u32(al.reduce((s, [, n]) => s + n, 0)).i16(al.length); for (const [id, n] of al) w.u32(Number(id)).u32(n); return w.done(); };
   H['0x01811a01'] = ({ durum }) => {
-    const n = Number((((durum.magaza || {}).alim || {})[String(DEMON_MALL_ID)]) || 0);
-    const w = new Y().u32(0).i16(n > 0 ? 1 : 0);
-    if (n > 0) w.u32(DEMON_MALL_ID).u32(n);
+    const rows=Object.entries((durum.magaza||{}).alim||{}).filter(([id,n])=>n>0&&satir('Mall',Number(id)));
+    const w=new Y().u32(0).i16(rows.length);
+    for(const [id,n] of rows)w.u32(Number(id)).u32(Number(n));
     return w.done();
   };
   H['0x01811a00'] = ({ payload, durum, kaydet }) => {
@@ -111,6 +111,8 @@ function kur(y) {
     durum.magaza.vip = durum.magaza.vip || {};
     durum.magaza.alim = durum.magaza.alim || {};
     const model = Number(m.model), item = Number(m.itemID);
+    if([12,13].includes(model)&&[14100282,14100283,14100733].includes(Number(json(m.honour,{}).code)))return require('./cross-server').kur(y).exchange({payload,durum,kaydet},m,qty);
+    if(model===15)return require('./crash-jade').kur(y).exchange({payload,durum,kaydet},m,qty);
     if(model===3){if(payload.length!==6)return new Y().u32(4).done();return require('./soul-hunt').kur(y).exchange({payload,durum,kaydet},m,payload.readUInt16BE(4));}
     const fiyat = rowId === DEMON_MALL_ID ? DEMON_PRICE : mallGoldPrice(m, Number(veriOku().vipLevel) || 0);
     if (rowId === DEMON_MALL_ID) {

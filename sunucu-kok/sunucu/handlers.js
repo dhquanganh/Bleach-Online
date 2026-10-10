@@ -274,18 +274,23 @@ const byReq = {
   // Detay + tuzaklar: sunucu/meyhane.js basligi. Ozetle: Mora paketlerindeki id
   // Tavern_Warrior SATIR id'si (30150001+), Recruit'teki ise HERO id'si (11110001+).
   '0x01810c00': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 5) return new W().u32(1).done();
     const tip = payload && payload.length >= 1 ? payload.readInt8(0) : 0;
     const gradeId = payload && payload.length >= 5 ? payload.readUInt32BE(1) : 0;
     const p = meyhane.moraPaketi(tip, gradeId, durum);
+    if (p.readUInt32BE(0) === 0) ekSonra(0x01180105, meyhane.moneyPaketi(), 'TAVERN-money');
     try { kaydet(durum); } catch (e) { }
     return p;
   },
-  '0x01810c01': ({ durum, kaydet }) => {
-    const p = meyhane.normalMoraPaketi(durum);
+  '0x01810c01': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 1) return new W().u32(1).done();
+    const p = meyhane.normalMoraPaketi(durum, payload.readUInt8(0));
+    if (p.readUInt32BE(0) === 0) ekSonra(0x01180105, meyhane.moneyPaketi(), 'TAVERN-money');
     try { kaydet(durum); } catch (e) { }
     return p;
   },
   '0x01810c02': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 4) return new W().u32(1).done();
     const wid = payload && payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const p = meyhane.recruitPaketi(wid, durum, seviye.anaDurum().lv);   // partner ana heronun seviyesinde gelir
     if (p.length >= 8 && p.readUInt32BE(0) === 0) olay.say(durum, 'recruit', 1);
@@ -463,18 +468,22 @@ const byReq = {
   '0x01818005': () => { const w = new W(); w.u32(0); w.u16(0); return w.done(); },
   // ChangeCard: [i32 itemId][i16 adet] -> esya KALICI envantere yazilir, cevap sadece hata kodu.
   '0x01810c03': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 6) return new W().u32(1).done();
     const itemId = payload && payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const adet = payload && payload.length >= 6 ? payload.readInt16BE(4) : 1;
-    try {
-      if (itemId) envanterDepo.ekle(durum, [{ type: 1, code: itemId, amount: Math.max(1, adet) }]);
+    const p = meyhane.changeCardPaketi(itemId, adet, durum);
+    if (p.readUInt32BE(0) === 0) {
+      ekSonra(envanterDepo.OP_NTF, envanterDepo.kazancPaketi(durum, [{code: itemId, amount: adet}]), 'TAVERN-card');
       kaydet(durum);
-    } catch (e) { }
-    return meyhane.changeCardPaketi();
+    }
+    return p;
   },
   // "Advance" butonu — ayri modul (HeroSLevel 8448)
   '0x01812101': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 4) return new W().u32(1).done();
     const heroId = payload && payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const p = meyhane.addQualityPaketi(heroId, durum);
+    if (p.readUInt32BE(0) === 0) ekSonra(0x01180105, meyhane.moneyPaketi(true), 'TAVERN-quality');
     try { kaydet(durum); } catch (e) { }
     return p;
   },
@@ -736,7 +745,7 @@ const byReq = {
   // [i16 heroSayisi] + hero x (u32 heroID + 7 x i32 yildiz)
   // heroSayisi negatif olursa uint'e cevrilip ~4 milyar oluyor -> buffer tasmasi. 0 guvenli.
   // Bilinmeyen heroID'de client donguyu KIRIYOR (crash yok ama kalan kayitlar sessizce dusuyor).
-  '0x01813904': () => { const w = new W(); w.u16(0); return w.done(); },
+  '0x01813904': ({durum,payload}) => require('./hollow-soul-map').read(durum,payload),
 
   // === KNIFE SOUL: egitim (KnifeTrainRequest [i16 adet][i8 tip]) ===
   // Cevap 0x01181400 = [u32 hata][u32 ID][u32 CurrentExp][u8 smallCrit][u8 bigCrit][u32 GainExp] = 18B
@@ -782,48 +791,8 @@ const byReq = {
   // === SPIRIT SCHOOL: bilgi (payload YOK) ===
   // Cevap 0x01181406 = [u32 expId][u32 currentExp][u32 freeNum] = 12B — HATA KODU YOK!
   // TUZAK: SpiritSchoolExp[expId] null kontrolsuz -> expId gercek olmali (18301001..).
-  '0x01811406': ({ durum, kaydet }) => {
-    const d = okulDurum(durum); kaydet(durum);
-    const w = new W();
-    w.u32(d.expId >>> 0); w.u32(d.exp >>> 0); w.u32(d.free >>> 0);
-    return w.done();
-  },
-
-  // === SPIRIT SCHOOL: egitim ([u32 adet]) ===
-  // Cevap 0x01181407 = [u32 hata][u32 expId][u32 curExp][u32 freeNum][i32 gain][i32 small][i32 big] = 28B
-  '0x01811407': ({ payload, durum, kaydet }) => {
-    const istek = payload && payload.length >= 4 ? payload.readUInt32BE(0) : 1;
-    const d = okulDurum(durum);
-    const plan = okulPlanla(d, Math.max(1, Math.min(istek || 1, 50)));
-    const itemId = Number(require('./paket').cv(60109009, 14100322)) || 14100322;
-    const itemCost = Math.max(0, Number(require('./paket').cv(60109013, 10)) || 0);
-    const freeLimit = Math.max(0, Number(require('./paket').cv(60109015, 3)) || 0);
-    const freeUsed = Math.min(plan.trained, Math.max(0, freeLimit - d.free));
-    const paidCount = plan.trained - freeUsed;
-    const materialCost = paidCount * itemCost;
-    let error = 0;
-    if (!plan.trained) {
-      error = 95;
-    } else if (materialCost && !envanterDepo.dus(durum, itemId, materialCost)) {
-      error = 18;
-    } else {
-      d.expId = plan.expId;
-      d.exp = plan.exp;
-      d.free += freeUsed;
-      if (materialCost) {
-        const update = envanterDepo.guncellemePaketi(durum, itemId, 0);
-        if (update) ekSonra(update.id, update.payload, 'SPIRIT-SCHOOL-esya');
-      }
-      const anaId = seviye.anaId();
-      const attr = require('./ekipman').statPaketi(durum, anaId, seviye.anaDurum().lv);
-      if (attr) ekSonra(0x01180104, attr, 'SPIRIT-SCHOOL-stat');
-    }
-    kaydet(durum);
-    const w = new W();
-    w.u32(error); w.u32(d.expId >>> 0); w.u32(d.exp >>> 0); w.u32(d.free >>> 0);
-    w.i32(error ? 0 : plan.gain); w.i32(0); w.i32(0);
-    return w.done();
-  },
+  '0x01811406': ctx => require('./academy').info(ctx),
+  '0x01811407': ctx => require('./academy').train(ctx,{ekOnce,ekSonra}),
 
   // === ARENA: giris ===
   // [u32 hata][u8 BoxType][u16 BoxRanking][u32 BoxLevel][u8 FightTimes][u8 AddTimes]

@@ -78,8 +78,9 @@ function olcek(heroId, lv, anaId, anaLv) {
   return olcekler(heroId, lv, anaId, anaLv).genel;
 }
 
-function olcekler(heroId, lv, anaId, anaLv) {
-  return require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1);
+function olcekler(heroId, lv, anaId, anaLv, durum = null) {
+  const quality = Number(durum && durum.meyhane && durum.meyhane.kalite && durum.meyhane.kalite[String(heroId)]) || 0;
+  return require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1, quality);
 }
 
 // Attribute blogunu olcekle. Uzunluk ve alan sayisi DEGISMEZ, sadece OLCEKLI int slotlari.

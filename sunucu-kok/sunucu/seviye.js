@@ -51,11 +51,14 @@ function heroGrowthTable() {
   return HERO_GROWTH;
 }
 /** BaseHero'nun level bazli temel buyume degerleri; seviye motoru tum stat tuketicileri icin tek kaynaktir. */
-function buyumeTemeli(heroId, lv) {
+function buyumeTemeli(heroId, lv, quality = 0) {
   const h = heroGrowthTable().get(heroId >>> 0);
   if (!h) return null;
   const n = Math.max(0, sinirla(lv) - 1);
-  const at = (base, grow) => Math.max(0, Number(base) + Number(grow) * n || 0);
+  const stage = Math.max(0, Math.min(2, Number(quality) || 0));
+  const baseRate = stage === 2 ? 2 : 1;
+  const growthRate = stage === 2 ? 2 : stage === 1 ? 1.5 : 1;
+  const at = (base, grow) => Math.max(0, Number(base) * baseRate + Number(grow) * growthRate * n || 0);
   const power = at(h.power, h.powerGrow);
   const agile = at(h.agile, h.agileGrow);
   const intelligence = at(h.intelligence, h.intelligenceGrow);
@@ -63,8 +66,8 @@ function buyumeTemeli(heroId, lv) {
   return { power, agile, intelligence, life, combat: Math.max(power, agile, intelligence) };
 }
 /** Buyume carpanlari: ana savas degerleri ve HP, her birinin BaseHero buyumesini izler. */
-function statCarpanlari(heroId, lv, anaId_, anaLv) {
-  const hedef = buyumeTemeli(heroId, lv);
+function statCarpanlari(heroId, lv, anaId_, anaLv, quality = 0) {
+  const hedef = buyumeTemeli(heroId, lv, quality);
   const taban = buyumeTemeli(anaId_, anaLv);
   if (!hedef || !taban || !(hedef.combat > 0) || !(taban.combat > 0) || !(hedef.life > 0) || !(taban.life > 0)) {
     return { genel: 1, power: 1, agile: 1, intelligence: 1, life: 1 };

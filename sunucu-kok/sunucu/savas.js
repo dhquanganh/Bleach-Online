@@ -536,11 +536,33 @@ function isRaidersDailyCity(cityId) {
 }
 
 // Bir BlockPoint'in dusman kadrosu. Client'in cozemeyecegi id'ler elenir (yoksa savas donar).
+function worldMapLevel(stageId) {
+  const point=blockById.get(stageId >>> 0);
+  const city=point && cityById.get(Number(point.campaign));
+  if(!city || Number(city.type)!==1) return 0;
+  const first=blockById.get(Number(city.start)),last=blockById.get(Number(city.last));
+  if(!first || !last) return 0;
+  const low=Math.max(1,Number(first.level)||1),high=Math.max(low,Number(last.level)||low);
+  const count=Number(city.last)-Number(city.start);
+  const progress=Math.max(0,Math.min(count,stageId-Number(city.start)));
+  return count>0?Math.round(low+(high-low)*progress/count):low;
+}
+function worldMapScale(unit,level) {
+  const factor=Math.pow(level/Math.max(1,Number(unit.level)||1),2);
+  for(const field of ['maxHp','atk','def','speed']) unit[field]=Math.min(1000000000,Math.max(field==='maxHp'?100:field==='atk'?1:0,Math.round(unit[field]*factor)));
+  unit.hp=unit.maxHp;unit.level=level;
+  return unit;
+}
 function stageDusmanlari(bpId) {
   const bp = stageById(bpId); if (!bp) return null;
   const out = stageArmyDusmanlari(stageArmyIds(bp));
   if (!out.length) return null;
   const stageLevel = stageSeviye(bpId, bp);
+  const mapLevel = worldMapLevel(bpId);
+  if(mapLevel > 0) {
+    for(const unit of out) worldMapScale(unit,mapLevel);
+    return {birimler:out.slice(0,9),ad:bp.name||''};
+  }
   if (stageLevel > 0) {
     for (const unit of out) {
       const enemyLevel = Math.max(1, Number(unit.level) || 1);
@@ -556,6 +578,7 @@ function stageDusmanlari(bpId) {
   return { birimler: out.slice(0, 9), ad: bp.name || '' };
 }
 function stageSeviye(stageId, stage) {
+  const mapLevel=worldMapLevel(stageId);if(mapLevel>0)return mapLevel;
   if (raidersDailyById.has(stageId >>> 0)) return Math.max(0, Number(stage.level) || 0);
   if (singlePointById.has(stageId >>> 0)) {
     const campaign = Single.find(row => stageId >= Number(row.startId) && stageId <= Number(row.endId));
@@ -820,13 +843,17 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     unit.damageBonus = bonus[18] || 0;
     unit.damageReduction = bonus[19] || 0;
   }
+  if(options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
+    const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
+    for(const unit of p1){unit[field]=Math.min(1000000000,Math.round(unit[field]*factor));if(field==='maxHp')unit.hp=unit.maxHp;}
+  }
   // Arena botu varsa onun gercek kahraman kadrosunu, diger savaslarda stage dusmanlarini kullan.
   // Stage kadrosu bulunmayan diger modlarda varsayilan dusmana dusulur.
   const st = enemyOverride || (!arenaRakip && bpId ? stageDusmanlari(bpId) : null);
   const p2 = arenaRakip
     ? arenaRakip.heroes.map((id, i) => {
       const pos = Array.isArray(arenaRakip.positions) ? arenaRakip.positions[i] : [1, 6, 11][i];
-      const u = heroBirim(id, pos, arenaRakip.level, null, null, 0, true);
+      const u = heroBirim(id, pos, arenaRakip.baseLevel || arenaRakip.level, null, null, 0, true);
       if (!u) return null;
       u.camp = 1;
       return u;
@@ -835,9 +862,19 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   if (st) console.log(`[savas] stage ${bpId} "${st.ad}" -> ${p2.length} dusman: ${p2.map(u => u.id + '@pos' + u.pos).join(', ')}`);
   if (arenaRakip) console.log(`[arena] ${arenaRakip.name} lv${arenaRakip.level} -> ${p2.length} hero, power x${arenaRakip.power}`);
 
-  if (options.scaleEnemy !== false) {
+  if (options.scaleEnemy !== false && !worldMapLevel(bpId)) {
     const denge = dengele(p1, p2, arenaRakip ? arenaRakip.power : 1, !!st && !arenaRakip);
     if (denge) console.log(`[savas] denge: dusman hp x${denge.kHp.toFixed(1)} atk x${denge.kAtk.toFixed(1)}`);
+  }
+  // Cross Server only: keep the previous bot baseline, then apply row difficulty.
+  if (arenaRakip && Number(arenaRakip.crossStatScale) > 0) {
+    const factor = Number(arenaRakip.crossStatScale);
+    for (const unit of p2) {
+      for (const field of ['maxHp','atk','def','speed']) unit[field] = Math.min(1000000000, Math.max(0, Math.round(unit[field] * factor)));
+      unit.atk = Math.min(1000000000, Math.round(unit.atk * (Number(arenaRakip.crossAttackScale) || 1)));
+      unit.hp = unit.maxHp;
+      unit.level = arenaRakip.level;
+    }
   }
   const stageStatScale = Math.max(1, Number(options.stageStatScale) || 1);
   if (stageStatScale > 1 && !arenaRakip) {
@@ -901,7 +938,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   SON_OYUNCU_HASARI = p1.reduce((sum, unit) => sum + (unit.verdi || 0), 0);
   SON_ISTATISTIK = kodek.encodeStatistics(p1.map(ist), p2.map(ist));
   return {
-    payload: kodek.encodeBattleReport({ version: 3, player1: { roles: roles1 }, player2: { roles: roles2 }, turns }),
+    payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1 }, player2: { roles: roles2 }, turns }),
     remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, rate: Math.max(0, unit.hp) / unit.maxHp })),
     won: arenaRakip
       ? p2.every(x => x.hp <= 0) && p1.some(x => x.hp > 0)
@@ -961,14 +998,17 @@ function fightPetFrames(enemyId, currentHp) {
 function cityDefendBattle(enemyId,currentHp,playerState) {
   SON_OYUNCU_HASARI=0;SON_ISTATISTIK=null;
   const enemy=enemyById.get(Number(enemyId)>>>0);if(!enemy)throw Error('Unknown CityDefend gate');
-  const unit=dusmanBirim({...enemy,hp:Math.max(1,Math.min(Number(enemy.hp),currentHp))},6);
+  const balance=require('./protect-seireitei-config.json');
+  const hp=Math.max(1,Math.min(balance.bossMaxHp,currentHp));
+  const unit=dusmanBirim({...enemy,hp},6);
+  unit.atk*=balance.attackMultiplier;unit.def*=balance.defenseMultiplier;
   // Gate RoleModel rows only exist up to level 150; use the shared gate model
   // while retaining the actual level and all combat stats from the requested row.
   unit.id=Number(enemyId)<12820000?12810001:12820001;
-  unit.hp=unit.maxHp=Math.max(1,Math.min(Number(enemy.hp),currentHp));
+  unit.hp=unit.maxHp=hp;
   unit.isim=enemy.name;
 
-  const report=kadroRapor(0,null,{ad:enemy.name,birimler:[unit]},{playerState,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true});
+  const report=kadroRapor(0,null,{ad:enemy.name,birimler:[unit]},{playerState,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});
   if(!report)throw Error('Unable to create CityDefend battle');
   return {...report,damage:SON_OYUNCU_HASARI};
 }
@@ -1040,13 +1080,13 @@ function fightFrames(reqId, payload, durum = null) {
   // 1) Oyuncunun kendi kadrosu varsa ondan uret (Formation savasa yansisin)
   try {
     const worldMapStage = blockById.has(bpId);
-    const stageStatScale = worldMapStage ? 5
+    const stageStatScale = worldMapStage ? 1
       : towerPve ? skyTowerStatScale(towerStageId) : 1;
     const r = kadroRapor(bpId, arenaRakip, null, {
       ...(stageBattle ? { reportLossWhenDefeated: true, requireEnemyDefeated: true } : {}),
-      scaleEnemy: !stageBattle || worldMapStage,
+      scaleEnemy: !stageBattle,
       stageStatScale,
-      enemyAttackScale: worldMapStage ? 0.5 : 1,
+      enemyAttackScale: 1,
     });
     if (r) {
       const odul = arenaRakip || voidBoss || (stageBattle && !r.won) ? [] : stageOdulleri(bpId);
@@ -1148,7 +1188,7 @@ function fightAck(reqId, payload) {
 }
 
 module.exports = {
-  cityDefendBattle, heroBirim, initiative, vurus, isFight, fightAck, fightFrames, fightPetFrames, sonOyuncuHasari, voidFightFrames,
+  worldMapLevel, worldMapScale, stageArmyDusmanlari, cityDefendBattle, heroBirim, initiative, vurus, isFight, fightAck, fightFrames, fightPetFrames, sonOyuncuHasari, voidFightFrames,
   isAutoBattle, autoBattleFrames, FIGHT_OPS, synthReport, stageDusmanlari, stageIdCoz,
   instanceStageWon, stageAssessment, stageNextLayer, stageCityType, raidersDailyStageId,
   isRaidersDailyCity, skyTowerStageId, stageOdulleri, kadroRapor, sonIstatistik,

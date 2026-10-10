@@ -1,9 +1,12 @@
 {
   "rewardItem": 14900001,
-  "rewardAmount": 10,
+  "rewardAmount": 1,
   "fightCooldownSeconds": 20,
   "deathSeconds": 59,
   "historyLimit": 20,
   "outerEnemyBase": 12810000,
-  "innerEnemyBase": 12820000
+  "innerEnemyBase": 12820000,
+  "bossMaxHp": 9100002004,
+  "attackMultiplier": 4,
+  "defenseMultiplier": 4
 }

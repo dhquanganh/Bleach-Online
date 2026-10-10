@@ -40,8 +40,8 @@
     "activityName": "Protect Seireitei",
     "activityType": 2,
     "activityTime": "[\"Event Start Time: \",\"00:00 - 24:00\"]",
-    "activityDescription": "Open all day. Attack both Seireitei gates. Each valid battle rewards 10 Nguyen thach; wait 20 seconds between battles.",
-    "activityRewards": "Receive 10 Nguyen thach after every valid battle, including a defeat. Rewards appear immediately in your bag. Replaying reports or entering the event does not grant rewards.",
+    "activityDescription": "Open all day. Boss HP: 9,100,002,004. ATK and DEF x4. Wait 20 seconds between battles.",
+    "activityRewards": "Receive 1 Nguyen thach after every valid battle, including a defeat. Rewards appear immediately in your bag. Replaying reports or entering the event does not grant rewards.",
     "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
   },
   {

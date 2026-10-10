@@ -330,7 +330,7 @@ function kur(y) {
   const gunlukS = d => gunluk(d);
 
   // ================= ENTER_* =================
-  H['0x01810205'] = () => new Y().u32(0).u8(0).u16(0).done();                                  // Tavern
+  H['0x01810205'] = ({ durum, kaydet }) => { const p = require('./meyhane').enterPaketi(durum); K(kaydet, durum); return p; }; // Tavern
   H['0x0181020c'] = ({ durum }) => { const s = ozet(durum); return new Y().u32(0).u32(10).u32(1800).u32(1).u32(s.haindirilme || 0).done(); };   // TraitorAttack
   H['0x01810208'] = ({ durum }) => {                                                            // CityDefend
     const w = new Y().u32(0).u8(2).u32(30).utf('Gotei 13').u8(0).u32(Math.max(1, Math.min(159, anaLv()))).f32(1000000).u8(0).u32((ozet(durum).sehirDirilme) || 0);
@@ -528,6 +528,8 @@ function kur(y) {
   };
   Object.assign(H,require('./soul-hunt').kur(y).handlers);
   Object.assign(H,require('./protect-seireitei').kur(y).handlers);
+  Object.assign(H,require('./cross-server').kur(y).handlers);
+  Object.assign(H,require('./conquest').kur(y).handlers);
   return H;
 }
 

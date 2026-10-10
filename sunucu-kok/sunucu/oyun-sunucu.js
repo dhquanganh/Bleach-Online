@@ -194,6 +194,7 @@ function editChar(payload) {
 // Her heronun TAKILI ekipmani + uyanis + Hogyoku kalici depodan (ekipman.js); yakalanan set sadece ilk tohum.
 function ekipmanYama(buf, dd) {
   if (!dd) return buf;
+  buf = meyhane.charYama(buf, dd, harita.basicEnd);
   if (process.env.BLEACH_DIAGNOSTIC_SKIP_EQUIPMENT_PATCH === '1') return buf;
   try {
     const ekipman = require('./ekipman');
@@ -675,6 +676,18 @@ net.createServer(client => {
           send(0x01182401,result.ack,'PROTECT-FightRet');
           if(!result.error){send(kodek.OP.REPORT,result.report,'PROTECT-report');send(kodek.OP.RESULT,result.result,'PROTECT-result');for(const update of result.updates)send(update.id,update.payload,'PROTECT-update');}
         }catch(e){LOG.note(cid,'Protect Seireitei: '+e.message);send(0x01182401,Buffer.from([0,0,0,1]),'PROTECT-error');}continue;
+      }
+      if((pk.id>>>0)===0x01813d02 || (pk.id>>>0)===0x01813d7d){
+        try{const d=durumMod.yukle(),cross=require('./cross-server').kur(handlers),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet};const result=(pk.id>>>0)===0x01813d7d?cross.replay(ctx):cross.fight(ctx);
+          if(result.error){const p=Buffer.alloc(4);p.writeUInt32BE(result.error);send(0x01183d02,p,'CROSS-error');}
+          else{send(0x01183d02,result.ack,'CROSS-ack');send(kodek.OP.REPORT,result.report,'CROSS-report');send(kodek.OP.RESULT,result.result,'CROSS-result');const q=handlers.ekAl();for(const p of q.once.concat(q.sonra))send(p.id,p.payload,p.kaynak);}
+        }catch(e){LOG.note(cid,'Cross Server: '+e.message);send(0x01183d02,Buffer.from([0,0,0,1]),'CROSS-error');}continue;
+      }
+      if((pk.id>>>0)===0x01818201){
+        try{const d=durumMod.yukle(),result=require('./conquest').kur(handlers).fight({durum:d,payload:pk.payload,kaydet:durumMod.kaydet});
+          if(result.error){const p=Buffer.alloc(4);p.writeUInt32BE(result.error);send(0x01188201,p,'CONQUEST-error');}
+          else{send(0x01188201,result.ack,'CONQUEST-ack');send(kodek.OP.REPORT,result.report,'CONQUEST-report');send(kodek.OP.RESULT,result.result,'CONQUEST-result');const q=handlers.ekAl();for(const p of q.once.concat(q.sonra))send(p.id,p.payload,p.kaynak);}
+        }catch(e){LOG.note(cid,'Conquest: '+e.message);send(0x01188201,Buffer.from([0,0,0,1]),'CONQUEST-error');}continue;
       }
       // === SAVAS: fight istegi -> (1) fight-ack (2) savas raporu (3) sonuc ===
       // Gercek sunucu once fight opcode'un normal swap cevabini (ack) yollar, SONRA raporu.

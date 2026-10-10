@@ -35,6 +35,8 @@ package Processors.Game.Lobby.CityDefend
    public class TProcessorCityDefend extends TProcessorLobbyPlate
    {
       
+      public static var BossMaxHp:Number = 9100002004;
+      
       public static var FightReadyAt:uint = 0;
       
       public static var FightPending:Boolean = false;
@@ -266,6 +268,10 @@ package Processors.Game.Lobby.CityDefend
          this.FCityDefendData.OrganizationRank.Clear();
          this.FCityDefendData.HeroRank.Clear();
          this.FUnstreamizerCityDefend.Unstreamize(param1,this.FCityDefendData,null);
+         if(param1.bytesAvailable >= 8)
+         {
+            BossMaxHp = param1.readDouble();
+         }
          this.FConfigValueBins = SResourcesCore.ResourceBin.GetBinsByResourceID(CONST_DATEBASEVO.RESOURCEID_ConfigValue);
          _loc5_ = this.FConfigValueBins.GetDatebaseByIdentifier(CONST_CONFIGVALUE.CityDefend_Defend_Outcityid) as TConfigValue;
          this.FOutCityId = _loc5_.Value as int;
@@ -305,7 +311,7 @@ package Processors.Game.Lobby.CityDefend
             this.ChangeSceneId(this.FInCityId);
          }
          _loc4_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_Enemy,_loc3_) as TEnemy;
-         this.FCityDefendData.CityDoorTotleHp = _loc4_.Hp;
+         this.FCityDefendData.CityDoorTotleHp = BossMaxHp;
       }
       
       protected function PacketPerform_SC_FightRet(param1:TPacket) : void
@@ -393,7 +399,7 @@ package Processors.Game.Lobby.CityDefend
       {
          var _loc2_:ByteArray = null;
          _loc2_ = param1.Data;
-         var hp:Number = _loc2_.readFloat();
+         var hp:Number = _loc2_.readDouble();
          if(TBattleHandle.IsInBattle)
          {
             this.FDeferredHp = hp;
@@ -936,7 +942,7 @@ package Processors.Game.Lobby.CityDefend
          this.FCityDefendData.DefendBuffLevel = 1;
          this.FCityDefendData.CityDoorIndex = 1;
          _loc1_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_Enemy,this.FInMonsterId + this.FCityDefendData.WorldLevel) as TEnemy;
-         this.FCityDefendData.CityDoorTotleHp = _loc1_.Hp;
+         this.FCityDefendData.CityDoorTotleHp = BossMaxHp;
          this.FCityDefendData.CityDoorCurHp = this.FCityDefendData.CityDoorTotleHp;
          this.FProcessorWindowCityDefned.UpdataDoorHp();
          this.ChangeSceneId(this.FInCityId);

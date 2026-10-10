@@ -9,9 +9,9 @@
 //  -> SC 0x01180c00 MoraRet    = [u32 hata][u8 tip][u16 adet]
 //                                + adet x (u32 warriorId, u8 kazandi, u32 returnMoney)
 //     tip 0/1 -> client ShowChooseMoraHero: rakip(ler)i gosterir, sonra jest butonlarini acar
-//     tip 2/3 -> client 10 sonucu pespese oynatir ve kazanilan ruhlari toplar
+//     tip 2/3 -> ten rounds, up to thirty results; client animates the soul rewards
 //
-// CS 0x01810c01 NormalMoraReq  = [i8 jest]      (tas/kagit/makas)
+// CS 0x01810c01 NormalMoraReq  = [i8 guaranteed] (0=random, 1=paid win)
 //  -> SC 0x01180c01 NormalMoraRet = [u32 hata][u32 warriorId][u8 kazandi][u32 returnMoney]  (13B)
 //
 // CS 0x01810c02 RecruitReq     = [i32 warriorId]
@@ -32,7 +32,7 @@
 //    sahip OLUNAN bir hero id gonderilmeli. Ayrica gondermeden once ConfigValue(60104007)'yi
 //    AddQuality ile indeksliyor — o satir [200,500], yani en fazla 2 kademe.
 // 4) Ruh dusumunu CLIENT kendi yapiyor (SetHeroSoulByIndex). Sunucudan ayrica ruh paketi
-//    gondermiyoruz; yalniz harcamayi kalici duruma not ediyoruz.
+//    gondermiyoruz; veri.json stores the authoritative balances.
 const fs = require('fs');
 const path = require('path');
 
@@ -96,40 +96,133 @@ function depo(durum) {
 }
 
 const rnd = n => Math.floor(Math.random() * n);
+const SOUL_FIELDS = {3: 'blueSoul', 4: 'purpleSoul', 5: 'goldSoulV', 6: 'orangeSoul'};
+const PAY = new Map(jread('Tavern_PayConfig.json', []).map(r => [num(r.id), Number(r.value)]));
+const CARDS = jread('Exchange_ExpCard.json', []);
+const CONFIG = new Map(jread('ConfigValue.json', []).map(r => [num(r.id), r.isClient]));
+const QUALITY_COST = JSON.parse(CONFIG.get(60104007) || '[200,500]');
+const QUALITY_LEVEL = Number(CONFIG.get(60104010)) || 80;
+const CHEAT_COST = PAY.get(30140011) || 50;
+const VIP = new Map(jread('VipConfig.json', []).map(r => [num(r.id), r]));
+const MILITARY = new Map(jread('Military.json', []).map(r => [num(r.id), r]));
+const fail = (code = 1) => new W().u32(code).done();
+function accountRead(account) { return account || require('./seviye').veriOku(); }
+function accountSave(account, supplied) { if (!supplied) fs.writeFileSync(path.join(__dirname, 'veri.json'), JSON.stringify(account, null, 2)); }
+function owned(id, durum, account) {
+  return !!depo(durum).alinan[String(id)] || (account.herolar || []).map(Number).includes(id)
+    || account.tumKarakterler === true || account.tumKarakterler === 'true';
+}
+function premium(account, cost) {
+  const coupons = Math.min(Number(account.kupon) || 0, cost);
+  if (coupons + (Number(account.altin) || 0) < cost) return false;
+  account.kupon = (Number(account.kupon) || 0) - coupons;
+  account.altin = (Number(account.altin) || 0) - (cost - coupons);
+  return true;
+}
+function reward(account, warrior, win) {
+  if (win) {
+    const field = SOUL_FIELDS[warrior.soul.type];
+    account[field] = Math.min(2000000000, (Number(account[field]) || 0) + warrior.soul.value);
+  } else account.gumus = Math.min(2000000000, (Number(account.gumus) || 0) + warrior.returnValue);
+}
+function enterPaketi(durum) {
+  const d = depo(durum);
+  d.pending = [];
+  delete d.secili;
+  return new W().u32(0).u8(0).u16(0).done();
+}
+function moneyPaketi(includeOrange = false) {
+  const v = accountRead();
+  const fields = [{index: 0, v: Number(v.gumusHigh) || 0, a: Number(v.gumus) || 0},
+    {index: 1, v: Number(v.kupon) || 0}, {index: 3, v: Number(v.altin) || 0}];
+  if (includeOrange) fields.push({index: 10, v: Number(v.orangeSoul) || 0});
+  return require('./harita').baseInfoUpdate(fields);
+}
+function charYama(buf, durum, basicEnd) {
+  const out = Buffer.from(buf), end = basicEnd(out);
+  if (end + 2 > out.length) return buf;
+  const count = out.readUInt16BE(end);
+  let pos = end + 2;
+  for (let i = 0; i < count; i++) {
+    const next = require('./herolar').girisSonu(out, pos);
+    if (next == null) return buf;
+    const changes = out.readInt16BE(pos + 22);
+    const qualityOffset = pos + 63 + 9 * Math.max(0, changes);
+    out[qualityOffset] = Math.min(MAX_KALITE, Math.max(0, Number(depo(durum).kalite[String(out.readUInt32BE(pos))]) || 0));
+    pos = next;
+  }
+  return out;
+}
 
 // ---------- paketler ----------
 /** SC 0x01180c00 — Mora sonucu/aday listesi */
-function moraPaketi(tip, gradeId, durum) {
+function moraPaketi(tip, gradeId, durum, supplied) {
+  const account = accountRead(supplied);
+  const grade = kademeler().get(gradeId >>> 0);
+  if (![0, 1, 2, 3].includes(tip) || !grade || (Number(account.level) || 1) < grade.level) return fail();
+  const vip = VIP.get(Number(account.vipLevel) || 0) || {};
+  if ((tip === 2 && !Number(vip.oneWine)) || (tip === 3 && !Number(vip.oneWinWine))) return fail();
   const d = depo(durum);
-  const havuz = kademeSavascilari(gradeId);
+  if ((d.pending || []).length) return fail();
+  const config = jread('Tavern_Grade.json', []).find(r => num(r.id) === grade.id);
+  const wine = JSON.parse(config.wineLv).wineLv;
+  const quality = wine[tip === 0 ? 0 : 1] || wine[0];
+  const havuz = kademeSavascilari(gradeId).filter(s => s.soul.type === quality);
+  if (havuz.length < 3) return fail();
+  const pay = JSON.parse(config.payConfigs);
+  const price = PAY.get(pay[tip === 0 ? 'NORMAL' : 'ADVANCED']);
+  if (!(price > 0)) return fail();
+  const cost = price * (tip < 2 ? 1 : 10);
+  if ((Number(account.gumus) || 0) < cost) return fail(13);
+  if (tip === 3 && !premium(account, CHEAT_COST * 30)) return fail(16);
+  account.gumus = (Number(account.gumus) || 0) - cost;
   const w = new W();
   w.u32(0).u8(tip & 0xff);
   if (tip === 0 || tip === 1) {
-    // Tek rakip: client once onu gosterir, sonra jest butonlarini acar.
-    const s = havuz[rnd(havuz.length)];
-    d.secili = s.id;
-    w.u16(1);
-    w.u32(s.id).u8(0).u32(s.returnValue >>> 0);
+    // Flash reads exactly three distinct opponents and ends on the first loss.
+    d.pending = [];
+    w.u16(3);
+    const choices = havuz.slice();
+    for (let i = 0; i < 3; i++) {
+      const s = choices.splice(rnd(choices.length), 1)[0];
+      d.pending.push(s.id);
+      w.u32(s.id).u8(0).u32(s.returnValue);
+    }
+    accountSave(account, supplied);
     return w.done();
   }
   // ×10 / hepsini kazan
-  const adet = 10;
-  w.u16(adet);
-  for (let i = 0; i < adet; i++) {
-    const s = havuz[rnd(havuz.length)];
-    const kazandi = tip === 3 ? 1 : (Math.random() < 0.6 ? 1 : 0);
-    w.u32(s.id).u8(kazandi).u32(kazandi ? 0 : (s.returnValue >>> 0));
+  const results = [];
+  for (let i = 0; i < 10; i++) {
+    const choices = havuz.slice();
+    for (let round = 0; round < 3; round++) {
+      const s = choices.splice(rnd(choices.length), 1)[0];
+      const win = tip === 3 ? 1 : (Math.random() < 0.6 ? 1 : 0);
+      results.push({s, win});
+      reward(account, s, win);
+      if (!win) break;
+    }
   }
+  w.u16(results.length);
+  for (const {s, win} of results) w.u32(s.id).u8(win).u32(win ? 0 : s.returnValue);
+  accountSave(account, supplied);
   return w.done();
 }
 
 /** SC 0x01180c01 — tek Janken sonucu (13B) */
-function normalMoraPaketi(durum) {
+function normalMoraPaketi(durum, guaranteed = 0, supplied) {
+  if (guaranteed !== 0 && guaranteed !== 1) return fail();
   const d = depo(durum);
+  const account = accountRead(supplied);
   const havuz = savascilar();
-  let s = havuz.find(x => x.id === (d.secili >>> 0));
-  if (!s) { const h = kademeSavascilari(0); s = h[rnd(h.length)]; d.secili = s.id; }
-  const kazandi = Math.random() < 0.6 ? 1 : 0;
+  const s = havuz.find(x => x.id === (d.pending || [])[0]);
+  if (!s) return fail();
+  if (guaranteed && !premium(account, CHEAT_COST)) return fail(16);
+  const kazandi = guaranteed || (Math.random() < 0.6 ? 1 : 0);
+  d.pending.shift();
+  if (!kazandi) d.pending = [];
+  reward(account, s, kazandi);
+  accountSave(account, supplied);
   const w = new W();
   w.u32(0).u32(s.id >>> 0).u8(kazandi).u32(kazandi ? 0 : (s.returnValue >>> 0));
   return w.done();
@@ -140,10 +233,23 @@ function normalMoraPaketi(durum) {
  *  RebirthLevel'i hero'ya AYNEN yazar (PacketPerform_SC_TavernRecruit); 0 gonderilince
  *  partner "Lv.0" oluyordu. Partner ayrica durum.meyhane.alinan'a KALICI yazilir ve
  *  oyun-sunucu.editChar bunlari her giriste char paketine enjekte eder (relogin'de kaybolmaz). */
-function recruitPaketi(warriorId, durum, level) {
+function recruitPaketi(warriorId, durum, level, supplied) {
   const d = depo(durum);
+  const account = accountRead(supplied);
   const s = savascilar().find(x => x.id === (warriorId >>> 0));
   if (!s || !s.heroId) { const w = new W(); w.u32(1); return w.done(); }   // gecersiz -> hata
+  if (owned(s.heroId, durum, account)) return fail(45);
+  const grade = [...kademeler().values()].find(g => g.page === s.grade);
+  if (!grade || (Number(account.level) || 1) < grade.level) return fail(44);
+  const rankId = Math.max(40100001, Math.min(40100036, Number(account.rutbe) || Number(durum.militaryRank) || 40100036));
+  const rank = MILITARY.get(rankId);
+  const roster = new Set([...(account.herolar || []).map(Number), ...alinanlar(durum)]);
+  roster.delete(require('./seviye').anaId());
+  if (rank && roster.size + 1 >= Number(rank.maxHeroNum) + (Number(durum.heroAddSlotNum) || 0)) return fail(46);
+  const field = SOUL_FIELDS[s.soul.type];
+  if ((Number(account[field]) || 0) < s.recruitSoul) return fail(43);
+  account[field] -= s.recruitSoul;
+  accountSave(account, supplied);
   d.alinan[String(s.heroId)] = 1;
   d.harcanan[String(s.soul.type)] = (Number(d.harcanan[String(s.soul.type)]) || 0) + s.recruitSoul;
   try { require('./seviye').heroKayit(durum, s.heroId, level); } catch (e) { }
@@ -180,15 +286,37 @@ function alinanlar(durum) {
 }
 
 /** SC 0x01180c03 — exp karti degisimi (4B; client ruhu kendi dusuyor) */
-function changeCardPaketi() { const w = new W(); w.u32(0); return w.done(); }
+function changeCardPaketi(itemId, count, durum, supplied) {
+  if (!Number.isInteger(count) || count < 1 || count > 32767) return fail();
+  const account = accountRead(supplied);
+  const card = CARDS.find(c => c.item === itemId && [...kademeler().values()]
+    .some(g => g.page === c.grade && g.level <= (Number(account.level) || 1)));
+  if (!card || !SOUL_FIELDS[card.quality] || !(card.value > 0)) return fail();
+  const field = SOUL_FIELDS[card.quality], cost = card.value * count;
+  if ((Number(account[field]) || 0) < cost) return fail(43);
+  const inventory = require('./envanter');
+  if (inventory.mevcut(durum, itemId) + count > inventory.MAX_ADET) return fail();
+  const added = inventory.ekle(durum, [{type: 1, code: itemId, amount: count}]);
+  if (!added || !added.length) return fail();
+  account[field] -= cost;
+  accountSave(account, supplied);
+  return new W().u32(0).done();
+}
 
 /** SC 0x01182101 — Advance / kalite yukseltme (12B) */
-function addQualityPaketi(heroId, durum) {
+function addQualityPaketi(heroId, durum, supplied) {
   const d = depo(durum);
+  const account = accountRead(supplied);
   const k = String(heroId >>> 0);
   const simdiki = Number(d.kalite[k]) || 0;
-  if (!heroId) { const w = new W(); w.u32(1); return w.done(); }
-  const yeni = Math.min(MAX_KALITE, simdiki + 1);
+  if (!Number.isInteger(simdiki) || simdiki < 0) return fail();
+  if (!savascilar().some(s => s.heroId === heroId) || !owned(heroId, durum, account)
+    || (Number(account.level) || 1) < QUALITY_LEVEL || simdiki >= QUALITY_COST.length) return fail();
+  const cost = QUALITY_COST[simdiki];
+  if ((Number(account.orangeSoul) || 0) < cost) return fail(43);
+  account.orangeSoul -= cost;
+  accountSave(account, supplied);
+  const yeni = simdiki + 1;
   d.kalite[k] = yeni;
   const w = new W();
   w.u32(0).u32(heroId >>> 0).u32(yeni >>> 0);
@@ -203,5 +331,5 @@ function ozet(durum) {
 module.exports = {
   savascilar, kademeler, kademeSavascilari,
   moraPaketi, normalMoraPaketi, recruitPaketi, itemRecruitPaketi, changeCardPaketi, addQualityPaketi, alinanlar,
-  depo, ozet, MAX_KALITE,
+  depo, ozet, MAX_KALITE, enterPaketi, moneyPaketi, charYama,
 };

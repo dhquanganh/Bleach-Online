@@ -245,6 +245,7 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
   const percentBonuses = new Map();
   const stonePrimaryRates = new Map();
   const add = (id, v) => { const i = ATTR_IDX[id]; if (i === undefined) return; ek[i] += v; };
+  for(const [type,value] of require('./hollow-soul-map').bonuses(durum,heroId)) add(type,value);
   const baseValue = index => {
     if (!baseBlock || baseBlock.length < 2) return null;
     const n = baseBlock.readUInt16BE(0);
@@ -399,7 +400,7 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
 }
 function statPaketi(durum, heroId, level) {
   const ana = statlar.anaKaynakHam(); if (!ana) return null;
-  const k = statlar.olcekler(heroId, level, ana.id, ana.lv);
+  const k = statlar.olcekler(heroId, level, ana.id, ana.lv, durum);
   const blok = statlar.blokOlcekle(ana.blok, k);
   const ek = bonuslar(durum, heroId, blok, true, true, true);
   const refinery = require('./refinery').rates(durum, heroId);
@@ -454,36 +455,8 @@ function bul(durum, heroId, sel) {
 }
 function malzemeParse(datum) { return String(datum || '').split('|').map(s => s.split('_').map(Number)).filter(p => p[0] > 0).map(p => ({ code: p[0], adet: p[1] || 1 })); }
 
-// ---------- HOGYOKU (CrashJade) ----------
-let JADE_L1 = null;
-function jadeL1() {
-  if (JADE_L1) return JADE_L1;
-  JADE_L1 = tablo('CrashJade').liste.filter(r => r.nextID && (r._id % 100) === 1 && Number(r.levelExp) > 0 && article(r._id)).map(r => r._id);
-  if (!JADE_L1.length) JADE_L1 = tablo('CrashJade').liste.filter(r => article(r._id)).slice(0, 20).map(r => r._id);
-  return JADE_L1;
-}
-function hog(durum) {
-  durum.hogyoku = durum.hogyoku || {};
-  const h = durum.hogyoku;
-  h.tahta = h.tahta || []; h.canta = h.canta || []; h.takili = h.takili || {};
-  h.seq = Number(h.seq) || 1; h.cip = Number(h.cip) || 0; h.pelet = Number(h.pelet) || 0; h.coin = Number(h.coin) || 0;
-  h.slot = Number(h.slot) || cv(60360007, 25); h.bayrak = Number(h.bayrak) || 0; h.yuksek = Number(h.yuksek) || 0;
-  const g = require('./paket').gun(); if (h.gun !== g) { h.gun = g; h.yapim = 0; h.satin = 0; }
-  return h;
-}
-function jadeYeni(h, tpl) { const j = { hi: 1, lo: h.seq++, tpl, exp: 0 }; return j; }
-function jadeBul(h, hi, lo, heroId) {
-  let liste = h.canta, i = liste.findIndex(j => j.hi === hi && j.lo === lo);
-  if (i >= 0) return { j: liste[i], kaynak: 'canta', i };
-  i = h.tahta.findIndex(j => j.hi === hi && j.lo === lo); if (i >= 0) return { j: h.tahta[i], kaynak: 'tahta', i };
-  for (const [hid, m] of Object.entries(h.takili)) for (const [pos, j] of Object.entries(m)) if (j && j.hi === hi && j.lo === lo) return { j, kaynak: 'hero', hero: Number(hid), pos: Number(pos) };
-  return null;
-}
-function jadeKaldir(h, r) { if (!r) return; if (r.kaynak === 'canta') h.canta.splice(r.i, 1); else if (r.kaynak === 'tahta') h.tahta.splice(r.i, 1); else if (r.kaynak === 'hero') delete h.takili[String(r.hero)][String(r.pos)]; }
-function jadeSeviyele(j) { let r = satir('CrashJade', j.tpl); const tavan = cv(60360010, 4); while (r && r.nextID && Number(r.levelExp) > 0 && j.exp >= Number(r.levelExp) && (j.tpl % 100) < 99) { j.exp -= Number(r.levelExp); j.tpl = Number(r.nextID); r = satir('CrashJade', j.tpl); if (!r) break; } }
-function jadeUret(h, kind) { const out = []; for (let i = 0; i < kind; i++) { const j = jadeYeni(h, sec(jadeL1())); h.tahta.push(j); out.push(j); } return out; }
-function hogInfo(h) { const w = new Y(); w.u8(h.bayrak).i32(h.yapim).u32(h.satin).u32(h.cip).u32(h.pelet).u32(h.slot).u32(h.yuksek); w.u16(h.tahta.length); for (const j of h.tahta) w.u32(j.hi).u32(j.lo).u32(j.tpl).u32(j.exp); w.u32(h.coin); return w.done(); }
-function hogMakeRet(h, yeni) { const w = new Y(); w.u32(0).i32(h.yapim).u32(h.satin).u8(h.bayrak).u32(h.cip); w.u16(yeni.length); yeni.forEach((j, i) => w.i8(i + 1).u32(j.hi).u32(j.lo).u32(j.tpl).u32(j.exp)); w.u32(h.coin); return w.done(); }
+// Shared Hollow Soul state; transactions live in crash-jade.js.
+function hog(durum) { return require('./crash-jade').state(durum); }
 
 // ---------- KUR: handler tablosu ----------
 function kur(y) {
@@ -771,32 +744,8 @@ function kur(y) {
     else if (tip === 1) { const s = durum.liderUyanis[String(pos)] || { id, str: 0 }; s.str = Math.min((lw ? Number(lw.maxStr) : 99) || 99, (s.str || 0) + 1); durum.liderUyanis[String(pos)] = s; }
     kaydetS(kaydet, durum); w.u16(0); return w.done();
   };
-  // --- Hogyoku (CrashJade) ---
-  H['0x01816c00'] = ({ durum }) => hogInfo(hog(durum));
-  H['0x01816c01'] = ({ payload, durum, kaydet }) => { const kind = Math.max(1, Math.min(5, new O(payload).i8() || 1)); const h = hog(durum); const bedel = (cv(60360006, [5000, 10000, 20000, 50000, 100000]))[kind - 1] || 5000; if (!gumus(bedel)) return new Y().u32(13).done(); h.yapim += 1; h.cip += kind; const yeni = jadeUret(h, kind); kaydetS(kaydet, durum); return hogMakeRet(h, yeni); };
-  H['0x01816c02'] = ({ durum, kaydet }) => { const h = hog(durum); if (!gumus(20000)) return new Y().u32(13).done(); h.yapim += 1; h.cip += 3; const yeni = jadeUret(h, 3); kaydetS(kaydet, durum); return hogMakeRet(h, yeni); };
-  const pickup = (h, liste) => { const w = new Y().u32(0); const al = []; for (const j of liste) { if (h.canta.length >= h.slot) break; const i = h.tahta.indexOf(j); if (i < 0) continue; h.tahta.splice(i, 1); h.canta.push(j); al.push(j); } w.u16(al.length); for (const j of al) w.u32(j.hi).u32(j.lo); return w.done(); };
-  H['0x01816c03'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const hi = o.u32(), lo = o.u32(); const h = hog(durum); const j = h.tahta.find(x => x.hi === hi && x.lo === lo); const p = pickup(h, j ? [j] : []); kaydetS(kaydet, durum); return p; };
-  H['0x01816c04'] = ({ durum, kaydet }) => { const h = hog(durum); const p = pickup(h, [...h.tahta]); kaydetS(kaydet, durum); return p; };
-  H['0x01816c05'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const hi = o.u32(), lo = o.u32(); const h = hog(durum); const r = jadeBul(h, hi, lo); if (!r || r.kaynak === 'hero') return new Y().u32(4).done(); jadeKaldir(h, r); h.coin += 1; kaydetS(kaydet, durum); return new Y().u32(0).u32(hi).u32(lo).u16(20).u32(30).u32(1).done(); };
-  H['0x01816c06'] = ({ durum, kaydet }) => { const h = hog(durum); const l = [...h.tahta]; h.tahta = []; h.coin += l.length; kaydetS(kaydet, durum); const w = new Y().u32(0).u16(20).u32(30).u32(l.length).u16(l.length); for (const j of l) w.u32(j.hi).u32(j.lo); return w.done(); };
-  H['0x01816c07'] = ({ durum, kaydet }) => { const h = hog(durum); const fiyat = (cv(60360004, [50]))[0] || 50; if (!altin(fiyat)) return new Y().u32(16).done(); h.bayrak = 1; h.yuksek += 1; kaydetS(kaydet, durum); return new Y().u32(0).u8(h.bayrak).u32(h.yuksek).u32(h.coin).u32(h.cip).done(); };
-  H['0x01816c08'] = ({ durum, kaydet }) => { const h = hog(durum); if (!altin(20)) return new Y().u32(16).done(); h.satin += 1; kaydetS(kaydet, durum); return new Y().u32(0).u32(h.satin).done(); };
-  H['0x01816c0a'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const hi = o.u32(), lo = o.u32(), heroId = o.u32(), n = o.u32(); const h = hog(durum); const r = jadeBul(h, hi, lo); if (!r) return new Y().u32(4).done(); const kul = Math.min(n, h.pelet); if (!kul) return new Y().u32(18).done(); h.pelet -= kul; r.j.exp += kul * cv(60360011, 300); jadeSeviyele(r.j); kaydetS(kaydet, durum); hoguAttrPush(durum, [r.hero, heroId]); return new Y().u32(0).u32(hi).u32(lo).u32(r.j.tpl).u32(r.j.exp).u32(heroId).u32(h.pelet).done(); };
-  H['0x01816c0b'] = ({ durum, kaydet }) => { const h = hog(durum); const liste = cv(60360008, [2]); const fiyat = liste[Math.min(liste.length - 1, Math.max(0, h.slot - 25))] || 2; if (!altin(fiyat)) return new Y().u32(16).done(); h.slot += 1; kaydetS(kaydet, durum); return new Y().u32(0).u32(h.slot).done(); };
-  H['0x01816c10'] = ({ payload, durum, kaydet }) => {
-    const o = new O(payload); const hi = o.u32(), lo = o.u32(), heroId = o.u32(); const n = o.u16(); const h = hog(durum); const dst = jadeBul(h, hi, lo); if (!dst) return new Y().u32(4).done();
-    const affectedHeroes = [dst.hero];
-    const yenen = [];
-    for (let i = 0; i < n; i++) { const shi = o.u32(), slo = o.u32(), sh = o.u32(); const s = jadeBul(h, shi, slo); if (!s || (shi === hi && slo === lo)) continue; affectedHeroes.push(s.hero); const cr = satir('CrashJade', s.j.tpl); dst.j.exp += cr ? (Number(cr.crashedExp) || 1) : 1; jadeKaldir(h, s); yenen.push([shi, slo, sh]); }
-    jadeSeviyele(dst.j); kaydetS(kaydet, durum); hoguAttrPush(durum, affectedHeroes);
-    const w = new Y().u32(0).u32(hi).u32(lo).u32(dst.j.tpl).u32(dst.j.exp).u32(heroId).u16(yenen.length); for (const y2 of yenen) w.u32(y2[0]).u32(y2[1]).u32(y2[2]); return w.done();
-  };
-  H['0x01816c11'] = ({ payload, durum, kaydet }) => { const n = new O(payload).u32(); const h = hog(durum); const per = cv(60360009, 10); const kul = Math.min(n, Math.floor(h.cip / per)); h.cip -= kul * per; h.pelet += kul; kaydetS(kaydet, durum); return new Y().u32(0).u32(h.cip).u32(h.pelet).done(); };
-  H['0x01816c12'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const heroId = o.u32(); const slot = o.i8(); const hi = o.u32(), lo = o.u32(); const h = hog(durum); const r = jadeBul(h, hi, lo); if (!r || r.kaynak !== 'canta' || slot < 1 || slot > 8) return new Y().u32(4).done(); jadeKaldir(h, r); const hk = String(heroId); h.takili[hk] = h.takili[hk] || {}; const eski = h.takili[hk][String(slot)]; if (eski) h.canta.push(eski); h.takili[hk][String(slot)] = r.j; kaydetS(kaydet, durum); attrPush(durum, heroId); return new Y().u32(0).u32(heroId).u8(slot).u32(hi).u32(lo).done(); };
-  H['0x01816c13'] = ({ durum }) => { const h = hog(durum); const w = new Y().u32(0).u16(h.canta.length); for (const j of h.canta) w.u32(j.hi).u32(j.lo).u32(j.tpl).u32(j.exp); return w.done(); };
-  H['0x01816c14'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const heroId = o.u32(); const slot = o.i8(); const h = hog(durum); const j = (h.takili[String(heroId)] || {})[String(slot)]; if (!j) return new Y().u32(4).done(); delete h.takili[String(heroId)][String(slot)]; h.canta.push(j); kaydetS(kaydet, durum); attrPush(durum, heroId); return new Y().u32(0).u32(heroId).u8(slot).done(); };
-  H['0x01816c15'] = ({ durum }) => { const h = hog(durum); const l = Object.entries(h.satinAlim || {}); const w = new Y().i16(l.length); for (const [id, n] of l) w.u32(Number(id)).u32(n); return w.done(); };
+  // Native Hollow Soul King / CrashJade transactions and immediate stats.
+  Object.assign(H, require('./crash-jade').kur(y,{statPush:attrPush}).handlers);
   // --- Ekipman Ocagi (UltimateEquip) ---
   const forge = durum => { durum.ocak = durum.ocak || { enerji: 10, satin: 3, is: 0, hazir: 0 }; const f = durum.ocak; const g = require('./paket').gun(); if (f.gun !== g) { f.gun = g; f.satin = 3; f.enerji = Math.max(f.enerji, 10); } return f; };
   H['0x01818c00'] = ({ durum }) => { const f = forge(durum); return new Y().u32(0).u32(f.enerji).u32(f.satin).u32(f.is).u32(f.hazir).done(); };
