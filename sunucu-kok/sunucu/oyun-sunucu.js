@@ -258,6 +258,12 @@ LOG.reset();
 let CONN_SEQ = 0;
 const CLIENTS = new Set();   // canli baglantilarin send() islevleri (disaridan push: yukleme)
 const GAME_SESSIONS = new Set();
+// One arena shared by every authenticated connection; the clock runs even without polling.
+const battlefieldService = require('./battlefield').service();
+setInterval(() => {
+  try { battlefieldService.arena.tick(); }
+  catch (e) { console.error('[battlefield] tick failed:', e.message); }
+}, 1000).unref();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
 const illusion = require('./infinite-illusion');
 const illusionService = illusion.service();
@@ -704,6 +710,17 @@ net.createServer(client => {
           send(0x01182401,result.ack,'PROTECT-FightRet');
           if(!result.error){send(kodek.OP.REPORT,result.report,'PROTECT-report');send(kodek.OP.RESULT,result.result,'PROTECT-result');for(const update of result.updates)send(update.id,update.payload,'PROTECT-update');}
         }catch(e){LOG.note(cid,'Protect Seireitei: '+e.message);send(0x01182401,Buffer.from([0,0,0,1]),'PROTECT-error');}continue;
+      }
+      if((pk.id>>>0)>=0x0181ed00 && (pk.id>>>0)<=0x0181ed04){
+        if(!session.authenticated)continue;
+        const field=require('./battlefield');
+        try{
+          const result=battlefieldService.handle(pk.id>>>0,{durum:durumMod.yukle(),payload:pk.payload,kaydet:durumMod.kaydet});
+          if(result.bag)send(0x01180f00,result.bag,'BATTLEFIELD-bag');
+          send((pk.id & 0xffff)|0x01180000,field.packet(result.data),'BATTLEFIELD-reply');
+          if(result.report){send(kodek.OP.REPORT,result.report.payload,'BATTLEFIELD-report');send(kodek.OP.RESULT,kodek.encodeSingleResult(result.report.won,[]),'BATTLEFIELD-result');}
+        }catch(e){LOG.note(cid,'Battlefield: '+e.message);send((pk.id & 0xffff)|0x01180000,field.packet({error:1,message:'Khong the luu chien truong. Hay thu lai.'}),'BATTLEFIELD-error');}
+        continue;
       }
       if((pk.id>>>0)===0x01813d02 || (pk.id>>>0)===0x01813d7d){
         try{const d=durumMod.yukle(),cross=require('./cross-server').kur(handlers),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet};const result=(pk.id>>>0)===0x01813d7d?cross.replay(ctx):cross.fight(ctx);

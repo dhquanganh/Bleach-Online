@@ -1,0 +1,7 @@
+# Video harbor asset
+
+Built-in imagegen edit of a frame from the user-provided reference video, saved as `sunucu-kok/gorsel/battlefield-harbor-video.png`. The existing v2 harbor remains available as a separate artifact.
+
+## Final prompt
+
+Use case: precise-object-edit / game background extraction. The attached image is a frame from the user's reference gameplay video. Create a clean standalone isometric harbor battlefield background from this image. Preserve the existing environment, camera, perspective and placement as closely as possible: the worn mossy olive/sandy plaza extending toward the upper right, cracked stone paths, stone warehouse and walls at upper right, old boat at far left, blue sea at bottom left, long diagonal stone harbor wall and wooden piers in the foreground. Remove ALL UI panels, all logos, all HUD, all buttons, all characters, all names, all health bars, all orange circular glowing rings, all chat, all text, all black video letterboxing and borders. Reconstruct the exposed ground beneath removed elements in the same muted hand-painted browser MMORPG aesthetic. Full bleed landscape approximately 1.9:1. Keep the lower-left seawall diagonal from (0, 270) to (600, 660) in the final 1260x660 coordinate composition, with walkable open ground on the upper/right side. Avoid adding central houses, towers, islands, paths with walls or obstacles: the playable field should stay broadly open. Output only the clean environment without HUD, players or occupation rings.

@@ -4,5 +4,8 @@
 **/__pycache__/
 **/*.pyc
 .boss-runtime-test/
+.battlefield-runtime-test/
 sunucu-kok/gorsel/boss-probe.*
 sunucu-kok/gorsel/boss-test.swf
+sunucu-kok/sunucu/battlefield-runtime.json*
+sunucu-kok/sunucu/battlefield-audit.jsonl*

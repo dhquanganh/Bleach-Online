@@ -3200,9 +3200,174 @@
         ],
         "damage": 47832,
         "at": 1791654810
+      },
+      "bot:925": {
+        "id": "bot:925",
+        "name": "Bot Bambietta Basterbine #0925",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150029,
+          12100071,
+          11130002,
+          11150032,
+          11110025
+        ],
+        "damage": 659196,
+        "at": 1791690668
+      },
+      "bot:274": {
+        "id": "bot:274",
+        "name": "Bot Renji Abarai #0274",
+        "bot": true,
+        "level": 110,
+        "heroes": [
+          11110008,
+          11110015,
+          11120007,
+          11150008,
+          11110009
+        ],
+        "damage": 241580,
+        "at": 1791693370
+      },
+      "bot:1210": {
+        "id": "bot:1210",
+        "name": "Bot Hell Verse Ichigo #1210",
+        "bot": true,
+        "level": 106,
+        "heroes": [
+          11150042,
+          11150005,
+          11160009,
+          11150049,
+          11110018
+        ],
+        "damage": 3910550,
+        "at": 1791693670
+      },
+      "bot:978": {
+        "id": "bot:978",
+        "name": "Bot Yhwach #0978",
+        "bot": true,
+        "level": 91,
+        "heroes": [
+          11150016,
+          11110024,
+          11160006,
+          11150022,
+          11120007
+        ],
+        "damage": 921878,
+        "at": 1791697238
+      },
+      "bot:493": {
+        "id": "bot:493",
+        "name": "Bot Blood War Nelliel #0493",
+        "bot": true,
+        "level": 96,
+        "heroes": [
+          11150058,
+          11150026,
+          11150037,
+          11150017,
+          11140007
+        ],
+        "damage": 5954420,
+        "at": 1791714094
+      },
+      "bot:1112": {
+        "id": "bot:1112",
+        "name": "Bot Shin Isshin Kurosaki #1112",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11140013,
+          11150009,
+          11150014,
+          11150040,
+          11160006
+        ],
+        "damage": 1609437,
+        "at": 1791715991
+      },
+      "bot:1534": {
+        "id": "bot:1534",
+        "name": "Bot Blood War Ulquiorra #1534",
+        "bot": true,
+        "level": 93,
+        "heroes": [
+          11150057,
+          11120003,
+          11160014,
+          11160010,
+          11110006
+        ],
+        "damage": 109466212,
+        "at": 1791716492
+      },
+      "bot:1556": {
+        "id": "bot:1556",
+        "name": "Bot Yasutora Sado #1556",
+        "bot": true,
+        "level": 107,
+        "heroes": [
+          11110004,
+          11160014,
+          11140007,
+          11150031,
+          11160002
+        ],
+        "damage": 2219222,
+        "at": 1791717109
+      },
+      "bot:880": {
+        "id": "bot:880",
+        "name": "Bot Sternritter Uryū Ishida #0880",
+        "bot": true,
+        "level": 104,
+        "heroes": [
+          11150044,
+          11150048,
+          11140001,
+          11160011,
+          11150011
+        ],
+        "damage": 633281,
+        "at": 1791717409
+      },
+      "bot:213": {
+        "id": "bot:213",
+        "name": "Bot Hakuteiken Byakuya #0213",
+        "bot": true,
+        "level": 111,
+        "heroes": [
+          11140004,
+          11110019,
+          11150023,
+          11110027,
+          11160012
+        ],
+        "damage": 470418,
+        "at": 1791718242
+      },
+      "bot:1187": {
+        "id": "bot:1187",
+        "name": "Bot Yumichika Ayasegawa #1187",
+        "bot": true,
+        "level": 94,
+        "heroes": [
+          11110002,
+          11150025,
+          11110020,
+          11150053,
+          11150045
+        ],
+        "damage": 623561,
+        "at": 1791718542
       }
     },
-    "nextBot": 1791655110,
+    "nextBot": 1791718842,
     "nextFight": 1791652109,
     "battles": 1,
     "payouts": [
@@ -4847,5 +5012,57 @@
         "bestName": "dqa"
       }
     }
+  },
+  "battlefield": {
+    "points": 162,
+    "wins": 0,
+    "losses": 3,
+    "visits": 9,
+    "kills": {},
+    "joined": true,
+    "token": "37998b5a-c1af-4450-9b12-e96c31980500",
+    "lastMessage": "Da vao chien truong. Chon doi thu phe xanh de chien dau!",
+    "honorApplied": 162,
+    "activityApplied": 30,
+    "activity": 30,
+    "version": 2
+  },
+  "bosDunya": {
+    "instance": "2026-10-08",
+    "submit": 1791717244,
+    "dead": 1791717256,
+    "hp": 10160033793,
+    "hpMax": 10160530373,
+    "award": 0,
+    "hurt": 496580,
+    "participated": 1,
+    "form": [
+      {
+        "heroId": 11100101,
+        "battlePos": 1,
+        "pos": 1
+      },
+      {
+        "heroId": 11100102,
+        "battlePos": 7,
+        "pos": 2
+      },
+      {
+        "heroId": 11140010,
+        "battlePos": 8,
+        "pos": 3
+      },
+      {
+        "heroId": 11110006,
+        "battlePos": 11,
+        "pos": 4
+      },
+      {
+        "heroId": 11100004,
+        "battlePos": 6,
+        "pos": 5
+      }
+    ],
+    "players": []
   }
 }

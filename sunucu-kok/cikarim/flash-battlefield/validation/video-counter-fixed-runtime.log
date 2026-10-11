@@ -1,0 +1,13 @@
+
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/field-test.swf
+FLASH_PROBE INIT child document loaded
+CLICK 607,41
+CLICK 294,130
+CLICK 394,441
+CLICK 505,473
+CLICK 250,258
+FLASH_PROBE FIELD fight reply
+FLASH_PROBE FIELD snapshot drawn
+FLASH_PROBE FIELD native status set
+FLASH_PROBE FIELD native setup completed

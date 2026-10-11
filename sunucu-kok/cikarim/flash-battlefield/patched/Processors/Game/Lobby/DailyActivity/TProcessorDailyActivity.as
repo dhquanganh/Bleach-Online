@@ -1,0 +1,1896 @@
+package Processors.Game.Lobby.DailyActivity
+{
+   import Components.Slots.TUISlot;
+   import Components.Standard.*;
+   import Foundation.Common.*;
+   import Foundation.Network.*;
+   import Foundation.Resources.*;
+   import Foundation.Resources.Bins.*;
+   import Foundation.Resources.Textures.TTexture;
+   import Foundation.Resources.Textures.TAnimationSequence;
+   import Foundation.Resources.Textures.TAnimationFrame;
+   import Foundation.UI.*;
+   import Foundation.Utilities.*;
+   import Logics.*;
+   import Logics.Characters.*;
+   import Logics.DailyActivity.*;
+   import Logics.DatebaseVO.VO.*;
+   import Logics.Inventories.TInventories;
+   import Logics.Streamization.VoidSoulWorld.TUnstreamizerVoidSoulWorld;
+   import Logics.VoidSoulWorld.TVoidSoulWorldData;
+   import Processors.Game.Common.Effects.Display.*;
+   import Processors.Game.Lobby.Common.*;
+   import Processors.Game.Lobby.Jade.TJadeCommon;
+   import Processors.Game.Lobby.Utilities.*;
+   import Processors.Game.Utilities.EffectTextReward.SToolReward;
+   import Processors.Game.Utilities.OverLayer.*;
+   import Processors.Game.Windows.Information.*;
+   import Rendering.Overlayers.HelpTips.*;
+   import Resources.Constants.*;
+   import Resources.Strings.*;
+   import Utilities.UI.Overlayers.*;
+   import Utilities.UI.Windows.*;
+   import Processors.Game.Battle.TBattleHandle;
+   import flash.display.*;
+   import flash.events.*;
+   import flash.net.URLRequest;
+   import flash.external.ExternalInterface;
+   import flash.text.*;
+   import flash.filters.GlowFilter;
+   import flash.geom.Rectangle;
+   import flash.utils.*;
+   
+   public class TProcessorDailyActivity extends TProcessorLobbyWindows
+   {
+      
+      public static const SIZE_WindowDailyActivity_Width:uint = 624;
+      
+      public static const SIZE_WindowDailyActivity_Height:uint = 478;
+      
+      public static const MAX_COUNT:uint = 7;
+      
+      public static const ID_Database_Start:uint = 70200001;
+      
+      public static const BtnStatus_BeforeOpen:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_NotOpen;
+      
+      public static const BtnStatus_Join:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_SignUp;
+      
+      public static const BtnStatus_Open:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_Battle;
+      
+      public static const BtnStatus_EndOpen:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_End;
+      
+      public static const BtnStatus_Added:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_Added;
+      
+      public static const BtnStatus_EndJoin:uint = CONST_ORGANIZATION.STATUS_ORGACTIVITY_EndJoin;
+      
+      public static const TYPE_ORGACTIVITY_MUYEGUARD:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_MUYEGUARD;
+      
+      public static const TYPE_ORGACTIVITY_PETBATTLE:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_PETBATTLE;
+      
+      public static const TYPE_ORGACTIVITY_MUYEBATTLE:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_MUYEBATTLE;
+      
+      public static const TYPE_ORGACTIVITY_YUZHIBO:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_YUZHIBO;
+      
+      public static const TYPE_ORGACTIVITY_RIXIANG:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_RIXIANG;
+      
+      public static const TYPE_ORGACTIVITY_QIANSHOU:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_QIANSHOU;
+      
+      public static const TYPE_ORGACTIVITY_TRAITORATTACK:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_TRAITORATTACK;
+      
+      public static const TYPE_ORGACTIVITY_VoidSoulWorld:uint = CONST_ORGANIZATION.TYPE_ORGACTIVITY_VoidSoulWorld;
+      
+      public static const FilterColor:uint = 16776960;
+      
+      public static const FilterGlowWidth:int = 4;
+      
+      public static const FilterGlowStrength:int = 20;
+      
+      public static const MAX_COUNT_AUTOFIGHT:uint = 2;
+      
+      protected var FFieldPanel:Sprite;
+      protected var FFieldTab:Sprite;
+      protected var FFieldData:Object;
+      protected var FFieldBusy:Boolean = false;
+      protected var FFieldShop:Boolean = false;
+      protected var FFieldStatus:TextField;
+      protected var FFieldActors:Array = [];
+      protected var FFieldRefreshAt:int = 0;
+      protected var FFieldSentAt:int = 0;
+      protected var FFieldHeads:Object = {};
+      protected var FFieldPositions:Object = {};
+      protected var FFieldTarget:uint = 0;
+      protected var FFieldCapture:uint = 0;
+      protected var FFieldSkill:Boolean = false;
+      protected var FFieldReplyAt:int = 0;
+      protected var FFieldEffects:Array = [];
+      protected var FFieldLastEvent:int = 0;
+      protected var FFieldLastMatch:int = 0;
+      protected var FFieldTimer:TextField;
+      protected var FFieldWeekly:Boolean = false;
+      protected var FFieldBackground:BitmapData;
+      protected var FFieldBackgroundLoader:Loader;
+      protected var FFieldPlaying:Boolean = false;
+      protected var FFieldImages:Object = {};
+      protected var FFieldModels:Object = {};
+      protected var FFieldModelLoading:Object = {};
+      protected var FFieldFormation:Boolean = false;
+      protected var FFieldCompanions:Boolean = false;
+      public var OnFieldBattleStatus:Function;
+      public var OnFieldInitBattle:Function;
+      public function get FieldBattleActive() : Boolean {return this.FFieldPlaying;}
+
+      protected function FieldText(parent:Sprite, text:String, x:Number, y:Number, width:Number, size:int = 13, color:uint = 0xeee6c5) : TextField
+      {
+         var tf:TextField = new TextField();
+         tf.defaultTextFormat = new TextFormat("Tahoma",size,color,true);
+         tf.text=text;tf.x=x;tf.y=y;tf.width=width;tf.height=48;
+         tf.wordWrap=true;tf.selectable=false;tf.mouseEnabled=false;tf.filters=[new GlowFilter(0x000000,1,2,2,4)];parent.addChild(tf);return tf;
+      }
+      protected function FieldImage(parent:Sprite,name:String,x:Number,y:Number,w:Number,h:Number) : void
+      {
+         var data:BitmapData=this.FFieldImages[name] as BitmapData;
+         if(data!=null){var bmp:Bitmap=new Bitmap(data);bmp.x=x;bmp.y=y;bmp.width=w;bmp.height=h;bmp.smoothing=true;parent.addChild(bmp);return;}
+         if(this.FFieldImages[name]===true)return;
+         this.FFieldImages[name]=true;var loader:Loader=new Loader();
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void {FFieldImages[name]=(loader.content as Bitmap).bitmapData;});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(e:IOErrorEvent):void {FFieldImages[name]=false;});
+         loader.load(new URLRequest("/gorsel/"+name));
+      }
+      protected function FieldBox(parent:Sprite,x:Number,y:Number,w:Number,h:Number,alpha:Number = 0.94) : void
+      {
+         parent.graphics.lineStyle(2,0x080707);parent.graphics.beginFill(0x171311,alpha);
+         parent.graphics.drawRect(x,y,w,h);parent.graphics.endFill();
+         parent.graphics.lineStyle(1,0x65513c);parent.graphics.drawRect(x+3,y+3,w-6,h-6);
+         this.FieldImage(parent,"boss-native-panel.png",x,y,w,h);
+      }
+      protected function FieldButton(parent:Sprite,text:String,x:Number,y:Number,width:Number,action:Function) : Sprite
+      {
+         var s:MovieClip=new MovieClip();s.x=x;s.y=y;
+         s.graphics.lineStyle(1,0xa98a55);s.graphics.beginFill(0x7e3519);
+         s.graphics.drawRect(0,0,width,32);s.graphics.endFill();
+         this.FieldImage(s,"boss-native-button.png",0,0,width,32);
+         var label:TextField=this.FieldText(s,text,4,7,width-8,width<100?11:12,0xffedc3);label.wordWrap=false;label.height=20;
+         var fmt:TextFormat=label.defaultTextFormat;fmt.align="center";label.setTextFormat(fmt);
+         s.buttonMode=true;s.mouseChildren=false;
+         s.addEventListener(MouseEvent.ROLL_OVER,function(e:MouseEvent):void {s.alpha=0.8;});
+         s.addEventListener(MouseEvent.ROLL_OUT,function(e:MouseEvent):void {s.alpha=1;});
+         s.addEventListener(MouseEvent.CLICK,action);parent.addChild(s);return s;
+      }
+      protected function InitField() : void
+      {
+         // Shared native Void Regions library, including all Role_* walking clips.
+         SResourcesCore.TexturesSwfLobby.LoadPrimary(0x3e000000);
+         var i:int;var tab:MovieClip;
+         for(i=0;i<7;i++){tab=this.FScene["mc_tab_"+i];tab.y=53+i*41;tab.scaleY=0.82;}
+         this.FFieldTab=this.FieldButton(this.FScene,"Chiến trường",this.FScene.mc_tab_6.x,53+7*41,143,this.SelectField);
+         this.FFieldTab.removeEventListener(MouseEvent.CLICK,this.SelectField);
+         this.FUITab.SetTabByIndex(this.FFieldTab as MovieClip,7);
+         this.FFieldPanel=new Sprite();this.FScene.addChild(this.FFieldPanel);this.FFieldPanel.visible=false;
+         this.FFieldPanel.addEventListener(Event.ENTER_FRAME,this.FieldAnimate);
+         if(this.FScene.stage!=null)this.FScene.stage.addEventListener(KeyboardEvent.KEY_DOWN,this.FieldKey);
+         this.FFieldBackgroundLoader=new Loader();
+         this.FFieldBackgroundLoader.contentLoaderInfo.addEventListener(Event.COMPLETE,this.FieldBackgroundLoaded);
+         this.FFieldBackgroundLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,this.FieldBackgroundFailed);
+         var url:String=this.FScene.loaderInfo.url;
+         var host:String=url.split("/").slice(0,3).join("/");
+         this.FFieldBackgroundLoader.load(new URLRequest(host+"/gorsel/battlefield-harbor-video.png"));
+      }
+      protected function FieldBackgroundLoaded(e:Event) : void
+      {
+         var bmp:Bitmap=this.FFieldBackgroundLoader.content as Bitmap;
+         if(bmp!=null)this.FFieldBackground=bmp.bitmapData;
+         if(this.Visible&&this.FSelectTabIndex==7)this.DrawField();
+      }
+      protected function FieldBackgroundFailed(e:IOErrorEvent) : void {}
+      protected function SelectField(e:MouseEvent) : void
+      {
+         this.FSelectTabIndex=7;this.FTabIndex=7;this.UpdataUI();this.FieldSend(0x0181ed00);
+      }
+      protected function FieldSend(op:uint,id:uint = 0) : void
+      {
+         if(this.FFieldBusy)return;
+         this.FFieldBusy=true;this.FFieldSentAt=getTimer();
+         var p:TPacket=SNetworkCore.PacketAcquire(op);
+         if(op==0x0181ed02){p.Data.writeUnsignedInt(id);p.Data.writeUTF(this.FFieldData.token);}
+         if(op==0x0181ed03){p.Data.writeUnsignedInt(id>0?id:1);p.Data.writeShort(1);}
+         SNetworkCore.Transceiver.PacketTransmit(p);
+      }
+      protected function FieldCommand(action:String,target:uint = 0,x:Number = 0,y:Number = 0,enabled:Boolean = false) : void
+      {
+         if(this.FFieldBusy||this.FFieldData==null||!this.FFieldData.joined)return;
+         var d:Object=this.FFieldData;
+         var p:TPacket=SNetworkCore.PacketAcquire(0x0181ed01);
+         p.Data.writeUTF(JSON.stringify({action:action,target:target,x:x,y:y,enabled:enabled,token:d.token,sequence:int(d.sequence)+1}));
+         this.FFieldBusy=true;this.FFieldSentAt=getTimer();SNetworkCore.Transceiver.PacketTransmit(p);
+      }
+      protected function FieldReply(p:TPacket) : void
+      {
+         this.FFieldBusy=false;this.FFieldRefreshAt=getTimer()+1000;this.FFieldReplyAt=getTimer();
+         var d:Object=JSON.parse(p.Data.readUTF());
+         if(int(d.error)>0){this.FFieldTarget=0;this.FFieldCapture=0;}
+         if(d.version==2){this.FFieldData=d;if(!this.FFieldPlaying)this.DrawField();}
+         if(d.message!=null&&String(d.message).length&&this.FFieldStatus!=null)this.FFieldStatus.text=d.message;
+      }
+      protected function FieldFightReply(p:TPacket) : void
+      {
+         var at:uint=p.Data.position;var d:Object=JSON.parse(p.Data.readUTF());p.Data.position=at;
+         this.FieldTrace("fight reply");
+         this.FieldReply(p);
+         this.FieldTrace("snapshot drawn");
+         if(d.error==0&&d.hasReport&&this.OnFieldBattleStatus!=null&&this.OnFieldInitBattle!=null){
+            this.FFieldPlaying=true;this.FFieldPanel.visible=false;this.FFieldTarget=0;
+            TBattleHandle.IsInBattle=false;TBattleHandle.AutoCloseBattle(false);
+            this.OnFieldBattleStatus(this,CONST_BATTLE.BattleType_Replay,0);this.FieldTrace("native status set");
+            this.OnFieldInitBattle(this);this.FieldTrace("native setup completed");TBattleHandle.IsInBattle=false;
+         }
+      }
+      protected function FieldTrace(text:String) : void
+      {
+         if(ExternalInterface.available&&this.loaderInfo.parameters.target!=null)ExternalInterface.call("bossProbe","FIELD "+text);
+      }
+      public function FieldBattleReturn() : void
+      {
+         this.FFieldPlaying=false;this.FFieldBusy=false;this.FFieldTarget=0;this.FSelectTabIndex=7;this.FTabIndex=7;
+         this.FUITab.SwithTagManual(7);this.UpdataUI();this.FieldSend(0x0181ed00);
+      }
+      protected function FieldJoin(e:MouseEvent) : void {this.FieldSend(0x0181ed01);}
+      protected function FieldLeave(e:MouseEvent) : void {this.FFieldTarget=0;this.FFieldCapture=0;this.FieldSend(0x0181ed04);}
+      protected function FieldBuy(e:MouseEvent) : void {this.FieldSend(0x0181ed03,uint(e.currentTarget.name));}
+      protected function FieldShop(e:MouseEvent) : void {this.FFieldShop=!this.FFieldShop;this.DrawField();}
+      protected function FieldRank(e:MouseEvent) : void {this.FFieldWeekly=!this.FFieldWeekly;this.DrawField();}
+      protected function FieldFormation(e:MouseEvent) : void {this.FFieldFormation=!this.FFieldFormation;this.FFieldCompanions=false;this.DrawField();}
+      protected function FieldCompanions(e:MouseEvent) : void {this.FFieldCompanions=!this.FFieldCompanions;this.FFieldFormation=false;this.DrawField();}
+      protected function FieldReplay(e:MouseEvent) : void {this.FieldSend(0x0181ed02,0x80000000|uint(e.currentTarget.name));}
+      protected function FieldClose(e:MouseEvent) : void
+      {
+         this.FFieldPanel.visible=false;this.FSelectTabIndex=0;this.FTabIndex=0;this.FUITab.SwithTagManual(0);this.UpdataUI();
+         if(this.FFieldData!=null&&this.FFieldData.config.combatMode=="formation")ProcessorClose();
+      }
+      protected function FieldAuto(e:MouseEvent) : void
+      {
+         if(this.FFieldData!=null&&this.FFieldData.me!=null)this.FieldCommand("auto",0,0,0,!this.FFieldData.me.auto);
+      }
+      protected function FieldItem(e:MouseEvent) : void {this.FieldCommand("item");}
+      protected function FieldSkillUse(e:MouseEvent) : void {this.FFieldSkill=true;this.FieldTryTarget();}
+      protected function FieldAttackUse(e:MouseEvent) : void
+      {
+         this.FFieldSkill=false;if(this.FFieldTarget==0)this.FieldPickOpponent();this.FieldTryTarget(true);
+      }
+      protected function FieldKey(e:KeyboardEvent) : void
+      {
+         if(!this.Visible||this.FSelectTabIndex!=7)return;
+         if(e.keyCode==27){if(this.FFieldShop){this.FFieldShop=false;this.DrawField();}else this.FieldClose(null);return;}
+         if(this.FFieldShop)return;
+         if(e.keyCode==49)this.FieldAttackUse(null);
+         if(e.keyCode==50)this.FieldSkillUse(null);
+         if(e.keyCode==51)this.FieldItem(null);
+      }
+      protected function FieldProject(x:Number,y:Number) : Object
+      {
+         // Logical ground plane -> harbor's isometric diamond.
+         return {x:100+x+y*0.12,y:65+x*0.02667+y*0.8};
+      }
+      protected function FieldMove(e:MouseEvent) : void
+      {
+         var dx:Number=this.FFieldPanel.mouseX-100;var dy:Number=this.FFieldPanel.mouseY-65;
+         var x:Number=(0.8*dx-0.12*dy)/0.7967996;
+         var y:Number=(-0.02667*dx+dy)/0.7967996;
+         this.FFieldTarget=0;this.FFieldCapture=0;
+         if(x>=0&&x<=1000&&y>=0&&y<=700)this.FieldCommand("move",0,x,y);
+      }
+      protected function FieldFight(e:MouseEvent) : void
+      {
+         this.FFieldTarget=uint(e.currentTarget.name);this.FFieldCapture=0;this.FFieldSkill=false;this.FieldTryTarget(true);
+      }
+      protected function FieldNode(e:MouseEvent) : void
+      {
+         this.FFieldCapture=uint(e.currentTarget.name);this.FFieldTarget=0;this.FieldTryTarget(true);
+      }
+      protected function FieldTryTarget(walk:Boolean = false) : void
+      {
+         if(this.FFieldPlaying||this.FFieldBusy||this.FFieldData==null||!this.FFieldData.joined||this.FFieldData.phase!="combat")return;
+         var d:Object=this.FFieldData;var me:Object=d.me;var target:Object=null;var b:Object;
+         if(me==null||me.hp<=0)return;
+         if(d.config.combatMode=="formation"&&(d.serverTime<me.nextDuel||d.serverTime<me.busyUntil||d.serverTime<me.protectedUntil))return;
+         if(me.auto&&d.config.combatMode!="formation")return;
+         if(this.FFieldCapture>0){for each(b in d.nodes)if(uint(b.id)==this.FFieldCapture)target=b;}
+         else if(this.FFieldTarget>0){for each(b in d.actors.concat(d.npcs))if(uint(b.id)==this.FFieldTarget)target=b;}
+         if(target==null)return;
+         if(d.config.combatMode=="formation"&&this.FFieldCapture==0&&int(target.lane)!=int(me.lane)){this.FFieldTarget=0;return;}
+         if(d.config.combatMode=="formation"&&(Number(target.nextDuel)>Number(d.serverTime)||Number(target.busyUntil)>Number(d.serverTime)||Number(target.protectedUntil)>Number(d.serverTime)))return;
+         var distance:Number=Math.sqrt(Math.pow(me.x-target.x,2)+Math.pow(me.y-target.y,2));
+         var range:Number=this.FFieldCapture>0?Number(d.config.captureRadius):Number(d.config.attackRange);
+         if(distance<=range){
+            if(this.FFieldCapture>0){this.FFieldCapture=0;this.FieldCommand("capture",uint(target.id));}
+            else if(target.hp>0){
+               if(Number(d.serverTime)<Number(me.nextAttack)||(this.FFieldSkill&&Number(d.serverTime)<Number(me.nextSkill)))return;
+               if(d.config.combatMode=="formation")this.FieldSend(0x0181ed02,uint(target.id));
+               else this.FieldCommand(this.FFieldSkill?"skill":"attack",uint(target.id));this.FFieldSkill=false;
+            }else this.FFieldTarget=0;
+         }else if(walk)this.FieldCommand("move",0,Number(target.x),Number(target.y));
+      }
+      protected function FieldPickOpponent() : void
+      {
+         if(this.FFieldData==null||this.FFieldData.me==null)return;
+         var d:Object=this.FFieldData;var me:Object=d.me;var best:Number=100000;var selected:uint=0;
+         for each(var b:Object in d.actors){
+            if(b.hp<=0||b.active===false||b.team==me.team||b.nextDuel>d.serverTime||b.busyUntil>d.serverTime||b.protectedUntil>d.serverTime)continue;
+            if(d.config.combatMode=="formation"&&int(b.lane)!=int(me.lane))continue;
+            var range:Number=Math.sqrt(Math.pow(b.x-me.x,2)+Math.pow(b.y-me.y,2));
+            if(range<best){best=range;selected=uint(b.id);}
+         }
+         this.FFieldTarget=selected;
+      }
+      protected function FieldAutoDuel() : void
+      {
+         if(this.FFieldPlaying||this.FFieldBusy||this.FFieldShop||this.FFieldFormation||this.FFieldCompanions||this.FFieldData==null)return;
+         var d:Object=this.FFieldData;var me:Object=d.me;
+         if(!d.joined||d.phase!="combat"||me==null||d.config.combatMode!="formation"||me.hp<=0||me.nextDuel>d.serverTime)return;
+         if(me.challengeFrom<=0)return;
+         for each(var enemy:Object in d.actors)if(uint(enemy.id)==uint(me.challengeFrom)){
+            if(int(enemy.lane)!=int(me.lane))return;
+            if(enemy.hp<=0||enemy.nextDuel>d.serverTime||enemy.busyUntil>d.serverTime||enemy.protectedUntil>d.serverTime)return;
+            if(Math.sqrt(Math.pow(enemy.x-me.x,2)+Math.pow(enemy.y-me.y,2))<=Number(d.config.attackRange))this.FieldCommand("attack",uint(enemy.id));return;
+         }
+      }
+      protected function FieldSpawn(e:MouseEvent) : void
+      {
+         if(this.FFieldData==null)return;
+         for each(var n:Object in this.FFieldData.nodes)if(uint(n.id)==uint(e.currentTarget.name)){
+            this.FFieldTarget=0;this.FFieldCapture=0;this.FieldCommand("move",0,n.x,n.y);return;
+         }
+      }
+      protected function FieldModelLoaded(sender:Object,texture:TTexture,id:uint) : void {this.FFieldModels[id]=texture;}
+      protected function FieldPose(s:MovieClip,walking:Boolean) : void
+      {
+         var dx:Number=Number(s["homeX"])-s.x;var dy:Number=Number(s["homeY"])-s.y;
+         var direction:String=Math.abs(dy)>1?(dy<0?"up":"down"):String(s["direction"]||"down");
+         var key:String=s["roleKey"]+"_"+direction;
+         var body:MovieClip=s["voidBody"] as MovieClip;
+         if(body==null||s["poseKey"]!=key){
+            if(body!=null)s.removeChild(body);
+            body=TUtilityReflection.CreateDisplayObjectInstance("Role_"+key) as MovieClip;
+            if(body==null)return;
+            body.mouseEnabled=false;body.mouseChildren=false;
+            body.TF_Name.visible=false;body.MC_Fighting.visible=false;body.MC_Fighting.stop();
+            var bounds:Rectangle=body.getChildAt(0).getBounds(body);
+            s["feetX"]=bounds.x+bounds.width/2;s["feetY"]=bounds.y+bounds.height;
+            s.addChildAt(body,0);s["voidBody"]=body;s["poseKey"]=key;
+         }
+         // Drive the native 16-frame walk cycle explicitly. Snapshot redraws must
+         // not restart it, and play() must not depend on a recreated clip's clock.
+         if(walking){
+            var rate:Number=this.FScene.stage!=null?this.FScene.stage.frameRate:30;
+            body.gotoAndStop(1+int(Number(s["walkTick"])*rate/1000)%body.totalFrames);
+            if(Math.abs(dx)>0.1)s["facing"]=dx<0?-1:1;
+         }
+         else body.gotoAndStop(1);
+         body.scaleX=Number(s["facing"]||1);
+         body.x=-Number(s["feetX"])*body.scaleX;body.y=-Number(s["feetY"]);
+         s["direction"]=direction;s["savedFrame"]=body.currentFrame;
+         if(s["busy"]===true){body.MC_Fighting.visible=true;body.MC_Fighting.play();}
+         else {body.MC_Fighting.visible=false;body.MC_Fighting.stop();}
+      }
+      protected function FieldActorNative(p:Sprite,b:Object,myTeam:int) : void
+      {
+         if(b.active===false||b.hp<=0||b.mapVisible===false||Number(b.nextDuel)>Number(this.FFieldData.serverTime)||Number(b.busyUntil)>Number(this.FFieldData.serverTime)){
+            delete this.FFieldPositions[String(b.id)];if(this.FFieldTarget==uint(b.id))this.FFieldTarget=0;return;
+         }
+         var s:MovieClip=new MovieClip();var pos:Object=this.FieldProject(b.x,b.y);var old:Object=this.FFieldPositions[String(b.id)];
+         if(old!=null&&(old.lane!=b.lane||old.team!=b.team||Math.abs(old.x-pos.x)+Math.abs(old.y-pos.y)>Number(this.FFieldData.config.moveSpeed)*2.5))old=null;
+         s.name=String(b.id);s["homeX"]=pos.x;s["homeY"]=pos.y;s.x=old!=null?old.x:pos.x;s.y=old!=null?old.y:pos.y;
+         s["savedFrame"]=old!=null?old.frame:1;s["direction"]=old!=null?old.direction:"down";
+         s["walkTick"]=old!=null&&old.walkTick!=null?old.walkTick:0;s["facing"]=old!=null&&old.facing!=null?old.facing:1;
+         s["fromX"]=s.x;s["fromY"]=s.y;s["moveStart"]=getTimer();s["poseAt"]=getTimer();
+         s["moveDuration"]=1000;s["moving"]=Math.abs(pos.x-s.x)+Math.abs(pos.y-s.y)>0.5;
+         s["busy"]=b.busyUntil>this.FFieldData.serverTime;
+         s["lane"]=b.lane;s["team"]=b.team;
+         var hero:TBaseHero=SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_BaseHero,uint(b.hero)) as TBaseHero;
+         s["roleKey"]=hero!=null?hero.Profession+"_"+hero.Sex:"1_1";
+         // Void has three map professions; profession 2 shares the first silhouette.
+         if(hero!=null&&hero.Profession!=1&&hero.Profession!=3&&hero.Profession!=4)s["roleKey"]="1_"+hero.Sex;
+         var own:Boolean=this.FFieldData.me!=null&&uint(b.id)==uint(this.FFieldData.me.id);
+         s.graphics.lineStyle(2,own?0xffdb68:(b.team==myTeam?0x63b4ec:0xe3584e),0.8);s.graphics.drawEllipse(-16,-5,32,12);
+         s.graphics.lineStyle(1,0x151515);s.graphics.beginFill(b.team==myTeam?0x529ddd:0xcf4543);s.graphics.drawRect(-20,-56,40,4);s.graphics.endFill();
+         var label:TextField=this.FieldText(s,String(b.name).substr(0,18)+"."+b.server,-80,-77,160,11,own?0xffdf75:(b.team==myTeam?0xbce3ff:0xffc1ae));label.height=21;
+         var fmt:TextFormat=label.defaultTextFormat;fmt.align="center";label.setTextFormat(fmt);s["label"]=label;
+         // Keep crowded formations readable; reveal every actor's full name on hover.
+         label.visible=own||uint(b.id)==this.FFieldTarget;
+         for each(var other:Object in this.FFieldData.actors){
+            if(uint(other.id)>=uint(b.id)||other.hp<=0)continue;
+            var q:Object=this.FieldProject(other.x,other.y);
+            if(Math.abs(q.x-pos.x)<120&&Math.abs(q.y-pos.y)<27){s["crowded"]=true;break;}
+         }
+         if(s["crowded"]!==true)label.visible=true;
+         if(own){s.graphics.beginFill(0xffdf61);s.graphics.moveTo(-5,-86);s.graphics.lineTo(5,-86);s.graphics.lineTo(0,-79);s.graphics.endFill();}
+         s["own"]=own;s.mouseChildren=false;s.buttonMode=b.team!=myTeam;
+         s.addEventListener(MouseEvent.ROLL_OVER,function(e:MouseEvent):void {s["hovered"]=true;label.visible=true;});
+         s.addEventListener(MouseEvent.ROLL_OUT,function(e:MouseEvent):void {s["hovered"]=false;});
+         if(s.buttonMode)s.addEventListener(MouseEvent.CLICK,this.FieldFight);
+         p.addChild(s);this.FFieldActors.push(s);this.FieldPose(s,s["moving"]===true);
+      }
+      protected function FieldAnimate(e:Event) : void
+      {
+         if(this.FFieldPanel==null)return;
+         if(this.FFieldPlaying){
+            this.FFieldPanel.visible=false;
+            if(this.FFieldBusy&&getTimer()-this.FFieldSentAt>6000)this.FFieldBusy=false;
+            if(!this.FFieldBusy&&getTimer()>this.FFieldRefreshAt){this.FFieldRefreshAt=getTimer()+1000;this.FieldSend(0x0181ed00);}return;
+         }
+         if(!this.Visible||this.FSelectTabIndex!=7){this.FFieldPanel.visible=false;return;}
+         this.FFieldPanel.visible=true;
+         if(this.FFieldBusy&&getTimer()-this.FFieldSentAt>6000){this.FFieldBusy=false;this.FFieldTarget=0;this.FFieldCapture=0;}
+         if(!this.FFieldBusy&&getTimer()>this.FFieldRefreshAt){this.FFieldRefreshAt=getTimer()+1000;this.FieldSend(0x0181ed00);}
+         for each(var s:MovieClip in this.FFieldActors){
+            if(s["roleKey"]!=null){
+               var now:int=getTimer();var elapsed:int=Math.max(0,now-int(s["poseAt"]));s["poseAt"]=now;
+               var progress:Number=Math.min(1,(now-int(s["moveStart"]))/Number(s["moveDuration"]));
+               var walking:Boolean=s["moving"]===true&&progress<1;
+               if(walking)s["walkTick"]=Number(s["walkTick"])+elapsed;
+               this.FieldPose(s,walking);
+               s.x=Number(s["fromX"])+(Number(s["homeX"])-Number(s["fromX"]))*progress;
+               s.y=Number(s["fromY"])+(Number(s["homeY"])-Number(s["fromY"]))*progress;
+               if(walking&&s["own"]===true&&now-int(s["walkTraceAt"]||0)>150){
+                  s["walkTraceAt"]=now;this.FieldTrace("walk frame="+s["savedFrame"]+" tick="+int(s["walkTick"])+" x="+int(s.x)+" y="+int(s.y));
+               }
+            }else{
+               s.x+=(Number(s["homeX"])-s.x)*0.18;s.y+=(Number(s["homeY"])-s.y)*0.18;
+            }
+            this.FFieldPositions[s.name]={x:s.x,y:s.y,frame:s["savedFrame"],direction:s["direction"],walkTick:s["walkTick"],facing:s["facing"],lane:s["lane"],team:s["team"]};
+         }
+         var named:Array=[];
+         for each(s in this.FFieldActors)if(s["own"]===true)named.push(s);
+         for each(s in this.FFieldActors){
+            var nameField:TextField=s["label"] as TextField;if(nameField==null)continue;
+            var show:Boolean=s["own"]===true||s["hovered"]===true||uint(s.name)==this.FFieldTarget;
+            if(!show){show=true;for each(var placed:MovieClip in named)if(placed!=s&&Math.abs(placed.x-s.x)<158&&Math.abs(placed.y-s.y)<23){show=false;break;}}
+            nameField.visible=show;if(show&&s["own"]!==true)named.push(s);
+         }
+         for each(var fx:MovieClip in this.FFieldEffects){fx.alpha=Math.max(0,1-(getTimer()-int(fx["born"]))/800);fx.y-=0.5;}
+         if(this.FFieldData!=null&&this.FFieldTimer!=null){
+            var seconds:int=Math.max(0,int(this.FFieldData.remaining)-int((getTimer()-this.FFieldReplyAt)/1000));
+            this.FFieldTimer.text="Thời gian chiến trường: "+int(seconds/60)+":"+(seconds%60<10?"0":"")+(seconds%60);
+         }
+         this.FieldTryTarget();
+         this.FieldAutoDuel();
+      }
+      protected function FieldHeadLoaded(sender:Object,texture:TTexture,id:uint) : void
+      {
+         this.FFieldHeads[id]=texture.GetAnimationSequenceByIndex(0).GetAnimationFrameByIndex(0).Surface;
+         for each(var actor:MovieClip in this.FFieldActors){
+            if(actor["headID"]==id&&actor["headBitmap"]!=null){
+               var bmp:Bitmap=actor["headBitmap"];bmp.bitmapData=this.FFieldHeads[id];bmp.width=28;bmp.height=28;
+            }
+         }
+      }
+      protected function FieldFloor(p:Sprite) : void
+      {
+         var floor:Sprite=new Sprite();p.addChild(floor);
+         if(this.FFieldBackground!=null){
+            var background:Bitmap=new Bitmap(this.FFieldBackground);background.smoothing=true;
+            background.width=1260;background.height=660;floor.addChild(background);
+            floor.addEventListener(MouseEvent.CLICK,this.FieldMove);return;
+         }
+         floor.graphics.beginFill(0x1f5664);floor.graphics.drawRect(0,0,1260,660);floor.graphics.endFill();
+         var i:int;var j:int;var a:Object;var b:Object;
+         floor.graphics.lineStyle(1,0x73a09a,0.16);
+         for(i=0;i<20;i++){floor.graphics.moveTo(0,300+i*22);floor.graphics.lineTo(350,390+i*22);}
+         var corners:Array=[this.FieldProject(0,0),this.FieldProject(1000,0),this.FieldProject(1000,700),this.FieldProject(0,700)];
+         floor.graphics.lineStyle(14,0x6e7e70);floor.graphics.beginFill(0x69705a);
+         floor.graphics.moveTo(corners[0].x,corners[0].y);
+         for(i=1;i<4;i++)floor.graphics.lineTo(corners[i].x,corners[i].y);
+         floor.graphics.lineTo(corners[0].x,corners[0].y);floor.graphics.endFill();
+         floor.graphics.lineStyle(1,0xb3aa85,0.25);
+         for(i=0;i<=1000;i+=55){a=this.FieldProject(i,0);b=this.FieldProject(i,700);floor.graphics.moveTo(a.x,a.y);floor.graphics.lineTo(b.x,b.y);}
+         for(i=0;i<=700;i+=55){a=this.FieldProject(0,i);b=this.FieldProject(1000,i);floor.graphics.moveTo(a.x,a.y);floor.graphics.lineTo(b.x,b.y);}
+         // Weathered sand patches, sea wall, wooden piers and waterfront warehouse.
+         for(i=0;i<45;i++){
+            a=this.FieldProject((i*173)%990,(i*127)%680);
+            floor.graphics.lineStyle(0,0,0);floor.graphics.beginFill(i%2?0xa09b69:0x465a42,0.18);
+            floor.graphics.drawEllipse(a.x-35,a.y-12,70,24);floor.graphics.endFill();
+         }
+         for(i=0;i<3;i++){
+            a=this.FieldProject(190+i*220,700);
+            floor.graphics.lineStyle(4,0x564b36);floor.graphics.beginFill(0x83714c);
+            floor.graphics.moveTo(a.x-28,a.y);floor.graphics.lineTo(a.x+28,a.y+20);
+            floor.graphics.lineTo(a.x-50,a.y+95);floor.graphics.lineTo(a.x-106,a.y+75);floor.graphics.lineTo(a.x-28,a.y);floor.graphics.endFill();
+            floor.graphics.lineStyle(1,0xbba277);
+            for(j=0;j<6;j++){floor.graphics.moveTo(a.x-30-j*13,a.y+j*13);floor.graphics.lineTo(a.x+24-j*13,a.y+20+j*13);}
+         }
+         var house:Sprite=new Sprite();house.x=935;house.y=158;p.addChild(house);house.mouseEnabled=false;
+         house.graphics.lineStyle(2,0x343e35);house.graphics.beginFill(0x8a8e76);
+         house.graphics.drawRect(0,0,152,114);house.graphics.endFill();
+         house.graphics.beginFill(0x444c44);house.graphics.moveTo(-18,0);house.graphics.lineTo(72,-61);house.graphics.lineTo(175,0);house.graphics.lineTo(-18,0);house.graphics.endFill();
+         house.graphics.beginFill(0x394537);house.graphics.drawRect(54,39,40,75);house.graphics.endFill();
+         for(i=0;i<4;i++){floor.graphics.lineStyle(2,0x574d36);floor.graphics.beginFill(0x948054);floor.graphics.drawRect(855+i*21,260+i*9,23,25);floor.graphics.endFill();}
+         floor.addEventListener(MouseEvent.CLICK,this.FieldMove);
+      }
+      protected function FieldActor(p:Sprite,b:Object,myTeam:int) : void
+      {
+         if(b.active===false)return;
+         var s:MovieClip=new MovieClip();var pos:Object=this.FieldProject(Number(b.x),Number(b.y));
+         s.name=String(b.id);s["homeX"]=pos.x;s["homeY"]=pos.y;
+         var old:Object=this.FFieldPositions[s.name];s.x=old!=null?old.x:pos.x;s.y=old!=null?old.y:pos.y;
+         var color:uint=b.kind!=null?0xccab51:(int(b.team)==myTeam?0xe56a4b:0x4cc7e6);
+         s.alpha=b.hp>0?1:0.30;
+         s.graphics.beginFill(0,0.35);s.graphics.drawEllipse(-18,-6,36,14);s.graphics.endFill();
+         s.graphics.lineStyle(2,0x212c24);s.graphics.beginFill(color);s.graphics.drawRoundRect(-10,-34,20,28,7);s.graphics.endFill();
+         s.graphics.beginFill(0xe8c397);s.graphics.drawCircle(0,-42,9);s.graphics.endFill();
+         s.graphics.lineStyle(4,0x253137);s.graphics.moveTo(-5,-9);s.graphics.lineTo(-8,3);s.graphics.moveTo(5,-9);s.graphics.lineTo(9,3);
+         s.graphics.lineStyle(3,0xdce5d6);s.graphics.moveTo(9,-20);s.graphics.lineTo(26,-40);
+         s.graphics.lineStyle(1,0x161a16);s.graphics.beginFill(0x282c23);s.graphics.drawRect(-27,-61,54,5);s.graphics.endFill();
+         s.graphics.beginFill(0xe0413e);s.graphics.drawRect(-26,-60,52*Math.max(0,Number(b.hp)/Number(b.maxHp)),3);s.graphics.endFill();
+         this.FieldText(s,String(b.name)+"."+String(b.server||""),-68,-80,150,10,0xfff4d6).height=18;
+         if(b.hero!=null&&uint(b.hero)>0){
+            var role:TRoleModel=SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_RoleModel,uint(b.hero)) as TRoleModel;
+            if(role!=null){
+               var head:Bitmap=new Bitmap();head.x=-14;head.y=-52;s.addChild(head);s["headID"]=role.RoleHead;s["headBitmap"]=head;
+               if(this.FFieldHeads[role.RoleHead]!=null){head.bitmapData=this.FFieldHeads[role.RoleHead];head.width=28;head.height=28;}
+               else SResourcesCore.TexturesHeadIcon.LoadAutoSecondary(role.RoleHead,this.FieldHeadLoaded);
+            }
+         }
+         if(this.FFieldData.me!=null&&uint(b.id)==uint(this.FFieldData.me.id)){
+            s.graphics.lineStyle(2,0xffda6d);s.graphics.drawEllipse(-22,-8,44,17);
+         }
+         if(uint(b.id)==this.FFieldTarget){s.graphics.lineStyle(2,0xff9639);s.graphics.drawCircle(0,-25,33);}
+         s.mouseChildren=false;s.buttonMode=b.hp>0&&(b.kind!=null||int(b.team)!=myTeam);s.mouseEnabled=s.buttonMode;
+         if(s.buttonMode)s.addEventListener(MouseEvent.CLICK,this.FieldFight);
+         p.addChild(s);this.FFieldActors.push(s);
+      }
+      protected function FieldEmblem(p:Sprite,x:Number,y:Number,color:uint) : void
+      {
+         var icon:Sprite=new Sprite();icon.x=x+32;icon.y=y+35;icon.mouseEnabled=false;
+         icon.graphics.lineStyle(2,0xb7a37b);icon.graphics.beginFill(0x171311);icon.graphics.drawCircle(0,0,25);icon.graphics.endFill();
+         icon.graphics.lineStyle(3,color);icon.graphics.moveTo(-12,-15);icon.graphics.lineTo(12,15);icon.graphics.moveTo(12,-15);icon.graphics.lineTo(-12,15);
+         icon.graphics.lineStyle(2,0xffe4b0);icon.graphics.moveTo(-17,7);icon.graphics.lineTo(-7,17);icon.graphics.moveTo(7,17);icon.graphics.lineTo(17,7);p.addChild(icon);
+      }
+      protected function FieldCompactButton(p:Sprite,text:String,x:Number,y:Number,action:Function) : void
+      {
+         this.FieldButton(p,text.replace("\n"," "),x,y,76,action);
+      }
+      protected function DrawField() : void
+      {
+         if(this.FFieldData!=null&&this.FFieldData.config.combatMode=="realtime")this.DrawFieldLegacy();else this.DrawFieldVideo();
+      }
+      protected function DrawFieldVideo() : void
+      {
+         if(this.FFieldPanel==null)return;
+         var p:Sprite=this.FFieldPanel;
+         if(this.FScene.stage!=null){this.FScene.stage.addChild(p);p.x=0;p.y=0;p.scaleX=this.FScene.stage.stageWidth/1260;p.scaleY=this.FScene.stage.stageHeight/660;}
+         while(p.numChildren>0)p.removeChildAt(0);p.graphics.clear();this.FFieldActors=[];
+         this.FieldFloor(p);
+         if(this.FFieldData==null){this.FieldText(p,"Đang tải chiến trường…",460,270,440,23);return;}
+         var d:Object=this.FFieldData;var me:Object=d.me;var mine:int=me!=null?int(me.team):0;var b:Object;var n:Object;var i:int;
+         if(this.FFieldLastMatch!=int(d.matchId)){this.FFieldLastMatch=int(d.matchId);this.FFieldPositions={};this.FFieldTarget=0;this.FFieldCapture=0;}
+         for each(n in d.nodes){
+            if(int(n.owner)!=mine)continue;
+            var pos:Object=this.FieldProject(n.x,n.y);var ring:Sprite=new Sprite();ring.x=pos.x;ring.y=pos.y;ring.name=String(n.id);
+            ring.graphics.lineStyle(4,0xffad49,0.95);ring.graphics.beginFill(0xe6a22d,0.18);ring.graphics.drawEllipse(-31,-15,62,30);ring.graphics.endFill();
+            ring.graphics.lineStyle(2,0xffdb80,0.8);ring.graphics.drawEllipse(-37,-20,74,40);
+            for(i=0;i<8;i++){var angle:Number=i*Math.PI/4;var rx:Number=Math.cos(angle)*32;var ry:Number=Math.sin(angle)*16;ring.graphics.moveTo(rx,ry);ring.graphics.lineTo(rx,ry-15-(i%3)*6);}
+            ring.filters=[new GlowFilter(0xffa240,0.8,9,9,2,1)];ring.buttonMode=true;ring.addEventListener(MouseEvent.CLICK,this.FieldSpawn);p.addChild(ring);
+         }
+         var actors:Array=d.actors.concat();actors.sortOn("y",Array.NUMERIC);
+         if(d.config.lanes!=null)for each(var lane:Object in d.config.lanes){
+            var from:Object=this.FieldProject(lane.start.x,lane.start.y);var to:Object=this.FieldProject(lane.end.x,lane.end.y);
+            var guide:Sprite=new Sprite();guide.mouseEnabled=false;guide.graphics.lineStyle(2,0xf0d28a,me!=null&&int(me.lane)==int(lane.id)?0.6:0.22);
+            guide.graphics.moveTo(from.x,from.y);guide.graphics.lineTo(to.x,to.y);p.addChild(guide);
+         }
+         for each(b in actors)this.FieldActorNative(p,b,mine);
+         var hud:Sprite=new Sprite();p.addChild(hud);this.FieldBox(hud,12,12,350,278);
+         this.FieldEmblem(hud,20,25,0xdb5145);this.FieldEmblem(hud,280,25,0x54b7e6);
+         this.FieldText(hud,"CHIẾN TRƯỜNG HẢI TẶC",72,19,240,12,0xf2d39a);
+         this.FieldText(hud,"Phe ta",91,52,72,14,0xfbc172);this.FieldText(hud,"VS",164,42,60,30,0xf8ca6c);this.FieldText(hud,"Phe địch",218,52,92,14,0xfbc172);
+         this.FieldText(hud,mine==0?"Phe Công":"Phe Thủ",30,89,110,11,0xffb56d);this.FieldText(hud,mine==0?"Phe Thủ":"Phe Công",278,89,80,11,0x68daef);
+         this.FFieldTimer=this.FieldText(hud,"",30,115,325,13,0xe8d28b);
+         var ours:Number=Number(d.resources[mine]);var enemy:Number=Number(d.resources[1-mine]);
+         var scoreBar:Sprite=new Sprite();hud.addChild(scoreBar);
+         scoreBar.graphics.lineStyle(2,0xe7bb5c);scoreBar.graphics.beginFill(0x2f9cb9);scoreBar.graphics.drawRoundRect(27,145,315,12,4);scoreBar.graphics.endFill();
+         scoreBar.graphics.beginFill(0xc94329);scoreBar.graphics.drawRoundRect(28,146,313*ours/Math.max(1,ours+enemy),10,4);scoreBar.graphics.endFill();
+         this.FieldText(hud,"T.nguyên: ["+ours+"]",28,163,180,11,0xffd980);this.FieldText(hud,"T.nguyên: ["+enemy+"]",218,163,130,11,0xffd980);
+         var atk:int=me!=null?int(me.strategyAtk||0)+(mine==0?1:0):0;var def:int=me!=null?int(me.strategyDef||0)+(mine==1?1:0):0;
+         this.FieldText(hud,"⚔ +"+atk+"       ◈ +"+def,28,189,145,13,0x6dea90);
+         this.FieldCompactButton(hud,"Chiến lược",24,216,this.FieldItem);this.FieldCompactButton(hud,"Tấn công",105,216,this.FieldAttackUse);
+         var streak:int=me!=null?int(me.streak||0):0;var frozen:int=me!=null?Math.max(0,int(me.nextDuel)-int(d.serverTime),int(me.deadUntil)-int(d.serverTime)):0;
+         this.FieldText(hud,"Vinh dự của tôi: ["+d.points+"]\nThắng L.tếp: ["+streak+"]\nChiếm tài nguyên: ["+(me!=null?me.captures:0)+"]",191,187,166,12,0xe2c279).height=62;
+         this.FieldText(hud,frozen>0?"Hồi phục: "+int(frozen/60)+":"+(frozen%60<10?"0":"")+(frozen%60):"Có thể tham chiến",191,245,166,11,frozen>0?0x59c5e9:0x7de85c);
+         this.FieldText(hud,"● "+int(Number(d.silver)/10000)+" vạn   ● "+d.gold,28,265,153,10,0xf3d276);
+         this.FieldButton(hud,(me!=null&&me.auto?"☑":"☐")+" Tự động tham chiến",191,260,162,this.FieldAuto);
+         this.FieldText(hud,"Hiệp "+d.round+"/"+d.config.rounds+" • Tuyến "+(me!=null?int(me.lane)+1:"–"),28,248,157,11,0x5accdd);
+         var news:Sprite=new Sprite();p.addChild(news);this.FieldBox(news,939,12,309,174);this.FieldText(news,"CHIẾN BÁO",956,24,280,13,0xdac68b);
+         var duels:Array=d.duels;
+         for(i=0;i<5&&i<duels.length;i++){
+            var duel:Object=duels[duels.length-1-i];var win:String=uint(duel.winner)==uint(duel.attacker)?duel.attackerName:duel.defenderName;var lose:String=uint(duel.winner)==uint(duel.attacker)?duel.defenderName:duel.attackerName;
+            this.FieldText(news,win.substr(0,17)+" thắng "+lose.substr(0,14),954,56+i*24,239,11,i%2?0x79df77:0xe4e2ca).height=22;
+            var view:Sprite=new Sprite();view.x=1197;view.y=56+i*24;view.name=String(duel.id);view.graphics.beginFill(0,0);view.graphics.drawRect(0,0,40,20);view.graphics.endFill();
+            this.FieldText(view,"[Xem]",0,0,42,10,0x79dd63);view.buttonMode=true;view.addEventListener(MouseEvent.CLICK,this.FieldReplay);news.addChild(view);
+         }
+         var ranks:Sprite=new Sprite();p.addChild(ranks);this.FieldBox(ranks,996,331,252,317);
+         this.FieldText(ranks,"XẾP HẠNG TÍCH ĐIỂM",1010,348,182,12,0xe1c46e);this.FieldButton(ranks,this.FFieldWeekly?"Tuần":"Trận",1190,340,45,this.FieldRank);
+         var board:Array=this.FFieldWeekly?d.weeklyRanking:d.ranking;
+         for(i=0;i<10&&i<board.length;i++){b=board[i];this.FieldText(ranks,(i+1)+". "+String(b.name).substr(0,21),1010,387+i*23,180,11,uint(b.id)==uint(me!=null?me.id:0)?0x6fd776:(i==0?0xee8c6a:0xe0e6d9)).height=20;this.FieldText(ranks,String(b.accumulated),1198,387+i*23,40,11,0xe8e5d3).height=20;}
+         this.FieldText(ranks,"Tích điểm của tôi: "+(me!=null?int(me.score/d.config.accumulationDivisor):0),1010,625,225,11,0x66d954);
+         this.FieldButton(p,"Trận hình",690,614,94,this.FieldFormation);this.FieldButton(p,"Đồng đội",790,614,94,this.FieldCompanions);this.FieldButton(p,"Quay lại",890,614,94,this.FieldClose);
+         this.FFieldStatus=this.FieldText(p,String(d.message||"Đi thẳng theo tuyến • Gặp đối thủ cùng tuyến mới giao chiến • Chọn tuyến tại căn cứ"),24,582,900,11,0x81dccc);
+         if(!d.joined||d.phase=="finished"||this.FFieldFormation||this.FFieldCompanions||this.FFieldShop){
+            var shade:Sprite=new Sprite();shade.graphics.beginFill(0,0.45);shade.graphics.drawRect(0,0,1260,660);shade.graphics.endFill();
+            shade.addEventListener(MouseEvent.CLICK,function(e:MouseEvent):void {e.stopPropagation();});p.addChild(shade);
+         }
+         if(!d.joined&&d.phase!="finished"){
+            var entry:Sprite=new Sprite();p.addChild(entry);this.FieldBox(entry,390,230,478,210,0.95);
+            this.FieldText(entry,"CHIẾN TRƯỜNG HẢI TẶC",416,253,438,24,0xf4d279);this.FieldText(entry,"10 đấu 10 • Hai hiệp 15 phút\nKhiêu chiến đội hình • Cấp 40 trở lên",416,304,438,16).height=72;
+            this.FieldButton(entry,"Tham gia",416,387,417,this.FieldJoin);
+         }
+         if(d.phase=="finished"){
+            var result:Sprite=new Sprite();p.addChild(result);this.FieldBox(result,380,220,490,300,0.96);
+            this.FieldText(result,d.winner==null?"CHIẾN TRƯỜNG HÒA":(d.winner==mine?"PHE TA CHIẾN THẮNG":"PHE ĐỊCH CHIẾN THẮNG"),408,244,440,23,0xf7d87b);
+            this.FieldText(result,"Tài nguyên: "+ours+" – "+enemy+"\nTích điểm: "+(me!=null?int(me.score/d.config.accumulationDivisor):0)+"\n"+(d.reward!=null?"Thưởng: +"+d.reward.honor+" Vinh Danh, +"+d.reward.activity+" hoạt động":"Chưa tham chiến")+"\n"+(d.title||""),408,303,436,17).height=130;
+            this.FieldButton(result,"Trận tiếp",408,467,201,this.FieldJoin);this.FieldButton(result,"Shop Vinh Danh",629,467,211,this.FieldShop);
+         }
+         if(this.FFieldFormation||this.FFieldCompanions){
+            var squad:Sprite=new Sprite();p.addChild(squad);this.FieldBox(squad,360,190,580,354,0.98);
+            this.FieldText(squad,this.FFieldFormation?"TRẬN HÌNH ĐANG SỬ DỤNG":"ĐỒNG ĐỘI THAM CHIẾN",385,211,528,23,0xf2cf77);
+            for(i=0;i<d.formation.length;i++){b=d.formation[i];this.FieldText(squad,(i+1)+". "+b.name+"  •  Vị trí "+b.position,388,265+i*36,509,15);}
+            this.FieldButton(squad,"Đóng",388,487,517,this.FFieldFormation?this.FieldFormation:this.FieldCompanions);
+         }
+         if(this.FFieldShop){
+            var shop:Sprite=new Sprite();p.addChild(shop);this.FieldBox(shop,345,156,585,401,0.98);this.FieldText(shop,"SHOP VINH DANH • "+d.points,375,178,520,24,0xffd578);
+            for(i=0;i<d.offers.length;i++){var offer:Object=d.offers[i];var row:int=226+i*64;this.FieldText(shop,offer.name+" • "+offer.price+" Vinh Danh\n"+offer.description,376,row,359,13).height=55;var buy:Sprite=this.FieldButton(shop,"Đổi 1",758,row+9,140,this.FieldBuy);buy.name=String(offer.id);}
+            this.FieldButton(shop,"Về chiến trường",375,510,524,this.FieldShop);
+         }
+      }
+      protected function DrawFieldLegacy() : void
+      {
+         if(this.FFieldPanel==null)return;
+         var p:Sprite=this.FFieldPanel;
+         if(this.FScene.stage!=null){
+            this.FScene.stage.addChild(p);p.x=0;p.y=0;p.scaleX=this.FScene.stage.stageWidth/1260;p.scaleY=this.FScene.stage.stageHeight/660;
+         }
+         while(p.numChildren>0)p.removeChildAt(0);p.graphics.clear();this.FFieldActors=[];
+         this.FieldFloor(p);
+         if(this.FFieldData==null){this.FieldText(p,"Đang tải Chiến trường Hải tặc…",390,280,500,24);this.FieldButton(p,"Đóng",1130,10,112,this.FieldClose);return;}
+         var d:Object=this.FFieldData;var me:Object=d.me;var myTeam:int=me!=null?int(me.team):0;
+         var n:Object;var pos:Object;var s:MovieClip;var i:int;
+         for each(n in d.nodes){
+            pos=this.FieldProject(n.x,n.y);s=new MovieClip();s.x=pos.x;s.y=pos.y;s.name=String(n.id);
+            s.graphics.lineStyle(5,int(n.owner)==myTeam?0xffb04e:(int(n.owner)<0?0xf4da72:0x5dbbd7),0.95);
+            s.graphics.beginFill(0xc68b2e,0.12);s.graphics.drawEllipse(-30,-14,60,28);s.graphics.endFill();
+            s.graphics.lineStyle(2,0xffd476,0.65);s.graphics.drawEllipse(-36,-18,72,36);
+            if(Number(n.progress)>0){s.graphics.lineStyle(5,0xfbe476);s.graphics.moveTo(-28,20);s.graphics.lineTo(-28+56*Number(n.progress)/Number(d.config.captureSeconds),20);}
+            this.FieldText(s,String(n.name),-72,25,150,10,0xffdb8a);
+            s.buttonMode=true;s.mouseChildren=false;s.addEventListener(MouseEvent.CLICK,this.FieldNode);p.addChild(s);
+         }
+         var actors:Array=d.actors.concat(d.npcs);actors.sortOn("y",Array.NUMERIC);
+         for each(var b:Object in actors)this.FieldActor(p,b,myTeam);
+         this.FFieldEffects=[];
+         if(this.FFieldLastMatch!=int(d.matchId)){this.FFieldLastMatch=int(d.matchId);this.FFieldLastEvent=0;this.FFieldPositions={};}
+         for each(var ev:Object in d.events){
+            if(int(ev.id)<=this.FFieldLastEvent)continue;
+            this.FFieldLastEvent=int(ev.id);
+            if(ev.damage==null||Number(d.serverTime)-Number(ev.time)>2)continue;
+            var hit:Object=null;var caster:Object=null;
+            for each(b in actors){if(uint(b.id)==uint(ev.target))hit=b;if(uint(b.id)==uint(ev.attacker))caster=b;}
+            if(hit==null||caster==null)continue;
+            var effect:MovieClip=new MovieClip();var hp:Object=this.FieldProject(hit.x,hit.y);var cp:Object=this.FieldProject(caster.x,caster.y);
+            effect.graphics.lineStyle(ev.skill?5:2,ev.skill?0xc7a2ff:0xffeec2,0.9);
+            effect.graphics.moveTo(cp.x,cp.y-28);effect.graphics.lineTo(hp.x,hp.y-28);
+            effect.graphics.drawCircle(hp.x,hp.y-28,ev.skill?38:16);
+            this.FieldText(effect,"-"+ev.damage,hp.x-25,hp.y-103,90,ev.skill?23:17,0xffdc80);
+            effect["born"]=getTimer();effect.mouseEnabled=false;effect.mouseChildren=false;p.addChild(effect);this.FFieldEffects.push(effect);
+         }
+         // Screenshot HUD: red vs blue at top left, long resource bar, personal counters.
+         var hud:Sprite=new Sprite();p.addChild(hud);this.FieldBox(hud,0,0,350,283,0.80);
+         hud.graphics.lineStyle(4,0xff703e);hud.graphics.drawCircle(43,42,28);
+         hud.graphics.lineStyle(3,0xffb147);hud.graphics.moveTo(24,63);hud.graphics.lineTo(59,21);hud.graphics.lineTo(46,58);hud.graphics.lineTo(21,38);
+         hud.graphics.lineStyle(4,0x55d9ff);hud.graphics.drawCircle(302,42,28);
+         hud.graphics.lineStyle(3,0x86e4ff);hud.graphics.moveTo(280,34);hud.graphics.lineTo(317,51);hud.graphics.lineTo(291,62);hud.graphics.lineTo(312,20);
+         this.FieldText(hud,"Phe ta",82,27,76,16,0xffb956);this.FieldText(hud,"VS",153,14,62,35,0xe9bd55);
+         this.FieldText(hud,"Phe địch",211,27,90,16,0xffb956);
+         this.FieldText(hud,myTeam==0?"Phe Công":"Phe Thủ",12,71,100,11,0xff905c);
+         this.FieldText(hud,myTeam==0?"Phe Thủ":"Phe Công",270,71,80,11,0x7fddf7);
+         var seconds:int=int(d.remaining);var timer:String=int(seconds/60)+":"+(seconds%60<10?"0":"")+(seconds%60);
+         this.FFieldTimer=this.FieldText(hud,"Thời gian chiến trường: "+timer,78,78,272,13,0xffd966);
+         var ours:Number=Number(d.resources[myTeam]);var enemy:Number=Number(d.resources[1-myTeam]);
+         hud.graphics.lineStyle(2,0xe7bd63);hud.graphics.beginFill(0x259bb9);hud.graphics.drawRoundRect(7,107,335,13,6);hud.graphics.endFill();
+         hud.graphics.beginFill(0xc94b30);hud.graphics.drawRoundRect(8,108,333*ours/Math.max(1,ours+enemy),11,4);hud.graphics.endFill();
+         this.FieldText(hud,"Tài nguyên: ["+ours+"]",7,123,190,12,0xffd36d);this.FieldText(hud,"["+enemy+"] :Tài nguyên",219,123,130,12,0x86def1);
+         this.FieldText(hud,"Vinh dự của tôi: ["+d.points+"]\nThắng L.tếp: ["+(d.career!=null?d.career.streak:0)+"]\nChiếm tài nguyên: ["+(me!=null?me.captures:0)+"]\nĐồng bảng tham chiến: ["+d.actors.length+"]",160,153,188,12,0xf1cf7e).height=86;
+         this.FieldButton(hud,d.joined?"Rời trận":"Đăng ký Lv40",10,158,137,d.joined?this.FieldLeave:this.FieldJoin);
+         this.FieldButton(hud,"Shop Vinh Danh",10,198,137,this.FieldShop);
+         this.FieldButton(hud,(me!=null&&me.auto?"☑":"☐")+" Tự động tham chiến",155,240,188,this.FieldAuto);
+         this.FieldText(hud,"Hiệp "+d.round+" / 2 • "+(d.phase=="prepare"?"Chuẩn bị":d.phase=="intermission"?"Đổi phe":d.phase=="combat"?"Giao chiến":d.phase=="finished"?"Kết thúc":"Mở cả ngày"),10,245,145,12,0xe5e0c2);
+         var feed:Sprite=new Sprite();p.addChild(feed);this.FieldBox(feed,1025,5,230,150,0.78);
+         this.FieldText(feed,"Tình trạng     |     Chiến báo",1034,13,219,12,0xf4cf73);
+         for(i=0;i<5&&i<d.events.length;i++)this.FieldText(feed,String(d.events[d.events.length-1-i].text),1033,39+i*22,216,10,i%2?0x8bdd8a:0xe9e5c9).height=22;
+         var rank:Sprite=new Sprite();p.addChild(rank);this.FieldBox(rank,1050,366,205,277,0.83);
+         this.FieldText(rank,"Xếp hạng tích điểm",1062,376,185,13,0xeccd73);
+         this.FieldButton(rank,this.FFieldWeekly?"Tuần":"Trận",1199,369,49,this.FieldRank);
+         var board:Array=this.FFieldWeekly?d.weeklyRanking:d.ranking;
+         for(i=0;i<10&&i<board.length;i++){
+            b=board[i];this.FieldText(rank,(i+1)+". "+b.name+"."+b.server,1058,409+i*22,149,10,int(b.team)==myTeam?0xffaa70:0x82d4e8).height=21;
+            this.FieldText(rank,String(b.accumulated),1210,409+i*22,40,10,0xf5e4b2).height=21;
+         }
+         var bottom:Sprite=new Sprite();p.addChild(bottom);
+         this.FieldBox(bottom,360,592,680,66,0.84);
+         this.FieldButton(bottom,"Đánh [1]",372,603,100,this.FieldAttackUse);
+         this.FieldButton(bottom,"Kỹ năng",480,603,102,this.FieldSkillUse);
+         this.FieldButton(bottom,"Cờ +10 ("+(me!=null?me.charges:0)+")",590,603,119,this.FieldItem);
+         this.FieldText(bottom,"Điểm CT: "+(me!=null?me.score:0)+"  •  Tích lũy: "+(me!=null?int(me.score/Number(d.config.accumulationDivisor)):0),722,604,304,12,0xffd982);
+         if(me!=null&&me.hp<=0)this.FieldText(bottom,"Hồi sinh: "+Math.max(0,me.deadUntil-d.serverTime)+" giây",722,627,304,12,0xff8b6d);
+         else this.FieldText(bottom,"Bấm đất để đi • Bấm đối thủ / vòng để tương tác",372,639,650,10,0xc1c9ab);
+         // A compact minimap uses exactly the same server coordinates and ownership.
+         var mini:Sprite=new Sprite();p.addChild(mini);this.FieldBox(mini,8,535,170,115,0.76);
+         for each(n in d.nodes){mini.graphics.beginFill(int(n.owner)==myTeam?0xffa14c:0x5ac1e1);mini.graphics.drawCircle(17+n.x*0.15,545+n.y*0.135,4);mini.graphics.endFill();}
+         for each(b in d.actors){mini.graphics.beginFill(uint(b.id)==uint(me!=null?me.id:0)?0xffffff:int(b.team)==myTeam?0xe77752:0x58cee8);mini.graphics.drawCircle(17+b.x*0.15,545+b.y*0.135,2);mini.graphics.endFill();}
+         this.FieldButton(p,"Hoạt động ngày",838,10,164,this.FieldClose);
+         this.FFieldStatus=this.FieldText(p,String(d.message||""),185,559,835,12,0xffdd7a);
+         if(d.phase=="finished"){
+            var resultPanel:Sprite=new Sprite();p.addChild(resultPanel);
+            this.FieldBox(resultPanel,377,229,490,290,0.96);
+            this.FieldText(resultPanel,d.winner==null?"CHIẾN TRƯỜNG HÒA":(int(d.winner)==myTeam?"PHE TA CHIẾN THẮNG":"PHE ĐỊCH CHIẾN THẮNG"),408,257,439,24,0xffd87b);
+            this.FieldText(resultPanel,"Tài nguyên: "+ours+" – "+enemy+"\nĐiểm CT: "+(me!=null?me.score:0)+" • "+d.config.accumulationDivisor+" điểm CT = 1 tích lũy\n"+(d.reward!=null?"Thưởng: +"+d.reward.honor+" Vinh Danh, +"+d.reward.activity+" hoạt động":"Chưa tham gia trận này")+"\n"+(d.title||""),408,314,439,16).height=130;
+            this.FieldButton(resultPanel,"Đăng ký trận tiếp",418,467,210,this.FieldJoin);
+            this.FieldButton(resultPanel,"Shop Vinh Danh",643,467,192,this.FieldShop);
+         }
+         if(this.FFieldShop){
+            var shopPanel:Sprite=new Sprite();p.addChild(shopPanel);
+            this.FieldBox(shopPanel,345,156,585,401,0.98);
+            this.FieldText(shopPanel,"SHOP VINH DANH • "+d.points,375,178,520,24,0xffd578);
+            for(i=0;i<d.offers.length;i++){
+               var offer:Object=d.offers[i];var rowY:int=226+i*64;
+               this.FieldText(shopPanel,offer.name+" • "+offer.price+" Vinh Danh\n"+offer.description,376,rowY,359,13).height=55;
+               var buy:Sprite=this.FieldButton(shopPanel,"Đổi 1",758,rowY+9,140,this.FieldBuy);buy.name=String(offer.id);
+            }
+            this.FieldButton(shopPanel,"Về chiến trường",375,510,524,this.FieldShop);
+         }
+      }
+
+      protected var FScene:MovieClip;
+      
+      protected var FBoundsDailyActivity:TBounds;
+      
+      protected var FSelectTabIndex:uint;
+      
+      protected var FCurBtnStatus:uint;
+      
+      protected var FBtn_AutoJoin:MovieClip;
+      
+      protected var FMC_HelpTip:SimpleButton;
+      
+      protected var FMC_AutoJoin:MovieClip;
+      
+      protected var FTF_AutoJoining:TextField;
+      
+      protected var FTF_VipConfig:TextField;
+      
+      protected var FDailyActivityBins:TBins;
+      
+      protected var FCharacter:TCharacter;
+      
+      protected var FActivityStatusVect:Vector.<uint>;
+      
+      protected var FIsPetBattleCanJoin:Boolean;
+      
+      protected var FGlowsFilter:Vector.<TEffectBaseGlowTwo>;
+      
+      protected var FHitHelp:THint;
+      
+      protected var FAutoJoinHelpHint:THint;
+      
+      protected var FHintHeroName:THint;
+      
+      protected var FAutoHangUpStatusVec:Vector.<uint>;
+      
+      protected var FAutoSignVec:Vector.<MovieClip>;
+      
+      protected var FUITab:TUITab;
+      
+      protected var FTabIndex:int;
+      
+      protected var FFormatDailyActivityNameVect:Vector.<String>;
+      
+      protected var FDAAutoInfos:Vector.<TDAAutoInfo>;
+      
+      protected var FAutoOpenVipLv:uint;
+      
+      protected var FMC_JoinConfig:Sprite;
+      
+      protected var FCurType:int;
+      
+      protected var FMyPetType:uint;
+      
+      protected var FUnstreamizerVoidSoulWorld:TUnstreamizerVoidSoulWorld;
+      
+      protected var FVoidSoulWorldData:TVoidSoulWorldData;
+      
+      protected var FVWHeroBtm:Vector.<Bitmap>;
+      
+      protected var FVWSlot:Vector.<TUISlot>;
+      
+      protected var FVoidSoulWorldOpen:Boolean;
+      
+      protected var FOnEnterFightPet:Function;
+      
+      protected var FOnEnterOrganizationWar:Function;
+      
+      protected var FOnJoinOrganizationWar:Function;
+      
+      protected var FOnEnterCityDefend:Function;
+      
+      protected var FOnEnterTraitorAttack:Function;
+      
+      protected var FOnEnterVoidSoulWorld:Function;
+      
+      protected var FOnShortcutEffect:Function;
+      
+      protected var FOnTraitorAttackEnd:Function;
+      
+      public function TProcessorDailyActivity(param1:TUIComponent, param2:TLobbyParameters)
+      {
+         super(param1,param2);
+         this.FCurBtnStatus = BtnStatus_BeforeOpen;
+         this.FCharacter = SLogicsCore.Character;
+         this.FVoidSoulWorldData = SLogicsCore.VoidSoulWorldData;
+         this.FUnstreamizerVoidSoulWorld = new TUnstreamizerVoidSoulWorld(this.FVoidSoulWorldData);
+         this.FAutoHangUpStatusVec = new Vector.<uint>();
+         this.FActivityStatusVect = Vector.<uint>([BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen,BtnStatus_BeforeOpen]);
+         this.FSelectTabIndex = 0;
+         this.FTabIndex = 0;
+         this.FDAAutoInfos = new Vector.<TDAAutoInfo>(MAX_COUNT_AUTOFIGHT);
+         this.FCurType = -1;
+      }
+      
+      override protected function ResourcesPerform_UIRequest() : void
+      {
+         SResourcesCore.TexturesSwfLobby.LoadPrimary(CONST_DailyActivity.RESOURCE_DailyActivity);
+         super.ResourcesPerform_UIRequest();
+      }
+      
+      override protected function ResourcesPerform_UIDispatch() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:TEffectBaseGlowTwo = null;
+         var _loc3_:uint = 0;
+         var _loc4_:TSystemLanguage = null;
+         var _loc5_:TVipConfig = null;
+         var _loc6_:TBins = null;
+         var _loc7_:TDailyActivity = null;
+         var _loc8_:Bitmap = null;
+         var _loc9_:MovieClip = null;
+         var _loc10_:MovieClip = null;
+         var _loc11_:TUISlot = null;
+         var _loc12_:uint = 0;
+         var _loc13_:Vector.<uint> = null;
+         var _loc14_:TInventories = null;
+         this.FVoidSoulWorldOpen = int(TUtilityLobby.GetObjectByIdentifier(CONST_CONFIGVALUE.VoidSoulWorld_FunctionOpen)) == 1;
+         this.FBoundsDailyActivity = new TBounds();
+         this.FBoundsDailyActivity.Width = SIZE_WindowDailyActivity_Width;
+         this.FBoundsDailyActivity.Height = SIZE_WindowDailyActivity_Height;
+         ComponentBoundsCenter(this,this.FBoundsDailyActivity);
+         this.FBoundsDailyActivity = null;
+         this.FUITab = new TUITab(this);
+         this.FScene = TUtilityReflection.CreateDisplayObjectInstance(CONST_DailyActivity.RESOURCE_ClassName_MC_DailyActivity) as MovieClip;
+         addChild(this.FScene);
+         this.FDailyActivityBins = SResourcesCore.ResourceBin.GetBinsByResourceID(CONST_DATEBASEVO.RESOURCEID_DailyActivity);
+         this.FGlowsFilter = new Vector.<TEffectBaseGlowTwo>(MAX_COUNT);
+         _loc1_ = 0;
+         while(_loc1_ < MAX_COUNT)
+         {
+            _loc2_ = new TEffectBaseGlowTwo();
+            _loc2_.SetParameters(this.FScene["mc_tab_" + _loc1_],FilterColor,FilterGlowWidth,FilterGlowStrength);
+            this.FGlowsFilter[_loc1_] = _loc2_;
+            MovieClip(this.FScene["mc_tab_" + _loc1_]).mouseChildren = false;
+            TextField(this.FScene["mc_tab_" + _loc1_]["TF_ActivityName"]).mouseEnabled = false;
+            this.FUITab.SetTabByIndex(this.FScene["mc_tab_" + _loc1_],_loc1_);
+            if(_loc1_ < this.FDailyActivityBins.Count)
+            {
+               _loc7_ = this.FDailyActivityBins.GetDatebaseByIndex(_loc1_) as TDailyActivity;
+               if(_loc7_ != null)
+               {
+                  this.FScene["mc_tab_" + _loc1_]["TF_ActivityName"].text = _loc7_.ActivityName.toString();
+               }
+               else
+               {
+                  this.FScene["mc_tab_" + _loc1_]["TF_ActivityName"].text = "";
+               }
+            }
+            _loc1_++;
+         }
+         _loc9_ = this.FScene.MC_VoidSoulWorldDesc;
+         this.FVWHeroBtm = new Vector.<Bitmap>(CONST_VOIDSOULWORLD.COUNT_SpecialHero);
+         this.FVWSlot = new Vector.<TUISlot>(CONST_VOIDSOULWORLD.COUNT_RandomReward);
+         _loc1_ = 0;
+         while(_loc1_ < CONST_VOIDSOULWORLD.COUNT_SpecialHero)
+         {
+            _loc8_ = new Bitmap();
+            _loc10_ = _loc9_["MC_Head_" + _loc1_].MC_Bmp_Icon;
+            _loc10_.addChild(_loc8_);
+            _loc10_.addEventListener(MouseEvent.MOUSE_MOVE,this.OnHeadMove);
+            _loc10_.addEventListener(MouseEvent.MOUSE_OUT,this.OnHeadOut);
+            _loc10_.Tag = _loc1_;
+            this.FVWHeroBtm[_loc1_] = _loc8_;
+            _loc1_++;
+         }
+         _loc13_ = TUtilityLobby.GetObjectByIdentifier(CONST_CONFIGVALUE.VoidSoulWorld_RandomReward) as Vector.<uint>;
+         _loc14_ = new TInventories();
+         _loc1_ = 0;
+         while(_loc1_ < CONST_VOIDSOULWORLD.COUNT_RandomReward)
+         {
+            _loc11_ = new TUISlot(this);
+            _loc11_.Resource = _loc9_["MC_Slot_" + _loc1_];
+            _loc11_.OnOver = SUtilityOverLayer.UIComponentsHintOnOver;
+            _loc11_.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
+            TJadeCommon.InitSlot(_loc11_);
+            _loc11_.OnQuerySubscript = null;
+            _loc11_.Init();
+            if(_loc1_ < _loc13_.length)
+            {
+               _loc12_ = _loc13_[_loc1_];
+               SToolReward.GetInventoryByID(_loc12_,_loc14_);
+               _loc11_.Context = _loc14_.GetInventoryByIndex(_loc1_);
+            }
+            else
+            {
+               _loc11_.Context = null;
+            }
+            this.FVWSlot[_loc1_] = _loc11_;
+            _loc1_++;
+         }
+         this.InitField();
+         this.FUITab.OnSwitch = this.ProcessorTabOnSwitch;
+         this.FUITab.Init();
+         this.UpdataUI();
+         this.FTF_AutoJoining = this.FScene["tf_autojoining"];
+         this.FTF_AutoJoining.visible = false;
+         this.FMC_JoinConfig = this.FScene["mc_joinConfig"];
+         this.FMC_JoinConfig.visible = false;
+         this.FScene["mc_joinConfig"]["tf_vipConfig"].visible = false;
+         this.FBtn_AutoJoin = this.FMC_JoinConfig["mc_autoJoin"]["Btn_AutoJoin"];
+         this.FMC_HelpTip = this.FMC_JoinConfig["mc_autoJoin"]["MC_HelpTip"];
+         this.FMC_AutoJoin = this.FMC_JoinConfig["mc_autoJoin"];
+         this.FTF_VipConfig = this.FMC_JoinConfig["tf_vipConfig"];
+         this.FTF_VipConfig.visible = false;
+         _loc6_ = SResourcesCore.ResourceBin.GetBinsByResourceID(CONST_DATEBASEVO.RESOURCEID_VipConfig) as TBins;
+         _loc3_ = uint(_loc6_.Count);
+         _loc1_ = 0;
+         while(_loc1_ < _loc3_)
+         {
+            _loc5_ = _loc6_.GetDatebaseByIndex(_loc1_) as TVipConfig;
+            if(Boolean(_loc5_.AutoJoinActivity))
+            {
+               this.FAutoOpenVipLv = _loc5_.Identifier;
+               break;
+            }
+            _loc1_++;
+         }
+         this.FTF_VipConfig.text = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.DAILYACTIVITY_STRING_03),_loc5_.Identifier);
+         this.FAutoSignVec = new Vector.<MovieClip>();
+         _loc3_ = MAX_COUNT;
+         _loc1_ = 0;
+         while(_loc1_ < _loc3_)
+         {
+            this.FAutoSignVec[_loc1_] = this.FScene["MC_AutoSign_" + _loc1_] as MovieClip;
+            this.FAutoSignVec[_loc1_].mouseChildren = false;
+            this.FAutoSignVec[_loc1_].mouseEnabled = false;
+            this.FAutoSignVec[_loc1_].visible = false;
+            _loc1_++;
+         }
+         this.FFormatDailyActivityNameVect = TUtilityLobby.GetStringsByIdentifier(CONST_SYSTEMLANGUAGE.ORGANIZATION_STRING_65);
+         super.ResourcesPerform_UIDispatch();
+      }
+      
+      override protected function ResourcesPerform_UILocations() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:TSystemLanguage = null;
+         var _loc3_:TDailyActivity = null;
+         this.FScene.btn_close.addEventListener(MouseEvent.CLICK,this.OnCloseWindow);
+         this.FScene.btn_help.addEventListener(MouseEvent.MOUSE_MOVE,this.OnHintHelpMove);
+         this.FScene.btn_help.addEventListener(MouseEvent.ROLL_OUT,this.OnHintHelpOut);
+         this.FScene.btn_join.addEventListener(MouseEvent.CLICK,this.OnFunctionBtnClick);
+         TGameUtil.setButtonMode(this.FScene.btn_join,true);
+         TextField(this.FScene.btn_join.tf_btnInfo).mouseEnabled = false;
+         _loc1_ = 0;
+         while(_loc1_ < MAX_COUNT)
+         {
+            if(_loc1_ < this.FDailyActivityBins.Count)
+            {
+               this.FUITab.SetTabShowByIndex(_loc1_);
+               _loc3_ = this.FDailyActivityBins.GetDatebaseByIndex(_loc1_) as TDailyActivity;
+               if(_loc3_ != null)
+               {
+                  this.FUITab.SetTabCaptionByIndex(_loc3_.ActivityName,_loc1_);
+               }
+               else
+               {
+                  this.FUITab.SetTabCaptionByIndex("",_loc1_);
+               }
+            }
+            else
+            {
+               this.FUITab.SetTabHideByIndex(_loc1_);
+               this.FUITab.SetTabCaptionByIndex(this.FFormatDailyActivityNameVect[_loc1_ + 1],_loc1_);
+            }
+            _loc1_++;
+         }
+         this.FHitHelp = new THint();
+         _loc2_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_SystemLanguage,CONST_SYSTEMLANGUAGE.HELPTIPS_DAILYACTIVITION) as TSystemLanguage;
+         if(_loc2_ != null)
+         {
+            this.FHitHelp.Content = _loc2_.Desc;
+         }
+         else
+         {
+            this.FHitHelp.Content = "";
+         }
+         this.FAutoJoinHelpHint = new THint();
+         this.FBtn_AutoJoin.addEventListener(MouseEvent.CLICK,this.SelectOnClick,false,0,true);
+         this.FMC_HelpTip.addEventListener(MouseEvent.MOUSE_MOVE,this.HelpTipOnMove,false,0,true);
+         this.FMC_HelpTip.addEventListener(MouseEvent.MOUSE_OUT,this.HelpTipOnOut,false,0,true);
+         this.FHintHeroName = new THint();
+         super.ResourcesPerform_UILocations();
+      }
+      
+      override protected function PacketRegisterRoutines() : void
+      {
+         FPacketRoutines.Register(0x0118ed00,this.FieldReply);
+         FPacketRoutines.Register(0x0118ed01,this.FieldReply);
+         FPacketRoutines.Register(0x0118ed02,this.FieldFightReply);
+         FPacketRoutines.Register(0x0118ed03,this.FieldReply);
+         FPacketRoutines.Register(0x0118ed04,this.FieldReply);
+         FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_DailyActivity_AutomaticStatusRet,this.PerformPacket_SC_StatusRet);
+         FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_DailyActivity_AutomaticOperateRet,this.PerformPacket_SC_OperateRet);
+         FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_DailyActivity_DailyRewardRet,this.PerformPacket_SC_DailyRewardRet);
+         super.PacketRegisterRoutines();
+      }
+      
+      protected function PerformPacket_SC_StatusRet(param1:TPacket) : void
+      {
+         var _loc2_:ByteArray = null;
+         var _loc3_:int = 0;
+         var _loc4_:int = 0;
+         var _loc5_:TDAAutoInfo = null;
+         var _loc6_:uint = 0;
+         var _loc7_:Boolean = false;
+         var _loc8_:Boolean = false;
+         var _loc9_:uint = 0;
+         var _loc10_:uint = 0;
+         _loc2_ = param1.Data;
+         if(this.FDAAutoInfos[0] != null)
+         {
+            _loc4_ = _loc2_.readShort();
+            _loc3_ = 0;
+            while(_loc3_ < _loc4_)
+            {
+               _loc6_ = uint(_loc2_.readByte());
+               _loc5_ = this.GetInfoByType(_loc6_);
+               if(_loc5_ == null)
+               {
+                  _loc5_ = new TDAAutoInfo();
+                  _loc5_.Type = _loc6_;
+                  _loc5_.IsSign = Boolean(_loc2_.readByte());
+                  _loc5_.CanSign = Boolean(_loc2_.readByte());
+                  _loc5_.Silver = _loc2_.readUnsignedInt();
+                  _loc5_.Exp = _loc2_.readUnsignedInt();
+                  this.FDAAutoInfos[_loc3_] = _loc5_;
+               }
+               else
+               {
+                  _loc5_.IsSign = Boolean(_loc2_.readByte());
+                  _loc5_.CanSign = Boolean(_loc2_.readByte());
+                  _loc5_.Silver = _loc2_.readUnsignedInt();
+                  _loc5_.Exp = _loc2_.readUnsignedInt();
+                  this.SetInfo(_loc5_);
+               }
+               _loc3_++;
+            }
+         }
+         else
+         {
+            _loc4_ = _loc2_.readShort();
+            _loc3_ = 0;
+            while(_loc3_ < _loc4_)
+            {
+               _loc5_ = new TDAAutoInfo();
+               _loc5_.Type = _loc2_.readByte();
+               _loc5_.IsSign = Boolean(_loc2_.readByte());
+               _loc5_.CanSign = Boolean(_loc2_.readByte());
+               _loc5_.Silver = _loc2_.readUnsignedInt();
+               _loc5_.Exp = _loc2_.readUnsignedInt();
+               this.FDAAutoInfos[_loc3_] = _loc5_;
+               _loc3_++;
+            }
+         }
+         this.FMyPetType = TYPE_ORGACTIVITY_PETBATTLE + this.FCharacter.Country + 1;
+         if(!this.Visible)
+         {
+            return;
+         }
+         this.TabSelectAutoFight();
+      }
+      
+      protected function PerformPacket_SC_DailyRewardRet(param1:TPacket) : void
+      {
+         this.FUnstreamizerVoidSoulWorld.DailyRewardRet(param1.Data);
+         this.UpdateDailyReward();
+      }
+      
+      protected function PerformPacket_SC_OperateRet(param1:TPacket) : void
+      {
+         var _loc2_:ByteArray = null;
+         var _loc3_:uint = 0;
+         var _loc4_:uint = 0;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc7_:Boolean = false;
+         _loc2_ = param1.Data;
+         _loc3_ = _loc2_.readUnsignedInt();
+         if(_loc3_ != 0)
+         {
+            EffectGenerateTextByErrorCode(_loc3_);
+            return;
+         }
+         _loc4_ = uint(_loc2_.readByte());
+         _loc7_ = Boolean(_loc2_.readByte());
+         _loc6_ = int(this.FDAAutoInfos.length);
+         _loc5_ = 0;
+         while(_loc5_ < _loc6_)
+         {
+            if(this.FDAAutoInfos[_loc5_].Type == _loc4_)
+            {
+               this.FDAAutoInfos[_loc5_].IsSign = _loc7_;
+               break;
+            }
+            _loc5_++;
+         }
+      }
+      
+      protected function PerformPacket_CS_StatusReq() : void
+      {
+         var _loc1_:TPacket = null;
+         _loc1_ = SNetworkCore.PacketAcquire(CONST_NETWORK.PACKETID_CS_DailyActivity_AutomaticStatusReq);
+         SNetworkCore.Transceiver.PacketTransmit(_loc1_);
+      }
+      
+      protected function PerformPacket_CS_OperateReq(param1:TDAAutoInfo) : void
+      {
+         var _loc2_:ByteArray = null;
+         var _loc3_:TPacket = null;
+         _loc3_ = SNetworkCore.PacketAcquire(CONST_NETWORK.PACKETID_CS_DailyActivity_AutomaticOperateReq);
+         _loc2_ = _loc3_.Data;
+         _loc2_.writeByte(param1.Type);
+         _loc2_.writeByte(int(param1.IsSign));
+         SNetworkCore.Transceiver.PacketTransmit(_loc3_);
+      }
+      
+      override protected function LogicsPerform() : void
+      {
+         var _loc1_:TUISlot = null;
+         super.LogicsPerform();
+         if(this.Visible)
+         {
+            this.UpdateTabEffect();
+            for each(_loc1_ in this.FVWSlot)
+            {
+               _loc1_.Update();
+            }
+         }
+      }
+      
+      protected function UpdataUI() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:TDailyActivity = null;
+         if(this.FScene == null)
+         {
+            return;
+         }
+         if(this.FFieldPanel!=null) {
+            this.FFieldPanel.visible=this.FSelectTabIndex==7;
+            this.FScene.btn_join.visible=this.FSelectTabIndex!=7;
+            this.FScene.MC_VoidSoulWorldDesc.visible=false;
+         }
+         if(this.FSelectTabIndex==7) { this.DrawField(); return; }
+         if(this.FSelectTabIndex > this.FDailyActivityBins.Count)
+         {
+            this.FSelectTabIndex = 0;
+         }
+         _loc2_ = this.FDailyActivityBins.GetDatebaseByIdentifier(ID_Database_Start + this.FSelectTabIndex) as TDailyActivity;
+         this.FScene.mc_baseInfo.tf_name.text = _loc2_.ActivityName;
+         this.FScene.mc_baseInfo.tf_timeDesc.text = _loc2_.ActivityTimeVect[0];
+         this.FScene.mc_baseInfo.tf_time.text = _loc2_.ActivityTimeVect[1];
+         this.FScene.tf_desc.text = _loc2_.ActivityDescription;
+         this.FScene.tf_awardDesc.text = _loc2_.ActivityRewards;
+         this.FScene.mc_bg.gotoAndStop(this.FSelectTabIndex + 1);
+         if(this.FSelectTabIndex < TYPE_ORGACTIVITY_PETBATTLE)
+         {
+            this.FScene.mc_bg.gotoAndStop(this.FSelectTabIndex + 1);
+         }
+         this.FIsPetBattleCanJoin = true;
+         if(_loc2_.ActivityType == TYPE_ORGACTIVITY_PETBATTLE)
+         {
+            this.FCurBtnStatus = this.FActivityStatusVect[TYPE_ORGACTIVITY_YUZHIBO + this.FSelectTabIndex];
+            if(this.FActivityStatusVect[TYPE_ORGACTIVITY_YUZHIBO + this.FCharacter.Country - 1] == BtnStatus_Open)
+            {
+               this.FIsPetBattleCanJoin = false;
+            }
+         }
+         else
+         {
+            this.FCurBtnStatus = this.FActivityStatusVect[_loc2_.ActivityType];
+            if(_loc2_.ActivityType == TYPE_ORGACTIVITY_MUYEGUARD)
+            {
+               this.FCurBtnStatus = BtnStatus_Open;
+            }
+         }
+         this.FScene.btn_join.tf_btnInfo.text = TUtilityLobby.GetStringsByIdentifier(CONST_SYSTEMLANGUAGE.STRINGS_ACTIVITYSTATE)[this.FCurBtnStatus];
+         if(_loc2_.ActivityType == TYPE_ORGACTIVITY_MUYEGUARD)
+         {
+            this.FScene.btn_join.tf_btnInfo.text = "Tham gia";
+         }
+         TGameUtil.setButtonMode(this.FScene.btn_join,this.CheckStatusIsBtn());
+         this.FScene.mc_tabPage.visible = false;
+         this.UpdateVoidSoulWorldUI(_loc2_);
+         this.FScene.mc_tab_6.visible = this.FVoidSoulWorldOpen;
+      }
+      
+      protected function UpdateDailyReward() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:Bitmap = null;
+         var _loc3_:uint = 0;
+         var _loc4_:TRoleModel = null;
+         var _loc5_:uint = 0;
+         var _loc6_:TUISlot = null;
+         _loc1_ = 0;
+         while(_loc1_ < CONST_VOIDSOULWORLD.COUNT_SpecialHero)
+         {
+            _loc2_ = this.FVWHeroBtm[_loc1_];
+            _loc2_.bitmapData = null;
+            _loc1_++;
+         }
+         _loc5_ = this.FVoidSoulWorldData.Form.SpecialHeroID.length;
+         _loc1_ = 0;
+         while(_loc1_ < _loc5_)
+         {
+            _loc3_ = this.FVoidSoulWorldData.Form.SpecialHeroID[_loc1_];
+            _loc4_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_RoleModel,_loc3_) as TRoleModel;
+            SResourcesCore.TexturesHeadIcon.LoadAutoSecondary(_loc4_.RoleHead,this.RoleHeadLoadOK);
+            _loc1_++;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < CONST_VOIDSOULWORLD.COUNT_RandomReward)
+         {
+            _loc6_ = this.FVWSlot[_loc1_];
+            if(_loc6_.Context != null)
+            {
+               if(_loc1_ == this.FVoidSoulWorldData.RewardIndex)
+               {
+                  _loc6_.SetDefaultFilters(false);
+               }
+               else
+               {
+                  _loc6_.SetDefaultFilters(true);
+               }
+            }
+            _loc1_++;
+         }
+      }
+      
+      protected function UpdateVoidSoulWorldUI(param1:TDailyActivity) : void
+      {
+         var _loc2_:MovieClip = null;
+         var _loc3_:uint = 0;
+         var _loc4_:uint = 0;
+         _loc2_ = this.FScene.MC_VoidSoulWorldDesc;
+         if(this.FSelectTabIndex == 6)
+         {
+            _loc2_.visible = true;
+            _loc2_.TF_Desc.text = param1.ActivityDescription;
+            _loc4_ = uint(TUtilityLobby.GetObjectByIdentifier(CONST_CONFIGVALUE.VoidSoulWorld_OpenLevel));
+            if(SLogicsCore.Character.GetMainLevel() >= _loc4_)
+            {
+               TGameUtil.setButtonMode(this.FScene.btn_join,true);
+            }
+            else
+            {
+               TGameUtil.setButtonMode(this.FScene.btn_join,false);
+            }
+            this.FScene.btn_join.visible = true;
+            this.FScene.btn_join.tf_btnInfo.text = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.ORGANIZATION_STRING_26);
+         }
+         else
+         {
+            _loc2_.visible = false;
+         }
+      }
+      
+      protected function CheckTabEffect() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:uint = 0;
+         _loc1_ = 0;
+         while(_loc1_ < MAX_COUNT)
+         {
+            if(_loc1_ == 0)
+            {
+               _loc2_ = _loc1_ + TYPE_ORGACTIVITY_YUZHIBO;
+            }
+            else if(_loc1_ == 3)
+            {
+               _loc2_ = TYPE_ORGACTIVITY_MUYEBATTLE;
+            }
+            else if(_loc1_ == 4)
+            {
+               _loc2_ = TYPE_ORGACTIVITY_MUYEGUARD;
+            }
+            else if(_loc1_ == 5)
+            {
+               _loc2_ = TYPE_ORGACTIVITY_TRAITORATTACK;
+            }
+            else if(_loc1_ == 6)
+            {
+               _loc2_ = TYPE_ORGACTIVITY_VoidSoulWorld;
+            }
+            if(this.FActivityStatusVect[_loc2_] == BtnStatus_Open || this.FActivityStatusVect[_loc2_] == BtnStatus_Join)
+            {
+               this.FGlowsFilter[_loc1_].IsRunOver = false;
+            }
+            else
+            {
+               this.FGlowsFilter[_loc1_].Stop();
+            }
+            _loc1_++;
+         }
+      }
+      
+      protected function UpdateTabEffect() : void
+      {
+         var _loc1_:int = 0;
+         var _loc2_:TEffectBaseGlowTwo = null;
+         if(this.FGlowsFilter == null)
+         {
+            return;
+         }
+         _loc1_ = 0;
+         while(_loc1_ < this.FGlowsFilter.length)
+         {
+            _loc2_ = this.FGlowsFilter[_loc1_];
+            if(!_loc2_.IsRunOver)
+            {
+               _loc2_.Run();
+            }
+            _loc1_++;
+         }
+      }
+      
+      protected function CheckStatusIsBtn() : Boolean
+      {
+         if(!this.FIsPetBattleCanJoin && this.FCharacter.Country - 1 != this.FSelectTabIndex)
+         {
+            return false;
+         }
+         if(this.FCurBtnStatus == BtnStatus_Open || this.FCurBtnStatus == BtnStatus_Join)
+         {
+            return true;
+         }
+         return false;
+      }
+      
+      protected function GetDailyActivity() : int
+      {
+         var _loc1_:uint = 0;
+         _loc1_ = 0;
+         while(_loc1_ < this.FActivityStatusVect.length)
+         {
+            if(this.FActivityStatusVect[_loc1_] == BtnStatus_Open || this.FActivityStatusVect[_loc1_] == BtnStatus_Join)
+            {
+               if(_loc1_ == TYPE_ORGACTIVITY_TRAITORATTACK)
+               {
+                  return 5;
+               }
+               if(_loc1_ == TYPE_ORGACTIVITY_VoidSoulWorld)
+               {
+                  return 6;
+               }
+               if(_loc1_ >= TYPE_ORGACTIVITY_YUZHIBO)
+               {
+                  if(this.FActivityStatusVect[TYPE_ORGACTIVITY_YUZHIBO + this.FCharacter.Country - 1] == BtnStatus_Open)
+                  {
+                     return this.FCharacter.Country - 1;
+                  }
+                  return _loc1_ - TYPE_ORGACTIVITY_YUZHIBO;
+               }
+               if(_loc1_ == TYPE_ORGACTIVITY_MUYEGUARD)
+               {
+                  return 4;
+               }
+               if(_loc1_ == TYPE_ORGACTIVITY_MUYEBATTLE)
+               {
+                  return 3;
+               }
+            }
+            _loc1_++;
+         }
+         return -1;
+      }
+      
+      protected function UpdateAutoFight(param1:uint) : void
+      {
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
+         _loc3_ = int(this.FDAAutoInfos.length);
+         _loc2_ = 0;
+         while(_loc2_ < _loc3_)
+         {
+            if(param1 == this.FDAAutoInfos[_loc2_].Type)
+            {
+               this.UpdateUIAutoFight(this.FDAAutoInfos[_loc2_]);
+               break;
+            }
+            this.FMC_JoinConfig.visible = false;
+            this.FTF_VipConfig.visible = false;
+            _loc2_++;
+         }
+      }
+      
+      protected function UpdateUIAutoFight(param1:TDAAutoInfo) : void
+      {
+         this.FMC_JoinConfig.visible = true;
+         if(this.FCharacter.VipLevel >= this.FAutoOpenVipLv)
+         {
+            this.FTF_VipConfig.visible = false;
+            this.FMC_AutoJoin.visible = true;
+            if(!param1.CanSign)
+            {
+               this.FMC_AutoJoin.filters = [TUtilityFilter.GaryColorFilters];
+               if(param1.IsSign)
+               {
+                  this.FBtn_AutoJoin.gotoAndStop(2);
+                  this.FTF_AutoJoining.visible = true;
+                  this.FScene.btn_join.visible = false;
+               }
+               else
+               {
+                  this.FBtn_AutoJoin.gotoAndStop(1);
+                  this.FTF_AutoJoining.visible = false;
+                  this.FScene.btn_join.visible = true;
+               }
+            }
+            else
+            {
+               this.FMC_AutoJoin.filters = [];
+               this.FTF_AutoJoining.visible = false;
+               if(param1.IsSign)
+               {
+                  this.FBtn_AutoJoin.gotoAndStop(2);
+               }
+               else
+               {
+                  this.FBtn_AutoJoin.gotoAndStop(1);
+               }
+               this.FScene.btn_join.visible = true;
+            }
+         }
+         else
+         {
+            this.FTF_VipConfig.visible = true;
+            this.FMC_AutoJoin.visible = false;
+         }
+      }
+      
+      protected function GetInfoByType(param1:uint) : TDAAutoInfo
+      {
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
+         _loc3_ = int(this.FDAAutoInfos.length);
+         _loc2_ = 0;
+         while(_loc2_ < _loc3_)
+         {
+            if(this.FDAAutoInfos[_loc2_] == null)
+            {
+               return null;
+            }
+            if(this.FDAAutoInfos[_loc2_].Type == param1)
+            {
+               return this.FDAAutoInfos[_loc2_];
+            }
+            _loc2_++;
+         }
+         return null;
+      }
+      
+      protected function SetInfo(param1:TDAAutoInfo) : void
+      {
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
+         if(this.FDAAutoInfos.length <= 0)
+         {
+            return;
+         }
+         _loc3_ = int(this.FDAAutoInfos.length);
+         _loc2_ = 0;
+         while(_loc2_ < _loc3_)
+         {
+            if(this.FDAAutoInfos[_loc2_].Type == param1.Type)
+            {
+               this.FDAAutoInfos[_loc2_] = param1;
+               break;
+            }
+            _loc2_++;
+         }
+      }
+      
+      protected function OnCloseWindow(param1:MouseEvent) : void
+      {
+         ProcessorClose();
+      }
+      
+      protected function OnFunctionBtnClick(param1:MouseEvent) : void
+      {
+         var _loc2_:TDailyActivity = null;
+         if(Boolean(param1.currentTarget) && !param1.currentTarget.buttonMode)
+         {
+            return;
+         }
+         _loc2_ = this.FDailyActivityBins.GetDatebaseByIdentifier(ID_Database_Start + this.FSelectTabIndex) as TDailyActivity;
+         switch(_loc2_.ActivityType)
+         {
+            case TYPE_ORGACTIVITY_PETBATTLE:
+               if(this.FOnEnterFightPet != null)
+               {
+                  this.FOnEnterFightPet(this,this.FSelectTabIndex + 1);
+               }
+               break;
+            case TYPE_ORGACTIVITY_MUYEBATTLE:
+               if(this.FActivityStatusVect[TYPE_ORGACTIVITY_MUYEBATTLE] == BtnStatus_Join)
+               {
+                  if(this.FOnJoinOrganizationWar != null)
+                  {
+                     this.FOnJoinOrganizationWar(this,CONST_ORGANIZATIONALWAR.CommandID_SignUp,0,null);
+                  }
+               }
+               else if(this.FOnEnterOrganizationWar != null)
+               {
+                  this.FOnEnterOrganizationWar(this);
+               }
+               break;
+            case TYPE_ORGACTIVITY_MUYEGUARD:
+               if(this.FOnEnterCityDefend != null)
+               {
+                  this.FOnEnterCityDefend(this);
+               }
+               break;
+            case TYPE_ORGACTIVITY_TRAITORATTACK:
+               if(this.FOnEnterTraitorAttack != null)
+               {
+                  this.FOnEnterTraitorAttack(this);
+               }
+               break;
+            case TYPE_ORGACTIVITY_VoidSoulWorld:
+               if(this.FOnEnterVoidSoulWorld != null)
+               {
+                  this.FOnEnterVoidSoulWorld(this);
+               }
+         }
+         ProcessorClose();
+      }
+      
+      protected function ProcessorTabOnSwitch(param1:Object) : void
+      {
+         var _loc2_:int = 0;
+         var _loc3_:uint = 0;
+         _loc2_ = param1 as int;
+         if(this.FTabIndex == _loc2_)
+         {
+            return;
+         }
+         this.FTabIndex = _loc2_;
+         this.FSelectTabIndex = this.FTabIndex;
+         if(this.FSelectTabIndex==7) { this.UpdataUI(); this.FieldSend(0x0181ed00); return; }
+         this.TabSelectAutoFight();
+         this.UpdataUI();
+      }
+      
+      protected function OnHintHelpMove(param1:MouseEvent) : void
+      {
+         SUtilityOverLayer.UIComponentsHintOnOver(this,this.FHitHelp);
+      }
+      
+      protected function OnHintHelpOut(param1:MouseEvent) : void
+      {
+         SUtilityOverLayer.UIComponentsHintOnOut(this,this.FHitHelp);
+      }
+      
+      protected function HelpTipOnMove(param1:MouseEvent) : void
+      {
+         var _loc2_:String = null;
+         var _loc3_:uint = 0;
+         var _loc4_:uint = 0;
+         var _loc5_:TDAAutoInfo = null;
+         if(this.FCurType == -1)
+         {
+            return;
+         }
+         if(this.FCurType == TYPE_ORGACTIVITY_TRAITORATTACK)
+         {
+            _loc5_ = this.GetInfoByType(TYPE_ORGACTIVITY_TRAITORATTACK);
+            if(_loc5_ == null)
+            {
+               return;
+            }
+            _loc3_ = _loc5_.Exp;
+            _loc4_ = _loc5_.Silver;
+            _loc2_ = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.FIGHTPET_STRING_11),_loc4_,_loc3_);
+         }
+         else if(this.FCurType == this.FMyPetType)
+         {
+            _loc5_ = this.GetInfoByType(this.FMyPetType);
+            if(_loc5_ == null)
+            {
+               return;
+            }
+            _loc3_ = _loc5_.Exp;
+            _loc4_ = _loc5_.Silver;
+            _loc2_ = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.FIGHTPET_STRING_10),_loc4_,_loc3_);
+         }
+         this.FAutoJoinHelpHint.Caption = _loc2_;
+         SUtilityOverLayer.UIComponentsHintOnOver(this,this.FAutoJoinHelpHint);
+      }
+      
+      protected function HelpTipOnOut(param1:MouseEvent) : void
+      {
+         SUtilityOverLayer.UIComponentsHintOnOut(this,this.FAutoJoinHelpHint);
+      }
+      
+      protected function TabSelectAutoFight() : void
+      {
+         if(this.FSelectTabIndex==7) {
+            if(this.FMC_JoinConfig!=null) this.FMC_JoinConfig.visible=false;
+            if(this.FTF_AutoJoining!=null) this.FTF_AutoJoining.visible=false;
+            return;
+         }
+         var _loc1_:TDailyActivity = null;
+         _loc1_ = this.FDailyActivityBins.GetDatebaseByIdentifier(ID_Database_Start + this.FSelectTabIndex) as TDailyActivity;
+         if(_loc1_.ActivityType == TYPE_ORGACTIVITY_PETBATTLE)
+         {
+            if(this.FMyPetType == TYPE_ORGACTIVITY_PETBATTLE + this.FSelectTabIndex + 2)
+            {
+               this.FCurType = this.FMyPetType;
+               this.UpdateAutoFight(this.FMyPetType);
+               return;
+            }
+         }
+         else
+         {
+            if(_loc1_.ActivityType == TYPE_ORGACTIVITY_TRAITORATTACK)
+            {
+               this.FCurType = TYPE_ORGACTIVITY_TRAITORATTACK;
+               this.UpdateAutoFight(this.FCurType);
+               return;
+            }
+            if(_loc1_.ActivityType == TYPE_ORGACTIVITY_VoidSoulWorld)
+            {
+               this.FCurType = TYPE_ORGACTIVITY_VoidSoulWorld;
+            }
+         }
+         this.FMC_JoinConfig.visible = false;
+         this.FTF_AutoJoining.visible = false;
+      }
+      
+      protected function SelectOnClick(param1:MouseEvent) : void
+      {
+         var _loc2_:TDAAutoInfo = null;
+         _loc2_ = this.GetInfoByType(this.FCurType);
+         if(!_loc2_.CanSign)
+         {
+            return;
+         }
+         if(this.FBtn_AutoJoin.currentFrame == 2)
+         {
+            this.FBtn_AutoJoin.gotoAndStop(1);
+            if(_loc2_ != null)
+            {
+               _loc2_.IsSign = false;
+            }
+         }
+         else
+         {
+            this.FBtn_AutoJoin.gotoAndStop(2);
+            if(_loc2_ != null)
+            {
+               _loc2_.IsSign = true;
+            }
+         }
+         if(this.FCurType != -1)
+         {
+            this.PerformPacket_CS_OperateReq(_loc2_);
+         }
+      }
+      
+      protected function RoleHeadLoadOK(param1:Object, param2:TTexture, param3:uint) : void
+      {
+         var _loc4_:uint = 0;
+         var _loc5_:uint = 0;
+         var _loc6_:TRoleModel = null;
+         var _loc7_:uint = 0;
+         var _loc8_:Bitmap = null;
+         _loc5_ = this.FVoidSoulWorldData.Form.SpecialHeroID.length;
+         _loc4_ = 0;
+         while(_loc4_ < _loc5_)
+         {
+            _loc7_ = this.FVoidSoulWorldData.Form.SpecialHeroID[_loc4_];
+            _loc6_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_RoleModel,_loc7_) as TRoleModel;
+            if(param3 == _loc6_.RoleHead)
+            {
+               _loc8_ = this.FVWHeroBtm[_loc4_];
+               _loc8_.bitmapData = param2.GetAnimationSequenceByIndex(0).GetAnimationFrameByIndex(0).Surface;
+            }
+            _loc4_++;
+         }
+      }
+      
+      protected function OnHeadMove(param1:MouseEvent) : void
+      {
+         var _loc2_:uint = 0;
+         var _loc3_:uint = 0;
+         var _loc4_:TBaseHero = null;
+         _loc2_ = uint(param1.currentTarget.Tag);
+         _loc3_ = this.FVoidSoulWorldData.Form.SpecialHeroID[_loc2_];
+         _loc4_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_BaseHero,_loc3_) as TBaseHero;
+         this.FHintHeroName.Caption = _loc4_.Name;
+         SUtilityOverLayer.UIComponentsHintOnOver(this,this.FHintHeroName);
+      }
+      
+      protected function OnHeadOut(param1:MouseEvent) : void
+      {
+         SUtilityOverLayer.UIComponentsHintOnOut(this,this.FHintHeroName);
+      }
+      
+      public function set OnEnterFightPet(param1:Function) : void
+      {
+         this.FOnEnterFightPet = param1;
+      }
+      
+      public function get OnEnterFightPet() : Function
+      {
+         return this.FOnEnterFightPet;
+      }
+      
+      public function set OnEnterOrganizationWar(param1:Function) : void
+      {
+         this.FOnEnterOrganizationWar = param1;
+      }
+      
+      public function get OnEnterOrganizationWar() : Function
+      {
+         return this.FOnEnterOrganizationWar;
+      }
+      
+      public function set OnJoinOrganizationWar(param1:Function) : void
+      {
+         this.FOnJoinOrganizationWar = param1;
+      }
+      
+      public function get OnJoinOrganizationWar() : Function
+      {
+         return this.FOnJoinOrganizationWar;
+      }
+      
+      public function set OnEnterCityDefend(param1:Function) : void
+      {
+         this.FOnEnterCityDefend = param1;
+      }
+      
+      public function get OnEnterCityDefend() : Function
+      {
+         return this.FOnEnterCityDefend;
+      }
+      
+      public function set OnEnterTraitorAttack(param1:Function) : void
+      {
+         this.FOnEnterTraitorAttack = param1;
+      }
+      
+      public function get OnEnterTraitorAttack() : Function
+      {
+         return this.FOnEnterTraitorAttack;
+      }
+      
+      public function set OnShortcutEffect(param1:Function) : void
+      {
+         this.FOnShortcutEffect = param1;
+      }
+      
+      public function get OnShortcutEffect() : Function
+      {
+         return this.FOnShortcutEffect;
+      }
+      
+      public function set OnTraitorAttackEnd(param1:Function) : void
+      {
+         this.FOnTraitorAttackEnd = param1;
+      }
+      
+      public function get OnTraitorAttackEnd() : Function
+      {
+         return this.FOnTraitorAttackEnd;
+      }
+      
+      public function get OnEnterVoidSoulWorld() : Function
+      {
+         return this.FOnEnterVoidSoulWorld;
+      }
+      
+      public function set OnEnterVoidSoulWorld(param1:Function) : void
+      {
+         this.FOnEnterVoidSoulWorld = param1;
+      }
+      
+      override public function Mount(param1:ByteArray = null) : void
+      {
+         super.Mount();
+         if(!FIsResourcesLoadCompleted)
+         {
+            return;
+         }
+         this.FSelectTabIndex = Math.max(this.GetDailyActivity(),0);
+         this.FTabIndex = this.FSelectTabIndex;
+         this.FUITab.SwithTagManual(this.FSelectTabIndex);
+         this.UpdataUI();
+         this.CheckTabEffect();
+         this.PerformPacket_CS_StatusReq();
+         if(this.FVoidSoulWorldOpen)
+         {
+            this.FUnstreamizerVoidSoulWorld.DailyRewardReq();
+         }
+      }
+      
+      override public function Unmount() : void
+      {
+      }
+      
+      public function SetActivityStatus(param1:uint, param2:uint) : void
+      {
+         var _loc3_:TDAAutoInfo = null;
+         this.FActivityStatusVect[param1] = param1 == TYPE_ORGACTIVITY_MUYEGUARD ? BtnStatus_Open : param2;
+         if(param1 == TYPE_ORGACTIVITY_PETBATTLE)
+         {
+            this.FActivityStatusVect[TYPE_ORGACTIVITY_YUZHIBO] = param2;
+            this.FActivityStatusVect[TYPE_ORGACTIVITY_RIXIANG] = param2;
+            this.FActivityStatusVect[TYPE_ORGACTIVITY_QIANSHOU] = param2;
+         }
+         if(this.Visible)
+         {
+            this.UpdataUI();
+            this.CheckTabEffect();
+         }
+         if(this.FOnShortcutEffect != null)
+         {
+            this.FOnShortcutEffect(CONST_SHORTCUTS.POSITION_SecondaryFunctionA,CONST_SHORTCUTS.TYPE_SecondaryFunctionA_DailyActivity,this.GetDailyActivity() >= 0);
+         }
+         if(param1 == TYPE_ORGACTIVITY_TRAITORATTACK && param2 == BtnStatus_EndOpen)
+         {
+            if(this.Visible)
+            {
+               _loc3_ = this.GetInfoByType(TYPE_ORGACTIVITY_TRAITORATTACK);
+               _loc3_.CanSign = true;
+               _loc3_.IsSign = false;
+               this.TabSelectAutoFight();
+            }
+            this.FOnTraitorAttackEnd(this);
+         }
+         if(param2 == BtnStatus_EndOpen && param1 == TYPE_ORGACTIVITY_PETBATTLE)
+         {
+            if(this.Visible)
+            {
+               _loc3_ = this.GetInfoByType(this.FMyPetType);
+               _loc3_.CanSign = true;
+               _loc3_.IsSign = false;
+               this.TabSelectAutoFight();
+            }
+         }
+      }
+   }
+}
+

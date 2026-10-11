@@ -1,0 +1,66 @@
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/field-test.swf
+FLASH_PROBE INIT child document loaded
+CLICK 607,41
+CLICK 294,130
+CLICK 394,441
+CLICK 503,474
+CLICK 650,445
+FLASH_PROBE FIELD walk frame=1 tick=5 x=1043 y=251
+FLASH_PROBE FIELD walk frame=5 tick=159 x=1033 y=256
+FLASH_PROBE FIELD walk frame=10 tick=333 x=1022 y=262
+FLASH_PROBE FIELD walk frame=15 tick=484 x=1012 y=267
+FLASH_PROBE FIELD walk frame=4 tick=655 x=1000 y=273
+FLASH_PROBE FIELD walk frame=9 tick=830 x=989 y=279
+FLASH_PROBE FIELD walk frame=14 tick=985 x=978 y=284
+FLASH_PROBE FIELD walk frame=14 tick=995 x=977 y=285
+FLASH_PROBE FIELD walk frame=5 tick=1225 x=961 y=293
+FLASH_PROBE FIELD walk frame=11 tick=1408 x=949 y=299
+FLASH_PROBE FIELD walk frame=15 tick=1561 x=939 y=305
+FLASH_PROBE FIELD walk frame=4 tick=1730 x=928 y=310
+FLASH_PROBE FIELD walk frame=9 tick=1894 x=917 y=316
+FLASH_PROBE FIELD walk frame=12 tick=1983 x=911 y=319
+FLASH_PROBE FIELD walk frame=1 tick=2162 x=899 y=325
+FLASH_PROBE FIELD walk frame=7 tick=2362 x=885 y=332
+FLASH_PROBE FIELD walk frame=12 tick=2530 x=874 y=338
+FLASH_PROBE FIELD walk frame=1 tick=2688 x=864 y=344
+FLASH_PROBE FIELD walk frame=6 tick=2860 x=852 y=350
+FLASH_PROBE FIELD walk frame=10 tick=2975 x=844 y=354
+FLASH_PROBE FIELD walk frame=15 tick=3151 x=832 y=360
+FLASH_PROBE FIELD walk frame=4 tick=3310 x=821 y=365
+FLASH_PROBE FIELD walk frame=10 tick=3528 x=807 y=373
+FLASH_PROBE FIELD walk frame=1 tick=3746 x=792 y=380
+FLASH_PROBE FIELD walk frame=6 tick=3907 x=782 y=386
+FLASH_PROBE FIELD walk frame=7 tick=3957 x=777 y=388
+FLASH_PROBE FIELD walk frame=12 tick=4110 x=767 y=393
+FLASH_PROBE FIELD walk frame=1 tick=4280 x=756 y=399
+FLASH_PROBE FIELD walk frame=6 tick=4450 x=745 y=405
+FLASH_PROBE FIELD walk frame=11 tick=4607 x=734 y=410
+FLASH_PROBE FIELD walk frame=16 tick=4778 x=723 y=416
+FLASH_PROBE FIELD walk frame=5 tick=4949 x=711 y=422
+FLASH_PROBE FIELD walk frame=5 tick=4953 x=711 y=422
+FLASH_PROBE FIELD walk frame=10 tick=5113 x=702 y=427
+FLASH_PROBE FIELD walk frame=15 tick=5283 x=692 y=432
+FLASH_PROBE FIELD walk frame=4 tick=5440 x=684 y=436
+FLASH_PROBE FIELD walk frame=9 tick=5606 x=674 y=441
+FLASH_PROBE FIELD walk frame=14 tick=5778 x=664 y=446
+FLASH_PROBE FIELD walk frame=3 tick=5948 x=655 y=451
+CLICK 420,420
+FLASH_PROBE FIELD walk frame=3 tick=5952 x=654 y=451
+FLASH_PROBE FIELD walk frame=8 tick=6113 x=641 y=450
+FLASH_PROBE FIELD walk frame=13 tick=6283 x=626 y=448
+FLASH_PROBE FIELD walk frame=2 tick=6453 x=611 y=447
+FLASH_PROBE FIELD walk frame=7 tick=6615 x=598 y=445
+FLASH_PROBE FIELD walk frame=12 tick=6779 x=584 y=444
+FLASH_PROBE FIELD walk frame=16 tick=6929 x=568 y=442
+FLASH_PROBE FIELD walk frame=6 tick=7133 x=551 y=440
+FLASH_PROBE FIELD walk frame=11 tick=7294 x=537 y=438
+FLASH_PROBE FIELD walk frame=16 tick=7466 x=522 y=437
+FLASH_PROBE FIELD walk frame=5 tick=7619 x=509 y=435
+FLASH_PROBE FIELD walk frame=10 tick=7790 x=495 y=434
+FLASH_PROBE FIELD walk frame=14 tick=7901 x=485 y=433
+FLASH_PROBE FIELD walk frame=3 tick=8090 x=473 y=431
+FLASH_PROBE FIELD walk frame=8 tick=8248 x=463 y=430
+FLASH_PROBE FIELD walk frame=13 tick=8419 x=453 y=429
+FLASH_PROBE FIELD walk frame=2 tick=8587 x=442 y=428
+FLASH_PROBE FIELD walk frame=7 tick=8760 x=431 y=427

@@ -849,6 +849,10 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
         victim.verdi = (victim.verdi || 0) + counterDamage;
       }
       if (!counterTargets.length) counterTargets.push({cmd:kodek.CMD.ATTACK,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:0}});
+      // Native TBattleStage passes two references to the original attacker for a
+      // block reaction. Match that two-slot result vector, even when the block
+      // deals no counter damage, or TRole indexes past the result vector (#1125).
+      if(counterTargets.length===1)counterTargets.push({cmd:kodek.CMD.ATTACK,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:0}});
       reactions.push({activeCamp:victim.camp,activePos:victim.pos,skillEffectId:victim.normal,activeType:3,targets:counterTargets});
     }
   }
@@ -1034,6 +1038,12 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     for (const unit of p2) {
       unit.atk = Math.max(1, Math.round(unit.atk * enemyAttackScale));
     }
+  }
+  // Apply optional battlefield strategy after baseline balancing, so an attack buff
+  // is not cancelled by scaling the opposing team's health to the buffed attack.
+  for(const [team,boosts] of [[p1,options.playerStatBoosts],[p2,options.enemyStatBoosts]])if(boosts)for(const field of ['atk','def']) {
+    const percent=Math.max(0,Math.min(25,Number(boosts[field])||0));
+    if(percent)for(const unit of team)unit[field]=Math.min(1000000000,Math.round(unit[field]*(1+percent/100)));
   }
   // Hueco Mundo carries surviving HP between points; other modes start at full HP.
   for (const [team, rates] of [[p1, options.playerHpRates], [p2, options.enemyHpRates]]) {

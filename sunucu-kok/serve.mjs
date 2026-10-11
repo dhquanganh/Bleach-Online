@@ -179,7 +179,21 @@ http.createServer(async (req, res) => {
 
   const swf = u.pathname.match(/^\/public\/(\d+)\/Resources\/Swf\/(.+\.swf)$/i);
   const texture = u.pathname.match(/^\/public\/(\d+)\/Resources\/Textures\/([^/]+)\/([^/]+\.TexClient)$/i);
+  const sound = u.pathname.match(/^\/public\/(\d+)\/Resources\/Sound\/(\d+\.mp3)$/i);
+  const map = u.pathname.match(/^\/public\/(\d+)\/Resources\/Map\/([0-9a-f]+\.bin)$/i);
   const fallback = () => {
+    if (sound || map) {
+      const asset=sound||map,category=sound?'Sound':'Map';
+      const versions=fs.readdirSync(PUBLIC).filter(name=>/^\d+$/.test(name)&&name!==asset[1]).sort((a,b)=>Number(b)-Number(a));
+      for(const version of versions){
+        const cached=path.join(PUBLIC,version,'Resources',category,asset[2]);
+        if(fs.existsSync(cached)&&fs.statSync(cached).isFile()){
+          note(`${category.toUpperCase()}-FALLBACK\t${u.pathname}\t${path.relative(PUBLIC,cached)}`);
+          send(200,fs.readFileSync(cached),sound?'audio/mpeg':'application/octet-stream');return true;
+        }
+      }
+      return false;
+    }
     if (swf) {
       const cached = cachedSwf(swf[1], swf[2]);
       if (!cached) return false;
