@@ -1,0 +1,6 @@
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/partner-fixed.swf
+FLASH_PROBE INIT child document loaded
+CLICK 414,610
+CLICK 344,178
+CLICK 446,70

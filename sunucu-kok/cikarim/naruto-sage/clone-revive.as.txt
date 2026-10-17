@@ -1,0 +1,18 @@
+            if(FId == 11120902 && FIsDie)
+            {
+               TweenUtil.removeTween(this,false);
+               FIsDie = false;
+               this.alpha = 1;
+               this.visible = true;
+               this.filters = [];
+               FBitmap.filters = [];
+               FShaderBmp.visible = true;
+               FHpBar.visible = true;
+               FBuffSprite.visible = true;
+               if(FIdlePosition != null)
+               {
+                  this.x = FIdlePosition[0];
+                  this.y = FIdlePosition[1];
+               }
+               PlayFightIdle();
+            }

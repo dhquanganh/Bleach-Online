@@ -1,0 +1,19 @@
+{
+  "atlases": {
+    "rasengan": "gorsel/naruto-vfx/rasengan-atlas.png",
+    "rasenshuriken": "gorsel/naruto-vfx/rasenshuriken-atlas.png"
+  },
+  "effects": {
+    "barrageImpact": {"id": 13621901, "atlas": "rasengan", "frames": [8,9,10,11,12,13,14,15], "size": [112,112], "duration": 35, "center": [0,-88]},
+    "mysteryImpact": {"id": 13621902, "atlas": "rasenshuriken", "frames": [4,5,6,7,8,9,10,11,12,13,14,15], "size": [240,180], "duration": 45, "center": [0,-88]},
+    "barrageCharge": {"id": 13621903, "atlas": "rasengan", "frames": [0,1,2,3], "size": [60,60], "duration": 40, "centers": [[20,-110],[20,-90],[40,-100],[40,-100]]},
+    "mysteryCharge": {"id": 13621904, "atlas": "rasenshuriken", "frames": [1,2,3,4,5,6], "size": [96,72], "duration": 75, "centers": [[-8,-183],[-3,-182],[-40,-146],[-35,-125],[-19,-130],[67,-133]]},
+    "chaseCharge": {"id": 13621905, "atlas": "rasengan", "frames": [1,2,3], "size": [72,72], "duration": 60, "centers": [[20,-80],[20,-80],[-30,-130]]},
+    "chaseImpact": {"id": 13621906, "atlas": "rasengan", "frames": [7,8,9,10,11,12,13,14,15], "size": [152,152], "duration": 35, "center": [0,-92]}
+  },
+  "skills": {
+    "13120903": {"charge": "barrageCharge", "chargeFrame": 0, "impact": "barrageImpact", "damageFrame": 2},
+    "13120901": {"charge": "mysteryCharge", "chargeFrame": 2, "impact": "mysteryImpact", "damageFrame": 5},
+    "13120904": {"charge": "chaseCharge", "chargeFrame": 0, "impact": "chaseImpact", "damageFrame": 3}
+  }
+}

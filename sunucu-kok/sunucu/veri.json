@@ -1,25 +1,30 @@
 {
   "_aciklama": "VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.",
-  "altin": 6999,
-  "gumus": 1264993,
+  "altin": 52479,
+  "gumus": 57439887,
   "gumusHigh": 0,
-  "kupon": 498928,
-  "askeriEmir": 499210,
-  "vipLevel": 0,
-  "vipExp": 0,
+  "kupon": 513064,
+  "askeriEmir": 500780,
+  "vipLevel": 10,
+  "vipExp": 919000,
   "level": 100,
   "nick": "dqa",
   "tumKarakterler": false,
   "savasIstatistigiOtomatik": false,
-  "generalsSoul": 613,
+  "generalsSoul": 213,
   "blueSoul": 60,
   "purpleSoul": 30,
-  "goldSoulV": 105,
+  "goldSoulV": 102,
   "orangeSoul": 0,
-  "herolar": [],
-  "deneyim": 289444,
-  "prestij": 3500,
+  "herolar": [
+    11120901,
+    11120903
+  ],
+  "deneyim": 357382,
+  "prestij": 160500,
   "illusionCredits": {
-    "20736:359:80840994": true
+    "20736:359:80840994": true,
+    "20737:359:80840994": true,
+    "20742:359:80840994": true
   }
 }

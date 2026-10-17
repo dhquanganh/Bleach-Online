@@ -1,0 +1,9 @@
+backups/
+frames/
+original/
+patched/
+verify/
+*.swf
+validation/runtime.log
+validation/latest.png
+validation/control.json

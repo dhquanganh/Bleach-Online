@@ -1,0 +1,231 @@
+      private function UpdateJiraiyaVfx() : void
+      {
+         if(FId != 11120903 || FSkillId < 13120911 || FSkillId > 13120916 || (FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL)) return;
+         if(!FJiraiyaVfxStarted)
+         {
+            FJiraiyaVfxStarted = true;
+            this.ShowJiraiyaVfx(FSkillId,false);
+         }
+         var hits:Object = __JIRAIYA_VFX_FRAMES__;
+         if(!FJiraiyaVfxHit && FFrameIndex >= int(hits[FSkillId]))
+         {
+            FJiraiyaVfxHit = true;
+            this.ShowJiraiyaVfx(FSkillId,true);
+         }
+      }
+
+      private static function ShakeJiraiyaBattle(host:DisplayObjectContainer, strength:Number, duration:int) : void
+      {
+         if(host == null || host.stage == null) return;
+         // One owner for the camera: a new impulse restores the previous origin first.
+         if(FJiraiyaShake != null) FJiraiyaShake.stop();
+         var originX:Number = host.x;
+         var originY:Number = host.y;
+         var started:int = getTimer();
+         var tick:Function;
+         var stop:Function;
+         var removed:Function;
+         stop = function():void
+         {
+            host.removeEventListener(Event.ENTER_FRAME,tick);
+            host.removeEventListener(Event.REMOVED_FROM_STAGE,removed);
+            host.x = originX;
+            host.y = originY;
+            FJiraiyaShake = null;
+         };
+         removed = function(event:Event):void
+         {
+            if(event.target == host) stop();
+         };
+         tick = function(event:Event):void
+         {
+            var age:Number = getTimer() - started;
+            if(age >= duration || host.stage == null)
+            {
+               stop();
+               return;
+            }
+            var decay:Number = Math.pow(1-age/duration,2);
+            host.x = originX + Math.sin(age*0.091)*strength*decay;
+            host.y = originY + Math.cos(age*0.127)*strength*0.55*decay;
+         };
+         FJiraiyaShake = {stop:stop};
+         host.addEventListener(Event.ENTER_FRAME,tick);
+         host.addEventListener(Event.REMOVED_FROM_STAGE,removed);
+      }
+
+      private function ShowJiraiyaVfx(skill:int, impact:Boolean) : void
+      {
+         var host:DisplayObjectContainer = this.FBattleStage;
+         if(host == null || host.stage == null) return;
+         var caster:TRole = this;
+         var origin:Point = host.globalToLocal(localToGlobal(new Point(0,-48)));
+         var targets:Array = [];
+         var seen:Object = {};
+         var key:String;
+         var n:int;
+         if(FTargets != null)
+         {
+            for(n=0;n<FTargets.length;n++)
+            {
+               // Reports include the caster's CMD_NONE and duplicate FLOAT/status rows.
+               if(FTargets[n] == null || FTargets[n] == this || FResults == null || n >= FResults.length) continue;
+               if(FResults[n].CMD != TTargetInfo.CMD_ATTACK && FResults[n].CMD != TTargetInfo.CMD_ATTACKEX) continue;
+               if(FResults[n].ResultInfo.HurtHp < 0) continue;
+               key = FTargets[n].Camp + "_" + FTargets[n].Pos;
+               if(seen[key]) continue;
+               seen[key] = true;
+               targets.push(host.globalToLocal(FTargets[n].localToGlobal(new Point(0,-60))));
+            }
+         }
+         if(targets.length == 0) targets.push(origin.clone());
+         var offensive:Boolean = skill == 13120912 || skill == 13120913 || skill == 13120914;
+         var color:uint = skill == 13120913 ? 0x63DCFF : (skill == 13120912 ? 0xC794FF : (skill == 13120911 ? 0xFF858C : (skill == 13120914 ? 0xE3F6FF : 0xFFE68A)));
+         var layer:Sprite = new Sprite();
+         layer.name = "jiraiyaSkillVfx";
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         layer.blendMode = BlendMode.ADD;
+         layer.filters = [new GlowFilter(color,0.65,7,7,1.3,1)];
+         host.addChild(layer);
+         var started:int = getTimer();
+         var lifetime:int = impact ? (skill == 13120911 ? 850 : 640) : 650;
+         var strength:Number = impact ? (skill == 13120913 ? 8 : (skill == 13120911 ? 7 : (skill == 13120914 ? 5 : (skill == 13120912 ? 3.5 : 2)))) : (skill == 13120911 ? 3 : 1.2);
+         ShakeJiraiyaBattle(host,strength,impact ? 360 : 160);
+         var animate:Function;
+         var cleanup:Function;
+         cleanup = function(event:Event = null):void
+         {
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            if(layer.parent != null) layer.parent.removeChild(layer);
+         };
+         animate = function(event:Event):void
+         {
+            var elapsed:Number = getTimer()-started;
+            var t:Number = elapsed/lifetime;
+            if(t >= 1 || host.stage == null)
+            {
+               cleanup();
+               return;
+            }
+            if(!impact && caster.stage != null) origin = host.globalToLocal(caster.localToGlobal(new Point(0,-48)));
+            var g:Graphics = layer.graphics;
+            g.clear();
+            layer.alpha = Math.min(1,t*8)*(1-t)*(impact ? 1 : 0.8);
+            var point:Point;
+            var i:int;
+            var j:int;
+            var a:Number;
+            var radius:Number;
+            var px:Number;
+            var py:Number;
+            if(!impact)
+            {
+               g.lineStyle(2,color,0.7);
+               g.drawEllipse(origin.x-46,origin.y+35,92,22);
+               for(i=0;i<16;i++)
+               {
+                  a=i*2.399+elapsed*0.004;
+                  radius=18+23*(1-t);
+                  px=origin.x+Math.cos(a)*radius;
+                  py=origin.y+35-((i*13+elapsed*0.08)%85);
+                  g.lineStyle(1,color,0.8);
+                  g.moveTo(px,py+7);g.lineTo(px+Math.sin(a)*3,py);
+               }
+               return;
+            }
+            if(skill == 13120911)
+            {
+               // Expanding toad mouth: pink rim, inward teeth and dust at the ground.
+               radius=60+55*Math.sin(t*Math.PI/2);
+               g.lineStyle(7,0xC54E65,0.7);
+               g.drawEllipse(origin.x-radius,origin.y-radius*0.8,radius*2,radius*1.6);
+               for(i=0;i<12;i++)
+               {
+                  a=i*Math.PI/6;
+                  px=origin.x+Math.cos(a)*radius;
+                  py=origin.y+Math.sin(a)*radius*0.8;
+                  g.lineStyle(1,0xFFF0D5,0.9);g.beginFill(0xFFF0D5,0.8);
+                  g.moveTo(px-5,py);g.lineTo(origin.x+Math.cos(a)*(radius-15),origin.y+Math.sin(a)*(radius-15)*0.8);g.lineTo(px+5,py);g.endFill();
+               }
+               g.lineStyle(3,0xFFB9A5,0.7);
+               g.drawEllipse(origin.x-radius,origin.y+38,radius*2,22+20*t);
+            }
+            else if(skill == 13120913)
+            {
+               point=targets[0];radius=18+58*t;
+               g.lineStyle(3,0xD9FBFF,0.9);g.drawCircle(point.x,point.y,radius);
+               g.lineStyle(2,color,0.8);g.drawEllipse(point.x-radius*1.6,point.y-radius*0.6,radius*3.2,radius*1.2);
+               for(i=0;i<6;i++)
+               {
+                  for(j=0;j<18;j++)
+                  {
+                     a=i*Math.PI/3+j*0.19+elapsed*0.015;
+                     px=point.x+Math.cos(a)*(6+j*radius/18);
+                     py=point.y+Math.sin(a)*(6+j*radius/18);
+                     g.lineStyle(2,j%3 == 0 ? 0xFFFFFF : color,1-j/22);
+                     if(j == 0) g.moveTo(px,py); else g.lineTo(px,py);
+                  }
+               }
+            }
+            else if(skill == 13120912)
+            {
+               for(i=0;i<targets.length;i++)
+               {
+                  point=targets[i];
+                  for(j=0;j<4;j++)
+                  {
+                     radius=15+((t*75+j*18)%85);
+                     g.lineStyle(2,j%2 == 0 ? 0xE0B9FF : color,1-radius/110);
+                     g.drawEllipse(point.x-radius*0.65,point.y-radius,radius*1.3,radius*2);
+                  }
+               }
+            }
+            else if(skill == 13120914)
+            {
+               for(i=0;i<targets.length;i++)
+               {
+                  point=targets[i];
+                  for(j=0;j<7;j++)
+                  {
+                     g.lineStyle(1.5+(j%3),j%2 == 0 ? 0xFFFFFF : 0xAFCBE4,0.8);
+                     g.moveTo(origin.x,origin.y-20+j*5);
+                     g.curveTo((origin.x+point.x)/2,Math.min(origin.y,point.y)-65-j*8,point.x+Math.sin(t*20+j)*12,point.y-20+j*6);
+                  }
+                  g.lineStyle(2,0xFFFFFF,0.8);g.drawCircle(point.x,point.y,12+36*t);
+               }
+            }
+            else
+            {
+               // Senjutsu and revival: golden chakra pillar and rising motes.
+               g.lineStyle(3,color,0.8);g.drawEllipse(origin.x-52-30*t,origin.y+34,104+60*t,28);
+               for(i=0;i<20;i++)
+               {
+                  a=i*2.399;px=origin.x+Math.cos(a)*(18+i%4*9);
+                  py=origin.y+45-((t*150+i*11)%165);
+                  g.lineStyle(1.5,color,0.8);g.moveTo(px,py+12);g.lineTo(px,py);
+               }
+               g.lineStyle(10,0xFFF6C5,0.22);g.moveTo(origin.x,origin.y+35);g.lineTo(origin.x,origin.y-95);
+            }
+            // Short radial impact streaks for all damaging techniques.
+            if(offensive)
+            {
+               for(i=0;i<targets.length;i++)
+               {
+                  point=targets[i];
+                  for(j=0;j<12;j++)
+                  {
+                     a=j*Math.PI/6;radius=24+t*70;
+                     g.lineStyle(1.8,color,0.85);
+                     g.moveTo(point.x+Math.cos(a)*radius,point.y+Math.sin(a)*radius*0.7);
+                     g.lineTo(point.x+Math.cos(a)*(radius+15*(1-t)),point.y+Math.sin(a)*(radius+15*(1-t))*0.7);
+                  }
+               }
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+

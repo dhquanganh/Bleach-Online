@@ -1,0 +1,12 @@
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/partner-test.swf
+FLASH_PROBE INIT child document loaded
+CLICK 414,610
+FLASH_PROBE RUNTIME ERROR TypeError: Error #1009
+null
+FLASH_PROBE RUNTIME ERROR RangeError: Error #1125
+null
+FLASH_PROBE RUNTIME ERROR RangeError: Error #1125
+null
+FLASH_PROBE RUNTIME ERROR RangeError: Error #1125
+null

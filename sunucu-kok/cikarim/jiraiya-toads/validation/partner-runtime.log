@@ -1,0 +1,70 @@
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/animation-battle-test.swf
+FLASH_PROBE INIT child document loaded
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120916 impact=false camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120916 impact=true camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120911 impact=false camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120911 impact=true camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120912 impact=false camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120912 impact=true camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120914 impact=false camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120914 impact=true camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=0 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120913 impact=false camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120913 impact=true camp=0 targets=1 firstX=935
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/animation-battle-test.swf
+FLASH_PROBE INIT child document loaded
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120916 impact=false camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120916 impact=true camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120911 impact=false camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120911 impact=true camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120912 impact=false camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120912 impact=true camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120914 impact=false camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120914 impact=true camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=false camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120915 impact=true camp=1 targets=0
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120913 impact=false camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0
+FLASH_PROBE JIRAIYA_VFX skill=13120913 impact=true camp=1 targets=1 firstX=315
+FLASH_PROBE JIRAIYA_CAMERA restored=0,0

@@ -1,0 +1,5 @@
+PROBE HTML ready
+FLASH_PROBE BOOT /gorsel/animation-battle-test.swf
+FLASH_PROBE INIT child document loaded
+
+PASS: generated native battle report: 16 rounds, skills 13120901,13120902,13120903,13120904; native playback reached WINS.

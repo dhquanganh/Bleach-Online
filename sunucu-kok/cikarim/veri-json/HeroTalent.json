@@ -1013,5 +1013,15 @@
     "id": "00C96B4C",
     "talentName": "Tiburón",
     "talentDesc": "Increase Wisdom by 40% and Agility by 40%, Born with 20% Stamina."
+  },
+  {
+    "id": "00C9BC25",
+    "talentName": "Sage Jutsu Chakra / Shadow Clone",
+    "talentDesc": "+20 team chakra before the first move each round. Summon a Lightning-resistant clone at battle start. With an active clone: Rasengan Barrage causes Low Float. Chase Repulse -> Knockdown once per round. Rasen Shuriken: 40 chakra, cooldown 2, battlefield cooldown 1; 10 COMBO to lineup and Repulse to selected target."
+  },
+  {
+    "id": "00C9BC27",
+    "talentName": "Senjutsu Power / Tale of Jiraiya the Gallant",
+    "talentDesc": "Prompt. Chakra 20; cooldown 2; battlefield cooldown 0. Toad Esophagus for 2 rounds: barrier creators/destroyers on both sides cannot cast Mystery. Immediately casts Toad Confrontation Chant. Damage up to 2 enemies. Suppress Immunity until end of next round; Extreme Chaos on hit. Unavoidable lineup damage, 5 COMBO. Stackable -10% Resistance. High chance (local: 70%) of Knockdown to selected target. At least 15 COMBO. Damage up to 4 enemies, Repulse to selected target. +1 Chase limit for allies this round, non-stacking. Round start: restore chakra limit to 100; +2% team Initiative each round, up to 10%. Cleanse Jiraiya and up to 2 other Senjutsu allies; +20 shared chakra for each. After defeat, revive at 30% HP after allies cast 3 Mysteries. On revival reduce own Mystery cooldown by 1."
   }
 ]

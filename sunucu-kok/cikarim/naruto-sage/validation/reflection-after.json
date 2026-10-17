@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "player1": {
+    "roles": [
+      {
+        "pos": 6,
+        "roleId": 11120901,
+        "quality": 4,
+        "level": 100,
+        "curHealth": 100,
+        "totalHealth": 100,
+        "curAnger": 0,
+        "skillId": 13120901,
+        "name": "Naruto [Sage Mode]"
+      },
+      {
+        "pos": 11,
+        "roleId": 11120903,
+        "quality": 7,
+        "level": 100,
+        "curHealth": 10000,
+        "totalHealth": 10000,
+        "curAnger": 0,
+        "skillId": 13120911,
+        "name": "Jiraiya [Toads Chant]"
+      }
+    ]
+  },
+  "player2": {
+    "roles": [
+      {
+        "pos": 6,
+        "roleId": 11120903,
+        "quality": 7,
+        "level": 100,
+        "curHealth": 10000,
+        "totalHealth": 10000,
+        "curAnger": 0,
+        "skillId": 13120911,
+        "name": "Jiraiya [Toads Chant]"
+      }
+    ]
+  },
+  "turns": [
+    {
+      "curTurn": 1,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13120901,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {}
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "hurtHp": 900,
+                "hurtAnger": 0
+              }
+            }
+          ],
+          "reactions": [
+            {
+              "activeCamp": 0,
+              "activePos": 6,
+              "skillEffectId": 0,
+              "activeType": 4,
+              "targets": [
+                {
+                  "cmd": 1,
+                  "targetCamp": 0,
+                  "targetPos": 6,
+                  "reportTargetStatus": 1107296256,
+                  "result": {
+                    "hurtHp": 100,
+                    "hurtAnger": 0
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 1107296256,
+              "result": {
+                "hurtHp": 100,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 2,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 11,
+          "skillEffectId": 13120913,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {}
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "hurtHp": 9100,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "hurtHp": 9100,
+                "hurtAnger": 0
+              }
+            }
+          ],
+          "reactions": []
+        }
+      ]
+    }
+  ]
+}

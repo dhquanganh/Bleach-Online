@@ -31,7 +31,7 @@ function gecerliHerolar() {
     // ANA ROLLER (isMain=1, 11100001-11100006) enjekte EDILMEZ: bunlar oyuncunun
     // karakter-yaratmada sectigi protagonist slotlari. Ikinci bir "ana karakter"
     // eklenince client'in MainHero=index0 mantigi bozuluyor ve char paketi sonrasi donuyor.
-    if (Number(h.isMain) === 1) continue;
+    if (Number(h.isMain) === 1 || h.isSummon) continue;
     if (!talentSet.has(Number(h.talent) || 0)) continue;
     if (!skillSet.has(Number(h.normalAttack) || 0)) continue;
     const skill = Number(h.active) || 0;

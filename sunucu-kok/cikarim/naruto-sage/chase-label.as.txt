@@ -1,0 +1,41 @@
+         var marker:uint = param1.ResultInfo.BuffId;
+         var isChase:Boolean = marker >= 19000200 && marker <= 19000205;
+         if(isChase || (marker >= 19000100 && marker <= 19000105))
+         {
+            if(parent == null) return;
+            var stateIndex:int = marker - (isChase ? 19000200 : 19000100);
+            var stateNames:Array = ["","Low Float","High Float","Knockdown","Repulse","Immobile"];
+            var stateColors:Array = [0xFFE36D,0x77E7FF,0x86ADFF,0xFFB45C,0xFF8585,0xDB9BFF];
+            var labelName:String = "chaseFloat_" + Camp + "_" + Pos;
+            var oldLabel:DisplayObject = parent.getChildByName(labelName);
+            if(oldLabel != null) parent.removeChild(oldLabel);
+            var chaseLabel:TextField = new TextField();
+            chaseLabel.name = labelName;
+            chaseLabel.defaultTextFormat = new TextFormat("_sans",20,stateColors[stateIndex],true,null,null,null,null,"center");
+            chaseLabel.text = (isChase ? "CHASE  " : "") + stateNames[stateIndex] + "\n" + String(param1.ResultInfo.BuffTurn) + " COMBO";
+            chaseLabel.width = 300;
+            chaseLabel.height = 62;
+            chaseLabel.x = x - 150;
+            var startY:Number = y - RoleHeight - 66;
+            chaseLabel.y = startY;
+            chaseLabel.mouseEnabled = false;
+            chaseLabel.selectable = false;
+            chaseLabel.filters = [new GlowFilter(0x081020,1,4,4,5)];
+            parent.addChild(chaseLabel);
+            var started:int = getTimer();
+            var animate:Function = function(event:Event):void
+            {
+               var progress:Number = Math.min(1,(getTimer() - started) / 1400);
+               chaseLabel.y = startY - 58 * progress;
+               chaseLabel.alpha = progress < 0.65 ? 1 : (1 - progress) / 0.35;
+               if(progress >= 1 && chaseLabel.parent != null) chaseLabel.parent.removeChild(chaseLabel);
+            };
+            var removed:Function = function(event:Event):void
+            {
+               chaseLabel.removeEventListener(Event.ENTER_FRAME,animate);
+               chaseLabel.removeEventListener(Event.REMOVED_FROM_STAGE,removed);
+            };
+            chaseLabel.addEventListener(Event.ENTER_FRAME,animate);
+            chaseLabel.addEventListener(Event.REMOVED_FROM_STAGE,removed);
+            return;
+         }

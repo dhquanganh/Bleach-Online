@@ -5,6 +5,7 @@
 **/*.pyc
 .boss-runtime-test/
 .battlefield-runtime-test/
+.partner-runtime-test/
 sunucu-kok/gorsel/boss-probe.*
 sunucu-kok/gorsel/boss-test.swf
 sunucu-kok/sunucu/battlefield-runtime.json*

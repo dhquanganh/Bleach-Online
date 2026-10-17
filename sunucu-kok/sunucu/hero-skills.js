@@ -227,7 +227,11 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   if(scope.includes('s')&&caster.hp>0&&!selected.includes(caster))selected.push(caster);
   return selected;
 }
-function status(unit, field) { return !!(unit.skillBuffs || []).find(buff=>buff.field===field&&buff.remaining>0); }
+function status(unit, field) {
+  if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
+  if(unit.suppressedUntil>=unit.battleRound&&['immuneControl','immuneHealBlock','invincible','void'].includes(field))return false;
+  return !!(unit.skillBuffs || []).find(buff=>buff.field===field&&buff.remaining>0);
+}
 function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
@@ -266,6 +270,7 @@ function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
     targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:ids[rule.value<0?1:0],buffTurn:rule.turns}});
 }
 function remove(target,negative,records) {
+  if(negative){for(const field of ['jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil'])delete target[field];target.paralyzed=false;}
   const removed=(target.skillBuffs||[]).filter(buff=>negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect');
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>!removed.includes(buff));
   for(const buff of removed){const ids=buffIds[buff.field];const id=ids?ids[buff.value<0?1:0]:buff.buffId;

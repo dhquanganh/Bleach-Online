@@ -1,0 +1,19 @@
+         if(param1.ResultInfo.BuffId >= 19000100 && param1.ResultInfo.BuffId <= 19000105)
+         {
+            var comboNames:Array = ["","Low Float","High Float","Knockdown","Repulse","Immobile"];
+            var comboLabel:TextField = new TextField();
+            comboLabel.defaultTextFormat = new TextFormat("_sans",16,0xFFFF66,true);
+            comboLabel.text = String(param1.ResultInfo.BuffTurn) + " COMBO  " + comboNames[param1.ResultInfo.BuffId - 19000100];
+            comboLabel.width = 280;
+            comboLabel.height = 30;
+            comboLabel.x = -100;
+            comboLabel.y = -RoleHeight - 36;
+            comboLabel.mouseEnabled = false;
+            comboLabel.filters = [new flash.filters.GlowFilter(0,1,3,3,4)];
+            addChild(comboLabel);
+            setTimeout(function():void
+            {
+               if(comboLabel.parent != null) comboLabel.parent.removeChild(comboLabel);
+            },800);
+            return;
+         }

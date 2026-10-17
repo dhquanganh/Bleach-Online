@@ -15,6 +15,8 @@ const heroTalents = require('./hero-talents');
 const heroSkills = require('./hero-skills');
 const partnerSkills = require('./partner-skills');
 const weaponSkills = require('./weapon-skills');
+const narutoCombat = require('./naruto-combat');
+const jiraiyaCombat = require('./jiraiya-combat');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 const REPLAY_DIR = path.join(__dirname, 'savas');
@@ -768,12 +770,12 @@ const rolBilgisi = u => ({
 });
 
 // Tek bir vurus (active) uret + HP/ofkeyi guncelle
-function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra = false, allies = [u]) {
+function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra = false, allies = [u], attackSpec = null) {
   const rebirth = require('./reincarnation');
   const talent = heroTalents.effect(u.id);
-  const skillAt = !extra && !!u.skill && !heroSkills.status(u,'silence') && (u.anger >= 100 || talent.normalSkill);
-  const plan = skillAt ? heroSkills.get(u.skill) : null;
-  const eff = skillAt ? (u.skillEffect || u.skill) : u.normal;
+  const skillAt = attackSpec ? attackSpec.activeType === kodek.ACTIVE.SKILL : !extra && !!u.skill && !u.barrierMysteryBlocked && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && (u.anger >= 100 || talent.normalSkill);
+  const plan = !attackSpec && skillAt ? heroSkills.get(u.skill) : null;
+  const eff = attackSpec ? attackSpec.id : skillAt ? (u.skillEffect || u.skill) : u.normal;
   const targets = [{ cmd: kodek.CMD.NONE, targetCamp: u.camp, targetPos: u.pos, reportTargetStatus: 0, result: {} }];
   const reactions = [];
   const appendHit = (list, victim, result, status) => {
@@ -784,25 +786,27 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
+  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef]) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
   const hitTargets = [];
   // Spend rage before restoration: Urahara/Unohana recover it after casting.
   const rageRecords = [];
-  heroSkills.changeFury(u,extra ? 0 : skillAt ? (talent.normalSkill && u.anger < 100 ? 0 : -100) : 50,rageRecords);
+  if (!attackSpec) heroSkills.changeFury(u,extra ? 0 : skillAt ? (talent.normalSkill && u.anger < 100 ? 0 : -100) : 50,rageRecords);
   const triple = rebirth.proc(u, 2, random);
   const ignoreDefense = rebirth.proc(u, 5, random);
-  const castAttack = heroSkills.value(u,'atk');
+  const castAttack = attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(u,'atk') + heroSkills.value(u,'magicAtk')) / 2 : heroSkills.value(u,'atk');
   for (const victim of victims) {
     const chance = value => Math.max(0, Math.min(1, Number(value) || 0));
     const hitChance = chance((u.hitRate == null ? 1 : heroSkills.value(u,'hitRate')) - heroSkills.value(victim,'dodgeRate'));
-    if (!bitir && !talent.guaranteedHit && hitChance < 1 && random() >= hitChance) {
+    if (!bitir && !(attackSpec&&attackSpec.unavoidable) && !talent.guaranteedHit && hitChance < 1 && random() >= hitChance) {
       targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
       continue;
     }
     hitTargets.push(victim);
-    const attack = castAttack, defense = heroSkills.value(victim,'def') * (1-Math.max(0,Math.min(1,heroSkills.value(u,'ignoreDefense'))));
-    let dmg = Math.round(attack * (skillAt ? (plan ? plan.multiplier : 1.8) : (talent.normalMultiplier || 1)) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
+    const resistance=(victim.resistance == null ? heroSkills.value(victim,'def') : victim.resistance)*Math.max(0,1-.1*(victim.jiraiyaResistanceStacks||0));
+    const attack = castAttack, defense = (attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(victim,'def') + resistance) / 2 : heroSkills.value(victim,'def')) * (1-Math.max(0,Math.min(1,heroSkills.value(u,'ignoreDefense'))));
+    let dmg = Math.round(attack * (attackSpec ? attackSpec.multiplier : skillAt ? (plan ? plan.multiplier : 1.8) : (talent.normalMultiplier || 1)) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
+    if (victim.cloneOwner && (attackSpec && attackSpec.element || u.element) === 'lightning') dmg = Math.round(dmg * (1 - narutoCombat.config.cloneLightningReduction));
     const critical = !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate'));
     if (critical) dmg = Math.round(dmg * Math.max(0,1.5+heroSkills.value(u,'critDamage')));
     const breakDefense = chance(heroSkills.value(u,'wreckRate')) > 0 && random() < chance(heroSkills.value(u,'wreckRate'));
@@ -870,7 +874,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   const outgoingDamage=targets.filter(record=>record.targetCamp!==u.camp).reduce((sum,record)=>sum+Math.max(0,Number(record.result.hurtHp)||0),0);
   weaponSkills.after(u,allies,opponents,hitTargets,outgoingDamage,attackPassive,random);
   if(attackPassive.length)reactions.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:attackPassive});
-  if (skillAt && !plan && u.buff && u.buff.id > 0) targets.push({
+  if (!attackSpec && skillAt && !plan && u.buff && u.buff.id > 0) targets.push({
     cmd:kodek.CMD.ATTRBUFF,targetCamp:u.buff.kendine?u.camp:hedef.camp,targetPos:u.buff.kendine?u.pos:hedef.pos,
     reportTargetStatus:ST.HIT>>>0,result:{buffId:u.buff.id,buffTurn:u.buff.tur}
   });
@@ -883,7 +887,17 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       first.pos=oldSecond;second.pos=oldFirst;
     }
   }
-  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:extra?kodek.ACTIVE.NORMAL_EX:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets,reactions};
+  // Rasen Shuriken applies reflected damage after its animation completes.
+  // Killing the caster inside its own impact effect sets FIsDie before Flash
+  // can invoke the skill completion callback, permanently stopping the report.
+  if (attackSpec && attackSpec.id === narutoCombat.config.mystery.id) {
+    const reflected=targets.filter(row=>row.cmd===kodek.CMD.ATTACK&&row.targetCamp===u.camp&&row.targetPos===u.pos&&row.result.hurtHp>0);
+    if(reflected.length){
+      for(const row of reflected)targets.splice(targets.indexOf(row),1);
+      reactions.unshift({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:reflected});
+    }
+  }
+  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:attackSpec?attackSpec.activeType:extra?kodek.ACTIVE.NORMAL_EX:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets,reactions};
 }
 
 // --- WORLD MAP ZORLUK DENGESI ---
@@ -1052,6 +1066,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (Number.isFinite(rate)) unit.hp = Math.max(0, Math.round(unit.maxHp * Math.max(0, Math.min(100, rate)) / 100));
     }
   }
+  narutoCombat.prepareClones([p1,p2]);
+  const chaseContext = narutoCombat.create([p1,p2], {random:options.random});
   // roller simulasyondan ONCE (curHealth = baslangic HP'si)
   const roles1 = p1.map(rolBilgisi), roles2 = p2.map(rolBilgisi);
   const initialActives = [];
@@ -1070,6 +1086,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   });
   const deathTriggered = new Set(p1.concat(p2).filter(unit=>unit.hp<=0));
   const appendDeaths = actives => {
+    jiraiyaCombat.noteDeaths(chaseContext);
     let unit;
     while ((unit=p1.concat(p2).find(other=>other.hp<=0&&!deathTriggered.has(other)))) {
       deathTriggered.add(unit);
@@ -1079,7 +1096,40 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
   };
   const turns = [];
+  const perform = (u,target,opponents,allies,actives,spec=null,bitir=false) => {
+    const random=options.random || Math.random;
+    const strike=(actor,victim,move,isChase=false)=> {
+      const frame=vurus(actor,victim,bitir,opponents,random,isChase,allies,move ? narutoCombat.attackSpec(move,isChase) : null);
+      if(move){
+        const hit=opponents.filter(v=>frame.targets.some(r=>r.cmd===kodek.CMD.ATTACK&&r.targetCamp===v.camp&&r.targetPos===v.pos&&(r.reportTargetStatus&ST.HIT)));
+        jiraiyaCombat.afterHit(chaseContext,actor,hit,move,frame.targets);
+      }
+      actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
+      return frame;
+    };
+    const frame=strike(u,target,spec);
+    if(chaseContext.barrierExpired){jiraiyaCombat.label(frame.targets,u,9);chaseContext.barrierExpired=false;}
+    if(spec && spec.summon) {
+      const records=narutoCombat.summon(u,allies);
+      if(records.length) frame.reactions.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:records});
+    }
+    actives.push(frame,...frame.reactions);
+    actives.push(...narutoCombat.resolve(chaseContext,u,target,frame,spec,(actor,victim,move)=>strike(actor,victim,move,true)));
+    const isMystery=spec?spec.prompt:frame.activeType===kodek.ACTIVE.SKILL;
+    const additional=isMystery?jiraiyaCombat.mysteryUsed(chaseContext,u,spec||{}):null;
+    appendDeaths(actives);
+    if(isMystery){
+      if(additional){jiraiyaCombat.label(frame.targets,u,1,2);perform(u,target,opponents,allies,actives,additional);}
+      const revived=jiraiyaCombat.revivals(chaseContext);
+      if(revived.length){
+        actives.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:revived.map(r=>r.record)});
+        for(const {unit} of revived){deathTriggered.delete(unit);const records=[];jiraiyaCombat.label(records,unit,7,30);actives.push(jiraiyaCombat.visual(unit,jiraiyaCombat.config.revival,records));}
+      }
+    }
+    return frame;
+  };
   for (let t = 1; t <= MAX_TUR; t++) {
+    narutoCombat.startRound(chaseContext,t);
     let arenaFinisher = 0;
     if (arenaRakip && t === MAX_TUR) {
       const hpRatio = team => {
@@ -1089,6 +1139,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       arenaFinisher = hpRatio(p2) > hpRatio(p1) ? 1 : 0;
     }
     const actives = t===1 ? [...initialActives] : [];
+    actives.push(...jiraiyaCombat.roundStart(chaseContext));
     for (const unit of p1.concat(p2)) {
       unit.battleRound=t;
       if(unit.hp<=0)continue;
@@ -1098,10 +1149,19 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
     actives.push(...heroSkills.startRound(p1.concat(p2)));
     appendDeaths(actives);
+    // Prompt mysteries execute ahead of standards and do not consume a standard.
+    for (const u of initiative(p1.concat(p2))) {
+      const opponents=u.camp===0?p2:p1,allies=u.camp===0?p1:p2;
+      const target=opponents.find(other=>other.hp>0 && !other.cloneOwner) || opponents.find(other=>other.hp>0);
+      if(!target) continue;
+      const spec=narutoCombat.useMystery(chaseContext,u);
+      if(spec) perform(u,target,opponents,allies,actives,spec);
+    }
     for (const u of initiative(p1.concat(p2))) {
       if (u.hp <= 0) continue;
+      if (u.cloneOwner || narutoCombat.disabled(u)) continue;
       if (['stun','fossilize','void','freeze'].some(field=>heroSkills.status(u,field))) continue;
-      const canSkill = u.skill && !heroSkills.status(u,'silence') && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
+      const canSkill = !narutoCombat.profile(u) && u.skill && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && !jiraiyaCombat.blocksMystery(chaseContext,u,null) && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
       if (!canSkill && heroSkills.status(u,'disarm')) continue;
       const ayakta = (u.camp === 0 ? p2 : p1).filter(x => x.hp > 0);
       const rakip = heroTalents.selectTargets(u, ayakta)[0];
@@ -1111,15 +1171,12 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const opponents = heroSkills.status(u,'chaos') ? allies.filter(other=>other!==u) : u.camp === 0 ? p2 : p1;
       if (!opponents.some(other=>other.hp>0)) continue;
       const target = heroSkills.status(u,'chaos') ? heroSkills.select(opponents,'random1')[0] : rakip;
-      const act = vurus(u, target, bitir, opponents, Math.random, false, allies);
-      // Sum all outgoing damage, including multi-target and aid results.
-      u.verdi = (u.verdi || 0) + act.targets.filter(target => target.targetCamp !== u.camp).reduce((sum, target) => sum + Math.max(0, Number(target.result.hurtHp) || 0), 0);
-      actives.push(act);
-      actives.push(...act.reactions);
-      appendDeaths(actives);
+      const spec=narutoCombat.standard(u,allies);
+      u.barrierMysteryBlocked=jiraiyaCombat.blocksMystery(chaseContext,u,null);
+      const act = perform(u,target,opponents,allies,actives,spec,bitir);
       // Combo is BASEATTRIBUTEINDEX_Punch (14), not a fixed global chance.
       // Extra attacks neither spend nor generate rage and never chain recursively.
-      if (act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && Math.random() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {
+      if (!spec && act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && Math.random() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {
         const next = heroTalents.selectTargets(u, opponents)[0];
         if (next) {
           const combo = vurus(u, next, false, opponents, Math.random, true, allies);
@@ -1145,6 +1202,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   SON_OYUNCU_HASARI = p1.reduce((sum, unit) => sum + (unit.verdi || 0), 0);
   SON_ISTATISTIK = kodek.encodeStatistics(p1.map(ist), p2.map(ist));
   return {
+    chaseTrace: chaseContext.trace,
+    chakra: chaseContext.chakra,
     payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1 }, player2: { roles: roles2 }, turns }),
     remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, rate: Math.max(0, unit.hp) / unit.maxHp })),
     won: arenaRakip

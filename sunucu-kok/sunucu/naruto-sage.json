@@ -1,0 +1,15 @@
+{
+  "heroId": 11120901,
+  "cloneId": 11120902,
+  "name": "Naruto [Sage Mode]",
+  "element": "wind",
+  "stars": 3,
+  "chakraPerRound": 20,
+  "balanceNote": "Damage multipliers, clone HP ratio and Lightning reduction are local tuning; the reference image does not specify them.",
+  "cloneHpRatio": 0.3,
+  "cloneLightningReduction": 0.5,
+  "mystery": {"id": 13120901, "name": "True Wind Style - Rasen Shuriken", "prompt": true, "element": "wind", "damageType": "mixed", "target": "all", "multiplier": 1.8, "combo": 10, "causes": "repulse", "chakraCost": 40, "cooldown": 2, "battlefieldCooldown": 1},
+  "standard": {"id": 13120902, "name": "Sage Jutsu Shadow Clone", "summon": true, "combo": 0, "multiplier": 0},
+  "barrage": {"id": 13120903, "name": "Sage Art - Rasengan Barrage", "damageType": "mixed", "multiplier": 1.2, "combo": 3, "causes": "lowFloat"},
+  "chases": [{"id": 13120904, "name": "Rasengan - Shoot down", "requires": "repulse", "causes": "knockdown", "damageType": "mixed", "multiplier": 1.2, "combo": 1, "maxPerRound": 1}]
+}
