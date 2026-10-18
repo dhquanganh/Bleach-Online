@@ -12,3 +12,7 @@ Test: `node sunucu-kok/sunucu/tests/hero-stars.test.js`.
 Build: `python sunucu-kok/cikarim/flash-hero-stars/build.py --ffdec PATH/ffdec.jar --install`. Compiles dependencies in order, verifies decompiled symbols and preserves non-code SWF tags; backs up the installed file. `--partner-only` resumes from the existing phase-1 SWF for a Partners-only correction and must only be used with the matching saved intermediate build.
 
 Restart server and game after installation. Actual interactive Flash rendering/clicking still requires manual verification.
+
+Star page visual refresh: warm charcoal and bronze card frames, original game button/background skins, centered partner names, framed character pedestals, a drawn gold star and prominent count, fragment progress bars, explicit missing/max/pending states, disabled page boundaries and button hover highlights. Native skins are rasterized once and reused across page renders. Layout stays within the existing 580×355 content area. Upgrade rules and packet payloads are unchanged. Rebuild just this window against the currently installed client with `--menu-only --install`.
+
+Installation also publishes the application under a fresh revision URL and updates `2026090619/version.swf`, which is the manifest actually used by the Flash loader. All other manifest entries are preserved. Updating only the canonical application does not update the manifest-selected copy. `loader.py` can republish an already compiled canonical application without recompiling it.

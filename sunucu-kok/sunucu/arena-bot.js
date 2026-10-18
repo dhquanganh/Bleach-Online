@@ -25,6 +25,7 @@ try {
   console.warn(`[arena] local character models unavailable: ${error.message}`);
 }
 function validRole(id) {
+  if(!require('./retired-heroes').allowed(id))return false;
   const role = roles.get(id);
   return !!role && localModels.has(Number(role.model) >>> 0);
 }

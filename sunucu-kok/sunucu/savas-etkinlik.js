@@ -316,13 +316,13 @@ function kur(y) {
   const gumus = n => n > 0 ? harca([{ type: 0, code: 0, amount: n }]) : true;
   const K = (kaydet, d) => { try { kaydet(d); } catch (e) {} };
   const killHeroResetLimit = () => {
-    const account = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'veri.json'), 'utf8'));
+    const account = JSON.parse(require('fs').readFileSync(require('./runtime-path')('veri.json'), 'utf8'));
     const vip = satir('VipConfig', Number(account.vipLevel) || 0);
     return vip ? Math.max(0, Number(vip.dailyChaReset) || 0) : 0;
   };
   const voidPush = d => ekSonra(0x01188b00, voidStatusPacket(d), 'VOID-status');
   const anaId = () => seviye.anaId() >>> 0;
-  const anaLv = () => { try { return seviye.anaDurum(JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'veri.json'), 'utf8'))).lv; } catch (e) { return 1; } };
+  const anaLv = () => { try { return seviye.anaDurum(JSON.parse(require('fs').readFileSync(require('./runtime-path')('veri.json'), 'utf8'))).lv; } catch (e) { return 1; } };
   const nick = d => d.nick || 'Shinigami';
   const gecerliOdul = list => (list || []).filter(a => a && (([1, 17, 21, 23].includes(a.type) && satir('Article', a.code)) || require('./envanter').odulTemplate(a.type, a.code)));
   const ver = (d, list) => { const l = gecerliOdul(list); if (l.length) odulVer(d, l); return l; };

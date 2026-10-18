@@ -391,46 +391,53 @@ package Processors.Game.Lobby.HeroChange
          while(_loc1_ < _loc2_)
          {
             _loc9_ = _loc6_.GetDatebaseByIndex(_loc1_) as THeroChangeAttr;
-            _loc8_ = new THeroChange();
-            _loc5_.length = 0;
-            this.FHeros.Clear();
-            _loc5_.push(_loc9_.Identifier);
-            this.FUnstreamizerCharacter.UnstreamizeGenerateHerosByIdentifiers(null,this.FHeros,_loc5_);
-            _loc8_.Hero = this.FHeros.GetHeroByIndex(0);
-            _loc8_.Hero.StubReferences.Reference(_loc8_);
-            _loc8_.HeroChangeAttr = _loc9_;
-            _loc4_ = int(_loc8_.HeroChangeAttr.HeroStar.length);
-            _loc3_ = 0;
-            while(_loc3_ < _loc4_)
+            if(!_loc9_.IsOpen && _loc9_.CityID == 0)
             {
-               _loc8_.PartnerChanges.push(SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_PartnerChange,_loc8_.HeroChangeAttr.HeroStar[_loc3_]));
-               _loc3_++;
+               _loc1_++;
             }
-            _loc12_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_City,_loc8_.HeroChangeAttr.CityID) as TCity;
-            _loc4_ = _loc12_.Last - _loc12_.Start + 1;
-            _loc3_ = 0;
-            while(_loc3_ < _loc4_)
+            else
             {
-               _loc14_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_ChangeHeroPoint,_loc12_.Start + _loc3_) as TChangeHeroPoint;
-               if(_loc14_ == null)
+               _loc8_ = new THeroChange();
+               _loc5_.length = 0;
+               this.FHeros.Clear();
+               _loc5_.push(_loc9_.Identifier);
+               this.FUnstreamizerCharacter.UnstreamizeGenerateHerosByIdentifiers(null,this.FHeros,_loc5_);
+               _loc8_.Hero = this.FHeros.GetHeroByIndex(0);
+               _loc8_.Hero.StubReferences.Reference(_loc8_);
+               _loc8_.HeroChangeAttr = _loc9_;
+               _loc4_ = int(_loc8_.HeroChangeAttr.HeroStar.length);
+               _loc3_ = 0;
+               while(_loc3_ < _loc4_)
                {
+                  _loc8_.PartnerChanges.push(SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_PartnerChange,_loc8_.HeroChangeAttr.HeroStar[_loc3_]));
+                  _loc3_++;
                }
-               _loc8_.ChangeHeroPoints.push(_loc14_);
-               _loc3_++;
+               _loc12_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_City,_loc8_.HeroChangeAttr.CityID) as TCity;
+               _loc4_ = _loc12_.Last - _loc12_.Start + 1;
+               _loc3_ = 0;
+               while(_loc3_ < _loc4_)
+               {
+                  _loc14_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_ChangeHeroPoint,_loc12_.Start + _loc3_) as TChangeHeroPoint;
+                  if(_loc14_ == null)
+                  {
+                  }
+                  _loc8_.ChangeHeroPoints.push(_loc14_);
+                  _loc3_++;
+               }
+               _loc10_ = _loc11_.GetHeroByIdentifier(_loc8_.Hero.Identifier);
+               if(_loc10_ != null)
+               {
+                  _loc8_.Hero.ChangeSchedule = _loc10_.ChangeSchedule;
+               }
+               _loc7_ = this.FHeroChangeData.AllHeroRegistry.GetInstanceByIdentifier(_loc9_.TabIndex) as Vector.<THeroChange>;
+               if(_loc7_ == null)
+               {
+                  _loc7_ = new Vector.<THeroChange>();
+                  _loc13_.AllHeroRegistry.Register(_loc9_.TabIndex,_loc7_);
+               }
+               _loc7_.push(_loc8_);
+               _loc1_++;
             }
-            _loc10_ = _loc11_.GetHeroByIdentifier(_loc8_.Hero.Identifier);
-            if(_loc10_ != null)
-            {
-               _loc8_.Hero.ChangeSchedule = _loc10_.ChangeSchedule;
-            }
-            _loc7_ = this.FHeroChangeData.AllHeroRegistry.GetInstanceByIdentifier(_loc9_.TabIndex) as Vector.<THeroChange>;
-            if(_loc7_ == null)
-            {
-               _loc7_ = new Vector.<THeroChange>();
-               _loc13_.AllHeroRegistry.Register(_loc9_.TabIndex,_loc7_);
-            }
-            _loc7_.push(_loc8_);
-            _loc1_++;
          }
       }
       

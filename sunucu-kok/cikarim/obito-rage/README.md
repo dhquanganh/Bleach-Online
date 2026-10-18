@@ -26,6 +26,12 @@ All damaging Obito moves scale from **Physical ATK**, including Roots, Chaos and
 
 The component probe records `powerLayers` separately and captures `HIT-*` screenshots at the damage marker as well as cast/impact pictures.
 
+## Standard playback repair
+
+The saved Tower of Gold battle report was checked separately from the animation: Obito already produced two damaging Standards per round. The source A_1hit/A_2hit choreography contains an invisible teleport interval and a fixed horizontal travel offset. Keeping that offset while the caster stays at its formation position makes the strike appear away from the report target. The client repair positions the visible strike beside the actual enemy in both camps, then restores the source idle frame. Both Standard skill IDs are explicitly classified as attacks; a Standard reaching `PlaySkill` is redirected to `PlayAttack` instead of the Kamui sequence-zero fallback. Damage, hit frames, cooldowns, HP costs and Kamui protection remain unchanged.
+
+Run `repair-standard-client.py --ffdec PATH/ffdec.jar --install` against a current client without this repair. It preserves the other client patches and non-code assets, verifies the recompiled methods, backs up the client and publishes a fresh manifest-selected URL. Restart the game to load it; an already open battle retains its loaded client.
+
 - Two Standards per round. Lowest absolute HP target, unavoidable, bypasses defensive skills; base costs 5% max HP. High chance of Knockdown and Kamui Tag.
 - Base Kamui is a free-chakra Prompt with a 2-round cooldown, costs 10% max HP, can evade the next attack that round, and protects against defeat by the first five Standard/Chase attacks that round. It does not consume a Standard. HP costs retain at least 1 HP.
 - Below 50% HP, once per battle: enter persistent Rage and recover 50% max HP. Includes thresholds reached through direct hits, costs, reflection and round effects. Recovery respects existing healing restrictions.

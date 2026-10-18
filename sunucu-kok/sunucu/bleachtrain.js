@@ -146,7 +146,7 @@ function depo(durum) {
   return d;
 }
 function seviye() { try { return require('./seviye').anaDurum().lv; } catch { return 1; } }
-function vipSeviye() { try { const h = require('./harita'); return h.vipSinir(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).vipLevel); } catch { return 0; } }
+function vipSeviye() { try { const h = require('./harita'); return h.vipSinir(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).vipLevel); } catch { return 0; } }
 /** Bir gorevin guncel ilerlemesi (client AllNumber ile karsilastirir). */
 function ilerleme(durum, t) {
   const lv = seviye();

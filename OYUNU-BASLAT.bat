@@ -59,19 +59,11 @@ echo.
 echo  Sunucular baslatiliyor... (dil: %BLEACH_DIL%)
 netstat -ano -p tcp | findstr /R /C:":7420 .*LISTENING" >nul
 if errorlevel 1 start "Bleach Dosya Sunucusu" /min "%NODE%" "%~dp0sunucu-kok\serve.mjs" --ozel --fetch-missing
-netstat -ano -p tcp | findstr /R /C:":10025 .*LISTENING" >nul
-if errorlevel 1 start "Bleach Oyun Sunucusu" /min "%NODE%" "%~dp0sunucu-kok\sunucu\oyun-sunucu.js"
-netstat -ano -p tcp | findstr /R /C:":7421 .*LISTENING" >nul
-if errorlevel 1 start "Bleach Admin" /min "%NODE%" "%~dp0sunucu-kok\sunucu\admin.js"
 set /a WAIT_COUNT=0
 :BEKLE_SUNUCULAR
 netstat -ano -p tcp | findstr /R /C:":7420 .*LISTENING" >nul
 if errorlevel 1 goto CHO_SUNUCULAR
 netstat -ano -p tcp | findstr /R /C:":843 .*LISTENING" >nul
-if errorlevel 1 goto CHO_SUNUCULAR
-netstat -ano -p tcp | findstr /R /C:":10025 .*LISTENING" >nul
-if errorlevel 1 goto CHO_SUNUCULAR
-netstat -ano -p tcp | findstr /R /C:":7421 .*LISTENING" >nul
 if errorlevel 1 goto CHO_SUNUCULAR
 goto SUNUCULAR_HAZIR
 :CHO_SUNUCULAR
@@ -87,7 +79,7 @@ exit /b 1
 :SUNUCULAR_HAZIR
 
 echo  Oyun aciliyor, lutfen birkac saniye bekleyin...
-echo  (Admin panel: http://127.0.0.1:7421  -  ADMIN-PANEL.bat ile ac)
+echo  (Admin panel: http://127.0.0.1:7420/admin  -  ADMIN-PANEL.bat ile ac)
 echo  (Oyun icinde sag ustteki "Karakter Magazasi" dugmesiyle altinla karakter alinir)
 timeout /t 6 /nobreak >nul
 

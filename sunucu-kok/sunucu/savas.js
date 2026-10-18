@@ -9,7 +9,6 @@ const fs = require('fs');
 const path = require('path');
 const kodek = require('./kodek');
 const statlar = require('./statlar');
-const arenaBot = require('./arena-bot');
 const envanter = require('./envanter');
 const heroTalents = require('./hero-talents');
 const heroSkills = require('./hero-skills');
@@ -48,6 +47,7 @@ const enemyById = new Map(Enemy.map(e => [idNum(e.id), e]));
 
 // ---- kazanan hero sec (ana rol 11100001 tercih) ----
 function heroValid(h) {
+  if(h&&!require('./retired-heroes').allowed(idNum(h.id)))return false;
   if (!h) return false;
   const eff = tryParse(h.attackEffect); if (!eff) return false;
   const na = h.normalAttack, sk = h.active || h.skillId;
@@ -272,6 +272,7 @@ function efektSec(harita, tercih) {
 //        katsayiyla olceklendigi icin ekrandaki stat ile savas birebir ortusur.
 // Yoksa BaseHero sablonu + seviye buyumesi ile hesaplanir.
 function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
+  if(!require('./retired-heroes').allowed(id))return null;
   const h = heroById.get(id);
   if (!h) {
     const e = enemyById.get(id);
@@ -772,10 +773,16 @@ const rolBilgisi = u => ({
 });
 
 // Tek bir vurus (active) uret + HP/ofkeyi guncelle
+function validSkillTargets(u, opponents) {
+  if (!u.strictSkillTargets) return true;
+  const plan = heroSkills.get(u.skill);
+  return !plan || plan.healOnly || heroSkills.select(opponents, plan.target, () => 0, false).length > 0;
+}
 function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra = false, allies = [u], attackSpec = null) {
   const rebirth = require('./reincarnation');
   const talent = heroTalents.effect(u.id);
-  const skillAt = attackSpec ? attackSpec.activeType === kodek.ACTIVE.SKILL : !extra && !!u.skill && kabutoCombat.canMystery(u.kabutoContext||{round:u.battleRound||0},u) && !u.barrierMysteryBlocked && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && (u.anger >= 100 || talent.normalSkill);
+  let skillAt = attackSpec ? attackSpec.activeType === kodek.ACTIVE.SKILL : !extra && !!u.skill && kabutoCombat.canMystery(u.kabutoContext||{round:u.battleRound||0},u) && !u.barrierMysteryBlocked && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && (u.anger >= 100 || talent.normalSkill);
+  if (!attackSpec && skillAt && !validSkillTargets(u, opponents)) skillAt = false;
   const plan = !attackSpec && skillAt ? heroSkills.get(u.skill) : null;
   const eff = attackSpec ? attackSpec.id : skillAt ? (u.skillEffect || u.skill) : u.normal;
   const targets = [{ cmd: kodek.CMD.NONE, targetCamp: u.camp, targetPos: u.pos, reportTargetStatus: 0, result: {} }];
@@ -788,7 +795,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && !kabutoCombat.cursed(u) && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : obitoCombat.targets(attackSpec,hedef,opponents) || kabutoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
+  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : obitoCombat.targets(attackSpec,hedef,opponents) || kabutoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
   const hitTargets = [];
   // Spend rage before restoration: Urahara/Unohana recover it after casting.
@@ -955,12 +962,11 @@ function initiative(units) {
   return units.slice().sort((a,b) => heroSkills.value(b,'speed') - heroSkills.value(a,'speed') || a.camp-b.camp || a.pos-b.pos);
 }
 
-function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
-  SON_OYUNCU_HASARI = 0;
-  const ana = anaHero(); if (!ana || !ana.id) return null;
+function playerTeam(options = {}) {
+  const ana = anaHero(); if (!ana || !ana.id) return [];
   let kadro = {}, nick = '', durumK = {};
   try { const d = options.playerState || require('./durum').yukle() || {}; durumK = d; kadro = d.kadro || {}; nick = d.nick || ''; } catch (e) { }
-  let lv = 99; try { lv = Number(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).level) || 99; } catch (e) { }
+  let lv = 99; try { lv = Number(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).level) || 99; } catch (e) { }
   // Partnerlerin KENDI kalici seviyesi (seviye.js); kaydi yoksa ana seviye.
   const lvOf = id => { try { return require('./seviye').heroSeviye(durumK, id) || lv; } catch (e) { return lv; } };
 
@@ -979,7 +985,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const anaPos = Number(kadro[String(ana.id)]) > 0 ? Number(kadro[String(ana.id)]) : (ana.pos || 6);
   const anaStat = combatStat(ana.id, lv);
   const bas = heroBirim(ana.id, anaPos, lv, nick, anaStat || ana.stat, anaStat ? 1 : kOl(ana.id, lv));
-  if (!bas) return null;
+  if (!bas) return [];
   p1.push(bas);
   const selectedSkill = require('./beceri').ana(durumK);
   const selectedRow = SkillConfig.find(row=>idNum(row.id)===selectedSkill);
@@ -1012,6 +1018,18 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       unit.damageReduction = (unit.damageReduction || 0) + (bonus[19] || 0);
     }
   }
+  for (const unit of p1) {
+    unit.partnerSkills = partnerSkills.unlocked(durumK, unit.id);
+    unit.weaponSkills = weaponSkills.equipped(durumK, unit.id);
+  }
+  return p1;
+}
+
+function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
+  SON_OYUNCU_HASARI = 0;
+  const durumK = options.playerState || require('./durum').yukle() || {};
+  const p1 = playerTeam(options);
+  if (!p1.length) return null;
   if(options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
     const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
     for(const unit of p1){unit[field]=Math.min(1000000000,Math.round(unit[field]*factor));if(field==='maxHp')unit.hp=unit.maxHp;}
@@ -1022,7 +1040,9 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   // Arena botu varsa onun gercek kahraman kadrosunu, diger savaslarda stage dusmanlarini kullan.
   // Stage kadrosu bulunmayan diger modlarda varsayilan dusmana dusulur.
   const st = enemyOverride || (!arenaRakip && bpId ? stageDusmanlari(bpId) : null);
-  const p2 = arenaRakip
+  const p2 = arenaRakip && arenaRakip.units
+    ? arenaRakip.units.map(unit => ({ ...unit, camp: 1 }))
+    : arenaRakip
     ? arenaRakip.heroes.map((id, i) => {
       const pos = Array.isArray(arenaRakip.positions) ? arenaRakip.positions[i] : [1, 6, 11][i];
       const u = heroBirim(id, pos, arenaRakip.baseLevel || arenaRakip.level, null, null, 0, true);
@@ -1032,7 +1052,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }).filter(Boolean)
     : (st && st.birimler.length) ? st.birimler : [dusmanBirim(ENEMY, 6)];
   if (st) console.log(`[savas] stage ${bpId} "${st.ad}" -> ${p2.length} dusman: ${p2.map(u => u.id + '@pos' + u.pos).join(', ')}`);
-  if (arenaRakip) console.log(`[arena] ${arenaRakip.name} lv${arenaRakip.level} -> ${p2.length} hero, power x${arenaRakip.power}`);
+  if (arenaRakip) console.log(`[arena] ${arenaRakip.name} lv${arenaRakip.level} -> ${p2.length} hero${arenaRakip.units ? ' (saved account)' : ', power x' + arenaRakip.power}`);
 
   if (options.scaleEnemy !== false && !worldMapLevel(bpId)) {
     const denge = dengele(p1, p2, arenaRakip ? arenaRakip.power : 1, !!st && !arenaRakip);
@@ -1082,6 +1102,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (Number.isFinite(rate)) unit.hp = Math.max(0, Math.round(unit.maxHp * Math.max(0, Math.min(100, rate)) / 100));
     }
   }
+  for (const unit of p1.concat(p2)) unit.strictSkillTargets = !!options.strictSkillTargets;
   narutoCombat.prepareClones([p1,p2]);
   const chaseContext = narutoCombat.create([p1,p2], {random:options.random});
   kabutoCombat.prepare([p1,p2],chaseContext);
@@ -1213,7 +1234,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (u.hp <= 0) continue;
       if (u.cloneOwner || u.auxiliary || narutoCombat.disabled(u)) continue;
       if (['stun','fossilize','void','freeze'].some(field=>heroSkills.status(u,field))) continue;
-      const canSkill = !narutoCombat.profile(u) && u.skill && kabutoCombat.canMystery(chaseContext,u) && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && !jiraiyaCombat.blocksMystery(chaseContext,u,null) && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
+      const canSkill = !narutoCombat.profile(u) && u.skill && validSkillTargets(u, u.camp === 0 ? p2 : p1) && kabutoCombat.canMystery(chaseContext,u) && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && !jiraiyaCombat.blocksMystery(chaseContext,u,null) && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
       if(!canSkill&&!kabutoCombat.canStandard(chaseContext,u))continue;
       if (!canSkill && heroSkills.status(u,'disarm')) continue;
       const ayakta = (u.camp === 0 ? p2 : p1).filter(x => x.hp > 0);
@@ -1406,9 +1427,10 @@ function stageOdulleri(bpId) {
 }
 
 // fight istegine karsilik gonderilecek frame'ler: [{id,payload}, ...]
-// Arena istegi kendi secili botunu, diger savas istekleri ilgili stage dusmanini kurar.
+// Arena resolves a real saved account; other requests resolve their own stage.
 let sonStage = 0;   // GoldFastAutoBattle payload'i sadece [u8] -> en son girilen stage kullanilir
 function fightFrames(reqId, payload, durum = null) {
+  if ((reqId >>> 0) === 0x01811904) return require('./arena-real').frames(payload);
   SON_ISTATISTIK = null;
   const heroChangeFight = (reqId >>> 0) === HERO_CHANGE_FIGHT_REQ;
   const heroChangeStage = heroChangeFight ? heroChangeStageId(payload, durum) : 0;
@@ -1432,14 +1454,7 @@ function fightFrames(reqId, payload, durum = null) {
   }
   const stageBattle = !!stageById(bpId);
   if (bpId && !heroChangeFight) sonStage = bpId;
-  const durumArena = (reqId >>> 0) === 0x01811904 ? require('./durum').yukle() : null;
-  const arenaRakip = (reqId >>> 0) === 0x01811904
-    ? arenaBot.selected(
-      payload,
-      require('./seviye').anaDurum().lv,
-      arenaBot.playerHeroes(durumArena, require('./seviye').anaId())
-    )
-    : null;
+  const arenaRakip = null;
   // 1) Oyuncunun kendi kadrosu varsa ondan uret (Formation savasa yansisin)
   try {
     const worldMapStage = blockById.has(bpId);
@@ -1577,5 +1592,5 @@ module.exports = {
   instanceStageWon, stageAssessment, stageNextLayer, stageCityType, raidersDailyStageId,
   isRaidersDailyCity, skyTowerStageId, stageOdulleri, kadroRapor, sonIstatistik,
   heroChangeStageId, heroChangeFragmentId, syncHeroChangeInfo, heroChangeInfoPacket, heroChangeAttempt, heroChangeWon,
-  heroChangeReset, heroChangeOneKey, HERO, ENEMY,
+  heroChangeReset, heroChangeOneKey, playerTeam, HERO, ENEMY,
 };

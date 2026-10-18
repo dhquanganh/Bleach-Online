@@ -121,7 +121,7 @@ function simulateBotDuel(a,b,playerState) {
 }
 function service() {
   if(singleton)return singleton;
-  const file=path.join(__dirname,'battlefield-runtime.json'),auditFile=path.join(__dirname,'battlefield-audit.jsonl');
+  const file=require('./runtime-path')('battlefield-runtime.json'),auditFile=require('./runtime-path')('battlefield-audit.jsonl');
   let world;if(fs.existsSync(file))world=JSON.parse(fs.readFileSync(file,'utf8'));
   const roster=require('./cross-server-bots').all().map(b=>({id:b.id,name:'Bot '+b.id+' '+b.name.replace('Bot ','').split(' #')[0].slice(0,16),hero:b.heroes[0],power:b.power}));
   const arena=engine.create({world,bots:roster,

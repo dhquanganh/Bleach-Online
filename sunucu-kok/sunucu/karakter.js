@@ -74,7 +74,7 @@ function olustur(durum, payload) {
     for (const kk of Object.keys(durum.kadro || {})) if (anaRol(Number(kk)) && (Number(kk) >>> 0) !== id) delete durum.kadro[kk];
     if (durum.seviye && durum.seviye.herolar) for (const kk of Object.keys(durum.seviye.herolar)) if (anaRol(Number(kk))) delete durum.seviye.herolar[kk];
     try {                                      // veri.json.nick (admin paneli / diger moduller)
-      const VJ = path.join(__dirname, 'veri.json');
+      const VJ = require('./runtime-path')('veri.json');
       const v = JSON.parse(fs.readFileSync(VJ, 'utf8')); v.nick = ad; fs.writeFileSync(VJ, JSON.stringify(v, null, 2));
     } catch (e) {}
     return { hata: 0, paket: ret(0), karakter: durum.karakter };

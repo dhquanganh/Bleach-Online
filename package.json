@@ -1,0 +1,17 @@
+{
+  "name": "bleach",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node sunucu-kok/serve.mjs --ozel --fetch-missing",
+    "db:migrate": "node sunucu-kok/migrate-mongo.cjs",
+    "test:auth": "node --test sunucu-kok/auth.test.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongodb": "^6.21.0"
+  }
+}

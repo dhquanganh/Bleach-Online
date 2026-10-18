@@ -35,7 +35,7 @@ function service(options={}){
  const simulate=options.simulate||((d,b)=>require('./savas').illusionBattle(d,b));
  const bots=options.bots||(()=>require('./cross-server-bots').all());
  const random=options.random||Math.random;
- const currencyFile=options.currencyFile||path.join(__dirname,'veri.json');
+ const currencyFile=options.currencyFile||require('./runtime-path')('veri.json');
  function persist(ctx,next){ctx.kaydet(next);Object.assign(ctx.durum,next);}
  function credit(ctx){
   return require('./boss-reward-mail').enqueue(ctx,now(),currencyFile);

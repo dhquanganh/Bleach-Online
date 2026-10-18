@@ -548,7 +548,7 @@
         alt=""><span>Cửa hàng nhân vật</span></button>
     <button class="btn-k" id="btnVip" title="Altın yükle, VIP seviyesi yükselt (yükleme etkinliklerini tetikler)"><span
         style="font-size:22px;padding:0 6px">👑</span><span>VIP / Altın Yükle</span></button>
-    <button class="btn-k" id="btnArenaMatching" title="Ngẫu nhiên ghép trận với bot"><span class="arena-badge">⚔️</span><span>Arena Matching</span></button>
+    <button class="btn-k" id="btnArenaMatching" title="Thách đấu tài khoản thật"><span class="arena-badge">⚔️</span><span>Arena Matching</span></button>
   </div>
   <div id="arenaMatchingModal" role="dialog" aria-modal="true" aria-labelledby="arenaTitle">
     <section class="arena-window">
@@ -558,10 +558,10 @@
         </div>
         <div class="arena-controls">
           <span id="arenaStatus" aria-live="polite">Đang kiểm tra kết nối game…</span>
-          <button id="arenaRandom" type="button">Chọn bot ngẫu nhiên</button>
+          <button id="arenaRandom" type="button">Chọn đối thủ ngẫu nhiên</button>
         </div>
         <div style="padding:9px 16px;color:#a08a5a;font-size:11px;border-bottom:1px solid #3a2c18">
-          Chọn bot tại đây, sau đó mở Đấu trường trong game và bấm Challenge. Client phải tự bắt đầu trận để nhận và phát chiến báo đúng luồng.
+          Thách đấu đội hình đã lưu của tài khoản thật. Đối thủ có thể đang ngoại tuyến.
         </div>
         <div id="arenaBots" class="arena-bots"></div>
     </section>
@@ -629,12 +629,19 @@
     var base = location.origin + '/public/';
     var oturum = null;
     try { var x = new XMLHttpRequest(); x.open('GET', '/yerel/oturum.json', false); x.send(); if (x.status === 200) oturum = JSON.parse(x.responseText); } catch (e) { }
+    if (!oturum) location.replace('/login');
+    var originalFetch = window.fetch;
+    window.fetch = function (url, options) { options = options || {}; options.credentials = 'include'; return originalFetch.call(window, url, options).then(function (r) { if (r.status === 401) location.replace('/login'); return r; }); };
+    var accountBar = document.createElement('div');
+    accountBar.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:999999;background:#171522;color:#ffcd87;padding:8px 12px;border:1px solid #66503b;border-radius:7px;font:14px Arial';
+    var accountName = document.createElement('span'); accountName.textContent = oturum ? oturum.username + '  ' : ''; accountBar.appendChild(accountName);
+    var logoutButton = document.createElement('button'); logoutButton.textContent = 'Đăng xuất'; logoutButton.onclick = function () { logoutButton.disabled = true; fetch('/auth/logout', { method: 'POST' }).then(function (r) { if (!r.ok) throw new Error(); location.href = '/login'; }).catch(function () { logoutButton.disabled = false; alert('Chưa lưu được dữ liệu. Vui lòng thử lại.'); }); }; accountBar.appendChild(logoutButton); document.body.appendChild(accountBar);
     var dil = null;
     try { var y = new XMLHttpRequest(); y.open('GET', '/yerel/dil', false); y.send(); if (y.status === 200) dil = JSON.parse(y.responseText); } catch (e) { }
 
     if (!swfobject.hasFlashPlayerVersion('11.0.0')) {
       document.getElementById('uyari').textContent = 'Bu tarayıcıda Flash çalışmıyor. Oyun yalnız kendi Flash 22 çalışma zamanıyla (OYUNU-BASLAT.bat) açılır.';
-    } else {
+    } else if (oturum) {
       var flashvars = oturum || {
         gatewayIP: '127.0.0.1', gatewayPort: '10025', isCombin: '0', cdnRoot: base,
         username: 'yerel', flag: '1', isAdult: '1', time: String(Math.floor(Date.now() / 1000)),
@@ -667,7 +674,7 @@
     yerlestir();
 
     // ================= KARAKTER MAGAZASI =================
-    var ADMIN = 'http://127.0.0.1:7421';
+    var ADMIN = 'http://127.0.0.1:' + ((oturum && oturum.adminPort) || 7421);
     var VERI = null;
     var THIET_BI = null;
     var SHOP_TAB = 'hot';
@@ -925,7 +932,7 @@
     }
     function arenaYenile() {
       fetch(KONTROL + '/arena-matching/opponents').then(function (response) {
-        return response.json().then(function (data) { if (!response.ok || !data.ok) throw new Error(data.hata || 'Không tải được danh sách bot.'); return data; });
+        return response.json().then(function (data) { if (!response.ok || !data.ok) throw new Error(data.hata || 'Không tải được danh sách đối thủ.'); return data; });
       }).then(function (data) {
         arenaBots.textContent = '';
         data.opponents.forEach(function (bot) {
@@ -934,10 +941,10 @@
           var title = document.createElement('strong');
           title.textContent = bot.name;
           var details = document.createElement('p');
-          details.textContent = 'Cấp ' + bot.level + ' · Hạng ' + bot.ranking + ' · Sức mạnh ' + bot.power + ' · Form: ' + bot.formation + ' · Đội: ' + bot.heroes.map(function (id, index) { return '#' + id.toString(16).toUpperCase() + '@' + bot.positions[index]; }).join(', ');
+          details.textContent = 'Cấp ' + bot.level + ' · Vị trí danh sách ' + bot.ranking + ' · Đội hình ' + bot.heroes.length + ' nhân vật';
           var challenge = document.createElement('button');
           challenge.type = 'button';
-          challenge.textContent = 'Đấu bot này';
+          challenge.textContent = 'Thách đấu';
           challenge.addEventListener('click', function () { arenaChallenge({ id0: bot.id0, id1: bot.id1 }); });
           card.appendChild(title);
           card.appendChild(details);
@@ -945,6 +952,7 @@
           arenaBots.appendChild(card);
         });
         arenaReady(data.connected);
+        if (!data.opponents.length) { arenaBots.textContent = 'Chưa có tài khoản khác tạo nhân vật.'; arenaRandom.disabled = true; }
       }).catch(function (error) {
         arenaStatus.textContent = error.message || 'Không kết nối được máy chủ game.';
         arenaRandom.disabled = true;
@@ -962,7 +970,8 @@
       }).then(function (response) {
         return response.json().then(function (data) { if (!response.ok || !data.ok) throw new Error(data.hata || 'Không thể ghép trận.'); return data; });
       }).then(function (data) {
-        arenaStatus.textContent = 'Đã chọn ' + data.opponent.name + ' (cấp ' + data.opponent.level + '). Vào Đấu trường trong game rồi bấm Challenge để bắt đầu.';
+        arenaStatus.textContent = 'Đã bắt đầu trận với ' + data.opponent.name + '.';
+        arenaModal.classList.remove('acik');
       }).catch(function (error) {
         arenaStatus.textContent = error.message || 'Không thể kết nối máy chủ game.';
         arenaYenile();

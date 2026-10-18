@@ -488,7 +488,7 @@ function kur(y) {
   const esyaHarca = (durum, code, adet) => { if (!envanter.dus(durum, code, adet)) return false; esyaGuncelle(durum, code, 0); return true; };
   const esyaVer = (durum, code, adet, emit = ekSonra, insertNew = false) => { try { const missing = envanter.mevcut(durum, code) === 0; const ek = envanter.ekle(durum, [{ code, amount: adet }]); const p = envanter.kazancPaketi(durum, ek); if (p) emit(insertNew && missing ? OP_SEND : OP_NTF, p, 'EKIPMAN-kazanc'); } catch (e) { } };
   const kaydetS = (kaydet, durum) => { try { kaydet(durum); } catch (e) { } };
-  const heroLevel = (durum, heroId) => { try { const v = JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')); return (heroId >>> 0) === (seviye.anaId() >>> 0) ? seviye.anaDurum(v).lv : seviye.heroSeviye(durum, heroId, v); } catch (e) { return 1; } };
+  const heroLevel = (durum, heroId) => { try { const v = JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')); return (heroId >>> 0) === (seviye.anaId() >>> 0) ? seviye.anaDurum(v).lv : seviye.heroSeviye(durum, heroId, v); } catch (e) { return 1; } };
   const attrPush = (durum, heroId) => { const p = statPaketi(durum, heroId, heroLevel(durum, heroId)); if (p) ekSonra(OP_ATTR, p, 'EKIPMAN-stat'); };
   const hoguAttrPush = (durum, heroIds) => { for (const heroId of new Set(heroIds.filter(id => Number(id) > 0).map(id => Number(id) >>> 0))) attrPush(durum, heroId); };
   const mr = (durum, err, heroId, inst) => mountedResult(durum, err, heroId, inst, { ntf: i => ntf(durum, i) });

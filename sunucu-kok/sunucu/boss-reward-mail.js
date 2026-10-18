@@ -4,7 +4,7 @@ const clone=d=>JSON.parse(JSON.stringify(d));
 function save(ctx,next){ctx.kaydet(next);Object.assign(ctx.durum,next);}
 function currency(file){return JSON.parse(fs.readFileSync(file,'utf8'));}
 function atomic(file,data){const tmp=file+'.boss-mail-tmp';fs.writeFileSync(tmp,JSON.stringify(data,null,2));fs.renameSync(tmp,file);}
-function enqueue(ctx,now,file=path.join(__dirname,'veri.json')){
+function enqueue(ctx,now,file=require('./runtime-path')('veri.json')){
  const next=clone(ctx.durum),s=next.infiniteIllusion;if(!s)return false;
  const pending=s.payouts.filter(p=>!p.mailSent&&(!p.itemsDelivered||!p.goldDelivered));if(!pending.length)return false;
  const ledger=currency(file).illusionCredits||{},created=[];
@@ -24,7 +24,7 @@ function enqueue(ctx,now,file=path.join(__dirname,'veri.json')){
  save(ctx,next);return created.length?created:false;
 }
 function notification(m){const w=new Y().u32(0).u32(m.hi).u32(m.lo).utf(m.ad).utf(m.konu).utf(m.metin).u32(m.zaman).i8(m.okundu?1:0).u32(0).u16(m.ek.length);for(const [id,amount] of m.ek)w.u32(id).u32(amount);return w.done();}
-function claim(ctx,ids,file=path.join(__dirname,'veri.json')){
+function claim(ctx,ids,file=require('./runtime-path')('veri.json')){
  const next=clone(ctx.durum),s=next.infiniteIllusion,box=next.posta;
  const mails=(box&&box.gelen||[]).filter(m=>m.bossPayoutId&&ids.some(([hi,lo])=>hi===m.hi&&lo===m.lo));
  if(!mails.length)return {handled:[],updates:[]};

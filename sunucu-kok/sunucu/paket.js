@@ -44,6 +44,7 @@ function tablo(ad) {
     try { liste = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'cikarim', 'veri-json-yedek', ad + '.json'), 'utf8')); } catch (e2) { liste = []; }
   }
   const byId = new Map();
+  liste = require('./retired-heroes').filterTable(ad,liste);
   for (const r of liste) { const id = parseInt(r.id, 16) >>> 0; r._id = id; byId.set(id, r); }
   const t = { ad, liste, byId, ids: [...byId.keys()] };
   TABLO.set(ad, t);

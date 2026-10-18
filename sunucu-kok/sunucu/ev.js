@@ -47,7 +47,7 @@ function kur(y) {
     }
     return 0;
   };
-  const veri = () => { try { return JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'veri.json'), 'utf8')); } catch (e) { return {}; } };
+  const veri = () => { try { return JSON.parse(require('fs').readFileSync(require('./runtime-path')('veri.json'), 'utf8')); } catch (e) { return {}; } };
   const anaLv = () => { try { return seviye.anaDurum(veri()).lv; } catch (e) { return 1; } };
   const vip = () => Number(veri().vipLevel) || 0;
   const gecerli = list => (list || []).filter(a => a && (([1, 17, 21, 23].includes(Number(a.type)) && satir('Article', a.code)) || envanter.odulTemplate(Number(a.type), Number(a.code))));

@@ -25,7 +25,7 @@ const statlar = require('./statlar');
 
 const ROOT = path.join(__dirname, '..');
 const TL = path.join(__dirname, 'zaman');
-const GATE_PORT = Number(process.env.BLEACH_PORT) || 10025, POLICY_PORT = 843;   // BLEACH_PORT: test icin ikinci ornek
+const GATE_PORT = Number(process.env.BLEACH_PORT) || 10025, POLICY_PORT = Number(process.env.BLEACH_POLICY_PORT) || 843;
 const olay = handlers.olay;
 const POLICY = '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>\0';
 
@@ -83,7 +83,7 @@ function injectAllHeroes(buf) {
 }
 
 function veri() {
-  try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')); }
+  try { return JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')); }
   catch { return { altin: 999999999, gumus: 999999999, gumusHigh: 0, kupon: 999999999, askeriEmir: 999999, vipLevel: 10, vipExp: 999999, level: 99 }; }
 }
 
@@ -110,6 +110,13 @@ function editChar(payload) {
   // Karakter yaratmada secilen isim + protagonist (nick UTF yeniden kurulur, ana hero id/meslek/beceri)
   const skipHeroFields = process.env.BLEACH_DIAGNOSTIC_SKIP_HERO_FIELDS === '1';
   let b = Buffer.from(payload);
+  if (process.env.BLEACH_ACCOUNT_DIR && dd && dd.agentUserId) {
+    const oldEnd = skipUTF(b, 8), user = Buffer.from(String(dd.agentUserId), 'utf8'), field = Buffer.alloc(2 + user.length);
+    field.writeUInt16BE(user.length); user.copy(field, 2);
+    b = Buffer.concat([b.subarray(0, 8), field, b.subarray(oldEnd)]);
+    const roleOffset = 8 + field.length;
+    b.writeUInt32BE(dd.roleIdHi >>> 0, roleOffset); b.writeUInt32BE(dd.roleIdLo >>> 0, roleOffset + 4);
+  }
   if (!skipHeroFields) {
     try { b = karakter.charYama(b, dd, harita.basicEnd); } catch (e) { console.log('  [char] karakter yama hatasi:', e.message); }
   }
@@ -285,10 +292,22 @@ setInterval(illusionRefresh,15000).unref();
 // === KONTROL HTTP (127.0.0.1:GATE_PORT+2, portatif 10027): launcher "VIP / Altin Yukle" ===
 // POST /topup {altin:N} -> veri.json altin/vipExp/vipLevel + durum.topup gunluk sayaci + canli client'a CharBaseInfoUpdate.
 // GET  /hesap -> {altin, vipLevel, vipExp, bugun}
-// GET  /arena-matching/opponents|status; POST /arena-matching/match {id0?, id1?} -> sonraki Arena istegi icin bot sec.
+// Arena uses an embedded result/report followed by FightOk, unlike PvE packets.
+function startArena(session, payload) {
+  const frames = require('./arena-real').frames(payload);
+  const report = frames.find(frame => frame.id === kodek.OP.REPORT);
+  const result = frames.find(frame => frame.id === kodek.OP.RESULT);
+  const state = durumMod.yukle();
+  olay.say(state, 'arenaFight', 1); durumMod.kaydet(state);
+  session.send(0x01181904, Buffer.concat([Buffer.alloc(4), result.payload, report.payload]), 'ARENA-result-report');
+  session.send(0x01181907, Buffer.alloc(4), 'ARENA-FightOk');
+}
+// POST /arena-matching/match starts the same native Arena flow as an in-game challenge.
 const KONTROL_PORT = GATE_PORT + 2;
 require('http').createServer((req, res) => {
-  const cors = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store' };
+  const authPath = new URL(req.url, 'http://localhost').pathname;
+  if (!require('./account-guard').guard(req, res, ['/topup', '/inventory-sync'].includes(authPath))) return;
+  const cors = { 'Access-Control-Allow-Origin': req.headers.origin || process.env.BLEACH_WEB_ORIGIN || 'http://127.0.0.1:7420', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store' };
   const json = (code, o) => { res.writeHead(code, { ...cors, 'content-type': 'application/json; charset=utf-8' }); res.end(JSON.stringify(o)); };
   if (req.method === 'OPTIONS') { res.writeHead(204, cors); return res.end(); }
   const u = new URL(req.url, 'http://x');
@@ -333,20 +352,7 @@ require('http').createServer((req, res) => {
     if (origin && !/^https?:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(origin)) return json(403, { ok: false, hata: 'Chỉ launcher trên máy này mới được phép truy cập.' });
     try {
       const level = seviye.anaDurum().lv;
-      const state = durumMod.yukle();
-      const arenaBot = require('./arena-bot');
-      const excluded = arenaBot.playerHeroes(state, seviye.anaId());
-      const opponents = arenaBot.build(level, excluded).map(bot => ({
-        id0: bot.id0,
-        id1: bot.id1,
-        name: bot.name,
-        level: bot.level,
-        ranking: bot.ranking,
-        power: bot.power,
-        heroes: bot.heroes,
-        positions: bot.positions,
-        formation: bot.formation,
-      }));
+      const opponents = require('./arena-real').list().map(({ units, accountId, ...row }) => row);
       const connected = loggedInClients().length;
       return json(200, { ok: true, playerLevel: level, connected, opponents });
     } catch (e) {
@@ -369,11 +375,8 @@ require('http').createServer((req, res) => {
         }
         const body = JSON.parse(b || '{}');
         if (!body || typeof body !== 'object' || Array.isArray(body)) return json(400, { ok: false, hata: 'Yêu cầu ghép trận không hợp lệ.' });
-        const level = seviye.anaDurum().lv;
-        const state = durumMod.yukle();
-        const arenaBot = require('./arena-bot');
-        const excluded = arenaBot.playerHeroes(state, seviye.anaId());
-        const opponents = arenaBot.build(level, excluded);
+        const opponents = require('./arena-real').list();
+        if (!opponents.length) return json(409, { ok: false, hata: 'Chưa có tài khoản khác tạo nhân vật để thách đấu.' });
         let opponent;
         if (body.id0 === undefined && body.id1 === undefined) {
           opponent = opponents[Math.floor(Math.random() * opponents.length)];
@@ -389,9 +392,8 @@ require('http').createServer((req, res) => {
         payload.writeUInt32BE(opponent.id0, 0);
         payload.writeUInt32BE(opponent.id1, 4);
         const session = connected[0];
-        session.pendingArenaOpponent = { id0: opponent.id0, id1: opponent.id1 };
-        LOG.note(session.cid, `Arena Matching queued: ${opponent.name} (lv ${opponent.level}); waiting for in-game Arena challenge`);
-        return json(200, { ok: true, queued: true, opponent: { name: opponent.name, level: opponent.level, ranking: opponent.ranking } });
+        startArena(session, payload);
+        return json(200, { ok: true, started: true, opponent: { name: opponent.name, level: opponent.level, ranking: opponent.ranking } });
       } catch (e) {
         return json(e instanceof SyntaxError ? 400 : 500, { ok: false, hata: e.message });
       }
@@ -420,6 +422,7 @@ net.createServer(client => {
 
   function send(id, payload, kaynak) { client.write(frame(id, payload)); LOG.s2c(cid, id, payload, kaynak || '?'); }
   const session = { cid, client, send, authenticated: false };
+  let accountVerified = false;
   CLIENTS.add(send);
   GAME_SESSIONS.add(session);
   client.on('close', () => { CLIENTS.delete(send); GAME_SESSIONS.delete(session); });
@@ -477,6 +480,12 @@ net.createServer(client => {
     const { packets, rest } = parseStream(buf);
     buf = rest;
     for (const pk of packets) {
+      if (process.env.BLEACH_ACCOUNT_DIR && !accountVerified) {
+        if ((pk.id >>> 0) === 0x01810001) {
+          if (!pk.payload.includes(Buffer.from(process.env.BLEACH_GAME_TOKEN || '\0invalid'))) { client.destroy(); return; }
+          accountVerified = true;
+        } else if (![0x01810000, 0x00000001].includes(pk.id >>> 0)) { client.destroy(); return; }
+      }
       pushBosalt();
       LOG.c2s(cid, pk);
       const reqHex = hx(pk.id);
@@ -806,20 +815,11 @@ net.createServer(client => {
               continue;
             }
           }
-          if ((pk.id >>> 0) === 0x01811904 && session.pendingArenaOpponent) {
-            const pending = session.pendingArenaOpponent;
-            const selectedPayload = Buffer.from(pk.payload);
-            if (selectedPayload.length < 8) {
-              LOG.note(cid, 'Arena Matching selection discarded: in-game challenge payload too short');
-            } else {
-              session.pendingArenaOpponent = null;
-              selectedPayload.writeUInt32BE(pending.id0, 0);
-              selectedPayload.writeUInt32BE(pending.id1, 4);
-              pk.payload = selectedPayload;
-              LOG.note(cid, `Arena Matching selected ${pending.id0.toString(16)}:${pending.id1.toString(16)} on in-game challenge`);
-            }
+          if ((pk.id >>> 0) === 0x01811904) {
+            try { startArena(session, pk.payload); }
+            catch (e) { const error = Buffer.alloc(4); error.writeUInt32BE(1); send(0x01181904, error, 'ARENA-rejected'); LOG.note(cid, e.message); }
+            continue;
           }
-          if ((pk.id >>> 0) === 0x01811904) { try { const dA = durumMod.yukle(); olay.say(dA, 'arenaFight', 1); durumMod.kaydet(dA); } catch (e) { } }
           if ((pk.id >>> 0) === 0x01810202 && pk.payload.length >= 4) { try { require('./moduller').sonHurdleAyarla(pk.payload.readUInt32BE(0)); } catch (e) { } }   // sandik paketi sehir tipine gore
           const respId = respIdFor(pk.id);
           if (respId !== null) {

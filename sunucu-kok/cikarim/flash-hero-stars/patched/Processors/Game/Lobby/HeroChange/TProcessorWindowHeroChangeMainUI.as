@@ -24,6 +24,8 @@ package Processors.Game.Lobby.HeroChange
    import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.text.TextFormat;
+   import flash.filters.DropShadowFilter;
+   import flash.geom.ColorTransform;
    public class TProcessorWindowHeroChangeMainUI extends TProcessorLobbyWindow
    {
       
@@ -33,6 +35,9 @@ package Processors.Game.Lobby.HeroChange
       public static var StarPending:Boolean = false;
       protected var StarPanel:Sprite;
       protected var StarTitle:TextField;
+      protected var StarEntry:Sprite;
+      protected var StarPanelSkin:BitmapData;
+      protected var StarButtonSkin:BitmapData;
       protected var StarModels:Array = [];
       protected var StarPage:int = 0;
       protected var StarMode:Boolean = false;
@@ -170,11 +175,12 @@ package Processors.Game.Lobby.HeroChange
          this.FLayerMask.x = -x;
          this.FLayerMask.y = -y;
          var starEntry:Sprite = new Sprite();
-         starEntry.graphics.lineStyle(1,0xC9973D);starEntry.graphics.beginFill(0x663710);starEntry.graphics.drawRoundRect(0,0,108,31,5);starEntry.graphics.endFill();
+         starEntry.addChild(this.StarNativeArt(true,108,31));
+         this.StarEntry=starEntry;this.StarEntry.alpha=0.8;
          starEntry.x=_loc2_["HeroTab3"].getBounds(this.FMainUI).x;starEntry.y=_loc2_["HeroTab3"].getBounds(this.FMainUI).bottom+9;
-         this.StarText(starEntry,"Nâng sao",17,5,95,14);starEntry.buttonMode=true;starEntry.mouseChildren=false;starEntry.addEventListener(MouseEvent.CLICK,this.ShowStars,false,0,true);this.FMainUI.addChild(starEntry);
+         this.StarLabel(starEntry,"Nâng sao",4,5,100,20,13,0xFFE7B0);starEntry.buttonMode=true;starEntry.mouseChildren=false;starEntry.addEventListener(MouseEvent.CLICK,this.ShowStars,false,0,true);this.FMainUI.addChild(starEntry);
          this.StarPanel=new Sprite();this.StarPanel.x=148;this.StarPanel.y=80;this.StarPanel.visible=false;addChild(this.StarPanel);
-         this.StarTitle=new TextField();this.StarTitle.defaultTextFormat=new TextFormat("Arial",13,0xFFD77D,true);this.StarTitle.text="Nâng sao  |  Mỗi sao +20% chỉ số";this.StarTitle.x=155;this.StarTitle.y=49;this.StarTitle.width=400;this.StarTitle.height=24;this.StarTitle.mouseEnabled=false;this.StarTitle.visible=false;addChild(this.StarTitle);
+         this.StarTitle=new TextField();this.StarTitle.defaultTextFormat=new TextFormat("Arial",13,0xFFD77D,true);this.StarTitle.text="NÂNG SAO TƯỚNG";this.StarTitle.x=160;this.StarTitle.y=49;this.StarTitle.width=400;this.StarTitle.height=24;this.StarTitle.mouseEnabled=false;this.StarTitle.visible=false;addChild(this.StarTitle);
          addEventListener(Event.ENTER_FRAME,this.StarTick,false,0,true);
          super.ResourcesPerform_UIDispatch();
       }
@@ -356,19 +362,66 @@ package Processors.Game.Lobby.HeroChange
       }
       protected function StarNativeArt(button:Boolean,w:Number,h:Number) : Bitmap
       {
-         var template:Sprite=TUtilityReflection.CreateDisplayObjectInstance("HeroChangeMainUI") as Sprite;
-         var area:Sprite=template["ChangeUI"] as Sprite;
-         var source:DisplayObject;
-         if(button){source=area["MC_Heros_0"]["Btn_OK"];this.HideStarSkinText(source as DisplayObjectContainer);}
-         else{
-            area["ChipPanle"].visible=false;area["PagePanel"].visible=false;
-            for(var i:int=0;i<3;i++)area["MC_Heros_"+i].visible=false;
-            source=area;
+         var image:BitmapData=button?this.StarButtonSkin:this.StarPanelSkin;
+         if(image==null){
+            var template:Sprite=TUtilityReflection.CreateDisplayObjectInstance("HeroChangeMainUI") as Sprite;
+            var area:Sprite=template["ChangeUI"] as Sprite;
+            var source:DisplayObject;
+            if(button){source=area["MC_Heros_0"]["Btn_OK"];this.HideStarSkinText(source as DisplayObjectContainer);}
+            else{
+               area["ChipPanle"].visible=false;area["PagePanel"].visible=false;
+               for(var i:int=0;i<3;i++)area["MC_Heros_"+i].visible=false;
+               source=area;
+            }
+            var rect:Rectangle=source.getBounds(source);
+            image=new BitmapData(Math.max(1,Math.ceil(rect.width)),Math.max(1,Math.ceil(rect.height)),true,0);
+            var matrix:Matrix=new Matrix();matrix.translate(-rect.x,-rect.y);image.draw(source,matrix);
+            if(button)this.StarButtonSkin=image;else this.StarPanelSkin=image;
          }
-         var rect:Rectangle=source.getBounds(source);
-         var image:BitmapData=new BitmapData(Math.max(1,Math.ceil(rect.width)),Math.max(1,Math.ceil(rect.height)),true,0);
-         var matrix:Matrix=new Matrix();matrix.translate(-rect.x,-rect.y);image.draw(source,matrix);
          var result:Bitmap=new Bitmap(image);result.width=w;result.height=h;result.smoothing=true;return result;
+      }
+      protected function StarLabel(root:Sprite,text:String,x:Number,y:Number,w:Number,h:Number=20,size:int=12,color:uint=0xE3CEA6,bold:Boolean=true,align:String="center") : TextField
+      {
+         var label:TextField=this.StarText(root,text,x,y,w,size,color);
+         label.height=h;label.defaultTextFormat=new TextFormat("Arial",size,color,bold,null,null,null,null,align);
+         label.text=text;label.filters=[new DropShadowFilter(1,90,0,0.9,2,2,1)];return label;
+      }
+      protected function StarGradient(root:Sprite,x:Number,y:Number,w:Number,h:Number,top:uint,bottom:uint,border:uint=0x725432) : void
+      {
+         var matrix:Matrix=new Matrix();matrix.createGradientBox(w,h,Math.PI/2,x,y);
+         root.graphics.lineStyle(1,border);root.graphics.beginGradientFill(GradientType.LINEAR,[top,bottom],[1,1],[0,255],matrix);
+         root.graphics.drawRect(x,y,w,h);root.graphics.endFill();
+      }
+      protected function StarDiamond(root:Sprite,x:Number,y:Number,r:Number=3,color:uint=0xD8AC62) : void
+      {
+         root.graphics.lineStyle(1,0x6E4E26);root.graphics.beginFill(color);
+         root.graphics.moveTo(x,y-r);root.graphics.lineTo(x+r,y);root.graphics.lineTo(x,y+r);root.graphics.lineTo(x-r,y);root.graphics.lineTo(x,y-r);root.graphics.endFill();
+      }
+      protected function StarGlyph(root:Sprite,x:Number,y:Number,r:Number=8) : void
+      {
+         root.graphics.lineStyle(1,0xA96F27);root.graphics.beginFill(0xF5CF6C);
+         for(var i:int=0;i<10;i++){
+            var angle:Number=-Math.PI/2+i*Math.PI/5;var radius:Number=i%2==0?r:r*0.45;
+            if(i==0)root.graphics.moveTo(x+Math.cos(angle)*radius,y+Math.sin(angle)*radius);
+            else root.graphics.lineTo(x+Math.cos(angle)*radius,y+Math.sin(angle)*radius);
+         }
+         root.graphics.lineTo(x,y-r);root.graphics.endFill();
+      }
+      protected function StarButton(root:Sprite,text:String,x:Number,y:Number,w:Number,h:Number,enabled:Boolean) : Sprite
+      {
+         var button:Sprite=new Sprite();button.x=x;button.y=y;button.addChild(this.StarNativeArt(true,w,h));
+         this.StarLabel(button,text,3,(h-20)/2,w-6,20,12,enabled?0xFFF0CA:0xB6AA94);
+         button.buttonMode=enabled;button.mouseChildren=false;button.alpha=enabled?1:0.6;
+         if(enabled){button.addEventListener(MouseEvent.ROLL_OVER,this.StarButtonOver,false,0,true);button.addEventListener(MouseEvent.ROLL_OUT,this.StarButtonOut,false,0,true);}
+         root.addChild(button);return button;
+      }
+      protected function StarButtonOver(e:MouseEvent) : void
+      {
+         Sprite(e.currentTarget).transform.colorTransform=new ColorTransform(1.14,1.1,1.04);
+      }
+      protected function StarButtonOut(e:MouseEvent) : void
+      {
+         Sprite(e.currentTarget).transform.colorTransform=new ColorTransform();
       }
       protected function StarBox(root:Sprite,x:Number,y:Number,w:Number,h:Number,color:uint) : void
       {
@@ -380,7 +433,7 @@ package Processors.Game.Lobby.HeroChange
       }
       protected function ShowStars(e:MouseEvent) : void
       {
-         this.StarMode=true;
+         this.StarMode=true;if(this.StarEntry!=null)this.StarEntry.alpha=1;
          for(var i:int=0;i<this.FFunctionWindow.length;i++)this.FFunctionWindow[i].Visible=false;
          for(i=0;i<3;i++)this.FMainUI["MainBoard"]["MC_Tab_"+i].visible=false;
          this.FBtnMakePill.Visible=false;this.StarPanel.visible=true;this.StarTitle.visible=true;
@@ -388,7 +441,7 @@ package Processors.Game.Lobby.HeroChange
       }
       protected function LeaveStars() : void
       {
-         if(!this.StarMode)return;this.StarMode=false;
+         if(!this.StarMode)return;this.StarMode=false;if(this.StarEntry!=null)this.StarEntry.alpha=0.8;
          if(this.StarPanel!=null)this.StarPanel.visible=false;
          if(this.StarTitle!=null)this.StarTitle.visible=false;
          this.FMainUI["MainBoard"]["MC_Tab_0"].visible=true;this.FMainUI["MainBoard"]["MC_Tab_1"].visible=true;this.FBtnMakePill.Visible=true;
@@ -404,28 +457,49 @@ package Processors.Game.Lobby.HeroChange
       protected function RenderStars() : void
       {
          while(this.StarPanel.numChildren>0)this.StarPanel.removeChildAt(0);this.StarPanel.graphics.clear();this.StarModels=[];
-         this.StarBox(this.StarPanel,0,0,580,355,0x111719);
-         this.StarPanel.addChild(this.StarNativeArt(false,580,320));
-         if(StarData==null){this.StarText(this.StarPanel,"Đang tải danh sách tướng...",20,20,350,15);return;}
+         this.StarPanel.addChild(this.StarNativeArt(false,580,355));
+         this.StarPanel.graphics.lineStyle(1,0x977346,0.8);this.StarPanel.graphics.drawRect(0,0,580,355);
+         this.StarLabel(this.StarPanel,"Mỗi sao +20% chỉ số  |  Tối đa 50 sao",25,1,530,19,11,0xC9B58F,false);
+         if(StarData==null){this.StarGlyph(this.StarPanel,290,135,19);this.StarLabel(this.StarPanel,"Đang tải danh sách tướng...",35,174,510,28,14);return;}
          var rows:Array=StarData.heroes as Array;var pages:int=Math.max(1,Math.ceil(rows.length/3));this.StarPage=Math.min(this.StarPage,pages-1);
-         if(rows.length==0)this.StarText(this.StarPanel,"Chiêu mộ tướng và thu thập mảnh để nâng sao.",20,80,530,15);
+         if(rows.length==0){
+            this.StarGlyph(this.StarPanel,290,125,24);
+            this.StarLabel(this.StarPanel,"CHƯA CÓ TƯỚNG NÂNG SAO",35,169,510,24,14,0xE7C988);
+            this.StarLabel(this.StarPanel,"Chiêu mộ tướng và thu thập mảnh để nâng sao.",35,204,510,40,12,0xC9B58F,false);
+         }
          for(var i:int=0;i<3;i++)
          {
             var index:int=this.StarPage*3+i;if(index>=rows.length)break;var hero:Object=rows[index];
-            var card:Sprite=new Sprite();card.x=8+i*190;card.y=8;card.graphics.lineStyle(1,0xA77B36,0.4);card.graphics.beginFill(0x080C0E,0.25);card.graphics.drawRect(0,0,182,310);card.graphics.endFill();this.StarPanel.addChild(card);
-            this.StarText(card,String(hero.name),8,8,167,12,0xF7C334);
-            var mount:Sprite=new Sprite();card.addChild(mount);var maskShape:Sprite=new Sprite();maskShape.graphics.beginFill(0);maskShape.graphics.drawRect(5,36,172,168);maskShape.graphics.endFill();card.addChild(maskShape);mount.mask=maskShape;
-            var model:TSceneSpriteMoudle=new TSceneSpriteMoudle();model.x=90;model.y=198;mount.addChild(model);
+            var maxed:Boolean=uint(hero.stars)>=50;var ready:Boolean=!maxed&&uint(hero.owned)>=uint(hero.cost);var enabled:Boolean=!StarPending&&ready;
+            var card:Sprite=new Sprite();card.x=9+i*190;card.y=24;this.StarPanel.addChild(card);
+            this.StarGradient(card,0,0,182,296,0x30281F,0x161411,ready?0xC79A4C:0x79603D);
+            card.graphics.lineStyle(1,0xC6A56C,0.18);card.graphics.drawRect(3,3,176,290);
+            this.StarGradient(card,5,5,172,33,0x52402A,0x2A221A,0x655034);
+            this.StarDiamond(card,6,6);this.StarDiamond(card,176,6);
+            this.StarLabel(card,String(hero.name),10,10,162,28,11,0xF3D58C);
+            var mount:Sprite=new Sprite();card.addChild(mount);var maskShape:Sprite=new Sprite();maskShape.graphics.beginFill(0);maskShape.graphics.drawRect(6,40,170,135);maskShape.graphics.endFill();card.addChild(maskShape);mount.mask=maskShape;
+            card.graphics.lineStyle(1,0xB18A4B,0.25);card.graphics.beginFill(0xD1A04D,0.06);card.graphics.drawEllipse(32,151,118,19);card.graphics.endFill();
+            card.graphics.lineStyle(1,0xD4B16E,0.35);card.graphics.drawEllipse(47,156,88,9);
+            var model:TSceneSpriteMoudle=new TSceneSpriteMoudle();model.x=90;model.y=170;model.scaleX=model.scaleY=0.82;mount.addChild(model);
             var query:TMoudleInfor=new TMoudleInfor();TUtilityTexture.QueryTwoDirectionShowCase(CONST_MAP.DIRECTION_RIGHT,uint(hero.id),query);model.ChangeRoleMoudle(query.TextureID,query.Scalx);this.StarModels.push(model);
-            this.StarText(card,"★ x "+hero.stars+" / 50",45,207,135,15,0xFFCA54);
-            this.StarText(card,"Chỉ số +"+(int(hero.stars)*20)+"%",40,229,145,11,0xA5DAB9);
-            this.StarText(card,hero.stars>=50?"Đã đạt sao tối đa":("Mảnh tướng: "+hero.owned+" / "+hero.cost),12,251,170,10,uint(hero.owned)>=uint(hero.cost)?0x96E7AD:0xFF8B79);
-            var button:Sprite=new Sprite();button.addChild(this.StarNativeArt(true,158,30));this.StarText(button,"Nâng sao",47,5,100,12,0xFFFFFF);button.x=12;button.y=274;button.name=String(hero.id);button.buttonMode=true;button.mouseChildren=false;
-            button.alpha=!StarPending&&hero.stars<50&&hero.owned>=hero.cost?1:0.45;button.addEventListener(MouseEvent.CLICK,this.StarUpgrade,false,0,true);card.addChild(button);
+            card.graphics.lineStyle(1,0x977346,0.55);card.graphics.moveTo(12,180);card.graphics.lineTo(170,180);this.StarDiamond(card,91,180,3);
+            this.StarGlyph(card,37,196,8);this.StarLabel(card,String(hero.stars),49,183,45,26,21,0xFFE098);
+            this.StarLabel(card,"/ 50 sao",96,191,69,20,11,0xBBA786,false,"left");
+            this.StarLabel(card,"Chỉ số +"+(int(hero.stars)*20)+"%",10,210,162,20,12,0xB7CD9B);
+            this.StarLabel(card,maxed?"ĐÃ ĐẠT CẤP SAO TỐI ĐA":"Mảnh tướng: "+hero.owned+" / "+hero.cost,6,232,170,19,10,maxed?0xE7C988:(ready?0xB7CD9B:0xC9B58F),false);
+            var ratio:Number=maxed?1:Math.min(1,Number(hero.owned)/Math.max(1,Number(hero.cost)));
+            this.StarGradient(card,13,252,156,5,0x15120F,0x211B14,0x655034);
+            if(ratio>0){card.graphics.lineStyle();card.graphics.beginFill(ready||maxed?0xCEAA58:0x897347);card.graphics.drawRect(14,253,154*ratio,3);card.graphics.endFill();}
+            var caption:String=StarPending?"Đang xử lý...":(maxed?"Đã tối đa":(ready?"Nâng sao":"Chưa đủ mảnh"));
+            var button:Sprite=this.StarButton(card,caption,12,264,158,27,enabled);button.name=String(hero.id);
+            if(enabled)button.addEventListener(MouseEvent.CLICK,this.StarUpgrade,false,0,true);
          }
-         var left:Sprite=new Sprite();var right:Sprite=new Sprite();this.StarBox(left,0,0,30,25,0x58351A);this.StarBox(right,0,0,30,25,0x58351A);this.StarText(left,"<",9,2,24,16);this.StarText(right,">",9,2,24,16);
-         left.x=205;right.x=345;left.y=right.y=324;left.buttonMode=right.buttonMode=true;left.mouseChildren=right.mouseChildren=false;left.name="previous";right.name="next";left.addEventListener(MouseEvent.CLICK,this.StarChangePage,false,0,true);right.addEventListener(MouseEvent.CLICK,this.StarChangePage,false,0,true);this.StarPanel.addChild(left);this.StarPanel.addChild(right);
-         this.StarText(this.StarPanel,(this.StarPage+1)+" / "+pages,255,328,80,12);
+         var left:Sprite=this.StarButton(this.StarPanel,"<",190,326,30,23,this.StarPage>0);
+         var right:Sprite=this.StarButton(this.StarPanel,">",360,326,30,23,this.StarPage<pages-1);
+         left.name="previous";right.name="next";
+         if(this.StarPage>0)left.addEventListener(MouseEvent.CLICK,this.StarChangePage,false,0,true);
+         if(this.StarPage<pages-1)right.addEventListener(MouseEvent.CLICK,this.StarChangePage,false,0,true);
+         this.StarLabel(this.StarPanel,"Trang "+(this.StarPage+1)+" / "+pages,224,328,132,20,11,0xDDC598);
       }
       protected function StarChangePage(e:MouseEvent) : void
       {

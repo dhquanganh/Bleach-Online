@@ -7,7 +7,7 @@ const path = require('path');
 const { Y, O, tablo, satir, json, cv, simdi, gunluk, rnd, sec } = require('./paket');
 const envanter = require('./envanter');
 
-const VERI = path.join(__dirname, 'veri.json');
+const VERI = require('./runtime-path')('veri.json');
 function veriOku() { try { return JSON.parse(fs.readFileSync(VERI, 'utf8')); } catch (e) { return {}; } }
 function veriYaz(v) { try { fs.writeFileSync(VERI, JSON.stringify(v, null, 2)); } catch (e) { } }
 function heroEkle(id) { const v = veriOku(); v.herolar = Array.isArray(v.herolar) ? v.herolar : []; if (!v.herolar.map(Number).includes(id)) { v.herolar.push(id); veriYaz(v); return true; } return false; }

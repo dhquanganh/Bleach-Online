@@ -7,6 +7,7 @@ import subprocess
 import zlib
 from datetime import datetime
 from pathlib import Path
+from loader import publish_client
 
 BASE = Path(__file__).resolve().parent
 CLIENT = BASE.parents[1] / 'kaynak/login.gogames.me/public/2026090619/TApplication.swf'
@@ -83,6 +84,8 @@ def main():
     assert 'StarUpgrade' in ui and 'StarPending' in ui
     assert '+20%' in ui and 'int(hero.stars) * 20' in ui
     assert 'StarUpgrade' in ui and 'StarStateUpdated' in ui
+    assert 'NÂNG SAO TƯỚNG' in ui and 'Chưa đủ mảnh' in ui and 'Mỗi sao +20%' in ui
+    assert 'StarGradient' in ui and 'StarGlyph' in ui and 'StarButtonSkin' in ui
     partner=(scripts/'Processors/Game/Lobby/HerosNew/TWindowShowHero.as').read_text(encoding='utf-8')
     assert 'StarCounts' in partner and 'StarBadge' in partner
     assert 'this.StarMarker.visible = true' in partner
@@ -102,6 +105,7 @@ def main():
         backup.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(CLIENT, backup)
         CLIENT.write_bytes(protected)
+        publish_client(protected)
         print('Installed:', CLIENT)
         print('Backup:', backup)
 

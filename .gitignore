@@ -1,5 +1,10 @@
 # Runtime lock files and Python bytecode
 .tools/
+node_modules/
+.env
+.env.*
+!.env.example
+.accounts/
 **/*.db-wal
 **/*.db-shm
 **/__pycache__/

@@ -4,8 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const DURUM_DOSYA = path.join(__dirname, 'oyuncu.json');
-const VERI = path.join(__dirname, 'veri.json');
+const DURUM_DOSYA = require('./runtime-path')('oyuncu.json');
+const VERI = require('./runtime-path')('veri.json');
 
 const VARSAYILAN = {
   agentUserId: '352354512635355',
@@ -47,12 +47,13 @@ function yukle() {
     fs.writeFileSync(DURUM_DOSYA,JSON.stringify(d,null,2));
   }
   if (v.nick) d.nick = v.nick;
-  return d;
+  return require('./retired-heroes').clean(d);
 }
 
 // Kalici yazim: once oyuncu.json (canli kaynak), ardindan oyun.db'ye AYNA.
 // DB aynasi best-effort: veritabani yoksa/kilitliyse oyun akisini ASLA bozmaz.
 function kaydet(d) {
+  d = require('./retired-heroes').clean(d);
   fs.writeFileSync(DURUM_DOSYA, JSON.stringify(d, null, 2));
   try {
     const db = require('./db');

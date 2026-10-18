@@ -11,6 +11,7 @@ function syncInventory() {
     const req = http.request({
       hostname: '127.0.0.1', port: (Number(process.env.BLEACH_PORT) || 10025) + 2,
       path: '/inventory-sync', method: 'POST', timeout: 2000
+      , headers: { 'x-bleach-internal': process.env.BLEACH_INTERNAL_SECRET || '' }
     }, res => {
       let body = '';
       res.on('data', chunk => body += chunk);
@@ -26,11 +27,11 @@ function syncInventory() {
   });
 }
 
-const PORT = 7421;
+const PORT = Number(process.env.BLEACH_ADMIN_PORT) || 7421;
 const ROOT = path.join(__dirname, '..');
-const VERI = path.join(__dirname, 'veri.json');
+const VERI = require('./runtime-path')('veri.json');
 const VARSAYILAN_DOSYA = path.join(__dirname, 'veri-varsayilan.json');
-const OYUNCU = path.join(__dirname, 'oyuncu.json');
+const OYUNCU = require('./runtime-path')('oyuncu.json');
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 
 function oku() { try { return JSON.parse(fs.readFileSync(VERI, 'utf8')); } catch { return {}; } }
@@ -193,7 +194,7 @@ function durum() {
   const v = oku();
   const net = require('net');
   const check = (port) => new Promise(res => { const s = net.connect(port, '127.0.0.1'); s.setTimeout(400); s.on('connect', () => { s.destroy(); res(true); }); s.on('error', () => res(false)); s.on('timeout', () => { s.destroy(); res(false); }); });
-  return Promise.all([check(10025), check(7420)]).then(([oyun, dosya]) => {
+  return Promise.all([check(Number(process.env.BLEACH_PORT) || 10025), check(7420)]).then(([oyun, dosya]) => {
     let doku = 0, png = 0;
     try { doku = walkCount(path.join(ROOT, 'kaynak'), '.texclient'); } catch { }
     try { png = walkCount(path.join(ROOT, 'cikarim', 'png'), '.png') + walkCount(path.join(ROOT, 'cikarim', 'png'), '.jpg'); } catch { }
@@ -353,7 +354,7 @@ function ikonBul(id, klasor) {
 }
 function apiIsle(req, res) {
   const u = new URL(req.url, 'http://x');
-  const cors = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store' };
+  const cors = { 'Access-Control-Allow-Origin': req.headers.origin || process.env.BLEACH_WEB_ORIGIN || 'http://127.0.0.1:7420', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Methods': 'GET,POST,OPTIONS', 'Access-Control-Allow-Headers': 'content-type', 'Cache-Control': 'no-store' };
   const json = (code, o) => { res.writeHead(code, { ...cors, 'content-type': 'application/json; charset=utf-8' }); res.end(JSON.stringify(o)); };
   if (req.method === 'OPTIONS') { res.writeHead(204, cors); return res.end(); }
   if (u.pathname === '/api/hesap') { const v = oku(); return json(200, { altin: Number(v.altin) || 0, gumus: Number(v.gumus) || 0, kupon: Number(v.kupon) || 0, level: Number(v.level) || 1, nick: v.nick || '', vipLevel: Number(v.vipLevel) || 0, sahip: [...sahipKumesi(v)] }); }
@@ -488,6 +489,9 @@ function apiIsle(req, res) {
 }
 
 http.createServer((req, res) => {
+  const pathname = new URL(req.url, 'http://localhost').pathname;
+  const shop = ['/shop', '/api/hesap', '/api/karakterler', '/api/thiet-bi', '/api/thiet-bi/ban', '/api/thiet-bi/mua', '/api/satin-al'].includes(pathname) || pathname.startsWith('/api/ikon/') || pathname.startsWith('/api/item-ikon/');
+  if (!require('./account-guard').guard(req, res, !shop)) return;
   if (req.url.startsWith('/api/')) { const r = apiIsle(req, res); if (r !== false) return; res.writeHead(404); return res.end('yok'); }
   if (req.url === '/') { res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' }); return res.end(page()); }
   if (req.url === '/shop') { res.writeHead(200, { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' }); return res.end(shopPage()); }
@@ -498,7 +502,7 @@ http.createServer((req, res) => {
 <style>body{font:15px system-ui;background:#0d0b09;color:#e8d9b5;margin:0;padding:24px}h1{color:#ffe3a3}button{background:linear-gradient(180deg,#b8892f,#7a5516);border:0;color:#fff5d6;border-radius:6px;padding:10px 14px;margin:4px;cursor:pointer;font-weight:600}#d{color:#ffd166;margin:12px 0}#m{color:#9fe3b5;min-height:24px}</style></head>
   <body><h1>👑 Nạp vàng / điểm VIP</h1><div id="d">Đang tải…</div><div id="t"></div><div><input id="o" type="number" min="1" placeholder="Số lượng tùy chỉnh"> <button onclick="y(document.getElementById('o').value)">Nạp</button></div><div id="m"></div>
   <p style="color:#a08a5a;font-size:12px">Thanh toán mô phỏng: cộng vàng và điểm VIP, đồng thời tính vào sự kiện nạp hằng ngày. Có hiệu lực ngay khi trò chơi đang chạy.</p>
-<script>var K='http://127.0.0.1:10027';var T=[100,500,1000,2000,5000,10000,30000,50000,100000,200000];function p(n){return Number(n||0).toLocaleString('tr-TR')}
+<script>var K='http://127.0.0.1:${(Number(process.env.BLEACH_PORT) || 10025) + 2}';var rawFetch=window.fetch;window.fetch=function(u,o){o=o||{};o.credentials='include';return rawFetch.call(window,u,o)};var T=[100,500,1000,2000,5000,10000,30000,50000,100000,200000];function p(n){return Number(n||0).toLocaleString('tr-TR')}
   function yaz(d){document.getElementById('d').innerHTML=d?'Vàng: <b>'+p(d.altin)+'</b> &nbsp; VIP <b>'+d.vipLevel+'</b> (điểm '+p(d.vipExp)+') &nbsp; Hôm nay: <b>'+p(d.bugun)+'</b>':'Máy chủ trò chơi đang tắt'}
 function r(){fetch(K+'/hesap').then(function(x){return x.json()}).then(yaz).catch(function(){yaz(null)})}
   function y(n){n=Math.floor(Number(n)||0);if(!(n>0))return;fetch(K+'/topup',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({altin:n})}).then(function(x){return x.json()}).then(function(d){document.getElementById('m').textContent=d.ok?'✓ Đã nạp '+p(n)+' vàng, VIP '+d.vipLevel:'✗ '+(d.hata||'Không thể thực hiện');yaz(d)}).catch(function(){document.getElementById('m').textContent='✗ Không kết nối được với máy chủ trò chơi'})}

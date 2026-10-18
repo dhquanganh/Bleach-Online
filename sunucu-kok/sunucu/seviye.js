@@ -32,7 +32,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const VERI = path.join(__dirname, 'veri.json');
+const VERI = require('./runtime-path')('veri.json');
 const HEROEXP = path.join(__dirname, '..', 'cikarim', 'veri-json', 'HeroExp.json');
 const BASE_HERO = path.join(__dirname, '..', 'cikarim', 'veri-json', 'BaseHero.json');
 const MAX_LV = 159;   // HeroExp 1..159; 160'da GetDatebase(HeroExp,160) null -> client NPE (VerificationHeroLevel)

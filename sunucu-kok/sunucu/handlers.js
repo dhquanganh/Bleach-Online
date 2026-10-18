@@ -27,7 +27,7 @@ const beceri = require('./beceri');
 const canta = require('./canta');
 const olay = require('./olay');
 const bleachtrain = require('./bleachtrain');
-const arenaBot = require('./arena-bot');
+const arenaReal = require('./arena-real');
 
 // Odul listesini ({type,code,amount}[]) GERCEKTEN ver: esyalar kalici envantere + InventoryNtf,
 // para birimleri hesaba + CharBaseInfoUpdate. Paketler ek kuyruguna (cevaptan sonra) yazilir.
@@ -87,7 +87,7 @@ function envanterPaketiEkleme(eklenen) {
 
 // Etkinlik sartlari oyuncu seviyesine bakiyor (or. Level Pack kademeleri 5..80).
 function oyuncuSeviyesi() {
-  try { return Number(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).level) || 1; }
+  try { return Number(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).level) || 1; }
   catch (e) { return 1; }
 }
 // Son odul alma sonucu: oyun-sunucu bunu okuyup AwardStatusChangeNotify + envanter paketlerini yollar.
@@ -112,7 +112,7 @@ function vipHesapla(vipExp) {
 }
 function topupUygula(miktar) {
   const n = Math.max(1, Math.floor(Number(miktar) || 0));
-  const yol = path.join(__dirname, 'veri.json');
+  const yol = require('./runtime-path')('veri.json');
   const v = JSON.parse(fs.readFileSync(yol, 'utf8'));
   v.altin = Math.min(PARA_TAVAN, (Number(v.altin) || 0) + n);
   v.vipExp = Math.min(PARA_TAVAN, (Number(v.vipExp) || 0) + n);
@@ -424,7 +424,7 @@ const byReq = {
   // Miktar VipConfig[vip].dailyChicket. Alindi bilgisi sayac KEY_VIP_ReceiveState=4 ile (login'de
   // Counter istegiyle okunur); gun degisince sifirlanir (durum.vipAlimGun).
   '0x01812200': ({ durum, kaydet }) => {
-    let vip = 0; try { const hh = require('./harita'); vip = hh.vipSinir(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).vipLevel); } catch (e) { }
+    let vip = 0; try { const hh = require('./harita'); vip = hh.vipSinir(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).vipLevel); } catch (e) { }
     if (vip <= 0) return hataKodu(1);
     const bugun = gunTarihi();
     if (durum.vipAlimGun === bugun) return hataKodu(1);
@@ -823,7 +823,8 @@ const byReq = {
     w.u32(0);
     w.u8(0); w.u16(0); w.u32(0);          // BoxType, BoxRanking, BoxLevel
     w.u8(5); w.u8(0); w.u32(0);           // FightTimes=5, AddTimes, ColdDown
-    w.u16(100); w.u16(100); w.u16(0);     // HighRanking, CurRanking, StreakWin
+    const ranking = arenaReal.rank();
+    w.u16(ranking); w.u16(ranking); w.u16(0); // HighRanking, CurRanking, StreakWin
     arenaHerolar(w, durum);
     w.u16(0);                              // rapor yok
     return w.done();
@@ -1177,8 +1178,7 @@ function odulBulKesin(tpl) {
 // Kisitlar: HeroId RoleModel'de, Military Military.json'da, Country >= 1, adet <= 8.
 function arenaHerolar(w, durum) {
   const utf = s => { const b = Buffer.from(String(s), 'utf8'); w.u16(b.length); w.raw(b); };
-  const level = seviye.anaDurum().lv;
-  const liste = arenaBot.build(level, arenaBot.playerHeroes(durum, seviye.anaId()));
+  const liste = arenaReal.list();
   w.u16(liste.length);
   for (const bot of liste) {
     w.u32(bot.id0); w.u32(bot.id1); w.u8(bot.country); w.u16(bot.ranking);
@@ -1376,14 +1376,14 @@ function starPointListe(ftype) {
 function anaFType() { return ({ 4: 1, 1: 2, 3: 3 })[anaProfession()] || 0; }
 // Ruhlar harcanabilir oldugu icin kalici durumda tutulur; ilk kez veri.json'dan tohumlanir.
 function ruhOku(durum) {
-  const v = JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8'));
+  const v = JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8'));
   const balance = Number(v.generalsSoul);
   if (!Number.isFinite(balance) || balance < 0) throw new Error('Soul balance is missing or invalid in veri.json');
   durum.generalsSoul = Math.floor(balance);
   return durum.generalsSoul >>> 0;
 }
 function ruhYaz(balance) {
-  const file = path.join(__dirname, 'veri.json');
+  const file = require('./runtime-path')('veri.json');
   try {
     const v = JSON.parse(fs.readFileSync(file, 'utf8'));
     v.generalsSoul = Math.max(0, Math.floor(Number(balance) || 0));
@@ -1407,7 +1407,7 @@ function anaProfession() {
 function soulPaketi(durum) {
   let s = NaN;
   if (durum && Number.isFinite(Number(durum.generalsSoul))) s = Number(durum.generalsSoul);
-  if (!Number.isFinite(s)) { try { s = Number(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).generalsSoul); } catch (e) { } }
+  if (!Number.isFinite(s)) { try { s = Number(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).generalsSoul); } catch (e) { } }
   if (!Number.isFinite(s)) s = 999999;
   return require('./harita').baseInfoUpdate([{ index: 4, v: s >>> 0 }]);
 }
@@ -1446,7 +1446,7 @@ function gunlukTablo() {
   return { DGB, DWR };
 }
 function anaSeviye() {
-  try { return Math.max(1, Math.min(Number(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).level) || 99, 160)); }
+  try { return Math.max(1, Math.min(Number(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).level) || 99, 160)); }
   catch (e) { return 99; }
 }
 // GetBack kalem -> DailyGetBackReward alan cifti (TDailyGetBackReward.Reward_Gold sirasi).
@@ -1520,7 +1520,7 @@ const PARA_TAVAN = 2000000000;   // u32 tasmasin
 // partnerler durum.seviye). ESKIDEN birikimli toplam delta diye yollaniyordu (exp katlaniyordu)
 // ve seviye hic hesaplanmiyordu.
 function paraIcinOdul(awards, durum = null) {
-  const yol = path.join(__dirname, 'veri.json');
+  const yol = require('./runtime-path')('veri.json');
   let v; try { v = JSON.parse(fs.readFileSync(yol, 'utf8')); } catch (e) { return null; }
   const guncel = [];
   // Reuse the handler state so its later save retains EXP, pending upgrades and inventory.
@@ -1555,7 +1555,7 @@ function paraIcinOdul(awards, durum = null) {
 // --- PARA HARCAMA: bedeli hesaptan dus (yetersizse null, hicbir sey degismez) ---
 // awards ayni bicim ({type,code,amount}); EXP harcanamaz. Donus: CharBaseInfoUpdate paketi.
 function paraHarca(awards) {
-  const yol = path.join(__dirname, 'veri.json');
+  const yol = require('./runtime-path')('veri.json');
   let v; try { v = JSON.parse(fs.readFileSync(yol, 'utf8')); } catch (e) { return null; }
   const kalemler = [];
   for (const a of (awards || [])) {
@@ -1576,7 +1576,7 @@ function paraHarca(awards) {
   return require('./harita').baseInfoUpdate(guncel);
 }
 function paraEksik(awards) {
-  const yol = path.join(__dirname, 'veri.json');
+  const yol = require('./runtime-path')('veri.json');
   let v; try { v = JSON.parse(fs.readFileSync(yol, 'utf8')); } catch (e) { return 0; }
   for (const a of (awards || [])) {
     const p = PARA[(a.type || 0) + ':' + (a.code || 0)];

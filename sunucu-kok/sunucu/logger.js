@@ -4,7 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DIR = path.join(__dirname, '..', 'yakala');
+const DIR = process.env.BLEACH_ACCOUNT_DIR ? path.join(process.env.BLEACH_ACCOUNT_DIR, 'logs') : path.join(__dirname, '..', 'yakala');
 try { fs.mkdirSync(DIR, { recursive: true }); } catch {}
 const LOG = path.join(DIR, 'sunucu-canli.log');
 const JL = path.join(DIR, 'sunucu-canli.jsonl');
@@ -38,7 +38,7 @@ function reset() {
 // TELEMETRI: her olay ayrica oyun.db'ye yazilir (sunucu/telemetri.js).
 // Tamamen best-effort — DB yoksa/hata verirse oyun akisi ETKILENMEZ.
 let T = null;
-try { T = require('./telemetri'); } catch (e) { T = null; }
+try { if (!process.env.BLEACH_ACCOUNT_DIR) T = require('./telemetri'); } catch (e) { T = null; }
 const tel = fn => { if (!T) return; try { fn(T); } catch (e) {} };
 
 function connOpen(id, peer) {
@@ -56,6 +56,7 @@ function connClose(id, reason) {
 
 // C2S paketi
 function c2s(id, pk) {
+  if (pk.id === 0x01810001) pk = { ...pk, payload: Buffer.from('[login token redacted]') };
   const c = conns[id] || (conns[id] = { up: 0, down: 0, packets: 0, opened: Date.now() });
   c.up += pk.payload.length; c.packets++;
   const key = id + ':' + pk.id;

@@ -56,6 +56,7 @@ function savascilar() {
   if (SAVASCI) return SAVASCI;
   SAVASCI = [];
   for (const r of jread('Tavern_Warrior.json', [])) {
+    if(!require('./retired-heroes').allowed(r.awardId))continue;
     let soul = { type: 3, value: 1 };
     try { const a = JSON.parse(r.awardsoul); if (a && a.type >= 3 && a.type <= 6) soul = { type: Number(a.type), value: Number(a.value) || 1 }; } catch (e) { }
     SAVASCI.push({
@@ -107,7 +108,7 @@ const VIP = new Map(jread('VipConfig.json', []).map(r => [num(r.id), r]));
 const MILITARY = new Map(jread('Military.json', []).map(r => [num(r.id), r]));
 const fail = (code = 1) => new W().u32(code).done();
 function accountRead(account) { return account || require('./seviye').veriOku(); }
-function accountSave(account, supplied) { if (!supplied) fs.writeFileSync(path.join(__dirname, 'veri.json'), JSON.stringify(account, null, 2)); }
+function accountSave(account, supplied) { if (!supplied) fs.writeFileSync(require('./runtime-path')('veri.json'), JSON.stringify(account, null, 2)); }
 function owned(id, durum, account) {
   return !!depo(durum).alinan[String(id)] || (account.herolar || []).map(Number).includes(id)
     || account.tumKarakterler === true || account.tumKarakterler === 'true';
@@ -270,7 +271,7 @@ function itemRecruitPaketi(heroId, durum, level) {
   if (d.alinan[String(id)]) return null;
 
   let v = {};
-  try { v = JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')); } catch (e) { }
+  try { v = JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')); } catch (e) { }
   if ((Array.isArray(v.herolar) && v.herolar.map(Number).includes(id)) || v.tumKarakterler === true || v.tumKarakterler === 'true') return null;
 
   d.alinan[String(id)] = 1;
@@ -282,7 +283,7 @@ function itemRecruitPaketi(heroId, durum, level) {
 /** Devsirilmis (kalici) partner id listesi. */
 function alinanlar(durum) {
   const d = (durum && durum.meyhane && durum.meyhane.alinan) || {};
-  return Object.keys(d).map(Number).filter(x => x > 0);
+  return Object.keys(d).map(Number).filter(x => x > 0 && require('./retired-heroes').allowed(x));
 }
 
 /** SC 0x01180c03 — exp karti degisimi (4B; client ruhu kendi dusuyor) */

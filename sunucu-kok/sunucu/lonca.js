@@ -85,7 +85,7 @@ function depo(durum) {
 }
 function oyuncu(durum) {
   let lv = 1; try { lv = require('./seviye').anaDurum().lv; } catch {}
-  let rutbe = 40100036; try { rutbe = Number(JSON.parse(fs.readFileSync(path.join(__dirname, 'veri.json'), 'utf8')).rutbe) || 40100036; } catch {}
+  let rutbe = 40100036; try { rutbe = Number(JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'), 'utf8')).rutbe) || 40100036; } catch {}
   return { id0: (durum.roleIdHi >>> 0) || 0x167, id1: (durum.roleIdLo >>> 0) || 0x04d18922, ad: durum.nick || 'Oyuncu', lv, rutbe, ulke: Number(durum.country) || 0 };
 }
 function logEkle(l, ozne, fiil, nesne, adet) { l.log.unshift({ ozne, fiil, nesne, zaman: Math.floor(Date.now() / 1000), adet: adet || 0 }); if (l.log.length > 30) l.log.length = 30; }

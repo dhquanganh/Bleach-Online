@@ -49,7 +49,7 @@ function buildMenu() {
       { label: 'Uzaklastir', accelerator: 'CmdOrCtrl+-', click: (i, w) => { const z = w.webContents.getZoomFactor ? w.webContents.getZoomFactor() : 1; w.webContents.setZoomFactor(Math.max(0.3, (z || 1) - 0.1)); } },
       { label: 'Zoom Sifirla', accelerator: 'CmdOrCtrl+0', click: (i, w) => w.webContents.setZoomFactor(1) },
       { type: 'separator' },
-      { label: 'Admin Paneli', click: () => shell.openExternal('http://127.0.0.1:7421/') },
+      { label: 'Admin Paneli', click: () => win && win.loadURL(START_URL + 'admin', { userAgent: UA }) },
       { label: 'DevTools', accelerator: 'F12', click: (i, w) => w && w.webContents.toggleDevTools() },
     ] },
   ]));

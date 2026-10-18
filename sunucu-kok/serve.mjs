@@ -9,6 +9,7 @@ import net from 'node:net';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import authService from './auth-service.cjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const SRC = path.join(ROOT, 'kaynak', 'login.gogames.me');
@@ -42,6 +43,13 @@ const MIME = {
 };
 const CROSSDOMAIN = '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>';
 const POLICY = '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>\0';
+const auth = OZEL ? await authService.startAuth(PORT) : null;
+if (auth) {
+  net.createServer(sock => { sock.on('error', () => {}); sock.once('data', () => sock.end(POLICY)); }).on('error', e => console.error('[policy]', e.code)).listen(843, '127.0.0.1');
+  let shuttingDown = false;
+  const shutdown = async () => { if (shuttingDown) return; shuttingDown = true; try { await auth.close(); process.exit(0); } catch (e) { console.error('[shutdown] Save failed; local journal retained'); process.exit(1); } };
+  process.on('SIGINT', shutdown); process.on('SIGTERM', shutdown);
+}
 
 const missLog = path.join(ROOT, 'eksik.log');
 const note = s => { console.log(s); fs.appendFileSync(missLog, `${new Date().toISOString()}\t${s}\n`); };
@@ -120,6 +128,11 @@ const readBody = req => new Promise((resolve, reject) => {
 
 http.createServer(async (req, res) => {
   const u = new URL(req.url, 'http://x');
+  if (auth) {
+    try { if (await auth.handle(req, res, u.pathname)) return; }
+    catch (e) { console.error('[request]', e.code || e.name); res.writeHead(503, { 'Content-Type': 'application/json; charset=utf-8' }); res.end(JSON.stringify({ error: 'Không thể tải dữ liệu nhân vật. Vui lòng thử lại.' })); return; }
+    if (u.pathname === '/yerel/oturum') { res.writeHead(403); res.end(); return; }
+  }
   const send = (code, body, type = 'application/octet-stream', cors = true) => {
     const headers = { 'Content-Type': type, 'Cache-Control': 'no-store' };
     if (cors) headers['Access-Control-Allow-Origin'] = '*';

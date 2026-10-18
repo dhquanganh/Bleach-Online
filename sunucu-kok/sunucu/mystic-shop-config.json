@@ -1706,45 +1706,6 @@
       "totalTimes": 2147483647
     },
     {
-      "id": 41120901,
-      "model": 1,
-      "heroID": 11120901,
-      "itemID": 14130901,
-      "number": 1,
-      "price": {
-        "type": 1,
-        "code": 14900001,
-        "amount": 100
-      },
-      "totalTimes": 2147483647
-    },
-    {
-      "id": 41120903,
-      "model": 1,
-      "heroID": 11120903,
-      "itemID": 14130903,
-      "number": 1,
-      "price": {
-        "type": 1,
-        "code": 14900001,
-        "amount": 100
-      },
-      "totalTimes": 2147483647
-    },
-    {
-      "id": 41120910,
-      "model": 1,
-      "heroID": 11120910,
-      "itemID": 14130910,
-      "number": 1,
-      "price": {
-        "type": 1,
-        "code": 14900001,
-        "amount": 100
-      },
-      "totalTimes": 2147483647
-    },
-    {
       "id": 41120920,
       "model": 1,
       "heroID": 11120920,

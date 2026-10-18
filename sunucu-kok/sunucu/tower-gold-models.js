@@ -7,6 +7,7 @@ for(const version of fs.readdirSync(publicRoot).filter(v=>/^\d+$/.test(v))){
  for(const f of fs.readdirSync(dir))if(/\.TexClient$/i.test(f)&&fs.statSync(path.join(dir,f)).size>0)files.add(f.toUpperCase());
 }
 function reason(heroId){
+ if(!require('./retired-heroes').allowed(heroId))return 'Removed character';
  if(blocked[String(heroId)])return blocked[String(heroId)];
  const role=satir('RoleModel',heroId);if(!role)return 'Missing RoleModel';
  const model=Number(role.model);if(!model)return 'Missing model identifier';

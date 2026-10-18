@@ -140,9 +140,9 @@ function kur(y) {
   const gumus = n => n > 0 ? harca([{ type: 0, code: 0, amount: n }]) : true;
   const K = (kaydet, d) => { try { kaydet(d); } catch (e) {} };
   const esyaHarca = (d, code, adet) => { if (!envanter.dus(d, code, adet)) return false; try { const g = envanter.guncellemePaketi(d, code, 0); if (g) ekSonra(g.id, g.payload, 'PET-esya'); } catch (e) {} return true; };
-  const anaLv = () => { try { return seviye.anaDurum(JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'veri.json'), 'utf8'))).lv; } catch (e) { return 1; } };
+  const anaLv = () => { try { return seviye.anaDurum(JSON.parse(require('fs').readFileSync(require('./runtime-path')('veri.json'), 'utf8'))).lv; } catch (e) { return 1; } };
   const kapasite = d => { const lv = anaLv(); const l = cv(60400007, [{ 30: 5 }, { 50: 10 }, { 70: 20 }, { 160: 20 }]); let k = 0; for (const o of l) for (const [lim, n] of Object.entries(o)) if (lv >= Number(lim)) k = Math.max(k, Number(n)); return k + depo(d).p.buyStore; };
-  const vip = () => { try { return Number(JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'veri.json'), 'utf8')).vipLevel) || 0; } catch (e) { return 0; } };
+  const vip = () => { try { return Number(JSON.parse(require('fs').readFileSync(require('./runtime-path')('veri.json'), 'utf8')).vipLevel) || 0; } catch (e) { return 0; } };
 
   // ---- Enter_Pet ----
   H['0x01810215'] = ({ durum, kaydet }) => {

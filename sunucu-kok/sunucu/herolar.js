@@ -27,7 +27,7 @@ function gecerliHerolar() {
   const out = [];
   for (const h of BaseHero) {
     const id = num(h.id);
-    if (!id || !roleSet.has(id)) continue;
+    if (!id || !roleSet.has(id) || !require('./retired-heroes').allowed(id)) continue;
     // ANA ROLLER (isMain=1, 11100001-11100006) enjekte EDILMEZ: bunlar oyuncunun
     // karakter-yaratmada sectigi protagonist slotlari. Ikinci bir "ana karakter"
     // eklenince client'in MainHero=index0 mantigi bozuluyor ve char paketi sonrasi donuyor.

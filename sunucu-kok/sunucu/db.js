@@ -19,7 +19,7 @@ function ac() {
   if (!fs.existsSync(DB_DOSYA)) {
     throw new Error('oyun.db yok — once kur: node cikarim/db-kur.js');
   }
-  db = new DatabaseSync(DB_DOSYA);
+  db = new DatabaseSync(DB_DOSYA, { readOnly: Boolean(process.env.BLEACH_ACCOUNT_DIR) });
   return db;
 }
 function kapat() { if (db) { try { db.close(); } catch (e) {} db = null; } }
@@ -91,6 +91,7 @@ function durumOku(bolum) {
   return o;
 }
 function durumYaz(bolum, obj) {
+  if (process.env.BLEACH_ACCOUNT_DIR) return; // Account snapshots are persisted to MongoDB by the supervisor.
   const d = ac();
   const st = d.prepare('INSERT OR REPLACE INTO durum (bolum,anahtar,deger) VALUES (?,?,?)');
   d.exec('BEGIN');
