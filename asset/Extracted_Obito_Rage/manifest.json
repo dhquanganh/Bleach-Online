@@ -1,0 +1,74 @@
+[
+  {
+    "file": "battle/effect/DTpugong.swf",
+    "bytes": 1181892,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/effect/DTpugong.swf",
+    "sha256": "2277289e9fcec07f82e34966fc2a142aba3f008a81409b3e05cd0f9f48411df0"
+  },
+  {
+    "file": "battle/effect/DT1shenwei.swf",
+    "bytes": 1549171,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/effect/DT1shenwei.swf",
+    "sha256": "f9933c569d9ac7b23662450710a3e586d460bb19402c069296ce6ef9c3ce1f51"
+  },
+  {
+    "file": "battle/effect/dtpg.swf",
+    "bytes": 2046588,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha6.80Build300/assets/battle/effect/dtpg.swf",
+    "sha256": "4ee92221aae1b26390f55a9100be1840e9e402a1181abe5e41af4fc8ca6f3f87"
+  },
+  {
+    "file": "battle/effect/DTzhuida.swf",
+    "bytes": 2133051,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/effect/DTzhuida.swf",
+    "sha256": "de5e6a5d794c5628897c0ea195262be47c7d0c75018f87a23b4bcd592a79e863"
+  },
+  {
+    "file": "battle/effect/DTbaozou.swf",
+    "bytes": 2171997,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/effect/DTbaozou.swf",
+    "sha256": "a92ed1f07bf1ae8f89db3811ff621ba40cad066e9463c3cc0e95a23af951e082"
+  },
+  {
+    "file": "battle/effect/DTaoyi.swf",
+    "bytes": 1802152,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/effect/DTaoyi.swf",
+    "sha256": "2575d0abaac36934dea0dba5afdb86afee6ec38845eb78cbe30f16f7b6680029"
+  },
+  {
+    "file": "bag/ninja/preview/11006051.png",
+    "bytes": 85423,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/bag/ninja/preview/11006051.png",
+    "sha256": "0f38589addfcc76ccbdb0a7a0fc59b0bf13dd8cf5fb77a636008020d66a8dbd4"
+  },
+  {
+    "file": "user/ninja/ninjaBigImg/11006051.png",
+    "bytes": 141017,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/user/ninja/ninjaBigImg/11006051.png",
+    "sha256": "857263d4fecac3ce0344645b85fa8e04fc9431f31296a1fc4efc28a6bad386ce"
+  },
+  {
+    "file": "user/ninja/ninjaImg/11006051.swf",
+    "bytes": 4938,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/user/ninja/ninjaImg/11006051.swf",
+    "sha256": "426faceb60b5510478c3233ce28495a03cd070b0bdc2ae09b494c7b608097e47"
+  },
+  {
+    "file": "battle/role/head_176_68/11006051.png",
+    "bytes": 10856,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/role/head_176_68/11006051.png",
+    "sha256": "489222819adf3c95dc27609017739917316bf867851f95266d6ad5a4c2651d71"
+  },
+  {
+    "file": "battle/role/head_45_45/11006051.png",
+    "bytes": 3890,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/role/head_45_45/11006051.png",
+    "sha256": "d68be2455abf1e02e5945ba56772096a376b44dece568eb0e410e9d728472cbc"
+  },
+  {
+    "file": "battle/role/left/11006051.swf",
+    "bytes": 931859,
+    "source_url": "https://cdnnarutoen-cst.oasgames.com/EN_NarutoAlpha7.10Build300/assets/battle/role/left/11006051.swf",
+    "sha256": "4251c05b7c0f58069822093c5995743e230a2084a9a4aaeefc390fd93c1a6789"
+  }
+]
