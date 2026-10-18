@@ -18,6 +18,7 @@ const weaponSkills = require('./weapon-skills');
 const narutoCombat = require('./naruto-combat');
 const jiraiyaCombat = require('./jiraiya-combat');
 const kabutoCombat = require('./kabuto-combat');
+const obitoCombat = require('./obito-combat');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 const REPLAY_DIR = path.join(__dirname, 'savas');
@@ -787,7 +788,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && !kabutoCombat.cursed(u) && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : kabutoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
+  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : obitoCombat.targets(attackSpec,hedef,opponents) || kabutoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,true)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
   const hitTargets = [];
   // Spend rage before restoration: Urahara/Unohana recover it after casting.
@@ -795,8 +796,15 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   if (!attackSpec) heroSkills.changeFury(u,extra ? 0 : skillAt ? (talent.normalSkill && u.anger < 100 ? 0 : -100) : 50,rageRecords);
   const triple = rebirth.proc(u, 2, random);
   const ignoreDefense = rebirth.proc(u, 5, random);
-  const castAttack = attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(u,'atk') + heroSkills.value(u,'magicAtk')) / 2 : attackSpec && attackSpec.damageType === 'ninjutsu' ? heroSkills.value(u,'magicAtk') : heroSkills.value(u,'atk');
+  // Offensive scaling is independent of the defense/resistance used by the move.
+  const castAttack = attackSpec && attackSpec.attackStat === 'atk' ? heroSkills.value(u,'atk') : attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(u,'atk') + heroSkills.value(u,'magicAtk')) / 2 : attackSpec && attackSpec.damageType === 'ninjutsu' ? heroSkills.value(u,'magicAtk') : heroSkills.value(u,'atk');
   for (const victim of victims) {
+    const bypass=attackSpec&&attackSpec.ignoreDefensiveSkills;
+    const kamuiProtected=!bypass&&obitoCombat.fatalLimit(victim,!skillAt);
+    if(!bypass&&obitoCombat.evade(victim,random)){
+      targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
+      continue;
+    }
     const chance = value => Math.max(0, Math.min(1, Number(value) || 0));
     const hitChance = chance((u.hitRate == null ? 1 : heroSkills.value(u,'hitRate')) - heroSkills.value(victim,'dodgeRate'));
     if (!bitir && !(attackSpec&&attackSpec.unavoidable) && !talent.guaranteedHit && hitChance < 1 && random() >= hitChance) {
@@ -804,7 +812,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       continue;
     }
     hitTargets.push(victim);
-    const resistance=(victim.resistance == null ? heroSkills.value(victim,'def') : victim.resistance)*Math.max(0,1-.1*(victim.jiraiyaResistanceStacks||0));
+    const resistance=(victim.resistance == null ? heroSkills.value(victim,'def') : heroSkills.value(victim,'resistance'))*Math.max(0,1-.1*(victim.jiraiyaResistanceStacks||0));
     const attack = castAttack, defense = (attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(victim,'def') + resistance) / 2 : attackSpec && attackSpec.damageType === 'ninjutsu' ? resistance : heroSkills.value(victim,'def')) * (1-Math.max(0,Math.min(1,heroSkills.value(u,'ignoreDefense'))));
     let dmg = Math.round(attack * (attackSpec ? attackSpec.multiplier : skillAt ? (plan ? plan.multiplier : 1.8) : (talent.normalMultiplier || 1)) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
     if(attackSpec&&attackSpec.superArmorBonus&&kabutoCombat.armor(victim))dmg=Math.round(dmg*(1+attackSpec.superArmorBonus));
@@ -812,24 +820,25 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const critical = !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate'));
     if (critical) dmg = Math.round(dmg * Math.max(0,1.5+heroSkills.value(u,'critDamage')));
     const breakDefense = chance(heroSkills.value(u,'wreckRate')) > 0 && random() < chance(heroSkills.value(u,'wreckRate'));
-    if (defense > 0 && !ignoreDefense && !breakDefense) dmg = Math.round(dmg * attack / Math.max(1,attack + defense));
-    const blocked = chance(heroSkills.value(victim,'blockRate')) > 0 && random() < chance(heroSkills.value(victim,'blockRate'));
+    if (defense > 0 && !ignoreDefense && !breakDefense) dmg = Math.round(dmg * attack / Math.max(1,attack + defense*(1-chance(attackSpec&&attackSpec.ignoreDefense))));
+    const blocked = !bypass && chance(heroSkills.value(victim,'blockRate')) > 0 && random() < chance(heroSkills.value(victim,'blockRate'));
     if (blocked) dmg = Math.round(dmg * .5);
     dmg = Math.max(1, dmg);
     if (bitir) dmg = Math.max(dmg, victim.hp);
     dmg = Math.max(0, Math.round(dmg * Math.max(0, 1 + heroSkills.value(u,'damageBonus')) * (1 - chance(heroSkills.value(victim,'damageReduction'))) * Math.max(0,1+heroSkills.value(victim,'vulnerability')) * weaponSkills.damageMultiplier(u,victim) * (u.damageMultiplier == null ? 1 : Math.max(0, u.damageMultiplier))));
-    if (heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void')) dmg = 0;
+    if (!bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'))) dmg = 0;
     if (u.maxHitDamage) dmg = Math.min(u.maxHitDamage, dmg);
     // Local aid rule: a living ally with Help rate intercepts half a normal hit.
     // Both HP changes are transmitted, so rendered HP and server HP stay equal.
-    const helper = !skillAt && !extra && !bitir && opponents.find(other => other !== victim && !victims.includes(other) && other.camp === victim.camp && other.hp > 0 && !heroSkills.status(other,'invincible') && chance(heroSkills.value(other,'helpRate')) > 0 && random() < chance(heroSkills.value(other,'helpRate')));
+    const helper = !bypass && !skillAt && !extra && !bitir && opponents.find(other => other !== victim && !victims.includes(other) && other.camp === victim.camp && other.hp > 0 && !heroSkills.status(other,'invincible') && chance(heroSkills.value(other,'helpRate')) > 0 && random() < chance(heroSkills.value(other,'helpRate')));
     if (helper) {
       const shared = Math.floor(dmg / 2); dmg -= shared;
       const aided = rebirth.hit(u, helper, Math.round(shared * (1 - chance(heroSkills.value(helper,'damageReduction')))), random);
       appendHit(targets,helper,aided,ST.TARGET_EFFECT | ST.HIT | ST.HELP | (helper.hp<=0?ST.DIED:0));
     }
-    const immune = heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void');
-    const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random);
+    const immune = !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'));
+    if(kamuiProtected)dmg=Math.min(dmg,Math.max(0,victim.hp-1));
+    const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,kamuiProtected);
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
     appendHit(targets,victim,result,status);
     if(result.kabutoProtected)kabutoCombat.label(targets,victim,17,50);
@@ -838,7 +847,8 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if (victim.hp > 0 && !immune) partnerSkills.trigger('hit',victim,opponents,allies,[u],passiveRecords,random);
     if (passiveRecords.length) reactions.push({activeCamp:victim.camp,activePos:victim.pos,skillEffectId:0,activeType:4,targets:passiveRecords});
     if (heroSkills.status(victim,'freeze') && result.damage > 0) heroSkills.removeField(victim,'freeze',targets);
-    if (heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
+    reactions.push(...obitoCombat.checkRage(victim));
+    if (!bypass && heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
       let reflected = Math.min(u.hp,result.damage);
       const protection=kabutoCombat.protectFatal(u,reflected);
       if(protection)reflected=protection.damage;
@@ -896,14 +906,14 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   // Rasen Shuriken applies reflected damage after its animation completes.
   // Killing the caster inside its own impact effect sets FIsDie before Flash
   // can invoke the skill completion callback, permanently stopping the report.
-  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || kabutoCombat.profile(u))) {
+  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || kabutoCombat.profile(u) || obitoCombat.isObito(u))) {
     const reflected=targets.filter(row=>row.cmd===kodek.CMD.ATTACK&&row.targetCamp===u.camp&&row.targetPos===u.pos&&row.result.hurtHp>0);
     if(reflected.length){
       for(const row of reflected)targets.splice(targets.indexOf(row),1);
       reactions.unshift({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:reflected});
     }
   }
-  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:attackSpec?attackSpec.activeType:extra?kodek.ACTIVE.NORMAL_EX:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets,reactions};
+  return {activeCamp:u.camp,activePos:u.pos,skillEffectId:eff,activeType:attackSpec?attackSpec.activeType:extra?kodek.ACTIVE.NORMAL_EX:skillAt?kodek.ACTIVE.SKILL:kodek.ACTIVE.NORMAL,targets,reactions,comboTarget:victims[0]};
 }
 
 // --- WORLD MAP ZORLUK DENGESI ---
@@ -1102,6 +1112,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       partnerSkills.trigger('death',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
       if(records.length)actives.push({activeCamp:unit.camp,activePos:unit.pos,skillEffectId:0,activeType:5,targets:records});
     }
+    for(const survivor of p1.concat(p2))actives.push(...obitoCombat.checkRage(survivor));
   };
   const turns = [];
   const perform = (u,target,opponents,allies,actives,spec=null,bitir=false,prepared=false) => {
@@ -1110,12 +1121,15 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     spec=kabutoCombat.prepareMove(chaseContext,u,target,spec);
     const strike=(actor,victim,move,isChase=false)=> {
       const beforeFrames=isChase?kabutoCombat.beforeAction(chaseContext,actor):[];
+      move=obitoCombat.prepareMove(chaseContext,actor,victim,move);
+      if(move&&move.obitoBefore)beforeFrames.push(...move.obitoBefore);
       const frame=vurus(actor,victim,bitir,opponents,random,isChase,allies,move ? narutoCombat.attackSpec(move,isChase) : null);
       frame.beforeFrames=beforeFrames;
       if(move){
         const hit=opponents.filter(v=>frame.targets.some(r=>r.cmd===kodek.CMD.ATTACK&&r.targetCamp===v.camp&&r.targetPos===v.pos&&(r.reportTargetStatus&ST.HIT)));
         jiraiyaCombat.afterHit(chaseContext,actor,hit,move,frame.targets);
         kabutoCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        obitoCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
       }
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
       return frame;
@@ -1127,7 +1141,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const records=narutoCombat.summon(u,allies);
       if(records.length) frame.reactions.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:records});
     }
-    actives.push(frame,...frame.reactions);
+    actives.push(...frame.beforeFrames,frame,...frame.reactions);
     actives.push(...narutoCombat.resolve(chaseContext,u,frame.comboTarget||target,frame,spec,(actor,victim,move)=>strike(actor,victim,move,true)));
     const isMystery=spec?spec.prompt:frame.activeType===kodek.ACTIVE.SKILL;
     const additional=isMystery?jiraiyaCombat.mysteryUsed(chaseContext,u,spec||{}):null;
@@ -1174,6 +1188,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
     const actives = t===1 ? [...initialActives] : [];
     const summons=kabutoCombat.roundStart(chaseContext,actives);
+    actives.push(...obitoCombat.roundStart(chaseContext));
     for(const u of p1.concat(p2))if(u.hp>0)deathTriggered.delete(u);
     actives.push(...jiraiyaCombat.roundStart(chaseContext));
     runSummons(summons,actives);
@@ -1214,6 +1229,14 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if(narutoCombat.profile(u) && !spec) continue;
       u.barrierMysteryBlocked=jiraiyaCombat.blocksMystery(chaseContext,u,null);
       const act = perform(u,target,opponents,allies,actives,spec,bitir);
+      // Rage can grant further standards on a kill; every extra consumes a credit.
+      while(obitoCombat.isObito(u)&&u.hp>0&&!narutoCombat.disabled(u)&&kabutoCombat.canStandard(chaseContext,u)&&!heroSkills.status(u,'disarm')&&obitoCombat.available(chaseContext,u)){
+        const next=heroSkills.select(opponents,'low',options.random||Math.random)[0];
+        if(!next)break;
+        const extraSpec=narutoCombat.useStandard(chaseContext,u,allies);
+        if(!extraSpec)break;
+        perform(u,next,opponents,allies,actives,extraSpec,bitir);
+      }
       // Combo is BASEATTRIBUTEINDEX_Punch (14), not a fixed global chance.
       // Extra attacks neither spend nor generate rage and never chain recursively.
       if (!spec && act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && Math.random() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {

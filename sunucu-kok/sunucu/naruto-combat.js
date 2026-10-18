@@ -5,6 +5,7 @@ const skills = require('./hero-skills');
 const config = require('./naruto-sage.json');
 const jiraiya = require('./jiraiya-combat');
 const kabuto = require('./kabuto-combat');
+const obito = require('./obito-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -12,7 +13,7 @@ function comboRecord(frame,target,state,count,isChase=false) {
   frame.targets.push({cmd:9,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,
     result:{buffId:(isChase?19000200:19000100)+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
 }
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : kabuto.profile(unit));
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : obito.profile(unit) || kabuto.profile(unit));
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -25,7 +26,7 @@ function setState(target, state, round) {
     target.immobileUntil = round;
     return state;
   }
-  if (displacement.has(state) && !kabuto.armor(target) && !skills.status(target,'invincible')) return state;
+  if (displacement.has(state) && !kabuto.armor(target) && !skills.status(target,'invincible') && !skills.status(target,'immuneControl')) return state;
   return null;
 }
 function create(teams, options = {}) {
@@ -78,10 +79,11 @@ function spendCooldown(ctx, unit, key, move) {
 }
 function useStandard(ctx, unit, allies) {
   const move=kabuto.selectStandard(ctx,unit,standard(unit,allies));
-  if(!move || disabled(unit) || !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard')) return null;
+  if(!move || disabled(unit) || (obito.isObito(unit) ? !obito.available(ctx,unit) : !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard'))) return null;
   // Summon/Barrage share a slot: losing a clone must not bypass the cooldown.
   spendCooldown(ctx,unit,'standard',move);
   ctx.primaryActions.set(unit,ctx.round);
+  if(obito.isObito(unit))unit.obitoStandards=(unit.obitoStandards||0)+1;
   return move;
 }
 function canMystery(ctx, unit) {
@@ -115,20 +117,22 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
     .sort((a,b)=>order(a.unit)-order(b.unit)||a.index-b.index);
   // Every successful chase consumes a finite per-round budget, including cycles.
   const canGrant=ctx.teams[attacker.camp].some(u=>(profile(u)||{}).chases?.some(c=>c.grantChase));
-  const budget=candidates.reduce((sum,{chase})=>sum+(chase.maxPerRound || 1)+(canGrant?1:0),0);
+  const budget=candidates.reduce((sum,{unit,chase})=>sum+(chase.maxPerRound || 1)+(canGrant?1:0)+(obito.isObito(unit)&&!unit.obitoRage?1:0),0);
   for(let step=0; step<budget && target.hp>0; step++) {
     const eligible=({unit,chase,index}) => {
+      chase=(profile(unit)||{}).chases[index];
       const uses=(ctx.used.get(unit)||[])[index]||0;
       const bonus=chase.cooldown ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
-      return canChase(unit) && ready(ctx,unit,chase.id) && uses<(chase.maxPerRound||1)+bonus &&
+      return canChase(unit) && (obito.isObito(unit)?obito.chaseReady(ctx,unit,chase):ready(ctx,unit,chase.id)) && uses<(chase.maxPerRound||1)+bonus &&
         (!chase.requires || chase.requires===state) && (!chase.requiresAny || chase.requiresAny.includes(state)) && (!chase.minCombo || count>=chase.minCombo);
     };
     // Finish displacement links before independent 10/20-hit chases.
     const candidate=candidates.find(c=>(c.chase.requires || c.chase.requiresAny) && eligible(c)) || candidates.find(c=>!c.chase.requires && !c.chase.requiresAny && c.chase.minCombo && eligible(c));
     if(!candidate) break;
-    const {unit,chase,index}=candidate;
+    const {unit,index}=candidate;
+    const chase=(profile(unit)||{}).chases[index];
     const uses=ctx.used.get(unit)||[];uses[index]=(uses[index]||0)+1;ctx.used.set(unit,uses);
-    if(chase.cooldown) spendCooldown(ctx,unit,chase.id,chase);
+    if(chase.cooldown){if(obito.isObito(unit))obito.spendChase(ctx,unit,chase);else spendCooldown(ctx,unit,chase.id,chase);}
     const frame=strike(unit,target,chase);
     events.push(...(frame.beforeFrames||[]),frame,...(frame.reactions||[]));
     const hit=hitTarget(frame,target);

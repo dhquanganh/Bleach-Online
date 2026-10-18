@@ -1,0 +1,10 @@
+{
+  "removedIdleBackdrops": {
+    "A_1hit": 3,
+    "A_2hit": 3,
+    "SP_skill5": 5
+  },
+  "singleBodyFramesChecked": 96,
+  "hitEventsPreserved": true,
+  "correctedSourceSamples": 3
+}

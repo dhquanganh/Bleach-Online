@@ -1,0 +1,8 @@
+backups/
+native-export/
+original/
+patched/
+verify/
+*.swf
+contact.png
+probe-source/

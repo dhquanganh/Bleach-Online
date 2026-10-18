@@ -102978,5 +102978,25 @@
     "itemFunction": 1000,
     "functionValue": 0,
     "f16": 0
+  },
+  {
+    "id": "00D79EE8",
+    "name": "Uchiha Obito [Rage Mode] Modify Fragment",
+    "majorType": 21,
+    "minorType": 100,
+    "level": 1,
+    "quality": 7,
+    "cardType": 1,
+    "sort": 14130920,
+    "overlayNumber": 9999,
+    "bindMode": 1,
+    "obtain": 0,
+    "functionDesc": "<p>Uchiha Obito [Rage Mode] Modify Fragment. Used for this partner's star upgrades and reincarnation.</p>",
+    "picture": 14130920,
+    "costPrice": "0_1_0_1",
+    "sellPrice": 1000,
+    "itemFunction": 1000,
+    "functionValue": 0,
+    "f16": 0
   }
 ]

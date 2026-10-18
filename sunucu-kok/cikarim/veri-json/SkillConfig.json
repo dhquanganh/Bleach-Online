@@ -64166,5 +64166,77 @@
     "desc": "On summon: damage and Ignition to up to 9 enemies. +80% damage against effective Super Armor. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
     "icon": 13120941,
     "sortId": 12
+  },
+  {
+    "id": "00C835B7",
+    "skillId": 13120951,
+    "name": "Darkness - Kamui",
+    "desc": "Prompt. Consume 10% max HP; high chance to evade the next attack this round. The first 5 Chase or Standard attacks cannot defeat Obito this round. Cooldown 2 rounds, battlefield cooldown 0, chakra 0. Does not consume a Standard. Rage: enhanced Kamui activates free at eligible round start (2-round cooldown), guarantees next evasion; Mystery becomes Underground Roots.",
+    "icon": 13120951,
+    "sortId": 1
+  },
+  {
+    "id": "00C835B8",
+    "skillId": 13120952,
+    "name": "Wood Style - Underground Roots Jutsu",
+    "desc": "Rage Mystery. Damage all enemies, Low Float to selected target; +40% Chase damage until round end (does not stack). Chakra 40, reduced by 20 after each use to minimum 0. Cooldown 3 rounds, battlefield cooldown 0. Prompt; does not consume a Standard. Local automatic combat casts at most once per round. Damage scales with Physical ATK.",
+    "icon": 13120952,
+    "sortId": 2
+  },
+  {
+    "id": "00C835B9",
+    "skillId": 13120953,
+    "name": "Darkness - Immense Impact",
+    "desc": "Consume 5% max HP; attack lowest HP enemy. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Kamui Tag: evasion capped at 35%, Defense and Resistance -15% until end of next round. Damage scales with Physical ATK.",
+    "icon": 13120953,
+    "sortId": 3
+  },
+  {
+    "id": "00C835BA",
+    "skillId": 13120954,
+    "name": "Darkness - Immense Impact [Rage]",
+    "desc": "Rage Standard: attack lowest HP enemy without HP cost. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Damage scales with Physical ATK.",
+    "icon": 13120954,
+    "sortId": 4
+  },
+  {
+    "id": "00C835BB",
+    "skillId": 13120955,
+    "name": "Wood Style - Hellish Chaos",
+    "desc": "Triggered at 20 Combo: damage up to 7 enemies and absorb 20 shared chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "icon": 13120955,
+    "sortId": 5
+  },
+  {
+    "id": "00C835BC",
+    "skillId": 13120956,
+    "name": "Wood Style - Thrusting Spear",
+    "desc": "Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "icon": 13120956,
+    "sortId": 6
+  },
+  {
+    "id": "00C835BD",
+    "skillId": 13120957,
+    "name": "Wood Style - Hellish Chaos [Rage]",
+    "desc": "Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "icon": 13120957,
+    "sortId": 7
+  },
+  {
+    "id": "00C835BE",
+    "skillId": 13120958,
+    "name": "Wood Style - Thrusting Spear [Rage]",
+    "desc": "Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "icon": 13120958,
+    "sortId": 8
+  },
+  {
+    "id": "00C835BF",
+    "skillId": 13120959,
+    "name": "Outrage - Darkness Commitment",
+    "desc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at round start (2-round cooldown) and one additional Standard after defeating an enemy with a Standard.",
+    "icon": 13120959,
+    "sortId": 9
   }
 ]

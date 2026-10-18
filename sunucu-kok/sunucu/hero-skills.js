@@ -240,7 +240,9 @@ function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
   const result=multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes;
-  return field==='def'?result*Math.max(0,1-0.12*(unit.kabutoDefenseStacks||0)):result;
+  const tagged=unit.obitoTagUntil>=unit.battleRound;
+  if(tagged&&field==='dodgeRate')return Math.min(.35,result);
+  return (field==='def'?result*Math.max(0,1-0.12*(unit.kabutoDefenseStacks||0)):result)*(tagged&&['def','resistance'].includes(field)?.85:1);
 }
 function hpRecord(unit, amount, targetEffect=true) {
   return {cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,

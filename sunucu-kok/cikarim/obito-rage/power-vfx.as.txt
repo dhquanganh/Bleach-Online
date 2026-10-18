@@ -1,0 +1,148 @@
+      // Supplemental vector accents share the raster player's reset/cleanup path.
+      private function PlayObitoPowerFx(skill:int, at:Point, delay:int, charge:Boolean, intensity:Number = 1) : void
+      {
+         var host:DisplayObjectContainer = parent;
+         if(host == null || host.stage == null) return;
+         var layer:Sprite = new Sprite();
+         layer.name = "obitoSkillVfx";
+         layer.mouseEnabled = false;layer.mouseChildren = false;
+         layer.x = at.x;layer.y = at.y;
+         layer.scaleX = (scaleX < 0 ? -1 : 1)*intensity;layer.scaleY = intensity;
+         host.addChild(layer);
+         var wood:Boolean = skill == 13120952 || skill == 13120955 || skill == 13120957;
+         var spear:Boolean = skill == 13120956 || skill == 13120958;
+         var kamui:Boolean = skill == 13120951;
+         var rage:Boolean = skill == 13120959;
+         var color:uint = kamui ? 0x927CFF : wood ? 0xE5BC68 : spear ? 0xFFD275 : 0xFF403C;
+         var bright:uint = wood ? 0xFFF1B5 : kamui ? 0xDCD6FF : 0xFFE8CD;
+         var glow:Sprite = new Sprite();glow.blendMode = BlendMode.ADD;
+         var debris:Sprite = new Sprite();
+         var sparks:Sprite = new Sprite();sparks.blendMode = BlendMode.ADD;
+         layer.addChild(debris);layer.addChild(glow);layer.addChild(sparks);
+         sparks.filters = [new GlowFilter(color,.65,5,5,1.5,1)];
+         var started:int = getTimer()+delay;
+         var duration:int = charge ? 560 : (rage ? 1250 : wood ? 1050 : 820);
+         var animate:Function;
+         var cleanup:Function;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer) return;
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            if(layer.parent != null) layer.parent.removeChild(layer);
+         };
+         animate = function(event:Event):void
+         {
+            var elapsed:int = getTimer()-started;
+            if(host.stage == null || elapsed >= duration){cleanup();return;}
+            if(elapsed < 0){layer.visible=false;return;}
+            layer.visible=true;
+            var t:Number = elapsed/duration;
+            var fade:Number = Math.pow(1-t,1.4);
+            var g:Graphics = glow.graphics;
+            var d:Graphics = debris.graphics;
+            var s:Graphics = sparks.graphics;
+            g.clear();d.clear();s.clear();
+            var i:int;var j:int;var angle:Number;var radius:Number;var x0:Number;var y0:Number;
+            var x1:Number;var y1:Number;
+            if(charge)
+            {
+               // A low ring and converging wisps leave the face/pose readable.
+               g.lineStyle(2,color,.55*Math.sin(Math.PI*t));
+               radius=62-22*t;g.drawEllipse(-radius,-radius*.24,radius*2,radius*.48);
+               for(i=0;i<3;i++)
+               {
+                  angle=t*5+i*Math.PI*2/3;
+                  for(j=0;j<14;j++)
+                  {
+                     radius=78-j*3-t*18;
+                     x1=Math.cos(angle-j*.13)*radius;y1=-65+Math.sin(angle-j*.13)*radius*.7;
+                     g.lineStyle(1.8,color,(1-j/14)*.55*Math.sin(Math.PI*t));
+                     if(j==0)g.moveTo(x1,y1);else g.lineTo(x1,y1);
+                  }
+               }
+               for(i=0;i<10;i++)
+               {
+                  angle=i*2.399;radius=90*(1-t)+12;
+                  s.beginFill(bright,Math.sin(Math.PI*t)*.7);
+                  s.drawCircle(Math.cos(angle)*radius,-65+Math.sin(angle)*radius*.65,1.4);s.endFill();
+               }
+               return;
+            }
+            // A short local flash; no full-screen white overlay.
+            if(elapsed<190)
+            {
+               var flashAlpha:Number = (1-elapsed/190)*.8;
+               var gradient:Matrix = new Matrix();
+               gradient.createGradientBox(200,200,0,-100,-165);
+               g.beginGradientFill(GradientType.RADIAL,[bright,color,color],[flashAlpha,.22*flashAlpha,0],[0,90,255],gradient);
+               g.drawCircle(0,-65,100);g.endFill();
+               for(i=0;i<8;i++)
+               {
+                  angle=i*Math.PI/4+.22;radius=30+elapsed*.25;
+                  s.lineStyle(i%2==0?3:1.2,bright,flashAlpha);
+                  s.moveTo(Math.cos(angle)*8,-65+Math.sin(angle)*8);
+                  s.lineTo(Math.cos(angle)*radius,-65+Math.sin(angle)*radius);
+               }
+            }
+            radius=28+Math.sqrt(t)*(rage?205:wood?180:140);
+            g.lineStyle(3*(1-t)+.4,color,fade*.7);
+            g.drawEllipse(-radius,-radius*.25,radius*2,radius*.5);
+            g.lineStyle(1.2,bright,fade*.45);
+            g.drawEllipse(-radius*.8,-radius*.20,radius*1.6,radius*.4);
+            if(kamui || rage)
+            {
+               // Rotating broken arcs echo Kamui; Rage expands them outwards.
+               for(i=0;i<3;i++)
+               {
+                  for(j=0;j<20;j++)
+                  {
+                     angle=i*Math.PI*2/3+j*.105+t*(kamui?5:2);
+                     radius=(kamui?70*(1-t):50+110*t)+j*.8;
+                     g.lineStyle(2.5,color,fade*(1-j/24)*.7);
+                     x1=Math.cos(angle)*radius;y1=-70+Math.sin(angle)*radius;
+                     if(j==0)g.moveTo(x1,y1);else g.lineTo(x1,y1);
+                  }
+               }
+            }
+            // Wood fragments/cracks have opaque edges rather than neon outlines.
+            if(!kamui)
+            {
+               for(i=0;i<(wood?12:8);i++)
+               {
+                  angle=i*2.399+.35;radius=28+95*t;
+                  x0=Math.cos(angle)*radius;y0=Math.sin(angle)*radius*.24;
+                  d.lineStyle(1,0x38242B,fade*.65);
+                  d.moveTo(x0*.3,y0*.3);d.lineTo(x0*.66+5,y0*.65);d.lineTo(x0,y0);
+                  x1=Math.cos(angle)*(20+120*t);
+                  y1=-8-(wood?130:85)*Math.sin(Math.PI*t)+Math.sin(angle)*30+65*t*t;
+                  var size:Number=(3+i%4)*fade;
+                  d.lineStyle(1,0xECD29B,fade*.6);
+                  d.beginFill(i%2==0?0x78513E:0xAF8154,fade);
+                  d.moveTo(x1-size,y1+size);d.lineTo(x1+size*.4,y1-size*2.6);d.lineTo(x1+size,y1+size);d.lineTo(x1-size,y1+size);d.endFill();
+               }
+            }
+            // Cutting streaks separate the Spear/Standard silhouette from the dust.
+            if(spear || (!wood && !kamui && !rage))
+            {
+               for(i=0;i<(spear?3:2);i++)
+               {
+                  var length:Number=(spear?120:90)*(1-t*.4);
+                  x0=-length+210*t-i*18;y0=-105+i*25;
+                  s.lineStyle(3-i*.7,i==0?bright:color,fade*.85);
+                  s.moveTo(x0,y0+45);s.curveTo(x0+length*.6,y0-20,x0+length*1.6,y0-8);
+               }
+            }
+            for(i=0;i<(rage?26:18);i++)
+            {
+               angle=i*2.399;radius=20+(65+i%7*14)*t;
+               x1=Math.cos(angle)*radius;y1=-65+Math.sin(angle)*radius*.65-20*t+60*t*t;
+               s.lineStyle(1.5,i%3==0?bright:color,fade*.8);
+               s.moveTo(x1,y1);s.lineTo(x1-Math.cos(angle)*(6+8*t),y1-Math.sin(angle)*(6+8*t));
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+

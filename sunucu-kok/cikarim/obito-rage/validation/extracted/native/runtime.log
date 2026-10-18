@@ -1,0 +1,173 @@
+BOOT native Flash shared VFX component probe
+ATLAS dtpg-4
+ATLAS DTzhuida-7
+ATLAS dtpg-260
+ATLAS DTpugong-25
+ATLAS DT1shenwei-128
+ATLAS DTbaozou-346
+ATLAS DTzhuida-404
+ATLAS DTpugong-426
+ATLAS DTaoyi-29
+ATLAS DTaoyi-594
+ATLAS DTbaozou-46
+TEXTURE standard frames=51
+TEXTURE roots frames=111
+TEXTURE idle frames=29
+TEXTURE rage-standard frames=51
+TEXTURE kamui frames=39
+TEXTURE chaos frames=94
+TEXTURE spear frames=92
+TEXTURE rage frames=48
+CASE 13120951 camp=0
+POWER_FX 13120951 phase=charge delay=0
+POWER_FX 13120951 phase=impact delay=400
+VFX_ASSET DT1shenwei-128 mirror=false
+SNAPSHOT CASE-13120951-camp-0-cast
+SNAPSHOT HIT-13120951-camp-0
+SNAPSHOT CASE-13120951-camp-0-impact
+CASE 13120952 camp=0
+POWER_FX 13120952 phase=charge delay=0
+POWER_FX 13120952 phase=impact delay=800
+VFX_ASSET DTaoyi-29 mirror=false
+VFX_ASSET DTaoyi-594 mirror=false
+SNAPSHOT CASE-13120952-camp-0-cast
+SNAPSHOT HIT-13120952-camp-0
+SNAPSHOT CASE-13120952-camp-0-impact
+CASE 13120953 camp=0
+POWER_FX 13120953 phase=charge delay=0
+POWER_FX 13120953 phase=impact delay=920
+VFX_ASSET DTpugong-25 mirror=false
+VFX_ASSET DTpugong-426 mirror=false
+SNAPSHOT SLAM-camp-0-frame-6
+SNAPSHOT CASE-13120953-camp-0-cast
+SNAPSHOT SLAM-camp-0-frame-16
+SNAPSHOT HIT-13120953-camp-0
+SNAPSHOT SLAM-camp-0-frame-27
+SNAPSHOT CASE-13120953-camp-0-impact
+SNAPSHOT SLAM-camp-0-frame-30
+SNAPSHOT SLAM-camp-0-frame-42
+CASE 13120954 camp=0
+POWER_FX 13120954 phase=charge delay=0
+POWER_FX 13120954 phase=impact delay=920
+VFX_ASSET DTpugong-25 mirror=false
+VFX_ASSET DTpugong-426 mirror=false
+SNAPSHOT CASE-13120954-camp-0-cast
+SNAPSHOT HIT-13120954-camp-0
+SNAPSHOT CASE-13120954-camp-0-impact
+CASE 13120955 camp=0
+POWER_FX 13120955 phase=charge delay=0
+POWER_FX 13120955 phase=impact delay=600
+VFX_ASSET dtpg-260 mirror=false
+VFX_ASSET dtpg-4 mirror=false
+SNAPSHOT CASE-13120955-camp-0-cast
+SNAPSHOT HIT-13120955-camp-0
+SNAPSHOT CASE-13120955-camp-0-impact
+CASE 13120956 camp=0
+POWER_FX 13120956 phase=charge delay=0
+POWER_FX 13120956 phase=impact delay=760
+VFX_ASSET DTzhuida-404 mirror=false
+VFX_ASSET DTzhuida-7 mirror=false
+SNAPSHOT CASE-13120956-camp-0-cast
+SNAPSHOT HIT-13120956-camp-0
+SNAPSHOT CASE-13120956-camp-0-impact
+CASE 13120957 camp=0
+POWER_FX 13120957 phase=charge delay=0
+POWER_FX 13120957 phase=impact delay=600
+VFX_ASSET dtpg-260 mirror=false
+VFX_ASSET dtpg-4 mirror=false
+SNAPSHOT CASE-13120957-camp-0-cast
+SNAPSHOT HIT-13120957-camp-0
+SNAPSHOT CASE-13120957-camp-0-impact
+CASE 13120958 camp=0
+POWER_FX 13120958 phase=charge delay=0
+POWER_FX 13120958 phase=impact delay=760
+VFX_ASSET DTzhuida-404 mirror=false
+VFX_ASSET DTzhuida-7 mirror=false
+SNAPSHOT CASE-13120958-camp-0-cast
+SNAPSHOT HIT-13120958-camp-0
+SNAPSHOT CASE-13120958-camp-0-impact
+CASE 13120959 camp=0
+POWER_FX 13120959 phase=charge delay=0
+POWER_FX 13120959 phase=impact delay=400
+VFX_ASSET DTbaozou-346 mirror=false
+VFX_ASSET DTbaozou-46 mirror=false
+SNAPSHOT CASE-13120959-camp-0-cast
+SNAPSHOT HIT-13120959-camp-0
+SNAPSHOT CASE-13120959-camp-0-impact
+CASE 13120951 camp=1
+POWER_FX 13120951 phase=charge delay=0
+POWER_FX 13120951 phase=impact delay=400
+VFX_ASSET DT1shenwei-128 mirror=true
+SNAPSHOT CASE-13120951-camp-1-cast
+SNAPSHOT HIT-13120951-camp-1
+SNAPSHOT CASE-13120951-camp-1-impact
+CASE 13120952 camp=1
+POWER_FX 13120952 phase=charge delay=0
+POWER_FX 13120952 phase=impact delay=800
+VFX_ASSET DTaoyi-29 mirror=true
+VFX_ASSET DTaoyi-594 mirror=true
+SNAPSHOT CASE-13120952-camp-1-cast
+SNAPSHOT HIT-13120952-camp-1
+SNAPSHOT CASE-13120952-camp-1-impact
+CASE 13120953 camp=1
+POWER_FX 13120953 phase=charge delay=0
+POWER_FX 13120953 phase=impact delay=920
+VFX_ASSET DTpugong-25 mirror=true
+VFX_ASSET DTpugong-426 mirror=true
+SNAPSHOT SLAM-camp-1-frame-6
+SNAPSHOT CASE-13120953-camp-1-cast
+SNAPSHOT SLAM-camp-1-frame-16
+SNAPSHOT HIT-13120953-camp-1
+SNAPSHOT SLAM-camp-1-frame-27
+SNAPSHOT CASE-13120953-camp-1-impact
+SNAPSHOT SLAM-camp-1-frame-30
+SNAPSHOT SLAM-camp-1-frame-42
+CASE 13120954 camp=1
+POWER_FX 13120954 phase=charge delay=0
+POWER_FX 13120954 phase=impact delay=920
+VFX_ASSET DTpugong-25 mirror=true
+VFX_ASSET DTpugong-426 mirror=true
+SNAPSHOT CASE-13120954-camp-1-cast
+SNAPSHOT HIT-13120954-camp-1
+SNAPSHOT CASE-13120954-camp-1-impact
+CASE 13120955 camp=1
+POWER_FX 13120955 phase=charge delay=0
+POWER_FX 13120955 phase=impact delay=600
+VFX_ASSET dtpg-260 mirror=true
+VFX_ASSET dtpg-4 mirror=true
+SNAPSHOT CASE-13120955-camp-1-cast
+SNAPSHOT HIT-13120955-camp-1
+SNAPSHOT CASE-13120955-camp-1-impact
+CASE 13120956 camp=1
+POWER_FX 13120956 phase=charge delay=0
+POWER_FX 13120956 phase=impact delay=760
+VFX_ASSET DTzhuida-404 mirror=true
+VFX_ASSET DTzhuida-7 mirror=true
+SNAPSHOT CASE-13120956-camp-1-cast
+SNAPSHOT HIT-13120956-camp-1
+SNAPSHOT CASE-13120956-camp-1-impact
+CASE 13120957 camp=1
+POWER_FX 13120957 phase=charge delay=0
+POWER_FX 13120957 phase=impact delay=600
+VFX_ASSET dtpg-260 mirror=true
+VFX_ASSET dtpg-4 mirror=true
+SNAPSHOT CASE-13120957-camp-1-cast
+SNAPSHOT HIT-13120957-camp-1
+SNAPSHOT CASE-13120957-camp-1-impact
+CASE 13120958 camp=1
+POWER_FX 13120958 phase=charge delay=0
+POWER_FX 13120958 phase=impact delay=760
+VFX_ASSET DTzhuida-404 mirror=true
+VFX_ASSET DTzhuida-7 mirror=true
+SNAPSHOT CASE-13120958-camp-1-cast
+SNAPSHOT HIT-13120958-camp-1
+SNAPSHOT CASE-13120958-camp-1-impact
+CASE 13120959 camp=1
+POWER_FX 13120959 phase=charge delay=0
+POWER_FX 13120959 phase=impact delay=400
+VFX_ASSET DTbaozou-346 mirror=true
+VFX_ASSET DTbaozou-46 mirror=true
+SNAPSHOT CASE-13120959-camp-1-cast
+SNAPSHOT HIT-13120959-camp-1
+SNAPSHOT CASE-13120959-camp-1-impact
+DONE Obito native component; remaining=0

@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('assert'),fs=require('fs'),path=require('path');
 const env=require('../envanter'),reb=require('../reincarnation'),stars=require('../hero-stars'),shop=require('../mystic-shop'),levels=require('../seviye'),{Y,O}=require('../paket');
-for(const [hero,fragment] of [[11120901,14130901],[11120903,14130903],[11120910,14130910]]){
+for(const [hero,fragment] of [[11120901,14130901],[11120903,14130903],[11120910,14130910],[11120920,14130920]]){
  assert.strictEqual(reb.fragmentId(hero),fragment);
  assert(env.article(fragment));assert(!env.article(fragment).usable);
  const account={herolar:[hero]};let d=JSON.parse(fs.readFileSync(path.join(__dirname,'../oyuncu.json')));
@@ -20,4 +20,4 @@ for(const [hero,fragment] of [[11120901,14130901],[11120903,14130903],[11120910,
 }
 assert.notStrictEqual(reb.fragmentId(11120901),reb.fragmentId(11120903));
 assert.strictEqual(reb.fragmentId(11120910),14130910);
-console.log('PASS 3 ninja Modify Fragments: correct partner mapping, owned Mystic offer, exact 100-gem exchange, native inventory and 50-fragment star upgrade; no player files changed.');
+console.log('PASS 4 ninja Modify Fragments: correct partner mapping, owned Mystic offer, exact 100-gem exchange, native inventory and 50-fragment star upgrade; no player files changed.');

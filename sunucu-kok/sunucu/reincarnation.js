@@ -47,22 +47,22 @@ function restriction(a,b){
 }
 const CHANCE={1:.10,2:.03,3:.015,4:.02,5:.02,6:.01,7:.04,8:.01,10:.02};
 function proc(unit,effect,rng=Math.random){const r=unit.rebirth||{};return r.n>0&&r.ae===effect&&rng()<Math.min(1,r.n*(CHANCE[effect]||0));}
-function hit(attacker,target,amount,rng=Math.random){
+function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,nonfatal=false){
   const before=target.hp;
   const clearShield=proc(attacker,1,rng),clearBuffs=proc(attacker,7,rng);
   if(clearShield)target.shield=0;
   let damage=Math.max(0,Math.round(amount*restriction(attacker.rebirth||{},target.rebirth||{})));
   const instantKill=proc(attacker,8,rng);
   if(instantKill)damage=target.hp;
-  if(proc(target,3,rng))damage=0;
+  if(!ignoreDefensiveSkills&&proc(target,3,rng))damage=0;
   let absorbed=0;
-  if(target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
+  if(!ignoreDefensiveSkills&&target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
   const blockedHeal=(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
-  const heal=!blockedHeal&&proc(target,6,rng);
+  const heal=!ignoreDefensiveSkills&&!blockedHeal&&proc(target,6,rng);
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
-  const protection=require('./kabuto-combat').protectFatal(target,damage);
+  const protection=!ignoreDefensiveSkills&&require('./kabuto-combat').protectFatal(target,damage);
   if(protection)damage=protection.damage;
-  damage=Math.min(Math.max(0,target.hp-(heal?1:0)),damage);
+  damage=Math.min(Math.max(0,target.hp-(heal||nonfatal?1:0)),damage);
   target.hp-=damage;
   let recovered=0;if(protection){recovered=protection.recovered;target.hp+=recovered;}else if(heal){recovered=target.maxHp-target.hp;target.hp=target.maxHp;}
   if(clearBuffs)target.activeBuffs={};

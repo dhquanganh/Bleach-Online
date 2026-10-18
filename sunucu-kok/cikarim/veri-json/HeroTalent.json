@@ -1048,5 +1048,10 @@
     "id": "00C9BC32",
     "talentName": "Pakura [Reanimation]",
     "talentDesc": "On summon: damage and Ignition to up to 9 enemies. +80% damage against effective Super Armor. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
+  },
+  {
+    "id": "00C9BC38",
+    "talentName": "Outrage - Darkness Commitment / Rage Mode",
+    "talentDesc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at round start (2-round cooldown) and one additional Standard after defeating an enemy with a Standard. Triggered at 20 Combo: damage up to 7 enemies and absorb 20 shared chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK. Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK. Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK. Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK. Rage Mystery. Damage all enemies, Low Float to selected target; +40% Chase damage until round end (does not stack). Chakra 40, reduced by 20 after each use to minimum 0. Cooldown 3 rounds, battlefield cooldown 0. Prompt; does not consume a Standard. Local automatic combat casts at most once per round. Damage scales with Physical ATK."
   }
 ]
