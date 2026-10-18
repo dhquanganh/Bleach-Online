@@ -4,6 +4,7 @@ const { ACTIVE, ST } = require('./kodek');
 const skills = require('./hero-skills');
 const config = require('./naruto-sage.json');
 const jiraiya = require('./jiraiya-combat');
+const kabuto = require('./kabuto-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -11,12 +12,12 @@ function comboRecord(frame,target,state,count,isChase=false) {
   frame.targets.push({cmd:9,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,
     result:{buffId:(isChase?19000200:19000100)+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
 }
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : kabuto.profile(unit));
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
 }
-function canChase(unit) { return !disabled(unit) && !skills.status(unit,'chaos') && !unit.paralyzed && !skills.status(unit,'paralysis'); }
+function canChase(unit) { return !disabled(unit) && kabuto.canChase(unit) && !skills.status(unit,'chaos') && !unit.paralyzed && !skills.status(unit,'paralysis'); }
 function setState(target, state, round) {
   if (!state || target.hp <= 0) return null;
   if (state === STATE.IMMOBILE) {
@@ -24,7 +25,7 @@ function setState(target, state, round) {
     target.immobileUntil = round;
     return state;
   }
-  if (displacement.has(state) && !target.superArmor && !skills.status(target,'invincible')) return state;
+  if (displacement.has(state) && !kabuto.armor(target) && !skills.status(target,'invincible')) return state;
   return null;
 }
 function create(teams, options = {}) {
@@ -76,7 +77,7 @@ function spendCooldown(ctx, unit, key, move) {
   ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
 }
 function useStandard(ctx, unit, allies) {
-  const move=standard(unit,allies);
+  const move=kabuto.selectStandard(ctx,unit,standard(unit,allies));
   if(!move || disabled(unit) || !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard')) return null;
   // Summon/Barrage share a slot: losing a clone must not bypass the cooldown.
   spendCooldown(ctx,unit,'standard',move);
@@ -85,15 +86,16 @@ function useStandard(ctx, unit, allies) {
 }
 function canMystery(ctx, unit) {
   const p=profile(unit), m=p && p.mystery;
-  return !!(m && primaryAvailable(ctx,unit) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
+  return !!(m && kabuto.canMystery(ctx,unit) && primaryAvailable(ctx,unit) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
     ctx.round >= (unit.mysteryReadyRound || 1) && ctx.chakra[unit.camp] >= m.chakraCost);
 }
-function useMystery(ctx,unit) {
+function useMystery(ctx,unit,beforeSpend=null) {
   if (!canMystery(ctx,unit)) return null;
   const m=profile(unit).mystery;
+  if(beforeSpend)beforeSpend();
   ctx.chakra[unit.camp]-=m.chakraCost;
   unit.mysteryReadyRound=ctx.round+Math.max(1,m.cooldown);
-  ctx.primaryActions.set(unit,ctx.round);
+  if(m.consumesPrimary!==false)ctx.primaryActions.set(unit,ctx.round);
   return m;
 }
 function hitTarget(frame, target) {
@@ -119,20 +121,20 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
       const uses=(ctx.used.get(unit)||[])[index]||0;
       const bonus=chase.cooldown ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
       return canChase(unit) && ready(ctx,unit,chase.id) && uses<(chase.maxPerRound||1)+bonus &&
-        (!chase.requires || chase.requires===state) && (!chase.minCombo || count>=chase.minCombo);
+        (!chase.requires || chase.requires===state) && (!chase.requiresAny || chase.requiresAny.includes(state)) && (!chase.minCombo || count>=chase.minCombo);
     };
     // Finish displacement links before independent 10/20-hit chases.
-    const candidate=candidates.find(c=>c.chase.requires && eligible(c)) || candidates.find(c=>!c.chase.requires && c.chase.minCombo && eligible(c));
+    const candidate=candidates.find(c=>(c.chase.requires || c.chase.requiresAny) && eligible(c)) || candidates.find(c=>!c.chase.requires && !c.chase.requiresAny && c.chase.minCombo && eligible(c));
     if(!candidate) break;
     const {unit,chase,index}=candidate;
     const uses=ctx.used.get(unit)||[];uses[index]=(uses[index]||0)+1;ctx.used.set(unit,uses);
     if(chase.cooldown) spendCooldown(ctx,unit,chase.id,chase);
     const frame=strike(unit,target,chase);
-    events.push(frame,...(frame.reactions||[]));
+    events.push(...(frame.beforeFrames||[]),frame,...(frame.reactions||[]));
     const hit=hitTarget(frame,target);
     if(hit) {
       count+=chase.combo || 1;
-      if(chase.requires || chase.causes) state=setState(target,chase.causes,ctx.round);
+      if(chase.requires || chase.requiresAny || chase.causes) state=setState(target,chase.causes,ctx.round);
       comboRecord(frame,target,state,count,true);
     } else { state=null; break; }
     ctx.trace.push({round:ctx.round,kind:'chase',actor:unit.id,skill:chase.id,target:target.id,count,state});

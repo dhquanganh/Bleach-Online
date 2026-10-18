@@ -7,12 +7,12 @@ const eligibleSage=u=>isJiraiya(u)||u.id===11120901||!!(u.naruto&&u.naruto.senju
 function label(records,u,index,count=0){records.push({cmd:CMD.FLOAT,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:19000300+index,buffTurn:count}});}
 function visual(u,move,records=[]){return {activeCamp:u.camp,activePos:u.pos,skillEffectId:move.id,activeType:1,
   targets:[{cmd:CMD.NONE,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:0,result:{}},...records]};}
-function activeBarrier(ctx){return ctx.barrier&&ctx.round<=ctx.barrier.until;}
+function activeBarrier(ctx){return ctx.barrier&&ctx.barrier.kind!=='lightweight'&&ctx.round<=ctx.barrier.until;}
 function blocksMystery(ctx,u,m){return activeBarrier(ctx)&&!!(m&&m.barrier||u.createsBarrier||u.destroysBarrier);}
 function roundStart(ctx){
   ctx.chaseBonus=[0,0];ctx.chakraLimit=ctx.chakraLimit||[100,100];
   const frames=[];
-  if(ctx.barrier&&ctx.round>ctx.barrier.until){ctx.barrier=null;ctx.barrierExpired=true;}
+  if(ctx.barrier&&ctx.barrier.kind!=='lightweight'&&ctx.round>ctx.barrier.until){ctx.barrier=null;ctx.barrierExpired=true;}
   for(const team of ctx.teams)for(const u of team){
     if(!isJiraiya(u)||u.hp<=0)continue;
     ctx.chakraLimit[u.camp]=100;
@@ -38,7 +38,7 @@ function roundStart(ctx){
 }
 function afterHit(ctx,u,victims,move,records){
   if(move.resistanceDown)for(const v of victims){
-    if(v.hp<=0)continue;
+    if(v.hp<=0||skills.status(v,'immuneDebuffs'))continue;
     v.jiraiyaResistanceStacks=(v.jiraiyaResistanceStacks||0)+1;
     label(records,v,6,v.jiraiyaResistanceStacks*10);
   }
@@ -71,7 +71,7 @@ function noteDeaths(ctx){
 }
 function revivals(ctx){
   const revived=[];
-  for(const u of ctx.teams.flat())if(isJiraiya(u)&&u.hp<=0&&u.jiraiyaDeathCount!=null&&
+  for(const u of ctx.teams.flat())if(isJiraiya(u)&&!u.noRevive&&u.hp<=0&&u.jiraiyaDeathCount!=null&&
       ctx.mysteryCounts[u.camp]-u.jiraiyaDeathCount>=3){
     u.hp=Math.max(1,Math.round(u.maxHp*.3));
     // Revival preserves all cooldowns and cannot grant another action this round.

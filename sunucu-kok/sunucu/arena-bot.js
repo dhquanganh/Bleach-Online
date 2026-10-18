@@ -29,6 +29,7 @@ function validRole(id) {
   return !!role && localModels.has(Number(role.model) >>> 0);
 }
 const botHeroes = heroes.filter(h => {
+  if(h.isSummon)return false;
   const id = idNum(h.id);
   let effects;
   try { effects = JSON.parse(h.attackEffect); } catch (e) { return false; }

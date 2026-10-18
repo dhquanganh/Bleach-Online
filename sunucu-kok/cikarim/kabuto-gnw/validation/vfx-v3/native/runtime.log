@@ -1,0 +1,106 @@
+BOOT native Flash shared VFX component probe
+ATLAS cutin cells=1
+ATLAS snakes cells=9
+ATLAS impact cells=4
+ATLAS utility cells=16
+ATLAS poison cells=9
+TEXTURE self-healing frames=7
+TEXTURE idle frames=32
+TEXTURE white-snake-revival frames=13
+TEXTURE impure-world-reincarnation frames=11
+TEXTURE white-snake-assault frames=41
+TEXTURE bracken-dance frames=11
+TEXTURE white-extreme-attack frames=16
+CASE 13120931 camp=0
+VFX skill=13120931 impact=false camp=0
+VFX_ASSET cutin delay=0 mirror=false
+SNAPSHOT MYSTERY-camp-0-frame-4
+SNAPSHOT CASE-13120931-camp-0-cast
+VFX skill=13120931 impact=true camp=0
+VFX_ASSET mystery-flash delay=0 mirror=false
+VFX_ASSET snakes delay=60 mirror=false
+VFX_ASSET poison delay=420 mirror=false
+SNAPSHOT MYSTERY-camp-0-frame-16
+SNAPSHOT CASE-13120931-camp-0-impact
+SNAPSHOT MYSTERY-camp-0-frame-20
+SNAPSHOT MYSTERY-camp-0-frame-26
+SNAPSHOT MYSTERY-camp-0-frame-32
+SNAPSHOT MYSTERY-camp-0-frame-38
+CASE 13120932 camp=0
+VFX skill=13120932 impact=false camp=0
+SNAPSHOT CASE-13120932-camp-0-cast
+VFX skill=13120932 impact=true camp=0
+VFX_ASSET slash delay=0 mirror=false
+SNAPSHOT CASE-13120932-camp-0-impact
+CASE 13120933 camp=0
+VFX skill=13120933 impact=false camp=0
+VFX_ASSET dragon delay=120 mirror=false
+SNAPSHOT CASE-13120933-camp-0-cast
+VFX skill=13120933 impact=true camp=0
+VFX_ASSET white-flash delay=0 mirror=false
+SNAPSHOT CASE-13120933-camp-0-impact
+CASE 13120934 camp=0
+VFX skill=13120934 impact=false camp=0
+VFX_ASSET healing delay=0 mirror=false
+SNAPSHOT CASE-13120934-camp-0-cast
+VFX skill=13120934 impact=true camp=0
+SNAPSHOT CASE-13120934-camp-0-impact
+CASE 13120935 camp=0
+VFX skill=13120935 impact=false camp=0
+VFX_ASSET healing delay=0 mirror=false
+SNAPSHOT CASE-13120935-camp-0-cast
+VFX skill=13120935 impact=true camp=0
+SNAPSHOT CASE-13120935-camp-0-impact
+CASE 13120936 camp=0
+VFX skill=13120936 impact=false camp=0
+VFX_ASSET summon delay=0 mirror=false
+SNAPSHOT CASE-13120936-camp-0-cast
+VFX skill=13120936 impact=true camp=0
+SNAPSHOT CASE-13120936-camp-0-impact
+CASE 13120931 camp=1
+VFX skill=13120931 impact=false camp=1
+VFX_ASSET cutin delay=0 mirror=false
+SNAPSHOT MYSTERY-camp-1-frame-4
+SNAPSHOT CASE-13120931-camp-1-cast
+VFX skill=13120931 impact=true camp=1
+VFX_ASSET mystery-flash delay=0 mirror=false
+VFX_ASSET snakes delay=60 mirror=true
+VFX_ASSET poison delay=420 mirror=false
+SNAPSHOT MYSTERY-camp-1-frame-16
+SNAPSHOT CASE-13120931-camp-1-impact
+SNAPSHOT MYSTERY-camp-1-frame-20
+SNAPSHOT MYSTERY-camp-1-frame-26
+SNAPSHOT MYSTERY-camp-1-frame-32
+SNAPSHOT MYSTERY-camp-1-frame-38
+CASE 13120932 camp=1
+VFX skill=13120932 impact=false camp=1
+SNAPSHOT CASE-13120932-camp-1-cast
+VFX skill=13120932 impact=true camp=1
+VFX_ASSET slash delay=0 mirror=true
+SNAPSHOT CASE-13120932-camp-1-impact
+CASE 13120933 camp=1
+VFX skill=13120933 impact=false camp=1
+VFX_ASSET dragon delay=120 mirror=true
+SNAPSHOT CASE-13120933-camp-1-cast
+VFX skill=13120933 impact=true camp=1
+VFX_ASSET white-flash delay=0 mirror=true
+SNAPSHOT CASE-13120933-camp-1-impact
+CASE 13120934 camp=1
+VFX skill=13120934 impact=false camp=1
+VFX_ASSET healing delay=0 mirror=false
+SNAPSHOT CASE-13120934-camp-1-cast
+VFX skill=13120934 impact=true camp=1
+SNAPSHOT CASE-13120934-camp-1-impact
+CASE 13120935 camp=1
+VFX skill=13120935 impact=false camp=1
+VFX_ASSET healing delay=0 mirror=false
+SNAPSHOT CASE-13120935-camp-1-cast
+VFX skill=13120935 impact=true camp=1
+SNAPSHOT CASE-13120935-camp-1-impact
+CASE 13120936 camp=1
+VFX skill=13120936 impact=false camp=1
+VFX_ASSET summon delay=0 mirror=true
+SNAPSHOT CASE-13120936-camp-1-cast
+VFX skill=13120936 impact=true camp=1
+SNAPSHOT CASE-13120936-camp-1-impact
+DONE native raster component; 12 cases across both camps; remaining=0

@@ -6,6 +6,9 @@ Naruto and Jiraiya HeadIcon/SmallIcon now use **48×48**, matching the native UI
 | --- | --- | --- |
 | Naruto [Sage Mode] / 11120901 | 14130901 | 41120901 |
 | Jiraiya [Toads Chant] / 11120903 | 14130903 | 41120903 |
+| Kabuto [Great Ninja War] / 11120910 | 14130910 | 41120910 |
+
+Kabuto uses the user's supplied **68×69** portrait, preserved at `gorsel/kabuto-icon-input.png`, packed to 48×48 character icons and a 40×40 inventory icon. Its full kit and asset pipeline are documented in `../kabuto-gnw/README.md`.
 
 Each offer exchanges **100 Nguyên thạch (14900001)** for one fragment, following the existing Mystic Shop price. Only owned partners appear. Article, BlackMarket, HeroChangeAttr and the server offer catalog are synchronized. Fragment association supports star upgrades and reincarnation. No unrelated partner's Modify challenge/city is reused. Inactive fragment-only associations have no challenge city; the native Hero Change constructor skips those entries while Reincarnation still reads their fragment IDs. Inventory icons are native 40×40 TexClient textures. Existing database records outside these additions are preserved byte-for-byte. No fragments/currency are granted to live saves automatically.
 

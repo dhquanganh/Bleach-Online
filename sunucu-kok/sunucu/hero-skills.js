@@ -228,6 +228,10 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
+  const kabutoSuppressed=unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound;
+  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(kabutoSuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
+  if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
   if(unit.suppressedUntil>=unit.battleRound&&['immuneControl','immuneHealBlock','invincible','void'].includes(field))return false;
   return !!(unit.skillBuffs || []).find(buff=>buff.field===field&&buff.remaining>0);
@@ -235,7 +239,8 @@ function status(unit, field) {
 function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
-  return multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes;
+  const result=multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes;
+  return field==='def'?result*Math.max(0,1-0.12*(unit.kabutoDefenseStacks||0)):result;
 }
 function hpRecord(unit, amount, targetEffect=true) {
   return {cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,
@@ -259,6 +264,7 @@ function healPower(caster) {
   return base*(caster.atk>0?value(caster,'atk')/caster.atk:1);
 }
 function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
+  if((controls.has(rule.field)||rule.value<0)&&status(target,'immuneDebuffs'))return;
   if(controls.has(rule.field)&&(status(target,'immuneControl')||target.shield>0||value(target,'controlResist')>0&&random()<value(target,'controlResist')))return;
   if(rule.field==='silence'&&value(target,'silenceResist')>0&&random()<value(target,'silenceResist'))return;
   target.skillBuffs=target.skillBuffs||[];
@@ -270,7 +276,7 @@ function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
     targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:ids[rule.value<0?1:0],buffTurn:rule.turns}});
 }
 function remove(target,negative,records) {
-  if(negative){for(const field of ['jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil'])delete target[field];target.paralyzed=false;}
+  if(negative){for(const field of ['jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','kabutoSuppressedUntil','kabutoBlindUntil','kabutoCurseUntil','kabutoArmorSuppressedUntil','kabutoDefenseStacks'])delete target[field];target.paralyzed=false;}
   const removed=(target.skillBuffs||[]).filter(buff=>negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect');
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>!removed.includes(buff));
   for(const buff of removed){const ids=buffIds[buff.field];const id=ids?ids[buff.value<0?1:0]:buff.buffId;
@@ -307,18 +313,27 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
         remove(target,true,records);target.shield=Math.min(0xffffffff,Math.max(target.shield||0,Math.round(value(caster,'atk')*rule.value)));
         records.push({cmd:CMD.SHIELD,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:target.shield}});
       }else if(rule.kind==='dot'){
+        if(status(target,'immuneDebuffs'))continue;
         target.skillBuffs=target.skillBuffs||[];const prior=target.skillBuffs.find(b=>b.field===rule.field&&b.source===caster.id);
         const id={poison:13500020,bleeding:13500021,ignite:13500022,mutilate:13500079}[rule.field];
         const data={...rule,source:caster.id,amount:(rule.basis==='targetMaxHp'?target.maxHp:value(caster,'atk'))*rule.value,remaining:rule.turns+1,buffId:id};if(prior)Object.assign(prior,data);else target.skillBuffs.push(data);
         records.push({cmd:CMD.ATTRBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:id,buffTurn:rule.turns}});
       }else if(rule.kind==='maxHp'){
+        if(rule.value<0&&status(target,'immuneDebuffs'))continue;
         const ratio=target.hp/target.maxHp;target.maxHp=Math.min(0x7fffffff,Math.max(1,Math.round(target.maxHp*(1+rule.value))));target.hp=Math.max(target.hp>0?1:0,Math.round(target.maxHp*ratio));
       }else if(rule.kind==='damage'){
         if(status(target,'invincible'))continue;
-        const damage=Math.min(target.hp,Math.max(0,Math.round(value(caster,'atk')*rule.value*(1-Math.max(0,Math.min(1,value(target,'damageReduction')))))));
+        let damage=Math.min(target.hp,Math.max(0,Math.round(value(caster,'atk')*rule.value*(1-Math.max(0,Math.min(1,value(target,'damageReduction')))))));
+        const protection=require('./kabuto-combat').protectFatal(target,damage);
+        if(protection)damage=protection.damage;
         target.hp-=damage;records.push(hpRecord(target,damage));
+        if(protection){target.hp+=protection.recovered;records.push(hpRecord(target,-protection.recovered));}
       }else if(rule.kind==='selfDamage'){
-        const damage=Math.min(caster.hp,Math.round(value(caster,'atk')*rule.value));caster.hp-=damage;records.push(hpRecord(caster,damage,false));
+        let damage=Math.min(caster.hp,Math.round(value(caster,'atk')*rule.value));
+        const protection=require('./kabuto-combat').protectFatal(caster,damage);
+        if(protection)damage=protection.damage;
+        caster.hp-=damage;records.push(hpRecord(caster,damage,false));
+        if(protection){caster.hp+=protection.recovered;records.push(hpRecord(caster,-protection.recovered,false));}
       }
     }
   }
@@ -331,7 +346,11 @@ function startRound(units) {
     for(const buff of [...unit.skillBuffs||[]]){
       if(buff.kind==='regen')restore(unit,unit,buff.amount,records);
       else if(buff.kind==='dot'&&!status(unit,'invincible')){
-        const damage=Math.min(unit.hp,Math.max(0,Math.round(buff.amount)));unit.hp-=damage;records.push(hpRecord(unit,damage,false));
+        let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.amount)));
+        const protection=require('./kabuto-combat').protectFatal(unit,damage);
+        if(protection)damage=protection.damage;
+        unit.hp-=damage;records.push(hpRecord(unit,damage,false));
+        if(protection){unit.hp+=protection.recovered;records.push(hpRecord(unit,-protection.recovered,false));}
       }
       if(unit.hp<=0)break;
     }

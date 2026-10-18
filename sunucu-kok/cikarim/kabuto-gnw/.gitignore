@@ -1,0 +1,13 @@
+backups/
+frames/
+original/
+patched/
+verify/
+*.swf
+reference/*.mp4
+reference/*.info.json
+reference/t*.png
+validation/control.json
+raster-probe-source/
+revival-probe-source/
+constants/

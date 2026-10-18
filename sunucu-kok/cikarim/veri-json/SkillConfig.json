@@ -64070,5 +64070,101 @@
     "desc": "After defeat, revive at 30% HP after allies cast 3 Mysteries. Preserves cooldowns and cannot act again in the revival round.",
     "icon": 13120916,
     "sortId": 6
+  },
+  {
+    "id": "00C835A3",
+    "skillId": 13120931,
+    "name": "Summoning Jutsu - White Snake Assault",
+    "desc": "Prompt. 40 chakra, cooldown 3 rounds, battlefield cooldown 1. Consumes the primary action. Damage, 4 Combo and Level 2 Poison to up to 9 enemies; selected target Knockdown and Interruption. If selected target was already Poisoned or Strong Poisoned, unavoidable and adds Level 2 Strong Poison. Cooldown survives revival.",
+    "icon": 13120931,
+    "sortId": 1
+  },
+  {
+    "id": "00C835A4",
+    "skillId": 13120932,
+    "name": "Modification - Chakra Dissection Bracken Dance",
+    "desc": "Melee attack a random enemy; stackable -12% Defense. 35% local chance to hit its lineup instead: this variant causes 6 Combo, Suppress Super Armor until round end and Low Float to a random hit target. Hit Edo Tensei units receive Curse Binding until end of next round. Cooldown 2 rounds.",
+    "icon": 13120932,
+    "sortId": 2
+  },
+  {
+    "id": "00C835A5",
+    "skillId": 13120933,
+    "name": "Sage Art - White Extreme Attack",
+    "desc": "Chase Low Float or High Float; Repulse. Never misses. Damage, Suppress Immunity until round end and Level 2 Blindness for 1 round to all units in the selected lineup. Once per round. Cooldown 2 rounds.",
+    "icon": 13120933,
+    "sortId": 3
+  },
+  {
+    "id": "00C835A6",
+    "skillId": 13120934,
+    "name": "Modification - Self Healing",
+    "desc": "Before an action: recover 12% max HP, 40 shared chakra, restore team chakra limit to 100. Cooldown 2 rounds; at most once per round. Cooldown survives revival.",
+    "icon": 13120934,
+    "sortId": 4
+  },
+  {
+    "id": "00C835A7",
+    "skillId": 13120935,
+    "name": "Power of the White Snake",
+    "desc": "Immune to Debuffs unless Suppress Immunity is active. When ready, after defeat revive next round at 25% max HP and resummon Mu. Revival cooldown 4 rounds, starting on revival. A death during cooldown cannot revive later. Existing skill cooldowns are preserved. Cannot revive after a Deidara kill.",
+    "icon": 13120935,
+    "sortId": 5
+  },
+  {
+    "id": "00C835A8",
+    "skillId": 13120936,
+    "name": "Summoning Jutsu - Impure World Reincarnation",
+    "desc": "Battle start: summon Mu with 100% Kabuto max HP. Mu remains after Kabuto defeat. Mu summons Deidara after its standard once per round, Dan Kato at even-round start, Pakura at odd-round start. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120936,
+    "sortId": 6
+  },
+  {
+    "id": "00C835A9",
+    "skillId": 13120937,
+    "name": "Mu - Earth Style Strike",
+    "desc": "Mu melee strike. Then summons Deidara once per round. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120937,
+    "sortId": 7
+  },
+  {
+    "id": "00C835AA",
+    "skillId": 13120938,
+    "name": "Mu - Reanimation Summoning",
+    "desc": "Summon a temporary Edo Tensei ninja from a coffin; the summon executes its skill then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120938,
+    "sortId": 8
+  },
+  {
+    "id": "00C835AE",
+    "skillId": 13120942,
+    "name": "Earth Style - Light-Weighted Rock",
+    "desc": "Undispellable barrier for 2 rounds. Both camps: only Kabuto and Edo Tensei can standard attack. Owner camp shares 2 fatal-damage escapes per active round, each recovers to 50% max HP. Cooldown 3 rounds; resummoning Mu does not reset it.",
+    "icon": 13120942,
+    "sortId": 9
+  },
+  {
+    "id": "00C835AB",
+    "skillId": 13120939,
+    "name": "Deidara - Explosive Clay",
+    "desc": "On summon: damage up to 12 enemies, Suppress Super Armor until round end, Knockdown to front target. Victims killed by this skill cannot revive. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120939,
+    "sortId": 10
+  },
+  {
+    "id": "00C835AC",
+    "skillId": 13120940,
+    "name": "Dan Kato - Spirit Transformation",
+    "desc": "On summon: front target damage and Suppress Immunity for 3 rounds; absorb all enemy shared chakra, capped by own team limit. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120940,
+    "sortId": 11
+  },
+  {
+    "id": "00C835AD",
+    "skillId": 13120941,
+    "name": "Pakura - Scorch Release",
+    "desc": "On summon: damage and Ignition to up to 9 enemies. +80% damage against effective Super Armor. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it.",
+    "icon": 13120941,
+    "sortId": 12
   }
 ]

@@ -1023,5 +1023,30 @@
     "id": "00C9BC27",
     "talentName": "Senjutsu Power / Tale of Jiraiya the Gallant",
     "talentDesc": "Prompt. Chakra 20; cooldown 3 rounds; battlefield cooldown 0. Consumes the primary action. Toad Esophagus for 2 rounds: barrier creators/destroyers on both sides cannot cast Mystery. Immediately casts Toad Confrontation Chant. Damage up to 2 enemies. Suppress Immunity and apply Extreme Chaos for the hit round only. Targets are protected against another Toad Chant control through the next round. Cooldown 2 rounds. Uses the primary action; waits while recovering. Unavoidable lineup damage, 5 COMBO. Stackable -10% Resistance. High chance (local: 70%) of Knockdown to selected target. Cooldown 2 rounds; cannot be bypassed by Chase bonuses. At least 15 COMBO. Damage up to 4 enemies, Repulse to selected target. +1 Chase limit for allies without Chase cooldowns this round, non-stacking. Round start: restore chakra limit to 100; +2% team Initiative each round, up to 10%. Cleanse Jiraiya and up to 2 other Senjutsu allies; +20 shared chakra for each. After defeat, revive at 30% HP after allies cast 3 Mysteries. Preserves cooldowns and cannot act again in the revival round."
+  },
+  {
+    "id": "00C9BC2E",
+    "talentName": "Impure World Reincarnation / Power of the White Snake",
+    "talentDesc": "Before an action: recover 12% max HP, 40 shared chakra, restore team chakra limit to 100. Cooldown 2 rounds; at most once per round. Cooldown survives revival. Immune to Debuffs unless Suppress Immunity is active. When ready, after defeat revive next round at 25% max HP and resummon Mu. Revival cooldown 4 rounds, starting on revival. A death during cooldown cannot revive later. Existing skill cooldowns are preserved. Cannot revive after a Deidara kill. Battle start: summon Mu with 100% Kabuto max HP. Mu remains after Kabuto defeat. Mu summons Deidara after its standard once per round, Dan Kato at even-round start, Pakura at odd-round start. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
+  },
+  {
+    "id": "00C9BC2F",
+    "talentName": "Mu [Reanimation]",
+    "talentDesc": "Mu melee strike. Then summons Deidara once per round. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
+  },
+  {
+    "id": "00C9BC30",
+    "talentName": "Deidara [Reanimation]",
+    "talentDesc": "On summon: damage up to 12 enemies, Suppress Super Armor until round end, Knockdown to front target. Victims killed by this skill cannot revive. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
+  },
+  {
+    "id": "00C9BC31",
+    "talentName": "Dan Kato [Reanimation]",
+    "talentDesc": "On summon: front target damage and Suppress Immunity for 3 rounds; absorb all enemy shared chakra, capped by own team limit. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
+  },
+  {
+    "id": "00C9BC32",
+    "talentName": "Pakura [Reanimation]",
+    "talentDesc": "On summon: damage and Ignition to up to 9 enemies. +80% damage against effective Super Armor. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
   }
 ]

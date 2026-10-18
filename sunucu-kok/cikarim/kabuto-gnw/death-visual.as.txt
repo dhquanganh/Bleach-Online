@@ -1,0 +1,46 @@
+      private function PlayKabutoDeath(callback:Function, time:uint) : void
+      {
+         if(FKabutoDeathStop != null) FKabutoDeathStop();
+         TweenUtil.removeTween(this,false);
+         TweenUtil.removeTween(FBitmap,false);
+         FIsDie=true;FWaitDie=false;this.FWaitNextCommand=false;
+         FSkillId=0;FSkilling=false;
+         this.visible=true;this.alpha=1;this.filters=[];
+         FBitmap.visible=true;FBitmap.alpha=1;FBitmap.filters=[];
+         FShaderBmp.visible=false;FHpBar.visible=false;FBuffSprite.visible=false;
+         if(FIdlePosition != null){x=FIdlePosition[0];y=FIdlePosition[1];}
+         PreloadKabutoVfx();
+         var role:TRole=this;
+         var started:int=getTimer();
+         var tick:Function;
+         var stop:Function;
+         var completed:Boolean=false;
+         stop=function(event:Event=null):void
+         {
+            if(event != null && event.target != role) return;
+            role.removeEventListener(Event.ENTER_FRAME,tick);
+            role.removeEventListener(Event.REMOVED_FROM_STAGE,stop);
+            FKabutoDeathStop=null;
+         };
+         tick=function(event:Event=null):void
+         {
+            if(!FIsDie || role.stage==null){stop();return;}
+            var frames:Array=FKabutoFxCache.death as Array;
+            var age:int=getTimer()-started;
+            if(frames != null && frames.length>0)
+            {
+               FBitmap.bitmapData=frames[Math.min(frames.length-1,int(age/40))];
+               FBitmap.x=-128;FBitmap.y=-210;
+            }
+            // Never fade the corpse. Freeze the final prone frame after the clip.
+            if((frames != null && age>=frames.length*40) || (frames==null && age>=600))
+            {
+               stop();
+               if(!completed){completed=true;if(callback!=null)callback(time);}
+            }
+         };
+         FKabutoDeathStop=stop;
+         role.addEventListener(Event.ENTER_FRAME,tick);
+         role.addEventListener(Event.REMOVED_FROM_STAGE,stop);
+         tick();
+      }

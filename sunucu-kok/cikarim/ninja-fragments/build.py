@@ -6,7 +6,8 @@ BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('native',BASE.parent/'naruto-sage/build.py');native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
 FEATURES=[(11120901,14130901,41120901,'Naruto [Sage Mode]','naruto-sage-thumb.png',4),
-          (11120903,14130903,41120903,'Jiraiya [Toads Chant]','jiraiya-icon-input.png',7)]
+          (11120903,14130903,41120903,'Jiraiya [Toads Chant]','jiraiya-icon-input.png',7),
+          (11120910,14130910,41120910,'Kabuto [Great Ninja War]','kabuto-icon-input.png',7)]
 def utf(s):return native.utf(s)
 def u32(v):return native.u32(v)
 def serialize(kind,r):
@@ -81,5 +82,5 @@ def main():
             backup=BASE/'backups'/f.relative_to(ROOT)
             if f.exists() and not backup.exists():backup.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,backup)
             f.parent.mkdir(parents=True,exist_ok=True);f.write_bytes(b)
-    print('PASS 2 Modify Fragments, inventory icons, HeroChangeAttr associations and 100-gem owned-only offers;',len(changes),'files. Applied:',args.apply)
+    print('PASS',len(FEATURES),'Modify Fragments, inventory icons, HeroChangeAttr associations and 100-gem owned-only offers;',len(changes),'files. Applied:',args.apply)
 if __name__=='__main__':main()

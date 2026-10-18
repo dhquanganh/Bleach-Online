@@ -1,17 +1,15 @@
-=== sunucu-canli.log  2026-10-17T17:07:16.243Z ===
+=== sunucu-canli.log  2026-10-18T05:07:00.992Z ===
 
-[+] conn1 baglandi  127.0.0.1:62603  @2026-10-17T17:07:29.963Z
+[+] conn1 baglandi  127.0.0.1:50020  @2026-10-18T05:07:10.891Z
   #1 conn1 C2S CS_LOBBY+0x0000 (0x1810000) len=38
-        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 32 32 35 36 38 34 35
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 32 33 30 30 30 32 37
       -> S2C SC_LOBBY+0x0000 (0x1180000) len=8 [CEVAP-gercek]
-[-] conn1 kapandi  (kapandi)  paket=1 up=38B down=8B sure=639ms
+[-] conn1 kapandi  (kapandi)  paket=1 up=38B down=8B sure=610ms
 
-[+] conn2 baglandi  127.0.0.1:62604  @2026-10-17T17:07:31.114Z
+[+] conn2 baglandi  127.0.0.1:50021  @2026-10-18T05:07:12.017Z
   #2 conn2 C2S CS_LOBBY+0x0001 (0x1810001) len=38
-        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 32 32 35 36 38 34 35
+        00 05 79 65 72 65 6c 00 00 00 36 00 00 03 ce 00 05 79 65 72 65 6c 78 c3 b0 7b 00 0a 31 37 39 32 33 30 30 30 32 37
       -> S2C SC_LOBBY+0x0102 (0x1180102) len=3316 [replay[1/2]]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23537 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x1605 (0x1181605) len=255 [ILLUSION-daily-mail]
   #3 conn2 C2S CS_LOBBY+0xa002 (0x181a002) len=0
       -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
   #4 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=6
@@ -109,22 +107,22 @@
         00 a9 5f 64
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
   #40 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
-        00 a9 5f c6
-      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-  #41 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 86 76
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-  #42 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+  #41 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 86 8d
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-  #43 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+  #42 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 fb aa
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-  #44 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+  #43 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 b1 05
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
-  #45 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+  #44 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
         00 a9 b1 07
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #45 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 0e
       -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
   #46 conn2 C2S CS_LOBBY+0x1b00 (0x1811b00) len=0
       -> S2C SC_LOBBY+0x1b00 (0x1181b00) len=40 [HANDLER]
@@ -135,7 +133,8 @@
       -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [HANDLER]
       -> S2C SC_LOBBY+0x0f7f (0x1180f7f) len=56 [ITEM-state]
   #49 conn2 C2S CS_LOBBY+0x1600 (0x1811600) len=0
-      -> S2C SC_LOBBY+0x1600 (0x1181600) len=1137 [HANDLER]
+      -> S2C SC_LOBBY+0x1600 (0x1181600) len=1121 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
   #50 conn2 C2S CS_LOBBY+0x0b05 (0x1810b05) len=0
       -> S2C SC_LOBBY+0x0b05 (0x1180b05) len=26 [HANDLER]
   #51 conn2 C2S CS_LOBBY+0x1e01 (0x1811e01) len=10
@@ -158,181 +157,81 @@
       -> S2C SC_LOBBY+0x8700 (0x1188700) len=1662 [HANDLER]
   #58 conn2 C2S CS_LOBBY+0x8a08 (0x1818a08) len=0
       -> S2C SC_LOBBY+0x8a08 (0x1188a08) len=14 [CEVAP-gercek]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23537 [ILLUSION-ranking]
-  #59 conn2 C2S CS_LOBBY+0x7e00 (0x1817e00) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23537 [ILLUSION-info]
-  #60 conn2 C2S CS_LOBBY+0x7e01 (0x1817e01) len=1
-        00
-      -> S2C SC_LOBBY+0x7e01 (0x1187e01) len=4 [ILLUSION-ack]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1157 [ILLUSION-report]
-      -> S2C CS_CS+0x8001 (0x1458001) len=7 [ILLUSION-result]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #61 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #62 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #63 conn2 C2S CS_LOBBY+0x7e00 (0x1817e00) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-info]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #64 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #65 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #66 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
-        01 60 7a 61 00 00 00 00
-      -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
+  #59 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f 64
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #60 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 0e
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #61 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 07
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #62 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 05
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #63 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 86 8d
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #64 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #65 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 86 76
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #66 conn2 C2S CS_LOBBY+0xf200 (0x181f200) len=0
+      -> S2C SC_LOBBY+0x6f7e (0x1186f7e) len=681 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
   #67 conn2 C2S CS_LOBBY+0x0300 (0x1810300) len=4
-        00 a8 05 87
+        03 da 04 2d
       -> S2C SC_LOBBY+0x0300 (0x1180300) len=323 [CEVAP-gercek]
-  #68 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2846 [HANDLER]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23589 [ILLUSION-ranking]
-  #69 conn2 C2S CS_LOBBY+0x0201 (0x1810201) len=0
-      -> S2C SC_LOBBY+0x0201 (0x1180201) len=2846 [HANDLER]
-  #70 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
+  #68 conn2 C2S CS_LOBBY+0x0211 (0x1810211) len=0
+      -> S2C SC_LOBBY+0x0212 (0x1180212) len=80 [HANDLER]
+  #69 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
+      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1225 [GOLDTOWER-info]
+  #70 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
+        00 0c 7b 22 66 6c 6f 6f 72 22 3a 34 31 7d
+      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
+      -> S2C CS_CS+0x8000 (0x1458000) len=1583 [GOLDTOWER-battle]
+      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
+      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
+      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
+      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
+      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1227 [GOLDTOWER-progress]
+  #71 conn2 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
+  #72 conn2 C2S UNK+0x0001 (0x1) len=0
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
+  #73 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
+      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1227 [GOLDTOWER-info]
+  #74 conn2 C2S CS_LOBBY+0x0200 (0x1810200) len=8
         01 60 7a 61 00 00 00 00
       -> S2C SC_LOBBY+0x0200 (0x1180200) len=8 [CEVAP-gercek]
-  #71 conn2 C2S CS_LOBBY+0x1604 (0x1811604) len=9
-        01 00 00 00 00 00 00 00 05
-  #72 conn2 C2S CS_LOBBY+0x1603 (0x1811603) len=10
-        00 01 00 00 00 00 00 00 00 05
-      -> S2C SC_LOBBY+0x1603 (0x1181603) len=4 [HANDLER]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [BOSS-mail-claim]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [BOSS-mail-claim]
-  #73 conn2 C2S CS_LOBBY+0x0211 (0x1810211) len=0
-      -> S2C SC_LOBBY+0x0212 (0x1180212) len=80 [HANDLER]
-  #74 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1225 [GOLDTOWER-info]
-  #75 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-  #76 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
-        00 0c 7b 22 66 6c 6f 6f 72 22 3a 33 31 7d
-      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
-      -> S2C CS_CS+0x8000 (0x1458000) len=942 [GOLDTOWER-battle]
-      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1228 [GOLDTOWER-progress]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-  #77 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-  #78 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1228 [GOLDTOWER-info]
-  #79 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
-        00 0c 7b 22 66 6c 6f 6f 72 22 3a 33 32 7d
-      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1366 [GOLDTOWER-battle]
-      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1221 [GOLDTOWER-progress]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-  #80 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-  #81 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
+  #75 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 5f 64
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #76 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 0e
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #77 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 07
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #78 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 b1 05
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #79 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 86 8d
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #80 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 fb aa
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+  #81 conn2 C2S CS_LOBBY+0x0101 (0x1810101) len=4
+        00 a9 86 76
+      -> S2C SC_LOBBY+0x0104 (0x1180104) len=260 [HANDLER]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
   #82 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23606 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
   #83 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #84 conn2 C2S CS_LOBBY+0xa002 (0x181a002) len=0
-      -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #85 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #86 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #87 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #88 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #89 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #90 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #91 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #92 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #93 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23617 [ILLUSION-ranking]
-  #94 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #95 conn2 C2S CS_LOBBY+0xa002 (0x181a002) len=0
-      -> S2C SC_LOBBY+0xa002 (0x118a002) len=20 [HANDLER]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #96 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #97 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #98 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1221 [GOLDTOWER-info]
-  #99 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
-        00 0c 7b 22 66 6c 6f 6f 72 22 3a 33 33 7d
-      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1469 [GOLDTOWER-battle]
-      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1218 [GOLDTOWER-progress]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #100 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #101 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1218 [GOLDTOWER-info]
-  #102 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #103 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
-        00 0c 7b 22 66 6c 6f 6f 72 22 3a 33 34 7d
-      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1427 [GOLDTOWER-battle]
-      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1215 [GOLDTOWER-progress]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #104 conn2 C2S UNK+0x0001 (0x1) len=0  ⚠️DONGU-BASLADI
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #105 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1215 [GOLDTOWER-info]
-  #106 conn2 C2S CS_LOBBY+0xf101 (0x181f101) len=14
-        00 0c 7b 22 66 6c 6f 6f 72 22 3a 33 35 7d
-      -> S2C SC_LOBBY+0x0a7f (0x1180a7f) len=4 [GOLDTOWER-enter]
-      -> S2C CS_CS+0x8000 (0x1458000) len=1771 [GOLDTOWER-battle]
-      -> S2C CS_CS+0x8001 (0x1458001) len=37 [GOLDTOWER-battle]
-      -> S2C SC_LOBBY+0x0f02 (0x1180f02) len=93 [ODUL-envanter]
-      -> S2C SC_LOBBY+0x0105 (0x1180105) len=15 [ODUL-para]
-      -> S2C SC_LOBBY+0x0f00 (0x1180f00) len=2377 [GOLDTOWER-bag]
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1206 [GOLDTOWER-progress]
-  #107 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #108 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #109 conn2 C2S UNK+0x0001 (0x1) len=0
-      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23700 [ILLUSION-ranking]
-  #110 conn2 C2S CS_LOBBY+0xf100 (0x181f100) len=0
-      -> S2C SC_LOBBY+0x0a7e (0x1180a7e) len=1206 [GOLDTOWER-info]
-[-] conn2 kapandi  (kapandi)  paket=109 up=276B down=1476088B sure=845078ms
+      -> S2C SC_LOBBY+0x7e00 (0x1187e00) len=23633 [ILLUSION-ranking]
+[-] conn2 kapandi  (kapandi)  paket=82 up=248B down=240512B sure=130766ms

@@ -1,0 +1,198 @@
+{
+  "version": 3,
+  "frameRate": 25,
+  "frameMs": 40,
+  "atlases": {
+    "snakes": {
+      "url": "/public/kabuto-vfx/v3/white-snakes.png",
+      "columns": 3,
+      "rows": 3
+    },
+    "poison": {
+      "url": "/public/kabuto-vfx/v3/violet-burst.png",
+      "columns": 3,
+      "rows": 3
+    },
+    "utility": {
+      "url": "/public/kabuto-vfx/v3/utility.png",
+      "columns": 4,
+      "rows": 4
+    },
+    "impact": {
+      "url": "/public/kabuto-vfx/v3/impact.png",
+      "columns": 2,
+      "rows": 2
+    },
+    "cutin": {
+      "url": "/public/kabuto-vfx/v3/cutin.png",
+      "columns": 1,
+      "rows": 1
+    },
+    "death": {
+      "url": "/public/kabuto-vfx/v3/death.png",
+      "columns": 7,
+      "rows": 1
+    }
+  },
+  "clips": {
+    "snakes": {
+      "atlas": "snakes",
+      "timeline": [
+        0,
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8
+      ],
+      "pivot": [
+        0.5,
+        0.92
+      ]
+    },
+    "poison": {
+      "atlas": "poison",
+      "timeline": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7,
+        7,
+        8,
+        8
+      ],
+      "pivot": [
+        0.5,
+        0.83
+      ],
+      "softEdges": true
+    },
+    "slash": {
+      "atlas": "utility",
+      "timeline": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    },
+    "mystery-flash": {
+      "atlas": "impact",
+      "timeline": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    },
+    "healing": {
+      "atlas": "utility",
+      "timeline": [
+        4,
+        4,
+        5,
+        5,
+        6,
+        6,
+        7
+      ],
+      "pivot": [
+        0.5,
+        0.94
+      ]
+    },
+    "dragon": {
+      "atlas": "utility",
+      "timeline": [
+        8,
+        8,
+        8,
+        9,
+        9,
+        9
+      ],
+      "pivot": [
+        0.5,
+        0.55
+      ]
+    },
+    "white-flash": {
+      "atlas": "utility",
+      "timeline": [
+        10,
+        10,
+        10,
+        11,
+        11
+      ],
+      "pivot": [
+        0.5,
+        0.55
+      ]
+    },
+    "summon": {
+      "atlas": "utility",
+      "timeline": [
+        12,
+        12,
+        13,
+        13,
+        13,
+        14,
+        14,
+        14,
+        15,
+        15
+      ],
+      "pivot": [
+        0.5,
+        0.94
+      ]
+    },
+    "cutin": {
+      "atlas": "cutin",
+      "timeline": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.5,
+        0.5
+      ]
+    }
+  }
+}

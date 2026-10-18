@@ -1,0 +1,11 @@
+{
+  "clientVersion": "2026101812",
+  "generatedFrames": 299,
+  "nativeFramesVerified": 1264,
+  "clips": 21,
+  "frameRate": 25.0,
+  "matchesJiraiya": true,
+  "exactRGBA": true,
+  "hitMarkersVerified": true,
+  "runtimePlayback": "See vfx-v3/native/result.json for isolated Flash component playback."
+}

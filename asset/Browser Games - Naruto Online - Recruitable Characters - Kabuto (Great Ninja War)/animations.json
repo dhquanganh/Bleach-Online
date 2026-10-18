@@ -1,0 +1,1879 @@
+{
+  "heroId": 11120910,
+  "frameRate": 25.0,
+  "timingReference": "jiraiya-toads/animation.json",
+  "pivot": [
+    128,
+    210
+  ],
+  "models": {
+    "11120910": {
+      "": "kabuto-idle",
+      "0a": "kabuto-idle",
+      "0b": "bracken-dance",
+      "0c": [
+        "white-snake-assault",
+        "white-extreme-attack",
+        "self-healing",
+        "white-snake-revival",
+        "impure-world-reincarnation"
+      ],
+      "0d": "kabuto-hit",
+      "0e": "kabuto-idle",
+      "0f": "kabuto-run"
+    },
+    "11120911": {
+      "": "mu-idle",
+      "0a": "mu-idle",
+      "0b": "mu-strike",
+      "0c": [
+        "mu-summon",
+        "mu-barrier"
+      ],
+      "0d": "mu-hit",
+      "0e": "mu-idle",
+      "0f": "mu-idle"
+    },
+    "11120912": {
+      "": "deidara-idle",
+      "0a": "deidara-idle",
+      "0b": "deidara-attack",
+      "0c": [
+        "deidara-attack"
+      ],
+      "0d": "deidara-idle",
+      "0e": "deidara-idle",
+      "0f": "deidara-idle"
+    },
+    "11120913": {
+      "": "dan-idle",
+      "0a": "dan-idle",
+      "0b": "dan-attack",
+      "0c": [
+        "dan-attack"
+      ],
+      "0d": "dan-idle",
+      "0e": "dan-idle",
+      "0f": "dan-idle"
+    },
+    "11120914": {
+      "": "pakura-idle",
+      "0a": "pakura-idle",
+      "0b": "pakura-attack",
+      "0c": [
+        "pakura-attack"
+      ],
+      "0d": "pakura-idle",
+      "0e": "pakura-idle",
+      "0f": "pakura-idle"
+    }
+  },
+  "clips": {
+    "kabuto-idle": {
+      "assets": [
+        0,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        1,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        2,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        1,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "steps": 8,
+      "idle": 0
+    },
+    "kabuto-run": {
+      "assets": [
+        4,
+        92,
+        93,
+        94,
+        5,
+        95,
+        96,
+        97,
+        6,
+        98,
+        99,
+        100,
+        7,
+        101,
+        102,
+        103
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "steps": 4,
+      "idle": 0
+    },
+    "kabuto-hit": {
+      "assets": [
+        8,
+        104,
+        9,
+        105,
+        10,
+        106,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        8,
+        9,
+        10,
+        0
+      ],
+      "steps": 2,
+      "idle": 0,
+      "returnFrame": 6
+    },
+    "kabuto-die": {
+      "assets": [
+        0,
+        107,
+        108,
+        12,
+        109,
+        110,
+        13
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        0,
+        12,
+        13
+      ],
+      "steps": 3,
+      "idle": 0,
+      "returnFrame": 6
+    },
+    "white-snake-assault": {
+      "assets": [
+        0,
+        111,
+        112,
+        113,
+        20,
+        114,
+        115,
+        116,
+        20,
+        117,
+        118,
+        119,
+        23,
+        120,
+        121,
+        122,
+        23,
+        123,
+        124,
+        125,
+        23,
+        126,
+        127,
+        128,
+        23,
+        129,
+        130,
+        131,
+        23,
+        132,
+        133,
+        134,
+        23,
+        135,
+        136,
+        137,
+        23,
+        138,
+        139,
+        140,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        0,
+        20,
+        20,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        23,
+        0
+      ],
+      "steps": 4,
+      "idle": 0,
+      "returnFrame": 40,
+      "hitFrames": [
+        12
+      ]
+    },
+    "bracken-dance": {
+      "assets": [
+        0,
+        141,
+        16,
+        142,
+        17,
+        143,
+        18,
+        144,
+        19,
+        145,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        0,
+        16,
+        17,
+        18,
+        19,
+        0
+      ],
+      "steps": 2,
+      "idle": 0,
+      "returnFrame": 10,
+      "hitFrames": [
+        6
+      ]
+    },
+    "white-extreme-attack": {
+      "assets": [
+        0,
+        146,
+        147,
+        24,
+        148,
+        149,
+        24,
+        150,
+        151,
+        27,
+        152,
+        153,
+        27,
+        154,
+        155,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        0,
+        24,
+        24,
+        27,
+        27,
+        0
+      ],
+      "steps": 3,
+      "idle": 0,
+      "returnFrame": 15,
+      "hitFrames": [
+        9
+      ]
+    },
+    "self-healing": {
+      "assets": [
+        28,
+        156,
+        157,
+        31,
+        158,
+        159,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        28,
+        31,
+        0
+      ],
+      "steps": 3,
+      "idle": 0,
+      "returnFrame": 6
+    },
+    "white-snake-revival": {
+      "assets": [
+        13,
+        160,
+        161,
+        12,
+        162,
+        163,
+        14,
+        164,
+        165,
+        15,
+        166,
+        167,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        13,
+        12,
+        14,
+        15,
+        0
+      ],
+      "steps": 3,
+      "idle": 0,
+      "returnFrame": 12
+    },
+    "impure-world-reincarnation": {
+      "assets": [
+        29,
+        168,
+        169,
+        170,
+        171,
+        30,
+        172,
+        173,
+        174,
+        175,
+        0
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        29,
+        30,
+        0
+      ],
+      "steps": 5,
+      "idle": 0,
+      "returnFrame": 10
+    },
+    "mu-idle": {
+      "assets": [
+        32,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        33,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        34,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        33,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        32,
+        33,
+        34,
+        33
+      ],
+      "steps": 8,
+      "idle": 32
+    },
+    "mu-strike": {
+      "assets": [
+        36,
+        204,
+        205,
+        206,
+        37,
+        207,
+        208,
+        209,
+        38,
+        210,
+        211,
+        212,
+        32
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        36,
+        37,
+        38,
+        32
+      ],
+      "steps": 4,
+      "idle": 32,
+      "returnFrame": 12,
+      "hitFrames": [
+        8
+      ]
+    },
+    "mu-summon": {
+      "assets": [
+        40,
+        213,
+        214,
+        215,
+        216,
+        41,
+        217,
+        218,
+        219,
+        220,
+        32
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        40,
+        41,
+        32
+      ],
+      "steps": 5,
+      "idle": 32,
+      "returnFrame": 10
+    },
+    "mu-barrier": {
+      "assets": [
+        36,
+        221,
+        222,
+        223,
+        37,
+        224,
+        225,
+        226,
+        32
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        36,
+        37,
+        32
+      ],
+      "steps": 4,
+      "idle": 32,
+      "returnFrame": 8
+    },
+    "mu-hit": {
+      "assets": [
+        44,
+        227,
+        45,
+        228,
+        46,
+        229,
+        32
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        44,
+        45,
+        46,
+        32
+      ],
+      "steps": 2,
+      "idle": 32,
+      "returnFrame": 6
+    },
+    "deidara-idle": {
+      "assets": [
+        48,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        48
+      ],
+      "steps": 8,
+      "idle": 48
+    },
+    "deidara-attack": {
+      "assets": [
+        48,
+        237,
+        238,
+        239,
+        240,
+        49,
+        241,
+        242,
+        243,
+        244,
+        50,
+        245,
+        246,
+        247,
+        248,
+        51,
+        249,
+        250,
+        251,
+        252,
+        48
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        48,
+        49,
+        50,
+        51,
+        48
+      ],
+      "steps": 5,
+      "idle": 48,
+      "returnFrame": 20,
+      "hitFrames": [
+        10
+      ]
+    },
+    "dan-idle": {
+      "assets": [
+        52,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        52
+      ],
+      "steps": 8,
+      "idle": 52
+    },
+    "dan-attack": {
+      "assets": [
+        52,
+        260,
+        261,
+        262,
+        263,
+        53,
+        264,
+        265,
+        266,
+        267,
+        54,
+        268,
+        269,
+        270,
+        271,
+        55,
+        272,
+        273,
+        274,
+        275,
+        52
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        52,
+        53,
+        54,
+        55,
+        52
+      ],
+      "steps": 5,
+      "idle": 52,
+      "returnFrame": 20,
+      "hitFrames": [
+        10
+      ]
+    },
+    "pakura-idle": {
+      "assets": [
+        56,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282
+      ],
+      "duration": 40,
+      "loop": true,
+      "keys": [
+        56
+      ],
+      "steps": 8,
+      "idle": 56
+    },
+    "pakura-attack": {
+      "assets": [
+        56,
+        283,
+        284,
+        285,
+        286,
+        57,
+        287,
+        288,
+        289,
+        290,
+        58,
+        291,
+        292,
+        293,
+        294,
+        59,
+        295,
+        296,
+        297,
+        298,
+        56
+      ],
+      "duration": 40,
+      "loop": false,
+      "keys": [
+        56,
+        57,
+        58,
+        59,
+        56
+      ],
+      "steps": 5,
+      "idle": 56,
+      "returnFrame": 20,
+      "hitFrames": [
+        10
+      ]
+    }
+  },
+  "sourceFrames": [
+    {
+      "id": 0,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        0,
+        0,
+        313,
+        329
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 325,
+      "alphaBounds": [
+        104,
+        54,
+        188,
+        212
+      ]
+    },
+    {
+      "id": 1,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        313,
+        0,
+        627,
+        329
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 327,
+      "alphaBounds": [
+        99,
+        48,
+        181,
+        210
+      ]
+    },
+    {
+      "id": 2,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        627,
+        0,
+        940,
+        329
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 328,
+      "alphaBounds": [
+        97,
+        47,
+        178,
+        210
+      ]
+    },
+    {
+      "id": 3,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        940,
+        0,
+        1254,
+        329
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 328,
+      "alphaBounds": [
+        87,
+        48,
+        174,
+        210
+      ]
+    },
+    {
+      "id": 4,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        0,
+        329,
+        331,
+        629
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 292,
+      "alphaBounds": [
+        64,
+        73,
+        216,
+        213
+      ]
+    },
+    {
+      "id": 5,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        331,
+        329,
+        653,
+        629
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 293,
+      "alphaBounds": [
+        66,
+        70,
+        219,
+        213
+      ]
+    },
+    {
+      "id": 6,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        653,
+        329,
+        953,
+        629
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 299,
+      "alphaBounds": [
+        63,
+        68,
+        213,
+        210
+      ]
+    },
+    {
+      "id": 7,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        953,
+        329,
+        1254,
+        629
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 299,
+      "alphaBounds": [
+        59,
+        67,
+        206,
+        210
+      ]
+    },
+    {
+      "id": 8,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        0,
+        629,
+        313,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 316,
+      "alphaBounds": [
+        87,
+        60,
+        180,
+        210
+      ]
+    },
+    {
+      "id": 9,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        313,
+        629,
+        627,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 315,
+      "alphaBounds": [
+        79,
+        56,
+        197,
+        210
+      ]
+    },
+    {
+      "id": 10,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        627,
+        629,
+        940,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 310,
+      "alphaBounds": [
+        63,
+        59,
+        200,
+        212
+      ]
+    },
+    {
+      "id": 11,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        940,
+        629,
+        1254,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 315,
+      "alphaBounds": [
+        84,
+        86,
+        190,
+        210
+      ]
+    },
+    {
+      "id": 12,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        0,
+        946,
+        313,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 273,
+      "alphaBounds": [
+        79,
+        113,
+        189,
+        213
+      ]
+    },
+    {
+      "id": 13,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        313,
+        946,
+        686,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 274,
+      "alphaBounds": [
+        59,
+        147,
+        235,
+        213
+      ]
+    },
+    {
+      "id": 14,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        686,
+        946,
+        940,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 273,
+      "alphaBounds": [
+        85,
+        105,
+        204,
+        213
+      ]
+    },
+    {
+      "id": 15,
+      "atlas": "01-kabuto-movement.png",
+      "bounds": [
+        940,
+        946,
+        1254,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 273,
+      "alphaBounds": [
+        83,
+        82,
+        204,
+        213
+      ]
+    },
+    {
+      "id": 16,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        0,
+        0,
+        312,
+        307
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        79,
+        64,
+        153,
+        214
+      ]
+    },
+    {
+      "id": 17,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        312,
+        0,
+        618,
+        307
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        49,
+        85,
+        161,
+        214
+      ]
+    },
+    {
+      "id": 18,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        618,
+        0,
+        963,
+        307
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        45,
+        81,
+        217,
+        214
+      ]
+    },
+    {
+      "id": 19,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        963,
+        0,
+        1254,
+        307
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 302,
+      "alphaBounds": [
+        67,
+        66,
+        197,
+        213
+      ]
+    },
+    {
+      "id": 20,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        0,
+        307,
+        304,
+        624
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 305,
+      "alphaBounds": [
+        75,
+        62,
+        156,
+        213
+      ]
+    },
+    {
+      "id": 21,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        304,
+        307,
+        571,
+        624
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 305,
+      "alphaBounds": [
+        45,
+        98,
+        151,
+        213
+      ]
+    },
+    {
+      "id": 22,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        571,
+        307,
+        961,
+        624
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 304,
+      "alphaBounds": [
+        22,
+        58,
+        217,
+        212
+      ]
+    },
+    {
+      "id": 23,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        961,
+        307,
+        1254,
+        624
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 306,
+      "alphaBounds": [
+        88,
+        63,
+        179,
+        212
+      ]
+    },
+    {
+      "id": 24,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        0,
+        624,
+        275,
+        935
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 303,
+      "alphaBounds": [
+        75,
+        61,
+        156,
+        213
+      ]
+    },
+    {
+      "id": 25,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        275,
+        624,
+        563,
+        935
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 303,
+      "alphaBounds": [
+        30,
+        74,
+        174,
+        213
+      ]
+    },
+    {
+      "id": 26,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        563,
+        624,
+        997,
+        935
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 295,
+      "alphaBounds": [
+        18,
+        62,
+        235,
+        213
+      ]
+    },
+    {
+      "id": 27,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        997,
+        624,
+        1254,
+        935
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 303,
+      "alphaBounds": [
+        78,
+        66,
+        191,
+        213
+      ]
+    },
+    {
+      "id": 28,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        0,
+        935,
+        313,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        74,
+        61,
+        172,
+        214
+      ]
+    },
+    {
+      "id": 29,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        313,
+        935,
+        627,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        62,
+        105,
+        155,
+        214
+      ]
+    },
+    {
+      "id": 30,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        627,
+        935,
+        940,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 303,
+      "alphaBounds": [
+        78,
+        58,
+        158,
+        213
+      ]
+    },
+    {
+      "id": 31,
+      "atlas": "02-kabuto-combat.png",
+      "bounds": [
+        940,
+        935,
+        1254,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 305,
+      "alphaBounds": [
+        87,
+        59,
+        176,
+        214
+      ]
+    },
+    {
+      "id": 32,
+      "atlas": "03-mu.png",
+      "bounds": [
+        0,
+        0,
+        313,
+        324
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 322,
+      "alphaBounds": [
+        100,
+        59,
+        165,
+        211
+      ]
+    },
+    {
+      "id": 33,
+      "atlas": "03-mu.png",
+      "bounds": [
+        313,
+        0,
+        627,
+        324
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 322,
+      "alphaBounds": [
+        95,
+        59,
+        161,
+        211
+      ]
+    },
+    {
+      "id": 34,
+      "atlas": "03-mu.png",
+      "bounds": [
+        627,
+        0,
+        940,
+        324
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 322,
+      "alphaBounds": [
+        90,
+        59,
+        156,
+        211
+      ]
+    },
+    {
+      "id": 35,
+      "atlas": "03-mu.png",
+      "bounds": [
+        940,
+        0,
+        1254,
+        324
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 323,
+      "alphaBounds": [
+        97,
+        60,
+        158,
+        211
+      ]
+    },
+    {
+      "id": 36,
+      "atlas": "03-mu.png",
+      "bounds": [
+        0,
+        324,
+        313,
+        625
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 296,
+      "alphaBounds": [
+        71,
+        78,
+        183,
+        212
+      ]
+    },
+    {
+      "id": 37,
+      "atlas": "03-mu.png",
+      "bounds": [
+        313,
+        324,
+        590,
+        625
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 297,
+      "alphaBounds": [
+        53,
+        77,
+        187,
+        211
+      ]
+    },
+    {
+      "id": 38,
+      "atlas": "03-mu.png",
+      "bounds": [
+        590,
+        324,
+        980,
+        625
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        33,
+        86,
+        224,
+        210
+      ]
+    },
+    {
+      "id": 39,
+      "atlas": "03-mu.png",
+      "bounds": [
+        980,
+        324,
+        1254,
+        625
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 288,
+      "alphaBounds": [
+        71,
+        85,
+        199,
+        213
+      ]
+    },
+    {
+      "id": 40,
+      "atlas": "03-mu.png",
+      "bounds": [
+        0,
+        625,
+        313,
+        940
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 310,
+      "alphaBounds": [
+        62,
+        78,
+        184,
+        212
+      ]
+    },
+    {
+      "id": 41,
+      "atlas": "03-mu.png",
+      "bounds": [
+        313,
+        625,
+        627,
+        940
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 309,
+      "alphaBounds": [
+        51,
+        83,
+        205,
+        213
+      ]
+    },
+    {
+      "id": 42,
+      "atlas": "03-mu.png",
+      "bounds": [
+        627,
+        625,
+        940,
+        940
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 312,
+      "alphaBounds": [
+        61,
+        57,
+        204,
+        211
+      ]
+    },
+    {
+      "id": 43,
+      "atlas": "03-mu.png",
+      "bounds": [
+        940,
+        625,
+        1254,
+        940
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 314,
+      "alphaBounds": [
+        51,
+        67,
+        203,
+        210
+      ]
+    },
+    {
+      "id": 44,
+      "atlas": "03-mu.png",
+      "bounds": [
+        0,
+        940,
+        313,
+        1254
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 291,
+      "alphaBounds": [
+        64,
+        85,
+        193,
+        213
+      ]
+    },
+    {
+      "id": 45,
+      "atlas": "03-mu.png",
+      "bounds": [
+        313,
+        940,
+        627,
+        1254
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 287,
+      "alphaBounds": [
+        65,
+        81,
+        185,
+        213
+      ]
+    },
+    {
+      "id": 46,
+      "atlas": "03-mu.png",
+      "bounds": [
+        627,
+        940,
+        940,
+        1254
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 282,
+      "alphaBounds": [
+        70,
+        124,
+        178,
+        213
+      ]
+    },
+    {
+      "id": 47,
+      "atlas": "03-mu.png",
+      "bounds": [
+        940,
+        940,
+        1254,
+        1254
+      ],
+      "scale": 0.49,
+      "sourceBaseline": 291,
+      "alphaBounds": [
+        72,
+        75,
+        176,
+        213
+      ]
+    },
+    {
+      "id": 48,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        0,
+        0,
+        301,
+        313
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 308,
+      "alphaBounds": [
+        77,
+        56,
+        167,
+        212
+      ]
+    },
+    {
+      "id": 49,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        301,
+        0,
+        608,
+        313
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 307,
+      "alphaBounds": [
+        43,
+        59,
+        158,
+        212
+      ]
+    },
+    {
+      "id": 50,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        608,
+        0,
+        909,
+        313
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 307,
+      "alphaBounds": [
+        40,
+        59,
+        189,
+        212
+      ]
+    },
+    {
+      "id": 51,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        909,
+        0,
+        1254,
+        313
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 307,
+      "alphaBounds": [
+        34,
+        59,
+        176,
+        212
+      ]
+    },
+    {
+      "id": 52,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        0,
+        313,
+        313,
+        627
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 308,
+      "alphaBounds": [
+        74,
+        58,
+        150,
+        213
+      ]
+    },
+    {
+      "id": 53,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        313,
+        313,
+        579,
+        627
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 306,
+      "alphaBounds": [
+        55,
+        70,
+        152,
+        213
+      ]
+    },
+    {
+      "id": 54,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        579,
+        313,
+        893,
+        627
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 306,
+      "alphaBounds": [
+        26,
+        70,
+        183,
+        213
+      ]
+    },
+    {
+      "id": 55,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        893,
+        313,
+        1254,
+        627
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 307,
+      "alphaBounds": [
+        26,
+        73,
+        206,
+        212
+      ]
+    },
+    {
+      "id": 56,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        0,
+        627,
+        313,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 313,
+      "alphaBounds": [
+        87,
+        54,
+        145,
+        214
+      ]
+    },
+    {
+      "id": 57,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        313,
+        627,
+        565,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 317,
+      "alphaBounds": [
+        59,
+        52,
+        166,
+        212
+      ]
+    },
+    {
+      "id": 58,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        565,
+        627,
+        967,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 314,
+      "alphaBounds": [
+        19,
+        59,
+        220,
+        213
+      ]
+    },
+    {
+      "id": 59,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        967,
+        627,
+        1254,
+        946
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 317,
+      "alphaBounds": [
+        67,
+        52,
+        189,
+        212
+      ]
+    },
+    {
+      "id": 60,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        0,
+        946,
+        323,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 308,
+      "alphaBounds": [
+        50,
+        59,
+        212,
+        210
+      ]
+    },
+    {
+      "id": 61,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        323,
+        946,
+        607,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 297,
+      "alphaBounds": [
+        68,
+        64,
+        176,
+        213
+      ]
+    },
+    {
+      "id": 62,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        607,
+        946,
+        927,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 301,
+      "alphaBounds": [
+        40,
+        74,
+        197,
+        213
+      ]
+    },
+    {
+      "id": 63,
+      "atlas": "04-edo-summons.png",
+      "bounds": [
+        927,
+        946,
+        1254,
+        1254
+      ],
+      "scale": 0.5,
+      "sourceBaseline": 279,
+      "alphaBounds": [
+        43,
+        70,
+        204,
+        219
+      ]
+    }
+  ],
+  "frameCount": 299
+}
