@@ -30,7 +30,7 @@ def main():
     ids = [13120931,13120932,13120933,13120934,13120935,13120936]
     hits = {sid:metadata[name].get('hitFrames',[metadata[name]['steps']])[0] for sid,name in zip(ids,names)}
     methods = (BASE/'raster-vfx.as.txt').read_text()
-    methods = methods.replace('__KABUTO_VFX_MANIFEST__', json.dumps(manifest,separators=(',',':')))
+    methods = methods.replace('__KABUTO_VFX_MANIFEST__', json.dumps(json.dumps(manifest,separators=(',',':'))))
     methods = methods.replace('__KABUTO_VFX_FRAMES__', json.dumps(hits))
     methods = methods.replace('TRole','ProbeRole').replace('private function','public function').replace('private static function','public static function')
     methods = methods.replace('this.ShowKabutoSummonVfx(skill,impact);return;', 'return;')
@@ -70,10 +70,11 @@ def main():
     report("DONE native raster component; 12 cases across both camps; remaining="+remaining);''')
     source = source.replace('if(slot==6)SetJiraiyaBarrier(battle,false);', '')
     source = source.replace('Jiraiya video reconstruction', 'Kabuto video VFX reconstruction')
-    source = source.replace('if(loaded<7)return;', 'if(loaded<7 || ProbeRole.FKabutoFxCache.snakes == null || ProbeRole.FKabutoFxCache.poison == null || ProbeRole.FKabutoFxCache.utility == null || ProbeRole.FKabutoFxCache.cutin == null || ProbeRole.FKabutoFxCache.impact == null || ProbeRole.FKabutoFxCache.death == null)return;')
-    source = source.replace('4000', '3000')
+    ready=' || '.join('ProbeRole.FKabutoFxCache["'+name+'"] == null' for name in manifest['atlases'])
+    source = source.replace('if(loaded<7)return;', 'if(loaded<7 || '+ready+')return;')
+    source = source.replace('4000', '7000')
     source = remove_block(source, source.index('   if(leap){'))
-    source = source.replace('if(index==2){', 'if(index==0){').replace('[6,16,27,30,42]', '[4,16,20,26,32,38]')
+    source = source.replace('if(index==2){', 'if(index==0){').replace('[6,16,27,30,42]', '[4,16,40,60,80,110]')
     source = source.replace('SLAM-camp-', 'MYSTERY-camp-')
     source = source.replace('var hit:int=index==0?24:(metadata[name].hitFrames!=null?int(metadata[name].hitFrames[0]):8);',
                             'var hit:int=metadata[name].hitFrames!=null?int(metadata[name].hitFrames[0]):int(metadata[name].steps);')
@@ -165,7 +166,7 @@ def main():
        caster.FSkillId=skills[index];caster.FKabutoVfxStarted=false;caster.FKabutoVfxHit=false;
        readyAt+=getTimer()-deathProbeStarted;deathProbePending=false;
     },1100);''')
-        source=source.replace('   var frame:int=int((age%3000)/40);', '   if(deathProbePending)return;\n   var frame:int=int((age%3000)/40);')
+        source=source.replace('   var frame:int=int((age%7000)/40);', '   if(deathProbePending)return;\n   var frame:int=int((age%7000)/40);')
     role = '\n internal class ProbeRole extends Sprite {\n'+fields+'''
       public function ProbeRole(){super();actor.smoothing=true;addChild(actor);}
       public function report(text:String):void {if(ExternalInterface.available)ExternalInterface.call("vfxProbe",text);}
@@ -175,6 +176,11 @@ def main():
     target = BASE/('revival-probe-source' if args.revival_check else 'raster-probe-source')/'TApplication.as'
     target.parent.mkdir(exist_ok=True)
     target.write_text(source)
+    import runpy
+    decoder=runpy.run_path(str(BASE/'patch-decoder.py'))
+    decoder_source=decoder['prepare'](args.ffdec,BASE/'source.swf',BASE/'probe-decoder')
+    decoder_target=target.parent/decoder['CLASS'];decoder_target.parent.mkdir(parents=True,exist_ok=True)
+    decoder_target.write_text(decoder_source.read_text(encoding='utf-8'),encoding='utf-8')
     output = BASE/('revival-probe.swf' if args.revival_check else 'raster-probe.swf')
     subprocess.run(['java','-Xmx2g','-jar',args.ffdec,'-onerror','abort','-importScript',
                     str(BASE/'source.swf'),str(output),str(target.parent)],check=True)

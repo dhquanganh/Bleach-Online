@@ -1,5 +1,26 @@
 # Kabuto [Great Ninja War] — SSS Support, đánh cận chiến
 
+## Original extracted assets - client 2026101813
+
+Kabuto now uses `asset/Extracted_Kabuto_Great_Ninja_War`. All 14 input assets are checked against the supplied SHA-256 manifest. Older sections below describe the superseded generated artwork.
+
+`prepare-assets.py` decodes the bitmap/XML MME character and showcase SWFs. It preserves layers, coordinates, rotations, scale, alpha and source poses, resampling the original 24 FPS timeline to the engine's 40 ms tick. Per-frame pivots and deduplicated row-packed TexClient atlases keep registration stable and bitmaps below 4096 px. The source pack contains only Kabuto's model; existing Edo guest character artwork is retained. The client decoder opts into explicit atlas rectangles only for the new PAK type 127; existing resource formats keep their sequential decoder path. Character frame bounds are computed from transformed artwork rather than a fixed canvas, so the large snake poses remain intact.
+
+`prepare-vfx.py` rasterizes all eight original effect SWFs using FFDec. `SwfBounds.java` provides exact filtered bounds so every layer retains its original origin. Shared crops and deduplicated frames reduce atlas size. The three standard effects are variants, and coffin symbols are selected separately for Mu, guests and revival. Character animations wait for effects to finish; damage remains a single report hit. Both portraits, the bag preview, large image and decoded showcase are used by the UI.
+
+Rebuild from the repository root:
+
+```powershell
+.tools/python/python.exe sunucu-kok/cikarim/kabuto-gnw/prepare-assets.py
+.tools/python/python.exe sunucu-kok/cikarim/kabuto-gnw/prepare-vfx.py --ffdec .tools/ffdec/ffdec.jar
+.tools/python/python.exe sunucu-kok/cikarim/kabuto-gnw/build.py --apply
+.tools/python/python.exe sunucu-kok/cikarim/kabuto-gnw/build-client.py --ffdec .tools/ffdec/ffdec.jar --install
+.tools/python/python.exe sunucu-kok/cikarim/kabuto-gnw/verify-assets.py
+node/node.exe --test sunucu-kok/sunucu/tests/kabuto-combat.test.js
+```
+
+Previews are in `validation/extracted/`. Build the Flash component probe with `build-raster-probe.py --revival-check`, then run `runtime-raster.js` with `KABUTO_REVIVAL_PROBE=1`, followed by `verify-vfx.py`. Evidence is written to `validation/extracted/revival/` and `validation/extracted/verified.json`. This verifies renderer/components rather than a complete interactive battle. Restart the game to load the new client; saves and formations are preserved.
+
 ## Sửa tư thế trong màn hình nhân vật
 
 Slot model `0E` đã bị gán nhầm `kabuto-die` (và hit cho Mu), khiến màn hình nhân vật hiển thị tư thế nằm. Đổi `0E` về idle đứng có loop cho cả năm model, khớp với slot showcase của Jiraiya. Kiểm tra native thêm ràng buộc `0E == 0A == idle`; 1.264 frame trong hai bộ resource đã được giải mã/đối chiếu. Animation chết trong trận vẫn dùng atlas PNG riêng của client 2026101812, nên Kabuto vẫn ngã/nằm khi chết trong trận và đứng trong giao diện nhân vật. Đây là thay đổi tài nguyên, không cần vá SWF hay thay đổi cooldown. Đóng/mở lại game để xóa cache model trong phiên.

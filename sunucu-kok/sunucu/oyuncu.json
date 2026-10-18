@@ -8,7 +8,7 @@
   "country": 0,
   "militaryRank": 0,
   "prestige": 0,
-  "altin": 91979,
+  "altin": 96079,
   "gumus": 57439887,
   "gumusHigh": 0,
   "kupon": 513064,
@@ -3625,11 +3625,26 @@
         ],
         "damage": 87400402,
         "at": 1792300036
+      },
+      "bot:64": {
+        "id": "bot:64",
+        "name": "Bot Jiraiya [Toads Chant] #0064",
+        "bot": true,
+        "level": 105,
+        "heroes": [
+          11120903,
+          12100073,
+          11110017,
+          11150055,
+          11110018
+        ],
+        "damage": 8743975,
+        "at": 1792307893
       }
     },
-    "nextBot": 1792300336,
-    "nextFight": 1792299717,
-    "battles": 8,
+    "nextBot": 1792308193,
+    "nextFight": 1792307927,
+    "battles": 9,
     "payouts": [
       {
         "id": "20736:359:80840994",
@@ -3692,7 +3707,7 @@
         "mailClaimed": true
       }
     ],
-    "lastDamage": 186654,
+    "lastDamage": 183456,
     "previous": {
       "day": 20743,
       "rows": [

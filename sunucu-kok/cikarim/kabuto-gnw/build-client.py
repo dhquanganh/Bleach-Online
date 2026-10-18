@@ -5,10 +5,10 @@ BASE=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('native_client',BASE.parent/'naruto-sage/verify-client.py');helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
 ROLE=Path('Processors/Game/Battle/Character/TRole.as');ACTIVE=Path('Processors/Game/Battle/Character/TActive.as')
 STAGE=Path('Processors/Game/Battle/TBattleStage.as')
-VERSION=b'2026101812'
+VERSION=b'2026101813'
 
 def remove_methods(text):
-    for name in ['UpdateKabutoVfx','ShowKabutoVfx','ShowKabutoSummonVfx','KabutoVfxManifest','PreloadKabutoVfx','LoadKabutoVfxAtlas','PlayKabutoVfxAsset','RestoreKabutoAfterRevival','PlayKabutoDeath']:
+    for name in ['UpdateKabutoVfx','ShowKabutoVfx','ShowKabutoSummonVfx','KabutoVfxManifest','PreloadKabutoVfx','LoadKabutoVfxAtlas','PlayKabutoVfxAsset','PlayKabutoNativeEffect','RestoreKabutoAfterRevival','PlayKabutoDeath']:
         signature='private function '+name+'('
         if signature not in text:signature='private static function '+name+'('
         if signature not in text:continue
@@ -129,7 +129,7 @@ def main():
         text=text[:body]+'\n         if(FId >= 11120910 && FId <= 11120914) PreloadKabutoVfx();'+text[body:]
     vfx=(BASE/'raster-vfx.as.txt').read_text(encoding='utf-8').replace('__KABUTO_VFX_FRAMES__',json.dumps(hits,separators=(',',':')))
     manifest=json.loads((BASE/'vfx.json').read_text())
-    vfx=vfx.replace('__KABUTO_VFX_MANIFEST__',json.dumps(manifest,separators=(',',':')))
+    vfx=vfx.replace('__KABUTO_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
     legacy=(BASE/'skill-vfx.as.txt').read_text(encoding='utf-8')
     vfx+=legacy[legacy.index('      private function ShowKabutoVfx('):].replace('ShowKabutoVfx(','ShowKabutoSummonVfx(')
     vfx+=(BASE/'revival-visual.as.txt').read_text(encoding='utf-8')
@@ -180,14 +180,19 @@ def main():
          }
 '''+stage[body:]
     target=BASE/'patched'/STAGE;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(stage,encoding='utf-8')
+    import runpy
+    decoder=runpy.run_path(str(BASE/'patch-decoder.py'))
+    decoder_source=decoder['prepare'](args.ffdec,source,BASE/'decoder')
+    decoder_target=BASE/'patched'/decoder['CLASS'];decoder_target.parent.mkdir(parents=True,exist_ok=True)
+    decoder_target.write_text(decoder_source.read_text(encoding='utf-8'),encoding='utf-8')
     output=BASE/'compiled.swf';ffdec('-onerror','abort','-importScript',source,output,BASE/'patched');rebuilt=output.read_bytes()
     assert [t for t in helper.tags(decoded) if t[0]!=82]==[t for t in helper.tags(rebuilt) if t[0]!=82]
-    ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Processors.Game.Battle.TBattleStage,Logics.HeroNew.TWakeHeroAttributes,Processors.Game.Lobby.HeroChange.TProcessorHeroChange','-export','script',BASE/'verify',output)
+    ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Processors.Game.Battle.TBattleStage,Logics.HeroNew.TWakeHeroAttributes,Processors.Game.Lobby.HeroChange.TProcessorHeroChange,Foundation.Decoder.Pak.TPakDecoder','-export','script',BASE/'verify',output)
     role=(BASE/'verify/scripts'/ROLE).read_text(encoding='utf-8');active=(BASE/'verify/scripts'/ACTIVE).read_text(encoding='utf-8')
     assert all(token in role for token in ['19000401','19000418','LEVEL 2 BLINDNESS','SUPPRESS IMMUNITY','CURSE BINDING','Low Float','13120931','UpdateKabutoVfx','ShakeJiraiyaBattle','TOAD ESOPHAGUS','kabutoSkillVfx','CheckDie()'])
     assert all(token in active for token in ['13120902','13120904','13120912','13120916','13120933','13120935','13120942'])
     for name in ['UpdateKabutoVfx','ShowKabutoVfx','PlayKabutoVfxAsset','PreloadKabutoVfx']:assert role.count('function '+name+'(')==1
-    assert all(token in role for token in ['FKabutoFxCache','/public/kabuto-vfx/v3/white-snakes.png','/public/kabuto-vfx/v3/violet-burst.png','copyPixels'])
+    assert all(token in role for token in ['FKabutoFxCache','/public/kabuto-vfx/extracted/','aoyitexie','tinengzhiyu','copyPixels'])
     restore=role[role.index('private function RestoreKabutoAfterRevival('):role.index('      override public function UpdateActive()')]
     assert all(token in restore for token in ['FWaitDie = false','FHasFrozen = false','FBitmap.visible = true','FBitmap.alpha = 1','GetAnimationFrameByIndex(0)','TYPE_ACTIVE_DIE'])
     passive=role[role.index('      public function PassiveSkillPlay('):role.index('      public function RoundSkill(')]
@@ -197,6 +202,8 @@ def main():
     wake=(BASE/'verify/scripts/Logics/HeroNew/TWakeHeroAttributes.as').read_text(encoding='utf-8')
     assert all('if('+name+' == null)' in wake for name in ['_loc12_','_loc11_','_loc8_'])
     change=(BASE/'verify/scripts/Processors/Game/Lobby/HeroChange/TProcessorHeroChange.as').read_text(encoding='utf-8');assert '_loc9_.CityID == 0' in change
+    decoder_check=(BASE/'verify/scripts'/decoder['CLASS']).read_text(encoding='utf-8')
+    assert 'FKabutoSourceRects' in decoder_check and '== 127' in decoder_check
     if args.install:
         assert canonical.read_bytes()==original
         manifest=helper.PUBLIC/'2026090619/version.swf';raw=zlib.decompress(manifest.read_bytes());p=2;entries=[]

@@ -4,7 +4,7 @@ const {app,BrowserWindow}=require('electron');
 const fs=require('fs'),path=require('path'),http=require('http');
 const base=__dirname,root=path.resolve(base,'../../..');
 const revival=process.env.KABUTO_REVIVAL_PROBE==='1';
-const out=path.join(base,revival?'validation/revival-visual':'validation/vfx-v3/native');
+const out=path.join(base,revival?'validation/extracted/revival':'validation/extracted/native');
 if(!fs.existsSync(out))fs.mkdirSync(out);
 const logFile=path.join(out,'runtime.log');fs.writeFileSync(logFile,'');
 const log=t=>fs.appendFileSync(logFile,t+'\n');
@@ -25,7 +25,7 @@ const server=http.createServer((req,res)=>{
  }
  let file;
  if(req.url==='/probe.swf')file=path.join(base,revival?'revival-probe.swf':'raster-probe.swf');
- else if(/^\/public\/kabuto-vfx\/v3\/[a-z-]+\.png$/.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
+ else if(/^\/public\/kabuto-vfx\/(v3|extracted)\/[a-z0-9-]+\.png$/.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  else if(/^\/public\/2026090619\/Resources\/Textures\/Model\/[A-F0-9]+\.TexClient$/.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  if(!file||!fs.existsSync(file)){const msg='ERROR HTTP 404 '+req.url;log(msg);errors.push(msg);res.statusCode=404;return res.end();}
  res.setHeader('Content-Type',file.endsWith('.swf')?'application/x-shockwave-flash':file.endsWith('.png')?'image/png':'application/octet-stream');
@@ -53,5 +53,5 @@ app.on('ready',()=>server.listen(7447,'127.0.0.1',()=>{
   if(msg.indexOf('DONE ')===0&&!done){const match=msg.match(/remaining=(\d+)/);remainingLayers=match?Number(match[1]):null;done=true;setTimeout(finish,600);}
  });
  win.loadURL('http://127.0.0.1:7447/');
- setTimeout(()=>{if(!done){errors.push('ERROR timeout');log('ERROR timeout');finish();}},95000);
+ setTimeout(()=>{if(!done){errors.push('ERROR timeout');log('ERROR timeout');finish();}},145000);
 }));

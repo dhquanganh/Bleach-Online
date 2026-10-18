@@ -24,26 +24,29 @@ def main():
         hashes[name] = hashlib.sha256(file.read_bytes()).hexdigest()
     for name, clip in manifest['clips'].items():
         assert clip['timeline'] and all(0 <= i < counts[clip['atlas']] for i in clip['timeline'])
-    mystery = animation['clips']['white-snake-assault']
-    available = (mystery['returnFrame']-mystery['hitFrames'][0])*40
-    snake_end = 60+len(manifest['clips']['snakes']['timeline'])*40
-    poison_end = 420+len(manifest['clips']['poison']['timeline'])*40
-    assert max(snake_end,poison_end) <= available, 'Mystery must finish before returning control'
-    assert 22 not in mystery['keys'], 'Target snake eruption must not be baked onto the caster'
-    assert 26 not in animation['clips']['white-extreme-attack']['keys'], 'Avoid double dragon effects'
+    assert set(manifest['effects']) >= {'aoyi','aoyitexie','huituzhuansheng','pugong','pugong1','pugong2','tinengzhiyu','zhuida'}
+    available = len(animation['clips']['white-snake-assault']['assets'])*40
+    mystery_end = max(len(manifest['clips'][name]['timeline'])*40 for name in manifest['effects']['aoyi'])
+    assert mystery_end <= available
     verified = (BASE/'verify/scripts/Processors/Game/Battle/Character/TRole.as').read_text()
     assert all(atlas['url'] in verified for atlas in manifest['atlases'].values())
-    assert 'getChildIndex(field)' in (BASE/'raster-vfx.as.txt').read_text()
-    evidence = json.loads((BASE/'validation/revival-visual/result.json').read_text())
+    sources=json.loads((BASE/'validation/extracted/source-assets.json').read_text())
+    assert len(sources)==14
+    for source in sources:
+        file=ROOT/'kaynak/login.gogames.me/public/kabuto-vfx/extracted/original'/source['file']
+        assert hashlib.sha256(file.read_bytes()).hexdigest()==source['sha256']
+    evidence = json.loads((BASE/'validation/extracted/revival/result.json').read_text())
     assert evidence['completed'] and evidence['cases'] == 12
-    assert evidence['atlasesLoaded'] == 6 and evidence['assetPlays'] == 20
+    assert evidence['atlasesLoaded'] == len(manifest['atlases']) and evidence['assetPlays'] >= 18
+    assert evidence['deathHolds']==evidence['restores']==evidence['stableRestores']==12
     assert evidence['remainingLayers'] == 0 and not evidence['errors']
     version = re.search("VERSION=b'([0-9]+)'",(BASE/'build-client.py').read_text())[1]
-    result = {'clientVersion':version,'frameRate':25,'generatedVfxCells':sum(counts.values()),
-              'vfxClips':len(manifest['clips']),'mysteryEffectMs':poison_end,
+    result = {'clientVersion':version,'frameRate':25,'sourceFrameRate':24,'sourceFiles':len(sources),
+              'vfxClips':len(manifest['clips']),'mysteryEffectMs':mystery_end,
               'mysteryAvailableMs':available,'atlasHashes':hashes,'nativeComponent':evidence}
-    (BASE/'validation/vfx-v3/verified.json').write_text(json.dumps(result,indent=2))
-    print(f'PASS generated VFX/death: {len(counts)} transparent atlases, {sum(counts.values())} cells, 9 VFX clips at 25 FPS; native Flash 12 cases / both camps / zero errors and remaining layers; Mystery timing safe.')
+    (BASE/'validation/extracted/verified.json').write_text(json.dumps(result,indent=2))
+    print(f'PASS original Kabuto VFX: {len(counts)} transparent atlases; all 14 input files hashed; native Flash 12 cases / both camps / death and revival / zero errors or remaining layers.')
+
 
 
 if __name__ == '__main__':

@@ -1,12 +1,36 @@
 """Install Kabuto SSS Support and four summon models; preserve unrelated records."""
 from pathlib import Path
 from PIL import Image,ImageOps
-import argparse,copy,hashlib,importlib.util,json,shutil,struct,sys,zlib
+import argparse,copy,hashlib,importlib.util,json,shutil,struct,sys,zlib,io
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('native_kabuto',BASE.parent/'naruto-sage/build.py');native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
 CFG=json.loads((ROOT/'sunucu/kabuto-gnw.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text())
 HIT=13621931
+EXTRACTED=ROOT.parent/'asset/Extracted_Kabuto_Great_Ninja_War'
+
+def packed_sequence(index,frames,loop,duration,pivots):
+    """Pack rows below Flash's 4096px bitmap limit, retaining per-frame anchors."""
+    positions=[];unique={};x=y=row=0
+    for im in frames:
+        key=(im.size,hashlib.sha256(im.tobytes()).digest())
+        if key in unique:
+            positions.append(unique[key]);continue
+        if x+im.width>4096:x=0;y+=row;row=0
+        unique[key]=(x,y);positions.append((x,y));x+=im.width;row=max(row,im.height)
+    height=y+row;width=max(x+im.width for (x,y),im in zip(positions,frames))
+    assert height*2<=4096,(width,height)
+    atlas=Image.new('RGB',(width,height*2));rects=[]
+    seq=struct.pack('<IBH',index,2 if loop else 1,len(frames))
+    for im,(x,y),(px,py) in zip(frames,positions,pivots):
+        atlas.paste(im.convert('RGB'),(x,y));atlas.paste(im.getchannel('A').convert('RGB'),(x,y+height))
+        rects.append(struct.pack('>hhhh',x,y,im.width,im.height))
+        seq+=struct.pack('<hhhhhhH',0,0,im.width,im.height,px,py,duration)
+    buf=io.BytesIO();atlas.save(buf,format='PNG');png=buf.getvalue()
+    pak=zlib.compress(struct.pack('>BHHBBBH',127,width,height,100,100,0,len(frames))+b''.join(rects)+struct.pack('>I',len(png))+png)
+    return seq,pak
+
+native.texture_sequence=packed_sequence
 MOVES=[(CFG['mystery'],'white-snake-assault'),(CFG['standard'],'bracken-dance'),(CFG['chases'][0],'white-extreme-attack'),
        (CFG['healing'],'self-healing'),(CFG['revival'],'white-snake-revival'),(CFG['summon'],'impure-world-reincarnation'),
        (CFG['mu']['standard'],'mu-strike'),(CFG['mu']['summon'],'mu-summon'),(CFG['mu']['barrier'],'mu-barrier')]
@@ -78,17 +102,24 @@ def main():
                 ident=int(f'{hero:X}'+suffix,16);sequences=[]
                 for name in ([names] if isinstance(names,str) else names):
                     clip=ANIM['clips'][name];ims=[Image.open(BASE/'frames'/f'{i:03}.png').convert('RGBA') for i in clip['assets']]
-                    sequences.append(dict(frames=ims,loop=clip['loop'],duration=clip['duration'],pivots=[tuple(ANIM['pivot'])]*len(ims)))
+                    sequences.append(dict(frames=ims,loop=clip['loop'],duration=clip['duration'],pivots=[tuple(ANIM.get('framePivots',{}).get(str(i),ANIM['pivot'])) for i in clip['assets']]))
                 changes[dest/'Model'/f'{ident:08X}.TexClient']=native.texture_sequences(ident,sequences)
             idle=textures[''];pose=Image.open(BASE/'frames'/f'{ANIM["clips"][idle]["assets"][0]:03}.png').convert('RGBA')
             portrait=pose.crop(pose.getchannel('A').getbbox())
-            icon=Image.open(ROOT/'gorsel/kabuto-icon-input.png').convert('RGBA') if hero==CFG['heroId'] else portrait.crop((0,0,portrait.width,max(1,portrait.height//2)))
+            icon=Image.open(EXTRACTED/'battle/role/head_45_45/11002061.png').convert('RGBA') if hero==CFG['heroId'] else portrait.crop((0,0,portrait.width,max(1,portrait.height//2)))
             for category,size in [('HeadIcon',(48,48)),('SmallIcon',(48,48)),('LargeIcon',(180,240)),('MiddlePicture',(180,240))]:
-                im=ImageOps.fit(icon,size,Image.Resampling.LANCZOS) if category in ['HeadIcon','SmallIcon'] else ImageOps.contain(portrait,size,Image.Resampling.LANCZOS)
+                source=icon if category in ['HeadIcon','SmallIcon'] else (Image.open(EXTRACTED/'user/ninja/ninjaBigImg/11002061.png').convert('RGBA') if category=='LargeIcon' else Image.open(BASE/'validation/extracted/showcase.png').convert('RGBA')) if hero==CFG['heroId'] else portrait
+                im=ImageOps.fit(source,size,Image.Resampling.LANCZOS) if category in ['HeadIcon','SmallIcon'] else ImageOps.contain(source,size,Image.Resampling.LANCZOS)
                 changes[dest/category/f'{hero:08X}.TexClient']=native.texture(hero,[im],pivot=False)
         changes[dest/'Skill'/f'{HIT:08X}.TexClient']=native.texture(HIT,[Image.new('RGBA',(1,1))],duration=40)
         for move,name in MOVES:
             ident=move['id'];clip=ANIM['clips'][name];im=Image.open(BASE/'frames'/f'{clip["keys"][min(1,len(clip["keys"])-1)]:03}.png').convert('RGBA')
+            if im.getbbox() is None:
+                for frame in clip['keys']:
+                    im=Image.open(BASE/'frames'/f'{frame:03}.png').convert('RGBA')
+                    if im.getbbox() is not None:break
+            if name=='white-snake-assault':im=Image.open(EXTRACTED/'battle/role/head_176_68/11002061.png').convert('RGBA')
+            elif name=='impure-world-reincarnation':im=Image.open(EXTRACTED/'bag/ninja/preview/11002061.png').convert('RGBA')
             changes[dest/'Skill'/f'{ident:08X}.TexClient']=native.texture(ident,[Image.new('RGBA',(1,1))],duration=40)
             changes[dest/'SkillIcon'/f'{ident:08X}.TexClient']=native.texture(ident,[ImageOps.contain(im,(64,64))],pivot=False)
     for kind,extra in db.items():

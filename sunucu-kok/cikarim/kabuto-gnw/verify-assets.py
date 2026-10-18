@@ -22,7 +22,7 @@ def main():
                     for asset in c['assets']:
                         x,y,w,h,px,py,ms=struct.unpack_from('<hhhhhhH',b,p);p+=14
                         im=Image.open(BASE/'frames'/f'{asset:03}.png').convert('RGBA')
-                        assert (w,h)==im.size and [px,py]==cfg['pivot'] and ms==40
+                        assert (w,h)==im.size and [px,py]==cfg.get('framePivots',{}).get(str(asset),cfg['pivot']) and ms==40
                         assert im.getchannel('A').getextrema()[0]==0;ims.append(im)
                     if not c['loop']:
                         assert c['returnFrame']==count-1
@@ -32,16 +32,17 @@ def main():
                 count=struct.unpack_from('<H',b,p)[0];p+=2;assert count==len(expected)
                 for ims in expected:
                     n=struct.unpack_from('<I',b,p)[0];p+=4;pak=zlib.decompress(b[p:p+n]);p+=n
-                    _,width,height,_,_,_,count=struct.unpack_from('>BHHBBBH',pak);assert count==len(ims) and width<32768
+                    kind,width,height,_,_,_,count=struct.unpack_from('>BHHBBBH',pak);assert kind==127 and count==len(ims) and width<32768
                     offset=10+count*8;n=struct.unpack_from('>I',pak,offset)[0]
                     atlas=Image.open(io.BytesIO(pak[offset+4:offset+4+n])).convert('RGB');assert atlas.size==(width,height*2)
-                    left=0
-                    for original in ims:
-                        w,h=original.size;im=atlas.crop((left,0,left+w,h)).convert('RGBA')
-                        im.putalpha(atlas.crop((left,height,left+w,height+h)).getchannel('R'))
+                    for index,original in enumerate(ims):
+                        left,top,w,h=struct.unpack_from('>hhhh',pak,10+index*8)
+                        assert original.size==(w,h)
+                        im=atlas.crop((left,top,left+w,top+h)).convert('RGBA')
+                        im.putalpha(atlas.crop((left,top+height,left+w,top+height+h)).getchannel('R'))
                         assert im.tobytes()==original.tobytes(),'Native frame/alpha shifted during packing'
-                        left+=w;checked+=1
-                    assert left==width
+                        checked+=1
+                    assert width<=4096 and height*2<=4096
                 assert struct.unpack_from('<H',b,p)[0]==len(names) and p+2==len(b)
     heroes=json.loads((ROOT/'cikarim/veri-json/BaseHero.json').read_text(encoding='utf-8'))
     hero=next(h for h in heroes if int(h['id'],16)==11120910)
@@ -61,6 +62,6 @@ def main():
         'nativeFramesVerified':checked,'clips':len(cfg['clips']),
         'frameRate':cfg['frameRate'],'matchesJiraiya':True,
         'exactRGBA':True,'hitMarkersVerified':True,
-        'runtimePlayback':'See vfx-v3/native/result.json for isolated Flash component playback.'},indent=2))
+        'runtimePlayback':'See extracted/revival/result.json for isolated Flash component playback.'},indent=2))
     print(f'PASS {checked} native frames across 5 characters and 2 resource sets: exact RGBA, safe atlas sizes, ground registration, 25 FPS, idle return, hit markers; SSS Support melee and summon-only recruitment flags.')
 if __name__=='__main__':main()

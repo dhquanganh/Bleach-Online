@@ -1,6 +1,6 @@
       private static function KabutoVfxManifest() : Object
       {
-         return __KABUTO_VFX_MANIFEST__;
+         return JSON.parse(__KABUTO_VFX_MANIFEST__);
       }
 
       private static function PreloadKabutoVfx() : void
@@ -32,7 +32,7 @@
             var frames:Array = [];
             var w:int = int(source.bitmapData.width/int(meta.columns));
             var h:int = int(source.bitmapData.height/int(meta.rows));
-            for(var i:int=0;i<int(meta.columns)*int(meta.rows);i++)
+            for(var i:int=0;i<(meta.frameCount != null ? int(meta.frameCount) : int(meta.columns)*int(meta.rows));i++)
             {
                var cell:BitmapData = new BitmapData(w,h,true,0);
                cell.copyPixels(source.bitmapData,new flash.geom.Rectangle((i%int(meta.columns))*w,int(i/int(meta.columns))*h,w,h),new Point());
@@ -134,74 +134,82 @@
          }
       }
 
+      private function PlayKabutoNativeEffect(effect:String, at:Point, maxWidth:Number, cutin:Boolean=false) : void
+      {
+         var host:DisplayObjectContainer=parent;
+         var manifest:Object=KabutoVfxManifest();
+         var mirrored:Boolean=scaleX<0;
+            var layers:Array=manifest.effects[effect] as Array;
+            if(layers==null) return;
+            var extent:Number=1;
+            for each(var layerName:String in layers)
+            {
+               var meta:Object=manifest.clips[layerName];
+               extent=Math.max(extent,Number(meta.width)/Number(meta.renderScale));
+            }
+            var factor:Number=Math.min(1.1,maxWidth/extent);
+            for each(var name:String in layers)
+            {
+               var clip:Object=manifest.clips[name];
+               var w:Number=Number(clip.width)/Number(clip.renderScale)*factor;
+               var h:Number=w*Number(clip.height)/Number(clip.width);
+               PlayKabutoVfxAsset(name,cutin ? FBattleStage : host,at,w,h,0,cutin ? false : mirrored,false,false);
+            }
+      }
+
       private function ShowKabutoVfx(skill:int, impact:Boolean) : void
       {
          if(skill >= 13120939){this.ShowKabutoSummonVfx(skill,impact);return;}
-         var host:DisplayObjectContainer = parent;
-         if(host == null || host.stage == null) return;
-         var origin:Point = host.globalToLocal(localToGlobal(new Point(0,0)));
-         var targets:Array = [];
-         var seen:Object = {};
-         if(FTargets != null && FResults != null)
+         var host:DisplayObjectContainer=parent;
+         if(host==null || host.stage==null || impact) return;
+         var manifest:Object=KabutoVfxManifest();
+         var origin:Point=host.globalToLocal(localToGlobal(new Point(0,0)));
+         var center:Point=origin.clone();
+         var targets:Array=[];
+         var seen:Object={};
+         if(FTargets!=null && FResults!=null)
          {
             for(var n:int=0;n<FTargets.length && n<FResults.length;n++)
             {
-               if(FTargets[n] == null || FTargets[n] == this || (FResults[n].CMD != TTargetInfo.CMD_ATTACK && FResults[n].CMD != TTargetInfo.CMD_ATTACKEX) || FResults[n].ResultInfo.HurtHp < 0) continue;
-               var key:String=FTargets[n].Camp+"_"+FTargets[n].Pos;
-               if(seen[key]) continue;
-               seen[key]=true;
+               if(FTargets[n]==null || FTargets[n]==this || (FResults[n].CMD!=TTargetInfo.CMD_ATTACK && FResults[n].CMD!=TTargetInfo.CMD_ATTACKEX) || FResults[n].ResultInfo.HurtHp<0) continue;
+               var targetKey:String=FTargets[n].Camp+"_"+FTargets[n].Pos;
+               if(seen[targetKey]) continue;
+               seen[targetKey]=true;
                targets.push(host.globalToLocal(FTargets[n].localToGlobal(new Point(0,0))));
             }
          }
-         var mirrored:Boolean = scaleX < 0;
-         if(!impact)
+         if(targets.length>0)
          {
-            if(skill == 13120931)
-               PlayKabutoVfxAsset("cutin",this.FBattleStage,new Point(625,325),1120,440,0,false,false);
-            else if(skill == 13120934 || skill == 13120935)
-               PlayKabutoVfxAsset("healing",host,origin,170,205,0,false,true);
-            else if(skill == 13120936 || skill == 13120938)
+            center=new Point();
+            for each(var point:Point in targets){center.x+=point.x;center.y+=point.y;}
+            center.x/=targets.length;center.y/=targets.length;
+         }
+         var mirrored:Boolean=scaleX<0;
+         if(skill==13120931)
+         {
+            PlayKabutoNativeEffect("aoyitexie",new Point(625,380),1000,true);
+            PlayKabutoNativeEffect("aoyi",center,650);
+         }
+         else if(skill==13120932)
+         {
+            var variants:Array=["pugong","pugong1","pugong2"];
+            PlayKabutoNativeEffect(String(variants[(int(getTimer()/1000)+Pos)%3]),center,330);
+         }
+         else if(skill==13120933) PlayKabutoNativeEffect("zhuida",center,480);
+         else if(skill==13120934) PlayKabutoNativeEffect("tinengzhiyu",origin,220);
+         else if(skill==13120935) PlayKabutoNativeEffect("reanimate",origin,220);
+         else if(skill==13120936 || skill==13120938)
+         {
+            var summonPoint:Point=new Point(origin.x+(mirrored ? -65 : 65),origin.y);
+            if(FTargets!=null) for each(var summonRole:TRole in FTargets)
             {
-               var summonPoint:Point=new Point(origin.x+(mirrored ? -65 : 65),origin.y);
-               if(FTargets != null)for each(var summonRole:TRole in FTargets)
+               if(summonRole!=null && summonRole!=this && summonRole.FId>=11120911 && summonRole.FId<=11120914)
                {
-                  if(summonRole != null && summonRole != this && summonRole.FId >= 11120911 && summonRole.FId <= 11120914)
-                  {
-                     summonPoint=host.globalToLocal(summonRole.localToGlobal(new Point(0,0)));
-                     break;
-                  }
+                  summonPoint=host.globalToLocal(summonRole.localToGlobal(new Point(0,0)));
+                  break;
                }
-               PlayKabutoVfxAsset("summon",host,summonPoint,160,230,0,mirrored,false,true);
             }
-            else if(skill == 13120933)
-               PlayKabutoVfxAsset("dragon",host,new Point(origin.x+(mirrored ? -65 : 65),origin.y-40),230,190,120,mirrored);
-            return;
+            PlayKabutoNativeEffect(skill==13120936 ? "summon-mu" : "summon-guest",summonPoint,260);
          }
-         if(targets.length == 0) return;
-         if(skill == 13120931)
-         {
-            var center:Point = new Point();
-            var minX:Number=100000;var maxX:Number=-100000;var minY:Number=100000;var maxY:Number=-100000;
-            for each(var target:Point in targets)
-            {
-               minX=Math.min(minX,target.x);maxX=Math.max(maxX,target.x);
-               minY=Math.min(minY,target.y);maxY=Math.max(maxY,target.y);
-            }
-            center.x=(minX+maxX)/2;center.y=(minY+maxY)/2;
-            var areaWidth:Number=Math.min(650,Math.max(410,maxX-minX+270));
-            // One coordinated eruption around the enemy formation, as in the reference.
-            PlayKabutoVfxAsset("mystery-flash",host,new Point(center.x,center.y-60),240,230);
-            PlayKabutoVfxAsset("snakes",host,center,areaWidth,350,60,mirrored,false,true);
-            PlayKabutoVfxAsset("poison",host,center,areaWidth+160,420,420,false);
-            ShakeJiraiyaBattle(this.FBattleStage,6,320);
-         }
-         else if(skill == 13120932 || skill == 13120937)
-         {
-            for each(var point:Point in targets) PlayKabutoVfxAsset("slash",host,new Point(point.x,point.y-62),145,175,0,mirrored);
-         }
-         else if(skill == 13120933)
-         {
-            for each(var hit:Point in targets) PlayKabutoVfxAsset("white-flash",host,new Point(hit.x,hit.y-55),250,250,0,mirrored);
-            ShakeJiraiyaBattle(this.FBattleStage,4,240);
-         }
+         else if(skill==13120937) PlayKabutoNativeEffect("pugong",center,220);
       }
