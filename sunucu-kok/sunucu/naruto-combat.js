@@ -28,7 +28,7 @@ function setState(target, state, round) {
   return null;
 }
 function create(teams, options = {}) {
-  const context = { teams, round:0, chakra:[0,0], trace:[], used:new Map(), random:options.random || Math.random };
+  const context = { teams, round:0, chakra:[0,0], trace:[], used:new Map(), primaryActions:new Map(), skillReady:new Map(), random:options.random || Math.random };
   context.enabled = teams.flat().some(unit => profile(unit));
   return context;
 }
@@ -69,16 +69,31 @@ function standard(unit, allies) {
   if (!p) return null;
   return p.barrage && hasClone(unit,allies) ? p.barrage : p.standard;
 }
+function primaryAvailable(ctx, unit) { return ctx.primaryActions.get(unit) !== ctx.round; }
+function ready(ctx, unit, key) { return ctx.round >= (ctx.skillReady.get(unit)?.get(key) || 1); }
+function spendCooldown(ctx, unit, key, move) {
+  if(!ctx.skillReady.has(unit)) ctx.skillReady.set(unit,new Map());
+  ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
+}
+function useStandard(ctx, unit, allies) {
+  const move=standard(unit,allies);
+  if(!move || disabled(unit) || !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard')) return null;
+  // Summon/Barrage share a slot: losing a clone must not bypass the cooldown.
+  spendCooldown(ctx,unit,'standard',move);
+  ctx.primaryActions.set(unit,ctx.round);
+  return move;
+}
 function canMystery(ctx, unit) {
   const p=profile(unit), m=p && p.mystery;
-  return !!(m && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
+  return !!(m && primaryAvailable(ctx,unit) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
     ctx.round >= (unit.mysteryReadyRound || 1) && ctx.chakra[unit.camp] >= m.chakraCost);
 }
 function useMystery(ctx,unit) {
   if (!canMystery(ctx,unit)) return null;
   const m=profile(unit).mystery;
   ctx.chakra[unit.camp]-=m.chakraCost;
-  unit.mysteryReadyRound=ctx.round+Math.max(1,m.cooldown-(unit.jiraiyaCooldownReduction||0));
+  unit.mysteryReadyRound=ctx.round+Math.max(1,m.cooldown);
+  ctx.primaryActions.set(unit,ctx.round);
   return m;
 }
 function hitTarget(frame, target) {
@@ -102,7 +117,8 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
   for(let step=0; step<budget && target.hp>0; step++) {
     const eligible=({unit,chase,index}) => {
       const uses=(ctx.used.get(unit)||[])[index]||0;
-      return canChase(unit) && uses<(chase.maxPerRound||1)+((ctx.chaseBonus||[])[unit.camp]||0) &&
+      const bonus=chase.cooldown ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
+      return canChase(unit) && ready(ctx,unit,chase.id) && uses<(chase.maxPerRound||1)+bonus &&
         (!chase.requires || chase.requires===state) && (!chase.minCombo || count>=chase.minCombo);
     };
     // Finish displacement links before independent 10/20-hit chases.
@@ -110,6 +126,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
     if(!candidate) break;
     const {unit,chase,index}=candidate;
     const uses=ctx.used.get(unit)||[];uses[index]=(uses[index]||0)+1;ctx.used.set(unit,uses);
+    if(chase.cooldown) spendCooldown(ctx,unit,chase.id,chase);
     const frame=strike(unit,target,chase);
     events.push(frame,...(frame.reactions||[]));
     const hit=hitTarget(frame,target);
@@ -125,4 +142,4 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
 function attackSpec(spec, chase=false) {
   return {...spec, naruto:true, activeType:chase?ACTIVE.NORMAL_EX:spec.prompt?ACTIVE.SKILL:ACTIVE.NORMAL};
 }
-module.exports={STATE,config,profile,create,startRound,disabled,canChase,canMystery,useMystery,standard,hasClone,prepareClones,summon,resolve,attackSpec,setState};
+module.exports={STATE,config,profile,create,startRound,disabled,canChase,canMystery,useMystery,standard,useStandard,hasClone,prepareClones,summon,resolve,attackSpec,setState};

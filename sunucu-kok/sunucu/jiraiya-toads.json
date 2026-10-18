@@ -1,13 +1,68 @@
 {
-  "heroId":11120903,
-  "name":"Jiraiya [Toads Chant]",
-  "element":"fire",
-  "senjutsu":true,
-  "balanceNote":"Damage multipliers and 70% Knockdown chance are local tuning; reference only specifies qualitative damage/high chance.",
-  "mystery":{"id":13120911,"name":"Summoning Jutsu - Toad Mouth","prompt":true,"support":true,"barrier":true,"multiplier":0,"combo":0,"chakraCost":20,"cooldown":2,"battlefieldCooldown":0},
-  "additional":{"id":13120912,"name":"Demonic Illusion - Toad Confrontation Chant","target":2,"damageType":"mixed","multiplier":1.5,"combo":1,"extremeChaos":true},
-  "standard":{"id":13120913,"name":"Giant Gallant Rasengan","target":"all","damageType":"mixed","multiplier":1.3,"combo":5,"causes":"knockdown","stateChance":0.7,"unavoidable":true,"resistanceDown":0.1},
-  "chases":[{"id":13120914,"name":"Ninja Art - Raging Lion's Mane","minCombo":15,"target":4,"causes":"repulse","damageType":"mixed","multiplier":1.2,"combo":1,"maxPerRound":1,"grantChase":true}],
-  "power":{"id":13120915,"name":"Senjutsu Power","support":true,"multiplier":0},
-  "revival":{"id":13120916,"name":"Tale of Jiraiya the Gallant","support":true,"multiplier":0}
+  "heroId": 11120903,
+  "name": "Jiraiya [Toads Chant]",
+  "element": "fire",
+  "senjutsu": true,
+  "balanceNote": "Damage multipliers and 70% Knockdown chance are local tuning; reference only specifies qualitative damage/high chance. Local anti-spam balance: Mystery cooldown 3 rounds and consumes primary action; standard/summon/barrage and Chase cooldown 2 rounds; cooldowns survive revival. Toad Chant control lasts only the hit round with protection through the next round.",
+  "mystery": {
+    "id": 13120911,
+    "name": "Summoning Jutsu - Toad Mouth",
+    "prompt": true,
+    "support": true,
+    "barrier": true,
+    "multiplier": 0,
+    "combo": 0,
+    "chakraCost": 20,
+    "cooldown": 3,
+    "battlefieldCooldown": 0
+  },
+  "additional": {
+    "id": 13120912,
+    "name": "Demonic Illusion - Toad Confrontation Chant",
+    "target": 2,
+    "damageType": "mixed",
+    "multiplier": 1.5,
+    "combo": 1,
+    "extremeChaos": true
+  },
+  "standard": {
+    "id": 13120913,
+    "name": "Giant Gallant Rasengan",
+    "target": "all",
+    "damageType": "mixed",
+    "multiplier": 1.3,
+    "combo": 5,
+    "causes": "knockdown",
+    "stateChance": 0.7,
+    "unavoidable": true,
+    "resistanceDown": 0.1,
+    "cooldown": 2
+  },
+  "chases": [
+    {
+      "id": 13120914,
+      "name": "Ninja Art - Raging Lion's Mane",
+      "minCombo": 15,
+      "target": 4,
+      "causes": "repulse",
+      "damageType": "mixed",
+      "multiplier": 1.2,
+      "combo": 1,
+      "maxPerRound": 1,
+      "grantChase": true,
+      "cooldown": 2
+    }
+  ],
+  "power": {
+    "id": 13120915,
+    "name": "Senjutsu Power",
+    "support": true,
+    "multiplier": 0
+  },
+  "revival": {
+    "id": 13120916,
+    "name": "Tale of Jiraiya the Gallant",
+    "support": true,
+    "multiplier": 0
+  }
 }

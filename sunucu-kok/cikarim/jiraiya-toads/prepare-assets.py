@@ -119,5 +119,10 @@ def main():
     board=Image.new('RGB',(1260,840),'#253441')
     for i,im in enumerate(samples):board.paste(im,(i%3*420,i//3*280))
     board.save(preview/'registered-overview.png')
+    # Reapply the authored aerial poses after rebuilding the original atlas frames.
+    if (BASE/'assets/rasengan-slam/keyposes.png').exists():
+        import importlib.util
+        spec=importlib.util.spec_from_file_location('rasengan_slam',BASE/'build-rasengan-slam.py')
+        slam=importlib.util.module_from_spec(spec);spec.loader.exec_module(slam);slam.prepare()
     print(f'Prepared {len(frames)} motion-interpolated frames, scale {SCALE}, {1000/FRAME_MS:g} FPS, anchored feet and identical idle recovery.')
 if __name__=='__main__':main()

@@ -1,0 +1,8 @@
+{
+  "tool": "image_gen built-in",
+  "reference": "https://www.youtube.com/watch?v=BzjBof3qT4A",
+  "referenceTimestampSeconds": 179,
+  "prompt": "Empty giant toad esophagus cavern battle background. Coral-red organic ridged side walls and broad receding fleshy floor; dark burgundy central throat; anime cel shading. Match reference composition. No characters, UI, text, logos, blood or objects.",
+  "source": "toad-esophagus-source.png",
+  "runtime": "toad-esophagus-v1.jpg"
+}

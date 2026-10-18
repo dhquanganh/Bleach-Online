@@ -75,12 +75,12 @@ def database_rows():
     h['hitRate']=1
     clone=copy.deepcopy(h);clone.update(id=hexid(CLONE),name='Sage Shadow Clone',isSummon=True,desc='Summon only; Lightning resistant.',active=moves[2]['id'])
     talents=[{'id':hexid(TALENT),'talentName':'Sage Jutsu Chakra / Shadow Clone',
-        'talentDesc':'+20 team chakra before the first move each round. Summon a Lightning-resistant clone at battle start. With an active clone: Rasengan Barrage causes Low Float. Chase Repulse -> Knockdown once per round. Rasen Shuriken: 40 chakra, cooldown 2, battlefield cooldown 1; 10 COMBO to lineup and Repulse to selected target.'}]
+        'talentDesc':'+20 team chakra before the first move each round. Summon a Lightning-resistant clone at battle start. Summon and Rasengan Barrage share a 2-round cooldown and primary action. Chase Repulse -> Knockdown: 2-round cooldown, no bonus bypass. Rasen Shuriken: 40 chakra, cooldown 3 rounds, battlefield cooldown 1; consumes the primary action; 10 COMBO to lineup and Repulse to selected target.'}]
     roles=[{'id':hexid(n),'model':HERO,'roleStyle':HERO,'roleHead':HERO} for n in [HERO,CLONE]]
     skillrows=[{'id':hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':
-        ('Wind damage to lineup, 10 COMBO; selected target suffers Repulse. Prompt. Chakra 40 / Cooldown 2 / Battlefield cooldown 1.' if m.get('prompt') else
-         'Summons a Lightning-resistant Sage Shadow Clone.' if m.get('summon') else
-         'Chase Repulse and cause Knockdown. Once per round.' if m.get('requires') else 'Combined Taijutsu and Ninjutsu with the clone; always causes Low Float on hit.'),
+        ('Wind damage to lineup, 10 COMBO; selected target suffers Repulse. Prompt. Chakra 40 / Cooldown 3 rounds / Battlefield cooldown 1. Consumes the primary action.' if m.get('prompt') else
+         'Summons a Lightning-resistant Sage Shadow Clone. Shares a 2-round cooldown with Rasengan Barrage; uses the primary action.' if m.get('summon') else
+         'Chase Repulse and cause Knockdown. Cooldown 2 rounds; no Chase bonus bypass.' if m.get('requires') else 'Combined Taijutsu and Ninjutsu with the clone; always causes Low Float on hit. Shares a 2-round cooldown with Summon; uses the primary action and waits while recovering.'),
         'icon':m['id'],'sortId':i+1} for i,m in enumerate(moves)]
     return {'BaseHero':[h,clone],'RoleModel':roles,'HeroTalent':talents,'SkillConfig':skillrows}
 

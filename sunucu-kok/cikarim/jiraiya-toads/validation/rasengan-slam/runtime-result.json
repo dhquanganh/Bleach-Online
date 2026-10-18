@@ -1,0 +1,20 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "impacts": 12,
+  "completed": true,
+  "cameraRestorations": 24,
+  "nativeErrors": [],
+  "aerialPosesVerified": [
+    6,
+    16,
+    27,
+    30,
+    42
+  ],
+  "testedCamps": [
+    0,
+    1
+  ],
+  "fullCombatReplay": false
+}

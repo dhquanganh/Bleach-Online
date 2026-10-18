@@ -65,3 +65,15 @@ python sunucu-kok/cikarim/jiraiya-toads/verify-assets.py
 Kiểm thử Jiraiya gồm giới hạn mục tiêu, hit không né, thời hạn kết giới hai phe, chiêu bổ sung, 15 combo và ngân sách Chase hữu hạn, reset mỗi round, cleanse/chakra/Initiative cap, Suppress Immunity/Chaos, đếm hồi sinh theo phe và chiến đấu thực sinh record hồi 30% HP. Hồi quy Naruto, hero skills và hero talents đều PASS. Khởi động lại backend và client sau cập nhật.
 
 Đã phát battle report 10 round qua client native Electron/Flash 22 tới WINS, gồm Jiraiya hai phe, Naruto và Chase tóc Sư Tử. Fixture render riêng ép 3 Mystery đồng đội để kiểm tra chuỗi chết → hồi 30% HP → nằm/đứng hồi sinh → tiếp tục sử dụng chiêu; kết giới có nhãn duy trì rồi xóa ở round 3. Fixture này chỉ kiểm tra renderer; luật cooldown và đếm Mystery chính xác được kiểm tra bằng trận mô phỏng trong test server. Bằng chứng: `validation/native-battle.gif`, `validation/engine-battle-final.png`, `validation/native-revival.gif`, `validation/native-revival-final.png` và log không có uncaught exception. Không sửa save thật.
+
+## Hiệu ứng phóng lớn — client 2026101711
+
+Rasengan có cầu chakra tụ ở tay (bán kính tối đa 65 px), lõi sáng, xoáy va chạm tăng từ 76 lên 182 px và sóng xung kích rộng. Sóng Chant trên mục tiêu tăng bán kính từ khoảng 100 lên 215 px, thêm năm vòng âm lan từ người thi triển tới 305 px. Barrier tăng bán kính tối đa từ 115 lên 185 px. Rung khi trúng Rasengan/Chant lần lượt 13/10 px, giảm dần trong 480 ms; overlay Rasengan/Chant tồn tại 1000/1100 ms và tự dọn như trước. Không thay đổi sát thương, mục tiêu, frame hit hay thời gian lượt đánh. Đây là thay đổi hiệu ứng hình ảnh; không bổ sung âm thanh gầm.
+
+## Dựng lại theo video — client 2026101712
+
+Chi tiết đối chiếu, asset, giới hạn và cách kiểm tra nằm tại [video-reference.md](video-reference.md). Bản mới có nền thực quản cóc duy trì theo marker kết giới, chuyển cảnh bằng mép miệng khép/mở, luồng Chant vàng theo hướng phe và Rasengan có nhấc sprite, cầu xoáy xanh trắng, lóe dọc, shockwave và mảnh văng. Dựng lại bằng `build-client.py --install`; script cài luôn asset JPG ngoài SWF. Asset nguồn AI và prompt được lưu trong `assets/`.
+
+## Asset Rasengan nhảy và đập xuống — client 2026101713
+
+Bộ tư thế, đường nhảy/lao xuống và cách dựng được ghi tại [rasengan-slam.md](rasengan-slam.md). Chạy `build-rasengan-slam.py --apply` để chỉ cập nhật texture Rasengan; sau đó dựng client bằng `build-client.py --ffdec PATH/ffdec.jar --install` để đồng bộ bàn tay/quả cầu. Mốc hit 30 và return 48 không đổi; cooldown dùng luật mới trong `../ninja-cooldowns/README.md`.

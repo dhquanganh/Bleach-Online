@@ -1,0 +1,146 @@
+﻿package {
+ import Foundation.Decoder.Pak.TPakDecoder;
+ import Logics.Battle.model.*;
+ import flash.display.*;
+ import flash.events.*;
+ import flash.net.*;
+ import flash.geom.*;
+ import flash.filters.GlowFilter;
+ import flash.utils.*;
+ import flash.text.*;
+ import flash.external.ExternalInterface;
+ public class TApplication extends MovieClip {
+  private var FId:int=11120903;
+  private var FSkillId:int=0;
+  private var FIndex:int=1;
+  private const TYPE_ACTIVE_ATTACK:int=1;
+  private const TYPE_ACTIVE_SKILL:int=2;
+  private var FFrameIndex:int=0;
+  private var FJiraiyaVfxStarted:Boolean=false;
+  private var FJiraiyaVfxHit:Boolean=false;
+  private static var FJiraiyaShake:Object=null;
+  private var FBattleStage:Sprite;
+  private var FTargets:Array=[];
+  private var FResults:Array=[];
+  public var Camp:int=0;
+  public var Pos:int=6;
+  private var actor:Bitmap=new Bitmap();
+  private var clips:Object={};
+  private var decoders:Array=[];
+  private var loaded:int=0;
+  private var readyAt:int=-1;
+  private var lastSlot:int=-1;
+  private var captured:Object={};
+  private var battle:Sprite;
+  private var left:TApplication;
+  private var right:TApplication;
+  private var label:TextField;
+  private var skills:Array=[13120911,13120912,13120913,13120914,13120915,13120916];
+  private var clipNames:Array=["toad-mouth-barrier","toad-confrontation-chant","giant-gallant-rasengan","raging-lions-mane","senjutsu-power","tale-of-jiraiya-revival"];
+  private var metadata:Object=__METADATA__;
+  public function TApplication(root:Boolean=true){
+   super();
+   if(!root){actor.smoothing=true;addChild(actor);return;}
+   addEventListener(Event.ADDED_TO_STAGE,boot);if(stage!=null)boot();
+  }
+  private function report(text:String):void {if(ExternalInterface.available)ExternalInterface.call("vfxProbe",text);}
+  private function boot(event:Event=null):void {
+   removeEventListener(Event.ADDED_TO_STAGE,boot);
+   stage.scaleMode=StageScaleMode.NO_SCALE;stage.align=StageAlign.TOP_LEFT;stage.frameRate=30;
+   loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR,function(e:UncaughtErrorEvent):void {report("ERROR "+e.error);});
+   battle=new Sprite();addChild(battle);
+   battle.graphics.beginFill(0x344B38);battle.graphics.drawRect(0,0,1250,650);battle.graphics.endFill();
+   battle.graphics.lineStyle(1,0x59734A,0.5);
+   for(var i:int=0;i<12;i++){battle.graphics.moveTo(0,300+i*30);battle.graphics.lineTo(1250,300+i*30);}
+   var actors:Sprite=new Sprite();battle.addChild(actors);
+   left=new TApplication(false);right=new TApplication(false);
+   left.FBattleStage=battle;right.FBattleStage=battle;
+   left.x=350;left.y=470;right.x=900;right.y=470;right.scaleX=-1;
+   right.Camp=1;left.FTargets=[left,right,right];right.FTargets=[right,left,left];
+   var results:Array=[{CMD:0,ResultInfo:{HurtHp:0}},{CMD:1,ResultInfo:{HurtHp:10}},{CMD:9,ResultInfo:{HurtHp:0}}];
+   left.FResults=results;right.FResults=results;
+   actors.addChild(left);actors.addChild(right);
+   label=new TextField();label.defaultTextFormat=new TextFormat("_sans",20,0xffffff,true);label.width=1200;label.height=30;label.x=25;label.y=20;addChild(label);
+   loadTexture("00A9B107",["idle"]);
+   loadTexture("A9B1070B",["giant-gallant-rasengan"]);
+   loadTexture("A9B1070C",["toad-mouth-barrier","toad-confrontation-chant","raging-lions-mane","senjutsu-power","tale-of-jiraiya-revival"]);
+   addEventListener(Event.ENTER_FRAME,tick);report("BOOT native Flash shared VFX component probe");
+  }
+  private function loadTexture(path:String,names:Array):void {
+   var loader:URLLoader=new URLLoader();loader.dataFormat=URLLoaderDataFormat.BINARY;
+   loader.addEventListener(IOErrorEvent.IO_ERROR,function(e:IOErrorEvent):void {report("ERROR texture "+path+" "+e.text);});
+   loader.addEventListener(Event.COMPLETE,function(e:Event):void {
+    var bytes:ByteArray=loader.data as ByteArray;bytes.endian=Endian.LITTLE_ENDIAN;bytes.readUnsignedInt();
+    var count:uint=bytes.readUnsignedInt();var seq:ByteArray=new ByteArray();seq.endian=Endian.LITTLE_ENDIAN;bytes.readBytes(seq,0,count);
+    var total:uint=bytes.readUnsignedShort();var all:Array=[];
+    for(var j:int=0;j<total;j++){
+     seq.readUnsignedInt();seq.readUnsignedByte();count=seq.readUnsignedShort();var meta:Array=[];
+     for(var k:int=0;k<count;k++){seq.readShort();seq.readShort();seq.readUnsignedShort();seq.readUnsignedShort();meta.push({px:seq.readShort(),py:seq.readShort(),duration:seq.readUnsignedShort()});}
+     all.push(meta);
+    }
+    for(j=0;j<total;j++){
+     count=bytes.readUnsignedInt();var pak:ByteArray=new ByteArray();bytes.readBytes(pak,0,count);
+     decodeTexture(pak,String(names[j]),all[j]);
+    }
+   });
+   loader.load(new URLRequest("/public/2026090619/Resources/Textures/Model/"+path+".TexClient"));
+  }
+  private function decodeTexture(pak:ByteArray,name:String,meta:Array):void {
+   var decoder:TPakDecoder=new TPakDecoder();decoders.push(decoder);
+   decoder.OnResourceUnstreamized=function(sender:Object,images:Vector.<BitmapData>,index:uint):void {
+    clips[name]={images:images,meta:meta};loaded++;report("TEXTURE "+name+" frames="+images.length);
+   };
+   decoder.Unstreamize(pak,new Vector.<BitmapData>(),0);
+  }
+  private function renderRole(role:TApplication,name:String,index:int,leap:Boolean=false):void {
+   var clip:Object=clips[name];if(clip==null)return;
+   index=Math.max(0,Math.min(index,clip.images.length-1));
+   role.actor.bitmapData=clip.images[index];role.actor.x=-clip.meta[index].px;role.actor.y=-clip.meta[index].py;
+   if(leap){var pose:Object=role.JiraiyaRasenganPose();role.actor.x+=Number(pose.x);role.actor.y+=Number(pose.y);}
+  }
+  private function tick(event:Event):void {
+   for each(var decoder:TPakDecoder in decoders)if(decoder.Unstreamizing)decoder.Process();
+   if(loaded<7)return;
+   if(readyAt<0)readyAt=getTimer();
+   var age:int=getTimer()-readyAt;var slot:int=int(age/4000);
+   if(slot>=12){
+    SetJiraiyaBarrier(battle,false);report("DONE shared native component; background cleared="+(battle.getChildByName("jiraiyaEsophagusBackdrop")==null));
+    removeEventListener(Event.ENTER_FRAME,tick);return;
+   }
+   var side:int=slot<6?0:1;var index:int=slot%6;var caster:TApplication=side==0?left:right;var victim:TApplication=side==0?right:left;
+   if(lastSlot!=slot){
+    if(slot==6)SetJiraiyaBarrier(battle,false);
+    left.FSkillId=0;right.FSkillId=0;
+    caster.FSkillId=skills[index];caster.FFrameIndex=0;caster.FJiraiyaVfxStarted=false;caster.FJiraiyaVfxHit=false;
+    lastSlot=slot;label.text="Jiraiya video reconstruction | "+clipNames[index]+" | camp "+side;
+    report("CASE "+skills[index]+" camp="+side);
+   }
+   var frame:int=int((age%4000)/40);var name:String=clipNames[index];
+   caster.FFrameIndex=frame;
+   if(frame<clips[name].images.length){renderRole(caster,name,frame,index==2);caster.UpdateJiraiyaVfx();}
+   else {caster.FSkillId=0;renderRole(caster,"idle",int(age/100)%clips.idle.images.length);}
+   renderRole(victim,"idle",int(age/100)%clips.idle.images.length);
+   var hit:int=index==0?24:(metadata[name].hitFrames!=null?int(metadata[name].hitFrames[0]):8);
+   var pose:String=frame>=hit+6?"impact":(frame>=int(hit*0.55)&&frame<hit?"cast":"");
+   var captureKey:String="CASE-"+skills[index]+"-camp-"+side+"-"+pose;
+   if(pose!=""&&!captured[captureKey]){captured[captureKey]=true;var captureStarted:int=getTimer();saveFrame(captureKey);readyAt+=getTimer()-captureStarted;}
+   if(index==2){
+    var phases:Array=[6,16,27,30,42];
+    for each(var phase:int in phases){
+     var phaseKey:String="SLAM-camp-"+side+"-frame-"+phase;
+     if(frame>=phase&&!captured[phaseKey]){captured[phaseKey]=true;var poseStarted:int=getTimer();saveFrame(phaseKey);readyAt+=getTimer()-poseStarted;}
+    }
+   }
+  }
+  private function saveFrame(name:String):void {
+   var snapshot:BitmapData=new BitmapData(1250,650,false,0);
+   snapshot.draw(this);
+   var png:ByteArray=snapshot.encode(snapshot.rect,new JPEGEncoderOptions(88));
+   var hex:String="";png.position=0;
+   while(png.bytesAvailable){var value:String=png.readUnsignedByte().toString(16);hex+=value.length<2?"0"+value:value;}
+   if(ExternalInterface.available)ExternalInterface.call("vfxSnapshot",name,hex);
+   snapshot.dispose();
+  }
+__METHODS__
+ }
+}

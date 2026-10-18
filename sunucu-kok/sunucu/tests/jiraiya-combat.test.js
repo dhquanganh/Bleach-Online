@@ -19,14 +19,14 @@ ctx.round=2;assert(j.activeBarrier(ctx));ctx.round=3;assert(!j.activeBarrier(ctx
 // Suppress immunity precedes Extreme Chaos, ignoring shield/control immunity.
 let v=unit(200,1,1);v.battleRound=3;v.shield=500;v.skillBuffs=[{field:'immuneControl',remaining:5},{field:'invincible',remaining:5}];
 j.afterHit(ctx,a,[v],j.config.additional,[]);assert(s.status(v,'chaos'));assert(!s.status(v,'immuneControl'));assert(!s.status(v,'invincible'));
-v.battleRound=4;assert(s.status(v,'chaos'));v.battleRound=5;assert(!s.status(v,'chaos'));assert(s.status(v,'immuneControl'));
+v.battleRound=4;assert(!s.status(v,'chaos'));assert(s.status(v,'immuneControl'));
 j.afterHit(ctx,a,[v],j.config.standard,[]);j.afterHit(ctx,a,[v],j.config.standard,[]);assert.strictEqual(v.jiraiyaResistanceStacks,2);
 // 15-hit gate and non-stacking +1 budget, including own Chase; bounded cycles.
 a=sage(6);v=unit(200,1,1);ctx=n.create([[a],[v]],{random:()=>.5});n.startRound(ctx,1);j.roundStart(ctx);
 const hit=()=>({targets:[{cmd:1,targetCamp:1,targetPos:1,reportTargetStatus:codec.ST.HIT>>>0,result:{hurtHp:1}}],reactions:[]});
 const strike=(u,t,move)=>{const f=hit();j.afterHit(ctx,u,[t],move,f.targets);return f;};
 assert.strictEqual(n.resolve(ctx,a,v,hit(),{combo:14},strike).length,0);
-assert.strictEqual(n.resolve(ctx,a,v,hit(),{combo:15},strike).length,2);
+assert.strictEqual(n.resolve(ctx,a,v,hit(),{combo:15},strike).length,1);
 assert.strictEqual(ctx.chaseBonus[0],1);
 assert.strictEqual(n.resolve(ctx,a,v,hit(),{combo:15},strike).length,0);
 n.startRound(ctx,2);j.roundStart(ctx);assert.strictEqual(ctx.chaseBonus[0],0);
@@ -34,7 +34,7 @@ n.startRound(ctx,2);j.roundStart(ctx);assert.strictEqual(ctx.chaseBonus[0],0);
 a.hp=0;j.noteDeaths(ctx);assert.strictEqual(j.revivals(ctx).length,0);
 let ally=unit(300,7);j.mysteryUsed(ctx,ally,{});j.mysteryUsed(ctx,unit(301,7,1),{});j.mysteryUsed(ctx,ally,{});
 assert.strictEqual(j.revivals(ctx).length,0);j.mysteryUsed(ctx,ally,{});
-const revival=j.revivals(ctx);assert.strictEqual(revival.length,1);assert.strictEqual(a.hp,30000);assert.strictEqual(revival[0].record.result.hurtHp,-30000);assert.strictEqual(a.jiraiyaCooldownReduction,1);
+const revival=j.revivals(ctx);assert.strictEqual(revival.length,1);assert.strictEqual(a.hp,30000);assert.strictEqual(revival[0].record.result.hurtHp,-30000);assert.strictEqual(a.jiraiyaCooldownReduction,undefined);assert(a.mysteryReadyRound>ctx.round);
 assert.strictEqual(j.revivals(ctx).length,0);
 // Real damage targeting: guaranteed normal hits all, additional <=2, Chase <=4.
 a=sage(6);const enemies=Array.from({length:5},(_,i)=>unit(400+i,i+1,1));for(const e of enemies)e.dodgeRate=1;
@@ -51,7 +51,7 @@ const decoded=codec.decodeBattleReport(report.payload);assert.strictEqual(decode
 const moves=decoded.turns.flatMap(t=>t.actives).map(f=>f.skillEffectId);
 for(const id of [13120911,13120912,13120913,13120915])assert(moves.includes(id),`Missing skill ${id}`);
 const casts=decoded.turns.filter(t=>t.actives.some(f=>f.skillEffectId===13120911)).map(t=>t.curTurn);
-assert(casts.every((r,i)=>i===0||r-casts[i-1]>=2));
+assert(casts.every((r,i)=>i===0||r-casts[i-1]>=3));
 assert(require('../herolar').gecerliHerolar().some(h=>h.id===j.config.heroId&&h.profession===4));
 const fallen=battle.heroBirim(j.config.heroId,1,100,null,{hp:100,atk:100,def:0,speed:200,hitRate:1},1);
 const rescuer=battle.heroBirim(n.config.heroId,11,100,null,{hp:10000000,atk:100,def:0,speed:100,hitRate:1},1);

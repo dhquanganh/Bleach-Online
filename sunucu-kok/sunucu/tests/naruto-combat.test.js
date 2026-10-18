@@ -49,7 +49,7 @@ const team=[sage];combat.prepareClones([team,[]]);assert.strictEqual(team.length
 assert.strictEqual(combat.standard(sage,team),combat.config.barrage);
 ctx=combat.create([team,[]]);combat.startRound(ctx,1);assert.strictEqual(ctx.chakra[0],40);assert(!combat.canMystery(ctx,sage));
 combat.startRound(ctx,2);assert.strictEqual(ctx.chakra[0],60);assert(combat.useMystery(ctx,sage));assert.strictEqual(ctx.chakra[0],20);assert(!combat.useMystery(ctx,sage));
-combat.startRound(ctx,3);assert(!combat.canMystery(ctx,sage));combat.startRound(ctx,4);assert(combat.canMystery(ctx,sage));
+combat.startRound(ctx,3);assert(!combat.canMystery(ctx,sage));combat.startRound(ctx,4);assert(!combat.canMystery(ctx,sage));combat.startRound(ctx,5);assert(combat.canMystery(ctx,sage));
 team[1].hp=0;assert.strictEqual(combat.standard(sage,team),combat.config.standard);
 const records=combat.summon(sage,team);assert.strictEqual(records.length,1);assert.strictEqual(records[0].result.hurtHp,-team[1].maxHp);assert.strictEqual(team[1].hp,team[1].maxHp);
 // Clones resist Lightning, occupy real free positions, and never replace allies.

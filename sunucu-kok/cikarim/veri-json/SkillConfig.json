@@ -63995,7 +63995,7 @@
     "id": "00C83585",
     "skillId": 13120901,
     "name": "True Wind Style - Rasen Shuriken",
-    "desc": "Wind damage to lineup, 10 COMBO; selected target suffers Repulse. Prompt. Chakra 40 / Cooldown 2 / Battlefield cooldown 1.",
+    "desc": "Wind damage to lineup, 10 COMBO; selected target suffers Repulse. Prompt. Chakra 40 / Cooldown 3 rounds / Battlefield cooldown 1. Consumes the primary action.",
     "icon": 13120901,
     "sortId": 1
   },
@@ -64003,7 +64003,7 @@
     "id": "00C83586",
     "skillId": 13120902,
     "name": "Sage Jutsu Shadow Clone",
-    "desc": "Summons a Lightning-resistant Sage Shadow Clone.",
+    "desc": "Summons a Lightning-resistant Sage Shadow Clone. Shares a 2-round cooldown with Rasengan Barrage; uses the primary action.",
     "icon": 13120902,
     "sortId": 2
   },
@@ -64011,7 +64011,7 @@
     "id": "00C83587",
     "skillId": 13120903,
     "name": "Sage Art - Rasengan Barrage",
-    "desc": "Combined Taijutsu and Ninjutsu with the clone; always causes Low Float on hit.",
+    "desc": "Combined Taijutsu and Ninjutsu with the clone; always causes Low Float on hit. Shares a 2-round cooldown with Summon; uses the primary action and waits while recovering.",
     "icon": 13120903,
     "sortId": 3
   },
@@ -64019,7 +64019,7 @@
     "id": "00C83588",
     "skillId": 13120904,
     "name": "Rasengan - Shoot down",
-    "desc": "Chase Repulse and cause Knockdown. Once per round.",
+    "desc": "Chase Repulse and cause Knockdown. Cooldown 2 rounds; no Chase bonus bypass.",
     "icon": 13120904,
     "sortId": 4
   },
@@ -64027,7 +64027,7 @@
     "id": "00C8358F",
     "skillId": 13120911,
     "name": "Summoning Jutsu - Toad Mouth",
-    "desc": "Prompt. Chakra 20; cooldown 2; battlefield cooldown 0. Toad Esophagus for 2 rounds: barrier creators/destroyers on both sides cannot cast Mystery. Immediately casts Toad Confrontation Chant.",
+    "desc": "Prompt. Chakra 20; cooldown 3 rounds; battlefield cooldown 0. Consumes the primary action. Toad Esophagus for 2 rounds: barrier creators/destroyers on both sides cannot cast Mystery. Immediately casts Toad Confrontation Chant.",
     "icon": 13120911,
     "sortId": 1
   },
@@ -64035,7 +64035,7 @@
     "id": "00C83590",
     "skillId": 13120912,
     "name": "Demonic Illusion - Toad Confrontation Chant",
-    "desc": "Damage up to 2 enemies. Suppress Immunity until end of next round; Extreme Chaos on hit.",
+    "desc": "Damage up to 2 enemies. Suppress Immunity and apply Extreme Chaos for the hit round only. Targets are protected against another Toad Chant control through the next round.",
     "icon": 13120912,
     "sortId": 2
   },
@@ -64043,7 +64043,7 @@
     "id": "00C83591",
     "skillId": 13120913,
     "name": "Giant Gallant Rasengan",
-    "desc": "Unavoidable lineup damage, 5 COMBO. Stackable -10% Resistance. High chance (local: 70%) of Knockdown to selected target.",
+    "desc": "Cooldown 2 rounds. Uses the primary action; waits while recovering. Unavoidable lineup damage, 5 COMBO. Stackable -10% Resistance. High chance (local: 70%) of Knockdown to selected target.",
     "icon": 13120913,
     "sortId": 3
   },
@@ -64051,7 +64051,7 @@
     "id": "00C83592",
     "skillId": 13120914,
     "name": "Ninja Art - Raging Lion's Mane",
-    "desc": "At least 15 COMBO. Damage up to 4 enemies, Repulse to selected target. +1 Chase limit for allies this round, non-stacking.",
+    "desc": "Cooldown 2 rounds; cannot be bypassed by Chase bonuses. At least 15 COMBO. Damage up to 4 enemies, Repulse to selected target. +1 Chase limit for allies without Chase cooldowns this round, non-stacking.",
     "icon": 13120914,
     "sortId": 4
   },
@@ -64067,7 +64067,7 @@
     "id": "00C83594",
     "skillId": 13120916,
     "name": "Tale of Jiraiya the Gallant",
-    "desc": "After defeat, revive at 30% HP after allies cast 3 Mysteries. On revival reduce own Mystery cooldown by 1.",
+    "desc": "After defeat, revive at 30% HP after allies cast 3 Mysteries. Preserves cooldowns and cannot act again in the revival round.",
     "icon": 13120916,
     "sortId": 6
   }

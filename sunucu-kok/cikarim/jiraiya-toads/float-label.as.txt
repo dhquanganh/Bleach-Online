@@ -6,6 +6,7 @@
             if(parent == null) return;
             if(marker == 19000301 || marker == 19000309)
             {
+               SetJiraiyaBarrier(this.FBattleStage,marker == 19000301);
                var barrierUI:TextField = parent.getChildByName("jiraiyaBarrierStatus") as TextField;
                if(barrierUI != null) parent.removeChild(barrierUI);
                if(marker == 19000301)

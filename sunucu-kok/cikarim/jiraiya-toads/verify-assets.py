@@ -8,11 +8,13 @@ def main():
     cfg=json.loads((BASE/'animation.json').read_text());checked=0
     assert cfg['battleScale']==0.70 and cfg['frameRate']==25
     for name,clip in cfg['clips'].items():
-        assert clip['duration']==40, 'Frame duration must stay above the native 30ms tick'
+        expected_duration=36 if clip.get('assetVariant')=='aerial-rasengan-slam-v1' else 40
+        assert clip['duration']==expected_duration and clip['duration']>30, 'Frame duration must stay above the native 30ms tick'
         assert len(clip['assets'])*clip['duration']>clip['previousLengthMs']
         assert len(clip['assets'])>len(clip['sourceAssets'])
         for ident in clip['assets']:
-            assert cfg['anchors'][str(ident)]==[128,210], 'Interpolation must preserve ground registration'
+            pivot=[128,240] if clip.get('assetVariant')=='aerial-rasengan-slam-v1' and ident!=0 else [128,210]
+            assert cfg['anchors'][str(ident)]==pivot, 'Interpolation must preserve ground registration'
     # Measure the shipped idle silhouette against the original UI source, not just metadata.
     original=Image.open(BASE/'portrait.png').convert('RGBA').getchannel('A').getbbox()
     scaled=Image.open(BASE/'frames/000.png').convert('RGBA').getchannel('A').getbbox()

@@ -8,7 +8,8 @@ NAME=Path('Processors/Game/Battle/Character/TRole.as')
 def remove_vfx_methods(text):
     # FFDec hoists static methods; replace each method independently on rebuild.
     for signature in ['private function UpdateJiraiyaVfx(', 'private function ShowJiraiyaVfx(',
-                      'private static function ShakeJiraiyaBattle(']:
+                      'private static function ShakeJiraiyaBattle(', 'private static function SetJiraiyaBarrier(',
+                      'private function JiraiyaRasenganPose(']:
         if signature not in text:continue
         start=text.index(signature);body=text.index('{',start);depth=1;end=body+1
         while depth:
@@ -23,7 +24,7 @@ def main():
     canonical=helper.PUBLIC/'2026090619/TApplication.swf';original=canonical.read_bytes();decoded=helper.swap(original)
     source=BASE/'source.swf';source.write_bytes(decoded)
     def ffdec(*args):subprocess.run(['java','-Xmx2g','-jar',opts.ffdec,*map(str,args)],check=True)
-    ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Resources.Constants.CONST_CHARACTER,Processors.Game.Lobby.HeroChange.TProcessorHeroChange','-export','script',BASE/'original',source)
+    ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Processors.Game.Battle.TBattleStage,Resources.Constants.CONST_CHARACTER,Processors.Game.Lobby.HeroChange.TProcessorHeroChange','-export','script',BASE/'original',source)
     text=(BASE/'original/scripts'/NAME).read_text(encoding='utf-8')
     start=text.index('      public function AddTextEffectByCMD(param1:TTargetInfo) : void')
     body=text.index('      {',start)+len('      {')
@@ -51,6 +52,8 @@ def main():
     # Native vector overlays use animation frame markers, never combat callbacks or timers.
     if 'import flash.geom.Point;' not in text:
         text=text.replace('   import flash.events.*;','   import flash.events.*;\n   import flash.geom.Point;')
+    if 'import flash.net.URLRequest;' not in text:
+        text=text.replace('   import flash.events.*;','   import flash.events.*;\n   import flash.net.URLRequest;\n   import flash.geom.Matrix;')
     if 'private var FJiraiyaVfxStarted:' not in text:
         text=text.replace('      protected var FWaitNextCommand:Boolean;', '''      private var FJiraiyaVfxStarted:Boolean = false;
       private var FJiraiyaVfxHit:Boolean = false;
@@ -73,8 +76,29 @@ def main():
     hits={13120911:6*anim['toad-mouth-barrier']['interpolationSteps'],13120912:anim['toad-confrontation-chant']['hitFrames'][0],
           13120913:anim['giant-gallant-rasengan']['hitFrames'][0],13120914:anim['raging-lions-mane']['hitFrames'][0],
           13120915:2*anim['senjutsu-power']['interpolationSteps'],13120916:4*anim['tale-of-jiraiya-revival']['interpolationSteps']}
-    vfx=(BASE/'skill-vfx.as.txt').read_text(encoding='utf-8').replace('__JIRAIYA_VFX_FRAMES__',json.dumps(hits,separators=(',',':')))
+    hands=json.loads((BASE/'assets/rasengan-slam/motion.json').read_text())['hands']
+    vfx=(BASE/'skill-vfx.as.txt').read_text(encoding='utf-8').replace('__JIRAIYA_VFX_FRAMES__',json.dumps(hits,separators=(',',':'))).replace('__JIRAIYA_RASENGAN_HANDS__',json.dumps(hands,separators=(',',':')))
     text=text.replace('      override public function UpdateActive()',vfx+'      override public function UpdateActive()')
+    # Move only the rendered bitmap. Combat position, hit frames and callbacks stay native.
+    jump='''
+               if(FId == 11120903 && FSkillId == 13120913 && (FIndex == TYPE_ACTIVE_ATTACK || FIndex == TYPE_ACTIVE_SKILL))
+               {
+                  var jiraiyaPose:Object = this.JiraiyaRasenganPose();
+                  FBitmap.x += Number(jiraiyaPose.x);
+                  FBitmap.y += Number(jiraiyaPose.y);
+               }'''
+    # Replace the prior lift block on rebuild, including FFDec's formatted output.
+    for variable in ['var jiraiyaHitFrame:', 'var jiraiyaPose:']:
+        if variable in text:
+            start=text.rfind('               if(',0,text.index(variable));body=text.index('{',start);end=body+1;depth=1
+            while depth:
+                if text[end]=='{':depth+=1
+                elif text[end]=='}':depth-=1
+                end+=1
+            text=text[:start]+text[end:]
+    token='               FBitmap.y = -_loc4_.Pivot.Y;'
+    assert text.count(token)==1
+    text=text.replace(token,token+jump)
     target=BASE/'patched'/NAME;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(text,encoding='utf-8')
     activeName=Path('Processors/Game/Battle/Character/TActive.as')
     active=(BASE/'original/scripts'/activeName).read_text(encoding='utf-8')
@@ -99,10 +123,20 @@ def main():
                continue;
             }''')
     target=BASE/'patched'/changeName;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(change,encoding='utf-8')
+    stageName=Path('Processors/Game/Battle/TBattleStage.as')
+    stage=(BASE/'original/scripts'/stageName).read_text(encoding='utf-8')
+    reset=stage.index('      public function Reset() : void')
+    token='         this.RemoveUIStageOnKeyDown();'
+    point=stage.index(token,reset)
+    if 'jiraiyaEsophagusBackdrop' not in stage[reset:point]:
+        stage=stage[:point]+'''         var jiraiyaBackdrop:DisplayObject = getChildByName("jiraiyaEsophagusBackdrop");
+         if(jiraiyaBackdrop != null) removeChild(jiraiyaBackdrop);
+'''+stage[point:]
+    target=BASE/'patched'/stageName;target.parent.mkdir(parents=True,exist_ok=True);target.write_text(stage,encoding='utf-8')
     output=BASE/'compiled.swf';ffdec('-onerror','abort','-importScript',source,output,BASE/'patched')
     rebuilt=output.read_bytes()
     assert [t for t in helper.tags(decoded) if t[0]!=82]==[t for t in helper.tags(rebuilt) if t[0]!=82]
-    ffdec('-selectclass','Processors.Game.Battle.Character.TActive,Processors.Game.Battle.Character.TRole,Logics.HeroNew.TWakeHeroAttributes,Processors.Game.Lobby.HeroChange.TProcessorHeroChange','-export','script',BASE/'verify',output)
+    ffdec('-selectclass','Processors.Game.Battle.Character.TActive,Processors.Game.Battle.Character.TRole,Processors.Game.Battle.TBattleStage,Logics.HeroNew.TWakeHeroAttributes,Processors.Game.Lobby.HeroChange.TProcessorHeroChange','-export','script',BASE/'verify',output)
     exported=BASE/'verify/scripts'
     role=(exported/NAME).read_text(encoding='utf-8')
     passive=role[role.index('      public function PassiveSkillPlay('):role.index('      public function RoundSkill(')]
@@ -111,6 +145,8 @@ def main():
     assert all(token in role for token in ['UpdateJiraiyaVfx','ShowJiraiyaVfx','ShakeJiraiyaBattle','jiraiyaSkillVfx','originX','originY'])
     assert all(role.count('function '+name+'(')==1 for name in ['UpdateJiraiyaVfx','ShowJiraiyaVfx','ShakeJiraiyaBattle'])
     assert 'JIRAIYA_CAMERA' not in role and 'JIRAIYA_VFX skill=' not in role
+    assert all(token in role for token in ['SetJiraiyaBarrier','jiraiyaEsophagusBackdrop','toad-esophagus-v1.jpg','JiraiyaRasenganPose','jiraiyaPose'])
+    assert 'jiraiyaEsophagusBackdrop' in (exported/stageName).read_text(encoding='utf-8')
     active=(exported/'Processors/Game/Battle/Character/TActive.as').read_text(encoding='utf-8')
     assert all(v in active for v in ['13120902','13120904','13120912','13120914','13120915','13120916'])
     wake=(exported/'Logics/HeroNew/TWakeHeroAttributes.as').read_text(encoding='utf-8')
@@ -123,7 +159,7 @@ def main():
             n=struct.unpack_from('<H',raw,pos)[0];pos+=2;k=raw[pos:pos+n];pos+=n
             n=struct.unpack_from('<H',raw,pos)[0];pos+=2;v=raw[pos:pos+n];pos+=n;entries.append((k,v))
         assert pos==len(raw) and sum(k==b'TApplication.swf' for k,v in entries)==1
-        parts=[raw[:2]];version=b'2026101710'
+        parts=[raw[:2]];version=b'2026101713'
         for k,v in entries:
             if k==b'TApplication.swf':v=version
             parts.extend([struct.pack('<H',len(k)),k,struct.pack('<H',len(v)),v])
@@ -131,6 +167,8 @@ def main():
             backup=BASE/'backups/jiraiya-fix'/f.relative_to(helper.ROOT);backup.parent.mkdir(parents=True,exist_ok=True)
             if not backup.exists():shutil.copy2(f,backup)
         dest=helper.PUBLIC/version.decode()/'TApplication.swf';dest.parent.mkdir(exist_ok=True)
+        assets=helper.PUBLIC/'jiraiya-vfx';assets.mkdir(exist_ok=True)
+        shutil.copy2(BASE/'assets/toad-esophagus-v1.jpg',assets/'toad-esophagus-v1.jpg')
         dest.write_bytes(helper.swap(rebuilt));canonical.write_bytes(helper.swap(rebuilt));manifest.write_bytes(zlib.compress(b''.join(parts)))
     print('PASS Jiraiya skill VFX, bounded camera shake, deterministic animations, revival, status labels, prior patches and original SWF art preserved. Installed:',opts.install,'SHA256:',hashlib.sha256(helper.swap(rebuilt)).hexdigest())
 if __name__=='__main__':main()

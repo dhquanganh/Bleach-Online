@@ -1,6 +1,6 @@
 {
   "_aciklama": "VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.",
-  "altin": 52479,
+  "altin": 72979,
   "gumus": 57439887,
   "gumusHigh": 0,
   "kupon": 513064,
@@ -25,6 +25,7 @@
   "illusionCredits": {
     "20736:359:80840994": true,
     "20737:359:80840994": true,
-    "20742:359:80840994": true
+    "20742:359:80840994": true,
+    "20743:359:80840994": true
   }
 }

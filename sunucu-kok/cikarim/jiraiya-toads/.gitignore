@@ -7,3 +7,4 @@ verify/
 validation/runtime.log
 validation/latest.png
 validation/control.json
+probe-source/

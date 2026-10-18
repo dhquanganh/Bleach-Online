@@ -1149,7 +1149,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
     actives.push(...heroSkills.startRound(p1.concat(p2)));
     appendDeaths(actives);
-    // Prompt mysteries execute ahead of standards and do not consume a standard.
+    // Ninja Mysteries have priority, but consume that unit's primary action.
     for (const u of initiative(p1.concat(p2))) {
       const opponents=u.camp===0?p2:p1,allies=u.camp===0?p1:p2;
       const target=opponents.find(other=>other.hp>0 && !other.cloneOwner) || opponents.find(other=>other.hp>0);
@@ -1171,7 +1171,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const opponents = heroSkills.status(u,'chaos') ? allies.filter(other=>other!==u) : u.camp === 0 ? p2 : p1;
       if (!opponents.some(other=>other.hp>0)) continue;
       const target = heroSkills.status(u,'chaos') ? heroSkills.select(opponents,'random1')[0] : rakip;
-      const spec=narutoCombat.standard(u,allies);
+      const spec=narutoCombat.useStandard(chaseContext,u,allies);
+      if(narutoCombat.profile(u) && !spec) continue;
       u.barrierMysteryBlocked=jiraiyaCombat.blocksMystery(chaseContext,u,null);
       const act = perform(u,target,opponents,allies,actives,spec,bitir);
       // Combo is BASEATTRIBUTEINDEX_Punch (14), not a fixed global chance.

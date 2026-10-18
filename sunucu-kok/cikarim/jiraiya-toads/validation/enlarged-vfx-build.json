@@ -1,0 +1,10 @@
+{
+  "clientVersion": "2026101711",
+  "compiledAndDecompiled": true,
+  "priorPatchAssertionsPassed": true,
+  "nonCodeSwfTagsPreserved": true,
+  "manifestAndInstalledCopiesMatch": true,
+  "jiraiyaCombatRegression": "PASS",
+  "visualRuntimeCheckPerformed": false,
+  "sha256": "6d8604baaf2563b911eb0faf94bdac639b884d052e9fb25b5d437eb3c287dd5b"
+}

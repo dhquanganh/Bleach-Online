@@ -1,0 +1,12 @@
+{
+  "clientVersion": "2026101712",
+  "reference": "https://www.youtube.com/watch?v=BzjBof3qT4A",
+  "compiledAndDecompiled": true,
+  "nonCodeSwfTagsPreserved": true,
+  "oldPatchAssertionsPassed": true,
+  "barrierLifecycleMarkersAndResetVerified": true,
+  "installedManifestAndClientMatch": true,
+  "jiraiyaCombatRegression": "PASS",
+  "fullCombatReplayPerformed": false,
+  "sha256": "2306fa134f709806428817bf76c6124fc9e0cef9e2c53248b66fca46bd4c5976"
+}

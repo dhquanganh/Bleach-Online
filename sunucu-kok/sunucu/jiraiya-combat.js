@@ -43,9 +43,10 @@ function afterHit(ctx,u,victims,move,records){
     label(records,v,6,v.jiraiyaResistanceStacks*10);
   }
   if(move.extremeChaos)for(const v of victims){
-    if(v.hp<=0)continue;
-    v.suppressedUntil=ctx.round+1;
-    v.extremeChaosUntil=ctx.round+1;
+    if(v.hp<=0 || v.toadChantProtectedUntil>=ctx.round)continue;
+    v.suppressedUntil=ctx.round;
+    v.extremeChaosUntil=ctx.round;
+    v.toadChantProtectedUntil=ctx.round+1;
     label(records,v,2);label(records,v,3);
   }
   if(move.grantChase&&!ctx.chaseBonus[u.camp]){
@@ -73,8 +74,9 @@ function revivals(ctx){
   for(const u of ctx.teams.flat())if(isJiraiya(u)&&u.hp<=0&&u.jiraiyaDeathCount!=null&&
       ctx.mysteryCounts[u.camp]-u.jiraiyaDeathCount>=3){
     u.hp=Math.max(1,Math.round(u.maxHp*.3));
-    u.jiraiyaCooldownReduction=(u.jiraiyaCooldownReduction||0)+1;
-    u.mysteryReadyRound=Math.max(ctx.round,(u.mysteryReadyRound||ctx.round)-1);
+    // Revival preserves all cooldowns and cannot grant another action this round.
+    u.mysteryReadyRound=Math.max(ctx.round+1,u.mysteryReadyRound||1);
+    ctx.primaryActions.set(u,ctx.round);
     delete u.jiraiyaDeathCount;
     revived.push({unit:u,record:skills.hpRecord(u,-u.hp,false)});
   }
