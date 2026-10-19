@@ -1,14 +1,19 @@
 package Processors.Game.Lobby.SkyTower
 {
+   import Components.Slots.TUISlot;
    import Foundation.Common.TBounds;
    import Foundation.Network.SNetworkCore;
    import Foundation.Network.TPacket;
+   import Foundation.Queries.Textures.TQueryAnimationSequence;
    import Foundation.Resources.Bins.TBins;
    import Foundation.Resources.SResourcesCore;
    import Foundation.UI.TUIComponent;
+   import Foundation.Utilities.TUtilityReflection;
    import Foundation.Utilities.TUtilityString;
    import Logics.Characters.TCharacter;
    import Logics.DatebaseVO.VO.TArticle;
+   import Logics.DatebaseVO.VO.TRoleModel;
+   import Logics.Inventories.TInventories;
    import Logics.SLogicsCore;
    import Logics.SkyTower.TLayer;
    import Logics.SkyTower.TLayers;
@@ -17,35 +22,29 @@ package Processors.Game.Lobby.SkyTower
    import Logics.Streamization.SkyTower.TUnstreamizerSkyTower;
    import Processors.Game.Lobby.Common.TLobbyParameters;
    import Processors.Game.Lobby.Common.TProcessorLobbyPlate;
+   import Processors.Game.Lobby.Components.TUIHero;
+   import Processors.Game.Lobby.Jade.TJadeCommon;
    import Processors.Game.Lobby.Utilities.TUtilityLobby;
+   import Processors.Game.Utilities.EffectTextReward.SToolReward;
    import Processors.Game.Utilities.OverLayer.SUtilityOverLayer;
    import Resources.Constants.CONST_BATTLE;
    import Resources.Constants.CONST_COMMON;
    import Resources.Constants.CONST_DATEBASEVO;
+   import Resources.Constants.CONST_LOBBY;
    import Resources.Constants.CONST_MUSIC;
    import Resources.Constants.CONST_NETWORK;
+   import Resources.Constants.CONST_ROLE;
    import Resources.Constants.CONST_SIGNAL;
    import Resources.Constants.CONST_SKYTOWER;
    import Resources.Constants.CONST_SYSTEMLANGUAGE;
-   import flash.utils.ByteArray;
    import flash.display.*;
    import flash.events.*;
-   import flash.text.*;
+   import flash.filters.DropShadowFilter;
    import flash.geom.Matrix;
    import flash.geom.Rectangle;
-   import flash.filters.DropShadowFilter;
+   import flash.text.*;
+   import flash.utils.ByteArray;
    import ghostcat.util.data.Json;
-   import Foundation.Utilities.TUtilityReflection;
-   import Foundation.Queries.Textures.TQueryAnimationSequence;
-   import Logics.DatebaseVO.VO.TRoleModel;
-   import Logics.Inventories.TInventories;
-   import Processors.Game.Lobby.Components.TUIHero;
-   import Processors.Game.Lobby.Jade.TJadeCommon;
-   import Processors.Game.Utilities.EffectTextReward.SToolReward;
-   import Components.Slots.TUISlot;
-   import Resources.Constants.CONST_ROLE;
-   import Resources.Constants.CONST_LOBBY;
-
    
    public class TProcessorSkyTower extends TProcessorLobbyPlate
    {
@@ -71,15 +70,27 @@ package Processors.Game.Lobby.SkyTower
       public static const TYPE_SKYTOWER_PVP_Occupy:uint = CONST_SKYTOWER.TYPE_SKYTOWER_PVP_Occupy;
       
       public static var GoldMode:Boolean = false;
+
       protected var GoldRoot:Sprite;
+
       protected var GoldContent:Sprite;
+
       protected var GoldInfo:Object;
+
       protected var GoldPending:Boolean = false;
+
       protected var GoldHero:TUIHero;
+
       protected var GoldDrop:TUISlot;
+
       protected var GoldCrystal:TUISlot;
+      protected var GoldPrimogem:TUISlot;
+      protected var GoldPrimogemRoot:MovieClip;
+
       protected var GoldButton:Sprite;
+
       protected var GoldFloorSelected:Number = 0;
+
       protected var FUnstreamizerSkyTower:TUnstreamizerSkyTower;
       
       protected var FCharacter:TCharacter;
@@ -152,8 +163,8 @@ package Processors.Game.Lobby.SkyTower
       
       override protected function PacketRegisterRoutines() : void
       {
-         FPacketRoutines.Register(0x01180a7e,this.GoldStateRet);
-         FPacketRoutines.Register(0x01180a7f,this.GoldFightRet);
+         FPacketRoutines.Register(18352766,this.GoldStateRet);
+         FPacketRoutines.Register(18352767,this.GoldFightRet);
          FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_SkyTower_PvpInfo_Ntf,this.PacketPerform_SC_PvpInfo_Ntf);
          FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_SkyTower_Challenge_Ret,this.PacketPerform_SC_Challenge_Ret);
          FPacketRoutines.Register(CONST_NETWORK.PACKETID_SC_SkyTower_BuyChallengeCount_Ret,this.PacketPerform_SC_BuyChallengeCount_Ret);
@@ -572,155 +583,345 @@ package Processors.Game.Lobby.SkyTower
          this.FOnSetBattleStatus = param1;
       }
       
-      protected function GoldText(root:Sprite, value:String, x:Number, y:Number, width:Number = 300, size:int = 16, color:uint = 0xFFE080) : TextField
+      protected function GoldText(root:Sprite, value:String, x:Number, y:Number, width:Number = 300, size:int = 16, color:uint = 16769152) : TextField
       {
          var t:TextField = new TextField();
          t.defaultTextFormat = new TextFormat("Arial",size,color,true);
          t.filters = [new DropShadowFilter(1,90,0,0.7,2,2,1)];
-         t.text = value; t.x = x; t.y = y; t.width = width; t.height = 38; t.multiline = true; t.wordWrap = true;
-         t.mouseEnabled = false; root.addChild(t); return t;
+         t.text = value;
+         t.x = x;
+         t.y = y;
+         t.width = width;
+         t.height = 38;
+         t.multiline = true;
+         t.wordWrap = true;
+         t.mouseEnabled = false;
+         root.addChild(t);
+         return t;
       }
-      protected function GoldBox(root:Sprite,x:Number,y:Number,w:Number,h:Number,color:uint) : void
+
+      protected function GoldBox(root:Sprite, x:Number, y:Number, w:Number, h:Number, color:uint) : void
       {
-         var matrix:Matrix = new Matrix();matrix.createGradientBox(w,h,Math.PI/2,x,y);
-         root.graphics.lineStyle(1,0xA87835,0.9);
-         root.graphics.beginGradientFill(GradientType.LINEAR,[color,0x0B0D10],[1,1],[0,255],matrix);
-         root.graphics.drawRoundRect(x,y,w,h,8,8);root.graphics.endFill();
-         root.graphics.lineStyle(1,0xFFE0A0,0.12);root.graphics.moveTo(x+8,y+2);root.graphics.lineTo(x+w-8,y+2);
+         var matrix:Matrix = new Matrix();
+         matrix.createGradientBox(w,h,Math.PI / 2,x,y);
+         root.graphics.lineStyle(1,11040821,0.9);
+         root.graphics.beginGradientFill(GradientType.LINEAR,[color,724240],[1,1],[0,255],matrix);
+         root.graphics.drawRoundRect(x,y,w,h,8,8);
+         root.graphics.endFill();
+         root.graphics.lineStyle(1,16769184,0.12);
+         root.graphics.moveTo(x + 8,y + 2);
+         root.graphics.lineTo(x + w - 8,y + 2);
       }
+
       protected function BuildGoldPanel() : void
       {
-         if(this.GoldRoot != null) return;
-         this.GoldRoot = new Sprite();addChild(this.GoldRoot);
-         this.GoldRoot.x = 190; this.GoldRoot.y = 50;
+         if(this.GoldRoot != null)
+         {
+            return;
+         }
+         this.GoldRoot = new Sprite();
+         addChild(this.GoldRoot);
+         this.GoldRoot.x = 190;
+         this.GoldRoot.y = 50;
          var art:Sprite = TUtilityReflection.CreateDisplayObjectInstance(CONST_SKYTOWER.RESOURCE_ClassName_SP_BattleRoom) as Sprite;
          if(art != null)
          {
             this.GoldRoot.addChild(art);
-            for(var j:int = 0;j < art.numChildren;j++)art.getChildAt(j).visible = false;
-            if(art[CONST_SKYTOWER.RESOURCE_Link_SP_Background] != null)art[CONST_SKYTOWER.RESOURCE_Link_SP_Background].visible = true;
-            art.mouseChildren = false;art.mouseEnabled = false;
+            var j:int = 0;
+            while(j < art.numChildren)
+            {
+               art.getChildAt(j).visible = false;
+               j++;
+            }
+            if(art[CONST_SKYTOWER.RESOURCE_Link_SP_Background] != null)
+            {
+               art[CONST_SKYTOWER.RESOURCE_Link_SP_Background].visible = true;
+            }
+            art.mouseChildren = false;
+            art.mouseEnabled = false;
          }
-         this.GoldBox(this.GoldRoot,0,0,853,38,0x520900);
+         this.GoldBox(this.GoldRoot,0,0,853,38,5376256);
          this.GoldText(this.GoldRoot,"Tower of Gold",320,4,300,23);
-         var close:Sprite = new Sprite();this.GoldBox(close,0,0,32,28,0x8A1200);this.GoldText(close,"X",7,1,30,19);
-         close.x = 812;close.y = 4;close.buttonMode = true;close.addEventListener(MouseEvent.CLICK,this.GoldClose,false,0,true);this.GoldRoot.addChild(close);
-         this.GoldContent = new Sprite();this.GoldRoot.addChild(this.GoldContent);
-         this.GoldHero = new TUIHero(this);this.GoldHero.OnQuerySequenceContext = this.GoldHeroQuery;
+         var close:Sprite = new Sprite();
+         this.GoldBox(close,0,0,32,28,9048576);
+         this.GoldText(close,"X",7,1,30,19);
+         close.x = 812;
+         close.y = 4;
+         close.buttonMode = true;
+         close.addEventListener(MouseEvent.CLICK,this.GoldClose,false,0,true);
+         this.GoldRoot.addChild(close);
+         this.GoldContent = new Sprite();
+         this.GoldRoot.addChild(this.GoldContent);
+         this.GoldHero = new TUIHero(this);
+         this.GoldHero.OnQuerySequenceContext = this.GoldHeroQuery;
          this.GoldHero.SequenceDefaultRole = SResourcesCore.TexturesLobby.GetAnimationSequenceByIdentifiers(CONST_LOBBY.RESOURCEID_Textures_DefaultRole,0);
-         this.GoldHero.x = 320;this.GoldHero.y = 155;this.GoldHero.scaleX = this.GoldHero.scaleY = 0.95;this.GoldHero.mouseEnabled = false;this.GoldHero.mouseChildren = false;this.GoldRoot.addChild(this.GoldHero);
-         var slot:MovieClip = new MovieClip();slot.x=38;slot.y=360;
-         this.GoldBox(slot,0,0,48,48,0x665028);
-         slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon]=new Sprite();slot.addChild(slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
-         slot[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight]=null;slot[TUISlot.RESOURCE_Link_TF_Subscript]=null;slot[TUISlot.RESOURCE_Link_TF_EquipLevel]=null;slot[TUISlot.RESOURCE_Link_MC_SelectedBox]=null;
-         this.GoldRoot.addChild(slot);this.GoldDrop=new TUISlot(this);this.GoldDrop.Resource=slot;
-         this.GoldDrop.OnOver=SUtilityOverLayer.UIComponentsHintOnOver;this.GoldDrop.OnOut=SUtilityOverLayer.UIComponentsHintOnOut;
-         TJadeCommon.InitSlot(this.GoldDrop);this.GoldDrop.Init();
-         var crystal:MovieClip = new MovieClip();crystal.x=281;crystal.y=360;
-         this.GoldBox(crystal,0,0,48,48,0x665028);
-         crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon]=new Sprite();crystal.addChild(crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
-         crystal[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight]=null;crystal[TUISlot.RESOURCE_Link_TF_Subscript]=null;crystal[TUISlot.RESOURCE_Link_TF_EquipLevel]=null;crystal[TUISlot.RESOURCE_Link_MC_SelectedBox]=null;
-         this.GoldRoot.addChild(crystal);this.GoldCrystal=new TUISlot(this);this.GoldCrystal.Resource=crystal;
-         this.GoldCrystal.OnOver=SUtilityOverLayer.UIComponentsHintOnOver;this.GoldCrystal.OnOut=SUtilityOverLayer.UIComponentsHintOnOut;
-         TJadeCommon.InitSlot(this.GoldCrystal);this.GoldCrystal.Init();
-         this.GoldButton = new Sprite();this.GoldBox(this.GoldButton,0,0,144,42,0xB74310);this.GoldText(this.GoldButton,"Challenge",22,7,124,18);
-         this.GoldButton.x=467;this.GoldButton.y=445;this.GoldButton.buttonMode=true;this.GoldButton.mouseChildren=false;
-         this.GoldButton.addEventListener(MouseEvent.CLICK,this.GoldChallenge,false,0,true);this.GoldRoot.addChild(this.GoldButton);
+         this.GoldHero.x = 320;
+         this.GoldHero.y = 155;
+         this.GoldHero.scaleX = this.GoldHero.scaleY = 0.95;
+         this.GoldHero.mouseEnabled = false;
+         this.GoldHero.mouseChildren = false;
+         this.GoldRoot.addChild(this.GoldHero);
+         var slot:MovieClip = new MovieClip();
+         slot.x = 38;
+         slot.y = 366;
+         this.GoldBox(slot,0,0,48,48,6705192);
+         slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
+         slot.addChild(slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
+         slot[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight] = null;
+         slot[TUISlot.RESOURCE_Link_TF_Subscript] = null;
+         slot[TUISlot.RESOURCE_Link_TF_EquipLevel] = null;
+         slot[TUISlot.RESOURCE_Link_MC_SelectedBox] = null;
+         this.GoldRoot.addChild(slot);
+         this.GoldDrop = new TUISlot(this);
+         this.GoldDrop.Resource = slot;
+         this.GoldDrop.OnOver = SUtilityOverLayer.UIComponentsHintOnOver;
+         this.GoldDrop.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
+         TJadeCommon.InitSlot(this.GoldDrop);
+         this.GoldDrop.Init();
+         var crystal:MovieClip = new MovieClip();
+         crystal.x = 229;
+         crystal.y = 366;
+         this.GoldBox(crystal,0,0,48,48,6705192);
+         crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
+         crystal.addChild(crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
+         crystal[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight] = null;
+         crystal[TUISlot.RESOURCE_Link_TF_Subscript] = null;
+         crystal[TUISlot.RESOURCE_Link_TF_EquipLevel] = null;
+         crystal[TUISlot.RESOURCE_Link_MC_SelectedBox] = null;
+         this.GoldRoot.addChild(crystal);
+         this.GoldCrystal = new TUISlot(this);
+         this.GoldCrystal.Resource = crystal;
+         this.GoldCrystal.OnOver = SUtilityOverLayer.UIComponentsHintOnOver;
+         this.GoldCrystal.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
+         TJadeCommon.InitSlot(this.GoldCrystal);
+         this.GoldCrystal.Init();
+         var primogem:MovieClip = new MovieClip();
+         primogem.x = 420;
+         primogem.y = 366;
+         this.GoldBox(primogem,0,0,48,48,6705192);
+         primogem[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
+         primogem.addChild(primogem[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
+         primogem[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight] = null;
+         primogem[TUISlot.RESOURCE_Link_TF_Subscript] = null;
+         primogem[TUISlot.RESOURCE_Link_TF_EquipLevel] = null;
+         primogem[TUISlot.RESOURCE_Link_MC_SelectedBox] = null;
+         this.GoldRoot.addChild(primogem);
+         this.GoldPrimogem = new TUISlot(this);
+         this.GoldPrimogem.Resource = primogem;
+         this.GoldPrimogem.OnOver = SUtilityOverLayer.UIComponentsHintOnOver;
+         this.GoldPrimogem.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
+         TJadeCommon.InitSlot(this.GoldPrimogem);
+         this.GoldPrimogem.Init();
+         this.GoldPrimogemRoot=primogem;
+         this.GoldButton = new Sprite();
+         this.GoldBox(this.GoldButton,0,0,144,42,12010256);
+         this.GoldText(this.GoldButton,"Challenge",22,7,124,18);
+         this.GoldButton.x = 467;
+         this.GoldButton.y = 445;
+         this.GoldButton.buttonMode = true;
+         this.GoldButton.mouseChildren = false;
+         this.GoldButton.addEventListener(MouseEvent.CLICK,this.GoldChallenge,false,0,true);
+         this.GoldRoot.addChild(this.GoldButton);
          this.GoldRoot.addEventListener(Event.ENTER_FRAME,this.GoldTick,false,0,true);
       }
+
       protected function GoldTick(e:Event) : void
       {
          if(this.GoldRoot.visible)
          {
-            this.GoldHero.Update();this.GoldDrop.Update();this.GoldCrystal.Update();
+            this.GoldHero.Update();
+            this.GoldDrop.Update();
+            this.GoldCrystal.Update();
+            this.GoldPrimogem.Update();
             var bounds:Rectangle = this.GoldHero.getBounds(this.GoldRoot);
             if(bounds.width > 0 && bounds.height > 0)
             {
-               this.GoldHero.x += 325 - (bounds.x + bounds.width/2);
+               this.GoldHero.x += 325 - (bounds.x + bounds.width / 2);
                this.GoldHero.y += 328 - bounds.bottom;
             }
          }
       }
-      protected function GoldHeroQuery(sender:Object,context:Object,query:TQueryAnimationSequence,param4:uint = 0) : void
+
+      protected function GoldHeroQuery(sender:Object, context:Object, query:TQueryAnimationSequence, param4:uint = 0) : void
       {
-         var role:TRoleModel=SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_RoleModel,uint(context)) as TRoleModel;
-         if(role == null)return;
-         var id:uint=CONST_ROLE.GetModelIDByIndex(role.Model,CONST_ROLE.ROLE_SEQUENCEINDEX_Showcase);
-         var texture:Object=SResourcesCore.TexturesModel.GetTextureByIdentifier(id);
-         if(texture != null)query.Value=texture.GetAnimationSequenceByIndex(0);
-         else SResourcesCore.TexturesModel.LoadSecondary(id);
+         var role:TRoleModel = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_RoleModel,uint(context)) as TRoleModel;
+         if(role == null)
+         {
+            return;
+         }
+         var id:uint = CONST_ROLE.GetModelIDByIndex(role.Model,CONST_ROLE.ROLE_SEQUENCEINDEX_Showcase);
+         var texture:Object = SResourcesCore.TexturesModel.GetTextureByIdentifier(id);
+         if(texture != null)
+         {
+            query.Value = texture.GetAnimationSequenceByIndex(0);
+         }
+         else
+         {
+            SResourcesCore.TexturesModel.LoadSecondary(id);
+         }
       }
+
       protected function GoldClose(e:MouseEvent) : void
       {
-         if(this.FOnEnterTown != null)this.FOnEnterTown(this);
+         if(this.FOnEnterTown != null)
+         {
+            this.FOnEnterTown(this);
+         }
       }
+
       protected function RequestGoldState() : void
       {
-         var p:TPacket=SNetworkCore.PacketAcquire(0x0181f100);SNetworkCore.Transceiver.PacketTransmit(p);
+         var p:TPacket = SNetworkCore.PacketAcquire(25293056);
+         SNetworkCore.Transceiver.PacketTransmit(p);
       }
+
       protected function GoldStateRet(p:TPacket) : void
       {
-         this.GoldInfo=Json.decode(p.Data.readUTF());
-         if(this.GoldRoot == null || !GoldMode)return;
+         this.GoldInfo = Json.decode(p.Data.readUTF());
+         if(this.GoldRoot == null || !GoldMode)
+         {
+            return;
+         }
          this.RenderGoldPanel();
       }
+
+      protected function GoldRewardAmount(item:Object,code:uint,type:int=1) : Number
+      {
+         if(item == null || item.rewards == null) return 0;
+         for each(var reward:Object in item.rewards)
+            if(uint(reward.code)==code && int(reward.type)==type) return Number(reward.amount);
+         return 0;
+      }
+
       protected function RenderGoldPanel() : void
       {
-         while(this.GoldContent.numChildren>0)this.GoldContent.removeChildAt(0);this.GoldContent.graphics.clear();
-         this.GoldBox(this.GoldContent,18,50,610,370,0x213C40);
-         this.GoldContent.graphics.lineStyle(1,0xD9AE61,0.18);
+         while(this.GoldContent.numChildren > 0)
+         {
+            this.GoldContent.removeChildAt(0);
+         }
+         this.GoldContent.graphics.clear();
+         this.GoldBox(this.GoldContent,18,50,610,370,2178112);
+         this.GoldContent.graphics.lineStyle(1,14265953,0.18);
          this.GoldContent.graphics.drawEllipse(221,290,208,32);
          this.GoldContent.graphics.drawEllipse(238,295,174,22);
-         this.GoldBox(this.GoldContent,28,338,590,72,0x28201B);
-         this.GoldBox(this.GoldContent,646,50,188,440,0x352717);
-         this.GoldText(this.GoldContent,"ASCENT",665,58,160,12,0xAC916A);
-         this.GoldBox(this.GoldContent,32,64,118,36,0x725321);
-         this.GoldText(this.GoldContent,"FLOOR "+this.GoldInfo.floor,43,71,110,18);
-         var current:Object=this.GoldInfo.preview[0];
-         this.GoldText(this.GoldContent,String(current.name),175,68,430,21,0xFFF0CE);
-         this.GoldText(this.GoldContent,"Level "+current.level+"   /   "+current.count+" opponent(s)",176,101,430,13,0xB9C7C8);
-         this.GoldHero.Context=uint(current.heroId);
-         this.GoldText(this.GoldContent,"FLOOR REWARDS",38,342,360,11,0xAA9576);
-         var inv:TInventories=new TInventories();SToolReward.GetInventoryByIDAmount(14100698,current.rewards[1].amount,inv);this.GoldDrop.Context=inv.GetInventoryByIndex(0);
-         this.GoldText(this.GoldContent,current.rewards[1].amount+" Reincarnation Stone",100,365,172,13,0xF2D193);
-         var crystals:TInventories=new TInventories();SToolReward.GetInventoryByIDAmount(14100779,current.rewards[1].amount,crystals);this.GoldCrystal.Context=crystals.GetInventoryByIndex(0);
-         this.GoldText(this.GoldContent,current.rewards[1].amount+" Blood War Crystal",342,365,166,13,0xF2D193);
-         this.GoldText(this.GoldContent,current.rewards[0].amount+" Gold",515,366,98,16,0xFFD766);
-         for(var i:int=0;i<5;i++)
+         this.GoldBox(this.GoldContent,28,338,590,86,2629659);
+         this.GoldBox(this.GoldContent,646,50,188,440,3483415);
+         this.GoldText(this.GoldContent,"ASCENT",665,58,160,12,11309418);
+         this.GoldBox(this.GoldContent,32,64,118,36,7492385);
+         this.GoldText(this.GoldContent,"FLOOR " + this.GoldInfo.floor,43,71,110,18);
+         var current:Object = this.GoldInfo.preview[0];
+         this.GoldText(this.GoldContent,String(current.name),175,68,430,21,16773326);
+         this.GoldText(this.GoldContent,"Level " + current.level + "   /   " + current.count + " opponent(s)",176,101,430,13,12175304);
+         this.GoldText(this.GoldContent,"ATK: "+String(current.atk),176,124,430,13,0xFFAE82).height=20;
+         this.GoldHero.Context = uint(current.heroId);
+         this.GoldText(this.GoldContent,"FLOOR REWARDS",38,342,360,11,11179382);
+         var stoneAmount:Number=this.GoldRewardAmount(current,14100698);
+         var crystalAmount:Number=this.GoldRewardAmount(current,14100779);
+         var primogemAmount:Number=this.GoldRewardAmount(current,14900001);
+         var inv:TInventories = new TInventories();
+         SToolReward.GetInventoryByIDAmount(14100698,stoneAmount,inv);
+         this.GoldDrop.Context=inv.GetInventoryByIndex(0);
+         this.GoldText(this.GoldContent,"x"+stoneAmount+"\nReincarnation Stone",94,366,126,12,0xF2D193);
+         var crystals:TInventories = new TInventories();
+         SToolReward.GetInventoryByIDAmount(14100779,crystalAmount,crystals);
+         this.GoldCrystal.Context=crystals.GetInventoryByIndex(0);
+         this.GoldText(this.GoldContent,"x"+crystalAmount+"\nBlood War Crystal",285,366,125,12,0xF2D193);
+         this.GoldPrimogemRoot.visible=primogemAmount>0;
+         if(primogemAmount>0)
          {
-            var item:Object=this.GoldInfo.preview[i];this.GoldBox(this.GoldContent,657,84+i*77,166,68,i==0?0x986C2C:0x38302B);
-            this.GoldText(this.GoldContent,(i==0?"CURRENT  ":"FLOOR  ")+item.floor,669,89+i*77,149,16);
-            this.GoldText(this.GoldContent,String(item.name),669,115+i*77,147,12,0xC6C3B7);
+            var primogems:TInventories=new TInventories();
+            SToolReward.GetInventoryByIDAmount(14900001,primogemAmount,primogems);
+            this.GoldPrimogem.Context=primogems.GetInventoryByIndex(0);
+            this.GoldText(this.GoldContent,"x"+primogemAmount+"\nNguyên thạch",476,366,138,13,0xD9C0FF);
          }
-         var record:Object=this.GoldInfo.lastDefeat;
-         this.GoldText(this.GoldContent,"First Defeat  /  "+(record != null?record.first.name+" (Floor "+this.GoldInfo.recordsFloor+")":"--"),32,440,420,13,0xBEB8AA);
-         this.GoldText(this.GoldContent,"Best Defeat  /  "+(record != null?record.best.name+" / "+record.best.turns+" turns":"--"),32,469,420,13,0xBEB8AA);
+         else this.GoldText(this.GoldContent,"Nguyên thạch:\nTừ tầng 100",426,366,180,13,0xA99AAE);
+         this.GoldText(this.GoldContent,this.GoldRewardAmount(current,1,0)+" Gold",450,342,164,13,0xFFD766).height=20;
+         var i:int = 0;
+         while(i < 5)
+         {
+            var item:Object = this.GoldInfo.preview[i];
+            this.GoldBox(this.GoldContent,657,84 + i * 77,166,68,i == 0 ? 9989164 : 3682347);
+            this.GoldText(this.GoldContent,(i == 0 ? "CURRENT  " : "FLOOR  ") + item.floor,669,89 + i * 77,149,16);
+            this.GoldText(this.GoldContent,String(item.name),669,111 + i * 77,147,11,13026231).height=18;
+            var upcoming:Number=this.GoldRewardAmount(item,14900001);
+            this.GoldText(this.GoldContent,upcoming>0?"Nguyên thạch x"+upcoming:"Nguyên thạch: tầng 100",669,132+i*77,147,10,0xD9C0FF).height=17;
+            i++;
+         }
+         var record:Object = this.GoldInfo.lastDefeat;
+         this.GoldText(this.GoldContent,"First Defeat  /  " + (record != null ? record.first.name + " (Floor " + this.GoldInfo.recordsFloor + ")" : "--"),32,440,420,13,12499114);
+         this.GoldText(this.GoldContent,"Best Defeat  /  " + (record != null ? record.best.name + " / " + record.best.turns + " turns" : "--"),32,469,420,13,12499114);
          if(record != null)
          {
-            var first:Sprite=new Sprite();first.graphics.beginFill(0,0);first.graphics.drawRect(0,0,435,24);first.graphics.endFill();first.x=32;first.y=440;first.name="first";first.buttonMode=true;first.addEventListener(MouseEvent.CLICK,this.GoldReplay,false,0,true);this.GoldContent.addChild(first);
-            var best:Sprite=new Sprite();best.graphics.beginFill(0,0);best.graphics.drawRect(0,0,420,24);best.graphics.endFill();best.x=32;best.y=469;best.name="best";best.buttonMode=true;best.addEventListener(MouseEvent.CLICK,this.GoldReplay,false,0,true);this.GoldContent.addChild(best);
+            var first:Sprite = new Sprite();
+            first.graphics.beginFill(0,0);
+            first.graphics.drawRect(0,0,435,24);
+            first.graphics.endFill();
+            first.x = 32;
+            first.y = 440;
+            first.name = "first";
+            first.buttonMode = true;
+            first.addEventListener(MouseEvent.CLICK,this.GoldReplay,false,0,true);
+            this.GoldContent.addChild(first);
+            var best:Sprite = new Sprite();
+            best.graphics.beginFill(0,0);
+            best.graphics.drawRect(0,0,420,24);
+            best.graphics.endFill();
+            best.x = 32;
+            best.y = 469;
+            best.name = "best";
+            best.buttonMode = true;
+            best.addEventListener(MouseEvent.CLICK,this.GoldReplay,false,0,true);
+            this.GoldContent.addChild(best);
          }
-         this.GoldButton.alpha=this.GoldPending?0.5:1;
+         this.GoldButton.alpha = this.GoldPending ? 0.5 : 1;
       }
+
       protected function GoldChallenge(e:MouseEvent) : void
       {
-         if(this.GoldPending || this.GoldInfo == null)return;
-         this.GoldPending=true;this.GoldButton.alpha=0.5;
-         var p:TPacket=SNetworkCore.PacketAcquire(0x0181f101);p.Data.writeUTF(Json.encode({floor:Number(this.GoldInfo.floor)}));SNetworkCore.Transceiver.PacketTransmit(p);
+         if(this.GoldPending || this.GoldInfo == null)
+         {
+            return;
+         }
+         this.GoldPending = true;
+         this.GoldButton.alpha = 0.5;
+         var p:TPacket = SNetworkCore.PacketAcquire(25293057);
+         p.Data.writeUTF(Json.encode({"floor":Number(this.GoldInfo.floor)}));
+         SNetworkCore.Transceiver.PacketTransmit(p);
       }
+
       protected function GoldReplay(e:MouseEvent) : void
       {
-         if(this.GoldPending || this.GoldInfo == null || this.GoldInfo.lastDefeat == null)return;
-         this.GoldPending=true;
-         var p:TPacket=SNetworkCore.PacketAcquire(0x0181f101);
-         p.Data.writeUTF(Json.encode({floor:Number(this.GoldInfo.recordsFloor),mode:String(e.currentTarget.name)}));SNetworkCore.Transceiver.PacketTransmit(p);
+         if(this.GoldPending || this.GoldInfo == null || this.GoldInfo.lastDefeat == null)
+         {
+            return;
+         }
+         this.GoldPending = true;
+         var p:TPacket = SNetworkCore.PacketAcquire(25293057);
+         p.Data.writeUTF(Json.encode({
+            "floor":Number(this.GoldInfo.recordsFloor),
+            "mode":String(e.currentTarget.name)
+         }));
+         SNetworkCore.Transceiver.PacketTransmit(p);
       }
+
       protected function GoldFightRet(p:TPacket) : void
       {
-         var error:int=p.Data.readInt();this.GoldPending=false;
-         if(error!=0){EffectGenerateTextByErrorCode(error);this.RequestGoldState();return;}
-         if(this.FOnSetBattleStatus != null)this.FOnSetBattleStatus(this,CONST_BATTLE.BattleType_SkyTowerPVE,15910001);
-         if(this.FOnInitBattle != null)this.FOnInitBattle(this);
+         var error:int = p.Data.readInt();
+         this.GoldPending = false;
+         if(error != 0)
+         {
+            if(p.Data.bytesAvailable>0)EffectGenerateText(p.Data.readUTF());else EffectGenerateTextByErrorCode(error);
+            this.RequestGoldState();
+            return;
+         }
+         if(this.FOnSetBattleStatus != null)
+         {
+            this.FOnSetBattleStatus(this,CONST_BATTLE.BattleType_SkyTowerPVE,15910001);
+         }
+         if(this.FOnInitBattle != null)
+         {
+            this.FOnInitBattle(this);
+         }
       }
 
       override public function Mount(param1:ByteArray = null) : void
@@ -750,7 +951,10 @@ package Processors.Game.Lobby.SkyTower
             this.FCharacter.RoleSencePosition = CONST_COMMON.SCENEPOSITION_SKYTOWER;
             return;
          }
-         if(this.GoldRoot != null) this.GoldRoot.visible = false;
+         if(this.GoldRoot != null)
+         {
+            this.GoldRoot.visible = false;
+         }
          if(!this.FBattleBack)
          {
             this.ProcessorChestInfoReq();
@@ -770,7 +974,10 @@ package Processors.Game.Lobby.SkyTower
       
       override public function Unmount() : void
       {
-         if(this.GoldRoot != null) this.GoldRoot.visible = false;
+         if(this.GoldRoot != null)
+         {
+            this.GoldRoot.visible = false;
+         }
          this.FProcessorWindowSkyTower.Reset();
          this.FProcessorWindowSkyTower.Visible = false;
          if(this.FProcessorWindowBattleRoom.Visible)
@@ -795,7 +1002,12 @@ package Processors.Game.Lobby.SkyTower
       
       public function EnterSkyTowerReq() : void
       {
-         if(GoldMode){this.ProcessorEnterSkyTowerReq();this.FUnstreamizerSkyTower.UnstreamizeSkyTowers(null,this.FSkyTower,this.FCharacter);return;}
+         if(GoldMode)
+         {
+            this.ProcessorEnterSkyTowerReq();
+            this.FUnstreamizerSkyTower.UnstreamizeSkyTowers(null,this.FSkyTower,this.FCharacter);
+            return;
+         }
          if(this.FCharacter.RoleSencePosition != CONST_COMMON.SCENEPOSITION_SKYTOWER)
          {
             this.ProcessorEnterSkyTowerReq();
@@ -805,7 +1017,12 @@ package Processors.Game.Lobby.SkyTower
       
       public function UpdateBattleResult(param1:Boolean) : void
       {
-         if(GoldMode) { this.GoldPending = false; this.FBattleBack = false; return; }
+         if(GoldMode)
+         {
+            this.GoldPending = false;
+            this.FBattleBack = false;
+            return;
+         }
          this.FProcessorWindowBattleRoom.UpdateBattleResult(param1);
       }
    }

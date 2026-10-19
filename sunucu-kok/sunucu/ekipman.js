@@ -313,6 +313,16 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
   }
   const hogu = hogyokuBonuses(durum, heroId);
   for (let i = 0; i < hogu.length; i++) ek[i] += hogu[i];
+  // Rank rows describe the total formation bonus, never a cumulative upgrade reward.
+  for (const effect of require('./military-rank').bonuses(durum,heroId)) {
+    const type=Number(effect.type), amount=Number(effect.value)||0;
+    add(type,amount);
+    const primary=ATTR_IDX[type];
+    if (type>=1 && type<=4 && baseValue(primary)>0) {
+      const targets={0:[6,8],1:[7,9],2:[4],3:[5]}[primary];
+      for(const target of targets) if(baseValue(target)>0) ek[target]+=Math.round(amount*baseValue(target)/baseValue(primary));
+    }
+  }
   const reiatsu = statlar.knifeSoulBonuses(durum);
   ek[statlar.IDX.Power] += reiatsu.power;
   ek[statlar.IDX.Intelligence] += reiatsu.intelligence;

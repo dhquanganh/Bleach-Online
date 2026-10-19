@@ -1,0 +1,132 @@
+{
+  "heroId": 11120930,
+  "name": "Pain - Tendo [Six Paths Rinnegan]",
+  "profession": 1,
+  "quality": 7,
+  "assess": "SSS",
+  "rinnegan": true,
+  "mystery": {
+    "id": 13120971,
+    "name": "Tendo - Almighty Push",
+    "prompt": true,
+    "target": 7,
+    "damageType": "mixed",
+    "multiplier": 1.5,
+    "combo": 1,
+    "chakraCost": 20,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "consumesPrimary": false,
+    "painMystery": true,
+    "techniqueCost": 1,
+    "attackStat": "atk"
+  },
+  "extremeMystery": {
+    "id": 13120972,
+    "name": "Extreme - Tendo - Almighty Push",
+    "prompt": true,
+    "target": "all",
+    "damageType": "mixed",
+    "multiplier": 1.8,
+    "combo": 5,
+    "causes": "repulse",
+    "chakraCost": 20,
+    "cooldown": 3,
+    "battlefieldCooldown": 0,
+    "consumesPrimary": false,
+    "painMystery": true,
+    "consumeAllTechnique": true,
+    "lifeSteal": 0.07,
+    "attackStat": "atk"
+  },
+  "finalMystery": {
+    "id": 13120973,
+    "name": "Final - Tendo - Almighty Push",
+    "prompt": true,
+    "target": "all",
+    "damageType": "mixed",
+    "multiplier": 1.8,
+    "combo": 5,
+    "causes": "repulse",
+    "unavoidable": true,
+    "chakraCost": 0,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "consumesPrimary": false,
+    "painMystery": true,
+    "techniqueCost": 2,
+    "attackStat": "atk"
+  },
+  "standard": {
+    "id": 13120974,
+    "name": "Six-in-one",
+    "target": 6,
+    "damageType": "mixed",
+    "multiplier": 1,
+    "combo": 4,
+    "painStandard": true,
+    "attackStat": "atk"
+  },
+  "chases": [
+    {
+      "id": 13120975,
+      "name": "Six Paths - Chakra Rod Strike",
+      "requiresAny": [
+        "repulse",
+        "knockdown"
+      ],
+      "target": "painSplash",
+      "damageType": "mixed",
+      "multiplier": 1.2,
+      "combo": 1,
+      "causes": "knockdown",
+      "unavoidable": true,
+      "ignoreDefense": 0.3,
+      "maxPerRound": 1,
+      "painChase": true,
+      "cooldown": 2,
+      "attackStat": "atk"
+    }
+  ],
+  "laser": {
+    "id": 13120976,
+    "name": "Shurado - Laser Canon",
+    "target": "all",
+    "damageType": "ninjutsu",
+    "multiplier": 1.1,
+    "combo": 1,
+    "painLaser": true,
+    "cooldown": 2,
+    "attackStat": "atk"
+  },
+  "transformation": {
+    "id": 13120977,
+    "name": "Outer Path - Six Paths of Pain",
+    "support": true,
+    "multiplier": 0
+  },
+  "finalRevival": {
+    "id": 13120978,
+    "name": "Final - The One called God",
+    "support": true,
+    "multiplier": 0
+  },
+  "superPush": {
+    "id": 13120979,
+    "name": "Super - Almighty Push",
+    "target": "all",
+    "damageType": "mixed",
+    "multiplier": 1.8,
+    "combo": 5,
+    "unavoidable": true,
+    "painSuper": true,
+    "attackStat": "atk"
+  },
+  "techniqueLimit": 5,
+  "baseTechniqueRate": 0.12,
+  "finalTechniqueRate": 0.2,
+  "damageAttackRate": 0.12,
+  "initiativeRate": 0.02,
+  "initiativeStacks": 5,
+  "balanceNote": "Cooldowns updated by request: base 2, Extreme 3, Final 2 (up to two casts in an eligible round), Chase 2, Laser 2 rounds. Mystery recovery persists across HP form changes and revival. Other explicit numbers and forms follow the supplied screenshot. Damage coefficients and the unspecified 'certain amount' of Chase penetration (30%) are local configurable values, not stated in the reference. Damage-triggered Attack scaling stacks additively per damaged target; TP bonuses are a separate multiplier. Shared camp Chakra is used by this engine. Final critical-hit cost increase lasts through the current round, matching the other +20 cost effect. Splash uses orthogonally adjacent battlefield grids and deals 30% of the primary hit. Base revival is once at 100% HP; final revival requires another defeated allied ninja, once at 40% HP. Final form has only its two stated skills. All damaging moves scale exclusively with Physical ATK, including Laser, Final and Super Push; damage type still selects Defense/Resistance mitigation. Laser targeting is overridden by request to hit all living enemy combat units in every row."
+}

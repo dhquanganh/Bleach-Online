@@ -46,6 +46,7 @@ def main():
     args.add_argument('--tower-only', action='store_true')
     args.add_argument('--popup-only', action='store_true')
     args.add_argument('--baseline', type=Path)
+    args.add_argument('--client-version',default='2026101954')
     opts = args.parse_args()
     original = CLIENT.read_bytes()
     decoded = swap(opts.baseline.read_bytes() if opts.baseline else original)
@@ -79,6 +80,7 @@ def main():
     tower=(scripts/'Processors/Game/Lobby/SkyTower/TProcessorSkyTower.as').read_text(encoding='utf-8')
     assert 'Blood War Crystal' in tower and 'GetInventoryByIDAmount(14100779' in tower
     assert 'Tower of Gold' in tower and 'GoldFightRet' in tower and 'Reincarnation Stone' in tower
+    assert 'GoldPrimogem' in tower and 'GoldRewardAmount' in tower and '14900001' in tower and 'current.atk' in tower
     handler = tower[tower.index('protected function GoldFightRet'):tower.index('override public function Mount')]
     assert 'this.FOnSetBattleStatus(this,CONST_BATTLE.BattleType_SkyTowerPVE,15910001)' in handler
     assert handler.index('this.FOnSetBattleStatus(') < handler.index('this.FOnInitBattle(this)')
@@ -98,6 +100,19 @@ def main():
         backup.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(CLIENT, backup)
         CLIENT.write_bytes(protected)
+        public=CLIENT.parent.parent
+        version=opts.client_version.encode('ascii');assert version.isdigit()
+        manifest=CLIENT.parent/'version.swf';raw=zlib.decompress(manifest.read_bytes());pos=2;entries=[]
+        for _ in range(struct.unpack_from('<H',raw)[0]):
+            n=struct.unpack_from('<H',raw,pos)[0];pos+=2;k=raw[pos:pos+n];pos+=n
+            n=struct.unpack_from('<H',raw,pos)[0];pos+=2;v=raw[pos:pos+n];pos+=n
+            entries.append((k,version if k==b'TApplication.swf' else v))
+        assert pos==len(raw) and sum(k==b'TApplication.swf' for k,v in entries)==1
+        parts=[raw[:2]]
+        for k,v in entries:parts.extend([struct.pack('<H',len(k)),k,struct.pack('<H',len(v)),v])
+        shutil.copy2(manifest,backup.with_name(backup.name+'-version'))
+        dest=public/version.decode()/'TApplication.swf';dest.parent.mkdir(exist_ok=True);dest.write_bytes(protected)
+        manifest.write_bytes(zlib.compress(b''.join(parts)))
         print('Installed:', CLIENT)
         print('Backup:', backup)
 

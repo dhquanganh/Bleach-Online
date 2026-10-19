@@ -7,7 +7,7 @@ const { MongoClient } = require('mongodb');
 const scrypt = promisify(crypto.scrypt);
 const ROOT = path.resolve(__dirname, '..');
 const GAME = path.join(__dirname, 'sunucu');
-const FILES = ['oyuncu.json', 'veri.json', 'battlefield-runtime.json'];
+const FILES = ['oyuncu.json', 'veri.json', 'battlefield-runtime.json', 'arena-reward-pending.json'];
 function config() {
   const file = path.join(ROOT, '.env');
   if (fs.existsSync(file)) for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {
@@ -38,6 +38,7 @@ function currentFiles() {
 function newFiles(username, id) {
   const v = JSON.parse(fs.readFileSync(path.join(GAME, 'veri-varsayilan.json'), 'utf8'));
   v.nick = ''; // The native game will ask the user to create a character.
-  return { 'veri.json': JSON.stringify(v), 'oyuncu.json': JSON.stringify({ agentUserId: id, agent: 54, server: 974, roleIdHi: 1, roleIdLo: crypto.randomInt(1, 0x7fffffff), nick: username }) };
+  v.rutbe = 40100001; v.prestij = 0;
+  return { 'veri.json': JSON.stringify(v), 'oyuncu.json': JSON.stringify({ militaryRank: 40100001, prestige: 0, agentUserId: id, agent: 54, server: 974, roleIdHi: 1, roleIdLo: crypto.randomInt(1, 0x7fffffff), nick: username }) };
 }
 module.exports = { connect, passwordHash, passwordMatches, currentFiles, newFiles, ROOT, GAME, FILES };

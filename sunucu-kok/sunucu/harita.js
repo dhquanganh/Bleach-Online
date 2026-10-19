@@ -86,7 +86,7 @@ function anaHeroYama(buf, o) {
     b.writeUInt32BE(lv, s + 4); b.writeUInt32BE(lv, hist);
   }
   if (o.exp !== undefined) { b.writeUInt32BE(0, s + 8); b.writeUInt32BE(Math.max(0, Number(o.exp) || 0) >>> 0, s + 12); }
-  if (o.pos > 0) b[s + 17] = o.pos & 0xff;
+  if (o.pos !== undefined && o.pos >= 0) b[s + 17] = o.pos & 0xff;
   if (o.skill > 0) { b.writeUInt32BE(o.skill >>> 0, hist + 7); b[hist + 11] = 1; }
   return b;
 }

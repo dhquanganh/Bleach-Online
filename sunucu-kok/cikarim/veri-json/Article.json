@@ -102998,5 +102998,25 @@
     "itemFunction": 1000,
     "functionValue": 0,
     "f16": 0
+  },
+  {
+    "id": "00D79EF2",
+    "name": "Pain - Tendo [Six Paths Rinnegan] Modify Fragment",
+    "majorType": 21,
+    "minorType": 100,
+    "level": 1,
+    "quality": 7,
+    "cardType": 1,
+    "sort": 14130930,
+    "overlayNumber": 9999,
+    "bindMode": 1,
+    "obtain": 0,
+    "functionDesc": "<p>Pain - Tendo [Six Paths Rinnegan] Modify Fragment. Used for this partner's star upgrades and reincarnation.</p>",
+    "picture": 14130930,
+    "costPrice": "0_1_0_1",
+    "sellPrice": 1000,
+    "itemFunction": 1000,
+    "functionValue": 0,
+    "f16": 0
   }
 ]

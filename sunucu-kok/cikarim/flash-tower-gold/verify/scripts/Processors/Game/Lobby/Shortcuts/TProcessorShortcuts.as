@@ -26,6 +26,7 @@ package Processors.Game.Lobby.Shortcuts
    import Resources.Constants.*;
    import Resources.Strings.*;
    import Utilities.UI.Overlayers.*;
+   import flash.geom.Point;
    import flash.utils.*;
    import ghostcat.operation.RepeatOper;
    import ghostcat.operation.TweenOper;
@@ -3820,6 +3821,15 @@ package Processors.Game.Lobby.Shortcuts
       public function FollowBleachTrain(param1:TBleachTrainData) : void
       {
          this.FWindowBleachTrain.FollowBelachTrain(param1);
+      }
+
+      public function IllusionAnchor() : Point
+      {
+         if(!this.Visible || this.FWindowActiveListTwo == null)
+         {
+            return null;
+         }
+         return this.FWindowActiveListTwo.IllusionAnchor();
       }
    }
 }

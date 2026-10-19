@@ -4,7 +4,8 @@ const {app,BrowserWindow}=require('electron');
 const fs=require('fs'),path=require('path'),http=require('http');
 const base=__dirname,root=path.resolve(base,'../../..');
 const revival=false;
-const out=path.join(base,revival?'validation/extracted/revival':'validation/extracted/native');
+const statusProbe=process.env.OBITO_STATUS_PROBE==='1';
+const out=path.join(base,statusProbe?'validation/status-text':revival?'validation/extracted/revival':'validation/extracted/native');
 if(!fs.existsSync(out))fs.mkdirSync(out,{recursive:true});
 const logFile=path.join(out,'runtime.log');fs.writeFileSync(logFile,'');
 const log=t=>fs.appendFileSync(logFile,t+'\n');
@@ -24,7 +25,7 @@ const server=http.createServer((req,res)=>{
   return res.end('<html><body style="margin:0;background:#000"><script>function vfxProbe(t){console.log(t)}function vfxSnapshot(name,hex){var x=new XMLHttpRequest();x.open("POST","/snapshot?name="+name);x.send(hex);}</script><object type="application/x-shockwave-flash" data="/probe.swf" width="1250" height="650"><param name="allowScriptAccess" value="always"></object></body></html>');
  }
  let file;
- if(req.url==='/probe.swf')file=path.join(base,revival?'revival-probe.swf':'raster-probe.swf');
+ if(req.url==='/probe.swf')file=path.join(base,statusProbe?'status-probe.swf':revival?'revival-probe.swf':'raster-probe.swf');
  else if(/^\/public\/obito-vfx\/(v3|extracted)\/[a-z0-9-]+\.png$/i.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  else if(/^\/public\/2026090619\/Resources\/Textures\/Model\/[A-F0-9]+\.TexClient$/.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  if(!file||!fs.existsSync(file)){const msg='ERROR HTTP 404 '+req.url;log(msg);errors.push(msg);res.statusCode=404;return res.end();}

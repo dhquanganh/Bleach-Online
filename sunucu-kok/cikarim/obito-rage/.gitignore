@@ -6,3 +6,7 @@ verify/
 *.swf
 contact.png
 probe-source/
+status-original/
+status-patched/
+status-verify/
+status-backups/

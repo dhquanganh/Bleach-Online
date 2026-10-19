@@ -1,0 +1,41 @@
+      private function ShowObitoStatusText(message:String, color:uint = 0xB9F47A) : void
+      {
+         var host:DisplayObjectContainer = parent;
+         if(host == null || host.stage == null) return;
+         var owner:TRole = this;
+         var key:String = "obitoStatus_"+Camp+"_"+Pos+"_"+message;
+         var old:DisplayObject = host.getChildByName(key);
+         if(old != null) host.removeChild(old);
+         var label:TextField = new TextField();
+         label.name=key;label.mouseEnabled=false;label.selectable=false;
+         label.defaultTextFormat=new TextFormat("Arial",15,color,true,null,null,null,null,"center");
+         label.width=340;label.height=30;label.text=message;
+         label.filters=[new GlowFilter(0x080810,1,5,5,5)];
+         host.addChild(label);
+         var started:int=getTimer();
+         var animate:Function;
+         var cleanup:Function;
+         cleanup=function(event:Event = null):void
+         {
+            if(event != null && event.target != label) return;
+            label.removeEventListener(Event.ENTER_FRAME,animate);
+            label.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            if(label.parent != null) label.parent.removeChild(label);
+         };
+         animate=function(event:Event):void
+         {
+            var age:int=getTimer()-started;
+            if(owner.parent != host || host.stage == null || age >= 3200){cleanup();return;}
+            var prefix:String="obitoStatus_"+owner.Camp+"_"+owner.Pos+"_";
+            var row:int=0;
+            for(var i:int=host.getChildIndex(label)+1;i<host.numChildren;i++)
+               if(host.getChildAt(i).name.indexOf(prefix)==0) row++;
+            var anchor:Point=host.globalToLocal(owner.localToGlobal(new Point(0,-155)));
+            label.x=anchor.x-170;label.y=anchor.y-row*27-Math.min(12,age/200);
+            label.alpha=age<2600?1:(3200-age)/600;
+         };
+         label.addEventListener(Event.ENTER_FRAME,animate);
+         label.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+

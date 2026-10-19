@@ -6,14 +6,15 @@ const config = require('./naruto-sage.json');
 const jiraiya = require('./jiraiya-combat');
 const kabuto = require('./kabuto-combat');
 const obito = require('./obito-combat');
+const pain = require('./pain-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
-function comboRecord(frame,target,state,count,isChase=false) {
+function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
   frame.targets.push({cmd:9,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,
-    result:{buffId:(isChase?19000200:19000100)+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
+    result:{buffId:(obitoSource?(isChase?19000700:19000600):(isChase?19000200:19000100))+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
 }
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : obito.profile(unit) || kabuto.profile(unit));
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -26,17 +27,19 @@ function setState(target, state, round) {
     target.immobileUntil = round;
     return state;
   }
-  if (displacement.has(state) && !kabuto.armor(target) && !skills.status(target,'invincible') && !skills.status(target,'immuneControl')) return state;
+  if (displacement.has(state) && !(pain.isPain(target)&&target.painFinal) && !kabuto.armor(target) && !skills.status(target,'invincible') && !skills.status(target,'immuneControl')) return state;
   return null;
 }
 function create(teams, options = {}) {
   const context = { teams, round:0, chakra:[0,0], trace:[], used:new Map(), primaryActions:new Map(), skillReady:new Map(), random:options.random || Math.random };
   context.enabled = teams.flat().some(unit => profile(unit));
+  pain.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
   ctx.round = round;
   ctx.used.clear();
+  ctx.chakraLimit=[100,100];
   for (let camp=0; camp<2; camp++) {
     // Naruto Online: a fresh team pool of 20,40,60,80,100 across rounds.
     ctx.chakra[camp] = Math.min(100, round * 20);
@@ -79,7 +82,7 @@ function spendCooldown(ctx, unit, key, move) {
 }
 function useStandard(ctx, unit, allies) {
   const move=kabuto.selectStandard(ctx,unit,standard(unit,allies));
-  if(!move || disabled(unit) || (obito.isObito(unit) ? !obito.available(ctx,unit) : !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard'))) return null;
+  if(!move || pain.active(unit,'painHorrorUntil') || disabled(unit) || (obito.isObito(unit) ? !obito.available(ctx,unit) : !primaryAvailable(ctx,unit) || !ready(ctx,unit,'standard'))) return null;
   // Summon/Barrage share a slot: losing a clone must not bypass the cooldown.
   spendCooldown(ctx,unit,'standard',move);
   ctx.primaryActions.set(unit,ctx.round);
@@ -88,15 +91,16 @@ function useStandard(ctx, unit, allies) {
 }
 function canMystery(ctx, unit) {
   const p=profile(unit), m=p && p.mystery;
-  return !!(m && kabuto.canMystery(ctx,unit) && primaryAvailable(ctx,unit) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
-    ctx.round >= (unit.mysteryReadyRound || 1) && ctx.chakra[unit.camp] >= m.chakraCost);
+  return !!(m && pain.canMystery(ctx,unit,m) && kabuto.canMystery(ctx,unit) && primaryAvailable(ctx,unit) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
+    pain.mysteryReady(ctx,unit) && ctx.chakra[unit.camp] >= pain.mysteryCost(ctx,unit,m));
 }
 function useMystery(ctx,unit,beforeSpend=null) {
   if (!canMystery(ctx,unit)) return null;
   const m=profile(unit).mystery;
   if(beforeSpend)beforeSpend();
-  ctx.chakra[unit.camp]-=m.chakraCost;
-  unit.mysteryReadyRound=ctx.round+Math.max(1,m.cooldown);
+  ctx.chakra[unit.camp]-=pain.mysteryCost(ctx,unit,m);
+  pain.spendMystery(ctx,unit,m);
+  unit.mysteryReadyRound=ctx.round+(pain.isPain(unit)?Math.max(0,m.cooldown):Math.max(1,m.cooldown));
   if(m.consumesPrimary!==false)ctx.primaryActions.set(unit,ctx.round);
   return m;
 }
@@ -111,7 +115,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
   if (!spec || !hitTarget(opener,target) || target.hp<=0) return events;
   let count=spec.combo || 1;
   let state=setState(target,spec.stateChance==null||ctx.random()<spec.stateChance?spec.causes:null,ctx.round);
-  comboRecord(opener,target,state,count);
+  comboRecord(opener,target,state,count,false,obito.isObito(attacker));
   ctx.trace.push({round:ctx.round,kind:'open',actor:attacker.id,target:target.id,count,state});
   const candidates=ctx.teams[attacker.camp].flatMap(unit => ((profile(unit)||{}).chases||[]).map((chase,index)=>({unit,chase,index})))
     .sort((a,b)=>order(a.unit)-order(b.unit)||a.index-b.index);
@@ -121,6 +125,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
   for(let step=0; step<budget && target.hp>0; step++) {
     const eligible=({unit,chase,index}) => {
       chase=(profile(unit)||{}).chases[index];
+      if(!chase)return false;
       const uses=(ctx.used.get(unit)||[])[index]||0;
       const bonus=chase.cooldown ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
       return canChase(unit) && (obito.isObito(unit)?obito.chaseReady(ctx,unit,chase):ready(ctx,unit,chase.id)) && uses<(chase.maxPerRound||1)+bonus &&
@@ -139,7 +144,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
     if(hit) {
       count+=chase.combo || 1;
       if(chase.requires || chase.requiresAny || chase.causes) state=setState(target,chase.causes,ctx.round);
-      comboRecord(frame,target,state,count,true);
+      comboRecord(frame,target,state,count,true,obito.isObito(unit));
     } else { state=null; break; }
     ctx.trace.push({round:ctx.round,kind:'chase',actor:unit.id,skill:chase.id,target:target.id,count,state});
   }

@@ -1,0 +1,6 @@
+native/
+*.swf
+patched/
+verify/
+backups/
+__pycache__/

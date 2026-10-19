@@ -3,11 +3,18 @@ from pathlib import Path
 import argparse,json,re,subprocess
 BASE=Path(__file__).resolve().parent
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--status-check',action='store_true');args=p.parse_args()
     animation=json.loads((BASE/'animation.json').read_text())
-    production=(BASE/'patched/Processors/Game/Battle/Character/TRole.as').read_text(encoding='utf-8')
-    start=production.index('      private static function ObitoVfxManifest(');end=production.index('      override public function UpdateActive()',start)
-    methods=production[start:end].replace('TRole','TApplication')
+    production=(BASE/('status-patched' if args.status_check else 'patched')/'Processors/Game/Battle/Character/TRole.as').read_text(encoding='utf-8')
+    pieces=[]
+    for name in ['ObitoVfxManifest','PreloadObitoVfx','LoadObitoVfxAtlas','PlayObitoVfxAsset','PlayObitoPowerFx','UpdateObitoVfx','ShowObitoVfx','ShowObitoStatusText']:
+        signature=re.search(r'      private (?:static )?function '+name+r'\(',production)
+        if signature is None:continue
+        start=signature.start();end=production.index('{',start)+1;depth=1
+        while depth:
+            depth+=(production[end]=='{')-(production[end]=='}');end+=1
+        pieces.append(production[start:end])
+    methods='\n'.join(pieces).replace('TRole','TApplication')
     methods=methods.replace('FObitoFxCache[name] = frames;','FObitoFxCache[name] = frames; report("ATLAS "+name);')
     methods=methods.replace('failed = function(event:Event):void {release();loader.unload();};','failed = function(event:Event):void {report("ERROR atlas "+name);release();loader.unload();};')
     # Static atlas loader cannot call instance report.
@@ -41,10 +48,40 @@ def main():
     source=source.replace('left=new TApplication(false);right=new TApplication(false);PreloadObitoVfx();','left=new ProbeRole();right=new ProbeRole();ProbeRole.PreloadObitoVfx();')
     source=source.replace('private var left:TApplication;','private var left:ProbeRole;').replace('private var right:TApplication;','private var right:ProbeRole;')
     source=source.replace('role:TApplication','role:ProbeRole').replace('caster:TApplication','caster:ProbeRole').replace('victim:TApplication','victim:ProbeRole')
+    if args.status_check:
+        start=source.index('   if(loaded<8)return;');end=source.index('  private function saveFrame(',start)
+        source=source[:start]+"""
+   if(loaded<8)return;
+   if(readyAt<0){
+      readyAt=getTimer();
+      left.ShowObitoStatusText("KAMUI",0xB9F47A);
+      left.ShowObitoStatusText("IMMOBILE",0xFFAA88);
+      left.ShowObitoStatusText("LIFE STEAL +120 HP",0xB9F47A);
+      right.ShowObitoStatusText("KAMUI TAG II",0xB9F47A);
+      right.ShowObitoStatusText("KNOCKDOWN",0xFFE299);
+   }
+   var age:int=getTimer()-readyAt;
+   renderRole(left,"idle",int(age/100)%clips.idle.images.length);
+   renderRole(right,"idle",int(age/100)%clips.idle.images.length);
+   for each(var checkpoint:int in [1000,2400,3000,3500]){
+      var tag:String="TEXT-"+checkpoint;
+      if(age>=checkpoint&&!captured[tag]){
+         captured[tag]=true;
+         var count:int=0;
+         var labelHost:DisplayObjectContainer=left.parent;
+         for(var i:int=0;i<labelHost.numChildren;i++)if(labelHost.getChildAt(i).name.indexOf("obitoStatus_")==0)count++;
+         if(count!=(checkpoint<3200?5:0))report("ERROR status lifetime at "+checkpoint+" count="+count);
+         report("TEXT_CHECK "+checkpoint+" count="+count);saveFrame(tag);
+      }
+   }
+   if(age>=3700){report("DONE status text; remaining=0");removeEventListener(Event.ENTER_FRAME,tick);}
+  }
+"""+source[end:]
     source=source.replace('__METHODS__','').rstrip()
     source=source[:-1]+'\n internal class ProbeRole extends Sprite {\n'+fields+'\n public function ProbeRole(){actor.smoothing=true;addChild(actor);}\n public function report(text:String):void{if(ExternalInterface.available)ExternalInterface.call("vfxProbe",text);}\n'+methods+'\n}\n}\n'
     dest=BASE/'probe-source/TApplication.as';dest.parent.mkdir(exist_ok=True);dest.write_text(source,encoding='utf-8')
-    subprocess.run(['java','-Xmx2g','-jar',args.ffdec,'-onerror','abort','-importScript',str(BASE/'source.swf'),str(BASE/'raster-probe.swf'),str(dest.parent)],check=True)
-    output=BASE/'raster-probe.swf';binary=bytearray(output.read_bytes());binary[3]=21;output.write_bytes(binary)
+    output=BASE/('status-probe.swf' if args.status_check else 'raster-probe.swf')
+    subprocess.run(['java','-Xmx2g','-jar',args.ffdec,'-onerror','abort','-importScript',str(BASE/'source.swf'),str(output),str(dest.parent)],check=True)
+    binary=bytearray(output.read_bytes());binary[3]=21;output.write_bytes(binary)
     print('PASS Obito component probe compiled')
 if __name__=='__main__':main()

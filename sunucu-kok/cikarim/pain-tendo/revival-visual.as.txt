@@ -1,0 +1,41 @@
+      private function RestorePainAfterRevival() : void
+      {
+         // Cancel the native death fade before restoring alpha: otherwise it hides Pain again later.
+         TweenUtil.removeTween(this,false);
+         TweenUtil.removeTween(FBitmap,false);
+         FIsDie=false;
+         FWaitDie=false;
+         FWaitNextCommand=false;
+         FHideFrame=-1;
+         FHasFrozen=false;
+         FHasGiddy=false;
+         FIsAntiColorBlackWhite=false;
+         FIsRedAntiColor=false;
+         FCallBackDict[TYPE_ACTIVE_DIE]=null;
+         FTimeDict[TYPE_ACTIVE_DIE]=0;
+         FSkillId=0;
+         FSkilling=false;
+         FPainVfxStarted=false;
+         FPainFinal=true;
+         alpha=1;
+         visible=true;
+         filters=[];
+         FBitmap.alpha=1;
+         FBitmap.visible=true;
+         FBitmap.filters=[];
+         FShaderBmp.visible=true;
+         FHpBar.visible=true;
+         FBuffSprite.visible=true;
+         FFrozenBitmap.visible=false;
+         FGiddyBitmap.visible=false;
+         if(FIdlePosition != null){x=FIdlePosition[0];y=FIdlePosition[1];}
+         PlayFightIdle();
+         // Show a real bitmap immediately, even before the next animation tick.
+         var idle:TAnimationFrame=FCurSequence.GetAnimationFrameByIndex(0);
+         if(idle != null)
+         {
+            FBitmap.bitmapData=idle.Surface;
+            FBitmap.x=-idle.Pivot.X;
+            FBitmap.y=-idle.Pivot.Y;
+         }
+      }

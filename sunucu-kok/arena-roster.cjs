@@ -5,8 +5,11 @@ const crypto = require('node:crypto');
 const { fork } = require('node:child_process');
 const { ROOT, FILES } = require('./accounts.cjs');
 const militaries = JSON.parse(fs.readFileSync(path.join(__dirname, 'cikarim/veri-json/Military.json'))).map(row => parseInt(row.id, 16) >>> 0);
-function createRoster(db, runtimes, snapshot) {
-  const cache = new Map(); let pending = null, closed = false;
+function createRoster(db, runtimes, snapshot, options = {}) {
+  const settle = require('./arena-settlement.cjs').createSettlement(db);
+  const ladder = require('./arena-ladder.cjs').createLadder(db);
+  const cache = new Map(); let pending = null, closed = false, queue = Promise.resolve();
+  function serial(action) {const next=queue.catch(()=>{}).then(action);queue=next;return next;}
   async function build(player) {
     const id = player._id.toHexString(), rt = runtimes.get(id);
     const files = rt ? snapshot(rt.dir) : player.files;
@@ -37,10 +40,17 @@ function createRoster(db, runtimes, snapshot) {
     } : null;
     cache.set(id, { hash, row }); return row;
   }
-  function refresh() {
-    if (closed) return Promise.resolve();
-    if (pending) return pending;
-    pending = (async () => {
+  function publish(rows,settled) {
+    for (const [id,rt] of runtimes) if (rt.child.connected) {
+      const reward=settled?.rewards.find(r=>r.accountId===id);
+      try {
+        rt.child.send({ type:'arena-roster',rows,settlement:reward?{...reward,period:settled._id,releasedAt:settled.releasedAt}:null },error=>{
+          if(error)console.error('[Arena roster] delivery failed:',error.message);
+        });
+      } catch(error) {console.error('[Arena roster] delivery failed:',error.message);}
+    }
+  }
+  async function refreshNow() {
       const players = await db.collection('players').find({}, { projection: { files: 1 } }).toArray();
       const accountRows = await db.collection('accounts').find({}, { projection: { _id: 1, arenaPriority: 1 } }).toArray();
       const accounts = new Set(accountRows.map(a => a._id.toHexString()));
@@ -49,16 +59,35 @@ function createRoster(db, runtimes, snapshot) {
       const rows = [];
       for (const player of players) {
         if (!accounts.has(player._id.toHexString())) continue;
-        try { const row = await build(player); if (row) rows.push(row); }
+        try { const row = await (options.buildRow || build)(player); if (row) rows.push(row); }
         catch (e) { console.error('[Arena roster]', e.message); }
       }
       rows.sort((a,b) => priority.get(b.accountId)-priority.get(a.accountId) || b.level-a.level || a.accountId.localeCompare(b.accountId));
-      rows.forEach((row, index) => { row.ranking = index+1; });
-      for (const rt of runtimes.values()) if (rt.child.connected) rt.child.send({ type: 'arena-roster', rows });
-    })().finally(() => { pending = null; });
+      // Priority/level seed the board once; subsequent refreshes retain earned places.
+      const ranked = await ladder(rows,null,accounts);
+      const settled = await settle(ranked.rows);
+      publish(ranked.rows,settled);
+      return {rows:ranked.rows,settled,members:accounts};
+  }
+  function refresh() {
+    if (closed) return Promise.resolve();
+    if (pending) return pending;
+    pending = serial(refreshNow).finally(() => { pending = null; });
     return pending;
   }
-  const timer = setInterval(() => refresh().catch(e => console.error('[Arena roster]', e.name)), 5000);
-  return { refresh, async close() { closed = true; clearInterval(timer); if (pending) await pending; } };
+  function recordResult(accountId,message) {
+    if (closed) return Promise.reject(Error('Arena ranking server closed'));
+    return serial(async () => {
+      // Freeze any due reward snapshot before applying a battle resolved after the cutoff.
+      const {rows,settled,members}=await refreshNow();
+      const result=await ladder(rows,{id:message.id,accountId,opponentId:message.opponentId,won:message.won},members);
+      publish(result.rows,settled);
+      return {ranking:result.rows.find(row=>row.accountId===accountId).ranking,
+        opponentRanking:result.rows.find(row=>row.accountId===message.opponentId).ranking,
+        promoted:result.promoted,duplicate:result.duplicate};
+    });
+  }
+  const timer = options.intervalMs === 0 ? null : setInterval(() => refresh().catch(e => console.error('[Arena roster]', e.name)), options.intervalMs || 5000);
+  return { refresh,recordResult,async close() { closed = true; clearInterval(timer); await queue.catch(()=>{}); } };
 }
 module.exports = { createRoster };

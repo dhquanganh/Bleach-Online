@@ -82,6 +82,22 @@ async function startAuth(port) {
       child.stderr.on('data', chunk => console.error('[account worker]', chunk.toString().slice(0, 1000)));
       const rt = { child, dir, accountId: user.account._id, gamePort, gameToken, token: user.token, expiresAt: user.session.expiresAt, savedHash: fs.readFileSync(syncFile, 'utf8') };
       runtimes.set(id, rt);
+      child.on('message', message => {
+        if (message?.type !== 'arena-result' || runtimes.get(id) !== rt) return;
+        const reply = response => {
+          if(!child.connected)return;
+          try {child.send({type:'arena-result-ack',id:message.id,...response},()=>{});} catch(error) {
+            console.error('[Arena ranking] acknowledgment failed:',error.message);
+          }
+        };
+        // The authenticated worker supplies the server-computed result, never an HTTP win flag.
+        arenaRoster.recordResult(id,message).then(result => {
+          reply({result});
+        },error => {
+          console.error('[Arena ranking]',error.message);
+          reply({error:'Không lưu được hạng Arena. Vui lòng thử lại.'});
+        });
+      });
       let ready = false;
       for (let i = 0; i < 120; i++) {
         if (child.exitCode !== null) break;

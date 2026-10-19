@@ -369,7 +369,7 @@ function kur(y) {
   H['0x01810a07'] = ({ payload, durum, kaydet }) => { const id = new O(payload).u32(); const { k } = kule(durum); k.chest = id; ver(durum, [{ type: 0, code: 0, amount: 30000 }, { type: 1, code: 14100003, amount: 1 }]); K(kaydet, durum); return { id: 0x01180a08, payload: new Y().u32(0).u32(id).done() }; };
   // ================= ARENA =================
   const arena = d => { const g = gunlukS(d); g.arena = g.arena || { kutu: 0, ek: 0 }; return g.arena; };
-  H['0x01811901'] = ({ durum, kaydet }) => { const a = arena(durum); if (a.kutu) return new Y().u32(1).done(); a.kutu = 1; const l = ver(durum, [{ type: 0, code: 0, amount: 20000 }, { type: 1, code: 14100003, amount: 1 }]); K(kaydet, durum); const w = new Y().u32(0).u16(l.length); for (const x of l) w.i16(x.type).i32(x.code).i32(x.amount); return w.done(); };
+  H['0x01811901'] = ctx => require('./arena-rewards').claim(ctx,y);
   H['0x01811902'] = ({ durum, kaydet }) => { const a = arena(durum); if (!altin(10 + 5 * a.ek)) return new Y().u32(16).done(); a.ek++; K(kaydet, durum); return new Y().u32(0).done(); };
   H['0x01811903'] = ({ durum, kaydet }) => { if (!altin(5)) return new Y().u32(16).done(); return new Y().u32(0).done(); };
   H['0x01811905'] = () => new Y().u32(0).done();

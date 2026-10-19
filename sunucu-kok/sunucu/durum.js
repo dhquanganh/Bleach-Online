@@ -15,7 +15,7 @@ const VARSAYILAN = {
   roleIdLo: 0x04d18922,
   nick: 'Miho Hinata',
   country: 0,
-  militaryRank: 0,
+  militaryRank: 40100001,
   prestige: 0,
   // birimler (veri.json'dan da okunur)
   altin: 999999999,
@@ -33,6 +33,7 @@ function veriBirimleri() {
 }
 
 function yukle() {
+  require('./arena-rewards').recover();
   let d;
   try { d = JSON.parse(fs.readFileSync(DURUM_DOSYA, 'utf8')); } catch { d = { ...VARSAYILAN }; }
   // veri.json birimleri her zaman uygulanir (admin tool oradan yaziyor)
@@ -46,6 +47,8 @@ function yukle() {
     fs.writeFileSync(VERI,JSON.stringify(v,null,2)); d.vipLevel=v.vipLevel; delete d.vipTrial;
     fs.writeFileSync(DURUM_DOSYA,JSON.stringify(d,null,2));
   }
+  d.militaryRank = require('./military-rank').id(d,v);
+  d.prestige = require('./military-rank').prestige(d,v);
   if (v.nick) d.nick = v.nick;
   return require('./retired-heroes').clean(d);
 }

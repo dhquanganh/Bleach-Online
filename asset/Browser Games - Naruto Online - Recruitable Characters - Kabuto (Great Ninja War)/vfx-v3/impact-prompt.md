@@ -1,5 +1,0 @@
-# Initial yellow-white impact
-
-Built-in `image_gen`, transparent background. Reference: `mystery-detail-v3.jpg`.
-
-Production game VFX sprite sheet: exactly 2 columns x2 rows, four sequential frames of the initial YELLOW-WHITE IMPACT in Kabuto Great Ninja War White Snake Assault from Naruto Online. Use supplied contact sheet as reference ONLY for the yellow impact flash preceding the white snake eruption. Effects only, no characters, UI, lettering or scene. Cel-shaded anime effect, sharply jagged diagonally swept white core bordered brilliant lemon yellow then orange, minimal smoke, no magic circle. Frame1 compact yellow glint. Frame2 growing sharp diagonal white-yellow burst. Frame3 peak wide white starburst with orange spiky rim sweeping to upper right, a few slender yellow speed lines. Frame4 dissipating orange streaks and yellow sparks. Stable center across frames, entire flash inside each cell, generous 15% true transparent gutters. Actual transparent PNG, no colored rectangular background or checkerboard.

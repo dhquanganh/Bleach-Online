@@ -242,7 +242,7 @@ function recruitPaketi(warriorId, durum, level, supplied) {
   if (owned(s.heroId, durum, account)) return fail(45);
   const grade = [...kademeler().values()].find(g => g.page === s.grade);
   if (!grade || (Number(account.level) || 1) < grade.level) return fail(44);
-  const rankId = Math.max(40100001, Math.min(40100036, Number(account.rutbe) || Number(durum.militaryRank) || 40100036));
+  const rankId = require('./military-rank').id(durum,account);
   const rank = MILITARY.get(rankId);
   const roster = new Set([...(account.herolar || []).map(Number), ...alinanlar(durum)]);
   roster.delete(require('./seviye').anaId());

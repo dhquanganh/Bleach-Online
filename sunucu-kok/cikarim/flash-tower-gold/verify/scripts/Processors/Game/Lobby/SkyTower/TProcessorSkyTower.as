@@ -85,6 +85,10 @@ package Processors.Game.Lobby.SkyTower
       
       protected var GoldCrystal:TUISlot;
       
+      protected var GoldPrimogem:TUISlot;
+
+      protected var GoldPrimogemRoot:MovieClip;
+
       protected var GoldButton:Sprite;
       
       protected var GoldFloorSelected:Number = 0;
@@ -661,7 +665,7 @@ package Processors.Game.Lobby.SkyTower
          this.GoldRoot.addChild(this.GoldHero);
          var slot:MovieClip = new MovieClip();
          slot.x = 38;
-         slot.y = 360;
+         slot.y = 366;
          this.GoldBox(slot,0,0,48,48,6705192);
          slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
          slot.addChild(slot[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
@@ -677,8 +681,8 @@ package Processors.Game.Lobby.SkyTower
          TJadeCommon.InitSlot(this.GoldDrop);
          this.GoldDrop.Init();
          var crystal:MovieClip = new MovieClip();
-         crystal.x = 281;
-         crystal.y = 360;
+         crystal.x = 229;
+         crystal.y = 366;
          this.GoldBox(crystal,0,0,48,48,6705192);
          crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
          crystal.addChild(crystal[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
@@ -693,6 +697,24 @@ package Processors.Game.Lobby.SkyTower
          this.GoldCrystal.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
          TJadeCommon.InitSlot(this.GoldCrystal);
          this.GoldCrystal.Init();
+         var primogem:MovieClip = new MovieClip();
+         primogem.x = 420;
+         primogem.y = 366;
+         this.GoldBox(primogem,0,0,48,48,6705192);
+         primogem[TUISlot.RESOURCE_Link_MC_Bmp_Icon] = new Sprite();
+         primogem.addChild(primogem[TUISlot.RESOURCE_Link_MC_Bmp_Icon]);
+         primogem[TUISlot.RESOURCE_Link_MC_Bmp_IconHighLight] = null;
+         primogem[TUISlot.RESOURCE_Link_TF_Subscript] = null;
+         primogem[TUISlot.RESOURCE_Link_TF_EquipLevel] = null;
+         primogem[TUISlot.RESOURCE_Link_MC_SelectedBox] = null;
+         this.GoldRoot.addChild(primogem);
+         this.GoldPrimogem = new TUISlot(this);
+         this.GoldPrimogem.Resource = primogem;
+         this.GoldPrimogem.OnOver = SUtilityOverLayer.UIComponentsHintOnOver;
+         this.GoldPrimogem.OnOut = SUtilityOverLayer.UIComponentsHintOnOut;
+         TJadeCommon.InitSlot(this.GoldPrimogem);
+         this.GoldPrimogem.Init();
+         this.GoldPrimogemRoot = primogem;
          this.GoldButton = new Sprite();
          this.GoldBox(this.GoldButton,0,0,144,42,12010256);
          this.GoldText(this.GoldButton,"Challenge",22,7,124,18);
@@ -712,6 +734,7 @@ package Processors.Game.Lobby.SkyTower
             this.GoldHero.Update();
             this.GoldDrop.Update();
             this.GoldCrystal.Update();
+            this.GoldPrimogem.Update();
             var bounds:Rectangle = this.GoldHero.getBounds(this.GoldRoot);
             if(bounds.width > 0 && bounds.height > 0)
             {
@@ -764,6 +787,22 @@ package Processors.Game.Lobby.SkyTower
          this.RenderGoldPanel();
       }
       
+      protected function GoldRewardAmount(item:Object, code:uint, type:int = 1) : Number
+      {
+         if(item == null || item.rewards == null)
+         {
+            return 0;
+         }
+         for each(var reward:Object in item.rewards)
+         {
+            if(uint(reward.code) == code && int(reward.type) == type)
+            {
+               return Number(reward.amount);
+            }
+         }
+         return 0;
+      }
+
       protected function RenderGoldPanel() : void
       {
          while(this.GoldContent.numChildren > 0)
@@ -775,7 +814,7 @@ package Processors.Game.Lobby.SkyTower
          this.GoldContent.graphics.lineStyle(1,14265953,0.18);
          this.GoldContent.graphics.drawEllipse(221,290,208,32);
          this.GoldContent.graphics.drawEllipse(238,295,174,22);
-         this.GoldBox(this.GoldContent,28,338,590,72,2629659);
+         this.GoldBox(this.GoldContent,28,338,590,86,2629659);
          this.GoldBox(this.GoldContent,646,50,188,440,3483415);
          this.GoldText(this.GoldContent,"ASCENT",665,58,160,12,11309418);
          this.GoldBox(this.GoldContent,32,64,118,36,7492385);
@@ -783,24 +822,42 @@ package Processors.Game.Lobby.SkyTower
          var current:Object = this.GoldInfo.preview[0];
          this.GoldText(this.GoldContent,String(current.name),175,68,430,21,16773326);
          this.GoldText(this.GoldContent,"Level " + current.level + "   /   " + current.count + " opponent(s)",176,101,430,13,12175304);
+         this.GoldText(this.GoldContent,"ATK: " + String(current.atk),176,124,430,13,16756354).height = 20;
          this.GoldHero.Context = uint(current.heroId);
          this.GoldText(this.GoldContent,"FLOOR REWARDS",38,342,360,11,11179382);
+         var stoneAmount:Number = this.GoldRewardAmount(current,14100698);
+         var crystalAmount:Number = this.GoldRewardAmount(current,14100779);
+         var primogemAmount:Number = this.GoldRewardAmount(current,14900001);
          var inv:TInventories = new TInventories();
-         SToolReward.GetInventoryByIDAmount(14100698,current.rewards[1].amount,inv);
+         SToolReward.GetInventoryByIDAmount(14100698,stoneAmount,inv);
          this.GoldDrop.Context = inv.GetInventoryByIndex(0);
-         this.GoldText(this.GoldContent,current.rewards[1].amount + " Reincarnation Stone",100,365,172,13,15913363);
+         this.GoldText(this.GoldContent,"x" + stoneAmount + "\nReincarnation Stone",94,366,126,12,15913363);
          var crystals:TInventories = new TInventories();
-         SToolReward.GetInventoryByIDAmount(14100779,current.rewards[1].amount,crystals);
+         SToolReward.GetInventoryByIDAmount(14100779,crystalAmount,crystals);
          this.GoldCrystal.Context = crystals.GetInventoryByIndex(0);
-         this.GoldText(this.GoldContent,current.rewards[1].amount + " Blood War Crystal",342,365,166,13,15913363);
-         this.GoldText(this.GoldContent,current.rewards[0].amount + " Gold",515,366,98,16,16766822);
+         this.GoldText(this.GoldContent,"x" + crystalAmount + "\nBlood War Crystal",285,366,125,12,15913363);
+         this.GoldPrimogemRoot.visible = primogemAmount > 0;
+         if(primogemAmount > 0)
+         {
+            var primogems:TInventories = new TInventories();
+            SToolReward.GetInventoryByIDAmount(14900001,primogemAmount,primogems);
+            this.GoldPrimogem.Context = primogems.GetInventoryByIndex(0);
+            this.GoldText(this.GoldContent,"x" + primogemAmount + "\nNguyên thạch",476,366,138,13,14270719);
+         }
+         else
+         {
+            this.GoldText(this.GoldContent,"Nguyên thạch:\nTừ tầng 100",426,366,180,13,11115182);
+         }
+         this.GoldText(this.GoldContent,this.GoldRewardAmount(current,1,0) + " Gold",450,342,164,13,16766822).height = 20;
          var i:int = 0;
          while(i < 5)
          {
             var item:Object = this.GoldInfo.preview[i];
             this.GoldBox(this.GoldContent,657,84 + i * 77,166,68,i == 0 ? 9989164 : 3682347);
             this.GoldText(this.GoldContent,(i == 0 ? "CURRENT  " : "FLOOR  ") + item.floor,669,89 + i * 77,149,16);
-            this.GoldText(this.GoldContent,String(item.name),669,115 + i * 77,147,12,13026231);
+            this.GoldText(this.GoldContent,String(item.name),669,111 + i * 77,147,11,13026231).height = 18;
+            var upcoming:Number = this.GoldRewardAmount(item,14900001);
+            this.GoldText(this.GoldContent,upcoming > 0 ? "Nguyên thạch x" + upcoming : "Nguyên thạch: tầng 100",669,132 + i * 77,147,10,14270719).height = 17;
             i++;
          }
          var record:Object = this.GoldInfo.lastDefeat;
@@ -866,7 +923,14 @@ package Processors.Game.Lobby.SkyTower
          this.GoldPending = false;
          if(error != 0)
          {
-            EffectGenerateTextByErrorCode(error);
+            if(p.Data.bytesAvailable > 0)
+            {
+               EffectGenerateText(p.Data.readUTF());
+            }
+            else
+            {
+               EffectGenerateTextByErrorCode(error);
+            }
             this.RequestGoldState();
             return;
          }

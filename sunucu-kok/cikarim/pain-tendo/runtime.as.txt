@@ -1,0 +1,182 @@
+      private function UpdatePainVfx() : void
+      {
+         if(FId != 11120930 || FSkillId < 13120971 || FSkillId > 13120979 || (FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL) || FPainVfxStarted) return;
+         FPainVfxStarted=true;
+         ShowPainVfx(FSkillId);
+      }
+
+      private function ShowPainVfx(skill:int) : void
+      {
+         var host:DisplayObjectContainer=parent;
+         if(host == null || host.stage == null) return;
+         var origin:Point=host.globalToLocal(localToGlobal(new Point()));
+         var center:Point=new Point();
+         var primary:Point;
+         var victims:Array=[];
+         var count:int=0;
+         var seen:Object={};
+         if(FTargets != null && FResults != null) for(var n:int=0;n<FTargets.length && n<FResults.length;n++)
+         {
+            if(FTargets[n] == null || FTargets[n] == this || FTargets[n].Camp == Camp || FResults[n].CMD != TTargetInfo.CMD_ATTACK || FResults[n].ResultInfo.HurtHp < 0) continue;
+            var key:String=FTargets[n].Camp+"_"+FTargets[n].Pos;
+            if(seen[key]) continue;
+            seen[key]=true;
+            var p:Point=host.globalToLocal(FTargets[n].localToGlobal(new Point()));
+            victims.push(FBattleStage.globalToLocal(host.localToGlobal(new Point(p.x,p.y-80))));
+            if(primary == null) primary=p.clone();
+            center.x+=p.x;center.y+=p.y;count++;
+         }
+         if(count>0){center.x/=count;center.y/=count;}else center=origin.clone();
+         if(skill==13120975 && primary != null) center=primary.clone();
+         var effect:String=skill==13120971?"PEaoyi1":skill==13120974?"PEpugong1":skill==13120975?"PEzhuida":skill==13120976?"PEaoyi2":(skill==13120977 || skill==13120978)?"DASHEWAN_tongyongfuhuo":"Peienchaoshenshenluotianzheng_aoyi";
+         var manifest:Object=PainVfxManifest();
+         var layers:Array=manifest.effects[effect] as Array;
+         if(layers == null) return;
+         var at:Point=(skill==13120976 || skill==13120977 || skill==13120978)?origin:center;
+         var limit:Number=skill==13120974?660:skill==13120975?600:skill==13120976?1050:(skill==13120977 || skill==13120978)?245:skill==13120971?650:1100;
+         var extent:Number=1;
+         for each(var layerName:String in layers)
+         {
+            var meta:Object=manifest.clips[layerName];
+            if(meta.action != "texie") extent=Math.max(extent,Number(meta.width)/Number(meta.renderScale));
+         }
+         var factor:Number=limit/extent;
+         for each(var name:String in layers)
+         {
+            var clip:Object=manifest.clips[name];
+            var cutin:Boolean=clip.action=="texie";
+            var screen:Boolean=cutin || clip.screen==true;
+            var w:Number=screen?1250:Number(clip.width)/Number(clip.renderScale)*factor;
+            var h:Number=screen?650:w*Number(clip.height)/Number(clip.width);
+            var location:Point=screen?new Point(625,325):at.clone();
+            if(skill==13120974 && !screen) location.y-=40;
+
+            var paintHost:DisplayObjectContainer=screen?FBattleStage:host;
+            if(skill==13120976 && !screen)
+            {
+               // The source beam travels toward +X from its bright core. Anchor that core at Shurado's mouth.
+               // Convert both endpoints into the SAME stage space; role mirroring is already in localToGlobal.
+               if(primary == null) continue;
+               var muzzle:Point=FBattleStage.globalToLocal(localToGlobal(new Point(330,-65)));
+               var aim:Point=FBattleStage.globalToLocal(host.localToGlobal(new Point(center.x,center.y-90)));
+               var dx:Number=aim.x-muzzle.x;
+               var dy:Number=aim.y-muzzle.y;
+               var length:Number=Math.sqrt(dx*dx+dy*dy);
+               if(length<1) continue;
+               var left:Number=aim.x;
+               var right:Number=aim.x;
+               var top:Number=aim.y;
+               var bottom:Number=aim.y;
+               var reach:Number=length;
+               for each(var enemyPoint:Point in victims)
+               {
+                  left=Math.min(left,enemyPoint.x);right=Math.max(right,enemyPoint.x);
+                  top=Math.min(top,enemyPoint.y-100);bottom=Math.max(bottom,enemyPoint.y+100);
+                  var vx:Number=enemyPoint.x-muzzle.x;
+                  var vy:Number=enemyPoint.y-muzzle.y;
+                  reach=Math.max(reach,Math.sqrt(vx*vx+vy*vy));
+               }
+               location=muzzle;paintHost=FBattleStage;
+               // Stretch one original beam across the whole formation, keeping its core at the mouth.
+               w=Math.max(1500,(reach+220)/.42);
+               h=Math.max(850,(bottom-top+160)*2.2);
+               PlayPainVfxAsset(name,paintHost,location,w,h,0,false,false,false,Math.atan2(dy,dx)*180/Math.PI);
+               ShowPainLaserImpact(new Point((left+right)/2,(top+bottom)/2),Math.max(500,right-left+320),Math.max(380,bottom-top+180),1960);
+               continue;
+            }
+            PlayPainVfxAsset(name,paintHost,location,w,h,0,screen?false:(clip.flipFacing?scaleX>=0:scaleX<0),false,false);
+         }
+      }
+
+      private function ShowPainLaserImpact(point:Point, width:Number, height:Number, delay:int) : void
+      {
+         var host:DisplayObjectContainer=FBattleStage;
+         if(host == null || host.stage == null) return;
+         var layer:Sprite=new Sprite();layer.name="painSkillVfx";
+         layer.mouseEnabled=false;layer.mouseChildren=false;layer.x=point.x;layer.y=point.y;
+         host.addChild(layer);
+         var started:int=getTimer()+delay;
+         var animate:Function;
+         var cleanup:Function;
+         cleanup=function(event:Event=null):void
+         {
+            if(event != null && event.target != layer) return;
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            layer.graphics.clear();if(layer.parent != null)layer.parent.removeChild(layer);
+         };
+         animate=function(event:Event):void
+         {
+            var elapsed:int=getTimer()-started;
+            if(host.stage == null || elapsed>=1200){cleanup();return;}
+            layer.visible=elapsed>=0;if(elapsed<0)return;
+            var t:Number=elapsed/1200;
+            var g:Graphics=layer.graphics;g.clear();layer.alpha=Math.min(1,(elapsed+40)/100)*(1-t);
+            for(var ring:int=0;ring<3;ring++)
+            {
+               var scale:Number=.6+t*.7+ring*.13;
+               var rw:Number=width*scale;var rh:Number=height*scale;
+               g.lineStyle(9-ring*2,ring==0?0xE3FFFF:0x35BFFF,.85-ring*.15);
+               g.beginFill(0x2A9EFF,ring==0 ? 0.12 : 0);g.drawEllipse(-rw/2,-rh/2,rw,rh);g.endFill();
+            }
+            for(var ray:int=0;ray<16;ray++)
+            {
+               var a:Number=ray*Math.PI/8;
+               g.lineStyle(ray%3==0?5:2,ray%2==0?0xE9FFFF:0x50CAFF,.9);
+               g.moveTo(Math.cos(a)*width*.15,Math.sin(a)*height*.15);
+               g.lineTo(Math.cos(a+.035)*width*(.38+t*.16),Math.sin(a+.035)*height*(.38+t*.16));
+               g.lineTo(Math.cos(a)*width*(.55+t*.2),Math.sin(a)*height*(.55+t*.2));
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+      }
+
+      private function PainFlightPose(frame:TAnimationFrame) : void
+      {
+         if(FId != 11120930 || (FSkillId != 13120972 && FSkillId != 13120973 && FSkillId != 13120979) || (FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL) || frame == null) return;
+         // Run every animation tick: the cinematic deliberately reuses an airborne bitmap.
+         // Anchor the feet, rather than the image top, when the source changes pose/height.
+         var f:Number=FFrameIndex;
+         if(f<5 || f>=145) return;
+         var altitude:Number=0;
+         var t:Number;
+         if(f<50)
+         {
+            t=Math.max(0,(f-5)/45);
+            altitude=130*t*t*(3-2*t);
+         }
+         else if(f<110)
+         {
+            t=Math.sin((f-50)*Math.PI/30);
+            altitude=130+6*t*t;
+         }
+         else
+         {
+            t=Math.min(1,(f-110)/28);
+            altitude=130*(1-t*t*(3-2*t));
+         }
+         FBitmap.x=-frame.Pivot.X;
+         FBitmap.y=5-frame.Surface.height-altitude;
+      }
+
+      private function PainStrikePose(frame:TAnimationFrame) : void
+      {
+         if(FId != 11120930 || (FSkillId != 13120971 && FSkillId != 13120975) || FTargets == null || FResults == null) return;
+         for(var i:int=0;i<FTargets.length && i<FResults.length;i++)
+         {
+            var enemy:TRole=FTargets[i];
+            if(enemy == null || enemy == this || enemy.Camp == Camp || FResults[i].CMD != TTargetInfo.CMD_ATTACK) continue;
+            var point:Point=globalToLocal(enemy.localToGlobal(new Point()));
+            // Ease from the source pose to a stable horizontal strike anchor; retain the source jump height.
+            var travel:Number=Math.min(1,Math.max(0,FFrameIndex/10));
+            var retreat:Number=Math.min(1,Math.max(0,(50-FFrameIndex)/15));
+            travel=travel*travel*(3-2*travel);
+            retreat=retreat*retreat*(3-2*retreat);
+            var weight:Number=travel*retreat;
+            var strikeX:Number=point.x-frame.Surface.width/2-(FSkillId==13120971?145:0);
+            FBitmap.x+=(strikeX-FBitmap.x)*weight;
+            FBitmap.y+=point.y*weight;
+            return;
+         }
+      }

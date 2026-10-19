@@ -1,0 +1,8 @@
+current/
+phase-*/
+verify/
+validation/
+backups/
+*.swf
+*.bak
+__pycache__/

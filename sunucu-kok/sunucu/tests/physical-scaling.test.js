@@ -1,0 +1,43 @@
+'use strict';
+const assert=require('node:assert/strict');
+const battle=require('../savas'),naruto=require('../naruto-combat'),pain=require('../pain-combat'),obito=require('../obito-combat');
+const {CMD}=require('../kodek');
+const unit=(id,camp)=>({id,camp,pos:1,hp:1000000,maxHp:1000000,atk:100,magicAtk:10,def:0,resistance:0,speed:100,hitRate:1,critRate:0,anger:0,level:99,quality:7,normal:13100114,skill:0,skillId:13100114,partnerSkills:[],weaponSkills:[]});
+const sets=[
+  {hero:pain.config.heroId,moves:[...['mystery','extremeMystery','finalMystery','standard','laser','superPush'].map(k=>pain.config[k]),...pain.config.chases]},
+  {hero:obito.config.heroId,moves:[obito.config.rageMystery,obito.config.standard,obito.config.rageStandard,...obito.config.chases,...obito.config.rageChases]},
+];
+function damage(hero,move,camp,overrides={}){
+  const actor={...unit(hero,camp),...overrides},target=unit(200,1-camp);
+  const teams=camp?[[target],[actor]]:[[actor],[target]],ctx=naruto.create(teams,{random:()=>.5});naruto.startRound(ctx,1);
+  // Initialize actual passive state after create() resets per-battle resources.
+  Object.assign(actor,overrides);
+  const frame=battle.vurus(actor,target,false,[target],()=>.5,false,[actor],naruto.attackSpec(move,!!(move.painChase||move.obitoSpear||move.obitoChaos)));
+  return frame.targets.filter(r=>r.cmd===CMD.ATTACK&&r.targetCamp===target.camp).reduce((sum,r)=>sum+Math.max(0,r.result.hurtHp||0),0);
+}
+let checked=0;
+for(const {hero,moves} of sets)for(const move of moves)for(const camp of [0,1]){
+  assert.equal(move.attackStat,'atk',move.name);
+  const base=damage(hero,move,camp);
+  assert(base>0,move.name+' must deal damage');
+  assert.equal(damage(hero,move,camp,{magicAtk:100000}),base,move.name+' must ignore Magic ATK');
+  assert(damage(hero,move,camp,{atk:200})>base,move.name+' must grow with Physical ATK');
+  assert(damage(hero,move,camp,{skillBuffs:[{field:'atk',value:.5,remaining:2}]})>base,move.name+' must use buffed Physical ATK');
+  assert(damage(hero,move,camp,{skillBuffs:[{field:'atk',value:-.5,remaining:2}]})<base,move.name+' must use reduced Physical ATK');
+  // Zero defense and deterministic RNG expose the coefficient without mitigation/rounding noise.
+  assert.equal(base,Math.round(100*move.multiplier),move.name+' coefficient must stay unchanged');
+  checked++;
+}
+for(const move of sets[0].moves)for(const camp of [0,1]){
+  const base=damage(pain.config.heroId,move,camp);
+  const boosted=damage(pain.config.heroId,move,camp,{painTechnique:5});
+  assert.equal(boosted,Math.round(160*move.multiplier),move.name+' must use Technique-buffed Physical ATK');
+  assert.equal(damage(pain.config.heroId,move,camp,{painTechnique:5,magicAtk:100000}),boosted);
+  assert(damage(pain.config.heroId,move,camp,{painDamageStacks:2})>base,move.name+' must use passive Attack growth');
+}
+for(const move of [pain.config.finalMystery,pain.config.superPush])for(const camp of [0,1]){
+  const final={painFinal:true,painTechnique:5};
+  assert.equal(damage(pain.config.heroId,move,camp,final),Math.round(200*move.multiplier));
+  assert.equal(damage(pain.config.heroId,move,camp,{...final,magicAtk:100000}),Math.round(200*move.multiplier));
+}
+console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Obito and Pain; Magic ATK independence, ATK buffs/debuffs, original coefficients, Technique Points, Attack growth and Final/Super states.`);

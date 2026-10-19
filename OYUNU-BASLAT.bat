@@ -8,6 +8,12 @@ if not exist "%NODE%" (
 	pause
 	exit /b 1
 )
+"%NODE%" -e "require.resolve('mongodb')" >nul 2>&1
+if errorlevel 1 (
+	echo ERROR: Thieu thu vien Node. Chay npm install trong thu muc du an, roi mo lai game.
+	pause
+	exit /b 1
+)
 
 echo ============================================
 echo    BLEACH ONLINE - Yerel Surum
@@ -73,7 +79,8 @@ timeout /t 1 /nobreak >nul
 goto BEKLE_SUNUCULAR
 :SUNUCU_HATA
 echo ERROR: Node sunuculari 30 saniye icinde hazir olmadi.
-echo Node pencerelerini kontrol edin: serve.mjs, oyun-sunucu.js, admin.js.
+echo Kiem tra cua so serve.mjs va cau hinh MongoDB trong .env.
+echo Neu querySrv ECONNREFUSED: them MONGODB_DNS_SERVERS=1.1.1.1,8.8.8.8 vao .env.
 pause
 exit /b 1
 :SUNUCULAR_HAZIR

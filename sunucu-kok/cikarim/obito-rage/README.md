@@ -63,6 +63,14 @@ Close and reopen the backend and game to reload server modules, databases, roste
 
 ## Validation
 
+### Readable status text — client 2026101923
+
+`status-text.as.txt` holds each status label for 3.2 real seconds (2.6 seconds fully visible, 0.6 second fade). Labels stack above the affected role without mirroring, follow its position and refresh matching messages. Removal/reset detaches all listeners. The status patch is incremental (`build-status-client.py --ffdec PATH --install`) so it preserves client changes installed after the initial Obito release.
+
+Obito's custom status markers cover Rage, Kamui, Tag II, Suppress Immunity, chakra absorption, Immobile, +40% Chase damage, remaining Roots chakra cost, actual Life Steal HP, extra Standards, Kamui evasion and fatal protection. Obito-origin combo/displacement notices use markers 19000600–19000705 so they also last 3.2 seconds on an enemy. Incoming native buffs/debuffs and their ending notifications use the native BuffEffect name; shield changes and existing special status banners on Obito use the same longer text renderer. Display duration does not change gameplay effect duration.
+
+Run `build-probe.py --status-check --ffdec PATH`, then launch `runtime-raster.js` with `OBITO_STATUS_PROBE=1` and `ELECTRON_RUN_AS_NODE` unset. The isolated Flash test checks five stacked labels at 1.0, 2.4 and 3.0 seconds, then checks they have all disappeared by 3.5 seconds. Evidence is in `validation/status-text/`. Reload backend and game for the extra server notifications and new client.
+
 `validation/assets.json`: exact native RGBA, atlas sizes, pivots, 40 ms timing, idle return and damage/return markers in both resource sets.
 
 `validation/extracted/native/result.json`: actual Flash 22 component playback, **18 cases in both camps, 11 atlases loaded, 34 source asset plays plus 36 supplemental power layers, zero errors, zero remaining VFX layers**. Screenshots cover cast/impact and mirroring. This isolated component probe and the encoded battle-report tests are separate checks; they do not claim a complete interactive client battle was played.

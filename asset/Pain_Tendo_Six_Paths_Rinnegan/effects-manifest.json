@@ -1,0 +1,62 @@
+[
+  {
+    "file": "battle/effect/DASHEWAN_tongyongfuhuo.swf",
+    "bytes": 154029,
+    "sha256": "c1d561b344ea07f9e1f812e4da9abd22e609b4b67682355b229ad0f8061e1948"
+  },
+  {
+    "file": "battle/effect/PEaoyi1.swf",
+    "bytes": 860274,
+    "sha256": "c5bc32794633f4f33d071a3ea9ebb315d1163f288d7a2b1c10128a925c5589f6"
+  },
+  {
+    "file": "battle/effect/PEaoyi2.swf",
+    "bytes": 2195725,
+    "sha256": "b6b91fd1402010600b8b4c5022638ccd46992f0048f34267363877dcf22416f9"
+  },
+  {
+    "file": "battle/effect/Peienchaoshenshenluotianzheng_aoyi.swf",
+    "bytes": 2988476,
+    "sha256": "5d4cac058ee8dc47a94e5aa118270214eeaa00d06eb5e0a0f99780088dd5dc69"
+  },
+  {
+    "file": "battle/effect/PEpugong1.swf",
+    "bytes": 2558580,
+    "sha256": "a33ea17d31bdf0c2db084b945036f50febcae1e64569872a0a242e3b62621b16"
+  },
+  {
+    "file": "battle/effect/PEzhuida.swf",
+    "bytes": 1474964,
+    "sha256": "36ce9d05843994f79bea64b5196b151cfc7bdb44235164687741a3d224158351"
+  },
+  {
+    "file": "assets/skill/40/21006523.png",
+    "bytes": 5929,
+    "sha256": "cb1ca560062bd846ba8e3df026ad1ee8c5f55e8845591fe7207b3018e75730c2"
+  },
+  {
+    "file": "assets/skill/40/21006524.png",
+    "bytes": 6091,
+    "sha256": "2f338489811e35581b2f599b1dc15a0d659bff84ad52c686bd08a0901b16e1b3"
+  },
+  {
+    "file": "assets/skill/40/21006525.png",
+    "bytes": 6117,
+    "sha256": "2a601e3bf2477c090b2e636670a750d79b3f4d37fb81add61d96ec88a7c50c61"
+  },
+  {
+    "file": "assets/skill/40/21006526.png",
+    "bytes": 5633,
+    "sha256": "dba2c5d6726405eec502ea98ad011c4fe062c9f141e43deeabff11b1587d11e0"
+  },
+  {
+    "file": "assets/skill/40/21006527.png",
+    "bytes": 5195,
+    "sha256": "9d65e0f31cd41ff0a745d19750ea47002787aa16763ca95d78701a17632955c4"
+  },
+  {
+    "file": "assets/skill/40/21006528.png",
+    "bytes": 5583,
+    "sha256": "2d1909972efe2e2381863ce19e3dc8212e81661209c33f1948e5794a1e3414c5"
+  }
+]

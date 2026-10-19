@@ -51,9 +51,13 @@ Khi áp dụng thay đổi này lên một bản cài cũ khác, đóng game và
 Kiểm tra tích hợp dùng MongoDB đã cấu hình, tạo hai tài khoản tạm và dọn chúng sau kiểm tra; xác nhận phân quyền, token game, CORS, dữ liệu riêng, lưu khi đăng xuất và đăng nhập lại.
 # Arena dùng tài khoản thật
 
-Arena chỉ hiển thị các tài khoản đã tạo nhân vật trong MongoDB, loại tài khoản của chính mình và không thêm bot khi thiếu người. Trận đấu dùng đội hình, cấp, trang bị và kỹ năng đã lưu của đối thủ; người phòng thủ có thể ngoại tuyến. Danh sách cập nhật mỗi 5 giây, client hiển thị tối đa 8 đối thủ. Vị trí danh sách hiện sắp theo cấp, chưa phải bảng điểm PvP.
+Arena chỉ hiển thị các tài khoản đã tạo nhân vật trong MongoDB, loại tài khoản của chính mình và không thêm bot khi thiếu người. Trận đấu dùng đội hình, cấp, trang bị và kỹ năng đã lưu của đối thủ; người phòng thủ có thể ngoại tuyến. Danh sách cập nhật mỗi 5 giây, client hiển thị tối đa 8 đối thủ. Bảng hạng được lưu trong collection `arenaRankings`: lần đầu khởi tạo theo thứ tự cũ, sau đó giữ hạng đã đạt được thay vì xếp lại theo cấp. Tài khoản mới có nhân vật được thêm cuối bảng.
 
 Nút Challenge trong game và Arena Matching ở launcher dùng chung luồng chiến đấu. Server gửi kết quả kèm chiến báo trong `0x01181904`, sau đó gửi `0x01181907` (FightOk). Đối thủ không hợp lệ bị từ chối trước khi tăng bộ đếm nhiệm vụ Arena.
+
+Thắng đối thủ hạng cao hơn sẽ đổi chỗ hai người: ví dụ hạng 5 thắng hạng 2 thì người thắng lên 2, người thua xuống 5. Thua hoặc thắng người hạng thấp hơn không đổi hạng. Server cha lưu đồng thời cả hai hạng trước khi trả chiến báo; gói `0x01181906` cập nhật hạng trên giao diện. Hạng vẫn giữ khi đối thủ offline, tải lại danh sách hoặc khởi động lại server. Hạng thưởng đã chốt trong `arenaSettlements` không thay đổi theo trận đấu sau đó.
+
+Kiểm thử hạng và gói cập nhật (không đụng tài khoản thật): `node/node.exe --test sunucu-kok/arena-ranking.test.cjs` và `node/node.exe sunucu-kok/sunucu/tests/arena-rewards.test.js`.
 
 Kiểm tra tích hợp: `node/node.exe --test --test-concurrency=1 sunucu-kok/arena.test.cjs sunucu-kok/auth.test.cjs` (cần kết nối MongoDB).
 

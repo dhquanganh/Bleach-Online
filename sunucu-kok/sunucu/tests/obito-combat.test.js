@@ -88,3 +88,14 @@ for(const skill of [13120951,13120952,13120955,13120956,13120957,13120958]){
  }
 }
 console.log('PASS Obito cooldowns: Kamui 2, Roots 3, Chase families 2; shared form recovery, two Rage Spear charges in eligible round, passive recovery and encoded report scheduling.');
+// Float notifications include values for the actual effect, without adding HP changes.
+u=obito();u.obitoRage=true;u.hp=5000;v=unit(200,1,1);ctx=n.create([[u],[v]],{random:()=>.5});start(ctx,1);
+frame={targets:[{targetCamp:1,result:{hurtHp:100}}],reactions:[]};
+o.afterHit(ctx,u,v,[v],o.config.rageMystery,frame);
+let notices=frame.reactions.flatMap(f=>f.targets).filter(r=>r.cmd===codec.CMD.FLOAT);
+assert(notices.some(r=>r.result.buffId===19000507));
+assert(notices.some(r=>r.result.buffId===19000510&&r.result.buffTurn===20));
+assert(notices.some(r=>r.result.buffId===19000508&&r.result.buffTurn===12));
+v.hp=0;frame={targets:[],reactions:[]};o.afterHit(ctx,u,v,[v],o.config.rageStandard,frame);
+assert(frame.reactions.flatMap(f=>f.targets).some(r=>r.result.buffId===19000509));
+console.log('PASS Obito float notices: Chase bonus, remaining chakra cost, exact healed HP and extra Standard.');

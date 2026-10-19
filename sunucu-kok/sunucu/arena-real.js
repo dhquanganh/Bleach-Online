@@ -2,7 +2,10 @@
 // Only the authenticated parent supplies opponents. Never fall back to generated units.
 let roster = [];
 let ownRank = 0;
-function update(rows) {
+let reward = null;
+const commit = require('./arena-result-rpc').createClient();
+function update(rows,settlement=null) {
+  reward=settlement;
   ownRank = (Array.isArray(rows) ? rows : []).find(row => row.accountId === process.env.BLEACH_ACCOUNT_ID)?.ranking || 0;
   roster = (Array.isArray(rows) ? rows : []).filter(row => row.accountId && row.accountId !== process.env.BLEACH_ACCOUNT_ID && row.units && row.units.length);
 }
@@ -22,4 +25,4 @@ function frames(payload) {
   return [{ id: kodek.OP.REPORT, payload: result.payload },
     { id: kodek.OP.RESULT, payload: kodek.encodeSingleResult(result.won, []), won: result.won, odul: [] }];
 }
-module.exports = { update, list, selected, frames, rank: () => ownRank };
+module.exports = { update, list, selected, frames, commit, rank: () => ownRank, reward: () => reward };

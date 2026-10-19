@@ -229,7 +229,7 @@ function scoped(scope, caster, allies, enemies, targets, random) {
 }
 function status(unit, field) {
   const kabutoSuppressed=unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound;
-  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(kabutoSuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -239,7 +239,8 @@ function status(unit, field) {
 function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
-  const result=multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes;
+  let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field);
+  if(['def','resistance'].includes(field)&&require('./pain-combat').active(unit,'painAfflictionUntil'))result=base*.75;
   const tagged=unit.obitoTagUntil>=unit.battleRound;
   if(tagged&&field==='dodgeRate')return Math.min(.35,result);
   return (field==='def'?result*Math.max(0,1-0.12*(unit.kabutoDefenseStacks||0)):result)*(tagged&&['def','resistance'].includes(field)?.85:1);
@@ -266,6 +267,7 @@ function healPower(caster) {
   return base*(caster.atk>0?value(caster,'atk')/caster.atk:1);
 }
 function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
+  if(require('./pain-combat').rejectBuff(caster,target,rule,records))return;
   if((controls.has(rule.field)||rule.value<0)&&status(target,'immuneDebuffs'))return;
   if(controls.has(rule.field)&&(status(target,'immuneControl')||target.shield>0||value(target,'controlResist')>0&&random()<value(target,'controlResist')))return;
   if(rule.field==='silence'&&value(target,'silenceResist')>0&&random()<value(target,'silenceResist'))return;
@@ -312,15 +314,18 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
       }else if(rule.kind==='buff')putBuff(caster,target,rule,records,random,plan.sourceId||plan.id||0);
       else if(rule.kind==='clear')remove(target,rule.negative,records);
       else if(rule.kind==='shield'){
+        if(caster!==target&&require('./pain-combat').active(target,'painHorrorUntil'))continue;
         remove(target,true,records);target.shield=Math.min(0xffffffff,Math.max(target.shield||0,Math.round(value(caster,'atk')*rule.value)));
         records.push({cmd:CMD.SHIELD,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:target.shield}});
       }else if(rule.kind==='dot'){
+        if(require('./pain-combat').rejectBuff(caster,target,rule,records))continue;
         if(status(target,'immuneDebuffs'))continue;
         target.skillBuffs=target.skillBuffs||[];const prior=target.skillBuffs.find(b=>b.field===rule.field&&b.source===caster.id);
         const id={poison:13500020,bleeding:13500021,ignite:13500022,mutilate:13500079}[rule.field];
         const data={...rule,source:caster.id,amount:(rule.basis==='targetMaxHp'?target.maxHp:value(caster,'atk'))*rule.value,remaining:rule.turns+1,buffId:id};if(prior)Object.assign(prior,data);else target.skillBuffs.push(data);
         records.push({cmd:CMD.ATTRBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:id,buffTurn:rule.turns}});
       }else if(rule.kind==='maxHp'){
+        if(require('./pain-combat').rejectBuff(caster,target,rule,records))continue;
         if(rule.value<0&&status(target,'immuneDebuffs'))continue;
         const ratio=target.hp/target.maxHp;target.maxHp=Math.min(0x7fffffff,Math.max(1,Math.round(target.maxHp*(1+rule.value))));target.hp=Math.max(target.hp>0?1:0,Math.round(target.maxHp*ratio));
       }else if(rule.kind==='damage'){

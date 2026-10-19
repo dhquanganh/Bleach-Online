@@ -64238,5 +64238,77 @@
     "desc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at round start (2-round cooldown) and one additional Standard after defeating an enemy with a Standard.",
     "icon": 13120959,
     "sortId": 9
+  },
+  {
+    "id": "00C835CB",
+    "skillId": 13120971,
+    "name": "Tendo - Almighty Push",
+    "desc": "Prompt. Consume 1 Technique Point and 20 Chakra. Damage and Interruption to up to 7 enemies. Selected target: Horror II and Mystery Chakra Cost +20 (stackable) through round end. Cooldown 2 rounds; battlefield cooldown 0. Below 60% HP becomes Extreme - Almighty Push. Damage scales with Physical ATK.",
+    "icon": 13120971,
+    "sortId": 1
+  },
+  {
+    "id": "00C835CC",
+    "skillId": 13120972,
+    "name": "Extreme - Tendo - Almighty Push",
+    "desc": "Consume all Technique Points and 20 Chakra. Damage, 5 Combo and Interruption to all enemies; selected target: Repulse, Horror II, Mystery Chakra Cost +20 (stackable) through round end. Cooldown 3 rounds; battlefield cooldown 0. 7% Life Steal. Damage scales with Physical ATK.",
+    "icon": 13120972,
+    "sortId": 2
+  },
+  {
+    "id": "00C835CD",
+    "skillId": 13120973,
+    "name": "Final - Tendo - Almighty Push",
+    "desc": "Final Mystery. Consume 2 Technique Points, Chakra 0, cooldown 2 rounds (up to two casts in an eligible round), battlefield cooldown 0. Unavoidable damage, 5 Combo and Interruption to all enemies; selected target: Repulse, Horror II and Mystery Chakra Cost +20 (stackable) through round end. Damage scales with Physical ATK.",
+    "icon": 13120973,
+    "sortId": 3
+  },
+  {
+    "id": "00C835CE",
+    "skillId": 13120974,
+    "name": "Six-in-one",
+    "desc": "Attack up to 6 enemies, causes 4 Combo, reduces own Mystery cooldown by 1 and gains 1 Technique Point. Damage scales with Physical ATK.",
+    "icon": 13120974,
+    "sortId": 4
+  },
+  {
+    "id": "00C835CF",
+    "skillId": 13120975,
+    "name": "Six Paths - Chakra Rod Strike",
+    "desc": "Cooldown 2 rounds. Chase Repulse or Knockdown. Causes Knockdown, Chakra Disruption II and Pain II; target Chakra Limit becomes 20 through round end. Causes 30% splash damage to units 1 grid away. Never misses; ignores part of Defense/Resistance. Chakra Disruption II: Attack/Ninjutsu -10% per opposing Rinnegan ninja through next round end. Pain II: Defense/Resistance suppressed to 75% of base stats; lose 10% current HP on every Standard through next round end. Damage scales with Physical ATK.",
+    "icon": 13120975,
+    "sortId": 5
+  },
+  {
+    "id": "00C835D0",
+    "skillId": 13120976,
+    "name": "Shurado - Laser Canon",
+    "desc": "Cooldown 2 rounds. At an eligible round start, unleash a massive laser across ALL enemies in every row and remove 10 Chakra per hit unit. Gain 1 Technique Point; immune to Interruption for the round. Allied Rinnegan ninjas have unavoidable Mysteries through round end. Damage scales with Physical ATK.",
+    "icon": 13120976,
+    "sortId": 6
+  },
+  {
+    "id": "00C835D1",
+    "skillId": 13120977,
+    "name": "Outer Path - Six Paths of Pain",
+    "desc": "Outer Path - Six Paths of Pain: up to 5 Technique Points, each increases Attack and Ninjutsu by 12%. Gain 0.5 point whenever attacked. First defeat per battle: revive with 100% HP, lose ALL current skills, gain ONLY Final - Almighty Push and Final - The One called God.",
+    "icon": 13120977,
+    "sortId": 7
+  },
+  {
+    "id": "00C835D2",
+    "skillId": 13120978,
+    "name": "Final - The One called God",
+    "desc": "Final - The One called God: Super Armor and immune to Debuffs; up to 2 Mysteries per round. Up to 5 Technique Points; Attack and Ninjutsu +20% per point. Gain 1 point whenever attacked. Critical Hits increase hit target Mystery Chakra Cost by 20. Once per battle, if another allied ninja is defeated, revive at 40% HP and trigger Super - Almighty Push.",
+    "icon": 13120978,
+    "sortId": 8
+  },
+  {
+    "id": "00C835D3",
+    "skillId": 13120979,
+    "name": "Super - Almighty Push",
+    "desc": "Triggered after Final revival. Unavoidable damage, 5 Combo and Interruption to all enemies. All enemies Mystery Chakra Cost +20 (stackable) through round end. Does not consume Technique Points or Chakra. Damage scales with Physical ATK.",
+    "icon": 13120979,
+    "sortId": 9
   }
 ]

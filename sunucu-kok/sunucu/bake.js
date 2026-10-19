@@ -35,8 +35,8 @@ function editChar(payload) {
   try {
     let p = 0;
     p += 4; p += 4; p = skipUTF(b, p); p += 4; p += 4; p = skipUTF(b, p); p += 4;
-    b.writeUInt32BE((Number(v.rutbe) || 40100036) >>> 0, p); p += 4;
-    p += 4;
+    b.writeUInt32BE(require('./military-rank').id({},v), p); p += 4;
+    b.writeUInt32BE(require('./military-rank').prestige({},v), p); p += 4;
     b.writeUInt32BE(v.gumusHigh >>> 0, p); p += 4;
     b.writeUInt32BE(v.gumus >>> 0, p);     p += 4;
     b.writeUInt32BE(v.altin >>> 0, p);     p += 4;

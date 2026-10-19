@@ -616,14 +616,19 @@ const byReq = {
   // Client cevabi okuyup FightPosition'i set eder; ayni slottaki eski hero'yu kendisi bosaltir.
   // ACK-zero donulunce result=0 ama heroId=0 oluyordu -> GetHeroByIdentifier(0)=null -> hicbir sey olmuyordu.
   '0x01810900': ({ payload, durum, kaydet }) => {
+    if (!payload || payload.length !== 5 || payload.readInt8(4) < 0 || payload.readInt8(4) > 15) return Buffer.from('000000010000000000','hex');
     const heroId = payload && payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const pos = payload && payload.length >= 5 ? payload.readInt8(4) : 0;
+    const previousFormation = { ...durum.kadro };
     try {                                   // kadro KALICI: relogin'de char paketine islenir
       durum.kadro = durum.kadro || {};
+      const mainId = Number(durum.karakter?.anaId) || seviye.anaId();
+      if (!Object.hasOwn(durum.kadro,String(mainId))) durum.kadro[String(mainId)] = require('./statlar').anaKaynak()?.pos || 6;
       if (pos > 0) for (const k of Object.keys(durum.kadro)) if (durum.kadro[k] === pos && Number(k) !== heroId) durum.kadro[k] = 0;
       durum.kadro[String(heroId)] = pos;
       kaydet(durum);
-    } catch (e) { }
+      require('./military-rank').refresh({ekSonra},durum);
+    } catch (e) { durum.kadro = previousFormation; return Buffer.from('000000010000000000','hex'); }
     const b = Buffer.alloc(9);
     b.writeInt32BE(0, 0); b.writeUInt32BE(heroId >>> 0, 4); b.writeUInt8(pos & 0xff, 8);
     return b;
@@ -821,7 +826,8 @@ const byReq = {
   '0x01810206': ({ durum }) => {
     const w = new W();
     w.u32(0);
-    w.u8(0); w.u16(0); w.u32(0);          // BoxType, BoxRanking, BoxLevel
+      const box = require('./arena-rewards').info(durum);
+      w.u8(box.type); w.u16(box.ranking); w.u32(box.level);
     w.u8(5); w.u8(0); w.u32(0);           // FightTimes=5, AddTimes, ColdDown
     const ranking = arenaReal.rank();
     w.u16(ranking); w.u16(ranking); w.u16(0); // HighRanking, CurRanking, StreakWin

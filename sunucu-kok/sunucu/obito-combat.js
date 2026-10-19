@@ -2,7 +2,7 @@
 const config=require('./obito-rage.json'),skills=require('./hero-skills'),{CMD,ST}=require('./kodek');
 const isObito=u=>u.id===config.heroId;
 const profile=u=>isObito(u)?{...config,mystery:u.obitoRage?{...config.rageMystery,chakraCost:u.obitoRootsCost??40}:config.mystery,standard:u.obitoRage?config.rageStandard:config.standard,chases:u.obitoRage?config.rageChases:config.chases}:null;
-const label=(records,u,index)=>records.push({cmd:CMD.FLOAT,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:19000500+index,buffTurn:1}});
+const label=(records,u,index,value=1)=>records.push({cmd:CMD.FLOAT,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:19000500+index,buffTurn:value}});
 const passive=(u,records)=>({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:records});
 function visual(u,move,records=[]){return {activeCamp:u.camp,activePos:u.pos,skillEffectId:move.id,activeType:1,targets:[{cmd:CMD.NONE,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:0,result:{}},...records]};}
 function cost(u,ratio,records){if(!ratio||u.hp<=0)return;const amount=Math.min(u.hp-1,Math.round(u.maxHp*ratio));u.hp-=amount;if(amount)records.push(skills.hpRecord(u,amount,false));}
@@ -45,18 +45,19 @@ function afterHit(ctx,u,selected,hit,move,frame){
   if(!isObito(u)||!move)return;
   const records=[];
   if(move.obitoKamui){kamui(ctx,u,u.obitoRage,records);}
-  if(move.obitoRoots){u.obitoChaseBoostRound=ctx.round;u.obitoRootsCost=Math.max(0,(u.obitoRootsCost??40)-20);}
+  if(move.obitoRoots){u.obitoChaseBoostRound=ctx.round;u.obitoRootsCost=Math.max(0,(u.obitoRootsCost??40)-20);label(records,u,7);label(records,u,10,u.obitoRootsCost);}
   for(const target of hit){
     if(move.obitoChaos){
       if(u.obitoRage){target.suppressedUntil=ctx.round;label(records,target,4);}
       const amount=Math.min(20,ctx.chakra[target.camp]);ctx.chakra[target.camp]-=amount;ctx.chakra[u.camp]=Math.min((ctx.chakraLimit||[])[u.camp]??100,ctx.chakra[u.camp]+amount);
       label(records,target,5);
+      if(amount>0)label(records,u,5);
     }
     if(move.obitoSpear){tag(ctx,u,target,records);if(target.hp>0&&!skills.status(target,'immuneControl')){target.immobileUntil=ctx.round;label(records,target,6);}}
     if(move.obitoStandard&&ctx.random()<config.tagChance)tag(ctx,u,target,records);
   }
-  if(move.obitoStandard&&hit.some(t=>t.hp<=0))u.obitoKillCredits=(u.obitoKillCredits||0)+1;
-  if(u.obitoRage&&u.hp>0){const damage=frame.targets.filter(r=>r.targetCamp!==u.camp).reduce((sum,r)=>sum+Math.max(0,r.result.hurtHp||0),0);if(damage)skills.restore(u,u,damage*config.lifeSteal,records);}
+  if(move.obitoStandard&&hit.some(t=>t.hp<=0)){u.obitoKillCredits=(u.obitoKillCredits||0)+1;if(u.obitoRage)label(records,u,9);}
+  if(u.obitoRage&&u.hp>0){const damage=frame.targets.filter(r=>r.targetCamp!==u.camp).reduce((sum,r)=>sum+Math.max(0,r.result.hurtHp||0),0);if(damage){const healed=skills.restore(u,u,damage*config.lifeSteal,records);if(healed>0)label(records,u,8,healed);}}
   if(records.length)frame.reactions.push(passive(u,records));
   frame.reactions.push(...checkRage(u));
 }

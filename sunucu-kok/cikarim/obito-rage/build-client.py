@@ -4,7 +4,7 @@ import argparse,hashlib,importlib.util,json,shutil,struct,subprocess,zlib
 BASE=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('client',BASE.parent/'naruto-sage/verify-client.py');helper=importlib.util.module_from_spec(spec);spec.loader.exec_module(helper)
 ROLE=Path('Processors/Game/Battle/Character/TRole.as');ACTIVE=Path('Processors/Game/Battle/Character/TActive.as');STAGE=Path('Processors/Game/Battle/TBattleStage.as')
-VERSION=b'2026101822'
+VERSION=b'2026101923'
 def main():
     p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--install',action='store_true');args=p.parse_args()
     canonical=helper.PUBLIC/'2026090619/TApplication.swf';original=canonical.read_bytes();decoded=helper.swap(original)
@@ -33,6 +33,7 @@ def main():
     for name,placement in layout['clips'].items():manifest['clips'][name].update(placement)
     runtime=runtime.replace('__KABUTO_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
     runtime+=(BASE/'power-vfx.as.txt').read_text(encoding='utf-8')
+    runtime+=(BASE/'status-text.as.txt').read_text(encoding='utf-8')
     animation=json.loads((BASE/'animation.json').read_text())
     hit_times={sid:animation['clips'][name].get('hitFrames',[10])[0]*40 for sid,name in animation['moves'].items()}
     runtime+='''
@@ -92,22 +93,55 @@ def main():
     runtime=runtime.replace('__OBITO_IMPACT_TIMES__',json.dumps(hit_times,separators=(',',':')))
     text=text.replace('      override public function UpdateActive()',runtime+'      override public function UpdateActive()')
     start=text.index('      public function AddTextEffectByCMD(');body=text.index('      {',start)+len('      {')
-    labels='''
-         if(param1.CMD == TTargetInfo.CMD_FLOAT && param1.ResultInfo.BuffId >= 19000501 && param1.ResultInfo.BuffId <= 19000506)
+    labels="""
+         var obitoMarker:uint=uint(param1.ResultInfo.BuffId);
+         if(param1.CMD == TTargetInfo.CMD_FLOAT && obitoMarker >= 19000501 && obitoMarker <= 19000512)
          {
-            var obitoNames:Array = ["RAGE MODE","KAMUI","KAMUI TAG II","SUPPRESS IMMUNITY","CHAKRA ABSORB","IMMOBILE"];
-            var obitoText:TextField = new TextField();
-            obitoText.defaultTextFormat = new TextFormat("Arial",14,param1.ResultInfo.BuffId == 19000501 ? 0xFF5555 : 0xB9F47A,true,null,null,null,null,"center");
-            obitoText.text = obitoNames[param1.ResultInfo.BuffId-19000501];obitoText.width=230;obitoText.height=28;obitoText.x=-115;obitoText.y=-150;obitoText.mouseEnabled=false;
-            obitoText.filters=[new GlowFilter(0,1,4,4,5)];addChild(obitoText);
-            TweenUtil.to(obitoText,1100,{y:-185,alpha:0});
-            setTimeout(function():void{if(obitoText.parent != null) obitoText.parent.removeChild(obitoText);},1150);
+            var obitoNames:Array=["RAGE MODE","KAMUI","KAMUI TAG II","SUPPRESS IMMUNITY","CHAKRA ABSORB","IMMOBILE","CHASE DAMAGE +40%","LIFE STEAL","EXTRA STANDARD +1","ROOTS CHAKRA COST","KAMUI DODGE","KAMUI FATAL GUARD"];
+            var obitoMessage:String=obitoNames[obitoMarker-19000501];
+            if(obitoMarker == 19000508) obitoMessage+=" +"+param1.ResultInfo.BuffTurn+" HP";
+            if(obitoMarker == 19000510) obitoMessage+=" "+param1.ResultInfo.BuffTurn;
+            ShowObitoStatusText(obitoMessage,obitoMarker == 19000501?0xFF5555:0xB9F47A);
             return;
          }
-'''
-    # Read the native field names from the existing marker implementation.
-    labels=labels.replace('ResultInfo.BuffId','ResultInfo.BuffId')
+         if(param1.CMD == TTargetInfo.CMD_FLOAT && (obitoMarker >= 19000600 && obitoMarker <= 19000605 || obitoMarker >= 19000700 && obitoMarker <= 19000705))
+         {
+            var sourceChase:Boolean=obitoMarker >= 19000700;
+            var sourceStates:Array=["COMBO","LOW FLOAT","HIGH FLOAT","KNOCKDOWN","REPULSE","IMMOBILE"];
+            ShowObitoStatusText((sourceChase?"CHASE / ":"")+sourceStates[obitoMarker-(sourceChase?19000700:19000600)]+" / "+param1.ResultInfo.BuffTurn+" COMBO",0xFFE299);
+            return;
+         }
+         if(FId == 11120920 && param1.CMD == TTargetInfo.CMD_FLOAT)
+         {
+            if(obitoMarker >= 19000100 && obitoMarker <= 19000105 || obitoMarker >= 19000200 && obitoMarker <= 19000205)
+            {
+               var obitoChase:Boolean=obitoMarker >= 19000200;
+               var obitoStates:Array=["COMBO","LOW FLOAT","HIGH FLOAT","KNOCKDOWN","REPULSE","IMMOBILE"];
+               ShowObitoStatusText((obitoChase?"CHASE / ":"")+obitoStates[obitoMarker-(obitoChase?19000200:19000100)]+" / "+param1.ResultInfo.BuffTurn+" COMBO",0xFFE299);
+               return;
+            }
+         }
+"""
     text=text[:body]+labels+text[body:]
+    token='               _loc8_ = uint(param2[_loc3_].ResultInfo.BuffTurn);';assert text.count(token)==1
+    text=text.replace(token,token+"""
+               if(FId == 11120920 && _loc7_ > 0)
+               {
+                  var obitoBuff:TBuffEffect=this.FBuffBins.GetDatebaseByIdentifier(_loc7_) as TBuffEffect;
+                  if(obitoBuff != null) ShowObitoStatusText(obitoBuff.Name+(_loc8_ == 0?" / ENDED":""),obitoBuff.BuffType == 8?0xFFAA88:0xB9F47A);
+               }
+""")
+    start=text.index('      public function ShieldOP(');body=text.index('      {',start)+len('      {')
+    text=text[:body]+'\n         if(FId == 11120920) ShowObitoStatusText(param1.ResultInfo.BuffTurn > 0 ? "SHIELD "+param1.ResultInfo.BuffTurn : "SHIELD ENDED",0x85DDFF);'+text[body:]
+    # Capture the shared status banners on Obito without shortening other roles.
+    token='            chaseLabel.text = isJiraiyaLabel ?';start=text.index(token);end=text.index('\n',start)
+    text=text[:end]+"""
+            if(FId == 11120920)
+            {
+               ShowObitoStatusText(chaseLabel.text.replace("\\n"," / "),stateColors[stateIndex]);
+               return;
+            }
+"""+text[end:]
     active=(BASE/'original/scripts'/ACTIVE).read_text(encoding='utf-8')
     token='      public function IsSkill(param1:int) : Boolean';start=active.index(token);body=active.index('      {',start)+len('      {')
     active=active[:body]+'\n         if(this.FId == 11120920 && param1 == 13120954) return false;'+active[body:]
@@ -122,7 +156,7 @@ def main():
 '''+token)
     stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf-8')
     token='kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "kabutoSkillVfx"';assert token in stage
-    stage=stage.replace(token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "obitoSkillVfx")')
+    stage=stage.replace(token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "obitoSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name.indexOf("obitoStatus_") == 0)')
     for name,value in [(ROLE,text),(ACTIVE,active),(STAGE,stage)]:
         f=BASE/'patched'/name;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(value,encoding='utf-8')
     output=BASE/'compiled.swf';ffdec('-onerror','abort','-importScript',source,output,BASE/'patched');rebuilt=output.read_bytes()

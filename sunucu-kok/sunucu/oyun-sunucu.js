@@ -128,11 +128,9 @@ function editChar(payload) {
     p += 4; p += 4;       // RoleId hi/lo
     p = skipUTF(b, p);    // NickName
     p += 4;               // Country
-    // MilitaryRank kadro slotunu belirler (Military.json: fightHeroNum). Gercek hesap 40100001
-    // = "Rukongai Resident" -> sadece 3 slot ("No Vacancy in Formation"). En ust rutbe 40100036
-    // "Mugetsu" -> 5 savas slotu + 18 hero. 5 oyunun tavani.
-    b.writeUInt32BE((Number(v.rutbe) || 40100036) >>> 0, p); p += 4;   // MilitaryRank
-    p += 4;               // Prestige
+    // Replace captured account rank AND prestige using this account's saved state.
+    b.writeUInt32BE(require('./military-rank').id(dd || {}, v), p); p += 4;
+    b.writeUInt32BE(require('./military-rank').prestige(dd || {}, v), p); p += 4; // Prestige
     b.writeUInt32BE(v.gumusHigh >>> 0, p); p += 4;   // SilverCoin.High
     b.writeUInt32BE(v.gumus >>> 0, p); p += 4;   // SilverCoin.Low
     b.writeUInt32BE(v.altin >>> 0, p); p += 4;   // CreditGold  <<<
@@ -171,7 +169,7 @@ function editChar(payload) {
   } catch (e) { }
   if (!skipHeroFields) {
     try {
-      let pos = 0; try { const kp = Number(((dd && dd.kadro) || {})[String(seviye.anaId())]); if (kp > 0) pos = kp; } catch (e) { }
+        let pos; try { const kp = ((dd && dd.kadro) || {})[String(seviye.anaId())]; if (kp !== undefined) pos = Number(kp); } catch (e) { }
       let skill = 0; try { skill = dd ? beceri.ana(dd) : 0; } catch (e) { }
       out = harita.anaHeroYama(out, { level: sv.lv, exp: sv.exp, pos, skill });
       console.log(`  [char] ana hero level=${sv.lv} exp=${sv.exp}${pos ? ' pos=' + pos : ''}${skill ? ' skill=' + skill : ''}`);
@@ -289,19 +287,29 @@ function illusionRefresh() {
 }
 setInterval(illusionRefresh,15000).unref();
 
+// Native Arena_Update refreshes the chest at release time and after claiming.
+let lastArenaRewardState='';
+setInterval(()=>{
+  const clients=loggedInClients();if(!clients.length)return;
+  try{
+    const d=durumMod.yukle(),box=require('./arena-rewards').info(d);
+    const key=JSON.stringify([box,require('./arena-real').rank(),require('./arena-real').reward()?.period]);
+    if(key===lastArenaRewardState)return;
+    const payload=handlers.byReq['0x01810206']({durum:d});
+    for(const session of clients)session.send(0x01181906,payload,'ARENA-reward-state');
+    lastArenaRewardState=key;
+  }catch(e){console.error('[Arena reward] refresh failed:',e.message);}
+},1000).unref();
+
 // === KONTROL HTTP (127.0.0.1:GATE_PORT+2, portatif 10027): launcher "VIP / Altin Yukle" ===
 // POST /topup {altin:N} -> veri.json altin/vipExp/vipLevel + durum.topup gunluk sayaci + canli client'a CharBaseInfoUpdate.
 // GET  /hesap -> {altin, vipLevel, vipExp, bugun}
 // Arena uses an embedded result/report followed by FightOk, unlike PvE packets.
-function startArena(session, payload) {
-  const frames = require('./arena-real').frames(payload);
-  const report = frames.find(frame => frame.id === kodek.OP.REPORT);
-  const result = frames.find(frame => frame.id === kodek.OP.RESULT);
-  const state = durumMod.yukle();
-  olay.say(state, 'arenaFight', 1); durumMod.kaydet(state);
-  session.send(0x01181904, Buffer.concat([Buffer.alloc(4), result.payload, report.payload]), 'ARENA-result-report');
-  session.send(0x01181907, Buffer.alloc(4), 'ARENA-FightOk');
-}
+const startArena = require('./arena-fight').createFight({
+  arena:require('./arena-real'),kodek,load:durumMod.yukle,save:durumMod.kaydet,
+  count:(state,event,amount)=>olay.say(state,event,amount),
+  refresh:state=>handlers.byReq['0x01810206']({durum:state}),
+});
 // POST /arena-matching/match starts the same native Arena flow as an in-game challenge.
 const KONTROL_PORT = GATE_PORT + 2;
 require('http').createServer((req, res) => {
@@ -367,7 +375,7 @@ require('http').createServer((req, res) => {
       b += chunk;
       if (b.length > 2048) req.destroy();
     });
-    req.on('end', () => {
+    req.on('end', async () => {
       try {
         const connected = loggedInClients();
         if (connected.length !== 1) {
@@ -392,7 +400,7 @@ require('http').createServer((req, res) => {
         payload.writeUInt32BE(opponent.id0, 0);
         payload.writeUInt32BE(opponent.id1, 4);
         const session = connected[0];
-        startArena(session, payload);
+        await startArena(session, payload);
         return json(200, { ok: true, started: true, opponent: { name: opponent.name, level: opponent.level, ranking: opponent.ranking } });
       } catch (e) {
         return json(e instanceof SyntaxError ? 400 : 500, { ok: false, hata: e.message });
@@ -646,7 +654,7 @@ net.createServer(client => {
           for(const item of extra.once.concat(extra.sonra))send(item.id,item.payload,item.kaynak);
           if(awards.length)send(0x01180f00,require('./envanter').loadBagPaketi(d),'GOLDTOWER-bag');
           send(tower.STATE,tower.packet(d),'GOLDTOWER-progress');
-        } catch(e) { LOG.note(cid,'Tower of Gold: '+e.message); send(tower.RET,Buffer.from([0,0,0,1]),'GOLDTOWER-error'); }
+        } catch(e) { LOG.note(cid,'Tower of Gold: '+e.message); send(tower.RET,new (require('./paket').Y)().u32(1).utf(e.message).done(),'GOLDTOWER-error'); }
         continue;
       }
       // FightPet battle requests carry no stage id; resolve against the selected event boss,
@@ -816,8 +824,7 @@ net.createServer(client => {
             }
           }
           if ((pk.id >>> 0) === 0x01811904) {
-            try { startArena(session, pk.payload); }
-            catch (e) { const error = Buffer.alloc(4); error.writeUInt32BE(1); send(0x01181904, error, 'ARENA-rejected'); LOG.note(cid, e.message); }
+            startArena(session, pk.payload).catch(e => { const error = Buffer.alloc(4); error.writeUInt32BE(1); send(0x01181904, error, 'ARENA-rejected'); LOG.note(cid, e.message); });
             continue;
           }
           if ((pk.id >>> 0) === 0x01810202 && pk.payload.length >= 4) { try { require('./moduller').sonHurdleAyarla(pk.payload.readUInt32BE(0)); } catch (e) { } }   // sandik paketi sehir tipine gore
