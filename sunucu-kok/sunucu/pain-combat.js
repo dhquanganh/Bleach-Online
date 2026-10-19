@@ -11,7 +11,7 @@ function profile(u){
   if(!isPain(u))return null;
   return u.painFinal?{...config,standard:null,chases:[],mystery:config.finalMystery}:{...config,mystery:u.hp<u.maxHp*.6?config.extremeMystery:config.mystery};
 }
-function initialize(ctx){for(const u of ctx.teams.flat()){Object.defineProperty(u,'painContext',{value:ctx,writable:true,configurable:true,enumerable:false});if(isPain(u)){u.rinnegan=true;u.painTechnique=0;u.painMysteries=0;}}}
+function initialize(ctx){for(const u of ctx.teams.flat()){Object.defineProperty(u,'painContext',{value:ctx,writable:true,configurable:true,enumerable:false});if(isPain(u)){delete u.painLaserRound;u.rinnegan=true;u.painTechnique=0;u.painMysteries=0;}}}
 function factor(u,field){
   let result=1;
   if(isPain(u)){
@@ -92,7 +92,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
     if(debuff(ctx,u,selected,'painChakraLimitUntil',records,0)){ctx.chakraLimit=ctx.chakraLimit||[100,100];ctx.chakraLimit[selected.camp]=20;ctx.chakra[selected.camp]=Math.min(20,ctx.chakra[selected.camp]);label(records,selected,10,20);}
   }
   if(move.painLaser){
-    u.painLaserReadyRound=ctx.round+Math.max(1,move.cooldown||1);
+    u.painLaserRound=ctx.round;
     for(const target of hit){const amount=Math.min(10,ctx.chakra[target.camp]);ctx.chakra[target.camp]-=amount;if(amount)label(records,target,11,amount);}
     points(u,1,records);u.painInterruptImmuneUntil=ctx.round;label(records,u,12);
     for(const ally of ctx.teams[u.camp].filter(v=>v.hp>0&&isRinnegan(v)))ally.painUnavoidableUntil=ctx.round;
@@ -102,7 +102,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
 function roundStart(ctx){
   const requests=[];
   for(const u of ctx.teams.flat()){
-    if(isPain(u)){u.painMysteries=0;if(u.hp>0&&!u.painFinal&&ctx.round>=(u.painLaserReadyRound||1))requests.push({unit:u,move:config.laser});}
+    if(isPain(u)){u.painMysteries=0;if(u.hp>0&&!u.painFinal&&u.painLaserRound!==ctx.round)requests.push({unit:u,move:config.laser});}
   }
   return requests.sort((a,b)=>skills.value(b.unit,'speed')-skills.value(a.unit,'speed')||a.unit.camp-b.unit.camp||a.unit.pos-b.unit.pos);
 }

@@ -1,0 +1,147 @@
+      private static var FPlaybackRate:int=1;
+      private static var FPlaybackActive:Boolean=false;
+      private static var FPlaybackStage:Stage;
+      private static var FPlaybackBaseFps:Number=30;
+      private static var FPlaybackClock:Number=0;
+      private static var FPlaybackReal:int=0;
+      private static var FPlaybackTasks:Object={};
+      private static var FPlaybackTaskId:uint=0;
+      private var FPlaybackButton:Sprite;
+      private var FPlaybackLabel:flash.text.TextField;
+      private var FPlaybackNativeControl:TUIButton;
+
+      public static function get PlaybackRate() : int {return FPlaybackRate;}
+
+      public static function get PlaybackTime() : int
+      {
+         return int(FPlaybackClock+(getTimer()-FPlaybackReal)*FPlaybackRate);
+      }
+
+      private static function SetPlaybackRate(value:int) : void
+      {
+         FPlaybackClock=PlaybackTime;
+         FPlaybackReal=getTimer();
+         FPlaybackRate=FPlaybackActive && value==2?2:1;
+         if(FPlaybackStage!=null)FPlaybackStage.frameRate=FPlaybackBaseFps*FPlaybackRate;
+      }
+
+      public static function PlaybackTimeout(callback:Function, delay:Number, ...args) : uint
+      {
+         if(!FPlaybackActive)return 0;
+         var id:uint=++FPlaybackTaskId;
+         FPlaybackTasks[id]={due:PlaybackTime+Math.max(0,delay),callback:callback,args:args};
+         return id;
+      }
+
+      public static function ClearPlaybackTimeout(id:uint) : void
+      {
+         delete FPlaybackTasks[id];
+      }
+
+      private static function PulsePlaybackTimers() : void
+      {
+         if(!FPlaybackActive)return;
+         var now:int=PlaybackTime;
+         var ready:Array=[];
+         for(var id:String in FPlaybackTasks)if(FPlaybackTasks[id].due<=now)ready.push({id:uint(id),due:FPlaybackTasks[id].due});
+         ready.sortOn(["due","id"],[Array.NUMERIC,Array.NUMERIC]);
+         for each(var entry:Object in ready)
+         {
+            var key:uint=entry.id;
+            var task:Object=FPlaybackTasks[key];
+            if(task==null)continue;
+            delete FPlaybackTasks[key];
+            task.callback.apply(null,task.args);
+         }
+      }
+
+      private function CreatePlaybackButton() : void
+      {
+         if(FPlaybackButton!=null)return;
+         FPlaybackButton=TUtilityReflection.CreateDisplayObjectInstance(CONST_BATTLE.RESOURCE_ClassName_BTN_Skip) as Sprite;
+         if(FPlaybackButton==null)return;
+         FPlaybackButton.name="battlePlaybackSpeed";
+         FPlaybackNativeControl=new TUIButton();
+         FPlaybackNativeControl.Substrate=FPlaybackButton[CONST_BATTLE.RESOURCE_Link_MC_ButtonSkipBattle] as MovieClip;
+         FPlaybackNativeControl.IsFilter=true;
+         FPlaybackNativeControl.OnClick=PlaybackNativeClick;
+         FPlaybackNativeControl.Enabled=true;
+         var clip:MovieClip=FPlaybackNativeControl.Substrate;
+         clip.addEventListener(MouseEvent.MOUSE_OVER,RefreshPlaybackCaption);
+         clip.addEventListener(MouseEvent.MOUSE_OUT,RefreshPlaybackCaption);
+         clip.addEventListener(MouseEvent.MOUSE_DOWN,RefreshPlaybackCaption);
+         clip.addEventListener(MouseEvent.MOUSE_UP,RefreshPlaybackCaption);
+         addChild(FPlaybackButton);
+         addEventListener(Event.REMOVED_FROM_STAGE,PlaybackRemoved);
+         UpdatePlaybackButton();
+      }
+
+      private function FindPlaybackCaption(node:DisplayObjectContainer) : flash.text.TextField
+      {
+         for(var i:int=0;i<node.numChildren;i++)
+         {
+            var child:DisplayObject=node.getChildAt(i);
+            if(child is flash.text.TextField)return child as flash.text.TextField;
+            if(child is DisplayObjectContainer)
+            {
+               var field:flash.text.TextField=FindPlaybackCaption(child as DisplayObjectContainer);
+               if(field!=null)return field;
+            }
+         }
+         return null;
+      }
+
+      private function RefreshPlaybackCaption(event:MouseEvent) : void
+      {
+         UpdatePlaybackButton();
+      }
+
+      private function PlaybackNativeClick(sender:Object,event:MouseEvent=null) : void
+      {
+         if(event!=null)TogglePlaybackSpeed(event);
+      }
+
+      private function UpdatePlaybackButton() : void
+      {
+         if(FPlaybackButton==null || FSP_Skip==null)return;
+         var bounds:flash.geom.Rectangle=FSP_Skip.getBounds(this);
+         var skin:flash.geom.Rectangle=FPlaybackButton.getBounds(FPlaybackButton);
+         FPlaybackButton.x=bounds.right+8-skin.x;
+         FPlaybackButton.y=bounds.y-skin.y;
+         FPlaybackButton.visible=FPlaybackActive && this.Visible && FSP_Skip.visible;
+         // This skin uses an anonymous native TextField, not TUIButton's TF_Caption link.
+         FPlaybackLabel=FindPlaybackCaption(FPlaybackNativeControl.Substrate);
+         if(FPlaybackLabel!=null)FPlaybackLabel.text="x"+FPlaybackRate;
+      }
+
+      private function StartPlaybackSpeed() : void
+      {
+         StopPlaybackSpeed();
+         FPlaybackStage=stage;
+         if(stage!=null)FPlaybackBaseFps=stage.frameRate;
+         FPlaybackActive=true;
+         SetPlaybackRate(1);
+         UpdatePlaybackButton();
+      }
+
+      private function StopPlaybackSpeed() : void
+      {
+         SetPlaybackRate(1);
+         FPlaybackActive=false;
+         FPlaybackStage=null;
+         FPlaybackTasks={};
+         if(FPlaybackButton!=null)FPlaybackButton.visible=false;
+      }
+
+      private function TogglePlaybackSpeed(event:MouseEvent) : void
+      {
+         if(!FPlaybackActive || !this.Visible || !FSP_Skip.visible)return;
+         event.stopPropagation();
+         SetPlaybackRate(FPlaybackRate==1?2:1);
+         UpdatePlaybackButton();
+      }
+
+      private function PlaybackRemoved(event:Event) : void
+      {
+         if(event.target==this)StopPlaybackSpeed();
+      }

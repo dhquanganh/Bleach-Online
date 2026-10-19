@@ -1,0 +1,128 @@
+      private function PlayPainVfxAsset(name:String, host:DisplayObjectContainer, point:Point, width:Number, height:Number, delay:int = 0, mirrored:Boolean = false, follow:Boolean = false, behind:Boolean = false, angle:Number = 0) : void
+      {
+         var caster:TRole;
+         var layer:Sprite;
+         var image:Bitmap;
+         var edgeMask:Sprite;
+         var gradient:Matrix;
+         var field:DisplayObject;
+         var outer:DisplayObjectContainer;
+         var started:int;
+         var rodSerial:uint;
+         var rodSkill:int;
+         var rodFrame:int;
+         var lastFrame:int;
+         var animate:Function;
+         var cleanup:Function;
+         var manifest:Object = PainVfxManifest();
+         var clip:Object = manifest.clips[name];
+         if(clip == null || host == null || host.stage == null)
+         {
+            return;
+         }
+         LoadPainVfxAtlas(String(clip.atlas),manifest.atlases[clip.atlas]);
+         caster = this;
+         layer = new Sprite();
+         layer.name = "painSkillVfx";
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         image = new Bitmap();
+         image.smoothing = true;
+         if(clip.additive)
+         {
+            image.blendMode = "add";
+         }
+         layer.addChild(image);
+         if(clip.softEdges)
+         {
+            edgeMask = new Sprite();
+            gradient = new Matrix();
+            gradient.createGradientBox(width,height,0,-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]));
+            edgeMask.graphics.beginGradientFill(GradientType.RADIAL,[16777215,16777215],[1,0],[175,255],gradient);
+            edgeMask.graphics.drawRect(-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]),width,height);
+            edgeMask.graphics.endFill();
+            image.cacheAsBitmap = true;
+            edgeMask.cacheAsBitmap = true;
+            layer.addChild(edgeMask);
+            image.mask = edgeMask;
+         }
+         if(behind && host.parent != null)
+         {
+            field = host;
+            outer = host.parent;
+            point = outer.globalToLocal(host.localToGlobal(point));
+            host = outer;
+            host.addChildAt(layer,host.getChildIndex(field));
+         }
+         else
+         {
+            host.addChild(layer);
+         }
+         rodSerial=FCombatVfxSerial;rodSkill=FSkillId;rodFrame=Math.max(0,FFrameIndex);
+         started = getTimer() + delay;
+         lastFrame = -1;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer)
+            {
+               return;
+            }
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            image.bitmapData = null;
+            if(layer.parent != null)
+            {
+               layer.parent.removeChild(layer);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            if(rodSkill==13120975 && (caster.FCombatVfxSerial!=rodSerial || caster.FSkillId!=rodSkill)){cleanup();return;}
+            var elapsed:int=rodSkill==13120975?(Math.max(0,caster.FFrameIndex)-rodFrame)*40-delay:getTimer()-started;
+            if(host.stage == null || elapsed >= clip.timeline.length * 40)
+            {
+               cleanup();
+               return;
+            }
+            if(elapsed < 0)
+            {
+               layer.visible = false;
+               return;
+            }
+            var frames:Array = FPainFxCache[clip.atlas] as Array;
+            if(frames == null)
+            {
+               layer.visible = false;
+               return;
+            }
+            layer.visible = true;
+            var frame:int = int(elapsed / 40);
+            if(frame != lastFrame)
+            {
+               image.bitmapData = frames[int(clip.timeline[frame])];
+               image.width = width;
+               image.height = height;
+               image.x = -width * Number(clip.pivot[0]);
+               image.y = -height * Number(clip.pivot[1]);
+               if(clip.tint != null)
+               {
+                  image.transform.colorTransform = new ColorTransform(Number(clip.tint[0]),Number(clip.tint[1]),Number(clip.tint[2]),1);
+               }
+               lastFrame = frame;
+            }
+            if(follow && caster.stage != null)
+            {
+               point = host.globalToLocal(caster.localToGlobal(new Point(0,0)));
+            }
+            layer.x = point.x;
+            layer.y = point.y;
+            layer.scaleX = mirrored ? -1 : 1;
+            layer.rotation = angle;
+            var duration:Number = clip.timeline.length * 40;
+            var fade:Number = Math.min(80,duration / 4);
+            layer.alpha = Math.min(1,(elapsed + 40) / fade,Math.max(0,(duration - elapsed) / Math.min(120,duration / 4)));
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }

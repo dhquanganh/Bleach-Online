@@ -1,6 +1,18 @@
 # Pain - Tendo [Six Paths Rinnegan]
 
-Latest client: **2026101956** (continuous Almighty Push flight).
+Latest client: **2026101970** (source-detail paged VFX, viewport sizing and bounded streaming cache).
+
+All eleven VFX layers have been rebuilt from native source PNGs, using fresh .7-zoom SWF exports for the revival, Almighty Push, laser beam, standard and Chase. Output reaches 1024x768 without upscaling source pixels. Atlas pages stay within 2048px; playback prefetches the next page and bounds each ninja's cache to 40 million pixels. Every Pain layer is tied to the active cast serial and character frame, including at x2 battle speed. Size/position conversion uses the battle viewport rather than a scaled actor container. Mystery/standard/Chase/revival visual footprints are enlarged; combat timings and cooldown rules are unchanged. Use `../upgrade-ninja-vfx.py --export --ffdec JAR`, `../upgrade-ninja-vfx.py`, then `../upgrade-vfx-client.py --ffdec JAR --install`; verify with `../verify-vfx-quality.py` and the full native component probe.
+
+Chakra Rod now uses a 1000-unit battle-stage footprint rather than 600 actor-parent
+units, and its source character art renders at 1.05 instead of .85. This avoids
+an extra reduction under scaled actor containers. Its approach updates each tick,
+including repeated native surfaces, and its raster timeline follows actor frames.
+A cast generation guard removes an interrupted Rod before another starts. The
+pre-Hashirama/current Pain method comparison was byte-identical; the repair changes
+the existing footprint and synchronization explicitly. Laser, Final idle, revival
+and Almighty Push flight remain intact. Native validation: six motion cases in
+both camps, 10 raster plays, 11 atlases, zero runtime errors or leftover layers.
 
 Extreme, Final and Super Push now update their airborne position every tick,
 including repeated source images. The feet follow a smooth ascent, a gentle hover,

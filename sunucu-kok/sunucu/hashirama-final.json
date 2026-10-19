@@ -1,0 +1,155 @@
+{
+  "heroId": 11120940,
+  "name": "Hashirama Senju [The Final Battle]",
+  "quality": 7,
+  "assess": "SSS",
+  "profession": 1,
+  "anyPosition": true,
+  "senjutsu": true,
+  "mystery": {
+    "id": 13121001,
+    "name": "Deity Gates - Wood Dragon Assault",
+    "prompt": true,
+    "target": 7,
+    "multiplier": 1.65,
+    "attackStat": "atk",
+    "damageType": "mixed",
+    "chakraCost": 20,
+    "cooldown": 3,
+    "battlefieldCooldown": 0,
+    "consumesPrimary": false,
+    "hashMystery": true
+  },
+  "burstMystery": {
+    "id": 13121002,
+    "name": "Wood Style - Rumbling Dragon Strike",
+    "prompt": true,
+    "target": 12,
+    "multiplier": 2,
+    "attackStat": "atk",
+    "damageType": "mixed",
+    "chakraCost": 40,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "consumesPrimary": false,
+    "unavoidable": true,
+    "causes": "lowFloat",
+    "hashMystery": true,
+    "hashBurstMystery": true
+  },
+  "standard": {
+    "id": 13121006,
+    "name": "Taijutsu Expert",
+    "target": 1,
+    "multiplier": 1,
+    "attackStat": "atk",
+    "damageType": "taijutsu",
+    "unavoidable": true,
+    "causes": "highFloat",
+    "stateChance": 0.4,
+    "critBonus": 0.2,
+    "lifeSteal": 0.35,
+    "hashStandard": true,
+    "cooldown": 0
+  },
+  "sword": {
+    "id": 13121007,
+    "name": "Strong Sword - Crusher",
+    "target": "hashLine",
+    "multiplier": 1.1,
+    "attackStat": "atk",
+    "damageType": "taijutsu",
+    "causes": "knockdown",
+    "superArmorBonus": 0.3,
+    "extraChance": 0.35,
+    "hashStandard": true,
+    "hashSword": true,
+    "cooldown": 0
+  },
+  "chases": [
+    {
+      "id": 13121003,
+      "name": "Adamantine Fist",
+      "requiresAny": [
+        "lowFloat",
+        "knockdown"
+      ],
+      "target": 1,
+      "multiplier": 1.15,
+      "attackStat": "atk",
+      "damageType": "taijutsu",
+      "unavoidable": true,
+      "causes": "knockdown",
+      "lifeSteal": 0.35,
+      "maxPerRound": 2,
+      "hashChase": true,
+      "cooldown": 0
+    }
+  ],
+  "severe": {
+    "id": 13121004,
+    "name": "Wood Style - Severe Thousand Hands",
+    "requiresAny": [
+      "lowFloat",
+      "knockdown"
+    ],
+    "target": 1,
+    "multiplier": 1.45,
+    "attackStat": "atk",
+    "damageType": "mixed",
+    "unavoidable": true,
+    "causes": "knockdown",
+    "combo": 10,
+    "maxPerRound": 2,
+    "hashChase": true,
+    "hashSevere": true,
+    "cooldown": 0
+  },
+  "burstSevere": {
+    "id": 13121005,
+    "name": "Wood Style - Severe Thousand Hands [Chakra Burst]",
+    "requiresAny": [
+      "lowFloat",
+      "knockdown"
+    ],
+    "target": 1,
+    "multiplier": 1.45,
+    "attackStat": "atk",
+    "damageType": "mixed",
+    "unavoidable": true,
+    "causes": "knockdown",
+    "combo": 10,
+    "maxPerRound": 2,
+    "hashChase": true,
+    "hashSevere": true,
+    "hashBurstChase": true,
+    "ignoreDefense": 0.3,
+    "cooldown": 0
+  },
+  "additional": {
+    "id": 13121008,
+    "name": "Wood Golem - Wood Fist Strike",
+    "target": "hashSplash",
+    "multiplier": 1.3,
+    "attackStat": "atk",
+    "damageType": "mixed",
+    "hashGolem": true,
+    "cooldown": 0
+  },
+  "forest": {
+    "id": 13121009,
+    "name": "Advent of a World of Flowering Trees",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0
+  },
+  "burst": {
+    "id": 13121010,
+    "name": "Chakra Burst",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0
+  },
+  "burstDamageBonus": 0.3,
+  "maxStandards": 5
+}

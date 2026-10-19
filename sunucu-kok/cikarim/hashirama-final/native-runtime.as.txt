@@ -1,0 +1,356 @@
+      private static function HashiramaVfxManifest() : Object {return {};}
+
+      private static function PreloadHashiramaVfx() : void
+      {
+         var manifest:Object = HashiramaVfxManifest();
+         for(var name:String in manifest.atlases)
+         {
+            LoadHashiramaVfxAtlas(name,manifest.atlases[name]);
+         }
+      }
+
+      private static function LoadHashiramaVfxAtlas(name:String, meta:Object) : void
+      {
+         var loader:Loader;
+         var complete:Function;
+         var failed:Function;
+         var release:Function;
+         if(FHashiramaFxCache[name] != null || FHashiramaFxLoading[name])
+         {
+            return;
+         }
+         FHashiramaFxLoading[name] = true;
+         loader = new Loader();
+         release = function():void
+         {
+            loader.contentLoaderInfo.removeEventListener(Event.COMPLETE,complete);
+            loader.contentLoaderInfo.removeEventListener(IOErrorEvent.IO_ERROR,failed);
+            loader.contentLoaderInfo.removeEventListener(SecurityErrorEvent.SECURITY_ERROR,failed);
+            delete FHashiramaFxLoading[name];
+         };
+         failed = function(event:Event):void
+         {
+            release();
+            loader.unload();
+         };
+         complete = function(event:Event):void
+         {
+            release();
+            var source:Bitmap = loader.content as Bitmap;
+            if(source == null)
+            {
+               loader.unload();
+               return;
+            }
+            var frames:Array = [];
+            var w:int = int(source.bitmapData.width / int(meta.columns));
+            var h:int = int(source.bitmapData.height / int(meta.rows));
+            var i:int = 0;
+            while(i < (meta.frameCount != null ? int(meta.frameCount) : int(meta.columns) * int(meta.rows)))
+            {
+               var cell:BitmapData = new BitmapData(w,h,true,0);
+               cell.copyPixels(source.bitmapData,new Rectangle(i % int(meta.columns) * w,int(i / int(meta.columns)) * h,w,h),new Point());
+               frames.push(cell);
+               i++;
+            }
+            FHashiramaFxCache[name] = frames;
+            loader.unload();
+         };
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,complete);
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,failed);
+         loader.contentLoaderInfo.addEventListener(SecurityErrorEvent.SECURITY_ERROR,failed);
+         loader.load(new URLRequest(String(meta.url)));
+      }
+
+      private function PlayHashiramaVfxAsset(name:String, host:DisplayObjectContainer, point:Point, width:Number, height:Number, delay:int = 0, mirrored:Boolean = false, follow:Boolean = false, behind:Boolean = false, angle:Number = 0) : void
+      {
+         var caster:TRole;
+         var layer:Sprite;
+         var image:Bitmap;
+         var edgeMask:Sprite;
+         var gradient:Matrix;
+         var field:DisplayObject;
+         var outer:DisplayObjectContainer;
+         var started:int;
+         var castSerial:uint;
+         var castSkill:int;
+         var castFrame:int;
+         var lastFrame:int;
+         var animate:Function;
+         var cleanup:Function;
+         var manifest:Object = HashiramaVfxManifest();
+         var clip:Object = manifest.clips[name];
+         if(clip == null || host == null || host.stage == null)
+         {
+            return;
+         }
+         LoadHashiramaVfxAtlas(String(clip.atlas),manifest.atlases[clip.atlas]);
+         caster = this;
+         layer = new Sprite();
+         layer.name = "hashiramaSkillVfx";
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         image = new Bitmap();
+         image.smoothing = true;
+         if(clip.additive)
+         {
+            image.blendMode = "add";
+         }
+         layer.addChild(image);
+         if(clip.softEdges)
+         {
+            edgeMask = new Sprite();
+            gradient = new Matrix();
+            gradient.createGradientBox(width,height,0,-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]));
+            edgeMask.graphics.beginGradientFill(GradientType.RADIAL,[16777215,16777215],[1,0],[175,255],gradient);
+            edgeMask.graphics.drawRect(-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]),width,height);
+            edgeMask.graphics.endFill();
+            image.cacheAsBitmap = true;
+            edgeMask.cacheAsBitmap = true;
+            layer.addChild(edgeMask);
+            image.mask = edgeMask;
+         }
+         if(FSkillId==13121009)
+         {
+            // TBattleStage's terrain belongs to the handle; index zero is behind its role field.
+            host.addChildAt(layer,0);
+         }
+         else if(behind && host.parent != null)
+         {
+            field = host;
+            outer = host.parent;
+            point = outer.globalToLocal(host.localToGlobal(point));
+            host = outer;
+            host.addChildAt(layer,host.getChildIndex(field));
+         }
+         else
+         {
+            host.addChild(layer);
+         }
+         caster=this;castSerial=FCombatVfxSerial;castSkill=FSkillId;castFrame=Math.max(0,FFrameIndex);
+         started = getTimer() + delay;
+         lastFrame = -1;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer)
+            {
+               return;
+            }
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            image.bitmapData = null;
+            if(layer.parent != null)
+            {
+               layer.parent.removeChild(layer);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            if(caster.FCombatVfxSerial!=castSerial || caster.FSkillId!=castSkill){cleanup();return;}
+            var elapsed:int=(Math.max(0,caster.FFrameIndex)-castFrame)*40-delay;
+            if(host.stage == null || elapsed >= clip.timeline.length * 40)
+            {
+               cleanup();
+               return;
+            }
+            if(elapsed < 0)
+            {
+               layer.visible = false;
+               return;
+            }
+            var frame:int = int(elapsed / 40);
+            var frameAtlas:String=clip.frameAtlases!=null?String(clip.frameAtlases[frame]):String(clip.atlas);
+            LoadHashiramaVfxAtlas(frameAtlas,manifest.atlases[frameAtlas]);
+            var frames:Array = FHashiramaFxCache[frameAtlas] as Array;
+            if(frames == null)
+            {
+               layer.visible = false;
+               return;
+            }
+            layer.visible = true;
+            if(frame != lastFrame)
+            {
+               image.bitmapData = frames[int(clip.timeline[frame])];
+               image.width = width;
+               image.height = height;
+               image.x = -width * Number(clip.pivot[0]);
+               image.y = -height * Number(clip.pivot[1]);
+               if(clip.tint != null)
+               {
+                  image.transform.colorTransform = new ColorTransform(Number(clip.tint[0]),Number(clip.tint[1]),Number(clip.tint[2]),1);
+               }
+               lastFrame = frame;
+            }
+            if(follow && caster.stage != null)
+            {
+               point = host.globalToLocal(caster.localToGlobal(new Point(0,0)));
+            }
+            layer.x = point.x;
+            layer.y = point.y;
+            layer.scaleX = mirrored ? -1 : 1;
+            layer.rotation = angle;
+            var duration:Number = clip.timeline.length * 40;
+            var fade:Number = Math.min(80,duration / 4);
+            layer.alpha = Math.min(1,(elapsed + 40) / fade,Math.max(0,(duration - elapsed) / Math.min(120,duration / 4)));
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+
+      private function ShowHashiramaStatusText(message:String, color:uint = 12186746) : void
+      {
+         var owner:TRole;
+         var key:String;
+         var old:DisplayObject;
+         var label:TextField;
+         var started:int;
+         var animate:Function;
+         var cleanup:Function;
+         var host:DisplayObjectContainer = parent;
+         if(host == null || host.stage == null)
+         {
+            return;
+         }
+         owner = this;
+         key = "hashiramaStatus_" + Camp + "_" + Pos + "_" + message;
+         old = host.getChildByName(key);
+         if(old != null)
+         {
+            host.removeChild(old);
+         }
+         label = new TextField();
+         label.name = key;
+         label.mouseEnabled = false;
+         label.selectable = false;
+         label.defaultTextFormat = new TextFormat("Arial",15,color,true,null,null,null,null,"center");
+         label.width = 340;
+         label.height = 30;
+         label.text = message;
+         label.filters = [new GlowFilter(526352,1,5,5,5)];
+         host.addChild(label);
+         started = int(getTimer());
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != label)
+            {
+               return;
+            }
+            label.removeEventListener(Event.ENTER_FRAME,animate);
+            label.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            if(label.parent != null)
+            {
+               label.parent.removeChild(label);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            var age:int = getTimer() - started;
+            if(owner.parent != host || host.stage == null || age >= 3200)
+            {
+               cleanup();
+               return;
+            }
+            var prefix:String = "hashiramaStatus_" + owner.Camp + "_" + owner.Pos + "_";
+            var row:int = 0;
+            var i:int = host.getChildIndex(label) + 1;
+            while(i < host.numChildren)
+            {
+               if(host.getChildAt(i).name.indexOf(prefix) == 0)
+               {
+                  row++;
+               }
+               i++;
+            }
+            var anchor:Point = host.globalToLocal(owner.localToGlobal(new Point(0,-155)));
+            label.x = anchor.x - 170;
+            label.y = anchor.y - row * 27 - Math.min(12,age / 200);
+            label.alpha = age < 2600 ? 1 : (3200 - age) / 600;
+         };
+         label.addEventListener(Event.ENTER_FRAME,animate);
+         label.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+
+      private function ShowHashiramaImpact(point:Point, width:Number, height:Number, delay:int) : void
+      {
+         var layer:Sprite;
+         var started:int;
+         var caster:TRole;
+         var castSerial:uint;
+         var castSkill:int;
+         var castFrame:int;
+         var animate:Function;
+         var cleanup:Function;
+         var host:DisplayObjectContainer = FBattleStage;
+         if(host == null || host.stage == null)
+         {
+            return;
+         }
+         layer = new Sprite();
+         layer.name = "hashiramaSkillVfx";
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         layer.x = point.x;
+         layer.y = point.y;
+         host.addChild(layer);
+         caster=this;castSerial=FCombatVfxSerial;castSkill=FSkillId;castFrame=Math.max(0,FFrameIndex);
+         started = getTimer() + delay;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer)
+            {
+               return;
+            }
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            layer.graphics.clear();
+            if(layer.parent != null)
+            {
+               layer.parent.removeChild(layer);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            if(caster.FCombatVfxSerial!=castSerial || caster.FSkillId!=castSkill){cleanup();return;}
+            var elapsed:int=(Math.max(0,caster.FFrameIndex)-castFrame)*40-delay;
+            if(host.stage == null || elapsed >= 1200)
+            {
+               cleanup();
+               return;
+            }
+            layer.visible = elapsed >= 0;
+            if(elapsed < 0)
+            {
+               return;
+            }
+            var t:Number = elapsed / 1200;
+            var g:Graphics = layer.graphics;
+            g.clear();
+            layer.alpha = Math.min(1,(elapsed + 40) / 100) * (1 - t);
+            var ring:int = 0;
+            while(ring < 3)
+            {
+               var scale:Number = 0.6 + t * 0.7 + ring * 0.13;
+               var rw:Number = width * scale;
+               var rh:Number = height * scale;
+               g.lineStyle(9 - ring * 2,ring == 0 ? 14548898 : 6403380,0.85 - ring * 0.15);
+               g.beginFill(4879649,ring == 0 ? 0.12 : 0);
+               g.drawEllipse(-rw / 2,-rh / 2,rw,rh);
+               g.endFill();
+               ring++;
+            }
+            var ray:int = 0;
+            while(ray < 16)
+            {
+               var a:Number = ray * Math.PI / 8;
+               g.lineStyle(ray % 3 == 0 ? 5 : 2,ray % 2 == 0 ? 15914958 : 11523712,0.9);
+               g.moveTo(Math.cos(a) * width * 0.15,Math.sin(a) * height * 0.15);
+               g.lineTo(Math.cos(a + 0.035) * width * (0.38 + t * 0.16),Math.sin(a + 0.035) * height * (0.38 + t * 0.16));
+               g.lineTo(Math.cos(a) * width * (0.55 + t * 0.2),Math.sin(a) * height * (0.55 + t * 0.2));
+               ray++;
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+      }

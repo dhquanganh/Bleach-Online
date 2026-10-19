@@ -1,0 +1,21 @@
+      private static function TrimCHARVfxCache(keep:String) : void
+      {
+         var pixels:Number=0;
+         var entries:int=0;
+         var key:String;
+         for(key in FCHARFxCache)
+         {
+            var frames:Array=FCHARFxCache[key] as Array;
+            if(frames!=null && frames.length>0){pixels+=frames.length*BitmapData(frames[0]).width*BitmapData(frames[0]).height;entries++;}
+         }
+         while(pixels>40000000 && entries>2)
+         {
+            var oldest:String=null;var age:Number=Number.MAX_VALUE;
+            for(key in FCHARFxCache)if(key!=keep && Number(FCHARFxLoading["_age_"+key])<age){oldest=key;age=Number(FCHARFxLoading["_age_"+key]);}
+            if(oldest==null)break;
+            frames=FCHARFxCache[oldest] as Array;
+            pixels-=frames.length*BitmapData(frames[0]).width*BitmapData(frames[0]).height;
+            // Do not dispose a bitmap still referenced by a visible effect layer.
+            delete FCHARFxCache[oldest];delete FCHARFxLoading["_age_"+oldest];entries--;
+         }
+      }

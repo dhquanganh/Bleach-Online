@@ -1,0 +1,14 @@
+*.swf
+original/
+core/
+patched/
+verify/
+probe-source/
+validation/
+backups/
+__pycache__/
+probe-verify/
+style-original/
+style-patched/
+style-verify/
+ui-inspect/

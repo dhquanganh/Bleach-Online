@@ -65,7 +65,8 @@
     "multiplier": 1,
     "combo": 4,
     "painStandard": true,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "cooldown": 0
   },
   "chases": [
     {
@@ -84,7 +85,7 @@
       "ignoreDefense": 0.3,
       "maxPerRound": 1,
       "painChase": true,
-      "cooldown": 2,
+      "cooldown": 0,
       "attackStat": "atk"
     }
   ],
@@ -96,20 +97,22 @@
     "multiplier": 1.1,
     "combo": 1,
     "painLaser": true,
-    "cooldown": 2,
+    "cooldown": 0,
     "attackStat": "atk"
   },
   "transformation": {
     "id": 13120977,
     "name": "Outer Path - Six Paths of Pain",
     "support": true,
-    "multiplier": 0
+    "multiplier": 0,
+    "cooldown": 0
   },
   "finalRevival": {
     "id": 13120978,
     "name": "Final - The One called God",
     "support": true,
-    "multiplier": 0
+    "multiplier": 0,
+    "cooldown": 0
   },
   "superPush": {
     "id": 13120979,
@@ -120,7 +123,8 @@
     "combo": 5,
     "unavoidable": true,
     "painSuper": true,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "cooldown": 0
   },
   "techniqueLimit": 5,
   "baseTechniqueRate": 0.12,
@@ -128,5 +132,5 @@
   "damageAttackRate": 0.12,
   "initiativeRate": 0.02,
   "initiativeStacks": 5,
-  "balanceNote": "Cooldowns updated by request: base 2, Extreme 3, Final 2 (up to two casts in an eligible round), Chase 2, Laser 2 rounds. Mystery recovery persists across HP form changes and revival. Other explicit numbers and forms follow the supplied screenshot. Damage coefficients and the unspecified 'certain amount' of Chase penetration (30%) are local configurable values, not stated in the reference. Damage-triggered Attack scaling stacks additively per damaged target; TP bonuses are a separate multiplier. Shared camp Chakra is used by this engine. Final critical-hit cost increase lasts through the current round, matching the other +20 cost effect. Splash uses orthogonally adjacent battlefield grids and deals 30% of the primary hit. Base revival is once at 100% HP; final revival requires another defeated allied ninja, once at 40% HP. Final form has only its two stated skills. All damaging moves scale exclusively with Physical ATK, including Laser, Final and Super Push; damage type still selects Defense/Resistance mitigation. Laser targeting is overridden by request to hit all living enemy combat units in every row."
+  "balanceNote": "Only Mystery skills retain cooldowns. All standards, chases, additional skills and automatic triggers have zero cooldown; per-round action/Chase limits and trigger conditions still apply. Rage Kamui and Shurado Laser execute once at every eligible round start. Mystery recovery persists across HP form changes and revival. Other explicit numbers and forms follow the supplied screenshot. Damage coefficients and the unspecified 'certain amount' of Chase penetration (30%) are local configurable values, not stated in the reference. Damage-triggered Attack scaling stacks additively per damaged target; TP bonuses are a separate multiplier. Shared camp Chakra is used by this engine. Final critical-hit cost increase lasts through the current round, matching the other +20 cost effect. Splash uses orthogonally adjacent battlefield grids and deals 30% of the primary hit. Base revival is once at 100% HP; final revival requires another defeated allied ninja, once at 40% HP. Final form has only its two stated skills. All damaging moves scale exclusively with Physical ATK, including Laser, Final and Super Push; damage type still selects Defense/Resistance mitigation. Laser targeting is overridden by request to hit all living enemy combat units in every row."
 }

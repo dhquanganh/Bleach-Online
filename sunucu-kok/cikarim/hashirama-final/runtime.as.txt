@@ -1,0 +1,98 @@
+      private function UpdateHashiramaVfx() : void
+      {
+         if(FId != 11120940 || FSkillId<13121001 || FSkillId>13121010 || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL) || FHashiramaVfxStarted) return;
+         FHashiramaVfxStarted=true;
+         ShowHashiramaVfx(FSkillId);
+      }
+
+      private function ShowHashiramaVfx(skill:int) : void
+      {
+         var host:DisplayObjectContainer=FBattleStage;
+         if(host==null || host.stage==null) return;
+         var origin:Point=host.globalToLocal(localToGlobal(new Point()));
+         var viewportTL:Point=host.globalToLocal(stage.localToGlobal(new Point(0,0)));
+         var viewportBR:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+         var unit:Number=Math.abs(viewportBR.x-viewportTL.x)/1250;
+         var center:Point=new Point();var primary:Point;var count:int=0;
+         var minX:Number=100000;var maxX:Number=-100000;var minY:Number=100000;var maxY:Number=-100000;
+         var seen:Object={};
+         if(FTargets!=null && FResults!=null)for(var i:int=0;i<FTargets.length && i<FResults.length;i++)
+         {
+            var enemy:TRole=FTargets[i];
+            if(enemy==null || enemy==this || enemy.Camp==Camp || FResults[i].CMD!=TTargetInfo.CMD_ATTACK || FResults[i].ResultInfo.HurtHp<0) continue;
+            var key:String=enemy.Camp+"_"+enemy.Pos;if(seen[key])continue;seen[key]=true;
+            var point:Point=host.globalToLocal(enemy.localToGlobal(new Point()));
+            if(primary==null)primary=point.clone();
+            center.x+=point.x;center.y+=point.y;count++;
+            minX=Math.min(minX,point.x);maxX=Math.max(maxX,point.x);minY=Math.min(minY,point.y);maxY=Math.max(maxY,point.y);
+         }
+         if(count>0){center.x/=count;center.y/=count;}else center=origin.clone();
+         var close:Boolean=skill==13121003 || skill==13121004 || skill==13121005 || skill==13121006 || skill==13121007;
+         if(close && primary!=null)center=primary.clone();
+         var effects:Array=skill==13121001?["Zhujianzhongyanmingshenfenglong_texie","Zhujianzhongyanmingshenfenglong"]:skill==13121002?["Hashirama-thousand-hands-cinematic"]:(skill==13121004 || skill==13121005)?["Zhujianzhongyanbangpaizhishu"]:skill==13121009?["Zhujianzhongyanhuashujiejianglin"]:[];
+         var manifest:Object=HashiramaVfxManifest();
+         for each(var effect:String in effects)
+         {
+            var layers:Array=manifest.effects[effect] as Array;if(layers==null)continue;
+            var left:Number=100000;var right:Number=-100000;var top:Number=100000;var bottom:Number=-100000;
+            for each(var name:String in layers)
+            {
+               var bounds:Object=manifest.clips[name];
+               var bw:Number=bounds.width/bounds.renderScale;var bh:Number=bounds.height/bounds.renderScale;
+               left=Math.min(left,-bounds.pivot[0]*bw);right=Math.max(right,(1-bounds.pivot[0])*bw);
+               top=Math.min(top,-bounds.pivot[1]*bh);bottom=Math.max(bottom,(1-bounds.pivot[1])*bh);
+            }
+            var cinematic:Boolean=effect=="Hashirama-thousand-hands-cinematic" || manifest.clips[String(layers[0])].cinematic==true;
+            var screen:Boolean=effect.indexOf("texie")>=0 || cinematic;
+            var limit:Number=(screen?1250:skill==13121002?1400:skill==13121001?1300:skill==13121009?1450:skill==13121008?1250:1000)*unit;
+            if(count>1 && !screen)limit=Math.max(limit,maxX-minX+750,maxY-minY+700);
+            var fit:Number=limit/Math.max(1,right-left,bottom-top);
+            // Forest is a battlefield entrance, independent of caster row or attack targets.
+            var forestBase:Point;
+            if(skill==13121009)
+            {
+               var viewTop:Point=host.globalToLocal(stage.localToGlobal(new Point(24,stage.stageHeight*.22)));
+               var viewBottom:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth-24,stage.stageHeight*.90)));
+               forestBase=new Point((viewTop.x+viewBottom.x)/2,viewBottom.y);
+               fit=Math.min(Math.abs(viewBottom.x-viewTop.x)/Math.max(1,right-left),Math.abs(viewBottom.y-viewTop.y)/Math.max(1,bottom-top));
+            }
+            for each(name in layers)
+            {
+               var clip:Object=manifest.clips[name];
+               var at:Point=screen?host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth/2,stage.stageHeight/2))):(skill==13121009?forestBase.clone():center.clone());
+               var w:Number=clip.width/clip.renderScale*fit;var h:Number=clip.height/clip.renderScale*fit;
+               if(cinematic){
+                  var screenTL:Point=host.globalToLocal(stage.localToGlobal(new Point(0,0)));
+                  var screenBR:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+                  w=Math.abs(screenBR.x-screenTL.x);h=Math.abs(screenBR.y-screenTL.y);
+               }
+               else if(screen){w=1250*unit;h=clip.height/clip.width*w;}
+               else{var anchor:Array=skill==13121009?[(left+right)/2,bottom]:manifest.effectAnchors[effect] as Array;at.x-=Number(anchor[0])*fit*(scaleX<0?-1:1);at.y-=Number(anchor[1])*fit;}
+               PlayHashiramaVfxAsset(name,host,at,w,h,0,screen?false:scaleX<0,false,false);
+            }
+         }
+         var hit:Object={13121001:51,13121002:93,13121003:20,13121004:20,13121005:20,13121006:9,13121007:20,13121008:19};
+         if(hit[skill]!=null && skill!=13121002)ShowHashiramaImpact(new Point(center.x,center.y-15*unit),close?560*unit:Math.max(1000*unit,maxX-minX+450*unit),close?300*unit:Math.max(440*unit,maxY-minY+260*unit),int(hit[skill])*40);
+         if(skill==13121010)ShowHashiramaImpact(new Point(origin.x,origin.y-10*unit),560*unit,280*unit,0);
+      }
+
+      private function HashiramaStrikePose(frame:TAnimationFrame) : void
+      {
+         if(FId!=11120940 || frame==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         // Apply every tick, including identical held images. Never accumulate offsets.
+         FBitmap.x=-frame.Pivot.X;FBitmap.y=-frame.Pivot.Y;
+         if(FSkillId<13121003 || FSkillId>13121008 || FTargets==null || FResults==null)return;
+         for(var i:int=0;i<FTargets.length && i<FResults.length;i++)
+         {
+            var enemy:TRole=FTargets[i];
+            if(enemy==null || enemy==this || enemy.Camp==Camp || FResults[i].CMD!=TTargetInfo.CMD_ATTACK)continue;
+            var point:Point=globalToLocal(enemy.localToGlobal(new Point()));
+            var hit:Number=FSkillId==13121006?9:20;
+            var duration:Number=FSkillId==13121004 || FSkillId==13121005?86:FSkillId==13121006?35:53;
+            var t:Number=Math.min(1,Math.max(0,FFrameIndex/Math.max(5,hit-3)));
+            var back:Number=Math.min(1,Math.max(0,(duration-FFrameIndex)/15));
+            var weight:Number=t*t*(3-2*t)*back*back*(3-2*back);
+            var gap:Number=FSkillId==13121008?190:FSkillId==13121004 || FSkillId==13121005?185:FSkillId==13121007?130:105;
+            FBitmap.x+=(point.x-gap)*weight;FBitmap.y+=point.y*weight;return;
+         }
+      }

@@ -1,0 +1,138 @@
+[
+  {
+    "file": "assets/bag/ninja/preview/11003341.png",
+    "sha256": "da0043ef7c5b9aa162851b1e97a4a66cb79276f4b001b7359cc23be3099cc36a"
+  },
+  {
+    "file": "assets/bag/ninja/preview/11003351.png",
+    "sha256": "9ad3b4e0898c027e7fedd4c5bdb788f8c819d29322644ba0f87f766c538a7cd2"
+  },
+  {
+    "file": "assets/battle/role/head_110_100/11003341.png",
+    "sha256": "4364d06a87b042eaa59523b2dc35fdcdc5a14da3cdd4bd0d0a2616c9de56540b"
+  },
+  {
+    "file": "assets/battle/role/head_110_100/11003351.png",
+    "sha256": "4364d06a87b042eaa59523b2dc35fdcdc5a14da3cdd4bd0d0a2616c9de56540b"
+  },
+  {
+    "file": "assets/battle/role/head_176_68/11003341.png",
+    "sha256": "5251b77ece8ca247fb7cccbee91c6a44d5dd17c25f967dad138f4fbcc65f2c8a"
+  },
+  {
+    "file": "assets/battle/role/head_176_68/11003351.png",
+    "sha256": "5251b77ece8ca247fb7cccbee91c6a44d5dd17c25f967dad138f4fbcc65f2c8a"
+  },
+  {
+    "file": "assets/battle/role/head_45_45/11003341.png",
+    "sha256": "a47e0239aaddc7c0bd7df537561dea11a50adcf555553c4f9e6368ebcf8ddafc"
+  },
+  {
+    "file": "assets/battle/role/head_45_45/11003351.png",
+    "sha256": "a47e0239aaddc7c0bd7df537561dea11a50adcf555553c4f9e6368ebcf8ddafc"
+  },
+  {
+    "file": "assets/battle/role/left/11003341.swf",
+    "sha256": "6a6caa3c52f350f42596c359b58ab6ba49fb80429a164d91d2a0ecc95f3ee3c4"
+  },
+  {
+    "file": "assets/battle/role/left/11003351.swf",
+    "sha256": "c05af1e53b6bb0ed4dc4a9156a618b31614d409a5026e7be56ac63c941e8c020"
+  },
+  {
+    "file": "assets/role/npc/scene/npcres/11003341_outdoor.swf",
+    "sha256": "a6bf4064feea6b14ef5d83989770e4e746602ad5cc5cae85ed424c3132f32e36"
+  },
+  {
+    "file": "assets/role/npc/scene/npcres/11003351_outdoor.swf",
+    "sha256": "2d365f75156382331644404704219670e76f3815c95eeae8e629eabb1460998a"
+  },
+  {
+    "file": "assets/skill/40/21003343.png",
+    "sha256": "0cb104ea8c4bf9db35f06f9f3f759b34b50be4e074295ad0311eab69330eab12"
+  },
+  {
+    "file": "assets/skill/40/21003344.png",
+    "sha256": "25881ba29c33e17febb86c3d11c5e796efb484bd78098050ec6e05b2331108ad"
+  },
+  {
+    "file": "assets/skill/40/21003345.png",
+    "sha256": "fc2ae169537d5eb5bb9976f1977e9016eda69f290153ec72e42ece3ee346d3a1"
+  },
+  {
+    "file": "assets/skill/40/21003346.png",
+    "sha256": "0fc8e3546148b0f860e55687d2de9d00905647045af26ee5801a7f98fd06017b"
+  },
+  {
+    "file": "assets/skill/40/21003347.png",
+    "sha256": "80cb5da0850fd47ec6648f50d15d1d0106e5d3bcd1ff088046ee27a1adaf66be"
+  },
+  {
+    "file": "assets/skill/40/21003365.png",
+    "sha256": "e765642b6892190c0ba0f2d50f627d5cd7dbdba909f3a8da329e0037884404ba"
+  },
+  {
+    "file": "assets/skill/40/21003367.png",
+    "sha256": "e3c7a51730612db9b10442c2c59f9c763d064433967dd22fd73f822aa9b3efb0"
+  },
+  {
+    "file": "assets/skill/40/21003368.png",
+    "sha256": "9d50b77a5364201ca17ce40a9eadfdbee2391f1594bf57e29d132696509a6219"
+  },
+  {
+    "file": "assets/skill/40/21010334.png",
+    "sha256": "9290979868f82e34507cdc75b125802c4e6c64cbc7c51acc6ba4004f90c8cd8f"
+  },
+  {
+    "file": "assets/skill/40/21010336.png",
+    "sha256": "8e5a45690ae4a5b2bfc99e12326d4ebfaa127f6ed1772ae6073c0998b5528087"
+  },
+  {
+    "file": "assets/skill/40/21203347.png",
+    "sha256": "7337ab68c5b558bc0546c787ef4afa6007986515c8b2f51350007a5d8254b2ce"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/11003341.png",
+    "sha256": "4f06d9874dfce0259d1d0d875722510de3f2a21f068e6ec0ba0646488e3ea615"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/11003351.png",
+    "sha256": "f1b74f672d7926c9a36f2182e572f22db4a10d6ec0f73e8d67f2387b80e249a9"
+  },
+  {
+    "file": "assets/user/ninja/ninjaImg/11003341.swf",
+    "sha256": "bbb4162b179880a614ad26e65efd329ecb7d1ffbbd082619ae24585fd756d1df"
+  },
+  {
+    "file": "assets/user/ninja/ninjaImg/11003351.swf",
+    "sha256": "9f332fde77fc69060724fc1702d7b9caf85f223c05e74dbc9dc792d17fa50b3e"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyanbangpaizhishu.swf",
+    "sha256": "352c6013fc46ee3adba480ac18e71b3fc91f4cf9cf6c9c3b36b11bc588301728"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyandingshanghuafo.swf",
+    "sha256": "66046898c3dbb15911ddea618798af52cea22b3465ddcb5660b3e9fae48248ba"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyandingshanghuafo_texie.swf",
+    "sha256": "6037efc9d7912317636316904e454d415b3fb1f2e3b22a88608c22af5657ba40"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyanhuashujiejianglin.swf",
+    "sha256": "03672b081a80225a7f76a10a4bd5b6b5885aa6c011dcd952939a782ae243f3c9"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyanmingshenfenglong.swf",
+    "sha256": "b58443123e186d5e73027e3dd15f2521002898bafbaafef4ee665fdd156ae77b"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyanmingshenfenglong_texie.swf",
+    "sha256": "d89d7f4759a4cf2bc390194d86d5e59ff8a5d63d033d68f393010d20247332df"
+  },
+  {
+    "file": "battle/effect/Zhujianzhongyanshujiejiangdan.swf",
+    "sha256": "2a140c6205e2343c0961598e89d54c4c84a1a0e0912b379aa24eb073e8186365"
+  }
+]

@@ -1,2 +1,7 @@
 backups/
 debug/
+*.swf
+*.png
+icon-probe-source/
+icon-validation/
+__pycache__/

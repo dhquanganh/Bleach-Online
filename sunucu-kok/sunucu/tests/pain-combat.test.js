@@ -51,7 +51,7 @@ for(const camp of [0,1]) for(const move of [p.config.laser,p.config.chases[0]]){
  let last=-Infinity;
  decoded.turns.forEach((turn,index)=>{
   for(const action of turn.actives)if(action.activeCamp===camp&&action.skillEffectId===move.id){
-   assert(index-last>=move.cooldown,`encoded skill ${move.id} bypassed recovery`);last=index;
+   assert(index-last>=Math.max(1,move.cooldown),`encoded skill ${move.id} bypassed recovery`);last=index;
   }
  });
 }
@@ -102,13 +102,13 @@ for(const camp of [0,1]){
  const f=fixture(camp);const frame={targets:[],reactions:[]};
  p.afterHit(f.ctx,f.u,f.enemy,[f.enemy],p.config.laser,frame);
  assert.equal(p.roundStart(f.ctx).length,0);
- n.startRound(f.ctx,2);assert.equal(p.roundStart(f.ctx).length,0);
+ n.startRound(f.ctx,2);assert.equal(p.roundStart(f.ctx).length,1);
  n.startRound(f.ctx,3);assert.equal(p.roundStart(f.ctx).length,1);
- // Chase recovery is consumed on execution and remains blocked next round.
+ // Chase budgets reset next round without a cooldown gap.
  const open=()=>({targets:[{cmd:CMD.ATTACK,targetCamp:1-camp,targetPos:f.enemy.pos,reportTargetStatus:ST.HIT,result:{hurtHp:1}}]});
  const strike=()=>open();const spec={combo:1,causes:'repulse'};
  assert.equal(n.resolve(f.ctx,f.u,f.enemy,open(),spec,strike).length,1);
- n.startRound(f.ctx,4);assert.equal(n.resolve(f.ctx,f.u,f.enemy,open(),spec,strike).length,0);
+ n.startRound(f.ctx,4);assert.equal(n.resolve(f.ctx,f.u,f.enemy,open(),spec,strike).length,1);
  n.startRound(f.ctx,5);assert.equal(n.resolve(f.ctx,f.u,f.enemy,open(),spec,strike).length,1);
 }
 console.log('PASS Pain recovery: form changes, resurrection, Final double-cast windows, Laser and Chase across rounds in both camps.');

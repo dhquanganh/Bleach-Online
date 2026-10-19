@@ -9,7 +9,7 @@ native=packed.native;CFG=json.loads((ROOT/'sunucu/obito-rage.json').read_text())
 SOURCE=ROOT.parent/'asset/Extracted_Obito_Rage'
 MOVES=[CFG[k] for k in ['mystery','rageMystery','standard','rageStandard']]+CFG['chases']+CFG['rageChases']+[CFG['transformation']]
 DESC={
-13120951:'Prompt. Consume 10% max HP; high chance to evade the next attack this round. The first 5 Chase or Standard attacks cannot defeat Obito this round. Cooldown 2 rounds, battlefield cooldown 0, chakra 0. Does not consume a Standard. Rage: enhanced Kamui activates free at eligible round start (2-round cooldown), guarantees next evasion; Mystery becomes Underground Roots.',
+13120951:'Prompt. Consume 10% max HP; high chance to evade the next attack this round. The first 5 Chase or Standard attacks cannot defeat Obito this round. Cooldown 2 rounds, battlefield cooldown 0, chakra 0. Does not consume a Standard. Rage: enhanced Kamui activates free at the beginning of every round (no cooldown), guarantees next evasion; Mystery becomes Underground Roots.',
 13120952:'Rage Mystery. Damage all enemies, Low Float to selected target; +40% Chase damage until round end (does not stack). Chakra 40, reduced by 20 after each use to minimum 0. Cooldown 3 rounds, battlefield cooldown 0. Prompt; does not consume a Standard. Local automatic combat casts at most once per round.',
 13120953:'Consume 5% max HP; attack lowest HP enemy. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Kamui Tag: evasion capped at 35%, Defense and Resistance -15% until end of next round.',
 13120954:'Rage Standard: attack lowest HP enemy without HP cost. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills.',
@@ -17,8 +17,8 @@ DESC={
 13120956:'Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round.',
 13120957:'Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round.',
 13120958:'Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round.',
-13120959:'Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at round start (2-round cooldown) and one additional Standard after defeating an enemy with a Standard.'}
-for sid in [13120955,13120956,13120957,13120958]:DESC[sid]+=' Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round.'
+13120959:'Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at the beginning of every round (no cooldown) and one additional Standard after defeating an enemy with a Standard.'}
+for sid in [13120955,13120956,13120957,13120958]:DESC[sid]+=' No cooldown. Per-round Chase limits still apply.'
 for move in MOVES:
     if move.get('attackStat')=='atk':DESC[move['id']]+=' Damage scales with Physical ATK.'
 

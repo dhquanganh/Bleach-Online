@@ -161,6 +161,10 @@ function kur(y) {
   H['0x01816b01'] = ({ payload }) => new Y().u32(new O(payload).u32()).u16(0).done();
   H['0x01818600'] = ({ payload, durum, kaydet }) => { const ad = new O(payload).utf().trim(); if (!ad || ad.length > 16) return new Y().u32(1).done(); if (!altin(50)) return new Y().u32(16).done(); durum.nick = ad; if (durum.karakter) durum.karakter.nick = ad; const v = veriOku(); v.nick = ad; veriYaz(v); K(kaydet, durum); console.log(`[isim] -> ${ad}`); return new Y().u32(0).done(); };
   H['0x01818601'] = ({ payload, durum, kaydet }) => { const c = new O(payload).u8(); if (c < 1 || c > 3) return new Y().u32(1).done(); durum.country = c - 1; K(kaydet, durum); const p = baseInfo([{ index: 18, v: c - 1 }]); if (p) ekSonra(0x01180105, p, 'ULKE'); return new Y().u32(0).u8(c).done(); };
+  H['0x0181a000'] = ctx => {
+    try { return require('./player-profile').inspect(ctx); }
+    catch(error) { console.error('[Inspector]',error.message);return new Y().u32(1).done(); }
+  };
   H['0x0181a001'] = ({ payload }) => { const o = new O(payload); o.u32(); o.u32(); const tpl = o.u32(); return new Y().u32(1).u8(0).u32(tpl).done(); };
   H['0x0181a003'] = ({ payload }) => { const o = new O(payload); const inst = o.u32(), tpl = o.u32(); return new Y().u32(0).u32(inst).u32(tpl).u32(0).u32(inst).done(); };
   // ================= KNIFE (Zanpakuto of Kill Soul) =================

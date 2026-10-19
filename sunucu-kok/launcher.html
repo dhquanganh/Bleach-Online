@@ -843,7 +843,7 @@
       list.addEventListener('lostpointercapture', function () { keo = false; list.classList.remove('darigi'); });
     })();
     function yukle() {
-      fetch(ADMIN + '/api/karakterler').then(function (r) { return r.json(); }).then(function (d) { VERI = d; ciz(); })
+      fetch(ADMIN + '/api/karakterler').then(function (r) { return r.json(); }).then(function (d) { d.liste = d.liste.filter(function (h) { return h.id !== 11120940; }); VERI = d; ciz(); })
         .catch(function () { document.getElementById('liste').innerHTML = '<div style="color:#e88;padding:20px">Không kết nối được máy chủ cửa hàng (127.0.0.1:7421). Hãy khởi động lại máy chủ trò chơi.</div>'; });
     }
     function satinAl(id) {

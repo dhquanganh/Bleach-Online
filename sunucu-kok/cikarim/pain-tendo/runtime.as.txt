@@ -7,8 +7,11 @@
 
       private function ShowPainVfx(skill:int) : void
       {
-         var host:DisplayObjectContainer=parent;
+         var host:DisplayObjectContainer=FBattleStage;
          if(host == null || host.stage == null) return;
+         var viewportTL:Point=host.globalToLocal(stage.localToGlobal(new Point(0,0)));
+         var viewportBR:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+         var unit:Number=Math.abs(viewportBR.x-viewportTL.x)/1250;
          var origin:Point=host.globalToLocal(localToGlobal(new Point()));
          var center:Point=new Point();
          var primary:Point;
@@ -33,7 +36,7 @@
          var layers:Array=manifest.effects[effect] as Array;
          if(layers == null) return;
          var at:Point=(skill==13120976 || skill==13120977 || skill==13120978)?origin:center;
-         var limit:Number=skill==13120974?660:skill==13120975?600:skill==13120976?1050:(skill==13120977 || skill==13120978)?245:skill==13120971?650:1100;
+         var limit:Number=(skill==13120974?900:skill==13120975?1150:skill==13120976?1250:(skill==13120977 || skill==13120978)?260:skill==13120971?1000:1400)*unit;
          var extent:Number=1;
          for each(var layerName:String in layers)
          {
@@ -46,12 +49,18 @@
             var clip:Object=manifest.clips[name];
             var cutin:Boolean=clip.action=="texie";
             var screen:Boolean=cutin || clip.screen==true;
-            var w:Number=screen?1250:Number(clip.width)/Number(clip.renderScale)*factor;
-            var h:Number=screen?650:w*Number(clip.height)/Number(clip.width);
-            var location:Point=screen?new Point(625,325):at.clone();
+            var w:Number=screen?Math.abs(viewportBR.x-viewportTL.x):Number(clip.width)/Number(clip.renderScale)*factor;
+            var h:Number=screen?Math.abs(viewportBR.y-viewportTL.y):w*Number(clip.height)/Number(clip.width);
+            var location:Point=screen?new Point((viewportTL.x+viewportBR.x)/2,(viewportTL.y+viewportBR.y)/2):at.clone();
             if(skill==13120974 && !screen) location.y-=40;
 
             var paintHost:DisplayObjectContainer=screen?FBattleStage:host;
+            if(skill==13120975 && !screen)
+            {
+               // Size is measured in battle-stage units, independent of actor-parent scale.
+               paintHost=FBattleStage;
+               location=FBattleStage.globalToLocal(host.localToGlobal(at));
+            }
             if(skill==13120976 && !screen)
             {
                // The source beam travels toward +X from its bright core. Anchor that core at Shurado's mouth.
@@ -78,8 +87,8 @@
                }
                location=muzzle;paintHost=FBattleStage;
                // Stretch one original beam across the whole formation, keeping its core at the mouth.
-               w=Math.max(1500,(reach+220)/.42);
-               h=Math.max(850,(bottom-top+160)*2.2);
+               w=Math.max(1500*unit,(reach+220*unit)/.42);
+               h=Math.max(850*unit,(bottom-top+160*unit)*2.2);
                PlayPainVfxAsset(name,paintHost,location,w,h,0,false,false,false,Math.atan2(dy,dx)*180/Math.PI);
                ShowPainLaserImpact(new Point((left+right)/2,(top+bottom)/2),Math.max(500,right-left+320),Math.max(380,bottom-top+180),1960);
                continue;
@@ -162,7 +171,9 @@
 
       private function PainStrikePose(frame:TAnimationFrame) : void
       {
-         if(FId != 11120930 || (FSkillId != 13120971 && FSkillId != 13120975) || FTargets == null || FResults == null) return;
+         if(FId != 11120930 || (FSkillId != 13120971 && FSkillId != 13120975) || frame == null || (FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL)) return;
+         FBitmap.x=-frame.Pivot.X;FBitmap.y=-frame.Pivot.Y;
+         if(FTargets == null || FResults == null || FSkillId==13120975 && FFrameIndex<14) return;
          for(var i:int=0;i<FTargets.length && i<FResults.length;i++)
          {
             var enemy:TRole=FTargets[i];

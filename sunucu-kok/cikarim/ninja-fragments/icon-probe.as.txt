@@ -1,0 +1,66 @@
+package {
+ import Foundation.Decoder.Pak.TPakDecoder;
+ import Foundation.Resources.Textures.*;
+ import Foundation.Resources.Spaces.ResourcesSpace;
+ import flash.display.*;
+ import flash.events.*;
+ import flash.net.*;
+ import flash.text.*;
+ import flash.utils.*;
+ import flash.external.ExternalInterface;
+ public class TApplication extends MovieClip {
+  private var decoders:Array=[];
+  private var completed:int=0;
+  public function TApplication(){
+   loaderInfo.uncaughtErrorEvents.addEventListener("uncaughtError",function(e:Object):void{report("ERROR uncaught "+e.error);e.preventDefault();});
+   report("BOOT");
+   stage.scaleMode=StageScaleMode.NO_SCALE;stage.align=StageAlign.TOP_LEFT;stage.frameRate=30;
+   graphics.beginFill(0x202C36);graphics.drawRect(0,0,1250,650);graphics.endFill();
+   for each(var version:String in ["2017112917","2026090619"])
+    for each(var item:Object in __FEATURES__)
+     for each(var ident:uint in [item.item,item.icon])loadIcon(version,item,ident);
+   addEventListener(Event.ENTER_FRAME,tick);
+  }
+  private function report(value:String):void{if(ExternalInterface.available)ExternalInterface.call("iconProbe",value);}
+  private function loadIcon(version:String,item:Object,ident:uint):void{
+   report("LOAD "+version+" "+ident);
+   var loader:URLLoader=new URLLoader();loader.dataFormat=URLLoaderDataFormat.BINARY;
+   loader.addEventListener(IOErrorEvent.IO_ERROR,function(e:IOErrorEvent):void{report("ERROR missing "+version+" "+ident);});
+   loader.addEventListener(Event.COMPLETE,function(e:Event):void{
+    report("BYTES "+ident);
+    var bytes:ByteArray=loader.data as ByteArray;bytes.endian=Endian.LITTLE_ENDIAN;
+    var actual:uint=bytes.readUnsignedInt();var length:uint=bytes.readUnsignedInt();
+    var seq:ByteArray=new ByteArray();seq.endian=Endian.LITTLE_ENDIAN;bytes.readBytes(seq,0,length);
+    seq.readUnsignedInt();var timing:int=seq.readUnsignedByte();var frames:int=seq.readUnsignedShort();
+    seq.position+=12;var duration:int=seq.readUnsignedShort();
+    if(actual!=ident || timing!=0 || frames!=1){report("ERROR invalid static icon "+ident);return;}
+    if(bytes.readUnsignedShort()!=1){report("ERROR icon sequence count");return;}
+    length=bytes.readUnsignedInt();var pak:ByteArray=new ByteArray();bytes.readBytes(pak,0,length);
+    var decoder:TPakDecoder=new TPakDecoder();decoders.push(decoder);
+    decoder.OnResourceUnstreamized=function(sender:Object,images:Vector.<BitmapData>,index:uint):void{
+     if(images.length!=1||images[0].width!=40||images[0].height!=40){report("ERROR icon image "+ident);return;}
+     report("DECODED "+ident);
+     var sequence:TAnimationSequence=new TAnimationSequence(0);
+     sequence[new QName(ResourcesSpace,"CoerceProperties")](timing);
+     var iconFrame:TAnimationFrame=new TAnimationFrame(images[0]);
+     iconFrame[new QName(ResourcesSpace,"CoerceProperties")](images[0],duration);
+     sequence[new QName(ResourcesSpace,"FrameAppend")](iconFrame);
+     for each(var elapsed:int in [0,69,70,1000,10000]){
+      var frame:TAnimationFrame=sequence.GetAnimationFrameByTick(elapsed);
+      if(frame==null || frame.Surface!=images[0]){report("ERROR expired icon "+ident+" at "+elapsed);return;}
+     }
+     if(version=="2026090619"&&ident==item.icon){
+      var bitmap:Bitmap=new Bitmap(images[0]);bitmap.x=160+int(item.slot)*260;bitmap.y=180;bitmap.scaleX=bitmap.scaleY=4;addChild(bitmap);
+      var text:TextField=new TextField();text.defaultTextFormat=new TextFormat("Arial",20,0xFFD976,true);text.text=item.name;text.x=bitmap.x;text.y=360;text.width=240;addChild(text);
+     }
+     report("PASS "+version+" "+ident+" five native sample ticks");completed++;
+     if(completed==12){removeEventListener(Event.ENTER_FRAME,tick);report("DONE");}
+    };
+    decoder.Unstreamize(pak,new Vector.<BitmapData>(),0);
+   });
+   var file:String=ident.toString(16).toUpperCase();while(file.length<8)file="0"+file;
+   loader.load(new URLRequest("/Inventory/"+version+"/"+file+".TexClient"));
+  }
+  private function tick(event:Event):void{for each(var decoder:TPakDecoder in decoders)if(decoder.Unstreamizing)decoder.Process();}
+ }
+}

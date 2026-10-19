@@ -64171,7 +64171,7 @@
     "id": "00C835B7",
     "skillId": 13120951,
     "name": "Darkness - Kamui",
-    "desc": "Prompt. Consume 10% max HP; high chance to evade the next attack this round. The first 5 Chase or Standard attacks cannot defeat Obito this round. Cooldown 2 rounds, battlefield cooldown 0, chakra 0. Does not consume a Standard. Rage: enhanced Kamui activates free at eligible round start (2-round cooldown), guarantees next evasion; Mystery becomes Underground Roots.",
+    "desc": "Prompt. Consume 10% max HP; high chance to evade the next attack this round. The first 5 Chase or Standard attacks cannot defeat Obito this round. Cooldown 2 rounds, battlefield cooldown 0, chakra 0. Does not consume a Standard. Rage: enhanced Kamui activates free at the beginning of every round (no cooldown), guarantees next evasion; Mystery becomes Underground Roots.",
     "icon": 13120951,
     "sortId": 1
   },
@@ -64187,7 +64187,7 @@
     "id": "00C835B9",
     "skillId": 13120953,
     "name": "Darkness - Immense Impact",
-    "desc": "Consume 5% max HP; attack lowest HP enemy. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Kamui Tag: evasion capped at 35%, Defense and Resistance -15% until end of next round. Damage scales with Physical ATK.",
+    "desc": "Consume 5% max HP; attack lowest HP enemy. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Kamui Tag: evasion capped at 35%, Defense and Resistance -15% until end of next round. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120953,
     "sortId": 3
   },
@@ -64195,7 +64195,7 @@
     "id": "00C835BA",
     "skillId": 13120954,
     "name": "Darkness - Immense Impact [Rage]",
-    "desc": "Rage Standard: attack lowest HP enemy without HP cost. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Damage scales with Physical ATK.",
+    "desc": "Rage Standard: attack lowest HP enemy without HP cost. High chance of Knockdown and Level 2 Kamui Tag. Never misses; bypasses defensive skills. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120954,
     "sortId": 4
   },
@@ -64203,7 +64203,7 @@
     "id": "00C835BB",
     "skillId": 13120955,
     "name": "Wood Style - Hellish Chaos",
-    "desc": "Triggered at 20 Combo: damage up to 7 enemies and absorb 20 shared chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "desc": "Triggered at 20 Combo: damage up to 7 enemies and absorb 20 shared chakra per hit enemy. Once per round. No cooldown. Per-round Chase limits still apply. Damage scales with Physical ATK.",
     "icon": 13120955,
     "sortId": 5
   },
@@ -64211,7 +64211,7 @@
     "id": "00C835BC",
     "skillId": 13120956,
     "name": "Wood Style - Thrusting Spear",
-    "desc": "Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "desc": "Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round. No cooldown. Per-round Chase limits still apply. Damage scales with Physical ATK.",
     "icon": 13120956,
     "sortId": 6
   },
@@ -64219,7 +64219,7 @@
     "id": "00C835BD",
     "skillId": 13120957,
     "name": "Wood Style - Hellish Chaos [Rage]",
-    "desc": "Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "desc": "Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round. No cooldown. Per-round Chase limits still apply. Damage scales with Physical ATK.",
     "icon": 13120957,
     "sortId": 7
   },
@@ -64227,7 +64227,7 @@
     "id": "00C835BE",
     "skillId": 13120958,
     "name": "Wood Style - Thrusting Spear [Rage]",
-    "desc": "Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round. Cooldown 2 rounds, shared across base/Rage. Rage Spear retains two uses within an eligible round. Damage scales with Physical ATK.",
+    "desc": "Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round. No cooldown. Per-round Chase limits still apply. Damage scales with Physical ATK.",
     "icon": 13120958,
     "sortId": 8
   },
@@ -64235,7 +64235,7 @@
     "id": "00C835BF",
     "skillId": 13120959,
     "name": "Outrage - Darkness Commitment",
-    "desc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at round start (2-round cooldown) and one additional Standard after defeating an enemy with a Standard.",
+    "desc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at the beginning of every round (no cooldown) and one additional Standard after defeating an enemy with a Standard. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120959,
     "sortId": 9
   },
@@ -64267,7 +64267,7 @@
     "id": "00C835CE",
     "skillId": 13120974,
     "name": "Six-in-one",
-    "desc": "Attack up to 6 enemies, causes 4 Combo, reduces own Mystery cooldown by 1 and gains 1 Technique Point. Damage scales with Physical ATK.",
+    "desc": "Attack up to 6 enemies, causes 4 Combo, reduces own Mystery cooldown by 1 and gains 1 Technique Point. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120974,
     "sortId": 4
   },
@@ -64275,7 +64275,7 @@
     "id": "00C835CF",
     "skillId": 13120975,
     "name": "Six Paths - Chakra Rod Strike",
-    "desc": "Cooldown 2 rounds. Chase Repulse or Knockdown. Causes Knockdown, Chakra Disruption II and Pain II; target Chakra Limit becomes 20 through round end. Causes 30% splash damage to units 1 grid away. Never misses; ignores part of Defense/Resistance. Chakra Disruption II: Attack/Ninjutsu -10% per opposing Rinnegan ninja through next round end. Pain II: Defense/Resistance suppressed to 75% of base stats; lose 10% current HP on every Standard through next round end. Damage scales with Physical ATK.",
+    "desc": "No cooldown. Chase Repulse or Knockdown. Causes Knockdown, Chakra Disruption II and Pain II; target Chakra Limit becomes 20 through round end. Causes 30% splash damage to units 1 grid away. Never misses; ignores part of Defense/Resistance. Chakra Disruption II: Attack/Ninjutsu -10% per opposing Rinnegan ninja through next round end. Pain II: Defense/Resistance suppressed to 75% of base stats; lose 10% current HP on every Standard through next round end. Damage scales with Physical ATK.",
     "icon": 13120975,
     "sortId": 5
   },
@@ -64283,7 +64283,7 @@
     "id": "00C835D0",
     "skillId": 13120976,
     "name": "Shurado - Laser Canon",
-    "desc": "Cooldown 2 rounds. At an eligible round start, unleash a massive laser across ALL enemies in every row and remove 10 Chakra per hit unit. Gain 1 Technique Point; immune to Interruption for the round. Allied Rinnegan ninjas have unavoidable Mysteries through round end. Damage scales with Physical ATK.",
+    "desc": "No cooldown. At the beginning of every round, unleash a massive laser across ALL enemies in every row and remove 10 Chakra per hit unit. Gain 1 Technique Point; immune to Interruption for the round. Allied Rinnegan ninjas have unavoidable Mysteries through round end. Damage scales with Physical ATK.",
     "icon": 13120976,
     "sortId": 6
   },
@@ -64291,7 +64291,7 @@
     "id": "00C835D1",
     "skillId": 13120977,
     "name": "Outer Path - Six Paths of Pain",
-    "desc": "Outer Path - Six Paths of Pain: up to 5 Technique Points, each increases Attack and Ninjutsu by 12%. Gain 0.5 point whenever attacked. First defeat per battle: revive with 100% HP, lose ALL current skills, gain ONLY Final - Almighty Push and Final - The One called God.",
+    "desc": "Outer Path - Six Paths of Pain: up to 5 Technique Points, each increases Attack and Ninjutsu by 12%. Gain 0.5 point whenever attacked. First defeat per battle: revive with 100% HP, lose ALL current skills, gain ONLY Final - Almighty Push and Final - The One called God. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120977,
     "sortId": 7
   },
@@ -64299,7 +64299,7 @@
     "id": "00C835D2",
     "skillId": 13120978,
     "name": "Final - The One called God",
-    "desc": "Final - The One called God: Super Armor and immune to Debuffs; up to 2 Mysteries per round. Up to 5 Technique Points; Attack and Ninjutsu +20% per point. Gain 1 point whenever attacked. Critical Hits increase hit target Mystery Chakra Cost by 20. Once per battle, if another allied ninja is defeated, revive at 40% HP and trigger Super - Almighty Push.",
+    "desc": "Final - The One called God: Super Armor and immune to Debuffs; up to 2 Mysteries per round. Up to 5 Technique Points; Attack and Ninjutsu +20% per point. Gain 1 point whenever attacked. Critical Hits increase hit target Mystery Chakra Cost by 20. Once per battle, if another allied ninja is defeated, revive at 40% HP and trigger Super - Almighty Push. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120978,
     "sortId": 8
   },
@@ -64307,8 +64307,88 @@
     "id": "00C835D3",
     "skillId": 13120979,
     "name": "Super - Almighty Push",
-    "desc": "Triggered after Final revival. Unavoidable damage, 5 Combo and Interruption to all enemies. All enemies Mystery Chakra Cost +20 (stackable) through round end. Does not consume Technique Points or Chakra. Damage scales with Physical ATK.",
+    "desc": "Triggered after Final revival. Unavoidable damage, 5 Combo and Interruption to all enemies. All enemies Mystery Chakra Cost +20 (stackable) through round end. Does not consume Technique Points or Chakra. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13120979,
     "sortId": 9
+  },
+  {
+    "id": "00C835E9",
+    "skillId": 13121001,
+    "name": "Deity Gates - Wood Dragon Assault",
+    "desc": "Causes damage and Interruption to up to 7 units in the opponent's field, causes Gracious Deity Gate Seal Level 2 to the selected unit. Under Chakra Burst, his Mystery changes to Wood Style - Rumbling Dragon Strike. Damage scales with Physical ATK.",
+    "icon": 13121001,
+    "sortId": 1
+  },
+  {
+    "id": "00C835EA",
+    "skillId": 13121002,
+    "name": "Wood Style - Rumbling Dragon Strike",
+    "desc": "Causes unavoidable damage, Suppress Immunity until the end of the round to up to 12 units in the opponent's field and absorbs all Chakra from all units hit, causes Low Float and Level 2 - Weakness until the end of the next round to the selected unit. Damage scales with Physical ATK.",
+    "icon": 13121002,
+    "sortId": 2
+  },
+  {
+    "id": "00C835EB",
+    "skillId": 13121003,
+    "name": "Adamantine Fist",
+    "desc": "Chases and Attacks a Low Floated or Knocked Down unit, causes Knockdown and Interruption, can be triggered twice each round. This skill is unavoidable and has 35% Life Steal. If Hashirama's HP is not lower than 60%, his Chase changes to Wood Style - Severe Thousand Hands. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121003,
+    "sortId": 3
+  },
+  {
+    "id": "00C835EC",
+    "skillId": 13121004,
+    "name": "Wood Style - Severe Thousand Hands",
+    "desc": "Chase Low Float or Knockdown. Unavoidable Knockdown, 10 Combo and Interruption. Apply irremovable Enfeeble (Attack/Ninjutsu fixed to 75% base; ignores immunity) through round end. Mystery cooldown -1. Twice per round. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121004,
+    "sortId": 4
+  },
+  {
+    "id": "00C835ED",
+    "skillId": 13121005,
+    "name": "Wood Style - Severe Thousand Hands [Chakra Burst]",
+    "desc": "Chase under Chakra Burst: unavoidable Knockdown, 10 Combo and Interruption; Level 2 Weakness through round end. Mystery cooldown -1. Twice per round. Ignores 30% Defense/Resistance; if target already has Weakness, caps its Evasion at 20% until defeated. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121005,
+    "sortId": 5
+  },
+  {
+    "id": "00C835EE",
+    "skillId": 13121006,
+    "name": "Taijutsu Expert",
+    "desc": "Attacks the unit in front, a chance of causing High Float. This skill is unavoidable, has 35% Life Steal and additional Critical Rate increase. If Hashirama's HP is not lower than 60%, his Standard Attack changes to Strong Sword - Crusher. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121006,
+    "sortId": 6
+  },
+  {
+    "id": "00C835EF",
+    "skillId": 13121007,
+    "name": "Strong Sword - Crusher",
+    "desc": "Attack a random enemy line. Knockdown; reduce each hit unit Standard attempts by 1. 35% chance to grant an extra Standard, up to 5 total per round. +30% damage against Super Armor. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121007,
+    "sortId": 7
+  },
+  {
+    "id": "00C835F0",
+    "skillId": 13121008,
+    "name": "Wood Golem - Wood Fist Strike",
+    "desc": "Additional skill after Deity Gates when HP is at least 60%: damage up to 12 units, plus 25% splash to units 1 grid away. At most once per round. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121008,
+    "sortId": 8
+  },
+  {
+    "id": "00C835F1",
+    "skillId": 13121009,
+    "name": "Advent of a World of Flowering Trees",
+    "desc": "At the beginning of the battle and after deactivating Chakra Burst, activates the Deep Forest Emergence Barrier and Hashirama enters Explosive Mode, lasts for 2 rounds. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121009,
+    "sortId": 9
+  },
+  {
+    "id": "00C835F2",
+    "skillId": 13121010,
+    "name": "Chakra Burst",
+    "desc": "After Hashirama suffers the first damage in a round, receives Excited Mode until the end of the round. Hashirama can have 2 Technique Points and for every he has, increase his Defense by 20%. Whenever he suffers damage, receives 0.5 Technique Point and if he has 2, consumes all to recovers 40 Chakra and enters Chakra Burst. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
+    "icon": 13121010,
+    "sortId": 10
   }
 ]

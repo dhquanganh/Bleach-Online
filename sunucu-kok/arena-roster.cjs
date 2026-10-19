@@ -20,23 +20,24 @@ function createRoster(db, runtimes, snapshot, options = {}) {
     const dir = path.join(ROOT, '.accounts', 'arena-cache', id);
     fs.mkdirSync(dir, { recursive: true });
     for (const name of FILES) if (files[name] !== undefined) fs.writeFileSync(path.join(dir, name), files[name]);
-    const units = await new Promise((resolve, reject) => {
+    const snapshotData = await new Promise((resolve, reject) => {
       const child = fork(path.join(__dirname, 'arena-snapshot.cjs'), [], {
         env: { ...process.env, BLEACH_ACCOUNT_DIR: dir }, stdio: ['ignore','ignore','pipe','ipc'],
       });
-      let result = [], error = '';
+      let result = {units:[],profile:null}, error = '';
       const timeout = setTimeout(() => { child.kill(); reject(Error('Arena snapshot timed out')); }, 20000);
-      child.on('message', message => { result = message.units || []; });
+      child.on('message', message => { result = {units:message.units||[],profile:message.profile||null}; });
       child.stderr.on('data', chunk => { error += chunk; });
       child.on('error', e => { clearTimeout(timeout); reject(e); });
       child.on('exit', code => { clearTimeout(timeout); code === 0 ? resolve(result) : reject(Error(error.slice(0, 200))); });
     });
+    const {units,profile}=snapshotData;
     const level = units[0]?.level || 1;
     const row = units.length ? {
       accountId: id, id0: account.roleIdHi >>> 0, id1: account.roleIdLo >>> 0,
       name: account.karakter.nick || account.nick, country: Math.max(1, Number(account.country) || 1),
       military: militaries.includes(account.militaryRank) ? account.militaryRank : militaries[0],
-      level, units, heroes: units.map(u => u.id), positions: units.map(u => u.pos),
+      level, units, profile, heroes: units.map(u => u.id), positions: units.map(u => u.pos),
     } : null;
     cache.set(id, { hash, row }); return row;
   }

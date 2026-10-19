@@ -3,6 +3,7 @@
 const {app,BrowserWindow}=require('electron');
 const fs=require('fs'),path=require('path'),http=require('http');
 const base=__dirname,root=path.resolve(base,'../../..');
+const probePort=Number(process.env.PAIN_PROBE_PORT)||7457;
 const revival=process.env.PAIN_REVIVAL_PROBE==='1';
 const statusProbe=process.env.OBITO_STATUS_PROBE==='1';
 const out=path.join(base,revival?'validation/revival-final':process.env.PAIN_FLIGHT_PROBE==='1'?'validation/flight-final':process.env.PAIN_MOTION_PROBE==='1'?'validation/motion-final':process.env.PAIN_LASER_PROBE==='1'?'validation/laser-final':statusProbe?'validation/status-text':'validation/native');
@@ -41,7 +42,7 @@ function finish(){
   server.close();app.quit();
  });
 }
-app.on('ready',()=>server.listen(7457,'127.0.0.1',()=>{
+app.on('ready',()=>server.listen(probePort,'127.0.0.1',()=>{
  win=new BrowserWindow({width:1250,height:650,useContentSize:true,show:false,webPreferences:{plugins:true,nodeIntegration:false,webSecurity:false}});
  win.webContents.on('console-message',(e,l,msg)=>{
   log(msg);
@@ -55,6 +56,6 @@ app.on('ready',()=>server.listen(7457,'127.0.0.1',()=>{
   if(msg.indexOf('ERROR')>=0)errors.push(msg);
   if(msg.indexOf('DONE ')===0&&!done){const match=msg.match(/remaining=(\d+)/);remainingLayers=match?Number(match[1]):null;done=true;setTimeout(finish,600);}
  });
- win.loadURL('http://127.0.0.1:7457/');
+ win.loadURL('http://127.0.0.1:'+probePort+'/');
  setTimeout(()=>{if(!done){errors.push('ERROR timeout');log('ERROR timeout');finish();}},300000);
 }));

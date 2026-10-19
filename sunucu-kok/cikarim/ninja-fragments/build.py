@@ -9,6 +9,13 @@ FEATURES=[(11120901,14130901,41120901,'Naruto [Sage Mode]','naruto-sage-thumb.pn
           (11120903,14130903,41120903,'Jiraiya [Toads Chant]','jiraiya-icon-input.png',7),
           (11120910,14130910,41120910,'Kabuto [Great Ninja War]','kabuto-icon-input.png',7),
           (11120920,14130920,41120920,'Uchiha Obito [Rage Mode]','../../asset/Extracted_Obito_Rage/battle/role/head_45_45/11006051.png',7)]
+
+ICON_IDS={item:item+0x200000 for item in [14130920,14130930,14130940]}
+def icon_id(item):return ICON_IDS.get(item,item)
+def inventory_texture(ident,image):
+    # Inventory widgets can sample arbitrary ticks; a static image must never expire.
+    data=bytearray(native.texture(ident,[image],pivot=False));data[12]=0
+    return bytes(data)
 def utf(s):return native.utf(s)
 def u32(v):return native.u32(v)
 def serialize(kind,r):
@@ -37,7 +44,7 @@ def main():
     extras={2:[],0xCC:[],0xCB:[]};configfile=ROOT/'sunucu/mystic-shop-config.json';config=json.loads(configfile.read_text(encoding='utf-8'))
     changes={}
     for hero,item,offer,name,icon,quality in FEATURES:
-        a=copy.deepcopy(article);a.update(id=f'{item:08X}',name=name+' Modify Fragment',level=1,quality=quality,sort=item,picture=item,
+        a=copy.deepcopy(article);a.update(id=f'{item:08X}',name=name+' Modify Fragment',level=1,quality=quality,sort=item,picture=icon_id(item),
             functionDesc=f'<p>{name} Modify Fragment. Used for this partner\'s star upgrades and reincarnation.</p>')
         extras[2].append(a)
         r=copy.deepcopy(attr);r.update(id=f'{hero:08X}',chipValue=item,f8=0,f9=0)
@@ -49,7 +56,7 @@ def main():
         config['offers']=[o for o in config['offers'] if o['id']!=offer]+[new]
         im=ImageOps.fit(Image.open(ROOT/'gorsel'/icon).convert('RGBA'),(40,40),Image.Resampling.LANCZOS)
         for version in ['2017112917','2026090619']:
-            changes[native.PUBLIC/version/'Resources/Textures/Inventory'/f'{item:08X}.TexClient']=native.texture(item,[im],pivot=False)
+            changes[native.PUBLIC/version/'Resources/Textures/Inventory'/f'{icon_id(item):08X}.TexClient']=inventory_texture(icon_id(item),im)
     def patch(raw):
         kind=struct.unpack_from('<I',raw)[0]-0x1000000
         if kind not in extras:return raw

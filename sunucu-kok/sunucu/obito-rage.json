@@ -1,7 +1,7 @@
 {
   "heroId": 11120920,
   "name": "Uchiha Obito [Rage Mode]",
-  "balanceNote": "Explicit percentages follow the reference. Unspecified damage coefficients, high chances (75%), defense penetration (30%) and base chase cap (1) are configurable local values. Rage persists for the battle and triggers once. Line means the same battlefield column (positions modulo 5). User-requested recovery: Kamui 2 rounds, Rage Mystery 3, both Chase families 2, enhanced passive Kamui 2; base/Rage share recovery. Rage Spear may use both charges within its eligible round. All damaging moves scale exclusively with Physical ATK per user instruction; damage type still selects Defense/Resistance mitigation.",
+  "balanceNote": "Only Mystery skills retain cooldowns. All standards, chases, additional skills and automatic triggers have zero cooldown; per-round action/Chase limits and trigger conditions still apply. Rage Kamui and Shurado Laser execute once at every eligible round start. Explicit percentages follow the reference. Unspecified damage coefficients, high chances (75%), defense penetration (30%) and base chase cap (1) are configurable local values. Rage persists for the battle and triggers once. Line means the same battlefield column (positions modulo 5). All damaging moves scale exclusively with Physical ATK per user instruction; damage type still selects Defense/Resistance mitigation.",
   "mystery": {
     "id": 13120951,
     "name": "Darkness - Kamui",
@@ -44,7 +44,8 @@
     "ignoreDefensiveSkills": true,
     "hpCost": 0.05,
     "obitoStandard": true,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "cooldown": 0
   },
   "rageStandard": {
     "id": 13120954,
@@ -58,7 +59,8 @@
     "unavoidable": true,
     "ignoreDefensiveSkills": true,
     "obitoStandard": true,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "cooldown": 0
   },
   "chases": [
     {
@@ -71,7 +73,7 @@
       "combo": 1,
       "maxPerRound": 1,
       "obitoChaos": true,
-      "cooldown": 2,
+      "cooldown": 0,
       "attackStat": "atk"
     },
     {
@@ -87,7 +89,7 @@
       "ignoreDefense": 0.3,
       "hpCost": 0.05,
       "obitoSpear": true,
-      "cooldown": 2,
+      "cooldown": 0,
       "attackStat": "atk"
     }
   ],
@@ -102,7 +104,7 @@
       "combo": 1,
       "maxPerRound": 1,
       "obitoChaos": true,
-      "cooldown": 2,
+      "cooldown": 0,
       "attackStat": "atk"
     },
     {
@@ -117,7 +119,7 @@
       "maxPerRound": 2,
       "ignoreDefense": 0.3,
       "obitoSpear": true,
-      "cooldown": 2,
+      "cooldown": 0,
       "attackStat": "atk"
     }
   ],
@@ -125,12 +127,13 @@
     "id": 13120959,
     "name": "Outrage - Darkness Commitment",
     "support": true,
-    "multiplier": 0
+    "multiplier": 0,
+    "cooldown": 0
   },
   "kamuiChance": 0.75,
   "fatalProtectionHits": 5,
   "tagChance": 0.75,
   "rageHeal": 0.5,
   "lifeSteal": 0.12,
-  "enhancedKamuiCooldown": 2
+  "enhancedKamuiCooldown": 0
 }

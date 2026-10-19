@@ -27,7 +27,7 @@ def main():
     assert checked>0
     for hero,item,offer,name,icon,quality in build.FEATURES:
         assert tables[0xCC][hero]['chipValue']==item
-        assert tables[2][item]['picture']==item
+        assert tables[2][item]['picture']==build.icon_id(item)
         assert tables[0xCB][offer]['itemID']==item
         source=Image.open(build.ROOT/'gorsel'/icon).convert('RGBA')
         for version in ['2017112917','2026090619']:
@@ -35,7 +35,7 @@ def main():
             for category in ['HeadIcon','SmallIcon']:
                 im=decode(root/category/f'{hero:08X}.TexClient')
                 assert im.size==(48,48) and im.tobytes()==ImageOps.fit(source,(48,48),Image.Resampling.LANCZOS).tobytes()
-            im=decode(root/'Inventory'/f'{item:08X}.TexClient')
+            im=decode(root/'Inventory'/f'{build.icon_id(item):08X}.TexClient')
             assert im.size==(40,40) and im.tobytes()==ImageOps.fit(source,(40,40),Image.Resampling.LANCZOS).tobytes()
     print(f'PASS {checked} native DB records across packages, unique fragment mappings, exact supplied Jiraiya portrait, 48px hero icons and 40px fragment icons.')
 if __name__=='__main__':main()

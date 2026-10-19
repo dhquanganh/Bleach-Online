@@ -64,30 +64,30 @@ const hit=()=>({targets:[{cmd:1,targetCamp:1,targetPos:1,reportTargetStatus:code
 assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,2);
 assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,1);
 assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,0);
-n.startRound(ctx,2);assert.equal(n.resolve(ctx,u,v,hit(),{combo:1,causes:'lowFloat'},hit).length,0);
+n.startRound(ctx,2);assert.equal(n.resolve(ctx,u,v,hit(),{combo:1,causes:'lowFloat'},hit).length,1);
 n.startRound(ctx,3);assert.equal(n.resolve(ctx,u,v,hit(),{combo:1,causes:'lowFloat'},hit).length,1);
 console.log('PASS Obito: Rage threshold/recovery, Kamui costs/evasion/5 fatal protections, 2 Standards, kill credits, life steal, Roots cost reduction, line/lowest targets, immunity suppression, Tag duration and native scheduling in both camps.');
 
-// Base/Rage share chase recovery and transformation cannot bypass a spent cooldown.
+// Base/Rage retain per-round Chase budgets, with no recovery gap next round.
 u=obito();v=unit(200,1,1);ctx=n.create([[u],[v]],{random:()=>.5});start(ctx,1);
 assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,2);
-u.hp=4900;o.checkRage(u);start(ctx,2);assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,0);
+u.hp=4900;o.checkRage(u);start(ctx,2);assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,2);
 start(ctx,3);assert.equal(n.resolve(ctx,u,v,hit(),{combo:20,causes:'lowFloat'},hit).length,2);
-// Passive Kamui also recovers instead of replaying every round.
+// Passive Rage Kamui executes at every round start, once per round.
 u=obito();u.obitoRage=true;ctx=n.create([[u],[v]]);
 assert(start(ctx,1).some(f=>f.skillEffectId===13120951));
-assert(!start(ctx,2).some(f=>f.skillEffectId===13120951));
+assert(start(ctx,2).some(f=>f.skillEffectId===13120951));assert(!start(ctx,2).some(f=>f.skillEffectId===13120951),'Passive Kamui executes only once in the same round');
 assert(start(ctx,3).some(f=>f.skillEffectId===13120951));
 // Actual report spacing includes automatic Kamui and Roots on both camps.
 for(const skill of [13120951,13120952,13120955,13120956,13120957,13120958]){
  const last=new Map();
  for(const turn of rageReport.turns)for(const act of turn.actives){
   if(act.skillEffectId!==skill)continue;const key=act.activeCamp+':'+act.activePos;
-  if(last.has(key)&&last.get(key)!==turn.curTurn)assert(turn.curTurn-last.get(key)>=(skill===13120952?3:2));
+  if(last.has(key)&&last.get(key)!==turn.curTurn)assert(turn.curTurn-last.get(key)>=(skill===13120952?3:1));
   last.set(key,turn.curTurn);
  }
 }
-console.log('PASS Obito cooldowns: Kamui 2, Roots 3, Chase families 2; shared form recovery, two Rage Spear charges in eligible round, passive recovery and encoded report scheduling.');
+console.log('PASS Obito: Mystery Kamui 2 / Roots 3 retained; no Chase/passive cooldowns, bounded per-round Spear and Kamui, encoded scheduling.');
 // Float notifications include values for the actual effect, without adding HP changes.
 u=obito();u.obitoRage=true;u.hp=5000;v=unit(200,1,1);ctx=n.create([[u],[v]],{random:()=>.5});start(ctx,1);
 frame={targets:[{targetCamp:1,result:{hurtHp:100}}],reactions:[]};

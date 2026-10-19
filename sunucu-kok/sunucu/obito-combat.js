@@ -16,13 +16,13 @@ function kamui(ctx,u,enhanced,records){
   if(!enhanced)cost(u,config.mystery.hpCost,records);
   u.obitoKamui={chance:enhanced?1:config.kamuiChance,round:ctx.round};label(records,u,2);
   u.obitoFatalRound=ctx.round;u.obitoFatalHits=0;
-  u.obitoKamuiReadyRound=ctx.round+config.enhancedKamuiCooldown;
+  u.obitoKamuiRound=ctx.round;
 }
 function roundStart(ctx){const frames=[];for(const u of ctx.teams.flat()){
   if(!isObito(u)||u.hp<=0)continue;
   u.obitoStandards=0;u.obitoKillCredits=0;u.obitoChaseBoostRound=0;
   frames.push(...checkRage(u));
-  if(u.obitoRage&&ctx.round>=(u.obitoKamuiReadyRound||1)){const records=[];kamui(ctx,u,true,records);frames.push(visual(u,config.mystery),passive(u,records));}
+  if(u.obitoRage&&u.obitoKamuiRound!==ctx.round){const records=[];kamui(ctx,u,true,records);frames.push(visual(u,config.mystery),passive(u,records));}
 }return frames;}
 function prepareMove(ctx,u,target,move){
   if(!isObito(u)||!move)return move;
@@ -68,7 +68,7 @@ function fatalLimit(u,isStandardOrChase){
 }
 function available(ctx,u){return (u.obitoStandards||0)<2+(u.obitoRage?(u.obitoKillCredits||0):0);}
 const chaseKey=move=>move.obitoSpear?'obito:spear':'obito:chaos';
-function chaseReady(ctx,u,move){const key=chaseKey(move);return u.obitoChaseRounds?.[key]===ctx.round||ctx.round>=(ctx.skillReady.get(u)?.get(key)||1);}
+function chaseReady(ctx,u,move){if(!move.cooldown)return true;const key=chaseKey(move);return u.obitoChaseRounds?.[key]===ctx.round||ctx.round>=(ctx.skillReady.get(u)?.get(key)||1);}
 function spendChase(ctx,u,move){
   const key=chaseKey(move);u.obitoChaseRounds=u.obitoChaseRounds||{};
   if(u.obitoChaseRounds[key]===ctx.round)return;

@@ -16,8 +16,8 @@ for(const camp of [0,1]){
   p.afterHit(ctx,actor,opponents[0],opponents,p.config.laser,frame);
   assert.equal(actor.painTechnique,1,'One Technique Point per cast, not per target');
   assert.equal(ctx.chakra[1-camp],0,'Chakra drain must never make the shared pool negative');
-  assert.equal(actor.painLaserReadyRound,3);assert(p.active(actor,'painUnavoidableUntil'));assert(p.active(actor,'painInterruptImmuneUntil'));
-  n.startRound(ctx,2);assert.equal(p.roundStart(ctx).length,0);n.startRound(ctx,3);assert.equal(p.roundStart(ctx).length,1);
+  assert.equal(actor.painLaserRound,1);assert(p.active(actor,'painUnavoidableUntil'));assert(p.active(actor,'painInterruptImmuneUntil'));
+  n.startRound(ctx,2);assert.equal(p.roundStart(ctx).length,1);n.startRound(ctx,3);assert.equal(p.roundStart(ctx).length,1);
 
   // Check the actual report scheduler, including when the defending camp owns Pain.
   const nativeActor=pain(camp),nativeTargets=Array.from({length:15},(_,i)=>unit(12101003,i+1,1-camp));

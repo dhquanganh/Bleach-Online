@@ -1,0 +1,6 @@
+*.swf
+original/
+patched/
+verify/
+backups/
+__pycache__/

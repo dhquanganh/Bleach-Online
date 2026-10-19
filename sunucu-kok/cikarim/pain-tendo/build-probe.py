@@ -7,7 +7,7 @@ def main():
     animation=json.loads((BASE/'animation.json').read_text())
     production=(BASE/('status-patched' if args.status_check else 'patched')/'Processors/Game/Battle/Character/TRole.as').read_text(encoding='utf-8')
     pieces=[]
-    for name in ['PainVfxManifest','PreloadPainVfx','LoadPainVfxAtlas','PlayPainVfxAsset','UpdatePainVfx','ShowPainVfx','ShowPainLaserImpact','ShowPainStatusText','PainStrikePose','PainFlightPose']:
+    for name in ['PainVfxManifest','PreloadPainVfx','LoadPainVfxAtlas','TrimPainVfxCache','PlayPainVfxAsset','UpdatePainVfx','ShowPainVfx','ShowPainLaserImpact','ShowPainStatusText','PainStrikePose','PainFlightPose']:
         signature=re.search(r'      private (?:static )?function '+name+r'\(',production)
         if signature is None:continue
         start=signature.start();end=production.index('{',start)+1;depth=1
@@ -15,6 +15,7 @@ def main():
             depth+=(production[end]=='{')-(production[end]=='}');end+=1
         pieces.append(production[start:end])
     methods='\n'.join(pieces).replace('TRole','TApplication')
+    methods=re.sub(r'TBattleHandle\.PlaybackTime(?:\(\))?','getTimer()',methods)
     methods=methods.replace('FPainFxCache[name] = frames;','FPainFxCache[name] = frames; report("ATLAS "+name);')
     methods=methods.replace('failed = function(event:Event):void {release();loader.unload();};','failed = function(event:Event):void {report("ERROR atlas "+name);release();loader.unload();};')
     # Static atlas loader cannot call instance report.
@@ -43,6 +44,11 @@ def main():
     source=source.replace('if(leap){var pose:Object=role.PainRasenganPose();role.actor.x+=Number(pose.x);role.actor.y+=Number(pose.y);}','')
     source=source.replace('if(loaded<7)return;','if(loaded<8)return;')
     source=source.replace('4000','5000').replace('slot>=12','slot>=18').replace('slot<6?0:1','slot<9?0:1').replace('slot%6','slot%9')
+    if not any([args.status_check,args.laser_check,args.flight_check,args.motion_check,args.revival_check]):
+        bounds=[0]
+        for name in names*2:bounds.append(bounds[-1]+len(animation['clips'][name]['assets'])*40+600)
+        source=source.replace('var slot:int=int(age/5000);','var slots:Array='+json.dumps(bounds)+';var slot:int=0;while(slot<18 && age>=slots[slot+1])slot++;')
+        source=source.replace('int((age%5000)/40)','int((age-slots[slot])/40)')
     source=source.replace('    if(slot==6)SetPainBarrier(battle,false);','')
     source=source.replace('SetPainBarrier(battle,false);report("DONE shared native component; background cleared="+(battle.getChildByName("jiraiyaEsophagusBackdrop")==null));','var remaining:int=0;var hosts:Array=[battle];while(hosts.length){var fxHost:DisplayObjectContainer=hosts.pop() as DisplayObjectContainer;for(var q:int=0;q<fxHost.numChildren;q++){var child:DisplayObject=fxHost.getChildAt(q);if(child.name=="painSkillVfx")remaining++;if(child is DisplayObjectContainer)hosts.push(child);}} report("DONE Pain native component; remaining="+remaining);')
     source=source.replace('var hit:int=index==0?24:(metadata[name].hitFrames!=null?int(metadata[name].hitFrames[0]):8);','var hit:int=metadata[name].hitFrames!=null?int(metadata[name].hitFrames[0]):10;')
@@ -85,7 +91,7 @@ def main():
 """+source[end:]
     source=source.replace('if(loaded<8)return;','if(loaded<10)return;').replace('5000','8000')
     methods=methods.replace('frame:TAnimationFrame','frame:Object')
-    fields+='\n public var FBitmap:Bitmap=actor;\n public var FPainFinal:Boolean=false;'
+    fields+='\n public var FBitmap:Bitmap=actor;\n public var FPainFinal:Boolean=false;\n public var FCombatVfxSerial:uint=0;\n public var FPainActiveVfx:Array=[];'
     if args.revival_check:
         start=production.index('      public function ChangeHP(')
         hp=production[start:production.index('      protected function OnMouseMove(',start)]
@@ -201,6 +207,7 @@ def main():
         source=source.replace('role.actor.bitmapData=clip.images[index];role.actor.x=-clip.meta[index].px;', 'if(role.actor.bitmapData!=clip.images[index]){role.actor.bitmapData=clip.images[index];role.actor.x=-clip.meta[index].px;')
         end='role.PainStrikePose({Surface:clip.images[index],Pivot:{X:clip.meta[index].px,Y:clip.meta[index].py}});'
         source=source.replace(end,end+'} role.PainFlightPose({Surface:clip.images[index],Pivot:{X:clip.meta[index].px,Y:clip.meta[index].py}}); if(role.FSkillId!=0)report("FLIGHT skill="+role.FSkillId+" camp="+role.Camp+" frame="+index+" feet="+(role.actor.y+clip.images[index].height));')
+    source=source.replace('    caster.FSkillId=skills[index];','    ++caster.FCombatVfxSerial;caster.FSkillId=skills[index];')
     if args.motion_check:
         source=re.sub(r'private var skills:Array=\[.*?\];','private var skills:Array=[13120971,13120974,13120975];',source)
         source=re.sub(r'private var clipNames:Array=\[.*?\];','private var clipNames:Array=["almighty","standard","chase"];',source)

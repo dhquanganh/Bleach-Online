@@ -207,7 +207,7 @@ function walkCount(dir, ext) { let n = 0; for (const e of fs.readdirSync(dir, { 
 const herolarMod = require('./herolar');
 function heroListesi() {
   const ad = new Map(jread('BaseHero.json', []).map(h => [parseInt(h.id, 16) >>> 0, h]));
-  return herolarMod.gecerliHerolar().map(h => {
+  return herolarMod.gecerliHerolar().filter(h => h.id !== 11120940).map(h => {
     const b = ad.get(h.id) || {};
     return { id: h.id, name: b.name || ('#' + h.id), quality: Number(b.quality) || 0, assess: b.assess || '', profession: Number(b.profession) || 0 };
   }).sort((a, b) => (b.quality - a.quality) || String(a.name).localeCompare(String(b.name)));

@@ -7,6 +7,9 @@ try {
   if (!account.karakter || !account.karakter.anaId) process.exit(0);
   require('./sunucu/statlar').anaIdAyarla(account.karakter.anaId);
   const units = require('./sunucu/savas').playerTeam();
-  if (units.length) process.send({ units }, () => process.disconnect());
+  let profile=null;
+  try {profile=require('./sunucu/player-profile').snapshot(account);}
+  catch(error) {process.stderr.write('Public profile: '+error.message+'\n');}
+  if (units.length) process.send({ units,profile }, () => process.disconnect());
   else process.disconnect();
 } catch (e) { process.stderr.write('Arena snapshot: ' + e.message + '\n'); process.exitCode = 1; if (process.connected) process.disconnect(); }

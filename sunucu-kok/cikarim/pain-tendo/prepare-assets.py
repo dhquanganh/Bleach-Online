@@ -16,6 +16,11 @@ def decode(path):
  for a in list(c.findall('asset')):
   if not a.get('className') or a.get('id') in seen:c.remove(a)
   else:seen.add(a.get('id'))
+ # extname references an external sprite (usually the ground shadow). Its assetId
+ # is a placeholder, NOT an index into this SWF's embedded character bitmaps.
+ for frame in c.iter('frame'):
+  for element in list(frame.findall('element')):
+   if element.get('extname'):frame.remove(element)
  return c,images
 def main():
  config,images=decode(SOURCE/'assets/battle/role/left/11006531.swf')
@@ -23,11 +28,14 @@ def main():
  vfx=json.loads((BASE/'vfx.json').read_text());ident=0
  data={'clips':{},'framePivots':{},'moves':MOVES,'effects':EFFECTS,'sourceFrameRate':24,'models':{'11120930':{'':'idle','0a':'idle','0b':'standard','0c':['almighty','extreme','chase','laser','revive','final-revive','super'],'0d':'hit','0e':'idle','0f':'run'}}}
  for name,action_name in MAPPING.items():
-  frames,action=mme.render(config,images,action_name,scale=.85)
+  frames,action=mme.render(config,images,action_name,scale=1.05 if name=='chase' else .85)
   indices=[min(len(frames)-1,round(t*24/25)) for t in range(math.ceil(len(frames)*25/24))];ids=[]
   last_visible=None;recovered=0
   for i in indices:
    image=frames[i]
+   if name=='chase' and image.getbbox() is None:
+    image=Image.open(dest/f'{data["clips"]["idle"]["assets"][i%len(data["clips"]["idle"]["assets"])]:03}.png').convert('RGBA')
+    image.info['pivot']=data['framePivots'][str(data['clips']['idle']['assets'][i%len(data['clips']['idle']['assets'])])]
    if name in ['extreme','super']:
     # The source movie removes the actor during its full-screen cinematic. Our battle
     # keeps the actor on stage: hold its airborne pose instead of installing empty cells.
