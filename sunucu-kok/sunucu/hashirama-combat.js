@@ -61,7 +61,7 @@ function onDamage(ctx,actor,target,result,move,records,events){
   if(target.hashFirstDamageRound!==ctx.round){target.hashFirstDamageRound=ctx.round;target.hashExcitedUntil=ctx.round;label(records,target,2);}
   const wasBurst=burst(target);
   target.hashTechnique=Math.min(2,(target.hashTechnique||0)+.5);label(records,target,1,Math.round(target.hashTechnique*10));
-  if(!wasBurst){const healed=skills.restore(target,target,target.maxHp*.05,records);if(healed)label(records,target,11,healed);target.mysteryReadyRound=Math.max(ctx.round,(target.mysteryReadyRound||1)-1);}
+  if(!wasBurst){const healed=skills.restore(target,target,target.maxHp*config.senjutsuHealRatio,records);if(healed)label(records,target,11,healed);target.mysteryReadyRound=Math.max(ctx.round,(target.mysteryReadyRound||1)-1);}
   if(target.hashTechnique>=2){target.hashTechnique=0;ctx.chakra[target.camp]=Math.min(ctx.chakraLimit?.[target.camp]||100,ctx.chakra[target.camp]+40);if(!wasBurst){target.hashBurstUntil=ctx.round;target.hashMysteryStacks=(target.hashMysteryStacks||0)+1;label(records,target,4,target.hashMysteryStacks*10);events.push(visual(target,config.burst));}label(records,target,1,0);label(records,target,12,40);}
 }
 function targets(ctx,move,target,opponents){

@@ -190,7 +190,10 @@
       "sourceAction": "A_1hit",
       "sourceFrames": 65,
       "hitFrames": [
-        21
+        21,
+        28,
+        35,
+        42
       ],
       "returnFrame": 68
     },
@@ -265,7 +268,10 @@
       "sourceAction": "SP_skill4",
       "sourceFrames": 59,
       "hitFrames": [
-        18
+        18,
+        23,
+        28,
+        33
       ],
       "returnFrame": 62
     },
@@ -449,7 +455,11 @@
       "sourceFrames": 163,
       "visibleHoldFrames": 113,
       "hitFrames": [
-        78
+        78,
+        91,
+        104,
+        117,
+        130
       ],
       "returnFrame": 170
     },
@@ -516,7 +526,10 @@
       "sourceAction": "SP_skill2",
       "sourceFrames": 51,
       "hitFrames": [
-        20
+        20,
+        25,
+        30,
+        35
       ],
       "returnFrame": 54
     },
@@ -613,7 +626,10 @@
       "sourceAction": "SP_skill5",
       "sourceFrames": 80,
       "hitFrames": [
-        49
+        49,
+        55,
+        61,
+        67
       ],
       "returnFrame": 84
     },
@@ -925,7 +941,11 @@
       "sourceFrames": 163,
       "visibleHoldFrames": 113,
       "hitFrames": [
-        78
+        78,
+        91,
+        104,
+        117,
+        130
       ],
       "returnFrame": 170
     },

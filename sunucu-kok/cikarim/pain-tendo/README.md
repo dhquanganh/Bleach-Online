@@ -1,6 +1,6 @@
 # Pain - Tendo [Six Paths Rinnegan]
 
-Latest client: **2026101970** (source-detail paged VFX, viewport sizing and bounded streaming cache).
+Latest client: **2026101974** (source-detail paged VFX, viewport sizing and bounded streaming cache).
 
 All eleven VFX layers have been rebuilt from native source PNGs, using fresh .7-zoom SWF exports for the revival, Almighty Push, laser beam, standard and Chase. Output reaches 1024x768 without upscaling source pixels. Atlas pages stay within 2048px; playback prefetches the next page and bounds each ninja's cache to 40 million pixels. Every Pain layer is tied to the active cast serial and character frame, including at x2 battle speed. Size/position conversion uses the battle viewport rather than a scaled actor container. Mystery/standard/Chase/revival visual footprints are enlarged; combat timings and cooldown rules are unchanged. Use `../upgrade-ninja-vfx.py --export --ffdec JAR`, `../upgrade-ninja-vfx.py`, then `../upgrade-vfx-client.py --ffdec JAR --install`; verify with `../verify-vfx-quality.py` and the full native component probe.
 
@@ -218,3 +218,10 @@ Laser verification: `validation/laser-final` contains two successful Flash cases
 four effect-layer plays, 11 loaded atlases, no errors. Both directions were visually
 inspected and the logged source-to-target vectors checked with scaled/translated
 role containers and unequal row heights. Pain combat/cooldown tests still pass.
+
+Multi-hit combat (2026101971): every damaging skill now has 4 or 5 timed impacts. See [shared multi-hit implementation](../ninja-multihit.md). Revival, Forest and Chakra Burst remain support actions.
+
+
+Physical damage rule: every damaging move, including talent-triggered and splash attacks, uses Physical ATK and Physical DEF only (`attackStat: atk`, `damageType: physical`). Resistance and Magic ATK do not affect attack damage. Dedicated HP costs, healing and percentage-HP loss retain their separate formulas.
+
+Camera shake is disabled in client 2026101974, including cast-lifetime and short impact/critical shake. Physical damage rules, multihit and skill animation remain.

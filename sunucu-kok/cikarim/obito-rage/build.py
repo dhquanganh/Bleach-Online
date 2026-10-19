@@ -20,7 +20,7 @@ DESC={
 13120959:'Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at the beginning of every round (no cooldown) and one additional Standard after defeating an enemy with a Standard.'}
 for sid in [13120955,13120956,13120957,13120958]:DESC[sid]+=' No cooldown. Per-round Chase limits still apply.'
 for move in MOVES:
-    if move.get('attackStat')=='atk':DESC[move['id']]+=' Damage scales with Physical ATK.'
+    if move.get('attackStat')=='atk':DESC[move['id']]+=' Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.'
 
 def rows():
     old=json.loads((native.DATA/'BaseHero.json').read_text(encoding='utf-8'))

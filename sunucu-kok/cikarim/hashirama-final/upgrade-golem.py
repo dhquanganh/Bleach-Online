@@ -18,7 +18,7 @@ for tick,ident in enumerate(clip['assets'][:-1]):
  i=min(len(frames)-1,round(tick*24/25));im=frames[i]
  if not im.getbbox():continue
  im.save(BASE/'frames'/f'{ident:03}.png');data['framePivots'][str(ident)]=list(im.info['pivot']);changed+=1
-assert clip['hitFrames']==[19] and clip['returnFrame']==53
+assert clip['hitFrames'][0]==19 and clip['returnFrame']==53
 (BASE/'animation.json').write_text(json.dumps(data,indent=2))
 hero=11120940;suffix='0c';ident=int(f'{hero:X}'+suffix,16);sequences=[]
 for name in data['models'][str(hero)][suffix]:

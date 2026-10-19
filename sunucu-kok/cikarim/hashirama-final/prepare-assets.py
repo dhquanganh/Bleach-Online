@@ -56,6 +56,8 @@ def main():
  for variant in ['11003341','11003351']:
   for source,label in [(f'assets/user/ninja/ninjaImg/{variant}.swf','showcase'),(f'assets/role/npc/scene/npcres/{variant}_outdoor.swf','outdoor')]:
    conf,ims=p.decode(SOURCE/source);action=next(a.get('name') for a in conf.findall('action') if a.get('name') in ['C_idle','idle','idle_0']);im=p.mme.render(conf,ims,action,scale=1)[0][0];im.save(preview/(label+'-'+variant+'.png'))
+ mspec=importlib.util.spec_from_file_location('multihit',BASE.parent/'ninja-multihit.py');multi=importlib.util.module_from_spec(mspec);mspec.loader.exec_module(multi)
+ multi.configure(BASE.name,data)
  (BASE/'animation.json').write_text(json.dumps(data,indent=2))
  for item in json.loads((SOURCE/'manifest.json').read_text()):assert hashlib.sha256((SOURCE/item['file']).read_bytes()).hexdigest()==item['sha256']
  print('PASS Hashirama source frames and all supplied file checksums')

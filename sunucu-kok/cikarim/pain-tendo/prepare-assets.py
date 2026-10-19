@@ -73,6 +73,8 @@ def main():
  # Both other supplied MME assets are decoded for UI/map previews.
  for source,label in [('assets/user/ninja/ninjaImg/11006531.swf','showcase'),('assets/role/npc/scene/npcres/11006531_outdoor.swf','outdoor')]:
   c,ims=decode(SOURCE/source);action=next(a.get('name') for a in c.findall('action') if a.get('name') in ['C_idle','idle','idle_0']);im=mme.render(c,ims,action,scale=1)[0][0];im.save(preview/(label+'.png'))
+ mspec=importlib.util.spec_from_file_location('multihit',BASE.parent/'ninja-multihit.py');multi=importlib.util.module_from_spec(mspec);mspec.loader.exec_module(multi)
+ multi.configure(BASE.name,data)
  (BASE/'animation.json').write_text(json.dumps(data,indent=2))
  for item in json.loads((SOURCE/'manifest.json').read_text()):assert hashlib.sha256((SOURCE/item['file']).read_bytes()).hexdigest()==item['sha256']
  print('PASS',ident,'Pain playback frames;',len(data['clips']),'clips; eight supplied assets verified')

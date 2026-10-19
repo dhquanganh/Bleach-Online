@@ -1,6 +1,6 @@
 # Hashirama Senju [The Final Battle]
 
-Hero **11120940**, SSS (quality 7). Client **2026101970**. All 15 formation slots are enabled in native drag/drop, hover and validity checks. Formation capacity is retained. Gold shop listing and purchase validation exclude this hero; the launcher also filters his ID. No saved accounts/formations are modified by this installation.
+Hero **11120940**, SSS (quality 7). Client **2026101974**. All 15 formation slots are enabled in native drag/drop, hover and validity checks. Formation capacity is retained. Gold shop listing and purchase validation exclude this hero; the launcher also filters his ID. No saved accounts/formations are modified by this installation.
 
 Animation repair: MME elements carrying extname refer to external ground shadows; assetId 0 is a placeholder. Interpreting it as embedded Asset_0 rendered another full Hashirama. The decoder now skips those external references. Attack roots cancel the source's horizontal movement before runtime adds one eased approach, without centering on changing weapon/arm bounds. Burst uses the stable charging pose instead of the map entrance jump.
 
@@ -24,7 +24,7 @@ Taijutsu/Adamantine: 35% life steal. Taijutsu: +20% crit, 40% High Float chance.
 
 Chases share two charges per round across all variants. Severe: 10 Combo, Knockdown, Interruption, Mystery recovery -1. Base Severe inflicts irremovable Enfeeble ignoring immunity; Burst Severe inflicts Weakness II. Both suppress Attack/Ninjutsu to 75% base. Burst Chases ignore 30% defenses; Severe against prior Weakness caps evasion at 20% until defeat/battle end. Golem: 12 primary victims and 25% orthogonal splash per affected neighbor.
 
-Each positive damage event grants 0.5 Technique Point (max 2; Defense +20% per point). At 2 consume all, recover up to 40 Chakra and enter Burst. First damage per round grants Excited (+60% Attack/Ninjutsu, -30% Defense/Resistance). Base Senjutsu: debuff immunity, heal 5% max HP, Mystery recovery -1 per damage event. Burst replaces healing/reduction with Advanced/Fire immunity. A living Burst Hashirama grants the damaging ally +3% Attack/Ninjutsu stacks for the respective damage type. Entering/leaving Burst grants stacking +10% Mystery damage; point cycles within an existing Burst do not count as another activation.
+Each positive damage event grants 0.5 Technique Point (max 2; Defense +20% per point). At 2 consume all, recover up to 40 Chakra and enter Burst. First damage per round grants Excited (+60% Attack/Ninjutsu, -30% Defense/Resistance). Base Senjutsu: debuff immunity, heal 25% max HP, Mystery recovery -1 per damage event. Burst replaces healing/reduction with Advanced/Fire immunity. A living Burst Hashirama grants the damaging ally +3% Attack/Ninjutsu stacks for the respective damage type. Entering/leaving Burst grants stacking +10% Mystery damage; point cycles within an existing Burst do not count as another activation.
 
 Burst ends at round end, restores base skills and triggers Deep Forest/Explosive for 2 rounds, also active at battle start. Mysteries from Explosive units under Deep Forest inflict Root Binding II on hit enemies: no Standards, Defense/Resistance fixed to base while the forest remains active. The caster is never rooted.
 
@@ -51,3 +51,10 @@ Thousand Hands cinematic repair (1967): Rumbling Dragon now uses one 1024x576 ci
 Rebuild: export the texie SWF images with FFDec into `native-export/cinematic-images`, run `prepare-cinematic.py`, then `fix-cinematic.py --ffdec JAR --install`. The incremental client installer verifies that every other private role method, the complete battle speed class, Inspector and all non-code UI tags remain unchanged. `verify-cinematic.py` checks all 225 timeline entries and seven lossless pages. `build-probe.py --cinematic-only` exercises four mirrored/scaled native Flash cases and records the close-up, hit and barrage frames.
 
 Complete VFX quality audit (1970): all nine remaining source layers use lossless paged output up to 1024x768, with fresh .7-zoom exports for Deity Gates and the Severe Thousand Hands crater. Deity Gates now has a native 1920x1080 portrait cutaway. Existing Thousand Hands cinematic pages are preserved. Golem alone is rerendered at .60 summon scale (previously .47), retaining the character layer, native hit/return frames and both texture versions. Cache loading prefetches one page ahead, uses a 40-million-pixel per-ninja LRU budget and avoids loading every HD atlas at battle entry. New casts immediately remove their own previous layers before scheduling replacements; serial/frame guards remain. Build and verify with the shared ../upgrade-ninja-vfx.py, ../upgrade-vfx-client.py and ../verify-vfx-quality.py plus upgrade-golem.py and verify-assets.py.
+
+Multi-hit combat (2026101971): every damaging skill now has 4 or 5 timed impacts. See [shared multi-hit implementation](../ninja-multihit.md). Revival, Forest and Chakra Burst remain support actions.
+
+
+Physical damage rule: every damaging move, including talent-triggered and splash attacks, uses Physical ATK and Physical DEF only (`attackStat: atk`, `damageType: physical`). Resistance and Magic ATK do not affect attack damage. Dedicated HP costs, healing and percentage-HP loss retain their separate formulas.
+
+Camera shake is disabled in client 2026101974, including cast-lifetime and short impact/critical shake. Physical damage rules, multihit and skill animation remain.

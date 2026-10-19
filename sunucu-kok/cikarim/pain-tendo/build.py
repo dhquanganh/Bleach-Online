@@ -6,6 +6,8 @@ BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;CFG=json.loads((ROOT/'sunucu/pain-tendo.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13621971
+_multi_spec=importlib.util.spec_from_file_location('multihit',BASE.parent/'ninja-multihit.py');multihit=importlib.util.module_from_spec(_multi_spec);_multi_spec.loader.exec_module(multihit)
+multihit.configure(BASE.name,ANIM)
 SOURCE=ROOT.parent/'asset/Pain_Tendo_Six_Paths_Rinnegan'
 MOVES=[CFG[k] for k in ['mystery','extremeMystery','finalMystery','standard']]+CFG['chases']+[CFG[k] for k in ['laser','transformation','finalRevival','superPush']]
 DESC={
@@ -20,7 +22,8 @@ DESC={
 13120979:'Triggered after Final revival. Unavoidable damage, 5 Combo and Interruption to all enemies. All enemies Mystery Chakra Cost +20 (stackable) through round end. Does not consume Technique Points or Chakra.'}
 BASE_PASSIVE='The One called God: every damage event scales Attack by 12%; Critical Hits inflict Chakra Disruption II. Cancel incoming Debuffs except Level 2; each cancellation increases Initiative by 2%, stacking up to 5. Horror II (Fear): cannot Standard Attack or receive external Buffs, stat increases or Shields until next round end or the affected unit executes a Mystery.'
 for move in MOVES:
-    if move.get('attackStat')=='atk':DESC[move['id']]+=' Damage scales with Physical ATK.'
+    if move.get('attackStat')=='atk':DESC[move['id']]+=' Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.'
+    if move.get('hitCount'):DESC[move['id']]+=f" Deals {move['hitCount']} consecutive damage hits; the listed damage coefficient is the total per cast."
 def rows():
     old=json.loads((native.DATA/'BaseHero.json').read_text(encoding='utf-8'))
     h=copy.deepcopy(next(h for h in old if h['assess']=='SSS'))
@@ -28,7 +31,7 @@ def rows():
     for move in MOVES:
         clip=ANIM['clips'][ANIM['moves'][str(move['id'])]]
         effect={'target':1,'backPoint':{str(clip['returnFrame']):1}}
-        if 'hitFrames' in clip:effect['appendEffect']={str(clip['hitFrames'][0]):{'target':2,'effectId':HIT,'anmyhp':{'0':100,'checkDie':1}}}
+        if 'hitFrames' in clip:effect['appendEffect']=multihit.append_effect(clip,HIT)
         effects[str(move['id'])]=effect
     h.update(id=native.hexid(HERO),name=CFG['name'],assess='SSS',profession=1,quality=7,isMain=0,sex=1,level=1,needLevel=1,
         desc='SSS Assaulter / Middle Row. Akatsuki, Rinnegan. '+DESC[13120977]+' '+BASE_PASSIVE,

@@ -10,7 +10,7 @@
     "name": "Tendo - Almighty Push",
     "prompt": true,
     "target": 7,
-    "damageType": "mixed",
+    "damageType": "physical",
     "multiplier": 1.5,
     "combo": 1,
     "chakraCost": 20,
@@ -19,14 +19,15 @@
     "consumesPrimary": false,
     "painMystery": true,
     "techniqueCost": 1,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "hitCount": 4
   },
   "extremeMystery": {
     "id": 13120972,
     "name": "Extreme - Tendo - Almighty Push",
     "prompt": true,
     "target": "all",
-    "damageType": "mixed",
+    "damageType": "physical",
     "multiplier": 1.8,
     "combo": 5,
     "causes": "repulse",
@@ -37,14 +38,15 @@
     "painMystery": true,
     "consumeAllTechnique": true,
     "lifeSteal": 0.07,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "hitCount": 5
   },
   "finalMystery": {
     "id": 13120973,
     "name": "Final - Tendo - Almighty Push",
     "prompt": true,
     "target": "all",
-    "damageType": "mixed",
+    "damageType": "physical",
     "multiplier": 1.8,
     "combo": 5,
     "causes": "repulse",
@@ -55,18 +57,20 @@
     "consumesPrimary": false,
     "painMystery": true,
     "techniqueCost": 2,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "hitCount": 5
   },
   "standard": {
     "id": 13120974,
     "name": "Six-in-one",
     "target": 6,
-    "damageType": "mixed",
+    "damageType": "physical",
     "multiplier": 1,
     "combo": 4,
     "painStandard": true,
     "attackStat": "atk",
-    "cooldown": 0
+    "cooldown": 0,
+    "hitCount": 4
   },
   "chases": [
     {
@@ -77,7 +81,7 @@
         "knockdown"
       ],
       "target": "painSplash",
-      "damageType": "mixed",
+      "damageType": "physical",
       "multiplier": 1.2,
       "combo": 1,
       "causes": "knockdown",
@@ -86,19 +90,21 @@
       "maxPerRound": 1,
       "painChase": true,
       "cooldown": 0,
-      "attackStat": "atk"
+      "attackStat": "atk",
+      "hitCount": 4
     }
   ],
   "laser": {
     "id": 13120976,
     "name": "Shurado - Laser Canon",
     "target": "all",
-    "damageType": "ninjutsu",
+    "damageType": "physical",
     "multiplier": 1.1,
     "combo": 1,
     "painLaser": true,
     "cooldown": 0,
-    "attackStat": "atk"
+    "attackStat": "atk",
+    "hitCount": 4
   },
   "transformation": {
     "id": 13120977,
@@ -118,13 +124,14 @@
     "id": 13120979,
     "name": "Super - Almighty Push",
     "target": "all",
-    "damageType": "mixed",
+    "damageType": "physical",
     "multiplier": 1.8,
     "combo": 5,
     "unavoidable": true,
     "painSuper": true,
     "attackStat": "atk",
-    "cooldown": 0
+    "cooldown": 0,
+    "hitCount": 5
   },
   "techniqueLimit": 5,
   "baseTechniqueRate": 0.12,
@@ -132,5 +139,5 @@
   "damageAttackRate": 0.12,
   "initiativeRate": 0.02,
   "initiativeStacks": 5,
-  "balanceNote": "Only Mystery skills retain cooldowns. All standards, chases, additional skills and automatic triggers have zero cooldown; per-round action/Chase limits and trigger conditions still apply. Rage Kamui and Shurado Laser execute once at every eligible round start. Mystery recovery persists across HP form changes and revival. Other explicit numbers and forms follow the supplied screenshot. Damage coefficients and the unspecified 'certain amount' of Chase penetration (30%) are local configurable values, not stated in the reference. Damage-triggered Attack scaling stacks additively per damaged target; TP bonuses are a separate multiplier. Shared camp Chakra is used by this engine. Final critical-hit cost increase lasts through the current round, matching the other +20 cost effect. Splash uses orthogonally adjacent battlefield grids and deals 30% of the primary hit. Base revival is once at 100% HP; final revival requires another defeated allied ninja, once at 40% HP. Final form has only its two stated skills. All damaging moves scale exclusively with Physical ATK, including Laser, Final and Super Push; damage type still selects Defense/Resistance mitigation. Laser targeting is overridden by request to hit all living enemy combat units in every row."
+  "balanceNote": "Only Mystery skills retain cooldowns. All standards, chases, additional skills and automatic triggers have zero cooldown; per-round action/Chase limits and trigger conditions still apply. Rage Kamui and Shurado Laser execute once at every eligible round start. Mystery recovery persists across HP form changes and revival. Other explicit numbers and forms follow the supplied screenshot. Damage coefficients and the unspecified 'certain amount' of Chase penetration (30%) are local configurable values, not stated in the reference. Damage-triggered Attack scaling stacks additively per damaged target; TP bonuses are a separate multiplier. Shared camp Chakra is used by this engine. Final critical-hit cost increase lasts through the current round, matching the other +20 cost effect. Splash uses orthogonally adjacent battlefield grids and deals 30% of the primary hit. Base revival is once at 100% HP; final revival requires another defeated allied ninja, once at 40% HP. Final form has only its two stated skills. All damaging moves scale exclusively with Physical ATK, including Laser, Final and Super Push; all attack damage is physical and is mitigated by Physical DEF only; Resistance is not used. Laser targeting is overridden by request to hit all living enemy combat units in every row."
 }

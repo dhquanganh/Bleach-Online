@@ -4,6 +4,17 @@ const unit=(id,pos,camp=0)=>({id,pos,camp,hp:100000,maxHp:100000,atk:1000,magicA
 function fixture(camp=0,pos=6){const u={...unit(h.config.heroId,pos,camp),hp:10000,maxHp:10000,normal:h.config.standard.id,skill:h.config.mystery.id,skillId:h.config.mystery.id};const enemies=Array.from({length:15},(_,i)=>unit(12101003,i+1,1-camp)),ally=unit(500,7,camp);const ctx=n.create(camp?[enemies,[u,ally]]:[[u,ally],enemies],{random:()=>.5});n.startRound(ctx,1);h.roundStart(ctx);return {ctx,u,enemies,ally};}
 function strike(f,move,actor=f.u,target=f.enemies[0]){move=h.prepareMove(f.ctx,actor,move);const frame=battle.vurus(actor,target,false,f.ctx.teams[1-actor.camp],()=>.5,false,f.ctx.teams[actor.camp],n.attackSpec(move));const hit=f.ctx.teams[1-actor.camp].filter(t=>frame.targets.some(r=>r.cmd===codec.CMD.ATTACK&&r.targetCamp===t.camp&&r.targetPos===t.pos&&(r.reportTargetStatus&codec.ST.HIT)));h.afterHit(f.ctx,actor,target,hit,move,frame);return frame;}
 for(const camp of [0,1]){
+ // Senjutsu heals 25% max HP per positive damage event in base form.
+ {const f=fixture(camp),records=[];f.u.hp=4000;f.u.mysteryReadyRound=5;
+  h.onDamage(f.ctx,f.enemies[0],f.u,{damage:100},null,records,[]);
+  assert.equal(f.u.hp,6500);assert.equal(f.u.mysteryReadyRound,4);
+  assert(records.some(r=>r.cmd===codec.CMD.ATTACK&&r.result.hurtHp===-2500));
+  f.u.hp=9900;const capped=[];h.onDamage(f.ctx,f.enemies[0],f.u,{damage:100},null,capped,[]);
+  assert.equal(f.u.hp,10000);assert(capped.some(r=>r.result.hurtHp===-100));
+  f.u.hp=6000;const ready=f.u.mysteryReadyRound;h.onDamage(f.ctx,f.enemies[0],f.u,{damage:0},null,[],[]);
+  assert.equal(f.u.hp,6000);assert.equal(f.u.mysteryReadyRound,ready);
+  f.u.hp=0;h.onDamage(f.ctx,f.enemies[0],f.u,{damage:20000},null,[],[]);assert.equal(f.u.hp,0,'Senjutsu must not revive fatal hits');
+ }
  for(let pos=1;pos<=15;pos++){const f=fixture(camp,pos);assert(n.profile(f.u));assert.equal(f.u.pos,pos);assert.equal(n.profile(f.u).quality,7);}
  let f=fixture(camp),{u,ctx,enemies,ally}=f;
  assert.equal(n.profile(u).standard.id,h.config.sword.id);assert.equal(n.profile(u).chases[0].id,h.config.severe.id);
@@ -13,7 +24,7 @@ for(const camp of [0,1]){
  // Four real damage events: excited once, heal/CD reduction before Burst, consume 2 TP, bounded Chakra.
  u.hp=5000;u.mysteryReadyRound=10;ctx.chakra[camp]=80;let events=[];
  for(let i=0;i<4;i++){u.hp-=100;h.onDamage(ctx,enemies[0],u,{damage:100},null,[],events);}
- assert(h.burst(u));assert.equal(u.hashTechnique,0);assert.equal(ctx.chakra[camp],100);assert.equal(u.hp,6600);assert.equal(u.mysteryReadyRound,6);assert.equal(events.length,1);assert.equal(u.hashMysteryStacks,1);
+ assert(h.burst(u));assert.equal(u.hashTechnique,0);assert.equal(ctx.chakra[camp],100);assert.equal(u.hp,10000);assert.equal(u.mysteryReadyRound,6);assert.equal(events.length,1);assert.equal(u.hashMysteryStacks,1);
  assert.equal(n.profile(u).mystery.id,h.config.burstMystery.id);assert.equal(n.profile(u).chases[0].id,h.config.burstSevere.id);
  assert.equal(s.value(u,'atk'),1600);assert.equal(s.value(u,'resistance'),70);u.hp-=100;const before=u.hp;h.onDamage(ctx,enemies[0],u,{damage:100},null,[],[]);assert.equal(u.hp,before);assert.equal(u.hashTechnique,.5);
  u.suppressedUntil=ctx.round;assert(s.status(u,'immuneDebuffs'),'Advanced immunity resists lower-level suppression');assert(h.fireImmune(u,{element:'fire'},enemies[0]));

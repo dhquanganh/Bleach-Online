@@ -76,3 +76,5 @@ Run `build-probe.py --status-check --ffdec PATH`, then launch `runtime-raster.js
 `validation/extracted/native/result.json`: actual Flash 22 component playback, **18 cases in both camps, 11 atlases loaded, 34 source asset plays plus 36 supplemental power layers, zero errors, zero remaining VFX layers**. Screenshots cover cast/impact and mirroring. This isolated component probe and the encoded battle-report tests are separate checks; they do not claim a complete interactive client battle was played.
 
 To repeat the isolated probe, compile with `build-probe.py --ffdec PATH`, unset `ELECTRON_RUN_AS_NODE`, then launch `oyun/electron.exe sunucu-kok/cikarim/obito-rage/runtime-raster.js`. Source animation/effect GIFs are in `validation/extracted/`.
+
+Physical damage rule: every damaging move, including talent-triggered and splash attacks, uses Physical ATK and Physical DEF only (`attackStat: atk`, `damageType: physical`). Resistance and Magic ATK do not affect attack damage. Dedicated HP costs, healing and percentage-HP loss retain their separate formulas.

@@ -6,16 +6,21 @@ BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;CFG=json.loads((ROOT/'sunucu/hashirama-final.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13622001
+_multi_spec=importlib.util.spec_from_file_location('multihit',BASE.parent/'ninja-multihit.py');multihit=importlib.util.module_from_spec(_multi_spec);_multi_spec.loader.exec_module(multihit)
+multihit.configure(BASE.name,ANIM)
 SOURCE=ROOT.parent/'asset/Hashirama_Senju_Final_Battle'
 MOVES=[CFG[k] for k in ['mystery','burstMystery']]+CFG['chases']+[CFG[k] for k in ['severe','burstSevere','standard','sword','additional','forest','burst']]
 DESC=json.loads((BASE/'descriptions.json').read_text())
+DESC['passive']+=' All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF.'
+for move in MOVES:
+    if move.get('hitCount'):DESC[str(move['id'])]+=f" Deals {move['hitCount']} consecutive damage hits; the listed damage coefficient is the total per cast."
 def rows():
     old=json.loads((native.DATA/'BaseHero.json').read_text(encoding='utf-8'))
     h=copy.deepcopy(next(h for h in old if h['assess']=='SSS'));effects={}
     for move in MOVES:
         clip=ANIM['clips'][ANIM['moves'][str(move['id'])]]
         effect={'target':1,'backPoint':{str(clip['returnFrame']):1}}
-        if 'hitFrames' in clip:effect['appendEffect']={str(clip['hitFrames'][0]):{'target':2,'effectId':HIT,'anmyhp':{'0':100,'checkDie':1}}}
+        if 'hitFrames' in clip:effect['appendEffect']=multihit.append_effect(clip,HIT)
         effects[str(move['id'])]=effect
     h.update(id=native.hexid(HERO),name=CFG['name'],assess='SSS',profession=1,quality=7,isMain=0,sex=1,level=1,needLevel=1,
         desc='SSS. Any formation position: front, middle or rear. Wood Style / Senjutsu. '+DESC['passive'],active=CFG['mystery']['id'],normalAttack=CFG['standard']['id'],talent=13220940,
@@ -25,7 +30,7 @@ def rows():
     h['hitRate']=1
     return {'BaseHero':[h],'RoleModel':[{'id':native.hexid(HERO),'model':HERO,'roleStyle':HERO,'roleHead':HERO}],
         'HeroTalent':[{'id':native.hexid(13220940),'talentName':'Chakra Burst / Senjutsu Power / Advent of a World of Flowering Trees','talentDesc':DESC['passive']}],
-        'SkillConfig':[{'id':native.hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':DESC[str(m['id'])]+' Damage scales with Physical ATK.','icon':m['id'],'sortId':i+1} for i,m in enumerate(MOVES)]}
+        'SkillConfig':[{'id':native.hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':DESC[str(m['id'])]+(' Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.' if m.get('multiplier',0)>0 else ''),'icon':m['id'],'sortId':i+1} for i,m in enumerate(MOVES)]}
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--apply',action='store_true');args=parser.parse_args();db=rows();changes={}

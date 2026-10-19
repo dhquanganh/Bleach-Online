@@ -1,14 +1,15 @@
 'use strict';
 const assert=require('node:assert/strict');
-const battle=require('../savas'),naruto=require('../naruto-combat'),pain=require('../pain-combat'),obito=require('../obito-combat');
+const battle=require('../savas'),naruto=require('../naruto-combat'),pain=require('../pain-combat'),obito=require('../obito-combat'),hash=require('../hashirama-combat');
 const {CMD}=require('../kodek');
 const unit=(id,camp)=>({id,camp,pos:1,hp:1000000,maxHp:1000000,atk:100,magicAtk:10,def:0,resistance:0,speed:100,hitRate:1,critRate:0,anger:0,level:99,quality:7,normal:13100114,skill:0,skillId:13100114,partnerSkills:[],weaponSkills:[]});
 const sets=[
   {hero:pain.config.heroId,moves:[...['mystery','extremeMystery','finalMystery','standard','laser','superPush'].map(k=>pain.config[k]),...pain.config.chases]},
   {hero:obito.config.heroId,moves:[obito.config.rageMystery,obito.config.standard,obito.config.rageStandard,...obito.config.chases,...obito.config.rageChases]},
+  {hero:hash.config.heroId,moves:[...['mystery','burstMystery','standard','sword','severe','burstSevere','additional'].map(k=>hash.config[k]),...hash.config.chases]},
 ];
-function damage(hero,move,camp,overrides={}){
-  const actor={...unit(hero,camp),...overrides},target=unit(200,1-camp);
+function damage(hero,move,camp,overrides={},targetOverrides={}){
+  const actor={...unit(hero,camp),...overrides},target={...unit(200,1-camp),...targetOverrides};
   const teams=camp?[[target],[actor]]:[[actor],[target]],ctx=naruto.create(teams,{random:()=>.5});naruto.startRound(ctx,1);
   // Initialize actual passive state after create() resets per-battle resources.
   Object.assign(actor,overrides);
@@ -18,8 +19,12 @@ function damage(hero,move,camp,overrides={}){
 let checked=0;
 for(const {hero,moves} of sets)for(const move of moves)for(const camp of [0,1]){
   assert.equal(move.attackStat,'atk',move.name);
+  assert.equal(move.damageType,'physical',move.name);
   const base=damage(hero,move,camp);
   assert(base>0,move.name+' must deal damage');
+  assert.equal(damage(hero,move,camp,{}, {resistance:1000000}),base,move.name+' must ignore Resistance');
+  assert(damage(hero,move,camp,{}, {def:1000})<base,move.name+' must be mitigated by Physical DEF');
+  assert.equal(damage(hero,move,camp,{}, {def:1000,resistance:1000000}),damage(hero,move,camp,{}, {def:1000}),move.name+' must never mix DEF and Resistance');
   assert.equal(damage(hero,move,camp,{magicAtk:100000}),base,move.name+' must ignore Magic ATK');
   assert(damage(hero,move,camp,{atk:200})>base,move.name+' must grow with Physical ATK');
   assert(damage(hero,move,camp,{skillBuffs:[{field:'atk',value:.5,remaining:2}]})>base,move.name+' must use buffed Physical ATK');
@@ -40,4 +45,4 @@ for(const move of [pain.config.finalMystery,pain.config.superPush])for(const cam
   assert.equal(damage(pain.config.heroId,move,camp,final),Math.round(200*move.multiplier));
   assert.equal(damage(pain.config.heroId,move,camp,{...final,magicAtk:100000}),Math.round(200*move.multiplier));
 }
-console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Obito and Pain; Magic ATK independence, ATK buffs/debuffs, original coefficients, Technique Points, Attack growth and Final/Super states.`);
+console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Obito, Pain and Hashirama; Physical DEF mitigation, Resistance/Magic ATK independence, ATK buffs/debuffs, original coefficients, Technique Points, Attack growth and Final/Super states.`);

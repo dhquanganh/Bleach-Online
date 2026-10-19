@@ -34,8 +34,9 @@ for char in ['pain-tendo','hashirama-final']:
    assert difference.getbbox() is None,(char,key,tick,'visible source detail');checked+=1
  for key,c in m['clips'].items():
   for name,index in zip(c.get('frameAtlases',[c['atlas']]*len(c['timeline'])),c['timeline']):assert name in m['atlases'] and index<m['atlases'][name]['frameCount']
-work=BASE/'hashirama-final/quality-build';role=(work/'verify/scripts/Processors/Game/Battle/Character/TRole.as').read_text()
+work=BASE/'battle-shake/disabled';role=(work/'verify/scripts/Processors/Game/Battle/Character/TRole.as').read_text()
 for token in ['TrimPainVfxCache','TrimHashiramaVfxCache','pixels > 40000000','nextAtlas','viewportTL','viewportBR','caster.FCombatVfxSerial != rodSerial','Hashirama-thousand-hands-cinematic']:
  assert token in role,token
-assert (ROOT/'kaynak/login.gogames.me/public/2026090619/TApplication.swf').read_bytes()==(ROOT/'kaynak/login.gogames.me/public/2026101970/TApplication.swf').read_bytes()
+public=ROOT/'kaynak/login.gogames.me/public'
+assert (public/'2026090619/TApplication.swf').read_bytes()==(public/'2026101974/TApplication.swf').read_bytes()
 print('PASS source quality:',layers,'upgraded layers,',pages,'safe atlas pages,',checked,'independent exact RGBA samples; native portraits, streaming/cache budget and installed client verified')
