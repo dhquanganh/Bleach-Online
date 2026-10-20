@@ -12,8 +12,10 @@ function decode(payload){
     const inventory=gear.kayitlariOku(payload,z);
     list.push({id,level:payload.readUInt32BE(start+4),exp:payload.readUInt32BE(start+12),pos:payload[start+17],stats:stats.blokOku(payload.subarray(a,z)),inventory:inventory.kayitlar});r.p=end;
   }
-  const quality=r.u32(),knife=r.u32();assert.equal(r.p,payload.length,'No stale captured packet tail');
-  return {name,list,quality,knife};
+  const quality=r.u32(),knife=r.u32(),starCount=r.u16(),stars={};
+  for(let i=0;i<starCount;i++)stars[r.u32()]=r.u8();
+  assert.equal(r.p,payload.length,'No stale captured packet tail');
+  return {name,list,quality,knife,stars};
 }
 async function snapshot(dir){
   return new Promise((resolve,reject)=>{
@@ -31,7 +33,7 @@ test('Inspector resolves exact role IDs across isolated accounts, updates equipm
       const dir=path.join(root,name);fs.mkdirSync(dir);
       const d={roleIdHi:7,roleIdLo:roleLo,nick:name,karakter:{nick:name,anaId:main},militaryRank:40100001,prestige:0,
         kadro:{[main]:6,...Object.fromEntries(partners.map((id,i)=>[id,10+i]))},
-        seviye:{herolar:Object.fromEntries(partners.map((id,i)=>[id,{lv:12+i,exp:15}]))},
+        seviye:{herolar:Object.fromEntries(partners.map((id,i)=>[id,{lv:12+i,exp:15}]))},heroStars:Object.fromEntries(partners.map((id,i)=>[id,i+3])),
         ekipman:{goc:1,esyalar:{1001:{tpl:article._id,kat:2,slot:3,lvl:7,hole:0,app:[],gems:[]}},takili:{[main]:{3:1001}}},bicak:{sekil:0}};
       const v={level,deneyim:123,nick:name,herolar:partners,tumKarakterler:false};
       fs.writeFileSync(path.join(dir,'oyuncu.json'),JSON.stringify(d));fs.writeFileSync(path.join(dir,'veri.json'),JSON.stringify(v));return {dir,d,v};
@@ -48,6 +50,7 @@ test('Inspector resolves exact role IDs across isolated accounts, updates equipm
     assert.equal(pa.name,'Profile A');assert.equal(pb.name,'Profile B');
     assert.deepEqual(pa.list.map(h=>h.id),[11100001,11120940,11120920]);assert.deepEqual(pb.list.map(h=>h.id),[11100005,11120930]);
     assert.deepEqual(pa.list.map(h=>h.level),[70,12,13]);assert.deepEqual(pb.list.map(h=>h.level),[22,12]);
+    assert.deepEqual(pa.stars,{'11120920':4,'11120940':3});assert.deepEqual(pb.stars,{'11120930':3});
     assert.deepEqual(pa.list.map(h=>h.pos),[6,10,11]);assert.equal(pa.list[0].inventory[0].lvl,7);
     assert.notDeepEqual(pa.list[0].stats,pb.list[0].stats,'Use target physical attributes, not viewer/captured stats');
     assert.equal(query(8,11).readUInt32BE(),1,'High ID matters');assert.equal(query(7,999).readUInt32BE(),1);

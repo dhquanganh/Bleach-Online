@@ -27,8 +27,10 @@ function snapshot(state,account=levels.veriOku()) {
   const row=tablo('BaseHero').byId.get(main);
   const name=String(d.karakter.nick||d.nick||account.nick||'');
   const knife=Number(d.bicak?.sekil)||0;
-  return {id0:d.roleIdHi>>>0,id1:d.roleIdLo>>>0,
-    payload:new Y().u32(0).utf(name).raw(list).u32(Number(row.quality)||1).u32(knife).done().toString('base64')};
+  const starRows=parts.map(part=>part.readUInt32BE(0)).filter(id=>id!==main).map(id=>[id,require('./hero-stars').count(d,id)]);
+  const packet=new Y().u32(0).utf(name).raw(list).u32(Number(row.quality)||1).u32(knife).u16(starRows.length);
+  for(const [id,stars] of starRows)packet.u32(id).u8(stars);
+  return {id0:d.roleIdHi>>>0,id1:d.roleIdLo>>>0,payload:packet.done().toString('base64')};
 }
 
 function update(rows){

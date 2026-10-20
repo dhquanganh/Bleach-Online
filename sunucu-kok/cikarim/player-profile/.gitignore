@@ -4,3 +4,13 @@ patched/
 verify/
 backups/
 __pycache__/
+
+first-open/
+profile-stars/
+profile-star-display/
+profile-star-position/
+profile-star-layer/
+profile-star-anchor/
+profile-star-exact-position/
+
+investigate/

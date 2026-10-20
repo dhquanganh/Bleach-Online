@@ -263,19 +263,16 @@ LOG.reset();
 let CONN_SEQ = 0;
 const CLIENTS = new Set();   // canli baglantilarin send() islevleri (disaridan push: yukleme)
 const GAME_SESSIONS = new Set();
-// One arena shared by every authenticated connection; the clock runs even without polling.
-const battlefieldService = require('./battlefield').service();
-setInterval(() => {
-  try { battlefieldService.arena.tick(); }
-  catch (e) { console.error('[battlefield] tick failed:', e.message); }
-}, 1000).unref();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
 const illusion = require('./infinite-illusion');
 const illusionService = illusion.service();
-function illusionRefresh() {
+let illusionRefreshing=false;
+async function illusionRefresh() {
+  if(illusionRefreshing||!loggedInClients().length)return;
+  illusionRefreshing=true;
   try {
     const d=durumMod.yukle();
-    const rewarded=illusionService.tick({durum:d,kaydet:durumMod.kaydet});
+    const rewarded=await illusionService.tick({durum:d,kaydet:durumMod.kaydet,reload:durumMod.yukle});
     const payload=illusionService.packet(d);
     for(const session of loggedInClients()) {
       session.send(illusion.OP.INFO,payload,'ILLUSION-ranking');
@@ -283,9 +280,10 @@ function illusionRefresh() {
         for(const mail of rewarded)session.send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
       }
     }
-  }catch(e){console.log('[infinite-illusion]',e.message);}
+  }catch(e){console.log('[infinite-illusion]',e.message);}finally{illusionRefreshing=false;}
 }
 setInterval(illusionRefresh,15000).unref();
+illusion.setNotify(illusionRefresh);
 
 // Native Arena_Update refreshes the chest at release time and after claiming.
 let lastArenaRewardState='';
@@ -431,6 +429,7 @@ net.createServer(client => {
   function send(id, payload, kaynak) { client.write(frame(id, payload)); LOG.s2c(cid, id, payload, kaynak || '?'); }
   const session = { cid, client, send, authenticated: false };
   let accountVerified = false;
+  let illusionRequestQueue=Promise.resolve();
   CLIENTS.add(send);
   GAME_SESSIONS.add(session);
   client.on('close', () => { CLIENTS.delete(send); GAME_SESSIONS.delete(session); });
@@ -729,14 +728,7 @@ net.createServer(client => {
         }catch(e){LOG.note(cid,'Protect Seireitei: '+e.message);send(0x01182401,Buffer.from([0,0,0,1]),'PROTECT-error');}continue;
       }
       if((pk.id>>>0)>=0x0181ed00 && (pk.id>>>0)<=0x0181ed04){
-        if(!session.authenticated)continue;
-        const field=require('./battlefield');
-        try{
-          const result=battlefieldService.handle(pk.id>>>0,{durum:durumMod.yukle(),payload:pk.payload,kaydet:durumMod.kaydet});
-          if(result.bag)send(0x01180f00,result.bag,'BATTLEFIELD-bag');
-          send((pk.id & 0xffff)|0x01180000,field.packet(result.data),'BATTLEFIELD-reply');
-          if(result.report){send(kodek.OP.REPORT,result.report.payload,'BATTLEFIELD-report');send(kodek.OP.RESULT,kodek.encodeSingleResult(result.report.won,[]),'BATTLEFIELD-result');}
-        }catch(e){LOG.note(cid,'Battlefield: '+e.message);send((pk.id & 0xffff)|0x01180000,field.packet({error:1,message:'Khong the luu chien truong. Hay thu lai.'}),'BATTLEFIELD-error');}
+        // Retired event: never fall through to captured packet replay or grant rewards.
         continue;
       }
       if((pk.id>>>0)===0x01813d02 || (pk.id>>>0)===0x01813d7d){
@@ -747,15 +739,16 @@ net.createServer(client => {
       }
       if((pk.id>>>0)===illusion.OP.INFO_REQ || (pk.id>>>0)===illusion.OP.FIGHT_REQ){
         if(!session.authenticated)continue;
+        illusionRequestQueue=illusionRequestQueue.catch(error=>LOG.note(cid,'Boss request: '+error.message)).then(async()=>{
         try {
-          const d=durumMod.yukle(),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet};
+          const d=durumMod.yukle(),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet,reload:durumMod.yukle};
           if((pk.id>>>0)===illusion.OP.INFO_REQ){
-            if(pk.payload.length){send(illusion.OP.INFO,new (require('./paket').Y)().utf('{"error":4}').done(),'ILLUSION-error');continue;}
-            const rewarded=illusionService.tick(ctx);
+            if(pk.payload.length){send(illusion.OP.INFO,new (require('./paket').Y)().utf('{"error":4}').done(),'ILLUSION-error');return;}
+            const rewarded=await illusionService.tick(ctx);
             send(illusion.OP.INFO,illusionService.packet(d),'ILLUSION-info');
             if(rewarded)for(const mail of rewarded)send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
           }else{
-            const result=illusionService.fight(ctx),ack=Buffer.alloc(4);ack.writeUInt32BE(result.error||0);
+            const result=await illusionService.fight(ctx),ack=Buffer.alloc(4);ack.writeUInt32BE(result.error||0);
             send(illusion.OP.FIGHT,ack,'ILLUSION-ack');
             if(result.rewarded)for(const mail of result.rewarded)send(0x01181605,require('./boss-reward-mail').notification(mail),'ILLUSION-daily-mail');
             if(!result.error){
@@ -763,7 +756,8 @@ net.createServer(client => {
               for(const peer of loggedInClients())peer.send(illusion.OP.INFO,result.info,'ILLUSION-ranking');
             }
           }
-        }catch(e){LOG.note(cid,'Infinite Illusion: '+e.message);send(illusion.OP.FIGHT,Buffer.from([0,0,0,1]),'ILLUSION-error');}
+        }catch(e){LOG.note(cid,'Infinite Illusion: '+e.message);if((pk.id>>>0)===illusion.OP.INFO_REQ)send(illusion.OP.INFO,new (require('./paket').Y)().utf(JSON.stringify({error:1,message:'Không tải được BXH sát thương. Vui lòng thử lại.'})).done(),'ILLUSION-error');else send(illusion.OP.FIGHT,Buffer.from([0,0,0,1]),'ILLUSION-error');}
+        });
         continue;
       }
       if((pk.id>>>0)===0x01818201){

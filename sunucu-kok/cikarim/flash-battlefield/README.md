@@ -66,3 +66,8 @@ python sunucu-kok/cikarim/flash-battlefield/loader.py --install
 Full build cài UI, return route và guard sprite native; `--daily-only` chỉ dành cho rebuild UI sau khi đã cài các route/guard mới. Build giữ non-code SWF tags, kiểm tra các method không liên quan không đổi khi patch ASM, decompile xác minh và sao lưu trước khi thay client. Phải restart backend, HTTP server và game để dùng toàn bộ bản mới; config cũng đọc lại khi restart.
 
 Native runtime kiểm tra bằng Electron/Pepper Flash trong bản portatif, với backend/hồ sơ/database sao chép tại `.battlefield-runtime-test`, không dùng tài khoản thật. Ảnh và log nằm trong `validation/`; các log debug trước sửa được giữ riêng để đối chiếu.
+# Retired event — client 2026101983
+
+Battlefield has been removed at the user's request. Server engine, service, shop/configuration and event tests are deleted. The periodic tick and strategy buffs are removed; account snapshots no longer load or save its runtime file. Requests 0x0181ed00–0x0181ed04 are discarded before legacy replay, so old clients cannot enter, fight or collect event rewards.
+
+`remove.py` removes custom Daily Activity methods, tab construction, polling and packet handlers from the current native client; `RemoveRoutes.java` removes Lobby/Root routing and replay-return branches. Protect Seireitei and other Daily Activities are preserved. Historical saved event data/assets and the original build notes above are retained for recovery; they are not loaded by the running game. Reopen the game after restarting the server.

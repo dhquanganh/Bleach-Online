@@ -7,7 +7,7 @@ const { MongoClient } = require('mongodb');
 const scrypt = promisify(crypto.scrypt);
 const ROOT = path.resolve(__dirname, '..');
 const GAME = path.join(__dirname, 'sunucu');
-const FILES = ['oyuncu.json', 'veri.json', 'battlefield-runtime.json', 'arena-reward-pending.json'];
+const FILES = ['oyuncu.json', 'veri.json', 'arena-reward-pending.json'];
 function config() {
   const file = path.join(ROOT, '.env');
   if (fs.existsSync(file)) for (const line of fs.readFileSync(file, 'utf8').split(/\r?\n/)) {

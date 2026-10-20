@@ -117,7 +117,7 @@
       protected function IllusionClose(event:MouseEvent) : void {this.FIllusionWindow.visible=false;}
       protected function IllusionHelp(event:MouseEvent) : void
       {
-         this.FIllusionStatus.text="Mỗi lượt hồi đầy HP. Lưu lượt cao nhất. Bot đánh mỗi 5 phút. Thưởng tự động lúc 00:00 UTC+7.";
+         this.FIllusionStatus.text="BXH người chơi thật. Lưu lượt sát thương cao nhất. Trao thưởng và reset lúc 00:00 UTC+7.";
       }
       protected function IllusionRequest(mode:int) : void
       {

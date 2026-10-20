@@ -9,3 +9,5 @@ process.on('message', message => { if (message.type === 'arena-roster') {
   require('./sunucu/arena-real').update(rows.map(({profile,...row})=>row),message.settlement);
   require('./sunucu/player-profile').update(rows);
 } });
+
+process.on('message',message=>{if(message?.type==='illusion-update')require('./sunucu/infinite-illusion').notify();});

@@ -10,3 +10,4 @@ map-classes/
 __pycache__/
 validation/control.json
 probe-source/
+removed/

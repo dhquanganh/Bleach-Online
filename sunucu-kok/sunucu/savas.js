@@ -1111,12 +1111,6 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       unit.atk = Math.max(1, Math.round(unit.atk * enemyAttackScale));
     }
   }
-  // Apply optional battlefield strategy after baseline balancing, so an attack buff
-  // is not cancelled by scaling the opposing team's health to the buffed attack.
-  for(const [team,boosts] of [[p1,options.playerStatBoosts],[p2,options.enemyStatBoosts]])if(boosts)for(const field of ['atk','def']) {
-    const percent=Math.max(0,Math.min(25,Number(boosts[field])||0));
-    if(percent)for(const unit of team)unit[field]=Math.min(1000000000,Math.round(unit[field]*(1+percent/100)));
-  }
   // Hueco Mundo carries surviving HP between points; other modes start at full HP.
   for (const [team, rates] of [[p1, options.playerHpRates], [p2, options.enemyHpRates]]) {
     if (rates) for (const unit of team) {

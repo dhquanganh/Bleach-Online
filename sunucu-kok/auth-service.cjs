@@ -20,6 +20,9 @@ async function startAuth(port) {
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
   const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot);
+  const illusionBoard = require('./illusion-board.cjs').createBoard(db,{onUpdate(){
+    for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
+  }});
   const adminAccounts = require('./admin-accounts.cjs').createAdmin({ db, runtimes, serial, save, stop, body, snapshot });
   async function serial(id, action) {
     const previous = locks.get(id) || Promise.resolve();
@@ -83,7 +86,17 @@ async function startAuth(port) {
       const rt = { child, dir, accountId: user.account._id, gamePort, gameToken, token: user.token, expiresAt: user.session.expiresAt, savedHash: fs.readFileSync(syncFile, 'utf8') };
       runtimes.set(id, rt);
       child.on('message', message => {
-        if (message?.type !== 'arena-result' || runtimes.get(id) !== rt) return;
+        if(runtimes.get(id)!==rt)return;
+        if(message?.type==='illusion-request'){
+          const respond=response=>{if(child.connected){try{child.send({type:'illusion-ack',id:message.id,...response},()=>{});}catch(error){console.error('[Boss ranking ack]',error.message);}}};
+          try{
+            const data=JSON.parse(snapshot(rt.dir)['oyuncu.json']||'{}');
+            const identity={id0:data.roleIdHi,id1:data.roleIdLo,name:data.karakter?.nick||data.nick||'Shinigami'};
+            illusionBoard.request(id,identity,message).then(result=>respond({result}),error=>{console.error('[Boss ranking]',error.message);respond({error:'Không lưu được BXH sát thương. Vui lòng thử lại.'});});
+          }catch(error){console.error('[Boss ranking]',error.message);respond({error:'Không tải được BXH sát thương.'});}
+          return;
+        }
+        if(message?.type!=='arena-result')return;
         const reply = response => {
           if(!child.connected)return;
           try {child.send({type:'arena-result-ack',id:message.id,...response},()=>{});} catch(error) {
@@ -174,7 +187,7 @@ async function startAuth(port) {
   const timer = setInterval(() => { if (closing) return; for (const [id, rt] of runtimes) {
     serial(id, () => rt.expiresAt <= new Date() ? stop(id) : save(rt)).catch(e => console.error('[Mongo save]', e.code || e.name));
   } }, 2000);
-  async function close() { closing = true; clearInterval(timer); await arenaRoster.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
+  async function close() { closing = true; clearInterval(timer); await arenaRoster.close(); await illusionBoard.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
   return { handle, close, db };
 }
 module.exports = { startAuth, cookieToken };
