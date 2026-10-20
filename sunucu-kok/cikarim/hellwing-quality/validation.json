@@ -1,0 +1,13 @@
+{
+  "equipmentTemplates": 16,
+  "quality": 7,
+  "nativeEdgeColor": 4,
+  "baseEquipCopiesVerified": 25,
+  "clientVersions": [
+    "2017112917",
+    "2026090619"
+  ],
+  "originalGlowSequence": 3,
+  "originalGlowFrames": 7,
+  "nonVisualBaseEquipFieldsUnchanged": true
+}

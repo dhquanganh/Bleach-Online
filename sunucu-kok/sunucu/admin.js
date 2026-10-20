@@ -284,9 +284,12 @@ function magazaListesi() {
   const hepsi = v.tumKarakterler === true || v.tumKarakterler === 'true';
   return {
     altin: Number(v.altin) || 0, level: Number(v.level) || 1, nick: v.nick || '', tumKarakterler: hepsi,
-    liste: heroListesi().map(h => ({ ...h, meslek: PROF_AD[h.profession] || '', hot: h.id === HOT_HERO_ID, fiyat: karakterFiyati(h), sahip: hepsi || sahip.has(h.id) })),
+    liste: overlayHeroListesi().map(h => ({ ...h, meslek: PROF_AD[h.profession] || '', hot: h.id === HOT_HERO_ID, fiyat: karakterFiyati(h), sahip: hepsi || sahip.has(h.id) })),
   };
 }
+// Custom Naruto heroes/summons use the reserved 111209xx IDs.
+// Restrict the sale catalog without removing ownership or admin recruitment.
+function overlayHeroListesi() { return heroListesi().filter(h => h.id < 11120900 || h.id > 11120999); }
 const GIA_THIET_BI = { 1: 100, 2: 200, 3: 400, 4: 800, 5: 1600, 6: 3200, 7: 6400 };
 const LOAI_THIET_BI = { 2: 'Thiết bị', 4: 'Bảo vật', 6: 'Trang sức' };
 function giaThietBi(quality, level) {
@@ -471,7 +474,7 @@ function apiIsle(req, res) {
       try {
         const id = Number(JSON.parse(b || '{}').id) >>> 0;
         const v = oku();
-        const h = heroListesi().find(x => x.id === id);
+        const h = overlayHeroListesi().find(x => x.id === id);
         if (!h) return json(400, { ok: false, hata: 'Không tìm thấy nhân vật' });
         if (sahipKumesi(v).has(id) || v.tumKarakterler === true || v.tumKarakterler === 'true') return json(400, { ok: false, hata: 'Tài khoản đã có nhân vật này' });
         const f = karakterFiyati(h);

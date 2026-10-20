@@ -1,0 +1,14 @@
+{
+  "clientVersion": "2026102011",
+  "sha256": "0ba0d61c9734f3b7fe0c26f36fb19f4c25ac9fe0b60b46baeb198e3bf80442f8",
+  "combatClassesUnchanged": [
+    "TRole",
+    "TActive"
+  ],
+  "nonABCTagsUnchanged": true,
+  "backendAndAdminTestsPassed": 9,
+  "interactiveGameSessionTested": false,
+  "repositoryRewardsCovered": 42,
+  "pointShopRewardsCovered": 24,
+  "serverConfirmedNotices": true
+}

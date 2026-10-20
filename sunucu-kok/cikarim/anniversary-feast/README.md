@@ -1,0 +1,27 @@
+# Anniversary Feast / CoolSummer
+
+This native event uses category 970000, actId 970001; its currently enabled wire ID is 8273. All category instances use the dedicated backend, rather than captured InitRet packets or generic claim tiers.
+
+`sunucu/anniversary-feast.js` saves each account's board, opened/matched shells, daily free-use count, queued selections, points, point-shop purchases and claimed heroes in `oyuncu.json`. Boards contain eight shuffled pairs drawn with the repository's actual weights; up to three paid selections are guaranteed pairs on the next refresh. Midnight consumes queued selections into the new daily board, restores five free openings and retains points/purchases. Two opened matching shells grant one actual repository reward. Gold costs are 10 per paid opening, floor(90% of remaining paid openings) for open-all, 10 for refresh, and repository prices for queued selections. Only spent gold earns points. Shop count 0 means unlimited; positive counts are enforced.
+
+Main `/admin` includes a global Hot Sale form above the account editor. GET/PATCH `/auth/admin/anniversary-feast` requires the existing admin session, validates the existing playable hero catalog and positive integer point price, and rejects stale revisions. Atomic `sunucu/anniversary-feast.json` persists the global selection; account workers read it on init/operate, including workers already running. Missing configuration defaults to Blood-War Byakuya / 40000 points. `BLEACH_FEAST_CONFIG` overrides the path for isolated tests. Open the event again to refresh its preview. An exchange from an older revision is rejected and the current configuration is sent back without spending points. Hero recruitment is sent through the existing native hero acquisition notification and ownership persists across login.
+
+The incremental Flash patch changes only the CoolSummer view and unstreamizer. Metadata BoxIndex 62000001 carries `[heroId, price, revision, endEpochSeconds]`. Native model preview/name uses showID, and exchange sends the viewed revision. An unscheduled active event displays an ongoing label; scheduled events use the backend's real deadline. Duplicate callbacks are temporarily gated; optimistic success text is removed. The hero showcase is only reset when the hero changes or the window is reopened, reducing repeated animation loads. Successful operations send changed state blocks instead of repainting all 47 blocks every time. Existing shell/reveal animations and all combat assets are retained.
+
+Client 2026102010 is installed in the canonical path and version alias, with the compressed version manifest updated. `build-client.py` verifies the reviewed source against the installed source before building, imports only the two edited classes, preserves all non-ABC SWF tags, and saves backups. Run it against the reviewed original source; it deliberately refuses to roll back a later installed client. Production TRole and TActive exports were compared against version 2026102009 and are byte-identical.
+
+Validation:
+
+```powershell
+node --test sunucu-kok/sunucu/tests/anniversary-feast.test.js sunucu-kok/sunucu/tests/anniversary-feast-handler.test.js sunucu-kok/anniversary-feast-admin.test.cjs sunucu-kok/admin-accounts.test.cjs
+```
+
+Eight tests cover free/paid/discounted openings, matching/replay protection, daily reset, queued selections, tampered requests, insufficient gold/inventory capacity, limited/unlimited exchanges, global admin authorization/validation/revisions, cross-process config reads, real handler packets, currency deduction, hero acquisition and account persistence. Repository and score-shop reward IDs all resolve to existing inventory templates. Frontend validation includes AS3 compilation/re-export and admin JavaScript syntax; a full interactive game session has not been exercised for this event.
+
+Restart the server processes and reload the game once to load the new backend and Flash client. Subsequent Hot Sale edits require reopening the event, without restarting the backend.
+
+## Reward receipt audit / client 2026102011
+
+The real handler regression now exercises every one of the 42 repository awards and 24 point-shop awards. It checks reward count, actual inventory increase, persisted JSON, bag notification and subsequent bag reload, including equipment-backed spirit stones. The first unmatched shell must neither grant nor display a reward. Hot Sale ownership, level, score deduction and recruitment notification are also checked. Existing account logs show the matched Skill Scroll pair produced InventoryNtf and persisted the reward; unmatched openings and paid shelf reservations correctly did not grant items.
+
+Native notification index 62000002 now displays server-confirmed feedback for unmatched shells, delivered items, recruited heroes, queued next-round selections, refresh and capacity failures. Reservations explicitly explain that Refresh starts the next round. Full inventory/stack failures leave the opening and currency unchanged. No matching rule or payout amount was changed. Nine tests pass; all 66 configured item rewards are covered within the real-handler test. Frontend was compiled and re-exported; interactive gameplay remains untested.

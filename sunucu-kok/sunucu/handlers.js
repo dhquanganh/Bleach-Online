@@ -549,12 +549,12 @@ const byReq = {
   // InitReq -> kutu durumlari. Kademesi COZULEBILEN etkinlikte (or. Level Pack) durumu BIZ
   // uretiriz: sart saglandi mi (seviye), daha once alinmis mi. Cozulemeyende eski davranis
   // (yakalanan gercek veri, yoksa genel paket) korunur ki calisan paneller bozulmasin.
-  '0x01812302': ({ payload, durum }) => {
+  '0x01812302': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const key = (actId >>> 0).toString(16).padStart(8, '0');
     // OZEL pencereler (Daily Presents, Seireitei Attack, zar tahtasi, Make Money): kendi durum makinesi.
-    try { const oz = ozel(); const kat = oz ? oz.kategoriOf(actId) : 0; if (oz && oz.init[kat]) return oz.init[kat](actId, durum); }
-    catch (e) { console.log('[etkinlik-ozel] init hata ' + actId + ': ' + e.message); }
+    try { const oz = ozel(); const kat = oz ? oz.kategoriOf(actId) : 0; if (oz && oz.init[kat]) {const packet=oz.init[kat](actId, durum);if(kat===970000)kaydet(durum);return packet;} }
+    catch (e) { console.log('[etkinlik-ozel] init hata ' + actId + ': ' + e.message); if(etkinlik.katalog().get(actId)?.kategori===970000)return etkinlik.initPaketi(actId,durum,0); }
     // ONCELIK: yakalanan gercek paket (blok yapisi pencereye birebir uyar) + kutu durumlari kalici kayittan.
     // ESKIDEN uretilen tek-bloklu kademe paketi one geciyordu -> Parameter blogu bekleyen etkinlik
     // pencereleri (Chess, TreasureMap, LimitBuy, SoulBox...) parse'da patlayip karartma ekranda kaliyordu.
@@ -575,22 +575,24 @@ const byReq = {
   '0x01812303': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const idx = payload.length >= 8 ? payload.readUInt32BE(4) : 0;
+    if(etkinlik.katalog().get(actId)?.kategori===970000)SON_CLAIM={ozel:true};
     // OZEL pencereler: [wire][idx] + opsiyonel [i16 n][n x i32] (DayBack bit, Chess zar/bayrak)
     try {
       const oz = ozel(); const kat = oz ? oz.kategoriOf(actId) : 0;
       if (oz && oz.operate[kat]) {
+        if(kat===970000 && (payload.length!==8 && (payload.length<10||payload.readInt16BE(8)<0||payload.length!==10+4*payload.readInt16BE(8))))return etkinlik.operateRet(80,actId,[]);
         const ek = []; if (payload.length >= 10) { const n = payload.readInt16BE(8); for (let i = 0; i < n && 10 + i * 4 + 4 <= payload.length; i++) ek.push(payload.readInt32BE(10 + i * 4)); }
         const r = oz.operate[kat](actId, idx, ek, durum);
         if (!r.hata) {
           if (r.oduller && r.oduller.length) odulVer(durum, r.oduller);
-          if (r.bildir && r.bildir.length) ekSonra(oz.OP_NOTIFY, oz.bildirimPaketi(actId, r.bildir), 'ETKINLIK-ozel-durum');
           try { kaydet(durum); } catch (e) { }
           try { require('./telemetri').odul('-', 'etkinlik-ozel:' + actId + '/' + idx, r.oduller || []); } catch (e) { }
         }
+        if (r.bildir && r.bildir.length) ekSonra(oz.OP_NOTIFY, oz.bildirimPaketi(actId, r.bildir), 'ETKINLIK-ozel-durum');
         SON_CLAIM = { ozel: true };
         return etkinlik.operateRet(r.hata, actId, r.oduller || []);
       }
-    } catch (e) { console.log('[etkinlik-ozel] operate hata ' + actId + ': ' + e.message); }
+    } catch (e) { console.log('[etkinlik-ozel] operate hata ' + actId + ': ' + e.message); if(etkinlik.katalog().get(actId)?.kategori===970000)return etkinlik.operateRet(1,actId,[]); }
     try {
       if (etkinlik.kademeler(actId).length) {
         const r = etkinlik.claim(actId, idx, durum, oyuncuSeviyesi());

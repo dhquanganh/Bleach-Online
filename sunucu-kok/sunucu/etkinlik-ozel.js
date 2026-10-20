@@ -93,6 +93,14 @@ function kur(y) {
   const altin = n => (BEDAVA || n <= 0) ? true : harca([{ type: 0, code: 1, amount: n }]);
   const canlilik = n => n <= 0 ? true : harca([{ type: 3, code: 0, amount: n }]);
   const init = {}, operate = {};
+  const feast = require('./anniversary-feast').create({
+    charge: n => harca([{type:0,code:1,amount:n}]),
+    ownsHero: id => { const v=JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'),'utf8')); return v.tumKarakterler===true||v.tumKarakterler==='true'||(v.herolar||[]).map(Number).includes(id); },
+    grantHero: (id,d) => { require('./sosyal').heroEkle(id); require('./seviye').heroKayit(d,id,1); ekSonra(0x01180c02,new Y().u32(0).u32(id).u32(1).u32(0).u32(0).done(),'FEAST-hero'); },
+    canReceive: (d,rewards) => { const inv=require('./envanter');const sums=new Map();for(const r of rewards){const code=inv.odulTemplate(r.type,r.code);if(!code)continue;if(!inv.article(code))return false;sums.set(code,(sums.get(code)||0)+r.amount);}return (!sums.size||(d.envanter?.esyalar?.length||0)+sums.size<2048)&&[...sums].every(([id,n])=>inv.mevcut(d,id)+n<=65535); }
+  });
+  init[970000]=(wire,d)=>initPaketi(wire,[{tip:1,kutular:feast.init(wire,d)}]);
+  operate[970000]=feast.operate;
 
   // ================= DAYBACK (Daily Presents) =================
   const db = (wire, durum) => {

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "messages": [
+    "PASS reproduced old client dropping a new Spirit Stone",
+    "PASS first Spirit Stone appears immediately",
+    "PASS first stone quantity",
+    "PASS existing stone does not duplicate",
+    "PASS existing stone updates total",
+    "PASS second stone type appears independently",
+    "PASS zero quantity does not create ghost stone",
+    "PASS new normal items appear",
+    "PASS new materials appear",
+    "PASS temporary bag receives item",
+    "PASS temporary bag stays separate",
+    "DONE"
+  ]
+}
