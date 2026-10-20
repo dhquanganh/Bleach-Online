@@ -1,0 +1,14 @@
+{
+  "smallFormScaleBefore": 0.6,
+  "smallFormScaleAfter": 1,
+  "sizeIncreasePercent": 66.6667,
+  "clips": [
+    "beast-idle",
+    "beast-run",
+    "beast-hit",
+    "recovery"
+  ],
+  "changedUniqueFrames": 121,
+  "timingAndFrameIndicesUnchanged": true,
+  "otherFramesUnchanged": true
+}

@@ -13,6 +13,12 @@ const limits = {
   goldSoulV: [0, 2147483647], orangeSoul: [0, 2147483647],
 };
 let catalog;
+let itemCatalog;
+function items() {
+  if (!itemCatalog) itemCatalog=JSON.parse(fs.readFileSync(path.join(__dirname,'cikarim/veri-json/Article.json'),'utf8'))
+    .map(a=>({id:parseInt(a.id,16)>>>0,name:a.name||'(không tên)',quality:Number(a.quality)||0,picture:Number(a.picture)||0})).filter(a=>a.id);
+  return itemCatalog;
+}
 function heroes() {
   if (!catalog) {
     const allowed = new Set(require('./sunucu/herolar').gecerliHerolar().map(h => h.id));
@@ -62,11 +68,22 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
     if (user.account.role !== 'admin') { json(403,{error:'Cần tài khoản admin.'}); return; }
     try {
       if (pathname === '/auth/admin/heroes' && req.method === 'GET') { json(200,{heroes:heroes()});return; }
+      if (pathname === '/auth/admin/items' && req.method === 'GET') {
+        const q=(new URL(req.url,'http://localhost').searchParams.get('q')||'').trim().toLowerCase();
+        json(200,{items:q.length<2?[]:items().filter(a=>a.name.toLowerCase().includes(q)||String(a.id).includes(q)||a.id.toString(16).includes(q)).slice(0,60)});return;
+      }
+      const iconMatch=/^\/auth\/admin\/items\/(\d+)\/icon$/.exec(pathname);
+      if (iconMatch && req.method==='GET') {
+        const item=items().find(a=>a.id===Number(iconMatch[1]));
+        const image=item&&require('./admin-item-icon.cjs')(item.picture||item.id);
+        if(!image)fail(404,'Không có icon vật phẩm.');
+        res.writeHead(200,{'Content-Type':image.type,'Cache-Control':'private, max-age=3600'});res.end(image.data);return;
+      }
       if (pathname === '/auth/admin/accounts' && req.method === 'GET') {
         const accounts = await db.collection('accounts').find({}, {projection:{username:1,role:1}}).sort({username:1}).toArray();
         json(200,{accounts:accounts.map(a=>({id:a._id.toHexString(),username:a.username,role:a.role,online:runtimes.has(a._id.toHexString())}))});return;
       }
-      const match = /^\/auth\/admin\/accounts\/([a-f0-9]{24})(\/heroes)?$/.exec(pathname);
+      const match = /^\/auth\/admin\/accounts\/([a-f0-9]{24})(\/heroes|\/items)?$/.exec(pathname);
       if (!match) fail(404,'Không tìm thấy chức năng quản trị.');
       const id = new ObjectId(match[1]);
       if (req.method === 'GET' && !match[2]) {
@@ -79,7 +96,20 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
         const {account,player}=await read(id);
         if (typeof data.revision !== 'string' || data.revision !== revision(player.files)) fail(409,'Dữ liệu đã thay đổi. Tải lại tài khoản trước khi lưu.');
         const files = {...player.files}, currency = JSON.parse(files['veri.json'] || '{}'), state = JSON.parse(files['oyuncu.json'] || '{}');
-        if (match[2]) {
+        let grant;
+        if (match[2] === '/items') {
+          if (!state.karakter?.anaId) fail(400,'Tài khoản cần tạo nhân vật trong game trước khi thêm item.');
+          const item=items().find(a=>a.id===data.itemId);
+          if (!item) fail(400,'Item không hợp lệ.');
+          const amount=integer(data.amount,1,999,'Số lượng');
+          require('./sunucu/ekipman');
+          const inventory=require('./sunucu/envanter');
+          const before=inventory.mevcut(state,item.id);
+          inventory.ekle(state,[{code:item.id,amount}]);
+          const total=inventory.mevcut(state,item.id);
+          if (total!==before+amount) fail(400,'Không thể thêm đủ item: túi đầy hoặc đã đạt giới hạn số lượng.');
+          grant={id:item.id,name:item.name,amount,total};
+        } else if (match[2] === '/heroes') {
           if (!state.karakter?.anaId) fail(400,'Tài khoản cần tạo nhân vật trong game trước khi thêm hero.');
           const hero = heroes().find(h=>h.id===data.heroId);
           if (!hero) fail(400,'Hero không hợp lệ hoặc đã bị xóa khỏi game.');
@@ -105,13 +135,13 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
         await stop(match[1]);
         const latest = await db.collection('players').findOne({_id:id});
         if (!latest || revision(latest.files) !== data.revision) fail(409,'Game vừa cập nhật dữ liệu. Tải lại tài khoản trước khi lưu.');
-        const result = await db.collection('players').updateOne({_id:id,files:latest.files},{$set:{files,updatedAt:new Date()},$push:{adminChanges:{$each:[{actor:user.account._id,at:new Date(),action:match[2]?'add-hero':'edit',heroId:match[2]?data.heroId:null,fields:match[2]?[]:Object.keys(data.values)}],$slice:-100}}});
+        const result = await db.collection('players').updateOne({_id:id,files:latest.files},{$set:{files,updatedAt:new Date()},$push:{adminChanges:{$each:[{actor:user.account._id,at:new Date(),action:grant?'add-item':match[2]?'add-hero':'edit',heroId:match[2]==='/heroes'?data.heroId:null,...(grant?{itemId:grant.id,amount:grant.amount}:{}),fields:match[2]?[]:Object.keys(data.values)}],$slice:-100}}});
         if (!result.matchedCount) fail(409,'Dữ liệu vừa thay đổi. Tải lại tài khoản trước khi lưu.');
         const dir=path.join(ROOT,'.accounts',match[1]);fs.mkdirSync(dir,{recursive:true});
         for(const name of FILES){const file=path.join(dir,name);if(files[name]!==undefined)fs.writeFileSync(file,files[name]);else fs.rmSync(file,{force:true});}
         fs.writeFileSync(path.join(dir,'synced-hash'),revision(snapshot(dir)));
         fs.rmSync(path.join(dir,'pending.json'),{force:true});
-        json(200,{ok:true,disconnected,account:view(account,{...player,files})});
+        json(200,{ok:true,disconnected,...(grant?{item:grant}:{}),account:view(account,{...player,files})});
       });
     } catch(e) { if(e instanceof SyntaxError) { json(400,{error:'Dữ liệu JSON không hợp lệ.'});return; } if(!e.status) console.error('[admin accounts]',e.name);json(e.status || 503,{error:e.status?e.message:'Không thể lưu dữ liệu. Vui lòng thử lại.'}); }
   };

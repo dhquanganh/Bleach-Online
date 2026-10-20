@@ -1,0 +1,111 @@
+      private static function MechaPinPages(previous:Array, current:Array):void
+      {
+         var pins:Object = FMechaFxLoading["_pins"];
+         if(pins == null){pins = {};FMechaFxLoading["_pins"] = pins;}
+         for each(var old:String in previous){pins[old] = Math.max(0,int(pins[old])-1);if(pins[old]==0)delete pins[old];}
+         for each(var key:String in current)pins[key] = int(pins[key])+1;
+         var queue:Array=FMechaFxLoading["_queue"] as Array;
+         if(queue!=null)for(var i:int=queue.length-1;i>=0;i--)
+         {
+            var queued:String=String(queue[i].name);
+            if(int(pins[queued])==0 && !MechaFirstAtlas(queued)){queue.splice(i,1);delete FMechaFxLoading[queued];}
+         }
+      }
+      private static function LoadMechaVfxAtlas(name:String, meta:Object, urgent:Boolean=false, lead:int=0):void
+      {
+         if(meta == null)return;
+         FMechaFxLoading["_age_"+name] = getTimer();
+         if(FMechaFxCache[name] != null)return;
+         var queue:Array = FMechaFxLoading["_queue"] as Array;
+         if(queue == null){queue=[];FMechaFxLoading["_queue"]=queue;}
+         if(FMechaFxLoading[name])
+         {
+            for(var i:int=0;i<queue.length;i++)if(queue[i].name==name){queue[i].deadline=Math.min(Number(queue[i].deadline),getTimer()+lead*40);break;}
+            return;
+         }
+         FMechaFxLoading[name] = true;
+         var job:Object={name:name,meta:meta,deadline:getTimer()+lead*40};
+         if(urgent)queue.unshift(job);else queue.push(job);
+         PumpMechaVfxQueue();
+      }
+      private static function PumpMechaVfxQueue():void
+      {
+         var queue:Array=FMechaFxLoading["_queue"] as Array;
+         if(queue==null || queue.length==0 || int(FMechaFxLoading["_inflight"])>=6)return;
+         queue.sortOn("deadline",Array.NUMERIC);
+         var job:Object=queue.shift();
+         var name:String=String(job.name);
+         var meta:Object=job.meta;
+         FMechaFxLoading["_inflight"]=int(FMechaFxLoading["_inflight"])+1;
+         var loader:flash.net.URLLoader=new flash.net.URLLoader();
+         loader.dataFormat=flash.net.URLLoaderDataFormat.BINARY;
+         var complete:Function;
+         var failed:Function;
+         var release:Function=function():void
+         {
+            loader.removeEventListener(Event.COMPLETE,complete);
+            loader.removeEventListener(IOErrorEvent.IO_ERROR,failed);
+            loader.removeEventListener(SecurityErrorEvent.SECURITY_ERROR,failed);
+            delete FMechaFxLoading[name];
+            FMechaFxLoading["_inflight"]=Math.max(0,int(FMechaFxLoading["_inflight"])-1);
+            loader.data=null;
+            PumpMechaVfxQueue();
+         };
+         failed=function(event:Event):void{release();};
+         complete=function(event:Event):void
+         {
+            var data:ByteArray=loader.data as ByteArray;
+            try
+            {
+            if(data!=null)
+            {
+               data.uncompress();
+               var w:int=data.readUnsignedInt();var h:int=data.readUnsignedInt();
+               var source:BitmapData=new BitmapData(w,h,true,0);
+               source.setPixels(new Rectangle(0,0,w,h),data);
+               data.clear();
+               var frames:Array=[source];
+               FMechaFxCache[name] = frames;
+               TrimMechaVfxCache(name);
+            }
+            }
+            catch(error:Error)
+            {
+               if(data!=null)data.clear();
+               if(source!=null && FMechaFxCache[name]==null)source.dispose();
+            }
+            release();
+         };
+         loader.addEventListener(Event.COMPLETE,complete);
+         loader.addEventListener(IOErrorEvent.IO_ERROR,failed);
+         loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR,failed);
+         loader.load(new URLRequest(String(meta.url).replace(".png",".argb")));
+         PumpMechaVfxQueue();
+      }
+      private static function TrimMechaVfxCache(keep:String):void
+      {
+         var pixels:Number=0;
+         var pins:Object=FMechaFxLoading["_pins"];
+         for(var key:String in FMechaFxCache)
+         {
+            var frames:Array=FMechaFxCache[key] as Array;
+            if(frames!=null && frames.length>0)pixels+=BitmapData(frames[0]).width*BitmapData(frames[0]).height;
+         }
+         while(pixels>40000000)
+         {
+            var oldest:String=null;
+            var age:Number=Number.MAX_VALUE;
+            for(key in FMechaFxCache)
+            {
+               if(key!=keep && !MechaFirstAtlas(key) && (pins==null || int(pins[key])==0) && Number(FMechaFxLoading["_age_"+key])<age)
+               {oldest=key;age=Number(FMechaFxLoading["_age_"+key]);}
+            }
+            if(oldest==null)break;
+            frames=FMechaFxCache[oldest] as Array;
+            var atlas:BitmapData=BitmapData(frames[0]);
+            pixels-=atlas.width*atlas.height;
+            delete FMechaFxCache[oldest];
+            delete FMechaFxLoading["_age_"+oldest];
+            atlas.dispose();
+         }
+      }

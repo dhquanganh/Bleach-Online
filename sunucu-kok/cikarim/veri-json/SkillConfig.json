@@ -64390,5 +64390,109 @@
     "desc": "After Hashirama suffers the first damage in a round, receives Excited Mode until the end of the round. Hashirama can have 2 Technique Points and for every he has, increase his Defense by 20%. Whenever he suffers damage, receives 0.5 Technique Point and if he has 2, consumes all to recovers 40 Chakra and enters Chakra Burst. Damage scales with Physical ATK. No cooldown. Per-round limits and trigger conditions still apply.",
     "icon": 13121010,
     "sortId": 10
+  },
+  {
+    "id": "00C8364D",
+    "skillId": 13121101,
+    "name": "Mecha-Naruto - Chakra Bomb",
+    "desc": "Prompt. Unavoidable physical damage to all enemies; selected target Knockdown, Interruption and Mystery cooldown locked at 1 until round end. If own HP is greater than 60%, hit up to 9 units instead. Then permanently enter Tailed Beast Mode. Cooldown 2; battlefield cooldown 1; Chakra 40. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121101,
+    "sortId": 1
+  },
+  {
+    "id": "00C8364E",
+    "skillId": 13121102,
+    "name": "Mecha-Naruto - Taijutsu Combo",
+    "desc": "Attack the enemy with lowest current HP, suppress Super Armor until round end. High chance of a Combo and Repulse. Bypasses defensive skills. If team Chakra is greater than 50, use Beam instead. Deals 8 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121102,
+    "sortId": 2
+  },
+  {
+    "id": "00C8364F",
+    "skillId": 13121103,
+    "name": "Mecha-Naruto - Beam",
+    "desc": "Unavoidable physical damage to a random occupied enemy line. Own Mystery cooldown -1. High chance of Repulse on one target; that target's Mystery cooldown +1. Team Mystery Chakra cost -20 until round end. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121103,
+    "sortId": 3
+  },
+  {
+    "id": "00C83650",
+    "skillId": 13121104,
+    "name": "Mecha-Naruto - Rasengan",
+    "desc": "Chase Knockdown or High Float; Repulse, Suppress Immunity through round end, steal all remaining Standard attacks. Twice per round. If the target already has Suppress Immunity, use Modified Rasengan. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121104,
+    "sortId": 4
+  },
+  {
+    "id": "00C83651",
+    "skillId": 13121105,
+    "name": "Modified Mecha-Naruto - Rasengan",
+    "desc": "Chase Knockdown or High Float. Unavoidable physical damage ignoring 30% Physical DEF, Repulse and Immobile; steal all remaining Standards. Shares two Chase charges per round. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121105,
+    "sortId": 5
+  },
+  {
+    "id": "00C83652",
+    "skillId": 13121106,
+    "name": "Extreme Mecha-Naruto - Beam",
+    "desc": "Jet trigger. Unavoidable physical damage to a random enemy line, even while controlled. Own Mystery cooldown -1. Repulse and Mystery cooldown +1 on one hit target. Team Mystery Chakra cost -20 until round end. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121106,
+    "sortId": 6
+  },
+  {
+    "id": "00C83653",
+    "skillId": 13121107,
+    "name": "Mecha-Naruto - Chakra Bomb [High HP]",
+    "desc": "High-HP Chakra Bomb: the same Mystery with up to 9 targets when own HP is greater than 60%. Selected Knockdown, Interruption and Mystery cooldown locked at 1 through round end. Then enter Tailed Beast Mode permanently. Shared cooldown 2; battlefield cooldown 1; Chakra 40. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121107,
+    "sortId": 7
+  },
+  {
+    "id": "00C83654",
+    "skillId": 13121108,
+    "name": "Mecha-Naruto - Jet",
+    "desc": "Jet evasion animation. On a successful evasion, recover 20 team Chakra and trigger Extreme Beam, up to 3 times each round; active while controlled.",
+    "icon": 13121108,
+    "sortId": 8
+  },
+  {
+    "id": "00C83655",
+    "skillId": 13121109,
+    "name": "Tailed Beast Mode",
+    "desc": "After Mecha-Naruto casts Chakra Bomb, transform into Tailed Beast Mode until battle end and replace all current skills. Transformation preserves HP and earned stat buffs; new Mystery recovery starts at 3 rounds and can be reduced by attacks received.",
+    "icon": 13121109,
+    "sortId": 9
+  },
+  {
+    "id": "00C83656",
+    "skillId": 13121110,
+    "name": "Mecha-Kurama - Energy Recovery",
+    "desc": "Prompt. Heal 12% max HP; gain Level 2 Super Armor and Advanced Immunity through round end. Physical damage dealers receive Level 2 Ignition for 1 round. Additionally execute Mecha-Kurama Chakra Bomb and activate Explosive Mode. Chakra 20; cooldown 3; battlefield cooldown 1.",
+    "icon": 13121110,
+    "sortId": 10
+  },
+  {
+    "id": "00C83657",
+    "skillId": 13121111,
+    "name": "Mecha-Kurama - Chakra Bomb",
+    "desc": "Additional Skill, after Energy Recovery: damage up to 12 enemies; Repulse a random hit target; +30 percentage points Critical Rate. No independent Mystery cast or Chakra cost. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121111,
+    "sortId": 11
+  },
+  {
+    "id": "00C83658",
+    "skillId": 13121112,
+    "name": "Mecha-Kurama - Claw Strike",
+    "desc": "Trigger at the start of even rounds. Unavoidable physical damage and Interruption to the front occupied enemy line; random primary target Low Float. Lock hit targets' Mystery recovery at 1 through round end. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121112,
+    "sortId": 12
+  },
+  {
+    "id": "00C83659",
+    "skillId": 13121113,
+    "name": "Mecha-Kurama - Tail Sweep",
+    "desc": "Trigger at the start of odd rounds. Physical damage to the front occupied enemy row, with 25% physical splash per hit neighbor one orthogonal grid away. Knockdown a random primary target. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121113,
+    "sortId": 13
   }
 ]

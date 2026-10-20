@@ -228,8 +228,9 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
-  const kabutoSuppressed=!require('./hashirama-combat').burst(unit)&&(unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>b.mechaIgnition&&b.remaining>0))return true;
+  const kabutoSuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound);
+  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||unit.id===11120950||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(kabutoSuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -239,7 +240,8 @@ function status(unit, field) {
 function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
-  let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field);
+  let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field);
+  if(field==='critRate')result+=require('./mecha-combat').critical(unit);
   if(['def','resistance'].includes(field)&&require('./pain-combat').active(unit,'painAfflictionUntil'))result=base*.75;
   const hash=require('./hashirama-combat');
   if(['atk','magicAtk'].includes(field)&&(hash.active(unit,'hashWeakUntil')||hash.active(unit,'hashEnfeebleUntil')))result=base*.75;
@@ -284,7 +286,7 @@ function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
     targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:ids[rule.value<0?1:0],buffTurn:rule.turns}});
 }
 function remove(target,negative,records) {
-  if(negative){for(const field of ['jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','kabutoSuppressedUntil','kabutoBlindUntil','kabutoCurseUntil','kabutoArmorSuppressedUntil','kabutoDefenseStacks'])delete target[field];target.paralyzed=false;}
+  if(negative){for(const field of ['mechaInflammation','mechaMysteryLockUntil','jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','kabutoSuppressedUntil','kabutoBlindUntil','kabutoCurseUntil','kabutoArmorSuppressedUntil','kabutoDefenseStacks'])delete target[field];target.paralyzed=false;}
   const removed=(target.skillBuffs||[]).filter(buff=>negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect');
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>!removed.includes(buff));
   for(const buff of removed){const ids=buffIds[buff.field];const id=ids?ids[buff.value<0?1:0]:buff.buffId;
@@ -357,7 +359,7 @@ function startRound(units) {
     for(const buff of [...unit.skillBuffs||[]]){
       if(buff.kind==='regen')restore(unit,unit,buff.amount,records);
       else if(buff.kind==='dot'&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
-        let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.amount)));
+        let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.mechaIgnition&&unit.mechaContext?require('./mecha-combat').ignitionDamage(unit.mechaContext.teams.flat().find(v=>v.id===buff.source&&(buff.sourceCamp==null||v.camp===buff.sourceCamp))||unit,unit):buff.amount)));
         const protection=require('./kabuto-combat').protectFatal(unit,damage);
         if(protection)damage=protection.damage;
         unit.hp-=damage;records.push(hpRecord(unit,damage,false));

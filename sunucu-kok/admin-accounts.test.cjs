@@ -42,6 +42,27 @@ test('Admin edits any account, safely stops active workers, adds valid heroes, a
     assert.equal((await request(route+'/heroes',cookies[0],'POST',{revision:target.revision,heroId:11120901,level:20})).status,400);
     response=await request(route+'/heroes',cookies[0],'POST',{revision:target.revision,heroId:11120920,level:39});assert.equal(response.status,200,await response.clone().text());target=(await response.json()).account;assert.ok(target.heroes.some(h=>h.id===11120920&&h.level===39));
     assert.equal((await request(route+'/heroes',cookies[0],'POST',{revision:target.revision,heroId:11120920,level:39})).status,409);
+    const itemsRoute=route+'/items';
+    assert.equal((await request('/auth/admin/items?q=Mecha',cookies[1])).status,403);
+    const found=(await get('/auth/admin/items?q=14130950',cookies[0])).items;
+    assert.ok(found.some(x=>x.id===14130950&&/Mecha/i.test(x.name)));
+    const icon=await request('/auth/admin/items/14130950/icon',cookies[0]);assert.equal(icon.status,200);assert.match(icon.headers.get('content-type'),/^image\//);
+    for(const [itemId,amount] of [[0,1],[14130950,0],[14130950,1000],[14130950,1.5]])
+      assert.equal((await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId,amount})).status,400);
+    assert.equal((await request(itemsRoute,cookies[1],'POST',{revision:target.revision,itemId:14130950,amount:80})).status,403);
+    assert.equal((await request(itemsRoute,cookies[0],'POST',{revision:'stale',itemId:14130950,amount:80})).status,409);
+    response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14130950,amount:80});
+    assert.equal(response.status,200,await response.clone().text());let gift=await response.json();target=gift.account;assert.equal(gift.item.total,80);
+    response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14130950,amount:20});
+    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.total,100);
+    let inventoryState=JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']);
+    assert.equal(require('./sunucu/envanter').mevcut(inventoryState,14130950),100);
+    const equipment=JSON.parse(fs.readFileSync(path.join(ROOT,'sunucu-kok/cikarim/veri-json/Article.json'),'utf8')).find(a=>[2,4,6].includes(Number(a.majorType)));
+    response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:parseInt(equipment.id,16),amount:2});
+    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;
+    inventoryState=JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']);
+    assert.ok(inventoryState.ekipman.goc);assert.ok(Object.values(inventoryState.ekipman.esyalar).filter(x=>x.tpl===parseInt(equipment.id,16)).length>=2);
+    assert.ok(Object.keys(inventoryState.ekipman.takili).every(key=>key==='11100004'),'Migration uses target character, not admin process character');
     const profile=await get('/yerel/oturum.json',cookies[1]);
     target=await get(route,cookies[0]);assert.equal(target.online,true);
     response=await request(route,cookies[0],'PATCH',{revision:target.revision,values:{altin:777777}});assert.equal(response.status,200,await response.clone().text());assert.equal((await response.json()).disconnected,true);
@@ -49,6 +70,18 @@ test('Admin edits any account, safely stops active workers, adds valid heroes, a
     const cached=JSON.parse(fs.readFileSync(path.join(ROOT,'.accounts',ids[1].toHexString(),'veri.json')));assert.equal(cached.altin,777777);assert.ok(cached.herolar.includes(11120920));
     const other=await get('/auth/admin/accounts/'+ids[2].toHexString(),cookies[0]);assert.notEqual(other.values.altin,777777);assert.ok(!other.heroes.some(h=>h.id===11120920));
     const saved=await app.db.collection('players').findOne({_id:ids[1]});assert.ok(saved.adminChanges.length>=3);
+    assert.ok(saved.adminChanges.some(x=>x.action==='add-item'&&x.itemId===14130950&&x.amount===80));
+    const otherFiles=(await app.db.collection('players').findOne({_id:ids[2]})).files;
+    assert.equal(require('./sunucu/envanter').mevcut(JSON.parse(otherFiles['oyuncu.json']),14130950),0);
+    const saturated=JSON.parse(otherFiles['oyuncu.json']);saturated.envanter={esyalar:[{code:14130950,amount:65530}],dusulen:{}};
+    await app.db.collection('players').updateOne({_id:ids[2]},{$set:{files:{...otherFiles,'oyuncu.json':JSON.stringify(saturated)}}});
+    const otherRoute='/auth/admin/accounts/'+ids[2].toHexString(),full=await get(otherRoute,cookies[0]);
+    assert.equal((await request(otherRoute+'/items',cookies[0],'POST',{revision:full.revision,itemId:14130950,amount:10})).status,400);
+    assert.equal((await get(otherRoute,cookies[0])).revision,full.revision,'Partial grants are not persisted');
+    delete saturated.karakter;
+    await app.db.collection('players').updateOne({_id:ids[2]},{$set:{files:{...otherFiles,'oyuncu.json':JSON.stringify(saturated)}}});
+    const uncreated=await get(otherRoute,cookies[0]);
+    assert.equal((await request(otherRoute+'/items',cookies[0],'POST',{revision:uncreated.revision,itemId:14130950,amount:1})).status,400);
   }finally{
     await app.close();await new Promise(r=>server.close(r));const {client,db}=await connect();
     for(const id of ids){await db.collection('sessions').deleteMany({accountId:id});await db.collection('players').deleteOne({_id:id});await db.collection('accounts').deleteOne({_id:id});for(const dir of [path.join(ROOT,'.accounts',id.toHexString()),path.join(ROOT,'.accounts','arena-cache',id.toHexString())])fs.rmSync(dir,{recursive:true,force:true})}

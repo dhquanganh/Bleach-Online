@@ -1,0 +1,207 @@
+{
+  "applied": true,
+  "quality": 7,
+  "items": [
+    {
+      "id": 14200331,
+      "name": "Hellwing Sword"
+    },
+    {
+      "id": 14200332,
+      "name": "Hellwing Blade"
+    },
+    {
+      "id": 14200333,
+      "name": "Hellwing Rune"
+    },
+    {
+      "id": 14200334,
+      "name": "Hellwing Headband"
+    },
+    {
+      "id": 14200335,
+      "name": "Hellwing Armor"
+    },
+    {
+      "id": 14200336,
+      "name": "Hellwing Cloak"
+    },
+    {
+      "id": 14200337,
+      "name": "Hellwing Shoe"
+    },
+    {
+      "id": 14200338,
+      "name": "Hellwing Belt"
+    },
+    {
+      "id": 14200341,
+      "name": "Spirit·Hellwing Sword"
+    },
+    {
+      "id": 14200342,
+      "name": "Spirit·Hellwing Blade"
+    },
+    {
+      "id": 14200343,
+      "name": "Spirit·Hellwing Rune"
+    },
+    {
+      "id": 14200344,
+      "name": "Spirit·Hellwing Headband"
+    },
+    {
+      "id": 14200345,
+      "name": "Spirit·Hellwing Armor"
+    },
+    {
+      "id": 14200346,
+      "name": "Spirit·Hellwing Cloak"
+    },
+    {
+      "id": 14200347,
+      "name": "Spirit·Hellwing Shoe"
+    },
+    {
+      "id": 14200348,
+      "name": "Spirit·Hellwing Belt"
+    }
+  ],
+  "articleCopies": [
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-de\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-es\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-fr\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-id\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-it\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-ja\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-pt\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-ru\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-tr\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-vi\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-zh\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\normal\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\combine\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-de\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-es\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-fr\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-id\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-it\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-ja\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-pt\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-ru\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-tr\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-vi\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-zh\\0F000000.binPackage",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\normal\\0F000000.binPackage"
+  ],
+  "changedFiles": [
+    {
+      "path": "cikarim\\veri-json\\Article.json",
+      "sha256": "4337e0a8434d21c1acb35f2c3ed8616594e053d77afad36524c12bb8777ee75b"
+    },
+    {
+      "path": "cikarim\\veri-json\\items.json",
+      "sha256": "4574102d764c7448da81ff51c2a6906234da51245cb5a2ca57f6eb229e011d79"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-de\\0F000000.binPackage",
+      "sha256": "71ed4f1bf759b9562acde07e625dc52d14facad6dd231c0312b1948341adfcfa"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-es\\0F000000.binPackage",
+      "sha256": "9e13f1e74b56d1e6af6c59864318e0920ed8010dc3892f3d9bab8534eb1f8c1b"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-fr\\0F000000.binPackage",
+      "sha256": "7fbf9bf010f4dd09a0c21f8521d3c3e8552cd2337fe6915538fe66da82353d61"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-id\\0F000000.binPackage",
+      "sha256": "bfd3cfcba0a9a26b7cd160e1f3232132079f7cd6a1b0828b5d91a3e115903c80"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-it\\0F000000.binPackage",
+      "sha256": "8748dc3f9939e2cf3cec473a72e9b894824b24a7fcf27cf29ec9a122b9f02b77"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-ja\\0F000000.binPackage",
+      "sha256": "97604314a97bda6dc57e3d73480da95fa26797c8a62af5b6c52dad262cf6acb4"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-pt\\0F000000.binPackage",
+      "sha256": "232c299441b0b1a0458efa8981afe51fdb85a883fd5ae2fd5a5e3b837e3ab56e"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-ru\\0F000000.binPackage",
+      "sha256": "27f759ab39bcfec8deb46d719f367ebf263847f0e956dd77455bd891a794d62b"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-tr\\0F000000.binPackage",
+      "sha256": "50d4a30c50cd50e1adbf4f8f3f35de15f34bd570ac60ba9ba34c799438faf9a7"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-vi\\0F000000.binPackage",
+      "sha256": "5763728618db047e64383ee68811a302fbaddd92bb1068ba10bbf21322740ac1"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\dil-zh\\0F000000.binPackage",
+      "sha256": "b8adb9b268de7c805a4f061640f186c5b8b43a7bc1c40a1598405905f547f344"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Bin\\normal\\0F000000.binPackage",
+      "sha256": "1b4099b1ba1959854f1fb289540db79210e020ff964cebc9e254fdb70a2743e1"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\combine\\0F000000.binPackage",
+      "sha256": "433b0e9a878928c9d25f949d1b9b46437c88f8ca914df5351b10e0447b06560e"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-de\\0F000000.binPackage",
+      "sha256": "ab0da3c74c4a2bed7d9270f9f415dd59360285c103e23249bed3a26452685570"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-es\\0F000000.binPackage",
+      "sha256": "ef92fa192947d23ea6981a97df18cd2fb8a614d8c437e5c7a3578f175c96bda5"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-fr\\0F000000.binPackage",
+      "sha256": "d75b0665a2ddcf1384b456a4a921496e464ac3819ed3e6a57df6e41c5b0cac5d"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-id\\0F000000.binPackage",
+      "sha256": "b0931e7e25fa6945aa25531f8a1c2322cf7e2dda62d2390f2842163c4939de6c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-it\\0F000000.binPackage",
+      "sha256": "f4f2ffcf1c61f6b5d824b961acd22fa02f5f9cce0ba9e0530d1a5f74f95bdaa4"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-ja\\0F000000.binPackage",
+      "sha256": "114607f05f0b75f04751ea340d170d131bba70a77573b52b378628870ba5e6f4"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-pt\\0F000000.binPackage",
+      "sha256": "70fc9a737bc3c70d36a7d205ce609475d3424ae5a3919479f2437afce79ba5b9"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-ru\\0F000000.binPackage",
+      "sha256": "cebf9253d965a153cce1b826abffc1ba18d936f8faca5a445cd68ee441540ba9"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-tr\\0F000000.binPackage",
+      "sha256": "774737eba9dc0b4573cd1a2f10ae9b83fff139950a13f26e7528a6b4962087ff"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-vi\\0F000000.binPackage",
+      "sha256": "2a187f8f8c66c601a97d247dcc28fc5252ef9eaa79df654b78f3a19f5d39715e"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\dil-zh\\0F000000.binPackage",
+      "sha256": "24b015f1ca14c10cefd649f3918847c30c232949e7c06fe864b4d71e6ecef3e8"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Bin\\normal\\0F000000.binPackage",
+      "sha256": "1e13b6a4a229dffbb96dc17c9d6bcb105296397a863106b553cb9e088ed58288"
+    }
+  ]
+}

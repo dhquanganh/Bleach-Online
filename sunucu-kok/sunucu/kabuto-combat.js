@@ -11,7 +11,7 @@ const immune=u=>!suppressed(u)&&skills.status(u,'immuneDebuffs');
 const cursed=u=>u.kabutoCurseUntil>=u.battleRound;
 const blind=u=>u.kabutoBlindUntil>=u.battleRound;
 const edo=u=>!!(u.edoTensei||(profile(u)||{}).edoTensei);
-const armor=u=>!!(u.superArmor&&!(u.kabutoArmorSuppressedUntil>=u.battleRound));
+const armor=u=>!!((u.superArmor||require('./mecha-combat').beast(u))&&(!(u.kabutoArmorSuppressedUntil>=u.battleRound)||require('./mecha-combat').advanced(u)));
 const activeBarrier=ctx=>ctx.barrier&&ctx.barrier.kind==='lightweight'&&ctx.round<=ctx.barrier.until;
 const canStandard=(ctx,u)=>!blind(u)&&(!activeBarrier(ctx)||isKabuto(u)||edo(u));
 const canMystery=(ctx,u)=>!cursed(u)&&u.kabutoInterruptedRound!==ctx.round;

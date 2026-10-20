@@ -49,9 +49,9 @@ function interrupt(ctx,target,records){
   if(rejectBuff(null,target,{field:'silence',value:1},records))return;
   target.painInterruptedUntil=ctx.round;label(records,target,6);
 }
-function canMystery(ctx,u,move){return (!isPain(u)||((u.painMysteries||0)<(u.painFinal?2:1)&&(move.consumeAllTechnique||(u.painTechnique||0)>=(move.techniqueCost||0))))&&(!active(u,'painInterruptedUntil')||active(u,'painInterruptImmuneUntil'));}
+function canMystery(ctx,u,move){return !active(u,'mechaMysteryLockUntil')&&(!isPain(u)||((u.painMysteries||0)<(u.painFinal?2:1)&&(move.consumeAllTechnique||(u.painTechnique||0)>=(move.techniqueCost||0))))&&(!active(u,'painInterruptedUntil')||active(u,'painInterruptImmuneUntil'));}
 function mysteryReady(ctx,u){return ctx.round>=(u.mysteryReadyRound||1)||(isPain(u)&&u.painFinal&&u.painMysteryWindow===ctx.round&&(u.painMysteries||0)<2);}
-function mysteryCost(ctx,u,move){return (Number(move.chakraCost)||0)+(u.painCostRound===ctx.round?(u.painCost||0):0);}
+function mysteryCost(ctx,u,move){return Math.max(0,(Number(move.chakraCost)||0)+(u.painCostRound===ctx.round?(u.painCost||0):0)-(u.mechaContext?u.mechaContext.teams[u.camp].filter(v=>v.mechaCostRound===ctx.round).reduce((s,v)=>s+(v.mechaCostReduction||0),0):0));}
 function spendMystery(ctx,u,move){
   // Executing a Mystery clears Fear/Horror even if the resulting attack misses.
   if(active(u,'painHorrorUntil')){delete u.painHorrorUntil;}
@@ -130,4 +130,4 @@ function revivals(ctx){
   return out;
 }
 function prepareMove(ctx,u,move){return move&&active(u,'painUnavoidableUntil')&&(move.prompt||move.painMystery)?{...move,unavoidable:true}:move;}
-module.exports={config,isPain,isRinnegan,active,label,passive,visual,points,profile,initialize,factor,rejectBuff,canMystery,mysteryReady,mysteryCost,spendMystery,targetList,beforeStandard,onHit,afterHit,roundStart,revivals,prepareMove};
+module.exports={interrupt,config,isPain,isRinnegan,active,label,passive,visual,points,profile,initialize,factor,rejectBuff,canMystery,mysteryReady,mysteryCost,spendMystery,targetList,beforeStandard,onHit,afterHit,roundStart,revivals,prepareMove};

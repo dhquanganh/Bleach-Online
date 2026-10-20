@@ -1,0 +1,4 @@
+{
+  "SkillAction.xml": "<SkillAction id=\"21015017\" type=\"2\" hideOthers=\"0\" triggerDefenceType=\"1\" attackAction=\"SP_skill1\" attackDistance=\"\" afterAttackOffsetPoint=\"\" moveType=\"0\" sceneMaskAlpha=\"0\">\n    <HitPointInfo id=\"0\" majorDefenceAttributeIdList=\"35\" />\n    <SkillEffect id=\"6077\" />\n  </SkillAction>\n  ",
+  "Effect.xml": "<EffectInfo id=\"6077\" type=\"0\" target=\"0\" pos=\"70,0\" color=\"\" minAlpha=\"1\" maxAlpha=\"1\" ninjaAlpha=\"1\" res=\"assets/battle/effect/Jijiamingren_ji_aoyi.swf\" action=\"\" name=\"机甲能量积奥义\" frontAction=\"shang\" backAction=\"xia\" />\n  "
+}

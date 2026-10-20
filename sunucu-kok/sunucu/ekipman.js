@@ -99,7 +99,10 @@ function goc(durum) {
     d.esyalar = kalan;
   } catch (err) { }
   // yakalanan takili set -> ana hero (meslek uymayan silah cantaya, uygun olan cantadan takilir)
-  const ana = anaId(); const meslek = anaMeslek();
+  // Admin grants can migrate another account's inventory in the auth process.
+  // Prefer that account's character over the process-global runtime character.
+  const ana = Number(durum.karakter?.anaId) || anaId();
+  const meslek = Number(statlar.heroById.get(ana >>> 0)?.profession) || anaMeslek();
   const tak = {};
   for (const k of yakalananTakili()) {
     const a = article(k.tpl); if (!a) continue;

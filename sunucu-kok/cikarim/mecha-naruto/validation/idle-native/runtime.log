@@ -1,0 +1,31 @@
+BOOT native Flash shared VFX component probe
+TEXTURE hit frames=8
+TEXTURE idle frames=39
+TEXTURE beast-hit frames=8
+TEXTURE run frames=4
+TEXTURE beast-run frames=4
+TEXTURE beast-idle frames=37
+TEXTURE rasengan frames=82
+TEXTURE jet frames=43
+TEXTURE sweep frames=113
+TEXTURE combo frames=99
+TEXTURE beam frames=56
+TEXTURE extreme frames=56
+TEXTURE recovery frames=74
+TEXTURE claw frames=90
+TEXTURE modified frames=82
+TEXTURE transform frames=54
+TEXTURE beast-bomb frames=113
+TEXTURE bomb frames=161
+TEXTURE high-bomb frames=161
+CASE idle both camps
+SNAPSHOT IDLE-idle
+CASE beast-idle both camps
+SNAPSHOT IDLE-beast-idle
+CASE beast-run both camps
+SNAPSHOT IDLE-beast-run
+CASE beast-hit both camps
+SNAPSHOT IDLE-beast-hit
+CASE recovery both camps
+SNAPSHOT IDLE-recovery
+DONE Mecha idle native; remaining=0

@@ -1,0 +1,97 @@
+[
+  {
+    "file": "icons/21015003.png",
+    "sha256": "ce116572b7903d508297a3cb16a2e0eff4bd24c7c60cea7fbd359dfab6704bcd",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015003.png"
+  },
+  {
+    "file": "icons/21015004.png",
+    "sha256": "18b6f43549575ad74696860d6f592d99465ec8327c26e172e02015f726b783f4",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015004.png"
+  },
+  {
+    "file": "icons/21015005.png",
+    "sha256": "cbbcd3e10818541379c20cf92caa5da3b30b2f258032c97490957a1641a883a6",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015005.png"
+  },
+  {
+    "file": "icons/21015006.png",
+    "sha256": "e787a6d1ad75f563722a48ffea4ef51da9365f117bbcbb17197e0f9b0b4823f9",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015006.png"
+  },
+  {
+    "file": "icons/21015007.png",
+    "sha256": "ef0b6e404079bacb5e37545b6a70fc7663843bfe0eaf71c3871a6cc823d023e2",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015007.png"
+  },
+  {
+    "file": "icons/21015008.png",
+    "sha256": "d9971c6e37ab245f9b18a3cc99e0508f53e83aee27c60f3c3893d89f01df3b0c",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015008.png"
+  },
+  {
+    "file": "icons/21015016.png",
+    "sha256": "6969b6795cccc2b1ab856b998c8740f8b4814c2792ddd2fb5a63ca00e3271752",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015016.png"
+  },
+  {
+    "file": "icons/21015017.png",
+    "sha256": "55e13f6c82a2ef91a3d9db2e945f87613fdaf3006cdb5c20feb0108b2d603db3",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015017.png"
+  },
+  {
+    "file": "icons/21015024.png",
+    "sha256": "89b7e73299efedfae826c33fde26dbe4d2cd47f6e035ddff9414a779cd7576f8",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015024.png"
+  },
+  {
+    "file": "icons/21015025.png",
+    "sha256": "1744116d77e8a1b3dc8f5109d04e69c64a15bcc186e61088e24ad96c7811a901",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/skill/40/21015025.png"
+  },
+  {
+    "file": "effects/Jijiamingren_aoyi.swf",
+    "sha256": "2f777833c3e367b5dc40de677c75aa31464fefafe450014e206a863ec845e0ff",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_aoyi.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_ji_aoyi.swf",
+    "sha256": "11ffd0d71790cd62589c5a26e681b29ffe708aa19eefc4f093f42b85b48433a6",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_ji_aoyi.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_jiuweilama_hengsao.swf",
+    "sha256": "a837e54ba912894d6d57f63761f8d0c9b63548cc66bccba60f1de5254cb24375",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_jiuweilama_hengsao.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_jiuweilama_weisouyu.swf",
+    "sha256": "ad585c0be65777a291a66846cb3a9e0e8df0776391dbe069a407df91ef8b0b62",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_jiuweilama_weisouyu.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_jiuweilama_zhuaji.swf",
+    "sha256": "a579d913ef9082cc468776a0f7d144632dd4ea5280acc98b5d56dd71165e47c9",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_jiuweilama_zhuaji.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_liandan_pugong3.swf",
+    "sha256": "8bca529fdbd8c2959cb6d41ab9ea9d1f13d73645729bfc10edab91b84933dc03",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_liandan_pugong3.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_luoxuanwan_zhuida.swf",
+    "sha256": "67f2e0e397b3366602d2f99ac8e71e24ca44499d93016c7fb258ac8da2eaeaa5",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_luoxuanwan_zhuida.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_qianghua_pugong.swf",
+    "sha256": "0872ba821a2509448a40d6cbef96da0183d52a511a03e1908fa4b21fb13ebb47",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_qianghua_pugong.swf"
+  },
+  {
+    "file": "effects/Jijiamingren_shanbi.swf",
+    "sha256": "7d52914311572ce326d5ed87053463b2a1d0127845756323c33748b4d750df49",
+    "source": "E:/Naruto_Online_Full_Resources/resources/assets/battle/effect/Jijiamingren_shanbi.swf"
+  }
+]

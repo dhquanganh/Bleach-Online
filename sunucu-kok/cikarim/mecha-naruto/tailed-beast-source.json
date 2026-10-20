@@ -1,0 +1,63 @@
+{
+  "form": "11015003",
+  "standard": null,
+  "mystery": "21015017",
+  "skills": [
+    {
+      "id": "21015005",
+      "name": "Tailed Beast Mode",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "After Mecha-Naruto executes <font color=\"#4dc831\">Mecha-Naruto - Chakra Bomb</font>, enters <font color=\"#4dc831\">Tailed Beast Mode</font> until the end of the battle, in which he loses all current skills and receives new ones, including <font color=\"#4dc831\">Mecha-Kurama - Chakra Bomb</font>, <font color=\"#4dc831\">Mecha-Kurama - Energy Recovery</font>, <font color=\"#4dc831\">Mecha-Kurama - Tail Sweep</font>, <font color=\"#4dc831\">Mecha-Kurama - Claw Strike</font>."
+    },
+    {
+      "id": "21015014",
+      "name": "Mecha-Kurama - Claw Strike",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "Triggered at the beginning of even-numbered rounds, causes unavoidable damage, <font color=\"#4dc831\">Interruption</font> to the front line of opponent units, causes <font color=\"#4dc831\">Low Float</font> to a random unit hit. All units hit will have their <font color=\"#4dc831\">Mystery Cooldown locked</font> at 1 until the end of the round."
+    },
+    {
+      "id": "21015015",
+      "name": "Mecha-Kurama - Tail Sweep",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "Triggered at the beginning of odd-numbered rounds, causes damage to the front row of opponent units and causes 25% splash damage to units 1 grid away from all units hit, causes <font color=\"#4dc831\">Knockdown</font> to a random unit hit."
+    },
+    {
+      "id": "21015016",
+      "name": "Tailed Beast Mode",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "<font color=\"#4dc831\">Additional Skill</font>: Triggered after <font color=\"#4dc831\">Mecha-Naruto</font> executes <font color=\"#4dc831\">Mecha-Kurama - Energy Recovery</font>, causes damage to up to 12 units in the opponent's field, causes <font color=\"#4dc831\">Repulse</font> to a random unit hit. This skill has additional <font color=\"#4dc831\">Critical Rate</font> increase."
+    },
+    {
+      "id": "21015018",
+      "name": "Tailed Beast Mode",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "Under <font color=\"#4dc831\">Tailed Beast Mode</font>, Mecha-Naruto is <font color=\"#4dc831\">immune to Debuffs</font> and has <font color=\"#4dc831\">Super Armor</font>. Whenever he executes a <font color=\"#4dc831\">Trigger</font> Skill, increase his <font color=\"#4dc831\">Attack</font> and <font color=\"#4dc831\">Ninjutsu</font> by 20% (stackable)."
+    },
+    {
+      "id": "21015019",
+      "name": "Tailed Beast Mode",
+      "chakra": "0",
+      "cooldown": "0",
+      "battlefieldCooldown": "0",
+      "description": "After executing <font color=\"#4dc831\">Mecha-Kurama - Energy Recovery</font>, additionally executes <font color=\"#4dc831\">Additional Skill: Mecha-Kurama - Tailed Beast Bomb</font>, whenever he's attacked, reduces his Mystery Cooldown by 1 and enters <font color=\"#4dc831\">Explosive Mode</font> until the end of the battle. Under <font color=\"#4dc831\">Explosive Mode</font>, units causing damage to Mecha-Naruto will suffer from a layer of <font color=\"#4dc831\">Inflammation</font>. Whenever units suffering from this Debuff causes Taijutsu damage, that unit will lose 1% max HP. Inflammation can be stacked up to 4 layers."
+    },
+    {
+      "id": "21015017",
+      "name": "Mecha-Kurama - Energy Recovery",
+      "chakra": "20",
+      "cooldown": "3",
+      "battlefieldCooldown": "1",
+      "description": "Recovers 12% <font color=\"#4dc831\">HP</font> and gains <font color=\"#4dc831\">Level 2 Super Armor</font> and <font color=\"#4dc831\">Advanced Immunity</font> until the end of the round. Additionally in that round, units causing Taijutsu damage to Mecha-Naruto will suffer from <font color=\"#4dc831\">Level 2 - Ignition</font>."
+    }
+  ]
+}

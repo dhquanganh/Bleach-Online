@@ -8,6 +8,7 @@ const kabuto = require('./kabuto-combat');
 const obito = require('./obito-combat');
 const pain = require('./pain-combat');
 const hash = require('./hashirama-combat');
+const mecha = require('./mecha-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -15,7 +16,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
   frame.targets.push({cmd:9,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,
     result:{buffId:(obitoSource?(isChase?19000700:19000600):(isChase?19000200:19000100))+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
 }
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -37,6 +38,7 @@ function create(teams, options = {}) {
   pain.initialize(context);
   for(const unit of teams.flat())if(obito.isObito(unit))delete unit.obitoKamuiRound;
   hash.initialize(context);
+  mecha.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -84,19 +86,22 @@ function spendCooldown(ctx, unit, key, move) {
   ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
 }
 function useStandard(ctx, unit, allies) {
-  const move=kabuto.selectStandard(ctx,unit,standard(unit,allies));
+  const move=mecha.selectStandard(ctx,unit,kabuto.selectStandard(ctx,unit,standard(unit,allies)));
   if(!move || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
-    if(hash.isHash(unit)){
+    if(mecha.isMecha(unit)){
+      while(unit.hashStandardLoss>0 && mecha.available(ctx,unit)){mecha.spendStandard(unit);unit.hashStandardLoss--;}
+    }else if(hash.isHash(unit)){
       while(unit.hashStandardLoss>0 && hash.available(ctx,unit)){hash.spendStandard(unit);unit.hashStandardLoss--;}
     }else if(obito.isObito(unit)){
       while(unit.hashStandardLoss>0 && obito.available(ctx,unit)){unit.obitoStandards=(unit.obitoStandards||0)+1;unit.hashStandardLoss--;}
     }else{unit.hashStandardLoss--;ctx.primaryActions.set(unit,ctx.round);return null;}
   }
-  if(hash.isHash(unit)?!hash.available(ctx,unit):obito.isObito(unit)?!obito.available(ctx,unit):!primaryAvailable(ctx,unit)||!ready(ctx,unit,'standard'))return null;
+  if(mecha.isMecha(unit)?!mecha.available(ctx,unit):hash.isHash(unit)?!hash.available(ctx,unit):obito.isObito(unit)?!obito.available(ctx,unit):!primaryAvailable(ctx,unit)||!ready(ctx,unit,'standard'))return null;
   // Summon/Barrage share a slot: losing a clone must not bypass the cooldown.
   if(move.cooldown!==0)spendCooldown(ctx,unit,'standard',move);
   ctx.primaryActions.set(unit,ctx.round);
+  if(mecha.isMecha(unit))mecha.spendStandard(unit);
   if(hash.isHash(unit))hash.spendStandard(unit);
   if(obito.isObito(unit))unit.obitoStandards=(unit.obitoStandards||0)+1;
   return move;
@@ -108,7 +113,8 @@ function canMystery(ctx, unit) {
 }
 function useMystery(ctx,unit,beforeSpend=null) {
   if (!canMystery(ctx,unit)) return null;
-  const m=profile(unit).mystery;
+  const m={...profile(unit).mystery};
+  if(mecha.isMecha(unit)&&!mecha.beast(unit)&&unit.hp>unit.maxHp*.6)Object.assign(m,mecha.config.highHpMystery);
   if(beforeSpend)beforeSpend();
   ctx.chakra[unit.camp]-=pain.mysteryCost(ctx,unit,m);
   pain.spendMystery(ctx,unit,m);
