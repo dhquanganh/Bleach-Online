@@ -651,7 +651,21 @@
         // Karakteri olan hesapta zararsiz: ekran gizli kurulur, giris normal devam eder.
         payurl: 'http://127.0.0.1:7421/topup', fightreporturl: '', support: '', officeurl: '', isNew: '1', lang: (dil && dil.kod) || 'en'
       };
-      swfobject.embedSWF(base + flashvars.version + '/index.swf', 'flashContent', '1250', '650', '11.0.0', false, flashvars,
+      // Refresh the bootstrap and its resource map together, independent of the
+      // account session's original client version. Preserve login credentials.
+      var clientRelease = null;
+      try {
+        var releaseRequest = new XMLHttpRequest();
+        releaseRequest.open('GET', base + 'client-release.json?t=' + Date.now(), false);
+        releaseRequest.send();
+        if (releaseRequest.status === 200) clientRelease = JSON.parse(releaseRequest.responseText);
+      } catch (e) { }
+      if (clientRelease && /^\d{10}$/.test(String(clientRelease.version))) flashvars.version = String(clientRelease.version);
+      var revisionLabel = document.createElement('span');
+      revisionLabel.textContent = '  Client ' + flashvars.version;
+      revisionLabel.style.cssText = 'font-size:11px;color:#aaa;margin-left:8px';
+      accountBar.appendChild(revisionLabel);
+      swfobject.embedSWF(base + flashvars.version + '/index.swf?release=' + flashvars.version, 'flashContent', '1250', '650', '11.0.0', false, flashvars,
         { quality: 'high', bgcolor: '#000000', allowfullscreen: 'true', allowscriptaccess: 'always', wmode: 'transparent' },
         { id: 'loading', name: 'loading', align: 'middle' });
     }

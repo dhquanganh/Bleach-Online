@@ -1,0 +1,15 @@
+SASUKE UCHIHA [SASUKE SHINDEN]
+Ma nhan vat / artisticId: 11014821
+
+assets/battle/role/left/: SWF chien dau
+assets/battle/effect/: hieu ung chieu, hieu ung toan man hinh, Susanoo va hieu ung dung chung duoc cau hinh tham chieu
+assets/role/npc/scene/npcres/: SWF ngoai ban do
+assets/user/ninja/: tai nguyen giao dien, anh lon
+assets/bag/: anh xem truoc va vat pham
+assets/skill/: icon ky nang
+config_reference/: XML trich doan de doi chieu lien ket chi tiet
+manifest.json: danh sach file, SHA256, ma ky nang va file thieu neu co
+
+Da lan theo ninjaSkillConfig -> SkillInfos (gom closeRefId/refSubSkill) -> SkillAction -> Effect, cung LogicResEffect va BuffRefInfo/BuffEffect. Giu cau truc duong dan goc.
+Nguon: E:/Naruto_Online_Full_Resources/resources
+Cac SWF da kiem tra chu ky va do dai giai nen. Day la bo tai nguyen nhan vat trong du lieu hien co; van can runtime va tai nguyen chung cua game de chay dung.

@@ -1,0 +1,49 @@
+{
+  "ZuozhuZZZZ_qilin": {
+    "coreWidth": 2108.3252142857145,
+    "sharpScale": 0.3562069053252932,
+    "displayWidth": 980,
+    "heightAboveGround": 8,
+    "anchorX": 486.26888565849595,
+    "anchorY": 45.18550161743125
+  },
+  "ZuozhuZZZZ_qilin_yan": {
+    "coreWidth": 2108.3252142857145,
+    "sharpScale": 0.3562069053252932,
+    "displayWidth": 980,
+    "heightAboveGround": 8,
+    "anchorX": 443.827173513118,
+    "anchorY": 92.15362321888044
+  },
+  "ZuozhuZZZZ_haolonghuo": {
+    "coreWidth": 1835.3846153846152,
+    "sharpScale": 0.65,
+    "displayWidth": 1280,
+    "heightAboveGround": 85,
+    "anchorX": 646.6441401451926,
+    "anchorY": -0.18294502609732122
+  },
+  "ZuozhuZZZZ_haolonghuoyan": {
+    "coreWidth": 1835.3846153846152,
+    "sharpScale": 0.65,
+    "displayWidth": 1280,
+    "heightAboveGround": 85,
+    "anchorX": 646.6441401451926,
+    "anchorY": -0.18294502609732122
+  },
+  "ZuozhuZZZZ_qianniaodao3": {
+    "coreWidth": 950.0,
+    "sharpScale": 1.2105263157894737,
+    "displayWidth": 1600,
+    "heightAboveGround": 85,
+    "anchorX": 155.94951996166486,
+    "anchorY": -115.03627205330208
+  },
+  "ZuozhuZZZZ_xuzuobati": {
+    "coreWidth": 143.52941176470588,
+    "displayWidth": 180,
+    "heightAboveGround": 0,
+    "anchorX": 0,
+    "anchorY": 0
+  }
+}

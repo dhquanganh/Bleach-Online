@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SkillInfos><BuffEffectInfo id="40000001" name="点燃" effect1="30000003" effect2="30000120" effect3="0" />
+	<BuffEffectInfo id="40000041" name="驱散" effect1="0" effect2="0" effect3="0" />
+	<BuffEffectInfo id="40001001" name="黑炎" effect1="0" effect2="0" effect3="0" />
+	</SkillInfos>

@@ -1073,5 +1073,10 @@
     "id": "00C9BC60",
     "talentName": "Sho - Gyoku / Rei - Byaku / San - Hoku / Akatsuki Leader / Crow Clone Jutsu",
     "talentDesc": "The first two Mystery, Trigger and Standard Attack damage instances received each round are reduced by 50%, triggering Deidara/Sasori, Pain/Konan or Hidan/Kakuzu respectively. Clears Ignition when attacked by Mystery, Fear/Discouragement when attacked by Trigger. Cancels incoming debuffs including Level 2 and grants Hiding. Critical damage grants +8% Critical Rate and heals 15% max HP, up to five times per round. While alive, attacks damaging allied Akatsuki suppress attacker immunity (Ninjutsu) or Super Armor (Taijutsu). Evading grants +12% Physical ATK up to seven times per round. Crow Clone Jutsu activates after an allied Akatsuki first action each round, greatly increasing chase evasion; chase damage grants +20% DEF/Resistance up to 100% for the round. SSS; any formation position. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
+  },
+  {
+    "id": "00C9BC6A",
+    "talentName": "The Two Great Visual Jutsu / Susanoo - Dominance",
+    "talentDesc": "Melee swordsman. Super Armor and debuff immunity. Two Mysteries per round; first two Mystery attacks received are reduced by 40%, first two pure Taijutsu attacks deal no damage. While alive, grants team +18% attack scaling and +7% critical rate when executing skills. Amaterasu Blaze: attacks shred own ATK/Ninjutsu 1%; damage received shreds own DEF/Resistance 2%, through next round. Electrocution suppresses 75% of Resistance this round. Disorder: first critical hit each round reduces attacker critical rate by 15% and stores 10% max-HP damage for round end. Extreme Fear blocks standards and buffs and deals 5% current HP per action (cap 3000) at round end. Static applies Level 2 Paralysis on Trigger actions, or teamwide on Mystery. All damaging actions hit all targets and use Physical ATK/DEF. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
   }
 ]

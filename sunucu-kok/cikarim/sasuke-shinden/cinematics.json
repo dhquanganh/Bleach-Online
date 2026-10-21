@@ -1,0 +1,24 @@
+{
+  "ZuozhuZZZZ_qilin_texie": {
+    "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_texie.swf",
+    "symbol": "texie",
+    "plateName": "sasukeCinematicPlate",
+    "referenceFrame": 41,
+    "frames": 79,
+    "frameRate": 24,
+    "bitmapWidth": 1572,
+    "bitmapHeight": 846,
+    "sha256": "f616b44daada5f2f09728f2168ebf86de1673981538b09ec24b8851cb2d600be"
+  },
+  "ZuozhuZZZZ_qilin_yantexie": {
+    "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_yantexie.swf",
+    "symbol": "texie",
+    "plateName": "sasukeCinematicPlate",
+    "referenceFrame": 41,
+    "frames": 79,
+    "frameRate": 24,
+    "bitmapWidth": 1572,
+    "bitmapHeight": 846,
+    "sha256": "321bca61bf34aa644045b38f67d0fef6356b40c1d258c0baf56147dfd6b29c11"
+  }
+}

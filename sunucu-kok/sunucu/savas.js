@@ -22,6 +22,7 @@ const painCombat = require('./pain-combat');
 const hashCombat = require('./hashirama-combat');
 const mechaCombat = require('./mecha-combat');
 const itachiCombat = require('./itachi-combat');
+const sasukeCombat = require('./sasuke-combat');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 const REPLAY_DIR = path.join(__dirname, 'savas');
@@ -868,8 +869,10 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const immune = hashCombat.fireImmune(victim,attackSpec,u) || !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'));
     if(kamuiProtected&&dmg>=victim.hp){const notice=[];obitoCombat.label(notice,victim,12);reactions.push(obitoCombat.passive(victim,notice));}
     if(kamuiProtected)dmg=Math.min(dmg,Math.max(0,victim.hp-1));
+    if(victim.sasukeContext&&!bypass&&!immune)dmg=sasukeCombat.beforeDamage(victim.sasukeContext,u,victim,attackSpec||{prompt:skillAt},dmg);
     if(victim.itachiContext&&!bypass&&!immune)dmg=itachiCombat.beforeDamage(victim.itachiContext,u,victim,attackSpec||{prompt:skillAt},dmg);
     const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,kamuiProtected);
+    if(u.sasukeContext)sasukeCombat.onDamage(u.sasukeContext,u,victim,result.damage,critical);
     if(u.itachiContext){const notices=[];itachiCombat.onDamage(u.itachiContext,u,victim,result,attackSpec,notices,critical);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
     appendHit(targets,victim,result,status);
@@ -943,7 +946,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   // Rasen Shuriken applies reflected damage after its animation completes.
   // Killing the caster inside its own impact effect sets FIsDie before Flash
   // can invoke the skill completion callback, permanently stopping the report.
-  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || kabutoCombat.profile(u) || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u))) {
+  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || kabutoCombat.profile(u) || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u) || sasukeCombat.isSasuke(u))) {
     const reflected=targets.filter(row=>row.cmd===kodek.CMD.ATTACK&&row.targetCamp===u.camp&&row.targetPos===u.pos&&row.result.hurtHp>0);
     if(reflected.length){
       for(const row of reflected)targets.splice(targets.indexOf(row),1);
@@ -1171,6 +1174,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   let performDepth=0,reactiveEnabled=false,drainingMysteries=false;
   const perform = (u,target,opponents,allies,actives,spec=null,bitir=false,prepared=false) => {
     itachiCombat.beforeAction(chaseContext,u);
+    sasukeCombat.beforeAction(chaseContext,u,spec);
     performDepth++;
     const random=options.random || Math.random;
     if(!prepared)actives.push(...kabutoCombat.beforeAction(chaseContext,u));
@@ -1181,6 +1185,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       move=painCombat.prepareMove(chaseContext,actor,move);
       move=hashCombat.prepareMove(chaseContext,actor,move);
       move=mechaCombat.prepareMove(chaseContext,actor,victim,move);
+      move=sasukeCombat.prepareMove(actor,move);
       if(move&&move.obitoBefore)beforeFrames.push(...move.obitoBefore);
       const frame=vurus(actor,victim,bitir,opponents,random,isChase,allies,move ? narutoCombat.attackSpec(move,isChase) : null);
       frame.beforeFrames=[...beforeFrames,...(frame.beforeFrames||[])];
@@ -1193,6 +1198,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         hashCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         mechaCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        sasukeCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.cleanse(chaseContext);
       }
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
@@ -1210,6 +1216,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     const isMystery=spec?spec.prompt:frame.activeType===kodek.ACTIVE.SKILL;
     const additional=isMystery?jiraiyaCombat.mysteryUsed(chaseContext,u,spec||{}):null;
     appendDeaths(actives);
+    for(const request of sasukeCombat.triggers(chaseContext)){
+      const enemies=chaseContext.teams[1-request.unit.camp],victim=enemies.find(v=>v.hp>0&&!v.auxiliary);
+      if(victim&&performDepth<24)perform(request.unit,victim,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
+    }
     for(const request of itachiCombat.triggers(chaseContext)){
       if(request.visual){actives.push(painCombat.visual(request.unit,request.move));continue;}
       const enemies=chaseContext.teams[1-request.unit.camp],victim=enemies.find(v=>v.hp>0&&!v.auxiliary);
@@ -1265,7 +1275,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       do {
         cast=false;
         for(const u of initiative(p1.concat(p2))){
-          if(!hashCombat.isHash(u)&&!painCombat.isPain(u)&&!obitoCombat.isObito(u)&&!mechaCombat.isMecha(u)&&!itachiCombat.isItachi(u))continue;
+          if(!hashCombat.isHash(u)&&!painCombat.isPain(u)&&!obitoCombat.isObito(u)&&!mechaCombat.isMecha(u)&&!itachiCombat.isItachi(u)&&!sasukeCombat.isSasuke(u))continue;
           const opponents=chaseContext.teams[1-u.camp],allies=chaseContext.teams[u.camp];
           const target=opponents.find(v=>v.hp>0&&!v.auxiliary&&!itachiCombat.active(v,'itachiHidingUntil'));
           if(!target)continue;
@@ -1282,6 +1292,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     narutoCombat.startRound(chaseContext,t);
     mechaCombat.roundStart(chaseContext);
     itachiCombat.roundStart(chaseContext);
+    const sasukeRounds=sasukeCombat.roundStart(chaseContext);
     let arenaFinisher = 0;
     if (arenaRakip && t === MAX_TUR) {
       const hpRatio = team => {
@@ -1292,6 +1303,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
     const actives = t===1 ? [...initialActives] : [];
     const summons=kabutoCombat.roundStart(chaseContext,actives);
+    for(const request of sasukeRounds){
+      const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
+      if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
+    }
     for(const request of mechaCombat.roundRequests(chaseContext)){
       const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
@@ -1337,6 +1352,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (['stun','fossilize','void','freeze'].some(field=>heroSkills.status(u,field))) continue;
       const canSkill = hashCombat.canMystery(chaseContext,u) && !narutoCombat.profile(u) && painCombat.canMystery(chaseContext,u,{}) && chaseContext.chakra[u.camp]>=painCombat.mysteryCost(chaseContext,u,{}) && u.skill && validSkillTargets(u, u.camp === 0 ? p2 : p1) && kabutoCombat.canMystery(chaseContext,u) && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && !jiraiyaCombat.blocksMystery(chaseContext,u,null) && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
       if(!canSkill&&painCombat.active(u,'painHorrorUntil'))continue;
+      if(!canSkill&&sasukeCombat.active(u,'sasukeFearUntil'))continue;
       if(!hashCombat.canStandard(u))continue;
       if(!narutoCombat.profile(u)&&u.hashStandardLossRound===t&&u.hashStandardLoss>0){u.hashStandardLoss--;continue;}
       if(!canSkill&&!kabutoCombat.canStandard(chaseContext,u))continue;
@@ -1380,6 +1396,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (p2.every(x => x.hp <= 0)&&!kabutoCombat.pendingRevival(chaseContext,1)) break;
     }
     reactiveEnabled=false;
+    actives.push(...sasukeCombat.endRound(chaseContext));
     actives.push(...hashCombat.endRound(chaseContext));
     actives.push(...heroSkills.endRound(p1.concat(p2)));
     appendDeaths(actives);

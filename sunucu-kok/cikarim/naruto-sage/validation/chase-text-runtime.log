@@ -1,3 +1,0 @@
-PROBE HTML ready
-FLASH_PROBE BOOT /gorsel/animation-battle-test.swf
-FLASH_PROBE INIT child document loaded

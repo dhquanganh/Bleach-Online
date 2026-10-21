@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<buffInfos><bufferInfo id="40000001" type="0" name="灼烧BUFF" buffEffectId="2017" pos="" power="1" beHitCode="" beHitEffect="1" mirror="1" />
+    <bufferInfo id="40001001" type="0" name="黑炎" buffEffectId="2997" pos="" power="1" beHitCode="" beHitEffect="1" mirror="1" />
+    <bufferInfo id="40000041" name="驱散" buffEffectId="" addBuffEffectId="3022" position="0" mirror="1" />
+    <bufferInfo id="40000048" name="电伤" buffEffectId="2990" addBuffEffectId="" startPosition="0" continuePosition="0" mirror="1" />
+    <bufferInfo id="40000077" name="电击" buffEffectId="2962" addBuffEffectId="" startPosition="0" continuePosition="0" mirror="1" />
+    </buffInfos>

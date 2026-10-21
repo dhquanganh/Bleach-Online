@@ -64550,5 +64550,77 @@
     "desc": "After an allied Akatsuki first action each round, activates Crow Clone Jutsu: high chance to evade Chase; Chase damage increases DEF and Resistance by 20%, stacking to 100% until round end. Incoming debuffs including Level 2 are cancelled and grant Hiding.",
     "icon": 13121207,
     "sortId": 7
+  },
+  {
+    "id": "00C83715",
+    "skillId": 13121301,
+    "name": "Kirin",
+    "desc": "Prompt. Kirin: unavoidable physical damage and Electrocution to the entire enemy lineup; interrupts selected target. Trigger damage +20%, stacks to 100%. Changes to Kirin - Blaze Infusion. Chakra 20, cooldown 3, battlefield cooldown 0. Up to 2 Mysteries per round. Deals 5 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121301,
+    "sortId": 1
+  },
+  {
+    "id": "00C83716",
+    "skillId": 13121302,
+    "name": "Kirin - Blaze Infusion",
+    "desc": "Prompt. Unavoidable physical damage and Amaterasu Blaze to all enemies; interrupts selected target and locks its Mystery until next round. Trigger damage +20%, stacks to 100%. Changes back to Kirin. Chakra 20, cooldown 0. Deals 5 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121302,
+    "sortId": 2
+  },
+  {
+    "id": "00C83717",
+    "skillId": 13121303,
+    "name": "Chidori Sword",
+    "desc": "Melee: rushes into close range before the first hit, performs a sword combo, then returns to formation. Unavoidable Chidori Sword hits all enemies in consecutive impacts. Chance of Knockdown and Level 2 Static. Ignores defensive skills. Changes to Blaze Infusion while HP is at least 50%. No cooldown. Deals 5 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121303,
+    "sortId": 3
+  },
+  {
+    "id": "00C83718",
+    "skillId": 13121304,
+    "name": "Chidori Sword - Blaze Infusion",
+    "desc": "Melee: rushes into close range before the first hit, performs a sword combo, then returns to formation. Unavoidable Chidori Sword - Blaze Infusion hits all enemies, applies Level 2 Amaterasu Blaze and may cause Knockdown and Static. Ignores defensive skills. No cooldown. Deals 5 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121304,
+    "sortId": 4
+  },
+  {
+    "id": "00C83719",
+    "skillId": 13121305,
+    "name": "Fire Style - Great Dragon Fire Jutsu",
+    "desc": "At the beginning of odd rounds, attacks all enemies with consecutive physical fire impacts and Level 2 Ignition. No cooldown. Target count expanded to all enemies as requested. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121305,
+    "sortId": 5
+  },
+  {
+    "id": "00C8371A",
+    "skillId": 13121306,
+    "name": "Great Dragon Fire - Blaze Infusion",
+    "desc": "At the beginning of even rounds, attacks all enemies with consecutive physical fire impacts, Level 2 Ignition and Amaterasu Blaze. No cooldown. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121306,
+    "sortId": 6
+  },
+  {
+    "id": "00C8371B",
+    "skillId": 13121307,
+    "name": "Genjutsu - Mangekyo Sharingan",
+    "desc": "Triggered on first Trigger damage received per round. Unavoidable physical damage to all enemies; applies Level 2 Disorder to targets affected by Amaterasu Blaze. Runs while controlled. Combined visual-jutsu trigger limit: 4 per round. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121307,
+    "sortId": 7
+  },
+  {
+    "id": "00C8371C",
+    "skillId": 13121308,
+    "name": "Genjutsu - Rinnegan",
+    "desc": "Triggered after Mystery damage received. Unavoidable physical damage to all enemies; Amaterasu targets receive Level 2 Extreme Fear and each reduces Sasuke Mystery cooldown by 1. Runs while controlled. Combined visual-jutsu limit: 4 per round. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121308,
+    "sortId": 8
+  },
+  {
+    "id": "00C8371D",
+    "skillId": 13121309,
+    "name": "Susanoo - Dominance",
+    "desc": "Susanoo - Dominance: Super Armor, debuff immunity, up to 2 Mysteries per round. First 2 Mystery attacks per round deal 40% less damage. First 2 pure Taijutsu attacks per round deal no damage. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast.",
+    "icon": 13121309,
+    "sortId": 9
   }
 ]

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Effect><EffectInfo id="2017" name="灼烧" type="2" target="0" color="0xff3300" maxAlpha="0.6" minAlpha="0.2" ninjaAlpha="1" res="assets/battle/effect/dianran.swf" frontAction="dran" backAction="" />
+  <EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  <EffectInfo id="3022" type="2" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/qusanqidong.swf" action="" name="驱散" frontAction="qs" />
+  <EffectInfo id="2997" type="2" target="0" pos="70,0" color="0x0" minAlpha="0.2" maxAlpha="0.6" ninjaAlpha="1" res="assets/battle/effect/heiyan.swf" action="" name="黑炎" frontAction="dran" />
+  <EffectInfo id="2997" type="2" target="0" pos="70,0" color="0x0" minAlpha="0.2" maxAlpha="0.6" ninjaAlpha="1" res="assets/battle/effect/heiyan.swf" action="" name="黑炎" frontAction="dran" />
+  <EffectInfo id="2990" type="1" target="0" pos="70,0" color="0x99ff" minAlpha="0.2" maxAlpha="0.6" ninjaAlpha="1" res="" action="" name="电伤" />
+  <EffectInfo id="2962" type="2" target="0" pos="70,0" color="0x99ccff" minAlpha="0.2" maxAlpha="0.6" ninjaAlpha="1" res="assets/battle/effect/BUFFdianji_chixu.swf" action="" name="电击" frontAction="dianji-shang" />
+  <EffectInfo id="6460" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qilin.swf" action="" name="真传佐助麒麟" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6461" type="0" target="12" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qilin_texie.swf" action="" name="真传佐助麒麟特写" frontAction="texie" />
+  <EffectInfo id="6462" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qilin_yan.swf" action="" name="真传佐助麒麟炎" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6463" type="0" target="12" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qilin_yantexie.swf" action="" name="真传佐助麒麟炎特写" frontAction="texie" />
+  <EffectInfo id="6465" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qianniaodao1.swf" action="" name="真传佐助千鸟刀1" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6466" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qianniaodao2.swf" action="" name="真传佐助千鸟刀2" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6467" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_qianniaodao3.swf" action="" name="真传佐助千鸟刀3" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6471" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_haolonghuo.swf" action="" name="真传佐助豪龙火" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6472" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_haolonghuoyan.swf" action="" name="真传佐助炎龙火" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6475" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_xuzuobati.swf" action="" name="真传佐助须佐霸体启动" frontAction="b1" />
+  <EffectInfo id="6476" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_xuzuobati.swf" action="" name="真传佐助须佐霸体持续" frontAction="b2" />
+  <EffectInfo id="6477" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/ZuozhuZZZZ_xuzuobati.swf" action="" name="真传佐助须佐霸体结束" frontAction="b3" />
+  </Effect>

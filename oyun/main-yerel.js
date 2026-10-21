@@ -29,6 +29,9 @@ app.commandLine.appendSwitch('ppapi-flash-path', flashPath);
 app.commandLine.appendSwitch('ppapi-flash-version', '22.0.0.209');
 app.commandLine.appendSwitch('no-user-gesture-required');
 app.commandLine.appendSwitch('disable-features', 'OutOfBlinkCors');
+// Local game resources are versioned on disk; do not reuse Flash HTTP responses
+// from an earlier server run. This leaves account cookies and saves untouched.
+app.commandLine.appendSwitch('disable-http-cache');
 
 let win;
 
@@ -36,7 +39,7 @@ function buildMenu() {
   Menu.setApplicationMenu(Menu.buildFromTemplate([
     { label: 'Oyun', submenu: [
       { label: 'Ana Sayfa', accelerator: 'Alt+Home', click: () => win && win.loadURL(START_URL, { userAgent: UA }) },
-      { label: 'Yenile (yeniden giris)', accelerator: 'F5', click: (i, w) => w && w.reload() },
+      { label: 'Yenile (yeniden giris)', accelerator: 'F5', click: (i, w) => w && w.webContents.reloadIgnoringCache() },
       { type: 'separator' },
       { label: 'Tam Ekran', accelerator: 'F11', click: (i, w) => w && w.setFullScreen(!w.isFullScreen()) },
       { label: 'Tam Ekrandan Cik', accelerator: 'Escape', click: (i, w) => { if (w && w.isFullScreen()) w.setFullScreen(false); } },
