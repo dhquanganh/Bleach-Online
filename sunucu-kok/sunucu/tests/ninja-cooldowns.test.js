@@ -11,8 +11,9 @@ for(const hero of [n.config,j.config])for(const camp of [0,1]){
  assert.strictEqual(n.useStandard(ctx,u,teams[camp]),null,'Mystery consumes the primary action');
  start(ctx,3);assert(!n.canMystery(ctx,u));assert(n.useStandard(ctx,u,teams[camp]));
  assert.strictEqual(n.useStandard(ctx,u,teams[camp]),null,'One primary action per round');
- start(ctx,4);assert(!n.canMystery(ctx,u));assert.strictEqual(n.useStandard(ctx,u,teams[camp]),null,'Standard needs a complete recovery round');
- start(ctx,5);assert(n.useMystery(ctx,u));
+ start(ctx,4);
+ if(hero===n.config){assert(n.canMystery(ctx,u));assert(n.useMystery(ctx,u));}
+ else {assert(!n.canMystery(ctx,u));assert.strictEqual(n.useStandard(ctx,u,teams[camp]),null,'Jiraiya standard needs a complete recovery round');start(ctx,5);assert(n.useMystery(ctx,u));}
  // Failed casts do not spend an action or start cooldowns.
  start(ctx,8);ctx.chakra[camp]=0;assert.strictEqual(n.useMystery(ctx,u),null);assert(n.useStandard(ctx,u,teams[camp]));
 }
@@ -20,9 +21,9 @@ for(const hero of [n.config,j.config])for(const camp of [0,1]){
 {
  const u=unit(n.config.heroId,6),team=[u];n.prepareClones([team,[]]);const ctx=n.create([team,[]]);
  start(ctx,1);assert.strictEqual(n.useStandard(ctx,u,team).id,n.config.barrage.id);
- team[1].hp=0;start(ctx,2);assert.strictEqual(n.useStandard(ctx,u,team),null);
- start(ctx,3);assert.strictEqual(n.useStandard(ctx,u,team).id,n.config.standard.id);
+ team[1].hp=0;start(ctx,2);assert.strictEqual(n.useStandard(ctx,u,team).id,n.config.standard.id);
  n.summon(u,team);assert.strictEqual(n.useStandard(ctx,u,team),null);
+ start(ctx,3);assert.strictEqual(n.useStandard(ctx,u,team).id,n.config.barrage.id);
 }
 // Chase limits survive new chains and round boundaries; team bonus cannot bypass them.
 for(const hero of [n.config,j.config]){
@@ -33,7 +34,7 @@ for(const hero of [n.config,j.config]){
  start(ctx,1);ctx.chaseBonus[0]=1;
  assert.strictEqual(n.resolve(ctx,u,v,hit(),opener,strike).length,1);
  assert.strictEqual(n.resolve(ctx,u,v,hit(),opener,strike).length,0);
- start(ctx,2);assert.strictEqual(n.resolve(ctx,u,v,hit(),opener,strike).length,0);
+ start(ctx,2);assert.strictEqual(n.resolve(ctx,u,v,hit(),opener,strike).length,hero===n.config?1:0);
  start(ctx,3);assert.strictEqual(n.resolve(ctx,u,v,hit(),opener,strike).length,1);
 }
 // Stacked Jiraiyas cannot chain control through the protected recovery round.
@@ -63,7 +64,7 @@ for(const hero of [n.config,j.config]){
  const decoded=codec.decodeBattleReport(report.payload);assert.strictEqual(decoded._consumed,decoded._total);
  assert(decoded.turns.length>=8,'Fixture must survive enough rounds to exercise recovery');
  const primary=new Set([13120901,13120902,13120903,13120911,13120913]);
- const cooldowns=new Map([[13120901,3],[13120911,3],[13120902,2],[13120903,2],[13120913,2],[13120904,2],[13120914,2]]);
+ const cooldowns=new Map([[13120901,2],[13120911,3],[13120913,2],[13120914,2]]);
  const last=new Map(),enemyTurns=new Set();
  for(const turn of decoded.turns){
   const actions=new Map();
@@ -81,4 +82,4 @@ for(const hero of [n.config,j.config]){
  }
  assert.strictEqual(enemyTurns.size,decoded.turns.length,'Ordinary opponent must retain an action in every round');
 }
-console.log('PASS ninja anti-spam: 3-round Mysteries, primary-action budget, 2-round standards/shared summon and Chase recovery, protected control window, revival persistence, both camps and native scheduling.');
+console.log('PASS ninja cooldowns: Naruto Mystery-only cooldown, Jiraiya recovery rules, primary-action budget, fixed once-per-round Sage chase, protected control window, revival persistence, both camps and native scheduling.');

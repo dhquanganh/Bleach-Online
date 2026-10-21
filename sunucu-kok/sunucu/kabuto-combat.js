@@ -16,7 +16,7 @@ const activeBarrier=ctx=>ctx.barrier&&ctx.barrier.kind==='lightweight'&&ctx.roun
 const canStandard=(ctx,u)=>!blind(u)&&(!activeBarrier(ctx)||isKabuto(u)||edo(u));
 const canMystery=(ctx,u)=>!cursed(u)&&u.kabutoInterruptedRound!==ctx.round;
 const canChase=u=>!cursed(u);
-const canRevive=(ctx,u)=>!u.noRevive&&!u.kabutoReviveBlocked&&ctx.round>=(u.kabutoRevivalReadyRound||1);
+const canRevive=(ctx,u)=>!u.noRevive&&!u.itachiUnrevivable&&!u.kabutoReviveBlocked&&ctx.round>=(u.kabutoRevivalReadyRound||1);
 function label(records,u,index,count=0){records.push({cmd:CMD.FLOAT,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:19000400+index,buffTurn:count}});}
 function visual(u,move,records=[]){return {activeCamp:u.camp,activePos:u.pos,skillEffectId:move.id,activeType:1,targets:[{cmd:CMD.NONE,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:0,result:{}},...records]};}
 function passive(u,records){return {activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:records};}

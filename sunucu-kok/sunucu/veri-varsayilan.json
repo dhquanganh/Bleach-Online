@@ -1,6 +1,6 @@
 {
   "_aciklama": "VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.",
-  "altin": 500000,
+  "altin": 50000,
   "gumus": 500000,
   "gumusHigh": 0,
   "kupon": 500000,

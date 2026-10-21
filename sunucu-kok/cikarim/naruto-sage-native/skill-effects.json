@@ -1,0 +1,103 @@
+{
+  "source": "asset/Naruto_Sage_Mode_Skill_Effects",
+  "zoom": 0.8,
+  "ids": {
+    "13621901": {
+      "frames": 10,
+      "maxFrame": [
+        121,
+        114
+      ]
+    },
+    "13621902": {
+      "frames": 10,
+      "maxFrame": [
+        121,
+        114
+      ]
+    },
+    "13621906": {
+      "frames": 10,
+      "maxFrame": [
+        121,
+        114
+      ]
+    },
+    "13621903": {
+      "frames": 39,
+      "maxFrame": [
+        595,
+        304
+      ]
+    },
+    "13621907": {
+      "frames": 51,
+      "maxFrame": [
+        519,
+        443
+      ]
+    },
+    "13621904": {
+      "frames": 117,
+      "maxFrame": [
+        527,
+        527
+      ]
+    },
+    "13621905": {
+      "frames": 88,
+      "maxFrame": [
+        464,
+        1014
+      ]
+    }
+  },
+  "files": [
+    {
+      "file": "assets/battle/effect/DaJiTeXiao.swf",
+      "bytes": 83001,
+      "sha256": "913a5959fec9dcc1594e5baaeac76308b893977b939805b670549e60dc24ef27"
+    },
+    {
+      "file": "assets/battle/effect/XRMRwzspj.swf",
+      "bytes": 212017,
+      "sha256": "181e2840ec2cdc402a2e7f9632aa7b908d55619b47cf0739a047f461ec758fd7"
+    },
+    {
+      "file": "assets/battle/effect/XRMRzfdlxw.swf",
+      "bytes": 216208,
+      "sha256": "8869f6b89beb38538e8628727bf2cc8cd8e9ca29c53406b255adae3f5b45e904"
+    },
+    {
+      "file": "assets/battle/effect/fengnv-lxwzj.swf",
+      "bytes": 318986,
+      "sha256": "0a9833abef81ba91cffac0a6d37943dc12b361f232e9ffeb3c537020650fb1a1"
+    },
+    {
+      "file": "assets/battle/effect/skillActionEffect.swf",
+      "bytes": 120049,
+      "sha256": "3d931014ff364a8aef2d3d9453433e6c234c94790a65d988c516636385c36fb2"
+    },
+    {
+      "file": "assets/battle/role/left/11000171.swf",
+      "bytes": 587968,
+      "sha256": "89001388fac2cbd61d075ad53fae3fe6f645b44bbe94ef10a7246588aaf939cd"
+    }
+  ],
+  "installed": [
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA8D.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA8D.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA8E.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA8E.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA92.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA92.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA8F.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA8F.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA93.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA93.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA90.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA90.TexClient",
+    "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDA91.TexClient",
+    "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDA91.TexClient"
+  ]
+}

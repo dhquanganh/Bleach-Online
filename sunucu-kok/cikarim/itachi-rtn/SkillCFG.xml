@@ -1,0 +1,460 @@
+<Config><row>
+		<id>21008581</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008581</resId>
+		<iconId>21008581</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round. If the unit hit is suffering from &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt;, additionally causes &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21208581</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008581</resId>
+		<iconId>21008581</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round and &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<buffIds>40020006</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21008582</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008582</resId>
+		<iconId>21008582</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round. If the unit hit is suffering from &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt;, additionally causes &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21208582</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008582</resId>
+		<iconId>21008582</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round and &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<buffIds>40020006</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21008583</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008583</resId>
+		<iconId>21008583</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round. If the unit hit is suffering from &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt;, additionally causes &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21208583</id>
+		<name>Genjutsu - Sharingan</name>
+		<resId>21008583</resId>
+		<iconId>21008583</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>27</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Attacks 2-3 units in the opponent's lineup and causes &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; for 1 round and &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<buffIds>40020006</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21008589</id>
+		<name>Mercenary Group Leader - Nan - Shu</name>
+		<resId>21008589</resId>
+		<iconId>21008589</iconId>
+		<mp>20</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>6</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes unavoidable small damage to all units in the selected opponent's lineup, absorbs all Chakra and &lt;font color="#4dc831"&gt;reduces&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 10 until the end of the next round. This skill has additional &lt;font color="#4dc831"&gt;Initiative&lt;/font&gt; increase and after executed, Itachi's Mystery becomes &lt;font color="#4dc831"&gt;modified&lt;/font&gt; until the end of the battle.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21208589</id>
+		<name>Mercenary Group - Kisame - Itachi</name>
+		<resId>21008589</resId>
+		<iconId>21008589</iconId>
+		<mp>40</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>6</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>27</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes damage to all units in the opponent's lineup, absorbs all Chakra and &lt;font color="#4dc831"&gt;reduces&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 40 until the end of the next round, causes &lt;font color="#4dc831"&gt;Interruption&lt;/font&gt; and &lt;font color="#4dc831"&gt;Extreme Chaos&lt;/font&gt; to the selected unit.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40020006</buffIds>
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21008584</id>
+		<name>Mercenary Group Leader - Sho - Gyoku</name>
+		<resId>21008584</resId>
+		<iconId>21008584</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>6</exStates>
+		<exStates>12</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>The first 2 &lt;font color="#4dc831"&gt;Mystery&lt;/font&gt; damage Itachi receives each round is reduced by 50% and after Itachi suffers each of them, executes &lt;font color="#4dc831"&gt;Mercenary Group - Deidara and Sasori&lt;/font&gt;. Whenever Itachi is attacked by a &lt;font color="#4dc831"&gt;Mystery&lt;/font&gt; skill, dispels all &lt;font color="#4dc831"&gt;Ignition&lt;/font&gt; he currently has.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21208584</id>
+		<name>Mercenary Group - Deidara - Sasori</name>
+		<resId>21008584</resId>
+		<iconId>21008584</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>6</exStates>
+		<exStates>12</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Causes unavoidable damage, Level 2 - Ignition and Level 2 - Paralysis for 1 round to up to 9 units in the opponent's field.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40120013</buffIds>
+		<buffIds>40003042</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21008585</id>
+		<name>Mercenary Group Leader - Rei - Byaku</name>
+		<resId>21008585</resId>
+		<iconId>21008585</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>34</exStates>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>The first 2 &lt;font color="#4dc831"&gt;Trigger&lt;/font&gt; damage Itachi receives each round is reduced by 50% and after Itachi suffers each of them, executes &lt;font color="#4dc831"&gt;Mercenary Group - Pain and Konan&lt;/font&gt;. Whenever Itachi is attacked by a &lt;font color="#4dc831"&gt;Trigger&lt;/font&gt; skill, dispels all &lt;font color="#4dc831"&gt;Discouragement&lt;/font&gt; and &lt;font color="#4dc831"&gt;Fear&lt;/font&gt; he currently has. Whenever Itachi receives a &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;, cancels it (excluding &lt;font color="#4dc831"&gt;Level 2 Debuffs&lt;/font&gt;) and grants &lt;font color="#4dc831"&gt;Hiding&lt;/font&gt; to himself.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21208585</id>
+		<name>Mercenary Group - Pain - Konan</name>
+		<resId>21008585</resId>
+		<iconId>21008585</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>36</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Causes unavoidable damage, Suppress Immunity for 1 round to up to 9 units in the opponent's field and increases their Mystery's Chakra Cost by 20 (stackable up to 5 times). Units defeated by this skill cannot be revived.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40110014</buffIds>
+		<buffIds>40600030</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21008586</id>
+		<name>Mercenary Group Leader - San - Hoku</name>
+		<resId>21008586</resId>
+		<iconId>21008586</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>4</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>The first 2 &lt;font color="#4dc831"&gt;Standard Attack&lt;/font&gt; damage Itachi receives each round is reduced by 50% and after Itachi suffers each of them, executes &lt;font color="#4dc831"&gt;Mercenary Group - Hidan and Kakuzu&lt;/font&gt;. Whenever Itachi causes &lt;font color="#4dc831"&gt;Critical&lt;/font&gt; damage, scales his &lt;font color="#4dc831"&gt;Critical Rate&lt;/font&gt; by 8% and he recovers 15% &lt;font color="#4dc831"&gt;HP&lt;/font&gt;, can be triggered 5 times each round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21208586</id>
+		<name>Mercenary Group - Hidan - Kakuzu</name>
+		<resId>21008586</resId>
+		<iconId>21008586</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>2</ninJutsuTypeList>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>4</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Causes unavoidable damage to up to 3 units in the opponent lineup having the lowest HP ninja. This skill has additional Critical Rate increase.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21008588</id>
+		<name>Mercenary Group - Akatsuki Leader</name>
+		<resId>21008587</resId>
+		<iconId>21008588</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>36</exStates>
+		<exStates>37</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Itachi has &lt;font color="#4dc831"&gt;Crow Clone Jutsu&lt;/font&gt;. While Itachi is alive, units causing Ninjutsu damage or Taijutsu damage to &lt;font color="#4dc831"&gt;Akatsuki&lt;/font&gt; ninjas in your lineup will respectively suffer from &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; or &lt;font color="#4dc831"&gt;Suppress Super Armor&lt;/font&gt; for 1 round. Whenever Itachi evades an attack, scales his &lt;font color="#4dc831"&gt;Ninjutsu&lt;/font&gt; by 12%, can be triggered 7 times each round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>11</displayType>
+	</row>
+	<row>
+		<id>21208587</id>
+		<name>Crow Clone Jutsu</name>
+		<resId>21008587</resId>
+		<iconId>21008587</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>After an Akatsuki ninja in your lineup execute an action, Itachi receives high chances to evade Chase skills, and whenever he suffers Chase damage, increase his Defense and Resistance by 20% (stackable up to 100%) until the end of the round, last until the end of the round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40600705</buffIds>
+		<buffIds>40600706</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21008587</id>
+		<name>Crow Clone Jutsu</name>
+		<resId>21008587</resId>
+		<iconId>21008587</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>34</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Itachi receives high chances to evade Chase skills. Whenever Itachi receives a &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;, cancels it (excluding Level 2 Debuffs) and grant &lt;font color="#4dc831"&gt;Hiding&lt;/font&gt; to himself. whenever he suffers Chase damage, increase his Defense and Resistance by 20% (stackable up to 100%) until the end of the round. (If there are more than four passive skills, they are discarded.)</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>11</displayType>
+	</row>
+	</Config>

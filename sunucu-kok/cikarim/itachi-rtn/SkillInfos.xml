@@ -1,0 +1,34 @@
+<SkillInfo id="21008581" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000194" effect2="30000196" resEffect="0" buff="40110014,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008581" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208581" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000196" effect2="30000079" resEffect="0" buff="40110014,40020006" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008581" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008582" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000194" effect2="30000196" resEffect="0" buff="40110014,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008582" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208582" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000196" effect2="30000079" resEffect="0" buff="40110014,40020006" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008582" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008583" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000194" effect2="30000196" resEffect="0" buff="40110014,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008583" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208583" name="Genjutsu - Sharingan" type="0" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1" effect1="30000196" effect2="30000079" resEffect="0" buff="40110014,40020006" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008583" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008589" name="Mercenary Group Leader - Nan - Shu" type="2" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="21208589" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1,1,1,1" effect1="30000095" effect2="30000257" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008589" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208589" name="Mercenary Group - Kisame - Itachi" type="2" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1,1,1,1" effect1="30000095" effect2="30000257" resEffect="0" buff="40020006,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008589" useMinor="1" gainSkill="0" />
+	
+<SkillInfo id="21008584" name="Mercenary Group Leader - Sho - Gyoku" type="3" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="30000247" effect2="30000316" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008584" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208584" name="Mercenary Group - Deidara - Sasori" type="4" otherType="" triggerCondition="34" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1,1" effect1="0" effect2="0" resEffect="0" buff="40120013,40003042" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008584" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008585" name="Mercenary Group Leader - Rei - Byaku" type="3" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="30000247" effect2="30000316" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008585" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208585" name="Mercenary Group - Pain - Konan" type="4" otherType="" triggerCondition="34" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1,1,1" effect1="30000196" effect2="30000139" resEffect="0" buff="40110014,40600030" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008585" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008586" name="Mercenary Group Leader - San - Hoku" type="3" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="30000247" effect2="30000316" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008586" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208586" name="Mercenary Group - Hidan - Kakuzu" type="4" otherType="" triggerCondition="34" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="1,1,1" effect1="30000051" effect2="0" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008586" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008588" name="Mercenary Group - Akatsuki Leader" type="11" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="30000311" effect2="30000119" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008587" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21208587" name="Crow Clone Jutsu" type="4" otherType="" triggerCondition="34" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="0" effect2="0" resEffect="0" buff="40600705,40600706" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008587" useMinor="0" gainSkill="0" />
+	
+<SkillInfo id="21008587" name="Crow Clone Jutsu" type="11" otherType="" triggerCondition="0" playDefenceAction="" hold="0" openType="0" closeRefId="0" specialSkillMapIds="" missType="{躲闪表现类型}" hitPointArr="0" effect1="30000180" effect2="30000288" resEffect="0" buff="0,0" beHitState1="0" beHitState1Param="0" enchantment="0" refSubSkill="21008587" useMinor="0" gainSkill="0" />
+	

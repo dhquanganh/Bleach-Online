@@ -9,6 +9,7 @@ const obito = require('./obito-combat');
 const pain = require('./pain-combat');
 const hash = require('./hashirama-combat');
 const mecha = require('./mecha-combat');
+const itachi = require('./itachi-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -16,7 +17,10 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
   frame.targets.push({cmd:9,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,
     result:{buffId:(obitoSource?(isChase?19000700:19000600):(isChase?19000200:19000100))+Math.max(0,displayStates.indexOf(state)),buffTurn:count}});
 }
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === jiraiya.config.heroId ? jiraiya.config : mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
+// The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
+// Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
+const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -39,6 +43,7 @@ function create(teams, options = {}) {
   for(const unit of teams.flat())if(obito.isObito(unit))delete unit.obitoKamuiRound;
   hash.initialize(context);
   mecha.initialize(context);
+  itachi.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -59,13 +64,13 @@ function hasClone(unit, allies) { return allies.some(other => other.cloneOwner =
 function prepareClones(teams) {
   for (const team of teams) for (const owner of [...team]) {
     const p=profile(owner);
-    if (!p || !p.cloneId || owner.hp<=0) continue;
+    if (!p || !p.cloneId || owner.hp<=0 || team.some(unit=>unit.cloneOwner===owner)) continue;
     const pos=Array.from({length:15},(_,i)=>i+1).find(pos=>!team.some(unit=>unit.pos===pos));
     if (!pos) continue;
     const hp=Math.max(1,Math.round(owner.maxHp*p.cloneHpRatio));
     team.push({id:p.cloneId,pos,camp:owner.camp,hp,maxHp:hp,cloneOwner:owner,level:owner.level,quality:owner.quality,
       isim:'Sage Shadow Clone',atk:owner.atk,magicAtk:owner.magicAtk,def:owner.def,resistance:owner.resistance,
-      speed:0,anger:0,normal:p.barrage.id,skill:0,skillId:p.barrage.id,hitRate:1,partnerSkills:[],weaponSkills:[]});
+      speed:owner.speed,anger:0,normal:p.barrage.id,skill:p.mystery.id,skillId:p.barrage.id,hitRate:owner.hitRate||1,partnerSkills:[],weaponSkills:[]});
   }
 }
 function summon(unit, allies) {
@@ -146,7 +151,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
       chase=(profile(unit)||{}).chases[index];
       if(!chase)return false;
       const uses=(ctx.used.get(unit)||[])[index]||0;
-      const bonus=chase.cooldown || pain.isPain(unit) || obito.isObito(unit) ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
+      const bonus=chase.fixedPerRound || chase.cooldown || pain.isPain(unit) || obito.isObito(unit) ? 0 : ((ctx.chaseBonus||[])[unit.camp]||0);
       return canChase(unit) && (obito.isObito(unit)?obito.chaseReady(ctx,unit,chase):ready(ctx,unit,chase.id)) && uses<(chase.maxPerRound||1)+bonus &&
         (!chase.requires || chase.requires===state) && (!chase.requiresAny || chase.requiresAny.includes(state)) && (!chase.minCombo || count>=chase.minCombo);
     };
@@ -170,6 +175,6 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
   return events;
 }
 function attackSpec(spec, chase=false) {
-  return {...spec, naruto:true, activeType:chase?ACTIVE.NORMAL_EX:spec.prompt?ACTIVE.SKILL:ACTIVE.NORMAL};
+  return {...spec, naruto:true, activeType:chase||spec.trigger?ACTIVE.NORMAL_EX:spec.prompt?ACTIVE.SKILL:ACTIVE.NORMAL};
 }
 module.exports={STATE,config,profile,create,startRound,disabled,canChase,canMystery,useMystery,standard,useStandard,hasClone,prepareClones,summon,resolve,attackSpec,setState};

@@ -1,0 +1,35 @@
+      private function DamageFloatHost():Sprite
+      {
+         if(FDamageFloatLayer == null)
+         {
+            FDamageFloatLayer = new Sprite();
+            FDamageFloatLayer.name = "battleDamageFloatLayer";
+            FDamageFloatLayer.mouseEnabled = false;
+            FDamageFloatLayer.mouseChildren = false;
+            addChild(FDamageFloatLayer);
+            addEventListener(Event.ENTER_FRAME,KeepDamageFloatsOnTop,false,0,true);
+            addEventListener(Event.RENDER,KeepDamageFloatsOnTop,false,0,true);
+         }
+         KeepDamageFloatsOnTop();
+         return FDamageFloatLayer;
+      }
+
+      private function KeepDamageFloatsOnTop(event:Event = null):void
+      {
+         if(FDamageFloatLayer == null || FDamageFloatLayer.parent != this)return;
+         if(getChildIndex(FDamageFloatLayer) != numChildren-1)
+            setChildIndex(FDamageFloatLayer,numChildren-1);
+         // Native/raster effects can be appended later in the same frame.
+         // Reassert painter order at RENDER, after all ENTER_FRAME callbacks.
+         if(stage != null && event != null && event.type == Event.ENTER_FRAME)
+            stage.invalidate();
+      }
+
+      private function ResetDamageFloats():void
+      {
+         removeEventListener(Event.ENTER_FRAME,KeepDamageFloatsOnTop);
+         removeEventListener(Event.RENDER,KeepDamageFloatsOnTop);
+         if(FDamageFloatLayer != null && FDamageFloatLayer.parent != null)
+            FDamageFloatLayer.parent.removeChild(FDamageFloatLayer);
+         FDamageFloatLayer = null;
+      }

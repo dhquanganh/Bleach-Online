@@ -63,6 +63,11 @@ Rebuild streaming pages after any PNG changes, then run `build-client.py --ffdec
 
 ## Persistent-form size (2026102008)
 
+Follow-up 2026102105: giant Bomb/Claw/Sweep source scale is now 0.75 (25% larger
+than 0.6), with lossless native atlas packing and fresh model URLs. Persistent
+poses remain 1.0. See `../animation-size-repair/README.md` for the isolated repair
+and preservation checks against Itachi.
+
 The 0.6 arena scale intended for giant Kurama attacks also reduced the Naruto-sized persistent form. `prepare-assets.py` now uses native 1.0 scale for beast idle, run, hit and Energy Recovery, making these poses about 67% larger. Giant Bomb/Claw/Sweep frames retain 0.6. Registration comes from the original source at the same scale; frame IDs, loop/duration, hit timing and effects are unchanged. Existing skill return frames reference the corrected idle automatically.
 
 121 unique small-form frames changed. All other actor frames are byte-identical to the previous output; animation clip metadata/IDs are unchanged. Both native texture sets are installed. `build-probe.py --idle-only` with `MECHA_IDLE_PROBE=1` exercises base idle and all four small-form poses in both camps: five snapshots, no errors. Evidence: `validation/idle-size-check.json`, `idle-size-comparison.jpg`, `idle-native/`. The asset-only release uses `publish-models.py`; installed Flash code and the explosion streaming fix are unchanged.

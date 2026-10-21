@@ -17,6 +17,7 @@ def main():
  formula='_loc13_[_loc2_].ResultInfo.HurtHp * _loc9_.anmyhp[_loc27_] / 100'
  replacement='ConsecutiveHitDamage(_loc13_[_loc2_].ResultInfo.HurtHp,_loc9_,_loc27_)'
  if 'public static function ConsecutiveHitDamage' in before:
+  assert 'count < 1 || count > 64' in before,'Old 4/5-only helper: use damage-float/build.py to retain the live client and install the current partition/foreground repair'
   print('PASS multi-hit client already installed');return
  assert before.count(formula)==2
  method='''
@@ -28,7 +29,7 @@ def main():
             return total * config.anmyhp[frame] / 100;
          var count:int=int(config.hitCount);
          var index:int=int(config.hitIndex);
-         if((count != 4 && count != 5) || index < 0 || index >= count)
+         if(count < 1 || count > 64 || index < 0 || index >= count)
             return total * config.anmyhp[frame] / 100;
          return Math.floor(total*(index+1)/count)-Math.floor(total*index/count);
       }

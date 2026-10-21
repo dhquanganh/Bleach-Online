@@ -27,6 +27,10 @@ public class TApplication extends Sprite {
   this.receive(1,stone(300,3,1),true);
   this.check(this.FCharacter.TemporaryInventories.Count,1,"temporary bag receives item");
   this.check(this.FCharacter.Gems.Count,2,"temporary bag stays separate");
+  this.receive(0,stone(400,21,1),true);
+  this.check(this.FCharacter.Appliances.Count,2,"new Modify Fragment appears immediately");
+  this.receive(0,stone(400,21,5),true);
+  this.check(this.FCharacter.Appliances.GetInventoryByIdentifier(400).Quantity,5,"Modify Fragment total updates without duplication");
   ExternalInterface.call("stoneProbe","DONE");
  }
  private function stone(id:uint,cat:uint,n:uint):TAppliance{var a:TAppliance=new TAppliance(id);a.Category=cat;a.Quantity=n;a.IDTemplate=14500001;return a;}
@@ -61,6 +65,7 @@ public class TApplication extends Sprite {
          {
             switch(param2.Category)
             {
+               case 21:
                case CATEGORY_Normal:
                   _loc5_ = this.FCharacter.Appliances;
                   break;
@@ -106,6 +111,7 @@ public class TApplication extends Sprite {
                   _loc7_ = _loc4_ as TEquipment;
                   this.FUtilityInventory.EquipmentAssign(_loc6_,_loc7_);
                   break;
+               case 21:
                case CATEGORY_Normal:
                case CATEGORY_Material:
                case CATEGORY_Gem:
@@ -133,6 +139,7 @@ public class TApplication extends Sprite {
          {
             switch(item.Category)
             {
+               case 21:
                case CATEGORY_Normal:
                   target = this.FCharacter.Appliances;
                   break;

@@ -1,0 +1,54 @@
+      public function ClearItachiCrowClone(detach:Boolean=true):void
+      {
+         var layer:Sprite=FItachiCrowClone;
+         if(layer==null)return;
+         FItachiCrowClone=null;
+         layer.removeEventListener(Event.ENTER_FRAME,FItachiCrowCloneTick);
+         layer.removeEventListener(Event.REMOVED_FROM_STAGE,FItachiCrowCloneRemoved);
+         FItachiCrowCloneTick=null;FItachiCrowCloneRemoved=null;
+         if(layer.numChildren>1 && layer.getChildAt(1) is Bitmap)
+            Bitmap(layer.getChildAt(1)).bitmapData=null;
+         if(detach && layer.parent!=null)layer.parent.removeChild(layer);
+      }
+
+      private function ShowItachiCrowClone():void
+      {
+         if(FId!=11120960 || FIsDie || CurHealth<=0 || parent==null || stage==null || FTextureFightIdle==null)return;
+         if(FItachiCrowClone!=null && FItachiCrowClone.parent!=null)return;
+         ClearItachiCrowClone();
+         var caster:TRole=this;
+         var host:DisplayObjectContainer=parent;
+         var layer:Sprite=new Sprite();
+         layer.name="itachiCrowClone";layer.mouseEnabled=false;layer.mouseChildren=false;
+         var shadow:Shape=new Shape();shadow.graphics.beginFill(0,0.18);shadow.graphics.drawEllipse(-30,-5,60,12);shadow.graphics.endFill();layer.addChild(shadow);
+         var bitmap:Bitmap=new Bitmap(null,PixelSnapping.AUTO,true);layer.addChild(bitmap);
+         host.addChild(layer);FItachiCrowClone=layer;
+         var started:int=TBattleHandle.PlaybackTime;
+         FItachiCrowCloneTick=function(event:Event=null):void {
+            if(caster.stage==null || caster.parent!=host || caster.FIsDie || caster.CurHealth<=0 || layer.parent==null){caster.ClearItachiCrowClone();return;}
+            var age:int=Math.max(0,TBattleHandle.PlaybackTime-started);
+            var sequence:Object=caster.FTextureFightIdle.GetAnimationSequenceByIndex(0);
+            var frame:Object=sequence.GetAnimationFrameByIndex(int(age/40)%37);
+            if(frame==null)frame=sequence.GetAnimationFrameByIndex(0);
+            if(frame==null || frame.Surface==null)return;
+            bitmap.bitmapData=frame.Surface;bitmap.x=-frame.Pivot.X;bitmap.y=-frame.Pivot.Y;
+            layer.scaleX=caster.scaleX;layer.scaleY=caster.scaleY;
+            layer.x=caster.x+(caster.scaleX<0?100:-100)*Math.abs(caster.scaleX);
+            layer.y=caster.y+8*Math.abs(caster.scaleY);
+            layer.alpha=Math.min(0.92,age/240);
+            var bounds:Rectangle=layer.getBounds(caster.stage);
+            var shiftX:Number=bounds.left<12?12-bounds.left:bounds.right>caster.stage.stageWidth-12?caster.stage.stageWidth-12-bounds.right:0;
+            var shiftY:Number=bounds.top<12?12-bounds.top:bounds.bottom>caster.stage.stageHeight-12?caster.stage.stageHeight-12-bounds.bottom:0;
+            if(shiftX || shiftY){var zero:Point=host.globalToLocal(caster.stage.localToGlobal(new Point()));var moved:Point=host.globalToLocal(caster.stage.localToGlobal(new Point(shiftX,shiftY)));layer.x+=moved.x-zero.x;layer.y+=moved.y-zero.y;}
+         };
+         FItachiCrowCloneRemoved=function(event:Event):void {if(event.target==layer)caster.ClearItachiCrowClone(false);};
+         layer.addEventListener(Event.ENTER_FRAME,FItachiCrowCloneTick);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,FItachiCrowCloneRemoved);
+         FItachiCrowCloneTick();
+         if(FBattleStage!=null){
+            var at:Point=FBattleStage.globalToLocal(layer.localToGlobal(new Point()));
+            var tl:Point=FBattleStage.globalToLocal(stage.localToGlobal(new Point()));
+            var br:Point=FBattleStage.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+            PlayItachiEffect("YuzhiboyoRZZL_Yafenshenzhishu",FBattleStage,at,360,Math.abs(br.x-tl.x)/1250,0);
+         }
+      }

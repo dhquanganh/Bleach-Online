@@ -1,0 +1,10 @@
+{
+  "version": "2026102109",
+  "fragmentCost": 100,
+  "unchangedWindowMethods": 18,
+  "changedClass": "Processors.Game.Lobby.Rebirth.TProcessorWindowHeroRebirth",
+  "texturesChanged": false,
+  "assetVersionRoutesPreserved": true,
+  "costBoundaryTests": "50/99 rejected, 100 consumed, main exempt",
+  "fullSuite": "fails unrelated HP comparison; same failure reproduced with HEAD baseline"
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "assets/activity/ninjaLaiXi/11000171.png",
+    "bytes": 96521,
+    "sha256": "c0d6df072aa6cfc771237f23bb1ad0c478650d6ad6b8bcae92dcf35798b54ac7"
+  },
+  {
+    "file": "assets/bag/ninja/preview/11000171.png",
+    "bytes": 24466,
+    "sha256": "15a3ad0868a9cf9b9c01f44492bda579d43c6ccce3ec9462d91a0fb381473700"
+  },
+  {
+    "file": "assets/battle/role/head_110_100/11000171.png",
+    "bytes": 4362,
+    "sha256": "8efffe036930d797eff0d10c792f102cd748a216576b1bf65758a31d9cb3626f"
+  },
+  {
+    "file": "assets/battle/role/head_176_68/11000171.png",
+    "bytes": 4251,
+    "sha256": "a361bd3334cff95d8eb1d74ad687e317ed7425360d3072285af0da7c78d3d384"
+  },
+  {
+    "file": "assets/battle/role/head_45_45/11000171.png",
+    "bytes": 2602,
+    "sha256": "dcfd6d8df9be8c3b2bdee872fb491bf923e9f864364584a6f331ad1db19e49ca"
+  },
+  {
+    "file": "assets/battle/role/left/11000171.swf",
+    "bytes": 587968,
+    "sha256": "89001388fac2cbd61d075ad53fae3fe6f645b44bbe94ef10a7246588aaf939cd"
+  },
+  {
+    "file": "assets/role/npc/scene/npcres/11000171_outdoor.swf",
+    "bytes": 102690,
+    "sha256": "b6ed7f9a65676afe8c7e8ac947342a4949e278469544988d42f5aeddce4247c9"
+  },
+  {
+    "file": "assets/task/images/11000171.png",
+    "bytes": 217593,
+    "sha256": "5b1ac50c784cf50c93b4c41f3bf309ccc3c5cc807e1faf4b9fe1a5aafdc9aa83"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/11000171.png",
+    "bytes": 28733,
+    "sha256": "2368cb8dc3d417e3aa8217ecb4ee299bbe820aabd19e77a106c8b2c73bda380f"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/H120/11000171.png",
+    "bytes": 6059,
+    "sha256": "a6c5d375b21dc0570067122381bfd0217ad82c0890f7a14f2d4d1513e032ea52"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/trim/11000171.png",
+    "bytes": 29821,
+    "sha256": "2f848dbe7b00e772b55cb3f1a55a8620872247aaa3361b12fa913b7e490f40a9"
+  },
+  {
+    "file": "assets/user/ninja/ninjaImg/11000171.swf",
+    "bytes": 4153,
+    "sha256": "54551225a896888c37f0af8779e9330b692f4377f934291b405f65ab1c810eed"
+  }
+]

@@ -1016,8 +1016,8 @@
   },
   {
     "id": "00C9BC25",
-    "talentName": "Sage Jutsu Chakra / Shadow Clone",
-    "talentDesc": "+20 team chakra before the first move each round. Summon a Lightning-resistant clone at battle start. Summon and Rasengan Barrage share a 2-round cooldown and primary action. Chase Repulse -> Knockdown: 2-round cooldown, no bonus bypass. Rasen Shuriken: 40 chakra, cooldown 3 rounds, battlefield cooldown 1; consumes the primary action; 10 COMBO to lineup and Repulse to selected target."
+    "talentName": "Sage Jutsu Shadow Clone / Sage Jutsu Chakra",
+    "talentDesc": "Summons the clone at battle start and grants 20 Chakra before the first action of each round. Talents have no cooldown."
   },
   {
     "id": "00C9BC27",
@@ -1068,5 +1068,10 @@
     "id": "00C9BC56",
     "talentName": "Orochimaru's Advance Technology / Mecha-Naruto - Jet / Tailed Beast Mode",
     "talentDesc": "Immune to Debuffs. Each executed action grants +8% Critical Rate and +15% Physical ATK, up to 6 triggers per round; growth persists through battle. Jet has a high chance to evade one ordinary attack per round and a 45% chance to evade Chases. On evade, recover 20 Chakra and trigger Extreme Beam, up to 3 times per round, even while controlled. Any formation position. Unspecified high chances are configured as 60%. After Chakra Bomb, permanently replace all base skills with Tailed Beast Mode: Energy Recovery (Mystery), additional Chakra Bomb, even-round Claw Strike and odd-round Tail Sweep; no base Standards, Rasengan, Jet or Technology triggers remain. Super Armor and Debuff immunity. Each Kurama Trigger grants +20% Physical ATK, stacking. Attacks received reduce Mystery recovery by 1. Energy Recovery activates permanent Explosive Mode: damaging enemies gain up to four Inflammation stacks; each physical action costs them 1% max HP per stack. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
+  },
+  {
+    "id": "00C9BC60",
+    "talentName": "Sho - Gyoku / Rei - Byaku / San - Hoku / Akatsuki Leader / Crow Clone Jutsu",
+    "talentDesc": "The first two Mystery, Trigger and Standard Attack damage instances received each round are reduced by 50%, triggering Deidara/Sasori, Pain/Konan or Hidan/Kakuzu respectively. Clears Ignition when attacked by Mystery, Fear/Discouragement when attacked by Trigger. Cancels incoming debuffs including Level 2 and grants Hiding. Critical damage grants +8% Critical Rate and heals 15% max HP, up to five times per round. While alive, attacks damaging allied Akatsuki suppress attacker immunity (Ninjutsu) or Super Armor (Taijutsu). Evading grants +12% Physical ATK up to seven times per round. Crow Clone Jutsu activates after an allied Akatsuki first action each round, greatly increasing chase evasion; chase damage grants +20% DEF/Resistance up to 100% for the round. SSS; any formation position. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
   }
 ]

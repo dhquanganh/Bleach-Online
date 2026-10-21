@@ -85,7 +85,7 @@ function kur(y){
     const costs=[{type:1,code:Number(cv(61700003,14100698)),amount:Number(cv(61700011,[])[r.n])}];
     if(id!==levels.anaId()){
       const fragment=fragmentId(id);if(!fragment)return error(4);
-      costs.push({type:1,code:fragment,amount:50});
+      costs.push({type:1,code:fragment,amount:100});
     }
     if(!costs[0].amount||!materials(durum,costs))return error(18);
     consume(durum,costs);

@@ -1,0 +1,36 @@
+<row>
+		<id>18118115</id>
+		<name>Itachi Uchiha</name>
+		<miss>21008588</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11008581</refId>
+		<achievedWay />
+		<prizeType />
+	</row>
+	
+<row>
+		<id>11008581</id>
+		<name>Itachi Uchiha</name>
+		<miss>21008588</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11008581</refId>
+		<achievedWay>29</achievedWay>
+		<prizeType />
+	</row>
+	

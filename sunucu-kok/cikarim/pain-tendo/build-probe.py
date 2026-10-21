@@ -3,9 +3,9 @@ from pathlib import Path
 import argparse,json,re,subprocess
 BASE=Path(__file__).resolve().parent
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--status-check',action='store_true');p.add_argument('--laser-check',action='store_true');p.add_argument('--flight-check',action='store_true');p.add_argument('--motion-check',action='store_true');p.add_argument('--revival-check',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--status-check',action='store_true');p.add_argument('--laser-check',action='store_true');p.add_argument('--flight-check',action='store_true');p.add_argument('--motion-check',action='store_true');p.add_argument('--revival-check',action='store_true');p.add_argument('--role-source',type=Path);args=p.parse_args()
     animation=json.loads((BASE/'animation.json').read_text())
-    production=(BASE/('status-patched' if args.status_check else 'patched')/'Processors/Game/Battle/Character/TRole.as').read_text(encoding='utf-8')
+    production=(args.role_source or BASE/('status-patched' if args.status_check else 'patched')/'Processors/Game/Battle/Character/TRole.as').read_text(encoding='utf-8')
     pieces=[]
     for name in ['PainVfxManifest','PreloadPainVfx','LoadPainVfxAtlas','TrimPainVfxCache','PlayPainVfxAsset','UpdatePainVfx','ShowPainVfx','ShowPainLaserImpact','ShowPainStatusText','PainStrikePose','PainFlightPose']:
         signature=re.search(r'      private (?:static )?function '+name+r'\(',production)

@@ -1,0 +1,25 @@
+{
+  "version": "2026102106",
+  "sha256": "ac82d6e205ee5dbf87cfd8cd5cadbcbeb316f595c6f8d028f78429a0692b17a4",
+  "unchangedMethodsChecked": 63,
+  "versionedBinRoutes": 4,
+  "changedClasses": [
+    "TEffectControl",
+    "TBattleStage"
+  ],
+  "actorAndVfxTexturesChanged": false,
+  "totalDamageMultiplied": false,
+  "nativeDataRecordsChecked": 44,
+  "completeTRoleUnchanged": true,
+  "completeTActiveUnchanged": true,
+  "nativeProbe": {
+    "completed": true,
+    "numericCases": 622,
+    "resetChecked": true,
+    "foregroundCases": 16,
+    "camps": 2,
+    "componentProbe": true,
+    "fullGameplay": false,
+    "errors": []
+  }
+}

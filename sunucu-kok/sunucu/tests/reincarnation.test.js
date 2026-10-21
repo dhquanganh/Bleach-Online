@@ -28,7 +28,8 @@ const beforeMissingStone=env.mevcut(d,14100698),beforeMissingLevel=level.heroSev
 const fragmentBalance=env.mevcut(d,fragment);if(fragmentBalance)env.dus(d,fragment,fragmentBalance);
 assert.strictEqual(call('0x01818500',d,req(partner)).readUInt32BE(0),18);
 assert.strictEqual(env.mevcut(d,14100698),beforeMissingStone);assert.strictEqual(level.heroSeviye(d,partner),beforeMissingLevel);
-env.ekle(d,[{code:fragment,amount:49}]);assert.strictEqual(call('0x01818500',d,req(partner)).readUInt32BE(0),18);assert.strictEqual(env.mevcut(d,fragment),49);
+env.ekle(d,[{code:fragment,amount:50}]);assert.strictEqual(call('0x01818500',d,req(partner)).readUInt32BE(0),18);assert.strictEqual(env.mevcut(d,fragment),50);
+env.ekle(d,[{code:fragment,amount:49}]);assert.strictEqual(call('0x01818500',d,req(partner)).readUInt32BE(0),18);assert.strictEqual(env.mevcut(d,fragment),99);
 env.ekle(d,[{code:fragment,amount:1}]);
 const partnerRet=call('0x01818500',d,req(partner));assert.strictEqual(partnerRet.readUInt32BE(0),0);assert.strictEqual(env.mevcut(d,fragment),0);assert.strictEqual(level.heroSeviye(d,partner),158);assert.strictEqual(level.heroDurum(d,partner).exp,1217095208);
 const reset=(a,s,e)=>new packet.Y().u32(partner).u8(a).u8(s).u8(e).done();
@@ -75,7 +76,7 @@ for(const stage of [1,2,5]){
  for(const index of [0,1,2,3,4,5,6,7,8,9,26])if(index<baseCount)assert.strictEqual(upgraded.readUInt32BE(2+4*index),Math.min(0x7fffffff,basePacket.readUInt32BE(2+4*index)*(stage+1)));
 }
 assert.strictEqual(r.fragmentId(main),0);
-console.log('PASS: +100% core stats per reincarnation (x2/x3/x6), correct partner fragments, exact 50 deduction, insufficient fragments preserve stones/level, main exempt.');
+console.log('PASS: +100% core stats per reincarnation (x2/x3/x6), correct partner fragments, exact 100 deduction, 50/99 rejected without consuming materials, main exempt.');
 
 const beforeRefinery=gear.statPaketi(plain,partner,159);
 plain.meslekAritma[Number(packet.satir('BaseHero',partner).profession)-1]=1;

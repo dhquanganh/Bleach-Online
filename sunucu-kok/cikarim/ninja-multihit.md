@@ -1,5 +1,12 @@
 # Pain / Hashirama consecutive damage hits
 
+Current follow-up: client **2026102106** extends exact partitioning to 1–64
+impacts, enables all Mecha/Itachi damaging actions as consecutive hits, and keeps
+floating damage above native/raster effects. See
+[`damage-float/README.md`](damage-float/README.md). The commands below describe
+the historical Pain/Hashirama release; use the current foreground installer for
+the live client rather than rebuilding an older release.
+
 Client **2026101971** retains the paged HD assets and every existing character, speed and Inspector fix. No textures are rebuilt by this change.
 
 All 15 damaging moves have four or five impact frames. Pain's Standard, base Almighty Push, Chakra Rod and Laser have four; Extreme, Final and Super Almighty Push have five. Hashirama's Taijutsu, Sword and Adamantine Fist have four; both Mysteries, both Severe Thousand Hands variants and Wood Golem have five. Support actions retain their existing behavior.

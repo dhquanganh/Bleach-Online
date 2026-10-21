@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Config><EffectInfo id="2005" type="0" target="1" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/DaJiTeXiao.swf" frontAction="d1" backAction="" />
+  <EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  <EffectInfo id="4094" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/fengnv-lxwzj.swf" action="" name="风女-螺旋丸坠击" frontAction="zj1" />
+  <EffectInfo id="5076" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/XRMRwzspj.swf" action="" frontAction="pj" name="仙人鸣人 蛙组手咆击" refPointName="skillEffectPoint" />
+  <EffectInfo id="5077" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/XRMRzfdlxw.swf" action="" frontAction="sxsj" name="仙人鸣人 真风遁螺旋丸手里剑" />
+  </Config>

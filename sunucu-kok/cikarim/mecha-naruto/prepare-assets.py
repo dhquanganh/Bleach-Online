@@ -31,9 +31,12 @@ def main():
     # Only giant Kurama attack poses need arena fitting. The Naruto-sized
     # persistent form keeps native resolution, including matching locomotion,
     # hit reaction and Energy Recovery; scale registration with the bitmap.
-    scale=1.0 if name in ['beast-idle','beast-run','beast-hit','recovery'] else .6
+    scale=1.0 if name in ['beast-idle','beast-run','beast-hit','recovery'] else .75
     if scale!=1:
      pivot=im.info['pivot'];im=im.resize((max(1,round(im.width*scale)),max(1,round(im.height*scale))),Image.Resampling.LANCZOS);im.info['pivot']=[round(pivot[0]*scale),round(pivot[1]*scale)]
+     box=im.getbbox()
+     if box:
+      pivot=im.info['pivot'];im=im.crop(box);im.info['pivot']=[pivot[0]-box[0],pivot[1]-box[1]]
    im.save(dest/f'{ident:03}.png');data['framePivots'][str(ident)]=im.info['pivot'];ids.append(ident);ident+=1
   clip={'assets':ids,'loop':name in ['idle','run','beast-idle','beast-run'],'duration':40,'sourceVariant':variant,'sourceAction':action,'sourceFrames':len(frames)}
   hits=sorted(set(round(int(f.get('index'))*25/24) for f in a.iter('frame') if 'hit' in f.get('event','').split(',')))
@@ -56,5 +59,6 @@ def main():
  audit=[];public=BASE.parents[1]/'kaynak/login.gogames.me/public/mecha-vfx/original'
  for item in json.loads((SOURCE/'manifest.json').read_text()):
   src=SOURCE/item['file'];assert hashlib.sha256(src.read_bytes()).hexdigest()==item['sha256'];target=public/item['file'];target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(src,target);audit.append(item)
+ multi_spec=importlib.util.spec_from_file_location('mecha_multihit',BASE.parent/'ninja-multihit.py');multi=importlib.util.module_from_spec(multi_spec);multi_spec.loader.exec_module(multi);multi.configure(BASE.name,data)
  (preview/'source-assets.json').write_text(json.dumps(audit,indent=2));(BASE/'animation.json').write_text(json.dumps(data,indent=2));print('PASS all supplied Mecha assets',ident,'frames')
 if __name__=='__main__':main()

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Config><SkillAction id="21000171" type="0" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill4">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+  </SkillAction>
+  <SkillAction id="21000172" type="0" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill4" attackDistance="" afterAttackOffsetPoint="" moveType="" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+  </SkillAction>
+  <SkillAction id="21000173" type="4" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill4" attackDistance="" afterAttackOffsetPoint="" moveType="" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+  </SkillAction>
+  <SkillAction id="21000174" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_1hit" moveType="1" attackDistance="252,0" needHideShadow="true">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="2,14,23" />
+    <SkillEffect id="5076" />
+  </SkillAction>
+  <SkillAction id="21000175" type="1" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill3" attackDistance="280,0" afterAttackOffsetPoint="" moveType="1" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="0.4" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="" needHideShadow="true">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="9,11,11,11,11,11,11,11,11,10" />
+    <SkillEffect id="4094" />
+  </SkillAction>
+  <SkillAction id="21000176" type="4" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill5">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+  </SkillAction>
+  <SkillAction id="21000177" type="2" hideOthers="true" triggerDefenceType="1" attackAction="SP_skill2" moveType="1" needHideShadow="true" sceneMaskAlpha="0.4" attackDistance="370,0" afterAttackOffsetPoint="97,0">
+    <SkillEffect id="5077" />
+    <HitPointInfo id="0" majorDefenceAttributeIdList="2" ignoreResetIdle="true" minorDefenceAttributeIdList="2" />
+    <HitPointInfo id="1" majorDefenceAttributeIdList="34" minorDefenceAttributeIdList="4" />
+  </SkillAction>
+  <SkillAction id="21000178" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_2hit" attackDistance="120,0" moveType="1">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="0" majorHitEffectId="2005" />
+  </SkillAction>
+  <SkillAction id="21000179" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_2hit" attackDistance="120,0" afterAttackOffsetPoint="" moveType="1" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="0" majorHitEffectId="2005" />
+  </SkillAction>
+  <SkillAction id="21000180" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_2hit" attackDistance="120,0" afterAttackOffsetPoint="" moveType="1" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="0" majorHitEffectId="2005" />
+  </SkillAction>
+  </Config>

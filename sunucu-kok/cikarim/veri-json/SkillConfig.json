@@ -63995,7 +63995,7 @@
     "id": "00C83585",
     "skillId": 13120901,
     "name": "True Wind Style - Rasen Shuriken",
-    "desc": "Wind damage to lineup, 10 COMBO; selected target suffers Repulse. Prompt. Chakra 40 / Cooldown 3 rounds / Battlefield cooldown 1. Consumes the primary action.",
+    "desc": "Prompt. Deals physical damage to all enemies, adds 10 COMBO and causes Repulse to the selected target. Chakra Cost: 40. Cooldown: 2. Battlefield Cooldown: 1. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13120901,
     "sortId": 1
   },
@@ -64003,7 +64003,7 @@
     "id": "00C83586",
     "skillId": 13120902,
     "name": "Sage Jutsu Shadow Clone",
-    "desc": "Summons a Lightning-resistant Sage Shadow Clone. Shares a 2-round cooldown with Rasengan Barrage; uses the primary action.",
+    "desc": "At battle start, summons a Lightning-resistant Sage Jutsu Shadow Clone. If the clone is absent, the Standard Attack summons it again. No cooldown.",
     "icon": 13120902,
     "sortId": 2
   },
@@ -64011,7 +64011,7 @@
     "id": "00C83587",
     "skillId": 13120903,
     "name": "Sage Art - Rasengan Barrage",
-    "desc": "Combined Taijutsu and Ninjutsu with the clone; always causes Low Float on hit. Shares a 2-round cooldown with Summon; uses the primary action and waits while recovering.",
+    "desc": "When a Sage Shadow Clone is active, replaces the Standard Attack with a combined Rasengan Barrage that deals physical damage and causes Low Float. No cooldown. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13120903,
     "sortId": 3
   },
@@ -64019,7 +64019,7 @@
     "id": "00C83588",
     "skillId": 13120904,
     "name": "Rasengan - Shoot down",
-    "desc": "Chase Repulse and cause Knockdown. Cooldown 2 rounds; no Chase bonus bypass.",
+    "desc": "Chases a Repulsed enemy, deals physical damage and causes Knockdown. Triggered once per round and has no cooldown. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13120904,
     "sortId": 4
   },
@@ -64475,7 +64475,7 @@
     "id": "00C83657",
     "skillId": 13121111,
     "name": "Mecha-Kurama - Chakra Bomb",
-    "desc": "Additional Skill, after Energy Recovery: damage up to 12 enemies; Repulse a random hit target; +30 percentage points Critical Rate. No independent Mystery cast or Chakra cost. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "desc": "Additional Skill, after Energy Recovery: damage up to 12 enemies; Repulse a random hit target; +30 percentage points Critical Rate. No independent Mystery cast or Chakra cost. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13121111,
     "sortId": 11
   },
@@ -64483,7 +64483,7 @@
     "id": "00C83658",
     "skillId": 13121112,
     "name": "Mecha-Kurama - Claw Strike",
-    "desc": "Trigger at the start of even rounds. Unavoidable physical damage and Interruption to the front occupied enemy line; random primary target Low Float. Lock hit targets' Mystery recovery at 1 through round end. Deals 1 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "desc": "Trigger at the start of even rounds. Unavoidable physical damage and Interruption to the front occupied enemy line; random primary target Low Float. Lock hit targets' Mystery recovery at 1 through round end. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13121112,
     "sortId": 12
   },
@@ -64494,5 +64494,61 @@
     "desc": "Trigger at the start of odd rounds. Physical damage to the front occupied enemy row, with 25% physical splash per hit neighbor one orthogonal grid away. Knockdown a random primary target. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13121113,
     "sortId": 13
+  },
+  {
+    "id": "00C836B1",
+    "skillId": 13121201,
+    "name": "Mercenary Group Leader - Nan - Shu",
+    "desc": "Causes unavoidable small damage to all units in the selected opponent's lineup, absorbs all Chakra and reduces that lineup's Chakra Limit to 10 until the end of the next round. This skill has additional Initiative increase and after executed, Itachi's Mystery becomes modified until the end of the battle. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121201,
+    "sortId": 1
+  },
+  {
+    "id": "00C836B2",
+    "skillId": 13121202,
+    "name": "Mercenary Group - Kisame - Itachi",
+    "desc": "Causes damage to all units in the opponent's lineup, absorbs all Chakra and reduces that lineup's Chakra Limit to 40 until the end of the next round, causes Interruption and Extreme Chaos to the selected unit. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121202,
+    "sortId": 2
+  },
+  {
+    "id": "00C836B3",
+    "skillId": 13121203,
+    "name": "Genjutsu - Sharingan",
+    "desc": "Attacks 2-3 units in the opponent's lineup and causes Suppress Immunity for 1 round. If the unit hit is suffering from Suppress Immunity, additionally causes Extreme Chaos. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121203,
+    "sortId": 3
+  },
+  {
+    "id": "00C836B4",
+    "skillId": 13121204,
+    "name": "Mercenary Group - Deidara - Sasori",
+    "desc": "Causes unavoidable damage, Level 2 - Ignition and Level 2 - Paralysis for 1 round to up to 9 units in the opponent's field. Deals 2 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121204,
+    "sortId": 4
+  },
+  {
+    "id": "00C836B5",
+    "skillId": 13121205,
+    "name": "Mercenary Group - Pain - Konan",
+    "desc": "Causes unavoidable damage, Suppress Immunity for 1 round to up to 9 units in the opponent's field and increases their Mystery's Chakra Cost by 20 (stackable up to 5 times). Units defeated by this skill cannot be revived. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121205,
+    "sortId": 5
+  },
+  {
+    "id": "00C836B6",
+    "skillId": 13121206,
+    "name": "Mercenary Group - Hidan - Kakuzu",
+    "desc": "Causes unavoidable damage to up to 3 units in the opponent lineup having the lowest HP ninja. This skill has additional Critical Rate increase. Deals 3 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121206,
+    "sortId": 6
+  },
+  {
+    "id": "00C836B7",
+    "skillId": 13121207,
+    "name": "Crow Clone Jutsu",
+    "desc": "After an allied Akatsuki first action each round, activates Crow Clone Jutsu: high chance to evade Chase; Chase damage increases DEF and Resistance by 20%, stacking to 100% until round end. Incoming debuffs including Level 2 are cancelled and grant Hiding.",
+    "icon": 13121207,
+    "sortId": 7
   }
 ]

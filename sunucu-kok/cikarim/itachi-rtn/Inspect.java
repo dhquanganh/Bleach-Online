@@ -1,0 +1,1 @@
+class Inspect{public static void main(String[]a)throws Exception{for(String c:a){Class<?> k=Class.forName(c);for(var m:k.getDeclaredMethods())if(m.getName().toLowerCase().matches(".*(image|frame|export|render).*"))System.out.println(m);}}}

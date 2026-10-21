@@ -1,5 +1,9 @@
 # Pain - Tendo [Six Paths Rinnegan]
 
+Follow-up 2026102105: Six-in-one uses a 1250-unit footprint, preserving its source
+images and timing. Other Pain skills and all Itachi methods are unchanged. See
+`../animation-size-repair/README.md` for native component and isolation checks.
+
 Latest client: **2026101974** (source-detail paged VFX, viewport sizing and bounded streaming cache).
 
 All eleven VFX layers have been rebuilt from native source PNGs, using fresh .7-zoom SWF exports for the revival, Almighty Push, laser beam, standard and Chase. Output reaches 1024x768 without upscaling source pixels. Atlas pages stay within 2048px; playback prefetches the next page and bounds each ninja's cache to 40 million pixels. Every Pain layer is tied to the active cast serial and character frame, including at x2 battle speed. Size/position conversion uses the battle viewport rather than a scaled actor container. Mystery/standard/Chase/revival visual footprints are enlarged; combat timings and cooldown rules are unchanged. Use `../upgrade-ninja-vfx.py --export --ffdec JAR`, `../upgrade-ninja-vfx.py`, then `../upgrade-vfx-client.py --ffdec JAR --install`; verify with `../verify-vfx-quality.py` and the full native component probe.

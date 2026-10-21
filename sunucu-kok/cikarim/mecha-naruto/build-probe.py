@@ -4,8 +4,8 @@ import argparse,importlib.util,json,re,subprocess
 BASE=Path(__file__).resolve().parent
 spec=importlib.util.spec_from_file_location('b',BASE/'build-client.py');b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
 def main():
- p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--idle-only',action='store_true');p.add_argument('--recovery-only',action='store_true');a=p.parse_args()
- anim=json.loads((BASE/'animation.json').read_text());production=(BASE/'patched'/b.b.ROLE).read_text()
+ p=argparse.ArgumentParser();p.add_argument('--ffdec',required=True);p.add_argument('--idle-only',action='store_true');p.add_argument('--recovery-only',action='store_true');p.add_argument('--role-source',type=Path);a=p.parse_args()
+ anim=json.loads((BASE/'animation.json').read_text());production=(a.role_source or BASE/'patched'/b.b.ROLE).read_text(encoding='utf-8')
  names=['MechaFirstAtlas','PreloadMechaVfx','LoadMechaVfxAtlas','TrimMechaVfxCache','PlayMechaVfxAsset','MechaVfxManifest','UpdateMechaVfx','ShowMechaVfx','MechaStrikePose','FitMechaPose','MechaBackdrop']
  names += [n for n in ['MechaPinPages','PumpMechaVfxQueue'] if 'function '+n+'(' in production]
  methods='\n'.join(b.extract(production,n) for n in names).replace('TRole','TApplication').replace('frame:TAnimationFrame','frame:Object')

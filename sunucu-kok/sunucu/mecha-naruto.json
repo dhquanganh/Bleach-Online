@@ -150,7 +150,7 @@
     "causes": "repulse",
     "critBonus": 0.3,
     "mechaBeastBomb": true,
-    "hitCount": 1
+    "hitCount": 4
   },
   "beastClaw": {
     "attackStat": "atk",
@@ -164,7 +164,7 @@
     "unavoidable": true,
     "causes": "lowFloat",
     "mechaClaw": true,
-    "hitCount": 1
+    "hitCount": 4
   },
   "beastSweep": {
     "attackStat": "atk",

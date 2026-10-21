@@ -1,7 +1,7 @@
 'use strict';
-const heroIds=new Set([11120901,11120902,11120903,11120910,11120911,11120912,11120913,11120914]);
-const fragmentIds=new Set([14130901,14130903,14130910]);
-const offerIds=new Set([41120901,41120903,41120910]);
+const heroIds=new Set([11120902,11120903,11120910,11120911,11120912,11120913,11120914]);
+const fragmentIds=new Set([14130903,14130910]);
+const offerIds=new Set([41120903,41120910]);
 const allowed=id=>!heroIds.has(Number(id));
 function filterTable(name,rows){
   return rows.filter(row=>{

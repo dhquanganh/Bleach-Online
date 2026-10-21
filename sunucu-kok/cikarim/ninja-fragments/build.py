@@ -5,9 +5,7 @@ import argparse,copy,importlib.util,json,shutil,struct,sys,zlib
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('native',BASE.parent/'naruto-sage/build.py');native=importlib.util.module_from_spec(spec);spec.loader.exec_module(native)
-FEATURES=[(11120901,14130901,41120901,'Naruto [Sage Mode]','naruto-sage-thumb.png',4),
-          (11120903,14130903,41120903,'Jiraiya [Toads Chant]','jiraiya-icon-input.png',7),
-          (11120910,14130910,41120910,'Kabuto [Great Ninja War]','kabuto-icon-input.png',7),
+FEATURES=[(11120901,14130901,41120901,'Naruto [Sage Mode]','../../asset/Naruto_Sage_Mode/assets/battle/role/head_45_45/11000171.png',7),
           (11120920,14130920,41120920,'Uchiha Obito [Rage Mode]','../../asset/Extracted_Obito_Rage/battle/role/head_45_45/11006051.png',7)]
 
 ICON_IDS={item:item+0x200000 for item in [14130920,14130930,14130940]}

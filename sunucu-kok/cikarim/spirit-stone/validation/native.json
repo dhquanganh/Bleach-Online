@@ -12,6 +12,8 @@
     "PASS new materials appear",
     "PASS temporary bag receives item",
     "PASS temporary bag stays separate",
+    "PASS new Modify Fragment appears immediately",
+    "PASS Modify Fragment total updates without duplication",
     "DONE"
   ]
 }

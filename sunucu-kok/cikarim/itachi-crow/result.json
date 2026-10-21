@@ -1,0 +1,29 @@
+{
+  "version": "2026102108",
+  "sha256": "46c7683ce9f89d8e835cffcd748d7a99a98989c85557a5c6f8cadd51f7453709",
+  "unchangedMethods": 160,
+  "combatChanged": false,
+  "texturesChanged": false,
+  "clonePerItachi": 1,
+  "clearOnRoundDeathReset": true,
+  "modelAndBinVersionsUnchanged": true,
+  "completeTActiveUnchanged": true,
+  "completeEffectControlUnchanged": true,
+  "nativeProbe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 6,
+    "restores": 0,
+    "stableRestores": 0,
+    "deathHolds": 0,
+    "assetPlays": 13,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  },
+  "visibleCloneCases": 6,
+  "duplicateAndDeathRemovalChecked": true
+}

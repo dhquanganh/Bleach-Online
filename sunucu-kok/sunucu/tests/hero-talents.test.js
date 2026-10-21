@@ -7,8 +7,10 @@ const battle = require('../savas');
 const codec = require('../kodek');
 const source = stats.anaKaynakHam();
 assert(source);
+const retired = require('../retired-heroes');
 let checked = 0;
 for (const [id, hero] of talents.heroes) {
+  if (hero.isSummon || !retired.allowed(id)) continue;
   assert(talents.talents.has(Number(hero.talent)), `${id}: missing talent`);
   const packet = gear.statPaketi({}, id, 100);
   assert(packet, `${id}: missing stat packet`);

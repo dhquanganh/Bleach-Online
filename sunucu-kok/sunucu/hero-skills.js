@@ -228,7 +228,7 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
-  if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>b.mechaIgnition&&b.remaining>0))return true;
+  if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition)&&b.remaining>0))return true;
   const kabutoSuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound);
   if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||unit.id===11120950||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(kabutoSuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
@@ -240,8 +240,9 @@ function status(unit, field) {
 function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
-  let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field);
+  let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field)*require('./itachi-combat').factor(unit,field);
   if(field==='critRate')result+=require('./mecha-combat').critical(unit);
+  if(field==='critRate')result+=require('./itachi-combat').critical(unit);
   if(['def','resistance'].includes(field)&&require('./pain-combat').active(unit,'painAfflictionUntil'))result=base*.75;
   const hash=require('./hashirama-combat');
   if(['atk','magicAtk'].includes(field)&&(hash.active(unit,'hashWeakUntil')||hash.active(unit,'hashEnfeebleUntil')))result=base*.75;
@@ -273,6 +274,7 @@ function healPower(caster) {
   return base*(caster.atk>0?value(caster,'atk')/caster.atk:1);
 }
 function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
+  if(require('./itachi-combat').debuff(target,rule,records))return;
   if(require('./pain-combat').rejectBuff(caster,target,rule,records))return;
   if((controls.has(rule.field)||rule.value<0)&&status(target,'immuneDebuffs'))return;
   if(controls.has(rule.field)&&(status(target,'immuneControl')||target.shield>0||value(target,'controlResist')>0&&random()<value(target,'controlResist')))return;

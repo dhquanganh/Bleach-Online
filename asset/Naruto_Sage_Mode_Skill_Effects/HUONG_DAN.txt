@@ -1,0 +1,14 @@
+NARUTO SAGE MODE - HIEU UNG CHIEU
+Ma nhan vat: 11000171
+
+assets/battle/effect/XRMRzfdlxw.swf: Rasen Shuriken (effect 5077)
+assets/battle/effect/XRMRwzspj.swf: Rasengan Barrage / hoat anh phoi hop (effect 5076)
+assets/battle/effect/fengnv-lxwzj.swf: hieu ung truy kich (effect 4094)
+assets/battle/effect/DaJiTeXiao.swf: hieu ung danh trung dung chung cua phan than (effect 2005)
+assets/battle/effect/skillActionEffect.swf: hieu ung van suc ao nghia dung chung (effect 2050)
+assets/battle/role/left/11000171.swf: hoat anh nhan vat, gom cac action A_1hit, A_2hit, SP_skill2/3/4/5.
+
+Doi chieu tu ninjaSkillConfig, SkillInfos, SkillAction, Effect va NinjaBaseInfos. Bao gom cac lien ket ky nang goc, dot pha va phan than 11000172/73/74 trong bo du lieu hien co. Cac ban dot pha dung lai refSubSkill cua chieu goc.
+config_reference: trich doan XML da giai nen de xem lien ket ID va ten action.
+Day la tai nguyen hieu ung; de phat dung trinh tu can runtime game va cac action cua nhan vat. Khong bao gom am thanh hay tai nguyen toan cuc cua engine.
+Da kiem tra chu ky va do dai giai nen cua 6 SWF.

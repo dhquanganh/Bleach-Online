@@ -1,0 +1,102 @@
+[
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\bag\\ninja\\preview\\11008581.png",
+    "sha256": "ed5b689b852de324b5789fe5bded212ef4f600533416a28a43b4c6bdc3575d21"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\battle\\role\\head_110_100\\11008581.png",
+    "sha256": "3d4316a04d1e03f190943e8420c226bfe5d20e007ca972d1eb37650293ca1d5d"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\battle\\role\\head_176_68\\11008581.png",
+    "sha256": "37446bd295ec3bbbbf970250ac82a17a8394e7f5cb33162dccfb2fa680cb7f29"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\battle\\role\\head_45_45\\11008581.png",
+    "sha256": "873a89ce4e737869cdac5e7b9dc553264276dd5a78b20a606ed8bdbdb62893e2"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\battle\\role\\left\\11008581.swf",
+    "sha256": "fa07afff6f402a148335379c17d20d6f1aa2371a2241f85be8cf224f19d64768"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\role\\npc\\scene\\npcres\\11008581_outdoor.swf",
+    "sha256": "3527994fbc16c5df62633181bd2c390ddbea5f7b3879fc3067794f8cb75c42a1"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\user\\ninja\\ninjaBigImg\\11008581.png",
+    "sha256": "824bf4fa8fef93f94b38b45c3abcec85480b6d882f1f48ce58cd95bb3173ecdd"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\assets\\user\\ninja\\ninjaImg\\11008581.swf",
+    "sha256": "fd6a75533acdc777997d8c647dcf9eb59bdb06c91a5c7a25bc14330d9f638260"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Huanshuxielunyan.swf",
+    "sha256": "492df21aeeb9277d37f0a5a2ad38e3420eba7568e4fd788fe8d50b268bcbc16c"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf",
+    "sha256": "f73f36f74c503a285c419c4ba68eeed8071f0a85173565e5509df520f5109a88"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yafenshenzhishu.swf",
+    "sha256": "ca9f750705aafd05eb3a63da2fe081b3607a202f60bc51d048e1ffd261bf33fa"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+    "sha256": "e299af225860675403535e5e9eb27f27817004f1907ed294a7a2803c41324077"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+    "sha256": "9e7a104cb71be0d20000a6386b95fd01317ddc3224026c1d285383dce5cca33f"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+    "sha256": "94ef0805d9f089097f559f3e82872cba78f4ca53aa6d21e576627f639e88c700"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+    "sha256": "8a3ca108208ddaed1c10e2d6afbb4bb7ee091f79195b2bf8e16b451f38f77688"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf",
+    "sha256": "532fabf8cb998f88fe0e0b2c66a6042b679c6271d080c1bd397b9fb914542eb5"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\effects\\YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf",
+    "sha256": "a15ad08e77afb121f118e698e26c7dfc128fe263c338879d0e9a6818e638a157"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008581.png",
+    "sha256": "b45bf9090810394da3a60acdc84c7f55275de87104570e0b4e3dfae70a17d43d"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008584.png",
+    "sha256": "7c7b8b81a007d0873dc93319658c8117e491d42394ec2752f9943e8b33a3e7c8"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008585.png",
+    "sha256": "dcc69aabe9f3825e631d4f3a3db9cad7e52bae10e0485adaa8ae9dfa79a2a04d"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008586.png",
+    "sha256": "f01b3cc892c2f8501eb4566714980b0c8e325a7fe60c879b476988c8e79c93f6"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008587.png",
+    "sha256": "800f31af634601139c3faf38496a0d9906d61f926c842b042f0f854e9723446b"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\icons\\21008589.png",
+    "sha256": "a57ee5fb684b49dd70d3458b1dea7bb1c34534d4e62fdc806d29a456fe7f0166"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\manifest.json",
+    "sha256": "0620a2b3cc38d0456ec288644f797b1a924921607e494aea449b3153587b8ec5"
+  },
+  {
+    "path": "asset\\Itachi_Road_to_Ninja\\README.txt",
+    "sha256": "7dd7331db2b47175053452e2bb17a679bf788e217fac88b5bbb89d1708475231"
+  }
+]

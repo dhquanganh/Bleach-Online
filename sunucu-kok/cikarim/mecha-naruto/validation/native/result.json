@@ -6,9 +6,10 @@
   "restores": 0,
   "stableRestores": 0,
   "deathHolds": 0,
-  "assetPlays": 34,
+  "assetPlays": 38,
   "powerLayers": 0,
-  "atlasesLoaded": 496,
+  "atlasesLoaded": 786,
+  "missingFrames": 132,
   "remainingLayers": 0,
   "errors": []
 }

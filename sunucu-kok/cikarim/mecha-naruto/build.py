@@ -6,6 +6,10 @@ BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;CFG=json.loads((ROOT/'sunucu/mecha-naruto.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13622101
+packing_spec=importlib.util.spec_from_file_location('mecha_model_packing',BASE/'model-packing.py');packing=importlib.util.module_from_spec(packing_spec);packing_spec.loader.exec_module(packing)
+native.texture_sequence=packing.packed_sequence
+multi_spec=importlib.util.spec_from_file_location('mecha_multihit',BASE.parent/'ninja-multihit.py');multihit=importlib.util.module_from_spec(multi_spec);multi_spec.loader.exec_module(multihit)
+multihit.configure(BASE.name,ANIM)
 SOURCE=ROOT.parent/'asset/Mecha_Naruto'
 MOVES=[CFG[k] for k in ['mystery','standard','beam']]+CFG['chases']+[CFG[k] for k in ['modifiedChase','extremeBeam','highHpMystery','jet','transform','beastRecovery','beastBomb','beastClaw','beastSweep']]
 DESC=json.loads((BASE/'descriptions.json').read_text())
@@ -18,7 +22,7 @@ def rows():
     for move in MOVES:
         clip=ANIM['clips'][ANIM['moves'][str(move['id'])]]
         effect={'target':1,'backPoint':{str(clip['returnFrame']):1}}
-        if 'hitFrames' in clip:effect['appendEffect']={str(t):{'target':2,'effectId':HIT,'hitIndex':i,'hitCount':len(clip['hitFrames']),'anmyhp':{'0':100//len(clip['hitFrames']),'checkDie':int(i==len(clip['hitFrames'])-1)}} for i,t in enumerate(clip['hitFrames'])}
+        if 'hitFrames' in clip:effect['appendEffect']=multihit.append_effect(clip,HIT)
         effects[str(move['id'])]=effect
     h.update(id=native.hexid(HERO),name=CFG['name'],assess='SSS',profession=1,quality=7,isMain=0,sex=1,level=1,needLevel=1,
         desc='SSS. Any formation position: front, middle or rear. Mechanical ninja. '+DESC['passive'],active=CFG['mystery']['id'],normalAttack=CFG['standard']['id'],talent=13220950,

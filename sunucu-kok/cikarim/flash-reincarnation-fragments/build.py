@@ -77,7 +77,7 @@ def main():
     ffdec('-selectclass', CLASSES, '-export', 'script', BASE / 'verify', compiled)
     scripts = BASE / 'verify/scripts'
     ui=(scripts/'Processors/Game/Lobby/Rebirth/TProcessorWindowHeroRebirth.as').read_text(encoding='utf-8')
-    assert '50 fragments of this partner' in ui and 'Core stats:' in ui and 'row.ChipID' in ui
+    assert '100 fragments of this partner' in ui and 'Core stats:' in ui and 'row.ChipID' in ui
     assert 'this.FHero.IsMain' in ui and 'this.FFragmentSlot.Update()' in ui
     stream=(scripts/'Logics/Streamization/Rebirth/TUnstreamizerRebirth.as').read_text(encoding='utf-8')
     assert 'param1.bytesAvailable >= 17' in stream

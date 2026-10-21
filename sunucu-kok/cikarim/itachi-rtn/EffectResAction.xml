@@ -1,0 +1,22 @@
+<EffectInfo id="2246" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/DASHEWAN_tongyongfuhuo.swf" action="" name="断手大蛇丸通用复活" frontAction="tyfh" refPointName="skillEffectPoint" />
+  
+<EffectInfo id="2246" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/DASHEWAN_tongyongfuhuo.swf" action="" name="断手大蛇丸通用复活" frontAction="tyfh" refPointName="skillEffectPoint" />
+  
+<EffectInfo id="6651" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_SB.swf" action="" name="忍者之路鼬佣兵三北" frontAction="shang" backAction="xia" />
+  
+<EffectInfo id="6644" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Huanshuxielunyan.swf" action="" name="忍者之路鼬幻术写轮眼" frontAction="shang" />
+  
+<EffectInfo id="6647" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yafenshenzhishu.swf" action="" name="忍者之路鼬鸦分身" frontAction="shang" />
+  
+<EffectInfo id="6646" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf" action="" name="忍者之路鼬写轮眼受击" frontAction="shang" />
+  
+<EffectInfo id="6650" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_QY.swf" action="" name="忍者之路鼬佣兵青玉" frontAction="shang" backAction="xia" />
+  
+<EffectInfo id="6649" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_NZ.swf" action="" name="忍者之路鼬佣兵南朱" frontAction="shang" backAction="xia" />
+  
+<EffectInfo id="6648" type="0" target="3" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_LB.swf" action="" name="忍者之路鼬佣兵零白" frontAction="shang" backAction="xia" />
+  
+<EffectInfo id="6653" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf" action="" name="忍者之路鼬佣兵三北受击" frontAction="shang" backAction="xia" />
+  
+<EffectInfo id="6652" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf" action="" name="忍者之路鼬佣兵三北法阵" frontAction="shang" />
+  

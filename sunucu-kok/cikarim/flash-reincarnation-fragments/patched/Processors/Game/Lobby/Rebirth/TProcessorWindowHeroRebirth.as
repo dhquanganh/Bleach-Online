@@ -264,7 +264,7 @@ package Processors.Game.Lobby.Rebirth
          }
          else if(!this.HasFragments())
          {
-            SToolReward.ShowMessage("Reincarnation requires 50 fragments of this partner.");
+            SToolReward.ShowMessage("Reincarnation requires 100 fragments of this partner.");
          }
          else if(this.FHero != SLogicsCore.Character.MainHero && SLogicsCore.Character.MainHero.RebirthNum == 0)
          {
@@ -326,7 +326,7 @@ package Processors.Game.Lobby.Rebirth
       
       protected function OnRebirthBtnClickOK(param1:Object) : void
       {
-         if(!this.HasFragments()){SToolReward.ShowMessage("Reincarnation requires 50 fragments of this partner.");return;}
+         if(!this.HasFragments()){SToolReward.ShowMessage("Reincarnation requires 100 fragments of this partner.");return;}
          this.FUnstreamizer.RebirthReq(this.FHero.Identifier);
       }
       
@@ -373,7 +373,7 @@ package Processors.Game.Lobby.Rebirth
       }
       protected function HasFragments() : Boolean
       {
-         return this.FHero != null && (this.FHero.IsMain || (this.FragmentID()!=0 && this.FragmentOwned()>=50));
+         return this.FHero != null && (this.FHero.IsMain || (this.FragmentID()!=0 && this.FragmentOwned()>=100));
       }
       protected function UpdateRequirements() : void
       {
@@ -385,8 +385,8 @@ package Processors.Game.Lobby.Rebirth
          else
          {
             var item:TArticle=SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_Article,id) as TArticle;
-            this.FFragmentLine.text="50 "+(item != null?item.Name:"Partner Fragment")+"  |  Owned: "+this.FHaveFragments;
-            var inv:TInventories=new TInventories();SToolReward.GetInventoryByIDAmount(id,50,inv);this.FFragmentSlot.Context=inv.GetInventoryByIndex(0);
+            this.FFragmentLine.text="100 "+(item != null?item.Name:"Partner Fragment")+"  |  Owned: "+this.FHaveFragments;
+            var inv:TInventories=new TInventories();SToolReward.GetInventoryByIDAmount(id,100,inv);this.FFragmentSlot.Context=inv.GetInventoryByIndex(0);
          }
          var next:int=Math.min(this.FData.ConfigValueVO.MaxRebirthNum,this.FHero.RebirthNum+1);
          this.FStatBonusLine.text="Core stats: +"+(this.FHero.RebirthNum*100)+"%  ->  +"+(next*100)+"%";

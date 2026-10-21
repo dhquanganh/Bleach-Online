@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+WARNING: The structure of this XML is not final.
+In later versions of FFDec it can be changed.
+Make sure you use compatible reader/writer based on _xmlExportMajor/_xmlExportMinor keys.
+--><swf _xmlExportMajor="2" _xmlExportMinor="2" _generator="JPEXS Free Flash Decompiler v.26.3.0" type="SWF" charset="UTF-8" compression="ZLIB" encrypted="false" frameCount="1" frameRate="24.0" gfx="false" hasEndTag="true" version="15">
+  <displayRect type="RECT" Xmax="26600" Xmin="0" Ymax="16900" Ymin="0" nbits="16"/>
+  <tags>
+    <item type="FileAttributesTag" actionScript3="true" forceWriteAsLong="false" hasMetadata="false" noCrossDomainCache="false" reservedA="false" reservedB="0" swfRelativeUrls="false" useDirectBlit="false" useGPU="false" useNetwork="false"/>
+    <item type="SetBackgroundColorTag" forceWriteAsLong="false">
+      <backgroundColor type="RGB" blue="51" green="51" red="51"/>
+    </item>
+    <item type="DefineSceneAndFrameLabelDataTag" forceWriteAsLong="true">
+      <sceneOffsets>
+        <item>0</item>
+      </sceneOffsets>
+      <sceneNames>
+        <item>场景 1</item>
+      </sceneNames>
+      <frameNums/>
+      <frameNames/>
+    </item>
+    <item type="DefineBitsLossless2Tag" bitmapColorTableSize="255" bitmapFormat="3" bitmapHeight="171" bitmapWidth="179" characterID="1" forceWriteAsLong="true" zlibBitmapData="78dacd7d09585bd795ff0524f6d580ac254820014248208410120884100281d8119b0081c4be2f6231600c7889d738b19db549e3c48913676d9c3a4b13c76df63499a449db2c4d9ba46d3a6da7ffeeed7fdace4c87ceb94f487a4f081b1b4872bf8f2f0e3cdd7774def99de577ef3b17218484088907101ad120a4f345c81f7ee88908a5c09ffce087168ed00e1a428143088dd523d44c47286809a1fd010885d421d4b80fa1835108c5062214ea8f50b01aa1821084228a11fa3b0f21010ba1b8058496e710da5381d0ef23108a9e4268b613a1de46845aaa11323110626721a48a44282608a1b03084a24a11aa884668e74e8438a10845b623d4198b108b8d107707428c1e84066408296210625e87507c0242497108252c2374408a903c1da1cc24844463084d662094c545882f80af2b4128438f50691b42563b42337c84921711da3781d0f42e84767310e289104ad322a4b722d4dd8250bb1821a911a1aa1984e66d08f5942064bc1ea123b908692c08d9f2112a04854952114a3723641941682207a1fc4c84b20b112a1e4768ca8050791f4243b508357423d49f8790361ba1dc56843aca11aa2e40a8488e9012f456568550dd1e84f62a11524f2334378bd002e8ae6614217b3f42c32a84f24c0835552254ab43a8a419a1b622840c0d0899d310922523940af3fd6b10a151788801c108853311ba6e18a171f85effbb1fa14347103a7e0342270e2274147ef74ff85901bdfc173cdb9b0e21740ce6fb6f98fb7fe0bbfe159ed3cf6e44e8d46184ee829f1be0b3a7e07bfcf239842edd85d03d70fd29b0a137405f6fc3f7f900e4fa23e8ea2c3c8b6370ed6d6508fd093e7707e8fb11f85e373f80d0c317107af61184be713342b7f722f412d8c1afc1968ecc2374e76df073003e0bdff17398ebffc13c87de43e87db0993740f60741a6bfed867941a7ff09f39f04fd9e3f8ad02d6063a72f21f4f2a7f039f8cc71b8ef3fc1f61e83b94e80fd7c0ff4ff36dce31698f35fa0c74ba0f7dfbe05bf87e77f37e8e16e98fb76b08b8fe1d9de083afd11cc7d13cc7310feff0cfcf7f03d08dd7f06a107608e3b41ce27e1fae370fdf741cfdf02dbb9f743847efc3842df047dfde4659015ece022cc7d3bc8fd3ee8e3b1d7107a0b30f48f1a84fe02cff23b9320035cf30a3c97a7e1efdf025bbd0076fd1ee8e821b0a3fff90d427f7808a137e1be0fbc8ed02f00837f03dbf9e529980774fe31e8f3c35b113a0732ac7c8cd0ef9e05ccc1f3fbd3fda07f782e9f804dff0c9ec93fe1b3efc167ff08cfe0e2ed083d01cffa5fa0bf7fa1ad1c0101018181743a8d36470c1a8d4e0f0c845fa2afe00808a4d3c262a2e753831253647cd16e565a5a71715a5ada6e115f929218943c1f1d1346a307067c65c4a505c744a706a54b5899cc427f5389317f3a3b373703466e6eb632df5862521532335992f4a0d4e89860da972d38c81b16c1084ae7a7a9f34cc6ec666b53879fc13cd9d353d54a8caaaa1e8dd9e0d7d1646dce369af2d469fcf4204644d8972637984370c43cc85bcc541973054d7ee6aaf2a184c8d0f886325b416dad18466d6d81adac213e343261a8bc6ac2af46906154318b41eef988e02fc15002e9a0e038194bed5f9fd1df616e1db284361494f2a4be218d392d455aed0031b8daa2969ce1105f29afb4a061ca32d46aeee8cfa8f757b36471a06e7ae017a962d030089cc654e577d7985bc7c7ecb5bcb6901c6d05a72f3caabafaf8eb4f3e7923319e7cf2f5737baba3c2fb3815da9c90365ead7d6cbcd55cd39daf62a661b183e95f90b2c186a39353446afffceed889728bbdb6dd3787cbd1459d3bf5aba37b56bc8e3d0f3d77ea5c948ec3cd996dafb55bca2762bbf3fdd5a294e468b0ed2f0275318c38497161494693b9dc52563902f22af69eba656503e3960b7b1520f748659945686eca28292c96c43162b61b9181b40846223fcb3f5f50d79a602f1d69d1ebaa5fbd6de52ac675af56ebf42d23a5f684d63a41be7f163f9111b19dbac63a0689554aaba13cb4569aa30f7fefa72bd7307efa5eb83e475a1b5a6eb02a5558ea98ed923ac02971bfb933be7496db77ee472bd73c7e74ae8f3b5b1adf69ee774a1db01dbe222c294e92e93f6d350fd9798d7ac5f70ead6c6a1cfa9e42dfc8b30f99add3fe9992b8a4b02df72181c111c929c5794681a11c24e69cbd6f650bc67d67392075b94160cc2b4e498e080edc5a258359889825cd1dc2d0ca46ceb9a32b5b348e9ee33456860a3b9a4b982230902d5475607074902c5395ddd46311cfeacfdeb4b285e3a6b3fa59b145d394adca9405456f95aac19241c9f27a8161a8a18dbb78ebfaf7dfb7f3f77f78fa93479ff90ff7affef6ccfb2f7df49b3f9d3fb46bdd4fddbac86d6b183208eae5ac44c6d65875000d5bb27f764dd558654edf4fd6b9f1e1a3372c2f2f9f3979fa9ea75f7af43f497f78ffd18f4e7cf0f6836796978ffd783dd4fea42fa772acaa06ab3a39620b1c08b60bbebaa4bbabb36164f0fa5dde23f35d4bd53a8e7e90bdb88c85fe6ff21f7ff709887ce678386790d3b7b874e121afd17dd7f38323654386ee12263f6ef3f611189694c82accefd7584a73c2dff0a6e01796415e6de3487bbb34841b7eece4bd273ea55cf09b7b4e3f7890d3e22b6d6f5bd042d85c7e619f9769de086f298dd48ce617b2d2c13e36e92f52c12e7263857669851725ef3aba5cdd37303cc2b3c5472658426d52eee299d37fa05eb3ffde93cbec85ca86314be494adb26d78a0af7af9a897a92e55b4d9851db9aacc94d4cdf80f10395996e5d3dc35640b613fb6362abc755c57312c15db2d9d3d86ba0e3fcdb87d84b37cd2f9e76faffef74f6716b59563c2093fbf2e4da7c52e960e57841f7f6ead6d5fec5b28e835749bd4924d1835a02f48a22eb14e5ac42d670f78dee2c885454e11ce758413b182ec7a53c9b4a06b5c5c14f59ad3909f715ef924bb2dbe2ab639bfbe5e29a8310b716e55c4a9feda37d6b89db34595164d7f3d931f147d8d4207d0007d72e3684f68fbc0c79ef3df7901475e474e599fa766f1f969f2fc9a7231f77a97c378dfe93eee678f4c4d74fba85922963aaf1e7258a1a50ca27fd4853b3d677db9423ad5da945f280224065c9bc871a2c2fca6d6f836ce0f3ce6de79415111521a3fa4a969ae2fcce4ef484d9a0f9230955d9123ecf3ab97fcf1a34f3edabffaefa7b862a1d5a7383d95919ac8cf2cac6faed18cc7978654445dd8e9691fec117b7947761e2b31e91a84c622b3f2b23bca1b7cd92f7a3cc3c717f521e229a1c13aad528b76a442b10156b47ba6bfb374e0df9db67e0f0c271af7e842e2cd4a66ca7c58705874ea0e915a35dd6f289f1287e8ab1ff7f07d47740bb6ceba5cff34103af0ea454e0491eb3a6d8d0a0fb8fc722f67a1345458d75d5f98260b4a0a03d30ba0cdcb98b993f64685f3a2ff7dfbe4c993ef7ce62c502adac7474daca098c080005a585290acb8b0bebb4e185adac839f8630f677f36a776dc2fc33f2dfd6a35ed1039b76ea836e72c5513878ee95a78532071899c05f59ca30a0d8c882b2e894d90723e74e63e6796a0963df6a0f353ff9653d693219730e602880a18ea4996bc04a48ee7b5e82e1ca64a7d7d91b8b72b4375b5423b0c23d76fbcb6e559aa2bfd7175058e5802a39c959eeacc1e0382197c7f81b056eb04e0ae25c5c0f07011bbfae6d55fbcc81e89ac3366ee88a03b33db54901a32dba1b2918aead7a8427fac2d4dc0425f954dbb4416b7dc4d9dee155d4ea945333a9d9746ce77e9d1e9cce9ae31df3ea743fc7776636559436d1b57e184e1ed188633bb939d5210f9785adef4a826b23447f70af52e0f702b130c601e8957e1f2e81141a2bc6cbf5e711155e46f2c0d8e34947764cc6449c86963604c32cba7bfb372e03b4eb7d21762eb15569587f2b83f747e56b7103f91cd4c49a291131949d64c465d3924324b5407f2752e0f34edcf8adbb0d0f498207e6176ddb8a7c847abb5bc484dbf51be9b9a330200e500c0e1379d17de5d54dbe9d76fadd18cb5711e767a317dfb788d290d6048c971c140fa35913c6d3535c5bd1d34ed979b270a8aa06f302d4a96c8f33b866a5baea7ccf333c570c1b85fb34f9647c2880158df01007cc8991073a4091db925a67c6b4f59cbbf393f7e474b594f77a10386a43417e7067e4305c3e1bfa0dcec29adb8b72ebb909f1cb3118f1710c690a98d4de5053954911fef9b6d10c62afd593ba889970b804f3801a868b44fe4e66566324b9ac6797aa7c1dc8961989fb5239a4e2d27d2d3fc959083f9b2a946fd409178a8239f29490d0bdc00fe92d2334bfa5bcb1aefa0cc7103a76daa67d4c8147926b80e008686f4ed7319636979ff0c2b3d5dc69c36c487e8f6907e4f86a1cbaa454c637f4fa874f06b1417757d4e4179537d560ae3cace831e9d58ec23e8b187b8204f8cbbf4ed6313821235d8053551740070a8b2c259899f67fb8e75e567252645a762fd8bb94f39e7c0faa7c07095354996a94d8289485ec57729a1e091c6862aaba9189cc7958c392648e4df3c113ad24749e4eeaae059cccd33c5296b127202809ab29c47dc21c15605763b1f3c1783eddc22e5dc44b2f39a12320c1d5a0a63a414cf64742554722942ef0b9f8dd774ab5857c2614070aa449edd95d0eec23b314e555426384293a77501003301806d9cfb9d617ab0bd170b16160856269367681a8615eeaf5350d59d4781a1c33e9276a4f9e370a05d22c7c49d6c69a421b7909f1a7659eb0063ce32d68c970e5068ad1bb1c85ef316f88e0e0378c059958437c69b73c100e8f88f6036a3433cbd332d3c0266e3e70143c72c902910de55bb442ebc6ed5f37a3bf2d51ed6b4c632e2d27cac425bcb25aa2d8387cfcdf3e6e131009586292a00ad2a512a011c7ac40ef5b4217456e7d4dee703959d6b60e8ca7b95754362ee77c9407c595b2b1c3515c75dc63ab0d60a3326e34314e40fbe32b8aec860fd2c1f7068158f511d5aa2c36403e6b01b6cadd53e705918ae964422b9b20e9ef08de47b9f5db06b9af344c9eb5b07684d9d5f97d0ce3e42f6cbecf648c33a71746e5e56d8dc5396430a1cb6aa660020cdf5dc8aebc9f9de8700c3d892e2b8359182101acca3b7527f17398bec6bb3742999eb5b07682dcda71feaa36f923ef573ddc898b9d9bbc87400a0b12ed21da01f1be4f536418076a98580e1241986dada562f30c4e1050b9d0bf0673f4ebafd63fad2ce2693972fe9bc01430296616f3c4ba6d3a242b0c349f3267240d82a007fe802e002518fb8310630dc3d33da5959f1f9ea2507d8bea15dd36b61b82a745e86616c44f7739200cfb63480754818c1ded51c91986984bc81ec99f7ed6d29ab12f8147bcd0ac1c930b3cdf6857052c2592e7002d03929c0b02b74b6cf59ecfca0823734eac3f262a1601e712c55b326be7191b4dab14f371209be2631c2aba201802ac81b06c894dc8d03e2f25153a6d792013b19130070f0e2eac50f73462c90d827929f2386619ea0b5c09d22be99d33099214f99a7792d8ed266acadb6a283241c7ea702877c51b2b7101e1891ae569aa742164922ff8addde1b6b547b8df9901b490080b6963b280554a18c2a0dfe665076b5739cc9e64d1886f5c5de14e7c8759a3aa938ac1e267c4d34dd9b9a459037f05c1925565cd46ca8217b9ddc0a9c6f96d12f7284ed7c90f755f08842d5e3a9d3925298b913f605170c9fd08a5b05fefc54ef7a4801cf6569d3dd4c2ac53910594dace4606f6a66664f36e49c237dc325adad4ae02ff29ac3020077cf58cb4bb95f77195ec89441c94c5f1be40086fde5a5034e6f7440373bd535bdf64247ee0eb903f881e16a52b17fa9a84c03d614bd460a1aa8b9a657ca2601f02d0e6f1c3c97f72884d5973d4102e00fb9b5420f00ba609895ef3736c2dee97e20188641de5481a3145645c5d748d46b5f1b38f5b58a0e884967427a56f4bcfbd2dba24071d338da07788ff22535bded836433eda8a702d009c3797e5e3718beab867824a74cd32c97cdd3bce7c290745946c8d6f132b7a0a7599eee89001a03d49c206593f2aa27b9b5ad823c8937bb230098d75d55d0f2ac4b8ee106cd1a007a7cbfef3b093c4e9ba5031c8c37ff154063c8b0f65a0e92789af0364bac89954af3b0ceb8ac6c50f3ebee0b6fd6c1856bb35da73688e7edeb8af2df597dde5e1303971ded72910162e13a30c4e5a868a67f9cc7798baae80c66620cb5da4892a84641cd24cb3f0896bf8e8b81afe8c0952bca1fee9b0ded52aabde26a158656a11baf87d7c1ebaa434accca37db1b4930dc07165de3c34fa25c1e9c5c3c3d61cfd9eb16f95db634a1c91ba4488a6b0c77559c90468087499d0b582fc466e5d7815f74b2b7b7e831bcbdc310ac439227e8ac1cbcc12dcdf35881994164140644a4145a3b29be796f4bc3a4729d90890db43eb6d79dae3d4400b03871bd4c066028a1c210c79f66b98441f34a5604a5190df10b516e1f7604825b7f9e2c82a4123a4354e237b510e5a1667fef736276204f505550e492e0cd611c8f65ebd713588c929af1f641e73e8f87d96d449c8ff08e9614b987a2ab1bed06232b95641cc1415919ade2816f52ad59991917b61e00097acec98f7f5e51d9d9bf1e0049d6648e77c3101378d89d8779f54ac9a0687be3a2bbd07aa1a254d8cd8c0b239986ccbf29a1adcf7dc9cd7d5022ab2449eb0210f2cb811fb812739c5faa775cae3e0631442a2be4adb7bbfc17e4add9cc74afb70045175a87c8ae637ff84864ac4ae2368e4006cb68b6e754537c73556e56dcba9e2b83cc8f3f810198c75f0f806e181aeb48e9c9f7072f034350f4f464430bc927bc8e1f7c1ac3f50d6941cc6e08972fb84d5e313b56e7e95b10a95e22d3731f3a688bb82b306b0043394e039f25d561048117ec55d1f8c94bfbdcc1f0210eaf53c08c735d1c96a28a855cca4d88dca0af2c173013bddb1a2e4ec8093141cf312f5fd03b6048d4bb7a72bd4b64f3746f7709ca0484714fb9d73c15be631d33b218e705d122e304a452244797d33091bf9be13d1fd8a1567685faea5cfc380620d4ff6157a2d5e84990a06302cf09c3af0f9496f7abbc17d5f424bea90b3c991b62075bca26a759494ece3d35334328762d39adacbca61bb1d4f8a77b4f41415bb8c073f3e3043db7e3ca44313c2111a57cdc75992714109628ef1f6fe73ce75e86d397960bd4c9abb7a1c5158e52d2a3bbf4e058b292e7bc0170dec16745b9f971cc67f119735726e41d05a7c5cd93bd01305c0f0934465a76552df7bbee44a9afcd52939718ec34671fbfd090286a0ccc17457b4b6f313f5e075fd0cd1b12f45cdc86a86d1ac0304343a243ae6fb111049eb76a334266ea8a2787b9eac6f8ae12c9aa414788a629b9df6de160eeaa1d6101eb00502876f1e32b8a850d019064584d436e1efd48df48e47a86151c57089e83eddec0770a92bb6c56b463a6a4cc66a1b8c2cd2a3ecee10d5999c9b4750068989ad51d72c3a8b35fb53b79838b6298a89a364cb979f46fe2cf7b07309d4188e5ae576e1dacec14a853892b0393b1b593cc9908282c2fa681f56422d37347fa1c44e706576a5c30741178188693de9f5340043f7fb28c14567042da941744dc8a9ea8ea88f40ddf4f2ececd46598c1712860100ec59c38f6f0880ce800495536c429b8b473fba7e400ade01309b55b875191512ea674aa711e9aaacc410dfe8f6ce3b09738ea37981c58e622314f2ae35fb8b83570140320c1b4830d416b482dff192a7d3930983be99ea1a2461c403172935b62237047f867355796aa0d7076b252f90e8161cfc386dc322bbfdfb0f5cfe1d2a9cfc2c2f254b605296a0bc52ef4e485fc5369b164168af18e7a1bf227be7f2eeace8002f718c48275d0c384e27711cbbaaa57402861e045ee7a88f3718c6b072ab0a481efa167d6567775612214a96a09337e85e07fdaeb6a02a9b15b34643311880503d5fa4e60b3b22ae6a9f05769779984777bbcb61bb2697e9a5620f96e44f3490eabdc30e03208025efef6d67ef23271b9346c99c37a6b7b9cad672d6cdb242795428d938005d3074f0e8472985991766849e6ef29b22c5bafd444a1104b79b4bf6afb18ce8dc6e63b171aaab2485be16809994fcf731c702f6d500d0094322ff762f8f43fe2dc405b0a78d050681431b097713bb51b3a1753e898138def8d48dcdba57500e43d257a78a5bbb40057546b9bbced8af73f0e3570340170c1d758e9bc0c3ccc15aa2212095c8835e20476f43490a4816935ed235d5b8484aeab0eb4e0ef00420aee7ec8de17b5cf49cd83b3db71118ee504ffb91b67bdca7e78d7be3d19398d6711ee7571e560bdf2c42566f2627cfd8d58dca196b975a4c64faeabacbd5cd1b81617755adbb6c88ca69d064ac25f022d4dd94ea7ba9c8d6a314c145d1927c4ae5e5c83692bc01b0a0c8c58fdfe1d860343f772ddbe01c041ec0f00d1273e005863190719019d2256e012415908d267984941b702a9215b1868e35fa45bae939e2699a587161d7b68716c330778204430781e76969c110396a07dcf5d55303e2d68c620884f3a2ec9e02ed12a91684843f33c6936f0300960e7cdd05c09078ccb75d3d004930c4bb819c131e2226f484218d082a4fba447baea254d88c459b6765c31fdc327fcdf9070f00627a6ed765d572753074f0aa3b4904de1a5e95b69baace9b7184c6a231d272a1865926c92c163617875101586caa49681f7c83cc1fd7675ebd6ba62e67755791aaf7a896b23530a4ef56f6d8b4c749325742561141c8dc4a9179402ccca0c83ce705808ef9af7d9bb213865447544f754474026a24999d50bba2cc8ef590505fd7f655d7b2e46636b1d3a33de8e0a7d63afc75659e6761db585ad736303da722af3bed5f276c5dad935ec5b59bc02336c29209bc756dc313837779609096948277cfb901f8849600202378732f38d0233c96372e123c3a69817f1583eef5921f393198047fb0517c5da5b0dbed9f3100eb6b4869d8ea02d5260048a2f371a2e862b1cfb6d88844d105c339c204c8be6ed504a2f94a4d1925a6f0a0bc8da6d273eeedab2b6f42d599712db991371e1d1272dea0ab225edd81e7826130518d5c70172a03b5ad1969207384c43849ceaca9b19bc8677059e1a2e706303dc7ba323db7a19285a9c43cba7bc76529b111d639f79ad84d542310bb6364f5867573a435f4dce1d5fd1711f44d8b0c4e1af25b3281b747b1603767cb654e1846a8a92b14c4e2031f1e7058baa98bbc9be0431de6c55673d1b9798f7d2e4f6c9c9edb080c1d049e6b39cbc1a4b976c524c9f13aa19b66acce693013b9e85c9caa6eccd79df3ef27e5fcab7484d4cd0a3a36326c1a804e18ce43b4d294e5b878f4b34e953872fe3ccc9bff925441c57711393f2d39afc9d2d6b7c74b6de5a07d00801f9300e875dfd6a66038ced393376efae1a519ac93c038822c3aefa6cdf1ea03d6269d41505fde6a581cabd6d0730092d4b0ad7a37113307787f9e0b865f5fdd8187ef404ba1565098cd75545081d159500de82faee50a008069781fa26bfbea21f6d5d1731b83216523ec7e62079e0386c17c6a357284cd1bb73219046f41241cdf237132950e4e660eac2d4353e606e02a3f3e3fb785af80c6acc2f045328147202620222d03428a3be5ff69456979736634e1ce08fed11d547e81a98fc254faea3e30f7eeb95b395232aad156c1508e61780769232c41e0cdd1e6d5982c7a85ec9e7b56c9225a8a896236df2056881263c256bde715374e6e1686541efdc02a0ca323e23cdc46758edd5c2f211627e8711ea40cfe9b91cf98270018a2a36c5f9d116d1d0029309cd5396fff031c697d76c7054970e0885aa1ba0d82cb4581a94cbc4eeb7ea9ea462e84f5ac94f43453cd909b1fdfe9cc06e85b2a328621ce68dccf73976218321ab94892454d840eb3a509a3f220c7eed9240f6214328ef1d199cce2c26eb03305851fcf936c2500c9304c70ef4777ecc063327d206b27edb4bb8fc844198edbc7f0a9fce39d0adf504386cfcc741d00f04ef2fef16ba1e73600c3d58db02e1efd6e6d6dab35bfbed91029ed73335fc771b6b17b35490e4e9fe92047ef95832d059d75ddcd3594170816b6018024188e76f2f49f93760a4d368d760dd9c88bc3510b537e26d96a01450f625ac7db39474829b4d45e6e3608ed212e7a0e6f5fb5aab61c80e4e5acd059d772d6772a7891c2aa71bb547f23d59c0b9d4b26818c625c0fb8a3ca435145ed0d168bbdcd55153bd2f1ccc4ad06a09b39c0790dd7cd1c6879767bad941be57e3be8735c5b673a974c0222f8255d7692875e590ee7ceb6b7cfeaab49fb1634f8050edaf6b45159c3a3bfa8e086840c57288ead903df044bec8b56412969e87895e779af4e7e545b6be825d7dc4bd7f7cbc669dfd215b04c314bc4db4d1b58af7d65e852eeaf8b13fbb1324dd88255695e2e20368c9597863817b3bd281930f1e5b5e3ee6cab657f7e144d3d1368dc0b0e4dd3ea3244262df83304ebef30fd20210783a6690fb55be2411d457a425c2950f4e9f7ee79d775cef0de38d163841dcb65e3578e7b323ed753eec3fdd7befbd1fdce3611a2c865b8298943cea2ec67f9c3871e29edf3bd7ec9739ed16fc4e8d6cc7b68d7411b3bebfb5ac65d155fd9d78fae9a77f43ddc9a8226fb0a3056562d6d4ed39565efae4934f9cff3e7d262aa760bc4b306df2d9b661aacf6daa0a950e2e9f746aead3471f7d94d4ee027b0d35792323188789b210b4f2b7679ef996f3edf27b4f2e737c6d095566bf6d1c5d93e5a1bca2c533a75df6f0db677eeb967911024ac96e06f9ddc39874395ea7257593fa8fffeffcd747f79c7e70afde57dc101fba9dc35ed0dea25b7efb83137f7789b042def535642d4ca1ec1ba025a7e51be2c991d225f26f5f7afa8377ce5473b48d21db3a167206c2974fde7be2a3479d0ff85fd44d5dd3c5d49de681d1b23ccc25dcbfa6c3c47f3df3e827273e78e7c1e5eaa86d1e8bc78f11ad5ddeffeb1a21ceb3a5bda32a4912d56f8505654e53923b57178d6f7f0bc6819d5fc83880eff5ed6faf1182d84aacf6dcef474fe2abf09b1e77ae7c05c721bc49d887efb9df2f2026314b49dd18f8d519afb7944d829ad7ecdca1311c8abee9ab2732deb0dde4234aa57949adb230b1baf8d593997879499dee65991a2bda2a2cad78ecab26f2878398f116a5067bcd61b3f2fd281bc05656fef2eb5f7ffae9679f7d76db6db75df7058cdb6efbecb34f3ffdf5afff42721dbb14b3a18669b5f7dd0034e235195b11b9dfcd5f09effcf683cb7ba314e1db3c148aeae5336fe3a0426e1806555dade35d967596198b4b6a7a799457bb9f21a2e0c13e6e4e88ef368f90612ebbfaccdb1f4054f9360580091dc675979c1cef094c9153a5956fbd74e2de934bec16a9d83e15b9ad23d45edbdec839fee0bd273ef9dd0a39398a9fc895cb18b4f556fb9377abf01672b275fccf89d36714da767b42abd92f761b4787a16a3c9e97137eecf43d7ff7b08ccbbe9281df1a32c6f6f2063f247dea8fa78fb167cbc6cda319c61995ff768d99fadc7e432754facb6fff86dcd993d39e50977fb935df8060864c9e6d081dd191dfc0ffe7b29e1739693516164b1283b66924ca58cc128139a1927bfccfe4fe668ad9a9898c42c9e5365de0370e5582aa86614aef8db738ed91e6665571fa7cd836f5b70d0c4e229aee245492df75c43d38ca5aad3357a8f7f11b87254d9db5da1f52fb8560a167d2d219db53c582c8b81b5317884c79f3ff9b5cf1508d312bfdf21d38b07530a7eb7a791517292d860671c7109f4db6965b9f2860a417fb6718127854916f1ae425f82999b22bed06080c4be617e61a22a51c4a93af57386da11a6bc9a65acbada7267a4caa2ccbd46d8ee4e92922ef64b7854e34aff30ab187ef8863a9ba27a746fa286dbe1e678fc4578de6cb4571d15bdcba14779c63d65b355074df45e92fa89bb56b043e69711b788b84169d586cb256d94328ce63e55d5d4819eed2868d7a2b5b9712fd1ea79b5ad734ee79a4b14c385a92999eb481078bdf0bcfaa1f1596b9df2277bc0d179553dbdbd53c9325db3afb201a2415ab32ea866c8de1efae78b6eda931aa651bdbda1218962a531b6b8436aac75b79782f9737a6b11ae5a22d6a5d4ab40d1631eb059396caa2456a4fb8275a6a8762a737d61ec9e1a59325ccfcd8ce829c3b281d8b0e2c7370bbafdc2dea128bdb94c970b355617c9b7ee93aaac845e2f13a256e43b5515a1337fc922b3b863c855e793c3ca7d40221113782db64c766dc4d3a7d3728d9dc5bdbd877d71e4f917bfdb237deeecbe13c82448558e8e13bf67bb6af6b6be8ac6bf6518b36d5679a300bbe7a26a343182f1da8fe39b532b9bb45dcbb4e079bcb62c321b4adf14d6ad7d503373a7bdb66f1e392ae516a90781ef7bf5636f544960eb397cf53bba35e9f831b05fa5f9dc88e9e2358e8f2b2109d476fca17aaf5b305099aa66bee444e7445c71dbb4727136cbe15d53ff3e850f9c870c1901f6839f16a9b8cae762caa1136f8b21ff260486e5070db6c09934dca19f56edce0f06a7c083e8e0077be9c518e4ef43648b5e15ff350c979dcf892e8d679f52d46b179f0e5447bd141cf46e0f72ff51549cb1234b1cd2572c779061b6bb11f10181c439c9f60caa8d12434b4b7b0973c3b76dfcaf6c51de70aafd630484233ebfbbdb6717de120bb485a60111afa953e4c96e31886c02b6b981197c262ce28ad7e428b4ddac23ef873cf799fd24be35b9b8814e19aa012408f4896a84b088f7ff6b0671be19f1f646b47c4f1bd3d75d66c5361e6650f19711d59522c372905759aa129f148117bef2ff67b36927e56cb1beb211ae65e6ba875645c3ecd86de82c6be35bd9f77ddbc145ed1d85e3036d4e3d7d43d6d2a64a6e1635d9222c282f1793ac404f8bc92b08824105792a62ef4996e1ef5eb191ab3f1160674c77fea29f1ca51dd706dafb9db94b5a9ec91682de79fdb21b4b7e93f5ecbf01c5d5e646b4378055309c249bf2641ee74c94c2133338dc597c852882193f05969c4e935d3f884954961c254016f56cb595c7e6ded6c2f3b9a6a6eb601b4bbcd766465d1232faebdcf815f2c2938dc056969d9544267eb6457c7a8559091ad9c36d697c0a8af372ab33304d6d18eaec9d6ce84a932b17441cb511c7f6ee7da995e5cc476d1a4ccdb7c35e46c676e18b785703ef6ca5abebb14c5ae285a68e3891ba6f08934ad3d9ac90983a1abcb609898d4f4b4960ff5464e35882ba50b4515eca8a5e78e789be57bec90825e83606b1a9a13e962a62a17329976ade2a25716f0c08f978f47f50d725b1af18934a505650df6d5d1505620c6a7d734b67007fba20e2efff280d7092e2ab8edf1c2d8dcad6a1cef6c5d6a35f7da66f5cf9e5f87bddc79f4ade583d58a3e8e7e808b0fd421464e4b117740cfe9532c1e5c7eebe8ce753e7afe59bd6f41afd96ac40dd8b7a8e07474890555b78e550eb35f5dff7480957d475e7bf7c2f2d2d2c1bdd58eb1776969f9c2bbaf1dd9b7fe6776bdca1eae1c6b8dcdf5a176b4dd7c99c94867c9eb055d9d76a956f7f29539e33dabe3ca57beacd34aed9d5df81484f42d3d7062f5c4097f9c24d8dab8e12fefdf1a3a7cffcbe190baf44e8c4efb6fe5691364abe6ab7d726b7a2c05235cdda5039b97f8c0251d77a4c0d25393eba3e62732b681a40aa445a4a6b398a6e6d82a4b6d9b96fddec5cd497cf13db6b6add65215db6c62e2fed7db72bc0e6465d1c92969f292e68eaa049b74785071e99a17b96ebaa4181c96da12aa3a706a887b8c6fd7e14b602060d658ea1a4dafbd1282b0e2d2351cff72f49282a39dadb4f76a6a886436283a6c3bcfe6c25283ae99a6ec5173f958012f04c47efd27e7372eeff99fbc0e0287f06c63e5e6d16c1313eb386cbb4f1323babea78b8823ae7ac6430b78be2d156cc57bafde7a65796f7df53d05bba2c59757103ade431c6e254a77769e47db2e75043e4a4c6ecab6e2d4b24cdc3e9b03a159517dead5fbeef726ecc337bf7a6aaf02827bce6cbbb80c27af56a5498e0f11fbe24e6cc3397c34710c838f52d03121ec0d6da8e54967878b0606d93a4554f5b973cf3f7f0ac6f3cfbf7eae7a51a1630f0e140dcfb6f16a1b427b85131d02a50f140989f8fc842ff4403f42ece44449315395df3c5a37d13a94106ab78979ed6dbe21c3c4697e78384ef26b6be7896df6d084a1d689bad1e67c15b35892981cfda59c9ce8a898e2524499f2197c68629db947d8d96b199bc2a726da0a60d8f08989536396de4e618fb90e8a02e38c3c539412f7651ef5886d1bd4bd7a38a54fbd3243d0df54874fa7d4f4f45455f540226d36f8d5d5f40b3294f53eab47538282e95ffa59a08e4340194189325171963c4f459c02aaccc6633adf586f52e5c9d5c522592288fb153802942c38483e87cbd5e4b81d29323e5fb41b8688cf97a4ec884b6640613b07d27e258f8945aba7da06d2f1b9b6747ca0ed57f544db2f7cfc1f9c3f3533"/>
+    <item type="DefineShapeTag" forceWriteAsLong="true" shapeId="2">
+      <shapeBounds type="RECT" Xmax="5396" Xmin="-5344" Ymax="5161" Ymin="-5099" nbits="14"/>
+      <shapes type="SHAPEWITHSTYLE" numFillBits="2" numLineBits="0">
+        <fillStyles type="FILLSTYLEARRAY">
+          <fillStyles>
+            <item type="FILLSTYLE" bitmapId="65535" fillStyleType="67">
+              <bitmapMatrix type="MATRIX" hasRotate="false" hasScale="true" nRotateBits="0" nScaleBits="22" nTranslateBits="0" scaleX="20.0" scaleY="20.0" translateX="0" translateY="0"/>
+            </item>
+            <item type="FILLSTYLE" bitmapId="1" fillStyleType="67">
+              <bitmapMatrix type="MATRIX" hasRotate="false" hasScale="true" nRotateBits="0" nScaleBits="23" nTranslateBits="14" scaleX="60.0" scaleY="60.0" translateX="-5344" translateY="-5099"/>
+            </item>
+          </fillStyles>
+        </fillStyles>
+        <lineStyles type="LINESTYLEARRAY">
+          <lineStyles/>
+        </lineStyles>
+        <shapeRecords>
+          <item type="StyleChangeRecord" fillStyle1="2" moveBits="14" moveDeltaX="-5344" moveDeltaY="-5099" stateFillStyle0="false" stateFillStyle1="true" stateLineStyle="false" stateMoveTo="true" stateNewStyles="false"/>
+          <item type="StraightEdgeRecord" deltaX="10740" generalLineFlag="false" numBits="13" vertLineFlag="false"/>
+          <item type="StraightEdgeRecord" deltaY="10260" generalLineFlag="false" numBits="13" vertLineFlag="true"/>
+          <item type="StraightEdgeRecord" deltaX="-10740" generalLineFlag="false" numBits="13" vertLineFlag="false"/>
+          <item type="StraightEdgeRecord" deltaY="-10260" generalLineFlag="false" numBits="13" vertLineFlag="true"/>
+          <item type="EndShapeRecord" endOfShape="0"/>
+        </shapeRecords>
+      </shapes>
+    </item>
+    <item type="DefineSpriteTag" forceWriteAsLong="true" frameCount="1" hasEndTag="true" spriteId="3">
+      <subTags>
+        <item type="PlaceObject2Tag" characterId="2" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="true" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="false" placeFlagHasMatrix="true" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="false">
+          <matrix type="MATRIX" hasRotate="false" hasScale="false" nRotateBits="0" nScaleBits="0" nTranslateBits="0" translateX="0" translateY="0"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+      </subTags>
+    </item>
+    <item type="DefineSpriteTag" forceWriteAsLong="true" frameCount="23" hasEndTag="true" spriteId="4">
+      <subTags>
+        <item type="PlaceObject2Tag" characterId="3" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="true" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="true" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="false">
+          <matrix type="MATRIX" hasRotate="false" hasScale="true" nRotateBits="0" nScaleBits="15" nTranslateBits="12" scaleX="0.2467804" scaleY="0.24676514" translateX="-8" translateY="-1637"/>
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="0" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="37" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="73" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="110" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="146" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="183" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="219" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="PlaceObject2Tag" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="false" placeFlagHasName="false" placeFlagHasRatio="false" placeFlagMove="true">
+          <colorTransform type="CXFORMWITHALPHA" hasAddTerms="false" hasMultTerms="false" nbits="1"/>
+        </item>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+        <item type="RemoveObject2Tag" depth="1" forceWriteAsLong="false"/>
+        <item type="ShowFrameTag" forceWriteAsLong="false"/>
+      </subTags>
+    </item>
+    <item type="DoABC2Tag" flags="1" forceWriteAsLong="true" name="">
+      <abc type="ABC">
+        <version type="ABCVersion" major="46" minor="16"/>
+        <constants type="AVM2ConstantPool">
+          <constant_int/>
+          <constant_uint/>
+          <constant_double/>
+          <constant_decimal/>
+          <constant_float/>
+          <constant_float4/>
+          <constant_string>
+            <item isNull="true"/>
+            <item/>
+            <item>shang</item>
+            <item>flash.display</item>
+            <item>MovieClip</item>
+            <item>Object</item>
+            <item>flash.events</item>
+            <item>EventDispatcher</item>
+            <item>DisplayObject</item>
+            <item>InteractiveObject</item>
+            <item>DisplayObjectContainer</item>
+            <item>Sprite</item>
+          </constant_string>
+          <constant_namespace>
+            <item isNull="true"/>
+            <item type="Namespace" kind="22" name_index="1"/>
+            <item type="Namespace" kind="22" name_index="3"/>
+            <item type="Namespace" kind="24" name_index="2"/>
+            <item type="Namespace" kind="22" name_index="6"/>
+          </constant_namespace>
+          <constant_namespace_set/>
+          <constant_multiname>
+            <item isNull="true"/>
+            <item type="Multiname" kind="7" name_index="2" namespace_index="1" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="4" namespace_index="2" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="5" namespace_index="1" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="7" namespace_index="4" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="8" namespace_index="2" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="9" namespace_index="2" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="10" namespace_index="2" namespace_set_index="0" qname_index="0"/>
+            <item type="Multiname" kind="7" name_index="11" namespace_index="2" namespace_set_index="0" qname_index="0"/>
+          </constant_multiname>
+        </constants>
+        <method_info>
+          <item type="MethodInfo" flags="0" name_index="0" ret_type="0">
+            <param_types/>
+            <optional/>
+            <paramNames/>
+          </item>
+          <item type="MethodInfo" flags="0" name_index="0" ret_type="0">
+            <param_types/>
+            <optional/>
+            <paramNames/>
+          </item>
+          <item type="MethodInfo" flags="0" name_index="0" ret_type="0">
+            <param_types/>
+            <optional/>
+            <paramNames/>
+          </item>
+        </method_info>
+        <metadata_info/>
+        <instance_info>
+          <item type="InstanceInfo" flags="8" iinit_index="1" name_index="1" protectedNS="3" super_index="2">
+            <interfaces/>
+            <instance_traits type="Traits">
+              <traits/>
+            </instance_traits>
+          </item>
+        </instance_info>
+        <class_info>
+          <item type="ClassInfo" cinit_index="0">
+            <static_traits type="Traits">
+              <traits/>
+            </static_traits>
+          </item>
+        </class_info>
+        <script_info>
+          <item type="ScriptInfo" init_index="2">
+            <traits type="Traits">
+              <traits>
+                <item type="TraitClass" bytes="01040100" class_info="0" deleted="false" fileOffset="10911" kindFlags="0" kindType="4" name_index="1" slot_id="1">
+                  <metadata/>
+                </item>
+              </traits>
+            </traits>
+          </item>
+        </script_info>
+        <bodies>
+          <item type="MethodBody" codeBytes="d03047" init_scope_depth="9" max_regs="1" max_scope_depth="10" max_stack="1" method_info="0">
+            <exceptions/>
+            <traits type="Traits">
+              <traits/>
+            </traits>
+          </item>
+          <item type="MethodBody" codeBytes="d030d0490047" init_scope_depth="10" max_regs="1" max_scope_depth="11" max_stack="1" method_info="1">
+            <exceptions/>
+            <traits type="Traits">
+              <traits/>
+            </traits>
+          </item>
+          <item type="MethodBody" codeBytes="d0306500600330600430600530600630600730600830600230600258001d1d1d1d1d1d1d680147" init_scope_depth="1" max_regs="1" max_scope_depth="9" max_stack="2" method_info="2">
+            <exceptions/>
+            <traits type="Traits">
+              <traits/>
+            </traits>
+          </item>
+        </bodies>
+      </abc>
+    </item>
+    <item type="SymbolClassTag" forceWriteAsLong="true">
+      <tags>
+        <item>4</item>
+      </tags>
+      <names>
+        <item>shang</item>
+      </names>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+  </tags>
+</swf>

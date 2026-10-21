@@ -36,7 +36,7 @@
          var layers:Array=manifest.effects[effect] as Array;
          if(layers == null) return;
          var at:Point=(skill==13120976 || skill==13120977 || skill==13120978)?origin:center;
-         var limit:Number=(skill==13120974?900:skill==13120975?1150:skill==13120976?1250:(skill==13120977 || skill==13120978)?260:skill==13120971?1000:1400)*unit;
+         var limit:Number=(skill==13120974?1250:skill==13120975?1150:skill==13120976?1250:(skill==13120977 || skill==13120978)?260:skill==13120971?1000:1400)*unit;
          var extent:Number=1;
          for each(var layerName:String in layers)
          {

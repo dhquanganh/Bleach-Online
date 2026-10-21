@@ -1,0 +1,42 @@
+[
+  {
+    "file": "assets/bag/ninja/preview/11008581.png",
+    "bytes": 81507,
+    "sha256": "ed5b689b852de324b5789fe5bded212ef4f600533416a28a43b4c6bdc3575d21"
+  },
+  {
+    "file": "assets/battle/role/head_110_100/11008581.png",
+    "bytes": 10994,
+    "sha256": "3d4316a04d1e03f190943e8420c226bfe5d20e007ca972d1eb37650293ca1d5d"
+  },
+  {
+    "file": "assets/battle/role/head_176_68/11008581.png",
+    "bytes": 8250,
+    "sha256": "37446bd295ec3bbbbf970250ac82a17a8394e7f5cb33162dccfb2fa680cb7f29"
+  },
+  {
+    "file": "assets/battle/role/head_45_45/11008581.png",
+    "bytes": 4476,
+    "sha256": "873a89ce4e737869cdac5e7b9dc553264276dd5a78b20a606ed8bdbdb62893e2"
+  },
+  {
+    "file": "assets/battle/role/left/11008581.swf",
+    "bytes": 1056509,
+    "sha256": "fa07afff6f402a148335379c17d20d6f1aa2371a2241f85be8cf224f19d64768"
+  },
+  {
+    "file": "assets/role/npc/scene/npcres/11008581_outdoor.swf",
+    "bytes": 417213,
+    "sha256": "3527994fbc16c5df62633181bd2c390ddbea5f7b3879fc3067794f8cb75c42a1"
+  },
+  {
+    "file": "assets/user/ninja/ninjaBigImg/11008581.png",
+    "bytes": 137256,
+    "sha256": "824bf4fa8fef93f94b38b45c3abcec85480b6d882f1f48ce58cd95bb3173ecdd"
+  },
+  {
+    "file": "assets/user/ninja/ninjaImg/11008581.swf",
+    "bytes": 10845,
+    "sha256": "fd6a75533acdc777997d8c647dcf9eb59bdb06c91a5c7a25bc14330d9f638260"
+  }
+]

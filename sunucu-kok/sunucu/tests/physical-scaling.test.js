@@ -4,6 +4,7 @@ const battle=require('../savas'),naruto=require('../naruto-combat'),pain=require
 const {CMD}=require('../kodek');
 const unit=(id,camp)=>({id,camp,pos:1,hp:1000000,maxHp:1000000,atk:100,magicAtk:10,def:0,resistance:0,speed:100,hitRate:1,critRate:0,anger:0,level:99,quality:7,normal:13100114,skill:0,skillId:13100114,partnerSkills:[],weaponSkills:[]});
 const sets=[
+  {hero:naruto.config.heroId,moves:[naruto.config.mystery,naruto.config.barrage,...naruto.config.chases]},
   {hero:pain.config.heroId,moves:[...['mystery','extremeMystery','finalMystery','standard','laser','superPush'].map(k=>pain.config[k]),...pain.config.chases]},
   {hero:obito.config.heroId,moves:[obito.config.rageMystery,obito.config.standard,obito.config.rageStandard,...obito.config.chases,...obito.config.rageChases]},
   {hero:hash.config.heroId,moves:[...['mystery','burstMystery','standard','sword','severe','burstSevere','additional'].map(k=>hash.config[k]),...hash.config.chases]},
@@ -45,4 +46,4 @@ for(const move of [pain.config.finalMystery,pain.config.superPush])for(const cam
   assert.equal(damage(pain.config.heroId,move,camp,final),Math.round(200*move.multiplier));
   assert.equal(damage(pain.config.heroId,move,camp,{...final,magicAtk:100000}),Math.round(200*move.multiplier));
 }
-console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Obito, Pain and Hashirama; Physical DEF mitigation, Resistance/Magic ATK independence, ATK buffs/debuffs, original coefficients, Technique Points, Attack growth and Final/Super states.`);
+console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Naruto Sage, Obito, Pain and Hashirama; Physical DEF mitigation, Resistance/Magic ATK independence, ATK buffs/debuffs and original coefficients.`);
