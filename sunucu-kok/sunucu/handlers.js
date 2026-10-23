@@ -498,11 +498,7 @@ const byReq = {
     return r.paket;
   },
 
-  // === KING CHALLENGE (sunucular arasi turnuva): oyuncu/siralama listesi bos ===
-  // InitRet/RankRet = [u32 hata][i16 adet] + adet x kayit (TUnsteamizerKingChallenge). Bos liste
-  // pencereyi bozmaz; ZERO_ACK ise adet alanini okurken kayitlarin icine yuruyup EOF veriyordu.
-  '0x01818a01': () => { const w = new W(); w.u32(0); w.u16(0); return w.done(); },
-  '0x01818a02': () => { const w = new W(); w.u32(0); w.u16(0); return w.done(); },
+  // Tournament of Throne is registered by king-challenge.js through savas-etkinlik.
 
   // === RELATED PARTNER: aktif beceri listesi (CS 0x01818005 -> SC 0x01188005) ===
   // [u32 hata][u16 adet] + adet x (u32 heroId, u32 skillId) — bos liste = varsayilan beceriler.
@@ -1580,7 +1576,12 @@ function paraHarca(awards) {
     v[p.alan] = yeni;
     guncel.push(p.cift ? { index: p.idx, v: Number(v.gumusHigh) || 0, a: yeni } : { index: p.idx, v: yeni });
   }
-  try { fs.writeFileSync(yol, JSON.stringify(v, null, 2)); } catch (e) { }
+  if (kalemler.some(({p, bedel}) => bedel > 0 && ['altin','kupon'].includes(p.alan))) {
+    const day = require('./paket').gun();
+    const ledger = v.dailyTaskSpending && v.dailyTaskSpending.day === day ? v.dailyTaskSpending : {day, count:0};
+    ledger.count++; v.dailyTaskSpending = ledger;
+  }
+  try { fs.writeFileSync(yol, JSON.stringify(v, null, 2)); } catch (e) { return null; }
   return require('./harita').baseInfoUpdate(guncel);
 }
 function paraEksik(awards) {

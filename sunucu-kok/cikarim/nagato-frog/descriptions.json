@@ -1,0 +1,10 @@
+{
+  "13121401": "Prompt: deals damage and 4 Combo to up to 6 enemies, causing Low Float to the selected unit. If the selected unit has a Shield, instead hits every enemy with 4 Combo and cancels all Buffs and Shields on units hit. Cooldown 2; battlefield cooldown 1; Chakra 40.",
+  "13121402": "Attacks a front-row enemy with a chance of causing 4 Combo and Low Float.",
+  "13121403": "Chases a Repulsed enemy and causes Knockdown. Can trigger twice each round.",
+  "passive": "Frog Squad Cooperation: whenever a Frog Squad ally executes a Chase, that ally gains 8% Physical ATK (stackable). Remains active after Nagato is defeated. Frog Squad Lead: before his first action each round, reduces his Mystery cooldown by 1 and sets his Mystery Chakra cost to 0 until the end of the round.",
+  "13121406": "Attacks a front-row enemy with a chance of causing 4 Combo and Low Float.",
+  "13121407": "Attacks a front-row enemy with a chance of causing 4 Combo and Low Float.",
+  "13121404": "Frog Squad Cooperation: whenever a Frog Squad ally executes a Chase, that ally gains 8% Physical ATK (stackable). Remains active after Nagato is defeated. ",
+  "13121405": "Frog Squad Lead: before his first action each round, reduces his Mystery cooldown by 1 and sets his Mystery Chakra cost to 0 until the end of the round."
+}

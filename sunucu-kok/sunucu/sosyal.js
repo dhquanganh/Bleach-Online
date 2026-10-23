@@ -59,18 +59,21 @@ function kur(y) {
     if(!Buffer.isBuffer(payload)||payload.length<3||payload.length!==3+payload.readUInt16BE(1)*8)return new Y().u32(4).done();
     const o=new O(payload),box=o.u8(),n=o.u16(),p=posta(durum),ids=[];for(let i=0;i<n;i++)ids.push([o.u32(),o.u32()]);
     const list=box===2?p.giden:p.gelen;
-    if(list.some(m=>m.bossPayoutId&&m.ek.length&&ids.some(([hi,lo])=>hi===m.hi&&lo===m.lo)))return new Y().u32(1).done();
+    if(list.some(m=>(m.bossPayoutId||m.adminGrantId)&&m.ek.length&&ids.some(([hi,lo])=>hi===m.hi&&lo===m.lo)))return new Y().u32(1).done();
     for(const [hi,lo] of ids){const i=list.findIndex(m=>m.hi===hi&&m.lo===lo);if(i>=0)list.splice(i,1);}
     K(kaydet,durum);const w=new Y().u32(0).u8(box).u16(ids.length);for(const [hi,lo] of ids)w.u32(hi).u32(lo);return w.done();
   };
   H['0x01811603'] = ({ payload, durum, kaydet }) => {
     if(!Buffer.isBuffer(payload)||payload.length<2||payload.length!==2+payload.readUInt16BE(0)*8)return new Y().u32(4).done();
     const o=new O(payload),n=o.u16(),ids=[];for(let i=0;i<n;i++)ids.push([o.u32(),o.u32()]);
+    let adminClaim;try{adminClaim=require('./admin-item-mail').claim({durum,kaydet},ids);}catch(e){return new Y().u32(1).done();}
+    if(adminClaim.error)return new Y().u32(adminClaim.error).done();
+    for(const update of adminClaim.updates)ekSonra(update.id,update.payload,'ADMIN-mail-claim');
     let claimed;try{claimed=(y.bossRewardMail||require('./boss-reward-mail')).claim({durum,kaydet},ids);}catch(e){return new Y().u32(1).done();}
     if(claimed.error)return new Y().u32(claimed.error).done();
     for(const update of claimed.updates)ekSonra(update.id,update.payload,'BOSS-mail-claim');
     const p=posta(durum),oduller=[];
-    for(const [hi,lo] of ids){const m=p.gelen.find(x=>x.hi===hi&&x.lo===lo);if(!m||m.bossPayoutId)continue;
+    for(const [hi,lo] of ids){const m=p.gelen.find(x=>x.hi===hi&&x.lo===lo);if(!m||m.bossPayoutId||m.adminGrantId)continue;
       for(const e of m.ek||[]){if(e[0]<10000){const t=MAIL_IDX[e[0]];if(t)oduller.push({type:t.type,code:t.code,amount:e[1]});}else oduller.push({type:1,code:e[0],amount:e[1]});}m.ek=[];
     }
     ver(durum,oduller);K(kaydet,durum);return new Y().u32(0).done();
@@ -80,17 +83,7 @@ function kur(y) {
   H['0x01811501'] = () => new Y().u32(0).u16(0).done();
   H['0x01811504'] = () => new Y().u32(1).done();
   // ================= DAILY TASK =================
-  const gg = d => { d.gunlukGorev = d.gunlukGorev || { mask: 0 }; const g = gunluk(d); if (!g.gorev) { const ids = tablo('DailyTask').ids.filter(i => i >= 16300001 && i <= 16300029); const sec5 = []; const havuz = [...ids]; while (sec5.length < 5 && havuz.length) sec5.push(havuz.splice(rnd(havuz.length), 1)[0]); g.gorev = { fresh: 0, point: 0, cur: 0, prog: 0, finish: 0, tasks: sec5, mask: 0 }; } return { k: d.gunlukGorev, g: g.gorev }; };
-  H['0x01812000'] = ({ durum, kaydet }) => { const { g } = gg(durum); K(kaydet, durum); if (!g.tasks.includes(g.cur)) g.cur = 0; const w = new Y().i32(0).i16(g.fresh).i8(0).i16(g.point).i16(g.mask).u32(g.cur).i8(g.prog).i8(g.finish).u16(g.tasks.length); for (const t of g.tasks) w.u32(t); w.u16(0); return w.done(); };
-  H['0x01812001'] = ({ payload, durum, kaydet }) => {
-    const o = new O(payload); const id = o.u32(); const tip = o.i8(); const { g } = gg(durum); const row = satir('DailyTask', id);
-    if (tip === 1) { if (!g.tasks.includes(id)) return new Y().u32(4).done(); g.cur = id; g.prog = 0; }
-    else if (tip === 2) { g.cur = 0; g.prog = 0; }
-    else if (tip === 3 || tip === 4) { if (tip === 4 && !altin(10)) return new Y().u32(16).done(); if (row) ver(durum, json(row.rewards, [])); g.point = Math.min(165, g.point + 15); g.finish++; g.tasks = g.tasks.filter(t => t !== id); g.cur = 0; g.prog = 0; olay.say(durum, 'dailyTask', 1); }
-    K(kaydet, durum); return new Y().u32(0).u32(g.cur).i8(tip).done();
-  };
-  H['0x01812002'] = ({ durum, kaydet }) => { const { g } = gg(durum); if (g.fresh > 0 && !altin(5 * g.fresh)) return new Y().u32(16).done(); const ids = tablo('DailyTask').ids.filter(i => i >= 16300001 && i <= 16300029); const havuz = [...ids]; const sec5 = []; while (sec5.length < 5 && havuz.length) sec5.push(havuz.splice(rnd(havuz.length), 1)[0]); g.tasks = sec5; g.cur = 0; g.fresh++; K(kaydet, durum); const w = new Y().u32(0).u16(g.fresh).u16(g.tasks.length); for (const t of g.tasks) w.u32(t); return w.done(); };
-  H['0x01812003'] = ({ payload, durum, kaydet }) => { const idx = new O(payload).i32(); const { g } = gg(durum); const row = satir('DailyAward', idx); const bit = (g.mask << 1) | 1; if (g.point < 15 * (bit.toString(2).length)) return new Y().u32(1).done(); if (row) ver(durum, json(row.rewards, [])); g.mask = bit; K(kaydet, durum); return new Y().u32(0).u16(g.mask).done(); };
+  Object.assign(H, require('./daily-tasks').kur(y));
   // ================= SIGN =================
   const imza = d => { const ay = new Date().getMonth(); d.imza = d.imza || { ay, mask: 0, total: 0, reward: 1, integral: 0 }; if (d.imza.ay !== ay) { d.imza.ay = ay; d.imza.mask = 0; } return d.imza; };
   // Sunucu saati (Inspector_QuertServerTime): client ServerTick/ServerTime'i BURADAN alir; yakalanmis sabit cevap

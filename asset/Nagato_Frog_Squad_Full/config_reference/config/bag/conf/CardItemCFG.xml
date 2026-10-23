@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<items><row>
+		<id>20400391</id>
+		<name>Nagato</name>
+		<desc>Recruit, Star Upgrade required materials for Nagato[Frog Squad].</desc>
+		<price>600</price>
+		<color>1</color>
+		<splitItemId>12100001</splitItemId>
+		<splitItemNum>0</splitItemNum>
+		<menu>{使用效果}</menu>
+		<tile>9999</tile>
+		<bind>1</bind>
+		<expensive>{是否有卖出提示}</expensive>
+		<title>[Frog Squad]</title>
+		<frag>1</frag>
+		<ninjable>1</ninjable>
+		<leader>1</leader>
+		<rare>2</rare>
+		<ninja>11009621</ninja>
+		<ninjaLev>1</ninjaLev>
+		<mat>0</mat>
+		<matMoney>30</matMoney>
+		<matExp>60000</matExp>
+		<cardFragNum>30</cardFragNum>
+		<card>0</card>
+		<ninjaType>3</ninjaType>
+		<ninjaClass>1</ninjaClass>
+		<hasNinjaMsg>Recruited</hasNinjaMsg>
+		<noNinjaMsg>You don’t have this ninja yet. Recruit this ninja first!</noNinjaMsg>
+		<achievedWay>29</achievedWay>
+		<cardRecycleExp>10</cardRecycleExp>
+	</row>
+	</items>

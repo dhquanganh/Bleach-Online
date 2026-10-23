@@ -103078,5 +103078,25 @@
     "itemFunction": 1000,
     "functionValue": 0,
     "f16": 0
+  },
+  {
+    "id": "00D79F2E",
+    "name": "Nagato [Frog Squad] Modify Fragment",
+    "majorType": 21,
+    "minorType": 100,
+    "level": 1,
+    "quality": 6,
+    "cardType": 1,
+    "sort": 14130990,
+    "overlayNumber": 9999,
+    "bindMode": 1,
+    "obtain": 0,
+    "functionDesc": "<p>Nagato [Frog Squad] Modify Fragment. Used for this partner's star upgrades and reincarnation.</p>",
+    "picture": 16228142,
+    "costPrice": "0_1_0_1",
+    "sellPrice": 1000,
+    "itemFunction": 1000,
+    "functionValue": 0,
+    "f16": 0
   }
 ]

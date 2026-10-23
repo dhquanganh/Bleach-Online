@@ -941,7 +941,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   // Rasen Shuriken applies reflected damage after its animation completes.
   // Killing the caster inside its own impact effect sets FIsDie before Flash
   // can invoke the skill completion callback, permanently stopping the report.
-  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u) || sasukeCombat.isSasuke(u))) {
+  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u) || sasukeCombat.isSasuke(u) || require('./nagato-combat').isNagato(u))) {
     const reflected=targets.filter(row=>row.cmd===kodek.CMD.ATTACK&&row.targetCamp===u.camp&&row.targetPos===u.pos&&row.result.hurtHp>0);
     if(reflected.length){
       for(const row of reflected)targets.splice(targets.indexOf(row),1);
@@ -1166,6 +1166,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const turns = [];
   let performDepth=0,reactiveEnabled=false,drainingMysteries=false;
   const perform = (u,target,opponents,allies,actives,spec=null,bitir=false,prepared=false) => {
+    require('./nagato-combat').beforeAction(chaseContext,u);
+    spec=require('./nagato-combat').prepareMove(chaseContext,u,target,spec);
     itachiCombat.beforeAction(chaseContext,u);
     sasukeCombat.beforeAction(chaseContext,u,spec);
     performDepth++;
@@ -1189,6 +1191,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         mechaCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         sasukeCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        require('./nagato-combat').afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.cleanse(chaseContext);
       }
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
@@ -1657,8 +1660,7 @@ const FIGHT_NAMES = new Set([
   'PACKETID_CS_SkyTower_AutoBattle_Req', 'PACKETID_CS_SkyTower_Challenge_Req',
   'PACKETID_CS_GongFuFight_FightReq', 'PACKETID_CS_HeroChange_FightReq',
   'PACKETID_CS_VainTravel_BattleReq', 'PACKETID_CS_Related_FightReq',
-  'PACKETID_CS_OrgPointMap_AutoFightReq', 'PACKETID_CS_ExpDuplicate_FightReq',
-  'PACKETID_CS_KingChallenge_InitFightReq', 'PACKETID_CS_KingChallenge_FightReq',
+  'PACKETID_CS_OrgPointMap_AutoFightReq',
   'PACKETID_CS_LOBBY_WorldMap_AutoBattle',
   'PACKETID_CS_LOBBY_Hurdle_EnterNextLayer',
 ]);

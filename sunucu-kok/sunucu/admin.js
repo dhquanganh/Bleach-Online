@@ -5,28 +5,6 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Push the saved inventory to the running game process.
-function syncInventory() {
-  return new Promise(resolve => {
-    const req = http.request({
-      hostname: '127.0.0.1', port: (Number(process.env.BLEACH_PORT) || 10025) + 2,
-      path: '/inventory-sync', method: 'POST', timeout: 2000
-      , headers: { 'x-bleach-internal': process.env.BLEACH_INTERNAL_SECRET || '' }
-    }, res => {
-      let body = '';
-      res.on('data', chunk => body += chunk);
-      res.on('end', () => {
-        try { const result = JSON.parse(body); resolve(res.statusCode === 200 && result.ok ? Number(result.connected) || 0 : 0); }
-        catch (e) { resolve(0); }
-      });
-      res.on('error', () => resolve(0));
-    });
-    req.on('timeout', () => req.destroy());
-    req.on('error', () => resolve(0));
-    req.end();
-  });
-}
-
 const PORT = Number(process.env.BLEACH_ADMIN_PORT) || 7421;
 const ROOT = path.join(__dirname, '..');
 const VERI = require('./runtime-path')('veri.json');
@@ -187,7 +165,7 @@ function page() {
  itemSearch.addEventListener('input',()=>{clearTimeout(itemSearchTimer);const q=itemSearch.value.trim();itemChoice.replaceChildren();if(q.length<2){itemMsg.textContent='Nhập ít nhất 2 ký tự để tìm.';return;}itemMsg.textContent='Đang tìm…';itemSearchTimer=setTimeout(async()=>{try{const r=await fetch('/api/admin/items?q='+encodeURIComponent(q));if(!r.ok)throw new Error();const list=await r.json();list.forEach(x=>{const option=new Option(x.label,x.id);option.dataset.maxAdd=x.maxAdd;itemChoice.add(option);});updateItemAmount();itemMsg.textContent=list.length?'Chọn vật phẩm trong danh sách.':'Không tìm thấy vật phẩm.';}catch(e){itemMsg.textContent='✗ Không tải được danh sách vật phẩm.';}},180);});
  function updateItemAmount(){const option=itemChoice.selectedOptions[0],max=option&&option.dataset.maxAdd==='99999'?99999:999;document.getElementById('itemAmount').max=String(max);document.querySelector('label[for=itemAmount]').textContent='S? l??ng (1?'+max+')';}
  itemChoice.addEventListener('change',updateItemAmount);
- document.getElementById('addItemForm').addEventListener('submit',async e=>{e.preventDefault();const button=e.currentTarget.querySelector('button[type=submit]');button.disabled=true;itemMsg.textContent='Đang thêm…';try{const r=await fetch('/api/admin/item-add',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:itemChoice.value,amount:document.getElementById('itemAmount').value})});const d=await r.json();if(!r.ok||!d.ok)throw new Error(d.hata||'Không thể thêm vật phẩm');itemMsg.textContent='✓ Đã thêm '+d.name+' × '+d.amount+(d.connected ? '. Túi đồ trong trò chơi đã được cập nhật.' : '. Vật phẩm đã lưu; sẽ có trong túi khi vào game.');}catch(err){itemMsg.textContent='✗ '+err.message;}finally{button.disabled=false;}});
+ document.getElementById('addItemForm').addEventListener('submit',async e=>{e.preventDefault();const button=e.currentTarget.querySelector('button[type=submit]');button.disabled=true;itemMsg.textContent='Đang thêm…';try{const r=await fetch('/api/admin/item-add',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:itemChoice.value,amount:document.getElementById('itemAmount').value})});const d=await r.json();if(!r.ok||!d.ok)throw new Error(d.hata||'Không thể thêm vật phẩm');itemMsg.textContent='\u0110\u00e3 g\u1eedi th\u01b0: '+d.name+' x '+d.amount+'. M\u1edf th\u01b0 trong game v\u00e0 nh\u1eadn \u0111\u00ednh k\u00e8m; kh\u00f4ng c\u1ea7n F5.';}catch(err){itemMsg.textContent='✗ '+err.message;}finally{button.disabled=false;}});
  refreshStat(); setInterval(refreshStat,4000);
 </script></body></html>`;
 }
@@ -388,16 +366,10 @@ function apiIsle(req, res) {
         }
         require('./ekipman');
         const envanter = require('./envanter');
-        const durumMod = require('./durum');
         const article = envanter.article(id);
         if (!article) return json(400, { ok: false, hata: 'Không tìm thấy vật phẩm trong Article' });
-        const durum = durumMod.yukle();
-        const before = envanter.mevcut(durum, id);
-        envanter.ekle(durum, [{ code: id, amount }]);
-        if (envanter.mevcut(durum, id) < before + amount) return json(400, { ok: false, hata: 'Không thể thêm đủ số lượng; túi có thể đã đầy hoặc đạt giới hạn' });
-        durumMod.kaydet(durum);
-        const connected = await syncInventory();
-        return json(200, { ok: true, id, name: article.ad || `#${id}`, amount, connected });
+        const delivered=require('./oyun-sunucu').sendAdminItemMail(id,amount);
+        return json(200, { ok: true, id, name: article.ad || `#${id}`, amount, delivery:'mail', ...delivered });
       } catch (e) { return json(400, { ok: false, hata: 'Yêu cầu không hợp lệ' }); }
     });
     return true;

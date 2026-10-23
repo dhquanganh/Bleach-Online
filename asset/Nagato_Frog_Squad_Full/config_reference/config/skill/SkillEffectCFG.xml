@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>21009621</id>
+		<effect1 />
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009622</id>
+		<effect1 />
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009623</id>
+		<effect1>30000054</effect1>
+		<effect1>100</effect1>
+		<effect1>2</effect1>
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009624</id>
+		<effect1>30000053</effect1>
+		<effect1>100</effect1>
+		<effect1>2</effect1>
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009625</id>
+		<effect1>30000140</effect1>
+		<effect1>3</effect1>
+		<effect1>3</effect1>
+		<effect1>8</effect1>
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009626</id>
+		<effect1>30000170</effect1>
+		<effect1>1</effect1>
+		<effect1>-1</effect1>
+		<effect2 />
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	<row>
+		<id>21009627</id>
+		<effect1>30000054</effect1>
+		<effect1>100</effect1>
+		<effect1>2</effect1>
+		<effect2>30000194</effect2>
+		<effect2>28</effect2>
+		<effect2>21209627</effect2>
+		<effect3 />
+		<effect4 />
+		<enchanmentId>0</enchanmentId>
+	</row>
+	</skillConfig>

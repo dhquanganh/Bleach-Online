@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><skill id="21009621" name="Frog Assault" resId="21009621" iconId="20000101" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="0" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="1;11" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="0" skillStartPos="{技能动画显示位置}"> 
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc> 
+	</skill>
+	<skill id="21009622" name="Frog Assault" resId="21009622" iconId="20000101" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="0" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="1;11" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="0" skillStartPos="{技能动画显示位置}"> 
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc> 
+	</skill>
+	<skill id="21009623" name="Frog Assault" resId="21009623" iconId="20000101" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="0" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="1;11" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc> 
+	</skill>
+	<skill id="21009624" name="Frog Knockdown" resId="21009624" iconId="21009624" mp="0" cd="0" ninjutsuLevel="0" type="1" type1="0;1" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="3" beHitState1="7" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>&lt;font color="#4dc831"&gt;Chases and Attacks a Repulsed unit&lt;/font&gt;, causes &lt;font color="#4dc831"&gt;Knockdown&lt;/font&gt;. Can be triggered twice each round.</desc> 
+	</skill>
+	<skill id="21009625" name="Frog Squad Cooperation" resId="21009625" iconId="21006156" mp="0" cd="0" ninjutsuLevel="0" type="3" type1="1" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Whenever &lt;font color="#4dc831"&gt;Frog Squad&lt;/font&gt; ninjas in your lineup executes their Chase skills, increase that unit's &lt;font color="#4dc831"&gt;Ninjutsu&lt;/font&gt; by 8% (stackable). This skill is still active even when Nagato is defeated.</desc> 
+	</skill>
+	<skill id="21009626" name="Frog Squad Lead" resId="21009626" iconId="21009626" mp="0" cd="0" ninjutsuLevel="0" type="4" type1="1" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Before the first action every round, reduces his own Mystery Cooldown by 1 and &lt;font color="#4dc831"&gt;reduces&lt;/font&gt; his own Mystery &lt;font color="#4dc831"&gt;Chakra Cost&lt;/font&gt; to 0 until the end of the round.</desc> 
+	</skill>
+	<skill id="21009627" name="Wind Style - Gale Palm" resId="21009627" iconId="21009627" mp="40" cd="2" ninjutsuLevel="0" type="2" type1="1" ninjutsuType="3" openType="0" enterCd="1" isImmediately="1" exState="1;11" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Deals damage and &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; to up to 6 units in the opponent's lineup, causes &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt; to the selected unit. If the selected unit has a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt;, this skill will change to: Deals damage and &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; to all units in the opponent's lineup and cancels all &lt;font color="#4dc831"&gt;Buffs&lt;/font&gt; and &lt;font color="#4dc831"&gt;Shields&lt;/font&gt; from all units hit.</desc> 
+	</skill>
+	</skillConfig>

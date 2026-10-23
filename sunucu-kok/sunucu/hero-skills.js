@@ -245,6 +245,7 @@ function value(unit, field) {
   const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
   let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field)*require('./itachi-combat').factor(unit,field)*require('./sasuke-combat').factor(unit,field);
+  result*=require('./nagato-combat').factor(unit,field);
   if(field==='critRate')result+=require('./mecha-combat').critical(unit);
   if(field==='critRate')result+=require('./itachi-combat').critical(unit);
   if(sasukeTeam&&field==='atk')result*=1.18;

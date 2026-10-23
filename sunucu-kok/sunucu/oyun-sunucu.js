@@ -262,6 +262,16 @@ function syncHeroChangeResponse(reqId, reqPayload, respId, respPayload) {
 LOG.reset();
 let CONN_SEQ = 0;
 const CLIENTS = new Set();   // canli baglantilarin send() islevleri (disaridan push: yukleme)
+module.exports.sendAdminItemMail=function(itemId,amount,requestId){
+ const state=durumMod.yukle(),mail=require('./admin-item-mail').enqueue(state,itemId,amount,requestId);
+ durumMod.kaydet(state);
+ const clients=loggedInClients();for(const session of clients)session.send(0x01181605,require('./boss-reward-mail').notification(mail),'ADMIN-item-mail');
+ return {mailId:{hi:mail.hi,lo:mail.lo},connected:clients.length};
+};
+process.on('message',message=>{if(message?.type!=='admin-item-mail')return;
+ try{const result=module.exports.sendAdminItemMail(message.itemId,message.amount,message.requestId);process.send?.({type:'admin-item-mail-ack',requestId:message.requestId,result});}
+ catch(e){process.send?.({type:'admin-item-mail-ack',requestId:message.requestId,error:e.message});}
+});
 const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
 const illusion = require('./infinite-illusion');

@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>21009621</id>
+		<name>Frog Assault</name>
+		<resId>21009621</resId>
+		<iconId>20000101</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>0</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>1</exStates>
+		<exStates>11</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21009622</id>
+		<name>Frog Assault</name>
+		<resId>21009622</resId>
+		<iconId>20000101</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>0</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>1</exStates>
+		<exStates>11</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21009623</id>
+		<name>Frog Assault</name>
+		<resId>21009623</resId>
+		<iconId>20000101</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>0</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>1</exStates>
+		<exStates>11</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Attacks the unit in the front row with a chance of causing &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; and &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21009624</id>
+		<name>Frog Knockdown</name>
+		<resId>21009624</resId>
+		<iconId>21009624</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>1</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>3</exStates>
+		<beHitState1>7</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>2</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>&lt;font color="#4dc831"&gt;Chases and Attacks a Repulsed unit&lt;/font&gt;, causes &lt;font color="#4dc831"&gt;Knockdown&lt;/font&gt;. Can be triggered twice each round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>1</displayType>
+	</row>
+	<row>
+		<id>21009625</id>
+		<name>Frog Squad Cooperation</name>
+		<resId>21009625</resId>
+		<iconId>21006156</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Whenever &lt;font color="#4dc831"&gt;Frog Squad&lt;/font&gt; ninjas in your lineup executes their Chase skills, increase that unit's &lt;font color="#4dc831"&gt;Ninjutsu&lt;/font&gt; by 8% (stackable). This skill is still active even when Nagato is defeated.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21009626</id>
+		<name>Frog Squad Lead</name>
+		<resId>21009626</resId>
+		<iconId>21009626</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Before the first action every round, reduces his own Mystery Cooldown by 1 and &lt;font color="#4dc831"&gt;reduces&lt;/font&gt; his own Mystery &lt;font color="#4dc831"&gt;Chakra Cost&lt;/font&gt; to 0 until the end of the round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40600186</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21009627</id>
+		<name>Wind Style - Gale Palm</name>
+		<resId>21009627</resId>
+		<iconId>21009627</iconId>
+		<mp>40</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<enterCd>1</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>1</exStates>
+		<exStates>11</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Deals damage and &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; to up to 6 units in the opponent's lineup, causes &lt;font color="#4dc831"&gt;Low Float&lt;/font&gt; to the selected unit. If the selected unit has a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt;, this skill will change to: Deals damage and &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; to all units in the opponent's lineup and cancels all &lt;font color="#4dc831"&gt;Buffs&lt;/font&gt; and &lt;font color="#4dc831"&gt;Shields&lt;/font&gt; from all units hit.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21209627</id>
+		<name>Wind Style - Gale Palm</name>
+		<resId>21009627</resId>
+		<iconId>21009627</iconId>
+		<mp>40</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<enterCd>1</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>11</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Deals damage and &lt;font color="#4dc831"&gt;4 Combo&lt;/font&gt; to all units in the opponent's lineup and cancels all &lt;font color="#4dc831"&gt;Buffs&lt;/font&gt; and &lt;font color="#4dc831"&gt;Shields&lt;/font&gt; from all units hit.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>2</displayType>
+	</row>
+	</skillConfig>

@@ -10,6 +10,7 @@ const hash = require('./hashirama-combat');
 const mecha = require('./mecha-combat');
 const itachi = require('./itachi-combat');
 const sasuke = require('./sasuke-combat');
+const nagato = require('./nagato-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -20,7 +21,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -45,6 +46,7 @@ function create(teams, options = {}) {
   mecha.initialize(context);
   itachi.initialize(context);
   sasuke.initialize(context);
+  nagato.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -113,6 +115,7 @@ function useStandard(ctx, unit, allies) {
   return move;
 }
 function canMystery(ctx, unit) {
+  nagato.beforeAction(ctx,unit);
   const p=profile(unit), m=p && p.mystery;
   return !!(m && sasuke.canMystery(unit) && hash.canMystery(ctx,unit) && pain.canMystery(ctx,unit,m) && (m.consumesPrimary===false || primaryAvailable(ctx,unit)) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
     pain.mysteryReady(ctx,unit) && ctx.chakra[unit.camp] >= pain.mysteryCost(ctx,unit,m));
@@ -165,6 +168,7 @@ function resolve(ctx, attacker, target, opener, spec, strike) {
     const uses=ctx.used.get(unit)||[];uses[index]=(uses[index]||0)+1;ctx.used.set(unit,uses);
     if(chase.cooldown){if(obito.isObito(unit))obito.spendChase(ctx,unit,chase);else spendCooldown(ctx,unit,chase.id,chase);}
     const frame=strike(unit,target,chase);
+    nagato.onChase(ctx,unit);
     events.push(...(frame.beforeFrames||[]),frame,...(frame.reactions||[]));
     const hit=hitTarget(frame,target);
     if(hit) {

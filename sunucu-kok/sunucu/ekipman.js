@@ -565,7 +565,7 @@ function kur(y) {
     console.log(`[demirci] ${a.name} +${L}->+${r.x.lvl} (-${bedel} gumus)`);
     const w = new Y().u32(0).u16(r.x.lvl).u32(0).u8(0).u32(heroId); if (heroId) w.raw(kayitBufInst(durum, r.inst)); else ntf(durum, r.inst);
     if (heroId) attrPush(durum, heroId);
-    if (olay && typeof olay.say === 'function') olay.say(durum, 'fortifyEquip', 1);
+    // oyun-sunucu records and saves fortifyEquip after this successful response.
     return w.done();
   };
   H['0x01810e01'] = ({ payload, durum, kaydet }) => {   // Refine: aday listeleri

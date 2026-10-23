@@ -119,13 +119,26 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
           const item=items().find(a=>a.id===data.itemId);
           if (!item) fail(400,'Item không hợp lệ.');
           const amount=integer(data.amount,1,item.maxAdd,'Số lượng');
-          require('./sunucu/ekipman');
-          const inventory=require('./sunucu/envanter');
-          const before=inventory.mevcut(state,item.id);
-          inventory.ekle(state,[{code:item.id,amount}]);
-          const total=inventory.mevcut(state,item.id);
-          if (total!==before+amount) fail(400,'Không thể thêm đủ item: túi đầy hoặc đã đạt giới hạn số lượng.');
-          grant={id:item.id,name:item.name,amount,total};
+          const requestId=crypto.createHash('sha256').update(match[1]+data.revision+':'+item.id+':'+amount).digest('hex');
+          grant={id:item.id,name:item.name,amount,delivery:'mail'};
+          const rt=runtimes.get(match[1]);
+          if(rt){
+            const delivered=await new Promise((resolve,reject)=>{
+              const done=(error,result)=>{clearTimeout(timer);rt.child.off('message',onMessage);rt.child.off('exit',onExit);error?reject(error):resolve(result);};
+              const onMessage=m=>{if(m?.type==='admin-item-mail-ack'&&m.requestId===requestId)done(m.error?Error(m.error):null,m.result);};
+              const onExit=()=>done(Error('Phiên game đã đóng trước khi xác nhận thư.'));
+              const timer=setTimeout(()=>done(Error('Chưa nhận được xác nhận gửi thư từ game.')),10000);
+              rt.child.on('message',onMessage);rt.child.once('exit',onExit);
+              rt.child.send({type:'admin-item-mail',itemId:item.id,amount,requestId},error=>{if(error)done(error);});
+            });
+            if(rt.saving)await rt.saving;
+            await save(rt);
+            await db.collection('players').updateOne({_id:id},{$push:{adminChanges:{$each:[{actor:user.account._id,at:new Date(),action:'add-item',itemId:item.id,amount,delivery:'mail',requestId}],$slice:-100}}});
+            const latest=await db.collection('players').findOne({_id:id});
+            json(200,{ok:true,disconnected:false,item:{...grant,...delivered},account:view(account,latest)});return;
+          }
+          const mail=require('./sunucu/admin-item-mail').enqueue(state,item.id,amount,requestId);
+          grant.mailId={hi:mail.hi,lo:mail.lo};
         } else if (match[2] === '/heroes') {
           if (!state.karakter?.anaId) fail(400,'Tài khoản cần tạo nhân vật trong game trước khi thêm hero.');
           const hero = heroes().find(h=>h.id===data.heroId);

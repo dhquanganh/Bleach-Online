@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NinjaInfo><row>
+		<id>11009621</id>
+		<name>Nagato</name>
+		<miss>21005849</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11009621</refId>
+		<achievedWay>29</achievedWay>
+		<prizeType />
+	</row>
+	<row>
+		<id>18117149</id>
+		<name>Nagato</name>
+		<miss>21009615</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11009621</refId>
+		<achievedWay />
+		<prizeType />
+	</row>
+	<row>
+		<id>18117498</id>
+		<name>Nagato</name>
+		<miss>21009615</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11009621</refId>
+		<achievedWay />
+		<prizeType />
+	</row>
+	<row>
+		<id>18118066</id>
+		<name>Nagato</name>
+		<miss>21009615</miss>
+		<type>0</type>
+		<maxSp>0</maxSp>
+		<batchBeHit />
+		<hideHpBar>0</hideHpBar>
+		<hpSize>0</hpSize>
+		<hpType />
+		<callupType />
+		<noticeUI>1</noticeUI>
+		<callupExeuntType />
+		<refId>11009621</refId>
+		<achievedWay />
+		<prizeType />
+	</row>
+	</NinjaInfo>

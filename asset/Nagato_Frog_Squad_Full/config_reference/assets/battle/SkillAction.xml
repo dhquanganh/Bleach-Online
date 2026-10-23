@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Config><SkillAction id="21009621" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_1hit" moveType="1" needHideShadow="true" attackDistance="360,0" afterAttackOffsetPoint="280,0">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="7" />
+    <SkillEffect id="5909" />
+  </SkillAction>
+  <SkillAction id="21009622" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_2hit" moveType="1" needHideShadow="true" attackDistance="360,0" afterAttackOffsetPoint="280,0">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="7" />
+    <HitPointInfo id="1" majorDefenceAttributeIdList="1" />
+    <HitPointInfo id="2" majorDefenceAttributeIdList="0" />
+    <SkillEffect id="5910" />
+  </SkillAction>
+  <SkillAction id="21009623" type="0" hideOthers="false" triggerDefenceType="1" attackAction="A_3hit" moveType="1" needHideShadow="true" attackDistance="360,0" afterAttackOffsetPoint="280,0">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="7" />
+    <HitPointInfo id="1" majorDefenceAttributeIdList="1" />
+    <HitPointInfo id="2" majorDefenceAttributeIdList="0" />
+    <HitPointInfo id="3" majorDefenceAttributeIdList="23" />
+    <SkillEffect id="5911" />
+  </SkillAction>
+  <SkillAction id="21009624" type="1" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill2" moveType="1" needHideShadow="true" attackDistance="240,0" afterAttackOffsetPoint="180,0">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="10" />
+    <SkillEffect id="5912" />
+  </SkillAction>
+  <SkillAction id="21009625" type="3" hideOthers="false" />
+  <SkillAction id="21009626" type="4" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill1">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+  </SkillAction>
+  <SkillAction id="21009627" type="2" hideOthers="true" triggerDefenceType="1" attackAction="SP_skill4" moveType="1" needHideShadow="true" attackDistance="300,0" sceneMaskAlpha="0.6">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="4,4,4,4" minorDefenceAttributeIdList="0,0,0,7" />
+    <SkillEffect id="5913" />
+  </SkillAction>
+  </Config>

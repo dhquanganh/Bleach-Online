@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Effect><EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  <EffectInfo id="5909" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/QWCMpg1.swf" action="" name="体术攻击1" frontAction="shang" backAction="xia" />
+  <EffectInfo id="5910" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/QWCMpg2.swf" action="" name="体术攻击2" frontAction="shang" backAction="xia" />
+  <EffectInfo id="5911" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/QWCMpg3.swf" action="" name="体术攻击3" frontAction="shang" backAction="xia" />
+  <EffectInfo id="5912" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/QWCMzhuida.swf" action="" name="青蛙追击" frontAction="shang" backAction="xia" />
+  <EffectInfo id="5913" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/QWCMaoyi.swf" action="" name="风遁·裂空掌" frontAction="shang" backAction="xia" />
+  </Effect>

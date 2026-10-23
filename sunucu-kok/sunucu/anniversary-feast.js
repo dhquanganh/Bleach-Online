@@ -18,10 +18,11 @@ function create({day=()=>require('./paket').gun(),random=()=>require('crypto').r
   else if(index===19){if(next.locks.length||!args.length||args.length%2||args.length>6)return bad();const seen=new Set();for(let i=0;i<args.length;i+=2){const r=repository.find(x=>x.awardId===args[i]);if(!r||args[i+1]!==i/2||seen.has(r.awardId))return bad();seen.add(r.awardId);next.locks.push([r.awardId,i/2]);cost+=r.gold;}}
   else if(index===61){if(args.length!==1||args[0]!==c.revision||next.claimed.includes(c.heroId)||ownsHero(c.heroId,d)||next.score<c.price)return bad();next.score-=c.price;next.claimed.push(c.heroId);hero=c.heroId;}
   else {const offer=shop.find(x=>x.index===index);if(!offer||args.length||next.score<offer.score||offer.count&&next.shop[index]>=offer.count)return bad();rewards=resolve(offer.awardId);if(!rewards.length)return bad();next.score-=offer.score;next.shop[index]=(next.shop[index]||0)+1;}
-  if(next.score+cost>2147483647)return bad();
+  const pointGold=(next.pointGoldRemainder||0)+cost,earnedPoints=Math.floor(pointGold/10);
+  if(next.score+earnedPoints>2147483647)return bad();
   if(!canReceive(d,rewards)){const result=bad();result.bildir.push(box(62000002,7));return result;}
   if(cost&&!charge(cost,d))return {hata:16,oduller:[],bildir:boxes(s,c,d,wire)};
-  if(hero)grantHero(hero,d);next.score+=cost;d.anniversaryFeast[wire]=next;
+  if(hero)grantHero(hero,d);next.score+=earnedPoints;next.pointGoldRemainder=pointGold%10;d.anniversaryFeast[wire]=next;
   const notice=hero?4:index===19?5:index===18?6:rewards.length?2:1;
   return {hata:0,oduller:rewards,bildir:[...boxes(next,c,d,wire).filter(b=>b.idx===META||(index===18&&b.idx===18)||JSON.stringify(b)!==previous.get(b.idx)),box(62000002,notice)]};
  }

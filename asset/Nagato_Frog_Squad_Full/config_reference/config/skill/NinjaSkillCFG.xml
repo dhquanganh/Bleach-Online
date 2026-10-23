@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ninjaSkillConfig><row>
+		<id>11009621</id>
+		<star />
+		<needMaterialType />
+		<normals>21009621</normals>
+		<normals>21009622</normals>
+		<normals>21009623</normals>
+		<specials>21009627</specials>
+		<skills>21009624</skills>
+		<skills>21009625</skills>
+		<skills>21009626</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>18117149</id>
+		<star />
+		<needMaterialType />
+		<normals>21009621</normals>
+		<normals>21009622</normals>
+		<normals>21009623</normals>
+		<specials>21009627</specials>
+		<skills>21009624</skills>
+		<skills>21009625</skills>
+		<skills>21009626</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>18117498</id>
+		<star />
+		<needMaterialType />
+		<normals>21009621</normals>
+		<normals>21009622</normals>
+		<normals>21009623</normals>
+		<specials>21009627</specials>
+		<skills>21009624</skills>
+		<skills>21009625</skills>
+		<skills>21009626</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>18118066</id>
+		<star />
+		<needMaterialType />
+		<normals>21009621</normals>
+		<normals>21009622</normals>
+		<normals>21009623</normals>
+		<specials>21009627</specials>
+		<skills>21009624</skills>
+		<skills>21009625</skills>
+		<skills>21009626</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	</ninjaSkillConfig>

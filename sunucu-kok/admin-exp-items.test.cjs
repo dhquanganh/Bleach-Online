@@ -3,7 +3,7 @@ const {test}=require('node:test'),assert=require('node:assert/strict'),http=requ
 const {ObjectId}=require('mongodb');
 const {startAuth}=require('./auth-service.cjs');
 const {passwordHash,newFiles,ROOT,connect}=require('./accounts.cjs');
-test('Admin EXP item limits and persisted 99999-book grant', {timeout:120000}, async()=>{
+test('Admin EXP item limits and persisted 99999-book mail attachment', {timeout:120000}, async()=>{
   const port=17430,base=`http://127.0.0.1:${port}`,app=await startAuth(port),ids=[new ObjectId(),new ObjectId(),new ObjectId()];
   const suffix=Date.now().toString(36),names=ids.map((_,i)=>`manage_${suffix}_${i}`);
   const server=http.createServer(async(req,res)=>{try{if(!await app.handle(req,res,new URL(req.url,base).pathname)){res.writeHead(404);res.end()}}catch(e){res.writeHead(500);res.end(e.message)}});
@@ -40,14 +40,14 @@ test('Admin EXP item limits and persisted 99999-book grant', {timeout:120000}, a
     assert.equal((await request(itemsRoute,cookies[1],'POST',{revision:target.revision,itemId:14130950,amount:80})).status,403);
     assert.equal((await request(itemsRoute,cookies[0],'POST',{revision:'stale',itemId:14130950,amount:80})).status,409);
     response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14130950,amount:80});
-    assert.equal(response.status,200,await response.clone().text());let gift=await response.json();target=gift.account;assert.equal(gift.item.total,80);
+    assert.equal(response.status,200,await response.clone().text());let gift=await response.json();target=gift.account;assert.equal(gift.item.delivery,'mail');assert.ok(gift.item.mailId);
     response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14130950,amount:20});
-    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.total,100);
+    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.delivery,'mail');
     response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14100701,amount:99999});
-    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.amount,99999);assert.equal(gift.item.total,99999);
+    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.amount,99999);assert.equal(gift.item.delivery,'mail');
     let inventoryState=JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']);
-    assert.equal(require('./sunucu/envanter').mevcut(inventoryState,14130950),100);
-    assert.equal(require('./sunucu/envanter').mevcut(JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']),14100701),99999);
+    assert.equal(require('./sunucu/envanter').mevcut(inventoryState,14130950),0);
+    assert.equal(require('./sunucu/envanter').mevcut(JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']),14100701),0);
   }finally{
     await app.close();await new Promise(r=>server.close(r));const {client,db}=await connect();
     for(const id of ids){await db.collection('sessions').deleteMany({accountId:id});await db.collection('players').deleteOne({_id:id});await db.collection('accounts').deleteOne({_id:id});for(const dir of [path.join(ROOT,'.accounts',id.toHexString()),path.join(ROOT,'.accounts','arena-cache',id.toHexString())])fs.rmSync(dir,{recursive:true,force:true})}

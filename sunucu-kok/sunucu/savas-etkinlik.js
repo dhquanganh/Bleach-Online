@@ -369,10 +369,7 @@ function kur(y) {
   H['0x01811903'] = ({ durum, kaydet }) => { if (!altin(5)) return new Y().u32(16).done(); return new Y().u32(0).done(); };
   H['0x01811905'] = () => new Y().u32(0).done();
   // ================= KING CHALLENGE =================
-  H['0x01818a04'] = ({ durum, kaydet }) => { const g = gunlukS(durum); if (g.kralKutu) return new Y().u32(1).done(); g.kralKutu = 1; ver(durum, [{ type: 1, code: 14100003, amount: 1 }, { type: 0, code: 0, amount: 10000 }]); K(kaydet, durum); return new Y().u32(0).i8(1).u16(1).u16(1).u32(14100003).u32(1).done(); };
-  H['0x01818a05'] = () => new Y().u32(0).i16(0).done();
-  H['0x01818a06'] = () => new Y().u32(0).i16(0).done();
-  H['0x01818a07'] = ({ durum, kaydet }) => { ozet(durum).kralKadro = { zaman: simdi(), kadro: durum.kadro || {} }; K(kaydet, durum); return new Y().u32(0).done(); };
+  Object.assign(H, require('./king-challenge').kur(y));
   // ================= GONGFU FIGHT =================
   const gongfu = d => { d.gongfu = d.gongfu || { grup: 0, kutu: 0, odeme: [], span: 0 }; const g = gunlukS(d); g.gongfu = g.gongfu || { basvuru: 0, ek: 0 }; return { k: d.gongfu, g: g.gongfu }; };
   H['0x01813d01'] = ({ durum, kaydet }) => { const { g } = gongfu(durum); g.basvuru = 1; K(kaydet, durum); return new Y().u32(0).done(); };
@@ -426,10 +423,7 @@ function kur(y) {
   H['0x0181610a'] = () => ({ id: 0x0118610f, payload: new Y().u32(0).done() });
   H['0x0181610b'] = () => ({ id: 0x01186111, payload: new Y().u32(0).u32(3).done() });
   // ================= EXP DUPLICATE =================
-  const expd = d => { const g = gunlukS(d); g.expd = g.expd || { kul: 0, yenile: {} }; return g.expd; };
-  H['0x01818400'] = ({ durum }) => { const e = expd(durum); const rows = tablo('ExpDuplicate').liste.slice(0, 6); const ordu = tablo('EnemyArmy').ids; const w = new Y().i32(e.kul).i16(rows.length); rows.forEach((r, i) => w.i32(ordu[i] || ordu[0] || 0)); return w.done(); };
-  H['0x01818401'] = ({ payload, durum }) => { const id = new O(payload).i32(); if (!satir('ExpDuplicate', id)) return new Y().i32(4).done(); const e = expd(durum); return new Y().i32(0).i32(id).i32(e.yenile[String(id)] || 0).i16(0).done(); };
-  H['0x01818402'] = ({ payload, durum, kaydet }) => { const id = new O(payload).i32(); if (!satir('ExpDuplicate', id)) return new Y().i32(4).done(); const e = expd(durum); const n = e.yenile[String(id)] || 0; const l = cv(61400003, [1]); if (!altin(l[Math.min(n, l.length - 1)] || 1)) return new Y().i32(16).done(); e.yenile[String(id)] = n + 1; K(kaydet, durum); return new Y().i32(0).i32(id).i32(n + 1).i16(0).done(); };
+  Object.assign(H, require('./tenso').kur(y));
   // ================= VOID SOUL WORLD =================
   H['0x01818b00'] = ({ durum, kaydet }) => {
     const previous = durum.bosDunya;

@@ -174,7 +174,7 @@ function mutlakDeger(durum, anahtar, lv) {
       return Math.round(lv * 200 + partner * lv * 120);
     }
     if (anahtar === 'militaryRank') return Number(durum.militaryRank) || 0;
-    if (anahtar === 'dailyPoints') return olay.gunlukOku(durum, 'dailyPoints') || olay.oku(durum, 'dailyTask') * 10;
+    if (anahtar === 'dailyPoints') return olay.gunlukOku(durum, 'dailyPoints');
   } catch (e) {}
   return olay.oku(durum, anahtar);
 }

@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NinjaInfo><row>
+		<id>11009621</id>
+		<name>Nagato</name>
+		<type>0</type>
+		<filterTxt />
+		<title>[Frog Squad]</title>
+		<artisticId>11009621</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>139</baseLife>
+		<growthLife>1123</growthLife>
+		<baseBodyAttack>70</baseBodyAttack>
+		<growthBodyAttack>715</growthBodyAttack>
+		<baseBodyDefense>65</baseBodyDefense>
+		<growthBodyDefense>625</growthBodyDefense>
+		<baseNinjaAttack>70</baseNinjaAttack>
+		<growthNinjaAttack>630</growthNinjaAttack>
+		<baseNinjaDefense>65</baseNinjaDefense>
+		<growthNinjaDefense>625</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel>2</starLevel>
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>10;15;29;37;50;53;1415</comeFrom>
+		<showPropertys>52</showPropertys>
+		<showPropertys>6</showPropertys>
+		<showPropertys>14</showPropertys>
+		<showPropertys>46</showPropertys>
+		<showPropertys>47</showPropertys>
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Nagato[Frog Squad]</description>
+		<attributeDescription>4,5</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay>29</achievedWay>
+		<sex>1</sex>
+		<risingStarTatter>20400391</risingStarTatter>
+		<starIdArr>11009621</starIdArr>
+		<starIdArr>11009621</starIdArr>
+		<starIdArr>11009621</starIdArr>
+		<starIdArr>11009621</starIdArr>
+		<starIdArr>11009621</starIdArr>
+		<series>329</series>
+		<ninjaSeries>112</ninjaSeries>
+		<tupoLvl>112</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117149</id>
+		<name>Nagato</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡475</filterTxt>
+		<title>[Frog Squad]</title>
+		<artisticId>11009621</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>35064</baseLife>
+		<growthLife>23506</growthLife>
+		<baseBodyAttack>5475</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>8931</baseBodyDefense>
+		<growthBodyDefense>7340</growthBodyDefense>
+		<baseNinjaAttack>5475</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>8931</baseNinjaDefense>
+		<growthNinjaDefense>7340</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>7500</baseCrit>
+		<baseBodyStrike>2000</baseBodyStrike>
+		<baseNinjaStrike>2000</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>1</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>10;15;29</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Nagato[Frog Squad]</description>
+		<attributeDescription>4,5</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117498</id>
+		<name>Nagato</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡496</filterTxt>
+		<title>[Frog Squad]</title>
+		<artisticId>11009621</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>40064</baseLife>
+		<growthLife>23506</growthLife>
+		<baseBodyAttack>5475</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>6931</baseBodyDefense>
+		<growthBodyDefense>7340</growthBodyDefense>
+		<baseNinjaAttack>16475</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>6931</baseNinjaDefense>
+		<growthNinjaDefense>7340</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>7500</baseCrit>
+		<baseBodyStrike>2000</baseBodyStrike>
+		<baseNinjaStrike>2000</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>1</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>10;15;29</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Nagato[Frog Squad]</description>
+		<attributeDescription>4,5</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18118066</id>
+		<name>Nagato</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡535</filterTxt>
+		<title>[Frog Squad]</title>
+		<artisticId>11009621</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>110064</baseLife>
+		<growthLife>23506</growthLife>
+		<baseBodyAttack>10975</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>12431</baseBodyDefense>
+		<growthBodyDefense>7340</growthBodyDefense>
+		<baseNinjaAttack>10975</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>12431</baseNinjaDefense>
+		<growthNinjaDefense>7340</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>7500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>1</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>10;15;29</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Nagato[Frog Squad]</description>
+		<attributeDescription>4,5</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	</NinjaInfo>
