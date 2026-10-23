@@ -1,7 +1,7 @@
 """Publish current Sasuke app/data/models/icons without resetting older routes."""
 from pathlib import Path
 import hashlib,importlib.util,json,shutil
-BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1];PUBLIC=ROOT/'kaynak/login.gogames.me/public';CANON=PUBLIC/'2026090619';VERSION='2026102132'
+BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1];PUBLIC=ROOT/'kaynak/login.gogames.me/public';CANON=PUBLIC/'2026090619';VERSION='2026102233'
 s=importlib.util.spec_from_file_location('version_codec',BASE.parent/'naruto-sage-native/release.py');codec=importlib.util.module_from_spec(s);s.loader.exec_module(codec)
 def main():
  files={'TApplication.swf'}

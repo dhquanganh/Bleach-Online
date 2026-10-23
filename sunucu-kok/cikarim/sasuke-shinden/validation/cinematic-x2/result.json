@@ -11,17 +11,5 @@
   "atlasesLoaded": 0,
   "missingFrames": 0,
   "remainingLayers": 0,
-  "errors": [
-    "ERROR cinematic coverage (x=12.7, y=23.9, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=90.3, y=238.75, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=98.55, y=261.45, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=24.65, y=56.85, w=1250, h=672.6999999999999)",
-    "ERROR cinematic coverage (x=64.05, y=165.95, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=103.45, y=275.1, w=1250, h=672.6999999999999)",
-    "ERROR cinematic coverage (x=35.75, y=87.55, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=101.4, y=269.4, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=12.7, y=23.9, w=1250, h=672.7)",
-    "ERROR cinematic coverage (x=55.4, y=142.1, w=1250, h=672.6999999999999)",
-    "ERROR cinematic coverage (x=101.4, y=269.4, w=1250, h=672.7)"
-  ]
+  "errors": []
 }

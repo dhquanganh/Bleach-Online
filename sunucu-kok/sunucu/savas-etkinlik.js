@@ -6,7 +6,7 @@ const { Y, O, tablo, satir, json, cv, simdi, gun, gunluk, rnd, sec } = require('
 const statlar = require('./statlar');
 
 const VOID_CHESTS = [14100713, 14100714, 14100715];
-const VOID_BOSS_ENEMY_ID = 0x00BB9F5F;
+const VOID_PRIMOGEM_ITEM = 14900001;
 const SKY_TOWERS = tablo('City').liste
   .filter(city => city._id >= 15900001 && city._id <= 15900013)
   .sort((a, b) => a._id - b._id);
@@ -28,23 +28,12 @@ function voidBossArmy(date = new Date()) {
   return army;
 }
 function voidBossEnemy() {
-  const enemy = satir('Enemy', VOID_BOSS_ENEMY_ID);
-  if (!enemy) throw new Error(`Void Region boss enemy ${VOID_BOSS_ENEMY_ID} not found`);
+  const enemy = require('./void-region-config').enemy();
+  if (!enemy) throw new Error('Void Region configured boss enemy not found');
   return enemy;
 }
 function voidBossHp(date = new Date()) {
-  const army = voidBossArmy(date);
-  let total = 0;
-  for (const field of ['front', 'middle', 'back']) {
-    const list = json(army[field], {});
-    for (const enemyId of list[field] || []) {
-      const enemy = satir('Enemy', enemyId);
-      if (!enemy) throw new Error(`Void Region boss enemy ${enemyId} not found`);
-      total += Number(enemy.hp) || 0;
-    }
-  }
-  if (!(total > 0)) throw new Error(`Void Region boss army ${army._id} has no HP`);
-  return total;
+  return Number(voidBossEnemy().hp);
 }
 function voidInstanceKey(date = new Date()) {
   const days = [4, 8, 12, 16, 20, 24, 28];
@@ -55,9 +44,11 @@ function voidInstanceKey(date = new Date()) {
 }
 function bosluk(d) {
   const hpMax = voidBossHp();
+  const config=require('./void-region-config').read();
   let b = d.bosDunya;
-  if (!b || b.instance !== voidInstanceKey()) {
-    b = d.bosDunya = { instance: voidInstanceKey(), submit: 0, dead: 0, hp: hpMax, hpMax, award: 0, hurt: 0, participated: 0, form: [], players: [] };
+  if (!b || b.instance !== voidInstanceKey() || b.bossRevision !== config.revision || b.enemyId !== config.enemyId) {
+    const keep=b&&b.instance===voidInstanceKey()?b:null;
+    b = d.bosDunya = { instance: voidInstanceKey(), bossRevision:config.revision,enemyId:config.enemyId,submit:keep?.submit||0, dead: 0, hp: hpMax, hpMax, award: 0, hurt: 0, participated: 0, form: Array.isArray(keep?.form)?keep.form:[], players: [] };
   }
   b.submit = Number(b.submit) || 0;
   b.dead = Number(b.dead) || 0;
@@ -76,17 +67,20 @@ function bosluk(d) {
   return b;
 }
 function voidForm(d, mainId) {
-  const positions = [1,2,3,6,7,8,11,12,13];
+  const positions = Array.from({length:15},(_,i)=>i+1);
   const selected = [], seen = new Set();
   for (const [hero, raw] of Object.entries(d.kadro || {}).sort((a,b)=>Number(a[1])-Number(b[1]))) {
     const heroId=Number(hero)>>>0, battlePos=Number(raw);
-    if(!heroId || !positions.includes(battlePos) || seen.has(battlePos) || selected.length>=5)continue;
+    if(!heroId || !require('./retired-heroes').allowed(heroId) || !positions.includes(battlePos) || seen.has(battlePos) || selected.length>=7)continue;
     selected.push({heroId,battlePos});seen.add(battlePos);
   }
   const main=Number(mainId)>>>0;
   if(main&&!selected.some(hero=>hero.heroId===main)) {
     const battlePos=[6,...positions].find(pos=>!seen.has(pos));
-    if(battlePos)selected.push({heroId:main,battlePos});
+    if(battlePos) {
+      if(selected.length>=7) selected.pop();
+      selected.push({heroId:main,battlePos});
+    }
   }
   // Void's preview has six consecutive slots; combat uses the original lane positions.
   return selected.map((hero,index)=>({...hero,pos:index+1}));
@@ -221,6 +215,7 @@ function voidStatusPacket(d) {
   }
   w.i16(form.length);
   for (const hero of form) w.i32(hero.heroId).i32(hero.pos);
+  w.utf(JSON.stringify(require('./void-region-config').view()));
   return w.done();
 }
 
@@ -442,7 +437,7 @@ function kur(y) {
     const previousHp = previous && Number(previous.hp);
     const removedPlayers = voidRecoverPlayers(durum);
     const current = bosluk(durum);
-    if (removedPlayers || previousHpMax !== current.hpMax || previousHp !== current.hp) K(kaydet, durum);
+    if (removedPlayers || previousHpMax !== current.hpMax || previousHp !== current.hp || previous?.bossRevision!==current.bossRevision || previous?.instance!==current.instance) K(kaydet, durum);
     return voidStatusPacket(durum);
   };
   H['0x01818b01'] = ({ durum, kaydet }) => {
@@ -461,8 +456,20 @@ function kur(y) {
   H['0x01818b07'] = ({ durum, kaydet }) => {
     const b = bosluk(durum);
     if (!b.participated || b.award) return new Y().u32(1).done();
-    const chest = VOID_CHESTS[Math.floor(Math.random() * VOID_CHESTS.length)];
-    ver(durum, [{ type: 0, code: 0, amount: 30000 }, { type: 1, code: chest, amount: 1 }]);
+    // Match VoidSoulWorld_JoinAward (index 0 in voidStatusPacket) and the
+    // client's AdjustVoidRewards: convert Gold/Coupons to Primogems, double
+    // each displayed quantity. Ranking chests are not attendance rewards.
+    const awardIds = json(cv(62000011, []), []);
+    const award = satir('Award', Number(awardIds[0]));
+    const fixed = json(award && award.fixed, {}).fixed || [];
+    const rewards = fixed.map(a => {
+      const template = require('./envanter').odulTemplate(a.type, a.code);
+      const gem = (a.type === 0 && [1, 2].includes(a.code)) || [14100023, 14100024].includes(template);
+      return { type: gem ? 1 : a.type, code: gem ? VOID_PRIMOGEM_ITEM : a.code, amount: Math.min(65535, a.amount * 2) };
+    });
+    if (!rewards.length) return new Y().u32(4).done();
+    if (gecerliOdul(rewards).length !== rewards.length) return new Y().u32(4).done();
+    ver(durum, rewards);
     b.award = 1;
     K(kaydet, durum);
     voidPush(durum);
@@ -544,4 +551,4 @@ function kur(y) {
   return H;
 }
 
-module.exports = { kur, voidForm, voidBossHp, voidBossEnemyId: () => VOID_BOSS_ENEMY_ID, voidBossArmyId: date => voidBossArmy(date)._id, voidFightEnter, voidFinishFight, voidRecoverPlayers, voidCancelFight, voidFightDurationMs, voidTravelDurationMs, voidFightResult, voidDamageFromStatistics, voidRankPacket, voidStatusPacket, skyTowerCanChallenge, skyTowerApplyWin, killHeroApplyWin };
+module.exports = { kur, voidForm, voidBossHp, voidState:bosluk, voidBossEnemyId: () => require('./void-region-config').read().enemyId, voidBossArmyId: date => voidBossArmy(date)._id, voidFightEnter, voidFinishFight, voidRecoverPlayers, voidCancelFight, voidFightDurationMs, voidTravelDurationMs, voidFightResult, voidDamageFromStatistics, voidRankPacket, voidStatusPacket, skyTowerCanChallenge, skyTowerApplyWin, killHeroApplyWin };

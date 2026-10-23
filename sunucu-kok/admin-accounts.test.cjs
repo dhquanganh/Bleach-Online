@@ -47,7 +47,9 @@ test('Admin edits any account, safely stops active workers, adds valid heroes, a
     const found=(await get('/auth/admin/items?q=14130950',cookies[0])).items;
     assert.ok(found.some(x=>x.id===14130950&&/Mecha/i.test(x.name)));
     const icon=await request('/auth/admin/items/14130950/icon',cookies[0]);assert.equal(icon.status,200);assert.match(icon.headers.get('content-type'),/^image\//);
-    for(const [itemId,amount] of [[0,1],[14130950,0],[14130950,1000],[14130950,1.5]])
+    assert.equal(found.find(x=>x.id===14130950).maxAdd,999);
+    assert.equal((await get('/auth/admin/items?q=14100701',cookies[0])).items.find(x=>x.id===14100701).maxAdd,99999);
+    for(const [itemId,amount] of [[0,1],[14130950,0],[14130950,1000],[14130950,1.5],[14100701,100000],[14100701,1.5],[14100161,1000]])
       assert.equal((await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId,amount})).status,400);
     assert.equal((await request(itemsRoute,cookies[1],'POST',{revision:target.revision,itemId:14130950,amount:80})).status,403);
     assert.equal((await request(itemsRoute,cookies[0],'POST',{revision:'stale',itemId:14130950,amount:80})).status,409);
@@ -55,6 +57,8 @@ test('Admin edits any account, safely stops active workers, adds valid heroes, a
     assert.equal(response.status,200,await response.clone().text());let gift=await response.json();target=gift.account;assert.equal(gift.item.total,80);
     response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14130950,amount:20});
     assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.total,100);
+    response=await request(itemsRoute,cookies[0],'POST',{revision:target.revision,itemId:14100701,amount:99999});
+    assert.equal(response.status,200,await response.clone().text());gift=await response.json();target=gift.account;assert.equal(gift.item.amount,99999);assert.equal(gift.item.total,99999);
     let inventoryState=JSON.parse((await app.db.collection('players').findOne({_id:ids[1]})).files['oyuncu.json']);
     assert.equal(require('./sunucu/envanter').mevcut(inventoryState,14130950),100);
     const equipment=JSON.parse(fs.readFileSync(path.join(ROOT,'sunucu-kok/cikarim/veri-json/Article.json'),'utf8')).find(a=>[2,4,6].includes(Number(a.majorType)));

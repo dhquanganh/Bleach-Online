@@ -73,7 +73,7 @@ def main():
  role=role.replace('         ++FCombatVfxSerial;','         ++FCombatVfxSerial;\n         if(FId==11120960)FItachiVfxStarted=false;',1)
  role=role.replace('         this.UpdateMechaVfx();','         this.UpdateMechaVfx();\n         this.UpdateItachiVfx();',1)
  role=role.replace('            this.FitMechaPose();','            this.FitMechaPose();\n            this.FitItachiPose();',1)
- role=inject(role,'PrepareDormantKabuto','         if(FId==11120960)PreloadItachiVfx();')
+ role=inject(role,'PrepareBattleRole','         if(FId==11120960)PreloadItachiVfx();')
  role=inject(role,'AddTextEffectByCMD','''         var itachiMarker:uint=uint(param1.ResultInfo.BuffId);
          if(param1.CMD==TTargetInfo.CMD_FLOAT && itachiMarker>19001200 && itachiMarker<19001220){var notices:Array=["","SUPPRESS IMMUNITY","SUPPRESS SUPER ARMOR","CRITICAL GROWTH / HP +15%","CHAKRA DRAIN / LIMIT "+param1.ResultInfo.BuffTurn,"EXTREME CHAOS","MYSTERY CHAKRA COST +"+param1.ResultInfo.BuffTurn,"LEVEL 2 IGNITION / PARALYSIS","DEBUFF CANCELLED / HIDING"];ShowHashiramaStatusText(String(notices[itachiMarker-19001200]),0xFFCC66);return;}''')
  active=(BASE/'original/scripts'/b.ACTIVE).read_text(encoding='utf-8')
@@ -82,7 +82,7 @@ def main():
  token='         this.FCurSequence = this.FTextureAttack.GetAnimationSequenceByIndex(_loc1_);';assert token in active;active=active.replace(token,'         if(this.FId==11120960)_loc1_=0;\n'+token,1)
  token='         this.FCurSequence = this.FTextureSkill.GetAnimationSequenceByIndex(_loc1_);';assert token in active;active=active.replace(token,'         if(this.FId==11120960 && this.FSkillId>=13121201 && this.FSkillId<=13121207)_loc1_=uint(this.FSkillId==13121207?5:this.FSkillId>=13121204?this.FSkillId-13121202:this.FSkillId-13121201);\n'+token,1)
  formation=(BASE/'original/scripts'/b.FORMATION).read_text(encoding='utf-8').replace('this.FSelectHero.Identifier == 11120950','(this.FSelectHero.Identifier == 11120950 || this.FSelectHero.Identifier == 11120960)').replace('this.FSelectHero.Identifier != 11120950','(this.FSelectHero.Identifier != 11120950 && this.FSelectHero.Identifier != 11120960)')
- stage=(BASE/'original/scripts'/b.STAGE).read_text(encoding='utf-8').replace('kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "mechaSkillVfx"','(kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "mechaSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "itachiSkillVfx")')
+ stage=(BASE/'original/scripts'/b.STAGE).read_text(encoding='utf-8').replace('battleRasterHost.getChildAt(battleRasterIndex).name == "mechaSkillVfx"','(battleRasterHost.getChildAt(battleRasterIndex).name == "mechaSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name == "itachiSkillVfx")')
  inventory=(BASE/'original/scripts'/BACKPACK).read_text(encoding='utf-8')
  for name in ['ProcessorInventoryUpdateByBackpack','InsertNewlyReceivedInventory']:
   original=m.extract(inventory,name);inventory=inventory.replace(original,original.replace('case CATEGORY_Normal:','case 21:\n               case CATEGORY_Normal:'))
@@ -90,7 +90,7 @@ def main():
  ff('-onerror','abort','-importScript',BASE/'source.swf',BASE/'compiled.swf',BASE/'patched');rebuilt=(BASE/'compiled.swf').read_bytes()
  assert [x for x in h.tags(decoded) if x[0]!=82]==[x for x in h.tags(rebuilt) if x[0]!=82]
  ff('-selectclass',classes,'-export','script',BASE/'verify',BASE/'compiled.swf')
- verified=(BASE/'verify/scripts'/b.ROLE).read_text(encoding='utf-8');changed={'PrepareDormantKabuto','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}
+ verified=(BASE/'verify/scripts'/b.ROLE).read_text(encoding='utf-8');changed={'PrepareBattleRole','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}
  for name in re.findall(r'      (?:override )?(?:public|private|protected) (?:static )?function (\w+)\(',before):
   if name not in changed:assert m.extract(before,name)==m.extract(verified,name),name
  version=canonical.parent/'version.swf';raw=zlib.decompress(version.read_bytes());pos=2;parts=[raw[:2]];found=0

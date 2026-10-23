@@ -5,8 +5,8 @@ import numpy as np
 
 def configure(manifest, animation, public):
  profiles={
-  'ZuozhuZZZZ_qilin':('ZuozhuZZZZ_qilin-821',95,980,8,True),
-  'ZuozhuZZZZ_qilin_yan':('ZuozhuZZZZ_qilin_yan-1066',95,980,8,True),
+  'ZuozhuZZZZ_qilin':('ZuozhuZZZZ_qilin-821',95,1800,8,True),
+  'ZuozhuZZZZ_qilin_yan':('ZuozhuZZZZ_qilin_yan-1066',95,1800,8,True),
   'ZuozhuZZZZ_haolonghuo':('ZuozhuZZZZ_haolonghuo-31',28,1280,85,False),
   'ZuozhuZZZZ_haolonghuoyan':('ZuozhuZZZZ_haolonghuoyan-31',28,1280,85,False),
   'ZuozhuZZZZ_qianniaodao3':('ZuozhuZZZZ_qianniaodao3-684',10,1600,85,False),

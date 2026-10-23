@@ -1,0 +1,11 @@
+{
+  "nativeFlashLogin": true,
+  "nativeMenuAndPointerClicks": true,
+  "loadingCompleted": true,
+  "playbackStarted": true,
+  "victoryScreenVisuallyVerified": true,
+  "returnToEventVisuallyVerified": true,
+  "runtimeErrors": [],
+  "productionAccountFilesModified": false,
+  "shortFightUsesPrivateBossConfig": true
+}

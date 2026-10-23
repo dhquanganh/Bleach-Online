@@ -4,7 +4,6 @@ const { ACTIVE, ST } = require('./kodek');
 const skills = require('./hero-skills');
 const config = require('./naruto-sage.json');
 const jiraiya = require('./jiraiya-combat');
-const kabuto = require('./kabuto-combat');
 const obito = require('./obito-combat');
 const pain = require('./pain-combat');
 const hash = require('./hashirama-combat');
@@ -21,12 +20,12 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || kabuto.profile(unit));
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
 }
-function canChase(unit) { return !sasuke.active(unit,'sasukeParalysisUntil') && !disabled(unit) && kabuto.canChase(unit) && !skills.status(unit,'chaos') && !unit.paralyzed && !skills.status(unit,'paralysis'); }
+function canChase(unit) { return !sasuke.active(unit,'sasukeParalysisUntil') && !disabled(unit) && !skills.status(unit,'chaos') && !unit.paralyzed && !skills.status(unit,'paralysis'); }
 function setState(target, state, round) {
   if (!state || target.hp <= 0) return null;
   if (state === STATE.IMMOBILE) {
@@ -34,7 +33,7 @@ function setState(target, state, round) {
     target.immobileUntil = round;
     return state;
   }
-  if (displacement.has(state) && !(pain.isPain(target)&&target.painFinal) && !kabuto.armor(target) && !skills.status(target,'invincible') && !skills.status(target,'immuneControl')) return state;
+  if (displacement.has(state) && !(pain.isPain(target)&&target.painFinal) && !skills.armor(target) && !skills.status(target,'invincible') && !skills.status(target,'immuneControl')) return state;
   return null;
 }
 function create(teams, options = {}) {
@@ -93,7 +92,7 @@ function spendCooldown(ctx, unit, key, move) {
   ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
 }
 function useStandard(ctx, unit, allies) {
-  const move=sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,kabuto.selectStandard(ctx,unit,standard(unit,allies))));
+  const move=sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies)));
   if(!move || sasuke.active(unit,'sasukeFearUntil') || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
     if(mecha.isMecha(unit)){
@@ -115,7 +114,7 @@ function useStandard(ctx, unit, allies) {
 }
 function canMystery(ctx, unit) {
   const p=profile(unit), m=p && p.mystery;
-  return !!(m && sasuke.canMystery(unit) && hash.canMystery(ctx,unit) && pain.canMystery(ctx,unit,m) && kabuto.canMystery(ctx,unit) && (m.consumesPrimary===false || primaryAvailable(ctx,unit)) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
+  return !!(m && sasuke.canMystery(unit) && hash.canMystery(ctx,unit) && pain.canMystery(ctx,unit,m) && (m.consumesPrimary===false || primaryAvailable(ctx,unit)) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
     pain.mysteryReady(ctx,unit) && ctx.chakra[unit.camp] >= pain.mysteryCost(ctx,unit,m));
 }
 function useMystery(ctx,unit,beforeSpend=null) {

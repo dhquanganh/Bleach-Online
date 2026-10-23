@@ -1,0 +1,13 @@
+{
+  "party": [
+    11120970,
+    11120930,
+    11120950
+  ],
+  "enemy": 11120960,
+  "nativeFlash": true,
+  "susanoAtX2VisuallyVerified": true,
+  "naturalVictoryVisuallyVerified": true,
+  "runtimeErrors": [],
+  "productionPlayerOrBossDataChanged": false
+}

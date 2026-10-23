@@ -3,22 +3,44 @@
     "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_texie.swf",
     "symbol": "texie",
     "plateName": "sasukeCinematicPlate",
-    "referenceFrame": 41,
+    "referenceFrame": 38,
     "frames": 79,
     "frameRate": 24,
     "bitmapWidth": 1572,
     "bitmapHeight": 846,
-    "sha256": "f616b44daada5f2f09728f2168ebf86de1673981538b09ec24b8851cb2d600be"
+    "sha256": "f16173521e0d952c8b7fffc304ff7a61726fe0d69242926e0dec33319f1f1f33"
   },
   "ZuozhuZZZZ_qilin_yantexie": {
     "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_yantexie.swf",
     "symbol": "texie",
     "plateName": "sasukeCinematicPlate",
-    "referenceFrame": 41,
+    "referenceFrame": 38,
     "frames": 79,
     "frameRate": 24,
     "bitmapWidth": 1572,
     "bitmapHeight": 846,
-    "sha256": "321bca61bf34aa644045b38f67d0fef6356b40c1d258c0baf56147dfd6b29c11"
+    "sha256": "1a4e99260234b2ba494e545a0b2707dbbf963ffb737197109c835fa31b358fd6"
+  },
+  "ZuozhuZZZZ_qilin": {
+    "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin.swf",
+    "impact": true,
+    "symbols": [
+      "xia",
+      "shang"
+    ],
+    "frames": 125,
+    "frameRate": 24,
+    "sha256": "d2ec9eed5f3be47cac0a1ce907d784029f7687452152748b83236a6e5693c533"
+  },
+  "ZuozhuZZZZ_qilin_yan": {
+    "url": "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_yan.swf",
+    "impact": true,
+    "symbols": [
+      "xia",
+      "shang"
+    ],
+    "frames": 125,
+    "frameRate": 24,
+    "sha256": "c472a9161d1979764f94bcad99ff15640c55e65d5f2fc0d554d81d234f8f18af"
   }
 }

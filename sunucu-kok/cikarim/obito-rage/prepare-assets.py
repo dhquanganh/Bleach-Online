@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import copy,importlib.util,json,math
 BASE=Path(__file__).resolve().parent
-spec=importlib.util.spec_from_file_location('mme',BASE.parent/'kabuto-gnw/native-assets.py');mme=importlib.util.module_from_spec(spec);spec.loader.exec_module(mme)
+spec=importlib.util.spec_from_file_location('mme',BASE.parent/'shared-animation/mme.py');mme=importlib.util.module_from_spec(spec);spec.loader.exec_module(mme)
 SOURCE=BASE.parents[2]/'asset/Extracted_Obito_Rage'
 MAPPING={'idle':'C_idle','run':'C_run1_2','hit':'D_stand_behit1','dead':'C_dead','standard':'A_1hit','rage-standard':'A_2hit','kamui':'SP_skill4','roots':'SP_skill5','chaos':'SP_skill2','spear':'SP_skill3','rage':'SP_skill1'}
 MOVES={13120951:'kamui',13120952:'roots',13120953:'standard',13120954:'rage-standard',13120955:'chaos',13120956:'spear',13120957:'chaos',13120958:'spear',13120959:'rage'}

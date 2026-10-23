@@ -16,7 +16,7 @@ let catalog;
 let itemCatalog;
 function items() {
   if (!itemCatalog) itemCatalog=JSON.parse(fs.readFileSync(path.join(__dirname,'cikarim/veri-json/Article.json'),'utf8'))
-    .map(a=>({id:parseInt(a.id,16)>>>0,name:a.name||'(không tên)',quality:Number(a.quality)||0,picture:Number(a.picture)||0})).filter(a=>a.id);
+    .map(a=>({id:parseInt(a.id,16)>>>0,name:a.name||'(không tên)',quality:Number(a.quality)||0,picture:Number(a.picture)||0,maxAdd:require('./sunucu/admin-item-limits').maxAdd(a)})).filter(a=>a.id);
   return itemCatalog;
 }
 function heroes() {
@@ -67,6 +67,14 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
   return async function handle(req,res,pathname,user,json) {
     if (user.account.role !== 'admin') { json(403,{error:'Cần tài khoản admin.'}); return; }
     try {
+      if(pathname==='/auth/admin/void-region'){
+        const config=require('./sunucu/void-region-config');
+        if(req.method==='GET'){const q=(new URL(req.url||pathname,'http://localhost').searchParams.get('q')||'').trim().toLowerCase(),current=config.view();json(200,{config:current,bosses:config.catalog().filter(e=>e.id===current.enemyId||e.name.toLowerCase().includes(q)||String(e.id).includes(q)).sort((a,b)=>(b.id===current.enemyId)-(a.id===current.enemyId)||(b.source==='naruto')-(a.source==='naruto')||a.name.localeCompare(b.name)).slice(0,80)});return;}
+        if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
+        const data=await body(req);if(!data||typeof data!=='object'||Array.isArray(data))fail(400,'Dữ liệu boss không hợp lệ.');
+        integer(data.enemyId,1,2147483647,'Boss');integer(data.revision,1,2147483646,'Phiên bản');
+        await serial('void-region',async()=>json(200,config.write(data,data.revision)));return;
+      }
       if(pathname==='/auth/admin/anniversary-feast'){
         const config=require('./sunucu/anniversary-feast-config');
         if(req.method==='GET'){json(200,config.read());return;}
@@ -110,7 +118,7 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
           if (!state.karakter?.anaId) fail(400,'Tài khoản cần tạo nhân vật trong game trước khi thêm item.');
           const item=items().find(a=>a.id===data.itemId);
           if (!item) fail(400,'Item không hợp lệ.');
-          const amount=integer(data.amount,1,999,'Số lượng');
+          const amount=integer(data.amount,1,item.maxAdd,'Số lượng');
           require('./sunucu/ekipman');
           const inventory=require('./sunucu/envanter');
           const before=inventory.mevcut(state,item.id);

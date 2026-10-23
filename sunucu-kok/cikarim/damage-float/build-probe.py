@@ -25,7 +25,7 @@ def main():
   private var overlays:int=0;
   private var step:int=0;
   private var resetDone:Boolean=false;
-  private var names:Array=["kabutoSkillVfx","obitoSkillVfx","painSkillVfx","hashiramaSkillVfx","mechaSkillVfx","itachiSkillVfx","nativeWhiteFlash","nativeColorFlash"];
+  private var names:Array=["obitoSkillVfx","painSkillVfx","hashiramaSkillVfx","mechaSkillVfx","itachiSkillVfx","nativeWhiteFlash","nativeColorFlash"];
   public function TApplication(){addEventListener(Event.ADDED_TO_STAGE,run);}
   private function report(s:String):void{if(ExternalInterface.available)ExternalInterface.call("probe",s);}
   private function run(e:Event):void{

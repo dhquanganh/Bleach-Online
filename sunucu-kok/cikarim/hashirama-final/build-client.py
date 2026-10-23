@@ -55,7 +55,7 @@ def main():
  role=rep(role,'         FSkilling = IsSkill(FSkillId);','         FSkilling = IsSkill(FSkillId);\n         ++FCombatVfxSerial;\n         if(FId==11120940)FHashiramaVfxStarted=false;')
  role=rep(role,'         this.UpdatePainVfx();','         this.UpdatePainVfx();\n         this.UpdateHashiramaVfx();')
  role=rep(role,'         if(FCurrentRebirthSequence != null)','         if(!this.FHasFrozen) this.HashiramaStrikePose(_loc4_);\n         if(FCurrentRebirthSequence != null)')
- start=role.index('      public function PrepareDormantKabuto(');body=role.index('{',start)+1
+ start=role.index('      public function PrepareBattleRole(');body=role.index('{',start)+1
  role=role[:body]+'\n         if(FId==11120940){FHashiramaVfxStarted=false;PreloadHashiramaVfx();}\n'+role[body:]
  runtime=(BASE/'native-runtime.as.txt').read_text()+'\n'+(BASE/'runtime.as.txt').read_text()
  start=runtime.index('      private static function HashiramaVfxManifest(');end=method_end(runtime,start)
@@ -103,8 +103,8 @@ def main():
          {_loc1_=uint(this.FSkillId==13121002?1:this.FSkillId==13121003?2:this.FSkillId==13121004?3:this.FSkillId==13121005?4:this.FSkillId==13121008?5:this.FSkillId==13121009?6:this.FSkillId==13121010?7:0);}
 '''+token)
  stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf-8')
- token='kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "kabutoStatusVfx"'
- stage=rep(stage,token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name=="hashiramaSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name.indexOf("hashiramaStatus_")==0)')
+ token='battleRasterHost.getChildAt(battleRasterIndex).name == "hashiramaSkillVfx"'
+ stage=rep(stage,token,'('+token+' || battleRasterHost.getChildAt(battleRasterIndex).name=="hashiramaSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name.indexOf("hashiramaStatus_")==0)')
  formation=(BASE/'original/scripts'/FORMATION).read_text(encoding='utf-8')
  # Keep formation capacity, ownership and position validation; relax only the row restriction.
  formation=rep(formation,'this.FSelectHero.StandPositionWithProfession != int(_loc2_ / INDEX_STAMP) + 1','this.FSelectHero.Identifier != 11120940 && this.FSelectHero.StandPositionWithProfession != int(_loc2_ / INDEX_STAMP) + 1')

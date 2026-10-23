@@ -17,14 +17,15 @@ def main():
  role=rep(role,'      private var FObitoVfxStarted:Boolean','      private var FPainVfxStarted:Boolean=false;\n      private static var FPainFxCache:Object={};\n      private static var FPainFxLoading:Object={};\n      private var FPainTechnique:TextField;\n      private var FObitoVfxStarted:Boolean')
  role=rep(role,'         FSkilling = IsSkill(FSkillId);','         FSkilling = IsSkill(FSkillId);\n         if(FId == 11120930) FPainVfxStarted=false;')
  role=rep(role,'         this.UpdateObitoVfx();','         this.UpdateObitoVfx();\n         this.UpdatePainVfx();')
- role=rep(role,'            var restoreKabuto:Boolean =','''            if(FId == 11120930 && (CurHealth <= 0 || FIsDie || FWaitDie))
-            {
-               CurHealth -= param1;
-               if(CurHealth > 0) RestorePainAfterRevival();
-               return;
-            }
-            var restoreKabuto:Boolean =''')
- start=role.index('      public function PrepareDormantKabuto()');body=role.index('      {',start)+len('      {')
+ start=role.index('      public function ChangeHP(');body=role.index('{',start)+1
+ role=role[:body]+'''
+         if(param1 < 0 && FId == 11120930 && (CurHealth <= 0 || FIsDie || FWaitDie)) {
+            CurHealth -= param1;
+            if(CurHealth > 0) RestorePainAfterRevival();
+            return;
+         }
+'''+role[body:]
+ start=role.index('      public function PrepareBattleRole()');body=role.index('      {',start)+len('      {')
  role=role[:body]+'''\n         if(FPainTechnique != null) FPainTechnique.visible=FId==11120930;
          if(FId == 11120930)
          {
@@ -35,7 +36,7 @@ def main():
             FPainTechnique.filters=[new GlowFilter(0x100020,1,4,4,4)];FPainTechnique.text="TP 0 / 5";
          }
 '''+role[body:]
- runtime=(BASE.parent/'kabuto-gnw/raster-vfx.as.txt').read_text(encoding='utf-8');runtime=runtime[:runtime.index('      private function UpdateKabutoVfx(')].replace('Kabuto','Pain').replace('kabuto','pain')
+ runtime=(BASE.parent/'shared-animation/raster-vfx.as.txt').read_text(encoding='utf-8');runtime=runtime.replace('RasterTemplate','Pain').replace('rasterTemplate','pain')
  runtime=runtime.replace('var image:Bitmap = new Bitmap();image.smoothing = true;layer.addChild(image);','var image:Bitmap = new Bitmap();image.smoothing = true;if(clip.additive)image.blendMode="add";layer.addChild(image);')
  runtime=runtime.replace('behind:Boolean = false) : void','behind:Boolean = false, angle:Number = 0) : void')
  runtime=runtime.replace('layer.x=point.x;layer.y=point.y;layer.scaleX=mirrored ? -1 : 1;','layer.x=point.x;layer.y=point.y;layer.scaleX=mirrored ? -1 : 1;layer.rotation=angle;')
@@ -48,7 +49,7 @@ def main():
   if key in ['Peienchaoshenshenluotianzheng_aoyi-115','Peienchaoshenshenluotianzheng_aoyi-686','PEaoyi2-414']:clip['additive']=True
   if key=='PEaoyi2-12':clip['screen']=True;clip['pivot']=[.5,.5]
   if key=='PEaoyi2-414':clip['pivot']=[.25,.60]
- runtime=runtime.replace('__KABUTO_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
+ runtime=runtime.replace('__RASTER_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
  runtime+=(BASE/'runtime.as.txt').read_text(encoding='utf-8')
  runtime+=(BASE/'revival-visual.as.txt').read_text(encoding='utf-8')
  runtime+=(BASE.parent/'obito-rage/status-text.as.txt').read_text(encoding='utf-8').replace('Obito','Pain').replace('obito','pain')
@@ -90,8 +91,8 @@ def main():
          }
 '''+token)
  stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf-8')
- token='kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "kabutoStatusVfx"'
- stage=rep(stage,token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "painSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name.indexOf("painStatus_") == 0)')
+ token='battleRasterHost.getChildAt(battleRasterIndex).name == "hashiramaSkillVfx"'
+ stage=rep(stage,token,'('+token+' || battleRasterHost.getChildAt(battleRasterIndex).name == "painSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name.indexOf("painStatus_") == 0)')
  for rel,value in [(ROLE,role),(ACTIVE,active),(STAGE,stage)]:
   f=BASE/'patched'/rel;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(value,encoding='utf-8')
  output=BASE/'compiled.swf';ff('-onerror','abort','-importScript',source,output,BASE/'patched');rebuilt=output.read_bytes()

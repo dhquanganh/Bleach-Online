@@ -232,9 +232,9 @@ function status(unit, field) {
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition)&&b.remaining>0))return true;
-  const kabutoSuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.kabutoSuppressedUntil>=unit.battleRound||unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !kabutoSuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
-  if(kabutoSuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
+  const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
   if(unit.suppressedUntil>=unit.battleRound&&['immuneControl','immuneHealBlock','invincible','void'].includes(field))return false;
@@ -256,7 +256,7 @@ function value(unit, field) {
   if(field==='dodgeRate'&&hash.active(unit,'hashEvasionUntil'))result=Math.min(.2,result);
   const tagged=unit.obitoTagUntil>=unit.battleRound;
   if(tagged&&field==='dodgeRate')return Math.min(.35,result);
-  return (field==='def'?result*Math.max(0,1-0.12*(unit.kabutoDefenseStacks||0)):result)*(tagged&&['def','resistance'].includes(field)?.85:1);
+  return result*(tagged&&['def','resistance'].includes(field)?.85:1);
 }
 function hpRecord(unit, amount, targetEffect=true) {
   return {cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,
@@ -295,7 +295,7 @@ function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
     targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:ids[rule.value<0?1:0],buffTurn:rule.turns}});
 }
 function remove(target,negative,records) {
-  if(negative){for(const field of ['mechaInflammation','mechaMysteryLockUntil','jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','kabutoSuppressedUntil','kabutoBlindUntil','kabutoCurseUntil','kabutoArmorSuppressedUntil','kabutoDefenseStacks'])delete target[field];target.paralyzed=false;}
+  if(negative){for(const field of ['mechaInflammation','mechaMysteryLockUntil','jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil'])delete target[field];target.paralyzed=false;}
   const removed=(target.skillBuffs||[]).filter(buff=>negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect');
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>!removed.includes(buff));
   for(const buff of removed){const ids=buffIds[buff.field];const id=ids?ids[buff.value<0?1:0]:buff.buffId;
@@ -346,16 +346,10 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
       }else if(rule.kind==='damage'){
         if(status(target,'invincible'))continue;
         let damage=Math.min(target.hp,Math.max(0,Math.round(value(caster,'atk')*rule.value*(1-Math.max(0,Math.min(1,value(target,'damageReduction')))))));
-        const protection=require('./kabuto-combat').protectFatal(target,damage);
-        if(protection)damage=protection.damage;
         target.hp-=damage;records.push(hpRecord(target,damage));
-        if(protection){target.hp+=protection.recovered;records.push(hpRecord(target,-protection.recovered));}
       }else if(rule.kind==='selfDamage'){
         let damage=Math.min(caster.hp,Math.round(value(caster,'atk')*rule.value));
-        const protection=require('./kabuto-combat').protectFatal(caster,damage);
-        if(protection)damage=protection.damage;
         caster.hp-=damage;records.push(hpRecord(caster,damage,false));
-        if(protection){caster.hp+=protection.recovered;records.push(hpRecord(caster,-protection.recovered,false));}
       }
     }
   }
@@ -369,11 +363,8 @@ function startRound(units) {
       if(buff.kind==='regen')restore(unit,unit,buff.amount,records);
       else if(buff.kind==='dot'&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
         let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.mechaIgnition&&unit.mechaContext?require('./mecha-combat').ignitionDamage(unit.mechaContext.teams.flat().find(v=>v.id===buff.source&&(buff.sourceCamp==null||v.camp===buff.sourceCamp))||unit,unit):buff.amount)));
-        const protection=require('./kabuto-combat').protectFatal(unit,damage);
-        if(protection)damage=protection.damage;
         unit.hp-=damage;records.push(hpRecord(unit,damage,false));
         if(unit.hashContext){const events=[];const source=unit.hashContext.teams.flat().find(u=>u.id===buff.source)||unit;require('./hashirama-combat').onDamage(unit.hashContext,source,unit,{damage},buff,records,events);actives.push(...events);}
-        if(protection){unit.hp+=protection.recovered;records.push(hpRecord(unit,-protection.recovered,false));}
       }
       if(unit.hp<=0)break;
     }
@@ -399,3 +390,6 @@ function eventFrames(unit,records) {
     {activeCamp:unit.camp,activePos:unit.pos,skillEffectId:0,activeType:4,targets:records}];
 }
 module.exports={get,plans,effects,select,scoped,status,value,apply,restore,healPower,changeFury,remove,removeField,startRound,endRound,hpRecord,eventFrames};
+
+// Shared armor suppression belongs to the combat engine.
+module.exports.armor=unit=>!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));

@@ -1,11 +1,11 @@
 BOOT native Flash shared VFX component probe
-TEXTURE idle frames=40
-TEXTURE rinnegan frames=64
-TEXTURE blazeMystery frames=132
-TEXTURE susanoo frames=41
-TEXTURE mystery frames=132
-TEXTURE standard frames=86
 TEXTURE blazeDragon frames=87
+TEXTURE blazeMystery frames=132
+TEXTURE mystery frames=132
+TEXTURE rinnegan frames=64
+TEXTURE standard frames=86
+TEXTURE susanoo frames=41
+TEXTURE idle frames=40
 TEXTURE blazeStandard frames=86
 TEXTURE mangekyo frames=58
 TEXTURE dragon frames=87
@@ -14,9 +14,6 @@ VFX_ASSET ZuozhuZZZZ_qilin-230
 VFX_ASSET ZuozhuZZZZ_qilin-821
 CINEMATIC ZuozhuZZZZ_qilin_texie
 SNAPSHOT CASE-13121301-camp-0-frame-40
-ERROR cinematic coverage (x=12.7, y=23.9, w=1250, h=672.7)
-ERROR cinematic coverage (x=90.3, y=238.75, w=1250, h=672.7)
-ERROR cinematic coverage (x=98.55, y=261.45, w=1250, h=672.7)
 SNAPSHOT CASE-13121301-camp-0-frame-60
 SNAPSHOT CASE-13121301-camp-0-frame-69
 SNAPSHOT CASE-13121301-camp-0-frame-74
@@ -29,10 +26,7 @@ CASE 13121302 camp=0
 VFX_ASSET ZuozhuZZZZ_qilin_yan-170
 VFX_ASSET ZuozhuZZZZ_qilin_yan-1066
 CINEMATIC ZuozhuZZZZ_qilin_yantexie
-ERROR cinematic coverage (x=24.65, y=56.85, w=1250, h=672.6999999999999)
 SNAPSHOT CASE-13121302-camp-0-frame-40
-ERROR cinematic coverage (x=64.05, y=165.95, w=1250, h=672.7)
-ERROR cinematic coverage (x=103.45, y=275.1, w=1250, h=672.6999999999999)
 SNAPSHOT CASE-13121302-camp-0-frame-60
 SNAPSHOT CASE-13121302-camp-0-frame-69
 SNAPSHOT CASE-13121302-camp-0-frame-74
@@ -87,8 +81,6 @@ VFX_ASSET ZuozhuZZZZ_qilin-230
 VFX_ASSET ZuozhuZZZZ_qilin-821
 CINEMATIC ZuozhuZZZZ_qilin_texie
 SNAPSHOT CASE-13121301-camp-1-frame-40
-ERROR cinematic coverage (x=35.75, y=87.55, w=1250, h=672.7)
-ERROR cinematic coverage (x=101.4, y=269.4, w=1250, h=672.7)
 SNAPSHOT CASE-13121301-camp-1-frame-60
 SNAPSHOT CASE-13121301-camp-1-frame-69
 SNAPSHOT CASE-13121301-camp-1-frame-74
@@ -101,10 +93,7 @@ CASE 13121302 camp=1
 VFX_ASSET ZuozhuZZZZ_qilin_yan-170
 VFX_ASSET ZuozhuZZZZ_qilin_yan-1066
 CINEMATIC ZuozhuZZZZ_qilin_yantexie
-ERROR cinematic coverage (x=12.7, y=23.9, w=1250, h=672.7)
 SNAPSHOT CASE-13121302-camp-1-frame-40
-ERROR cinematic coverage (x=55.4, y=142.1, w=1250, h=672.6999999999999)
-ERROR cinematic coverage (x=101.4, y=269.4, w=1250, h=672.7)
 SNAPSHOT CASE-13121302-camp-1-frame-60
 SNAPSHOT CASE-13121302-camp-1-frame-69
 SNAPSHOT CASE-13121302-camp-1-frame-74

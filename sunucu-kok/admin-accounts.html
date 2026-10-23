@@ -1,50 +1,466 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bleach · Quản trị tài khoản</title>
-<style>
-:root{color-scheme:dark;--bg:#101018;--panel:#191923;--line:#32303d;--muted:#a6a1b4;--gold:#f2c779;--accent:#e87748}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0,#35231f,transparent 55%),var(--bg);color:#f3eef5;font:14px/1.5 'Segoe UI',Arial,sans-serif}header{padding:20px 30px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px}h1{font-size:21px;margin:0}h2{font-size:17px;margin:0 0 14px;color:var(--gold)}p{color:var(--muted)}a{color:var(--gold)}.eyebrow{font-size:10px;letter-spacing:3px;color:var(--accent)}.layout{max-width:1440px;margin:auto;display:grid;grid-template-columns:270px 1fr;gap:22px;padding:24px}aside,.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px}aside{align-self:start;position:sticky;top:20px}input,select,button{font:inherit}input,select{width:100%;background:#101019;color:#f3eef5;border:1px solid #45404e;border-radius:6px;padding:9px}input:focus,select:focus{outline:2px solid var(--gold)}button{cursor:pointer;background:var(--gold);color:#20170d;border:0;border-radius:6px;padding:10px 16px;font-weight:600}button:disabled{opacity:.45;cursor:default}.secondary{background:#302d3b;color:#eee}#accounts{display:grid;gap:7px;margin-top:14px;max-height:65vh;overflow:auto}.account{text-align:left;background:#24232f;color:#eee;font-weight:400}.account.active{box-shadow:inset 3px 0 var(--gold);background:#393030}.account small{display:block;color:var(--muted);font-size:11px}.top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:18px}.top h2{margin:0;color:#fff;font-size:24px}.badge{color:var(--gold);font-size:12px}main{min-width:0}.columns{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,1fr);gap:18px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}fieldset{border:0;padding:0;margin:0}legend{color:var(--gold);font-size:13px;margin:20px 0 10px}.actions{display:flex;gap:10px;align-items:center;margin-top:22px}.note{font-size:12px;color:var(--muted)}#status{min-height:26px;padding:0 0 12px;color:#a8e1bd}#status.error{color:#ff998b}#heroChoice{height:220px;margin-top:10px}#owned{display:grid;gap:6px;max-height:250px;overflow:auto;margin-top:15px}.owned-row{padding:8px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px}.empty{padding:30px 0;color:var(--muted)}[hidden]{display:none!important}button:hover{filter:brightness(1.12)}@media(max-width:950px){.columns{grid-template-columns:1fr}}@media(max-width:650px){header{padding:15px}.layout{padding:14px;grid-template-columns:1fr}aside{position:static}#accounts{max-height:200px}.fields{grid-template-columns:1fr}.top{align-items:flex-start}}
-</style></head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bleach · Quản trị tài khoản</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #101018;
+            --panel: #191923;
+            --line: #32303d;
+            --muted: #a6a1b4;
+            --gold: #f2c779;
+            --accent: #e87748
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(ellipse at 80% 0, #35231f, transparent 55%), var(--bg);
+            color: #f3eef5;
+            font: 14px/1.5 'Segoe UI', Arial, sans-serif
+        }
+
+        header {
+            padding: 20px 30px;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px
+        }
+
+        h1 {
+            font-size: 21px;
+            margin: 0
+        }
+
+        h2 {
+            font-size: 17px;
+            margin: 0 0 14px;
+            color: var(--gold)
+        }
+
+        p {
+            color: var(--muted)
+        }
+
+        a {
+            color: var(--gold)
+        }
+
+        .eyebrow {
+            font-size: 10px;
+            letter-spacing: 3px;
+            color: var(--accent)
+        }
+
+        .layout {
+            max-width: 1440px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 270px 1fr;
+            gap: 22px;
+            padding: 24px
+        }
+
+        aside,
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 20px
+        }
+
+        aside {
+            align-self: start;
+            position: sticky;
+            top: 20px
+        }
+
+        input,
+        select,
+        button {
+            font: inherit
+        }
+
+        input,
+        select {
+            width: 100%;
+            background: #101019;
+            color: #f3eef5;
+            border: 1px solid #45404e;
+            border-radius: 6px;
+            padding: 9px
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid var(--gold)
+        }
+
+        button {
+            cursor: pointer;
+            background: var(--gold);
+            color: #20170d;
+            border: 0;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-weight: 600
+        }
+
+        button:disabled {
+            opacity: .45;
+            cursor: default
+        }
+
+        .secondary {
+            background: #302d3b;
+            color: #eee
+        }
+
+        #accounts {
+            display: grid;
+            gap: 7px;
+            margin-top: 14px;
+            max-height: 65vh;
+            overflow: auto
+        }
+
+        .account {
+            text-align: left;
+            background: #24232f;
+            color: #eee;
+            font-weight: 400
+        }
+
+        .account.active {
+            box-shadow: inset 3px 0 var(--gold);
+            background: #393030
+        }
+
+        .account small {
+            display: block;
+            color: var(--muted);
+            font-size: 11px
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 18px
+        }
+
+        .top h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 24px
+        }
+
+        .badge {
+            color: var(--gold);
+            font-size: 12px
+        }
+
+        main {
+            min-width: 0
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: minmax(0, 1.4fr) minmax(270px, 1fr);
+            gap: 18px
+        }
+
+        .fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            color: var(--muted);
+            margin-bottom: 4px
+        }
+
+        fieldset {
+            border: 0;
+            padding: 0;
+            margin: 0
+        }
+
+        legend {
+            color: var(--gold);
+            font-size: 13px;
+            margin: 20px 0 10px
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 22px
+        }
+
+        .note {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        #status {
+            min-height: 26px;
+            padding: 0 0 12px;
+            color: #a8e1bd
+        }
+
+        #status.error {
+            color: #ff998b
+        }
+
+        #heroChoice {
+            height: 220px;
+            margin-top: 10px
+        }
+
+        #owned {
+            display: grid;
+            gap: 6px;
+            max-height: 250px;
+            overflow: auto;
+            margin-top: 15px
+        }
+
+        .owned-row {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            justify-content: space-between;
+            gap: 10px
+        }
+
+        .empty {
+            padding: 30px 0;
+            color: var(--muted)
+        }
+
+        [hidden] {
+            display: none !important
+        }
+
+        button:hover {
+            filter: brightness(1.12)
+        }
+
+        @media(max-width:950px) {
+            .columns {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:650px) {
+            header {
+                padding: 15px
+            }
+
+            .layout {
+                padding: 14px;
+                grid-template-columns: 1fr
+            }
+
+            aside {
+                position: static
+            }
+
+            #accounts {
+                max-height: 200px
+            }
+
+            .fields {
+                grid-template-columns: 1fr
+            }
+
+            .top {
+                align-items: flex-start
+            }
+        }
+    </style>
+</head>
+
 <body>
-<header><div><div class="eyebrow">SOUL SOCIETY / CONTROL ROOM</div><h1>Quản trị tài khoản</h1></div><div><a href="/admin/legacy">Công cụ cũ (acc admin)</a> &nbsp; · &nbsp; <a href="/">Về game ↗</a></div></header>
-<div class="layout">
-<aside><h2>Tất cả tài khoản <span id="count"></span></h2><input id="accountSearch" type="search" placeholder="Tìm tên đăng nhập…" aria-label="Tìm tài khoản"><div id="accounts"></div></aside>
-<main><div id="status" role="status" aria-live="polite">Đang tải dữ liệu…</div><div id="empty" class="empty">Chọn một tài khoản để quản lý.</div>
-<section class="card" style="margin-bottom:22px"><h2>Anniversary Feast · Hot Sale</h2><p class="note">Cấu hình chung cho mọi tài khoản. Tướng hiển thị và tướng nhận khi đổi điểm sẽ dùng cùng cấu hình này. Mở lại cửa sổ sự kiện để cập nhật.</p><form id="feastForm"><label for="feastSearch">Tìm tướng theo tên hoặc ID</label><input id="feastSearch" type="search" placeholder="Tìm tướng…"><label for="feastHero">Tướng Hot Sale</label><select id="feastHero" required></select><label for="feastPrice" style="margin-top:12px">Giá đổi (điểm)</label><input id="feastPrice" type="number" min="1" max="2147483647" step="1" required><p id="feastCurrent" class="note"></p><button id="feastSave" type="submit" disabled>Lưu Hot Sale</button> <button id="feastReload" class="secondary" type="button">Tải lại Hot Sale</button><p id="feastStatus" class="note" role="status"></p></form></section>
-<div id="editor" hidden>
-<div class="top"><div><h2 id="title"></h2><span id="meta" class="badge"></span></div><button id="reload" class="secondary" type="button">Tải lại dữ liệu</button></div>
-<p class="note">Khi lưu, phiên game đang mở của tài khoản này sẽ ngắt để áp dụng dữ liệu an toàn. Người chơi chỉ cần tải lại game.</p>
-<div class="columns">
-<section class="card"><h2>Dữ liệu nhân vật</h2><form id="editForm"><fieldset id="editFields"><label for="nick">Tên nhân vật</label><input id="nick" maxlength="24" autocomplete="off"><div id="groups"></div></fieldset><div class="actions"><button id="save" type="submit">Lưu thay đổi</button><span class="note">Lưu vào MongoDB</span></div></form></section>
-<div><section class="card"><h2>Thêm hero</h2><p class="note">Thêm trực tiếp vào danh sách sở hữu. Hero mới chưa được xếp vào đội hình.</p><form id="heroForm"><label for="heroSearch">Tìm theo tên hoặc ID</label><input type="search" id="heroSearch" placeholder="Ví dụ: Obito…"><select id="heroChoice" size="7" required aria-label="Chọn hero"></select><label for="heroLevel" style="margin-top:14px">Cấp hero (1–159)</label><input type="number" id="heroLevel" min="1" max="159" value="1" required><button id="addHero" type="submit" style="margin-top:16px">+ Thêm hero</button></form></section>
-<section class="card" style="margin-top:18px"><h2>Thêm item</h2><p class="note">Thêm vật phẩm vào túi của tài khoản đang chọn.</p><form id="itemForm"><label for="itemSearch">Tìm theo tên hoặc ID</label><input type="search" id="itemSearch" placeholder="Ví dụ: Mecha hoặc 14130950…" autocomplete="off"><select id="itemChoice" size="6" required aria-label="Chọn item" style="margin-top:10px;width:100%"></select><p id="itemHint" class="note" role="status">Nhập ít nhất 2 ký tự để tìm.</p><img id="itemIcon" width="48" height="48" alt="Icon vật phẩm" hidden><label for="itemAmount">Số lượng (1–999)</label><input type="number" id="itemAmount" min="1" max="999" step="1" value="1" required><button id="addItem" type="submit" style="margin-top:16px" disabled>+ Thêm item</button></form></section>
-<section class="card" style="margin-top:18px"><h2>Hero đang sở hữu <span id="ownedCount"></span></h2><div id="owned"></div></section></div>
-</div></div></main></div>
-<script>
-'use strict';
-var accounts=[],catalog=[],current=null,selectedId=null,busy=false,loading=false,dirty=false,loadSequence=0;
-var itemResults=[],itemTimer,itemSequence=0;
-var feastConfig=null,feastBusy=false;
-function renderFeast(){var chosen=Number(el('feastHero').value)||(feastConfig&&feastConfig.heroId),q=el('feastSearch').value.trim().toLowerCase();el('feastHero').textContent='';catalog.filter(function(h){return h.id===chosen||h.name.toLowerCase().includes(q)||String(h.id).includes(q)}).forEach(function(h){el('feastHero').add(new Option(h.name+' · #'+h.id,h.id))});if(chosen)el('feastHero').value=String(chosen)}
-function applyFeast(data){feastConfig=data;el('feastSearch').value='';el('feastHero').textContent='';renderFeast();el('feastPrice').value=data.price;var hero=catalog.find(function(h){return h.id===data.heroId});el('feastCurrent').textContent='Đang áp dụng: '+(hero?hero.name:data.heroId)+' · '+data.price.toLocaleString('vi-VN')+' điểm';el('feastSave').disabled=false}
-el('feastSearch').oninput=renderFeast;
-el('feastReload').onclick=async function(){if(feastBusy)return;try{applyFeast(await api('anniversary-feast'));el('feastStatus').textContent='Đã tải cấu hình hiện tại.'}catch(e){el('feastStatus').textContent=e.message}};
-el('feastForm').onsubmit=async function(e){e.preventDefault();if(feastBusy||!feastConfig)return;feastBusy=true;el('feastSave').disabled=true;el('feastReload').disabled=true;try{applyFeast(await api('anniversary-feast','PATCH',{heroId:Number(el('feastHero').value),price:Number(el('feastPrice').value),revision:feastConfig.revision}));el('feastStatus').textContent='Đã lưu. Mở lại Anniversary Feast trong game để xem tướng mới.'}catch(error){el('feastStatus').textContent=error.message}finally{feastBusy=false;el('feastSave').disabled=false;el('feastReload').disabled=false}};
-var groups=[['Tiền tệ',[['altin','Vàng'],['gumus','Bạc'],['gumusHigh','Bạc (phần cao)'],['kupon','Phiếu quà tặng'],['askeriEmir','Lệnh quân sự']]],['Nhân vật & VIP',[['level','Cấp độ',1,159],['deneyim','Kinh nghiệm'],['prestij','Uy tín'],['vipLevel','Cấp VIP',0,15],['vipExp','Điểm VIP']]],['Linh hồn',[['generalsSoul','Linh hồn tướng'],['blueSoul','Linh hồn xanh'],['purpleSoul','Linh hồn tím'],['goldSoulV','Linh hồn vàng'],['orangeSoul','Linh hồn cam']]]];
-function el(id){return document.getElementById(id)}
-function status(message,error){el('status').textContent=message;el('status').className=error?'error':''}
-async function api(url,method,data){var r=await fetch('/auth/admin/'+url,{method:method||'GET',credentials:'same-origin',headers:{'Content-Type':'application/json'},body:data?JSON.stringify(data):undefined});var d=await r.json();if(!r.ok)throw new Error(d.error||'Không thể kết nối máy chủ.');return d}
-groups.forEach(function(group){var fieldset=document.createElement('fieldset'),legend=document.createElement('legend'),grid=document.createElement('div');legend.textContent=group[0];grid.className='fields';fieldset.appendChild(legend);group[1].forEach(function(field){var wrap=document.createElement('div'),label=document.createElement('label'),input=document.createElement('input');label.textContent=field[1];label.htmlFor='field_'+field[0];input.id=label.htmlFor;input.name=field[0];input.type='number';input.min=field[2]===undefined?0:field[2];input.max=field[3]||2147483647;input.step=1;input.required=true;wrap.appendChild(label);wrap.appendChild(input);grid.appendChild(wrap)});fieldset.appendChild(grid);el('groups').appendChild(fieldset)});
-function renderAccounts(){el('accounts').textContent='';var query=el('accountSearch').value.toLowerCase();accounts.filter(function(a){return a.username.toLowerCase().includes(query)}).forEach(function(a){var b=document.createElement('button'),small=document.createElement('small');b.type='button';b.className='account'+(a.id===selectedId?' active':'');b.appendChild(document.createTextNode(a.username));small.textContent=a.role+' · '+(a.online?'Đang mở game':'Ngoại tuyến');b.appendChild(small);b.disabled=busy||loading;b.onclick=function(){load(a.id)};el('accounts').appendChild(b)});el('count').textContent='('+accounts.length+')'}
-function renderHeroes(){var chosen=Number(el('heroChoice').value),query=el('heroSearch').value.toLowerCase();el('heroChoice').textContent='';catalog.filter(function(h){return !current.heroes.some(function(owned){return owned.id===h.id})&&(h.name.toLowerCase().includes(query)||String(h.id).includes(query))}).forEach(function(h){el('heroChoice').add(new Option(h.name+' · #'+h.id+' · Phẩm '+h.quality,h.id))});if(chosen)el('heroChoice').value=String(chosen);el('addHero').disabled=busy||!current.hasCharacter||!el('heroChoice').options.length}
-function itemPreview(){var item=itemResults.find(function(x){return x.id===Number(el('itemChoice').value)});el('itemIcon').hidden=!item;if(item){el('itemIcon').src='/auth/admin/items/'+item.id+'/icon';el('itemIcon').alt=item.name}controls()}
-async function searchItems(){clearTimeout(itemTimer);var sequence=++itemSequence,q=el('itemSearch').value.trim();itemResults=[];el('itemChoice').textContent='';el('itemIcon').hidden=true;controls();if(q.length<2){el('itemHint').textContent='Nhập ít nhất 2 ký tự để tìm.';return}el('itemHint').textContent='Đang tìm…';itemTimer=setTimeout(async function(){try{var data=await api('items?q='+encodeURIComponent(q));if(sequence!==itemSequence)return;itemResults=data.items;itemResults.forEach(function(x){el('itemChoice').add(new Option(x.name+' · #'+x.id+' · Phẩm '+x.quality,x.id))});el('itemHint').textContent=itemResults.length?'Chọn item và nhập số lượng.':'Không tìm thấy item.';itemPreview()}catch(e){if(sequence===itemSequence)el('itemHint').textContent=e.message}},180)}
-function render(){el('empty').hidden=true;el('editor').hidden=false;el('title').textContent=current.username;el('meta').textContent=current.role+' · '+(current.hasCharacter?current.nick:'Chưa tạo nhân vật');el('nick').value=current.nick;el('nick').disabled=!current.hasCharacter;Object.keys(current.values).forEach(function(k){var input=el('field_'+k);if(input)input.value=current.values[k]});el('owned').textContent='';current.heroes.forEach(function(h){var row=document.createElement('div'),level=document.createElement('span');row.className='owned-row';row.appendChild(document.createTextNode(h.name));level.textContent='Lv. '+h.level;row.appendChild(level);el('owned').appendChild(row)});if(!current.heroes.length)el('owned').textContent='Chưa có hero đồng hành.';el('ownedCount').textContent='('+current.heroes.length+')';el('heroLevel').value=current.values.level;renderHeroes();itemPreview();dirty=false}
-function controls(){['itemSearch','itemChoice','itemAmount'].forEach(function(id){el(id).disabled=busy||loading});el('addItem').disabled=busy||loading||!current||!current.hasCharacter||!el('itemChoice').value;el('editFields').disabled=busy||loading;el('save').disabled=busy||loading;el('reload').disabled=busy||loading;el('heroSearch').disabled=busy||loading;el('heroChoice').disabled=busy||loading;el('heroLevel').disabled=busy||loading;el('addHero').disabled=busy||loading||!current||!current.hasCharacter||!el('heroChoice').options.length;renderAccounts()}
-async function load(id){if(busy||loading)return;if(dirty&&!confirm('Bỏ các thay đổi chưa lưu của tài khoản hiện tại?'))return;loading=true;controls();var sequence=++loadSequence;try{status('Đang tải tài khoản…');var account=await api('accounts/'+id);if(sequence!==loadSequence)return;current=account;selectedId=id;render();status('Đang chỉnh sửa: '+current.username)}catch(e){status(e.message,true)}finally{loading=false;controls()}}
-async function save(mode){if(busy||loading||!current)return;var target=current.id,payload={revision:current.revision};if(mode==='item'){if(dirty){status('Hãy lưu hoặc tải lại các chỉnh sửa nhân vật trước khi thêm item.',true);return}payload.itemId=Number(el('itemChoice').value);payload.amount=Number(el('itemAmount').value)}else if(mode==='hero'){if(dirty){status('Hãy lưu hoặc tải lại các chỉnh sửa nhân vật trước khi thêm hero.',true);return}payload.heroId=Number(el('heroChoice').value);payload.level=Number(el('heroLevel').value)}else{payload.values={};el('editFields').querySelectorAll('input[name]').forEach(function(input){payload.values[input.name]=Number(input.value)});if(current.hasCharacter)payload.nick=el('nick').value}busy=true;controls();status('Đang lưu cho '+current.username+'…');try{var result=await api('accounts/'+target+(mode==='hero'?'/heroes':mode==='item'?'/items':''),mode==='edit'?'PATCH':'POST',payload);current=result.account;accounts.forEach(function(a){if(a.id===target)a.online=false});render();status((mode==='item'?'Đã thêm '+result.item.name+' × '+result.item.amount+' cho ':mode==='hero'?'Đã thêm hero cho ':'Đã lưu tài khoản ')+current.username+'.'+(result.disconnected?' Phiên game đã ngắt; tải lại game để cập nhật.':' Thay đổi sẽ có khi vào game.'))}catch(e){status(e.message,true)}finally{busy=false;controls()}}
-el('itemSearch').oninput=searchItems;el('itemChoice').onchange=itemPreview;el('itemIcon').onerror=function(){this.hidden=true};el('itemForm').onsubmit=function(e){e.preventDefault();save('item')};
-el('accountSearch').oninput=renderAccounts;el('heroSearch').oninput=renderHeroes;el('reload').onclick=function(){load(selectedId)};el('editForm').oninput=function(){dirty=true};el('editForm').onsubmit=function(e){e.preventDefault();save('edit')};el('heroForm').onsubmit=function(e){e.preventDefault();save('hero')};window.addEventListener('beforeunload',function(e){if(dirty){e.preventDefault();e.returnValue=''}});
-Promise.all([api('accounts'),api('heroes'),api('anniversary-feast')]).then(function(data){accounts=data[0].accounts;catalog=data[1].heroes;applyFeast(data[2]);renderAccounts();status('');if(accounts.length)load(accounts[0].id)}).catch(function(e){status(e.message,true)});
-</script></body></html>
+    <header>
+        <div>
+            <div class="eyebrow">SOUL SOCIETY / CONTROL ROOM</div>
+            <h1>Quản trị tài khoản</h1>
+        </div>
+        <div><a href="/admin/legacy">Công cụ cũ (acc admin)</a> &nbsp; · &nbsp; <a href="/">Về game ↗</a></div>
+    </header>
+    <div class="layout">
+        <aside>
+            <h2>Tất cả tài khoản <span id="count"></span></h2><input id="accountSearch" type="search"
+                placeholder="Tìm tên đăng nhập…" aria-label="Tìm tài khoản">
+            <div id="accounts"></div>
+        </aside>
+        <main>
+            <div id="status" role="status" aria-live="polite">Đang tải dữ liệu…</div>
+            <div id="empty" class="empty">Chọn một tài khoản để quản lý.</div>
+            <section class="card" style="margin-bottom:22px">
+                <h2>Anniversary Feast · Hot Sale</h2>
+                <p class="note">Cấu hình chung cho mọi tài khoản. Tướng hiển thị và tướng nhận khi đổi điểm sẽ dùng cùng
+                    cấu hình này. Mở lại cửa sổ sự kiện để cập nhật.</p>
+                <form id="feastForm"><label for="feastSearch">Tìm tướng theo tên hoặc ID</label><input id="feastSearch"
+                        type="search" placeholder="Tìm tướng…"><label for="feastHero">Tướng Hot Sale</label><select
+                        id="feastHero" required></select><label for="feastPrice" style="margin-top:12px">Giá đổi
+                        (điểm)</label><input id="feastPrice" type="number" min="1" max="2147483647" step="1" required>
+                    <p id="feastCurrent" class="note"></p><button id="feastSave" type="submit" disabled>Lưu Hot
+                        Sale</button> <button id="feastReload" class="secondary" type="button">Tải lại Hot Sale</button>
+                    <p id="feastStatus" class="note" role="status"></p>
+                </form>
+            </section>
+            <section class="card" style="margin-bottom:22px">
+                <h2>Void Region · Boss sự kiện</h2>
+                <p class="note">Áp dụng chung cho mọi tài khoản. Lưu boss mới sẽ bắt đầu lượt boss mới; mở lại Void Region trong game để cập nhật.</p>
+                <form id="voidBossForm">
+                    <label for="voidBossSearch">Tìm boss theo tên hoặc ID</label><input id="voidBossSearch" type="search" placeholder="Tìm boss…">
+                    <label for="voidBossChoice">Boss</label><select id="voidBossChoice" required></select>
+                    <p id="voidBossCurrent" class="note"></p>
+                    <p class="note">Để trống để dùng chỉ số gốc. Lưu sẽ bắt đầu lượt boss mới, đặt lại HP và bảng sát thương. HP trong mỗi trận tối đa 1 tỷ.</p>
+                    <label for="voidStat_hp">HP toàn sự kiện</label><input id="voidStat_hp" type="number" min="200" max="9007199254740991" step="1">
+                    <label for="voidStat_atk">Physical ATK</label><input id="voidStat_atk" type="number" min="0" max="1000000000" step="1">
+                    <label for="voidStat_def">Physical DEF</label><input id="voidStat_def" type="number" min="0" max="1000000000" step="1">
+                    <label for="voidStat_speed">Tốc độ</label><input id="voidStat_speed" type="number" min="0" max="1000000000" step="1">
+                    <label for="voidStat_level">Cấp độ</label><input id="voidStat_level" type="number" min="1" max="1000" step="1">
+                    <button id="voidBossSave" type="submit" disabled>Lưu boss</button>
+                    <button id="voidBossReload" class="secondary" type="button">Tải lại boss</button>
+                    <p id="voidBossStatus" class="note" role="status"></p>
+                </form>
+            </section>
+            <div id="editor" hidden>
+                <div class="top">
+                    <div>
+                        <h2 id="title"></h2><span id="meta" class="badge"></span>
+                    </div><button id="reload" class="secondary" type="button">Tải lại dữ liệu</button>
+                </div>
+                <p class="note">Khi lưu, phiên game đang mở của tài khoản này sẽ ngắt để áp dụng dữ liệu an toàn. Người
+                    chơi chỉ cần tải lại game.</p>
+                <div class="columns">
+                    <section class="card">
+                        <h2>Dữ liệu nhân vật</h2>
+                        <form id="editForm">
+                            <fieldset id="editFields"><label for="nick">Tên nhân vật</label><input id="nick"
+                                    maxlength="24" autocomplete="off">
+                                <div id="groups"></div>
+                            </fieldset>
+                            <div class="actions"><button id="save" type="submit">Lưu thay đổi</button><span
+                                    class="note">Lưu vào MongoDB</span></div>
+                        </form>
+                    </section>
+                    <div>
+                        <section class="card">
+                            <h2>Thêm hero</h2>
+                            <p class="note">Thêm trực tiếp vào danh sách sở hữu. Hero mới chưa được xếp vào đội hình.
+                            </p>
+                            <form id="heroForm"><label for="heroSearch">Tìm theo tên hoặc ID</label><input type="search"
+                                    id="heroSearch" placeholder="Ví dụ: Obito…"><select id="heroChoice" size="7"
+                                    required aria-label="Chọn hero"></select><label for="heroLevel"
+                                    style="margin-top:14px">Cấp hero (1–159)</label><input type="number" id="heroLevel"
+                                    min="1" max="159" value="1" required><button id="addHero" type="submit"
+                                    style="margin-top:16px">+ Thêm hero</button></form>
+                        </section>
+                        <section class="card" style="margin-top:18px">
+                            <h2>Thêm item</h2>
+                            <p class="note">Thêm vật phẩm vào túi của tài khoản đang chọn.</p>
+                            <form id="itemForm"><label for="itemSearch">Tìm theo tên hoặc ID</label><input type="search"
+                                    id="itemSearch" placeholder="Ví dụ: Mecha hoặc 14130950…" autocomplete="off"><select
+                                    id="itemChoice" size="6" required aria-label="Chọn item"
+                                    style="margin-top:10px;width:100%"></select>
+                                <p id="itemHint" class="note" role="status">Nhập ít nhất 2 ký tự để tìm.</p><img
+                                    id="itemIcon" width="48" height="48" alt="Icon vật phẩm" hidden><label
+                                    for="itemAmount" id="itemAmountLabel">Số lượng (1–999)</label><input type="number" id="itemAmount"
+                                    min="1" max="999" step="1" value="1" required><button id="addItem" type="submit"
+                                    style="margin-top:16px" disabled>+ Thêm item</button>
+                            </form>
+                        </section>
+                        <section class="card" style="margin-top:18px">
+                            <h2>Hero đang sở hữu <span id="ownedCount"></span></h2>
+                            <div id="owned"></div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        'use strict';
+        var accounts = [], catalog = [], current = null, selectedId = null, busy = false, loading = false, dirty = false, loadSequence = 0;
+        var itemResults = [], itemTimer, itemSequence = 0;
+        var feastConfig = null, feastBusy = false;
+        function renderFeast() { var chosen = Number(el('feastHero').value) || (feastConfig && feastConfig.heroId), q = el('feastSearch').value.trim().toLowerCase(); el('feastHero').textContent = ''; catalog.filter(function (h) { return h.id === chosen || h.name.toLowerCase().includes(q) || String(h.id).includes(q) }).forEach(function (h) { el('feastHero').add(new Option(h.name + ' · #' + h.id, h.id)) }); if (chosen) el('feastHero').value = String(chosen) }
+        function applyFeast(data) { feastConfig = data; el('feastSearch').value = ''; el('feastHero').textContent = ''; renderFeast(); el('feastPrice').value = data.price; var hero = catalog.find(function (h) { return h.id === data.heroId }); el('feastCurrent').textContent = 'Đang áp dụng: ' + (hero ? hero.name : data.heroId) + ' · ' + data.price.toLocaleString('vi-VN') + ' điểm'; el('feastSave').disabled = false }
+        el('feastSearch').oninput = renderFeast;
+        el('feastReload').onclick = async function () { if (feastBusy) return; try { applyFeast(await api('anniversary-feast')); el('feastStatus').textContent = 'Đã tải cấu hình hiện tại.' } catch (e) { el('feastStatus').textContent = e.message } };
+        el('feastForm').onsubmit = async function (e) { e.preventDefault(); if (feastBusy || !feastConfig) return; feastBusy = true; el('feastSave').disabled = true; el('feastReload').disabled = true; try { applyFeast(await api('anniversary-feast', 'PATCH', { heroId: Number(el('feastHero').value), price: Number(el('feastPrice').value), revision: feastConfig.revision })); el('feastStatus').textContent = 'Đã lưu. Mở lại Anniversary Feast trong game để xem tướng mới.' } catch (error) { el('feastStatus').textContent = error.message } finally { feastBusy = false; el('feastSave').disabled = false; el('feastReload').disabled = false } };
+        var groups = [['Tiền tệ', [['altin', 'Vàng'], ['gumus', 'Bạc'], ['gumusHigh', 'Bạc (phần cao)'], ['kupon', 'Phiếu quà tặng'], ['askeriEmir', 'Lệnh quân sự']]], ['Nhân vật & VIP', [['level', 'Cấp độ', 1, 159], ['deneyim', 'Kinh nghiệm'], ['prestij', 'Uy tín'], ['vipLevel', 'Cấp VIP', 0, 15], ['vipExp', 'Điểm VIP']]], ['Linh hồn', [['generalsSoul', 'Linh hồn tướng'], ['blueSoul', 'Linh hồn xanh'], ['purpleSoul', 'Linh hồn tím'], ['goldSoulV', 'Linh hồn vàng'], ['orangeSoul', 'Linh hồn cam']]]];
+        function el(id) { return document.getElementById(id) }
+        function status(message, error) { el('status').textContent = message; el('status').className = error ? 'error' : '' }
+        async function api(url, method, data) { var r = await fetch('/auth/admin/' + url, { method: method || 'GET', credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, body: data ? JSON.stringify(data) : undefined }); var d = await r.json(); if (!r.ok) throw new Error(d.error || 'Không thể kết nối máy chủ.'); return d }
+        groups.forEach(function (group) { var fieldset = document.createElement('fieldset'), legend = document.createElement('legend'), grid = document.createElement('div'); legend.textContent = group[0]; grid.className = 'fields'; fieldset.appendChild(legend); group[1].forEach(function (field) { var wrap = document.createElement('div'), label = document.createElement('label'), input = document.createElement('input'); label.textContent = field[1]; label.htmlFor = 'field_' + field[0]; input.id = label.htmlFor; input.name = field[0]; input.type = 'number'; input.min = field[2] === undefined ? 0 : field[2]; input.max = field[3] || 2147483647; input.step = 1; input.required = true; wrap.appendChild(label); wrap.appendChild(input); grid.appendChild(wrap) }); fieldset.appendChild(grid); el('groups').appendChild(fieldset) });
+        function renderAccounts() { el('accounts').textContent = ''; var query = el('accountSearch').value.toLowerCase(); accounts.filter(function (a) { return a.username.toLowerCase().includes(query) }).forEach(function (a) { var b = document.createElement('button'), small = document.createElement('small'); b.type = 'button'; b.className = 'account' + (a.id === selectedId ? ' active' : ''); b.appendChild(document.createTextNode(a.username)); small.textContent = a.role + ' · ' + (a.online ? 'Đang mở game' : 'Ngoại tuyến'); b.appendChild(small); b.disabled = busy || loading; b.onclick = function () { load(a.id) }; el('accounts').appendChild(b) }); el('count').textContent = '(' + accounts.length + ')' }
+        function renderHeroes() { var chosen = Number(el('heroChoice').value), query = el('heroSearch').value.toLowerCase(); el('heroChoice').textContent = ''; catalog.filter(function (h) { return !current.heroes.some(function (owned) { return owned.id === h.id }) && (h.name.toLowerCase().includes(query) || String(h.id).includes(query)) }).forEach(function (h) { el('heroChoice').add(new Option(h.name + ' · #' + h.id + ' · Phẩm ' + h.quality, h.id)) }); if (chosen) el('heroChoice').value = String(chosen); el('addHero').disabled = busy || !current.hasCharacter || !el('heroChoice').options.length }
+        function itemPreview() { var item = itemResults.find(function (x) { return x.id === Number(el('itemChoice').value) }); var max = item && item.maxAdd === 99999 ? 99999 : 999; el('itemAmount').max = String(max); el('itemAmountLabel').textContent = 'S? l??ng (1?' + max + ')'; el('itemIcon').hidden = !item; if (item) { el('itemIcon').src = '/auth/admin/items/' + item.id + '/icon'; el('itemIcon').alt = item.name } controls() }
+        async function searchItems() { clearTimeout(itemTimer); var sequence = ++itemSequence, q = el('itemSearch').value.trim(); itemResults = []; el('itemChoice').textContent = ''; el('itemIcon').hidden = true; controls(); if (q.length < 2) { el('itemHint').textContent = 'Nhập ít nhất 2 ký tự để tìm.'; return } el('itemHint').textContent = 'Đang tìm…'; itemTimer = setTimeout(async function () { try { var data = await api('items?q=' + encodeURIComponent(q)); if (sequence !== itemSequence) return; itemResults = data.items; itemResults.forEach(function (x) { el('itemChoice').add(new Option(x.name + ' · #' + x.id + ' · Phẩm ' + x.quality, x.id)) }); el('itemHint').textContent = itemResults.length ? 'Chọn item và nhập số lượng.' : 'Không tìm thấy item.'; itemPreview() } catch (e) { if (sequence === itemSequence) el('itemHint').textContent = e.message } }, 180) }
+        function render() { el('empty').hidden = true; el('editor').hidden = false; el('title').textContent = current.username; el('meta').textContent = current.role + ' · ' + (current.hasCharacter ? current.nick : 'Chưa tạo nhân vật'); el('nick').value = current.nick; el('nick').disabled = !current.hasCharacter; Object.keys(current.values).forEach(function (k) { var input = el('field_' + k); if (input) input.value = current.values[k] }); el('owned').textContent = ''; current.heroes.forEach(function (h) { var row = document.createElement('div'), level = document.createElement('span'); row.className = 'owned-row'; row.appendChild(document.createTextNode(h.name)); level.textContent = 'Lv. ' + h.level; row.appendChild(level); el('owned').appendChild(row) }); if (!current.heroes.length) el('owned').textContent = 'Chưa có hero đồng hành.'; el('ownedCount').textContent = '(' + current.heroes.length + ')'; el('heroLevel').value = current.values.level; renderHeroes(); itemPreview(); dirty = false }
+        function controls() { ['itemSearch', 'itemChoice', 'itemAmount'].forEach(function (id) { el(id).disabled = busy || loading }); el('addItem').disabled = busy || loading || !current || !current.hasCharacter || !el('itemChoice').value; el('editFields').disabled = busy || loading; el('save').disabled = busy || loading; el('reload').disabled = busy || loading; el('heroSearch').disabled = busy || loading; el('heroChoice').disabled = busy || loading; el('heroLevel').disabled = busy || loading; el('addHero').disabled = busy || loading || !current || !current.hasCharacter || !el('heroChoice').options.length; renderAccounts() }
+        async function load(id) { if (busy || loading) return; if (dirty && !confirm('Bỏ các thay đổi chưa lưu của tài khoản hiện tại?')) return; loading = true; controls(); var sequence = ++loadSequence; try { status('Đang tải tài khoản…'); var account = await api('accounts/' + id); if (sequence !== loadSequence) return; current = account; selectedId = id; render(); status('Đang chỉnh sửa: ' + current.username) } catch (e) { status(e.message, true) } finally { loading = false; controls() } }
+        async function save(mode) { if (busy || loading || !current) return; var target = current.id, payload = { revision: current.revision }; if (mode === 'item') { if (dirty) { status('Hãy lưu hoặc tải lại các chỉnh sửa nhân vật trước khi thêm item.', true); return } payload.itemId = Number(el('itemChoice').value); payload.amount = Number(el('itemAmount').value) } else if (mode === 'hero') { if (dirty) { status('Hãy lưu hoặc tải lại các chỉnh sửa nhân vật trước khi thêm hero.', true); return } payload.heroId = Number(el('heroChoice').value); payload.level = Number(el('heroLevel').value) } else { payload.values = {}; el('editFields').querySelectorAll('input[name]').forEach(function (input) { payload.values[input.name] = Number(input.value) }); if (current.hasCharacter) payload.nick = el('nick').value } busy = true; controls(); status('Đang lưu cho ' + current.username + '…'); try { var result = await api('accounts/' + target + (mode === 'hero' ? '/heroes' : mode === 'item' ? '/items' : ''), mode === 'edit' ? 'PATCH' : 'POST', payload); current = result.account; accounts.forEach(function (a) { if (a.id === target) a.online = false }); render(); status((mode === 'item' ? 'Đã thêm ' + result.item.name + ' × ' + result.item.amount + ' cho ' : mode === 'hero' ? 'Đã thêm hero cho ' : 'Đã lưu tài khoản ') + current.username + '.' + (result.disconnected ? ' Phiên game đã ngắt; tải lại game để cập nhật.' : ' Thay đổi sẽ có khi vào game.')) } catch (e) { status(e.message, true) } finally { busy = false; controls() } }
+        el('itemSearch').oninput = searchItems; el('itemChoice').onchange = itemPreview; el('itemIcon').onerror = function () { this.hidden = true }; el('itemForm').onsubmit = function (e) { e.preventDefault(); save('item') };
+        el('accountSearch').oninput = renderAccounts; el('heroSearch').oninput = renderHeroes; el('reload').onclick = function () { load(selectedId) }; el('editForm').oninput = function () { dirty = true }; el('editForm').onsubmit = function (e) { e.preventDefault(); save('edit') }; el('heroForm').onsubmit = function (e) { e.preventDefault(); save('hero') }; window.addEventListener('beforeunload', function (e) { if (dirty) { e.preventDefault(); e.returnValue = '' } });
+        Promise.all([api('accounts'), api('heroes'), api('anniversary-feast')]).then(function (data) { accounts = data[0].accounts; catalog = data[1].heroes; applyFeast(data[2]); renderAccounts(); status(''); if (accounts.length) load(accounts[0].id) }).catch(function (e) { status(e.message, true) });
+        var voidConfig = null, voidBusy = false, voidSequence = 0, voidTimer;
+        var voidBossResults = [];
+        var voidStatKeys = ['hp','atk','def','speed','level'];
+        function renderVoidStats() { voidStatKeys.forEach(function(k) { el('voidStat_'+k).value = voidConfig.stats && voidConfig.stats[k] !== undefined ? voidConfig.stats[k] : ''; el('voidStat_'+k).placeholder = String(voidConfig.effectiveStats[k]); }); }
+        async function loadVoidBoss(reload) {
+            if (voidBusy) return;
+            var sequence = ++voidSequence, q = el('voidBossSearch').value.trim();
+            try {
+                var data = await api('void-region?q=' + encodeURIComponent(q));
+                if (sequence !== voidSequence || voidBusy) return;
+                if (reload || !voidConfig) { voidConfig = data.config; renderVoidStats(); }
+                var selected = reload ? data.config.enemyId : (Number(el('voidBossChoice').value) || voidConfig.enemyId);
+                el('voidBossChoice').textContent = '';
+                voidBossResults = data.bosses;
+                data.bosses.forEach(function (boss) { el('voidBossChoice').add(new Option(boss.name + ' · #' + boss.id + ' · Lv.' + boss.level, boss.id)) });
+                if (data.bosses.some(function (boss) { return boss.id === selected })) el('voidBossChoice').value = String(selected);
+                el('voidBossCurrent').textContent = 'Đang áp dụng: ' + data.config.name + ' · #' + data.config.enemyId + ' · HP ' + data.config.hp.toLocaleString('vi-VN');
+                el('voidBossSave').disabled = !el('voidBossChoice').value;
+            } catch (error) { if (sequence === voidSequence) el('voidBossStatus').textContent = error.message }
+        }
+        el('voidBossChoice').onchange = function () { var boss = voidBossResults.find(function(b) { return b.id === Number(el('voidBossChoice').value) }); if(boss) voidStatKeys.forEach(function(k) { el('voidStat_'+k).value = ''; el('voidStat_'+k).placeholder = String(boss.stats[k]); }); };
+        el('voidBossSearch').oninput = function () { clearTimeout(voidTimer); voidTimer = setTimeout(function () { loadVoidBoss(false) }, 180) };
+        el('voidBossReload').onclick = function () { loadVoidBoss(true) };
+        el('voidBossForm').onsubmit = async function (event) {
+            event.preventDefault(); if (voidBusy || !voidConfig) return;
+            var stats = {}; voidStatKeys.forEach(function(k) { var input = el('voidStat_'+k); if(input.value.trim() !== '') stats[k] = Number(input.value); });
+            voidBusy = true; ++voidSequence;
+            ['voidBossSave', 'voidBossReload', 'voidBossSearch', 'voidBossChoice'].concat(voidStatKeys.map(function(k) { return 'voidStat_'+k })).forEach(function (id) { el(id).disabled = true });
+            try {
+                voidConfig = await api('void-region', 'PATCH', { enemyId: Number(el('voidBossChoice').value), revision: voidConfig.revision, stats: stats });
+                el('voidBossStatus').textContent = 'Đã lưu boss. Mở lại Void Region trong game để áp dụng lượt boss mới.';
+            } catch (error) { el('voidBossStatus').textContent = error.message }
+            finally { voidBusy = false; ['voidBossSave', 'voidBossReload', 'voidBossSearch', 'voidBossChoice'].concat(voidStatKeys.map(function(k) { return 'voidStat_'+k })).forEach(function (id) { el(id).disabled = false }); loadVoidBoss(false) }
+        };
+        loadVoidBoss(true);
+    </script>
+</body>
+
+</html>

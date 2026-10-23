@@ -1,0 +1,20 @@
+'use strict';
+const fs=require('fs'),path=require('path'),{tablo,satir}=require('./paket');
+const file=()=>process.env.BLEACH_VOID_CONFIG||path.join(__dirname,'void-region.json');
+const DEFAULT={enemyId:12296031,revision:1};
+let bosses;
+const STAT_LIMITS={hp:[200,Number.MAX_SAFE_INTEGER],atk:[0,1000000000],def:[0,1000000000],speed:[0,1000000000],level:[1,1000]};
+function stats(value={}){if(!value||typeof value!=='object'||Array.isArray(value))throw Object.assign(Error('Chỉ số boss không hợp lệ.'),{status:400});const result={};for(const [key,n] of Object.entries(value)){const limit=STAT_LIMITS[key];if(!limit||!Number.isSafeInteger(n)||n<limit[0]||n>limit[1])throw Object.assign(Error('Chỉ số '+key+' không hợp lệ.'),{status:400});result[key]=n;}return result;}
+function baseStats(e){const a=typeof e.attacks==='string'?JSON.parse(e.attacks||'{}'):(e.attacks||{}),d=typeof e.defenses==='string'?JSON.parse(e.defenses||'{}'):(e.defenses||{});return {hp:Number(e.hp),atk:Math.max(5,Math.round(Math.max(Number(a.strength)||0,Number(a.agility)||0,Number(a.intellect)||0)*.45)),def:Math.max(Number(d.strength)||0,Number(d.agility)||0,Number(d.intellect)||0),speed:Math.max(0,Number(e.speed)||0),level:Number(e.level)||1};}
+
+// Playable Naruto profiles only; retired ninjas and summon-only units stay excluded.
+const NARUTO_PROFILES=['naruto-sage','obito-rage','pain-tendo','hashirama-final','mecha-naruto','itachi-rtn','sasuke-shinden'];
+function narutoHeroes(){return NARUTO_PROFILES.map(name=>require('./'+name+'.json').heroId);}
+function heroEnemy(id){const h=satir('BaseHero',id);if(!h)return null;const growth=require('./seviye').buyumeTemeli(id,100);if(!growth)return null;const unit={maxHp:Math.max(600,Math.round(growth.life*6)),atk:Math.max(20,Math.round(growth.combat*.6)),def:0,speed:Math.max(0,(Number(h.speed)||0)+(Number(h.speedGrow)||0)*99)};return {...h,_id:id,id:h.id,heroIcon:id,isBoss:1,level:100,hp:unit.maxHp,speed:unit.speed,attacks:JSON.stringify({strength:unit.atk/.45}),defenses:JSON.stringify({strength:unit.def}),source:'naruto'};}
+function resolve(id){return narutoHeroes().includes(id)?heroEnemy(id):satir('Enemy',id);}
+function catalog(){if(!bosses){const models=require('./tower-gold-models');const enemies=tablo('Enemy').liste.filter(e=>Number(e.isBoss)===1&&Number.isSafeInteger(Number(e.hp))&&Number(e.hp)>0&&models.allowed(e._id)&&models.allowed(Number(e.heroIcon)||e._id));const ninjas=narutoHeroes().filter(id=>models.allowed(id)).map(heroEnemy).filter(Boolean);bosses=[...enemies,...ninjas].map(e=>({id:e._id,name:e.name||String(e._id),level:Number(e.level)||1,hp:Number(e.hp),stats:baseStats(e),source:e.source||'enemy'}));}return bosses;}
+function read(){let value;try{value=JSON.parse(fs.readFileSync(file(),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;value=DEFAULT;}if(!Number.isSafeInteger(value.revision)||value.revision<1||!catalog().some(e=>e.id===value.enemyId))throw Error('Cấu hình boss Void Region không hợp lệ.');return {enemyId:value.enemyId,revision:value.revision,stats:stats(value.stats)};}
+function enemy(){const c=read(),e=resolve(c.enemyId);return {...e,hp:c.stats.hp??e.hp,speed:c.stats.speed??e.speed,level:c.stats.level??e.level};}
+function view(){const c=read(),e=enemy();return {...c,name:e.name,hp:Number(e.hp),roleId:Number(e.heroIcon)||e._id,effectiveStats:{...baseStats(resolve(c.enemyId)),...c.stats}};}
+function write(value,expected){const old=read();if(old.revision!==expected){const e=Error('Boss đã thay đổi. Tải lại cấu hình trước khi lưu.');e.status=409;throw e;}if(!catalog().some(e=>e.id===value.enemyId)){const e=Error('Chọn boss hợp lệ có đủ animation trong game.');e.status=400;throw e;}if(old.revision>=2147483646)throw Error('Phiên bản cấu hình đã đạt giới hạn.');const next={enemyId:value.enemyId,revision:old.revision+1,stats:stats(value.stats===undefined?(value.enemyId===old.enemyId?old.stats:{}):value.stats)},tmp=file()+'.tmp';fs.writeFileSync(tmp,JSON.stringify(next,null,2));fs.renameSync(tmp,file());return view();}
+module.exports={read,view,write,catalog,enemy};

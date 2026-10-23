@@ -14,7 +14,11 @@ def main():
   rootid=symbol.find('tags')[0].text;classname=symbol.find('names')[0].text
   bitmaps=[t for t in tags if t.get('type')=='DefineBitsLossless2Tag']
   plate=max(bitmaps,key=lambda t:int(t.get('bitmapWidth'))*int(t.get('bitmapHeight')))
-  ancestry={plate.get('characterID')}
+  # The largest bitmap is the moving dragon head, not the camera plane.
+  # Use the authored static black backdrop so its animation cannot move the camera.
+  background=next(t for t in tags if t.get('shapeId')=='1')
+  assert all(c.get('red')=='0' and c.get('green')=='0' and c.get('blue')=='0' for c in background.iter('color'))
+  ancestry={background.get('shapeId')}
   for _ in range(6):
    previous=len(ancestry)
    for tag in tags:

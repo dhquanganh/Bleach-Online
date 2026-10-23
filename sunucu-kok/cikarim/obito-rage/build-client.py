@@ -15,23 +15,23 @@ def main():
     ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Processors.Game.Battle.TBattleStage','-export','script',BASE/'original',source)
     text=(BASE/'original/scripts'/ROLE).read_text(encoding='utf-8')
     if 'function UpdateObitoVfx(' in text:raise RuntimeError('Obito client already installed; use the saved original source for rebuild')
-    token='      private var FKabutoVfxStarted:Boolean'
+    token='      private var FJiraiyaVfxStarted:Boolean'
     assert token in text
     text=text.replace(token,'      private var FObitoVfxStarted:Boolean = false;\n      private static var FObitoFxCache:Object = {};\n      private static var FObitoFxLoading:Object = {};\n'+token)
     token='         FSkilling = IsSkill(FSkillId);';assert text.count(token)==1
     text=text.replace(token,token+'\n         if(FId == 11120920) FObitoVfxStarted = false;')
-    token='         this.UpdateKabutoVfx();';assert text.count(token)==1;text=text.replace(token,token+'\n         this.UpdateObitoVfx();')
-    token='      public function PrepareDormantKabuto() : void';start=text.index(token);body=text.index('      {',start)+len('      {')
+    token='         this.UpdateJiraiyaVfx();';assert text.count(token)==1;text=text.replace(token,token+'\n         this.UpdateObitoVfx();')
+    token='      public function PrepareBattleRole() : void';start=text.index(token);body=text.index('      {',start)+len('      {')
     text=text[:body]+'\n         if(FId == 11120920) PreloadObitoVfx();'+text[body:]
     token='         SkillName = Skill.Name;';assert text.count(token)==1
     text=text.replace(token,'         if(FId == 11120920 && SkillId != 13120951 && SkillId != 13120952) {ShowUIEnd();return;}\n'+token)
     # Existing cached alpha-atlas player already handles bounded lifetime, mirroring and reset.
-    runtime=(BASE.parent/'kabuto-gnw/raster-vfx.as.txt').read_text(encoding='utf-8')
-    runtime=runtime[:runtime.index('      private function UpdateKabutoVfx(')].replace('Kabuto','Obito').replace('kabuto','obito')
+    runtime=(BASE.parent/'shared-animation/raster-vfx.as.txt').read_text(encoding='utf-8')
+    runtime=runtime.replace('RasterTemplate','Obito').replace('rasterTemplate','obito')
     manifest=json.loads((BASE/'vfx.json').read_text());layout=json.loads((BASE/'vfx-layout.json').read_text())
     manifest['layout']=layout['effects']
     for name,placement in layout['clips'].items():manifest['clips'][name].update(placement)
-    runtime=runtime.replace('__KABUTO_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
+    runtime=runtime.replace('__RASTER_VFX_MANIFEST__',json.dumps(json.dumps(manifest,separators=(',',':'))))
     runtime+=(BASE/'power-vfx.as.txt').read_text(encoding='utf-8')
     runtime+=(BASE/'status-text.as.txt').read_text(encoding='utf-8')
     animation=json.loads((BASE/'animation.json').read_text())
@@ -155,15 +155,15 @@ def main():
     active=active.replace(token,'''         if(this.FId == 11120920 && this.FTextureAttack.Count >= 2) _loc1_ = uint(this.FSkillId == 13120954 ? 1 : 0);
 '''+token)
     stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf-8')
-    token='kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "kabutoSkillVfx"';assert token in stage
-    stage=stage.replace(token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "obitoSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name.indexOf("obitoStatus_") == 0)')
+    token='battleRasterHost.getChildAt(battleRasterIndex).name == "mechaSkillVfx"';assert token in stage
+    stage=stage.replace(token,'('+token+' || battleRasterHost.getChildAt(battleRasterIndex).name == "obitoSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name.indexOf("obitoStatus_") == 0)')
     for name,value in [(ROLE,text),(ACTIVE,active),(STAGE,stage)]:
         f=BASE/'patched'/name;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(value,encoding='utf-8')
     output=BASE/'compiled.swf';ffdec('-onerror','abort','-importScript',source,output,BASE/'patched');rebuilt=output.read_bytes()
     assert [t for t in helper.tags(decoded) if t[0]!=82]==[t for t in helper.tags(rebuilt) if t[0]!=82]
     ffdec('-selectclass','Processors.Game.Battle.Character.TRole,Processors.Game.Battle.Character.TActive,Processors.Game.Battle.TBattleStage','-export','script',BASE/'verify',output)
     verified=(BASE/'verify/scripts'/ROLE).read_text(encoding='utf-8')
-    assert all(t in verified for t in ['UpdateObitoVfx','SUPPRESS IMMUNITY','19000501','UpdateKabutoVfx','UpdateJiraiyaVfx','copyPixels','obitoSkillVfx'])
+    assert all(t in verified for t in ['UpdateObitoVfx','SUPPRESS IMMUNITY','19000501','UpdateJiraiyaVfx','copyPixels','obitoSkillVfx'])
     if args.install:
         assert canonical.read_bytes()==original
         manifest=helper.PUBLIC/'2026090619/version.swf';raw=zlib.decompress(manifest.read_bytes());p=2;parts=[raw[:2]]

@@ -37,7 +37,7 @@ const ARTICLE_JSON = path.join(__dirname, '..', 'cikarim', 'veri-json', 'Article
 
 const GIRIS_BOYU = 30;
 const MAX_GIRIS = 2048;          // paket sismesin (250 giris ~ 7.5 KB)
-const MAX_ADET = 0xffff;        // Quantity u16
+const MAX_ADET = 0x7fff;        // Quantity u16
 const OP_NTF = 0x01180f02, OP_REDUCE = 0x01180f06;
 
 // ---- Odul (type,code) -> Article template (CONST_COMMON.RewardIDToTemplateID birebir) ----
@@ -146,10 +146,14 @@ function ekle(durum, oduller) {
     }
     if (kalanAdet > 0) {
       let kayit = d.esyalar.find(x => (x.code >>> 0) === code);
-      if (kayit) kayit.amount = Math.min(MAX_ADET, (Number(kayit.amount) || 0) + kalanAdet);
+      // EXP books retain an overflow reserve above the native u16 visible stack.
+      // liste/guncellemePaketi expose at most MAX_ADET; consumption automatically
+      // refills that visible stack from the persisted reserve.
+      const storageLimit=require('./admin-item-limits').isExpBook(article(code))?99999:MAX_ADET;
+      if (kayit) kayit.amount = Math.min(storageLimit, (Number(kayit.amount) || 0) + kalanAdet);
       else {
         if (d.esyalar.length >= MAX_GIRIS) continue;      // canta dolu
-        kayit = { code, amount: Math.min(MAX_ADET, kalanAdet) };
+        kayit = { code, amount: Math.min(storageLimit, kalanAdet) };
         d.esyalar.push(kayit);
       }
     }
@@ -195,6 +199,10 @@ function liste(durum) {
   for (const [k, n] of Object.entries(d.dusulen)) { const v = birlesik.get(Number(k) >>> 0); if (v) v.amount -= Number(n) || 0; }
   const out = [];
   for (const x of birlesik.values()) {
+    // Old/imported saves can contain unknown templates. The Flash inventory
+    // dereferences Article[IDTemplate] without a null check, aborting the bag.
+    // Retain the saved record, but never send it to the client.
+    if (!articleSet().has(x.code)) continue;
     if (!(x.amount > 0)) continue;
     if (KANCA && KANCA.kategoriler.has(x.kategori)) continue;   // ekipman ornekleri kancadan gelir
     x.amount = Math.min(MAX_ADET, x.amount);
@@ -207,8 +215,11 @@ function liste(durum) {
 
 /** 30 baytlik InventoryReference girisi. */
 function giris30(x) {
-  const b = Buffer.alloc(GIRIS_BOYU);
-  b[0] = (x.kategori || kategoriBul(x.code)) & 0xff;
+  const category = (x.kategori || kategoriBul(x.code)) & 0xff;
+  // Cloak references have only the 16-byte inventory header. Adding the
+  // 14-byte appliance tail shifts every following item in the client parser.
+  const b = Buffer.alloc(category === 20 ? 16 : GIRIS_BOYU);
+  b[0] = category;
   b.writeUInt32BE(x.code >>> 0, 1);
   b.writeUInt32BE((x.instance || instanceOf(x.code)) >>> 0, 5);
   b.writeUInt16BE(Math.max(1, Math.min(x.amount || 1, MAX_ADET)), 9);

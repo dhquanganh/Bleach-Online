@@ -148,7 +148,7 @@ function page() {
    <form class="item-add" id="addItemForm">
      <div><label for="itemSearch">Tìm vật phẩm</label><input id="itemSearch" type="search" placeholder="Nhập ít nhất 2 ký tự…" autocomplete="off"></div>
      <div><label for="itemChoice">Kết quả tìm kiếm</label><select id="itemChoice" size="5" required aria-label="Chọn vật phẩm"></select></div>
-     <div class="row"><label for="itemAmount">Số lượng (1–999)</label><input id="itemAmount" type="number" min="1" max="999" step="1" value="1" required></div>
+     <div class="row"><label for="itemAmount">Số lượng (1–999; sách EXP: 1–99999)</label><input id="itemAmount" type="number" min="1" max="999" step="1" value="1" required></div>
      <button class="save" type="submit">Thêm vào túi</button>
      <div class="msg" id="addItemMsg" aria-live="polite"></div>
    </form>
@@ -184,7 +184,9 @@ function page() {
  function setv(b,k,val){b.closest('form').querySelector('[name='+k+']').value=val;}
  async function onayla(url,soru){ if(!confirm(soru)) return; const r=await fetch(url,{method:'POST'}); const el=document.getElementById(url==='/sifirla'?'sifirMsg':'presetMsg'); el.textContent = r.ok?'✓ Đã áp dụng. Hãy khởi động lại trò chơi.':'✗ Đã xảy ra lỗi'; setTimeout(()=>location.reload(),1200); }
  const itemSearch=document.getElementById('itemSearch'),itemChoice=document.getElementById('itemChoice'),itemMsg=document.getElementById('addItemMsg');let itemSearchTimer;
- itemSearch.addEventListener('input',()=>{clearTimeout(itemSearchTimer);const q=itemSearch.value.trim();itemChoice.replaceChildren();if(q.length<2){itemMsg.textContent='Nhập ít nhất 2 ký tự để tìm.';return;}itemMsg.textContent='Đang tìm…';itemSearchTimer=setTimeout(async()=>{try{const r=await fetch('/api/admin/items?q='+encodeURIComponent(q));if(!r.ok)throw new Error();const list=await r.json();list.forEach(x=>itemChoice.add(new Option(x.label,x.id)));itemMsg.textContent=list.length?'Chọn vật phẩm trong danh sách.':'Không tìm thấy vật phẩm.';}catch(e){itemMsg.textContent='✗ Không tải được danh sách vật phẩm.';}},180);});
+ itemSearch.addEventListener('input',()=>{clearTimeout(itemSearchTimer);const q=itemSearch.value.trim();itemChoice.replaceChildren();if(q.length<2){itemMsg.textContent='Nhập ít nhất 2 ký tự để tìm.';return;}itemMsg.textContent='Đang tìm…';itemSearchTimer=setTimeout(async()=>{try{const r=await fetch('/api/admin/items?q='+encodeURIComponent(q));if(!r.ok)throw new Error();const list=await r.json();list.forEach(x=>{const option=new Option(x.label,x.id);option.dataset.maxAdd=x.maxAdd;itemChoice.add(option);});updateItemAmount();itemMsg.textContent=list.length?'Chọn vật phẩm trong danh sách.':'Không tìm thấy vật phẩm.';}catch(e){itemMsg.textContent='✗ Không tải được danh sách vật phẩm.';}},180);});
+ function updateItemAmount(){const option=itemChoice.selectedOptions[0],max=option&&option.dataset.maxAdd==='99999'?99999:999;document.getElementById('itemAmount').max=String(max);document.querySelector('label[for=itemAmount]').textContent='S? l??ng (1?'+max+')';}
+ itemChoice.addEventListener('change',updateItemAmount);
  document.getElementById('addItemForm').addEventListener('submit',async e=>{e.preventDefault();const button=e.currentTarget.querySelector('button[type=submit]');button.disabled=true;itemMsg.textContent='Đang thêm…';try{const r=await fetch('/api/admin/item-add',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({id:itemChoice.value,amount:document.getElementById('itemAmount').value})});const d=await r.json();if(!r.ok||!d.ok)throw new Error(d.hata||'Không thể thêm vật phẩm');itemMsg.textContent='✓ Đã thêm '+d.name+' × '+d.amount+(d.connected ? '. Túi đồ trong trò chơi đã được cập nhật.' : '. Vật phẩm đã lưu; sẽ có trong túi khi vào game.');}catch(err){itemMsg.textContent='✗ '+err.message;}finally{button.disabled=false;}});
  refreshStat(); setInterval(refreshStat,4000);
 </script></body></html>`;
@@ -370,7 +372,7 @@ function apiIsle(req, res) {
       return String(a.name || '').toLowerCase().includes(q) || idHex.toLowerCase().includes(q) || String(id).includes(q);
     }).slice(0, 60).map(a => {
       const id = parseInt(a.id, 16) >>> 0;
-      return { id, label: `${a.name || '(không tên)'} · ID ${id} · phẩm chất ${Number(a.quality) || 0}` };
+      return { id, maxAdd:require('./admin-item-limits').maxAdd(a), label: `${a.name || '(không tên)'} · ID ${id} · phẩm chất ${Number(a.quality) || 0}` };
     });
     return json(200, items);
   }
@@ -380,8 +382,9 @@ function apiIsle(req, res) {
       try {
         const input = JSON.parse(b || '{}');
         const id = Number(input.id), amount = Number(input.amount);
-        if (!Number.isSafeInteger(id) || id <= 0 || id > 0xffffffff || !Number.isInteger(amount) || amount < 1 || amount > 999) {
-          return json(400, { ok: false, hata: 'ID hoặc số lượng không hợp lệ (số lượng từ 1 đến 999)' });
+        const maxAmount=require('./admin-item-limits').maxAdd(require('./envanter').article(id));
+        if (!Number.isSafeInteger(id) || id <= 0 || id > 0xffffffff || !Number.isInteger(amount) || amount < 1 || amount > maxAmount) {
+          return json(400, { ok: false, hata: `Số lượng: nhập số nguyên từ 1 đến ${maxAmount}.` });
         }
         require('./ekipman');
         const envanter = require('./envanter');

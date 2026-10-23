@@ -1,0 +1,145 @@
+{
+  "version": "2026102310",
+  "files": [
+    {
+      "path": "Resources/Bin/combine/01000005.bin",
+      "sha256": "f9d239b2e761c0068436d435ae315a50addfd9ad314aa82f056646cd02c247fe"
+    },
+    {
+      "path": "Resources/Bin/combine/01000022.bin",
+      "sha256": "bfb4d934cd25b3027ee371bb56ece8d0d190a39fbba3646c9b2c578ae79b409d"
+    },
+    {
+      "path": "Resources/Bin/combine/01000032.bin",
+      "sha256": "39fcb91cf3acdb218e9569644401e7b45fcd79b340ccd17966df416b6c12ca94"
+    },
+    {
+      "path": "Resources/Bin/combine/0F000000.binPackage",
+      "sha256": "b4aed61c446a433945f42c6e6eb73d6a6067521fa8d3f9d173c845be9b8c6ad7"
+    },
+    {
+      "path": "Resources/Bin/combine/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-de/0F000000.binPackage",
+      "sha256": "8b93f932cddc2c94104c704234d16c107b6776e6b141079d6c1fc3fed97bd712"
+    },
+    {
+      "path": "Resources/Bin/dil-de/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-es/0F000000.binPackage",
+      "sha256": "a8873f813bd2e35e902090a3336fe725d1ae59eb003e4d2cfc8ff19b9f6196aa"
+    },
+    {
+      "path": "Resources/Bin/dil-es/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-fr/0F000000.binPackage",
+      "sha256": "754a56d105fb1e68e7013a63e37c08a663c9982418e8a5657e2eb0dd08a8d9eb"
+    },
+    {
+      "path": "Resources/Bin/dil-fr/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-id/0F000000.binPackage",
+      "sha256": "cf5f28691531d57f546d350f207fff661cd46654a40a3c347c62aeeefc2e120f"
+    },
+    {
+      "path": "Resources/Bin/dil-id/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-it/0F000000.binPackage",
+      "sha256": "e149db7a5f1bb8f59e44a1d270a9f1a7185cfbb221665faffe28e3b3f3111254"
+    },
+    {
+      "path": "Resources/Bin/dil-it/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-ja/0F000000.binPackage",
+      "sha256": "418bcc01057272bce43088203d35fe43df7e837d6e4ee098a54c6468921b002d"
+    },
+    {
+      "path": "Resources/Bin/dil-ja/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-pt/0F000000.binPackage",
+      "sha256": "4a204c3405363e59d3e8c409f86fc6d90b3f36108a059e025c0daf484a17135e"
+    },
+    {
+      "path": "Resources/Bin/dil-pt/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-ru/0F000000.binPackage",
+      "sha256": "80ea155fb8fbdc92e721f3b527e140428ef60fb8923d658490a6ce45a9197e53"
+    },
+    {
+      "path": "Resources/Bin/dil-ru/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-tr/0F000000.binPackage",
+      "sha256": "67e3b9413ab0284691d0629a87b657d6b83f4889c244bd527d8717a3962c552f"
+    },
+    {
+      "path": "Resources/Bin/dil-tr/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-vi/0F000000.binPackage",
+      "sha256": "9e8e61cb5946e54fdd84415166a5c7429b22e021babaaf992b337cd333db582e"
+    },
+    {
+      "path": "Resources/Bin/dil-vi/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/dil-zh/0F000000.binPackage",
+      "sha256": "5492f40292a1bfd97ad8b19ea9e0d58ce30e5e427f841dc48d299e6d38419099"
+    },
+    {
+      "path": "Resources/Bin/dil-zh/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "Resources/Bin/normal/01000005.bin",
+      "sha256": "f9d239b2e761c0068436d435ae315a50addfd9ad314aa82f056646cd02c247fe"
+    },
+    {
+      "path": "Resources/Bin/normal/01000022.bin",
+      "sha256": "bfb4d934cd25b3027ee371bb56ece8d0d190a39fbba3646c9b2c578ae79b409d"
+    },
+    {
+      "path": "Resources/Bin/normal/01000032.bin",
+      "sha256": "39fcb91cf3acdb218e9569644401e7b45fcd79b340ccd17966df416b6c12ca94"
+    },
+    {
+      "path": "Resources/Bin/normal/0F000000.binPackage",
+      "sha256": "dc850b97de7da77114cd2cd5015070db92234b1ff9acf594fbda969e3c6e7715"
+    },
+    {
+      "path": "Resources/Bin/normal/0F000001.binPackage",
+      "sha256": "8944b71239cdde165dea22b867cd8274b6de6d16f1e9154724913a216ee8ea08"
+    },
+    {
+      "path": "TApplication.swf",
+      "sha256": "5bede16e00d37546a39ff411dfbd762dd11b6d47c6607ff17cc39f190bd2b05c"
+    },
+    {
+      "path": "index.swf",
+      "sha256": "e7b5b76329602f48c64e314e957476057126eaad2d99239cae7fd37565bd7c30"
+    },
+    {
+      "path": "version.swf",
+      "sha256": "18f9ab0172fbc15507449dc059797e8f90d3cda01d5c2c5b39c2d1560c66ab82"
+    }
+  ]
+}

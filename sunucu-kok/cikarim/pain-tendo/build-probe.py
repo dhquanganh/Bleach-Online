@@ -102,7 +102,6 @@ def main():
         start=active.index('      protected function PlayFightIdle(')
         idle=active[start:active.index('      protected function PlayAttack(',start)].replace('protected function','public function')
         methods+=hp+restore+idle+'''
-      public function RestoreKabutoAfterRevival():void {report("ERROR wrong hero recovery");}
       public function SetupPainIdle(base:Object,finalForm:Object):void {
          var sequences:Array=[];
          for each(var clip:Object in [base,finalForm])sequences.push({GetAnimationFrameByIndex:IdleFrames(clip)});

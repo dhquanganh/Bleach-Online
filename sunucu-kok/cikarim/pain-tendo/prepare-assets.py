@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import importlib.util,json,math,hashlib,shutil
 BASE=Path(__file__).resolve().parent
-spec=importlib.util.spec_from_file_location('mme',BASE.parent/'kabuto-gnw/native-assets.py');mme=importlib.util.module_from_spec(spec);spec.loader.exec_module(mme)
+spec=importlib.util.spec_from_file_location('mme',BASE.parent/'shared-animation/mme.py');mme=importlib.util.module_from_spec(spec);spec.loader.exec_module(mme)
 SOURCE=BASE.parents[2]/'asset/Pain_Tendo_Six_Paths_Rinnegan'
 MAPPING={'idle':'C_idle','run':'C_run1_2','hit':'D_stand_behit1','dead':'C_dead','standard':'A_1hit','almighty':'SP_skill4','extreme':'SP_skill1','chase':'SP_skill2','laser':'SP_skill5','revive':'SP_skill7','final-revive':'SP_skill6','super':'SP_skill1'}
 MOVES={13120971:'almighty',13120972:'extreme',13120973:'extreme',13120974:'standard',13120975:'chase',13120976:'laser',13120977:'revive',13120978:'final-revive',13120979:'super'}

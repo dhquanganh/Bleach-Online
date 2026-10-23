@@ -86,7 +86,7 @@ def main():
     assert 'param1 == 13120953 || param1 == 13120954' in checked
     assert 'this.FCallBackDict[TYPE_ACTIVE_ATTACK] = this.FCallBackDict[TYPE_ACTIVE_SKILL]' in checked
     checked = (work / 'verify/scripts' / relative / 'TRole.as').read_text(encoding='utf-8')
-    assert 'this.ObitoStandardPose(_loc4_)' in checked and 'UpdateJiraiyaVfx' in checked and 'UpdateKabutoVfx' in checked
+    assert 'this.ObitoStandardPose(_loc4_)' in checked and 'UpdateJiraiyaVfx' in checked
     protected = swap(rebuilt)
     print('Verified Obito standard repair:', hashlib.sha256(protected).hexdigest())
     if args.install:

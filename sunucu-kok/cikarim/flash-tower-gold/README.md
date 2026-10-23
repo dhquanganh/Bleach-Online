@@ -2,6 +2,18 @@
 
 Independent portable event, state `oyuncu.json -> towerGold`. Trial Tower progress is separate.
 
+Combat audit (2026-10-22): malformed Tower containers and record maps recover
+without discarding a valid floor. Incomplete clear records no longer crash the
+preview, next clear, or faster-clear update; replay requires valid metadata and
+a decodable saved report. Preview arithmetic stays within safe integer floors,
+and the final representable floor cannot advance into an unsafe integer.
+Ordinary combo chance and damage use the battle's supplied random function,
+matching the rest of seeded combat. The default live random source is unchanged.
+Obito Rage's automatic once-per-round enhanced Kamui refresh is intentionally
+independent of paid Mystery cooldown; the floor-46 test distinguishes them.
+`tests/tower-gold-integrity.test.js` covers corrupt saves and seeded combo reports
+without account writes. Backend restart is required to load these changes.
+
 Tower battles require valid targets for row-restricted skills. If no living target remains in the required row, the actor uses a Standard without spending Mystery fury. The execution and scheduling paths use the same rule. Other battle modes retain their existing target fallback policy. This prevents floor 46's Shin Isshin/Urahara from repeatedly applying middle/back controls to a lone front-row Obito, blocking his Standards and Rage Roots while passive Kamui continues. Rage still requires HP below 50%; Roots retains its shared Mystery recovery and chakra cost. A short fight can end before Roots becomes ready; it is not forced into every battle.
 
 Regression: `node sunucu-kok/sunucu/tests/tower-gold-combat.test.js` reproduces the old floor-46 lock and verifies the repaired case, Roots at rounds 5/8/11 in the sustained fixture, real damage, both cooldown families, legal controls against valid row targets, round-limit losses, invalid inputs and corrupt saved replays. Tests clone fixture data and do not advance the player's actual floor.

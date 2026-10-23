@@ -23,6 +23,10 @@ def main():
   assert max(abs(a-b) for a,b in zip(flash,flash[1:]))<=.02401
   assert not any(flash[:60]),'flash must not cover the opening pose'
  profiles=json.loads((BASE/'presentation.json').read_text())
+ for effect,key in [('ZuozhuZZZZ_qilin','821'),('ZuozhuZZZZ_qilin_yan','1066')]:
+  profile=profiles[effect]
+  assert profile['displayWidth']==1800
+  assert json.loads((BASE/'cinematics.json').read_text())[effect]['impact']
  for effect in ['ZuozhuZZZZ_haolonghuo','ZuozhuZZZZ_haolonghuoyan']:
   profile=profiles[effect];clip=manifest['clips'][effect+'-31']
   fit=min(profile['displayWidth']/profile['coreWidth'],profile['sharpScale']*1.4)

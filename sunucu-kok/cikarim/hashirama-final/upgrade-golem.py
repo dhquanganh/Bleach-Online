@@ -5,7 +5,7 @@ import copy,importlib.util,json,sys
 BASE=Path(__file__).resolve().parent
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
 spec=importlib.util.spec_from_file_location('p',BASE.parent/'pain-tendo/prepare-assets.py');p=importlib.util.module_from_spec(spec);spec.loader.exec_module(p)
-spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed);n=packed.native
+spec=importlib.util.spec_from_file_location('packed',BASE.parent/'shared-animation/packing.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed);n=packed.native
 source=BASE.parents[2]/'asset/Hashirama_Senju_Final_Battle/assets/battle/role/left/11003341.swf'
 conf,images=p.decode(source);conf=copy.deepcopy(conf)
 action=next(a for a in conf.findall('action')if a.get('name')=='SP_skill_44');layer=next(l for l in action.findall('layer')if l.get('id')=='2')

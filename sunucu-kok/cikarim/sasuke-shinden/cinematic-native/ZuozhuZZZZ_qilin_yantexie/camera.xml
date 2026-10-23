@@ -2033,7 +2033,7 @@
         <item type="ShowFrameTag" forceWriteAsLong="false" />
         <item type="ShowFrameTag" forceWriteAsLong="false" />
         <item type="ShowFrameTag" forceWriteAsLong="false" />
-        <item type="PlaceObject2Tag" characterId="2" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="true" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="true" placeFlagHasName="false" placeFlagHasRatio="true" placeFlagMove="false" ratio="37">
+        <item type="PlaceObject2Tag" characterId="2" depth="1" forceWriteAsLong="false" placeFlagHasCharacter="true" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasMatrix="true" placeFlagHasName="true" placeFlagHasRatio="true" placeFlagMove="false" ratio="37" name="sasukeCinematicPlate">
           <matrix type="MATRIX" hasRotate="false" hasScale="false" nRotateBits="0" nScaleBits="0" nTranslateBits="14" translateX="-4425" translateY="-1448" />
           <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="0" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256" />
         </item>
@@ -2109,7 +2109,7 @@
           <matrix type="MATRIX" hasRotate="true" hasScale="true" nRotateBits="19" nScaleBits="18" nTranslateBits="14" rotateSkew0="1.9577026" rotateSkew1="-2.2959595" scaleX="1.1498718" scaleY="1.069046" translateX="-4385" translateY="-1307" />
           <colorTransform type="CXFORMWITHALPHA" alphaAddTerm="0" alphaMultTerm="0" blueAddTerm="168" blueMultTerm="87" greenAddTerm="101" greenMultTerm="87" hasAddTerms="true" hasMultTerms="true" nbits="9" redAddTerm="0" redMultTerm="87" />
         </item>
-        <item type="PlaceObject3Tag" blendMode="8" characterId="17" depth="39" forceWriteAsLong="false" placeFlagHasBlendMode="true" placeFlagHasCacheAsBitmap="false" placeFlagHasCharacter="true" placeFlagHasClassName="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasFilterList="false" placeFlagHasImage="false" placeFlagHasMatrix="true" placeFlagHasName="true" placeFlagHasRatio="true" placeFlagHasVisible="false" placeFlagMove="false" placeFlagOpaqueBackground="false" ratio="40" reserved="false" name="sasukeCinematicPlate">
+        <item type="PlaceObject3Tag" blendMode="8" characterId="17" depth="39" forceWriteAsLong="false" placeFlagHasBlendMode="true" placeFlagHasCacheAsBitmap="false" placeFlagHasCharacter="true" placeFlagHasClassName="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="true" placeFlagHasFilterList="false" placeFlagHasImage="false" placeFlagHasMatrix="true" placeFlagHasName="false" placeFlagHasRatio="true" placeFlagHasVisible="false" placeFlagMove="false" placeFlagOpaqueBackground="false" ratio="40" reserved="false">
           <matrix type="MATRIX" hasRotate="false" hasScale="false" nRotateBits="0" nScaleBits="0" nTranslateBits="15" translateX="-9625" translateY="-13537" />
           <colorTransform type="CXFORMWITHALPHA" alphaMultTerm="136" blueMultTerm="256" greenMultTerm="256" hasAddTerms="false" hasMultTerms="true" nbits="10" redMultTerm="256" />
         </item>

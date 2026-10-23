@@ -1,0 +1,5 @@
+PASS baseline reproduces own admission ignored
+PASS fixed own admission starts native battle, status before setup
+PASS another player does not start local battle
+PASS rejection clears pending without starting battle
+DONE

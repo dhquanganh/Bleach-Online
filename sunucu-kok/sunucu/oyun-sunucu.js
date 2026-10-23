@@ -330,9 +330,11 @@ require('http').createServer((req, res) => {
     try {
       // Include actual equipment instances from the persisted bag.
       const bag = handlers.envanterDepo.loadBagPaketi(durumMod.yukle());
-      const inventory = bag.subarray(4); // InventoryNtf omits the LoadBagResult error field.
       const connected = loggedInClients();
-      for (const session of connected) session.send(handlers.envanterDepo.OP_NTF, inventory, 'ADMIN-envanter');
+      // This is a complete persisted bag, including equipment instances. Use
+      // LoadBagResult so the client rebuilds its inventory and icon bindings;
+      // InventoryNtf is intended for individual instance updates.
+      for (const session of connected) session.send(0x01180f00, bag, 'ADMIN-envanter-reload');
       return json(200, { ok: true, connected: connected.length });
     } catch (e) { return json(500, { ok: false, hata: e.message }); }
   }
@@ -596,7 +598,7 @@ net.createServer(client => {
             const roleHi = durumVoid.roleIdHi >>> 0;
             const roleLo = durumVoid.roleIdLo >>> 0;
             const frames = savas.voidFightFrames(durumVoid);
-            const damage = etkinlik.voidDamageFromStatistics(savas.sonIstatistik());
+            const damage = savas.sonOyuncuHasari();
             const deadRet = etkinlik.voidFinishFight(durumVoid, roleHi, roleLo, damage);
             if (!deadRet) throw new Error('Void Region participant disappeared before battle resolution');
             const inflicted = deadRet.readBigInt64BE(8);
@@ -604,7 +606,7 @@ net.createServer(client => {
             const resultFrame = frames.find(frame => (frame.id >>> 0) === 0x01458001);
             const reportFrame = frames.find(frame => (frame.id >>> 0) === 0x01458000);
             if (!resultFrame || !reportFrame) throw new Error('Void battle report/result packet is incomplete');
-            const rankRet = etkinlik.voidRankPacket(durumVoid);
+            const fightInstance=durumVoid.bosDunya.instance,fightRevision=durumVoid.bosDunya.bossRevision;
             send(0x01188b02, enterRet, 'VOID-FightEnter');
             send(reportFrame.id, reportFrame.payload, 'VOID-BattleReport');
             send(resultFrame.id, resultFrame.payload, 'VOID-BattleResult');
@@ -614,8 +616,10 @@ net.createServer(client => {
                 LOG.note(cid, `Void Region battle resolved after ${resolutionDelay}ms; client disconnected before result packets`);
                 return;
               }
+              const latest=durumMod.yukle(),latestEvent=etkinlik.voidState(latest);
+              if(latestEvent.instance!==fightInstance||latestEvent.bossRevision!==fightRevision){send(0x01188b00,etkinlik.voidStatusPacket(latest),'VOID-boss-changed');return;}
               send(0x01188b04, deadRet, 'VOID-DeadRet');
-              send(0x01188b05, rankRet, 'VOID-RankRet');
+              send(0x01188b05, etkinlik.voidRankPacket(latest), 'VOID-RankRet');
               LOG.note(cid, `Void Region battle resolved: damage=${inflicted}`);
             }, resolutionDelay);
             LOG.note(cid, `Void Region battle started: front=${pk.payload[0]}, boss=${etkinlik.voidBossEnemyId()}, damage=${inflicted}; result packets in ${resolutionDelay}ms`);

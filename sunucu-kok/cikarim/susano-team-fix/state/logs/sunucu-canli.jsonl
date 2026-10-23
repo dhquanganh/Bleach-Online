@@ -1,0 +1,156 @@
+{"t":1792654314248,"ev":"open","conn":1,"peer":"127.0.0.1:58908"}
+{"t":1792654314841,"ev":"c2s","seq":1,"conn":1,"id":"0x1810000","name":"CS_LOBBY+0x0000","len":60,"hex":"00 10 76 6f 69 64 2d 70 72 6f 62 65 2d 74 6f 6b 65 6e 00 00 00 36 00 00 03 ce 00 10 76 6f 69 64 2d 70 72 6f 62 65 2d 74 6f 6b 65 6e 78 c3 dd e1 00 0a 31 37 39 32 36 34 30 30 30 30","loop":1}
+{"t":1792654314844,"ev":"s2c","conn":1,"id":"0x1180000","name":"SC_LOBBY+0x0000","len":8,"kaynak":"CEVAP-gercek"}
+{"t":1792654314885,"ev":"close","conn":1,"reason":"kapandi","up":60,"down":8,"packets":1,"opened":1792654314247}
+{"t":1792654315387,"ev":"open","conn":2,"peer":"127.0.0.1:58909"}
+{"t":1792654315417,"ev":"c2s","seq":2,"conn":2,"id":"0x1810001","name":"CS_LOBBY+0x0001","len":22,"hex":"5b 6c 6f 67 69 6e 20 74 6f 6b 65 6e 20 72 65 64 61 63 74 65 64 5d","loop":1}
+{"t":1792654315558,"ev":"s2c","conn":2,"id":"0x1180102","name":"SC_LOBBY+0x0102","len":3368,"kaynak":"replay[1/2]"}
+{"t":1792654316063,"ev":"c2s","seq":3,"conn":2,"id":"0x181a002","name":"CS_LOBBY+0xa002","len":0,"hex":"","loop":1}
+{"t":1792654316067,"ev":"s2c","conn":2,"id":"0x118a002","name":"SC_LOBBY+0xa002","len":20,"kaynak":"HANDLER"}
+{"t":1792654316087,"ev":"c2s","seq":4,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 11 e1 a3 26","loop":1}
+{"t":1792654316091,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
+{"t":1792654316096,"ev":"s2c","conn":2,"id":"0x1186700","name":"SC_LOBBY+0x6700","len":8,"kaynak":"PUSH-nemu"}
+{"t":1792654316199,"ev":"s2c","conn":2,"id":"0x1181906","name":"SC_LOBBY+0x1906","len":27,"kaynak":"ARENA-reward-state"}
+{"t":1792654316493,"ev":"c2s","seq":5,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":6,"hex":"00 01 00 00 00 03","loop":2}
+{"t":1792654316500,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":10,"kaynak":"HANDLER"}
+{"t":1792654316553,"ev":"c2s","seq":6,"conn":2,"id":"0x1812300","name":"CS_LOBBY+0x2300","len":0,"hex":"","loop":1}
+{"t":1792654316580,"ev":"s2c","conn":2,"id":"0x1182300","name":"SC_LOBBY+0x2300","len":362,"kaynak":"HANDLER"}
+{"t":1792654316580,"ev":"s2c","conn":2,"id":"0x1186500","name":"SC_LOBBY+0x6500","len":1,"kaynak":"PUSH-login"}
+{"t":1792654316630,"ev":"c2s","seq":7,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0d","loop":1}
+{"t":1792654316639,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":16,"kaynak":"HANDLER"}
+{"t":1792654316640,"ev":"c2s","seq":8,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 64","loop":2}
+{"t":1792654316644,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
+{"t":1792654316646,"ev":"c2s","seq":9,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 0c","loop":3}
+{"t":1792654316649,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":106,"kaynak":"HANDLER"}
+{"t":1792654316649,"ev":"c2s","seq":10,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 17","loop":4}
+{"t":1792654316651,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":124,"kaynak":"HANDLER"}
+{"t":1792654316652,"ev":"c2s","seq":11,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1a","loop":5}
+{"t":1792654316655,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":26,"kaynak":"HANDLER"}
+{"t":1792654316655,"ev":"c2s","seq":12,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1b","loop":6}
+{"t":1792654316658,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":92,"kaynak":"HANDLER"}
+{"t":1792654316658,"ev":"c2s","seq":13,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1c","loop":7}
+{"t":1792654316660,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":48,"kaynak":"HANDLER"}
+{"t":1792654316660,"ev":"c2s","seq":14,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 00 1d","loop":8}
+{"t":1792654316663,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":152,"kaynak":"HANDLER"}
+{"t":1792654316664,"ev":"c2s","seq":15,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 4f","loop":9}
+{"t":1792654316665,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":148,"kaynak":"HANDLER"}
+{"t":1792654316666,"ev":"c2s","seq":16,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 50","loop":10}
+{"t":1792654316668,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":162,"kaynak":"HANDLER"}
+{"t":1792654316669,"ev":"c2s","seq":17,"conn":2,"id":"0x1812302","name":"CS_LOBBY+0x2302","len":4,"hex":"00 00 20 55","loop":11}
+{"t":1792654316688,"ev":"s2c","conn":2,"id":"0x1182302","name":"SC_LOBBY+0x2302","len":116,"kaynak":"HANDLER"}
+{"t":1792654316753,"ev":"c2s","seq":18,"conn":2,"id":"0x1810800","name":"CS_LOBBY+0x0800","len":0,"hex":"","loop":1}
+{"t":1792654316761,"ev":"s2c","conn":2,"id":"0x1180800","name":"SC_LOBBY+0x0800","len":9,"kaynak":"HANDLER"}
+{"t":1792654316994,"ev":"c2s","seq":19,"conn":2,"id":"0x1815203","name":"CS_LOBBY+0x5203","len":0,"hex":"","loop":1}
+{"t":1792654317001,"ev":"s2c","conn":2,"id":"0x1185203","name":"SC_LOBBY+0x5203","len":4,"kaynak":"CEVAP-gercek"}
+{"t":1792654317016,"ev":"c2s","seq":20,"conn":2,"id":"0x1817100","name":"CS_LOBBY+0x7100","len":0,"hex":"","loop":1}
+{"t":1792654317024,"ev":"s2c","conn":2,"id":"0x1187100","name":"SC_LOBBY+0x7100","len":20,"kaynak":"HANDLER"}
+{"t":1792654317319,"ev":"c2s","seq":21,"conn":2,"id":"0x1813d09","name":"CS_LOBBY+0x3d09","len":0,"hex":"","loop":1}
+{"t":1792654317322,"ev":"s2c","conn":2,"id":"0x1183d09","name":"SC_LOBBY+0x3d09","len":1,"kaynak":"HANDLER"}
+{"t":1792654317322,"ev":"c2s","seq":22,"conn":2,"id":"0x1813d0d","name":"CS_LOBBY+0x3d0d","len":0,"hex":"","loop":1}
+{"t":1792654317324,"ev":"s2c","conn":2,"id":"0x1183d0d","name":"SC_LOBBY+0x3d0d","len":20,"kaynak":"HANDLER"}
+{"t":1792654317324,"ev":"c2s","seq":23,"conn":2,"id":"0x1813d07","name":"CS_LOBBY+0x3d07","len":0,"hex":"","loop":1}
+{"t":1792654317375,"ev":"s2c","conn":2,"id":"0x1183d07","name":"SC_LOBBY+0x3d07","len":50,"kaynak":"HANDLER"}
+{"t":1792654317376,"ev":"c2s","seq":24,"conn":2,"id":"0x1810200","name":"CS_LOBBY+0x0200","len":8,"hex":"01 60 7a 61 00 00 00 00","loop":1}
+{"t":1792654317380,"ev":"s2c","conn":2,"id":"0x1180200","name":"SC_LOBBY+0x0200","len":8,"kaynak":"CEVAP-gercek"}
+{"t":1792654317458,"ev":"c2s","seq":25,"conn":2,"id":"0x1811200","name":"CS_LOBBY+0x1200","len":0,"hex":"","loop":1}
+{"t":1792654317469,"ev":"s2c","conn":2,"id":"0x1181202","name":"SC_LOBBY+0x1202","len":26,"kaynak":"GOREV-kabul"}
+{"t":1792654317471,"ev":"s2c","conn":2,"id":"0x1181203","name":"SC_LOBBY+0x1203","len":182,"kaynak":"GOREV-biten"}
+{"t":1792654317472,"ev":"s2c","conn":2,"id":"0x1181200","name":"SC_LOBBY+0x1200","len":0,"kaynak":"GOREV-sendinfo"}
+{"t":1792654317701,"ev":"c2s","seq":26,"conn":2,"id":"0x1811a01","name":"CS_LOBBY+0x1a01","len":0,"hex":"","loop":1}
+{"t":1792654317704,"ev":"s2c","conn":2,"id":"0x1181a01","name":"SC_LOBBY+0x1a01","len":6,"kaynak":"HANDLER"}
+{"t":1792654317758,"ev":"c2s","seq":27,"conn":2,"id":"0x1815200","name":"CS_LOBBY+0x5200","len":0,"hex":"","loop":1}
+{"t":1792654317762,"ev":"s2c","conn":2,"id":"0x1185200","name":"SC_LOBBY+0x5200","len":2,"kaynak":"CEVAP-gercek"}
+{"t":1792654317833,"ev":"c2s","seq":28,"conn":2,"id":"0x1816a00","name":"CS_LOBBY+0x6a00","len":0,"hex":"","loop":1}
+{"t":1792654317854,"ev":"s2c","conn":2,"id":"0x1186a00","name":"SC_LOBBY+0x6a00","len":2212,"kaynak":"HANDLER"}
+{"t":1792654317878,"ev":"c2s","seq":29,"conn":2,"id":"0x1812000","name":"CS_LOBBY+0x2000","len":0,"hex":"","loop":1}
+{"t":1792654317884,"ev":"s2c","conn":2,"id":"0x1182000","name":"SC_LOBBY+0x2000","len":41,"kaynak":"HANDLER"}
+{"t":1792654317910,"ev":"c2s","seq":30,"conn":2,"id":"0x1810105","name":"CS_LOBBY+0x0105","len":3,"hex":"00 01 06","loop":1}
+{"t":1792654317915,"ev":"s2c","conn":2,"id":"0x1180105","name":"SC_LOBBY+0x0105","len":15,"kaynak":"HANDLER"}
+{"t":1792654317925,"ev":"c2s","seq":31,"conn":2,"id":"0x1810e07","name":"CS_LOBBY+0x0e07","len":0,"hex":"","loop":1}
+{"t":1792654317932,"ev":"s2c","conn":2,"id":"0x1180e07","name":"SC_LOBBY+0x0e07","len":8,"kaynak":"HANDLER"}
+{"t":1792654317933,"ev":"c2s","seq":32,"conn":2,"id":"0x1811906","name":"CS_LOBBY+0x1906","len":0,"hex":"","loop":1}
+{"t":1792654317936,"ev":"s2c","conn":2,"id":"0x1181908","name":"SC_LOBBY+0x1908","len":4,"kaynak":"CEVAP-gercek"}
+{"t":1792654317956,"ev":"c2s","seq":33,"conn":2,"id":"0x1812507","name":"CS_LOBBY+0x2507","len":0,"hex":"","loop":1}
+{"t":1792654317959,"ev":"s2c","conn":2,"id":"0x1182507","name":"SC_LOBBY+0x2507","len":4,"kaynak":"HANDLER"}
+{"t":1792654318002,"ev":"c2s","seq":34,"conn":2,"id":"0x1812517","name":"CS_LOBBY+0x2517","len":0,"hex":"","loop":1}
+{"t":1792654318009,"ev":"s2c","conn":2,"id":"0x1182517","name":"SC_LOBBY+0x2517","len":7,"kaynak":"HANDLER"}
+{"t":1792654318022,"ev":"c2s","seq":35,"conn":2,"id":"0x1811405","name":"CS_LOBBY+0x1405","len":0,"hex":"","loop":1}
+{"t":1792654318034,"ev":"s2c","conn":2,"id":"0x1181405","name":"SC_LOBBY+0x1405","len":28,"kaynak":"HANDLER"}
+{"t":1792654318034,"ev":"c2s","seq":36,"conn":2,"id":"0x1814101","name":"CS_LOBBY+0x4101","len":0,"hex":"","loop":1}
+{"t":1792654318064,"ev":"s2c","conn":2,"id":"0x1184101","name":"SC_LOBBY+0x4101","len":196,"kaynak":"HANDLER"}
+{"t":1792654318064,"ev":"c2s","seq":37,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 5f 66","loop":1}
+{"t":1792654318067,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318073,"ev":"c2s","seq":38,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 05","loop":2}
+{"t":1792654318077,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318078,"ev":"c2s","seq":39,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 18","loop":3}
+{"t":1792654318080,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318105,"ev":"c2s","seq":40,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 22","loop":4}
+{"t":1792654318111,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318111,"ev":"c2s","seq":41,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 2c","loop":5}
+{"t":1792654318115,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318125,"ev":"c2s","seq":42,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 36","loop":6}
+{"t":1792654318131,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318132,"ev":"c2s","seq":43,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 40","loop":7}
+{"t":1792654318134,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318146,"ev":"c2s","seq":44,"conn":2,"id":"0x1810101","name":"CS_LOBBY+0x0101","len":4,"hex":"00 a9 b1 4a","loop":8}
+{"t":1792654318149,"ev":"s2c","conn":2,"id":"0x1180104","name":"SC_LOBBY+0x0104","len":260,"kaynak":"HANDLER"}
+{"t":1792654318311,"ev":"c2s","seq":45,"conn":2,"id":"0x1811b00","name":"CS_LOBBY+0x1b00","len":0,"hex":"","loop":1}
+{"t":1792654318318,"ev":"s2c","conn":2,"id":"0x1181b00","name":"SC_LOBBY+0x1b00","len":40,"kaynak":"HANDLER"}
+{"t":1792654318344,"ev":"c2s","seq":46,"conn":2,"id":"0x1811500","name":"CS_LOBBY+0x1500","len":0,"hex":"","loop":1}
+{"t":1792654318347,"ev":"s2c","conn":2,"id":"0x1181500","name":"SC_LOBBY+0x1500","len":35,"kaynak":"CEVAP-gercek"}
+{"t":1792654318431,"ev":"c2s","seq":47,"conn":2,"id":"0x1810f00","name":"CS_LOBBY+0x0f00","len":1,"hex":"00","loop":1}
+{"t":1792654318483,"ev":"s2c","conn":2,"id":"0x1180f00","name":"SC_LOBBY+0x0f00","len":4927,"kaynak":"HANDLER"}
+{"t":1792654318483,"ev":"s2c","conn":2,"id":"0x1180f7f","name":"SC_LOBBY+0x0f7f","len":56,"kaynak":"ITEM-state"}
+{"t":1792654318495,"ev":"c2s","seq":48,"conn":2,"id":"0x1811600","name":"CS_LOBBY+0x1600","len":0,"hex":"","loop":1}
+{"t":1792654318500,"ev":"s2c","conn":2,"id":"0x1181600","name":"SC_LOBBY+0x1600","len":876,"kaynak":"HANDLER"}
+{"t":1792654318517,"ev":"c2s","seq":49,"conn":2,"id":"0x1810b05","name":"CS_LOBBY+0x0b05","len":0,"hex":"","loop":1}
+{"t":1792654318523,"ev":"s2c","conn":2,"id":"0x1180b05","name":"SC_LOBBY+0x0b05","len":36,"kaynak":"HANDLER"}
+{"t":1792654318907,"ev":"c2s","seq":50,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":10,"hex":"00 02 00 04 93 e1 00 04 93 e3","loop":3}
+{"t":1792654318918,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":18,"kaynak":"HANDLER"}
+{"t":1792654318920,"ev":"c2s","seq":51,"conn":2,"id":"0x1813904","name":"CS_LOBBY+0x3904","len":4,"hex":"00 00 00 00","loop":1}
+{"t":1792654318932,"ev":"s2c","conn":2,"id":"0x1183904","name":"SC_LOBBY+0x3904","len":258,"kaynak":"HANDLER"}
+{"t":1792654318933,"ev":"c2s","seq":52,"conn":2,"id":"0x1811e01","name":"CS_LOBBY+0x1e01","len":2,"hex":"00 00","loop":4}
+{"t":1792654318944,"ev":"s2c","conn":2,"id":"0x1181e01","name":"SC_LOBBY+0x1e01","len":2,"kaynak":"HANDLER"}
+{"t":1792654318946,"ev":"c2s","seq":53,"conn":2,"id":"0x1813500","name":"CS_LOBBY+0x3500","len":4,"hex":"00 00 00 00","loop":1}
+{"t":1792654318955,"ev":"s2c","conn":2,"id":"0x1183500","name":"SC_LOBBY+0x3500","len":142,"kaynak":"HANDLER"}
+{"t":1792654319311,"ev":"c2s","seq":54,"conn":2,"id":"0x1816d00","name":"CS_LOBBY+0x6d00","len":0,"hex":"","loop":1}
+{"t":1792654319316,"ev":"s2c","conn":2,"id":"0x1186d00","name":"SC_LOBBY+0x6d00","len":6,"kaynak":"HANDLER"}
+{"t":1792654319328,"ev":"c2s","seq":55,"conn":2,"id":"0x1817500","name":"CS_LOBBY+0x7500","len":0,"hex":"","loop":1}
+{"t":1792654319331,"ev":"s2c","conn":2,"id":"0x1187500","name":"SC_LOBBY+0x7500","len":8,"kaynak":"HANDLER"}
+{"t":1792654319386,"ev":"c2s","seq":56,"conn":2,"id":"0x1818700","name":"CS_LOBBY+0x8700","len":0,"hex":"","loop":1}
+{"t":1792654319392,"ev":"s2c","conn":2,"id":"0x1188700","name":"SC_LOBBY+0x8700","len":1662,"kaynak":"HANDLER"}
+{"t":1792654319418,"ev":"c2s","seq":57,"conn":2,"id":"0x1818a08","name":"CS_LOBBY+0x8a08","len":0,"hex":"","loop":1}
+{"t":1792654319421,"ev":"s2c","conn":2,"id":"0x1188a08","name":"SC_LOBBY+0x8a08","len":14,"kaynak":"CEVAP-gercek"}
+{"t":1792654333589,"ev":"c2s","seq":58,"conn":2,"id":"0x1813b00","name":"CS_LOBBY+0x3b00","len":0,"hex":"","loop":1}
+{"t":1792654333593,"ev":"s2c","conn":2,"id":"0x1183b00","name":"SC_LOBBY+0x3b00","len":57,"kaynak":"HANDLER"}
+{"t":1792654333691,"ev":"c2s","seq":59,"conn":2,"id":"0x1813b02","name":"CS_LOBBY+0x3b02","len":0,"hex":"","loop":1}
+{"t":1792654333694,"ev":"s2c","conn":2,"id":"0x1183b02","name":"SC_LOBBY+0x3b02","len":3,"kaynak":"HANDLER"}
+{"t":1792654345421,"ev":"c2s","seq":60,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":1}
+{"t":1792654350351,"ev":"c2s","seq":61,"conn":2,"id":"0x1818b00","name":"CS_LOBBY+0x8b00","len":0,"hex":"","loop":1}
+{"t":1792654350515,"ev":"s2c","conn":2,"id":"0x1188b00","name":"SC_LOBBY+0x8b00","len":319,"kaynak":"HANDLER"}
+{"t":1792654360224,"ev":"c2s","seq":62,"conn":2,"id":"0x1818b02","name":"CS_LOBBY+0x8b02","len":1,"hex":"02","loop":1}
+{"t":1792654360270,"ev":"s2c","conn":2,"id":"0x1188b02","name":"SC_LOBBY+0x8b02","len":29,"kaynak":"VOID-FightEnter"}
+{"t":1792654360271,"ev":"s2c","conn":2,"id":"0x1458000","name":"CS_CS+0x8000","len":376,"kaynak":"VOID-BattleReport"}
+{"t":1792654360271,"ev":"s2c","conn":2,"id":"0x1458001","name":"CS_CS+0x8001","len":7,"kaynak":"VOID-BattleResult"}
+{"t":1792654360272,"ev":"note","conn":2,"msg":"Void Region battle started: front=2, boss=11120960, damage=200000; result packets in 20000ms"}
+{"t":1792654360298,"ev":"c2s","seq":63,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":35,"hex":"00 21 72 65 70 6f 72 74 20 76 69 73 69 62 6c 65 3d 74 72 75 65 20 62 6c 6f 63 6b 65 64 3d 66 61 6c 73 65","loop":1}
+{"t":1792654360299,"ev":"note","conn":2,"msg":"FLASH-VOID report visible=true blocked=false"}
+{"t":1792654360350,"ev":"c2s","seq":64,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":10,"hex":"00 08 64 65 63 6f 64 65 64 20","loop":2}
+{"t":1792654360351,"ev":"note","conn":2,"msg":"FLASH-VOID decoded "}
+{"t":1792654360372,"ev":"c2s","seq":65,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":17,"hex":"00 0f 73 6b 69 6c 6c 73 2d 63 68 65 63 6b 65 64 20","loop":3}
+{"t":1792654360373,"ev":"note","conn":2,"msg":"FLASH-VOID skills-checked "}
+{"t":1792654360381,"ev":"c2s","seq":66,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":22,"hex":"00 14 72 65 73 6f 75 72 63 65 73 2d 72 65 71 75 65 73 74 65 64 20","loop":4}
+{"t":1792654360381,"ev":"note","conn":2,"msg":"FLASH-VOID resources-requested "}
+{"t":1792654372477,"ev":"c2s","seq":67,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":20,"hex":"00 12 6c 6f 61 64 69 6e 67 2d 63 6f 6d 70 6c 65 74 65 64 20","loop":5}
+{"t":1792654372478,"ev":"note","conn":2,"msg":"FLASH-VOID loading-completed "}
+{"t":1792654372622,"ev":"c2s","seq":68,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":16,"hex":"00 0e 73 74 61 67 65 2d 63 72 65 61 74 65 64 20","loop":6}
+{"t":1792654372622,"ev":"note","conn":2,"msg":"FLASH-VOID stage-created "}
+{"t":1792654372865,"ev":"c2s","seq":69,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":17,"hex":"00 0f 73 74 61 67 65 2d 63 72 65 64 69 74 65 64 20","loop":7}
+{"t":1792654372866,"ev":"note","conn":2,"msg":"FLASH-VOID stage-credited "}
+{"t":1792654375441,"ev":"c2s","seq":70,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":2}
+{"t":1792654378642,"ev":"c2s","seq":71,"conn":2,"id":"0x181f301","name":"CS_LOBBY+0xf301","len":17,"hex":"00 0f 70 6c 61 79 62 61 63 6b 2d 73 74 61 72 74 20","loop":8}
+{"t":1792654378643,"ev":"note","conn":2,"msg":"FLASH-VOID playback-start "}
+{"t":1792654380291,"ev":"s2c","conn":2,"id":"0x1188b04","name":"SC_LOBBY+0x8b04","len":16,"kaynak":"VOID-DeadRet"}
+{"t":1792654380294,"ev":"s2c","conn":2,"id":"0x1188b05","name":"SC_LOBBY+0x8b05","len":51,"kaynak":"VOID-RankRet"}
+{"t":1792654380295,"ev":"note","conn":2,"msg":"Void Region battle resolved: damage=200000"}
+{"t":1792654405487,"ev":"c2s","seq":72,"conn":2,"id":"0x1","name":"UNK+0x0001","len":0,"hex":"","loop":3}

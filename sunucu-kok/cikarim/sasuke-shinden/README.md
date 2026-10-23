@@ -94,6 +94,29 @@ include each Kirin impact and four fire phases. `compare-kirin-fire.py` creates
 
 Build in this order (FFDec path is configured in the build tools):
 
+Release 2026102132 renders both Kirin close-ups from their original native SWFs
+instead of the 664-pixel raster clips. The static black backdrop defines the
+camera; the moving dragon head does not. Uniform cover fitting fills the game
+viewport without stretching or mirrored lettering. Original 1572x846 artwork,
+vector shapes and the 79-frame timeline remain unchanged. Each SWF loads into
+an isolated ApplicationDomain, and playback follows the combat frame clock.
+`prepare-cinematics.py --ffdec <ffdec.jar>` prepares these two files before
+`build-client.py`; `verify-cinematics.py` checks source preservation.
+`validation/cinematic-x2/result.json` records 18 casts, no missing frames,
+no remaining layers and no errors, including camera coverage checks in both
+camps. These are Flash component checks, not a full interactive battle test.
+
+Release 2026102233 enlarges the separate ground lightning of both Kirin variants
+from 980 to 1800 presentation pixels. `prepare-native-impacts.py` ships the
+cleaned original SWFs (8.6 MB combined) and renders their native xia/shang
+timelines, avoiding large per-frame raster streams. The original ground anchor,
+frame clock and native cinematic remain intact. Each SWF has its own application
+domain; instances are pooled after playback. Kirin raster pages are excluded
+from the runtime manifest. Other effects retain trimmed reusable buffers.
+`verify-kirin.py` checks size; `verify-cinematics.py` checks exact native assets.
+Run `prepare-native-impacts.py` after `prepare-cinematics.py` and before
+`build-client.py` when regenerating the native manifest.
+
 ```powershell
 python sunucu-kok/cikarim/sasuke-shinden/prepare-vfx.py --ffdec <ffdec.jar>
 python sunucu-kok/cikarim/sasuke-shinden/optimize-vfx.py

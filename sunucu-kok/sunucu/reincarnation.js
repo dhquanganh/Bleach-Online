@@ -60,13 +60,11 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
   const blockedHeal=(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
   const heal=!ignoreDefensiveSkills&&!blockedHeal&&proc(target,6,rng);
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
-  const protection=!ignoreDefensiveSkills&&require('./kabuto-combat').protectFatal(target,damage);
-  if(protection)damage=protection.damage;
   damage=Math.min(Math.max(0,target.hp-(heal||nonfatal?1:0)),damage);
   target.hp-=damage;
-  let recovered=0;if(protection){recovered=protection.recovered;target.hp+=recovered;}else if(heal){recovered=target.maxHp-target.hp;target.hp=target.maxHp;}
+  let recovered=0;if(heal){recovered=target.maxHp-target.hp;target.hp=target.maxHp;}
   if(clearBuffs)target.activeBuffs={};
-  return {damage,recovered,clearShield,clearBuffs,absorbed,before,kabutoProtected:!!protection};
+  return {damage,recovered,clearShield,clearBuffs,absorbed,before};
 }
 function reward(paid=false){const configured=cv(61700009,{amount:10});return [{type:1,code:Number(cv(61700018,14100701)),amount:paid?100:(Number(configured.amount)||10)}];}
 function kur(y){

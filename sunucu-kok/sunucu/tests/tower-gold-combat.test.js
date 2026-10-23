@@ -20,7 +20,12 @@ assert(roots.length>=2,'Obito must use Underground Roots after entering Rage');
 for(let i=1;i<roots.length;i++)assert(roots[i].round-roots[i-1].round>=3);
 for(const act of roots)assert(act.targets.some(t=>t.targetCamp===1&&t.result.hurtHp>0),'Roots deals real damage');
 const kamui=own.filter(a=>a.skillEffectId===13120951);
-for(let i=1;i<kamui.length;i++)assert(kamui[i].round-kamui[i-1].round>=2);
+// Rage refreshes enhanced Kamui each round as a passive, independently of the
+// paid Mystery cooldown. Do not treat these visual-only refreshes as paid casts.
+const rageRound=own.find(a=>a.skillEffectId===13120959).round;
+const paidKamui=kamui.filter(a=>a.round<rageRound);
+for(let i=1;i<paidKamui.length;i++)assert(paidKamui[i].round-paidKamui[i-1].round>=2);
+for(const turn of report.turns.filter(t=>t.curTurn>rageRound))assert.equal(kamui.filter(a=>a.round===turn.curTurn).length,1,'Rage refreshes Kamui once per round');
 for(const turn of report.turns){
  const standards=turn.actives.filter(a=>a.activeCamp===0&&[13120953,13120954].includes(a.skillEffectId));
  assert(standards.length>=2,'No Kamui-only turn after controls lose valid targets');

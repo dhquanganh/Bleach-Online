@@ -33,7 +33,7 @@ def main():
  role=role.replace('         ++FCombatVfxSerial;','         ++FCombatVfxSerial;\n         if(FId==11120950){FMechaVfxStarted=false;if(FSkillId==13121109)FMechaBeast=true;}',1)
  role=role.replace('         this.UpdateHashiramaVfx();','         this.UpdateHashiramaVfx();\n         this.UpdateMechaVfx();',1)
  role=role.replace('            this.HashiramaStrikePose(_loc4_);','            this.HashiramaStrikePose(_loc4_);\n            this.MechaStrikePose(_loc4_);\n            this.FitMechaPose();',1)
- start=role.index('      public function PrepareDormantKabuto(');body=role.index('{',start)+1;role=role[:body]+'\n         if(FId==11120950)PreloadMechaVfx();\n'+role[body:]
+ start=role.index('      public function PrepareBattleRole(');body=role.index('{',start)+1;role=role[:body]+'\n         if(FId==11120950)PreloadMechaVfx();\n'+role[body:]
  start=role.index('      public function AddTextEffectByCMD(');body=role.index('{',start)+1
  labels='''
          var mechaMarker:uint=uint(param1.ResultInfo.BuffId);
@@ -59,7 +59,7 @@ def main():
  for texture in ['FightIdle','Run','Attacked']:
   token='         this.FCurSequence = this.FTexture'+texture+'.GetAnimationSequenceByIndex(_loc1_);';assert token in active
   active=active.replace(token,'         if(this.FId==11120950)_loc1_=uint(this.FMechaBeast && this.FTexture'+texture+'.Count>1?1:0);\n'+token,1)
- stage=(BASE/'original/scripts'/b.STAGE).read_text().replace('kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "hashiramaSkillVfx"','(kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "hashiramaSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "mechaSkillVfx")')
+ stage=(BASE/'original/scripts'/b.STAGE).read_text().replace('battleRasterHost.getChildAt(battleRasterIndex).name == "hashiramaSkillVfx"','(battleRasterHost.getChildAt(battleRasterIndex).name == "hashiramaSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name == "mechaSkillVfx")')
  formation=(BASE/'original/scripts'/b.FORMATION).read_text();formation=formation.replace('this.FSelectHero.Identifier == 11120940','(this.FSelectHero.Identifier == 11120940 || this.FSelectHero.Identifier == 11120950)').replace('this.FSelectHero.Identifier != 11120940','(this.FSelectHero.Identifier != 11120940 && this.FSelectHero.Identifier != 11120950)')
  optimizer=importlib.util.spec_from_file_location('optimizer',BASE/'optimize-runtime.py');opt=importlib.util.module_from_spec(optimizer);optimizer.loader.exec_module(opt)
  role=opt.optimize(role,extract)
@@ -70,7 +70,7 @@ def main():
  ff('-selectclass',classes,'-export','script',BASE/'verify',output)
  verified=(BASE/'verify/scripts'/b.ROLE).read_text()
  for token in ['UpdateMechaVfx','MechaStrikePose','mechaSkillVfx','13121108','UpdateHashiramaVfx','UpdatePainVfx','UpdateObitoVfx']:assert token in verified,token
- changed={'PrepareDormantKabuto','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}
+ changed={'PrepareBattleRole','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}
  for name in re.findall(r'      private (?:static )?function (\w+)\(',before):
   if name not in changed:assert extract(before,name)==extract(verified,name),name
  if a.install:

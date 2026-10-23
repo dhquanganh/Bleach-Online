@@ -3,7 +3,7 @@ from pathlib import Path
 from PIL import Image
 import importlib.util,json,re
 BASE=Path(__file__).resolve().parent
-spec=importlib.util.spec_from_file_location('m',BASE.parent/'kabuto-gnw/native-assets.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+spec=importlib.util.spec_from_file_location('m',BASE.parent/'shared-animation/mme.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 source=BASE.parents[2]/'asset/Hashirama_Senju_Final_Battle/assets/battle/role/left/11003341.swf'
 conf,images=m.decode(source);removed=0
 for frame in conf.iter('frame'):

@@ -4,7 +4,7 @@ from PIL import Image,ImageOps
 import argparse,copy,hashlib,importlib.util,json,shutil,struct,sys,zlib
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
-spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
+spec=importlib.util.spec_from_file_location('packed',BASE.parent/'shared-animation/packing.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;
 ps=importlib.util.spec_from_file_location('packing',BASE.parent/'mecha-naruto/model-packing.py');packing=importlib.util.module_from_spec(ps);ps.loader.exec_module(packing);native.texture_sequence=packing.packed_sequence
 CFG=json.loads((ROOT/'sunucu/sasuke-shinden.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13622301

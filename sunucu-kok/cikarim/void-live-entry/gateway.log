@@ -1,0 +1,36 @@
+[moduller] ekipman: 57 handler
+[moduller] savas-etkinlik: 81 handler
+[moduller] evcil-ek: 33 handler
+[arena] 15 bot units have cached character models
+[arena] 9 dungeon formation layouts available
+[moduller] ev: 61 handler
+[moduller] sosyal: 56 handler
+[moduller] 326 ek handler kaydedildi
+[savas] kazanan hero=11100001 (Ghostsword Male) | dusman=12101003 (Murciélago) | RoleModel=20185 Enemy=19590 Skill=8078
+[savas] REPLAY: 7 gercek savas (rapor+sonuc) -> oynatilacak
+[savas] yerelde dokusu olan skill efekti: 429
+[savas] fight opcode sayisi: 20
+[gorev] motor: 591 gorev yuklendi (durum-tabanli, seviye/on-gorev/kill kontrollu)
+kapsamli cevap yuklendi: 63 opcode
+harita: 28 gercek cevap istisnasi | ekstra: 1 | login push: 1 | VIP max: 10
+veri.json: {"_aciklama":"VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.","altin":49872052,"gumus":124317355,"gumusHigh":0,"kupon":537016,"askeriEmir":501700,"vipLevel":0,"vipExp":0,"level":158,"nick":"qa","tumKarakterler":false,"savasIstatistigiOtomatik":false,"generalsSoul":1380,"blueSoul":50,"purpleSoul":195,"goldSoulV":1095,"orangeSoul":0,"herolar":[11120940,11120930,11120920,11120950,11120960,11120901,11120970],"deneyim":1219275241,"prestij":278300,"rutbe":40100027,"illusionCredits":{"20745:1:1569789919":true,"aizen:20746:6ad4de542b68ce1713162e25":true,"aizen:20747:6ad4de542b68ce1713162e25":true}}
+[karakter] {"nick":"qa","anaId":11100006,"rol":"Hollowblade Female"} | ana hero id: 11100006
+[seviye] {"anaLv":158,"anaExp":1219275241,"need":2017095208,"partnerKayit":7} | [beceri] {"ana":13106654,"anaAd":"Tiger Roars","anaLv":3,"acik":6,"dugum":27} | partner(devsirilen): 0 | kadro: {"11100006":6,"11120901":0,"11120920":0,"11120930":0,"11120940":0,"11120950":0,"11120960":0,"11120970":8}
+[bleachtrain] {"gorev":184,"alinan":0,"paket":0,"sartsiz":0}
+[kontrol] http://127.0.0.1:10047 (topup/hesap/arena-matching)
+[oyun-sunucu] 127.0.0.1:10045 (replay + para enjeksiyon)
+[policy] 127.0.0.1:1843
+  [char] altin=49872052 gumus=124317355 kupon=537016 vip=0 ruhlar yazildi
+  [char] ana hero level=158 exp=1219275241 pos=6 skill=13106654
+  [char] HEROLAR: +7 hero (0 devsirilen; giris sonu 570), paket 3023B
+  [char] ekipman yamasi: 129 ornek, paket 3368B
+(node:2500) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[panel] CustomHeros: 138 karakter
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[savas] stage 0 "Void Region: Naruto [Sage Mode]" -> 1 dusman: 11120901@pos6
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable

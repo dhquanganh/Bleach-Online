@@ -9,6 +9,7 @@ def main():
  names=['PreloadSasukeVfx','SasukePinPages','PumpSasukeVfxQueue','LoadSasukeVfxAtlas','TrimSasukeVfxCache','SasukeFirstAtlas','PlaySasukeVfxAsset','FitSasukePose','SasukeBackdrop','SasukeVfxManifest','UpdateSasukeVfx','ShowSasukeVfx','PlaySasukeEffect','ShowSasukeScreenFlash','ShowSasukeGenjutsu']
  if 'function ShowSasukeScreenFlash(' not in production:names.remove('ShowSasukeScreenFlash')
  if 'function PlaySasukeCinematic(' in production:names+=['LoadSasukeCinematic','PlaySasukeCinematic']
+ if 'function PlaySasukeNativeImpact(' in production:names+=['PlaySasukeNativeImpact']
  has_clone='function ShowSasukeCrowClone(' in production
  if has_clone:names+=['ShowSasukeCrowClone','ClearSasukeCrowClone']
  methods='\n'.join(b.m.extract(production,n) for n in names).replace('TRole','ProbeRole')
@@ -16,6 +17,8 @@ def main():
  methods=methods.replace('layer.name = "sasukeSkillVfx";','layer.name = "sasukeSkillVfx";if(ExternalInterface.available)ExternalInterface.call("vfxProbe","VFX_ASSET "+name);')
  methods=methods.replace('               layer.visible = buffer != null;','               if(ExternalInterface.available)ExternalInterface.call("vfxProbe","MISSING_FRAME "+name+" frame="+frame);\n               layer.visible = buffer != null;',1)
  methods=methods.replace('            if(!entry.ready)return;','            if(!entry.ready){if(ExternalInterface.available)ExternalInterface.call("vfxProbe","ERROR cinematic not ready "+name);return;}')
+ methods=methods.replace('if(!entry.ready)return;','if(!entry.ready){if(ExternalInterface.available)ExternalInterface.call("vfxProbe","ERROR native impact not ready "+name);return;}')
+ methods=methods.replace('if(movies==null){movies=','if(movies==null){if(ExternalInterface.available)ExternalInterface.call("vfxProbe","NATIVE_IMPACT "+name);movies=')
  methods=methods.replace('               movie.stop();layer.addChild(movie);','               movie.stop();layer.addChild(movie);if(ExternalInterface.available)ExternalInterface.call("vfxProbe","CINEMATIC "+name);')
  methods=methods.replace('            backdrop.visible=movie.getChildByName(String(meta.plateName))!=null;','            backdrop.visible=movie.getChildByName(String(meta.plateName))!=null;\n            if(backdrop.visible){var plane:DisplayObject=movie.getChildByName(String(meta.plateName));var covered:Rectangle=plane.getBounds(layer);if(covered.left>.5 || covered.top>.5 || covered.right<width-.5 || covered.bottom<height-.5){if(ExternalInterface.available)ExternalInterface.call("vfxProbe","ERROR cinematic coverage "+covered);}}')
  methods=methods.replace('private function','public function').replace('private static function','public static function')

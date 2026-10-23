@@ -662,14 +662,18 @@ function kur(y) {
     return new Y().u32(0).done();
   };
   // --- Yesim ---
-  const gemSonraki = tpl => { const a = article(tpl); if (!a) return 0; const n = tablo('Article').liste.find(x => Number(x.majorType) === 3 && Number(x.minorType) === Number(a.minorType) && Number(x.level) === Number(a.level) + 1); return n ? n._id : 0; };
+  const gemSonraki = tpl => { const stone=baseStone(tpl),next=stone&&Number(stone.nextId);return next&&baseStone(next)&&Number(article(next)?.majorType)===3?next:0; };
   H['0x01811100'] = ({ payload, durum, kaydet }) => {
     const o = new O(payload); const mode = o.i8(); o.u32(); const gTpl = o.u32(); const count = o.u16(); const lvl = o.i8();
     const birlestir = (tpl, n) => {
+      if(Number(article(tpl)?.majorType)!==3||!baseStone(tpl))return 0;
       const nx = gemSonraki(tpl);
       if (!nx || !n || envanter.mevcut(durum, tpl) < 2 * n) return 0;
-      envanter.dus(durum, tpl, 2 * n);
-      const ek = envanter.ekle(durum, [{ code: nx, amount: n }]);
+      const trial=structuredClone(durum),before=envanter.mevcut(trial,nx);
+      envanter.dus(trial, tpl, 2 * n);
+      const ek = envanter.ekle(trial, [{ code: nx, amount: n }]);
+      if(envanter.mevcut(trial,nx)!==before+n)return 0;
+      durum.envanter=trial.envanter;
       const g = envanter.guncellemePaketi(durum, tpl, envanter.instanceOf(tpl));
       if (g) ekOnce(g.id, g.payload, 'YESIM-esya');
       const p = envanter.kazancPaketi(durum, ek);
@@ -677,8 +681,9 @@ function kur(y) {
       return n;
     };
     let synthesized = 0;
-    if (mode === 0) { synthesized = birlestir(gTpl, Math.max(1, count)); }
-    else { const hedef = Math.max(1, count || lvl || 2); for (const x of envanter.liste(durum)) { if (x.kategori !== 3) continue; let tpl = x.code; let a = article(tpl); while (a && Number(a.level) < hedef) { const n = Math.floor(envanter.mevcut(durum, tpl) / 2); if (!n) break; const made = birlestir(tpl, n); if (!made) break; synthesized += made; tpl = gemSonraki(tpl); a = article(tpl); } } }
+    if (mode === 0) { if(count<1||count>32767)return new Y().u8(1).done();synthesized = birlestir(gTpl, count); }
+    else if(mode===1) { const hedef = count || lvl;if(hedef<1||hedef>12)return new Y().u8(1).done();for (const x of envanter.liste(durum)) { if (x.kategori !== 3) continue; let tpl = x.code; let a = article(tpl); while (a && Number(a.level) < hedef) { const n = Math.floor(envanter.mevcut(durum, tpl) / 2); if (!n) break; const made = birlestir(tpl, n); if (!made) break; synthesized += made; tpl = gemSonraki(tpl); a = article(tpl); } } }
+    else return new Y().u8(1).done();
     if (!synthesized) return new Y().u8(1).done();
     if (olay && typeof olay.say === 'function') olay.say(durum, 'gemSynth', 1);
     kaydetS(kaydet, durum);

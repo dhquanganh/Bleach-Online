@@ -16,7 +16,7 @@ def main():
  after=after.replace('      private function ShowItachiVfx(', (B/'clone.as.txt').read_text()+'\n\n      private function ShowItachiVfx(',1)
  after=client.inject(after,'ShowItachiVfx','         if(skill==13121207)ShowItachiCrowClone();')
  after=client.inject(after,'Reset','         ClearItachiCrowClone();')
- after=client.inject(after,'PrepareDormantKabuto','         ClearItachiCrowClone();')
+ after=client.inject(after,'PrepareBattleRole','         ClearItachiCrowClone();')
  token='                  this.FChain.UpdateRemainNum(CommandObj.turnNumber);';assert stage.count(token)==1
  stage_after=stage.replace(token,'                  for each(var crowRole:TRole in this.FPlayerRoleMgr)if(crowRole!=null)crowRole.ClearItachiCrowClone();\n'+token)
  for rel,text in [(ROLE,after),(STAGE,stage_after)]:
@@ -25,7 +25,7 @@ def main():
  rebuilt=(B/'compiled.swf').read_bytes();assert [t for t in client.h.tags(source) if t[0]!=82]==[t for t in client.h.tags(rebuilt) if t[0]!=82]
  client.ff('-selectclass',classes,'-export','script',B/'verify',B/'compiled.swf')
  checked=0
- for rel,before,allowed in [(ROLE,role,{'ShowItachiVfx','Reset','PrepareDormantKabuto'}),(STAGE,stage,{'NextCommand'})]:
+ for rel,before,allowed in [(ROLE,role,{'ShowItachiVfx','Reset','PrepareBattleRole'}),(STAGE,stage,{'NextCommand'})]:
   actual=(B/'verify/scripts'/rel).read_text(encoding='utf-8')
   for name in re.findall(r'      (?:override )?(?:public|private|protected) (?:static )?function (\w+)\(',before):
    if name not in allowed:assert client.m.extract(before,name)==client.m.extract(actual,name),name;checked+=1

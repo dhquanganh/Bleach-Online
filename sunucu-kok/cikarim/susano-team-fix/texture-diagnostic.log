@@ -1,0 +1,10 @@
+BOOT /game.swf
+INIT child document loaded
+AUTO CLICK 399,33
+AUTO CLICK 220,124
+AUTO CLICK 374,463
+AUTO CLICK 870,524
+AUTO CLICK 1037,477
+SKILL-FAULT id=11120970 skill=13121309 sequences=1 fallback=true RangeError: Error #1125
+RUNTIME ERROR RangeError: Error #1125
+null

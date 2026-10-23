@@ -2,9 +2,12 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
 const root=path.resolve(__dirname,'..'),event=require(path.join(root,'savas-etkinlik')),levels=require(path.join(root,'seviye')),battle=require(path.join(root,'savas')),codec=require(path.join(root,'kodek'));
 const d=JSON.parse(fs.readFileSync(path.join(root,'oyuncu.json'),'utf8'));
-const main=levels.anaId(),form=event.voidForm(d,main);
+const main=levels.anaId();d.kadro={[main]:6,11120920:7,11120950:11};delete d.bosDunya;
+const form=event.voidForm(d,main);
 assert(form.some(h=>h.battlePos===7));assert(form.some(h=>h.battlePos===11));assert(form.some(h=>h.heroId===main));
-assert(new Set(form.map(h=>h.battlePos)).size===form.length);assert(form.every((h,i)=>h.pos===i+1&&h.pos<=6));
+assert(new Set(form.map(h=>h.battlePos)).size===form.length);assert(form.every((h,i)=>h.pos===i+1&&h.pos<=7));
+const seven={...d,kadro:{[main]:1,11120920:2,11120950:3,11120960:4,11120970:5,11120980:6,11120990:7,11120991:8}};
+const sevenForm=event.voidForm(seven,main);assert.equal(sevenForm.length,7);assert(sevenForm.some(h=>h.heroId===main));assert.equal(new Set(sevenForm.map(h=>h.battlePos)).size,7);
 // Initialize the real event and submit the normalized snapshot without touching disk.
 const H=event.kur({seviye:levels,ekSonra:()=>{},paraHarca:()=>Buffer.alloc(1),odulVer:()=>{},olay:{say:()=>{}},awardOf:()=>[]});
 H['0x01818b00']({durum:d,kaydet:()=>{}});H['0x01818b01']({durum:d,kaydet:()=>{}});

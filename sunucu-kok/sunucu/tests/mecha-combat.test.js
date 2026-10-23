@@ -10,7 +10,7 @@ for(const camp of [0,1])for(let pos=1;pos<=15;pos++){
  n.startRound(ctx,2);m.roundStart(ctx);ctx.chakra[camp]=51;assert.equal(n.useStandard(ctx,u,[u]).id,m.config.beam.id);
  u.hp=u.maxHp*.6;ctx.chakra[camp]=60;assert.equal(n.useMystery(ctx,u).id,m.config.mystery.id);assert.equal(ctx.chakra[camp],20);assert.equal(n.useMystery(ctx,u),null);
  n.startRound(ctx,4);m.roundStart(ctx);u.hp=u.maxHp*.6+1;ctx.chakra[camp]=40;assert.equal(n.useMystery(ctx,u).id,m.config.highHpMystery.id);
- f=fixture(camp,pos);({u,ctx,enemies,ally}=f);enemies[7].hp=10000;let frame=strike(f,m.config.standard);assert.equal(frame.comboTarget,enemies[7]);assert.equal(enemies[7].kabutoArmorSuppressedUntil,1);
+ f=fixture(camp,pos);({u,ctx,enemies,ally}=f);enemies[7].hp=10000;let frame=strike(f,m.config.standard);assert.equal(frame.comboTarget,enemies[7]);assert.equal(enemies[7].armorSuppressedUntil,1);
  assert.equal(s.value(u,'atk'),1150);assert.equal(s.value(u,'critRate'),.08);
  for(let i=0;i<8;i++)strike(f,m.config.beam);assert.equal(u.mechaGrowth,6);assert.equal(u.mechaGrowthThisRound,6);assert.equal(p.mysteryCost(ctx,ally,{chakraCost:40}),0);
  n.startRound(ctx,2);m.roundStart(ctx);assert.equal(p.mysteryCost(ctx,ally,{chakraCost:40}),40);assert.equal(u.mechaGrowth,6);

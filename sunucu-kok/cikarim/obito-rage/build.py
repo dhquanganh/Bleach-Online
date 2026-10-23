@@ -4,7 +4,7 @@ from PIL import Image,ImageOps
 import argparse,copy,hashlib,importlib.util,json,shutil,struct,sys,zlib
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
-spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
+spec=importlib.util.spec_from_file_location('packed',BASE.parent/'shared-animation/packing.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;CFG=json.loads((ROOT/'sunucu/obito-rage.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13621951
 SOURCE=ROOT.parent/'asset/Extracted_Obito_Rage'
 MOVES=[CFG[k] for k in ['mystery','rageMystery','standard','rageStandard']]+CFG['chases']+CFG['rageChases']+[CFG['transformation']]

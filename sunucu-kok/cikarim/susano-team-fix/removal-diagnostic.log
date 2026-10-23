@@ -1,0 +1,80 @@
+BOOT /game.swf
+INIT child document loaded
+AUTO CLICK 399,33
+AUTO CLICK 220,124
+AUTO CLICK 374,463
+AUTO CLICK 870,524
+AUTO CLICK 1037,477
+AUTO CLICK 750,630
+RUNTIME ERROR Error: Error #2094
+Error: Error: Error #2094
+	at TApplication/fault()
+	at Processors.Game.Battle.Character::TRole/ShowHashiramaStatusText()
+	at Processors.Game.Battle.Character::TRole/AddTextEffectByCMD()
+	at Processors.Game.Battle.Character::TRole/PassiveSkillPlay()
+	at Processors.Game.Battle::TBattleStage/PerformNextCommand()
+	at Processors.Game.Battle::TBattleStage/NextCommand()
+	at Processors.Game.Battle::TBattleHandle$/PulsePlaybackTimers()
+	at Processors.Game.Battle::TBattleHandle/LogicsPerform()
+	at Processors::TProcessor/LogicsProcess()
+	at Processors::TProcessor/LogicsTraverse()
+	at Processors::TProcessor/LogicsProcess()
+	at TApplication/Process_Logics()
+	at TApplication/Process()
+	at TApplication/StageOnEnterFrame()
+EVENT HISTORY
+
+RUNTIME ERROR Error: Error #2094
+Error: Error: Error #2094
+	at TApplication/fault()
+	at Processors.Game.Battle.Character::TRole/ShowHashiramaStatusText()
+	at Processors.Game.Battle.Character::TRole/AddTextEffectByCMD()
+	at Processors.Game.Battle.Character::TRole/PassiveSkillPlay()
+	at Processors.Game.Battle::TBattleStage/PerformNextCommand()
+	at Processors.Game.Battle::TBattleStage/NextCommand()
+	at Processors.Game.Battle::TBattleHandle$/PulsePlaybackTimers()
+	at Processors.Game.Battle::TBattleHandle/LogicsPerform()
+	at Processors::TProcessor/LogicsProcess()
+	at Processors::TProcessor/LogicsTraverse()
+	at Processors::TProcessor/LogicsProcess()
+	at TApplication/Process_Logics()
+	at TApplication/Process()
+	at TApplication/StageOnEnterFrame()
+EVENT HISTORY
+
+RUNTIME ERROR Error: Error #2094
+Error: Error: Error #2094
+	at TApplication/fault()
+	at Processors.Game.Battle.Character::TRole/ShowHashiramaStatusText()
+	at Processors.Game.Battle.Character::TRole/AddTextEffectByCMD()
+	at Processors.Game.Battle.Character::TRole/PassiveSkillPlay()
+	at Processors.Game.Battle::TBattleStage/PerformNextCommand()
+	at Processors.Game.Battle::TBattleStage/NextCommand()
+	at Processors.Game.Battle::TBattleHandle$/PulsePlaybackTimers()
+	at Processors.Game.Battle::TBattleHandle/LogicsPerform()
+	at Processors::TProcessor/LogicsProcess()
+	at Processors::TProcessor/LogicsTraverse()
+	at Processors::TProcessor/LogicsProcess()
+	at TApplication/Process_Logics()
+	at TApplication/Process()
+	at TApplication/StageOnEnterFrame()
+EVENT HISTORY
+
+RUNTIME ERROR Error: Error #2094
+Error: Error: Error #2094
+	at TApplication/fault()
+	at Processors.Game.Battle.Character::TRole/ShowPainStatusText()
+	at Processors.Game.Battle.Character::TRole/AddTextEffectByCMD()
+	at Processors.Game.Battle.Character::TRole/PassiveSkillPlay()
+	at Processors.Game.Battle::TBattleStage/PerformNextCommand()
+	at Processors.Game.Battle::TBattleStage/NextCommand()
+	at Processors.Game.Battle::TBattleHandle$/PulsePlaybackTimers()
+	at Processors.Game.Battle::TBattleHandle/LogicsPerform()
+	at Processors::TProcessor/LogicsProcess()
+	at Processors::TProcessor/LogicsTraverse()
+	at Processors::TProcessor/LogicsProcess()
+	at TApplication/Process_Logics()
+	at TApplication/Process()
+	at TApplication/StageOnEnterFrame()
+EVENT HISTORY
+

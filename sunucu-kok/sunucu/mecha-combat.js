@@ -79,7 +79,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
     if(!skills.status(selected,'immuneDebuffs')){selected.mechaMysteryLockUntil=ctx.round;selected.mysteryReadyRound=ctx.round+1;label(records,selected,12);}
     label(records,u,1);
   }
-  if(move.mechaCombo)for(const t of hit){t.kabutoArmorSuppressedUntil=ctx.round;label(records,t,2);}
+  if(move.mechaCombo)for(const t of hit){t.armorSuppressedUntil=ctx.round;label(records,t,2);}
   if(move.mechaBeam){
     u.mysteryReadyRound=Math.max(ctx.round,(u.mysteryReadyRound||1)-1);
     u.mechaCostRound=ctx.round;u.mechaCostReduction=(u.mechaCostReduction||0)+20;

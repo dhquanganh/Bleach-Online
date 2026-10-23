@@ -1,0 +1,83 @@
+{
+  "version": "2026102310",
+  "sha256": "5bede16e00d37546a39ff411dfbd762dd11b6d47c6607ff17cc39f190bd2b05c",
+  "classes": {
+    "Processors/Game/Battle/Character/TRole.as": {
+      "removedMethods": [
+        "KabutoVfxManifest",
+        "PreloadKabutoVfx",
+        "LoadKabutoVfxAtlas",
+        "KabutoWarPinPages",
+        "PumpKabutoWarVfxQueue",
+        "LoadKabutoWarVfxAtlas",
+        "TrimKabutoWarVfxCache",
+        "KabutoWarFirstAtlas",
+        "KabutoWarVfxManifest",
+        "PreloadKabutoWarVfx",
+        "LoadKabutoWarCorpseAtlas",
+        "PrepareDormantKabuto",
+        "PlayKabutoVfxAsset",
+        "UpdateKabutoVfx",
+        "PlayKabutoNativeEffect",
+        "ShowKabutoVfx",
+        "ShowKabutoSummonVfx",
+        "RestoreKabutoAfterRevival",
+        "PlayKabutoDeath",
+        "PlayKabutoWarVfxAsset",
+        "FitKabutoWarPose",
+        "UpdateKabutoWarVfx",
+        "PlayKabutoWarNativeEffect",
+        "ShowKabutoWarVfx",
+        "ShowKabutoWarSummonVfx",
+        "RestoreKabutoWarAfterRevival",
+        "PlayKabutoWarDeath",
+        "ShowKabutoWarStatusText"
+      ],
+      "changedMethods": [
+        "PlayShowUI",
+        "ChangeHP",
+        "ActivePlay",
+        "UpdateActive",
+        "AddTextEffectByCMD"
+      ],
+      "preservedMethods": 121
+    },
+    "Processors/Game/Battle/Character/TActive.as": {
+      "removedMethods": [],
+      "changedMethods": [
+        "PlaySkill",
+        "IsSkill"
+      ],
+      "preservedMethods": 28
+    },
+    "Processors/Game/Battle/TBattleStage.as": {
+      "removedMethods": [],
+      "changedMethods": [
+        "SetBattle",
+        "Reset"
+      ],
+      "preservedMethods": 45
+    },
+    "Processors/Game/Lobby/TacticalDeployment/Components/THeroDeployment.as": {
+      "removedMethods": [],
+      "changedMethods": [
+        "ShowLightWithIndex",
+        "ShowDisabledWithIndex",
+        "ShowNormalWithIndex",
+        "OnChangeHero",
+        "OnShowHero",
+        "GetCheckFrame"
+      ],
+      "preservedMethods": 33
+    },
+    "Foundation/Decoder/Pak/TPakDecoder.as": {
+      "removedMethods": [],
+      "changedMethods": [
+        "UnstreamizationFinalize",
+        "UnstreamizationPerform_Properties",
+        "UnstreamizationPerform_Traversal"
+      ],
+      "preservedMethods": 12
+    }
+  }
+}

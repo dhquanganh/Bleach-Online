@@ -43,8 +43,8 @@ def main():
             }
 '''+text[end:]
     stage=(BASE/'status-original/scripts'/STAGE).read_text(encoding='utf-8')
-    token='kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "obitoSkillVfx"';assert token in stage
-    stage=stage.replace(token,'('+token+' || kabutoRasterHost.getChildAt(kabutoRasterIndex).name.indexOf("obitoStatus_") == 0)')
+    token='battleRasterHost.getChildAt(battleRasterIndex).name == "obitoSkillVfx"';assert token in stage
+    stage=stage.replace(token,'('+token+' || battleRasterHost.getChildAt(battleRasterIndex).name.indexOf("obitoStatus_") == 0)')
     for name,value in [(ROLE,text),(STAGE,stage)]:
         f=BASE/'status-patched'/name;f.parent.mkdir(parents=True,exist_ok=True);f.write_text(value,encoding='utf-8')
     output=BASE/'status-compiled.swf';ffdec('-onerror','abort','-importScript',source,output,BASE/'status-patched');rebuilt=output.read_bytes()

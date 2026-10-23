@@ -85,6 +85,7 @@ def main():
          var data:Object=SasukeVfxManifest();var effects:Array=data.actions[String(data.moves[skill])] as Array;
          if(skill<=13121302){SasukeBackdrop(host);ShowSasukeScreenFlash(host,skill);}
          if(effects!=null)for each(var effect:String in effects){
+            if(data.cinematics[effect]!=null && data.cinematics[effect].impact){PlaySasukeNativeImpact(effect,host,center,unit);continue;}
             var cutin:Boolean=effect.indexOf("texie")>=0;
             if(cutin){PlaySasukeCinematic(effect,host);continue;}
             var at:Point=cutin?new Point((tl.x+br.x)/2,(tl.y+br.y)/2):(skill==13121309?origin.clone():center.clone());
@@ -171,7 +172,7 @@ def main():
  role=role.replace('         ++FCombatVfxSerial;','         ++FCombatVfxSerial;\n         if(FId==11120970)FSasukeVfxStarted=false;',1)
  role=role.replace('         this.UpdateItachiVfx();','         this.UpdateItachiVfx();\n         this.UpdateSasukeVfx();',1)
  role=role.replace('            this.FitItachiPose();','            this.FitItachiPose();\n            this.FitSasukePose();',1)
- role=h.inject(role,'PrepareDormantKabuto','         if(FId==11120970)PreloadSasukeVfx();')
+ role=h.inject(role,'PrepareBattleRole','         if(FId==11120970)PreloadSasukeVfx();')
  role=h.inject(role,'AddTextEffectByCMD','''         var sasukeMarker:uint=uint(param1.ResultInfo.BuffId);
          if(param1.CMD==TTargetInfo.CMD_FLOAT && sasukeMarker>19001400 && sasukeMarker<19001410){var notices:Array=["","AMATERASU BLAZE","ELECTROCUTION","STATIC","DISORDER","EXTREME FEAR","LEVEL 2 IGNITION","VISUAL JUTSU"];ShowHashiramaStatusText(String(notices[sasukeMarker-19001400]),0xB488FF);return;}''')
  active=(BASE/'original/scripts'/ACTIVE).read_text(encoding='utf8')
@@ -180,7 +181,7 @@ def main():
  token='         this.FCurSequence = this.FTextureAttack.GetAnimationSequenceByIndex(_loc1_);';active=active.replace(token,'         if(this.FId==11120970)_loc1_=uint(this.FSkillId==13121304?1:0);\n'+token,1)
  token='         this.FCurSequence = this.FTextureSkill.GetAnimationSequenceByIndex(_loc1_);';active=active.replace(token,'         if(this.FId==11120970 && this.FSkillId>=13121301 && this.FSkillId<=13121309)_loc1_=uint(this.FSkillId<=13121302?this.FSkillId-13121301:this.FSkillId-13121303);\n'+token,1)
  formation=(BASE/'original/scripts'/FORMATION).read_text(encoding='utf8').replace('this.FSelectHero.Identifier == 11120960','(this.FSelectHero.Identifier == 11120960 || this.FSelectHero.Identifier == 11120970)').replace('this.FSelectHero.Identifier != 11120960','(this.FSelectHero.Identifier != 11120960 && this.FSelectHero.Identifier != 11120970)')
- stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf8').replace('kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "itachiSkillVfx"','(kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "itachiSkillVfx" || kabutoRasterHost.getChildAt(kabutoRasterIndex).name == "sasukeSkillVfx")')
+ stage=(BASE/'original/scripts'/STAGE).read_text(encoding='utf8').replace('battleRasterHost.getChildAt(battleRasterIndex).name == "itachiSkillVfx"','(battleRasterHost.getChildAt(battleRasterIndex).name == "itachiSkillVfx" || battleRasterHost.getChildAt(battleRasterIndex).name == "sasukeSkillVfx")')
  for rel,code in [(ROLE,role),(ACTIVE,active),(FORMATION,formation),(STAGE,stage)]:
   dest=BASE/'patched'/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.write_text(code,encoding='utf8')
  output=BASE/'compiled.swf';h.ff('-onerror','abort','-importScript',source,output,BASE/'patched');rebuilt=output.read_bytes()
@@ -188,7 +189,7 @@ def main():
  h.ff('-selectclass',classes,'-export','script',BASE/'verify',output)
  after=(BASE/'verify/scripts'/ROLE).read_text(encoding='utf8')
  for name in re.findall(r'      (?:override )?(?:public|private|protected) (?:static )?function (\w+)\(',before):
-  if name not in {'PrepareDormantKabuto','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}:assert h.m.extract(before,name)==h.m.extract(after,name),name
+  if name not in {'PrepareBattleRole','ActivePlay','UpdateActive','UpdateAnimationFrame','AddTextEffectByCMD'}:assert h.m.extract(before,name)==h.m.extract(after,name),name
  backup=BASE/'backups/TApplication.swf';backup.parent.mkdir(exist_ok=True)
  if not backup.exists():backup.write_bytes(old)
  canonical.write_bytes(h.h.swap(rebuilt));print('PASS isolated Sasuke native dispatch, VFX streaming, all formation positions and float damage layer')

@@ -1,0 +1,18 @@
+{
+  "username": "dqa0604",
+  "character": "qa",
+  "updatedAt": "2026-10-22T18:36:53.713Z",
+  "savedRecords": 65,
+  "gearRecords": 150,
+  "wireEntries": 189,
+  "bytes": 5677,
+  "parsedBytes": 5677,
+  "over65535": [],
+  "category20": [],
+  "unknownItems": [
+    {
+      "code": 14130999,
+      "amount": 65535
+    }
+  ]
+}

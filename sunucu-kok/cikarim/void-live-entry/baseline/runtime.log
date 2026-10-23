@@ -1,0 +1,11 @@
+BOOT /game.swf
+INIT child document loaded
+AUTO CLICK 399,33
+OPEN ERROR TypeError: document.getElementById(...).voidProbeOpen is not a function
+AUTO CLICK 220,124
+FIGHT ERROR TypeError: document.getElementById(...).voidProbeFight is not a function
+AUTO CLICK 374,463
+AUTO CLICK 870,524
+CLICK 1037,477
+RUNTIME ERROR ReferenceError: Error #1065
+null

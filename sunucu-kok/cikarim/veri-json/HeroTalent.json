@@ -1025,31 +1025,6 @@
     "talentDesc": "Prompt. Chakra 20; cooldown 3 rounds; battlefield cooldown 0. Consumes the primary action. Toad Esophagus for 2 rounds: barrier creators/destroyers on both sides cannot cast Mystery. Immediately casts Toad Confrontation Chant. Damage up to 2 enemies. Suppress Immunity and apply Extreme Chaos for the hit round only. Targets are protected against another Toad Chant control through the next round. Cooldown 2 rounds. Uses the primary action; waits while recovering. Unavoidable lineup damage, 5 COMBO. Stackable -10% Resistance. High chance (local: 70%) of Knockdown to selected target. Cooldown 2 rounds; cannot be bypassed by Chase bonuses. At least 15 COMBO. Damage up to 4 enemies, Repulse to selected target. +1 Chase limit for allies without Chase cooldowns this round, non-stacking. Round start: restore chakra limit to 100; +2% team Initiative each round, up to 10%. Cleanse Jiraiya and up to 2 other Senjutsu allies; +20 shared chakra for each. After defeat, revive at 30% HP after allies cast 3 Mysteries. Preserves cooldowns and cannot act again in the revival round."
   },
   {
-    "id": "00C9BC2E",
-    "talentName": "Impure World Reincarnation / Power of the White Snake",
-    "talentDesc": "Before an action: recover 12% max HP, 40 shared chakra, restore team chakra limit to 100. Cooldown 2 rounds; at most once per round. Cooldown survives revival. Immune to Debuffs unless Suppress Immunity is active. When ready, after defeat revive next round at 25% max HP and resummon Mu. Revival cooldown 4 rounds, starting on revival. A death during cooldown cannot revive later. Existing skill cooldowns are preserved. Cannot revive after a Deidara kill. Battle start: summon Mu with 100% Kabuto max HP. Mu remains after Kabuto defeat. Mu summons Deidara after its standard once per round, Dan Kato at even-round start, Pakura at odd-round start. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
-  },
-  {
-    "id": "00C9BC2F",
-    "talentName": "Mu [Reanimation]",
-    "talentDesc": "Mu melee strike. Then summons Deidara once per round. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
-  },
-  {
-    "id": "00C9BC30",
-    "talentName": "Deidara [Reanimation]",
-    "talentDesc": "On summon: damage up to 12 enemies, Suppress Super Armor until round end, Knockdown to front target. Victims killed by this skill cannot revive. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
-  },
-  {
-    "id": "00C9BC31",
-    "talentName": "Dan Kato [Reanimation]",
-    "talentDesc": "On summon: front target damage and Suppress Immunity for 3 rounds; absorb all enemy shared chakra, capped by own team limit. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
-  },
-  {
-    "id": "00C9BC32",
-    "talentName": "Pakura [Reanimation]",
-    "talentDesc": "On summon: damage and Ignition to up to 9 enemies. +80% damage against effective Super Armor. Then disappears. Each Edo guest type has a separate 3-round summon cooldown; resummoning Mu does not reset it."
-  },
-  {
     "id": "00C9BC38",
     "talentName": "Outrage - Darkness Commitment / Rage Mode",
     "talentDesc": "Two Standards every round. Once per battle below 50% HP: enter Rage and recover 50% max HP. Rage grants enhanced Mystery, Standards and Chases, 12% Life Steal, enhanced Kamui at the beginning of every round (no cooldown) and one additional Standard after defeating an enemy with a Standard. Triggered at 20 Combo: damage up to 7 enemies and absorb 20 shared chakra per hit enemy. Once per round. No cooldown. Per-round Chase limits still apply. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF. Chase Low Float: consumes 5% max HP, damages all enemies in the same line, causes Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Once per round. No cooldown. Per-round Chase limits still apply. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF. Rage 20 Combo Chase: damage up to 7 enemies; Suppress Immunity for 1 round; absorb 20 chakra per hit enemy. Once per round. No cooldown. Per-round Chase limits still apply. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF. Rage Chase Low Float: no HP cost; damage all enemies in the same line, Knockdown, Immobile for 1 round and Level 2 Kamui Tag. Ignores a portion of Defense and Resistance. Twice per round. No cooldown. Per-round Chase limits still apply. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF. Rage Mystery. Damage all enemies, Low Float to selected target; +40% Chase damage until round end (does not stack). Chakra 40, reduced by 20 after each use to minimum 0. Cooldown 3 rounds, battlefield cooldown 0. Prompt; does not consume a Standard. Local automatic combat casts at most once per round. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF."

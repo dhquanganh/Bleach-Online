@@ -32,7 +32,7 @@ const server=http.createServer((req,res)=>{
  let file;
  if(req.url==='/probe.swf')file=path.join(base,recoveryProbe?'recovery-probe.swf':idleProbe?'idle-probe.swf':pixelProbe?'pixel-probe.swf':statusProbe?'status-probe.swf':revival?'revival-probe.swf':'raster-probe.swf');
  else if(/^\/public\/sasuke-vfx\/cinematic-v1\/[a-z0-9_-]+\.swf$/i.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
- else if(/^\/public\/sasuke-vfx\/(v3|extracted|large-v2|compact-v3|compact-v4|detail-v4|compact-v6|detail-v6)\/[a-z0-9_-]+\.(png|argb)$/i.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
+ else if(/^\/public\/sasuke-vfx\/(v3|extracted|large-v2|compact-v3|compact-v4|detail-v4|compact-v6|compact-v7|detail-v6)\/[a-z0-9_-]+\.(png|argb)$/i.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  else if(/^\/public\/2026090619\/Resources\/Textures\/Model\/[A-F0-9]+\.TexClient$/.test(req.url))file=path.join(root,'sunucu-kok/kaynak/login.gogames.me',req.url);
  if(!file||!fs.existsSync(file)){const msg='ERROR HTTP 404 '+req.url;log(msg);errors.push(msg);res.statusCode=404;return res.end();}
  res.setHeader('Content-Type',file.endsWith('.swf')?'application/x-shockwave-flash':file.endsWith('.png')?'image/png':'application/octet-stream');

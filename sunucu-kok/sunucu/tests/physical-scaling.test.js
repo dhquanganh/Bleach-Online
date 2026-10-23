@@ -46,4 +46,4 @@ for(const move of [pain.config.finalMystery,pain.config.superPush])for(const cam
   assert.equal(damage(pain.config.heroId,move,camp,final),Math.round(200*move.multiplier));
   assert.equal(damage(pain.config.heroId,move,camp,{...final,magicAtk:100000}),Math.round(200*move.multiplier));
 }
-console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Naruto Sage, Obito, Pain and Hashirama; Physical DEF mitigation, Resistance/Magic ATK independence, ATK buffs/debuffs and original coefficients.`);
+console.log(`PASS Physical ATK scaling: ${checked} damaging moves/camps across Naruto Sage, Obito, Pain, Hashirama; Physical DEF mitigation, Resistance/Magic ATK independence, ATK buffs/debuffs and original coefficients.`);

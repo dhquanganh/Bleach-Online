@@ -4,7 +4,7 @@ from PIL import Image,ImageOps
 import argparse,copy,hashlib,importlib.util,json,shutil,struct,sys,zlib
 BASE=Path(__file__).resolve().parent;ROOT=BASE.parents[1]
 sys.path.insert(0,str(BASE.parent/'naruto-sage'))
-spec=importlib.util.spec_from_file_location('packed',BASE.parent/'kabuto-gnw/build.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
+spec=importlib.util.spec_from_file_location('packed',BASE.parent/'shared-animation/packing.py');packed=importlib.util.module_from_spec(spec);spec.loader.exec_module(packed)
 native=packed.native;CFG=json.loads((ROOT/'sunucu/pain-tendo.json').read_text());ANIM=json.loads((BASE/'animation.json').read_text());HERO=CFG['heroId'];HIT=13621971
 _multi_spec=importlib.util.spec_from_file_location('multihit',BASE.parent/'ninja-multihit.py');multihit=importlib.util.module_from_spec(_multi_spec);_multi_spec.loader.exec_module(multihit)
 multihit.configure(BASE.name,ANIM)

@@ -1,0 +1,5 @@
+package {
+import flash.display.*;import flash.events.*;import flash.net.*;import flash.system.*;import flash.utils.*;import flash.external.ExternalInterface;
+public class TApplication extends MovieClip {
+ public function TApplication(){stage.scaleMode=StageScaleMode.NO_SCALE;stage.align=StageAlign.TOP_LEFT;var l:Loader=new Loader();l.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void{var c:Class=ApplicationDomain.currentDomain.getDefinition("MC_BattleLoad") as Class;var clip:MovieClip=new c() as MovieClip;addChild(clip);clip.gotoAndStop(47);clip.SP_LoadBar.TF_ProgressBar.text="50%";clip.SP_LoadBar.SP_ProgressBar.scaleX=.5;ExternalInterface.call("speedProbe","STATE native50");setTimeout(function():void{clip.SP_LoadBar.TF_ProgressBar.text="100%";clip.SP_LoadBar.SP_ProgressBar.scaleX=1;ExternalInterface.call("speedProbe","STATE native100");setTimeout(function():void{ExternalInterface.call("speedProbe","DONE");},500);},700);});l.load(new URLRequest("/battle-ui.swf"),new LoaderContext(false,ApplicationDomain.currentDomain));}
+}}
