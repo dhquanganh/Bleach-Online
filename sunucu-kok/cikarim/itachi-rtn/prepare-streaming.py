@@ -18,7 +18,7 @@ def main():
    premul=(pixels[:,:,:3]*alpha)//256
    adjusted=np.where(alpha==255,pixels[:,:,:3],(premul*255+alpha//2)//np.maximum(alpha,1))
    argb=np.concatenate((alpha,adjusted),axis=2).astype(np.uint8).tobytes()
-  raw=struct.pack('>II',w,h)+argb;packed=zlib.compress(raw,1)
+  raw=struct.pack('>II',w,h)+argb;packed=zlib.compress(raw,9)
   assert zlib.decompress(packed)==raw
   if not out.exists() or out.read_bytes()!=packed:out.write_bytes(packed)
   records[name]={'width':w,'height':h,'sourcePngSha256':hashlib.sha256(png.read_bytes()).hexdigest(),'pixelSha256':hashlib.sha256(argb).hexdigest(),'fileSha256':hashlib.sha256(packed).hexdigest(),'bytes':len(packed)};total+=len(packed)

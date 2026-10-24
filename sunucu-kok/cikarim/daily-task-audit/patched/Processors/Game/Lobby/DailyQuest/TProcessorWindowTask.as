@@ -414,15 +414,19 @@ package Processors.Game.Lobby.DailyQuest
       
       protected function UpdateText(param1:TQuestDaily) : void
       {
+         this.FMC_DoTaskBT.Visible = false;
+         this.FMC_FinishTaskBT.Visible = false;
+         this.FMC_GiveUpTaskBT.Visible = false;
+         this.FMC_FinishNowBT.Visible = false;
+         this.FMC_AcceptTaskBT.Visible = false;
+         if(param1 == null) return;
          this.FTF_TaskName.text = param1.Name;
          this.FTF_TaskName.textColor = CONST_COMMON.QUALITYCOLOR_INDEX[param1.Rate];
-         this.FTF_RewardSilver.text = param1.Rewards[0].Amount + TUtilityLobby.GetItemName(param1.Rewards[0].Type,param1.Rewards[0].Code);
+         this.FTF_RewardSilver.text = param1.Rewards[0].Amount * (this.FDailytask.IsDouble == 1 ? 2 : 1) + TUtilityLobby.GetItemName(param1.Rewards[0].Type,param1.Rewards[0].Code);
          this.FTF_RewardPoint.text = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.DAILYTASK_STRING_15),param1.AwardPoint);
-         if(this.FDailytask.CurrentProgress > param1.KillTime)
-         {
-            this.FDailytask.CurrentProgress = param1.KillTime;
-         }
-         this.FTF_FinishCount.text = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.DAILYTASK_STRING_01),this.FDailytask.CurrentProgress,param1.KillTime);
+         this.FTF_FinishCount.text = TUtilityString.Format(TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.DAILYTASK_STRING_01),param1.Identifier == this.FDailytask.CurrentID ? Math.min(this.FDailytask.CurrentProgress,param1.KillTime) : 0,param1.KillTime);
+         this.FTF_Description.multiline = true;
+         this.FTF_Description.wordWrap = true;
          this.FTF_Description.text = param1.Description;
          if(this.FDailytask.CurrentID != 0)
          {
@@ -445,6 +449,10 @@ package Processors.Game.Lobby.DailyQuest
          {
             this.FMC_AcceptTaskBT.Visible = true;
          }
+         if(this.FDailytask.FinishCount >= TASK_COUNT)
+         {
+            this.FMC_AcceptTaskBT.Visible = false;
+         }
       }
       
       protected function UnderDoingUpdate() : void
@@ -454,6 +462,7 @@ package Processors.Game.Lobby.DailyQuest
          var _loc3_:uint = 0;
          var _loc4_:uint = 0;
          _loc2_ = this.FDailytask.GetTaskByIdentifier(this.FDailytask.CurrentID);
+         if(_loc2_ == null) return;
          _loc1_ = 0;
          while(_loc1_ < TASK_SLOTS)
          {
@@ -464,6 +473,7 @@ package Processors.Game.Lobby.DailyQuest
             }
             _loc1_++;
          }
+         this.FIndex = _loc3_;
          this.UpdateText(_loc2_);
          if(this.FDailytask.CurrentProgress < _loc2_.KillTime)
          {
@@ -532,12 +542,10 @@ package Processors.Game.Lobby.DailyQuest
          var _loc2_:TQuestDaily = null;
          this.FIndex = param1;
          _loc2_ = this.FDailytask.GetTaskByIndex(this.FIndex);
+         if(_loc2_ == null) return;
          if(_loc2_.Identifier == this.FDailytask.CurrentID)
          {
-            this.UpdateText(_loc2_);
-            this.FMC_FinishNowBT.Visible = true;
-            this.FMC_GiveUpTaskBT.Visible = true;
-            this.FMC_AcceptTaskBT.Visible = false;
+            this.UnderDoingUpdate();
          }
          else
          {
@@ -785,6 +793,7 @@ package Processors.Game.Lobby.DailyQuest
          var _loc4_:String = null;
          var _loc5_:Vector.<uint> = null;
          var _loc6_:String = null;
+         if(this.FDailytask.FinishCount >= TASK_COUNT) return;
          if(this.FDailytask.FreshCount > 0 && this.FBAData.GetWelfareCountByType(this.FBAData.WelfareType_DayTaskRefreshCout) <= 0)
          {
             _loc3_ = SResourcesCore.ResourceBin.GetDatebase(CONST_DATEBASEVO.RESOURCEID_ConfigValue,CONST_CONFIGVALUE.Dailytask_Fresh) as TConfigValue;
@@ -983,6 +992,7 @@ package Processors.Game.Lobby.DailyQuest
       
       public function TaskInit() : void
       {
+         this.FMC_RefreshBT.Enabled = this.FDailytask.FinishCount < TASK_COUNT;
          this.FMC_RefreshTask.play();
          this.ResetText();
          this.FTaskList.SetTag(0,9);

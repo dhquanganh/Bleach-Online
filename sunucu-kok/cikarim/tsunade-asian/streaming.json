@@ -1,0 +1,642 @@
+{
+  "gangshou_aoyi1_niansuan-218-pages-v3-0": {
+    "width": 1716,
+    "height": 1692,
+    "sourcePngSha256": "6db13ad6271276c9a7668dd8887fd99c286c4125a5094453290468760615e5b0",
+    "pixelSha256": "3ef745625cd4cb7a33c5f325b702d592af712e619ee30606bfec04e3f80ceabc",
+    "fileSha256": "795af87b314646dd42c296ba9367ad2d3e1f3fcee9fde24dd61ea7a538d679ad",
+    "bytes": 399218
+  },
+  "gangshou_aoyi1_niansuan-218-pages-v3-1": {
+    "width": 1716,
+    "height": 1692,
+    "sourcePngSha256": "8c0d29f6bcad56400083206553c08390840224b0627b1787418d2664973d536e",
+    "pixelSha256": "64b1d7680a9650a8f84d6249a1ad7ef9d9c79e092cb521e43a9dafb07a881cb1",
+    "fileSha256": "60a08ec788b64e9dd4ad7277b868930fda2f0c8c9c784f11605a91870772df3d",
+    "bytes": 831938
+  },
+  "gangshou_aoyi1_niansuan-218-pages-v3-2": {
+    "width": 1716,
+    "height": 1692,
+    "sourcePngSha256": "37f467d558bd52326d1a5a6d4f8f68f770a07558ad8f69daf33da91cb24561ac",
+    "pixelSha256": "e3a7f73cee217e0d18fda69f9cf9389e2c0c808f9d30158528be8f462aa8523e",
+    "fileSha256": "44eafe97f35a33309316a909f20ece4133206de22d39caa8853d015df4376708",
+    "bytes": 812944
+  },
+  "gangshou_aoyi1_niansuan-218-pages-v3-3": {
+    "width": 1716,
+    "height": 1692,
+    "sourcePngSha256": "4e84d8b64c0cae46133d807649369fc4008d6fb350104171215f62887de78157",
+    "pixelSha256": "f7ad5d96020cf3b24334373a1289ecb747002e304b2e22d755264fc4f8ed0716",
+    "fileSha256": "edace036bd9b86d1a20e95b591be8e207cdbf06a5f430a989e3efe3d8ef7afb5",
+    "bytes": 765794
+  },
+  "gangshou_aoyi1_niansuan-218-pages-v3-4": {
+    "width": 1716,
+    "height": 1692,
+    "sourcePngSha256": "c7836cb7e7f9957f46df95e75243732b4a987c1c582212cf78006d1c73aa1c82",
+    "pixelSha256": "32873e5f73aa3862455b4785bfd449df14b06552d297806799b0adda88d510d0",
+    "fileSha256": "1256dfbbea97fc2df5a29ac601258b70b04c789c545aba3584f66249c80b0933",
+    "bytes": 769949
+  },
+  "gangshou_aoyi1_niansuan-218-pages-v3-5": {
+    "width": 1716,
+    "height": 1269,
+    "sourcePngSha256": "83c722d659dde0e1119dbe4c5a4319aaa68e2f440e0be50031f0c2f4ec47ef29",
+    "pixelSha256": "b497226b8cbb460f16ad2e6ac62a5fc4ce6a8ddc45cb8b6a74b276beda5c050f",
+    "fileSha256": "958867e740cedd68556772c32a1974317150cc6414fa4d199a327fc1e6ad7774",
+    "bytes": 473414
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-0": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "4544437c09e79a9cd5004ac24b5b3877b6238ca86f09c79caca697e8bb117134",
+    "pixelSha256": "1c0ace5e2bafe2fd66ea08cfaefa7f6debbf9f21b94a3f5ca045a4b1b859b59f",
+    "fileSha256": "9dadd0e0936cbf1d201dae08fb944c7e52da270c2d2167b277af46d93a1c1731",
+    "bytes": 147035
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-1": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "39b9e2b07fa4923e5e4decf23f440f703074e7e4aaf2f97999f1419816b13b13",
+    "pixelSha256": "40efd92c04ce33ea3455ba0d94769ff22e83865866c3388c34426d406b383712",
+    "fileSha256": "a0e5f827a9e7bb1e9594692997bf6c5c44fa482701b361c7e86e2316725a270d",
+    "bytes": 263290
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-2": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "732538b51ca2e629db1e368c0e99c39dc291f675b4db084c6815b01265f151b3",
+    "pixelSha256": "9ee94d023f44ad8bbeae792c50d7d6b4a179d9f1fbce3f92af38d6cbf7833ceb",
+    "fileSha256": "a7a30b6cd5819089cf48cf8b433af36728462fb42ede8dd10cabec36b9bad9af",
+    "bytes": 280586
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-3": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "3d50b0538a08b411f66ba43d8ae836ffcbdcf2181b988040e507ff61452c4f11",
+    "pixelSha256": "0a1d4a2027d0a6f847dad31244e80a346a8ca04ce3d762b24b2a87ec3668eeab",
+    "fileSha256": "0a174272a1f77582a0e24ac5ba2fc7a8826488be4ee8aebff070685fb41bf32f",
+    "bytes": 275310
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-4": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "c43edc3f21905d5e9cc3e920448f6143bc62ec3b1d2a9d9a52e8b8f9b845849d",
+    "pixelSha256": "c01843bf45fe40518c40762952dbbdbad740dbc8f1523143efa7c181a2511be8",
+    "fileSha256": "23cf9d478b2260826442f6eeaf03d52c549b63a34a48d102ec872f127492e221",
+    "bytes": 264439
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-5": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "e9bd72ccfb3bf8a5ca1cf2dbcfd734846d67653e9aa887a005be91e4208e17f1",
+    "pixelSha256": "83e7d826ce53a51fbf74b2ec6b613c7e7593a3919d75153ca600fb611e84f806",
+    "fileSha256": "35217c044113803debd8d5b4ebac1fb3f50fbc30df63869559736df25c340b48",
+    "bytes": 210370
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-6": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "a725def52fd2c272402be5e0fd3376e654dc272257ce8487ad834b6e680fcca5",
+    "pixelSha256": "bcf0775a55c87aab3d72436c61fdc2da3552959aa7430cd6c9a4812e2e649b3b",
+    "fileSha256": "4202d61e165a0218bc87bfc7af2a4ba30232bb777d68f3969b0f9b795e00f535",
+    "bytes": 153833
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-7": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "3614dc9e2d1e354de876e55d03f34a5ca02566e2e8961f20a6461f525ebee59a",
+    "pixelSha256": "b8e95bf33893de9a176af8783093e132cca83a2c15b8b392a9286071a49a0618",
+    "fileSha256": "8e9e5fa74f7b325ca847b666d47a83f43d16818929be40bb17fefd621fc9bc6f",
+    "bytes": 93013
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-8": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "9d9a7441bb9f1acdc488159095bffe948538245227b522dca601d9c54c600052",
+    "pixelSha256": "51a2baeba737d4f7dd0bcbd727bbac2663e2be44ed0eadde09a660a526ddbe36",
+    "fileSha256": "62ced9d8eb3db501ce100524d7663a8520d4e62c368b63d1674fda630582fab9",
+    "bytes": 172196
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-9": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "0b2df5f0f64dae33c10dacf40e6fc6b06af097cd2f28c467b1dd82022cb579a9",
+    "pixelSha256": "b8d054bc26cb87909b15458cbc9c6719cb0931efb4a234d3fcaabee107a47a87",
+    "fileSha256": "f6e9659d63e4343efe4f5f24513e607946ab15a2b278f38641e859d9075287dd",
+    "bytes": 247778
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-10": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "ff8e74d44f82f03075f8f0dc34def7159d4d6e8b48942d8ac58cd824ba22babd",
+    "pixelSha256": "e05ba855f54a3c0e68edf4a29a90c7b7014fb2905014f38edb2c9c58cab90b05",
+    "fileSha256": "b3bbfa38707e9e75f9b71e3f4d5a410e0540c7cc744d703b94674d563db126d8",
+    "bytes": 356971
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-11": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "9a3f8baed294523c65921b78323cbf7f13f9d259540b10946af09e8338a235d8",
+    "pixelSha256": "f15f1c2cfa23a88033548ffde04fb30ece3afd915fe2eb5ad7c85e49070e216a",
+    "fileSha256": "f98e4edf9a224ed1bbf46acf6a16734b3e7be7f2b648638c70bd74f65fe6ef61",
+    "bytes": 420219
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-12": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "dbad0997ce0ad92a7c33498a839f95a821628f63babcbeeb6b9e3dd0a76bf076",
+    "pixelSha256": "f9f92af6ec6b575e9fe3e6ff5c57734b13e712a4f16ebbda6553f19c97a9f9ca",
+    "fileSha256": "1e4e86d6f6b9e406d770c97c6f21690af92d00726319c6b108d0b3a9cfcc317a",
+    "bytes": 441329
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-13": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "c14fa07d2a63edac1bccc0423dfda15a85f186501ec6da48be236ac59d7235a5",
+    "pixelSha256": "1e23495ae2e536fd54c5ae11cdf1ff48fbf8dde03e8367c0823dafc0882a02db",
+    "fileSha256": "af1949f05d94efbacf5b18b44e40bfb99c49aa8d6b1b0e4a71c0b6f1c4dcdaac",
+    "bytes": 491707
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-14": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "c29629e4668674858b0c4346b1cbbc18108b37db6cc4709a2e385e2a39895c68",
+    "pixelSha256": "5c7e8b3bf64b57efe7a6abf49e34460c188498dade7f3a4585a72a0f456d6b19",
+    "fileSha256": "5202afec0da5a9ac4aff3303ae5c0bbe376dd9a2c4c64ac68f995dcf7478cdfe",
+    "bytes": 565922
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-15": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "26fd189839bbd76cc3203f0e29670a2c6499756d847d2825b77bb26714b987a4",
+    "pixelSha256": "c692ceb25aa2eb23739e83a024e07d9518a0b889417c93bc4eae41d20eddba07",
+    "fileSha256": "48b38366fbdffa7966ff214613a32d332c95cdba91c74a23805b90fd7f4a3f1e",
+    "bytes": 656979
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-16": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "fb91bf7037b6b55cb9a5d64ce804245b762f9bd15276e3eafd87d1d456527b90",
+    "pixelSha256": "08e6afcbce43ab3d38b4c68c8631e1834b39d268cf5ba7e0131df68bf9696277",
+    "fileSha256": "e27c52221f2f534277e91fb369968b5aef4865ae5fa23df5bd88b98a9026533d",
+    "bytes": 704145
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-17": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "d6a8d1400ca4ff0112e881790ffdc5356dbbb044f5976d8eb021ef91cab4c0c0",
+    "pixelSha256": "95c0a555086b6ea09fa2200074b7747884c0cf56802e0c7a77f6395b07bedc35",
+    "fileSha256": "91e2eaf68d8f9f8462fdea5733d605976650138f120546e9799c8fc9549013b6",
+    "bytes": 788732
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-18": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "e8e44295e2527cd931286ceec8ca6f39ce4453a1af630f1018d9ad41ff9c46f1",
+    "pixelSha256": "fef2a0b3be5ece7ee52fe73132f4a93f55145a61cbc545629f99e38002b7da63",
+    "fileSha256": "722e7ca6a6d510f614e6653fdb967f31d21cdd8377423db0c5d5061594a6f85c",
+    "bytes": 580261
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-19": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "9bb7e6f2a8eba16af128212551b537cc6d3c11776965920e429640e5135140d5",
+    "pixelSha256": "4da3e162292ecc89d949a9b04ddb112fa06f629a7c8d676bc6211e86b7412cbe",
+    "fileSha256": "4658bb19bf59e40f8a7f7c32e8610fc39ff04597e3a075741b3d97b8778fde6b",
+    "bytes": 271492
+  },
+  "gangshou_aoyi1_niansuan-572-pages-v3-20": {
+    "width": 1280,
+    "height": 1641,
+    "sourcePngSha256": "914f0d4ffac225ad2b9d8d3eeb48b16e6845cfc916eeb9329bfcde2e9cdc28dd",
+    "pixelSha256": "ac65cf3a793a2cf27a70cb673044ba922cc5229c253bbc19b2ca41a39334dece",
+    "fileSha256": "37cde14386d0b871bb3c5ebb036a6e188bc8fe396fbd8dda0022bf9740dcacd5",
+    "bytes": 213031
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-0": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "2ede1dd26a2571615088d2d3de1d82309a5873af3d4581f31dcacd43721c54cf",
+    "pixelSha256": "0e8b17a3918340841025e96c872bc3389dd0df91601767fa1b4d6787db8a9464",
+    "fileSha256": "57a72950605813ebb31215892804499234d3d4e54ec6c44af29d93971bb421d7",
+    "bytes": 12459
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-1": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "2e47b128d55661be40926f3ce2043f2cbf9759163e56cb44cf6e9e5b590ea5e0",
+    "pixelSha256": "215b5b2f41fe2ca79822fb77dc016d45d3dd0f5ede0aa75af119aab3c1b5c4db",
+    "fileSha256": "ec5c2772515546601dc4a94802b73093db53721149e2ec23c2883cc8f2c93815",
+    "bytes": 19477
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-2": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "203f40b4eaca6b436b087985e2bb590cb263c40be670970fcedbe853220cbcbe",
+    "pixelSha256": "67edc7f427c72315e9a66f3c6f1fcb8a83faf47099289438c107755c16593e0b",
+    "fileSha256": "84f061241c1db7144e3b1e70f1e87fed13b163c46035a25a54a3971aaf781be6",
+    "bytes": 27346
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-3": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "2c744733040eafce7d8706f28b35b73e0136d08204e809de14ca38a937cf5db1",
+    "pixelSha256": "361871c416279249af46c28c21f92b6e309be520890a0cf4f06c966c9d4ab90a",
+    "fileSha256": "83ec93cb7645b08421b445e3e9ca24733590975d6d5deb9ee9247f6de0ac35e6",
+    "bytes": 167460
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-4": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "4f8795cba82301c3f2c110df2f44ea026ea77c05fd4754f6e299da4be2d09290",
+    "pixelSha256": "f2fd2b30b01bbd264ac07f40ee7e158eee18cecdecfbb0789e3fdd8ae776abfe",
+    "fileSha256": "23f2a989e6fb4d240918f5f31e46ec87683ff383bba552ffd3ac5221bd92a985",
+    "bytes": 488779
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-5": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "2a300da3d7842c6c9c4a1fcf1dc570c9c5012339abb2ea4a5962c0e7aec7ddc8",
+    "pixelSha256": "6546025dab55ad84f51b35497be6ab6462a479e14f6ae69198b93c2cbb6505e3",
+    "fileSha256": "b8ff306cd64cbfba16219b83d969e97a3e096ac73210c579923b5e1c55c1aabc",
+    "bytes": 363621
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-6": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "7dfaa77d19a95c63deea569ba7096b47556448ac8f2c3caee6822d627958cdbc",
+    "pixelSha256": "c53e84c132235a7aafbe80b4a9613718aea28c9fce90d57f39142c6bf3cb9bba",
+    "fileSha256": "b88df60efa30c6d659d836e347dcf8ac0e6482347c24db2df5b83d2907f9b2c7",
+    "bytes": 361524
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-7": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "bc66c4aba20944d0f5371785ffdc5c82f791ce9d2564f84a9519cbcb321dd510",
+    "pixelSha256": "e6dfd7b361ee69d54f0a5358f12fe9fdf354e68023a7653ec09f56fa0d898668",
+    "fileSha256": "65bb1476d57badc11faf88642762af0d67cf3fbfb6bf939a6cfe8ac6d9466174",
+    "bytes": 343806
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-8": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "55c98095f6986e9e284ce3fb93cc6e20243fe4645acd29ca8d6b7ae4de69567c",
+    "pixelSha256": "d5d4ed93b4befb35ab8ea9cbd46510209ca77f836b6ba229ef32d78f24285b57",
+    "fileSha256": "5eb79acc0d2c6473963edb63721237026760ae9bbb54efd51b5892a2accc2aaa",
+    "bytes": 332333
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-9": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "5fb429ed638c66012db225232b681d20c1299d0b447006d29b03a178f35a8f4d",
+    "pixelSha256": "5a94e83ffe52684fe19b0f653ced09408d955eb27a877d0741b2be4e2869cec9",
+    "fileSha256": "9be2013d32dfdc32b9c5e6bac170e47c933e0b1b3de20fde059503955d2d076c",
+    "bytes": 335332
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-10": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "49e5f9f2517f93f41e14b9af5eed35341f6e1e1fac883f62bf018d4c0cb16652",
+    "pixelSha256": "25b039d381db72f9034a2b83d497a73b1fc5b6d19fd952d43ac0218c00a1abc3",
+    "fileSha256": "66cc6def6aa2e398c3aa1b39444a59a79998d90fc55b3677dcb86c648d104a86",
+    "bytes": 349284
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-11": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "54a2f847c9811a12f40b8a18735146ead196a482e3641d327afb0efd24e32b21",
+    "pixelSha256": "85ea57b1db6a5205347ab43e0978b6e42f7f728f96531ae43f045dece188f97b",
+    "fileSha256": "f79203f6aadf6b82fc7e8d5014ea32bf06cb4bd1daa420e2a0679ff7eff97524",
+    "bytes": 372679
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-12": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "6543c465abee571b4ca137c7d6552810bca8d01f2561f8ae454f194f63a28a90",
+    "pixelSha256": "7c0dd01b83b6adb4322f04019cfd025a59cf9e74b9ca9a26730435f91e58e35e",
+    "fileSha256": "11eab256276ae49c2a99071e355f8e366bcbaf443900ee1437512b96aa613806",
+    "bytes": 359352
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-13": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "da477dfcdf10cfe826c190813b2769cb6ad2a5d75eae82cfb9cc99224f5c98fa",
+    "pixelSha256": "3653a3d39f8a1f26d7022ba8cb9dc6aac87f2d2a07ccaeec7848b88a265bca6f",
+    "fileSha256": "0f4215c9638d9de59a3d131bbef2a46728e2afe9cff0b04b62f8d9c4de507a0a",
+    "bytes": 367233
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-14": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "a896c8955bd0b0398c87e0d8570faf9db4a5cb6c58c7a6383011b01531f6daac",
+    "pixelSha256": "218a87bce74bc23e8344a93812fb1fe9e41de7e7364d31a85a03179ed21d72a8",
+    "fileSha256": "17222c327544b1e5cafe2e7b468c6589e33dc78c5bc61731ca134b8a9c363494",
+    "bytes": 359266
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-15": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "9f63544954459c1bc514b9dfb1065c8e54b852fa86eed035c250b39005599d7b",
+    "pixelSha256": "d7c1a0872c0799b3469daa10968a013954165db86a457e622dcfe402cbd532ac",
+    "fileSha256": "96ca26ac1a8f1bd56cad2ed319314ca99a0fcba35d3bec0c1c328c726a675397",
+    "bytes": 345140
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-16": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "c80faa4c0baa215b1bbc30e0a8d4d076b9b1761c4345b19dc6ae7370903c03f9",
+    "pixelSha256": "ad5953b2b80cb8efee52ef96348e9c7dfe5739e05ecc77b77cbbac83c06457dd",
+    "fileSha256": "83ab6b01d8c86bb673cf8182c5709b6032974d4d7eb0f4ba32609a019e5d27b2",
+    "bytes": 354500
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-17": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "73691b7b4f74d79e6993a6e0d37a5f679a5e5931ae35f5e96b9bad3e306755fe",
+    "pixelSha256": "e3b4259aff826bc41ad1fe0a5e55ca07813758678a6093e36b110bc5815ccb17",
+    "fileSha256": "eac2c1bf26a6495e805e92dda2202285d7a6997b8fc9d27d198aa886405fb744",
+    "bytes": 350450
+  },
+  "gangshou_aoyi1_niansuantexie-126-pages-v3-18": {
+    "width": 1045,
+    "height": 1800,
+    "sourcePngSha256": "34e1b25e4d75cc58ac07fcac6afbdb2a8d950c22449435281bf1e3acbe4b493b",
+    "pixelSha256": "282838c3a13e6910efc50b0eb0313cd787bb256d2fa016cbd209a389dc42d816",
+    "fileSha256": "096ee617a306377838329cea826879e5576044b149a724d302c00d5bd86057cd",
+    "bytes": 69245
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-0": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "481f04cc8e681cc0704a3abb9800fb59ae607b5a3b5b2e663328eac9c1f2dbce",
+    "pixelSha256": "41c80decfaaaa33d968eba6f6c3ce1fadda1e35e8343da155842a6ea1ae115e5",
+    "fileSha256": "4b9663d4f4ef633d5e76ab528b7226307de20b066041e78ef24f0d4c5c25d86e",
+    "bytes": 17840
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-1": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "28e00570c5bcb2c89d49227708bfac805ff5329bcf647cee942ea833439c2e24",
+    "pixelSha256": "e316711e5dc0e7b55a8078077e0581d8264854c40da953615f52ffc84014e347",
+    "fileSha256": "df9b2f7f9fc7a2e374b04491421e39de41c55e9da31be0522925c794b4ad7e9d",
+    "bytes": 34175
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-2": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "dd8c7b7f8f9b8e1ac6b2cf2484803baf59b52823dce97179cef6f51e0290ff5a",
+    "pixelSha256": "6978d7999c1f738e31611d0b058bfdb4c77aac88653d4adbec983d8e84e1c75d",
+    "fileSha256": "1ce7fc0c6cf97e7faa2d35126c0de283bbe85f371c7da2a1facea6b283ac756a",
+    "bytes": 34495
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-3": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "22102757590f691afe8cfc3d60a04247b008b57233a313d91dd0f19bfa4aef81",
+    "pixelSha256": "017347104a2041996974a02c29fd136d20d80b9ce4582384b9f3fe3590dc82c4",
+    "fileSha256": "c6d1e5e90ef3b93eed914e587824353d9a18d85aadca42aa6fdfae4887e877e9",
+    "bytes": 75306
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-4": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "f2bc7d3eb5a69a5a0933c9f77924d4dbcde0a13e84e14bf9d408d08d272b9997",
+    "pixelSha256": "e1618751fafa92ca4adc400aa8fb229b8c66a75075872a861ced24ffe0be6b27",
+    "fileSha256": "ad28862a4a02f60af8a491b2306740e327563ebdc4d0ddc6725d97a106852a39",
+    "bytes": 585006
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-5": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "4b941d151970296c05c463d9b4123ecf53eee6f55be04f7b6882721677d61e4c",
+    "pixelSha256": "ee2bdc5571033ebd7312c25e602f84b03d4ee3181a2f4edd53fb8d59c460a951",
+    "fileSha256": "d121566e40c05d5e5e066861109aa1c783c5f157f7b65d0b5a587585f5b4a6de",
+    "bytes": 1426196
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-6": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "966df6a5015d3f1591848352073b5cf0ba01a8056b42dfc8846521b374f8b963",
+    "pixelSha256": "08a34b6961c079015c25bde1b875950d8c0a8394a9941b62fcc00bdccb5ab549",
+    "fileSha256": "a86fd2607cda1c957a07b24441429347c2c94fe64a0c7c6797646ecb2ecb8bb4",
+    "bytes": 1772911
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-7": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "f5bca2c4a23829fa8337c3153235a40f69c4425eded025a80e43be88d1416866",
+    "pixelSha256": "798407250994e49a73c8761c5a4cee6c078e047a8e493191906f5f2ad559ba4f",
+    "fileSha256": "432865819857d59b31a5cb73fd5c99034570c27e8296723320bdaf95d4835547",
+    "bytes": 1781583
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-8": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "70aa5419ed8f32ce54b37761fda005fee580eaed5b9449883c65c571e5461213",
+    "pixelSha256": "d8fbb6031cca09b4756dc16b9ef30c7037162f08f89ea0cd9c9eaa948414c197",
+    "fileSha256": "a26a0208edc14bb493ee5f22fa51025e5cc3437afc4b27ceb2150a482e4f1a0a",
+    "bytes": 1688963
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-9": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "d80d01bb9d90b3f6b6990cc29102c45da6f9d23fbb9d203e9bb99e6f21cb80f3",
+    "pixelSha256": "7eb5a10d60fe76b5e340ca5e4c06a2a2139b53685e4d9d5d2d27c0b7cb33cbae",
+    "fileSha256": "ed9bb0c1bf12a4e75df1ef813b4bf913ed622ff0efac3695d36449e9ff6a6c5b",
+    "bytes": 1523527
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-10": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "16c56c15c183e7c9a0ca6668abedef4528186974697583bc2668458972c7fdd2",
+    "pixelSha256": "827e610a41377a93124db98e6651182977ebb5e18b2274e44aa56ee1325556eb",
+    "fileSha256": "8adb52f59874a5a42c9fec70b29411b83aaeee5a7158f90d69e0900b7f0b2ca4",
+    "bytes": 1258599
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-11": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "f2d0b677e5780d7e7c5f6bfb4e417a8b2b751d80c6b4b28e0af6b0b792935c4c",
+    "pixelSha256": "379fcd3b70deb6dc3ec1b8069265b4a7c86d22a93d3b2b19aea1585948971a84",
+    "fileSha256": "6bf7255ef5c2d824707ae61b92da0a5060179f38bfb0f9a2ec17894514ed750d",
+    "bytes": 943617
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-12": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "147413e8d9d87176321deb872e46f8c0cadfc458765eaacc6594a580f28c80c7",
+    "pixelSha256": "6f4dee7b9262eec7f8ed3a7a3ef3764635ce2b8530a44af3b5d840ab2436ce0e",
+    "fileSha256": "726224f2231cfaafb6a988dbf59ce341cdd8cf56acf8d917cdf6e01150523f6c",
+    "bytes": 553676
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-13": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "b358064ed7133ddee7a94c1098d9a2ee7bc91cfc98a59fff7d776ea9d4b067b2",
+    "pixelSha256": "3a22ad8f6026fd69622f5ed959b96bdb7d841d63cd28c9fd629861b0e5a3df65",
+    "fileSha256": "37615e8307cc74e6244684362176d6bd1dbb1ba6335f4eb48c0b88154a74d0cc",
+    "bytes": 185401
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-14": {
+    "width": 1280,
+    "height": 1864,
+    "sourcePngSha256": "cff6a6bac44b882a41cccb34bfa7711b379ef848915871429d96abab22eddad3",
+    "pixelSha256": "12cad1b71a001083350f9ec340fe7abacf47eec441713877432941e4c80d1dab",
+    "fileSha256": "a74307a067d99ab4e3335be58db9eb35d94a552a47508db3936a482dc86ed693",
+    "bytes": 21032
+  },
+  "gangshou_aoyi2_dazhiliao-124-pages-v3-15": {
+    "width": 1280,
+    "height": 1398,
+    "sourcePngSha256": "c3a6badbac29561aca0bcaa9f544ca4f1b6d5121b77d1c13d7a5d44ce77a336d",
+    "pixelSha256": "502ed177e4609782f6539ce3849323bbe6ae827ee979e36990333bb46f546be4",
+    "fileSha256": "07aed626910fa53768d67c571ae3e8e6f39dd5433636ef5befaec4152a794a4f",
+    "bytes": 7513
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-0": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "e45f579e6bad82cc9c8d18d0aa20267591f24bfdf722454640bf9a23185740fe",
+    "pixelSha256": "47846f22a6575b32382e267ddf4b6fb8e234fde4c53cc8f9dca2ec6ca8ccf108",
+    "fileSha256": "04a7a439cb0227f9bd3236176de0975ba10ff8f1c8bad5f528c3aacce5402950",
+    "bytes": 593811
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-1": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "052353ae70c9fe1f206ceaba1e394a5070ef5ca59a3286c2313576271748579d",
+    "pixelSha256": "abdb9627f9a584222ac169ab0fc0373dea388558025b7c2c0cff7b238bcba9b0",
+    "fileSha256": "50d368c900c2008ee620b583c1a485c4980ca1a02555f7cf3b13adf1e4c14e85",
+    "bytes": 760238
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-2": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "f7937c3911d6e83e7dafd22b7d42a70725ded681f16721ec7c8684172bd67044",
+    "pixelSha256": "854441c4959b645a173d14471a352539f5ac3cb10d9d3de5e464ed8635dc0fe8",
+    "fileSha256": "64138dea9923497ec3dd7c6fdd1aad2a55a67be1dadb9bf542048294c2021653",
+    "bytes": 688237
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-3": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "19b9af7d323d5c52a152579de79aa4d2cb643a7726efe54ad7f57af2043062f1",
+    "pixelSha256": "b4d58e4fd1a0cd848d34cc45992462ba6d3752995a8a555c43e63e7319d64880",
+    "fileSha256": "faa02ba4b3fd01e679e26adc0bfef35362a77c37d2f0e83fba87974ac6bd9d4f",
+    "bytes": 469387
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-4": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "f191653969d75022580083436fc7d74162a87f265d5a1eb9afe95ba632c950e6",
+    "pixelSha256": "1fe6268322956ddd98691f570ff6e083d6f202d7765f41c1091d1a37c91e67ee",
+    "fileSha256": "18bedb360ef1c955506d9887f44ba123d5af58f941419b4b7e23e5b54767ad0a",
+    "bytes": 454377
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-5": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "c7abac59fbbb4392ec4ec2688772102ba08a6b0ef47701285b1e27b06e50cc30",
+    "pixelSha256": "af1e3c3e3862fb841afe8dc29d63650137de3c299be50f1ee934fae1c7cf8198",
+    "fileSha256": "f9a0dcbd5107b125421d42ac4f4701a9c699effe140e909ff76942e2030bde9f",
+    "bytes": 449806
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-6": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "e309a07eb3fc75dec0b4702427a60a8d880199cfaa39a66627bc23e3f04950c8",
+    "pixelSha256": "1bccda20721a34fd515cb65a51abefc882f61b4d2d2da644b46f9f25cd479a6d",
+    "fileSha256": "2a9e76d541c164023e372f1776d005f0ed4f7875f4b07dbfe70d06c7ee570e75",
+    "bytes": 451206
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-7": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "b3956c18343c616ebec6304a7aa6b54d4300ff1f821e95b0e413c080bf9e01a8",
+    "pixelSha256": "c22da4773fd004a6ea2ff6e406c268ad503d472e8564796866830f10a17454ed",
+    "fileSha256": "4d6d634bcd786df1f51dd1ba7f06027bf4e3af385b0dba1b807d12acf9fc305f",
+    "bytes": 555054
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-8": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "b18b3dabe31be9cfe35de62852a9f2b6c02920797cf7774595686edcb60562c4",
+    "pixelSha256": "e9ee37c255ed8e2f5707d3aaf154769355bd6d4e9f5fdc3c04934a39121a07c8",
+    "fileSha256": "0ef5a92a9a6f807cb1f46079d45136dc1341a26a36cef2fd094b7d7539aabc97",
+    "bytes": 653261
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-9": {
+    "width": 1636,
+    "height": 1860,
+    "sourcePngSha256": "799c31b8deac6c7540b9671c49b19192b3509c00dca79a1cf3eb4f7c83d5c189",
+    "pixelSha256": "7bb30860d85e65dbccf606f8fce38b75ced1d70091bb07b2abea8c26e8576363",
+    "fileSha256": "87bb4dd2c0e54330954689d5cda9f8433cb5dfdefa27e59c57c92f60263e2e64",
+    "bytes": 474127
+  },
+  "gangshou_aoyi2_dazhiliao-383-pages-v3-10": {
+    "width": 1636,
+    "height": 465,
+    "sourcePngSha256": "775dc846f2aa005a9886ef6c5782bb0a9b1f910608565066a17185be7d60d7c1",
+    "pixelSha256": "b3a9f95a3d83c99dc636e4e9cdc596b22a07640b88ca5b9796f0baced99580dd",
+    "fileSha256": "52046732badfaa34cf5bbaf21d52c8ac8a174d7a67a3d6932e1343f2534b9449",
+    "bytes": 63577
+  },
+  "gangshou_chufa2_texie-200-pages-v3-0": {
+    "width": 1782,
+    "height": 1626,
+    "sourcePngSha256": "49c1364ddc3c0a856b42f89fc45d23ac5dcff150fbf587329b4f1287db022f86",
+    "pixelSha256": "400406238736d04203e3823e2e982e27fd4cc32f6971ed57a41a7a0b887577d0",
+    "fileSha256": "17b79e371adb75739cfe48d7a0642448d3f10b6dfa5abb1b7b1b70bbd21b3b7a",
+    "bytes": 128171
+  },
+  "gangshou_chufa2_texie-200-pages-v3-1": {
+    "width": 1782,
+    "height": 1626,
+    "sourcePngSha256": "192b69fe3c26571027e47cb991c47ea59c31764918fc25e537d1d31f917de736",
+    "pixelSha256": "6ea0104b9a84c93df594d99c266d306dbc06764808e7754c043afc9df3c3ae5c",
+    "fileSha256": "fe5214aaf117499bc114dda1acd4c5d3ae9a0492eb984827d1e0ec5aaa59e197",
+    "bytes": 679656
+  },
+  "gangshou_chufa2_texie-200-pages-v3-2": {
+    "width": 1782,
+    "height": 1626,
+    "sourcePngSha256": "79c1cf3530d4390b6a57663ea581ba6c849ab8256b774ba69d5b31dde7be1f4e",
+    "pixelSha256": "4da21419b3359774f695e58f9d17ec6db3ee95289d664fc946e9087c34b0b583",
+    "fileSha256": "4c60b021273de89cd8d6f9fa171fd092d8e1a3f322373127f5a5649a7425a5e4",
+    "bytes": 755516
+  },
+  "gangshou_chufa2_texie-200-pages-v3-3": {
+    "width": 1782,
+    "height": 1626,
+    "sourcePngSha256": "babd64d2736c7060d429dae2cfc1d060896b72d2096d0643181c37b38dfe2ef2",
+    "pixelSha256": "a482e0673e912c937b2154cc6e881895c6bc2ca5aab158af05e189abbccfc2b5",
+    "fileSha256": "f9a3667bd43f3527eaf62bed28b929c4ae78d9151b3834451cfde70683eec591",
+    "bytes": 730427
+  },
+  "gangshou_chufa2_texie-200-pages-v3-4": {
+    "width": 1782,
+    "height": 542,
+    "sourcePngSha256": "54937314039d77f1dadbe38576a7d219839ab12ab3f0e9ccf9dcde8f0d8d57e5",
+    "pixelSha256": "3742f647d9b91ca2fdc664ab89b9b81a86292e5046c12b4d6c39a064bdf9ba19",
+    "fileSha256": "fe7cc284ffb9738c800e5c2889f0ed426787e50c8b8091bbac3a5c37d3406868",
+    "bytes": 23026
+  },
+  "gangshou_pugong-131-pages-v3-0": {
+    "width": 2016,
+    "height": 1825,
+    "sourcePngSha256": "0bee4e21baf2a4fa671fd5e77a1b521e4c7ed9704dbe8d518b336d2c0d34f401",
+    "pixelSha256": "83641377abf5c1e32479aae588983a381def7dd3145443a2f82b23beb27f0bae",
+    "fileSha256": "8431bb21f59ba9a7266975888c586a997ade25f83caf718a7111e95c5bafa7aa",
+    "bytes": 1003036
+  },
+  "qusanqidong-37-pages-v3-0": {
+    "width": 1980,
+    "height": 362,
+    "sourcePngSha256": "a0a92b4e4d639c5f213d3cb620ccd19e67d44b0fb0901371dbd7a23a641e2f94",
+    "pixelSha256": "6cfef30bd44844de3c63d77df7989fff321dd3f64aca64daa7ae4629a00259dd",
+    "fileSha256": "c76c72c6270f20b45f89525b716ed38c2fb42fa475126bbc21c00812b9b69daa",
+    "bytes": 292673
+  }
+}

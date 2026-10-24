@@ -171,7 +171,6 @@ package Processors.Game.Lobby.DailyQuest
          var _loc2_:ByteArray = null;
          var _loc3_:int = 0;
          var _loc4_:TQuestDaily = null;
-         this.FIsInfo = true;
          _loc2_ = param1.Data;
          _loc3_ = _loc2_.readInt();
          if(_loc3_ != 0)
@@ -180,6 +179,7 @@ package Processors.Game.Lobby.DailyQuest
             return;
          }
          this.FUnstreamizerDailyTasks.Unstreamize(_loc2_,this.FDailytask,null);
+         this.FIsInfo = true;
          if(FIsResourcesLoadCompleted)
          {
             this.FProcessorWindowTask.TaskInit();

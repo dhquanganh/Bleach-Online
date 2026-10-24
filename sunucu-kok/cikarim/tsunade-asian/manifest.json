@@ -1,0 +1,286 @@
+{
+  "applied": true,
+  "heroId": 11120992,
+  "files": [
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\00A9B160.TexClient",
+      "sha256": "53f256b7ee28b5986b01e6bdc042d17e5448b8a695470d653c0e057cb5fbef2f"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600A.TexClient",
+      "sha256": "998e7cd84788f77f66b8dcdba15df1fa333a801d570f16b42f0d3e6a91d6f17a"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600B.TexClient",
+      "sha256": "f1de1e8b2a9c96a28232502bf4e70ba93925a554b4ade0c88b75a67ee49bea5c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600C.TexClient",
+      "sha256": "7343cda54c2c931025fc158183cf7abaa55abfe7af3d610c5c84bba78ec83361"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600D.TexClient",
+      "sha256": "911de18f85de089f386b095cb8a05e6b11a0271a4ff944f5d5cd320c46645c15"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600E.TexClient",
+      "sha256": "353d9a0b1c66dc2d3935b7f4a4ae33a3b9134548059e965ae63c709609b1c6df"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1600F.TexClient",
+      "sha256": "cfefff32496a329ee9d0449b3513131171e349f677ac9beb7bc9e56ca1780080"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\00A9B161.TexClient",
+      "sha256": "677bf49ee377ec573a563155c1b2b58159a78f688e1e90a57c246899449e504d"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610A.TexClient",
+      "sha256": "6f15522fba2571714afe4cb3a17f591a3eb585e7b893cc2d7f052cd146d49d5c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610B.TexClient",
+      "sha256": "d7be9ade90d4d6c7b9e5fcb42514a2219ffa94045e961135b8b1e7077d19163a"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610C.TexClient",
+      "sha256": "bf9cbf67a7ede0abe49ad3333f071604d6675f12296eb48dc82fb7e58d1d4e24"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610D.TexClient",
+      "sha256": "87b847236e24e068a9017e57d599a58d02f01543b16935d0689b7126ca275e7c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610E.TexClient",
+      "sha256": "a067466067e7d1b61e16a907681a18038571f69a9338616a71502bb6a26ec917"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Model\\A9B1610F.TexClient",
+      "sha256": "975b342909c47cac06d38a3db8f420bd319f65e8dd9f91da081648ea6a0b6176"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\HeadIcon\\00A9B160.TexClient",
+      "sha256": "a101c7c24aa492fa4ffc8570d4d42083b663442da230176001a7691c24dee26c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SmallIcon\\00A9B160.TexClient",
+      "sha256": "a101c7c24aa492fa4ffc8570d4d42083b663442da230176001a7691c24dee26c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\LargeIcon\\00A9B160.TexClient",
+      "sha256": "374fe0d62f16f70c496ba60c8c63500f647353d04c1f6e0a6e948a6544de2ef4"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\MiddlePicture\\00A9B160.TexClient",
+      "sha256": "2cb1e78d8bd3bb7209439fa72f0726e07660eb7f84006c3faf3ea68b1af624e0"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00CFDD49.TexClient",
+      "sha256": "d5c6f4206a269dda787908e16a30e1359e2ba9817c67edeae0be5ad9097ee422"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83849.TexClient",
+      "sha256": "6132d288880ba08493966124b9ddc40107292aac3c9d6f33486e891a7880b542"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83841.TexClient",
+      "sha256": "6c4ec15585dfae1919ede48a5caf2ed436da554a0c4132762d70ef6c32966c80"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83842.TexClient",
+      "sha256": "142a69ae81d443341db73c96b0c05ef50dd4c11b600901e1431ba9ce1d231396"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83843.TexClient",
+      "sha256": "aa7dba8ae6633a2fdeb7b06723572439434490104ae14794d18a32173c1b7fdc"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83844.TexClient",
+      "sha256": "232672e350d95103d35ff2e92f91c74e5f8fe25dafd6cd6b0f6c9865192ee010"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83845.TexClient",
+      "sha256": "218af311637e3bf38599e339f57405fd9eb54ca0d0ca04e4d1b36766e135ea59"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\Skill\\00C83846.TexClient",
+      "sha256": "86b09a2d52e204803ff7149083e08ebe9d08ff872aa17cbeec7af17f1e8e5619"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83841.TexClient",
+      "sha256": "d6ac123479584d969e570b440583ab76ae905567fcafb2d181ec44ec32719f72"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83842.TexClient",
+      "sha256": "a4f2481e4c886b8cd96b5b5d7d2bd53f02c63152de48f4b1e9eb66680cbd85a7"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83843.TexClient",
+      "sha256": "f10d0f8328b255795334e460c614fa0f35d36150d6a74fff909f99f81944dd33"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83844.TexClient",
+      "sha256": "a580fcf491916eff0026e8c24962bf046179a8a4837de7a3f7fa6e43a678de45"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83845.TexClient",
+      "sha256": "0d6e6db132fb14be8e4d6bd8542d95aaaf1a6e0aceb3172a8736c78f1ec6b1eb"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83846.TexClient",
+      "sha256": "ac1349acb309b2628d88cba4fc907f12f54ff8642656f776dba5157e014acbbc"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83847.TexClient",
+      "sha256": "367fc7b994c00d897f76c5c8a221b05d8c797ea697e2f31f7c7ea7edb7f00527"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83848.TexClient",
+      "sha256": "1789f782640a370c7dea3d59641fd4f21ad64c1e7c57fd7497604113b1fe660c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Textures\\SkillIcon\\00C83849.TexClient",
+      "sha256": "e9a8c56366a7c621d1486959d7c9f61521f16d2c028dbf6cd7ed51342163f4b9"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\00A9B160.TexClient",
+      "sha256": "53f256b7ee28b5986b01e6bdc042d17e5448b8a695470d653c0e057cb5fbef2f"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600A.TexClient",
+      "sha256": "998e7cd84788f77f66b8dcdba15df1fa333a801d570f16b42f0d3e6a91d6f17a"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600B.TexClient",
+      "sha256": "f1de1e8b2a9c96a28232502bf4e70ba93925a554b4ade0c88b75a67ee49bea5c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600C.TexClient",
+      "sha256": "7343cda54c2c931025fc158183cf7abaa55abfe7af3d610c5c84bba78ec83361"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600D.TexClient",
+      "sha256": "911de18f85de089f386b095cb8a05e6b11a0271a4ff944f5d5cd320c46645c15"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600E.TexClient",
+      "sha256": "353d9a0b1c66dc2d3935b7f4a4ae33a3b9134548059e965ae63c709609b1c6df"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1600F.TexClient",
+      "sha256": "cfefff32496a329ee9d0449b3513131171e349f677ac9beb7bc9e56ca1780080"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\00A9B161.TexClient",
+      "sha256": "677bf49ee377ec573a563155c1b2b58159a78f688e1e90a57c246899449e504d"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610A.TexClient",
+      "sha256": "6f15522fba2571714afe4cb3a17f591a3eb585e7b893cc2d7f052cd146d49d5c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610B.TexClient",
+      "sha256": "d7be9ade90d4d6c7b9e5fcb42514a2219ffa94045e961135b8b1e7077d19163a"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610C.TexClient",
+      "sha256": "bf9cbf67a7ede0abe49ad3333f071604d6675f12296eb48dc82fb7e58d1d4e24"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610D.TexClient",
+      "sha256": "87b847236e24e068a9017e57d599a58d02f01543b16935d0689b7126ca275e7c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610E.TexClient",
+      "sha256": "a067466067e7d1b61e16a907681a18038571f69a9338616a71502bb6a26ec917"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Model\\A9B1610F.TexClient",
+      "sha256": "975b342909c47cac06d38a3db8f420bd319f65e8dd9f91da081648ea6a0b6176"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\HeadIcon\\00A9B160.TexClient",
+      "sha256": "a101c7c24aa492fa4ffc8570d4d42083b663442da230176001a7691c24dee26c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SmallIcon\\00A9B160.TexClient",
+      "sha256": "a101c7c24aa492fa4ffc8570d4d42083b663442da230176001a7691c24dee26c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\LargeIcon\\00A9B160.TexClient",
+      "sha256": "374fe0d62f16f70c496ba60c8c63500f647353d04c1f6e0a6e948a6544de2ef4"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\MiddlePicture\\00A9B160.TexClient",
+      "sha256": "2cb1e78d8bd3bb7209439fa72f0726e07660eb7f84006c3faf3ea68b1af624e0"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00CFDD49.TexClient",
+      "sha256": "d5c6f4206a269dda787908e16a30e1359e2ba9817c67edeae0be5ad9097ee422"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83849.TexClient",
+      "sha256": "6132d288880ba08493966124b9ddc40107292aac3c9d6f33486e891a7880b542"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83841.TexClient",
+      "sha256": "6c4ec15585dfae1919ede48a5caf2ed436da554a0c4132762d70ef6c32966c80"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83842.TexClient",
+      "sha256": "142a69ae81d443341db73c96b0c05ef50dd4c11b600901e1431ba9ce1d231396"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83843.TexClient",
+      "sha256": "aa7dba8ae6633a2fdeb7b06723572439434490104ae14794d18a32173c1b7fdc"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83844.TexClient",
+      "sha256": "232672e350d95103d35ff2e92f91c74e5f8fe25dafd6cd6b0f6c9865192ee010"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83845.TexClient",
+      "sha256": "218af311637e3bf38599e339f57405fd9eb54ca0d0ca04e4d1b36766e135ea59"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\Skill\\00C83846.TexClient",
+      "sha256": "86b09a2d52e204803ff7149083e08ebe9d08ff872aa17cbeec7af17f1e8e5619"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83841.TexClient",
+      "sha256": "d6ac123479584d969e570b440583ab76ae905567fcafb2d181ec44ec32719f72"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83842.TexClient",
+      "sha256": "a4f2481e4c886b8cd96b5b5d7d2bd53f02c63152de48f4b1e9eb66680cbd85a7"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83843.TexClient",
+      "sha256": "f10d0f8328b255795334e460c614fa0f35d36150d6a74fff909f99f81944dd33"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83844.TexClient",
+      "sha256": "a580fcf491916eff0026e8c24962bf046179a8a4837de7a3f7fa6e43a678de45"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83845.TexClient",
+      "sha256": "0d6e6db132fb14be8e4d6bd8542d95aaaf1a6e0aceb3172a8736c78f1ec6b1eb"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83846.TexClient",
+      "sha256": "ac1349acb309b2628d88cba4fc907f12f54ff8642656f776dba5157e014acbbc"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83847.TexClient",
+      "sha256": "367fc7b994c00d897f76c5c8a221b05d8c797ea697e2f31f7c7ea7edb7f00527"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83848.TexClient",
+      "sha256": "1789f782640a370c7dea3d59641fd4f21ad64c1e7c57fd7497604113b1fe660c"
+    },
+    {
+      "path": "kaynak\\login.gogames.me\\public\\2026090619\\Resources\\Textures\\SkillIcon\\00C83849.TexClient",
+      "sha256": "e9a8c56366a7c621d1486959d7c9f61521f16d2c028dbf6cd7ed51342163f4b9"
+    }
+  ]
+}

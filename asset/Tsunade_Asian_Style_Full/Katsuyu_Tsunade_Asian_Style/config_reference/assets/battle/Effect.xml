@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Effect><EffectInfo id="2016" name="治活再生术" type="0" target="1" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/hphuifu.swf" frontAction="effect_battle_addhp" backAction="" />
+  <EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  </Effect>

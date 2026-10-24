@@ -1,0 +1,17 @@
+[
+  {
+    "file": "assets/battle/effect/hphuifu.swf",
+    "bytes": 68182,
+    "sha256": "2efebcb025119bd2743855dece9a936e26c156f151974940c237d6e70a391d0b"
+  },
+  {
+    "file": "assets/battle/effect/skillActionEffect.swf",
+    "bytes": 120049,
+    "sha256": "3d931014ff364a8aef2d3d9453433e6c234c94790a65d988c516636385c36fb2"
+  },
+  {
+    "file": "assets/battle/role/left/19004611.swf",
+    "bytes": 136365,
+    "sha256": "ee56a34b0da7952c3712d9a3ed69093d4d5c274e612089a9eb1ac7c0f0cb35cf"
+  }
+]

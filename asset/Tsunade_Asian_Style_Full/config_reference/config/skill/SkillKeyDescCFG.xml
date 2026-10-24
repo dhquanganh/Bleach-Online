@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>11</id>
+		<keys>Chaos</keys>
+		<skillId>21002374</skillId>
+		<buffId>40000006</buffId>
+		<desc>[Debuff]: Units affected cannot execute Mystery, Chase and non-single-target Standard Attacks. Their single-target Standard Attack instead attacks an ally unit. Lasts for 1 round.</desc>
+		<isSkillDesc />
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	<row>
+		<id>62</id>
+		<keys>Weakness</keys>
+		<skillId>21002374</skillId>
+		<buffId>49000284</buffId>
+		<desc>[Debuff]: Units affected will have their Attack and Ninjutsu suppressed to 75% of their base stat. Lasts for 1 round.</desc>
+		<isSkillDesc />
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	<row>
+		<id>401</id>
+		<keys>Giant Slug Heal</keys>
+		<skillId>21002377</skillId>
+		<buffId>49000158</buffId>
+		<desc>[Mystery]: Heals 9 units in the ally field based on 25% of Tsunade's base Ninjutsu stat and cancels all [Debuffs], then removes all [Ignition] types from herself.</desc>
+		<isSkillDesc>1</isSkillDesc>
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	<row>
+		<id>402</id>
+		<keys>Summoning Jutsu - Small Katsuyu</keys>
+		<skillId>21002374</skillId>
+		<buffId>49000159</buffId>
+		<desc>[Trigger]: Before executing her Mystery skill, Tsunade summons 3 [Small Katsuyus] based on 15% of her max [HP]. Whenever it executes Standard Attack or suffers fatal damage, heals a random ally ninja and [restores] their [Chakra Limit] to 100.</desc>
+		<isSkillDesc>1</isSkillDesc>
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	</skillConfig>

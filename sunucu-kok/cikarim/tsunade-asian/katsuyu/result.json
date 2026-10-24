@@ -1,0 +1,15 @@
+{
+  "sourceActor": 19004611,
+  "actorId": 11120993,
+  "actions": [
+    "idle",
+    "standard",
+    "entry",
+    "dead",
+    "hit",
+    "run"
+  ],
+  "healingEffect": 13622609,
+  "changedFiles": 124,
+  "sourceSha256": "ee56a34b0da7952c3712d9a3ed69093d4d5c274e612089a9eb1ac7c0f0cb35cf"
+}

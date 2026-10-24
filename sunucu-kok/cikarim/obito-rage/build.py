@@ -38,6 +38,7 @@ def rows():
              powerGrow=3.4,agileGrow=2.8,intelligenceGrow=3.2,lifeGrow=4.4,speedGrow=2.5)
     for field in ['dodgeRate','critRate','blockRate','punchRate','helpRate','hurtRate','avoidHurtRate','wreckRate','antiknockRate','recoverRate']:h[field]=0
     h['hitRate']=1
+    h['tags']=CFG['tags'][:]
     return {'BaseHero':[h],'RoleModel':[{'id':native.hexid(HERO),'model':HERO,'roleStyle':HERO,'roleHead':HERO}],
             'HeroTalent':[{'id':native.hexid(13220920),'talentName':'Outrage - Darkness Commitment / Rage Mode','talentDesc':' '.join(DESC[sid] for sid in [13120959,13120955,13120956,13120957,13120958,13120952])}],
             'SkillConfig':[{'id':native.hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':DESC[m['id']],'icon':m['id'],'sortId':i+1} for i,m in enumerate(MOVES)]}

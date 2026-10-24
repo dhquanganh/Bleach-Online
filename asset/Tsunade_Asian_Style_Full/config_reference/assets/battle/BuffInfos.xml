@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<buffInfos><bufferInfo id="40000041" name="驱散" buffEffectId="" addBuffEffectId="3022" position="0" mirror="1" />
+    <bufferInfo id="40000070" name="溶解" buffEffectId="2968" addBuffEffectId="" startPosition="0" continuePosition="0" mirror="1" />
+    </buffInfos>

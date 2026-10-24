@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ninjaSkillConfig><row>
+		<id>11002371</id>
+		<star />
+		<needMaterialType />
+		<normals>21002371</normals>
+		<normals>21002372</normals>
+		<normals>21002373</normals>
+		<specials>21002378</specials>
+		<skills>21002374</skills>
+		<skills>21002376</skills>
+		<skills>21002377</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>31000025</id>
+		<star />
+		<needMaterialType />
+		<normals>21002371</normals>
+		<normals>21002372</normals>
+		<normals>21002373</normals>
+		<specials>21002378</specials>
+		<skills>21002374</skills>
+		<skills>21002376</skills>
+		<skills>21002377</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>18117731</id>
+		<star />
+		<needMaterialType />
+		<normals>21002371</normals>
+		<normals>21002372</normals>
+		<normals>21002373</normals>
+		<specials>21002378</specials>
+		<skills>21002374</skills>
+		<skills>21002376</skills>
+		<skills>21002377</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	</ninjaSkillConfig>

@@ -1,0 +1,41 @@
+      private function ShowTsunadeCutscene(effect:String,host:DisplayObjectContainer,delay:int) : void {
+         if(stage == null)return;
+         var data:Object=TsunadeVfxManifest();
+         var layers:Array=data.effects[effect] as Array;
+         if(layers == null || layers.length == 0)return;
+         var tl:Point=host.globalToLocal(stage.localToGlobal(new Point()));
+         var br:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+         var sw:Number=br.x-tl.x;var sh:Number=br.y-tl.y;
+         var viewport:Sprite=new Sprite();
+         viewport.name="tsunadeSkillVfx";
+         viewport.mouseEnabled=false;viewport.mouseChildren=false;
+         viewport.x=tl.x;viewport.y=tl.y;
+         viewport.scrollRect=new Rectangle(0,0,sw,sh);
+         // Source ink supplies the cutscene background. Empty/loading frames stay transparent.
+         viewport.graphics.beginFill(0,0);viewport.graphics.drawRect(0,0,sw,sh);viewport.graphics.endFill();
+         host.addChild(viewport);
+         var cleanup:Function;
+         var removed:Function;
+         cleanup=function(event:Event):void {
+            if(viewport.numChildren != 0)return;
+            viewport.removeEventListener(Event.ENTER_FRAME,cleanup);
+            viewport.removeEventListener(Event.REMOVED_FROM_STAGE,removed);
+            if(viewport.parent != null)viewport.parent.removeChild(viewport);
+         };
+         removed=function(event:Event):void {
+            if(event.target != viewport)return;
+            viewport.removeEventListener(Event.ENTER_FRAME,cleanup);
+            viewport.removeEventListener(Event.REMOVED_FROM_STAGE,removed);
+         };
+         viewport.addEventListener(Event.ENTER_FRAME,cleanup);
+         viewport.addEventListener(Event.REMOVED_FROM_STAGE,removed);
+         for each(var key:String in layers){
+            var clip:Object=data.clips[key];
+            // The source's central portrait strip occupies 64% of its ink bounds.
+            // Fit that strip across the viewport; crop outer ink, never stretch art.
+            var scale:Number=Math.max(sw/(Number(clip.width)*0.64),sh/Number(clip.height));
+            var width:Number=Number(clip.width)*scale;var height:Number=Number(clip.height)*scale;
+            var at:Point=new Point(sw/2+width*(Number(clip.pivot[0])-0.5),sh/2+height*(Number(clip.pivot[1])-0.5));
+            PlayTsunadeVfxAsset(key,viewport,at,width,height,delay,false,false,false);
+         }
+      }

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Config><SkillAction id="21302371" type="4" hideOthers="0" triggerDefenceType="1" attackAction="A_1hit" attackDistance="120,0" afterAttackOffsetPoint="" moveType="1" skillIdleAction="" skillIdleEffectId="" sceneMaskAlpha="" hideSelfStart="" hideSelfRange="" hidePassiveStart="" hidePassiveRange="" comboWaitFrame="" videoUrl="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" majorHitEffectId="2016" minorHitEffectId="2016" />
+  </SkillAction>
+  </Config>

@@ -33,7 +33,7 @@ package Processors.Game.Lobby.DailyQuest
       
       protected static const REWARD_LISTS:uint = 10;
       
-      protected static const TOTAL_POINT:uint = 165;
+      protected static const TOTAL_POINT:uint = 150;
       
       protected static const OFFSET:uint = 5;
       
@@ -382,7 +382,7 @@ package Processors.Game.Lobby.DailyQuest
          _loc4_.reverse();
          if(this.FPoint >= GRADE)
          {
-            this.FIndex = Math.floor((this.FPoint - GRADE) / GRADE);
+            this.FIndex = Math.min(REWARD_LISTS - 1,Math.floor((this.FPoint - GRADE) / GRADE));
          }
          else
          {

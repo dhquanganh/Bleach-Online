@@ -18,4 +18,13 @@ sunucu-kok/gorsel/boss-probe.*
 sunucu-kok/gorsel/boss-test.swf
 sunucu-kok/sunucu/battlefield-runtime.json*
 sunucu-kok/sunucu/battlefield-audit.jsonl*
-ssh-key-2026-10-20.key
+
+# Local build backups and reproducible export/verification output.
+# Keep runtime VFX atlases (.png/.argb) and released Flash resources tracked.
+/sunucu-kok/cikarim/**/*backup*/
+/sunucu-kok/cikarim/**/native-export/
+/sunucu-kok/cikarim/**/frames/
+/sunucu-kok/cikarim/**/verify/
+/sunucu-kok/cikarim/**/repair-verify/
+/sunucu-kok/cikarim/daily-task-audit/repair-source.swf
+/sunucu-kok/cikarim/daily-task-audit/repair-compiled.swf

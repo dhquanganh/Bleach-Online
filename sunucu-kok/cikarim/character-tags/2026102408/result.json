@@ -1,0 +1,66 @@
+{
+  "version": "2026102408",
+  "heroIds": [
+    11120960,
+    11120950
+  ],
+  "tags": {
+    "heroes": {
+      "11120960": [
+        26,
+        52,
+        1,
+        11,
+        14,
+        31,
+        48
+      ],
+      "11120950": [
+        27,
+        52,
+        12
+      ]
+    },
+    "tags": {
+      "26": {
+        "name": "Fire",
+        "icon": "/public/character-tags/26.png"
+      },
+      "52": {
+        "name": "Male",
+        "icon": "/public/character-tags/52.png"
+      },
+      "1": {
+        "name": "Konoha",
+        "icon": "/public/character-tags/1.png"
+      },
+      "11": {
+        "name": "Akatsuki",
+        "icon": "/public/character-tags/11.png"
+      },
+      "14": {
+        "name": "Blood Limit",
+        "icon": "/public/character-tags/14.png"
+      },
+      "31": {
+        "name": "Uchiha Clan",
+        "icon": "/public/character-tags/31.png"
+      },
+      "48": {
+        "name": "Secret Jutsu User",
+        "icon": "/public/character-tags/48.png"
+      },
+      "27": {
+        "name": "Wind",
+        "icon": "/public/character-tags/27.png"
+      },
+      "12": {
+        "name": "Confusion",
+        "icon": "/public/character-tags/12.png"
+      }
+    }
+  },
+  "unchangedMethods": 39,
+  "sha256": "43994ef150281c4d1747cdc8dee8efc3f2087647f648f95726ed5130460446a5",
+  "unchangedNonScriptTags": true
+}

@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NinjaInfo><row>
+		<id>11002371</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>纲手[中国风]</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>159</baseLife>
+		<growthLife>1005</growthLife>
+		<baseBodyAttack>70</baseBodyAttack>
+		<growthBodyAttack>740</growthBodyAttack>
+		<baseBodyDefense>55</baseBodyDefense>
+		<growthBodyDefense>553</growthBodyDefense>
+		<baseNinjaAttack>81</baseNinjaAttack>
+		<growthNinjaAttack>806</growthNinjaAttack>
+		<baseNinjaDefense>55</baseNinjaDefense>
+		<growthNinjaDefense>553</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>30</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel>3</starLevel>
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys>67</showPropertys>
+		<showPropertys>54</showPropertys>
+		<showPropertys>1</showPropertys>
+		<showPropertys>18</showPropertys>
+		<showPropertys>32</showPropertys>
+		<showPropertys>48</showPropertys>
+		<showPropertys>57</showPropertys>
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay>29</achievedWay>
+		<sex>2</sex>
+		<risingStarTatter>20400445</risingStarTatter>
+		<starIdArr>11002371</starIdArr>
+		<starIdArr>11002371</starIdArr>
+		<starIdArr>11002371</starIdArr>
+		<starIdArr>11002371</starIdArr>
+		<starIdArr>11002371</starIdArr>
+		<series>373</series>
+		<ninjaSeries>25</ninjaSeries>
+		<tupoLvl>25</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>11002372</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>阴封印·解</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>159</baseLife>
+		<growthLife>1005</growthLife>
+		<baseBodyAttack>70</baseBodyAttack>
+		<growthBodyAttack>740</growthBodyAttack>
+		<baseBodyDefense>55</baseBodyDefense>
+		<growthBodyDefense>553</growthBodyDefense>
+		<baseNinjaAttack>81</baseNinjaAttack>
+		<growthNinjaAttack>806</growthNinjaAttack>
+		<baseNinjaDefense>55</baseNinjaDefense>
+		<growthNinjaDefense>553</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>30</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel>3</starLevel>
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys>67</showPropertys>
+		<showPropertys>54</showPropertys>
+		<showPropertys>1</showPropertys>
+		<showPropertys>18</showPropertys>
+		<showPropertys>32</showPropertys>
+		<showPropertys>48</showPropertys>
+		<showPropertys>57</showPropertys>
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay>29</achievedWay>
+		<sex>2</sex>
+		<risingStarTatter>0</risingStarTatter>
+		<starIdArr />
+		<series>0</series>
+		<ninjaSeries>25</ninjaSeries>
+		<tupoLvl>25</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>31000025</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>忍者试用-纲手[中国风]</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>30</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316</comeFrom>
+		<showPropertys>54</showPropertys>
+		<showPropertys>1</showPropertys>
+		<showPropertys>18</showPropertys>
+		<showPropertys>32</showPropertys>
+		<showPropertys>48</showPropertys>
+		<showPropertys>57</showPropertys>
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay>29</achievedWay>
+		<sex>2</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>25</ninjaSeries>
+		<tupoLvl>25</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117731</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡511</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>94881</baseLife>
+		<growthLife>34755</growthLife>
+		<baseBodyAttack>10220</baseBodyAttack>
+		<growthBodyAttack>4757</growthBodyAttack>
+		<baseBodyDefense>9965</baseBodyDefense>
+		<growthBodyDefense>3670</growthBodyDefense>
+		<baseNinjaAttack>10220</baseNinjaAttack>
+		<growthNinjaAttack>4757</growthNinjaAttack>
+		<baseNinjaDefense>9965</baseNinjaDefense>
+		<growthNinjaDefense>3670</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>8500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys />
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>2</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117831</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡519</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>91574</baseLife>
+		<growthLife>27031</growthLife>
+		<baseBodyAttack>10475</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>10465</baseBodyDefense>
+		<growthBodyDefense>3670</growthBodyDefense>
+		<baseNinjaAttack>10475</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>10465</baseNinjaDefense>
+		<growthNinjaDefense>3670</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>8500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys />
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>2</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117832</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡519</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>91574</baseLife>
+		<growthLife>27031</growthLife>
+		<baseBodyAttack>10475</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>10465</baseBodyDefense>
+		<growthBodyDefense>3670</growthBodyDefense>
+		<baseNinjaAttack>10475</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>10465</baseNinjaDefense>
+		<growthNinjaDefense>3670</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>8500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys />
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>2</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117833</id>
+		<name>Tsunade</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡519</filterTxt>
+		<title>[Asian Style]</title>
+		<artisticId>11002371</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>91574</baseLife>
+		<growthLife>27031</growthLife>
+		<baseBodyAttack>10475</baseBodyAttack>
+		<growthBodyAttack>4078</growthBodyAttack>
+		<baseBodyDefense>10465</baseBodyDefense>
+		<growthBodyDefense>3670</growthBodyDefense>
+		<baseNinjaAttack>10475</baseNinjaAttack>
+		<growthNinjaAttack>4078</growthNinjaAttack>
+		<baseNinjaDefense>10465</baseNinjaDefense>
+		<growthNinjaDefense>3670</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>8500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>80</continuousStrikeRate>
+		<fireResist>0</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>-20</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>2</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>0;16;19;25;105;2425;2316;5000</comeFrom>
+		<showPropertys />
+		<property>1</property>
+		<carreer>6</carreer>
+		<equipNum>5</equipNum>
+		<description>Tsunade[Asian Style]</description>
+		<attributeDescription>2,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>2</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	</NinjaInfo>

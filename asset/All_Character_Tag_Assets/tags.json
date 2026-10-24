@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "name_original": "木叶",
+    "name_en_translated": "Konoha",
+    "icon": "assets/user/ninja/propertyIcon/1.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 2,
+    "name_original": "砂隐",
+    "name_en_translated": "Sand",
+    "icon": "assets/user/ninja/propertyIcon/2.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 3,
+    "name_original": "音隐",
+    "name_en_translated": "Sound",
+    "icon": "assets/user/ninja/propertyIcon/3.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 4,
+    "name_original": "雾隐",
+    "name_en_translated": "Mist",
+    "icon": "assets/user/ninja/propertyIcon/4.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 5,
+    "name_original": "云隐",
+    "name_en_translated": "Cloud",
+    "icon": "assets/user/ninja/propertyIcon/5.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 6,
+    "name_original": "雨隐",
+    "name_en_translated": "Rain",
+    "icon": "assets/user/ninja/propertyIcon/6.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 7,
+    "name_original": "泷隐",
+    "name_en_translated": "Waterfall",
+    "icon": "assets/user/ninja/propertyIcon/7.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 8,
+    "name_original": "草隐",
+    "name_en_translated": "Grass",
+    "icon": "assets/user/ninja/propertyIcon/8.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 9,
+    "name_original": "岩隐",
+    "name_en_translated": "Stone",
+    "icon": "assets/user/ninja/propertyIcon/9.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 10,
+    "name_original": "汤隐",
+    "name_en_translated": "Hot Water",
+    "icon": "assets/user/ninja/propertyIcon/10.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 11,
+    "name_original": "晓",
+    "name_en_translated": "Akatsuki",
+    "icon": "assets/user/ninja/propertyIcon/11.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 12,
+    "name_original": "迷",
+    "name_en_translated": "Mystery",
+    "icon": "assets/user/ninja/propertyIcon/12.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 13,
+    "name_original": "人柱力",
+    "name_en_translated": "Jinchuriki",
+    "icon": "assets/user/ninja/propertyIcon/13.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 14,
+    "name_original": "血继限界",
+    "name_en_translated": "Blood Limit",
+    "icon": "assets/user/ninja/propertyIcon/14.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 15,
+    "name_original": "咒印",
+    "name_en_translated": "Curse Mark",
+    "icon": "assets/user/ninja/propertyIcon/15.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 16,
+    "name_original": "通灵兽",
+    "name_en_translated": "Summon",
+    "icon": "assets/user/ninja/propertyIcon/16.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 17,
+    "name_original": "傀儡",
+    "name_en_translated": "Puppet",
+    "icon": "assets/user/ninja/propertyIcon/17.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 18,
+    "name_original": "影",
+    "name_en_translated": "Kage",
+    "icon": "assets/user/ninja/propertyIcon/18.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 19,
+    "name_original": "暗部",
+    "name_en_translated": "Anbu",
+    "icon": "assets/user/ninja/propertyIcon/19.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 20,
+    "name_original": "上忍",
+    "name_en_translated": "Jonin",
+    "icon": "assets/user/ninja/propertyIcon/20.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 21,
+    "name_original": "特别上忍",
+    "name_en_translated": "Special Jonin",
+    "icon": "assets/user/ninja/propertyIcon/21.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 22,
+    "name_original": "中忍",
+    "name_en_translated": "Chunin",
+    "icon": "assets/user/ninja/propertyIcon/22.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 23,
+    "name_original": "下忍",
+    "name_en_translated": "Genin",
+    "icon": "assets/user/ninja/propertyIcon/23.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 24,
+    "name_original": "忍者学校学生",
+    "name_en_translated": "Academy Student",
+    "icon": "assets/user/ninja/propertyIcon/24.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 25,
+    "name_original": "不详",
+    "name_en_translated": "Unknown",
+    "icon": "assets/user/ninja/propertyIcon/25.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 26,
+    "name_original": "火属性",
+    "name_en_translated": "Fire",
+    "icon": "assets/user/ninja/propertyIcon/26.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 27,
+    "name_original": "风属性",
+    "name_en_translated": "Wind",
+    "icon": "assets/user/ninja/propertyIcon/27.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 28,
+    "name_original": "雷属性",
+    "name_en_translated": "Lightning",
+    "icon": "assets/user/ninja/propertyIcon/28.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 29,
+    "name_original": "水属性",
+    "name_en_translated": "Water",
+    "icon": "assets/user/ninja/propertyIcon/29.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 30,
+    "name_original": "土属性",
+    "name_en_translated": "Earth",
+    "icon": "assets/user/ninja/propertyIcon/30.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 31,
+    "name_original": "宇智波一族",
+    "name_en_translated": "Uchiha Clan",
+    "icon": "assets/user/ninja/propertyIcon/31.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 32,
+    "name_original": "千手一族",
+    "name_en_translated": "Senju Clan",
+    "icon": "assets/user/ninja/propertyIcon/32.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 33,
+    "name_original": "日向一族",
+    "name_en_translated": "Hyuga Clan",
+    "icon": "assets/user/ninja/propertyIcon/33.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 34,
+    "name_original": "奈良一族",
+    "name_en_translated": "Nara Clan",
+    "icon": "assets/user/ninja/propertyIcon/34.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 35,
+    "name_original": "山中一族",
+    "name_en_translated": "Yamanaka Clan",
+    "icon": "assets/user/ninja/propertyIcon/35.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 36,
+    "name_original": "秋道一族",
+    "name_en_translated": "Akimichi Clan",
+    "icon": "assets/user/ninja/propertyIcon/36.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 37,
+    "name_original": "攀岩",
+    "name_en_translated": "Rock Climbing",
+    "icon": "assets/user/ninja/propertyIcon/37.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 38,
+    "name_original": "碎岩",
+    "name_en_translated": "Rock Breaking",
+    "icon": "assets/user/ninja/propertyIcon/38.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 39,
+    "name_original": "瞳术",
+    "name_en_translated": "Dojutsu",
+    "icon": "assets/user/ninja/propertyIcon/39.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 40,
+    "name_original": "封印",
+    "name_en_translated": "Sealing",
+    "icon": "assets/user/ninja/propertyIcon/40.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 41,
+    "name_original": "火封印",
+    "name_en_translated": "Fire Seal",
+    "icon": "assets/user/ninja/propertyIcon/41.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 42,
+    "name_original": "雷封印",
+    "name_en_translated": "Lightning Seal",
+    "icon": "assets/user/ninja/propertyIcon/42.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 43,
+    "name_original": "水封印",
+    "name_en_translated": "Water Seal",
+    "icon": "assets/user/ninja/propertyIcon/43.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 44,
+    "name_original": "土封印",
+    "name_en_translated": "Earth Seal",
+    "icon": "assets/user/ninja/propertyIcon/44.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 45,
+    "name_original": "风封印",
+    "name_en_translated": "Wind Seal",
+    "icon": "assets/user/ninja/propertyIcon/45.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 46,
+    "name_original": "轮回眼",
+    "name_en_translated": "Rinnegan",
+    "icon": "assets/user/ninja/propertyIcon/46.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 47,
+    "name_original": "漩涡一族",
+    "name_en_translated": "Uzumaki Clan",
+    "icon": "assets/user/ninja/propertyIcon/47.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 48,
+    "name_original": "秘传技",
+    "name_en_translated": "Secret Jutsu User",
+    "icon": "assets/user/ninja/propertyIcon/48.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 49,
+    "name_original": "带刀",
+    "name_en_translated": "Sword User",
+    "icon": "assets/user/ninja/propertyIcon/49.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 50,
+    "name_original": "突破",
+    "name_en_translated": "Breakthrough",
+    "icon": "assets/user/ninja/propertyIcon/50.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 51,
+    "name_original": "秽土转生",
+    "name_en_translated": "Edo Tensei",
+    "icon": "assets/user/ninja/propertyIcon/51.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 52,
+    "name_original": "男性",
+    "name_en_translated": "Male",
+    "icon": "assets/user/ninja/propertyIcon/52.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 53,
+    "name_original": "雄性",
+    "name_en_translated": "Male Animal",
+    "icon": "assets/user/ninja/propertyIcon/53.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 54,
+    "name_original": "女性",
+    "name_en_translated": "Female",
+    "icon": "assets/user/ninja/propertyIcon/54.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 55,
+    "name_original": "雌性",
+    "name_en_translated": "Female Animal",
+    "icon": "assets/user/ninja/propertyIcon/55.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 56,
+    "name_original": "大筒木一族",
+    "name_en_translated": "Otsutsuki Clan",
+    "icon": "assets/user/ninja/propertyIcon/56.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 57,
+    "name_original": "忍联合军",
+    "name_en_translated": "Allied Shinobi Forces",
+    "icon": "assets/user/ninja/propertyIcon/57.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 58,
+    "name_original": "仙术",
+    "name_en_translated": "Senjutsu",
+    "icon": "assets/user/ninja/propertyIcon/58.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 59,
+    "name_original": "血继淘汰",
+    "name_en_translated": "Kekkei Tota",
+    "icon": "assets/user/ninja/propertyIcon/59.png",
+    "width": 21,
+    "height": 21
+  },
+  {
+    "id": 60,
+    "name_original": "血继网罗",
+    "name_en_translated": "Kekkei Mora",
+    "icon": "assets/user/ninja/propertyIcon/60.png",
+    "width": 21,
+    "height": 21
+  },
+  {
+    "id": 61,
+    "name_original": "佐助真传",
+    "name_en_translated": "Sasuke Shinden",
+    "icon": "assets/user/ninja/propertyIcon/61.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 62,
+    "name_original": "新春",
+    "name_en_translated": "New Year",
+    "icon": "assets/user/ninja/propertyIcon/62.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 63,
+    "name_original": "夏装",
+    "name_en_translated": "Summer",
+    "icon": "assets/user/ninja/propertyIcon/63.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 64,
+    "name_original": "泳装",
+    "name_en_translated": "Swimsuit",
+    "icon": "assets/user/ninja/propertyIcon/64.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 65,
+    "name_original": "中秋",
+    "name_en_translated": "Mid-Autumn",
+    "icon": "assets/user/ninja/propertyIcon/65.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 66,
+    "name_original": "冬日",
+    "name_en_translated": "Winter",
+    "icon": "assets/user/ninja/propertyIcon/66.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 67,
+    "name_original": "中国风",
+    "name_en_translated": "Chinese Style",
+    "icon": "assets/user/ninja/propertyIcon/67.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 68,
+    "name_original": "西装",
+    "name_en_translated": "Suit",
+    "icon": "assets/user/ninja/propertyIcon/68.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 69,
+    "name_original": "异装",
+    "name_en_translated": "Costume",
+    "icon": "assets/user/ninja/propertyIcon/69.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 70,
+    "name_original": "和服",
+    "name_en_translated": "Kimono",
+    "icon": "assets/user/ninja/propertyIcon/70.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 71,
+    "name_original": "武士",
+    "name_en_translated": "Samurai",
+    "icon": "assets/user/ninja/propertyIcon/71.png",
+    "width": 20,
+    "height": 20
+  },
+  {
+    "id": 72,
+    "name_original": "New Generation",
+    "name_en_translated": "New Generation",
+    "icon": "assets/user/ninja/propertyIcon/72.png",
+    "width": 20,
+    "height": 20
+  }
+]

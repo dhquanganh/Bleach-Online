@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Effect><EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  <EffectInfo id="3022" type="2" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/qusanqidong.swf" action="" name="驱散" frontAction="qs" />
+  <EffectInfo id="6271" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/gangshou_aoyi1_niansuan.swf" action="" name="国风纲手奥义1" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6272" type="0" target="12" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/gangshou_aoyi1_niansuantexie.swf" action="" name="国风纲手奥义1特写" frontAction="texie" />
+  <EffectInfo id="6273" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/gangshou_aoyi2_dazhiliao.swf" action="" name="国风纲手奥义2" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6275" type="0" target="12" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/gangshou_chufa2_texie.swf" action="" name="国风纲手触发2特写" frontAction="texie" />
+  <EffectInfo id="6276" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/gangshou_pugong.swf" action="" name="国风纲手普攻" frontAction="shang" />
+  <EffectInfo id="2968" type="0" target="0" pos="70,0" color="" minAlpha="0.2" maxAlpha="0.6" ninjaAlpha="1" res="assets/battle/effect/rongjie.swf" action="" name="溶解" frontAction="rongjie" />
+  </Effect>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<UpgradeStarAttributeEC><row>
+		<id>20400445</id>
+		<ninjaId>11002371</ninjaId>
+		<beginLevel>3</beginLevel>
+		<attribute>(5,6)</attribute>
+		<level1>(0,0)</level1>
+		<level2>(14,4)</level2>
+		<level3>(21,6)</level3>
+		<level4>(25,8)</level4>
+		<level5>(28,10)</level5>
+		<openAttrTupo>0</openAttrTupo>
+		<attrTupoStar>1</attrTupoStar>
+		<attrTupoLevel>1</attrTupoLevel>
+		<attrTupoType>(4,5,9,10,6)</attrTupoType>
+		<attrTupoLvl1>(3,0,0,0,0)</attrTupoLvl1>
+		<attrTupoLvl2>(3,3,0,0,0)</attrTupoLvl2>
+		<attrTupoLvl3>(3,3,2,0,0)</attrTupoLvl3>
+		<attrTupoLvl4>(3,3,2,2,3)</attrTupoLvl4>
+		<attrTupoLvl5>(5,3,2,2,3)</attrTupoLvl5>
+		<attrTupoLvl6>(5,5,2,2,3)</attrTupoLvl6>
+		<attrTupoLvl7>(5,5,3,2,3)</attrTupoLvl7>
+		<attrTupoLvl8>(5,5,3,3,6)</attrTupoLvl8>
+		<attrTupoLvl9>(7,5,3,3,6)</attrTupoLvl9>
+		<attrTupoLvl10>(7,7,3,3,6)</attrTupoLvl10>
+		<attrTupoLvl11>(7,7,4,3,6)</attrTupoLvl11>
+		<attrTupoLvl12>(7,7,4,4,9)</attrTupoLvl12>
+		<attrTupoLvl13>(11,7,4,4,9)</attrTupoLvl13>
+		<attrTupoLvl14>(11,11,4,4,9)</attrTupoLvl14>
+		<attrTupoLvl15>(11,11,5,4,9)</attrTupoLvl15>
+		<attrTupoLvl16>(11,11,5,5,9)</attrTupoLvl16>
+		<attrTupoLvl17>(13,11,5,5,9)</attrTupoLvl17>
+		<attrTupoLvl18>(13,13,5,5,9)</attrTupoLvl18>
+		<attrTupoLvl19>(13,13,6,5,9)</attrTupoLvl19>
+		<attrTupoLvl20>(13,13,6,6,9)</attrTupoLvl20>
+	</row>
+	</UpgradeStarAttributeEC>

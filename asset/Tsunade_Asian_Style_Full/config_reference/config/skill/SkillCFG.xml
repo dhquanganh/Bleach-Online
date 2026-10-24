@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>21002371</id>
+		<name>Healing Jutsu</name>
+		<resId>21002371</resId>
+		<iconId>21002371</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals 3-5 units in your lineup based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;. After Tsunade is revived via &lt;font color="#4dc831"&gt;Reserve Seal&lt;/font&gt;, this skill heals 7-9 units in the ally field instead.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21002372</id>
+		<name>Healing Jutsu</name>
+		<resId>21002372</resId>
+		<iconId>21002372</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals 3-5 units in your lineup based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;. After Tsunade is revived via &lt;font color="#4dc831"&gt;Reserve Seal&lt;/font&gt;, this skill heals 7-9 units in the ally field instead.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21002373</id>
+		<name>Healing Jutsu</name>
+		<resId>21002373</resId>
+		<iconId>21002373</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Heals 3-5 units in your lineup based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;. After Tsunade is revived via &lt;font color="#4dc831"&gt;Reserve Seal&lt;/font&gt;, this skill heals 7-9 units in the ally field instead.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21002374</id>
+		<name>Reserve Seal</name>
+		<resId>21002374</resId>
+		<iconId>21002374</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>9</exStates>
+		<exStates>18</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Tsunade is &lt;font color="#4dc831"&gt;immune to Debuffs&lt;/font&gt;. Units causing Taijutsu damage to Tsunade will have a 45% chance to suffer from &lt;font color="#4dc831"&gt;Chaos&lt;/font&gt; and &lt;font color="#4dc831"&gt;Weakness&lt;/font&gt;. If Tsunade is defeated for the first time in a battle, revives with 100% &lt;font color="#4dc831"&gt;HP&lt;/font&gt;, gains &lt;font color="#4dc831"&gt;Summoning Jutsu - Small Katsuyu&lt;/font&gt; and the chance to cause &lt;font color="#4dc831"&gt;Chaos&lt;/font&gt; and &lt;font color="#4dc831"&gt;Weakness&lt;/font&gt; becomes 75%.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21002376</id>
+		<name>The Legendary Sannin</name>
+		<resId>21002376</resId>
+		<iconId>21002376</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Whenever &lt;font color="#4dc831"&gt;Konoha&lt;/font&gt; ninjas in your lineup receives an Extra Standard Attack, Tsunade also receives an Extra Standard Attack (up to 3 per round). While Tsunade is alive, &lt;font color="#4dc831"&gt;Konoha&lt;/font&gt; ninjas in your lineup except herself cannot be defeated by the first &lt;font color="#4dc831"&gt;Mystery&lt;/font&gt; damage received every round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21002377</id>
+		<name>Giant Katsuyu - Healing</name>
+		<resId>21002377</resId>
+		<iconId>21002377</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>1;2;3</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>At the end of round 1, 2 and 3, heals up to 9 units in the ally field based on 25% of Tsunade's base Ninjutsu stats and cancels all &lt;font color="#4dc831"&gt;Debuffs&lt;/font&gt;, then dispels all &lt;font color="#4dc831"&gt;Ignition&lt;/font&gt; she currently has. After Tsunade is revived via &lt;font color="#4dc831"&gt;Reserve Seal&lt;/font&gt;, this skill instead will be executed as a &lt;font color="#4dc831"&gt;Mystery&lt;/font&gt; skill whenever Tsunade selects an ally unit while executing her Mystery.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40620244</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21002378</id>
+		<name>Giant Katsuyu - Acid Shot</name>
+		<resId>21002378</resId>
+		<iconId>21002378</iconId>
+		<mp>20</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>29</exStates>
+		<exStates>36</exStates>
+		<exStates>63</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes damage, &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; until the end of the next round, &lt;font color="#4dc831"&gt;Corrosion&lt;/font&gt; and &lt;font color="#4dc831"&gt;Melt&lt;/font&gt; to up to 7 units in the opponent's field.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40120014</buffIds>
+		<buffIds>40600467</buffIds>
+		<buffIds>40130011</buffIds>
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21202371</id>
+		<name>Healing Jutsu</name>
+		<resId>21002371</resId>
+		<iconId>21002371</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals 7-9 units in the ally field based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21202372</id>
+		<name>Healing Jutsu</name>
+		<resId>21002372</resId>
+		<iconId>21002372</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals 7-9 units in the ally field based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21202373</id>
+		<name>Healing Jutsu</name>
+		<resId>21002373</resId>
+		<iconId>21002373</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Heals 7-9 units in the ally field based on 15% of Tsunade's base Ninjutsu stat and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21202374</id>
+		<name>Reserve Seal</name>
+		<resId>21002374</resId>
+		<iconId>21002374</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>9</exStates>
+		<exStates>18</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>100</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Tsunade is &lt;font color="#4dc831"&gt;immune to Debuffs&lt;/font&gt;. Units causing Taijutsu damage to Tsunade will have a 75% chance to suffer from &lt;font color="#4dc831"&gt;Chaos&lt;/font&gt; and &lt;font color="#4dc831"&gt;Weakness&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21202376</id>
+		<name>The Legendary Sannin</name>
+		<resId>21002376</resId>
+		<iconId>21002376</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Whenever &lt;font color="#4dc831"&gt;Konoha&lt;/font&gt; ninjas in your lineup receives an Extra Standard Attack, Tsunade also receives an Extra Standard Attack (up to 3 per round). While Tsunade is alive, &lt;font color="#4dc831"&gt;Konoha&lt;/font&gt; ninjas in your lineup except herself cannot be defeated by the first &lt;font color="#4dc831"&gt;Mystery&lt;/font&gt; damage received every round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21202377</id>
+		<name>Giant Katsuyu - Healing</name>
+		<resId>21002377</resId>
+		<iconId>21002377</iconId>
+		<mp>20</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Heals 9 units in the ally field based on 25% of Tsunade's base Ninjutsu stats and cancels all &lt;font color="#4dc831"&gt;Debuffs&lt;/font&gt;, then removes all &lt;font color="#4dc831"&gt;Ignition&lt;/font&gt; types from herself.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40620244</buffIds>
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21202378</id>
+		<name>Giant Katsuyu - Acid Shot</name>
+		<resId>21002378</resId>
+		<iconId>21002378</iconId>
+		<mp>20</mp>
+		<cd>2</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>29</exStates>
+		<exStates>36</exStates>
+		<exStates>63</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes damage, &lt;font color="#4dc831"&gt;Suppress Immunity&lt;/font&gt; until the end of the next round, &lt;font color="#4dc831"&gt;Corrosion&lt;/font&gt; and &lt;font color="#4dc831"&gt;Melt&lt;/font&gt; to up to 7 units in the opponent's field.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40120014</buffIds>
+		<buffIds>40600467</buffIds>
+		<buffIds>40130011</buffIds>
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21302371</id>
+		<name>Small Katsuyu - Healing</name>
+		<resId>21302371</resId>
+		<iconId>21002371</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals a random ninja in the ally field and &lt;font color="#4dc831"&gt;restores&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 100.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21302372</id>
+		<name>Small Katsuyu - Healing</name>
+		<resId>21302371</resId>
+		<iconId>21002372</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Heals a random ninja in the ally field and &lt;font color="#4dc831"&gt;restores&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 100.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21302373</id>
+		<name>Small Katsuyu - Healing</name>
+		<resId>21302371</resId>
+		<iconId>21002373</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Heals a random ninja in the ally field and &lt;font color="#4dc831"&gt;restores&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 100.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21302374</id>
+		<name>Small Katsuyu - Healing</name>
+		<resId>21302371</resId>
+		<iconId>21002373</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Small Katsuyu has Level 2 Immunity, Level 2 Super Armor, executes Katsuyu - Healing after suffering a fatal damage and cannot be revived.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21302375</id>
+		<name>Small Katsuyu - Healing</name>
+		<resId>21302371</resId>
+		<iconId>21002373</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>&lt;font color="#4dc831"&gt;Death Skill&lt;/font&gt;: Heals a random ninja in the ally field and &lt;font color="#4dc831"&gt;restores&lt;/font&gt; that lineup's &lt;font color="#4dc831"&gt;Chakra Limit&lt;/font&gt; to 100.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>4</displayType>
+	</row>
+	</skillConfig>

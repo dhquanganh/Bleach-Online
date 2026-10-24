@@ -1,0 +1,100 @@
+{
+  "version": "2026102409",
+  "heroIds": [
+    11120960,
+    11120950,
+    11120970
+  ],
+  "tags": {
+    "heroes": {
+      "11120960": [
+        26,
+        52,
+        1,
+        11,
+        14,
+        31,
+        48
+      ],
+      "11120950": [
+        27,
+        52,
+        12
+      ],
+      "11120970": [
+        28,
+        61,
+        52,
+        1,
+        3,
+        11,
+        14,
+        31,
+        46,
+        48,
+        49
+      ]
+    },
+    "tags": {
+      "26": {
+        "name": "Fire",
+        "icon": "/public/character-tags/26.png"
+      },
+      "52": {
+        "name": "Male",
+        "icon": "/public/character-tags/52.png"
+      },
+      "1": {
+        "name": "Konoha",
+        "icon": "/public/character-tags/1.png"
+      },
+      "11": {
+        "name": "Akatsuki",
+        "icon": "/public/character-tags/11.png"
+      },
+      "14": {
+        "name": "Blood Limit",
+        "icon": "/public/character-tags/14.png"
+      },
+      "31": {
+        "name": "Uchiha Clan",
+        "icon": "/public/character-tags/31.png"
+      },
+      "48": {
+        "name": "Secret Jutsu User",
+        "icon": "/public/character-tags/48.png"
+      },
+      "27": {
+        "name": "Wind",
+        "icon": "/public/character-tags/27.png"
+      },
+      "12": {
+        "name": "Confusion",
+        "icon": "/public/character-tags/12.png"
+      },
+      "28": {
+        "name": "Lightning",
+        "icon": "/public/character-tags/28.png"
+      },
+      "61": {
+        "name": "Sasuke Shinden",
+        "icon": "/public/character-tags/61.png"
+      },
+      "3": {
+        "name": "Hidden Sound",
+        "icon": "/public/character-tags/3.png"
+      },
+      "46": {
+        "name": "Rinnegan",
+        "icon": "/public/character-tags/46.png"
+      },
+      "49": {
+        "name": "Sword User",
+        "icon": "/public/character-tags/49.png"
+      }
+    }
+  },
+  "unchangedMethods": 38,
+  "sha256": "c0381582cf08c519b72c6dd4f59249d1365082fe4806a23d966348d6f192b553",
+  "unchangedNonScriptTags": true
+}

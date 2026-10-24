@@ -1,0 +1,139 @@
+{
+  "version": "2026102411",
+  "heroIds": [
+    11120960,
+    11120950,
+    11120970,
+    11120920,
+    11120991
+  ],
+  "tags": {
+    "heroes": {
+      "11120960": [
+        26,
+        52,
+        1,
+        11,
+        14,
+        31,
+        48
+      ],
+      "11120950": [
+        27,
+        52,
+        12
+      ],
+      "11120970": [
+        28,
+        61,
+        52,
+        1,
+        3,
+        11,
+        14,
+        31,
+        46,
+        48,
+        49
+      ],
+      "11120920": [
+        26,
+        52,
+        1,
+        14,
+        31,
+        48
+      ],
+      "11120991": [
+        27,
+        64,
+        52,
+        2,
+        13,
+        18,
+        57
+      ]
+    },
+    "tags": {
+      "26": {
+        "name": "Fire",
+        "icon": "/public/character-tags/26.png"
+      },
+      "52": {
+        "name": "Male",
+        "icon": "/public/character-tags/52.png"
+      },
+      "1": {
+        "name": "Konoha",
+        "icon": "/public/character-tags/1.png"
+      },
+      "11": {
+        "name": "Akatsuki",
+        "icon": "/public/character-tags/11.png"
+      },
+      "14": {
+        "name": "Blood Limit",
+        "icon": "/public/character-tags/14.png"
+      },
+      "31": {
+        "name": "Uchiha Clan",
+        "icon": "/public/character-tags/31.png"
+      },
+      "48": {
+        "name": "Secret Jutsu User",
+        "icon": "/public/character-tags/48.png"
+      },
+      "27": {
+        "name": "Wind",
+        "icon": "/public/character-tags/27.png"
+      },
+      "12": {
+        "name": "Confusion",
+        "icon": "/public/character-tags/12.png"
+      },
+      "28": {
+        "name": "Lightning",
+        "icon": "/public/character-tags/28.png"
+      },
+      "61": {
+        "name": "Sasuke Shinden",
+        "icon": "/public/character-tags/61.png"
+      },
+      "3": {
+        "name": "Hidden Sound",
+        "icon": "/public/character-tags/3.png"
+      },
+      "46": {
+        "name": "Rinnegan",
+        "icon": "/public/character-tags/46.png"
+      },
+      "49": {
+        "name": "Sword User",
+        "icon": "/public/character-tags/49.png"
+      },
+      "64": {
+        "name": "Swimsuit",
+        "icon": "/public/character-tags/64.png"
+      },
+      "2": {
+        "name": "Hidden Sand",
+        "icon": "/public/character-tags/2.png"
+      },
+      "13": {
+        "name": "Jinchuriki",
+        "icon": "/public/character-tags/13.png"
+      },
+      "18": {
+        "name": "Kage",
+        "icon": "/public/character-tags/18.png"
+      },
+      "57": {
+        "name": "Allied Shinobi Forces",
+        "icon": "/public/character-tags/57.png"
+      }
+    }
+  },
+  "unchangedMethods": 38,
+  "sha256": "69ce14fbc1cdae5a3a18a763105dfbbd8c51a11a65adfdd28d7b5e074aa4f49c",
+  "unchangedNonScriptTags": true
+}

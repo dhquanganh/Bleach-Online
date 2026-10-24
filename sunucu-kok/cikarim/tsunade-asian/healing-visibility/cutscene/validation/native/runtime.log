@@ -1,0 +1,27 @@
+BOOT native Flash shared VFX component probe
+TEXTURE summoning frames=105
+TEXTURE idle frames=55
+TEXTURE standard frames=46
+TEXTURE revival frames=50
+TEXTURE healing frames=139
+TEXTURE mystery frames=139
+TEXTURE healingMystery frames=139
+RESTORE_OK camp=0
+RESTORE_OK camp=1
+CASE 13121601 camp=0
+SNAPSHOT CASE-13121601-camp-0-frame-0
+SNAPSHOT CASE-13121601-camp-0-frame-8
+SNAPSHOT CASE-13121601-camp-0-frame-24
+SNAPSHOT CASE-13121601-camp-0-frame-44
+SNAPSHOT CASE-13121601-camp-0-frame-64
+SNAPSHOT CASE-13121601-camp-0-frame-100
+SNAPSHOT CASE-13121601-camp-0-frame-136
+CASE 13121601 camp=1
+SNAPSHOT CASE-13121601-camp-1-frame-0
+SNAPSHOT CASE-13121601-camp-1-frame-8
+SNAPSHOT CASE-13121601-camp-1-frame-24
+SNAPSHOT CASE-13121601-camp-1-frame-44
+SNAPSHOT CASE-13121601-camp-1-frame-64
+SNAPSHOT CASE-13121601-camp-1-frame-100
+SNAPSHOT CASE-13121601-camp-1-frame-136
+DONE Tsunade native component; remaining=0

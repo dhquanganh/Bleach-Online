@@ -1,0 +1,73 @@
+﻿id,name_original,name_en_translated,icon,width,height
+1,木叶,Konoha,assets/user/ninja/propertyIcon/1.png,20,20
+2,砂隐,Sand,assets/user/ninja/propertyIcon/2.png,20,20
+3,音隐,Sound,assets/user/ninja/propertyIcon/3.png,20,20
+4,雾隐,Mist,assets/user/ninja/propertyIcon/4.png,20,20
+5,云隐,Cloud,assets/user/ninja/propertyIcon/5.png,20,20
+6,雨隐,Rain,assets/user/ninja/propertyIcon/6.png,20,20
+7,泷隐,Waterfall,assets/user/ninja/propertyIcon/7.png,20,20
+8,草隐,Grass,assets/user/ninja/propertyIcon/8.png,20,20
+9,岩隐,Stone,assets/user/ninja/propertyIcon/9.png,20,20
+10,汤隐,Hot Water,assets/user/ninja/propertyIcon/10.png,20,20
+11,晓,Akatsuki,assets/user/ninja/propertyIcon/11.png,20,20
+12,迷,Mystery,assets/user/ninja/propertyIcon/12.png,20,20
+13,人柱力,Jinchuriki,assets/user/ninja/propertyIcon/13.png,20,20
+14,血继限界,Blood Limit,assets/user/ninja/propertyIcon/14.png,20,20
+15,咒印,Curse Mark,assets/user/ninja/propertyIcon/15.png,20,20
+16,通灵兽,Summon,assets/user/ninja/propertyIcon/16.png,20,20
+17,傀儡,Puppet,assets/user/ninja/propertyIcon/17.png,20,20
+18,影,Kage,assets/user/ninja/propertyIcon/18.png,20,20
+19,暗部,Anbu,assets/user/ninja/propertyIcon/19.png,20,20
+20,上忍,Jonin,assets/user/ninja/propertyIcon/20.png,20,20
+21,特别上忍,Special Jonin,assets/user/ninja/propertyIcon/21.png,20,20
+22,中忍,Chunin,assets/user/ninja/propertyIcon/22.png,20,20
+23,下忍,Genin,assets/user/ninja/propertyIcon/23.png,20,20
+24,忍者学校学生,Academy Student,assets/user/ninja/propertyIcon/24.png,20,20
+25,不详,Unknown,assets/user/ninja/propertyIcon/25.png,20,20
+26,火属性,Fire,assets/user/ninja/propertyIcon/26.png,20,20
+27,风属性,Wind,assets/user/ninja/propertyIcon/27.png,20,20
+28,雷属性,Lightning,assets/user/ninja/propertyIcon/28.png,20,20
+29,水属性,Water,assets/user/ninja/propertyIcon/29.png,20,20
+30,土属性,Earth,assets/user/ninja/propertyIcon/30.png,20,20
+31,宇智波一族,Uchiha Clan,assets/user/ninja/propertyIcon/31.png,20,20
+32,千手一族,Senju Clan,assets/user/ninja/propertyIcon/32.png,20,20
+33,日向一族,Hyuga Clan,assets/user/ninja/propertyIcon/33.png,20,20
+34,奈良一族,Nara Clan,assets/user/ninja/propertyIcon/34.png,20,20
+35,山中一族,Yamanaka Clan,assets/user/ninja/propertyIcon/35.png,20,20
+36,秋道一族,Akimichi Clan,assets/user/ninja/propertyIcon/36.png,20,20
+37,攀岩,Rock Climbing,assets/user/ninja/propertyIcon/37.png,20,20
+38,碎岩,Rock Breaking,assets/user/ninja/propertyIcon/38.png,20,20
+39,瞳术,Dojutsu,assets/user/ninja/propertyIcon/39.png,20,20
+40,封印,Sealing,assets/user/ninja/propertyIcon/40.png,20,20
+41,火封印,Fire Seal,assets/user/ninja/propertyIcon/41.png,20,20
+42,雷封印,Lightning Seal,assets/user/ninja/propertyIcon/42.png,20,20
+43,水封印,Water Seal,assets/user/ninja/propertyIcon/43.png,20,20
+44,土封印,Earth Seal,assets/user/ninja/propertyIcon/44.png,20,20
+45,风封印,Wind Seal,assets/user/ninja/propertyIcon/45.png,20,20
+46,轮回眼,Rinnegan,assets/user/ninja/propertyIcon/46.png,20,20
+47,漩涡一族,Uzumaki Clan,assets/user/ninja/propertyIcon/47.png,20,20
+48,秘传技,Secret Jutsu User,assets/user/ninja/propertyIcon/48.png,20,20
+49,带刀,Sword User,assets/user/ninja/propertyIcon/49.png,20,20
+50,突破,Breakthrough,assets/user/ninja/propertyIcon/50.png,20,20
+51,秽土转生,Edo Tensei,assets/user/ninja/propertyIcon/51.png,20,20
+52,男性,Male,assets/user/ninja/propertyIcon/52.png,20,20
+53,雄性,Male Animal,assets/user/ninja/propertyIcon/53.png,20,20
+54,女性,Female,assets/user/ninja/propertyIcon/54.png,20,20
+55,雌性,Female Animal,assets/user/ninja/propertyIcon/55.png,20,20
+56,大筒木一族,Otsutsuki Clan,assets/user/ninja/propertyIcon/56.png,20,20
+57,忍联合军,Allied Shinobi Forces,assets/user/ninja/propertyIcon/57.png,20,20
+58,仙术,Senjutsu,assets/user/ninja/propertyIcon/58.png,20,20
+59,血继淘汰,Kekkei Tota,assets/user/ninja/propertyIcon/59.png,21,21
+60,血继网罗,Kekkei Mora,assets/user/ninja/propertyIcon/60.png,21,21
+61,佐助真传,Sasuke Shinden,assets/user/ninja/propertyIcon/61.png,20,20
+62,新春,New Year,assets/user/ninja/propertyIcon/62.png,20,20
+63,夏装,Summer,assets/user/ninja/propertyIcon/63.png,20,20
+64,泳装,Swimsuit,assets/user/ninja/propertyIcon/64.png,20,20
+65,中秋,Mid-Autumn,assets/user/ninja/propertyIcon/65.png,20,20
+66,冬日,Winter,assets/user/ninja/propertyIcon/66.png,20,20
+67,中国风,Chinese Style,assets/user/ninja/propertyIcon/67.png,20,20
+68,西装,Suit,assets/user/ninja/propertyIcon/68.png,20,20
+69,异装,Costume,assets/user/ninja/propertyIcon/69.png,20,20
+70,和服,Kimono,assets/user/ninja/propertyIcon/70.png,20,20
+71,武士,Samurai,assets/user/ninja/propertyIcon/71.png,20,20
+72,New Generation,New Generation,assets/user/ninja/propertyIcon/72.png,20,20

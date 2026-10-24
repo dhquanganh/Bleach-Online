@@ -1,0 +1,19 @@
+TEXTURE run frames=4
+TEXTURE dead frames=33
+TEXTURE idle frames=42
+TEXTURE entry frames=12
+TEXTURE standard frames=33
+TEXTURE hit frames=7
+TEXTURE healing frames=38
+CASE six original Katsuyu, both camps
+SNAPSHOT katsuyu-phase-0
+SNAPSHOT katsuyu-phase-1
+SNAPSHOT katsuyu-phase-2
+SNAPSHOT katsuyu-phase-3
+SNAPSHOT katsuyu-phase-4
+SNAPSHOT katsuyu-phase-5
+SNAPSHOT katsuyu-phase-6
+RESTORE_OK six summons; cancelled death callback; source entry/idle restored
+SNAPSHOT katsuyu-phase-7
+SNAPSHOT katsuyu-phase-8
+DONE Katsuyu native lifecycle; remaining=0

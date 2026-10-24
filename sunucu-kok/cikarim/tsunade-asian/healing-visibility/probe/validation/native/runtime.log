@@ -1,0 +1,13 @@
+CASE heal 13121602 camp=0 allyHP=400
+CASE heal 13121603 camp=0 allyHP=400
+CASE heal 13121604 camp=0 allyHP=400
+CASE heal 13121605 camp=0 allyHP=400
+CASE heal 13121606 camp=0 allyHP=400
+CASE heal 13121609 camp=0 allyHP=400
+CASE heal 13121602 camp=1 allyHP=400
+CASE heal 13121603 camp=1 allyHP=400
+CASE heal 13121604 camp=1 allyHP=400
+CASE heal 13121605 camp=1 allyHP=400
+CASE heal 13121606 camp=1 allyHP=400
+CASE heal 13121609 camp=1 allyHP=400
+DONE native allied HP dispatch; checks=84 remaining=0

@@ -103118,5 +103118,25 @@
     "itemFunction": 1000,
     "functionValue": 0,
     "f16": 0
+  },
+  {
+    "id": "00D79F30",
+    "name": "Tsunade [Asian Style] Modify Fragment",
+    "majorType": 21,
+    "minorType": 100,
+    "level": 1,
+    "quality": 7,
+    "cardType": 1,
+    "sort": 14130992,
+    "overlayNumber": 9999,
+    "bindMode": 1,
+    "obtain": 0,
+    "functionDesc": "<p>Tsunade [Asian Style] Modify Fragment. Used for this partner's star upgrades and reincarnation.</p>",
+    "picture": 16228144,
+    "costPrice": "0_1_0_1",
+    "sellPrice": 1000,
+    "itemFunction": 1000,
+    "functionValue": 0,
+    "f16": 0
   }
 ]

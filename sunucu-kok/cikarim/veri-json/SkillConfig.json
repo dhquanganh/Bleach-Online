@@ -64630,5 +64630,77 @@
     "desc": "While Gaara is alive, whenever a non-Swimsuit/non-Summer unit on either team takes its first damage in a round, that unit Standard Attack damage is reduced by 50% and healing received by 40% until round end.",
     "icon": 13121506,
     "sortId": 6
+  },
+  {
+    "id": "00C83841",
+    "skillId": 13121601,
+    "name": "Giant Katsuyu - Acid Shot",
+    "desc": "Prompt. Physical damage to up to 7 enemies. Suppress Immunity until the end of the next round, Corrosion (Level 2) for 1 round and Melt (Level 2) until the end of the next round. Corrosion: whenever the affected unit causes damage, its DEF/Resistance lose 3% for the round. Melt prevents additional Chakra except round-start and attacked gains; when attacked, grants the attacker +30% critical rate for the round, non-stacking, and removes Perseverance. Chakra 20; cooldown 2; battlefield cooldown 0. Deals 4 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121601,
+    "sortId": 1
+  },
+  {
+    "id": "00C83842",
+    "skillId": 13121602,
+    "name": "Healing Jutsu",
+    "desc": "Heal 3-5 allies for 15% Tsunade Physical DEF and remove 1 Debuff each. After Reserve Seal, heal 7-9 allies instead.",
+    "icon": 13121602,
+    "sortId": 2
+  },
+  {
+    "id": "00C83843",
+    "skillId": 13121603,
+    "name": "Giant Katsuyu - Healing",
+    "desc": "At the end of rounds 1, 2 and 3, before revival: heal up to 9 allies for 25% Tsunade Physical DEF and remove all Debuffs, then dispel her Ignition.",
+    "icon": 13121603,
+    "sortId": 3
+  },
+  {
+    "id": "00C83844",
+    "skillId": 13121604,
+    "name": "Reserve Seal",
+    "desc": "First defeat: revive with 100% HP once per battle; gain Small Katsuyu summoning and improve Reserve Seal retaliation to 75%.",
+    "icon": 13121604,
+    "sortId": 4
+  },
+  {
+    "id": "00C83845",
+    "skillId": 13121605,
+    "name": "Summoning Jutsu - Small Katsuyu",
+    "desc": "After revival, before each Mystery summon 3 Small Katsuyu with 15% Tsunade max HP each. Standard/fatal damage: heal a random ally and restore Chakra Limit to 100.",
+    "icon": 13121605,
+    "sortId": 5
+  },
+  {
+    "id": "00C83846",
+    "skillId": 13121606,
+    "name": "Giant Katsuyu - Healing [Mystery]",
+    "desc": "After revival, select an ally while casting Mystery: heal up to 9 allies for 25% Tsunade Physical DEF, remove all Debuffs and dispel her Ignition. Chakra 20; cooldown 2; battlefield cooldown 0.",
+    "icon": 13121606,
+    "sortId": 6
+  },
+  {
+    "id": "00C83849",
+    "skillId": 13121609,
+    "name": "Small Katsuyu - Healing",
+    "desc": "Heal one random ally for 15% of Tsunade's current Physical DEF (including buffs/debuffs) and restore team Chakra Limit to 100.",
+    "icon": 13121609,
+    "sortId": 9
+  },
+  {
+    "id": "00C83847",
+    "skillId": 13121607,
+    "name": "Reserve Seal",
+    "desc": "First defeat: revive with 100% HP once per battle; gain Small Katsuyu summoning and improve Reserve Seal retaliation to 75%.",
+    "icon": 13121607,
+    "sortId": 7
+  },
+  {
+    "id": "00C83848",
+    "skillId": 13121608,
+    "name": "The Legendary Sannin",
+    "desc": "Reserve Seal: immune to Debuffs. Physical damage to Tsunade has a 45% chance (75% after revival) to cause Chaos and Weakness for 1 round. First defeat revives at 100% max HP, once per battle. Legendary Sannin: Konoha-tagged allies receiving extra Standards grant Tsunade an extra Standard, at most 3 per round. While alive, the first Mystery damage received by each other Konoha-tagged ally each round cannot defeat them. Giant Katsuyu heals up to 9 allies for 25% Physical DEF and cleanses all Debuffs at the end of rounds 1, 2 and 3; after revival, becomes a selectable allied-target Mystery instead. After revival, before each Mystery summon 3 Small Katsuyu, each with 15% of Tsunade max HP; their Standard or fatal damage heals a random ally and restores the team Chakra Limit to 100. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121608,
+    "sortId": 8
   }
 ]

@@ -1,0 +1,41 @@
+      private var FSmallKatsuyuSequence:TAnimationSequence;
+      private var FSmallKatsuyuStarted:Number=-1;
+      private var FSmallKatsuyuFrames:int=0;
+      private var FSmallKatsuyuDying:Boolean=false;
+      private var FSmallKatsuyuSpawned:Boolean=false;
+      private var FSmallKatsuyuCallback:Function;
+      private var FSmallKatsuyuTime:uint=0;
+
+      private function ClearSmallKatsuyuPose(event:Event=null) : void {
+         removeEventListener(Event.ENTER_FRAME,UpdateSmallKatsuyuPose);
+         removeEventListener(Event.REMOVED_FROM_STAGE,ClearSmallKatsuyuPose);
+         FSmallKatsuyuSequence=null;FSmallKatsuyuStarted=-1;FSmallKatsuyuCallback=null;
+      }
+      private function PlaySmallKatsuyuPose(dying:Boolean,callback:Function=null,time:uint=0) : void {
+         if(FId!=11120993)return;
+         ClearSmallKatsuyuPose();
+         if(dying && !FSmallKatsuyuSpawned){FIsDie=true;visible=false;if(callback!=null)callback(time);return;}
+         FSmallKatsuyuDying=dying;
+         FSmallKatsuyuSpawned=true;
+         FSmallKatsuyuCallback=callback;FSmallKatsuyuTime=time;
+         FSmallKatsuyuFrames=dying?__DEAD_FRAMES__:__ENTRY_FRAMES__;
+         FSmallKatsuyuStarted=TBattleHandle.PlaybackTime;
+         if(FTextureSkill!=null && FTextureSkill!=FDefaultRoleTexture && FTextureSkill.Count>=2)FSmallKatsuyuSequence=FTextureSkill.GetAnimationSequenceByIndex(dying?1:0);
+         FIsDie=dying;FWaitDie=false;FHideFrame=-1;
+         visible=true;alpha=1;FBitmap.visible=true;FBitmap.alpha=1;FBitmap.filters=[];filters=[];
+         if(dying){FShaderBmp.visible=false;FHpBar.visible=false;FBuffSprite.visible=false;}
+         addEventListener(Event.ENTER_FRAME,UpdateSmallKatsuyuPose);
+         addEventListener(Event.REMOVED_FROM_STAGE,ClearSmallKatsuyuPose);
+         UpdateSmallKatsuyuPose();
+      }
+      private function UpdateSmallKatsuyuPose(event:Event=null) : void {
+         if(FId!=11120993 || FSmallKatsuyuStarted<0)return;
+         var index:int=Math.max(0,int((TBattleHandle.PlaybackTime-FSmallKatsuyuStarted)/40));
+         if(index>=FSmallKatsuyuFrames){
+            var callback:Function=FSmallKatsuyuCallback;var time:uint=FSmallKatsuyuTime;var dying:Boolean=FSmallKatsuyuDying;
+            ClearSmallKatsuyuPose();
+            if(dying){visible=false;alpha=0;if(callback!=null)callback(time);}
+            return;
+         }
+         if(FSmallKatsuyuSequence!=null){var frame:TAnimationFrame=FSmallKatsuyuSequence.GetAnimationFrameByIndex(index);if(frame!=null){FBitmap.bitmapData=frame.Surface;FBitmap.x=-frame.Pivot.X;FBitmap.y=-frame.Pivot.Y;}}
+      }

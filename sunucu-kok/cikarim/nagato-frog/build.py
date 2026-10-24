@@ -28,6 +28,7 @@ def rows():
         powerGrow=3.7,agileGrow=3.3,intelligenceGrow=3.7,lifeGrow=4.6,speedGrow=2.7)
     for field in ['dodgeRate','critRate','blockRate','punchRate','helpRate','hurtRate','avoidHurtRate','wreckRate','antiknockRate','recoverRate']:h[field]=0
     h['hitRate']=1
+    h['tags']=CFG['tags'][:]
     return {'BaseHero':[h],'RoleModel':[{'id':native.hexid(HERO),'model':HERO,'roleStyle':HERO,'roleHead':HERO}],
         'HeroTalent':[{'id':native.hexid(13220990),'talentName':'Frog Squad Cooperation / Frog Squad Lead','talentDesc':DESC['passive']}],
         'SkillConfig':[{'id':native.hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':DESC[str(m['id'])]+(' Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.' if m.get('multiplier',0)>0 else ''),'icon':m['id'],'sortId':i+1} for i,m in enumerate(MOVES)]}

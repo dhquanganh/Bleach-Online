@@ -1,0 +1,119 @@
+{
+  "files": [
+    {
+      "file": "assets/bag/ninja/preview/11002371.png",
+      "bytes": 132168,
+      "sha256": "f206e8a919cd94c9fe5880b13fab1b7cbb4c6691777584f97bf8cbf26ea4737d"
+    },
+    {
+      "file": "assets/battle/effect/gangshou_aoyi1_niansuan.swf",
+      "bytes": 4727794,
+      "sha256": "a0d6f5f59a5ccad1be35e6d4ba09db045652576bd00d60cde79abadb284fc9f3"
+    },
+    {
+      "file": "assets/battle/effect/gangshou_aoyi1_niansuantexie.swf",
+      "bytes": 1408487,
+      "sha256": "47dfccc28ddd9e6e0d5f8649b65d2b0a913d7987b00a0b85b479a47015ba3ebc"
+    },
+    {
+      "file": "assets/battle/effect/gangshou_aoyi2_dazhiliao.swf",
+      "bytes": 1403871,
+      "sha256": "e1412f3516d3e984479c458db1fddd9127a2fe29fc862de9f3546a3044021440"
+    },
+    {
+      "file": "assets/battle/effect/gangshou_chufa2_texie.swf",
+      "bytes": 2638867,
+      "sha256": "7f32292fc1809bfd675c205a341bbefe355cb3f8314a777fd668bca83a5ed0fa"
+    },
+    {
+      "file": "assets/battle/effect/gangshou_pugong.swf",
+      "bytes": 75253,
+      "sha256": "0197f86b78f73fb862b04613703a03fcb0589407ad53ee626f8fc26135da82a7"
+    },
+    {
+      "file": "assets/battle/effect/qusanqidong.swf",
+      "bytes": 90014,
+      "sha256": "3e8745bdde1e16e06a85048a6afc50e054e740fec1c99fb53b95fc345ac23260"
+    },
+    {
+      "file": "assets/battle/effect/rongjie.swf",
+      "bytes": 1359113,
+      "sha256": "30c5128e8bcd4039f8f8a222af8b6053ef1414e3bfbe33e14371e51aaa419665"
+    },
+    {
+      "file": "assets/battle/effect/skillActionEffect.swf",
+      "bytes": 120049,
+      "sha256": "3d931014ff364a8aef2d3d9453433e6c234c94790a65d988c516636385c36fb2"
+    },
+    {
+      "file": "assets/battle/role/head_110_100/11002371.png",
+      "bytes": 15203,
+      "sha256": "b3110f56c901dc102e3e6885dc26c2d5c48ebe897fc424c78db9e4d7f42b5a9c"
+    },
+    {
+      "file": "assets/battle/role/head_176_68/11002371.png",
+      "bytes": 13308,
+      "sha256": "5571ca77bf44ac97a019a26dec3f8f215df42662f0749510e7f99862e1a48170"
+    },
+    {
+      "file": "assets/battle/role/head_45_45/11002371.png",
+      "bytes": 4706,
+      "sha256": "b2de5efed53db3ca087558b0d327c191f950ca14c6b09661787a3acbd051649f"
+    },
+    {
+      "file": "assets/battle/role/left/11002371.swf",
+      "bytes": 1106041,
+      "sha256": "aef02e5b5f91e1f062f10a264fa549aa5de1b5064e4c130fb09840f70eea3722"
+    },
+    {
+      "file": "assets/role/npc/scene/npcres/11002371_outdoor.swf",
+      "bytes": 239880,
+      "sha256": "039a303367f6576a685e4f57275fe59e04feaab70a6d140e90e47ef7548aa7e5"
+    },
+    {
+      "file": "assets/skill/40/21002373.png",
+      "bytes": 5397,
+      "sha256": "7fe6be502de0b541d5408c700bf7011c59c4ec570b5e0f1894474ab708d997f2"
+    },
+    {
+      "file": "assets/skill/40/21002374.png",
+      "bytes": 5235,
+      "sha256": "d98ae7014a04e6a5d8cea8be2a7a63820ccca58b59166ef07eff39f31ee3d31c"
+    },
+    {
+      "file": "assets/skill/40/21002376.png",
+      "bytes": 5216,
+      "sha256": "3ded6c5f624e80b30aba7d63f803ca39eb6e284fc1faffa8564fce60b597c747"
+    },
+    {
+      "file": "assets/skill/40/21002377.png",
+      "bytes": 4783,
+      "sha256": "939aaa410caeceb2abe16bf5c8e5247b2fa2a02dcbaaf7960fef98dfc43474b2"
+    },
+    {
+      "file": "assets/skill/40/21002378.png",
+      "bytes": 4906,
+      "sha256": "5fedcd6f3c50b8e6838f88d894916dad2b01e4ba9e388802193f8785c3ee7296"
+    },
+    {
+      "file": "assets/user/ninja/ninjaBigImg/11002371.png",
+      "bytes": 220692,
+      "sha256": "95afa8eaa38ea555b1505d98cea1dc28acc87b4090324c5c8e772a4fd5b02d98"
+    },
+    {
+      "file": "assets/user/ninja/ninjaImg/11002371.swf",
+      "bytes": 27668,
+      "sha256": "c8033ecbdb9857e9d2dbc2cf9cb5585e3575bcaf64f05696b20cdb8506397973"
+    }
+  ],
+  "missing": [],
+  "skill_ids": [
+    "21002371",
+    "21002372",
+    "21002373",
+    "21002374",
+    "21002376",
+    "21002377",
+    "21002378"
+  ]
+}

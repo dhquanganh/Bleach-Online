@@ -1,0 +1,11 @@
+TOAN BO ICON TAG NHAN VAT
+
+assets/user/ninja/propertyIcon/: 72 icon PNG, ID 1-72, va cau hinh goc.
+assets/user/ninja/ninjaPropertyIcon/: bo 5 icon nguyen to rieng, giu nguyen ten file.
+tags.json / tags.csv: ID, ten goc, ten tieng Anh dich de tham khao, duong dan va kich thuoc icon. Ten tieng Anh la ban dich, khong phai nhan giao dien EN duoc trich tu game.
+tag_definitions.decoded.xml: cau hinh goc da giai nen.
+all_tags_preview.png: bang xem nhanh 72 tag.
+
+Vi du: Fire=26, Male=52, Konoha=1, Akatsuki=11, Blood Limit=14, Uchiha Clan=31, Secret Jutsu User=48.
+Nguon: E:/Naruto_Online_Full_Resources/resources
+Pham vi: tat ca icon trong hai thu muc nay cua bo du lieu local; 72/72 ID dinh nghia co icon.

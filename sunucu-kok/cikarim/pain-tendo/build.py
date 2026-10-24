@@ -40,6 +40,7 @@ def rows():
         powerGrow=3.5,agileGrow=3.1,intelligenceGrow=3.5,lifeGrow=4.2,speedGrow=2.6)
     for field in ['dodgeRate','critRate','blockRate','punchRate','helpRate','hurtRate','avoidHurtRate','wreckRate','antiknockRate','recoverRate']:h[field]=0
     h['hitRate']=1
+    h['tags']=CFG['tags'][:]
     return {'BaseHero':[h],'RoleModel':[{'id':native.hexid(HERO),'model':HERO,'roleStyle':HERO,'roleHead':HERO}],
         'HeroTalent':[{'id':native.hexid(13220930),'talentName':'Outer Path / The One called God / Shurado - Laser Canon','talentDesc':' '.join(DESC[m['id']] for m in MOVES)+' '+BASE_PASSIVE}],
         'SkillConfig':[{'id':native.hexid(m['id']),'skillId':m['id'],'name':m['name'],'desc':DESC[m['id']],'icon':m['id'],'sortId':i+1} for i,m in enumerate(MOVES)]}

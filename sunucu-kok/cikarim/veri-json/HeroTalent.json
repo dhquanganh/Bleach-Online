@@ -1063,5 +1063,10 @@
     "id": "00C9BC7F",
     "talentName": "Gaara of the Sand / Summer Spirit - Raging Sand",
     "talentDesc": "Gaara has Super Armor. Sandstorm is followed by Sand Surfing. Whenever Gaara causes a Critical Hit, inflicts Level 2 Blindness for 1 round, preventing Standard Attacks. Level 2 Super Armor blocks Low Float, High Float, Repulse, Knockdown and lower-level Suppress Super Armor. At the beginning of every round, deals unavoidable small physical damage and Level 2 Discouragement to up to 4 front enemies. Discouragement prevents receiving external Buffs, stat increases and Shields until the end of the next round or executing a Mystery. Additional Skill after Sandstorm: unavoidable physical damage to up to 6 enemies. Suppresses Super Armor until round end and reduces each target Critical Rate by 15% (stackable). While Gaara is alive, whenever a non-Swimsuit/non-Summer unit on either team takes its first damage in a round, that unit Standard Attack damage is reduced by 50% and healing received by 40% until round end. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
+  },
+  {
+    "id": "00C9BC80",
+    "talentName": "Reserve Seal / The Legendary Sannin / Giant Katsuyu",
+    "talentDesc": "Reserve Seal: immune to Debuffs. Physical damage to Tsunade has a 45% chance (75% after revival) to cause Chaos and Weakness for 1 round. First defeat revives at 100% max HP, once per battle. Legendary Sannin: Konoha-tagged allies receiving extra Standards grant Tsunade an extra Standard, at most 3 per round. While alive, the first Mystery damage received by each other Konoha-tagged ally each round cannot defeat them. Giant Katsuyu heals up to 9 allies for 25% Physical DEF and cleanses all Debuffs at the end of rounds 1, 2 and 3; after revival, becomes a selectable allied-target Mystery instead. After revival, before each Mystery summon 3 Small Katsuyu, each with 15% of Tsunade max HP; their Standard or fatal damage heals a random ally and restores the team Chakra Limit to 100. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
   }
 ]

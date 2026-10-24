@@ -1,0 +1,62 @@
+      private var FCharacterTagRow:Sprite;
+      private var FCharacterTagData:Object;
+
+      private function InitCharacterTags(host:Sprite) : void
+      {
+         FCharacterTagData = JSON.parse(__TAG_DATA__);
+         FCharacterTagRow = new Sprite();
+         FCharacterTagRow.name = "characterTags";
+         var tab:DisplayObject = host["MC_PVP"];
+         FCharacterTagRow.x = tab.x + tab.width + 4;
+         FCharacterTagRow.y = tab.y + (tab.height - 20) / 2;
+         host.addChild(FCharacterTagRow);
+      }
+
+      private function RenderCharacterTags() : void
+      {
+         if(FCharacterTagRow == null)return;
+         SUtilityOverLayer.UIComponentsHintOnOut(this,this.FHint);
+         while(FCharacterTagRow.numChildren > 0)FCharacterTagRow.removeChildAt(0);
+         var ids:Array = FHero == null ? null : FCharacterTagData.heroes[String(FHero.Identifier)] as Array;
+         FCharacterTagRow.visible = ids != null && FShowType != ShowType_WakeUp;
+         if(!FCharacterTagRow.visible)return;
+         var iconScale:Number = Math.min(1,7 / ids.length);
+         for(var i:int = 0;i < ids.length;i++){
+            AddCharacterTag(ids[i],i);
+            var slot:Sprite = FCharacterTagRow.getChildAt(i) as Sprite;
+            slot.scaleX = slot.scaleY = iconScale;
+            slot.x = i * 20 * iconScale;
+            slot.y = (20 - 20 * iconScale) / 2;
+         }
+      }
+
+      private function AddCharacterTag(id:int,index:int) : void
+      {
+         var tag:Object = FCharacterTagData.tags[String(id)];
+         if(tag == null)return;
+         var slot:Sprite = new Sprite();
+         slot.name = String(tag.name);
+         slot.x = index * 20;
+         slot.mouseChildren = false;
+         slot.graphics.beginFill(0,0);
+         slot.graphics.drawRect(0,0,20,20);
+         slot.graphics.endFill();
+         var icon:flash.display.Loader = new flash.display.Loader();
+         icon.contentLoaderInfo.addEventListener(flash.events.Event.COMPLETE,function(event:flash.events.Event):void {
+            icon.width = 20;
+            icon.height = 20;
+         });
+         icon.contentLoaderInfo.addEventListener(flash.events.IOErrorEvent.IO_ERROR,function(event:flash.events.IOErrorEvent):void {});
+         icon.load(new flash.net.URLRequest(String(tag.icon)));
+         slot.addChild(icon);
+         slot.addEventListener(MouseEvent.MOUSE_MOVE,CharacterTagOnOver);
+         slot.addEventListener(MouseEvent.MOUSE_OUT,this.TFOnOut);
+         FCharacterTagRow.addChild(slot);
+      }
+
+      private function CharacterTagOnOver(event:MouseEvent) : void
+      {
+         FHint.Caption = Sprite(event.currentTarget).name;
+         SUtilityOverLayer.UIComponentsHintOnOver(this,FHint);
+      }
+

@@ -74,6 +74,7 @@ def database_rows():
     for key in ['dodgeRate','critRate','blockRate','punchRate','helpRate','hurtRate','avoidHurtRate','wreckRate','antiknockRate','recoverRate']:h[key]=0
     h['hitRate']=1
     clone=copy.deepcopy(h);clone.update(id=hexid(CLONE),name='Sage Shadow Clone',isSummon=True,desc='Summon only; Lightning resistant.',active=moves[2]['id'])
+    h['tags']=CONFIG['tags'][:]
     talents=[{'id':hexid(TALENT),'talentName':'Sage Jutsu Chakra / Shadow Clone',
         'talentDesc':'+20 team chakra before the first move each round. Summon a Lightning-resistant clone at battle start. Summon and Rasengan Barrage share a 2-round cooldown and primary action. Chase Repulse -> Knockdown: 2-round cooldown, no bonus bypass. Rasen Shuriken: 40 chakra, cooldown 3 rounds, battlefield cooldown 1; consumes the primary action; 10 COMBO to lineup and Repulse to selected target.'}]
     roles=[{'id':hexid(n),'model':HERO,'roleStyle':HERO,'roleHead':HERO} for n in [HERO,CLONE]]
