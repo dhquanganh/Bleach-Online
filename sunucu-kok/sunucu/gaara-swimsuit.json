@@ -1,0 +1,16 @@
+{
+  "heroId": 11120991,
+  "name": "Gaara [Swimsuit]",
+  "quality": 7,
+  "assess": "SSS",
+  "profession": 1,
+  "anyPosition": true,
+  "swimsuit": true,
+  "mystery": {"id":13121501,"name":"Hot Summer - Extreme Sand Surfing","prompt":true,"target":7,"multiplier":1.8,"attackStat":"atk","damageType":"physical","chakraCost":20,"cooldown":3,"battlefieldCooldown":1,"consumesPrimary":false,"causes":"knockdown","gaaraMystery":true},
+  "standard": {"id":13121502,"name":"Sand Guard","support":true,"multiplier":0,"cooldown":0,"gaaraGuard":true},
+  "storm": {"id":13121503,"name":"Wind Style - Sandstorm","trigger":true,"unavoidable":true,"target":4,"multiplier":0.3,"attackStat":"atk","damageType":"physical","cooldown":0,"gaaraStorm":true},
+  "surf": {"id":13121504,"name":"Wind Style - Sand Surfing","trigger":true,"unavoidable":true,"target":6,"multiplier":0.8,"attackStat":"atk","damageType":"physical","cooldown":0,"gaaraSurf":true},
+  "chases": [],
+  "shieldRatio": 0.2,
+  "mysteryCriticalBonus": 0.3
+}

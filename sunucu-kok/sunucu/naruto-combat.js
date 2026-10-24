@@ -11,6 +11,7 @@ const mecha = require('./mecha-combat');
 const itachi = require('./itachi-combat');
 const sasuke = require('./sasuke-combat');
 const nagato = require('./nagato-combat');
+const gaara = require('./gaara-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -21,7 +22,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -47,6 +48,7 @@ function create(teams, options = {}) {
   itachi.initialize(context);
   sasuke.initialize(context);
   nagato.initialize(context);
+  gaara.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -129,6 +131,7 @@ function useMystery(ctx,unit,beforeSpend=null) {
   pain.spendMystery(ctx,unit,m);
   sasuke.spendMystery(ctx,unit);
   hash.spendMystery(ctx,unit);
+  gaara.mysteryExecuted(unit);
   unit.mysteryReadyRound=ctx.round+(pain.isPain(unit)||sasuke.isSasuke(unit)?Math.max(0,m.cooldown):Math.max(1,m.cooldown));
   if(m.consumesPrimary!==false)ctx.primaryActions.set(unit,ctx.round);
   return m;

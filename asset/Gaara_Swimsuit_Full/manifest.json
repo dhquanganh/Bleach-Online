@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "file": "assets/bag/ninja/preview/11001361.png",
+      "bytes": 81653,
+      "sha256": "4d0ebbba24ae3624bc4ae1d3c15cd0408805d04b94d19e3f91fe25cf115ffc16"
+    },
+    {
+      "file": "assets/battle/effect/GAR_shazhidun.swf",
+      "bytes": 18421,
+      "sha256": "584ce76fa19080c11a98432c4d52fa6e462ed63c063840f1e65d1c5d0323523d"
+    },
+    {
+      "file": "assets/battle/effect/WENTAI_tex.swf",
+      "bytes": 516858,
+      "sha256": "a445ec0b1ab15f09fecb7ac773714ff6adb73cc5a6e42e6f65d5b16f5212b1cd"
+    },
+    {
+      "file": "assets/battle/effect/Woailuoyongzhuang_shazhikai.swf",
+      "bytes": 548763,
+      "sha256": "2d4dbbadbce669c64c2dc296fcdc97fdc751f202d12310e9983c22fdbeb187a4"
+    },
+    {
+      "file": "assets/battle/effect/Yzwoailuo_aoyi.swf",
+      "bytes": 2347071,
+      "sha256": "36bd258f532d81c5919848ee22202da9fa8302d4d45375195e831c408a1327be"
+    },
+    {
+      "file": "assets/battle/effect/Yzwoailuo_beidong2.swf",
+      "bytes": 440399,
+      "sha256": "6b03228ffc8f97f243fe789f0988c7b1814c8bb7ba29edf8410eed9d6524e5db"
+    },
+    {
+      "file": "assets/battle/effect/Yzwoailuo_pugong.swf",
+      "bytes": 4343028,
+      "sha256": "89f8a1a3b5a6c784d0d3b2f3e29bb534355c6a3463198ed1670ed93421aeb0c4"
+    },
+    {
+      "file": "assets/battle/effect/skillActionEffect.swf",
+      "bytes": 120049,
+      "sha256": "3d931014ff364a8aef2d3d9453433e6c234c94790a65d988c516636385c36fb2"
+    },
+    {
+      "file": "assets/battle/effect/tianlaochixu.swf",
+      "bytes": 47004,
+      "sha256": "c6efe0c791e5b8b3b3a389ae90c7d3973f1ea2f8c2b54d3e8bdf5108f8cc36d2"
+    },
+    {
+      "file": "assets/battle/effect/tianlaoqidong.swf",
+      "bytes": 36208,
+      "sha256": "1662c8b7ed09bfd070a70ae1a06fb2e3e48572049cbf4fb99d452f4068122846"
+    },
+    {
+      "file": "assets/battle/role/head_110_100/11001361.png",
+      "bytes": 9687,
+      "sha256": "9f06ef0c5102ae6e42ae4098ffa15c8f4b6411572a57a57e17654cb80ec11a3e"
+    },
+    {
+      "file": "assets/battle/role/head_176_68/11001361.png",
+      "bytes": 7918,
+      "sha256": "07f7127697afd7bf145e5a06269587234b170a7969dc1340e4ff9b9995bc3f4c"
+    },
+    {
+      "file": "assets/battle/role/head_45_45/11001361.png",
+      "bytes": 4235,
+      "sha256": "dfb4596c17da3fc1278efcc1f9876c4c37868eee583924f329a1da003fe6195d"
+    },
+    {
+      "file": "assets/battle/role/left/11001361.swf",
+      "bytes": 2043526,
+      "sha256": "1add47093a520ed55a4c6ecc63ef2b435d7cc90afaa48f3225d2cac9281f17c1"
+    },
+    {
+      "file": "assets/role/npc/scene/npcres/11001361_outdoor.swf",
+      "bytes": 113351,
+      "sha256": "d18fc477d4b3ef7eed0dff56bd376fe8fb6a208a8d5203eec04da32f9e9693dc"
+    },
+    {
+      "file": "assets/skill/40/21001363.png",
+      "bytes": 5079,
+      "sha256": "08d65e5651edf5ae6415ca49b67caa127a9ccd0ffdd759f40cd2d9690fe0e7f7"
+    },
+    {
+      "file": "assets/skill/40/21001364.png",
+      "bytes": 4790,
+      "sha256": "49659a71ba2006d1dbfa2aafb6841716bce2b44e01c6403bb5cf170c07c80fa7"
+    },
+    {
+      "file": "assets/skill/40/21001365.png",
+      "bytes": 5089,
+      "sha256": "205f35172aea5df4059ed0c5a823e7073016d3ed287069360158f5293eee8db1"
+    },
+    {
+      "file": "assets/skill/40/21001366.png",
+      "bytes": 4563,
+      "sha256": "49dbb23d0cdae05dd9a46a4fa2faf1e49219279fe172ad59a43a58d8d537b43d"
+    },
+    {
+      "file": "assets/skill/40/21001367.png",
+      "bytes": 4965,
+      "sha256": "7a98e22044a4fa5319aaac2aa025b7b3bea71550c75fb98f248cc9b744f5b138"
+    },
+    {
+      "file": "assets/user/ninja/ninjaBigImg/11001361.png",
+      "bytes": 115653,
+      "sha256": "06a26892d65be1205d75d84ca7671d39a3d4629142ce539e0f98fb1179927ad5"
+    },
+    {
+      "file": "assets/user/ninja/ninjaImg/11001361.swf",
+      "bytes": 47059,
+      "sha256": "82c3f1f8fde9a6fc2ea569650f62f702fcbf7335668250035f0000b342c19cec"
+    }
+  ],
+  "missing": [],
+  "skill_ids": [
+    "21001361",
+    "21001362",
+    "21001363",
+    "21001364",
+    "21001365",
+    "21001366",
+    "21001367"
+  ]
+}

@@ -62,7 +62,10 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
   damage=Math.min(Math.max(0,target.hp-(heal||nonfatal?1:0)),damage);
   target.hp-=damage;
-  let recovered=0;if(heal){recovered=target.maxHp-target.hp;target.hp=target.maxHp;}
+  let recovered=0;if(heal){
+    if(target.gaaraContext)require('./gaara-combat').onDamage(target.gaaraContext,attacker,target,{damage,absorbed},false,[]);
+    recovered=Math.round((target.maxHp-target.hp)*require('./gaara-combat').healFactor(target));target.hp+=recovered;
+  }
   if(clearBuffs)target.activeBuffs={};
   return {damage,recovered,clearShield,clearBuffs,absorbed,before};
 }

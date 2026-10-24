@@ -1,0 +1,2923 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NinjaInfo><row>
+		<id>11001361</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>我爱罗[泳装]</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>177</baseLife>
+		<growthLife>1023</growthLife>
+		<baseBodyAttack>44</baseBodyAttack>
+		<growthBodyAttack>482</growthBodyAttack>
+		<baseBodyDefense>62</baseBodyDefense>
+		<growthBodyDefense>557</growthBodyDefense>
+		<baseNinjaAttack>75</baseNinjaAttack>
+		<growthNinjaAttack>818</growthNinjaAttack>
+		<baseNinjaDefense>75</baseNinjaDefense>
+		<growthNinjaDefense>785</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel>3</starLevel>
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;36;43;105;2425;1415;2316</comeFrom>
+		<showPropertys>64</showPropertys>
+		<showPropertys>52</showPropertys>
+		<showPropertys>2</showPropertys>
+		<showPropertys>13</showPropertys>
+		<showPropertys>18</showPropertys>
+		<showPropertys>57</showPropertys>
+		<property>3</property>
+		<carreer>4</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay>601</achievedWay>
+		<sex>1</sex>
+		<risingStarTatter>20400415</risingStarTatter>
+		<starIdArr>11001361</starIdArr>
+		<starIdArr>11001361</starIdArr>
+		<starIdArr>11001361</starIdArr>
+		<starIdArr>11001361</starIdArr>
+		<starIdArr>11001361</starIdArr>
+		<series>352</series>
+		<ninjaSeries>15</ninjaSeries>
+		<tupoLvl>15</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725201</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725202</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725203</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725204</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725205</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725206</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725207</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725208</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725209</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725210</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725211</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725212</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725213</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725214</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725215</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725216</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725217</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725218</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725219</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725220</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725221</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725222</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725223</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725224</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725225</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725226</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725227</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725228</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725229</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725230</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725231</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725232</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725233</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725234</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725235</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725236</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725237</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725238</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725239</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725240</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725241</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725242</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725243</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725244</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725245</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725246</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725247</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725248</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725249</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>77725250</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>风之挑战怪物3期</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife />
+		<growthLife />
+		<baseBodyAttack />
+		<growthBodyAttack />
+		<baseBodyDefense />
+		<growthBodyDefense />
+		<baseNinjaAttack />
+		<growthNinjaAttack />
+		<baseNinjaDefense />
+		<growthNinjaDefense />
+		<baseSpeed>0</baseSpeed>
+		<baseCrit>0</baseCrit>
+		<baseBodyStrike>0</baseBodyStrike>
+		<baseNinjaStrike>0</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-100</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;105;2425;1415;36;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>1</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	<row>
+		<id>18117753</id>
+		<name>Gaara</name>
+		<type>0</type>
+		<filterTxt>忍者考试关卡513</filterTxt>
+		<title>[Swimsuit]</title>
+		<artisticId>11001361</artisticId>
+		<awakenSkillNum>2</awakenSkillNum>
+		<levelType>2</levelType>
+		<occupyWidth>1</occupyWidth>
+		<occupyHeight>1</occupyHeight>
+		<baseLife>80352</baseLife>
+		<growthLife>24177</growthLife>
+		<baseBodyAttack>10958</baseBodyAttack>
+		<growthBodyAttack>6797</growthBodyAttack>
+		<baseBodyDefense>9965</baseBodyDefense>
+		<growthBodyDefense>3670</growthBodyDefense>
+		<baseNinjaAttack>11327</baseNinjaAttack>
+		<growthNinjaAttack>7816</growthNinjaAttack>
+		<baseNinjaDefense>9965</baseNinjaDefense>
+		<growthNinjaDefense>3670</growthNinjaDefense>
+		<baseSpeed>1000000</baseSpeed>
+		<baseCrit>8500</baseCrit>
+		<baseBodyStrike>2500</baseBodyStrike>
+		<baseNinjaStrike>2500</baseNinjaStrike>
+		<baseChakraRecover>{0}</baseChakraRecover>
+		<continuousStrikeRate>20</continuousStrikeRate>
+		<fireResist>-20</fireResist>
+		<windResist>0</windResist>
+		<thunderResist>0</thunderResist>
+		<soilResist>0</soilResist>
+		<waterResist>0</waterResist>
+		<mapSkill>0</mapSkill>
+		<starLevel />
+		<statePhase>1</statePhase>
+		<AssembleCondition>{集结需要忍者ID与等级}</AssembleCondition>
+		<comeFrom>1;14;16;25;36;43;105;2425;1415;2316</comeFrom>
+		<showPropertys />
+		<property>3</property>
+		<carreer>4</carreer>
+		<equipNum>5</equipNum>
+		<description>Gaara[Swimsuit]</description>
+		<attributeDescription>1,4</attributeDescription>
+		<aquireCardId />
+		<rareness>3</rareness>
+		<achievedWay />
+		<sex>1</sex>
+		<risingStarTatter />
+		<starIdArr />
+		<series />
+		<ninjaSeries>299</ninjaSeries>
+		<tupoLvl>299</tupoLvl>
+		<showSkills />
+		<tupoSkillId />
+		<tupoSkillId11 />
+	</row>
+	</NinjaInfo>

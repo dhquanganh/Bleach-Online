@@ -1,0 +1,30 @@
+{
+  "installedClient": "2026102404",
+  "actualFpsMeasured": false,
+  "swfHeaderFps": 30,
+  "configuredX1Fps": 30,
+  "configuredX2Fps": 60,
+  "checks": [
+    {
+      "clip": "Yzwoailuo_aoyi-159",
+      "deliveredFps": 30,
+      "seconds": 3.533333333333333
+    },
+    {
+      "clip": "Yzwoailuo_aoyi-159",
+      "deliveredFps": 60,
+      "seconds": 1.7666666666666666
+    },
+    {
+      "clip": "Yzwoailuo_aoyi-432",
+      "deliveredFps": 30,
+      "seconds": 3.533333333333333
+    },
+    {
+      "clip": "Yzwoailuo_aoyi-432",
+      "deliveredFps": 60,
+      "seconds": 1.7666666666666666
+    }
+  ],
+  "conclusion": "x2 is enabled through stage FPS; missed stage frames slow both actor and Gaara VFX. Live FPS is required to distinguish actual render stalls from atlas loading misses."
+}

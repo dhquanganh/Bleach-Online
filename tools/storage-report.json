@@ -1,0 +1,320 @@
+{
+  "created": "2026-10-24T10:26:21+0700",
+  "before": {
+    ".env": {
+      "files": 1,
+      "logical": 240,
+      "stored": 240
+    },
+    ".env.example": {
+      "files": 1,
+      "logical": 203,
+      "stored": 203
+    },
+    ".gitattributes": {
+      "files": 1,
+      "logical": 63,
+      "stored": 63
+    },
+    ".gitignore": {
+      "files": 1,
+      "logical": 526,
+      "stored": 526
+    },
+    "ADMIN-PANEL.bat": {
+      "files": 1,
+      "logical": 273,
+      "stored": 273
+    },
+    "AGENTS.md": {
+      "files": 1,
+      "logical": 1334,
+      "stored": 1334
+    },
+    "BENI-OKU.txt": {
+      "files": 1,
+      "logical": 1288,
+      "stored": 1288
+    },
+    "MONGODB-README.md": {
+      "files": 1,
+      "logical": 7804,
+      "stored": 7804
+    },
+    "OYUNU-BASLAT.bat": {
+      "files": 1,
+      "logical": 3454,
+      "stored": 3454
+    },
+    "package-lock.json": {
+      "files": 1,
+      "logical": 5485,
+      "stored": 5485
+    },
+    "package.json": {
+      "files": 1,
+      "logical": 402,
+      "stored": 402
+    },
+    ".accounts": {
+      "files": 29,
+      "logical": 815006,
+      "stored": 815006
+    },
+    ".battlefield-runtime-test": {
+      "files": 2078,
+      "logical": 135483709,
+      "stored": 135483709
+    },
+    ".boss-runtime-test": {
+      "files": 2014,
+      "logical": 6240798,
+      "stored": 6240798
+    },
+    ".partner-runtime-test": {
+      "files": 2054,
+      "logical": 148979943,
+      "stored": 148979943
+    },
+    ".tools": {
+      "files": 81,
+      "logical": 26937307,
+      "stored": 26937307
+    },
+    "asset": {
+      "files": 286,
+      "logical": 188368704,
+      "stored": 188368704
+    },
+    "logs": {
+      "files": 1,
+      "logical": 0,
+      "stored": 0
+    },
+    "node": {
+      "files": 1,
+      "logical": 91406496,
+      "stored": 91406496
+    },
+    "node_modules": {
+      "files": 567,
+      "logical": 7709127,
+      "stored": 7709127
+    },
+    "oyun": {
+      "files": 121,
+      "logical": 116802414,
+      "stored": 116802414
+    },
+    "sunucu-kok": {
+      "files": 43908,
+      "logical": 20110766594,
+      "stored": 20110766594
+    },
+    "tools": {
+      "files": 1,
+      "logical": 6222,
+      "stored": 6222
+    }
+  },
+  "cache_candidates": [
+    "sunucu-kok\\cikarim\\__pycache__",
+    "sunucu-kok\\cikarim\\animation-size-repair\\__pycache__",
+    "sunucu-kok\\cikarim\\battle-shake\\__pycache__",
+    "sunucu-kok\\cikarim\\battle-speed\\__pycache__",
+    "sunucu-kok\\cikarim\\damage-float\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-battlefield\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-boss\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-cross-server\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-hueco\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-refinery\\__pycache__",
+    "sunucu-kok\\cikarim\\gaara-swimsuit\\__pycache__",
+    "sunucu-kok\\cikarim\\hashirama-final\\__pycache__",
+    "sunucu-kok\\cikarim\\hellwing-quality\\__pycache__",
+    "sunucu-kok\\cikarim\\itachi-rtn\\__pycache__",
+    "sunucu-kok\\cikarim\\mecha-naruto\\__pycache__",
+    "sunucu-kok\\cikarim\\nagato-frog\\__pycache__",
+    "sunucu-kok\\cikarim\\naruto-sage\\__pycache__",
+    "sunucu-kok\\cikarim\\naruto-sage-native\\__pycache__",
+    "sunucu-kok\\cikarim\\ninja-fragments\\__pycache__",
+    "sunucu-kok\\cikarim\\obito-rage\\__pycache__",
+    "sunucu-kok\\cikarim\\pain-tendo\\__pycache__",
+    "sunucu-kok\\cikarim\\player-profile\\__pycache__",
+    "sunucu-kok\\cikarim\\sasuke-shinden\\__pycache__",
+    "sunucu-kok\\cikarim\\shared-animation\\__pycache__",
+    "sunucu-kok\\cikarim\\spirit-stone\\__pycache__",
+    "sunucu-kok\\cikarim\\susano-team-fix\\electron-data\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\electron-data\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-2\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-2\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-3\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-3\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-4\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-4\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-5\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-5\\GPUCache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-6\\Cache",
+    "sunucu-kok\\cikarim\\susano-team-fix\\fixed-profile-6\\GPUCache",
+    "sunucu-kok\\cikarim\\video-tools\\imageio_ffmpeg\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\imageio_ffmpeg\\binaries\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\compat\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\compat\\urllib\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\dependencies\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\downloader\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\jsc\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\jsc\\_builtin\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\jsc\\_builtin\\vendor\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\pot\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\extractor\\youtube\\pot\\_builtin\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\networking\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\postprocessor\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\utils\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\utils\\jslib\\__pycache__",
+    "sunucu-kok\\cikarim\\video-tools\\yt_dlp\\__pyinstaller\\__pycache__",
+    "sunucu-kok\\cikarim\\void-live-entry\\electron-data\\Cache",
+    "sunucu-kok\\cikarim\\void-live-entry\\electron-data\\GPUCache"
+  ],
+  "deleted_bytes": 2074689571,
+  "compression": [
+    {
+      "root": "asset",
+      "exit_code": 0
+    },
+    {
+      "root": "sunucu-kok/cikarim",
+      "exit_code": 0
+    },
+    {
+      "root": "sunucu-kok/kaynak",
+      "exit_code": 0
+    }
+  ],
+  "errors": [],
+  "verification": {
+    "sha256_checked": 674,
+    "changed": []
+  },
+  "after": {
+    ".env": {
+      "files": 1,
+      "logical": 240,
+      "stored": 240
+    },
+    ".env.example": {
+      "files": 1,
+      "logical": 203,
+      "stored": 203
+    },
+    ".gitattributes": {
+      "files": 1,
+      "logical": 63,
+      "stored": 63
+    },
+    ".gitignore": {
+      "files": 1,
+      "logical": 526,
+      "stored": 526
+    },
+    "ADMIN-PANEL.bat": {
+      "files": 1,
+      "logical": 273,
+      "stored": 273
+    },
+    "AGENTS.md": {
+      "files": 1,
+      "logical": 1334,
+      "stored": 1334
+    },
+    "BENI-OKU.txt": {
+      "files": 1,
+      "logical": 1288,
+      "stored": 1288
+    },
+    "MONGODB-README.md": {
+      "files": 1,
+      "logical": 7804,
+      "stored": 7804
+    },
+    "OYUNU-BASLAT.bat": {
+      "files": 1,
+      "logical": 3454,
+      "stored": 3454
+    },
+    "package-lock.json": {
+      "files": 1,
+      "logical": 5485,
+      "stored": 5485
+    },
+    "package.json": {
+      "files": 1,
+      "logical": 402,
+      "stored": 402
+    },
+    ".accounts": {
+      "files": 29,
+      "logical": 815006,
+      "stored": 815006
+    },
+    ".battlefield-runtime-test": {
+      "files": 2078,
+      "logical": 135483709,
+      "stored": 135483709
+    },
+    ".boss-runtime-test": {
+      "files": 2014,
+      "logical": 6240798,
+      "stored": 6240798
+    },
+    ".partner-runtime-test": {
+      "files": 2054,
+      "logical": 148979943,
+      "stored": 148979943
+    },
+    ".tools": {
+      "files": 81,
+      "logical": 26937307,
+      "stored": 26937307
+    },
+    "asset": {
+      "files": 286,
+      "logical": 188368704,
+      "stored": 188212087
+    },
+    "logs": {
+      "files": 1,
+      "logical": 0,
+      "stored": 0
+    },
+    "node": {
+      "files": 1,
+      "logical": 91406496,
+      "stored": 91406496
+    },
+    "node_modules": {
+      "files": 567,
+      "logical": 7709127,
+      "stored": 7709127
+    },
+    "oyun": {
+      "files": 121,
+      "logical": 116802414,
+      "stored": 116802414
+    },
+    "sunucu-kok": {
+      "files": 41060,
+      "logical": 18036077023,
+      "stored": 17340174845
+    },
+    "tools": {
+      "files": 5,
+      "logical": 1335885,
+      "stored": 1335885
+    }
+  },
+  "stored_bytes_saved": 2769418703
+}

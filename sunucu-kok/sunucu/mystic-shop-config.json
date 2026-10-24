@@ -1808,6 +1808,19 @@
         "amount": 100
       },
       "totalTimes": 2147483647
+    },
+    {
+      "id": 41120991,
+      "model": 1,
+      "heroID": 11120991,
+      "itemID": 14130991,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
     }
   ]
 }

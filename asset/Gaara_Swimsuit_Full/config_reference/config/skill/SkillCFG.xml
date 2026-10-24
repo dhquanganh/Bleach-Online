@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>21001361</id>
+		<name>Sand Guard</name>
+		<resId>21001361</resId>
+		<iconId>21001361</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40700038</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21001362</id>
+		<name>Sand Guard</name>
+		<resId>21001362</resId>
+		<iconId>21001362</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>0</showIcon>
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40700038</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21001363</id>
+		<name>Sand Guard</name>
+		<resId>21001363</resId>
+		<iconId>21001363</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>0</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40700038</buffIds>
+		<displayType>0</displayType>
+	</row>
+	<row>
+		<id>21001364</id>
+		<name>Gaara of the Sand</name>
+		<resId>21001364</resId>
+		<iconId>21001364</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>7</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Gaara has &lt;font color="#4dc831"&gt;Super Armor&lt;/font&gt;. After Gaara executes &lt;font color="#4dc831"&gt;Wind Style - Sandstorm&lt;/font&gt;, additionally executes &lt;font color="#4dc831"&gt;Wind Style - Sand Surfing&lt;/font&gt;. Whenever Gaara causes a &lt;font color="#4dc831"&gt;Critical Hit&lt;/font&gt;, he also causes &lt;font color="#4dc831"&gt;Level 2 - Blindness&lt;/font&gt;.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21001365</id>
+		<name>Wind Style - Sandstorm</name>
+		<resId>21001365</resId>
+		<iconId>21001365</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>31</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>3</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>At the beginning of every round, causes unavoidable small damage and &lt;font color="#4dc831"&gt;Discouragement&lt;/font&gt; to up to 4 units in the opponent's lineup in front.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40001145</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21001366</id>
+		<name>Summer Spirit - Raging Sand</name>
+		<resId>21001366</resId>
+		<iconId>21001366</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>3</type>
+		<otherType />
+		<type1>1</type1>
+		<ninJutsuTypeList>1</ninJutsuTypeList>
+		<enterCd>0</enterCd>
+		<isImmediately>0</isImmediately>
+		<exStates>0</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>While Gaara is alive, whenever non-&lt;font color="#4dc831"&gt;Swimsuit&lt;/font&gt; or &lt;font color="#4dc831"&gt;Summer&lt;/font&gt; units in any field suffer the first damage in a round, reduces that unit's Standard Attack damage by 50% and healings received by 40%, lasts until the end of the round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>3</displayType>
+	</row>
+	<row>
+		<id>21001367</id>
+		<name>Hot Summer - Extreme Sand Surfing</name>
+		<resId>21001367</resId>
+		<iconId>21001367</iconId>
+		<mp>20</mp>
+		<cd>3</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>1</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>3</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes damage to up to 7 units in the opponent's field, causes &lt;font color="#4dc831"&gt;Knockdown&lt;/font&gt; to the selected unit. If the selected unit is suffering from &lt;font color="#4dc831"&gt;Suppress Super Armor&lt;/font&gt;, this skill has extra &lt;font color="#4dc831"&gt;Critical Rate&lt;/font&gt; and Gaara receives &lt;font color="#4dc831"&gt;Level 2 Super Armor&lt;/font&gt; until the end of the round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds />
+		<displayType>2</displayType>
+	</row>
+	<row>
+		<id>21201367</id>
+		<name>Wind Style - Sand Surfing</name>
+		<resId>21201367</resId>
+		<iconId>21001367</iconId>
+		<mp>0</mp>
+		<cd>0</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>4</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>1</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>37</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>3</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes unavoidable damage, &lt;font color="#4dc831"&gt;Suppress Super Armor&lt;/font&gt; until the end of the round to up to 6 units in the opponent's field and reduces their &lt;font color="#4dc831"&gt;Critical Rate&lt;/font&gt; by 15% (stackable).</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40100027</buffIds>
+		<buffIds>40620020</buffIds>
+		<displayType>4</displayType>
+	</row>
+	<row>
+		<id>21301367</id>
+		<name>Hot Summer - Extreme Sand Surfing</name>
+		<resId>21001367</resId>
+		<iconId>21001367</iconId>
+		<mp>20</mp>
+		<cd>3</cd>
+		<ninjutsuLevel>0</ninjutsuLevel>
+		<type>2</type>
+		<otherType />
+		<type1>0</type1>
+		<type1>1</type1>
+		<ninJutsuTypeList>3</ninJutsuTypeList>
+		<ninJutsuTypeList>5</ninJutsuTypeList>
+		<enterCd>1</enterCd>
+		<isImmediately>1</isImmediately>
+		<exStates>3</exStates>
+		<beHitState1>0</beHitState1>
+		<beHitState1Param>0</beHitState1Param>
+		<beHitState1Count>1</beHitState1Count>
+		<culturalDesc>0</culturalDesc>
+		<showIcon>1</showIcon>
+		<desc>Causes damage to up to 7 units in the opponent's field, causes &lt;font color="#4dc831"&gt;Knockdown&lt;/font&gt; to the selected unit. This skill has extra &lt;font color="#4dc831"&gt;Critical Rate&lt;/font&gt; and Gaara receives &lt;font color="#4dc831"&gt;Level 2 Super Armor&lt;/font&gt; until the end of the round.</desc>
+		<skillPic>0</skillPic>
+		<buffIds>40602231</buffIds>
+		<displayType>2</displayType>
+	</row>
+	</skillConfig>

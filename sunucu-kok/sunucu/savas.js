@@ -792,6 +792,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if(!hashCombat.canMystery(ctx,u)||!painCombat.canMystery(ctx,u,{})||ctx.chakra[u.camp]<cost)skillAt=false;
     else{ctx.chakra[u.camp]-=cost;painCombat.spendMystery(ctx,u,{});}
   }
+  if(skillAt)require('./gaara-combat').mysteryExecuted(u);
   const painCostRecords=(attackSpec ? attackSpec.id===narutoCombat.standard(u,allies)?.id : !skillAt) ? painCombat.beforeStandard(u) : [];
   const plan = !attackSpec && skillAt ? heroSkills.get(u.skill) : null;
   const eff = attackSpec ? attackSpec.id : skillAt ? (u.skillEffect || u.skill) : u.normal;
@@ -805,7 +806,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
+  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
   mechaCombat.beforeAttack(u,attackSpec,targets);
   const hitTargets = [];
@@ -851,6 +852,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     dmg = Math.max(1, dmg);
     if (bitir) dmg = Math.max(dmg, victim.hp);
     dmg = Math.max(0, Math.round(dmg * Math.max(0, 1 + heroSkills.value(u,'damageBonus')) * (1 - chance(heroSkills.value(victim,'damageReduction'))) * Math.max(0,1+heroSkills.value(victim,'vulnerability')) * weaponSkills.damageMultiplier(u,victim) * (u.damageMultiplier == null ? 1 : Math.max(0, u.damageMultiplier))));
+    dmg=Math.round(dmg*require('./gaara-combat').standardFactor(u,attackSpec,skillAt,extra));
     if(attackSpec?.mechaSweep)dmg=Math.round(dmg*(attackSpec.mechaSplashWeights?.get(victim)||1));
     if(attackSpec?.hashGolem)dmg=Math.round(dmg*(attackSpec.hashSplashWeights?.get(victim)||1));
     if(attackSpec?.painChase){if(victim===hedef)painPrimaryDamage=dmg;else dmg=Math.round(painPrimaryDamage*.3);}
@@ -862,6 +864,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if (helper) {
       const shared = Math.floor(dmg / 2); dmg -= shared;
       const aided = rebirth.hit(u, helper, Math.round(shared * (1 - chance(heroSkills.value(helper,'damageReduction')))), random);
+      if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,u,helper,aided,false,notices);if(notices.length)reactions.push(painCombat.passive(helper,notices));}
       if(u.hashContext){const notices=[],events=[];hashCombat.onDamage(u.hashContext,u,helper,aided,attackSpec,notices,events);if(notices.length)reactions.push(hashCombat.passive(helper,notices));reactions.push(...events);}
       appendHit(targets,helper,aided,ST.TARGET_EFFECT | ST.HIT | ST.HELP | (helper.hp<=0?ST.DIED:0));
     }
@@ -871,6 +874,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if(victim.sasukeContext&&!bypass&&!immune)dmg=sasukeCombat.beforeDamage(victim.sasukeContext,u,victim,attackSpec||{prompt:skillAt},dmg);
     if(victim.itachiContext&&!bypass&&!immune)dmg=itachiCombat.beforeDamage(victim.itachiContext,u,victim,attackSpec||{prompt:skillAt},dmg);
     const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,kamuiProtected);
+    if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,u,victim,result,critical,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     if(u.sasukeContext)sasukeCombat.onDamage(u.sasukeContext,u,victim,result.damage,critical);
     if(u.itachiContext){const notices=[];itachiCombat.onDamage(u.itachiContext,u,victim,result,attackSpec,notices,critical);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
@@ -886,6 +890,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if (!bypass && heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
       let reflected = Math.min(u.hp,result.damage);
       u.hp -= reflected;
+      if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,victim,u,{damage:reflected},false,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
       if(u.hashContext){const notices=[],events=[];hashCombat.onDamage(u.hashContext,victim,u,{damage:reflected},null,notices,events);if(notices.length)reactions.push(hashCombat.passive(u,notices));reactions.push(...events);}
       targets.push(heroSkills.hpRecord(u,reflected,false));
     }
@@ -941,7 +946,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   // Rasen Shuriken applies reflected damage after its animation completes.
   // Killing the caster inside its own impact effect sets FIsDie before Flash
   // can invoke the skill completion callback, permanently stopping the report.
-  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u) || sasukeCombat.isSasuke(u) || require('./nagato-combat').isNagato(u))) {
+  if (attackSpec && (attackSpec.id === narutoCombat.config.mystery.id || obitoCombat.isObito(u) || painCombat.isPain(u) || hashCombat.isHash(u) || mechaCombat.isMecha(u) || itachiCombat.isItachi(u) || sasukeCombat.isSasuke(u) || require('./nagato-combat').isNagato(u) || require('./gaara-combat').isGaara(u))) {
     const reflected=targets.filter(row=>row.cmd===kodek.CMD.ATTACK&&row.targetCamp===u.camp&&row.targetPos===u.pos&&row.result.hurtHp>0);
     if(reflected.length){
       for(const row of reflected)targets.splice(targets.indexOf(row),1);
@@ -1179,6 +1184,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       move=hashCombat.prepareMove(chaseContext,actor,move);
       move=mechaCombat.prepareMove(chaseContext,actor,victim,move);
       move=sasukeCombat.prepareMove(actor,move);
+      move=require('./gaara-combat').prepareMove(chaseContext,actor,victim,move);
       if(move&&move.obitoBefore)beforeFrames.push(...move.obitoBefore);
       const frame=vurus(actor,victim,bitir,opponents,random,isChase,allies,move ? narutoCombat.attackSpec(move,isChase) : null);
       frame.beforeFrames=[...beforeFrames,...(frame.beforeFrames||[])];
@@ -1192,6 +1198,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         itachiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         sasukeCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         require('./nagato-combat').afterHit(chaseContext,actor,victim,hit,move,frame);
+        require('./gaara-combat').afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.cleanse(chaseContext);
       }
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
@@ -1221,6 +1228,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const enemies=chaseContext.teams[1-request.unit.camp],victim=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(victim){actives.push(painCombat.visual(request.unit,mechaCombat.config.jet));perform(request.unit,victim,enemies,chaseContext.teams[request.unit.camp],actives,request.move);}
     }
+    const sandSurf=require('./gaara-combat').additional(u,spec);
+    if(sandSurf&&opponents.some(v=>v.hp>0))perform(u,opponents.find(v=>v.hp>0),opponents,allies,actives,sandSurf);
     const mechaBomb=mechaCombat.additional(u,spec);
     if(mechaBomb&&opponents.some(v=>v.hp>0))perform(u,opponents.find(v=>v.hp>0),opponents,allies,actives,mechaBomb);
     const woodGolem=hashCombat.additional(chaseContext,u,spec);
@@ -1274,6 +1283,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       arenaFinisher = hpRatio(p2) > hpRatio(p1) ? 1 : 0;
     }
     const actives = t===1 ? [...initialActives] : [];
+    for(const request of require('./gaara-combat').roundRequests(chaseContext)){
+      const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
+      if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
+    }
     for(const request of sasukeRounds){
       const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);

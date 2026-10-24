@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Config><SkillAction id="21001361" type="0" hideOthers="1" triggerDefenceType="1" attackAction="A_1hit" moveType="0" attackDistance="" afterAttackOffsetPoint="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+    <SkillEffect id="6044" />
+  </SkillAction>
+  <SkillAction id="21001362" type="0" hideOthers="1" triggerDefenceType="1" attackAction="A_2hit" moveType="0" attackDistance="" afterAttackOffsetPoint="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+    <SkillEffect id="6044" />
+  </SkillAction>
+  <SkillAction id="21001363" type="0" hideOthers="1" triggerDefenceType="1" attackAction="A_3hit" moveType="0" attackDistance="" afterAttackOffsetPoint="">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+    <SkillEffect id="6044" />
+  </SkillAction>
+  <SkillAction id="21001364" type="3" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill2">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+    <SkillEffect id="2127" />
+  </SkillAction>
+  <SkillAction id="21001365" type="4" hideOthers="false" triggerDefenceType="1" attackAction="SP_skill3" moveType="1" attackDistance="460,0" afterAttackOffsetPoint="-2,0">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="35" />
+    <SkillEffect id="6046" />
+  </SkillAction>
+  <SkillAction id="21001367" type="2" hideOthers="true" triggerDefenceType="1" attackAction="SP_skill1" moveType="1" attackDistance="400,0" sceneMaskAlpha="0.4" afterAttackOffsetPoint="2,0" needHideShadow="true">
+    <HitPointInfo id="0" majorDefenceAttributeIdList="12" />
+    <SkillEffect id="6043" />
+  </SkillAction>
+  </Config>

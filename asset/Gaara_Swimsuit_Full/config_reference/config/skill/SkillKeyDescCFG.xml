@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><row>
+		<id>40</id>
+		<keys>Level 2 - Blindness</keys>
+		<skillId>21001364</skillId>
+		<buffId>49000002</buffId>
+		<desc>[Level 2 Debuff]: Units affected cannot execute Standard Attacks. Lasts for 1 round.</desc>
+		<isSkillDesc />
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	<row>
+		<id>281</id>
+		<keys>Wind Style - Sand Surfing</keys>
+		<skillId>21001364</skillId>
+		<buffId>49000059</buffId>
+		<desc>[Additional Skill]: Causes unavoidable damage, [Suppress Super Armor] until the end of the round to up to 6 units in the opponent's field and reduces their [Critical Rate] by 15% (stackable).</desc>
+		<isSkillDesc>1</isSkillDesc>
+		<isRefNinja />
+		<refNinjaId />
+	</row>
+	</skillConfig>

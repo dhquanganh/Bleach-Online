@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<skillConfig><skill id="21001361" name="Sand Guard" resId="21001361" iconId="21001361" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="1" ninjutsuType="3;5" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="0" skillStartPos="{技能动画显示位置}"> 
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc> 
+	</skill>
+	<skill id="21001362" name="Sand Guard" resId="21001362" iconId="21001362" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="1" ninjutsuType="3;5" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="0" skillStartPos="{技能动画显示位置}"> 
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc> 
+	</skill>
+	<skill id="21001363" name="Sand Guard" resId="21001363" iconId="21001363" mp="0" cd="0" ninjutsuLevel="0" type="0" type1="1" ninjutsuType="3;5" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Generates a &lt;font color="#4dc831"&gt;Shield&lt;/font&gt; based on 20% of Gaara's base Resistance stat to 2-3 units in your lineup and cancels 1 &lt;font color="#4dc831"&gt;Debuff&lt;/font&gt; from all units affected.</desc> 
+	</skill>
+	<skill id="21001364" name="Gaara of the Sand" resId="21001364" iconId="21001364" mp="0" cd="0" ninjutsuLevel="0" type="3" type1="1" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="7" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Gaara has &lt;font color="#4dc831"&gt;Super Armor&lt;/font&gt;. After Gaara executes &lt;font color="#4dc831"&gt;Wind Style - Sandstorm&lt;/font&gt;, additionally executes &lt;font color="#4dc831"&gt;Wind Style - Sand Surfing&lt;/font&gt;. Whenever Gaara causes a &lt;font color="#4dc831"&gt;Critical Hit&lt;/font&gt;, he also causes &lt;font color="#4dc831"&gt;Level 2 - Blindness&lt;/font&gt;.</desc> 
+	</skill>
+	<skill id="21001365" name="Wind Style - Sandstorm" resId="21001365" iconId="21001365" mp="0" cd="0" ninjutsuLevel="0" type="4" type1="1" ninjutsuType="3;5" openType="0" enterCd="0" isImmediately="0" exState="31" beHitState1="0" beHitState1Param="3" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>At the beginning of every round, causes unavoidable small damage and &lt;font color="#4dc831"&gt;Discouragement&lt;/font&gt; to up to 4 units in the opponent's lineup in front.</desc> 
+	</skill>
+	<skill id="21001366" name="Summer Spirit - Raging Sand" resId="21001366" iconId="21001366" mp="0" cd="0" ninjutsuLevel="0" type="3" type1="1" ninjutsuType="1" openType="0" enterCd="0" isImmediately="0" exState="0" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>While Gaara is alive, whenever non-&lt;font color="#4dc831"&gt;Swimsuit&lt;/font&gt; or &lt;font color="#4dc831"&gt;Summer&lt;/font&gt; units in any field suffer the first damage in a round, reduces that unit's Standard Attack damage by 50% and healings received by 40%, lasts until the end of the round.</desc> 
+	</skill>
+	<skill id="21001367" name="Hot Summer - Extreme Sand Surfing" resId="21001367" iconId="21001367" mp="20" cd="3" ninjutsuLevel="0" type="2" type1="0;1" ninjutsuType="3;5" openType="0" enterCd="1" isImmediately="1" exState="3" beHitState1="0" beHitState1Param="0" culturalDesc="0" showIcon="1" skillStartPos="{技能动画显示位置}"> 
+		<desc>Causes damage to up to 7 units in the opponent's field, causes &lt;font color="#4dc831"&gt;Knockdown&lt;/font&gt; to the selected unit. If the selected unit is suffering from &lt;font color="#4dc831"&gt;Suppress Super Armor&lt;/font&gt;, this skill has extra &lt;font color="#4dc831"&gt;Critical Rate&lt;/font&gt; and Gaara receives &lt;font color="#4dc831"&gt;Level 2 Super Armor&lt;/font&gt; until the end of the round.</desc> 
+	</skill>
+	</skillConfig>

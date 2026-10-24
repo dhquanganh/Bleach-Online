@@ -1,0 +1,239 @@
+{
+  "version": "2026102405",
+  "heroId": 11120991,
+  "fragmentId": 14130991,
+  "files": [
+    {
+      "path": "Resources/Bin/combine/01000005.bin",
+      "sha256": "00860ea93a335330fe5292f25359b6398182c924978990d41bc2be623f6cfe6a"
+    },
+    {
+      "path": "Resources/Bin/combine/01000022.bin",
+      "sha256": "bfb4d934cd25b3027ee371bb56ece8d0d190a39fbba3646c9b2c578ae79b409d"
+    },
+    {
+      "path": "Resources/Bin/combine/01000032.bin",
+      "sha256": "39fcb91cf3acdb218e9569644401e7b45fcd79b340ccd17966df416b6c12ca94"
+    },
+    {
+      "path": "Resources/Bin/combine/0F000000.binPackage",
+      "sha256": "e34583a45418468782b3b4c438da6686876982d9aa031487a567abe46dd53f09"
+    },
+    {
+      "path": "Resources/Bin/combine/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-de/0F000000.binPackage",
+      "sha256": "5976abde67140bd4d0a8a86d103268cf70237910613fcecc2de98488c7a39359"
+    },
+    {
+      "path": "Resources/Bin/dil-de/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-es/0F000000.binPackage",
+      "sha256": "2707f8414e829a13d99395b77dff707a6538e5661267bc3c2604787a29ba12fc"
+    },
+    {
+      "path": "Resources/Bin/dil-es/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-fr/0F000000.binPackage",
+      "sha256": "a8dab9fb7fd138577113ce8fa9d86d5e28734d752220548152200593918d943e"
+    },
+    {
+      "path": "Resources/Bin/dil-fr/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-id/0F000000.binPackage",
+      "sha256": "3c19b0efc372ce6f1f1daa868508f3d735ea88905af71a9682fa2e7311a04aec"
+    },
+    {
+      "path": "Resources/Bin/dil-id/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-it/0F000000.binPackage",
+      "sha256": "4c949e3312115745b8f62084158ebea14555350e1fcf384c436eb1c90837f8c3"
+    },
+    {
+      "path": "Resources/Bin/dil-it/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-ja/0F000000.binPackage",
+      "sha256": "35b2bba4b5731b87a9ab14da65212616759c3b103c99435ede3c79f29bc2a3ef"
+    },
+    {
+      "path": "Resources/Bin/dil-ja/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-pt/0F000000.binPackage",
+      "sha256": "69873672fdf01a34970db633f6d8c523a025f4d24de3004e972bda8cceea6580"
+    },
+    {
+      "path": "Resources/Bin/dil-pt/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-ru/0F000000.binPackage",
+      "sha256": "7258de196049d96894af863117f8fb10221d777109090fc175e5dc85aaf4e939"
+    },
+    {
+      "path": "Resources/Bin/dil-ru/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-tr/0F000000.binPackage",
+      "sha256": "8d5bd8f96728476a59eafb92474f5fecea30afdf1e037d011c1d6d97e3c0e034"
+    },
+    {
+      "path": "Resources/Bin/dil-tr/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-vi/0F000000.binPackage",
+      "sha256": "f2d0658c65f3525169168a3bc2fdc8c4e8f566c1f10ef5a0e3faf44bdf857e42"
+    },
+    {
+      "path": "Resources/Bin/dil-vi/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/dil-zh/0F000000.binPackage",
+      "sha256": "5004f29c926c99d4ab0fd66870c1d021abd31b7c6075f8a2c39d47b4fbe1e7c3"
+    },
+    {
+      "path": "Resources/Bin/dil-zh/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Bin/normal/01000005.bin",
+      "sha256": "00860ea93a335330fe5292f25359b6398182c924978990d41bc2be623f6cfe6a"
+    },
+    {
+      "path": "Resources/Bin/normal/01000022.bin",
+      "sha256": "bfb4d934cd25b3027ee371bb56ece8d0d190a39fbba3646c9b2c578ae79b409d"
+    },
+    {
+      "path": "Resources/Bin/normal/01000032.bin",
+      "sha256": "39fcb91cf3acdb218e9569644401e7b45fcd79b340ccd17966df416b6c12ca94"
+    },
+    {
+      "path": "Resources/Bin/normal/0F000000.binPackage",
+      "sha256": "9304f4a387160fb73545ee05bf9b0a17cf5e315491303e746c01cd58af9c6870"
+    },
+    {
+      "path": "Resources/Bin/normal/0F000001.binPackage",
+      "sha256": "a2dc652ecf210365ae4c3fcfd1502a3e28b5643bedd9f1547b096ee890f83177"
+    },
+    {
+      "path": "Resources/Textures/HeadIcon/00A9B15F.TexClient",
+      "sha256": "e5be2fbf0cfedffc2919773079105adaaf422393cb7e096b1ff3d078f2171fe8"
+    },
+    {
+      "path": "Resources/Textures/Inventory/00F79F2F.TexClient",
+      "sha256": "0ee81af2f520926a1bdd1b20522b5da6f8f945e8d7e4c9a1b23324ba0084d900"
+    },
+    {
+      "path": "Resources/Textures/LargeIcon/00A9B15F.TexClient",
+      "sha256": "026eab8eab95aef2104ab70f329d8a52660885ddc1f7fc4f33ec19fcfd9ab7ac"
+    },
+    {
+      "path": "Resources/Textures/MiddlePicture/00A9B15F.TexClient",
+      "sha256": "a4afc45c537691a99bf80c1e51b1d1b99effdaa8b9da8095a928ea10e22a2a38"
+    },
+    {
+      "path": "Resources/Textures/Model/00A9B15F.TexClient",
+      "sha256": "a3e2f5e50e051950a91928b88cda5ad92853053591cd82fc240b0a9b6e702b1f"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0A.TexClient",
+      "sha256": "74e673a877b5d761d434eeacf29948274330b87ba241b31d85274c45d841d8ad"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0B.TexClient",
+      "sha256": "430f660d8d470efbcfd8fe7305b05d0a1ca4f72fc308831c53dbf794a8e634e7"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0C.TexClient",
+      "sha256": "2343c15eaab66ab27bf66321e7aae19038df1b83c07b0fc04f86cc374c95ede4"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0D.TexClient",
+      "sha256": "9857b049eb886194b9aedf40f59f1e7263c5b9a2b2502e8ce0ac6ac12b42d2f4"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0E.TexClient",
+      "sha256": "6047f14767b7025cddf5d1b37e26da1f8c241312efb08ae2c90bd2b9ea879f95"
+    },
+    {
+      "path": "Resources/Textures/Model/A9B15F0F.TexClient",
+      "sha256": "d7f78c6eafd98d0476643d7ea9543130504723c7f9873148cc0668297e964ced"
+    },
+    {
+      "path": "Resources/Textures/Skill/00C837DD.TexClient",
+      "sha256": "9f0e38a45fd44400cf2090781ef24435a459d46711010bc7e793e6acd99060db"
+    },
+    {
+      "path": "Resources/Textures/Skill/00C837DE.TexClient",
+      "sha256": "c3e39af82fbc328b4aad034b8fe652a430287c52a9a840a3eaac32510d62a63b"
+    },
+    {
+      "path": "Resources/Textures/Skill/00C837DF.TexClient",
+      "sha256": "92e0862fcfc9b843a55307fdadb679bccec9e08f788bab8abc8ce45924073bce"
+    },
+    {
+      "path": "Resources/Textures/Skill/00C837E0.TexClient",
+      "sha256": "3a486fe332e498db730081668b338aad4be43397692d170c450e402c0cd1e46e"
+    },
+    {
+      "path": "Resources/Textures/Skill/00CFDCE5.TexClient",
+      "sha256": "574b7042383060e66dfb80fbc4f86da58ce6c4e16034717f692272bf217ee401"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837DD.TexClient",
+      "sha256": "84a10c6bf1f1a65fb5e8b12df8a90c75e3b5752028f96c43e8b4a1b17842ef50"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837DE.TexClient",
+      "sha256": "2c2ef30f05017df4aac389f50e24fd7f5ae1e87c4c404b00766280d1fd0b68ab"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837DF.TexClient",
+      "sha256": "42789ea35ba375bf283e9b01cfd89ab5aaddf606ec8ad28bd10da9ec7e525ee0"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837E0.TexClient",
+      "sha256": "023ba60477e686925664e47eb56ececa0c153b2cfd7cf6fcf26a1e9295268d05"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837E1.TexClient",
+      "sha256": "c367cf32a03b861a37ac6809d9949e62143ffdb0e8c1116c39235d3aefa12e8a"
+    },
+    {
+      "path": "Resources/Textures/SkillIcon/00C837E2.TexClient",
+      "sha256": "c7ebda6ee7567b6597eba99a5f7d3d752598971bf12988e976752e75f995d84a"
+    },
+    {
+      "path": "Resources/Textures/SmallIcon/00A9B15F.TexClient",
+      "sha256": "e5be2fbf0cfedffc2919773079105adaaf422393cb7e096b1ff3d078f2171fe8"
+    },
+    {
+      "path": "TApplication.swf",
+      "sha256": "a4300959f3ff1efefd8f17444d6dc646ecbc2305ebe65ef2c1b298a38107eb87"
+    },
+    {
+      "path": "index.swf",
+      "sha256": "e7b5b76329602f48c64e314e957476057126eaad2d99239cae7fd37565bd7c30"
+    },
+    {
+      "path": "version.swf",
+      "sha256": "03183d2573fa8189289dfdc0d402764fdd528d7201a8a3c8dea61be533a58d91"
+    }
+  ]
+}

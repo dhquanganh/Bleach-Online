@@ -64582,5 +64582,53 @@
     "desc": "Frog Squad Lead: before his first action each round, reduces his Mystery cooldown by 1 and sets his Mystery Chakra cost to 0 until the end of the round.",
     "icon": 13121405,
     "sortId": 5
+  },
+  {
+    "id": "00C837DD",
+    "skillId": 13121501,
+    "name": "Hot Summer - Extreme Sand Surfing",
+    "desc": "Prompt: deals physical damage to up to 7 enemies and Knockdown to the selected enemy. If selected enemy has Suppress Super Armor, gains extra Critical Rate and grants Gaara Level 2 Super Armor until round end. Cooldown 3; battlefield cooldown 1; Chakra 20. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121501,
+    "sortId": 1
+  },
+  {
+    "id": "00C837DE",
+    "skillId": 13121502,
+    "name": "Sand Guard",
+    "desc": "Grants shields equal to 20% of Gaara base Resistance to 2-3 living allies and removes exactly one removable Debuff from each affected ally. This shield is a support formula, not attack damage.",
+    "icon": 13121502,
+    "sortId": 2
+  },
+  {
+    "id": "00C837DF",
+    "skillId": 13121503,
+    "name": "Wind Style - Sandstorm",
+    "desc": "At the beginning of every round, deals unavoidable small physical damage and Level 2 Discouragement to up to 4 front enemies. Discouragement prevents receiving external Buffs, stat increases and Shields until the end of the next round or executing a Mystery. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121503,
+    "sortId": 3
+  },
+  {
+    "id": "00C837E0",
+    "skillId": 13121504,
+    "name": "Wind Style - Sand Surfing",
+    "desc": "Additional Skill after Sandstorm: unavoidable physical damage to up to 6 enemies. Suppresses Super Armor until round end and reduces each target Critical Rate by 15% (stackable). Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
+    "icon": 13121504,
+    "sortId": 4
+  },
+  {
+    "id": "00C837E1",
+    "skillId": 13121505,
+    "name": "Gaara of the Sand",
+    "desc": "Gaara has Super Armor. Sandstorm is followed by Sand Surfing. Whenever Gaara causes a Critical Hit, inflicts Level 2 Blindness for 1 round, preventing Standard Attacks. Level 2 Super Armor blocks Low Float, High Float, Repulse, Knockdown and lower-level Suppress Super Armor.",
+    "icon": 13121505,
+    "sortId": 5
+  },
+  {
+    "id": "00C837E2",
+    "skillId": 13121506,
+    "name": "Summer Spirit - Raging Sand",
+    "desc": "While Gaara is alive, whenever a non-Swimsuit/non-Summer unit on either team takes its first damage in a round, that unit Standard Attack damage is reduced by 50% and healing received by 40% until round end.",
+    "icon": 13121506,
+    "sortId": 6
   }
 ]

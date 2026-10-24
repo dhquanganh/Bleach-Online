@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<buffInfos><bufferInfo id="40000038" type="0" power="1" name="文太蓄力BUFF" buffEffectId="" pos="" beHitCode="" beHitEffect="1" idleAction="C_action_idle_2" breakBeHitCode="001001" breakBeHitEffect="016" idleEffectId="2147" mirror="1" />
+    <bufferInfo id="40000039" name="天牢启动" buffEffectId="3015" addBuffEffectId="3014" position="0" mirror="1" />
+    </buffInfos>

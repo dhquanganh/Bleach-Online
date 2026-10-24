@@ -1,0 +1,1042 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ninjaSkillConfig><row>
+		<id>11001361</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725201</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725202</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725203</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725204</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725205</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725206</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725207</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725208</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725209</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725210</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725211</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725212</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725213</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725214</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725215</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725216</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725217</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725218</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725219</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725220</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725221</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725222</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725223</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725224</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725225</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725226</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725227</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725228</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725229</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725230</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725231</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725232</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725233</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725234</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725235</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725236</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725237</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725238</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725239</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725240</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725241</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725242</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725243</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725244</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725245</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725246</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725247</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725248</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725249</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>77725250</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	<row>
+		<id>18117753</id>
+		<star />
+		<needMaterialType />
+		<normals>21001361</normals>
+		<normals>21001362</normals>
+		<normals>21001363</normals>
+		<specials>21001367</specials>
+		<skills>21001364</skills>
+		<skills>21001365</skills>
+		<skills>21001366</skills>
+		<binding />
+		<normalItemIds>0;0</normalItemIds>
+		<specialItemIds>0;0</specialItemIds>
+		<skillItem1Ids>0;0</skillItem1Ids>
+		<skillItem2Ids>0;0</skillItem2Ids>
+		<skillItem3Ids>0;0</skillItem3Ids>
+		<skillItem4Ids>0;0</skillItem4Ids>
+		<skillItem5Ids>0;0</skillItem5Ids>
+	</row>
+	</ninjaSkillConfig>

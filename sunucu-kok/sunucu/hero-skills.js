@@ -229,6 +229,7 @@ function scoped(scope, caster, allies, enemies, targets, random) {
 }
 function status(unit, field) {
   const sasuke=require('./sasuke-combat');
+  if(field==='disarm'&&require('./gaara-combat').active(unit,'gaaraBlindUntil'))return true;
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition)&&b.remaining>0))return true;
@@ -238,16 +239,17 @@ function status(unit, field) {
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
   if(unit.suppressedUntil>=unit.battleRound&&['immuneControl','immuneHealBlock','invincible','void'].includes(field))return false;
-  return !!(unit.skillBuffs || []).find(buff=>buff.field===field&&buff.remaining>0);
+  return !!(unit.skillBuffs || []).find(buff=>require('./gaara-combat').allowBuff(unit,buff)&&buff.field===field&&buff.remaining>0);
 }
 function value(unit, field) {
   const sasukeTeam=unit.sasukeContext?.teams[unit.camp]?.some(u=>u.hp>0&&require('./sasuke-combat').isSasuke(u));
-  const changes=(unit.skillBuffs||[]).filter(buff=>buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
+  const changes=(unit.skillBuffs||[]).filter(buff=>require('./gaara-combat').allowBuff(unit,buff)&&buff.field===field&&buff.remaining>0&&(buff.threshold==null||unit.hp/unit.maxHp<buff.threshold)).reduce((sum,buff)=>sum+buff.value*(buff.step?Math.floor((1-unit.hp/unit.maxHp+1e-9)/buff.step):1),0);
   const base=Number(unit[field])||0;
   let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field)*require('./itachi-combat').factor(unit,field)*require('./sasuke-combat').factor(unit,field);
   result*=require('./nagato-combat').factor(unit,field);
   if(field==='critRate')result+=require('./mecha-combat').critical(unit);
   if(field==='critRate')result+=require('./itachi-combat').critical(unit);
+  if(field==='critRate')result-=require('./gaara-combat').criticalLoss(unit);
   if(sasukeTeam&&field==='atk')result*=1.18;
   if(sasukeTeam&&field==='critRate')result+=.07;
   if(['def','resistance'].includes(field)&&require('./pain-combat').active(unit,'painAfflictionUntil'))result=base*.75;
@@ -270,7 +272,7 @@ function changeFury(unit, amount, records, unresistable=false, random=Math.rando
 }
 function restore(caster, target, amount, records) {
   if(target.hp<=0)return 0;
-  const rate=Math.max(0,1+value(target,'recoverRate'));
+  const rate=Math.max(0,1+value(target,'recoverRate'))*require('./gaara-combat').healFactor(target);
   const restored=status(target,'noHeal')&&!status(target,'immuneHealBlock')?0:Math.min(Math.max(0,target.maxHp-target.hp),Math.max(0,Math.round(amount*rate)));
   target.hp+=restored;
   records.push(hpRecord(target,-restored));
@@ -281,6 +283,7 @@ function healPower(caster) {
   return base*(caster.atk>0?value(caster,'atk')/caster.atk:1);
 }
 function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
+  if(rule.value>=0&&!controls.has(rule.field)&&rule.field!=='vulnerability'&&rule.kind!=='dot'&&require('./gaara-combat').blocks(caster,target))return;
   if(rule.value>=0&&rule.kind!=='dot'&&require('./sasuke-combat').active(target,'sasukeFearUntil'))return;
   if(require('./itachi-combat').debuff(target,rule,records))return;
   if(require('./pain-combat').rejectBuff(caster,target,rule,records))return;
@@ -322,6 +325,7 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
       if(chance<1&&random()>=chance)continue;
       if(rule.kind==='fury')changeFury(target,rule.fraction?Math.round(target.anger*rule.value):rule.value,records,rule.unresistable,random);
       else if(rule.kind==='heal'){
+        if(rule.regen&&require('./gaara-combat').blocks(caster,target))continue;
         const amount=(rule.basis==='maxHp'?caster.maxHp:rule.basis==='targetMaxHp'?target.maxHp:healPower(caster))*rule.value;
         if(rule.turns){target.skillBuffs=target.skillBuffs||[];const prior=target.skillBuffs.find(b=>b.kind==='regen'&&b.source===caster.id);
           const data={kind:'regen',source:caster.id,amount,remaining:rule.turns+1,buffId:13500019};if(prior)Object.assign(prior,data);else target.skillBuffs.push(data);
@@ -330,6 +334,7 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
       }else if(rule.kind==='buff')putBuff(caster,target,rule,records,random,plan.sourceId||plan.id||0);
       else if(rule.kind==='clear')remove(target,rule.negative,records);
       else if(rule.kind==='shield'){
+        if(require('./gaara-combat').blocks(caster,target))continue;
         if(caster!==target&&require('./pain-combat').active(target,'painHorrorUntil'))continue;
         remove(target,true,records);target.shield=Math.min(0xffffffff,Math.max(target.shield||0,Math.round(value(caster,'atk')*rule.value)));
         records.push({cmd:CMD.SHIELD,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:target.shield}});
@@ -365,6 +370,7 @@ function startRound(units) {
       else if(buff.kind==='dot'&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
         let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.mechaIgnition&&unit.mechaContext?require('./mecha-combat').ignitionDamage(unit.mechaContext.teams.flat().find(v=>v.id===buff.source&&(buff.sourceCamp==null||v.camp===buff.sourceCamp))||unit,unit):buff.amount)));
         unit.hp-=damage;records.push(hpRecord(unit,damage,false));
+        if(unit.gaaraContext)require('./gaara-combat').onDamage(unit.gaaraContext,null,unit,{damage},false,records);
         if(unit.hashContext){const events=[];const source=unit.hashContext.teams.flat().find(u=>u.id===buff.source)||unit;require('./hashirama-combat').onDamage(unit.hashContext,source,unit,{damage},buff,records,events);actives.push(...events);}
       }
       if(unit.hp<=0)break;
@@ -393,4 +399,4 @@ function eventFrames(unit,records) {
 module.exports={get,plans,effects,select,scoped,status,value,apply,restore,healPower,changeFury,remove,removeField,startRound,endRound,hpRecord,eventFrames};
 
 // Shared armor suppression belongs to the combat engine.
-module.exports.armor=unit=>!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));
+module.exports.armor=unit=>require('./gaara-combat').active(unit,'gaaraArmor2Until')||!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));

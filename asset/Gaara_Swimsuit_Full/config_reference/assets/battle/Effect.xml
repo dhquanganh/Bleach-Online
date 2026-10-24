@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Effect><EffectInfo id="2050" name="奥义技蓄力特效" type="0" target="0" color="" maxAlpha="" ninjaAlpha="" res="assets/battle/effect/skillActionEffect.swf" frontAction="shang" backAction="xia" refPointName="skillEffectPoint" />
+  <EffectInfo id="2127" type="0" target="0" pos="70,0" color="" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/GAR_shazhidun.swf" action="" name="我爱罗砂之盾" frontAction="bt" />
+  <EffectInfo id="2147" type="0" target="0" pos="70,0" color="" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/WENTAI_tex.swf" action="" name="蓄力持续特效" frontAction="sad1" backAction="sad2" />
+  <EffectInfo id="3014" type="2" target="0" pos="70,0" color="0xcc0099" minAlpha="0.1" maxAlpha="0.4" ninjaAlpha="1" res="assets/battle/effect/tianlaoqidong.swf" action="" name="天牢启动" frontAction="tlsj" />
+  <EffectInfo id="3015" type="1" target="0" pos="70,0" color="0xcc0099" minAlpha="0.1" maxAlpha="0.4" ninjaAlpha="1" res="assets/battle/effect/tianlaochixu.swf" action="" name="天牢持续" frontAction="tl" />
+  <EffectInfo id="6043" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Yzwoailuo_aoyi.swf" action="" name="冲砂爆流 奥义" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6044" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Yzwoailuo_pugong.swf" action="" name="砂之盾普攻" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6046" type="0" target="0" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Yzwoailuo_beidong2.swf" action="" name="风遁·砂尘被动" frontAction="shang" backAction="xia" />
+  <EffectInfo id="6040" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Woailuoyongzhuang_shazhikai.swf" action="" name="砂之铠·霸体持续" frontAction="b2" />
+  <EffectInfo id="6041" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Woailuoyongzhuang_shazhikai.swf" action="" name="砂之铠·霸体启动" frontAction="b1" />
+  <EffectInfo id="6042" type="0" target="1" pos="70,0" color="" minAlpha="1" maxAlpha="1" ninjaAlpha="1" res="assets/battle/effect/Woailuoyongzhuang_shazhikai.swf" action="" name="砂之铠·霸体结束" frontAction="b3" />
+  </Effect>

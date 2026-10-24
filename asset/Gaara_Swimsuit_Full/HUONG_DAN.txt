@@ -1,0 +1,15 @@
+GAARA [SWIMSUIT]
+Ma nhan vat / artisticId: 11001361
+
+assets/: tai nguyen giu nguyen duong dan game.
+assets/battle/effect/: hieu ung chieu va hieu ung dung chung duoc cau hinh tham chieu.
+assets/battle/role/left/: hoat anh chien dau.
+assets/role/npc/scene/npcres/: hoat anh ngoai ban do neu co.
+assets/user/, assets/bag/: anh va tai nguyen giao dien.
+assets/skill/: icon ky nang.
+config_reference/: trich doan cau hinh de doi chieu, khong ghi de cau hinh game day du.
+manifest.json: file, SHA256, ma ky nang va file thieu.
+
+Nguon: E:/Naruto_Online_Full_Resources/resources
+Da lan theo ninjaSkillConfig, SkillInfos, SkillAction, Effect, LogicResEffect va buff. SWF da kiem tra chu ky va do dai giai nen.
+Pham vi: tai nguyen lien quan tim thay trong du lieu local; khong gom runtime va logic may chu.
