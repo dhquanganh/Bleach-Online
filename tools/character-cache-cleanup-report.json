@@ -1,0 +1,19 @@
+{
+  "directories": [
+    "sunucu-kok\\cikarim\\__pycache__",
+    "sunucu-kok\\cikarim\\character-tags\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-cross-server\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-hueco\\__pycache__",
+    "sunucu-kok\\cikarim\\flash-refinery\\__pycache__",
+    "sunucu-kok\\cikarim\\hashirama-final\\__pycache__",
+    "sunucu-kok\\cikarim\\itachi-rtn\\__pycache__",
+    "sunucu-kok\\cikarim\\mecha-naruto\\__pycache__",
+    "sunucu-kok\\cikarim\\naruto-sage\\__pycache__",
+    "sunucu-kok\\cikarim\\naruto-sage-native\\__pycache__",
+    "sunucu-kok\\cikarim\\ninja-fragments\\__pycache__",
+    "sunucu-kok\\cikarim\\pain-tendo\\__pycache__",
+    "sunucu-kok\\cikarim\\shared-animation\\__pycache__",
+    "sunucu-kok\\cikarim\\tsunade-asian\\__pycache__"
+  ],
+  "deleted_bytes": 155284
+}
