@@ -49,14 +49,14 @@ function afterHit(ctx,u,selected,hit,move,frame){
   for(const target of hit){
     if(move.obitoChaos){
       if(u.obitoRage){target.suppressedUntil=ctx.round;label(records,target,4);}
-      const amount=Math.min(20,ctx.chakra[target.camp]);ctx.chakra[target.camp]-=amount;ctx.chakra[u.camp]=Math.min((ctx.chakraLimit||[])[u.camp]??100,ctx.chakra[u.camp]+amount);
+      const amount=Math.min(20,ctx.chakra[target.camp]);ctx.chakra[target.camp]-=amount;require('./tsunade-combat').gainChakra(ctx,u,amount);
       label(records,target,5);
       if(amount>0)label(records,u,5);
     }
     if(move.obitoSpear){tag(ctx,u,target,records);if(target.hp>0&&!skills.status(target,'immuneControl')){target.immobileUntil=ctx.round;label(records,target,6);}}
     if(move.obitoStandard&&ctx.random()<config.tagChance)tag(ctx,u,target,records);
   }
-  if(move.obitoStandard&&hit.some(t=>t.hp<=0)){u.obitoKillCredits=(u.obitoKillCredits||0)+1;if(u.obitoRage)label(records,u,9);}
+  if(move.obitoStandard&&hit.some(t=>t.hp<=0)){u.obitoKillCredits=(u.obitoKillCredits||0)+1;if(u.obitoRage){label(records,u,9);require('./tsunade-combat').receiveExtra(ctx,u);}}
   if(u.obitoRage&&u.hp>0){const damage=frame.targets.filter(r=>r.targetCamp!==u.camp).reduce((sum,r)=>sum+Math.max(0,r.result.hurtHp||0),0);if(damage){const healed=skills.restore(u,u,damage*config.lifeSteal,records);if(healed>0)label(records,u,8,healed);}}
   if(records.length)frame.reactions.push(passive(u,records));
   frame.reactions.push(...checkRage(u));

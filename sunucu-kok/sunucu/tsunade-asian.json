@@ -1,0 +1,93 @@
+{
+  "heroId": 11120992,
+  "name": "Tsunade [Asian Style]",
+  "quality": 7,
+  "assess": "SSS",
+  "profession": 1,
+  "anyPosition": true,
+  "tags": [
+    29,
+    67,
+    54,
+    1,
+    18,
+    32,
+    48,
+    57
+  ],
+  "tagNames": {
+    "67": "Asian Style"
+  },
+  "chakraPerRound": 0,
+  "chases": [],
+  "mystery": {
+    "id": 13121601,
+    "name": "Giant Katsuyu - Acid Shot",
+    "target": 7,
+    "multiplier": 1.8,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "chakraCost": 20,
+    "prompt": true,
+    "consumesPrimary": false,
+    "tsunadeAcid": true,
+    "hitCount": 4
+  },
+  "standard": {
+    "id": 13121602,
+    "name": "Healing Jutsu",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0,
+    "tsunadeHeal": true
+  },
+  "healing": {
+    "id": 13121603,
+    "name": "Giant Katsuyu - Healing",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0,
+    "trigger": true,
+    "tsunadeGiantHeal": true
+  },
+  "revival": {
+    "id": 13121604,
+    "name": "Reserve Seal",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0,
+    "tsunadeRevival": true
+  },
+  "summoning": {
+    "id": 13121605,
+    "name": "Summoning Jutsu - Small Katsuyu",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 0,
+    "tsunadeSummon": true
+  },
+  "healingMystery": {
+    "id": 13121606,
+    "name": "Giant Katsuyu - Healing [Mystery]",
+    "support": true,
+    "multiplier": 0,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "chakraCost": 20,
+    "prompt": true,
+    "consumesPrimary": false,
+    "tsunadeGiantHeal": true
+  },
+  "standardHealRatio": 0.15,
+  "giantHealRatio": 0.25,
+  "retaliationChance": 0.45,
+  "revivedRetaliationChance": 0.75,
+  "extraStandardCap": 3,
+  "smallKatsuyuCount": 3,
+  "smallKatsuyuHpRatio": 0.15,
+  "smallKatsuyuHealRatio": 0.15,
+  "balanceNote": "Acid's total damage coefficient (1.8) and Small Katsuyu's heal coefficient (15% Physical DEF) are explicit local tuning: the screenshot does not specify them. All damaging attacks use buffed Physical ATK and Physical DEF. Healing uses Tsunade's current Physical DEF including buffs/debuffs, per user instruction. Revival HP and summon HP remain max-HP based. Healing Mystery is selected by an allied target after Reserve Seal.",
+  "healingStat": "def"
+}

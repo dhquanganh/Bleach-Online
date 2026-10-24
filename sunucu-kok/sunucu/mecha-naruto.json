@@ -5,6 +5,8 @@
   "assess": "SSS",
   "profession": 1,
   "anyPosition": true,
+  "tags": [27, 52, 12],
+  "tagNames": {"12": "Confusion"},
   "mystery": {
     "id": 13121101,
     "name": "Mecha-Naruto - Chakra Bomb",

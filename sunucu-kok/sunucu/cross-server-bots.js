@@ -18,4 +18,23 @@ function team(id,level,row=0){const b=get(id);if(!b)return null;
  const difficulty=Math.max(0,Math.min(6,Math.floor(Number(row)||0))),baseLevel=Math.max(1,Math.min(159,level+b.levelOffset));
  return {...b,baseLevel,level:Math.round(Math.max(1,Math.min(159,level))*cfg.enemyLevelMultiplier*(1+difficulty*cfg.rowLevelStep)),crossAttackScale:cfg.enemyAttackMultiplier,crossStatScale:cfg.enemyStatMultiplier*(1+difficulty*cfg.rowStatStep),difficulty};
 }
-module.exports={all,get,team,poolSize:pool.length};
+function scaleCombatStats(unit,team){
+ const factor=Number(team.crossStatScale);
+ if(!(factor>0))return;
+ // The displayed level may exceed the hero stat table's level cap.
+ // Apply its growth after balancing so HP/ATK/DEF retain that extra strength.
+ const levelFactor=Math.pow(Math.max(1,Number(team.level)/Math.max(1,Number(team.baseLevel)||Number(team.level)||1)),cfg.enemyCombatLevelExponent);
+ const scale=(field,multiplier)=>{unit[field]=Math.min(1000000000,Math.max(0,Math.round(unit[field]*multiplier)));};
+ scale('maxHp',factor*levelFactor);scale('speed',factor);
+ scale('atk',factor*(Number(team.crossAttackScale)||1)*levelFactor);
+ scale('def',factor*levelFactor);
+ unit.hp=unit.maxHp;unit.level=team.level;
+}
+function scaleSquadStats(units,team){
+ if(!units.length||!(Number(team.crossStatScale)>0))return;
+ // Share the balanced HP budget equally; mixed hero templates have wildly
+ // different base HP, which should not decide Cross Server survivability.
+ const sharedHp=Math.max(1,Math.round(units.reduce((sum,u)=>sum+u.maxHp,0)/units.length));
+ for(const unit of units){unit.maxHp=sharedHp;scaleCombatStats(unit,team);}
+}
+module.exports={all,get,team,scaleCombatStats,scaleSquadStats,poolSize:pool.length};

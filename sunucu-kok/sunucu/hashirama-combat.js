@@ -62,7 +62,7 @@ function onDamage(ctx,actor,target,result,move,records,events){
   const wasBurst=burst(target);
   target.hashTechnique=Math.min(2,(target.hashTechnique||0)+.5);label(records,target,1,Math.round(target.hashTechnique*10));
   if(!wasBurst){const healed=skills.restore(target,target,target.maxHp*config.senjutsuHealRatio,records);if(healed)label(records,target,11,healed);target.mysteryReadyRound=Math.max(ctx.round,(target.mysteryReadyRound||1)-1);}
-  if(target.hashTechnique>=2){target.hashTechnique=0;ctx.chakra[target.camp]=Math.min(ctx.chakraLimit?.[target.camp]||100,ctx.chakra[target.camp]+40);if(!wasBurst){target.hashBurstUntil=ctx.round;target.hashMysteryStacks=(target.hashMysteryStacks||0)+1;label(records,target,4,target.hashMysteryStacks*10);events.push(visual(target,config.burst));}label(records,target,1,0);label(records,target,12,40);}
+  if(target.hashTechnique>=2){target.hashTechnique=0;require('./tsunade-combat').gainChakra(ctx,target,40,'attacked');if(!wasBurst){target.hashBurstUntil=ctx.round;target.hashMysteryStacks=(target.hashMysteryStacks||0)+1;label(records,target,4,target.hashMysteryStacks*10);events.push(visual(target,config.burst));}label(records,target,1,0);label(records,target,12,40);}
 }
 function targets(ctx,move,target,opponents){
   const live=opponents.filter(v=>v.hp>0&&!v.auxiliary).sort((a,b)=>a.pos-b.pos);
@@ -86,13 +86,13 @@ function afterHit(ctx,u,selected,hit,move,frame){
   if(!isHash(u)){if(records.length)frame.reactions.push(passive(u,records));return;}
   if(move.lifeSteal){const amount=frame.targets.filter(r=>r.cmd===CMD.ATTACK&&r.targetCamp!==u.camp).reduce((s,r)=>s+Math.max(0,r.result.hurtHp||0),0)*move.lifeSteal;const heal=skills.restore(u,u,amount,records);if(heal)label(records,u,11,heal);}
   if(move.hashSword){for(const t of hit){t.hashStandardLoss=(t.hashStandardLoss||0)+1;t.hashStandardLossRound=ctx.round;label(records,t,13);}
-    if(u.hashStandards<5&&ctx.random()<move.extraChance){u.hashExtra=(u.hashExtra||0)+1;label(records,u,14);}}
+    if(u.hashStandards<5&&ctx.random()<move.extraChance){u.hashExtra=(u.hashExtra||0)+1;label(records,u,14);require('./tsunade-combat').receiveExtra(ctx,u);}}
   if(move.id===config.mystery.id||move.hashChase){for(const t of hit){if(!skills.status(t,'immuneDebuffs')){t.painInterruptedUntil=ctx.round;label(records,t,9);}}}
   if(move.hashMystery&&!move.hashBurstMystery&&hit.includes(selected))debuff(ctx,u,selected,'hashSealUntil',records);
   if(move.hashBurstMystery){
     // Suppression precedes the Level-2 Weakness check, including otherwise immune targets.
     for(const t of hit){if(t.hp>0&&!burst(t)){t.suppressedUntil=ctx.round;label(records,t,15);}}
-    if(hit.length){const amount=ctx.chakra[1-u.camp];ctx.chakra[1-u.camp]=0;ctx.chakra[u.camp]=Math.min(ctx.chakraLimit?.[u.camp]||100,ctx.chakra[u.camp]+amount);label(records,u,12,amount);}
+    if(hit.length){const amount=ctx.chakra[1-u.camp];ctx.chakra[1-u.camp]=0;require('./tsunade-combat').gainChakra(ctx,u,amount);label(records,u,12,amount);}
     if(hit.includes(selected))debuff(ctx,u,selected,'hashWeakUntil',records,ctx.round+1);
   }
   if(move.hashSevere){u.mysteryReadyRound=Math.max(ctx.round,(u.mysteryReadyRound||1)-1);if(move.hashBurstChase&&active(selected,'hashWeakUntil')){selected.hashEvasionUntil=Number.MAX_SAFE_INTEGER;label(records,selected,16,20);}

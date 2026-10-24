@@ -6,6 +6,8 @@
   "profession": 1,
   "anyPosition": true,
   "frogSquad": true,
+  "tags": [27, 52, 6, 14, 46, 47],
+  "tagNames": {"6": "Hidden Rain"},
   "mystery": {"id":13121401,"name":"Wind Style - Gale Palm","prompt":true,"target":6,"multiplier":1.8,"attackStat":"atk","damageType":"physical","chakraCost":40,"cooldown":2,"battlefieldCooldown":1,"consumesPrimary":false,"combo":4,"causes":"lowFloat","nagatoMystery":true},
   "standard": {"id":13121402,"name":"Frog Assault","target":1,"multiplier":1,"attackStat":"atk","damageType":"physical","cooldown":0,"causes":"lowFloat","combo":4,"nagatoStandard":true},
   "chases": [{"id":13121403,"name":"Frog Knockdown","requires":"repulse","causes":"knockdown","target":1,"multiplier":1.2,"attackStat":"atk","damageType":"physical","maxPerRound":2,"fixedPerRound":true,"cooldown":0}],

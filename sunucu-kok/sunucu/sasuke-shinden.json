@@ -4,6 +4,8 @@
   "quality": 7,
   "assess": "SSS",
   "anyPosition": true,
+  "tags": [28, 61, 52, 1, 3, 11, 14, 31, 46, 48, 49],
+  "tagNames": {"3": "Hidden Sound"},
   "chakraPerRound": 0,
   "chases": [],
   "balanceNote": "Damage coefficients are local tuning because the reference does not specify them. User override: all damaging moves hit the entire enemy lineup and scale Physical ATK. Only Mystery has cooldown: base Kirin 3, Blaze Infusion 0, as shown in the reference.",

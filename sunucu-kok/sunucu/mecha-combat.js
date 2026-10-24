@@ -93,7 +93,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
     const entitlement=isMecha(selected)?Math.max(0,(selected.mechaStandards?0:1)+(selected.mechaExtra||0)):require('./hashirama-combat').isHash(selected)?Math.min(5-(selected.hashStandards||0),(selected.hashStandards?0:1)+(selected.hashExtra||0)):require('./obito-combat').isObito(selected)?Math.max(0,2+(selected.obitoRage?(selected.obitoKillCredits||0):0)-(selected.obitoStandards||0)):ctx.primaryActions.get(selected)===ctx.round?0:1;
     const remaining=Math.max(0,entitlement-(selected.hashStandardLossRound===ctx.round?(selected.hashStandardLoss||0):0));
     selected.hashStandardLoss=(selected.hashStandardLossRound===ctx.round?(selected.hashStandardLoss||0):0)+remaining;selected.hashStandardLossRound=ctx.round;
-    u.mechaExtra=(u.mechaExtra||0)+remaining;label(records,u,7,remaining);
+    u.mechaExtra=(u.mechaExtra||0)+remaining;label(records,u,7,remaining);require('./tsunade-combat').receiveExtra(ctx,u,remaining);
   }
   if(u.hp>0&&(u.mechaGrowthThisRound||0)<config.maxGrowthTriggers){u.mechaGrowthThisRound=(u.mechaGrowthThisRound||0)+1;u.mechaGrowth=(u.mechaGrowth||0)+1;label(records,u,8,u.mechaGrowth);}
   if(records.length)frame.reactions.push(passive(u,records));
@@ -103,7 +103,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
     const notices=[];label(notices,u,10);frame.reactions.push(passive(u,notices),require('./pain-combat').visual(u,config.transform));
   }
 }
-function triggers(ctx){const out=ctx.mechaTriggers.splice(0);return out.filter(u=>u.hp>0&&!beast(u)).map(u=>{ctx.chakra[u.camp]=Math.min(ctx.chakraLimit?.[u.camp]||100,ctx.chakra[u.camp]+20);return {unit:u,move:config.extremeBeam};});}
+function triggers(ctx){const out=ctx.mechaTriggers.splice(0);return out.filter(u=>u.hp>0&&!beast(u)).map(u=>{require('./tsunade-combat').gainChakra(ctx,u,20);return {unit:u,move:config.extremeBeam};});}
 function roundRequests(ctx){return ctx.teams.flat().filter(u=>beast(u)&&u.hp>0&&u.mechaTriggerRound!==ctx.round).map(u=>{u.mechaTriggerRound=ctx.round;return {unit:u,move:ctx.round%2===0?config.beastClaw:config.beastSweep};});}
 function additional(u,move){if(beast(u)&&u.hp>0&&move?.mechaRecovery&&u.mechaPendingBomb){delete u.mechaPendingBomb;return config.beastBomb;}return null;}
 function onAttacked(ctx,u){if(beast(u)&&u.hp>0)u.mysteryReadyRound=Math.max(ctx.round,(u.mysteryReadyRound||ctx.round)-1);}

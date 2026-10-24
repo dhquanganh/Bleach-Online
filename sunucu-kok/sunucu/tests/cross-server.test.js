@@ -56,7 +56,9 @@ for(let row=0;row<=4;row++){
  assert.equal(enhanced.level,Math.round(306*(1+row*.25)));assert.equal(enhanced.crossStatScale,2+row);assert.equal(enhanced.crossAttackScale,2);
  const oldReport=codec.decodeBattleReport(savas.kadroRapor(0,baseline,null,{playerState:source,forceWin:false,requireEnemyDefeated:true}).payload);
  const newReport=codec.decodeBattleReport(savas.kadroRapor(0,enhanced,null,{playerState:source,forceWin:false,requireEnemyDefeated:true}).payload);
- newReport.player2.roles.forEach((role,i)=>{assert.equal(role.level,enhanced.level);assert.equal(role.totalHealth,Math.min(1000000000,Math.round(oldReport.player2.roles[i].totalHealth*enhanced.crossStatScale)));});
+ const sharedHp=Math.round(oldReport.player2.roles.reduce((sum,role)=>sum+role.totalHealth,0)/oldReport.player2.roles.length);
+ const hpFactor=enhanced.crossStatScale*Math.pow(enhanced.level/enhanced.baseLevel,cross.config.enemyCombatLevelExponent);
+ newReport.player2.roles.forEach(role=>{assert.equal(role.level,enhanced.level);assert.equal(role.totalHealth,Math.min(1000000000,Math.round(sharedHp*hpFactor)));});
 }
 console.log('PASS Cross difficulty: bottom-to-top levels 306/383/459/536/612; stat factors 2/3/4/5/6; actual battle HP and reported levels match.');
 

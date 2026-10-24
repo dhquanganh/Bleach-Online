@@ -1,0 +1,34 @@
+'use strict';
+const assert=require('node:assert/strict'),t=require('../tsunade-combat'),n=require('../naruto-combat'),s=require('../hero-skills'),battle=require('../savas'),{CMD,ST}=require('../kodek');
+const unit=(id,pos,camp)=>({id,pos,camp,hp:100000,maxHp:100000,atk:1000,magicAtk:2000,def:100,resistance:100,speed:100,anger:0,hitRate:1,critRate:0,level:99,quality:7,normal:13100114,skill:0,skillId:13100114,partnerSkills:[],weaponSkills:[],verdi:0});
+function fixture(camp=0,pos=1){const u={...unit(t.config.heroId,pos,camp),def:2000},allies=[u,...Array.from({length:9},(_,i)=>({...unit(300+i,i+2,camp),tags:i<5?[1]:[]}))],enemies=Array.from({length:10},(_,i)=>unit(200+i,i+1,1-camp));const ctx=n.create(camp?[enemies,allies]:[allies,enemies],{random:()=>.5});n.startRound(ctx,1);t.roundStart(ctx);return {u,allies,enemies,ctx};}
+function strike(f,changes={},defender={}){Object.assign(f.u,changes);Object.assign(f.enemies[0],defender);return battle.vurus(f.u,f.enemies[0],false,f.enemies,()=>.5,false,f.allies,n.attackSpec(t.config.mystery));}
+for(const camp of [0,1])for(let pos=1;pos<=15;pos++){
+ const f=fixture(camp,pos);assert.equal(n.profile(f.u).assess,'SSS');assert(s.status(f.u,'immuneDebuffs'));assert(n.useMystery(f.ctx,f.u));assert(!n.useMystery(f.ctx,f.u));n.startRound(f.ctx,2);assert(!n.useMystery(f.ctx,f.u));n.startRound(f.ctx,3);assert(n.useMystery(f.ctx,f.u));
+ f.u.hp=0;const revived=t.revivals(f.ctx);assert.equal(revived.length,1);assert.equal(f.u.hp,f.u.maxHp);f.u.hp=0;assert.equal(t.revivals(f.ctx).length,0);
+}
+const damage=(a={},d={})=>strike(fixture(),a,d).targets.find(r=>r.cmd===CMD.ATTACK&&r.targetCamp===1).result.hurtHp;
+const base=damage();assert(damage({atk:2000})>base);assert(damage({}, {def:1000})<base);assert.equal(damage({magicAtk:999999},{resistance:999999}),base);assert(damage({skillBuffs:[{field:'atk',value:.5,remaining:2}]})>base);
+{const f=fixture();for(const u of f.allies){u.hp=100;u.skillBuffs=[{field:'stun',value:1,remaining:2},{field:'ignite',kind:'dot',value:-1,remaining:2}];}const rec=[];t.heal(f.ctx,f.u,false,rec);assert.equal(rec.filter(r=>r.cmd===CMD.ATTACK).length,4);assert.equal(f.allies[0].hp,400);assert.equal(f.allies[0].skillBuffs.length,1);f.u.tsunadeRevived=true;const more=[];t.heal(f.ctx,f.u,false,more);assert.equal(more.filter(r=>r.cmd===CMD.ATTACK).length,8);}
+{const f=fixture();f.u.hp=100;f.u.skillBuffs=[{field:'ignite',kind:'dot',value:-1,remaining:2}];const frames=t.endRound(f.ctx);assert.equal(frames.length,1);assert.equal(f.u.hp,600);assert.equal(f.u.skillBuffs.length,0);f.ctx.round=4;assert.equal(t.endRound(f.ctx).length,0);f.ctx.round=2;f.u.tsunadeRevived=true;assert.equal(t.endRound(f.ctx).length,0);f.u.tsunadeMysteryTargetCamp=f.u.camp;assert(t.selectMystery(f.u,t.config.mystery).tsunadeGiantHeal);}
+{const f=fixture(),a=f.allies[1];a.hp=100;assert.equal(t.beforeDamage(f.ctx,f.enemies[0],a,{prompt:true},1000),99);assert.equal(t.beforeDamage(f.ctx,f.enemies[0],a,{prompt:true},1000),1000);const unt=f.allies[8];assert.equal(t.beforeDamage(f.ctx,f.enemies[0],unt,{prompt:true},1000),1000);f.ctx.round=2;assert.equal(t.beforeDamage(f.ctx,f.enemies[0],a,{prompt:true},1000),99);f.u.hp=0;f.ctx.round=3;assert.equal(t.beforeDamage(f.ctx,f.enemies[0],a,{prompt:true},1000),1000);}
+{const f=fixture();assert(t.konoha({id:11120920}));assert(!t.konoha({id:11120930}));t.receiveExtra(f.ctx,f.allies[1],9);assert.equal(t.triggers(f.ctx).length,3);t.receiveExtra(f.ctx,f.allies[1],2);assert.equal(t.triggers(f.ctx).length,0);t.roundStart(f.ctx);t.receiveExtra(f.ctx,f.allies[8],5);assert.equal(t.triggers(f.ctx).length,0);}
+{const f=fixture(),v=f.enemies[0],frame={targets:[]};t.afterHit(f.ctx,f.u,v,[v],t.config.mystery,frame);assert.equal(v.suppressedUntil,2);assert.equal(v.tsunadeMeltUntil,2);assert.equal(v.tsunadeCorrosionUntil,1);assert.equal(t.gainChakra(f.ctx,v,10),0);assert.equal(t.gainChakra(f.ctx,v,10,'attacked'),10);t.onDamage(f.ctx,v,f.allies[1],{damage:1},{damageType:'physical'},[]);assert.equal(t.factor(v,'def'),.97);t.beforeAttack(f.ctx,f.u,v,[]);t.onDamage(f.ctx,f.u,v,{damage:1},{damageType:'physical'},[]);assert.equal(t.critical(f.u),.3);assert.equal(t.critical(v),0);v.battleRound=3;assert.equal(t.gainChakra(f.ctx,v,10),10);}
+{const f=fixture();f.ctx.random=()=>0;t.onDamage(f.ctx,f.enemies[0],f.u,{damage:10},{damageType:'physical'},[]);assert(s.status(f.enemies[0],'chaos'));assert.equal(s.value(f.enemies[0],'atk'),750);assert.equal(s.value(f.enemies[0],'magicAtk'),1500);}
+{const f=fixture();f.allies.length=2;const teams=f.ctx.teams;t.prepareSummons(teams);const slugs=f.allies.filter(u=>u.tsunadeSmall);assert.equal(slugs.length,3);assert(slugs.every(u=>u.hp===0&&u.maxHp===15000));f.u.tsunadeRevived=true;const frames=t.beforeMystery(f.ctx,f.u,t.config.mystery);assert.equal(frames.length,1);assert(slugs.every(u=>u.hp===15000));f.allies[1].hp=100;f.ctx.chakraLimit[f.u.camp]=10;const rec=[];f.ctx.random=()=>.99;t.smallHeal(f.ctx,slugs[0],rec);assert.equal(f.ctx.chakraLimit[f.u.camp],100);assert(f.allies[1].hp>100);slugs[0].hp=0;t.onDamage(f.ctx,f.enemies[0],slugs[0],{damage:100},{},rec);const size=rec.length;t.onDamage(f.ctx,f.enemies[0],slugs[0],{damage:100},{},rec);assert.equal(rec.length,size);}
+for(const camp of [0,1]){const f=fixture(camp,15);f.u.hp=10;f.u.speed=1;f.enemies[0].atk=50000;const result=battle.kadroRapor(0,null,{ad:'Tsunade revival scheduling',birimler:camp?[f.u]:f.enemies},{playerUnits:camp?f.enemies:[f.u],playerState:{},scaleEnemy:false,forceWin:false,random:()=>.5});const codec=require('../kodek'),report=codec.decodeBattleReport(result.payload);assert.equal(report._consumed,report._total);const rev=report.turns.flatMap(r=>r.actives).filter(a=>a.skillEffectId===t.config.revival.id&&a.activeCamp===camp);assert.equal(rev.length,1);}
+console.log('PASS Tsunade: both camps/all positions, physical scaling, heals/cleanse, tag aura, extra cap, Melt/Corrosion/Weakness, three summons, single revival and encoded scheduling.');
+
+// Every healing path scales with current Physical DEF, independently of ATK/Ninjutsu/Resistance.
+for(const kind of ['standard','giant','small']){
+ function amount(changes={}){
+  const f=fixture();Object.assign(f.u,changes);for(const a of f.allies)a.hp=1;f.ctx.random=()=>0;
+  const records=[];if(kind==='small')t.smallHeal(f.ctx,{camp:f.u.camp,tsunadeOwner:f.u},records);else t.heal(f.ctx,f.u,kind==='giant',records);
+  return -records.find(r=>r.cmd===CMD.ATTACK).result.hurtHp;
+ }
+ const base=amount();assert(amount({def:4000})>base);assert(amount({def:1000})<base);
+ assert.equal(amount({atk:999999,magicAtk:999999,resistance:999999}),base);
+ assert(amount({skillBuffs:[{field:'def',value:.5,remaining:2}]})>base);
+ assert(amount({skillBuffs:[{field:'def',value:-.5,remaining:2}]})<base);
+}
+console.log('PASS standard, Giant Katsuyu and Small Katsuyu healing scale with buffed/debuffed Physical DEF only.');

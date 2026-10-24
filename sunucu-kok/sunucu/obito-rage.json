@@ -1,6 +1,7 @@
 {
   "heroId": 11120920,
   "name": "Uchiha Obito [Rage Mode]",
+  "tags": [26, 52, 1, 14, 31, 48],
   "balanceNote": "Only Mystery skills retain cooldowns. All standards, chases, additional skills and automatic triggers have zero cooldown; per-round action/Chase limits and trigger conditions still apply. Rage Kamui and Shurado Laser execute once at every eligible round start. Explicit percentages follow the reference. Unspecified damage coefficients, high chances (75%), defense penetration (30%) and base chase cap (1) are configurable local values. Rage persists for the battle and triggers once. Line means the same battlefield column (positions modulo 5). All damaging moves scale exclusively with Physical ATK per user instruction; all attack damage is physical and is mitigated by Physical DEF only; Resistance is not used.",
   "mystery": {
     "id": 13120951,

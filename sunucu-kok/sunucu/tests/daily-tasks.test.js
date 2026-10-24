@@ -11,6 +11,15 @@ try{
  const req=(id,type)=>new p.Y().u32(id).i8(type).done();
  const ok=b=>assert.equal(b.readUInt32BE(0),0),bad=b=>assert.notEqual(b.readUInt32BE(0),0);
  ok(call('00'));let g=task.state(d);assert.equal(g.tasks.length,5);assert.equal(new Set(g.tasks).size,5);assert.equal(g.targets.length,3);
+ bad(call('00',Buffer.from([1])));
+ // Old saves must not serialize missing/duplicate task IDs or an active task after 10/10.
+ const legacy={};const legacyState=task.state(legacy);
+ legacyState.tasks=[16300001,16300001,null,99999999];legacyState.cur=16300001;
+ legacyState.finish=10;legacyState.point=195;legacyState.prog=3;
+ task.info(legacy,()=>account);
+ assert.equal(legacyState.tasks.length,5);assert.equal(new Set(legacyState.tasks).size,5);
+ assert(legacyState.tasks.every(id=>p.satir('DailyTask',id)));
+ assert.equal(legacyState.cur,0);assert.equal(legacyState.prog,0);assert.equal(legacyState.point,195);
  const row=p.satir('DailyTask',16300001);assert.equal(row.taskname,'Clear Stage');assert.equal(row.complete,1);assert.equal(row.point,15);
  bad(call('01',req(1,4)));bad(call('01',req(g.tasks[0],3)));bad(call('01',Buffer.alloc(4)));bad(call('03',new p.Y().u32(50).done()));
  // Progress only counts authoritative actions after accepting, and active tasks cannot be replaced.
@@ -19,7 +28,7 @@ try{
  events.say(d,'arenaFight',20);assert.equal(task.progress(d,()=>account).prog,0);
  events.say(d,'instancePass',1);assert.equal(task.state(d).prog,1);bad(call('01',req(16300002,3)));
  events.say(d,'instancePass',1);assert.equal(task.state(d).prog,2);assert(events.pushAl().some(p=>p.id===0x01182005));
- ok(call('01',req(16300002,3)));g=task.state(d);assert.equal(g.finish,1);assert.equal(g.point,15);assert.equal(g.tasks.length,5);bad(call('01',req(16300002,3)));assert.equal(events.gunlukOku(d,'dailyPoints'),15);
+ const completed=call('01',req(16300002,3));ok(completed);assert.equal(completed.readUInt32BE(4),0,'completion response clears the client active task');g=task.state(d);assert.equal(g.finish,1);assert.equal(g.point,15);assert.equal(g.tasks.length,5);bad(call('01',req(16300002,3)));assert.equal(events.gunlukOku(d,'dailyPoints'),15);
  // Refresh is free once, then costs the configured 10, and is atomic on payment/save failure.
  ok(call('02'));assert.equal(costs.length,0);const previous=JSON.stringify(d);canPay=false;bad(call('02'));assert.equal(JSON.stringify(d),previous);canPay=true;saveFail=true;bad(call('02'));assert.equal(JSON.stringify(d),previous);assert.equal(refunds.length,1);saveFail=false;ok(call('02'));assert.deepEqual(costs.at(-1),[{type:0,code:2,amount:10}]);
  // Ten natural completions reach at least 150 points, with a replenished list.

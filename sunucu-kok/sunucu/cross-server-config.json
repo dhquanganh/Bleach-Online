@@ -12,5 +12,6 @@
   "enemyStatMultiplier": 2,
   "rowLevelStep": 0.25,
   "rowStatStep": 0.5,
-  "enemyAttackMultiplier": 2
+  "enemyAttackMultiplier": 2,
+  "enemyCombatLevelExponent": 2
 }

@@ -9,7 +9,14 @@ function state(d){
  const day=gunluk(d);let g=day.gorev;
  if(!g)g=day.gorev={fresh:0,point:0,cur:0,prog:0,finish:0,tasks:choose(tablo('DailyTask').ids,5),mask:0};
  if(g.schema!==2){g.schema=2;g.double=0;g.targets=choose(Object.keys(KEYS).map(Number),3).map(type=>({type,done:0}));g.targetAwarded=false;g.baseline=null;g.prog=0;g.finish=Math.min(10,Math.max(0,Number(g.finish)||0));g.point=Math.min(195,Math.max(0,Number(g.point)||0));g.mask=(Number(g.mask)||0)&1023;}
- if(!g.tasks.includes(g.cur))g.cur=0;
+ // Repair persisted/legacy lists before serializing identifiers to the Flash reader.
+ const ids=tablo('DailyTask').ids;
+ g.tasks=[...new Set((Array.isArray(g.tasks)?g.tasks:[]).filter(id=>ids.includes(id)))].slice(0,5);
+ g.tasks.push(...choose(ids.filter(id=>!g.tasks.includes(id)),5-g.tasks.length));
+ g.finish=Math.min(10,Math.max(0,Math.floor(Number(g.finish)||0)));
+ g.point=Math.min(195,Math.max(0,Math.floor(Number(g.point)||0)));
+ g.fresh=Math.min(65535,Math.max(0,Math.floor(Number(g.fresh)||0)));
+ if(g.finish>=10||!g.tasks.includes(g.cur)){g.cur=0;g.prog=0;g.baseline=null;}
  return g;
 }
 function counter(d,row,account){if(row.eventType===18){const a=account().dailyTaskSpending;return a?.day===gun()?Number(a.count)||0:0;}return events.oku(d,KEYS[row.eventType]);}
@@ -36,7 +43,7 @@ function kur(y){
   return true;
  }
  const H={};
- H['0x01812000']=ctx=>{const d=clone(ctx.durum),packet=info(d,account);return commit(ctx,d)?packet:fail(1);};
+ H['0x01812000']=ctx=>{if(ctx.payload?.length)return fail(4);const d=clone(ctx.durum),packet=info(d,account);return commit(ctx,d)?packet:fail(1);};
  H['0x01812001']=ctx=>{
   if(!Buffer.isBuffer(ctx.payload)||ctx.payload.length!==5)return fail(4);
   const id=ctx.payload.readUInt32BE(0),type=ctx.payload[4],d=clone(ctx.durum),g=progress(d,account),r=satir('DailyTask',id);let cost=[],rewards=[];
@@ -59,7 +66,7 @@ function kur(y){
    }
   }
   if(!commit(ctx,d,rewards,cost))return fail(cost.length?16:1);
-  refresh(ctx.durum);return new Y().u32(0).u32(type>=3?id:g.cur).i8(type).done();
+  refresh(ctx.durum);return new Y().u32(0).u32(g.cur).i8(type).done();
  };
  H['0x01812002']=ctx=>{if(ctx.payload?.length)return fail(4);const d=clone(ctx.durum),g=state(d);if(g.finish>=10)return fail(1);const price=cv(60160003,[0,2,10]);const cost=g.fresh?[{type:0,code:price[1],amount:price[2]}]:[];g.fresh++;g.tasks=choose(tablo('DailyTask').ids,5);g.cur=0;g.prog=0;g.baseline=null;if(!commit(ctx,d,[],cost))return fail(16);refresh(ctx.durum);const w=new Y().u32(0).u16(g.fresh).u16(g.tasks.length);for(const id of g.tasks)w.u32(id);return w.done();};
  H['0x01812003']=ctx=>{

@@ -6,6 +6,7 @@
   "profession": 1,
   "anyPosition": true,
   "senjutsu": true,
+  "tags": [30, 52, 1, 18, 14, 32, 48, 49, 58],
   "mystery": {
     "id": 13121001,
     "name": "Deity Gates - Wood Dragon Assault",

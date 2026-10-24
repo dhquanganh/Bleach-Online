@@ -28,7 +28,7 @@ function roundStart(ctx){
       skills.remove(sage,true,records);
       for(const field of ['immobileUntil','extremeChaosUntil','suppressedUntil','jiraiyaResistanceStacks'])delete sage[field];
       sage.paralyzed=false;
-      ctx.chakra[u.camp]=Math.min(100,ctx.chakra[u.camp]+20);
+      require('./tsunade-combat').gainChakra(ctx,u,20);
     }
     label(records,u,4,Math.round(u.jiraiyaInitiative*100));
     frames.push(visual(u,config.power,records));

@@ -234,7 +234,7 @@ function status(unit, field) {
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition)&&b.remaining>0))return true;
   const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -248,6 +248,8 @@ function value(unit, field) {
   let result=(multiplicative.has(field)?Math.max(0,base*(1+changes)):base+changes)*require('./pain-combat').factor(unit,field)*require('./hashirama-combat').factor(unit,field)*require('./mecha-combat').factor(unit,field)*require('./itachi-combat').factor(unit,field)*require('./sasuke-combat').factor(unit,field);
   result*=require('./nagato-combat').factor(unit,field);
   if(field==='critRate')result+=require('./mecha-combat').critical(unit);
+  result*=require('./tsunade-combat').factor(unit,field);
+  if(field==='critRate')result+=require('./tsunade-combat').critical(unit);
   if(field==='critRate')result+=require('./itachi-combat').critical(unit);
   if(field==='critRate')result-=require('./gaara-combat').criticalLoss(unit);
   if(sasukeTeam&&field==='atk')result*=1.18;
@@ -259,6 +261,7 @@ function value(unit, field) {
   if(field==='dodgeRate'&&hash.active(unit,'hashEvasionUntil'))result=Math.min(.2,result);
   const tagged=unit.obitoTagUntil>=unit.battleRound;
   if(tagged&&field==='dodgeRate')return Math.min(.35,result);
+  if(['atk','magicAtk'].includes(field)&&require('./tsunade-combat').active(unit,'tsunadeWeakUntil'))result=base*.75;
   return result*(tagged&&['def','resistance'].includes(field)?.85:1);
 }
 function hpRecord(unit, amount, targetEffect=true) {
@@ -309,6 +312,14 @@ function removeField(target,field,records) {
   const removed=(target.skillBuffs||[]).filter(buff=>buff.field===field);
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>buff.field!==field);
   if(removed.length&&buffIds[field])records.push({cmd:CMD.CONTROLBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:buffIds[field][0],buffTurn:0}});
+}
+function removeOneDebuff(target,records){
+  const buff=(target.skillBuffs||[]).find(b=>b.remaining>0&&(controls.has(b.field)||b.kind==='dot'||b.value<0));
+  if(!buff)return false;
+  target.skillBuffs=target.skillBuffs.filter(b=>b!==buff);
+  const ids=buffIds[buff.field],id=ids?ids[buff.value<0?1:0]:buff.buffId;
+  if(id)records.push({cmd:controls.has(buff.field)?CMD.CONTROLBUFF:CMD.ATTRBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:id,buffTurn:0}});
+  return true;
 }
 function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random) {
   if(!plan)return;
@@ -370,6 +381,7 @@ function startRound(units) {
       else if(buff.kind==='dot'&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
         let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.mechaIgnition&&unit.mechaContext?require('./mecha-combat').ignitionDamage(unit.mechaContext.teams.flat().find(v=>v.id===buff.source&&(buff.sourceCamp==null||v.camp===buff.sourceCamp))||unit,unit):buff.amount)));
         unit.hp-=damage;records.push(hpRecord(unit,damage,false));
+        if(unit.tsunadeContext){const source=unit.tsunadeContext.teams.flat().find(u=>u.id===buff.source&&(buff.sourceCamp==null||u.camp===buff.sourceCamp));require('./tsunade-combat').onDamage(unit.tsunadeContext,source,unit,{damage},buff,records);}
         if(unit.gaaraContext)require('./gaara-combat').onDamage(unit.gaaraContext,null,unit,{damage},false,records);
         if(unit.hashContext){const events=[];const source=unit.hashContext.teams.flat().find(u=>u.id===buff.source)||unit;require('./hashirama-combat').onDamage(unit.hashContext,source,unit,{damage},buff,records,events);actives.push(...events);}
       }
@@ -396,7 +408,7 @@ function eventFrames(unit,records) {
     targets:[{cmd:CMD.NONE,targetCamp:unit.camp,targetPos:unit.pos,reportTargetStatus:ST.HIT>>>0,result:{}}]},
     {activeCamp:unit.camp,activePos:unit.pos,skillEffectId:0,activeType:4,targets:records}];
 }
-module.exports={get,plans,effects,select,scoped,status,value,apply,restore,healPower,changeFury,remove,removeField,startRound,endRound,hpRecord,eventFrames};
+module.exports={get,plans,effects,select,scoped,status,value,apply,restore,healPower,changeFury,remove,removeField,removeOneDebuff,startRound,endRound,hpRecord,eventFrames};
 
 // Shared armor suppression belongs to the combat engine.
 module.exports.armor=unit=>require('./gaara-combat').active(unit,'gaaraArmor2Until')||!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));
