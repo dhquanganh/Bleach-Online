@@ -1,0 +1,10 @@
+{
+  "version": "2026102508",
+  "classes": [
+    "Logics\\HDIceHeros\\TActivityIceHeros.as",
+    "Logics\\Streamization\\HDActivitySingle\\TUnstreamizerActivitySingle.as",
+    "Processors\\Game\\Lobby\\Activity\\HDGeneralSell\\TProcessorHDWindowGeneralSellHeros.as",
+    "Processors\\Game\\Lobby\\Activity\\HDGeneralSell\\TProcessorHDGeneralSellHeros.as"
+  ],
+  "sha256": "d07f948831f18b9bcc44354c1b7bbb79ffe91056f0181908551ae1f55789d978"
+}

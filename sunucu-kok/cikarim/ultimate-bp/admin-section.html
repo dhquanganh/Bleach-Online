@@ -1,0 +1,8 @@
+﻿<section class="card" style="margin-bottom:22px">
+<h2>Ultimate BP · Crystal Pieces</h2>
+<p class="note">Tiêu 10 vàng thực tế = 1 Crystal Piece; vàng lẻ được cộng dồn. Đổi tướng và nhận quà không trừ mảnh. Cấu hình dùng chung, lưu MongoDB; cửa sổ game đang mở tự cập nhật trong 3 giây.</p>
+<form id="bpForm"><label>Tìm tướng<input id="bpHeroSearch" type="search" placeholder="Tên hoặc ID"></label><label>Tướng đổi thưởng<select id="bpHero" required></select></label><p id="bpCurrent" class="note"></p>
+<label>Giá đổi tướng (Crystal Pieces)<input id="bpPrice" type="number" min="1" max="1000000000" required></label>
+<label>Bước tăng mốc mỗi lần nhận quà<input id="bpStep" type="number" min="1" max="1000000000" required></label>
+<label>Tìm vật phẩm để thêm vào mốc<input id="bpItemSearch" type="search" placeholder="Tên hoặc ID vật phẩm"></label><select id="bpItem" aria-label="Vật phẩm tìm thấy"></select><p id="bpSearchStatus" class="note"></p>
+<div id="bpRows"></div><button id="bpSave" type="submit" disabled>Lưu Ultimate BP</button> <button id="bpReload" type="button" class="secondary">Tải lại</button><p id="bpStatus" role="status" class="note"></p></form></section>

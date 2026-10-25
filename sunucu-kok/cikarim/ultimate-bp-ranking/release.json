@@ -1,0 +1,8 @@
+{
+  "version": "2026102509",
+  "classes": [
+    "Logics\\Streamization\\HDActivitySingle\\TUnstreamizerActivitySingle.as",
+    "Processors\\Game\\Lobby\\Activity\\HDGeneralSell\\TProcessorHDWindowGeneralSellHerosRank.as"
+  ],
+  "sha256": "31cd741e7ad088a870e4a03c4bcb1a9c0ddc2c54416c01f313a5f2334a2124e6"
+}

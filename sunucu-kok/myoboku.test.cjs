@@ -47,3 +47,16 @@ test('admin authorization, validation, database persistence, stale edits and pro
  assert.equal((await call('PATCH',edited)).status,409);
  fs.unlinkSync(file('config.json'));assert.deepEqual((await call('GET')).value,result.value);
 });
+
+test('owned hero rewards become 50 matching Modify Fragments, while new heroes keep their token',()=>{
+ const row=require('./sunucu/naruto-recruit-items.json').find(r=>r.itemId===14140994);
+ assert.ok(row);
+ const spin=()=>service.spin({load:()=>read('oyuncu.json'),save,random:()=>0});
+ function setup(state={},account={}){reset();config.publish({revision:1,rewards:Array.from({length:8},()=>({itemId:row.itemId,amount:1,weight:1}))});save(state);fs.writeFileSync(file('veri.json'),JSON.stringify({altin:100000,...account}));}
+ setup();let result=spin();assert.equal(result.reward.itemId,row.itemId);assert.equal(inventory.mevcut(result.state,row.itemId),1);
+ for(const [state,account] of [[{meyhane:{alinan:{[row.heroId]:1}}},{}],[{seviye:{herolar:{[row.heroId]:{level:1}}}},{}],[{kadro:{[row.heroId]:1}},{}],[{},{herolar:[row.heroId]}],[{},{tumKarakterler:true}]]){
+  setup(state,account);result=spin();assert.equal(result.reward.itemId,row.fragmentId);assert.equal(result.reward.amount,50);assert.match(result.reward.name,/fragment/i);assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(inventory.mevcut(result.state,row.itemId),0);assert.equal(result.state.myoboku.last.itemId,row.fragmentId);assert.equal(result.gold,99000);
+ }
+ setup({meyhane:{alinan:{[row.heroId]:1}}});const full=read('oyuncu.json');inventory.ekle(full,[{type:1,code:row.fragmentId,amount:inventory.MAX_ADET}]);save(full);assert.throws(spin,{status:400});assert.equal(read('veri.json').altin,100000);
+ setup({meyhane:{alinan:{[row.heroId]:1}}});service.spin({load:()=>read('oyuncu.json'),save:()=>{throw Error('interruption');},random:()=>0});service.recover();assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(read('veri.json').altin,99000);
+});

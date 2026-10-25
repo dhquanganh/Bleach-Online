@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "awards": 1,
+  "result": {
+    "disabled": true,
+    "history": "Đã chốt lúc 17:17:36, 2/1/1970 · Đã gửi 3/3 thư. Đã reset toàn bộ Crystal; đợt mới đã mở.",
+    "prizeGroups": 6,
+    "rows": 3,
+    "status": "Đã trao quà và reset toàn bộ Crystal. Đợt xếp hạng mới đã mở.",
+    "text": "Chốt BXH & trao quà Top 50"
+  },
+  "errors": []
+}

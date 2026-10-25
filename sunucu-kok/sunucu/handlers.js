@@ -547,6 +547,7 @@ const byReq = {
   // (yakalanan gercek veri, yoksa genel paket) korunur ki calisan paneller bozulmasin.
   '0x01812302': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
+    if(etkinlik.katalog().get(actId)?.kategori===450000)return require('./ultimate-bp').init(actId,durum);
     const key = (actId >>> 0).toString(16).padStart(8, '0');
     // OZEL pencereler (Daily Presents, Seireitei Attack, zar tahtasi, Make Money): kendi durum makinesi.
     try { const oz = ozel(); const kat = oz ? oz.kategoriOf(actId) : 0; if (oz && oz.init[kat]) {const packet=oz.init[kat](actId, durum);if(kat===970000)kaydet(durum);return packet;} }
@@ -571,6 +572,22 @@ const byReq = {
   '0x01812303': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const idx = payload.length >= 8 ? payload.readUInt32BE(4) : 0;
+    if(etkinlik.katalog().get(actId)?.kategori===450000){
+      SON_CLAIM={ozel:true};
+      if(payload.length!==14||payload.readInt16BE(8)!==1)return etkinlik.operateRet(80,actId,[]);
+      const service=require('./ultimate-bp'),r=service.operate(actId,idx,[payload.readInt32BE(10)],durum,kaydet);
+      if(!r.hata){
+        const exp=(r.oduller||[]).filter(a=>a.type===2&&a.code===0).reduce((n,a)=>n+a.amount,0);
+        if(exp)ekSonra(0x01180105,require('./harita').baseInfoUpdate([{index:11,v:exp}]),'ULTIMATE-exp');
+        ekSonra(0x01180f00,envanterDepo.loadBagPaketi(durum),'ULTIMATE-bag');
+        const v=JSON.parse(fs.readFileSync(require('./runtime-path')('veri.json'),'utf8'));
+        const fields=[['gumus',0],['kupon',1],['askeriEmir',2],['altin',3],['generalsSoul',4],['prestij',5],['blueSoul',7],['purpleSoul',8],['goldSoulV',9],['orangeSoul',10]];
+        ekSonra(0x01180105,require('./harita').baseInfoUpdate(fields.filter(([k])=>v[k]!==undefined).map(([k,index])=>index===0?{index,v:Number(v.gumusHigh)||0,a:Number(v[k])||0}:{index,v:Number(v[k])||0})),'ULTIMATE-currency');
+        if(r.hero)ekSonra(0x01180c02,new (require('./paket').Y)().u32(0).u32(r.hero).u32(1).u32(0).u32(0).done(),'ULTIMATE-hero');
+      }
+      ekSonra(0x01182302,service.init(actId,durum),'ULTIMATE-refresh');
+      return etkinlik.operateRet(r.hata,actId,r.oduller);
+    }
     if(etkinlik.katalog().get(actId)?.kategori===970000)SON_CLAIM={ozel:true};
     // OZEL pencereler: [wire][idx] + opsiyonel [i16 n][n x i32] (DayBack bit, Chess zar/bayrak)
     try {
@@ -1523,7 +1540,7 @@ const PARA_TAVAN = 2000000000;   // u32 tasmasin
 // seviye atlama seviye.js'te hesaplanip KALICI yazilir (ana hero veri.json level/deneyim,
 // partnerler durum.seviye). ESKIDEN birikimli toplam delta diye yollaniyordu (exp katlaniyordu)
 // ve seviye hic hesaplanmiyordu.
-function paraIcinOdul(awards, durum = null) {
+function paraIcinOdul(awards, durum = null, options = {}) {
   const yol = require('./runtime-path')('veri.json');
   let v; try { v = JSON.parse(fs.readFileSync(yol, 'utf8')); } catch (e) { return null; }
   const guncel = [];
@@ -1551,6 +1568,7 @@ function paraIcinOdul(awards, durum = null) {
     // Silver: v=High, a=Low ; digerleri: v=deger
     guncel.push(p.cift ? { index: p.idx, v: Number(v.gumusHigh) || 0, a: yeni } : { index: p.idx, v: yeni });
   }
+  if(options.refund)require('./ultimate-bp-spending').refund(v,(awards||[]).filter(a=>a.type===0&&a.code===1).reduce((n,a)=>n+a.amount,0));
   if (!guncel.length) return null;
   try { fs.writeFileSync(yol, JSON.stringify(v, null, 2)); } catch (e) { }   // kalici birikim
   if (durumDegisti && d) { try { durumMod.kaydet(d); } catch (e) { } }
@@ -1558,17 +1576,13 @@ function paraIcinOdul(awards, durum = null) {
 }
 // --- PARA HARCAMA: bedeli hesaptan dus (yetersizse null, hicbir sey degismez) ---
 // awards ayni bicim ({type,code,amount}); EXP harcanamaz. Donus: CharBaseInfoUpdate paketi.
-function paraHarca(awards) {
+function paraHarca(awards, options = {}) {
   const yol = require('./runtime-path')('veri.json');
   let v; try { v = JSON.parse(fs.readFileSync(yol, 'utf8')); } catch (e) { return null; }
-  const kalemler = [];
-  for (const a of (awards || [])) {
-    const p = PARA[(a.type || 0) + ':' + (a.code || 0)];
-    if (!p || p.alan === 'deneyim') return null;
-    const bedel = Math.max(0, Number(a.amount) || 0);
-    if ((Number(v[p.alan]) || 0) < bedel) return null;
-    kalemler.push({ p, bedel });
-  }
+  const sums=new Map();
+  for(const a of awards||[]){const p=PARA[(a.type||0)+':'+(a.code||0)];if(!p||p.alan==='deneyim'||!Number.isSafeInteger(a.amount)||a.amount<0)return null;const entry=sums.get(p.alan)||{p,bedel:0};entry.bedel+=a.amount;sums.set(p.alan,entry);}
+  const kalemler=[...sums.values()];
+  if(kalemler.some(({p,bedel})=>!Number.isSafeInteger(bedel)||(Number(v[p.alan])||0)<bedel))return null;
   if (!kalemler.length) return null;
   const guncel = [];
   for (const { p, bedel } of kalemler) {
@@ -1576,6 +1590,7 @@ function paraHarca(awards) {
     v[p.alan] = yeni;
     guncel.push(p.cift ? { index: p.idx, v: Number(v.gumusHigh) || 0, a: yeni } : { index: p.idx, v: yeni });
   }
+  if(!options.rollback)require('./ultimate-bp-spending').earn(v,kalemler.filter(x=>x.p.alan==='altin').reduce((n,x)=>n+x.bedel,0));
   if (kalemler.some(({p, bedel}) => bedel > 0 && ['altin','kupon'].includes(p.alan))) {
     const day = require('./paket').gun();
     const ledger = v.dailyTaskSpending && v.dailyTaskSpending.day === day ? v.dailyTaskSpending : {day, count:0};

@@ -9,14 +9,25 @@ function spin({load,save,random=require('crypto').randomInt}){
  if((Number(v.altin)||0)<config.COST){const e=Error('Cần 1.000 vàng để quay.');e.status=400;throw e;}
  const settings=config.read(),total=settings.rewards.reduce((n,r)=>n+r.weight,0);let ticket=random(total),index=0;
  for(;index<settings.rewards.length-1;index++){if(ticket<settings.rewards[index].weight)break;ticket-=settings.rewards[index].weight;}
- const reward=settings.rewards[index],next=structuredClone(d),before=env.mevcut(next,reward.itemId);
+ const selected=settings.rewards[index],next=structuredClone(d);
+ let reward=selected;
+ const item=env.article(selected.itemId);
+ if(item?.itemFunction===9){
+  const heroes=require('./reincarnation');
+  if(heroes.owned(next,item.heroId,v)){
+   const fragment=heroes.fragmentId(item.heroId);
+   if(!fragment)throw Error('Không tìm thấy Modify Fragment của tướng.');
+   reward={...selected,itemId:fragment,amount:50};
+  }
+ }
+ const before=env.mevcut(next,reward.itemId);
  if(before+reward.amount>env.MAX_ADET){const e=Error('Túi đã đầy vật phẩm thưởng.');e.status=400;throw e;}
  env.ekle(next,[{type:1,code:reward.itemId,amount:reward.amount}]);
  if(env.mevcut(next,reward.itemId)!==before+reward.amount)throw Error('Không thể thêm phần thưởng vào túi.');
- v.altin-=config.COST;next.altin=v.altin;next.myoboku={spins:(next.myoboku?.spins||0)+1,last:{index,...reward,at:Date.now()}};
+ require('./ultimate-bp-spending').earn(v,config.COST);v.altin-=config.COST;next.altin=v.altin;next.myoboku={spins:(next.myoboku?.spins||0)+1,last:{index,...reward,at:Date.now()}};
  v.myobokuPending=next;atomic(runtime('veri.json'),v);
  // Once the redo record is committed the spin has succeeded, including on retry.
  try{save(next);delete v.myobokuPending;atomic(runtime('veri.json'),v);}catch(e){recover();}
- return {ok:true,index,reward:config.view().rewards[index],gold:v.altin,spins:next.myoboku.spins,state:next};
+ return {ok:true,index,reward:config.viewReward(reward),gold:v.altin,spins:next.myoboku.spins,state:next};
 }
 module.exports={spin,recover};

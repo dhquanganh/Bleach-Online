@@ -268,6 +268,22 @@ module.exports.sendAdminItemMail=function(itemId,amount,requestId){
  const clients=loggedInClients();for(const session of clients)session.send(0x01181605,require('./boss-reward-mail').notification(mail),'ADMIN-item-mail');
  return {mailId:{hi:mail.hi,lo:mail.lo},connected:clients.length};
 };
+process.on('message',message=>{
+ if(message?.type==='ultimate-bp-ranking'){require('./ultimate-bp-ranking').update(message);return;}
+ if(message?.type==='ultimate-bp-rank-reset'){
+  try{require('./ultimate-bp').reset(message.payout.id,durumMod.yukle(),durumMod.kaydet);process.send?.({type:'ultimate-bp-rank-mail-ack',id:message.payout.id});}
+  catch(error){process.send?.({type:'ultimate-bp-rank-mail-ack',id:message.payout.id,error:error.message});}
+  return;
+ }
+ if(message?.type==='ultimate-bp-rank-mail'){
+  try{
+   const state=durumMod.yukle(),result=require('./ultimate-bp-ranking').enqueue(state,message.payout);durumMod.kaydet(state);
+   if(result.created)for(const session of loggedInClients())session.send(0x01181605,require('./boss-reward-mail').notification(result.mail),'ULTIMATE-ranking-mail');
+   process.send?.({type:'ultimate-bp-rank-mail-ack',id:message.payout.id});
+  }catch(error){process.send?.({type:'ultimate-bp-rank-mail-ack',id:message.payout.id,error:error.message});}
+  return;
+ }
+});
 process.on('message',message=>{if(message?.type!=='admin-item-mail')return;
  try{const result=module.exports.sendAdminItemMail(message.itemId,message.amount,message.requestId);process.send?.({type:'admin-item-mail-ack',requestId:message.requestId,result});}
  catch(e){process.send?.({type:'admin-item-mail-ack',requestId:message.requestId,error:e.message});}

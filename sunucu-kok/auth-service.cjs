@@ -17,7 +17,7 @@ function available(port) { return new Promise(resolve => { const s = net.createS
 async function startAuth(port) {
   const { client, db } = await connect();
   if (!await db.collection('accounts').findOne({ username: 'admin' })) { await client.close(); throw new Error('Run node sunucu-kok/migrate-mongo.cjs first'); }
-  try { await require('./sunucu/anniversary-feast-config').readDatabase(db); await require('./sunucu/myoboku-config').readDatabase(db); }
+  try { await require('./sunucu/anniversary-feast-config').readDatabase(db); await require('./sunucu/myoboku-config').readDatabase(db); await require('./sunucu/ultimate-bp-config').readDatabase(db); }
   catch (error) { await client.close(); throw error; }
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
@@ -25,7 +25,8 @@ async function startAuth(port) {
   const illusionBoard = require('./illusion-board.cjs').createBoard(db,{onUpdate(){
     for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
   }});
-  const adminAccounts = require('./admin-accounts.cjs').createAdmin({ db, runtimes, serial, save, stop, body, snapshot });
+  const ultimateBPRanking=require('./ultimate-bp-ranking.cjs').createRanking(db,{runtimes,serial,save,snapshot});
+  const adminAccounts = require('./admin-accounts.cjs').createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking });
   async function serial(id, action) {
     const previous = locks.get(id) || Promise.resolve();
     const current = previous.catch(() => {}).then(action); locks.set(id, current);
@@ -122,6 +123,7 @@ async function startAuth(port) {
       }
       if (!ready) { await stop(id); throw new Error('Không khởi động được máy chủ nhân vật'); }
       await arenaRoster.refresh();
+      ultimateBPRanking.refresh().catch(error=>console.error('[Ultimate BP ranking]',error.name));
       return rt;
     })();
     starting.set(id, pending); try { return await pending; } finally { starting.delete(id); }
@@ -189,7 +191,7 @@ async function startAuth(port) {
   const timer = setInterval(() => { if (closing) return; for (const [id, rt] of runtimes) {
     serial(id, () => rt.expiresAt <= new Date() ? stop(id) : save(rt)).catch(e => console.error('[Mongo save]', e.code || e.name));
   } }, 2000);
-  async function close() { closing = true; clearInterval(timer); await arenaRoster.close(); await illusionBoard.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
+  async function close() { closing = true; clearInterval(timer); await arenaRoster.close(); await illusionBoard.close(); await ultimateBPRanking.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
   return { handle, close, db };
 }
 module.exports = { startAuth, cookieToken };

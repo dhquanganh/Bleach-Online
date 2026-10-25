@@ -33,7 +33,7 @@ function integer(value, min, max, label) {
   if (!Number.isInteger(value) || value < min || value > max) fail(400, `${label}: nhập số nguyên từ ${min} đến ${max}.`);
   return value;
 }
-function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
+function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking }) {
   async function read(id) {
     const rt = runtimes.get(id.toHexString());
     if (rt) await save(rt);
@@ -67,6 +67,19 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
   return async function handle(req,res,pathname,user,json) {
     if (user.account.role !== 'admin') { json(403,{error:'Cần tài khoản admin.'}); return; }
     try {
+      if(pathname==='/auth/admin/ultimate-bp/ranking'){
+        if(!ultimateBPRanking)fail(503,'Dịch vụ BXH chưa sẵn sàng.');
+        if(req.method==='GET'){json(200,await ultimateBPRanking.view());return;}
+        if(req.method!=='POST')fail(405,'Phương thức không hợp lệ.');
+        const data=await body(req);if(!data||typeof data.revision!=='string'||!/^[a-f0-9]{64}$/.test(data.revision))fail(400,'Cần tải BXH trước khi trao quà.');
+        json(200,await ultimateBPRanking.award(data.revision,user.account._id));return;
+      }
+      if(pathname==='/auth/admin/ultimate-bp'){
+        const config=require('./sunucu/ultimate-bp-config');
+        if(req.method==='GET'){await serial('ultimate-bp',async()=>json(200,config.view(await config.readDatabase(db))));return;}
+        if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
+        const data=await body(req);await serial('ultimate-bp',async()=>json(200,config.view(await config.writeDatabase(db,data))));return;
+      }
       if(pathname==='/auth/admin/myoboku'){
         const config=require('./sunucu/myoboku-config');
         if(req.method==='GET'){await serial('myoboku',async()=>json(200,await config.readDatabase(db)));return;}
@@ -94,7 +107,7 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
       if (pathname === '/auth/admin/heroes' && req.method === 'GET') { json(200,{heroes:heroes()});return; }
       if (pathname === '/auth/admin/items' && req.method === 'GET') {
         const q=(new URL(req.url,'http://localhost').searchParams.get('q')||'').trim().toLowerCase();
-        json(200,{items:q.length<2?[]:items().filter(a=>a.name.toLowerCase().includes(q)||String(a.id).includes(q)||a.id.toString(16).includes(q)).slice(0,60)});return;
+        json(200,{items:q.length<2?[]:items().filter(a=>a.name.toLowerCase().includes(q)||String(a.id).includes(q)||a.id.toString(16).includes(q)).slice(0,60).map(a=>({...a,iconFrame:require('./item-atlas.cjs')(a.picture||a.id)}))});return;
       }
       const iconMatch=/^\/auth\/admin\/items\/(\d+)\/icon$/.exec(pathname);
       if (iconMatch && req.method==='GET') {

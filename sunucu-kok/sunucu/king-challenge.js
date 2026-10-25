@@ -127,7 +127,7 @@ function kur(y,opt={}){
       for(const [code,amount]of totals){const before=env.mevcut(d,code);env.ekle(d,[{type:1,code,amount}]);if(env.mevcut(d,code)!==before+amount)return false;}
       const charged=costs.length?y.paraHarca(costs):null;if(costs.length&&!charged)return false;
       const refunds=d.kingChallenge.refunds||[];d.kingChallenge.refunds=[];
-      try{ctx.kaydet(d);}catch(error){if(charged)y.paraIcinOdul(costs);return false;}
+      try{ctx.kaydet(d);}catch(error){if(charged)y.paraIcinOdul(costs,null,{refund:true});return false;}
       transaction.commit=true;transaction.saved=true;if(charged)transaction.refund.push(...costs);
       if(refunds.length)transaction.after.push(()=>{const packet=y.paraIcinOdul(refunds,d);if(packet)y.ekSonra(0x01180105,packet,'KING-migration-refund');});
       Object.assign(ctx.durum,d);
@@ -148,7 +148,7 @@ function kur(y,opt={}){
     }catch(error){
       transaction=null;
       if(tx.saved){try{ctx.kaydet(original);for(const key of Object.keys(ctx.durum))delete ctx.durum[key];Object.assign(ctx.durum,original);}catch(e){console.error('[KING] rollback:',e.message);}}
-      if(tx.refund.length)y.paraIcinOdul(tx.refund);
+      if(tx.refund.length)y.paraIcinOdul(tx.refund,null,{refund:true});
       console.error('[KING]',error.message);return fail(1);
     }finally{transaction=null;}
   };

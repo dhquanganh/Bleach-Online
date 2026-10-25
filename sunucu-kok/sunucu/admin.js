@@ -423,6 +423,7 @@ function apiIsle(req, res) {
         if (currentGold < price) return json(400, { ok: false, hata: 'Không đủ vàng (cần ' + price.toLocaleString('vi-VN') + ')' });
         const instance = ekipmanMod.yeniEsya(e, id);
         if (!instance) return json(400, { ok: false, hata: 'Không thể thêm thiết bị vào túi' });
+        require('./ultimate-bp-spending').earn(v,price);
         v.altin = currentGold - price;
         yaz(v);
         durum.altin = v.altin;
@@ -454,6 +455,7 @@ function apiIsle(req, res) {
         if (sahipKumesi(v).has(id) || v.tumKarakterler === true || v.tumKarakterler === 'true') return json(400, { ok: false, hata: 'Tài khoản đã có nhân vật này' });
         const f = karakterFiyati(h);
         if ((Number(v.altin) || 0) < f) return json(400, { ok: false, hata: 'Không đủ vàng (cần ' + f.toLocaleString('vi-VN') + ')' });
+        require('./ultimate-bp-spending').earn(v,f);
         v.altin = (Number(v.altin) || 0) - f;
         v.herolar = [...new Set([...(Array.isArray(v.herolar) ? v.herolar : []).map(Number), id])];
         yaz(v);

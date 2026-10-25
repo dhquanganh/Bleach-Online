@@ -124,7 +124,7 @@ function kur(y){
     if(paid){charge=y.paraHarca([{type:0,code:1,amount:gold}]);if(!charge)return error(16);}
     gunluk(preview).reb.book=1;
     try{kaydet(preview);}catch(e){
-      if(paid){const refund=y.paraIcinOdul([{type:0,code:1,amount:gold}],durum);if(refund)y.ekOnce(0x01180105,refund,'REBIRTH-book-refund');}
+      if(paid){const refund=y.paraIcinOdul([{type:0,code:1,amount:gold}],durum,{refund:true});if(refund)y.ekOnce(0x01180105,refund,'REBIRTH-book-refund');}
       return error(1);
     }
     Object.assign(durum,preview);

@@ -29,8 +29,8 @@ function kur(y,opt={}){const H={},rng=opt.rng||Math.random;
  function commit(ctx,d,cost=0,rewards=[]){
   const paid=cost?y.paraHarca([{type:0,code:1,amount:cost}]):null;if(cost&&!paid)return false;
   const currency=rewards.filter(r=>r.type===0&&r.code===1);let earned=null;
-  if(currency.length){earned=y.paraIcinOdul(currency);if(!earned){if(paid)y.paraIcinOdul([{type:0,code:1,amount:cost}]);return false;}}
-  try{ctx.kaydet(d);}catch(e){if(earned)y.paraHarca(currency);if(paid)y.paraIcinOdul([{type:0,code:1,amount:cost}]);return false;}
+  if(currency.length){earned=y.paraIcinOdul(currency);if(!earned){if(paid)y.paraIcinOdul([{type:0,code:1,amount:cost}],null,{refund:true});return false;}}
+  try{ctx.kaydet(d);}catch(e){if(earned)y.paraHarca(currency,{rollback:true});if(paid)y.paraIcinOdul([{type:0,code:1,amount:cost}],null,{refund:true});return false;}
   Object.assign(ctx.durum,d);if(paid)y.ekSonra(0x01180105,paid,'CONQUEST-cost');if(earned)y.ekSonra(0x01180105,earned,'CONQUEST-gold');return true;
  }
 

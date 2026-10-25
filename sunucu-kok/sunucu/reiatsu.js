@@ -14,7 +14,7 @@ function train(ctx,y,opt={}){
  soul.exp=Math.max(0,Number(soul.exp)||0)+count*50;
  for(let i=0;i<200;i++){const row=table.get(soul.id),need=Number(row.needExp)||0,id=Number(row.nextID);if(!need||soul.exp<need||!table.has(id))break;soul.exp-=need;soul.id=id;}
  if(y.olay){y.olay.say(next,'cultivate',count);if(kind===2)y.olay.say(next,'cultivateGold',count);if(count>=50)y.olay.say(next,'cultivateOneKey',1);}
- try{ctx.kaydet(next);}catch(e){y.paraIcinOdul(cost.oduller);return error(1);}
+ try{ctx.kaydet(next);}catch(e){y.paraIcinOdul(cost.oduller,null,{refund:true});return error(1);}
  Object.assign(ctx.durum,next);y.ekOnce(0x01180105,paid,'REIATSU-cost');
  const ids=new Set([...require('./hollow-soul-map').roster(next,account),...Object.keys(next.kadro||{}),...Object.keys((next.seviye||{}).herolar||{})].map(Number));
  for(const id of ids){if(!tablo('BaseHero').byId.has(id))continue;const lv=id===levels.anaId()?levels.anaDurum(account).lv:levels.heroDurum(next,id,account).lv;

@@ -117,6 +117,7 @@ function premium(account, cost) {
   const coupons = Math.min(Number(account.kupon) || 0, cost);
   if (coupons + (Number(account.altin) || 0) < cost) return false;
   account.kupon = (Number(account.kupon) || 0) - coupons;
+  require('./ultimate-bp-spending').earn(account,cost-coupons);
   account.altin = (Number(account.altin) || 0) - (cost - coupons);
   return true;
 }

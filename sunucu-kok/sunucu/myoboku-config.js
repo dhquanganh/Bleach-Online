@@ -22,5 +22,6 @@ function validate(data){
 async function readDatabase(db){const c=db.collection('game_config');await c.updateOne({_id:KEY},{$setOnInsert:{data:read(),updatedAt:new Date()}},{upsert:true});return publish((await c.findOne({_id:KEY})).data);}
 async function writeDatabase(db,value){const valid=validate(value),data={...valid,revision:valid.revision+1};const result=await db.collection('game_config').updateOne({_id:KEY,'data.revision':valid.revision},{$set:{data,updatedAt:new Date()}});if(!result.matchedCount){const e=Error('Cấu hình đã đổi. Hãy tải lại.');e.status=409;throw e;}return publish(data);}
 let catalog;
-function view(){catalog=catalog||JSON.parse(fs.readFileSync(path.join(__dirname,'../cikarim/veri-json/Article.json'),'utf8'));const data=read();return {...data,cost:COST,unlimited:true,rewards:data.rewards.map(r=>{const item=catalog.find(a=>(parseInt(a.id,16)>>>0)===r.itemId),picture=Number(item?.picture)||r.itemId;return {...r,name:item?.name||String(r.itemId),picture,icon:require('../item-atlas.cjs')(picture)};})};}
-module.exports={read,publish,readDatabase,writeDatabase,validate,view,COST};
+function viewReward(r){catalog=catalog||JSON.parse(fs.readFileSync(path.join(__dirname,'../cikarim/veri-json/Article.json'),'utf8'));const item=catalog.find(a=>(parseInt(a.id,16)>>>0)===r.itemId),picture=Number(item?.picture)||r.itemId;return {...r,name:item?.name||String(r.itemId),picture,icon:require('../item-atlas.cjs')(picture)};}
+function view(){const data=read();return {...data,cost:COST,unlimited:true,rewards:data.rewards.map(viewReward)};}
+module.exports={read,publish,readDatabase,writeDatabase,validate,view,viewReward,COST};
