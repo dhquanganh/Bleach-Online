@@ -256,6 +256,7 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
     const i = ATTR_IDX[id]; if (i === undefined) return; ek[i] += v;
   };
   for(const [type,value] of require('./hollow-soul-map').bonuses(durum,heroId)) add(type,value);
+  for(const [type,value] of require('./titles').bonuses(durum,heroId)) add(type,value);
   const baseValue = index => {
     if (!baseBlock || baseBlock.length < 2) return null;
     const n = baseBlock.readUInt16BE(0);

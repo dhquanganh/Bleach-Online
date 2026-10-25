@@ -8,25 +8,25 @@ const file=name=>path.join(dir,name),read=name=>JSON.parse(fs.readFileSync(file(
 const save=d=>fs.writeFileSync(file('oyuncu.json'),JSON.stringify(d));
 function reset(gold=100000){fs.writeFileSync(file('veri.json'),JSON.stringify({altin:gold}));save({});config.publish({revision:1,rewards:[10,20,30,50,80,100,150,200].map(amount=>({itemId:14900001,amount,weight:1}))});}
 after(()=>fs.rmSync(dir,{recursive:true,force:true}));
-test('1000 gold per spin, all slots selectable, more than 8 daily spins, rewards survive reload',()=>{
- reset();let awarded=0;
+test('10000 gold per spin, all slots selectable, more than 8 daily spins, rewards survive reload',()=>{
+ reset(1000000);let awarded=0;
  for(let n=0;n<24;n++){
   const result=service.spin({load:()=>read('oyuncu.json'),save,random:()=>n%8});
-  assert.equal(result.index,n%8);assert.equal(result.gold,100000-(n+1)*1000);awarded+=result.reward.amount;
+  assert.equal(result.index,n%8);assert.equal(result.gold,1000000-(n+1)*10000);awarded+=result.reward.amount;
   assert.equal(inventory.mevcut(read('oyuncu.json'),14900001),awarded);
  }
  assert.equal(read('oyuncu.json').myoboku.spins,24);assert.equal(read('veri.json').myobokuPending,undefined);
 });
 test('insufficient gold and full item stack never charge or grant',()=>{
- reset(999);const before=fs.readFileSync(file('oyuncu.json'),'utf8');
- assert.throws(()=>service.spin({load:()=>read('oyuncu.json'),save}),{status:400});assert.equal(read('veri.json').altin,999);assert.equal(fs.readFileSync(file('oyuncu.json'),'utf8'),before);
+ reset(9999);const before=fs.readFileSync(file('oyuncu.json'),'utf8');
+ assert.throws(()=>service.spin({load:()=>read('oyuncu.json'),save}),{status:400});assert.equal(read('veri.json').altin,9999);assert.equal(fs.readFileSync(file('oyuncu.json'),'utf8'),before);
  reset();const state={};inventory.ekle(state,[{type:1,code:14900001,amount:inventory.MAX_ADET}]);save(state);
  assert.throws(()=>service.spin({load:()=>read('oyuncu.json'),save,random:()=>0}),{status:400});assert.equal(read('veri.json').altin,100000);
 });
 test('interrupted player save is replayed once with matching debit and item grant',()=>{
  reset();const result=service.spin({load:()=>read('oyuncu.json'),save:()=>{throw Error('disk interruption');},random:()=>7});
- assert.equal(result.gold,99000);assert.equal(inventory.mevcut(read('oyuncu.json'),14900001),200);
- service.recover();service.recover();assert.equal(inventory.mevcut(read('oyuncu.json'),14900001),200);assert.equal(read('veri.json').altin,99000);
+ assert.equal(result.gold,90000);assert.equal(inventory.mevcut(read('oyuncu.json'),14900001),200);
+ service.recover();service.recover();assert.equal(inventory.mevcut(read('oyuncu.json'),14900001),200);assert.equal(read('veri.json').altin,90000);
 });
 test('admin authorization, validation, database persistence, stale edits and projection recovery',async()=>{
  reset();let document;
@@ -55,8 +55,8 @@ test('owned hero rewards become 50 matching Modify Fragments, while new heroes k
  function setup(state={},account={}){reset();config.publish({revision:1,rewards:Array.from({length:8},()=>({itemId:row.itemId,amount:1,weight:1}))});save(state);fs.writeFileSync(file('veri.json'),JSON.stringify({altin:100000,...account}));}
  setup();let result=spin();assert.equal(result.reward.itemId,row.itemId);assert.equal(inventory.mevcut(result.state,row.itemId),1);
  for(const [state,account] of [[{meyhane:{alinan:{[row.heroId]:1}}},{}],[{seviye:{herolar:{[row.heroId]:{level:1}}}},{}],[{kadro:{[row.heroId]:1}},{}],[{},{herolar:[row.heroId]}],[{},{tumKarakterler:true}]]){
-  setup(state,account);result=spin();assert.equal(result.reward.itemId,row.fragmentId);assert.equal(result.reward.amount,50);assert.match(result.reward.name,/fragment/i);assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(inventory.mevcut(result.state,row.itemId),0);assert.equal(result.state.myoboku.last.itemId,row.fragmentId);assert.equal(result.gold,99000);
+  setup(state,account);result=spin();assert.equal(result.reward.itemId,row.fragmentId);assert.equal(result.reward.amount,50);assert.match(result.reward.name,/fragment/i);assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(inventory.mevcut(result.state,row.itemId),0);assert.equal(result.state.myoboku.last.itemId,row.fragmentId);assert.equal(result.gold,90000);
  }
  setup({meyhane:{alinan:{[row.heroId]:1}}});const full=read('oyuncu.json');inventory.ekle(full,[{type:1,code:row.fragmentId,amount:inventory.MAX_ADET}]);save(full);assert.throws(spin,{status:400});assert.equal(read('veri.json').altin,100000);
- setup({meyhane:{alinan:{[row.heroId]:1}}});service.spin({load:()=>read('oyuncu.json'),save:()=>{throw Error('interruption');},random:()=>0});service.recover();assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(read('veri.json').altin,99000);
+ setup({meyhane:{alinan:{[row.heroId]:1}}});service.spin({load:()=>read('oyuncu.json'),save:()=>{throw Error('interruption');},random:()=>0});service.recover();assert.equal(inventory.mevcut(read('oyuncu.json'),row.fragmentId),50);assert.equal(read('veri.json').altin,90000);
 });

@@ -1,0 +1,8 @@
+{
+  "version": "2026102513",
+  "classes": [
+    "Processors\\Game\\Lobby\\Achievement\\TProcessorAchievement.as",
+    "Processors\\Game\\Lobby\\Achievement\\TProcessorWindowTitle.as"
+  ],
+  "sha256": "fec93ab72ece9f6b6c036a7ab4e977515565f58e3617ecdf560a2b00a6d66247"
+}

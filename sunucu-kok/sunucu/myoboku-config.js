@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('fs'),path=require('path');
 const file=()=>process.env.BLEACH_MYOBOKU_CONFIG||path.join(__dirname,'myoboku.json');
-const KEY='myoboku.json',COST=1000;
+const KEY='myoboku.json',COST=10000;
 const defaults=()=>({revision:1,rewards:[10,20,30,50,80,100,150,200].map(amount=>({itemId:14900001,amount,weight:1}))});
 function read(){try{return JSON.parse(fs.readFileSync(file(),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;return defaults();}}
 function publish(data){const tmp=file()+'.'+process.pid+'.tmp';fs.writeFileSync(tmp,JSON.stringify(data,null,2));fs.renameSync(tmp,file());return data;}

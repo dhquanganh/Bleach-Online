@@ -2,7 +2,7 @@
 // Only public character data is distributed between account workers.
 const {Y,tablo}=require('./paket');
 const levels=require('./seviye'),equipment=require('./ekipman'),heroes=require('./herolar');
-const profiles=new Map();
+const profiles=new Map(),achievements=new Map();
 const key=(hi,lo)=>`${hi>>>0}:${lo>>>0}`;
 
 function snapshot(state,account=levels.veriOku()) {
@@ -30,14 +30,15 @@ function snapshot(state,account=levels.veriOku()) {
   const starRows=parts.map(part=>part.readUInt32BE(0)).filter(id=>id!==main).map(id=>[id,require('./hero-stars').count(d,id)]);
   const packet=new Y().u32(0).utf(name).raw(list).u32(Number(row.quality)||1).u32(knife).u16(starRows.length);
   for(const [id,stars] of starRows)packet.u32(id).u8(stars);
-  return {id0:d.roleIdHi>>>0,id1:d.roleIdLo>>>0,payload:packet.done().toString('base64')};
+  return {id0:d.roleIdHi>>>0,id1:d.roleIdLo>>>0,payload:packet.done().toString('base64'),achievementPayload:new Y().u32(0).utf(name).raw(require('./title-achievements').info(d,account)).done().toString('base64')};
 }
 
 function update(rows){
-  profiles.clear();
+  profiles.clear();achievements.clear();
   for(const row of Array.isArray(rows)?rows:[]){
     const profile=row?.profile;
     if(profile&&profile.id0===row.id0&&profile.id1===row.id1&&typeof profile.payload==='string')profiles.set(key(row.id0,row.id1),profile.payload);
+    if(profile&&profile.id0===row.id0&&profile.id1===row.id1&&typeof profile.achievementPayload==='string')achievements.set(key(row.id0,row.id1),profile.achievementPayload);
   }
 }
 function inspect({payload,durum}){
@@ -50,3 +51,10 @@ function inspect({payload,durum}){
   return profile?Buffer.from(profile,'base64'):new Y().u32(1).done();
 }
 module.exports={snapshot,update,inspect};
+
+module.exports.achievement=function({payload,durum}){
+ const {Y}=require('./paket');if(payload?.length!==8)return new Y().u32(4).done();
+ const hi=payload.readUInt32BE(0),lo=payload.readUInt32BE(4);
+ if(hi===(durum.roleIdHi>>>0)&&lo===(durum.roleIdLo>>>0))return new Y().u32(0).utf(durum.karakter?.nick||durum.nick||'').raw(require('./title-achievements').info(durum)).done();
+ const data=achievements.get(key(hi,lo));return data?Buffer.from(data,'base64'):new Y().u32(4).done();
+};

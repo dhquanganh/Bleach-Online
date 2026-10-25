@@ -7,7 +7,7 @@ function fail(status,message){const e=Error(message);e.status=status;throw e;}
 // later login could replay a pre-mail player snapshot over the reward receipt.
 function recoveredFiles(source){
  const files={...source};let v=JSON.parse(files['veri.json']||'{}'),d=JSON.parse(files['oyuncu.json']||'{}');
- for(const key of ['myobokuPending','ultimateBPPending'])if(v[key]){d=v[key];delete v[key];}
+ for(const key of ['myobokuPending','ultimateBPPending','titlePending'])if(v[key]){d=v[key];delete v[key];}
  if(files['arena-reward-pending.json']){const pending=JSON.parse(files['arena-reward-pending.json']);if(!pending.account||!pending.player)throw Error('Invalid Arena reward journal');v=pending.account;d=pending.player;delete files['arena-reward-pending.json'];}
  files['veri.json']=JSON.stringify(v,null,2);files['oyuncu.json']=JSON.stringify(d,null,2);return files;
 }

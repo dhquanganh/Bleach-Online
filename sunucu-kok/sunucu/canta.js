@@ -90,7 +90,8 @@ function kullan(durum, payload, ctx) {
   }
   if(plan.kind==='title'){
     if(count!==1||!satir('AchievementTitle',plan.title))return hataRet(OP_USE_RET,1,tpl);
-    working.unvan=working.unvan||{};working.unvan.takili=[plan.title];push(0x01185204,new W().u32(0).i16(1).u32(plan.title).done(),'KULLAN-title');
+    const titles=require('./titles');if(!titles.grant(working,plan.title))return hataRet(OP_USE_RET,1,tpl);
+    push(0x01185203,titles.info(working),'KULLAN-title-owned');push(0x01185204,titles.change(working),'KULLAN-title');titles.stats(working,push);
   }
   if(plan.kind==='exp'){
     if(!(plan.value>0))return hataRet(OP_USE_RET,1,tpl);

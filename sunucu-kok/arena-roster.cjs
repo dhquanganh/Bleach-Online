@@ -5,6 +5,7 @@ const crypto = require('node:crypto');
 const { fork } = require('node:child_process');
 const { ROOT, FILES } = require('./accounts.cjs');
 const militaries = JSON.parse(fs.readFileSync(path.join(__dirname, 'cikarim/veri-json/Military.json'))).map(row => parseInt(row.id, 16) >>> 0);
+function cacheKey(files,now){const state=JSON.parse(files['oyuncu.json']||'{}');const activeTitles=require('./sunucu/titles').equipped(state,now);return crypto.createHash('sha256').update(JSON.stringify({files,activeTitles})).digest('hex');}
 function createRoster(db, runtimes, snapshot, options = {}) {
   const settle = require('./arena-settlement.cjs').createSettlement(db);
   const ladder = require('./arena-ladder.cjs').createLadder(db);
@@ -13,9 +14,9 @@ function createRoster(db, runtimes, snapshot, options = {}) {
   async function build(player) {
     const id = player._id.toHexString(), rt = runtimes.get(id);
     const files = rt ? snapshot(rt.dir) : player.files;
-    const hash = crypto.createHash('sha256').update(JSON.stringify(files)).digest('hex');
-    if (cache.get(id)?.hash === hash) return cache.get(id).row;
     const account = JSON.parse(files['oyuncu.json'] || '{}');
+    const hash = cacheKey(files);
+    if (cache.get(id)?.hash === hash) return cache.get(id).row;
     if (!account.karakter?.anaId) return null;
     const dir = path.join(ROOT, '.accounts', 'arena-cache', id);
     fs.mkdirSync(dir, { recursive: true });
@@ -91,4 +92,4 @@ function createRoster(db, runtimes, snapshot, options = {}) {
   const timer = options.intervalMs === 0 ? null : setInterval(() => refresh().catch(e => console.error('[Arena roster]', e.name)), options.intervalMs || 5000);
   return { refresh,recordResult,async close() { closed = true; clearInterval(timer); await queue.catch(()=>{}); } };
 }
-module.exports = { createRoster };
+module.exports = { createRoster,cacheKey };

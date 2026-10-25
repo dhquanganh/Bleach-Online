@@ -40,7 +40,7 @@ test('ranking API checks admin role, request shape and returns concrete preview/
 });
 
 test('offline reward delivery replays interrupted Myoboku/Ultimate BP/Arena snapshots before adding its protected mail',async()=>{
- for(const kind of ['myobokuPending','ultimateBPPending','arena']){
+ for(const kind of ['myobokuPending','ultimateBPPending','titlePending','arena']){
   const f=fixture([7000]);const pending={roleIdHi:1,roleIdLo:1,karakter:{anaId:11100005,nick:'Recovered'},ultimateBP:{claims:[1,0,0,0,0],heroes:[]}};
   if(kind==='arena')f.players[0].files['arena-reward-pending.json']=JSON.stringify({account:{ultimateBP:{pieces:7000}},player:pending});else f.players[0].files['veri.json']=JSON.stringify({ultimateBP:{pieces:7000},[kind]:pending});
   const v=await f.board.view();assert.equal(v.rows[0].name,'Recovered');await f.board.award(v.revision,'admin');const files=f.players[0].files,state=JSON.parse(files['oyuncu.json']);assert.equal(state.ultimateBP.claims[0],0);assert.equal(state.posta.gelen.length,1);assert.equal(JSON.parse(files['veri.json'])[kind],undefined);assert.equal(files['arena-reward-pending.json'],undefined);await f.board.close();

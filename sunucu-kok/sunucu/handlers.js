@@ -393,12 +393,16 @@ const byReq = {
   // === CANTA: esya KULLAN (0x01810f01 -> 0x01180f08) ve SAT (0x01810f03 -> 0x01180f05) ===
   // Cevap opcode'lari swap DEGIL -> ek kuyruguyla acikca gonderilir, handler false doner.
   '0x01810f01': ({ payload, durum, kaydet }) => {
+    const titleBefore=payload?.length>=10&&require('./usable-items').resolve(payload.readUInt32BE(6))?.kind==='title'?structuredClone(durum):null;
     const r = canta.kullan(durum, payload, {
       para: (awards, target = durum) => paraIcinOdul(awards, target),
       harca: paraHarca,
       odulBul: odulBulKesin,
       nhanNhanVat: (heroId, target = durum) => meyhane.itemRecruitPaketi(heroId, target, seviye.anaDurum().lv),
     });
+    if(!r.hata&&r.once.some(p=>p.kaynak==='KULLAN-title')){
+      try{kaydet(durum);}catch(error){for(const key of Object.keys(durum))delete durum[key];Object.assign(durum,titleBefore);r.once=[];r.hata=1;r.ret.writeUInt32BE(1,0);}
+    }
     for (const e of r.once) ekSonra(e.id, e.payload, e.kaynak);
     ekSonra(r.retId, r.ret, 'KULLAN-ret');
     if (!r.hata && r.once.some(packet => packet.kaynak === 'KULLAN-loot')) {
@@ -406,7 +410,7 @@ const byReq = {
       // LoadBagResult also refreshes existing Flash clients that ignore unseen InventoryNtf instances.
       ekSonra(0x01180f00, envanterDepo.loadBagPaketi(durum), 'KULLAN-bag-sync');
     }
-    if (!r.hata) { try { kaydet(durum); } catch (e) { } }
+    if (!r.hata&&!titleBefore) { try { kaydet(durum); } catch (e) { } }
     console.log(`[canta] kullan ${r.tpl || '?'} x${r.adet || 0} ${r.ad ? '"' + r.ad + '"' : ''}: ${r.hata ? 'HATA ' + r.hata : 'ok'}`);
     return false;
   },
