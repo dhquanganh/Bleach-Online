@@ -1,0 +1,16 @@
+{
+  "version": "2026102525",
+  "classes": [
+    "Processors\\Game\\Lobby\\TeamBattle\\TProcessorTeamBattle.as",
+    "Processors\\Game\\Lobby\\TeamBattle\\TProcessorWindowTeamBattleChoose.as",
+    "Processors\\Game\\TProcessorGameRoot.as",
+    "Processors\\Game\\MiniBattle\\TProcessorMiniBattle.as",
+    "Processors\\Game\\MiniBattle\\Decoder\\TUnstreamizerBattleInfor.as",
+    "Processors\\Game\\MiniBattle\\Decoder\\TUnstreamizerScrip.as",
+    "Processors\\Game\\MiniBattle\\Mode\\TBattleSoldierInfor.as",
+    "Processors\\Game\\MiniBattle\\Mode\\TOneAttrack.as",
+    "Processors\\Game\\MiniBattle\\ScriptAction\\TScriptActionCheckHP.as",
+    "Processors\\Game\\MiniBattle\\TComponentReportTable.as"
+  ],
+  "sha256": "f3276f24e85a9a166835cc1abcba768638c8994ef061721de161c04d19263d6e"
+}

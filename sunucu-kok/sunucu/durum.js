@@ -33,6 +33,7 @@ function veriBirimleri() {
 }
 
 function yukle() {
+  require('./alliance-war').recover();
   require('./myoboku').recover();
   require('./ultimate-bp').recover();
   require('./title-achievements').recover();

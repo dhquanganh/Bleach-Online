@@ -332,9 +332,9 @@ function kur(y) {
     w.u16(1).u32(durum.roleIdHi || 0).u32(durum.roleIdLo || 1).i8(0).utf(nick(durum)).u8(3).u32(40100001).u8(0).u32(0).u32(anaId()).u8(2).u16(anaLv()).u32(1000).u8(0);
     w.u16(0).u16(0); return w.done();
   };
-  H['0x0181020e'] = ({ durum }) => { ekSonra(0x01186005, new Y().u16(0).u16(0).u32((ozet(durum).onur) || 0).u16(0).done(), 'TAKIM-bilgi'); ekSonra(0x01186500, new Y().bool(true).done(), 'TAKIM-pvp'); return new Y().u32(0).done(); };
-  H['0x0181020f'] = () => new Y().u32(0).done();
-  H['0x01810210'] = () => new Y().u32(0).done();
+  H['0x0181020e'] = ({ durum, kaydet }) => { const war=require('./alliance-war'); ekSonra(0x01186005,war.hall(durum),'ALLIANCE-status'); ekSonra(0x01186500,new Y().bool(war.pvpOpen()).done(),'ALLIANCE-schedule'); K(kaydet,durum); return new Y().u32(0).u32(0).done(); };
+  H['0x0181020f'] = () => new Y().u32(1).done();
+  H['0x01810210'] = () => new Y().u32(1).done();
   H['0x01810213'] = () => new Y().u32(1).done();                                               // GongFuFight: plate ac
   // ================= SKY TOWER =================
   const kule = d => {
@@ -395,33 +395,11 @@ function kur(y) {
   H['0x01811f02'] = ({ payload, durum, kaydet }) => { const id = new O(payload).i32(); const { k } = hazine(durum); if (!satir('Digging', id)) return new Y().u32(4).done(); const dg = satir('Digging', id); if (!altin(Number(dg.openCost) || 0)) return new Y().u32(16).done(); k.quality = id; K(kaydet, durum); return new Y().u32(0).u32(id).done(); };
   H['0x01811f03'] = ({ durum, kaydet }) => { const { k, g } = hazine(durum); if (!k.status) return new Y().u32(1).done(); const kalan = Math.max(0, k.last - simdi()); if (kalan > 0 && !altin(Math.ceil(kalan / 60))) return new Y().u32(16).done(); const dg = satir('Digging', k.quality); const para = dg ? json(dg.money, []) : []; ver(durum, para.length ? para : [{ type: 0, code: 0, amount: 50000 }]); k.blue += 1; ekSonra(0x01181fa0, new Y().u32(8).u32(k.blue).done(), 'HAZINE-yildiz'); k.status = 0; k.quality = 101; g.refresh = 0; olay.say(durum, 'treasureMap', 1); K(kaydet, durum); return new Y().u32(0).done(); };
   H['0x01811f05'] = ({ durum, kaydet }) => { const { g } = hazine(durum); if (!altin(20 + 10 * g.vipBuy)) return new Y().u32(16).done(); g.vipBuy++; g.times++; K(kaydet, durum); return { id: 0x01181f09, payload: new Y().u32(0).done() }; };
-  // ================= TEAM BATTLE =================
-  const oda = d => { d.takimOda = d.takimOda || { id: 1, pw: '', model: 16100101, mode: 1 }; return d.takimOda; };
-  const POS = [1, 6, 7, 8, 11, 12, 13];
-  const odaPush = d => {
-    const o = oda(d); const w = new Y().u32(o.id).utf(o.pw).u32(o.model).u8(0).u8(0).u16(1);
-    w.u8(0).u32(d.roleIdHi || 0).u32(d.roleIdLo || 1).u32(anaId()).utf(nick(d)).u16(anaLv()).u32(5000).bool(true).bool(false).bool(false).u32(0);
-    const kadro = d.kadro || {}; const herolar = []; for (const [id, p] of Object.entries(kadro)) if (POS.includes(Number(p)) && satir('BaseHero', Number(id)) && satir('RoleModel', Number(id))) herolar.push([Number(id), Number(p)]);
-    if (!herolar.some(h => h[0] === anaId())) herolar.unshift([anaId(), herolar.some(h => h[1] === 1) ? 6 : 1]);
-    w.u16(herolar.length); for (const h of herolar) w.u32(h[0]).u8(h[1]);
-    ekSonra(0x01180211, w.done(), 'TAKIM-oda');
-  };
-  const modelGecerli = (mode, id) => mode === 2 ? !!satir('LeagueMapPvp', id) : (!!satir('LeagueMapPve', id) && !!satir('LeaguePointPath', id));
-  H['0x01816001'] = ({ payload, durum, kaydet }) => { const r = new O(payload); const mode = r.u8(), model = r.u32(), pw = r.utf(); const o = oda(durum); if (!modelGecerli(mode, model)) return { id: 0x01186003, payload: new Y().u32(1).done() }; o.mode = mode; o.model = model; o.pw = pw; o.id++; K(kaydet, durum); odaPush(durum); return { id: 0x01186003, payload: new Y().u32(0).done() }; };
-  H['0x01816002'] = ({ payload, durum }) => { const r = new O(payload); const mode = r.u8(); r.u8(); const id = r.u32(); const o = oda(durum); if (mode) o.mode = mode; if (!modelGecerli(o.mode, o.model)) o.model = o.mode === 2 ? tablo('LeagueMapPvp').ids[0] : tablo('LeagueMapPve').ids[0]; odaPush(durum); return { id: 0x01186004, payload: new Y().u32(0).done() }; };
-  H['0x01816003'] = () => ({ id: 0x01186006, payload: Buffer.alloc(0) });
-  H['0x01816100'] = ({ payload }) => { const r = new O(payload); const op = r.u8(), a = r.u8(), b = r.u8(); return new Y().u32(0).u8(op).u8(a).u8(b).done(); };
-  H['0x01816101'] = ({ payload, durum, kaydet }) => { const m = new O(payload).u32(); const o = oda(durum); if (!modelGecerli(1, m)) return { id: 0x01186105, payload: new Y().u32(1).u16(0).u32(m).done() }; o.model = m; K(kaydet, durum); return { id: 0x01186105, payload: new Y().u32(0).u16(0).u32(m).done() }; };
-  H['0x01816102'] = ({ payload, durum, kaydet }) => { const pw = new O(payload).utf(); oda(durum).pw = pw; K(kaydet, durum); return { id: 0x01186106, payload: new Y().u32(0).utf(pw).done() }; };
-  H['0x01816103'] = () => ({ id: 0x01186107, payload: new Y().u32(0).done() });
-  H['0x01816104'] = () => false;
-  H['0x01816105'] = ({ payload }) => { const t = new O(payload).u8(); return { id: 0x01186109, payload: new Y().u32(0).u8(t === 2 ? 0 : 1).done() }; };
-  H['0x01816106'] = () => ({ id: 0x0118610a, payload: new Y().u32(0).done() });
-  H['0x01816107'] = () => ({ id: 0x0118610c, payload: new Y().u32(0).u16(0).done() });
-  H['0x01816108'] = ({ payload, durum, kaydet }) => { const m = new O(payload).u32(); if (modelGecerli(1, m)) { oda(durum).model = m; K(kaydet, durum); } return { id: 0x0118610d, payload: new Y().u32(0).u32(m).done() }; };
-  H['0x01816109'] = () => ({ id: 0x0118610e, payload: new Y().u32(0).u32(3).done() });
-  H['0x0181610a'] = () => ({ id: 0x0118610f, payload: new Y().u32(0).done() });
-  H['0x0181610b'] = () => ({ id: 0x01186111, payload: new Y().u32(0).u32(3).done() });
+  // The launcher owns real cross-account Alliance rooms. Reject obsolete local-room
+  // packets instead of replaying successful captures or granting fake progress.
+  const allianceReturns = {0x01816001:0x01186003,0x01816002:0x01186004,0x01816003:0x01186006,0x01816100:0x01186100,0x01816101:0x01186105,0x01816102:0x01186106,0x01816103:0x01186107,0x01816104:0x01186108,0x01816105:0x01186109,0x01816106:0x0118610a,0x01816107:0x0118610c,0x01816108:0x0118610d,0x01816109:0x0118610e,0x0181610a:0x0118610f,0x0181610b:0x01186111};
+  for(const [req,ret] of Object.entries(allianceReturns))H['0x'+Number(req).toString(16).padStart(8,'0')]=()=>({id:ret,payload:new Y().u32(1).done()});
+  H['0x01816003'] = () => ({id:0x01186006,payload:Buffer.alloc(0)});
   // ================= EXP DUPLICATE =================
   Object.assign(H, require('./tenso').kur(y));
   // ================= VOID SOUL WORLD =================

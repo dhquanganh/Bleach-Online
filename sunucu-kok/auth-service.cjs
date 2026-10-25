@@ -23,6 +23,7 @@ async function startAuth(port) {
   let nextPort = 11000, closing = false;
   const townPresence=require('./town-presence.cjs').createPresence({runtimes,snapshot});
   const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot);
+  const allianceWar=require('./alliance-war.cjs').createWar(db,{runtimes,persist:id=>serial(id,async()=>{const rt=runtimes.get(id);if(!rt)throw Error('Player disconnected before persistence');if(rt.saving)await rt.saving;await save(rt);})});
   const illusionBoard = require('./illusion-board.cjs').createBoard(db,{onUpdate(){
     for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
   }});
@@ -90,9 +91,10 @@ async function startAuth(port) {
       child.stderr.on('data', chunk => console.error('[account worker]', chunk.toString().slice(0, 1000)));
       const rt = { child, dir, accountId: user.account._id, gamePort, gameToken, token: user.token, expiresAt: user.session.expiresAt, savedHash: fs.readFileSync(syncFile, 'utf8') };
       runtimes.set(id, rt);
-      child.once('exit',()=>{if(runtimes.get(id)===rt)townPresence.drop(id);});
+      child.once('exit',()=>{if(runtimes.get(id)===rt){townPresence.drop(id);allianceWar.drop(id);}});
       child.on('message', message => {
         if(runtimes.get(id)!==rt)return;
+        if(allianceWar.receive(id,message))return;
         if(message?.type==='town-presence'){townPresence.receive(id,rt,message);return;}
         if(message?.type==='illusion-request'){
           const respond=response=>{if(child.connected){try{child.send({type:'illusion-ack',id:message.id,...response},()=>{});}catch(error){console.error('[Boss ranking ack]',error.message);}}};
@@ -127,6 +129,7 @@ async function startAuth(port) {
       }
       if (!ready) { await stop(id); throw new Error('Không khởi động được máy chủ nhân vật'); }
       await arenaRoster.refresh();
+      allianceWar.resume(id).catch(error=>console.error('[Alliance recovery]',error.message));
       ultimateBPRanking.refresh().catch(error=>console.error('[Ultimate BP ranking]',error.name));
       return rt;
     })();
@@ -164,6 +167,12 @@ async function startAuth(port) {
         }
         const user = await identity(req);
         if (!user) { json(401, { error: 'Bạn cần đăng nhập' }); return true; }
+        if(pathname.startsWith('/auth/alliance-war/')){
+          const action=pathname.slice('/auth/alliance-war/'.length);
+          if((action==='view'&&req.method!=='GET')||(action!=='view'&&req.method!=='POST')){json(405,{error:'Phương thức không hợp lệ.'});return true;}
+          try{json(200,await allianceWar.request(user.account._id.toHexString(),action,req.method==='POST'?await body(req):{}));}
+          catch(error){json(error.status||400,{error:error.message});}return true;
+        }
         if (pathname.startsWith('/auth/admin/')) { await adminAccounts(req, res, pathname, user, json); return true; }
         if (pathname === '/auth/logout' && req.method === 'POST') {
           await serial(user.account._id.toHexString(), async () => { const rt = runtimes.get(user.account._id.toHexString()); if (rt && rt.token === user.token) await stop(user.account._id.toHexString()); await db.collection('sessions').deleteOne({ _id: digest(user.token) }); });
@@ -195,7 +204,7 @@ async function startAuth(port) {
   const timer = setInterval(() => { if (closing) return; for (const [id, rt] of runtimes) {
     serial(id, () => rt.expiresAt <= new Date() ? stop(id) : save(rt)).catch(e => console.error('[Mongo save]', e.code || e.name));
   } }, 2000);
-  async function close() { closing = true; clearInterval(timer); townPresence.close(); await arenaRoster.close(); await illusionBoard.close(); await ultimateBPRanking.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
+  async function close() { closing = true; clearInterval(timer); townPresence.close(); allianceWar.close(); await arenaRoster.close(); await illusionBoard.close(); await ultimateBPRanking.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
   return { handle, close, db };
 }
 module.exports = { startAuth, cookieToken };

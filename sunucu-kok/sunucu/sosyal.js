@@ -104,7 +104,7 @@ function kur(y) {
   // ================= BLACK MARKET / MALL =================
   H['0x01817000'] = () => new Y().i32(1).done(); H['0x01817001'] = () => new Y().i32(1).done(); H['0x01817002'] = () => new Y().i32(1).done();
   H['0x01817003'] = () => new Y().u8(1).i32(simdi()).done();
-  H['0x01811a02'] = ({ durum }) => { const al = Object.entries((durum.magaza || {}).onur || {}); const w = new Y().u32(0).u32(al.reduce((s, [, n]) => s + n, 0)).i16(al.length); for (const [id, n] of al) w.u32(Number(id)).u32(n); return w.done(); };
+  H['0x01811a02'] = ({ durum }) => { const war=require('./alliance-war'),k=war.state(durum); const al = Object.entries((durum.magaza || {}).onur || {}); const w = new Y().u32(0).u32(k.shopCount).i16(al.length); for (const [id, n] of al) w.u32(Number(id)).u32(n); return w.done(); };
   H['0x01811a01'] = ({ durum }) => {
     const rows=Object.entries((durum.magaza||{}).alim||{}).filter(([id,n])=>n>0&&satir('Mall',Number(id)));
     const w=new Y().u32(0).i16(rows.length);
@@ -118,6 +118,17 @@ function kur(y) {
     durum.magaza.vip = durum.magaza.vip || {};
     durum.magaza.alim = durum.magaza.alim || {};
     const model = Number(m.model), item = Number(m.itemID);
+    if(model===11){
+      if(payload.length!==6)return new Y().u32(4).done();
+      try{
+        const result=require('./alliance-war').purchase(durum,m,payload.readUInt16BE(4),anaLv(),kaydet),h=require('./harita');
+        ekSonra(0x01180105,h.baseInfoUpdate([{index:h.BASEINFO.Gold,v:result.gold},{index:h.BASEINFO.GiftCertificate,v:result.coupon}]),'ALLIANCE-currency');
+        const inventory=require('./handlers').envanterPaketiEkleme(result.added);if(inventory)ekSonra(0x01180f02,inventory,'ALLIANCE-inventory');
+        if(result.hero)ekSonra(0x01180c02,new Y().u32(0).u32(result.hero).u32(anaLv()).u32(0).u32(0).done(),'ALLIANCE-hero');
+        ekSonra(0x01181a03,new Y().u32(rowId).u32(result.count).done(),'ALLIANCE-shop-count');
+        return new Y().u32(0).done();
+      }catch(error){return new Y().u32(1).done();}
+    }
     if([12,13].includes(model)&&[14100282,14100283,14100733].includes(Number(json(m.honour,{}).code)))return require('./cross-server').kur(y).exchange({payload,durum,kaydet},m,qty);
     if(model===15)return require('./crash-jade').kur(y).exchange({payload,durum,kaydet},m,qty);
     if(model===3){if(payload.length!==6)return new Y().u32(4).done();return require('./soul-hunt').kur(y).exchange({payload,durum,kaydet},m,payload.readUInt16BE(4));}
@@ -136,7 +147,6 @@ function kur(y) {
     }
     else if (model === 1) { const s = imza(durum); const bedel = (Number(m.integration) || 0) * qty; if (s.integral < bedel) return new Y().u32(1).done(); s.integral -= bedel; const p = baseInfo([{ index: 13, v: s.integral }]); if (p) ekSonra(0x01180105, p, 'MAGAZA-puan'); }
     else if (model === 15) { const h = require('./ekipman').hog(durum); const hon = json(m.honour, null); const bedel = hon && Number(hon.amount) ? Number(hon.amount) * qty : qty; if (h.coin < bedel) return new Y().u32(1).done(); h.coin -= bedel; h.satinAlim = h.satinAlim || {}; h.satinAlim[String(rowId)] = (h.satinAlim[String(rowId)] || 0) + qty; }
-    else if (model === 11) { const bedel = (Number(m.integration) || Number(m.f20) || 0) * qty; const s = durum.etkinlikSavas || {}; if ((s.onur || 0) < bedel) return new Y().u32(1).done(); s.onur -= bedel; durum.magaza.onur[String(rowId)] = (durum.magaza.onur[String(rowId)] || 0) + qty; }
     else if (model === 13) { const bedel = (Number(m.integration) || 0) * qty; if (bedel && !envanter.dus(durum, 14100279, bedel) && !altin(fiyat * qty)) return new Y().u32(18).done(); }
     else if (fiyat && !altin(fiyat * qty)) return new Y().u32(16).done();
     const adet = Math.max(1, Number(m.amount) || 1) * qty;

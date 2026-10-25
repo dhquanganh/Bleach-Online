@@ -1142,7 +1142,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const roles1 = p1.map(rolBilgisi), roles2 = p2.map(rolBilgisi);
   const initialActives = [];
   for (const unit of p1.concat(p2)) {
-    unit.pvp = !!arenaRakip;
+    unit.pvp = !!arenaRakip || !!options.pvp;
     if (!unit.partnerSkills) unit.partnerSkills = unit.camp === 0 ? partnerSkills.unlocked(durumK,unit.id) : [];
     if (!unit.weaponSkills) unit.weaponSkills = unit.camp === 0 ? weaponSkills.equipped(durumK,unit.id) : [];
     const records = [];

@@ -290,6 +290,47 @@ process.on('message',message=>{if(message?.type!=='admin-item-mail')return;
 });
 const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
+let allianceOpen=null;
+let alliancePlayback=null;
+setInterval(()=>{const open=require('./alliance-war').pvpOpen();if(open===allianceOpen)return;allianceOpen=open;for(const session of loggedInClients())session.send(0x01186500,new (require('./paket').Y)().bool(open).done(),'ALLIANCE-schedule');},1000).unref();
+process.on('message',message=>{
+ if(message?.type!=='alliance-war')return;
+ try{
+  const war=require('./alliance-war'),d=durumMod.yukle();let result;
+  if(message.action==='settle'){
+   const changed=war.settle(d,message.data);durumMod.kaydet(d);
+   if(changed)for(const session of loggedInClients()){
+    session.send(0x01186005,war.hall(d),'ALLIANCE-reward');
+    const mail=d.posta?.gelen.find(m=>m.adminGrantId===message.data.id);
+    if(mail)session.send(0x01181605,require('./boss-reward-mail').notification(mail),'ALLIANCE-mail');
+   }
+   result={ok:true};
+  }else{
+   if(!loggedInClients().length)throw Error('Hãy đăng nhập nhân vật trong game trước.');
+   if(message.action==='snapshot'){
+    const units=savas.playerTeam(),v=veri(),level=seviye.anaDurum(v).lv;
+    result={...war.view(d,level,Number(v.altin)||0),playback:alliancePlayback,coupon:Number(v.kupon)||0,name:d.karakter?.nick||d.nick||v.nick||'Shinigami',units,pveSlot:war.state(d).pveSlot,pvpDay:war.state(d).pvpDay};
+    for(const row of result.shop)if(row.hero&&require('./reincarnation').owned(d,row.id,v))row.remaining=0;
+    durumMod.kaydet(d);
+   }else if(message.action==='simulate')result=war.simulate(message.data,d);
+   else if(message.action==='playback'){
+    const packets=require('./alliance-war-playback').frames(message.data);
+    alliancePlayback={id:message.data.id,eventId:message.data.eventId};
+    for(const session of loggedInClients()){session.inTown=false;session.townSeen=new Map();for(const packet of packets)session.send(packet.id,packet.payload,'ALLIANCE-native');}
+    publishTown();
+    result={ok:true};
+   }
+   else if(message.action==='buy'){
+    const {rowId,qty}=message.data;if(!Number.isInteger(rowId)||!Number.isInteger(qty)||qty<1||qty>100||require('./paket').satir('Mall',rowId)?.model!==11)throw Error('Số lượng hoặc vật phẩm không hợp lệ.');
+    const payload=new (require('./paket').Y)().u32(rowId).u16(qty).done(),response=handlers.byReq['0x01811a00']({payload,durum:d,kaydet:durumMod.kaydet});
+    const code=Buffer.isBuffer(response)?response.readUInt32BE(0):1;
+    const packets=handlers.ekAl();for(const session of loggedInClients())for(const packet of packets.once.concat(packets.sonra))session.send(packet.id,packet.payload,'ALLIANCE-shop');
+    if(code)throw Error('Không đủ vàng, Honor, cấp độ hoặc đã hết lượt mua.');result={ok:true};
+   }else throw Error('Thao tác không hợp lệ.');
+  }
+  process.send?.({type:'alliance-war-ack',requestId:message.requestId,result});
+ }catch(error){process.send?.({type:'alliance-war-ack',requestId:message.requestId,error:error.message});}
+});
 const townPresence=require('./town-presence');let townRows=[],townProfileKey='',townProfile;
 function publishTown(){
  const sessions=loggedInClients().filter(s=>s.inTown&&Date.now()-(s.lastSeen||0)<60000),session=sessions[0];
@@ -548,6 +589,10 @@ net.createServer(client => {
       pushBosalt();
       LOG.c2s(cid, pk);
       const reqHex = hx(pk.id);
+      if((pk.id>>>0)===0x01816303){
+        if(session.authenticated){const r=new (require('./paket').O)(pk.payload),id=r.utf();if(alliancePlayback?.id===id)alliancePlayback=null;}
+        continue;
+      }
       if([0x01810200,0x01810201,0x01810202,0x01810205,0x01810206,0x01810207,0x01810209,0x0181020c,0x0181020e,0x01810211].includes(pk.id>>>0)){
         const d=durumMod.yukle();if(d.protectSeireitei && d.protectSeireitei.active){d.protectSeireitei.active=false;d.protectSeireitei.atDoor=false;durumMod.kaydet(d);}
       }

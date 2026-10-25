@@ -140,7 +140,6 @@ const OLAY_TETIK = {
   '0x01814240': 'girlfriendExchange', '0x01814242': 'girlfriendExchange',
   '0x01814401': 'diceSilver', '0x01816601': 'beautyGame', '0x01816602': 'beautyGame',
   '0x01810c00': 'autoJanken', '0x01810c01': 'autoJanken', '0x01814302': 'summon',
-  '0x01816103': 'allianceCampaign', '0x01816106': 'allianceCampaign', '0x01816105': 'allianceBattle',
 };
 // yakalanan gercek activity InitRet verisi (activityId hex -> payload Buffer)
 const ACT_INITRET = {};
