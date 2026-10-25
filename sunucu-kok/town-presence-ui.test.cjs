@@ -1,0 +1,15 @@
+'use strict';
+const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),vm=require('vm'),rules=require('./sunucu/town-presence');
+const root=path.join(__dirname,'cikarim/town-presence/verify/scripts');
+function method(file,name,globals={}){const source=fs.readFileSync(path.join(root,file),'utf8'),start=source.indexOf('function '+name+'('),brace=source.indexOf('{',start);let depth=1,end=brace+1;while(depth){if(source[end]==='{')depth++;if(source[end]==='}')depth--;end++;}const code=source.slice(start,end).replace(/\s+as\s+(?:Vector\.<[^>]+>|[\w.]+)/g,'').replace(/:\s*(?:Vector\.<[^>]+>|[\w.]+)/g,'');return vm.runInNewContext('('+code+')',{int:Number,uint:n=>n>>>0,Boolean,...globals});}
+function bytes(buffer){let p=0;return {readUnsignedShort(){const n=buffer.readUInt16BE(p);p+=2;return n;},readUnsignedInt(){const n=buffer.readUInt32BE(p);p+=4;return n;},readUnsignedByte(){return buffer.readUInt8(p++);},readInt(){const n=buffer.readInt32BE(p);p+=4;return n;},readByte(){return buffer.readInt8(p++);},get position(){return p;},utf(){const n=this.readUnsignedShort(),s=buffer.toString('utf8',p,p+n);p+=n;return s;}};}
+const main='Processors/Game/Lobby/MainSceneTwo/TProcessorMainScene.as';
+test('compiled player decoder reads every real actor and title in one batch without reusing the outer count/index',()=>{
+ const rows=Array.from({length:3},(_,i)=>({accountId:'a'+i,id0:1,id1:i+1,hero:11100005,name:'Real '+i,rank:40100001,level:30,quality:1,family:0,knife:0,pet:0,rebirth:0,titles:i===1?[]:[6003056,6003057],x:300+i,y:400})),packet=rules.add(rows),input=bytes(packet),out=[];const fn=method('Logics/Streamization/Characters/TUnstreamizerRoleCanControlTwo.as','UnstreamizationPerform_Properties',{SLogicsCore:{PoolMap:{AcquirePlayer:()=>({TitlesID:[]})}},TUtilityString:{FetchUTF:data=>data.utf()}});fn(input,out,null);assert.equal(out.length,3);assert.equal(input.position,packet.length);for(let i=0;i<3;i++){assert.equal(out[i].UserIDLow,i+1);assert.equal(out[i].Name,'Real '+i);assert.deepEqual(Array.from(out[i].TitlesID),rows[i].titles);}
+});
+test('compiled scene waits for map data before adding players and uses normal actor click handling after load',()=>{
+ const fn=method(main,'PacketPerform_SC_TOWN_NewRole');let added=0,mounted=0;const ctx={FMapDataLoadOver:false,FPlayerManager:{Players:[],AddPlayerByPacket(){added++;}},FMapSpriteMountPoint:{AddSpriteBatch(){mounted++;}}};fn.call(ctx,{});assert.equal(added,0);ctx.FMapDataLoadOver=true;fn.call(ctx,{});assert.equal(added,1);assert.equal(mounted,1);let clicked;method(main,'PlayerClicked').call({FShowHeroContorlPanle:(sender,actor)=>clicked=actor},{UserIDHigh:1,UserIDLow:9});assert.equal(clicked.UserIDLow,9);
+});
+test('compiled scene decodes authoritative initial positions instead of randomly respawning online peers',()=>{
+ const fn=method(main,'CreateCoordinateByBirthID'),coordinate={};for(const [x,y]of [[0,0],[123,456],[32767,32767]]){fn.call({},(0x80000000|(x<<15)|y)|0,coordinate);assert.equal(coordinate.X,x);assert.equal(coordinate.Y,y);}
+});

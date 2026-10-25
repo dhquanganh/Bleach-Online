@@ -290,6 +290,15 @@ process.on('message',message=>{if(message?.type!=='admin-item-mail')return;
 });
 const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
+const townPresence=require('./town-presence');let townRows=[],townProfileKey='',townProfile;
+function publishTown(){
+ const sessions=loggedInClients().filter(s=>s.inTown&&Date.now()-(s.lastSeen||0)<60000),session=sessions[0];
+ if(!session){process.send?.({type:'town-presence',online:false});return;}
+ try{const d=durumMod.yukle(),v=veri(),key=JSON.stringify({d,v,titles:require('./titles').equipped(d)});if(key!==townProfileKey){townProfile=require('./player-profile').snapshot(d,v);townProfileKey=key;}process.send?.({type:'town-presence',online:true,position:session.townPosition||null,profile:townProfile});}catch(error){process.send?.({type:'town-presence',online:false});console.error('[Town profile]',error.name);}
+}
+const townTimer=setInterval(publishTown,2000);townTimer.unref();
+process.on('message',message=>{if(message?.type!=='town-presence-roster')return;townRows=message.rows||[];require('./player-profile').updateTown(townRows);for(const session of loggedInClients())if(session.inTown)session.townSeen=townPresence.sync(session.townSeen||new Map(),townRows,session.send);});
+
 const illusion = require('./infinite-illusion');
 const illusionService = illusion.service();
 let illusionRefreshing=false;
@@ -475,7 +484,7 @@ net.createServer(client => {
   let illusionRequestQueue=Promise.resolve();
   CLIENTS.add(send);
   GAME_SESSIONS.add(session);
-  client.on('close', () => { CLIENTS.delete(send); GAME_SESSIONS.delete(session); });
+  client.on('close', () => { CLIENTS.delete(send); GAME_SESSIONS.delete(session); publishTown(); });
 
   // gercek sunucunun bu cevaptan ONCE gonderdigi ekstra paketler (or. gorev listeleri)
   function ekstralar(respId) {
@@ -542,6 +551,24 @@ net.createServer(client => {
       if([0x01810200,0x01810201,0x01810202,0x01810205,0x01810206,0x01810207,0x01810209,0x0181020c,0x0181020e,0x01810211].includes(pk.id>>>0)){
         const d=durumMod.yukle();if(d.protectSeireitei && d.protectSeireitei.active){d.protectSeireitei.active=false;d.protectSeireitei.atDoor=false;durumMod.kaydet(d);}
       }
+      session.lastSeen=Date.now();
+      if((pk.id>>>0)===0x01810200){
+        if(!session.authenticated)continue;
+        session.inTown=true;session.townSeen=new Map();session.townPosition=null;
+        send(townPresence.OP.ENTER,new (require('./paket').Y)().u32(0).u32(0).done(),'TOWN-enter');
+        session.townSeen=townPresence.sync(session.townSeen,townRows,send);publishTown();continue;
+      }
+      if((pk.id>>>0)===0x01810302){
+        if(session.authenticated&&session.inTown&&pk.payload.length===0){for(const row of (session.townSeen||new Map()).values())send(townPresence.OP.REMOVE,townPresence.remove(row),'TOWN-resync');session.townSeen=townPresence.sync(new Map(),townRows,send);}
+        continue;
+      }
+      if((pk.id>>>0)===0x01810300){
+        if(session.authenticated&&session.inTown&&pk.payload.length===4){const x=pk.payload.readInt16BE(0),y=pk.payload.readInt16BE(2);if(townPresence.position(x,y)){session.townPosition={x,y};publishTown();}}
+        continue;
+      }
+      if(session.inTown&&(pk.id>>>0)>=0x01810201&&(pk.id>>>0)<=0x01810220){session.inTown=false;session.townSeen=new Map();publishTown();}
+
+
 
       if (pk.id === 0x00000001) { continue; } // heartbeat
       if (IGNORE.has(pk.id >>> 0)) { LOG.note(cid, `ignore ${reqHex}`); continue; }

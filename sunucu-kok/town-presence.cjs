@@ -1,0 +1,9 @@
+'use strict';
+const rules=require('./sunucu/town-presence');
+function createPresence({runtimes,snapshot,now=Date.now,intervalMs=2000}){
+ const members=new Map(),lastSent=new WeakMap();let closed=false;
+ function publish(){if(closed)return [];const rows=[];for(const [id,m]of members){const rt=runtimes.get(id);if(rt!==m.rt||!rt.child.connected||rt.child.exitCode!==null&&rt.child.exitCode!==undefined||Number(rt.expiresAt)<=now()||now()-m.at>10000){members.delete(id);continue;}rows.push(m.row);}for(const [id,rt]of runtimes)if(rt.child.connected){try{const visible=rows.filter(r=>r.accountId!==id),key=JSON.stringify(visible);if(lastSent.get(rt)===key)continue;rt.child.send({type:'town-presence-roster',rows:visible},error=>{if(error)lastSent.delete(rt);});lastSent.set(rt,key);}catch(error){console.error('[Town presence]',error.name);}}return rows;}
+ function receive(id,rt,message){if(closed||runtimes.get(id)!==rt)return;if(message.online!==true){members.delete(id);return publish();}try{const files=snapshot(rt.dir),d=JSON.parse(files['oyuncu.json']||'{}'),v=JSON.parse(files['veri.json']||'{}'),row=rules.appearance(d,v),p=message.profile;if(!row||!p||p.id0!==row.id0||p.id1!==row.id1||typeof p.payload!=='string'||p.payload.length>1000000)throw Error('Invalid authenticated character');row.accountId=id;row.profile=p;if(message.position&&rules.position(message.position.x,message.position.y)){row.x=message.position.x;row.y=message.position.y;}members.set(id,{rt,row,at:now()});}catch(error){if(!(error instanceof SyntaxError))members.delete(id);console.error('[Town identity]',error.name);}return publish();}
+ const timer=intervalMs?setInterval(publish,intervalMs):null;timer?.unref();return {receive,publish,drop(id){members.delete(id);publish();},close(){clearInterval(timer);members.clear();publish();closed=true;}};
+}
+module.exports={createPresence};

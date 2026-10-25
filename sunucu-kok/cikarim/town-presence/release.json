@@ -1,0 +1,8 @@
+{
+  "version": "2026102516",
+  "classes": [
+    "Logics\\Streamization\\Characters\\TUnstreamizerRoleCanControlTwo.as",
+    "Processors\\Game\\Lobby\\MainSceneTwo\\TProcessorMainScene.as"
+  ],
+  "sha256": "b7b4a690e999c935d9150f61d9d834c0843afea856bb7025270b02efd7c739bf"
+}

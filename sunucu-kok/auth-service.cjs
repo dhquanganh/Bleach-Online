@@ -21,6 +21,7 @@ async function startAuth(port) {
   catch (error) { await client.close(); throw error; }
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
+  const townPresence=require('./town-presence.cjs').createPresence({runtimes,snapshot});
   const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot);
   const illusionBoard = require('./illusion-board.cjs').createBoard(db,{onUpdate(){
     for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
@@ -53,6 +54,7 @@ async function startAuth(port) {
   }
   async function stop(id) {
     const rt = runtimes.get(id); if (!rt) return;
+    townPresence.drop(id);
     if (rt.child.exitCode === null) { rt.child.kill(); await new Promise(resolve => { if (rt.child.exitCode !== null) return resolve(); rt.child.once('exit', resolve); }); }
     if (rt.saving) await rt.saving;
     await save(rt); runtimes.delete(id);
@@ -88,8 +90,10 @@ async function startAuth(port) {
       child.stderr.on('data', chunk => console.error('[account worker]', chunk.toString().slice(0, 1000)));
       const rt = { child, dir, accountId: user.account._id, gamePort, gameToken, token: user.token, expiresAt: user.session.expiresAt, savedHash: fs.readFileSync(syncFile, 'utf8') };
       runtimes.set(id, rt);
+      child.once('exit',()=>{if(runtimes.get(id)===rt)townPresence.drop(id);});
       child.on('message', message => {
         if(runtimes.get(id)!==rt)return;
+        if(message?.type==='town-presence'){townPresence.receive(id,rt,message);return;}
         if(message?.type==='illusion-request'){
           const respond=response=>{if(child.connected){try{child.send({type:'illusion-ack',id:message.id,...response},()=>{});}catch(error){console.error('[Boss ranking ack]',error.message);}}};
           try{
@@ -191,7 +195,7 @@ async function startAuth(port) {
   const timer = setInterval(() => { if (closing) return; for (const [id, rt] of runtimes) {
     serial(id, () => rt.expiresAt <= new Date() ? stop(id) : save(rt)).catch(e => console.error('[Mongo save]', e.code || e.name));
   } }, 2000);
-  async function close() { closing = true; clearInterval(timer); await arenaRoster.close(); await illusionBoard.close(); await ultimateBPRanking.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
+  async function close() { closing = true; clearInterval(timer); townPresence.close(); await arenaRoster.close(); await illusionBoard.close(); await ultimateBPRanking.close(); await Promise.all([...runtimes.keys()].map(id => serial(id, () => stop(id)))); await client.close(); }
   return { handle, close, db };
 }
 module.exports = { startAuth, cookieToken };

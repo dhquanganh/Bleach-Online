@@ -8,7 +8,7 @@
     '<h1 id="my-title" class="my-visually-hidden">MYOBOKU TRIAL</h1>' +
     '<button class="my-close" aria-label="Đóng">×</button><button class="my-help" aria-label="Hướng dẫn">?</button>' +
     '<div class="my-body"><div class="my-meta"><span>✦ Sự kiện đang mở</span><span>Lượt quay: <b>Không giới hạn</b></span></div>' +
-    '<div class="my-wheel"><div class="my-ring"></div><div class="my-prizes"></div><div class="my-pointer"></div><button class="my-start" aria-label="Quay 1 lần, tốn 1.000 vàng">START</button><div class="my-cost"><span class="my-coin"></span>1.000 vàng / lượt</div></div>' +
+    '<div class="my-wheel"><div class="my-ring"></div><div class="my-prizes"></div><div class="my-pointer"></div><button class="my-start" aria-label="Quay 1 lần, tốn 10.000 vàng">START</button><div class="my-cost"><span class="my-coin"></span>10.000 vàng / lượt</div></div>' +
     '<div class="my-bottom"><span class="my-gold"></span><label><input type="checkbox" class="my-skip"> Bỏ qua hiệu ứng</label></div>' +
     '<p class="my-message" role="status" aria-live="polite">Mỗi lượt quay nhận một phần thưởng.</p></div>' +
     '<nav aria-hidden="true"><div class="my-tab-trial"></div><div class="my-tab-wheel selected"></div></nav></section>' +
@@ -89,6 +89,9 @@
   }
   function render(d) {
     config = d; balance(d);
+    var price = Number(d.cost).toLocaleString('vi-VN');
+    host.querySelector('.my-cost').lastChild.textContent = price + ' v\u00e0ng / l\u01b0\u1ee3t';
+    start.setAttribute('aria-label', 'Quay 1 l\u1ea7n, t\u1ed1n ' + price + ' v\u00e0ng');
     var prizes = host.querySelector('.my-prizes'); prizes.textContent = '';
     d.rewards.forEach(function (r, i) {
       var cell = document.createElement('div'); cell.className = 'my-prize';
@@ -110,11 +113,11 @@
   window.openMyoboku = function () {
     return loadStyles().then(function () {
       host.hidden = false; host.style.display = 'flex'; if (busy) return; start.disabled = true; message.textContent = 'Đang tải phần thưởng…';
-      return api('').then(function (d) { render(d); message.textContent = 'Mỗi lượt 1.000 vàng · Phần thưởng chuyển thẳng vào túi.'; start.disabled = false; start.focus(); }).catch(function (e) { message.textContent = e.message; });
+      return api('').then(function (d) { render(d); message.textContent = 'Mỗi lượt 10.000 vàng · Phần thưởng chuyển thẳng vào túi.'; start.disabled = false; start.focus(); }).catch(function (e) { message.textContent = e.message; });
     }).catch(function (e) { if (typeof window.mesaj === 'function') window.mesaj(e.message, 5000); else console.error(e.message); });
   };
   host.querySelector('.my-close').onclick = close;
-  host.querySelector('.my-help').onclick = function () { message.textContent = 'Mỗi lượt tốn 1.000 vàng, không giới hạn lượt. Rê chuột lên ô để xem thưởng và tỉ lệ. Thưởng được lưu ngay vào túi.'; };
+  host.querySelector('.my-help').onclick = function () { message.textContent = 'Mỗi lượt tốn 10.000 vàng, không giới hạn lượt. Rê chuột lên ô để xem thưởng và tỉ lệ. Thưởng được lưu ngay vào túi.'; };
   document.addEventListener('keydown', function (e) { if (!host.hidden && e.key === 'Escape') { if (!rewardPopup.hidden) rewardOk.click(); else close(); } });
   start.onclick = function () {
     if (busy || !config || !rewardPopup.hidden) return; busy = true; start.disabled = true; message.textContent = 'Đang quay…';

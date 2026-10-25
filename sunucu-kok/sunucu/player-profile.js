@@ -2,7 +2,7 @@
 // Only public character data is distributed between account workers.
 const {Y,tablo}=require('./paket');
 const levels=require('./seviye'),equipment=require('./ekipman'),heroes=require('./herolar');
-const profiles=new Map(),achievements=new Map();
+const profiles=new Map(),achievements=new Map(),townProfiles=new Map(),townAchievements=new Map();
 const key=(hi,lo)=>`${hi>>>0}:${lo>>>0}`;
 
 function snapshot(state,account=levels.veriOku()) {
@@ -47,7 +47,7 @@ function inspect({payload,durum}){
   if(hi===(durum.roleIdHi>>>0)&&lo===(durum.roleIdLo>>>0)){
     const profile=snapshot(durum);return profile?Buffer.from(profile.payload,'base64'):new Y().u32(1).done();
   }
-  const profile=profiles.get(key(hi,lo));
+  const profile=townProfiles.get(key(hi,lo))||profiles.get(key(hi,lo));
   return profile?Buffer.from(profile,'base64'):new Y().u32(1).done();
 }
 module.exports={snapshot,update,inspect};
@@ -56,5 +56,7 @@ module.exports.achievement=function({payload,durum}){
  const {Y}=require('./paket');if(payload?.length!==8)return new Y().u32(4).done();
  const hi=payload.readUInt32BE(0),lo=payload.readUInt32BE(4);
  if(hi===(durum.roleIdHi>>>0)&&lo===(durum.roleIdLo>>>0))return new Y().u32(0).utf(durum.karakter?.nick||durum.nick||'').raw(require('./title-achievements').info(durum)).done();
- const data=achievements.get(key(hi,lo));return data?Buffer.from(data,'base64'):new Y().u32(4).done();
+ const data=townAchievements.get(key(hi,lo))||achievements.get(key(hi,lo));return data?Buffer.from(data,'base64'):new Y().u32(4).done();
 };
+
+module.exports.updateTown=function(rows){townProfiles.clear();townAchievements.clear();for(const r of rows||[]){const p=r.profile;if(p&&p.id0===r.id0&&p.id1===r.id1&&typeof p.payload==='string'){townProfiles.set(key(r.id0,r.id1),p.payload);if(typeof p.achievementPayload==='string')townAchievements.set(key(r.id0,r.id1),p.achievementPayload);}}};
