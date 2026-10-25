@@ -1,0 +1,21 @@
+package _00000001_fla
+{
+   import flash.display.MovieClip;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol369")]
+   public dynamic class btn_sUp_71 extends MovieClip
+   {
+      
+      public function btn_sUp_71()
+      {
+         super();
+         addFrameScript(0,this.frame1);
+      }
+      
+      internal function frame1() : *
+      {
+         stop();
+      }
+   }
+}
+

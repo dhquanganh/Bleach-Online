@@ -315,7 +315,7 @@
             <div id="empty" class="empty">Chọn một tài khoản để quản lý.</div>
             <section class="card" style="margin-bottom:22px">
                 <h2>Anniversary Feast · Hot Sale</h2>
-                <p class="note">Cấu hình chung cho mọi tài khoản. Tướng hiển thị và tướng nhận khi đổi điểm sẽ dùng cùng
+                <p class="note">Cấu hình lưu trong MongoDB, dùng chung cho mọi tài khoản. Tướng hiển thị và tướng nhận khi đổi điểm sẽ dùng cùng
                     cấu hình này. Mở lại cửa sổ sự kiện để cập nhật.</p>
                 <form id="feastForm"><label for="feastSearch">Tìm tướng theo tên hoặc ID</label><input id="feastSearch"
                         type="search" placeholder="Tìm tướng…"><label for="feastHero">Tướng Hot Sale</label><select
@@ -324,6 +324,20 @@
                     <p id="feastCurrent" class="note"></p><button id="feastSave" type="submit" disabled>Lưu Hot
                         Sale</button> <button id="feastReload" class="secondary" type="button">Tải lại Hot Sale</button>
                     <p id="feastStatus" class="note" role="status"></p>
+                </form>
+            </section>
+            <section class="card" style="margin-bottom:22px">
+                <h2>Myoboku Trial · Vòng quay</h2>
+                <p class="note">Lưu phần thưởng trong MongoDB, dùng chung mọi tài khoản. 1.000 vàng/lượt, không giới hạn lượt. Trọng số 1 cho tất cả ô = mỗi ô 12,5%. Mở lại event trong game sau khi lưu.</p>
+                <form id="myobokuForm">
+                    <label for="myobokuSearch">Tìm vật phẩm để thay cho ô đang chọn</label>
+                    <input id="myobokuSearch" type="search" placeholder="Nhập tên hoặc ID vật phẩm…">
+                    <select id="myobokuItems" aria-label="Kết quả tìm vật phẩm"></select>
+                    <button id="myobokuUse" type="button" class="secondary">Dùng vật phẩm cho ô đã chọn</button>
+                    <div id="myobokuRows"></div>
+                    <button id="myobokuSave" type="submit" disabled>Lưu phần thưởng</button>
+                    <button id="myobokuReload" type="button" class="secondary">Tải lại</button>
+                    <p id="myobokuStatus" class="note" role="status"></p>
                 </form>
             </section>
             <section class="card" style="margin-bottom:22px">
@@ -460,6 +474,39 @@
             finally { voidBusy = false; ['voidBossSave', 'voidBossReload', 'voidBossSearch', 'voidBossChoice'].concat(voidStatKeys.map(function(k) { return 'voidStat_'+k })).forEach(function (id) { el(id).disabled = false }); loadVoidBoss(false) }
         };
         loadVoidBoss(true);
+        var myobokuConfig, myobokuBusy = false, myobokuTimer, myobokuSearchSeq = 0;
+        function renderMyoboku(data) {
+            myobokuConfig = data; el('myobokuRows').textContent = '';
+            data.rewards.forEach(function (r, i) {
+                var row = document.createElement('div'); row.style.cssText = 'display:flex;gap:10px;align-items:center;margin:12px 0;flex-wrap:wrap';
+                var radio = document.createElement('input'); radio.type = 'radio'; radio.name = 'myobokuSlot'; radio.value = i; radio.checked = i === 0;
+                var label = document.createElement('label'); label.appendChild(radio); label.appendChild(document.createTextNode(' Ô ' + (i + 1))); row.appendChild(label);
+                [['itemId','ID vật phẩm',2147483647],['amount','Số lượng',32767],['weight','Trọng số',1000000]].forEach(function (field) {
+                    var wrap = document.createElement('label'); wrap.textContent = field[1] + ' ';
+                    var input = document.createElement('input'); input.type = 'number'; input.min = 1; input.max = field[2]; input.step = 1; input.required = true; input.value = r[field[0]]; input.dataset.field = field[0]; input.style.width = field[0] === 'itemId' ? '130px' : '95px'; wrap.appendChild(input); row.appendChild(wrap);
+                }); el('myobokuRows').appendChild(row);
+            }); el('myobokuSave').disabled = false;
+        }
+        async function loadMyoboku() { if (myobokuBusy) return; try { renderMyoboku(await api('myoboku')); el('myobokuStatus').textContent = 'Đã tải cấu hình.'; } catch(e) { el('myobokuStatus').textContent = e.message; } }
+        el('myobokuReload').onclick = loadMyoboku;
+        el('myobokuSearch').oninput = function () {
+            clearTimeout(myobokuTimer); var sequence = ++myobokuSearchSeq;
+            myobokuTimer = setTimeout(async function () {
+                try { var data = await api('items?q=' + encodeURIComponent(el('myobokuSearch').value)); if(sequence !== myobokuSearchSeq) return;
+                    el('myobokuItems').textContent = ''; data.items.forEach(function (item) { el('myobokuItems').add(new Option(item.name + ' · #' + item.id, item.id)); });
+                } catch(e) { el('myobokuStatus').textContent = e.message; }
+            }, 200);
+        };
+        el('myobokuUse').onclick = function () { var selected = document.querySelector('input[name="myobokuSlot"]:checked'); if(selected && el('myobokuItems').value) el('myobokuRows').children[Number(selected.value)].querySelector('[data-field="itemId"]').value = el('myobokuItems').value; };
+        el('myobokuForm').onsubmit = async function (event) {
+            event.preventDefault(); if(myobokuBusy || !myobokuConfig) return;
+            var rewards = Array.from(el('myobokuRows').children).map(function(row) { var r = {}; row.querySelectorAll('[data-field]').forEach(function(input) { r[input.dataset.field] = Number(input.value); }); return r; });
+            myobokuBusy = true; el('myobokuSave').disabled = true; el('myobokuReload').disabled = true;
+            try { renderMyoboku(await api('myoboku','PATCH',{revision:myobokuConfig.revision,rewards:rewards})); el('myobokuStatus').textContent = 'Đã lưu phần thưởng vào MongoDB.'; }
+            catch(e) { el('myobokuStatus').textContent = e.message; }
+            finally { myobokuBusy = false; el('myobokuSave').disabled = false; el('myobokuReload').disabled = false; }
+        };
+        loadMyoboku();
     </script>
 </body>
 

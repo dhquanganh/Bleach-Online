@@ -232,9 +232,9 @@ function status(unit, field) {
   if(field==='disarm'&&require('./gaara-combat').active(unit,'gaaraBlindUntil'))return true;
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
-  if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition)&&b.remaining>0))return true;
+  if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
   const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -378,7 +378,7 @@ function startRound(units) {
     const records=[];
     for(const buff of [...unit.skillBuffs||[]]){
       if(buff.kind==='regen')restore(unit,unit,buff.amount,records);
-      else if(buff.kind==='dot'&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
+      else if(buff.kind==='dot'&&!buff.ntcIgnition&&!status(unit,'invincible')&&!require('./hashirama-combat').fireImmune(unit,buff,null)){
         let damage=Math.min(unit.hp,Math.max(0,Math.round(buff.mechaIgnition&&unit.mechaContext?require('./mecha-combat').ignitionDamage(unit.mechaContext.teams.flat().find(v=>v.id===buff.source&&(buff.sourceCamp==null||v.camp===buff.sourceCamp))||unit,unit):buff.amount)));
         unit.hp-=damage;records.push(hpRecord(unit,damage,false));
         if(unit.tsunadeContext){const source=unit.tsunadeContext.teams.flat().find(u=>u.id===buff.source&&(buff.sourceCamp==null||u.camp===buff.sourceCamp));require('./tsunade-combat').onDamage(unit.tsunadeContext,source,unit,{damage},buff,records);}

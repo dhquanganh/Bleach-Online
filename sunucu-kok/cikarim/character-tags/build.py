@@ -48,7 +48,7 @@ def profile_patch(before, runtime):
 
 def main():
     public = c.h.PUBLIC
-    configs = [json.loads((ROOT/('sunucu/'+name+'.json')).read_text()) for name in ['itachi-rtn', 'mecha-naruto', 'sasuke-shinden', 'obito-rage', 'gaara-swimsuit', 'hashirama-final', 'pain-tendo', 'naruto-sage', 'nagato-frog', 'tsunade-asian']]
+    configs = [json.loads((ROOT/('sunucu/'+name+'.json')).read_text()) for name in ['itachi-rtn', 'mecha-naruto', 'sasuke-shinden', 'obito-rage', 'gaara-swimsuit', 'hashirama-final', 'pain-tendo', 'naruto-sage', 'nagato-frog', 'tsunade-asian', 'naruto-nine-tails']]
     assets = ROOT.parent/'asset/All_Character_Tag_Assets'
     definitions = {t['id']: t for t in json.loads((assets/'tags.json').read_text(encoding='utf-8'))}
     ids = list(dict.fromkeys(i for cfg in configs for i in cfg['tags']))

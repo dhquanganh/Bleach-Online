@@ -44,9 +44,11 @@ source='''package {
     if(current!=phase){phase=current;label.text="Small Katsuyu native asset | phase "+phase+" | three summons per camp";
      for each(a in actors){
       if(phase==0||phase==5)spawn(a);
+      if(phase==0){a.FTextureSkill=null;}
       if(phase==4)a.PlaySmallKatsuyuPose(true,function(t:uint):void{deathCallbacks++;},7);
       if(phase==6){a.PlaySmallKatsuyuPose(true,function(t:uint):void{staleCallbacks++;},8);}
      }
+     if(phase==0)setTimeout(function():void{for each(var a:SmallActor in actors){check(a.FSmallKatsuyuStarted>=0,"entry waits for delayed texture");a.FTextureSkill={Count:2,GetAnimationSequenceByIndex:function(index:int):Object{return sequence(index==0?"entry":"dead");}};}report("LATE_TEXTURE_OK six pending entries");},200);
      if(phase==6)setTimeout(function():void{for each(var a:SmallActor in actors)spawn(a);},200);
      if(phase==7){check(deathCallbacks==6,"death callbacks exactly once");check(staleCallbacks==0,"respawn cancelled old death callbacks");for each(a in actors)check(a.visible&&a.alpha==1&&!a.FIsDie,"respawn visibility");report("RESTORE_OK six summons; cancelled death callback; source entry/idle restored");}
      if(phase==8){a=actors[0];a.PlaySmallKatsuyuPose(true,function(t:uint):void{staleCallbacks++;},9);removeChild(a);addChild(a);spawn(a);}

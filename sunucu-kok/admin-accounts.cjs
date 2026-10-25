@@ -67,6 +67,13 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
   return async function handle(req,res,pathname,user,json) {
     if (user.account.role !== 'admin') { json(403,{error:'Cần tài khoản admin.'}); return; }
     try {
+      if(pathname==='/auth/admin/myoboku'){
+        const config=require('./sunucu/myoboku-config');
+        if(req.method==='GET'){await serial('myoboku',async()=>json(200,await config.readDatabase(db)));return;}
+        if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
+        const data=await body(req);
+        await serial('myoboku',async()=>json(200,await config.writeDatabase(db,data)));return;
+      }
       if(pathname==='/auth/admin/void-region'){
         const config=require('./sunucu/void-region-config');
         if(req.method==='GET'){const q=(new URL(req.url||pathname,'http://localhost').searchParams.get('q')||'').trim().toLowerCase(),current=config.view();json(200,{config:current,bosses:config.catalog().filter(e=>e.id===current.enemyId||e.name.toLowerCase().includes(q)||String(e.id).includes(q)).sort((a,b)=>(b.id===current.enemyId)-(a.id===current.enemyId)||(b.source==='naruto')-(a.source==='naruto')||a.name.localeCompare(b.name)).slice(0,80)});return;}
@@ -77,12 +84,12 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot }) {
       }
       if(pathname==='/auth/admin/anniversary-feast'){
         const config=require('./sunucu/anniversary-feast-config');
-        if(req.method==='GET'){json(200,config.read());return;}
+        if(req.method==='GET'){await serial('anniversary-feast',async()=>json(200,await config.readDatabase(db)));return;}
         if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
         const data=await body(req);
         if(!data||!heroes().some(h=>h.id===data.heroId))fail(400,'Chọn tướng hợp lệ trong danh sách.');
         integer(data.price,1,2147483647,'Giá điểm');integer(data.revision,1,2147483646,'Phiên bản');
-        await serial('anniversary-feast',async()=>{const result=config.write(data,data.revision);json(200,result);});return;
+        await serial('anniversary-feast',async()=>{const result=await config.writeDatabase(db,data,data.revision);json(200,result);});return;
       }
       if (pathname === '/auth/admin/heroes' && req.method === 'GET') { json(200,{heroes:heroes()});return; }
       if (pathname === '/auth/admin/items' && req.method === 'GET') {

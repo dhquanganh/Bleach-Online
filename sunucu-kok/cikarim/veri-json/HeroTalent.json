@@ -1068,5 +1068,10 @@
     "id": "00C9BC80",
     "talentName": "Reserve Seal / The Legendary Sannin / Giant Katsuyu",
     "talentDesc": "Reserve Seal: immune to Debuffs. Physical damage to Tsunade has a 45% chance (75% after revival) to cause Chaos and Weakness for 1 round. First defeat revives at 100% max HP, once per battle. Legendary Sannin: Konoha-tagged allies receiving extra Standards grant Tsunade an extra Standard, at most 3 per round. While alive, the first Mystery damage received by each other Konoha-tagged ally each round cannot defeat them. Giant Katsuyu heals up to 9 allies for 25% Physical DEF and cleanses all Debuffs at the end of rounds 1, 2 and 3; after revival, becomes a selectable allied-target Mystery instead. After revival, before each Mystery summon 3 Small Katsuyu, each with 15% of Tsunade max HP; their Standard or fatal damage heals a random ally and restores the team Chakra Limit to 100. All attack damage is physical, scales with Physical ATK and is mitigated by Physical DEF."
+  },
+  {
+    "id": "00C9BC82",
+    "talentName": "Tailed Beast Coat / Tailed Beast Chakra - Wars",
+    "talentDesc": "Tailed Beast Coat: When causing Taijutsu damage against Naruto, the attacker will suffer Ignition. Tailed Beast Chakra - Wars: Before each round's action, recover Life based on own Physical ATK attributes. Immune to all Debuffs. Ignition: Units affected cannot receive Healings and suffer damage at the end of the round. Lasts for 1 round."
   }
 ]

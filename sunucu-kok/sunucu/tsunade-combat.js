@@ -119,7 +119,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
  frame.targets.push(...records);
 }
 function revivals(ctx){const out=[];for(const u of ctx.teams.flat()){
- if(!isTsunade(u)||u.hp>0||u.tsunadeRevived||u.itachiUnrevivable)continue;
+ if(!isTsunade(u)||u.hp>0||u.tsunadeRevived||u.noRevive||u.itachiUnrevivable)continue;
  u.tsunadeRevived=true;u.hp=Math.max(1,u.maxHp);const records=[];cleanseAll(u,records);
  records.push(skills().hpRecord(u,-u.hp,false));label(records,u,6,100);
  out.push({unit:u,records,animation:config.revival});

@@ -1,0 +1,45 @@
+{
+  "revision": 6,
+  "rewards": [
+    {
+      "itemId": 14900001,
+      "amount": 10,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 20,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 30,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 50,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 80,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 100,
+      "weight": 1
+    },
+    {
+      "itemId": 14900001,
+      "amount": 150,
+      "weight": 1
+    },
+    {
+      "itemId": 14140994,
+      "amount": 1,
+      "weight": 10
+    }
+  ]
+}

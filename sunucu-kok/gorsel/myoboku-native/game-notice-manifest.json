@@ -1,0 +1,30 @@
+[
+  {
+    "file": "game-notice.png",
+    "source": "sunucu-kok\\kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Swf\\Common\\00000000.swf",
+    "sourceSha256": "dc909aef289a49fd4bfecd1f7e0e6334cec45afa6725d98333ef84bc2b558ffb",
+    "symbol": "MC_Information",
+    "sha256": "81a8716e68de630258503d3365e15e64d7f5a4f7b707a0fd38b2152b5d490c1a"
+  },
+  {
+    "file": "game-notice-button.png",
+    "source": "sunucu-kok\\kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Swf\\Common\\00000000.swf",
+    "sourceSha256": "dc909aef289a49fd4bfecd1f7e0e6334cec45afa6725d98333ef84bc2b558ffb",
+    "symbol": "Btn_Ok",
+    "sha256": "c7b0ebb941a43ad4ec2b9950c82f5454cad7351c6be5b08eb330102378640548"
+  },
+  {
+    "file": "game-notice-button-hover.png",
+    "source": "sunucu-kok\\kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Swf\\Common\\00000000.swf",
+    "sourceSha256": "dc909aef289a49fd4bfecd1f7e0e6334cec45afa6725d98333ef84bc2b558ffb",
+    "symbol": "Btn_Ok",
+    "sha256": "0979fa541eb927155cdc1e538b8deaa1b72fba3768903099ed009841f6330ec2"
+  },
+  {
+    "file": "game-item-slot.png",
+    "source": "sunucu-kok\\kaynak\\login.gogames.me\\public\\2017112917\\Resources\\Swf\\Common\\00000000.swf",
+    "sourceSha256": "dc909aef289a49fd4bfecd1f7e0e6334cec45afa6725d98333ef84bc2b558ffb",
+    "symbol": "138",
+    "sha256": "fa71a9a51689c8d891938ec1949f83d15a38747b42fafdeaa32e65bc85fb08be"
+  }
+]

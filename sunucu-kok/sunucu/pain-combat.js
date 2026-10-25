@@ -109,7 +109,7 @@ function roundStart(ctx){
 function revivals(ctx){
   const out=[];
   for(const u of ctx.teams.flat()){
-    if(!isPain(u)||u.hp>0||u.itachiUnrevivable)continue;
+    if(!isPain(u)||u.hp>0||u.noRevive||u.itachiUnrevivable)continue;
     const records=[];
     if(!u.painFinal){
       u.painFinal=true;u.hp=u.maxHp;u.painDamageStacks=0;u.painInitiativeStacks=0;

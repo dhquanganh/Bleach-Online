@@ -1,0 +1,51 @@
+      private static var FNineTailsNative:Object={};
+      private static function PreloadNineTailsNative() : void {
+         if(FNineTailsNative.domain!=null || FNineTailsNative.loading)return;
+         FNineTailsNative.loading=true;
+         var loader:Loader=new Loader();FNineTailsNative.loader=loader;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{
+            FNineTailsNative.domain=loader.contentLoaderInfo.applicationDomain;FNineTailsNative.loading=false;
+            if(loader.content is MovieClip)MovieClip(loader.content).stop();
+         });
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void{FNineTailsNative.loading=false;});
+         loader.load(new URLRequest("/public/nine-tails-vfx/native-v2/rasengan.swf"),new flash.system.LoaderContext(false,new flash.system.ApplicationDomain()));
+      }
+      private function NineTailsRasenganTravel() : Point {
+         var motion:Object=NineTailsVfxManifest().actorMotion["13121701"];
+         var root:Number=Number(motion.roots[Math.min(Math.max(0,FFrameIndex),motion.roots.length-1)]);
+         var contact:Point=new Point(440,0);
+         if(FTargets!=null && FResults!=null)for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp!=Camp && FResults[i].CMD==1){contact=globalToLocal(FTargets[i].localToGlobal(new Point()));break;}
+         var desired:Number=contact.x-85;var applied:Number=root*desired/387;
+         var phase:Number=Math.max(0,Math.min(1,root/387));
+         return new Point(applied-root,contact.y*phase);
+      }
+      private function PlayNineTailsNativeRasengan(symbol:String,delay:int=0) : void {
+         var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         PreloadNineTailsNative();
+         var layer:Sprite=new Sprite();layer.name="nineTailsSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         host.addChild(layer);FNineTailsActiveVfx.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var last:int=-1;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null && event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=13121701){clear();return;}
+            var elapsed:int=caster.FFrameIndex-delay;
+            if(elapsed<0){layer.visible=false;return;}
+            if(FNineTailsNative.domain==null){layer.visible=false;return;}
+            if(clip==null){var type:Class=FNineTailsNative.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            var frame:int=Math.round(elapsed*24/25)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
+            if(symbol=="zlxw"){
+               var travel:Point=caster.NineTailsRasenganTravel();var point:Point=host.globalToLocal(caster.localToGlobal(new Point(70+travel.x,travel.y)));
+               layer.x=point.x;layer.y=point.y;layer.scaleX=caster.scaleX<0?-1:1;
+            }else{
+               var view:Rectangle=new Rectangle(-112.4,230.8,1529.1,370);
+               var tl:Point=host.globalToLocal(host.stage.localToGlobal(new Point()));
+               var br:Point=host.globalToLocal(host.stage.localToGlobal(new Point(host.stage.stageWidth,host.stage.stageHeight)));
+               var sw:Number=br.x-tl.x;var sh:Number=br.y-tl.y;var fit:Number=sw/view.width;
+               clip.scaleX=fit;clip.scaleY=fit;clip.x=sw*.5-(view.x+view.width/2)*fit;clip.y=sh*.4-(view.y+view.height/2)*fit;
+               layer.x=tl.x;layer.y=tl.y;layer.scrollRect=new Rectangle(0,0,sw,sh);
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

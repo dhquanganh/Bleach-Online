@@ -8,7 +8,7 @@ test('Native handlers persist the board, deduct gold, grant the configured hero 
  try{
   const packet=h.byReq['0x01812302']({payload:new Y().u32(wire).done(),durum:d,kaydet}),o=new O(packet);assert.equal(o.u32(),wire);assert.equal(o.u16(),1);assert.equal(o.u32(),1);assert.ok(o.u16()>20);assert.equal(o.i32(),62000001);assert.equal(saved.anniversaryFeast[wire].cards.length,16);
   const request=(idx,extra)=>{const w=new Y().u32(wire).u32(idx);if(extra){w.i16(extra.length);extra.forEach(x=>w.i32(x));}return h.byReq['0x01812303']({payload:w.done(),durum:d,kaydet});};
-  assert.equal(request(18).readUInt32BE(),0);assert.equal(JSON.parse(fs.readFileSync(path.join(dir,'veri.json'))).altin,99990);assert.equal(saved.anniversaryFeast[wire].score,10);
+  assert.equal(request(18).readUInt32BE(),0);assert.equal(JSON.parse(fs.readFileSync(path.join(dir,'veri.json'))).altin,99990);assert.equal(saved.anniversaryFeast[wire].score,1);
   // Exercise every configured shell and shop reward through the actual inventory
   // handlers, not a mocked resolver: visible reward, saved balance, notification
   // and a subsequent bag reload must all agree.

@@ -1,0 +1,9 @@
+{
+ "heroId":11120994,"name":"Naruto [Nine-Tails Chakra]","assess":"S+","quality":5,"tags":[27,52,1,13,47,58],
+ "mystery":{"id":13121701,"name":"Tornado Rasengan!","prompt":true,"consumesPrimary":false,"attackStat":"atk","damageType":"physical","target":1,"multiplier":1.8,"combo":1,"causes":"repulse","ntcMystery":true,"cooldown":2,"battlefieldCooldown":1,"chakraCost":40},
+ "standard":{"id":13121702,"name":"Taijutsu Attack","attackStat":"atk","damageType":"physical","target":"front","multiplier":1,"combo":1,"cooldown":0,"ntcStandard":true},
+ "comboStandard":{"id":13121704,"name":"Taijutsu Attack - 3 COMBO","attackStat":"atk","damageType":"physical","target":"front","multiplier":1,"combo":3,"causes":"lowFloat","ntcStandard":true,"ntcIgnition":true,"cooldown":0},
+ "healing":{"id":13121706,"name":"Tailed Beast Chakra - Wars","support":true,"multiplier":0,"cooldown":0},
+ "chases":[],"comboChance":0.6,"healRatio":0.2,"splashMultiplier":0.5,"ignitionMultiplier":0.3,
+ "balanceNote":"Screenshot does not specify damage/healing coefficients or chance. Local tuning: Mystery 1.8 ATK, standard 1.0 ATK total, 60% three-hit combo, rear-row splash 0.5 ATK, Ignition 0.3 ATK, round-start healing 20% current Physical ATK. All damage is physical versus Physical DEF. Ignition blocks healing and ticks at round end for one round."
+}

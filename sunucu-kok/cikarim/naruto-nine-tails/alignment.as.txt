@@ -1,0 +1,51 @@
+      private function NineTailsStrikePose(frame:TAnimationFrame) : void {
+         if(FId!=11120994 || frame==null || stage==null || FTargets==null || FResults==null)return;
+         var motion:Object=NineTailsVfxManifest().actorMotion[String(FSkillId)];if(motion==null)return;
+         var enemy:TRole=null;
+         for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp!=Camp && FResults[i].CMD==1){enemy=FTargets[i];break;}
+         if(enemy==null)return;
+         var contact:Point=globalToLocal(enemy.localToGlobal(new Point()));
+         var dx:Number=contact.x-(contact.x<0?-85:85);var phase:Number;
+         if(FFrameIndex<=motion.first){phase=Math.max(0,Math.min(1,(FFrameIndex-motion.start)/Math.max(1,motion.first-motion.start)));}
+         else if(FFrameIndex<=motion.last){phase=1;}
+         else{phase=Math.max(0,Math.min(1,(motion.end-FFrameIndex)/Math.max(1,motion.end-motion.last)));}
+         phase=phase*phase*(3-2*phase);
+         FBitmap.x=-frame.Pivot.X+dx*phase;FBitmap.y=-frame.Pivot.Y+contact.y*phase;
+      }
+
+      private function ShowNineTailsVfx(skill:int) : void {
+         var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         var origin:Point=host.globalToLocal(localToGlobal(new Point()));var targets:Array=[];var seen:Object={};
+         if(FTargets!=null && FResults!=null)for(var i:int=0;i<FTargets.length && i<FResults.length;i++){
+            var enemy:TRole=FTargets[i];if(enemy==null || enemy.Camp==Camp || FResults[i].CMD!=1)continue;
+            var key:String=enemy.Camp+"_"+enemy.Pos;if(seen[key])continue;seen[key]=true;
+            targets.push(host.globalToLocal(enemy.localToGlobal(new Point())));
+         }
+         var unit:Number=Math.min(stage.stageWidth/1250,stage.stageHeight/650);
+         var manifest:Object=NineTailsVfxManifest();var mirrored:Boolean=scaleX<0;var clip:Object;
+         var at:Point;var point:Point;
+         if(skill==13121706){
+            clip=manifest.clips["MRzy-29"];
+            PlayNineTailsVfxAsset("MRzy-29",host,origin,330*unit,330*unit*clip.height/clip.width,0,mirrored,true);
+            return;
+         }
+         if(targets.length==0)return;
+         if(skill==13121701){
+            at=Point(targets[0]).clone();at.y-=85*unit;
+            clip=manifest.clips["1nrv_luoxuanwan-393"];
+            PlayNineTailsVfxAsset("1nrv_luoxuanwan-393",host,at,1000*unit,1000*unit*clip.height/clip.width,0,mirrored);
+            clip=manifest.clips["1nrv_luoxuanwan-502"];
+            point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth/2,stage.stageHeight*.42)));
+            PlayNineTailsVfxAsset("1nrv_luoxuanwan-502",host,point,800*unit,800*unit*clip.height/clip.width,0,mirrored);
+            for(i=1;i<targets.length;i++){at=Point(targets[i]).clone();at.y-=75*unit;clip=manifest.clips["1nrvDaji_lizi_quan-170"];PlayNineTailsVfxAsset("1nrvDaji_lizi_quan-170",host,at,250*unit,250*unit*clip.height/clip.width,84*40,mirrored);}
+            return;
+         }
+         var motion:Object=manifest.actorMotion[String(skill)];if(motion==null)return;
+         for each(point in targets){
+            at=point.clone();at.y-=80*unit;clip=manifest.clips["1nrvDaji_lizi_quan-170"];
+            for each(var hit:int in motion.hits)PlayNineTailsVfxAsset("1nrvDaji_lizi_quan-170",host,at,270*unit,270*unit*clip.height/clip.width,Math.max(0,hit-2)*40,mirrored);
+            clip=manifest.clips["1nrvDaji_lizi_quan-169"];
+            PlayNineTailsVfxAsset("1nrvDaji_lizi_quan-169",host,at,230*unit,230*unit*clip.height/clip.width,Math.max(0,motion.last-3)*40,mirrored);
+            if(skill==13121704){clip=manifest.clips["1nrvDaji_lizi_quan-148"];PlayNineTailsVfxAsset("1nrvDaji_lizi_quan-148",host,at,240*unit,240*unit*clip.height/clip.width,Math.max(0,motion.last-4)*40,mirrored);}
+         }
+      }

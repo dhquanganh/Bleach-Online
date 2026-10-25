@@ -1,11 +1,12 @@
-TEXTURE run frames=4
-TEXTURE dead frames=33
 TEXTURE idle frames=42
 TEXTURE entry frames=12
+TEXTURE dead frames=33
+TEXTURE run frames=4
 TEXTURE standard frames=33
 TEXTURE hit frames=7
 TEXTURE healing frames=38
 CASE six original Katsuyu, both camps
+LATE_TEXTURE_OK six pending entries
 SNAPSHOT katsuyu-phase-0
 SNAPSHOT katsuyu-phase-1
 SNAPSHOT katsuyu-phase-2

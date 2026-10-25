@@ -17,6 +17,8 @@ function available(port) { return new Promise(resolve => { const s = net.createS
 async function startAuth(port) {
   const { client, db } = await connect();
   if (!await db.collection('accounts').findOne({ username: 'admin' })) { await client.close(); throw new Error('Run node sunucu-kok/migrate-mongo.cjs first'); }
+  try { await require('./sunucu/anniversary-feast-config').readDatabase(db); await require('./sunucu/myoboku-config').readDatabase(db); }
+  catch (error) { await client.close(); throw error; }
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
   const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot);

@@ -1,0 +1,9 @@
+TEXTURE profile frames=34
+CASE fixed-first-pivot partner idle, 34 frames
+SNAPSHOT profile-idle-0
+SNAPSHOT profile-idle-8
+SNAPSHOT profile-idle-16
+SNAPSHOT profile-idle-24
+SNAPSHOT profile-idle-32
+SNAPSHOT profile-idle-33
+DONE profile idle; checked=34 remaining=0

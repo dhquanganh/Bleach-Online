@@ -1,0 +1,122 @@
+[
+  {
+    "file": "panel.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 38,
+    "sha256": "74bc24b26611b6762ea9b85764e6258a9364eb920da06b080dc7dc1651be3cf2"
+  },
+  {
+    "file": "wheel.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 122,
+    "sha256": "05dc2a4cccf3fa7af3679d1ef9a3bd3b19da431d7d56d214953f8d3fa95e4627"
+  },
+  {
+    "file": "pointer.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 133,
+    "sha256": "7253f68d38cbd70f6bb08ab71b05c3691512d900b51c89e18039470706b5d785"
+  },
+  {
+    "file": "start.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 170,
+    "sha256": "fa97767897a7978bbf4a670e2787c48e3d9daa6b8809a1fbf66113f783baa70f"
+  },
+  {
+    "file": "start-hover.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 172,
+    "sha256": "7a3defe29356d52304f50889028d74747a36f8f789227edc3863f425d1f6659b"
+  },
+  {
+    "file": "start-disabled.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 174,
+    "sha256": "de23a0bcf451fa79fe345ae6159263bcf1c9a127ff6a623b3b2b2d3212cec819"
+  },
+  {
+    "file": "help.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 29,
+    "sha256": "34577fe5fed8c6f3375415a6ee4ee8d6a7380c2721aa5a8989b41b282ce739a1"
+  },
+  {
+    "file": "help-hover.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 31,
+    "sha256": "73c62f8ba366414136aeaff2872575c5aca0c0fab3f06e24f74ac1cac0025525"
+  },
+  {
+    "file": "tab.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 275,
+    "sha256": "d9f3941fee13cb38fc924b595b0c7c470619d5f6dd1860f34bf747963f7a914f"
+  },
+  {
+    "file": "tab-selected.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 278,
+    "sha256": "e9328aecde8460dfe06911dfa8783a4f1f6c482e79359609db5bb9f4b775cc1f"
+  },
+  {
+    "file": "tab-login.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 274,
+    "sha256": "aeee347bb81eea48a512c9b85ea8e1f9a9ed80cb12223d17f287c875623c8b47"
+  },
+  {
+    "file": "tab-trial.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 281,
+    "sha256": "4b9070e501a52c50b21f8fdb77e3c02cb3ba0c17a65c17c4285369a95c552c92"
+  },
+  {
+    "file": "tab-wheel.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 288,
+    "sha256": "db91db25f41ae543ac9ef50a45bd5a8c44127ff7a1071a041ab58c613e408c07"
+  },
+  {
+    "file": "currency.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 121,
+    "sha256": "6f48bafe1f695d5f549ae232fff10e6ca5150bfa939253feea7d813fb65fcd4a"
+  },
+  {
+    "file": "button.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 107,
+    "sha256": "6b3df7d8d11072cfa08d279eda064026533c00c543e009f81d0d1d75353e3c79"
+  },
+  {
+    "file": "button-hover.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 111,
+    "sha256": "20fc06698f5e49993620d4c029cbf7209e965701cacab8a03658ad82bbd57c36"
+  },
+  {
+    "file": "reward-flare.png",
+    "source": "YuanDanJiUI.swf",
+    "characterId": 188,
+    "sha256": "253ef9d1d4f6bb0ae8983a496f2cbf98dc368f8b08b475910e5dca48adbed28a"
+  },
+  {
+    "file": "reward-frame.png",
+    "source": "miao_backActivity.swf",
+    "characterId": 24,
+    "sha256": "4e888d3d83d2fd63ad0665b66d7b7c7348bce42c89f1056865adbccce94af67a"
+  },
+  {
+    "file": "item-frame.png",
+    "source": "TurntableUI.swf",
+    "characterId": 32,
+    "sha256": "88e59d5d58cb62b2bcae184fda9de409db8a78cd1ce8dbde2b8e81386eb24ba0"
+  },
+  {
+    "file": "item-selected.png",
+    "source": "TurntableUI_Old.swf",
+    "characterId": 129,
+    "sha256": "7f60cc9cad77b5cde005e2a9dd129e5c312efcb463c4b366e297799d1e082ea4"
+  }
+]

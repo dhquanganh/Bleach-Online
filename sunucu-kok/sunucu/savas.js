@@ -23,6 +23,7 @@ const mechaCombat = require('./mecha-combat');
 const itachiCombat = require('./itachi-combat');
 const sasukeCombat = require('./sasuke-combat');
 const tsunadeCombat = require('./tsunade-combat');
+const nineTailsCombat = require('./naruto-nine-tails-combat');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
 const REPLAY_DIR = path.join(__dirname, 'savas');
@@ -807,7 +808,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
+  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
   mechaCombat.beforeAttack(u,attackSpec,targets);
   const hitTargets = [];
@@ -869,6 +870,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,u,helper,aided,false,notices);if(notices.length)reactions.push(painCombat.passive(helper,notices));}
       if(u.hashContext){const notices=[],events=[];hashCombat.onDamage(u.hashContext,u,helper,aided,attackSpec,notices,events);if(notices.length)reactions.push(hashCombat.passive(helper,notices));reactions.push(...events);}
       if(u.tsunadeContext){const notices=[];tsunadeCombat.onDamage(u.tsunadeContext,u,helper,aided,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(helper,notices));}
+      if(u.tsunadeContext){const notices=[];nineTailsCombat.onDamage(u.tsunadeContext,u,helper,aided,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(helper,notices));}
       appendHit(targets,helper,aided,ST.TARGET_EFFECT | ST.HIT | ST.HELP | (helper.hp<=0?ST.DIED:0));
     }
     const immune = hashCombat.fireImmune(victim,attackSpec,u) || !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'));
@@ -881,6 +883,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,kamuiProtected||tsunadeNonfatal);
     if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,u,victim,result,critical,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     if(u.tsunadeContext){const notices=[];tsunadeCombat.onDamage(u.tsunadeContext,u,victim,result,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
+    if(u.tsunadeContext){const notices=[];nineTailsCombat.onDamage(u.tsunadeContext,u,victim,result,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
     if(u.sasukeContext)sasukeCombat.onDamage(u.sasukeContext,u,victim,result.damage,critical);
     if(u.itachiContext){const notices=[];itachiCombat.onDamage(u.itachiContext,u,victim,result,attackSpec,notices,critical);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
@@ -910,6 +913,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
         const counterAtk=heroSkills.value(victim,'atk');
         const amount = heroSkills.status(u,'invincible') ? 0 : Math.max(0, Math.round(counterAtk * counterAtk / Math.max(1,counterAtk + heroSkills.value(u,'def')) * Math.max(0,1 + heroSkills.value(victim,'damageBonus')) * (1 - chance(heroSkills.value(u,'damageReduction')))));
         const counterResult = heroSkills.status(u,'invincible') ? {damage:0} : rebirth.hit(victim,u,amount,random);
+        if(u.tsunadeContext){const notices=[];nineTailsCombat.onDamage(u.tsunadeContext,victim,u,counterResult,{damageType:'physical'},notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
         counterDamage = counterResult.damage;
         if(u.hashContext){const notices=[],events=[];hashCombat.onDamage(u.hashContext,victim,u,counterResult,null,notices,events);if(notices.length)reactions.push(hashCombat.passive(u,notices));reactions.push(...events);}
         appendHit(counterTargets,u,counterResult,ST.HIT | (u.hp<=0?ST.DIED:0));
@@ -1204,6 +1208,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         require('./nagato-combat').afterHit(chaseContext,actor,victim,hit,move,frame);
         require('./gaara-combat').afterHit(chaseContext,actor,victim,hit,move,frame);
         tsunadeCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        nineTailsCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.cleanse(chaseContext);
       }
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
@@ -1244,7 +1249,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     const woodGolem=hashCombat.additional(chaseContext,u,spec);
     if(woodGolem&&opponents.some(v=>v.hp>0))perform(u,opponents.find(v=>v.hp>0),opponents,allies,actives,woodGolem);
     if(isMystery){
-      if(additional){jiraiyaCombat.label(frame.targets,u,1,2);perform(u,target,opponents,allies,actives,additional);}
+      if(additional&&u.hp>0){
+        const next=target.hp>0?target:opponents.find(v=>v.hp>0);
+        if(next){jiraiyaCombat.label(frame.targets,u,1,2);perform(u,next,opponents,allies,actives,additional);}
+      }
       const revived=jiraiyaCombat.revivals(chaseContext);
       if(revived.length){
         actives.push({activeCamp:u.camp,activePos:u.pos,skillEffectId:0,activeType:4,targets:revived.map(r=>r.record)});
@@ -1293,6 +1301,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       arenaFinisher = hpRatio(p2) > hpRatio(p1) ? 1 : 0;
     }
     const actives = t===1 ? [...initialActives] : [];
+    actives.push(...nineTailsCombat.roundStart(chaseContext));
     for(const request of require('./gaara-combat').roundRequests(chaseContext)){
       const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
@@ -1393,6 +1402,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
     reactiveEnabled=false;
     actives.push(...tsunadeCombat.endRound(chaseContext));
+    actives.push(...nineTailsCombat.endRound(chaseContext));
     actives.push(...sasukeCombat.endRound(chaseContext));
     actives.push(...hashCombat.endRound(chaseContext));
     actives.push(...heroSkills.endRound(p1.concat(p2)));

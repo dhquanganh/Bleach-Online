@@ -151,6 +151,39 @@ start/tail frames: `healing-visibility/cutscene/validation/native`.
 `tsunade-native-healing.test.js` guards all six support timing mappings.
 Reload the game to load the new client and resource-map versions.
 
+Small Katsuyu playback repair (`2026102425`): entry/death poses now own
+their actor's UpdateActive while playing, so idle cannot overwrite them.
+Texture arrival is retried for up to two seconds; a late texture starts
+the original pose from its first frame. The repair uses the current client,
+preserves 171 other TRole methods and leaves the Daily Tasks fixes intact.
+The dedicated original actor/HP effect remain unchanged. The six-actor Flash
+component probe now delays textures deliberately and passes entry, attack,
+heal, death, respawn and removed-stage cleanup in both camps. This remains
+an isolated rendering test, not a logged-in combat replay.
+
+Revival replay truncation repair (`2026102426`): `TBattleStage.SetBattle`
+previously skipped all zero-HP actors, including the three reserved Small
+Katsuyu slots. On reaching the first command targeting a summon,
+`MakeCommandList` returned early because the target role did not exist.
+Playback then displayed the server's result with the rest of the battle
+missing, leaving a revived Tsunade visibly alive on an early loss screen.
+SetBattle now registers zero-HP actor 11120993 in both camps. Its scoped
+PrepareBattleRole hides it and marks it dead until the summon HP event
+restores it. Other zero-HP characters retain the existing behavior.
+The Katsuyu ActivePlay guard also reads the method parameters directly;
+the former aliases were still unassigned at the injected branch.
+
+`revival-queue.py` patches the current shared client, preserving 46 other
+stage methods and 173 other role methods. `revival-queue.test.js` generates
+actual encoded battles with revival, summoning and subsequent rounds.
+`revival-queue-probe.py` executes the original and repaired native role
+registration loops with test pool actors in Flash: each camp previously
+resolved 11 of 209 actions, and now resolves all 209. Twelve assertions
+pass, including three hidden reserved actors per camp. Results are in
+`revival-queue/validation/native`. This is a native registration/addressing
+component check, not a full logged-in battle playback. Backend victory
+rules and battle results are unchanged by this repair.
+
 Validation:
 
 - `node sunucu-kok/sunucu/tests/tsunade-combat.test.js`: all 15 positions in

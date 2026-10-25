@@ -30,6 +30,13 @@
       }
       private function UpdateSmallKatsuyuPose(event:Event=null) : void {
          if(FId!=11120993 || FSmallKatsuyuStarted<0)return;
+         // Textures can arrive after the summon HP event. Resolve on subsequent
+         // ticks instead of silently consuming the entire pose with no frames.
+         if(FSmallKatsuyuSequence==null && FTextureSkill!=null && FTextureSkill!=FDefaultRoleTexture && FTextureSkill.Count>=2){
+            FSmallKatsuyuSequence=FTextureSkill.GetAnimationSequenceByIndex(FSmallKatsuyuDying?1:0);
+            FSmallKatsuyuStarted=TBattleHandle.PlaybackTime;
+         }
+         if(FSmallKatsuyuSequence==null && TBattleHandle.PlaybackTime-FSmallKatsuyuStarted<2000)return;
          var index:int=Math.max(0,int((TBattleHandle.PlaybackTime-FSmallKatsuyuStarted)/40));
          if(index>=FSmallKatsuyuFrames){
             var callback:Function=FSmallKatsuyuCallback;var time:uint=FSmallKatsuyuTime;var dying:Boolean=FSmallKatsuyuDying;

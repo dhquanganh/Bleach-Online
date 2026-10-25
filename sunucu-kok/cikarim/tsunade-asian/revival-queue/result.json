@@ -1,0 +1,9 @@
+{
+  "version": "2026102426",
+  "unchangedMethods": {
+    "TBattleStage": 46,
+    "TRole": 173
+  },
+  "sha256": "03cb2246381371094909cc196a01f9be338fba036e523a3c982fe707bd9495df",
+  "zeroHpActor": 11120993
+}

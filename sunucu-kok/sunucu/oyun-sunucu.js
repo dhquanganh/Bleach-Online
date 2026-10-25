@@ -331,6 +331,21 @@ require('http').createServer((req, res) => {
   if (localOrigin && !/^https?:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(localOrigin)) {
     return json(403, { ok: false, hata: 'Chỉ launcher trên máy này mới được phép truy cập.' });
   }
+  if (u.pathname === '/myoboku' && req.method === 'GET') {
+    const state=durumMod.yukle();
+    return json(200,{ok:true,...require('./myoboku-config').view(),gold:Number(veri().altin)||0,spins:state.myoboku?.spins||0});
+  }
+  if (u.pathname === '/myoboku/spin' && req.method === 'POST') {
+    try {
+      if(!loggedInClients().length)return json(409,{error:'Hãy vào game trước khi quay.'});
+      const result=require('./myoboku').spin({load:durumMod.yukle,save:durumMod.kaydet});
+      for(const session of loggedInClients()){
+        session.send(0x01180f00,handlers.envanterDepo.loadBagPaketi(result.state),'MYOBOKU-bag');
+        session.send(0x01180105,require('./harita').baseInfoUpdate([{index:3,v:result.gold}]),'MYOBOKU-gold');
+      }
+      delete result.state;return json(200,result);
+    }catch(e){return json(e.status||500,{error:e.message});}
+  }
   if (u.pathname === '/hesap') {
     const v = veri(); let bugun = 0, toplam = 0;
     try { const t = require('./etkinlik-ozel').topupDepo(durumMod.yukle()); bugun = Number(t.gun[require('./paket').gun()]) || 0; toplam = Number(t.toplam) || 0; } catch (e) { }

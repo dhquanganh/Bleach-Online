@@ -1,0 +1,8 @@
+{
+ "passive":"Tailed Beast Coat: When causing Taijutsu damage against Naruto, the attacker will suffer Ignition. Tailed Beast Chakra - Wars: Before each round's action, recover Life based on own Physical ATK attributes. Immune to all Debuffs. Ignition: Units affected cannot receive Healings and suffer damage at the end of the round. Lasts for 1 round.",
+ "13121701":"[Prompt]: Cause physical damage, Repulse and Ignition to the selected opponent's unit. Repulsed units will cause physical damage to the row behind them. Cooldown: 2. Battlefield Cooldown: 1. Chakra Cost: 40. All damage scales with Physical ATK and is mitigated by Physical DEF.",
+ "13121702":"Taijutsu Attack: Attacks the opponent's front row and has a chance of 3 COMBO Low Float and Ignition. Physical damage scales with Physical ATK and is mitigated by Physical DEF.",
+ "13121705":"Tailed Beast Coat: When causing Taijutsu damage against Naruto, the attacker will suffer Ignition. Ignition: Units affected cannot receive Healings and suffer damage at the end of the round. Lasts for 1 round.",
+ "13121706":"Tailed Beast Chakra - Wars: Before each round's action, recover Life based on own Physical ATK attributes. Immune to all Debuffs.",
+ "13121707":"Immune to all Debuffs."
+}

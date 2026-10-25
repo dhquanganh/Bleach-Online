@@ -1,0 +1,79 @@
+[
+  {
+    "heroId": 11120901,
+    "itemId": 14140901,
+    "fragmentId": 14130901,
+    "picture": 14130901,
+    "name": "Naruto [Sage Mode] Recruit Token"
+  },
+  {
+    "heroId": 11120920,
+    "itemId": 14140920,
+    "fragmentId": 14130920,
+    "picture": 16228072,
+    "name": "Uchiha Obito [Rage Mode] Recruit Token"
+  },
+  {
+    "heroId": 11120930,
+    "itemId": 14140930,
+    "fragmentId": 14130930,
+    "picture": 16228082,
+    "name": "Pain - Tendo [Six Paths Rinnegan] Recruit Token"
+  },
+  {
+    "heroId": 11120940,
+    "itemId": 14140940,
+    "fragmentId": 14130940,
+    "picture": 16228092,
+    "name": "Hashirama Senju [The Final Battle] Recruit Token"
+  },
+  {
+    "heroId": 11120950,
+    "itemId": 14140950,
+    "fragmentId": 14130950,
+    "picture": 16228102,
+    "name": "Mecha-Naruto Recruit Token"
+  },
+  {
+    "heroId": 11120960,
+    "itemId": 14140960,
+    "fragmentId": 14130960,
+    "picture": 16228112,
+    "name": "Itachi Uchiha [Road to Ninja] Recruit Token"
+  },
+  {
+    "heroId": 11120970,
+    "itemId": 14140970,
+    "fragmentId": 14130970,
+    "picture": 16228122,
+    "name": "Sasuke Uchiha [Sasuke Shinden] Recruit Token"
+  },
+  {
+    "heroId": 11120990,
+    "itemId": 14140990,
+    "fragmentId": 14130990,
+    "picture": 16228142,
+    "name": "Nagato [Frog Squad] Recruit Token"
+  },
+  {
+    "heroId": 11120991,
+    "itemId": 14140991,
+    "fragmentId": 14130991,
+    "picture": 16228143,
+    "name": "Gaara [Swimsuit] Recruit Token"
+  },
+  {
+    "heroId": 11120992,
+    "itemId": 14140992,
+    "fragmentId": 14130992,
+    "picture": 16228144,
+    "name": "Tsunade [Asian Style] Recruit Token"
+  },
+  {
+    "heroId": 11120994,
+    "itemId": 14140994,
+    "fragmentId": 14130994,
+    "picture": 16228146,
+    "name": "Naruto [Nine-Tails Chakra] Recruit Token"
+  }
+]

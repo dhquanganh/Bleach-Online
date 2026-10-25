@@ -13,10 +13,11 @@ def patch(before):
  def append(s,name,code):
   method=c.m.extract(s,name);i=method.rfind('}');return s.replace(method,method[:i]+code+'\n      '+method[i:],1)
  after=append(after,'RestoreTsunadeAfterRevival','         if(FId==11120993)PlaySmallKatsuyuPose(false);')
- after=c.inject(after,'ActivePlay','         if(FId==11120993){if(Type==TYPE_ACTIVE_DIE){PlaySmallKatsuyuPose(true,Callback,Time);return;}if(Type==TYPE_ACTIVE_ATTACK || Type==TYPE_ACTIVE_SKILL)ClearSmallKatsuyuPose();}')
- after=c.inject(after,'PrepareBattleRole','         if(FId==11120993){ClearSmallKatsuyuPose();FSmallKatsuyuSpawned=false;}')
+ after=c.inject(after,'ActivePlay','         if(FId==11120993){if(param1==TYPE_ACTIVE_DIE){PlaySmallKatsuyuPose(true,param5,param6);return;}if(param1==TYPE_ACTIVE_ATTACK || param1==TYPE_ACTIVE_SKILL)ClearSmallKatsuyuPose();}')
+ after=c.inject(after,'PrepareBattleRole','         if(FId==11120993){ClearSmallKatsuyuPose();FSmallKatsuyuSpawned=false;if(CurHealth<=0){FIsDie=true;visible=false;FHpBar.visible=false;FShaderBmp.visible=false;FBuffSprite.visible=false;}}')
  after=c.inject(after,'Reset','         if(FId==11120993){ClearSmallKatsuyuPose();FSmallKatsuyuSpawned=false;}')
  after=c.inject(after,'AddTextEffectByCMD','         if(param1.CMD==TTargetInfo.CMD_FLOAT && uint(param1.ResultInfo.BuffId)==19001707)TEffectControl.ShowPublicEffect(FEffectSprite,13622609,0,0,null);')
+ after=c.inject(after,'UpdateActive','         if(FId==11120993 && FSmallKatsuyuStarted>=0){UpdateSmallKatsuyuPose();return;}')
  return after
 def main():
  W=B/'katsuyu/client';W.mkdir(parents=True,exist_ok=True)
@@ -27,7 +28,7 @@ def main():
  c.ff('-onerror','abort','-importScript',W/'source.swf',W/'compiled.swf',W/'patched')
  compiled=(W/'compiled.swf').read_bytes();assert [t for t in c.h.tags(source) if t[0]!=82]==[t for t in c.h.tags(compiled) if t[0]!=82]
  c.ff('-selectclass',cls,'-export','script',W/'verify',W/'compiled.swf');verified=(W/'verify/scripts'/rel).read_text(encoding='utf-8')
- allowed={'RestoreTsunadeAfterRevival','UpdateAnimationFrame','ActivePlay','PrepareBattleRole','Reset','AddTextEffectByCMD'};checked=0
+ allowed={'RestoreTsunadeAfterRevival','UpdateAnimationFrame','UpdateActive','ActivePlay','PrepareBattleRole','Reset','AddTextEffectByCMD'};checked=0
  for name in re.findall(r'      (?:override )?(?:public|private|protected) (?:static )?function (\w+)\(',before):
   if name not in allowed:assert c.m.extract(before,name)==c.m.extract(verified,name),name;checked+=1
  assert canonical.read_bytes()==old

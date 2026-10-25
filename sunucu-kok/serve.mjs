@@ -38,8 +38,9 @@ function dilListesi() {
 }
 
 const MIME = {
+  '.css': 'text/css; charset=utf-8',
   '.swf': 'application/x-shockwave-flash', '.js': 'application/javascript', '.html': 'text/html; charset=utf-8',
-  '.mp3': 'audio/mpeg', '.jpg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.xml': 'text/xml',
+  '.svg': 'image/svg+xml', '.mp3': 'audio/mpeg', '.jpg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.xml': 'text/xml',
 };
 const CROSSDOMAIN = '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*"/></cross-domain-policy>';
 const POLICY = '<?xml version="1.0"?><cross-domain-policy><allow-access-from domain="*" to-ports="*"/></cross-domain-policy>\0';

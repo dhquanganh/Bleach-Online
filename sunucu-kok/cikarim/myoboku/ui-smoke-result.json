@@ -1,0 +1,29 @@
+{
+  "acknowledged": true,
+  "animatedReward": true,
+  "busy": true,
+  "calls": 3,
+  "close": true,
+  "error": true,
+  "noEarlyReward": true,
+  "popupBlocksSpin": true,
+  "popupShown": true,
+  "win": true,
+  "layout": {
+    "hiddenDuringLoad": true,
+    "iconFallbackHidden": true,
+    "iconHeight": 40,
+    "iconWidth": 40,
+    "panelWidth": 738,
+    "position": "absolute",
+    "slots": 8,
+    "transparent": true,
+    "wheelWidth": 405
+  },
+  "scaled": {
+    "panelWidth": 472.3199768066406,
+    "popupFits": true,
+    "popupVisible": true,
+    "wheelWidth": 259.1999816894531
+  }
+}
