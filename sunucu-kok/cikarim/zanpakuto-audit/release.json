@@ -1,0 +1,9 @@
+{
+  "version": "2026102605",
+  "sha256": "374e60d7885fb143fd7177ce639a0e111e13383ae46f38d9ae0f854dc867280c",
+  "classes": [
+    "Processors\\Game\\Lobby\\KnifeOfKillSoul\\TProcessorKnifeOfKillSoul.as",
+    "Processors\\Game\\Lobby\\KnifeOfKillSoul\\TProcessorKnifeStrengthenBox.as",
+    "Processors\\Game\\Lobby\\KnifeOfKillSoul\\TProcessorWindowTrain.as"
+  ]
+}

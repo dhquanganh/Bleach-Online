@@ -170,11 +170,6 @@ function kur(y) {
   };
   H['0x0181a001'] = ({ payload }) => { const o = new O(payload); o.u32(); o.u32(); const tpl = o.u32(); return new Y().u32(1).u8(0).u32(tpl).done(); };
   H['0x0181a003'] = ({ payload }) => { const o = new O(payload); const inst = o.u32(), tpl = o.u32(); return new Y().u32(0).u32(inst).u32(tpl).u32(0).u32(inst).done(); };
-  // ================= KNIFE (Zanpakuto of Kill Soul) =================
-  const bicak = d => { d.bicak = d.bicak || { acik: [], sekil: 0, guc: {} }; return d.bicak; };
-  H['0x01814102'] = ({ payload, durum, kaydet }) => { const id = new O(payload).u32(); if (!satir('Knife', id)) return new Y().u32(4).done(); const b = bicak(durum); if (!b.acik.includes(id)) b.acik.push(id); K(kaydet, durum); return new Y().u32(0).u32(id).done(); };
-  H['0x01814104'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const op = o.u8(), id = o.u32(); const b = bicak(durum); if (op === 1 && !b.acik.includes(id)) b.acik.push(id); b.sekil = op === 1 ? id : 0; K(kaydet, durum); return new Y().u32(0).u8(op).u32(id).done(); };
-  H['0x01814105'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const id = o.i32(), attr = Math.max(0, Math.min(2, o.i32())), up = o.i32(); const b = bicak(durum); const k = b.guc[String(id)] || [0, 0, 0]; k[attr] = (k[attr] || 0) + 1; b.guc[String(id)] = k; K(kaydet, durum); return new Y().u32(0).i32(id).i32(attr).i32(k[attr]).i32(0).done(); };
   H['0x01811404'] = () => false;
   // ================= YELLOW DIAMOND / ACHIEVEMENT / CDK / MENTOR =================
   H['0x01815100'] = () => new Y().u32(0).u8(0).u8(0).u8(0).u8(0).u8(0).u8(0).u32(0).u32(0).done();

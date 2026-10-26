@@ -94,7 +94,7 @@ function kur(y) {
 
   // ================== DIGER MODULLER ==================
   const y2 = { ...y, sonHurdle: () => SON_HURDLE };
-  const moduller = [['ekipman', './ekipman'], ['savas-etkinlik', './savas-etkinlik'], ['evcil-ek', './evcil-ek'], ['ev', './ev'], ['sosyal', './sosyal']];
+  const moduller = [['ekipman', './ekipman'], ['savas-etkinlik', './savas-etkinlik'], ['evcil-ek', './evcil-ek'], ['ev', './ev'], ['sosyal', './sosyal'], ['zanpakuto', './zanpakuto']];
   for (const [ad, yol] of moduller) {
     try {
       const m = require(yol).kur(y2);

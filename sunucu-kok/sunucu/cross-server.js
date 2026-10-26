@@ -52,15 +52,15 @@ function kur(y,opt={}){const now=opt.now||simdi,H={},fail=n=>new Y().u32(n).done
    recruit=require('./meyhane').itemRecruitPaketi(item,next,playerLevel());if(!recruit)return fail(1);
   }else if(satir('KnifeExpand',item)){
    if(qty!==1||amount!==1||count>0)return fail(1);
-   next.zanpakuto=next.zanpakuto||{};if(next.zanpakuto[item])return fail(1);
-   next.zanpakuto[item]={id:item,exp:0};knife=true;
+   const z=require('./zanpakuto'),owned=z.state(next),base=z.baseOf(item);if(!base||owned[base._id])return fail(1);
+   owned[base._id]={id:item,exp:0};knife=true;
   }else{aw=[{type:1,code:item,amount}];try{preview(next,aw);}catch(e){return fail(1);}}
   const cost=price.amount*qty;if(!Number.isSafeInteger(cost)||!env.dus(next,price.code,cost))return fail(18);
   next.magaza.alim[row._id]=count+qty;
   if(!commit(ctx,next))return fail(1);
   (y.ekOnce||y.ekSonra)(0x01180f00,env.loadBagPaketi(next),'CROSS-exchange-bag');
   if(recruit)(y.ekOnce||y.ekSonra)(0x01180c02,recruit,'CROSS-recruit');
-  if(knife){const list=require('./paket').tablo('KnifeExpand').liste.filter(r=>Number(r.level)===1&&satir('Knife',r.relationID)&&satir('Article',satir('Knife',r.relationID).handBookID));const w=new Y().u16(list.length);for(const r of list){const k=next.zanpakuto[r._id];w.u32(k?k.id:r._id).u32(k?k.exp:0);}w.u16(0);(y.ekOnce||y.ekSonra)(0x01184101,w.done(),'CROSS-knife');}
+  if(knife)(y.ekOnce||y.ekSonra)(0x01184101,require('./zanpakuto').info(next),'CROSS-knife');
   return fail(0);
  }
 

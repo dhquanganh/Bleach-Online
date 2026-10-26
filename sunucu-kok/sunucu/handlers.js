@@ -441,43 +441,6 @@ const byReq = {
     const w = new W(); w.u32(0); w.u16(kupon); return w.done();
   },
 
-  // === ZANPAKUTO EGITIMI (CS_TrainKnifeRequest 0x01814103 -> SC_TrainKnifeResponse 0x01184103) ===
-  // Istek [u8 tip][u32 adet][u32 knifeId] (tip 1 = Normal/ruh, 2 = Upgrade/altin; adet 1 veya 50).
-  // Cevap [u32 hata][u32 knifeId][u32 currentExp]. knifeId = KnifeExpand satir id'si; seviye atlayinca
-  // ayni relationID'nin bir ust level satirina (id+1) gecilir — client ReAssignKnifeInforByArray ile
-  // relationID uzerinden eslestirip ID'yi gunceller. KnifeExpand sutunlari JSON'da kaymis:
-  // gercek NormalExp=f11, GoldExp=f12, NeedExp=f13 (TKnifeExpand.ReadDataByStream sirasi).
-  // Altin egitiminin bedeli client verisinde yok -> KNIFE_ALTIN_BEDEL (varsayim) x adet.
-  '0x01814103': ({ payload, durum, kaydet }) => {
-    if (!payload || payload.length < 9) return hataKodu(1);
-    const tip = payload.readUInt8(0), adet = Math.max(1, Math.min(payload.readUInt32BE(1), 500)), knifeId = payload.readUInt32BE(5);
-    const ke = knifeExpandTablo();
-    const row = ke.get(knifeId >>> 0);
-    if (!row) return hataKodu(1);
-    const base = (knifeId >>> 0) - (Math.max(1, Number(row.level) || 1) - 1);
-    const d = zanpakutoDepo(durum);
-    const st = d[String(base)] || (d[String(base)] = { id: base, exp: 0 });
-    if (!ke.has(st.id >>> 0)) { st.id = base; st.exp = 0; }
-    const cur = ke.get(st.id >>> 0);
-    const birim = tip === 2 ? (Number(cur.f12) || 0) : (Number(cur.f11) || 0);
-    if (tip === 2) {
-      const p = paraHarca([{ type: 0, code: 1, amount: KNIFE_ALTIN_BEDEL * adet }]);
-      if (!p) return hataKodu(0x38);                       // "Not enough gold"
-      ekOnce(0x01180105, p, 'KNIFE-altin');
-    }
-    st.exp = (Number(st.exp) || 0) + birim * adet;
-    olay.say(durum, tip === 2 ? 'zanpakutoGodspeed' : 'zanpakutoTrain', adet);
-    for (let g = 0; g < 200; g++) {                        // seviye zinciri
-      const r = ke.get(st.id >>> 0); if (!r) break;
-      const need = Number(r.f13) || 0, next = ke.get((st.id >>> 0) + 1);
-      if (!need || st.exp < need || !next || Number(next.relationID) !== Number(r.relationID) || Number(next.level) !== Number(r.level) + 1) break;
-      st.exp -= need; st.id = (st.id >>> 0) + 1;
-    }
-    try { kaydet(durum); } catch (e) { }
-    console.log(`[knife] egitim tip${tip} x${adet}: knife ${knifeId} -> ${st.id} exp ${st.exp}`);
-    const w = new W(); w.u32(0); w.u32(st.id >>> 0); w.u32(st.exp >>> 0); return w.done();
-  },
-
   // === BLEACH TRAIN ("Experiences" / Novice paneli, 0x6a00) — detay: bleachtrain.js ===
   // Eskiden yakalanan sabit cevaplar donuyordu (baska hesabin ilerlemesi/odulleri). Simdi gercek:
   // 184 gorevin ilerlemesi olay sayaclarindan, odul GrowRoadTask'tan (VIP >= VipNeed ise VIP odulu).
@@ -876,25 +839,6 @@ const byReq = {
     return w.done();
   },
 
-  // === ZANPAKUTO (KnifeOfKillSoul) — KnifeInforReq 0x01814101 -> 0x01184101 ===
-  // HATA KODU YOK. Duzen (TProcessorKnifeOfKillSoul.PerformPacket_SC_KnifeInfor):
-  //   [u16 n] + n x (u32 knifeId, u32 exp)   -> ReAssignKnifeInforByArray(..., KNIFESTATE_UNLOCK)
-  //   [i16 m] + m x (8 x i32)                -> guclendirme satirlari
-  // SORUN: yakalanan cevap 4 bayttti (n=0) -> hicbir bicak UNLOCK olmuyordu ve client
-  //   kendi varsayilani KNIFESTATE_LackHandBook'ta kaliyordu: "Missing [X] Picture Book".
-  //   Cozum envantere kitap koymak DEGIL, listeyi gercekten gondermek.
-  // TUZAK: gonderilen her id Knife.json'da olmali ve o satirin handBookID'si Article.json'da
-  //   bulunmali (ikisi de null kontrolsuz okunuyor) -> zanpakutoListe() bunu dogruluyor.
-  '0x01814101': ({ durum, kaydet }) => {
-    const sahip = zanpakutoSahip(durum);
-    try { kaydet(durum); } catch (e) { }
-    const w = new W();
-    w.u16(sahip.length);
-    for (const k of sahip) { w.u32(k.id >>> 0); w.u32(k.exp >>> 0); }
-    w.u16(0);                        // guclendirme satiri yok
-    return w.done();
-  },
-
   // === MENTORSHIP: yakalama listesi 0x01813501 -> 0x01183501 ===
   // [u32 hata][i16 adet] + adet x (u8 tip, u32 id0, u32 id1, UTF ad, u16 lv, UTF lonca,
   //                                u8 kimlik, u16 ogrenciSayisi, u32 etkilesimCD, UTF ustadAd)
@@ -1242,41 +1186,6 @@ function tabloYukle(ad) {
 }
 let KNIFE = null, OKUL = null;
 function knifeTablo() { return (KNIFE ||= tabloYukle('KnifeSoul.json')); }
-
-// --- ZANPAKUTO listesi (Knife panelindeki bicaklar; KnifeSoul egitiminden AYRI tablo) ---
-// KnifeExpand'in level==1 satirlari = her bicagin TEMEL kademesi (24 adet).
-// TUZAK: id -> Knife.json(relationID) -> handBookID -> Article.json zincirinin tamami
-// null kontrolsuz okunuyor; zinciri tamamlanmayan id gonderilirse panel coker.
-let ZANPAKUTO = null;
-function zanpakutoListe() {
-  if (ZANPAKUTO) return ZANPAKUTO;
-  const out = [];
-  try {
-    const ke = tabloYukle('KnifeExpand.json'), kn = tabloYukle('Knife.json'), art = tabloYukle('Article.json');
-    for (const [id, r] of ke) {
-      if (Number(r.level) !== 1) continue;
-      const k = kn.get((Number(r.relationID) || 0) >>> 0);
-      if (!k || !art.has((Number(k.handBookID) || 0) >>> 0)) continue;
-      out.push(id >>> 0);
-    }
-  } catch (e) { }
-  ZANPAKUTO = out.sort((a, b) => a - b);
-  return ZANPAKUTO;
-}
-// durum.zanpakuto[tabanId] = { id: <mevcut KnifeExpand satiri>, exp } (eski surum: duz exp sayisi -> tasinir)
-function zanpakutoDepo(durum) {
-  durum.zanpakuto = durum.zanpakuto || {};
-  for (const [k, v] of Object.entries(durum.zanpakuto)) if (!v || typeof v !== 'object') durum.zanpakuto[k] = { id: Number(k) >>> 0, exp: Number(v) || 0 };
-  return durum.zanpakuto;
-}
-function zanpakutoSahip(durum) {
-  const d = zanpakutoDepo(durum);
-  return zanpakutoListe().map(base => { const r = d[String(base)]; return r ? { id: (r.id >>> 0) || base, exp: Number(r.exp) || 0 } : { id: base, exp: 0 }; });
-}
-let KNIFE_EXPAND = null;
-function knifeExpandTablo() { return (KNIFE_EXPAND ||= tabloYukle('KnifeExpand.json')); }
-const KNIFE_ALTIN_BEDEL = 10;   // altin egitimi: egitim basina altin (client verisinde bedel yok — varsayim)
-function okulTablo() { return (OKUL ||= tabloYukle('SpiritSchoolExp.json')); }
 
 function knifeDurum(durum) {
   if (!durum.knifeSoul || !durum.knifeSoul.id) durum.knifeSoul = { id: 18100001, exp: 0 };

@@ -238,7 +238,7 @@ function hogyokuBonuses(durum, heroId) {
   return bonus;
 }
 
-function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = false, skipStars = false) {
+function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = false, skipStars = false, pvp = false) {
   if (!baseBlock) {
     const ana = statlar.anaKaynakHam();
     if (ana) baseBlock = ana.blok;
@@ -330,6 +330,9 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
       for(const target of targets) if(baseValue(target)>0) ek[target]+=Math.round(amount*baseValue(target)/baseValue(primary));
     }
   }
+  const zanpakuto = require('./zanpakuto').bonuses(durum,heroId,require('./seviye').veriOku(),pvp);
+  for(const [type,value] of zanpakuto.flat)add(type,value);
+  for(const [type,value] of zanpakuto.percent){const index=ATTR_IDX[type];if(index!==undefined)percentBonuses.set(index,(percentBonuses.get(index)||0)+value);}
   const reiatsu = statlar.knifeSoulBonuses(durum);
   ek[statlar.IDX.Power] += reiatsu.power;
   ek[statlar.IDX.Intelligence] += reiatsu.intelligence;
@@ -443,15 +446,16 @@ function statPaketi(durum, heroId, level) {
   const ana = statlar.anaKaynakHam(); if (!ana) return null;
   const k = statlar.olcekler(heroId, level, ana.id, ana.lv, durum);
   const blok = statlar.blokOlcekle(ana.blok, k);
-  const ek = bonuslar(durum, heroId, blok, true, true, true);
+  const extras = [bonuslar(durum,heroId,blok,true,true,true,false),bonuslar(durum,heroId,blok,true,true,true,true)];
   const refinery = require('./refinery').rates(durum, heroId);
-  let p = 0; let toplam = 0;
+  let p = 0;
   for (let no = 0; no < 2; no++) {
+    const ek=extras[no];let toplam=0;
     const n = blok.readUInt16BE(p); p += 2;
     for (let i = 0; i < n && i < 27; i++) {
       const off = p + 4 * i; const v = ek[i] || 0; if (!v) continue;
       if (statlar.TIP[i] === 1) blok.writeFloatBE(blok.readFloatBE(off) + v, off);
-      else { blok.writeUInt32BE(Math.max(0, Math.min(0x7fffffff, Math.round(blok.readUInt32BE(off) + v))) >>> 0, off); if (no === 0 && i !== 26) toplam += v; }
+      else { blok.writeUInt32BE(Math.max(0, Math.min(0x7fffffff, Math.round(blok.readUInt32BE(off) + v))) >>> 0, off); if (i !== 26) toplam += v; }
     }
     if (n > 26) { const off = p + 4 * 26; blok.writeUInt32BE(Math.min(0x7fffffff, blok.readUInt32BE(off) + Math.round(toplam)) >>> 0, off); }
     const factor=require('./reincarnation').statMultiplier(durum,heroId);

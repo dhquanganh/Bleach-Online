@@ -1,30 +1,30 @@
 {
-  "revision": 28,
+  "revision": 31,
   "rewards": [
     {
       "itemId": 14140994,
       "amount": 1,
-      "weight": 10
+      "weight": 5
     },
     {
       "itemId": 14100005,
       "amount": 200,
-      "weight": 50
+      "weight": 100
     },
     {
       "itemId": 14100015,
       "amount": 300,
-      "weight": 40
+      "weight": 90
     },
     {
       "itemId": 14800022,
       "amount": 5,
-      "weight": 30
+      "weight": 20
     },
     {
       "itemId": 14800010,
       "amount": 1,
-      "weight": 20
+      "weight": 10
     },
     {
       "itemId": 14900001,

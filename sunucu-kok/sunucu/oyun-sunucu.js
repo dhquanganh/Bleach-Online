@@ -200,6 +200,7 @@ function editChar(payload) {
 // Her heronun TAKILI ekipmani + uyanis + Hogyoku kalici depodan (ekipman.js); yakalanan set sadece ilk tohum.
 function ekipmanYama(buf, dd) {
   if (!dd) return buf;
+  buf = require('./zanpakuto').charPatch(buf, dd, harita.basicEnd);
   buf = meyhane.charYama(buf, dd, harita.basicEnd);
   if (process.env.BLEACH_DIAGNOSTIC_SKIP_EQUIPMENT_PATCH === '1') return buf;
   try {

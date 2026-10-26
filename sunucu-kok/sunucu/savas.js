@@ -809,8 +809,8 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec ? (attackSpec.summon || attackSpec.support ? [] : nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
-    : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef];
+  const victims = attackSpec?.zanpakutoTargets || (attackSpec ? (attackSpec.summon || attackSpec.support ? [] : nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
+    : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef]);
   mechaCombat.beforeAttack(u,attackSpec,targets);
   const hitTargets = [];
   // Spend rage before restoration: Urahara/Unohana recover it after casting.
@@ -900,7 +900,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if (passiveRecords.length) reactions.push({activeCamp:victim.camp,activePos:victim.pos,skillEffectId:0,activeType:4,targets:passiveRecords});
     if (heroSkills.status(victim,'freeze') && result.damage > 0) heroSkills.removeField(victim,'freeze',targets);
     reactions.push(...obitoCombat.checkRage(victim));
-    if (!bypass && heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
+    if (!u.zanpakutoActor && !bypass && heroSkills.status(victim,'reflect') && result.damage > 0 && u.hp > 0) {
       let reflected = Math.min(u.hp,result.damage);
       u.hp -= reflected;
       if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,victim,u,{damage:reflected},false,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
@@ -913,7 +913,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       // Omitting it interrupts command construction for the rest of the attack.
       let counterDamage = 0;
       const counterTargets = [];
-      if (!extra && u.hp > 0 && random() < chance(heroSkills.value(victim,'antiknockRate'))) {
+      if (!u.zanpakutoActor && !extra && u.hp > 0 && random() < chance(heroSkills.value(victim,'antiknockRate'))) {
         const counterAtk=heroSkills.value(victim,'atk');
         const amount = heroSkills.status(u,'invincible') ? 0 : Math.max(0, Math.round(counterAtk * counterAtk / Math.max(1,counterAtk + heroSkills.value(u,'def')) * Math.max(0,1 + heroSkills.value(victim,'damageBonus')) * (1 - chance(heroSkills.value(u,'damageReduction')))));
         const counterResult = heroSkills.status(u,'invincible') ? {damage:0} : rebirth.hit(victim,u,amount,random);
@@ -1019,10 +1019,12 @@ function playerTeam(options = {}) {
   const lvOf = id => { try { return require('./seviye').heroSeviye(durumK, id) || lv; } catch (e) { return lv; } };
 
   const ekipman = require('./ekipman');
-  const statPaketleri = new Set();
+  const statPaketleri = new Set(),pvpStats=new Map();
   const combatStat = (id, level) => {
     const packet = ekipman.statPaketi(durumK, id, level);
-    const stat = packet ? statlar.blokOku(packet.subarray(4)) : null;
+    const offset=packet?4+2+packet.readUInt16BE(4)*4:0;
+    if(packet)pvpStats.set(id,statlar.blokOku(packet.subarray(offset)));
+    const stat = packet ? statlar.blokOku(packet.subarray(options.pvp?offset:4)) : null;
     if (stat) statPaketleri.add(id >>> 0);
     return stat;
   };
@@ -1067,16 +1069,21 @@ function playerTeam(options = {}) {
     }
   }
   for (const unit of p1) {
-    unit.partnerSkills = partnerSkills.unlocked(durumK, unit.id);
+    unit.partnerSkills = partnerSkills.unlocked(durumK, unit.id,{pvp:!!options.pvp});
+    unit.pvpPartnerSkills=partnerSkills.unlocked(durumK,unit.id,{pvp:true});
+    unit.pvpStats=pvpStats.get(unit.id);
+    unit.pvpCritDamage=(unit.critDamage||0)+(Number(require('./seviye').veriOku().level)>=45?require('./zanpakuto').phase(durumK,unit.id).filter(a=>Number(a.type)===43).reduce((n,a)=>n+Number(a.value||0),0):0);
+    if(options.pvp)unit.critDamage=unit.pvpCritDamage;
     unit.weaponSkills = weaponSkills.equipped(durumK, unit.id);
   }
+  if(p1[0])p1[0].zanpakutoId=require('./zanpakuto').selected(durumK)?.id||0;
   return p1;
 }
 
 function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   SON_OYUNCU_HASARI = 0;
   const durumK = options.playerState || require('./durum').yukle() || {};
-  const p1 = playerTeam(options);
+  const p1 = playerTeam({...options,pvp:!!arenaRakip||!!options.pvp});
   if (!p1.length) return null;
   if(options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
     const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
@@ -1099,6 +1106,13 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       return u;
     }).filter(Boolean)
     : (st && st.birimler.length) ? st.birimler : [dusmanBirim(ENEMY, 6)];
+  if(arenaRakip||options.pvp)for(const unit of p1.concat(p2))if(unit.pvpStats){
+    const hpRate=unit.maxHp>0?Math.max(0,unit.hp)/unit.maxHp:1,stats=unit.pvpStats;
+    for(const [field,value]of Object.entries(stats))if(!['hp','guc'].includes(field))unit[field]=value;
+    unit.maxHp=stats.hp;unit.hp=Math.round(stats.hp*hpRate);
+    if(unit.pvpPartnerSkills)unit.partnerSkills=unit.pvpPartnerSkills;
+    if(unit.pvpCritDamage!=null)unit.critDamage=unit.pvpCritDamage;
+  }
   if (st) console.log(`[savas] stage ${bpId} "${st.ad}" -> ${p2.length} dusman: ${p2.map(u => u.id + '@pos' + u.pos).join(', ')}`);
   if (arenaRakip) console.log(`[arena] ${arenaRakip.name} lv${arenaRakip.level} -> ${p2.length} hero${arenaRakip.units ? ' (saved account)' : ', power x' + arenaRakip.power}`);
 
@@ -1335,6 +1349,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       actives.push(...heroSkills.eventFrames(unit,records));
     }
     actives.push(...heroSkills.startRound(p1.concat(p2)));
+    actives.push(...require('./zanpakuto-combat').round([p1,p2],t,(caster,target,enemies,allies,spec)=>vurus(caster,target,false,enemies,options.random||Math.random,false,allies,spec),options.random||Math.random));
     appendDeaths(actives);
     // Opening Mysteries have priority; prompt skills retain their independent action.
     for (const u of initiative(p1.concat(p2))) {
@@ -1426,7 +1441,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   return {
     chaseTrace: chaseContext.trace,
     chakra: chaseContext.chakra,
-    payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1 }, player2: { roles: roles2 }, turns }),
+    payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1,knifeOfKillSoulID:p1.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, player2: { roles: roles2,knifeOfKillSoulID:p2.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, turns }),
     remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, rate: Math.max(0, unit.hp) / unit.maxHp })),
     won: arenaRakip
       ? p2.every(x => x.hp <= 0) && p1.some(x => x.hp > 0)

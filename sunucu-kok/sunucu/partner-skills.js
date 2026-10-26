@@ -217,12 +217,24 @@ put(13360082,'death',[B('a','atk',1,2)]);
 for(const [id,scope,value]of [[13900001,'e',1.75],[13900012,'e',2],[13360079,'ef',2],[13360080,'eb',3.5],[13900023,'elow',1],[13900024,'elow',2]])put(id,'death',[{kind:'damage',scope,value}]);
 const catalog = new Map();
 for(const row of tablo('PartnerChange').liste){for(const effect of json(row.effect))if(Number(effect.addType)>=200)catalog.set(Number(effect.addValue),{type:Number(effect.addType),description:row.desc});}
-function unlocked(state,heroId){
+// Fortify phase passives use SkillConfig IDs rather than PartnerChange IDs.
+for(const row of tablo('SkillConfig').liste.filter(r=>r._id>=14100001&&r._id<=14100031)){
+ const id=row._id,n=[...String(row.desc).matchAll(/(\d+(?:\.\d+)?)%/g)].map(m=>Number(m[1])/100),text=String(row.desc),field=/Kido ATK/i.test(text)?'magicAtk':/Physical ATK/i.test(text)?'atk':/Crit rate/i.test(text)?'critRate':/Hit rate/i.test(text)?'hitRate':/DEF/i.test(text)?'def':null;
+ if(/when losing/i.test(text)&&field)put(id,'start',[{...B('s',field,n[0],99),step:n[1]}]);
+ else if(/end of each round/i.test(text)&&field)put(id,'roundEnd',[{...B('s',field,n[0],99),accumulate:true}]);
+ else if(/recover own HP/i.test(text))put(id,'roundEnd',[H('s',n[0],'attack')]);
+ else if(/each attack restores/i.test(text))put(id,'attack',[H('s',n[0],'attack')]);
+ else if(/initial Speed/i.test(text))put(id,'start',[B('s','speed',n[0],99)]);
+ else if(/Crit DMG/i.test(text))put(id,'start',[B('s','critDamage',n[0],99)]);
+ else if(/When being attacked/i.test(text))put(id,'hit',[{...F('s',5),chance:n[0]}]);
+}
+function unlocked(state,heroId,options={}){
   const row=satir('HeroChangeAttr',heroId);
   const ids=row?json(row.chipID):[];
   const count=Math.max(0,Math.min(ids.length,Math.floor(Number(state.degisim&&state.degisim.hero&&state.degisim.hero[heroId])||0)));
   const out=[];
   for(const id of ids.slice(0,count)){const change=satir('PartnerChange',id);for(const effect of change?json(change.effect):[])if(Number(effect.addType)>=200)out.push(Number(effect.addValue));}
+  if(options.pvp&&Number(require('./seviye').veriOku().level)>=45)for(const a of require('./zanpakuto').phase(state,heroId)){if(Number(a.oper)===0&&definitions.has(Number(a.value)))out.push(Number(a.value));}
   return [...new Set(out)];
 }
 function trigger(event,caster,allies,enemies,targets,records,random=Math.random){

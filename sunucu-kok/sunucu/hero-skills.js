@@ -182,7 +182,7 @@ for (const plan of plans.values()) {
   plan.effects = effects.get(base) || [];
 }
 const controls = new Set(['stun','silence','disarm','fossilize','void','chaos','freeze','noFury','noHeal']);
-const multiplicative = new Set(['atk','def','speed']);
+const multiplicative = new Set(['atk','magicAtk','def','resistance','speed']);
 const buffIds = { atk:[13500009,13500010], def:[13500013,13500014], speed:[13500045,13500046],
   hitRate:[13500037,13500038], dodgeRate:[13500033,13500034], critRate:[13500035,13500036],
   blockRate:[13500029,13500030], punchRate:[13500039,13500040], helpRate:[13500041,13500042],
@@ -304,18 +304,18 @@ function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
 }
 function remove(target,negative,records) {
   if(negative){for(const field of ['mechaInflammation','mechaMysteryLockUntil','jiraiyaResistanceStacks','extremeChaosUntil','suppressedUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil'])delete target[field];target.paralyzed=false;}
-  const removed=(target.skillBuffs||[]).filter(buff=>negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect');
+  const removed=(target.skillBuffs||[]).filter(buff=>!buff.unclearable&&(negative?controls.has(buff.field)||buff.kind==='dot'||buff.value<0:!controls.has(buff.field)&&buff.kind!=='dot'&&buff.value>0&&buff.field!=='reflect'));
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>!removed.includes(buff));
   for(const buff of removed){const ids=buffIds[buff.field];const id=ids?ids[buff.value<0?1:0]:buff.buffId;
     if(id)records.push({cmd:controls.has(buff.field)?CMD.CONTROLBUFF:CMD.ATTRBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:id,buffTurn:0}});}
 }
 function removeField(target,field,records) {
-  const removed=(target.skillBuffs||[]).filter(buff=>buff.field===field);
+  const removed=(target.skillBuffs||[]).filter(buff=>buff.field===field&&!buff.unclearable);
   target.skillBuffs=(target.skillBuffs||[]).filter(buff=>buff.field!==field);
   if(removed.length&&buffIds[field])records.push({cmd:CMD.CONTROLBUFF,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:buffIds[field][0],buffTurn:0}});
 }
 function removeOneDebuff(target,records){
-  const buff=(target.skillBuffs||[]).find(b=>b.remaining>0&&(controls.has(b.field)||b.kind==='dot'||b.value<0));
+  const buff=(target.skillBuffs||[]).find(b=>!b.unclearable&&b.remaining>0&&(controls.has(b.field)||b.kind==='dot'||b.value<0));
   if(!buff)return false;
   target.skillBuffs=target.skillBuffs.filter(b=>b!==buff);
   const ids=buffIds[buff.field],id=ids?ids[buff.value<0?1:0]:buff.buffId;
