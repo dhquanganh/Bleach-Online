@@ -1,0 +1,12 @@
+{
+ "heroId":11120995,"summonId":11120996,"name":"Tobi [Great Ninja War]","assess":"SSS","quality":7,"tags":[30,52,11,12,14],
+ "mystery":{"id":13121801,"name":"Kanzeon Lotus King - All is Suffering","prompt":true,"consumesPrimary":false,"attackStat":"maxHp","damageType":"physical","target":9,"multiplier":0.18,"unavoidable":true,"tobiMystery":true,"cooldown":3,"battlefieldCooldown":0,"chakraCost":40},
+ "standard":{"id":13121802,"name":"Taijutsu Attack","attackStat":"maxHp","damageType":"physical","target":1,"multiplier":0.08,"tobiStandard":true,"cooldown":0},
+ "lineStandard":{"id":13121803,"name":"Taijutsu Attack","attackStat":"maxHp","damageType":"physical","target":1,"multiplier":0.08,"tobiStandard":true,"tobiLine":true,"causes":"repulse","cooldown":0},
+ "chases":[{"id":13121804,"name":"Wood Style - Thursting Spears","attackStat":"maxHp","damageType":"physical","target":1,"multiplier":0.09,"requires":"lowFloat","causes":"knockdown","tobiChase":true,"maxPerRound":1}],
+ "summit":{"id":13121805,"name":"Kanzeon Lotus King - Summit","attackStat":"maxHp","damageType":"physical","target":7,"multiplier":0.14,"unavoidable":true,"trigger":true,"tobiSummit":true,"causes":"lowFloat"},
+ "summoning":{"id":13121806,"name":"White Zetsu Call","support":true,"multiplier":0,"trigger":true},
+ "revival":{"id":13121807,"name":"Wood Style Chakra - Revival","support":true,"multiplier":0},
+ "lineChance":0.5,"summonCount":2,"summonHpRatio":0.6,"reviveHpRatio":0.4,"chaseSplashRatio":0.04,
+ "balanceNote":"User override: all damage uses maximum HP versus Physical DEF, including Zetsu attacks. Unspecified local tuning: Mystery 18%, standard 8%, chase 9% plus 4% full-lineup splash, Summit 14%, Zetsu 5% own max HP; 50% line standard. Attack/Ninjutsu kill buffs remain 40% as described but do not alter HP scaling."
+}

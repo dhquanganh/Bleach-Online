@@ -1,0 +1,6 @@
+{
+  "version": "2026102608",
+  "floor": 68,
+  "fix": "White Zetsu death pose timeout and interrupted-action callback",
+  "clientSha256": "b6e215e5c053e77621484904d018317f8e5d1468f309e53588cf89c16bd02dee"
+}

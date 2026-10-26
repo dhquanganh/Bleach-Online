@@ -1,0 +1,34 @@
+'use strict';
+const assert=require('node:assert/strict'),k=require('../tobi-war-combat'),n=require('../naruto-combat'),s=require('../hero-skills'),battle=require('../savas'),codec=require('../kodek');
+const unit=(id,pos,camp)=>({id,pos,camp,hp:10000,maxHp:10000,atk:1000,magicAtk:700,def:500,resistance:700,speed:100,level:99,quality:7,profession:1,hitRate:1,anger:0,normal:13100114,skill:0,skillId:13100114,verdi:0,partnerSkills:[],weaponSkills:[]});
+function fixture(camp=0,pos=1){const u=unit(k.config.heroId,pos,camp),enemies=[1,2,6,7,11].map(p=>unit(12101003,p,1-camp)),teams=camp?[enemies,[u]]:[[u],enemies];k.prepareSummons(teams);const ctx=n.create(teams,{random:()=>.5});n.startRound(ctx,1);return {u,enemies,ctx,z:teams[camp].filter(k.isZetsu)};}
+const attack=(u,v,move)=>battle.vurus(u,v,false,[v],()=>.5,false,[u],n.attackSpec(move));
+for(const camp of [0,1])for(let pos=1;pos<=15;pos++){
+ const {u,ctx,z}=fixture(camp,pos);assert(n.profile(u));assert(s.status(u,'immuneDebuffs'));assert.equal(z.length,2);assert(z.every(v=>v.hp===0&&v.maxHp===6000));ctx.chakra[camp]=40;assert.equal(n.useMystery(ctx,u).id,13121801);assert(n.useStandard(ctx,u,[u]));assert.equal(n.useMystery(ctx,u),null);n.startRound(ctx,3);assert.equal(n.useMystery(ctx,u),null);n.startRound(ctx,4);assert(n.useMystery(ctx,u));
+}
+for(const camp of [0,1]){
+ let f=fixture(camp);let {u,enemies,ctx,z}=f;const v=enemies[0],move=k.config.standard;
+ const damage=()=>{v.hp=1000000;return attack(u,v,move).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;};
+ const base=damage();u.atk*=100;u.magicAtk*=100;v.resistance*=100;assert.equal(damage(),base);u.hp=1;assert.equal(damage(),base);u.maxHp*=2;assert(damage()>base);v.def*=100;assert(damage()<base);
+ f=fixture(camp);({u,enemies,ctx,z}=f);k.summon(ctx,u);assert(z.every(v=>v.hp===6000));z[0].hp=2000;z[1].hp=3000;u.hp=0;let r=k.revivals(ctx);assert.equal(r.length,1);assert.equal(u.hp,4000);assert.equal(z[0].hp,0);assert.equal(z[1].hp,3000);u.hp=0;assert.equal(k.revivals(ctx).length,1);u.hp=0;assert.equal(k.revivals(ctx).length,0);
+ k.summon(ctx,u);u.noRevive=true;assert.equal(k.revivals(ctx).length,0);delete u.noRevive;u.itachiUnrevivable=true;assert.equal(k.revivals(ctx).length,0);delete u.itachiUnrevivable;
+ u.hp=10000;const before=ctx.chakra[camp];k.attacked(ctx,u,{prompt:true});assert.equal(u.tobiCostReduction,20);k.attacked(ctx,u,{prompt:true});assert.equal(u.tobiCostReduction,20);k.attacked(ctx,z[0],{prompt:true});assert.equal(u.tobiCostReduction,20);const ally=unit(11100001,15,camp);ctx.teams[camp].push(ally);k.attacked(ctx,ally,{prompt:true});assert.equal(u.tobiCostReduction,40);assert.equal(require('../pain-combat').mysteryCost(ctx,u,k.config.mystery),0);n.startRound(ctx,2);assert.equal(require('../pain-combat').mysteryCost(ctx,u,k.config.mystery),40);
+ z[0].hp=3;const hit=attack(enemies[0],z[0],{id:13121801,multiplier:100,attackStat:'atk',damageType:'physical',prompt:true});assert.equal(z[0].hp,1);enemies[0].rebirth={n:100,ae:8};enemies[0].skill=13121801;enemies[0].anger=100;z[0].hp=100;battle.vurus(enemies[0],z[0],false,[z[0]],()=>.5,false,[enemies[0]],null);assert.equal(z[0].hp,1,'legacy Mystery instant-kill must preserve Zetsu');delete enemies[0].rebirth;assert.equal(k.beforeDamage(ctx,z[0],{prompt:false},100),100);k.endRound(ctx);assert.equal(z[0].hp,3001);
+ enemies[0].hp=0;enemies[1].hp=900;enemies[2].hp=100;const frame={targets:[],reactions:[]};k.afterHit(ctx,u,enemies[0],[enemies[0]],k.config.mystery,frame);assert.equal(u.tobiKillStacks,1);assert.equal(k.triggers(ctx).length,1);n.startRound(ctx,3);assert.equal(k.roundRequests(ctx).length,1);assert.equal(k.roundRequests(ctx).length,0);ctx.chakra[camp]=0;u.mysteryReadyRound=6;k.afterHit(ctx,u,enemies[1],[enemies[1],enemies[2]],k.config.summit,frame);assert.equal(frame.comboTarget,enemies[2]);assert.equal(ctx.chakra[camp],20);assert.equal(u.mysteryReadyRound,5);assert(s.armor(u));assert.equal(n.setState(u,'lowFloat',ctx.round),null);n.startRound(ctx,4);assert(!s.armor(u));
+ const enemy=enemies[1];enemy.skillBuffs=[{field:'atk',value:1,remaining:2}];enemy.shield=9999;k.prepareMove(ctx,u,k.config.mystery);assert.equal(enemy.shield,0);assert.equal(enemy.skillBuffs.length,0);
+}
+for(const camp of [0,1]){
+ const {u,enemies,ctx}=fixture(camp);ctx.random=()=>.99;
+ assert.deepEqual(k.targets(k.config.standard,enemies[0],enemies,ctx).map(v=>v.pos),[11]);ctx.random=()=>.5;
+ assert.deepEqual(k.targets(k.config.lineStandard,enemies[0],enemies,ctx).map(v=>v.pos),[6,7]);
+ const move=k.config.chases[0],primary=enemies[0];ctx.chakra[camp]=0;ctx.chakra[1-camp]=60;
+ const frame=attack(u,primary,move),before=enemies.map(v=>v.hp);k.afterHit(ctx,u,primary,[primary],move,frame);
+ assert.equal(primary.immobileUntil,ctx.round);assert.equal(ctx.chakra[camp],40);assert.equal(ctx.chakra[1-camp],20);assert(enemies.every((v,i)=>v.hp<before[i]));assert.equal(frame.reactions.filter(f=>f.skillEffectId===move.id).length,0,'one chase animation for lineup splash');assert.equal(frame.targets.filter(r=>r.cmd===1&&r.targetCamp!==camp).length,enemies.length);
+ const plain=enemies[1];plain.hp=100000;const base=attack(u,plain,k.config.mystery).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;plain.hp=100000;plain.auxiliary=true;const summonDamage=attack(u,plain,k.config.mystery).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;assert(Math.abs(summonDamage/base-1.4)<.01);
+ u.blockRate=1;u.antiknockRate=1;const counter=()=>{u.hp=u.maxHp;plain.hp=100000;return battle.vurus(plain,u,false,[u],()=>.5,false,[plain],{damageType:'physical',attackStat:'atk',multiplier:.1}).reactions.flatMap(f=>f.targets).filter(r=>r.targetCamp!==camp).reduce((sum,r)=>sum+(r.result.hurtHp||0),0);};const counterBase=counter();assert(counterBase>0);u.atk*=100;assert.equal(counter(),counterBase);u.maxHp*=2;assert(counter()>counterBase);
+}
+for(const camp of [0,1]){
+ const f=fixture(camp);f.enemies.forEach(e=>{e.hp=e.maxHp=1000000;e.atk=20;});
+ const result=battle.kadroRapor(0,null,{ad:'Tobi revival integration',birimler:camp?[f.u]:f.enemies},{playerUnits:camp?f.enemies:[f.u],playerState:{},forceWin:false,scaleEnemy:false,random:()=>.5});const r=codec.decodeBattleReport(result.payload);assert.equal(r._consumed,r._total);const moves=r.turns.flatMap(t=>t.actives.map(a=>({...a,round:t.curTurn})));assert(moves.some(a=>a.skillEffectId===13121801));assert(moves.some(a=>a.skillEffectId===13121806));assert(moves.some(a=>a.skillEffectId===13121805&&a.round>1));assert(r.roleBattleInfos1||r.player1||r.turns.length);
+}
+console.log('PASS Tobi: both camps/all positions, HP-only damage/DEF, Chakra/CD, Zetsu summon/sacrifice/repeated revival/block flags, Mystery protection, spore cap/reset, 50% regeneration, immediate/delayed Summit, lowest-HP Low Float, armor/CD refund, dispels and encoded combat reports.');

@@ -1,0 +1,5821 @@
+{
+  "version": 3,
+  "player1": {
+    "knifeOfKillSoulID": 2000209,
+    "knifeSoulID": 0,
+    "bloodAddRate": 0,
+    "roles": [
+      {
+        "pos": 6,
+        "roleId": 11100006,
+        "quality": 2,
+        "level": 158,
+        "curHealth": 15080,
+        "totalHealth": 15080,
+        "curAnger": 50,
+        "skillId": 13100033,
+        "name": "qa",
+        "rebirthNum": 1
+      },
+      {
+        "pos": 7,
+        "roleId": 11120995,
+        "quality": 7,
+        "level": 1,
+        "curHealth": 90916,
+        "totalHealth": 90916,
+        "curAnger": 50,
+        "skillId": 13121801,
+        "name": "Tobi [Great Ninja War]",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 1,
+        "roleId": 11120996,
+        "quality": 7,
+        "level": 1,
+        "curHealth": 0,
+        "totalHealth": 54550,
+        "curAnger": 0,
+        "skillId": 13121808,
+        "name": "White Zetsu",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 2,
+        "roleId": 11120996,
+        "quality": 7,
+        "level": 1,
+        "curHealth": 0,
+        "totalHealth": 54550,
+        "curAnger": 0,
+        "skillId": 13121808,
+        "name": "White Zetsu",
+        "rebirthNum": 0
+      }
+    ]
+  },
+  "player2": {
+    "knifeOfKillSoulID": 0,
+    "knifeSoulID": 0,
+    "bloodAddRate": 0,
+    "roles": [
+      {
+        "pos": 6,
+        "roleId": 11160005,
+        "quality": 5,
+        "level": 68,
+        "curHealth": 290040,
+        "totalHealth": 290040,
+        "curAnger": 50,
+        "skillId": 13100113,
+        "name": "Shin Tōshirō Hitsugaya",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 1,
+        "roleId": 11160004,
+        "quality": 5,
+        "level": 68,
+        "curHealth": 290040,
+        "totalHealth": 290040,
+        "curAnger": 50,
+        "skillId": 13100114,
+        "name": "Pantera Grimmjow",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 11,
+        "roleId": 11160002,
+        "quality": 5,
+        "level": 68,
+        "curHealth": 290040,
+        "totalHealth": 290040,
+        "curAnger": 50,
+        "skillId": 13100114,
+        "name": "Sōō Zabimaru Renji",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 7,
+        "roleId": 11150013,
+        "quality": 5,
+        "level": 68,
+        "curHealth": 290040,
+        "totalHealth": 290040,
+        "curAnger": 50,
+        "skillId": 13100114,
+        "name": "Berserk Renji",
+        "rebirthNum": 0
+      },
+      {
+        "pos": 2,
+        "roleId": 11150012,
+        "quality": 5,
+        "level": 68,
+        "curHealth": 290040,
+        "totalHealth": 290040,
+        "curAnger": 50,
+        "skillId": 13100114,
+        "name": "Ishida Ryūken",
+        "rebirthNum": 0
+      }
+    ]
+  },
+  "turns": [
+    {
+      "curTurn": 1,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 100,
+          "skillEffectId": 13310093,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 100,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6231,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6156,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5684,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6260,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5905,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2315255808,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5856,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 3,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121802,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 9423,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 2,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121801,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21432,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20539,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20979,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 22460,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21057,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121806,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16213,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500037,
+                "buffTurn": 3
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -12219,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -10
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500009,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 3
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 1,
+          "skillEffectId": 13121808,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 2677,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 2,
+          "skillEffectId": 13121808,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 2682,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121803,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 10310,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 9725,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000104,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 1,
+          "skillEffectId": 13121809,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 2,
+          "skillEffectId": 13121809,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121802,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 3,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121805,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16414,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 17312,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 17477,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 17223,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16834,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000101,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121804,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15555,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4776,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5035,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4709,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000203,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 100,
+          "skillEffectId": 13310093,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 100,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5716,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5460,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6078,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5429,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6204,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 35925,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 3321888768,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121803,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 9596,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000104,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 4,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500009,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121801,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21766,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20910,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 22281,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20219,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20597,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121806,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 11665,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -12219,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -40
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2248146944,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121803,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 9128,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000104,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121802,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 5,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121805,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16295,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15836,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15980,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16023,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16539,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000101,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121804,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16473,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4972,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4915,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4678,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000203,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 100,
+          "skillEffectId": 13310093,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 100,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 5884,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6042,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6040,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 6222,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500066,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15651,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15895,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500037,
+                "buffTurn": 3
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2248146944,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2248146944,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121802,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 10426,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 6,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121801,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21947,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20867,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 20868,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 23649,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 23623,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121806,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 11323,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54549,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 1,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 4,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 4,
+                "buffId": 13500062,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500014,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -12219,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -10
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500009,
+                "buffTurn": 3
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 3
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 1,
+          "skillEffectId": 13121808,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 2543,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 2,
+          "skillEffectId": 13121808,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 2307,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121803,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 9509,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000104,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 1,
+          "skillEffectId": 13121809,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 2,
+          "skillEffectId": 13121809,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121802,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500066,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 7,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121805,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 17336,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 1,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 7630,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16183,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 16053,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 17430,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000806,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000101,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121804,
+          "activeType": 7,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15104,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4745,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 4881,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2147483648,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000203,
+                "buffTurn": 2
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 6,
+          "skillEffectId": 13100033,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 11558,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 3321888768,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 1,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -50
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 6,
+              "reportTargetStatus": 3321888768,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 15080,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121803,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 10382,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000104,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 11,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curTurn": 8,
+      "actives": [
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500009,
+                "buffTurn": 0
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121801,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 22007,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21215,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21314,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 21270,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 9,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 9,
+                "buffId": 19000100,
+                "buffTurn": 1
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121806,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -54550,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 90916,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 2,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500033,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500058,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 2181038080,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -12219,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 1,
+              "reportTargetStatus": 1107296256,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": -36366,
+                "hurtAnger": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 0,
+          "activePos": 7,
+          "skillEffectId": 13121807,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 6,
+          "skillEffectId": 13100113,
+          "activeType": 1,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 2,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 54550,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -40
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 13100114,
+          "activeType": 2,
+          "targets": [
+            {
+              "cmd": 0,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 0,
+              "result": {
+                "cmd": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 0,
+              "targetPos": 7,
+              "reportTargetStatus": 3254779904,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 36366,
+                "hurtAnger": 0
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": 100
+              }
+            }
+          ]
+        },
+        {
+          "activeCamp": 1,
+          "activePos": 7,
+          "skillEffectId": 0,
+          "activeType": 4,
+          "targets": [
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500035,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 2,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 6,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 2,
+              "targetCamp": 1,
+              "targetPos": 11,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 2,
+                "buffId": 13500080,
+                "buffTurn": 1
+              }
+            },
+            {
+              "cmd": 1,
+              "targetCamp": 1,
+              "targetPos": 7,
+              "reportTargetStatus": 33554432,
+              "result": {
+                "cmd": 1,
+                "hurtHp": 0,
+                "hurtAnger": -100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_consumed": 7833,
+  "_total": 7833
+}

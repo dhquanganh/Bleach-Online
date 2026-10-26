@@ -64758,5 +64758,101 @@
     "desc": "Immune to all Debuffs.",
     "icon": 13121707,
     "sortId": 7
+  },
+  {
+    "id": "00C83909",
+    "skillId": 13121801,
+    "name": "Kanzeon Lotus King - All is Suffering",
+    "desc": "Causes unavoidable five-elemental damage to up to 9 units in the opponent's field and cancels all <font color=\"#4dc831\">Buffs</font> and <font color=\"#4dc831\">Shields</font>. This skill causes 40% more damage to Clones, Summons and Puppets and if it defeats a unit, additionally executes <font color=\"#4dc831\">Additional Skill: Kanzeon Lotus King - Summit</font>. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "icon": 13121801,
+    "sortId": 1
+  },
+  {
+    "id": "00C8390A",
+    "skillId": 13121802,
+    "name": "Taijutsu Attack",
+    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Immunity</font> for 1 round, a chance of attacking a line of opponent units instead and causes <font color=\"#4dc831\">Repulse</font> to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "icon": 13121802,
+    "sortId": 2
+  },
+  {
+    "id": "00C8390B",
+    "skillId": 13121803,
+    "name": "Taijutsu Attack",
+    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Immunity</font> for 1 round, a chance of attacking a line of opponent units instead and causes <font color=\"#4dc831\">Repulse</font> to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "icon": 13121803,
+    "sortId": 3
+  },
+  {
+    "id": "00C8390C",
+    "skillId": 13121804,
+    "name": "Wood Style - Thursting Spears",
+    "desc": "<font color=\"#4dc831\">Chases and Attacks a Low Floated unit</font>, causes <font color=\"#4dc831\">Knockdown</font>, <font color=\"#4dc831\">Immobile</font> and absorbs 40 Chakra, then causes damage to all units in the opponent's lineup. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "icon": 13121804,
+    "sortId": 4
+  },
+  {
+    "id": "00C8390D",
+    "skillId": 13121805,
+    "name": "Kanzeon Lotus King - Summit",
+    "desc": "After Tobi executes <font color=\"#4dc831\">Kanzeon Lotus King - All is Suffering</font>, triggered at the beginning of the next round, causes unavoidable damage and <font color=\"#4dc831\">Interruption</font> to up to 7 units in the opponent's field, causes <font color=\"#4dc831\">Low Float</font> to the unit hit with the lowest <font color=\"#4dc831\">HP</font>, then Tobi receives <font color=\"#4dc831\">Level 2 Super Armor</font> until the end of the round and reduces his Mystery Cooldown by 1. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "icon": 13121805,
+    "sortId": 5
+  },
+  {
+    "id": "00C8390E",
+    "skillId": 13121806,
+    "name": "White Zetsu Call",
+    "desc": "Summons 2 White Zetsus with 60% of Tobi's max HP.",
+    "icon": 13121806,
+    "sortId": 6
+  },
+  {
+    "id": "00C8390F",
+    "skillId": 13121807,
+    "name": "Wood Style Chakra - Revival",
+    "desc": "Sacrifices the White Zetsu with the lowest HP to revive Tobi to 40% HP.",
+    "icon": 13121807,
+    "sortId": 7
+  },
+  {
+    "id": "00C83910",
+    "skillId": 13121808,
+    "name": "White Zetsu Attack",
+    "desc": "White Zetsu attacks an opponent. Damage scales with max HP.",
+    "icon": 13121808,
+    "sortId": 8
+  },
+  {
+    "id": "00C83911",
+    "skillId": 13121809,
+    "name": "Spore Jutsu - Recovery",
+    "desc": "Spore Jutsu: recovers 50% HP at the end of the round.",
+    "icon": 13121809,
+    "sortId": 9
+  },
+  {
+    "id": "00C83912",
+    "skillId": 13121810,
+    "name": "White Zetsu Mutation",
+    "desc": "Tobi has <font color=\"#4dc831\">Wood Style Chakra</font>. Whenever Tobi defeats a unit with <font color=\"#4dc831\">Kanzeon Lotus King - All is Suffering</font>, scales his <font color=\"#4dc831\">Attack</font> and <font color=\"#4dc831\">Ninjutsu</font> by 40% and after Tobi executes it, summons 2 <font color=\"#4dc831\">White Zetsus</font> with 60% of his max <font color=\"#4dc831\">HP</font> and has <font color=\"#4dc831\">Spore Jutsu</font>.",
+    "icon": 13121810,
+    "sortId": 10
+  },
+  {
+    "id": "00C83913",
+    "skillId": 13121811,
+    "name": "Wood Style Chakra",
+    "desc": "Tobi is immune to Debuffs. Whenever Tobi executes a Trigger skill, recovers 20 Chakra. Whenever Tobi suffers fatal damage, if there is a White Zetsu in your lineup, sacrifice the Clone with the lowest HP to revive Tobi to 40% HP.",
+    "icon": 13121811,
+    "sortId": 11
+  },
+  {
+    "id": "00C83914",
+    "skillId": 13121812,
+    "name": "Spore Jutsu",
+    "desc": "White Zetsu cannot be defeated by Mystery skills and recovers 50% HP at the end of the round. While White Zetsu is alive, whenever a ninja in your lineup is attacked for the first time in a round, all units in your lineup will have their Mystery's Chakra Cost decreased by 10 and if that damage is a Mystery's damage, decreases 20 instead (stackable up to 40), lasts until the end of the round.",
+    "icon": 13121812,
+    "sortId": 12
   }
 ]

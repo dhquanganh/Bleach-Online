@@ -14,6 +14,7 @@ const nagato = require('./nagato-combat');
 const gaara = require('./gaara-combat');
 const tsunade = require('./tsunade-combat');
 const nineTails = require('./naruto-nine-tails-combat');
+const tobi = require('./tobi-war-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
 const displayStates=[null,STATE.LOW_FLOAT,STATE.HIGH_FLOAT,STATE.KNOCKDOWN,STATE.REPULSE,STATE.IMMOBILE];
@@ -24,7 +25,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -52,6 +53,7 @@ function create(teams, options = {}) {
   nagato.initialize(context);
   gaara.initialize(context);
   tsunade.initialize(context);
+  tobi.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -99,7 +101,7 @@ function spendCooldown(ctx, unit, key, move) {
   ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
 }
 function useStandard(ctx, unit, allies) {
-  const move=nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies))));
+  const move=tobi.selectStandard(ctx,unit,nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies)))));
   if(!move || sasuke.active(unit,'sasukeFearUntil') || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
     if(mecha.isMecha(unit)){

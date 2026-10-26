@@ -1,0 +1,41 @@
+[savas] kazanan hero=11100001 (Ghostsword Male) | dusman=12101003 (Murciélago) | RoleModel=20187 Enemy=19590 Skill=8107
+[savas] REPLAY: 7 gercek savas (rapor+sonuc) -> oynatilacak
+[savas] yerelde dokusu olan skill efekti: 458
+[savas] fight opcode sayisi: 17
+[moduller] ekipman: 57 handler
+[moduller] savas-etkinlik: 88 handler
+[moduller] evcil-ek: 33 handler
+[arena] 20 bot units have cached character models
+[arena] 9 dungeon formation layouts available
+[moduller] ev: 61 handler
+[moduller] sosyal: 56 handler
+[moduller] zanpakuto: 5 handler
+[moduller] 338 ek handler kaydedildi
+[gorev] motor: 591 gorev yuklendi (durum-tabanli, seviye/on-gorev/kill kontrollu)
+kapsamli cevap yuklendi: 63 opcode
+harita: 28 gercek cevap istisnasi | ekstra: 1 | login push: 1 | VIP max: 10
+veri.json: {"_aciklama":"VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.","altin":49978809,"gumus":302687201,"gumusHigh":0,"kupon":537036,"askeriEmir":501700,"vipLevel":0,"vipExp":0,"level":158,"nick":"qa","tumKarakterler":false,"savasIstatistigiOtomatik":false,"generalsSoul":1380,"blueSoul":50,"purpleSoul":215,"goldSoulV":1095,"orangeSoul":0,"herolar":[11120940,11120930,11120920,11120950,11120960,11120901,11120970,11120990,11120991,11120992,11120995],"deneyim":1477953083,"prestij":358300,"rutbe":40100029,"illusionCredits":{"20745:1:1569789919":true,"aizen:20746:6ad4de542b68ce1713162e25":true,"aizen:20747:6ad4de542b68ce1713162e25":true,"aizen:20748:6ad4de542b68ce1713162e25":true,"aizen:20749:6ad4de542b68ce1713162e25":true,"aizen:20750:6ad4de542b68ce1713162e25":true,"aizen:20751:6ad4de542b68ce1713162e25":true},"dailyTaskSpending":{"day":"2026-10-25","count":5},"ultimateBP":{"pieces":3000,"remainder":0,"spent":30000,"resetId":"ultimate-bp-ranking:1:reset:1"},"achievementGoldSpent":30000}
+[karakter] {"nick":"qa","anaId":11100006,"rol":"Hollowblade Female"} | ana hero id: 11100006
+[seviye] {"anaLv":158,"anaExp":1477953083,"need":2017095208,"partnerKayit":12} | [beceri] {"ana":13100033,"anaAd":"Void Explosion","anaLv":0,"acik":6,"dugum":27} | partner(devsirilen): 1 | kadro: {"11100006":6,"11120901":0,"11120920":0,"11120930":0,"11120940":0,"11120950":0,"11120960":0,"11120970":0,"11120990":0,"11120991":0,"11120992":0,"11120994":0,"11120995":7}
+[bleachtrain] {"gorev":184,"alinan":0,"paket":0,"sartsiz":0}
+[kontrol] http://127.0.0.1:10067 (topup/hesap/arena-matching)
+[oyun-sunucu] 127.0.0.1:10065 (replay + para enjeksiyon)
+[policy] 127.0.0.1:1843
+  [char] altin=49978809 gumus=302687201 kupon=537036 vip=0 ruhlar yazildi
+  [char] ana hero level=158 exp=1477953083 pos=6 skill=13100033
+  [char] HEROLAR: +12 hero (1 devsirilen; giris sonu 570), paket 4678B
+  [char] ekipman yamasi: 153 ornek, paket 5428B
+(node:2728) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[panel] CustomHeros: 138 karakter
+[infinite-illusion] Boss database unavailable
+[savas] stage 0 "Tower of Gold 68" -> 5 dusman: 11160005@pos6, 11160004@pos1, 11160002@pos11, 11150013@pos7, 11150012@pos2
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable

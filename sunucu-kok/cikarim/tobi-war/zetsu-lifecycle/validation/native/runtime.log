@@ -1,0 +1,20 @@
+TEXTURE idle frames=34
+TEXTURE standard frames=58
+TEXTURE run frames=4
+TEXTURE entry frames=15
+TEXTURE healing frames=23
+TEXTURE hit frames=8
+TEXTURE dead frames=19
+CASE six original White Zetsu, both camps
+LATE_TEXTURE_OK six pending entries
+SNAPSHOT katsuyu-phase-0
+SNAPSHOT katsuyu-phase-1
+SNAPSHOT katsuyu-phase-2
+SNAPSHOT katsuyu-phase-3
+SNAPSHOT katsuyu-phase-4
+SNAPSHOT katsuyu-phase-5
+SNAPSHOT katsuyu-phase-6
+RESTORE_OK six summons; cancelled death callback; source entry/idle restored
+SNAPSHOT katsuyu-phase-7
+SNAPSHOT katsuyu-phase-8
+DONE White Zetsu native lifecycle; remaining=0

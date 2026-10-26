@@ -1,0 +1,55 @@
+{
+  "_aciklama": "VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilana Sifirla' bunu veri.json'a geri yazar. DUZENLEME.",
+  "altin": 49978809,
+  "gumus": 302687201,
+  "gumusHigh": 0,
+  "kupon": 537036,
+  "askeriEmir": 501700,
+  "vipLevel": 0,
+  "vipExp": 0,
+  "level": 158,
+  "nick": "qa",
+  "tumKarakterler": false,
+  "savasIstatistigiOtomatik": false,
+  "generalsSoul": 1380,
+  "blueSoul": 50,
+  "purpleSoul": 215,
+  "goldSoulV": 1095,
+  "orangeSoul": 0,
+  "herolar": [
+    11120940,
+    11120930,
+    11120920,
+    11120950,
+    11120960,
+    11120901,
+    11120970,
+    11120990,
+    11120991,
+    11120992,
+    11120995
+  ],
+  "deneyim": 1477953083,
+  "prestij": 358300,
+  "rutbe": 40100029,
+  "illusionCredits": {
+    "20745:1:1569789919": true,
+    "aizen:20746:6ad4de542b68ce1713162e25": true,
+    "aizen:20747:6ad4de542b68ce1713162e25": true,
+    "aizen:20748:6ad4de542b68ce1713162e25": true,
+    "aizen:20749:6ad4de542b68ce1713162e25": true,
+    "aizen:20750:6ad4de542b68ce1713162e25": true,
+    "aizen:20751:6ad4de542b68ce1713162e25": true
+  },
+  "dailyTaskSpending": {
+    "day": "2026-10-25",
+    "count": 5
+  },
+  "ultimateBP": {
+    "pieces": 3000,
+    "remainder": 0,
+    "spent": 30000,
+    "resetId": "ultimate-bp-ranking:1:reset:1"
+  },
+  "achievementGoldSpent": 30000
+}

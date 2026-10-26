@@ -1,0 +1,113 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=34
+TEXTURE zetsu-idle frames=34
+TEXTURE zetsu-heal frames=23
+TEXTURE mystery frames=124
+TEXTURE summon frames=46
+TEXTURE zetsu-dead frames=19
+TEXTURE line frames=146
+TEXTURE zetsu-attack frames=58
+TEXTURE zetsu-entry frames=15
+TEXTURE chase frames=97
+TEXTURE summit frames=55
+TEXTURE revive frames=23
+TEXTURE standard frames=69
+CASE 13121801 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13121802 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-27
+SNAPSHOT CASE-standard-camp-0-frame-48
+CASE 13121803 camp=0
+SNAPSHOT CASE-line-camp-0-frame-4
+SNAPSHOT CASE-line-camp-0-frame-58
+SNAPSHOT CASE-line-camp-0-frame-102
+CASE 13121804 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-38
+SNAPSHOT CASE-chase-camp-0-frame-67
+CASE 13121805 camp=0
+SNAPSHOT CASE-summit-camp-0-frame-4
+SNAPSHOT CASE-summit-camp-0-frame-22
+SNAPSHOT CASE-summit-camp-0-frame-38
+CASE 13121806 camp=0
+SNAPSHOT CASE-summon-camp-0-frame-4
+SNAPSHOT CASE-summon-camp-0-frame-18
+SNAPSHOT CASE-summon-camp-0-frame-32
+CASE 13121807 camp=0
+SNAPSHOT CASE-revive-camp-0-frame-4
+SNAPSHOT CASE-revive-camp-0-frame-9
+SNAPSHOT CASE-revive-camp-0-frame-16
+CASE 0 camp=0
+SNAPSHOT CASE-zetsu-entry-camp-0-frame-4
+SNAPSHOT CASE-zetsu-entry-camp-0-frame-6
+SNAPSHOT CASE-zetsu-entry-camp-0-frame-10
+CASE 0 camp=0
+SNAPSHOT CASE-zetsu-dead-camp-0-frame-4
+SNAPSHOT CASE-zetsu-dead-camp-0-frame-7
+SNAPSHOT CASE-zetsu-dead-camp-0-frame-13
+CASE 13121808 camp=0
+SNAPSHOT CASE-zetsu-attack-camp-0-frame-4
+SNAPSHOT CASE-zetsu-attack-camp-0-frame-23
+SNAPSHOT CASE-zetsu-attack-camp-0-frame-40
+CASE 13121809 camp=0
+SNAPSHOT CASE-zetsu-heal-camp-0-frame-4
+SNAPSHOT CASE-zetsu-heal-camp-0-frame-9
+SNAPSHOT CASE-zetsu-heal-camp-0-frame-16
+CASE 13121801 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+CASE 13121802 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-27
+SNAPSHOT CASE-standard-camp-1-frame-48
+CASE 13121803 camp=1
+SNAPSHOT CASE-line-camp-1-frame-4
+SNAPSHOT CASE-line-camp-1-frame-58
+SNAPSHOT CASE-line-camp-1-frame-102
+CASE 13121804 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-38
+SNAPSHOT CASE-chase-camp-1-frame-67
+CASE 13121805 camp=1
+SNAPSHOT CASE-summit-camp-1-frame-4
+SNAPSHOT CASE-summit-camp-1-frame-22
+SNAPSHOT CASE-summit-camp-1-frame-38
+CASE 13121806 camp=1
+SNAPSHOT CASE-summon-camp-1-frame-4
+SNAPSHOT CASE-summon-camp-1-frame-18
+SNAPSHOT CASE-summon-camp-1-frame-32
+CASE 13121807 camp=1
+SNAPSHOT CASE-revive-camp-1-frame-4
+SNAPSHOT CASE-revive-camp-1-frame-9
+SNAPSHOT CASE-revive-camp-1-frame-16
+CASE 0 camp=1
+SNAPSHOT CASE-zetsu-entry-camp-1-frame-4
+SNAPSHOT CASE-zetsu-entry-camp-1-frame-6
+SNAPSHOT CASE-zetsu-entry-camp-1-frame-10
+CASE 0 camp=1
+SNAPSHOT CASE-zetsu-dead-camp-1-frame-4
+SNAPSHOT CASE-zetsu-dead-camp-1-frame-7
+SNAPSHOT CASE-zetsu-dead-camp-1-frame-13
+CASE 13121808 camp=1
+SNAPSHOT CASE-zetsu-attack-camp-1-frame-4
+SNAPSHOT CASE-zetsu-attack-camp-1-frame-23
+SNAPSHOT CASE-zetsu-attack-camp-1-frame-40
+CASE 13121809 camp=1
+SNAPSHOT CASE-zetsu-heal-camp-1-frame-4
+SNAPSHOT CASE-zetsu-heal-camp-1-frame-9
+SNAPSHOT CASE-zetsu-heal-camp-1-frame-16
+DONE Tobi/Zetsu native component; remaining=0
