@@ -247,6 +247,7 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
   const suitCounts = new Map();
   const percentBonuses = new Map();
   const stonePrimaryRates = new Map();
+  const ornamentPrimaries = new Map();
   const add = (id, v) => {
     // Attack/defense percentage names are not the client's ControlRate/ControlAnti slots.
     if (Number(id) === 32 || Number(id) === 33) {
@@ -279,6 +280,8 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
         else if (x.kat === 6) { const r = ornamentValue(x.tpl, L); if (r && i === 0) v += Number(r.f3) || 0; }
       }
       add(t, v);
+      const primary=ATTR_IDX[t];
+      if(Number(a.majorType)===6&&primary>=0&&primary<=3)ornamentPrimaries.set(primary,(ornamentPrimaries.get(primary)||0)+v);
     });
     for (const ap of (x.app || [])) { const d = equipAdditional(ap[0]); const div = d ? (d.div || 1) : 1; add(ap[1], (ap[2] || 0) / div); }
     for (const gem of (x.gems || [])) {
@@ -397,6 +400,12 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
     [statlar.IDX.Agile]: [statlar.IDX.Speed],
     [statlar.IDX.Life]: [statlar.IDX.Health],
   };
+  // Flat accessory primaries must improve their derived combat stats too,
+  // before stones/percentages and final rebirth/refinery/star multipliers.
+  for(const [index,amount] of ornamentPrimaries){
+    const primary=baseValue(index);if(!(primary>0))continue;
+    for(const target of derived[index]||[]){const base=baseValue(target);if(base>0)ek[target]+=Math.round(amount*base/primary);}
+  }
   for (const [index, rate] of stonePrimaryRates) {
     const primary = baseValue(index);
     if (!(primary > 0)) continue;

@@ -268,8 +268,9 @@ function hpRecord(unit, amount, targetEffect=true) {
   return {cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,
     reportTargetStatus:(ST.HIT|(targetEffect?ST.TARGET_EFFECT:0)|(unit.hp<=0?ST.DIED:0))>>>0,result:{hurtHp:amount,hurtAnger:0}};
 }
-function changeFury(unit, amount, records, unresistable=false, random=Math.random) {
-  if(unit.hp<=0||!unresistable&&(amount>0&&status(unit,'noFury')||amount<0&&value(unit,'furyResist')>0&&random()<value(unit,'furyResist')))return;
+function changeFury(unit, amount, records, unresistable=false, random=Math.random, source=null) {
+  const resist=Math.max(0,Math.min(1,value(unit,'furyResist')-(source?value(source,'furyEffect'):0)));
+  if(unit.hp<=0||!unresistable&&(amount>0&&status(unit,'noFury')||amount<0&&resist>0&&random()<resist))return;
   const before=unit.anger; unit.anger=Math.max(0,Math.min(100,before+amount));
   records.push({cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:before-unit.anger}});
 }
@@ -334,7 +335,7 @@ function apply(plan,caster,allies,enemies,hitTargets,records,random=Math.random)
       if(caster.camp!==target.camp&&status(target,'invincible')&&rule.kind!=='clear')continue;
       const chance=rule.chance==='level'?Math.max(.05,Math.min(.95,.5+((caster.level||1)-(target.level||1))*.02+value(caster,'controlRate'))):rule.chance==null?1:rule.chance;
       if(chance<1&&random()>=chance)continue;
-      if(rule.kind==='fury')changeFury(target,rule.fraction?Math.round(target.anger*rule.value):rule.value,records,rule.unresistable,random);
+      if(rule.kind==='fury')changeFury(target,rule.fraction?Math.round(target.anger*rule.value):rule.value,records,rule.unresistable,random,caster);
       else if(rule.kind==='heal'){
         if(rule.regen&&require('./gaara-combat').blocks(caster,target))continue;
         const amount=(rule.basis==='maxHp'?caster.maxHp:rule.basis==='targetMaxHp'?target.maxHp:healPower(caster))*rule.value;

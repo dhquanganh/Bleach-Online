@@ -1,5 +1,5 @@
 {
-  "version": "2026102525",
+  "version": "2026102601",
   "classes": [
     "Processors\\Game\\Lobby\\TeamBattle\\TProcessorTeamBattle.as",
     "Processors\\Game\\Lobby\\TeamBattle\\TProcessorWindowTeamBattleChoose.as",
@@ -12,5 +12,5 @@
     "Processors\\Game\\MiniBattle\\ScriptAction\\TScriptActionCheckHP.as",
     "Processors\\Game\\MiniBattle\\TComponentReportTable.as"
   ],
-  "sha256": "f3276f24e85a9a166835cc1abcba768638c8994ef061721de161c04d19263d6e"
+  "sha256": "22f523a6d67a0ee694236825ee7fdaaa199d3d2d45e7578f55455c4842084b4e"
 }

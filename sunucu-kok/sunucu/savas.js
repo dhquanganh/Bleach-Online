@@ -334,6 +334,7 @@ function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
     damageBonus: stat ? stat.damageBonus : rates.hurtRate,
     damageReduction: stat ? stat.damageReduction : rates.avoidHurtRate,
     magicAtk: stat && stat.magicAtk != null ? Math.max(0,Math.round(stat.magicAtk * (typeof ol==='object'?ol.genel:ol))) : atk,
+    resistance: stat && stat.resistance != null ? Math.max(0,Math.round(stat.resistance * (typeof ol==='object'?ol.genel:ol))) : def,
     recoverRate: stat ? stat.recoverRate : rates.recoverRate,
     controlRate: stat ? stat.controlRate : 0, controlResist: stat ? stat.controlResist : 0,
     furyEffect: stat ? stat.furyEffect : 0, furyResist: stat ? stat.furyResist : 0,
@@ -814,7 +815,10 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   const hitTargets = [];
   // Spend rage before restoration: Urahara/Unohana recover it after casting.
   const rageRecords = [];
-  if (!attackSpec) heroSkills.changeFury(u,extra ? 0 : skillAt ? (talent.normalSkill && u.anger < 100 ? 0 : -100) : 50,rageRecords);
+  if (!attackSpec) {
+    const furyChange=extra?0:skillAt?(talent.normalSkill&&u.anger<100?0:-100):50;
+    heroSkills.changeFury(u,furyChange,rageRecords,furyChange<0,random);
+  }
   const triple = rebirth.proc(u, 2, random);
   const ignoreDefense = rebirth.proc(u, 5, random);
   // Offensive scaling is independent of the defense/resistance used by the move.

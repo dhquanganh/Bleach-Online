@@ -28,6 +28,9 @@ t=t.replace('            this.FBtn_EnterPVP.Enabled = param1;','            this
 needle='      public function Update() : void\n      {'
 assert needle in t
 t=t.replace(needle,needle+'\n         if(!this.FInitialization)return;',1)
+guide='         this.FTF_PVE_Readme.text = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.TeamBattle_String_09);'
+assert guide in t
+t=t.replace(guide,guide+'\n         this.FTF_PVE_Readme.text=this.FTF_PVE_Readme.text.replace("within 4 rounds","");',1)
 p=B/'patched'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t,encoding='utf-8');paths.append(rel)
 def write_native(rel,t):
  rel=Path(rel);p=B/'patched'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t,encoding='utf-8');paths.append(rel)
@@ -41,7 +44,7 @@ verified=(B/'verify/scripts/Processors/Game/Lobby/TeamBattle/TProcessorTeamBattl
 assert 'import flash.external.ExternalInterface;' in verified,'Bridge class must resolve the Flash ExternalInterface API'
 mini=(B/'verify/scripts/Processors/Game/MiniBattle/Decoder/TUnstreamizerBattleInfor.as').read_text(encoding='utf-8')
 assert mini.count('LastHp = param1.readDouble();')==2,'Native HP wire format must match the server'
-version='2026102525';canonical=h.PUBLIC/'2026090619';old=(canonical/'TApplication.swf').read_bytes();assert h.swap(old) in [source,raw],'Current client changed; refusing overwrite'
+version='2026102601';canonical=h.PUBLIC/'2026090619';old=(canonical/'TApplication.swf').read_bytes();assert h.swap(old) in [source,raw],'Current client changed; refusing overwrite'
 backup=B/'backups';backup.mkdir(exist_ok=True)
 for f in [canonical/'TApplication.swf',canonical/'version.swf',h.PUBLIC/'client-release.json']:
  if not (backup/f.name).exists():shutil.copy2(f,backup/f.name)

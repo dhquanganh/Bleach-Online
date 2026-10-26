@@ -95,6 +95,10 @@ async function startAuth(port) {
       child.on('message', message => {
         if(runtimes.get(id)!==rt)return;
         if(allianceWar.receive(id,message))return;
+        if(message?.type==='alliance-war-native-request'){
+          if(!require('./alliance-war-native.cjs').REQUESTS.has(message.op)||typeof message.payload!=='string'||message.payload.length>5500)return;
+          allianceWar.nativeRequest(id,message.op,Buffer.from(message.payload,'base64')).then(packets=>{if(child.connected)child.send({type:'alliance-war-native-ack',requestId:message.requestId,packets});},error=>{console.error('[Alliance native request]',error.message);if(child.connected)child.send({type:'alliance-war-native-ack',requestId:message.requestId,packets:[]});});return;
+        }
         if(message?.type==='town-presence'){townPresence.receive(id,rt,message);return;}
         if(message?.type==='illusion-request'){
           const respond=response=>{if(child.connected){try{child.send({type:'illusion-ack',id:message.id,...response},()=>{});}catch(error){console.error('[Boss ranking ack]',error.message);}}};

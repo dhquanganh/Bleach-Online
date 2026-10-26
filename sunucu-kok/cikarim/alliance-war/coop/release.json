@@ -1,0 +1,7 @@
+{
+  "version": "2026102604",
+  "sha256": "c131fec471f38e148969c033451762509e137a535b544a514aa357b435a0d1f4",
+  "classes": [
+    "Processors\\Game\\Lobby\\TeamBattle\\Hall\\TProcessorWindowHall.as"
+  ]
+}

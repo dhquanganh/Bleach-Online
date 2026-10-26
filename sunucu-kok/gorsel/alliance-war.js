@@ -50,7 +50,7 @@
  '#alliance-war .aw-muted{color:#94a4b5}\n' +
  '#alliance-war footer{display:flex;align-items:center;justify-content:space-between;flex-shrink:0;margin-top:12px;padding-top:12px;border-top:1px solid #36414b;color:#98a9ba;font-size:12px}\n' +
  '#alliance-war .aw-replay{white-space:pre-wrap;background:#070c12;border:1px solid #2d3b49;border-radius:4px;padding:15px;font:13px/1.6 monospace;max-height:280px;overflow:auto}\n';document.head.appendChild(style);
- var data=null,tab='battle',busy=false,poll=null,icons={},replay=null,selectedModel=0,nativePlaying=false,lastPlaybackId='',nativeBarDisplay='';
+ var data=null,tab='battle',busy=false,poll=null,icons={},replay=null,selectedModel=0,nativePlaying=false,lastPlaybackId='',nativeBarDisplay='',nativeUI=false,nativeHeaderDisplay='';
  function escape(value){return String(value==null?'':value).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
  function number(n){return Number(n||0).toLocaleString('vi-VN');}
  function button(action,label,attrs){return '<button data-action="'+action+'" '+(attrs||'')+'>'+label+'</button>';}
@@ -102,7 +102,9 @@
  host.addEventListener('submit',function(e){e.preventDefault();var f=e.target,values=new FormData(f),action=f.dataset.form,body={};if(action==='create')body={mode:tab==='campaign'?'pve':'pvp',model:Number(values.get('model')),password:values.get('password')||''};if(action==='model')body={model:Number(values.get('model'))};if(action==='join')body={roomId:f.dataset.room,password:values.get('password')||''};perform(action,body);});
  function tick(){poll=setTimeout(function(){if(host.hidden&&!nativePlaying)return;if(busy){tick();return;}var editing=host.contains(document.activeElement)&&/INPUT|SELECT/.test(document.activeElement.tagName);api('view').then(function(v){data=v;if(v.playback&&v.playback.id!==lastPlaybackId)window.allianceWarBattleStarted(v.playback.id);if(!editing&&!host.hidden)render();}).catch(function(e){notice(e.message);}).then(tick);},4000);}
  window.allianceWarBattleStarted=function(id){var bar=document.getElementById('ust');if(bar){if(!nativePlaying)nativeBarDisplay=bar.style.display;bar.style.display='none';}lastPlaybackId=String(id||'');nativePlaying=true;host.hidden=true;clearTimeout(poll);tick();};
- window.allianceWarBattleEnded=function(){var bar=document.getElementById('ust');if(bar)bar.style.display=nativeBarDisplay;nativePlaying=false;window.openAllianceWar('history');};
+ window.allianceWarBattleEnded=function(){var bar=document.getElementById('ust');if(bar)bar.style.display=nativeBarDisplay;nativePlaying=false;if(nativeUI){host.hidden=true;clearTimeout(poll);}else window.openAllianceWar('history');};
  window.playAllianceWarReport=function(address){var parts=String(address).split(':');return perform('play',{id:parts[0],index:Number(parts[1])});};
+ window.allianceWarNativeOpened=function(){var bar=document.getElementById('ust');if(!nativeUI&&bar)nativeHeaderDisplay=bar.style.display;nativeUI=true;host.hidden=true;clearTimeout(poll);if(bar)bar.style.display='none';};
+ window.allianceWarNativeClosed=function(){nativeUI=false;nativePlaying=false;host.hidden=true;clearTimeout(poll);var bar=document.getElementById('ust');if(bar)bar.style.display=nativeHeaderDisplay;};
  window.openAllianceWar=function(target){if(['battle','campaign','shop','history'].indexOf(target)>=0)tab=target;else if(target==='auto')tab='battle';host.hidden=false;notice('Đang tải Alliance War…');clearTimeout(poll);refresh().then(function(){notice('');if(target==='auto'&&!data.room)return perform('auto',{mode:'pvp'});}).catch(function(e){notice(e.message);}).then(tick);};
 })();

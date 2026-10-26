@@ -28,7 +28,18 @@ function frames(data){
   packets.push({id:OP.WAVE,payload:w.done()});
  }
  const result=new Y().u8(data.won?0:1);
- if(data.mode==='pvp'||data.won){result.u16(data.players.length);for(const p of data.players){result.utf(p.name||'Shinigami').u32(p.heroId||11100005).u32(data.battles.filter(b=>b.left===p.name&&b.won).length).u8(0).u8(0).odul([]).odul([{type:0,code:99,amount:p.honor||0},...(p.items||[]).map(i=>({type:1,code:i.id,amount:i.amount}))].filter(i=>i.amount>0));}}
+ if(data.mode==='pvp'||data.won){
+  // Native PvP renders AddedReward[0] without a null check. Players without
+  // rewards must be omitted, and PvP items belong in AddedReward, not Rewards.
+  const players=data.players.filter(p=>data.mode==='pvp'?(p.items||[]).some(i=>i.amount>0):p.honor>0||(p.items||[]).some(i=>i.amount>0));
+  result.u16(players.length);
+  for(const p of players){
+   const items=(p.items||[]).filter(i=>i.amount>0).map(i=>({type:1,code:i.id,amount:i.amount}));
+   const honor=p.honor>0?[{type:0,code:99,amount:p.honor}]:[];
+   const kills=data.battles.filter(b=>data.side?b.right===p.name&&!b.won&&!b.draw:b.left===p.name&&b.won).length;
+   result.utf(p.name||'Shinigami').u32(p.heroId||11100005).u32(kills).u8(0).u8(0).odul(data.mode==='pvp'?items:[]).odul(data.mode==='pvp'?honor:honor.concat(items));
+  }
+ }
  packets.push({id:OP.RESULT,payload:result.done()});return packets;
 }
 module.exports={OP,playback,frames,flip};

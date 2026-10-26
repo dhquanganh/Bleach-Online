@@ -292,6 +292,10 @@ const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
 let allianceOpen=null;
 let alliancePlayback=null;
+const allianceNativePending=new Map();
+process.on('message',message=>{
+ if(message?.type!=='alliance-war-native-ack')return;const pending=allianceNativePending.get(message.requestId);if(!pending)return;allianceNativePending.delete(message.requestId);clearTimeout(pending.timer);if(!pending.session.client.destroyed)for(const p of message.packets||[])pending.session.send(p.id,Buffer.from(p.payload,'base64'),'ALLIANCE-native-response');
+});
 setInterval(()=>{const open=require('./alliance-war').pvpOpen();if(open===allianceOpen)return;allianceOpen=open;for(const session of loggedInClients())session.send(0x01186500,new (require('./paket').Y)().bool(open).done(),'ALLIANCE-schedule');},1000).unref();
 process.on('message',message=>{
  if(message?.type!=='alliance-war')return;
@@ -309,9 +313,11 @@ process.on('message',message=>{
    if(!loggedInClients().length)throw Error('Hãy đăng nhập nhân vật trong game trước.');
    if(message.action==='snapshot'){
     const units=savas.playerTeam(),v=veri(),level=seviye.anaDurum(v).lv;
-    result={...war.view(d,level,Number(v.altin)||0),playback:alliancePlayback,coupon:Number(v.kupon)||0,name:d.karakter?.nick||d.nick||v.nick||'Shinigami',units,pveSlot:war.state(d).pveSlot,pvpDay:war.state(d).pvpDay};
+    result={...war.view(d,level,Number(v.altin)||0),id0:d.roleIdHi||0,id1:d.roleIdLo||1,power:units.reduce((n,u)=>{const block=require('./ekipman').statPaketi(d,u.id,u.level||level);return n+(block?Number(require('./statlar').blokOku(block.subarray(4))?.guc)||0:0);},0),playback:alliancePlayback,coupon:Number(v.kupon)||0,name:d.nick||v.nick||d.karakter?.nick||'Shinigami',units,pveSlot:war.state(d).pveSlot,pvpDay:war.state(d).pvpDay};
     for(const row of result.shop)if(row.hero&&require('./reincarnation').owned(d,row.id,v))row.remaining=0;
     durumMod.kaydet(d);
+   }else if(message.action==='native-state'){
+    for(const session of loggedInClients())for(const packet of message.data.packets||[])session.send(packet.id,Buffer.from(packet.payload,'base64'),'ALLIANCE-native-state');result={ok:true};
    }else if(message.action==='simulate')result=war.simulate(message.data,d);
    else if(message.action==='playback'){
     const packets=require('./alliance-war-playback').frames(message.data);
@@ -589,6 +595,12 @@ net.createServer(client => {
       pushBosalt();
       LOG.c2s(cid, pk);
       const reqHex = hx(pk.id);
+      if(session.authenticated&&process.connected&&require('../alliance-war-native.cjs').REQUESTS.has(pk.id>>>0)){
+        if(pk.payload.length>4096)continue;
+        const requestId=require('crypto').randomUUID(),timer=setTimeout(()=>{allianceNativePending.delete(requestId);},45000);timer.unref();allianceNativePending.set(requestId,{session,timer});
+        if(session.inTown){session.inTown=false;session.townSeen=new Map();publishTown();}
+        process.send({type:'alliance-war-native-request',requestId,op:pk.id>>>0,payload:pk.payload.toString('base64')});continue;
+      }
       if((pk.id>>>0)===0x01816303){
         if(session.authenticated){const r=new (require('./paket').O)(pk.payload),id=r.utf();if(alliancePlayback?.id===id)alliancePlayback=null;}
         continue;

@@ -2,15 +2,18 @@
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.join(__dirname,'cikarim/alliance-war/verify/scripts/Processors/Game/Lobby/TeamBattle');
 function method(file,name,globals={}){const source=fs.readFileSync(path.join(root,file),'utf8'),start=source.indexOf('function '+name+'('),brace=source.indexOf('{',start);assert.ok(start>=0);let depth=1,end=brace+1;while(depth){if(source[end]==='{')depth++;if(source[end]==='}')depth--;end++;}return vm.runInNewContext('('+source.slice(start,end).replace(/:\s*[\w.]+/g,'')+')',globals);}
-test('compiled native Alliance main screen retains its original entry and bridges each working button',()=>{
- const source=fs.readFileSync(path.join(root,'TProcessorTeamBattle.as'),'utf8');assert.match(source,/this\.ProcessorEnterTeamBattleReq\(\)/);assert.match(source,/import flash\.external\.ExternalInterface;/,'Native button must resolve the Flash API instead of an undefined dynamic global');
- const calls=[],globals={ExternalInterface:{available:true,call:(...args)=>calls.push(args)}};
- const choose=fs.readFileSync(path.join(root,'TProcessorWindowTeamBattleChoose.as'),'utf8');
- assert.match(choose,/this\.FBtn_EnterPVE\.OnClick = this\.Btn_EnterPVEOnClick/);
- assert.match(source,/this\.FProcessorWindowTeamBattleChoose\.OnEnterHallPVE = this\.ProcessorOnEnterHallPVE/);
- method('TProcessorWindowTeamBattleChoose.as','Btn_EnterPVEOnClick').call({FOnEnterHallPVE:method('TProcessorTeamBattle.as','ProcessorOnEnterHallPVE',globals).bind({})},{},null);
- assert.deepEqual(calls.pop(),['openAllianceWar','campaign'],'Compiled Enter Campaign click must reach the launcher bridge');
- for(const [name,tab] of [['ProcessorOnEnterHallPVE','campaign'],['ProcessorOnEnterHallPVP','battle'],['ProcessorOnAutoPVP','auto'],['ProcessorOnMallHonor','shop']]){method('TProcessorTeamBattle.as',name,globals)({});assert.deepEqual(calls.pop(),['openAllianceWar',tab]);}
+test('compiled Alliance buttons use native halls, native room refresh and Honor Shop',()=>{
+ const nativeRoot=path.join(__dirname,'cikarim/alliance-war/native-ui/verify/scripts/Processors/Game/Lobby/TeamBattle');
+ const source=fs.readFileSync(path.join(nativeRoot,'TProcessorTeamBattle.as'),'utf8');
+ assert.doesNotMatch(source,/openAllianceWar/);
+ assert.match(source,/PacketAcquire\(CONST_NETWORK.PACKETID_CS_Enter_TeamBattle_PVE\)/);
+ assert.match(source,/PacketAcquire\(CONST_NETWORK.PACKETID_CS_Enter_TeamBattle_PVP\)/);
+ assert.match(source,/PacketAcquire\(25256720\)/);
+ assert.match(source,/this.FProcessorHonorShop.Mount\(\)/);
+ assert.match(source,/this.FProcessorRoom.RefreshRoom\(\)/);
+ assert.match(source,/allianceWarNativeOpened/);
+ assert.match(source,/allianceWarNativeClosed/);
+ assert.match(fs.readFileSync(path.join(nativeRoot,'Room/TProcessorWindowRoom.as'),'utf8'),/PacketAcquire\(CONST_NETWORK.PACKETID_CS_TeamBattleRoom_StartBattlePVE\)/);
 });
 test('compiled native Auto-Battle follows real opening status and early status packets are safe before assets load',()=>{
  const update=method('TProcessorWindowTeamBattleChoose.as','Update'),set=method('TProcessorWindowTeamBattleChoose.as','SetPvpStatus');let refreshed=0;

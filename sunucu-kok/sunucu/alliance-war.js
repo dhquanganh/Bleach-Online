@@ -42,6 +42,16 @@ function state(d,now=Date.now()){
 }
 function pvpOpen(now=Date.now()){const m=clock(now).minute;return (m>=825&&m<885)||(m>=1260&&m<1320);}
 function honor(d){return Math.max(0,Number(d.etkinlikSavas?.onur)||0);}
+function battleReward(mode,model,won,remaining,randomInt=require('crypto').randomInt){
+ if(!['pve','pvp'].includes(mode)||typeof won!=='boolean'||!Number.isInteger(remaining)||remaining<0)throw Error('Điều kiện thưởng Alliance không hợp lệ.');
+ if(!remaining||(mode==='pve'&&!won))return {reward:false,honor:0,items:[]};
+ const map=mode==='pve'?satir('LeagueMapPve',model):null;
+ const pool=mode==='pve'?json(map?.f8,[]):[14860010];
+ const amount=mode==='pve'?Number(json(map?.f11,[])[0]):won?30:10;
+ if(!Array.isArray(pool)||!pool.length||pool.some(id=>!Number.isInteger(id)||!satir('Article',id))||!Number.isSafeInteger(amount)||amount<0||amount>0xffffffff)throw Error('Cấu hình phần thưởng Alliance không hợp lệ.');
+ const index=randomInt(pool.length);if(!Number.isInteger(index)||index<0||index>=pool.length)throw Error('Không chọn được phần thưởng Alliance.');
+ return {reward:true,honor:amount,items:[{id:pool[index],amount:1}]};
+}
 function shopLimit(d){const h=honor(d),tiers=json(cv(60310018,[]),[]);return Number(tiers.find(t=>h<=Number(t[0]))?.[1])||100;}
 function validateShop(d,row,qty,level,now=Date.now()){
  const k=state(d,now),bought=Number(d.magaza?.onur?.[row._id])||0;
@@ -57,8 +67,10 @@ function view(d,level,gold,now=Date.now()){
  shop:tablo('Mall').liste.filter(r=>r.model===11&&r.isDisplay&&(satir('Article',r.itemID)||satir('BaseHero',r.itemID))).map(r=>({...(r.majorType===2?{id:Number(r.itemID),name:r.name,hero:true}:item(Number(r.itemID))),rowId:r._id,price:Number(r.gold),amount:Number(r.amount),level:Number(r.level),honor:Number(r.f20),remaining:r.majorType===2?((Number(d.magaza?.onur?.[r._id])||Number(d.meyhane?.alinan?.[r.itemID]))?0:1):Number(r.totalTimes)?Math.max(0,Number(r.totalTimes)-(Number(d.magaza?.onur?.[r._id])||0)):null}))};
 }
 function settle(d,result,now=Date.now()){
- const k=state(d,result.at||now);if(k.receipts[result.id])return false;
- if(!['pve','pvp'].includes(result.mode)||!Number.isSafeInteger(result.honor)||result.honor<0)throw Error('Invalid Alliance result');
+ if(result&&d.allianceWar?.receipts?.[result.id])return false;
+ if(!result||typeof result.id!=='string'||!result.id||!['pve','pvp'].includes(result.mode)||typeof result.won!=='boolean'||typeof result.reward!=='boolean'||!Number.isSafeInteger(result.honor)||result.honor<0||result.honor>0xffffffff||!Array.isArray(result.items)||result.items.some(i=>!i||!Number.isInteger(i.id)||!satir('Article',i.id)||!Number.isSafeInteger(i.amount)||i.amount<1||i.amount>0xffffffff))throw Error('Invalid Alliance result');
+ if((!result.reward&&(result.honor||result.items.length))||(result.reward&&result.mode==='pve'&&!result.won)||(result.reward&&result.remaining!==undefined&&(!Number.isInteger(result.remaining)||result.remaining<1)))throw Error('Invalid Alliance reward eligibility');
+ const k=state(d,result.at||now);
  if(result.reward){
   // A native status packet may already have advanced the refill window while
   // another worker simulated this fight. Rebuild from the reserved snapshot.
@@ -83,12 +95,13 @@ function simulate(request,d){
  const combat=require('./savas'),left=request.left.map(p=>({...p,units:clone(p.units)}));
  const right=request.mode==='pve'?json(satir('LeaguePointPath',request.model)?.mapID,{}).army?.map(id=>({armyId:id,name:satir('EnemyArmy',id)?.name||String(id),units:combat.stageArmyDusmanlari([id])})):request.right.map(p=>({...p,units:clone(p.units)}));
  if(!left.length||!right?.length||right.some(p=>!p.units.length))throw Error('Không có đội hình chiến đấu hợp lệ.');
- const battles=[];let a=0,b=0;
- // Alliance relay: each surviving squad continues, at most four waves.
- for(let round=1;round<=4&&a<left.length&&b<right.length;round++){
-  const pairs=Math.min(left.length-a,right.length-b),survivorsA=[],survivorsB=[];
+ const battles=[];
+ // Finish the actual armies, not an arbitrary round counter. Every duel
+ // eliminates at least one squad (both on a draw), so the relay is bounded.
+ for(let round=1;left.length&&right.length;round++){
+  const pairs=Math.min(left.length,right.length),survivorsA=[],survivorsB=[];
   for(let i=0;i<pairs;i++){
-   const p=left[a+i],q=right[b+i],units=clone(p.units).map(u=>({...u,camp:0})),enemies=clone(q.units).map(u=>({...u,camp:1}));
+   const p=left[i],q=right[i],units=clone(p.units).map(u=>({...u,camp:0})),enemies=clone(q.units).map(u=>({...u,camp:1}));
    const report=combat.kadroRapor(0,null,{ad:q.name,birimler:enemies},{playerState:d,playerUnits:units,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,strictSkillTargets:true,battleDataVersion:4,pvp:request.mode==='pvp'});
    if(!report)throw Error('Không tạo được trận chiến.');
    const carry=(base,after)=>base.map(u=>{const current=after.find(v=>v.id===u.id&&v.pos===u.pos);return current&&current.hp>0?{...u,hp:Math.max(1,Math.round(u.maxHp*current.hp/current.maxHp))}:null;}).filter(Boolean);
@@ -97,8 +110,8 @@ function simulate(request,d){
    if(aliveA&&!aliveB)survivorsA.push({...p,units:carriedA});
    if(aliveB&&!aliveA)survivorsB.push({...q,units:carriedB});
   }
-  left.splice(a,pairs,...survivorsA);right.splice(b,pairs,...survivorsB);
+  left.splice(0,pairs,...survivorsA);right.splice(0,pairs,...survivorsB);
  }
  return {won:left.length>0&&right.length===0,rightWon:right.length>0&&left.length===0,battles};
 }
-module.exports={clock,state,pvpOpen,honor,shopLimit,validateShop,models,allowed,hall,view,settle,simulate,purchase,recover};
+module.exports={clock,state,pvpOpen,honor,battleReward,shopLimit,validateShop,models,allowed,hall,view,settle,simulate,purchase,recover};

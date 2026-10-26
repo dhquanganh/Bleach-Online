@@ -29,8 +29,8 @@ function after(caster,allies,enemies,targets,damage,records,random=Math.random){
     if(rule.group===3)engine.restore(caster,caster,caster.maxHp*rule.value/100,records);
     if(rule.group===4)engine.restore(caster,caster,damage*rule.value/100,records);
     if(rule.group===5)for(const target of targets){const requested=Math.floor(target.anger*rule.value/100),before=target.anger;
-      engine.changeFury(target,-requested,records,false,random);engine.changeFury(caster,before-target.anger,records,false,random);}
-    if(rule.group===6)for(const target of targets)engine.changeFury(target,-rule.value,records,false,random);
+      engine.changeFury(target,-requested,records,false,random,caster);engine.changeFury(caster,before-target.anger,records,false,random);}
+    if(rule.group===6)for(const target of targets)engine.changeFury(target,-rule.value,records,false,random,caster);
     if(rule.group===14||rule.group===15)engine.apply({sourceId:id,effects:[{kind:'buff',scope:'t',field:rule.group===14?'stun':'silence',value:1,turns:1,chance:rule.value/100}]},caster,allies,enemies,targets,records,random);
   }
 }

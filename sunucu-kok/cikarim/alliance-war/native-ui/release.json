@@ -1,0 +1,9 @@
+{
+  "version": "2026102603",
+  "sha256": "41177ad965966d2eb18a19ce13083e96936f1d480f5d788fa304932d5a67624e",
+  "classes": [
+    "Processors\\Game\\Lobby\\TeamBattle\\TProcessorTeamBattle.as",
+    "Processors\\Game\\Lobby\\TeamBattle\\Room\\TProcessorRoom.as",
+    "Processors\\Game\\Lobby\\TeamBattle\\Room\\TProcessorWindowRoom.as"
+  ]
+}

@@ -1,0 +1,36 @@
+"""Update only the native Campaign guide, retaining every other current class."""
+from pathlib import Path
+import importlib.util,subprocess,json,hashlib,shutil
+B=Path(__file__).resolve().parent
+def module(name,file):
+ s=importlib.util.spec_from_file_location(name,file);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m
+h=module('h',B.parent/'naruto-sage/verify-client.py');r=module('r',B.parent/'tsunade-asian/release.py')
+jar='C:/Users/quang/.copilot/session-state/b6dea4ff-70b7-44ac-b9f5-1136aca3d0d5/files/ffdec/app/ffdec.jar'
+def ff(*args):subprocess.run(['java','-Xmx2g','-jar',jar,*map(str,args)],check=True,stdout=subprocess.DEVNULL)
+work=B/'round-guide';work.mkdir(exist_ok=True);canonical=h.PUBLIC/'2026090619'
+old=(canonical/'TApplication.swf').read_bytes();previous=json.loads((B/'release.json').read_text())
+assert hashlib.sha256(old).hexdigest()==previous['sha256'],'Current client changed'
+source=h.swap(old);(work/'source.swf').write_bytes(source)
+rel=Path('Processors/Game/Lobby/TeamBattle/TProcessorWindowTeamBattleChoose.as')
+ff('-selectclass',str(rel.with_suffix('')).replace('\\','.').replace('/','.'),'-export','script',work/'original',work/'source.swf')
+t=(work/'original/scripts'/rel).read_text(encoding='utf-8')
+needle='         this.FTF_PVE_Readme.text = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.TeamBattle_String_09);'
+assert needle in t
+t=t.replace(needle,needle+'\n         this.FTF_PVE_Readme.text=this.FTF_PVE_Readme.text.replace("within 4 rounds","");',1)
+p=work/'patched'/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(t,encoding='utf-8')
+ff('-onerror','abort','-importScript',work/'source.swf',work/'compiled.swf',work/'patched')
+raw=(work/'compiled.swf').read_bytes();assert [x for x in h.tags(source) if x[0]!=82]==[x for x in h.tags(raw) if x[0]!=82]
+ff('-selectclass',str(rel.with_suffix('')).replace('\\','.').replace('/','.'),'-export','script',B/'verify',work/'compiled.swf')
+assert '.replace("within 4 rounds","")' in (B/'verify/scripts'/rel).read_text(encoding='utf-8')
+assert (canonical/'TApplication.swf').read_bytes()==old,'Client changed while compiling'
+version='2026102601';out=h.PUBLIC/version;out.mkdir(exist_ok=True);protected=h.swap(raw)
+manifest=r.rows((canonical/'version.swf').read_bytes());assert sum(row[0]==b'TApplication.swf' for row in manifest)==1
+for row in manifest:
+ if row[0]==b'TApplication.swf':row[1]=version.encode()
+data=r.encode(manifest)
+for directory in [canonical,out]:
+ (directory/'TApplication.swf').write_bytes(protected);(directory/'version.swf').write_bytes(data)
+shutil.copy2(canonical/'index.swf',out/'index.swf')
+(h.PUBLIC/'client-release.json').write_text(json.dumps({'version':version})+'\n')
+previous.update(version=version,sha256=hashlib.sha256(protected).hexdigest());(B/'release.json').write_text(json.dumps(previous,indent=2))
+print('PASS native Campaign guide',version)

@@ -120,9 +120,10 @@ function blokOku(blok) {
     const v = i => (i >= n ? 0 : (TIP[i] === 1 ? blok.readFloatBE(2 + 4 * i) : blok.readUInt32BE(2 + 4 * i)));
     const s = {
       hp: Math.round(v(IDX.Health)),
-      atk: Math.round(Math.max(v(IDX.PhysicalAttack), v(IDX.MagicAttack))),
+      atk: Math.round(v(IDX.PhysicalAttack)),
       magicAtk: Math.round(v(IDX.MagicAttack)),
-      def: Math.round(Math.max(v(IDX.PhysicalDefends), v(IDX.MagicDefends))),
+      def: Math.round(v(IDX.PhysicalDefends)),
+      resistance: Math.round(v(IDX.MagicDefends)),
       speed: Math.max(0, Math.round(v(IDX.Speed))),
       anger: Math.round(v(IDX.StartAnger)),
       hitRate: v(IDX.Hit), dodgeRate: v(IDX.Dodge), critRate: v(IDX.Crit),
