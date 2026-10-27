@@ -1,0 +1,13 @@
+{
+  "sourceVersion": "2026102704",
+  "sourceSha256": "17af2099b3f697c46dcc9a290bd76a39080015ecaf2f99d169cd5458228ba14c",
+  "sha256": "050fe1d827fa061d2e4d1b720a4d579aef8ecb8fc62f80798b59ff68c94a9ad1",
+  "unchangedMethods": 210,
+  "changedMethods": [
+    "ChangeHP",
+    "KakuzuContactOffset",
+    "PlayKakuzuNative",
+    "PreloadKakuzuNative",
+    "UpdateKakuzuVfx"
+  ]
+}

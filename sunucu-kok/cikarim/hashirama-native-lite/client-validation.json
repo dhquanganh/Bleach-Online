@@ -1,0 +1,9 @@
+{
+  "sourceVersion": "2026102701",
+  "unchangedMethods": 210,
+  "changedMethods": [
+    "PlayHashiramaVfxAsset",
+    "PrepareBattleRole"
+  ],
+  "sha256": "56e6a79ae5563ed061697d76508587d657d56e3e7d382ed3e74d9717dfa0bfa1"
+}

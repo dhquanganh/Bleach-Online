@@ -7,6 +7,7 @@ def main():
  original=B/'original/scripts';before=(original/c.b.ROLE).read_text(encoding='utf-8');assert 'UpdateKakuzuVfx' not in before
  a=json.loads((B/'animation.json').read_text());helper=(B/'native.as.txt').read_text();ends={str(i):a['clips'][name]['returnFrame'] for i,name in a['moves'].items()}
  helper=helper.replace('FCurSequence.FrameCount-1','Number(JSON.parse('+json.dumps(json.dumps(ends,separators=(',',':')))+')[String(FSkillId)])')
+ helper=helper.replace('__REATTACH_HIT__',str(a['clips']['reattach']['hitFrames'][0]))
  z=(B.parent/'tsunade-asian/katsuyu.as.txt').read_text().replace('SmallKatsuyu','WaterClone').replace('11120993','11120998').replace('__DEAD_FRAMES__',str(len(a['clips']['dead']['assets']))).replace('__ENTRY_FRAMES__',str(len(a['clips']['entry']['assets']))).replace('dying ? 1 : 0','dying ? 8 : 7').replace('dying?1:0','dying?8:7').replace('FWaterCloneDying ? 1 : 0','FWaterCloneDying ? 8 : 7').replace('FWaterCloneDying?1:0','FWaterCloneDying?8:7').replace('FTextureSkill.Count>=2','FTextureSkill.Count>=9')
  role=before.replace('      override public function UpdateActive()',helper+'\n'+z+'\n      override public function UpdateActive()',1)
  role=c.inject(role,'PrepareBattleRole','         if(FId==11120997 || FId==11120998)PreloadKakuzuNative();\n         if(FId==11120998){ClearWaterClonePose();FWaterCloneSpawned=false;if(CurHealth<=0){FIsDie=true;visible=false;FHpBar.visible=false;FShaderBmp.visible=false;FBuffSprite.visible=false;}}')
@@ -14,6 +15,10 @@ def main():
  role=c.inject(role,'Reset','         if(FId==11120997 || FId==11120998)ClearKakuzuVfx();\n         if(FId==11120998){ClearWaterClonePose();FWaterCloneSpawned=false;}')
  role=c.inject(role,'UpdateActive','         if(FId==11120998 && FWaterCloneStarted>=0){UpdateWaterClonePose();return;}')
  role=c.inject(role,'CommandPlay','         if(param1==0 && param3==null){this.OnNextCommand(param4);return;}')
+ # Reattachment may revive any allied hero, including one whose death tween
+ # already hid the role. The shared restore routine resets that visual state.
+ role=role.replace('(FId == 11120992 || FId == 11120993 || FId == 11120995 || FId == 11120996) && param1 < 0 && (CurHealth <= 0 || FIsDie || FWaitDie)', 'param1 < 0 && (CurHealth <= 0 || FIsDie || FWaitDie)',1)
+ role=role.replace('               RestoreTsunadeAfterRevival();','               if(FId==11120930)RestorePainAfterRevival();else RestoreTsunadeAfterRevival();',1)
  role=role.replace('         this.UpdateNineTailsVfx();','         this.UpdateNineTailsVfx();\n         this.UpdateKakuzuVfx();',1)
  role=role.replace('               this.ObitoStandardPose(_loc4_);','               this.ObitoStandardPose(_loc4_);\n               this.KakuzuStrikePose(_loc4_);',1)
  role=role.replace('(FId == 11120992 || FId == 11120993 || FId == 11120995 || FId == 11120996)','(FId == 11120992 || FId == 11120993 || FId == 11120995 || FId == 11120996 || FId == 11120997 || FId == 11120998)',1)

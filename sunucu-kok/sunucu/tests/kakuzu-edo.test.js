@@ -21,13 +21,20 @@ for(const camp of [0,1]){
   }
   const cloneDamage=()=>{v.hp=v.maxHp=1000000;return strike(clone,v,k.config.cloneStandard).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;};
   const baseClone=cloneDamage();clone.atk*=2;assert(cloneDamage()>baseClone);clone.atk/=2;v.def*=100;assert(cloneDamage()<baseClone);v.def/=100;
+  enemies.forEach(e=>{e.hp=e.maxHp=1000000;});
+  const aoe=battle.vurus(u,v,false,enemies,()=>.5,false,[u],n.attackSpec(k.config.mystery));
+  assert.deepEqual(aoe.targets.filter(r=>r.cmd===1&&r.result.hurtHp>0).map(r=>r.targetPos).sort((a,b)=>a-b),enemies.map(e=>e.pos).sort((a,b)=>a-b),'Mystery damages every living enemy');
   assert.deepEqual(k.targets(k.config.pressure,v,enemies,ctx).map(x=>x.pos),[6,7]);
   u.hp=100;assert.equal(k.beforeDamage(ctx,u,{prompt:true},99999),99,'living clone protects from fatal Mystery');clone.hp=0;assert.equal(k.beforeDamage(ctx,u,{prompt:true},99999),99999);
   clone.hp=1000;enemies[0].rebirth={n:100,ae:8};enemies[0].skill=k.config.mystery.id;
   battle.vurus(enemies[0],u,false,[u],()=>.5,false,[enemies[0]],n.attackSpec({...k.config.mystery,multiplier:100}));assert(u.hp>=1,'living clone also blocks legacy fatal Mystery effects');delete enemies[0].rebirth;clone.hp=0;
-  u.hp=0;k.noteDeaths(ctx);assert.equal(u.kakuzuReviveRound,2);n.startRound(ctx,2);let revival=k.roundStart(ctx);assert(revival.some(x=>x.skillEffectId===k.config.reincarnation.id));assert.equal(u.hp,2500);assert.equal(u.mysteryReadyRound,2);assert.equal(clone.hp,9000);
-  u.hp=0;k.noteDeaths(ctx);assert.equal(u.kakuzuReviveRound,3,'reincarnation remains active after revival');
+  u.hp=0;k.noteDeaths(ctx);assert.equal(u.kakuzuReviveRound,5);
+  for(const round of [2,3,4]){n.startRound(ctx,round);assert.deepEqual(k.roundStart(ctx),[]);assert.equal(u.hp,0);k.noteDeaths(ctx);assert.equal(u.kakuzuReviveRound,5,'repeated death scans cannot restart the delay');}
+  n.startRound(ctx,5);let revival=k.roundStart(ctx);assert(revival.some(x=>x.skillEffectId===k.config.reincarnation.id));assert.equal(u.hp,2500);assert.equal(u.mysteryReadyRound,5);assert.equal(clone.hp,9000);
+  u.hp=0;k.noteDeaths(ctx);assert.equal(u.kakuzuReviveRound,9,'each new defeat must wait four rounds');
   const ally=unit(11100001,15,camp);ctx.teams[camp].push(ally);ally.hp=0;clone.hp=1000;
+  assert.deepEqual(k.endRound(ctx),[],'living clone cannot rescue anyone while its owner is dead');assert.equal(ally.hp,0);
+  n.startRound(ctx,9);k.roundStart(ctx);
   const heals=k.endRound(ctx);assert(heals.some(x=>x.targets.some(r=>r.targetPos===ally.pos&&r.result.hurtHp<0)));
 }
 {
@@ -37,8 +44,13 @@ for(const camp of [0,1]){
   u.mysteryReadyRound=5;k.afterHit(ctx,u,v,[v],k.config.darkness,frame);assert.equal(u.mysteryReadyRound,4);assert(v.paralyzed);
   k.afterHit(ctx,u,v,[v],k.config.migraine,frame);assert.equal(v.suppressedUntil,1);
   u.hp=1000;v.hp=0;k.afterHit(ctx,u,v,[v],k.config.mystery,frame);assert.equal(u.hp,3000);assert.equal(u.kakuzuAttackStacks,1);assert(s.value(u,'atk')>u.atk);
-  const pending=k.prepareMove(ctx,u,k.config.mystery,enemies[1]);assert(pending.kakuzuMystery);enemies[1].shield=1000;k.prepareMove(ctx,u,k.config.mystery,enemies[1]);assert.equal(enemies[1].shield,0);
+  const pending=k.prepareMove(ctx,u,k.config.mystery,enemies[1]);assert(pending.kakuzuMystery);enemies[1].shield=1000;enemies[2].shield=1000;k.prepareMove(ctx,u,k.config.mystery,enemies[1]);assert.equal(enemies[1].shield,0);assert.equal(enemies[2].shield,0);
   clone.immobileUntil=1;const ally=unit(11100001,15,0);ally.hp=0;ctx.teams[0].push(ally);k.endRound(ctx);assert(ally.hp>0,'clone Reattachment remains active while controlled');
+  ally.hp=0;const other=unit(11100002,14,0);other.hp=0;ctx.teams[0].push(other);
+  const oneRescue=k.endRound(ctx);assert.equal(oneRescue.length,1,'only Water Clone performs Reattachment');assert.equal(oneRescue[0].activePos,clone.pos);
+  assert.equal([ally,other].filter(x=>x.hp>0).length,1);
+  u.hp=0;k.noteDeaths(ctx);ally.hp=other.hp=1000;assert.equal(k.endRound(ctx).length,0);assert.equal(u.hp,0,'Water Clone cannot bypass the owner\'s four-round delay');
+  clone.hp=0;ally.hp=0;assert.equal(k.endRound(ctx).length,0,'Kakuzu does not inherit the dead clone\'s rescue skill');
 }
 for(const camp of [0,1]){
   const {u,enemies}=fixture(camp);enemies.forEach(e=>{e.hp=e.maxHp=1000000;e.atk=20;});
@@ -46,4 +58,4 @@ for(const camp of [0,1]){
   const report=codec.decodeBattleReport(result.payload);assert.equal(report._consumed,report._total);
   const events=report.turns.flatMap(t=>t.actives);assert(events.some(e=>e.skillEffectId===k.config.cloneCall.id));assert(events.some(e=>e.skillEffectId===k.config.standard.id));
 }
-console.log('PASS Kakuzu Edo: both camps/all positions, Physical ATK/DEF, Water Clone summon/protection, next-round revival, ally rescue and encoded battle reports.');
+console.log('PASS Kakuzu Edo: both camps/all positions, Physical ATK/DEF, Water Clone summon/protection, four-round revival, owner-alive ally rescue and encoded battle reports.');

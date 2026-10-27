@@ -7,6 +7,7 @@ const isKakuzu=u=>u?.id===config.heroId;
 const isClone=u=>u?.id===config.summonId;
 const profile=u=>isKakuzu(u)?config:isClone(u)?{heroId:u.id,standard:config.cloneStandard,chases:[]}:null;
 const alive=u=>u&&u.hp>0;
+const canRevive=u=>u&&!u.noRevive&&!u.itachiUnrevivable;
 function prepareSummons(teams){
   for(const team of teams)for(const owner of [...team].filter(isKakuzu)){
     if(team.some(u=>u.kakuzuOwner===owner))continue;
@@ -29,13 +30,16 @@ function summon(ctx,u){
 }
 function battleStart(ctx){const out=[];for(const u of ctx.teams.flat().filter(isKakuzu))if(u.hp>0)out.push(...summon(ctx,u));return out;}
 function roundStart(ctx){const out=[];for(const u of ctx.teams.flat().filter(isKakuzu)){
-  if(u.hp>0||!u.kakuzuReviveRound||u.kakuzuReviveRound>ctx.round||u.noRevive||u.itachiUnrevivable)continue;
+  if(u.hp>0||!canRevive(u)){u.kakuzuReviveRound=0;continue;}
+  if(!u.kakuzuReviveRound||u.kakuzuReviveRound>ctx.round)continue;
   u.hp=Math.max(1,Math.round(u.maxHp*.25));u.kakuzuReviveRound=0;u.mysteryReadyRound=ctx.round;u.kakuzuAttackStacks=0;
   require('./tsunade-combat').cleanseAll(u,[]);
-  out.push(visual(u,config.reincarnation,[skills.hpRecord(u,-u.hp,false)]));
+  // A dead actor cannot execute an active animation. Restore HP through the
+  // passive report first so the client clears its death state before casting.
+  out.push(pain.passive(u,[skills.hpRecord(u,-u.hp,false)]),pain.visual(u,config.reincarnation));
   out.push(...summon(ctx,u));
 }for(const u of ctx.teams.flat())if(u.kakuzuParalysisUntil&&u.kakuzuParalysisUntil<ctx.round){u.paralyzed=false;delete u.kakuzuParalysisUntil;}return out;}
-function noteDeaths(ctx){for(const u of ctx.teams.flat().filter(isKakuzu)){if(u.hp>0){u.kakuzuReviveRound=0;continue;}if(!u.kakuzuReviveRound&&!u.noRevive&&!u.itachiUnrevivable)u.kakuzuReviveRound=ctx.round+1;}}
+function noteDeaths(ctx){for(const u of ctx.teams.flat().filter(isKakuzu)){if(u.hp>0||!canRevive(u)){u.kakuzuReviveRound=0;continue;}if(!u.kakuzuReviveRound)u.kakuzuReviveRound=ctx.round+config.reincarnationDelayRounds;}}
 function selectStandard(ctx,u,move){return isClone(u)?config.cloneStandard:move;}
 function targets(move,selected,enemies,ctx){if(!move?.kakuzuAdditional&&!move?.kakuzuStandard&&!move?.kakuzuCloneStandard)return null;
   const units=enemies.filter(alive);if(!units.length)return [];
@@ -48,7 +52,7 @@ function evade(ctx,target,move,chase=false){return isKakuzu(target)&&(chase||mov
 function factor(u,field){if(field==='atk'&&isKakuzu(u))return 1+.4*(u.kakuzuAttackStacks||0);if(field==='speed')return (u.kakuzuInitiativeUntil>=u.battleRound?1.03:1)*(u.kakuzuDiscouragementUntil>=u.battleRound?.97:1);return 1;}
 function prepareMove(ctx,u,move,selected){if(!isKakuzu(u)||!move?.kakuzuMystery)return move;
   const records=[];
-  if(selected?.shield>0){selected.shield=0;records.push({cmd:CMD.SHIELD,targetCamp:selected.camp,targetPos:selected.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:0}});}
+  for(const target of ctx.teams[1-u.camp].filter(alive))if(target.shield>0){target.shield=0;records.push({cmd:CMD.SHIELD,targetCamp:target.camp,targetPos:target.pos,reportTargetStatus:ST.HIT>>>0,result:{buffId:0,buffTurn:0}});}
   return {...move,kakuzuBefore:records.length?[pain.passive(u,records)]:[],critBonus:selected?.hp>0&&selected.hp/selected.maxHp<.15?.3:0};
 }
 function afterHit(ctx,u,selected,hit,move,frame){
@@ -77,10 +81,13 @@ function afterHit(ctx,u,selected,hit,move,frame){
 }
 function triggers(ctx){return ctx.kakuzuQueue.splice(0).filter(r=>r.unit.hp>0);}
 function endRound(ctx){const out=[];for(const team of ctx.teams){
-  const healers=team.filter(u=>u.hp>0&&(isKakuzu(u)||isClone(u)));
-  for(const u of healers){const dead=team.filter(v=>v.hp<=0&&!v.auxiliary&&!v.noRevive&&!v.itachiUnrevivable&&v!==u);
+  // Reattachment belongs to the Water Clone; control does not disable it.
+  for(const u of team.filter(v=>alive(v)&&isClone(v)&&alive(v.kakuzuOwner))){
+    const dead=team.filter(v=>v.hp<=0&&!v.auxiliary&&!isKakuzu(v)&&canRevive(v));
     if(!dead.length)continue;
-    const v=dead[Math.min(dead.length-1,Math.floor(ctx.random()*dead.length))];v.hp=Math.max(1,Math.round(v.maxHp*.3));
+    const v=dead[Math.min(dead.length-1,Math.floor(ctx.random()*dead.length))];
+    v.kakuzuReviveRound=0;
+    v.hp=Math.max(1,Math.round(v.maxHp*.3));
     out.push(visual(u,config.reattachment,[skills.hpRecord(v,-v.hp,false)]));
   }
 }return out;}

@@ -1,0 +1,20 @@
+{
+  "version": "2026102706",
+  "delayRounds": 4,
+  "requiresLivingOwner": true,
+  "tables": [
+    "Resources/Bin/combine/0F000000.binPackage",
+    "Resources/Bin/normal/0F000000.binPackage",
+    "Resources/Bin/dil-id/0F000000.binPackage",
+    "Resources/Bin/dil-fr/0F000000.binPackage",
+    "Resources/Bin/dil-es/0F000000.binPackage",
+    "Resources/Bin/dil-ru/0F000000.binPackage",
+    "Resources/Bin/dil-tr/0F000000.binPackage",
+    "Resources/Bin/dil-it/0F000000.binPackage",
+    "Resources/Bin/dil-de/0F000000.binPackage",
+    "Resources/Bin/dil-ja/0F000000.binPackage",
+    "Resources/Bin/dil-pt/0F000000.binPackage",
+    "Resources/Bin/dil-vi/0F000000.binPackage",
+    "Resources/Bin/dil-zh/0F000000.binPackage"
+  ]
+}

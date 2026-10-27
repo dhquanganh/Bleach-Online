@@ -64859,7 +64859,7 @@
     "id": "00C8396D",
     "skillId": 13121901,
     "name": "Earth Grudge Fear - Heart Capture",
-    "desc": "Causes unavoidable damage neglecting Shields and Interruption to the selected unit. After this skill is executed, dispels all Fear Kakuzu currently has. If the selected unit's HP is lower than 15%, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "desc": "Causes unavoidable damage neglecting Shields and Interruption to all enemy units. After this skill is executed, dispels all Fear Kakuzu currently has. If the selected unit's HP is lower than 15%, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
     "icon": 13121901,
     "sortId": 1
   },
@@ -64915,7 +64915,7 @@
     "id": "00C83974",
     "skillId": 13121908,
     "name": "Earth Grudge Fear - Reattachment",
-    "desc": "At the end of the round, revives a random ally ninja to 30% HP. This skill is still active even when Water Clone is controlled.",
+    "desc": "While Kakuzu is alive, at the end of the round, Water Clone revives a random defeated ally ninja to 30% HP. This skill is still active even when Water Clone is controlled. Cannot revive Kakuzu or bypass his Reincarnation delay.",
     "icon": 13121908,
     "sortId": 8
   },
@@ -64923,7 +64923,7 @@
     "id": "00C83975",
     "skillId": 13121909,
     "name": "Reincarnation Power",
-    "desc": "If Kakuzu is defeated, revives next round with 25% <font color=\"#4dc831\">HP</font>, reapplies all skills when he first entered the field and reduces his Mystery Cooldown to 0.",
+    "desc": "If Kakuzu is defeated, revives 4 rounds after his defeat with 25% HP, reapplies all skills when he first entered the field and reduces his Mystery Cooldown to 0.",
     "icon": 13121909,
     "sortId": 9
   },

@@ -1,0 +1,111 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=83
+TEXTURE dead frames=23
+TEXTURE mystery frames=105
+TEXTURE summon frames=92
+TEXTURE reattach frames=89
+TEXTURE standard frames=95
+TEXTURE pressure frames=100
+TEXTURE darkness frames=108
+TEXTURE reincarnation frames=41
+TEXTURE entry frames=37
+TEXTURE migraine frames=99
+CASE 13121901 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13121902 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-38
+SNAPSHOT CASE-standard-camp-0-frame-66
+CASE 13121904 camp=0
+SNAPSHOT CASE-pressure-camp-0-frame-4
+SNAPSHOT CASE-pressure-camp-0-frame-40
+SNAPSHOT CASE-pressure-camp-0-frame-70
+CASE 13121905 camp=0
+SNAPSHOT CASE-darkness-camp-0-frame-4
+SNAPSHOT CASE-darkness-camp-0-frame-43
+SNAPSHOT CASE-darkness-camp-0-frame-75
+CASE 13121906 camp=0
+SNAPSHOT CASE-migraine-camp-0-frame-4
+SNAPSHOT CASE-migraine-camp-0-frame-39
+SNAPSHOT CASE-migraine-camp-0-frame-69
+CASE 13121907 camp=0
+SNAPSHOT CASE-summon-camp-0-frame-4
+SNAPSHOT CASE-summon-camp-0-frame-36
+SNAPSHOT CASE-summon-camp-0-frame-64
+CASE 13121908 camp=0
+SNAPSHOT CASE-reattach-camp-0-frame-4
+SNAPSHOT CASE-reattach-camp-0-frame-35
+SNAPSHOT CASE-reattach-camp-0-frame-62
+CASE 13121909 camp=0
+SNAPSHOT CASE-reincarnation-camp-0-frame-4
+SNAPSHOT CASE-reincarnation-camp-0-frame-16
+SNAPSHOT CASE-reincarnation-camp-0-frame-28
+CASE 13121903 camp=0
+SNAPSHOT CASE-clone-standard-camp-0-frame-4
+SNAPSHOT CASE-clone-standard-camp-0-frame-38
+SNAPSHOT CASE-clone-standard-camp-0-frame-66
+CASE 0 camp=0
+SNAPSHOT CASE-entry-camp-0-frame-4
+SNAPSHOT CASE-entry-camp-0-frame-14
+SNAPSHOT CASE-entry-camp-0-frame-25
+CASE 0 camp=0
+SNAPSHOT CASE-dead-camp-0-frame-4
+SNAPSHOT CASE-dead-camp-0-frame-9
+SNAPSHOT CASE-dead-camp-0-frame-16
+CASE 13121901 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+CASE 13121902 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-38
+SNAPSHOT CASE-standard-camp-1-frame-66
+CASE 13121904 camp=1
+SNAPSHOT CASE-pressure-camp-1-frame-4
+SNAPSHOT CASE-pressure-camp-1-frame-40
+SNAPSHOT CASE-pressure-camp-1-frame-70
+CASE 13121905 camp=1
+SNAPSHOT CASE-darkness-camp-1-frame-4
+SNAPSHOT CASE-darkness-camp-1-frame-43
+SNAPSHOT CASE-darkness-camp-1-frame-75
+CASE 13121906 camp=1
+SNAPSHOT CASE-migraine-camp-1-frame-4
+SNAPSHOT CASE-migraine-camp-1-frame-39
+SNAPSHOT CASE-migraine-camp-1-frame-69
+CASE 13121907 camp=1
+SNAPSHOT CASE-summon-camp-1-frame-4
+SNAPSHOT CASE-summon-camp-1-frame-36
+SNAPSHOT CASE-summon-camp-1-frame-64
+CASE 13121908 camp=1
+SNAPSHOT CASE-reattach-camp-1-frame-4
+SNAPSHOT CASE-reattach-camp-1-frame-35
+SNAPSHOT CASE-reattach-camp-1-frame-62
+CASE 13121909 camp=1
+SNAPSHOT CASE-reincarnation-camp-1-frame-4
+SNAPSHOT CASE-reincarnation-camp-1-frame-16
+SNAPSHOT CASE-reincarnation-camp-1-frame-28
+CASE 13121903 camp=1
+SNAPSHOT CASE-clone-standard-camp-1-frame-4
+SNAPSHOT CASE-clone-standard-camp-1-frame-38
+SNAPSHOT CASE-clone-standard-camp-1-frame-66
+CASE 0 camp=1
+SNAPSHOT CASE-entry-camp-1-frame-4
+SNAPSHOT CASE-entry-camp-1-frame-14
+SNAPSHOT CASE-entry-camp-1-frame-25
+CASE 0 camp=1
+SNAPSHOT CASE-dead-camp-1-frame-4
+SNAPSHOT CASE-dead-camp-1-frame-9
+SNAPSHOT CASE-dead-camp-1-frame-16
+DONE Kakuzu/Water Clone native component; remaining=0

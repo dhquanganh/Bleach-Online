@@ -1,0 +1,89 @@
+BOOT native Flash shared VFX component probe
+TEXTURE forest frames=107
+TEXTURE adamantine frames=54
+TEXTURE burst frames=15
+TEXTURE idle frames=35
+TEXTURE severe frames=88
+TEXTURE burst-severe frames=88
+TEXTURE taijutsu frames=36
+TEXTURE deity frames=138
+TEXTURE golem frames=54
+TEXTURE sword frames=53
+TEXTURE rumbling frames=226
+CASE 13121009 camp=0
+FOREST_DEBUG xia frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+LAYERS_OK slot=0 skill=13121009 count=2 bound=2
+SNAPSHOT CASE-13121009-camp-0-cast
+SNAPSHOT HIT-13121009-camp-0
+SNAPSHOT CASE-13121009-camp-0-impact
+FOREST_DEBUG xia frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG xia frame=41 total=101 bounds=(x=-1862.65, y=-1360.3, w=3547.55, h=2431.35)
+FOREST_DEBUG shang frame=41 total=101 bounds=(x=-1418.5, y=-1248.05, w=2844.6, h=2096.7)
+SNAPSHOT FOREST-MID-0
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=81 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=81 total=101 bounds=(x=-692.2, y=-673.8, w=1735.7, h=1357.55)
+FOREST_DEBUG xia frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+CASE 13121009 camp=0
+FOREST_DEBUG xia frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+LAYERS_OK slot=1 skill=13121009 count=2 bound=2
+FOREST_DEBUG xia frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=81 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=81 total=101 bounds=(x=-692.2, y=-673.8, w=1735.7, h=1357.55)
+FOREST_DEBUG xia frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+CASE 13121009 camp=1
+FOREST_DEBUG xia frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+LAYERS_OK slot=2 skill=13121009 count=2 bound=2
+SNAPSHOT CASE-13121009-camp-1-cast
+SNAPSHOT HIT-13121009-camp-1
+SNAPSHOT CASE-13121009-camp-1-impact
+FOREST_DEBUG xia frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG xia frame=41 total=101 bounds=(x=-1862.65, y=-1360.3, w=3547.55, h=2431.35)
+FOREST_DEBUG shang frame=41 total=101 bounds=(x=-1418.5, y=-1248.05, w=2844.6, h=2096.7)
+SNAPSHOT FOREST-MID-1
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=81 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=81 total=101 bounds=(x=-692.2, y=-673.8, w=1735.7, h=1357.55)
+FOREST_DEBUG xia frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+CASE 13121009 camp=1
+FOREST_DEBUG xia frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=1 total=101 bounds=(x=0, y=0, w=0, h=0)
+LAYERS_OK slot=3 skill=13121009 count=2 bound=2
+FOREST_DEBUG xia frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=21 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG xia frame=41 total=101 bounds=(x=-1862.65, y=-1360.3, w=3547.55, h=2431.35)
+FOREST_DEBUG shang frame=41 total=101 bounds=(x=-1418.5, y=-1248.05, w=2844.6, h=2096.7)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=61 total=101 bounds=(x=-1135.9, y=-1360.3, w=2820.8, h=2431.35)
+FOREST_DEBUG shang frame=61 total=101 bounds=(x=-1083.05, y=-917.55, w=2146.1499999999996, h=1882.85)
+FOREST_DEBUG xia frame=81 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=81 total=101 bounds=(x=-692.2, y=-673.8, w=1735.7, h=1357.55)
+FOREST_DEBUG xia frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+FOREST_DEBUG shang frame=101 total=101 bounds=(x=0, y=0, w=0, h=0)
+DONE Hashirama native component; remaining=0

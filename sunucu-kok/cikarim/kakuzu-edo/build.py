@@ -9,11 +9,12 @@ def rows():
  source_ids={13121901:21305458,13121902:21005453,13121903:21005453,13121904:21005454,13121905:21205454,13121906:21305454,13121907:21005455,13121908:21005459,13121909:21005457,13121910:21005456}
  desc={i:skills[src].findtext('desc') for i,src in source_ids.items()}
  # Preserve the wording in the requested screenshot for the Mystery and round-end rescue.
- desc[13121901]='Causes unavoidable damage neglecting Shields and Interruption to the selected unit. After this skill is executed, dispels all Fear Kakuzu currently has. If the selected unit\'s HP is lower than 15%, this skill has additional Critical Rate increase.'
+ desc[13121901]='Causes unavoidable damage neglecting Shields and Interruption to all enemy units. After this skill is executed, dispels all Fear Kakuzu currently has. If the selected unit\'s HP is lower than 15%, this skill has additional Critical Rate increase.'
  desc[13121904]='Additional Skill; Wind: Causes unavoidable damage and Discouragement to all units in a random opponent\'s lineup and increases your lineup\'s Initiative by 3% (not stackable) until the end of the next round.'
  desc[13121905]='Additional Skill; Lightning: Causes unavoidable damage and Level 2 - Paralysis until the end of the round to all units in a random opponent\'s lineup and reduces Kakuzu\'s Mystery Cooldown by 1.'
  desc[13121906]='Additional Skill; Fire: Causes unavoidable damage and Suppress Immunity for 1 round to all units in a random opponent\'s lineup and dispels all Ignition Kakuzu currently has.'
- desc[13121908]='At the end of the round, revives a random ally ninja to 30% HP. This skill is still active even when Water Clone is controlled.'
+ desc[13121908]='While Kakuzu is alive, at the end of the round, Water Clone revives a random defeated ally ninja to 30% HP. This skill is still active even when Water Clone is controlled. Cannot revive Kakuzu or bypass his Reincarnation delay.'
+ desc[13121909]='If Kakuzu is defeated, revives 4 rounds after his defeat with 25% HP, reapplies all skills when he first entered the field and reduces his Mystery Cooldown to 0.'
  names={i:C[key]['name'] for i,key in [(13121901,'mystery'),(13121902,'standard'),(13121903,'cloneStandard'),(13121904,'pressure'),(13121905,'darkness'),(13121906,'migraine'),(13121907,'cloneCall'),(13121908,'reattachment'),(13121909,'reincarnation'),(13121910,'waterHiding')]}
  (B/'descriptions.json').write_text(json.dumps(desc,indent=2)+'\n')
  db={'BaseHero':[],'RoleModel':[],'HeroTalent':[],'SkillConfig':[{'id':n.hexid(i),'skillId':i,'name':names[i],'desc':desc[i]+(' All damage scales with Physical ATK and is reduced by Physical DEF.' if i<=13121906 else ''),'icon':i,'sortId':i-13121900} for i in names]}

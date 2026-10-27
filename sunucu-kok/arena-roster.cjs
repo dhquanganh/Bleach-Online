@@ -39,6 +39,7 @@ function createRoster(db, runtimes, snapshot, options = {}) {
       name: account.karakter.nick || account.nick, country: Math.max(1, Number(account.country) || 1),
       military: militaries.includes(account.militaryRank) ? account.militaryRank : militaries[0],
       level, units, profile, heroes: units.map(u => u.id), positions: units.map(u => u.pos),
+      crossScore:Math.max(0,Number(JSON.parse(files['oyuncu.json']||'{}').crossServer?.score)||0),
     } : null;
     cache.set(id, { hash, row }); return row;
   }

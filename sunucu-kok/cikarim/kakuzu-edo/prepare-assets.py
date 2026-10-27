@@ -33,7 +33,7 @@ def main():
     (B/'animation.json').write_text(json.dumps(data,indent=2)+'\n')
     public=B.parents[1]/'kaynak/login.gogames.me/public/kakuzu-edo-vfx/native';public.mkdir(parents=True,exist_ok=True)
     effects=['HuituJiaodu_xinzangduoqu','HuituJiaodu_tishugongji3','HuituJiaodu_fengdunyahai','HuituJiaodu_leidunweian',
-             'HuituJiaodu_huoduntoukeku','HuituJiaodu_shuifenshenzhishu','HuituJiaodu_diyuanyufenghe','HuituJiaodu_diyuanyufenghe_shouji']
+             'HuituJiaodu_huoduntoukeku','HuituJiaodu_shuifenshenzhishu','HuituJiaodu_diyuanyufenghe','HuituJiaodu_diyuanyufenghe_shouji','DASHEWAN_tongyongfuhuo']
     symbols={}
     for name in effects:
         src=SOURCE/'assets/battle/effect'/f'{name}.swf';raw=src.read_bytes();body=raw[:8]+zlib.decompress(raw[8:]) if raw[:3]==b'CWS' else raw

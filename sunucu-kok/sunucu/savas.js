@@ -1092,20 +1092,23 @@ function playerTeam(options = {}) {
 function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   SON_OYUNCU_HASARI = 0;
   const durumK = options.playerState || require('./durum').yukle() || {};
-  const p1 = playerTeam({...options,pvp:!!arenaRakip||!!options.pvp});
+  const crossBaseOnly=options.crossServerBaseOnly===true;
+  // Normalize the starting lineup once; combat skill and passive multipliers remain active afterward.
+  const baseCrossUnit=unit=>require('./cross-server-players').baseUnit(unit);
+  const p1 = crossBaseOnly?(options.playerUnits||[]).map(baseCrossUnit).filter(Boolean):playerTeam({...options,pvp:!!arenaRakip||!!options.pvp});
   if (!p1.length) return null;
-  if(options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
+  if(!crossBaseOnly&&options.playerStatBoost && ['atk','def','maxHp'].includes(options.playerStatBoost.field)) {
     const field=options.playerStatBoost.field,factor=1+Math.max(0,Number(options.playerStatBoost.percent)||0)/100;
     for(const unit of p1){unit[field]=Math.min(1000000000,Math.round(unit[field]*factor));if(field==='maxHp')unit.hp=unit.maxHp;}
   }
   // Event bots use their own levels and formations through the same combat engine.
-  if (options.playerUnits) p1.splice(0, p1.length, ...options.playerUnits);
+  if (options.playerUnits&&!crossBaseOnly) p1.splice(0, p1.length, ...options.playerUnits);
   if (options.maxHitDamage) for (const unit of p1) unit.maxHitDamage = options.maxHitDamage;
   // Arena botu varsa onun gercek kahraman kadrosunu, diger savaslarda stage dusmanlarini kullan.
   // Stage kadrosu bulunmayan diger modlarda varsayilan dusmana dusulur.
   const st = enemyOverride || (!arenaRakip && bpId ? stageDusmanlari(bpId) : null);
   const p2 = arenaRakip && arenaRakip.units
-    ? arenaRakip.units.map(unit => ({ ...unit, camp: 1 }))
+    ? arenaRakip.units.map(unit => crossBaseOnly?baseCrossUnit(unit):{...unit}).filter(Boolean).map(unit=>({...unit,camp:1}))
     : arenaRakip
     ? arenaRakip.heroes.map((id, i) => {
       const pos = Array.isArray(arenaRakip.positions) ? arenaRakip.positions[i] : [1, 6, 11][i];
@@ -1115,7 +1118,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       return u;
     }).filter(Boolean)
     : (st && st.birimler.length) ? st.birimler : [dusmanBirim(ENEMY, 6)];
-  if(arenaRakip||options.pvp)for(const unit of p1.concat(p2))if(unit.pvpStats){
+  if(!crossBaseOnly&&(arenaRakip||options.pvp))for(const unit of p1.concat(p2))if(unit.pvpStats){
     const hpRate=unit.maxHp>0?Math.max(0,unit.hp)/unit.maxHp:1,stats=unit.pvpStats;
     for(const [field,value]of Object.entries(stats))if(!['hp','guc'].includes(field))unit[field]=value;
     unit.maxHp=stats.hp;unit.hp=Math.round(stats.hp*hpRate);
@@ -1125,16 +1128,12 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   if (st) console.log(`[savas] stage ${bpId} "${st.ad}" -> ${p2.length} dusman: ${p2.map(u => u.id + '@pos' + u.pos).join(', ')}`);
   if (arenaRakip) console.log(`[arena] ${arenaRakip.name} lv${arenaRakip.level} -> ${p2.length} hero${arenaRakip.units ? ' (saved account)' : ', power x' + arenaRakip.power}`);
 
-  if (options.scaleEnemy !== false && !worldMapLevel(bpId)) {
+  if (!crossBaseOnly&&options.scaleEnemy !== false && !worldMapLevel(bpId)) {
     const denge = dengele(p1, p2, arenaRakip ? arenaRakip.power : 1, !!st && !arenaRakip);
     if (denge) console.log(`[savas] denge: dusman hp x${denge.kHp.toFixed(1)} atk x${denge.kAtk.toFixed(1)}`);
   }
-  // Apply Cross Server row and combat-level growth after opponent balancing.
-  if (arenaRakip && Number(arenaRakip.crossStatScale) > 0) {
-    require('./cross-server-bots').scaleSquadStats(p2, arenaRakip);
-  }
   const stageStatScale = Math.max(1, Number(options.stageStatScale) || 1);
-  if (stageStatScale > 1 && !arenaRakip) {
+  if (!crossBaseOnly&&stageStatScale > 1 && !arenaRakip) {
     for (const unit of p2) {
       const enemy = enemyById.get(unit.id);
       const defenses = tryParse(enemy && enemy.defenses) || {};
@@ -1149,19 +1148,23 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
   }
   const enemyAttackScale = Math.max(0, Number(options.enemyAttackScale) || 1);
-  if (enemyAttackScale !== 1 && !arenaRakip) {
+  if (!crossBaseOnly&&enemyAttackScale !== 1 && !arenaRakip) {
     for (const unit of p2) {
       unit.atk = Math.max(1, Math.round(unit.atk * enemyAttackScale));
     }
   }
   // Hueco Mundo carries surviving HP between points; other modes start at full HP.
   for (const [team, rates] of [[p1, options.playerHpRates], [p2, options.enemyHpRates]]) {
-    if (rates) for (const unit of team) {
+    if (!crossBaseOnly&&rates) for (const unit of team) {
       const rate = rates[String(unit.id)];
       if (Number.isFinite(rate)) unit.hp = Math.max(0, Math.round(unit.maxHp * Math.max(0, Math.min(100, rate)) / 100));
     }
   }
   for (const unit of p1.concat(p2)) unit.strictSkillTargets = !!options.strictSkillTargets;
+  // Summons may keep acting alongside their team, but cannot keep a defeated
+  // lineup in battle on their own or wait out a delayed resurrection.
+  const hasLivingLineup=team=>team.some(unit=>unit.hp>0&&!unit.auxiliary&&!unit.cloneOwner&&!unit.isSummon&&!unit.puppet);
+  const battleOver=()=>!hasLivingLineup(p1)||!hasLivingLineup(p2);
   narutoCombat.prepareClones([p1,p2]);
   tsunadeCombat.prepareSummons([p1,p2]);
   tobiCombat.prepareSummons([p1,p2]);
@@ -1172,8 +1175,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const initialActives = [];
   for (const unit of p1.concat(p2)) {
     unit.pvp = !!arenaRakip || !!options.pvp;
-    if (!unit.partnerSkills) unit.partnerSkills = unit.camp === 0 ? partnerSkills.unlocked(durumK,unit.id) : [];
-    if (!unit.weaponSkills) unit.weaponSkills = unit.camp === 0 ? weaponSkills.equipped(durumK,unit.id) : [];
+    if (!unit.partnerSkills) unit.partnerSkills = crossBaseOnly?[]:unit.camp === 0 ? partnerSkills.unlocked(durumK,unit.id) : [];
+    if (!unit.weaponSkills) unit.weaponSkills = crossBaseOnly?[]:unit.camp === 0 ? weaponSkills.equipped(durumK,unit.id) : [];
     const records = [];
     partnerSkills.trigger('start',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
     partnerSkills.trigger('hpLoss',unit,unit.camp===0?p1:p2,unit.camp===0?p2:p1,[],records);
@@ -1209,6 +1212,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const turns = [];
   let performDepth=0,reactiveEnabled=false,drainingMysteries=false;
   const perform = (u,target,opponents,allies,actives,spec=null,bitir=false,prepared=false) => {
+    if(battleOver())return null;
     require('./nagato-combat').beforeAction(chaseContext,u);
     spec=require('./nagato-combat').prepareMove(chaseContext,u,target,spec);
     itachiCombat.beforeAction(chaseContext,u);
@@ -1309,7 +1313,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     return frame;
   };
   const drainReactiveMysteries = actives => {
-    if(!reactiveEnabled||drainingMysteries)return;
+    if(!reactiveEnabled||drainingMysteries||battleOver())return;
     drainingMysteries=true;
     try {
       // Re-evaluate profiles, targets and resources after every cast. All spends go
@@ -1318,6 +1322,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       do {
         cast=false;
         for(const u of initiative(p1.concat(p2))){
+          if(battleOver())break;
           if(!hashCombat.isHash(u)&&!painCombat.isPain(u)&&!obitoCombat.isObito(u)&&!mechaCombat.isMecha(u)&&!itachiCombat.isItachi(u)&&!sasukeCombat.isSasuke(u))continue;
           const opponents=chaseContext.teams[1-u.camp],allies=chaseContext.teams[u.camp];
           const target=opponents.find(v=>v.hp>0&&!v.auxiliary&&!itachiCombat.active(v,'itachiHidingUntil'));
@@ -1331,6 +1336,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     } finally {drainingMysteries=false;}
   };
   for (let t = 1; t <= MAX_TUR; t++) {
+    if(battleOver())break;
     reactiveEnabled=false;
     narutoCombat.startRound(chaseContext,t);
     const kakuzuRound=kakuzuCombat.roundStart(chaseContext);
@@ -1382,10 +1388,11 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       actives.push(...heroSkills.eventFrames(unit,records));
     }
     actives.push(...heroSkills.startRound(p1.concat(p2)));
-    actives.push(...require('./zanpakuto-combat').round([p1,p2],t,(caster,target,enemies,allies,spec)=>vurus(caster,target,false,enemies,options.random||Math.random,false,allies,spec),options.random||Math.random));
+    if(!crossBaseOnly)actives.push(...require('./zanpakuto-combat').round([p1,p2],t,(caster,target,enemies,allies,spec)=>vurus(caster,target,false,enemies,options.random||Math.random,false,allies,spec),options.random||Math.random));
     appendDeaths(actives);
     // Opening Mysteries have priority; prompt skills retain their independent action.
     for (const u of initiative(p1.concat(p2))) {
+      if(battleOver())break;
       const opponents=u.camp===0?p2:p1,allies=u.camp===0?p1:p2;
       const target=opponents.find(other=>other.hp>0 && !other.cloneOwner) || opponents.find(other=>other.hp>0);
       if(!target) continue;
@@ -1399,6 +1406,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     reactiveEnabled=true;
     drainReactiveMysteries(actives);
     for (const u of initiative(p1.concat(p2))) {
+      if(battleOver())break;
       if (u.hp <= 0) continue;
       // Sage Shadow Clone is a full combatant. Other auxiliary clones keep the
       // legacy skip rule used by their owning characters.
@@ -1423,8 +1431,9 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       u.barrierMysteryBlocked=jiraiyaCombat.blocksMystery(chaseContext,u,null);
       if(!narutoCombat.profile(u)&&!canSkill)chaseContext.primaryActions.set(u,t);
       const act = perform(u,target,opponents,allies,actives,spec,bitir);
+      if(!act)break;
       // Rage can grant further standards on a kill; every extra consumes a credit.
-      while((mechaCombat.isMecha(u)?mechaCombat.available(chaseContext,u):hashCombat.isHash(u)?hashCombat.available(chaseContext,u):obitoCombat.isObito(u)&&obitoCombat.available(chaseContext,u))&&u.hp>0&&!narutoCombat.disabled(u)&&!heroSkills.status(u,'disarm')&&hashCombat.canStandard(u)){
+      while(!battleOver()&&(mechaCombat.isMecha(u)?mechaCombat.available(chaseContext,u):hashCombat.isHash(u)?hashCombat.available(chaseContext,u):obitoCombat.isObito(u)&&obitoCombat.available(chaseContext,u))&&u.hp>0&&!narutoCombat.disabled(u)&&!heroSkills.status(u,'disarm')&&hashCombat.canStandard(u)){
         const next=heroSkills.select(opponents,'low',options.random||Math.random)[0];
         if(!next)break;
         const extraSpec=narutoCombat.useStandard(chaseContext,u,allies);
@@ -1433,7 +1442,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       }
       // Combo is BASEATTRIBUTEINDEX_Punch (14), not a fixed global chance.
       // Extra attacks neither spend nor generate rage and never chain recursively.
-      if (!spec && act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && (options.random || Math.random)() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {
+      if (!battleOver() && !spec && act.activeType === kodek.ACTIVE.NORMAL && u.hp > 0 && !heroSkills.status(u,'disarm') && (options.random || Math.random)() < Math.max(0, Math.min(1, heroSkills.value(u,'punchRate')))) {
         const next = heroTalents.selectTargets(u, opponents)[0];
         if (next) {
           tsunadeCombat.receiveExtra(chaseContext,u);
@@ -1450,13 +1459,20 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       }
       // Ordinary Bleach combo attacks also grant TP and may unlock a ninja form.
       drainReactiveMysteries(actives);
-      if (p2.every(x => x.hp <= 0)) break;
+      if (battleOver()) break;
     }
     reactiveEnabled=false;
+    if(battleOver()){
+      if(actives.length)turns.push({curTurn:t,actives});
+      break;
+    }
     actives.push(...tsunadeCombat.endRound(chaseContext));
     actives.push(...nineTailsCombat.endRound(chaseContext));
     actives.push(...tobiCombat.endRound(chaseContext));
     actives.push(...kakuzuCombat.endRound(chaseContext));
+    // A rescued ally can die again to round-end damage; its new death must be
+    // processed even if its first death was already observed earlier this round.
+    for(const unit of p1.concat(p2))if(unit.hp>0)deathTriggered.delete(unit);
     actives.push(...sasukeCombat.endRound(chaseContext));
     actives.push(...hashCombat.endRound(chaseContext));
     actives.push(...heroSkills.endRound(p1.concat(p2)));
@@ -1467,8 +1483,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       actives.push(...heroSkills.eventFrames(unit,records));
     }
     if (actives.length) turns.push({ curTurn: t, actives });
-    const pendingKakuzu=team=>team.some(x=>kakuzuCombat.isKakuzu(x)&&x.hp<=0&&x.kakuzuReviveRound>t&&!x.noRevive&&!x.itachiUnrevivable);
-    if ((p2.every(x => x.hp <= 0)&&!pendingKakuzu(p2)) || (p1.every(x => x.hp <= 0)&&!pendingKakuzu(p1))) break;
+    if (battleOver()) break;
   }
   // Savas istatistigi: client "Battle Stats"a basinca CS 0x01548002 ile ISTIYOR (payload yok).
   const ist = u => ({ heroId: u.id, hurt: u.verdi || 0, remainHp: u.maxHp > 0 ? Math.max(0, u.hp) / u.maxHp : 0 });
@@ -1477,13 +1492,9 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   return {
     chaseTrace: chaseContext.trace,
     chakra: chaseContext.chakra,
-    payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1,knifeOfKillSoulID:p1.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, player2: { roles: roles2,knifeOfKillSoulID:p2.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, turns }),
+    payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1,knifeOfKillSoulID:crossBaseOnly?0:p1.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, player2: { roles: roles2,knifeOfKillSoulID:crossBaseOnly?0:p2.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, turns }),
     remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, rate: Math.max(0, unit.hp) / unit.maxHp })),
-    won: arenaRakip
-      ? p2.every(x => x.hp <= 0) && p1.some(x => x.hp > 0)
-      : (options.requireEnemyDefeated
-        ? p1.some(x => x.hp > 0) && p2.every(x => x.hp <= 0)
-        : (options.reportLossWhenDefeated ? p1.some(x => x.hp > 0) : true)),
+    won: hasLivingLineup(p1) && (arenaRakip || options.requireEnemyDefeated ? !hasLivingLineup(p2) : true),
   };
 }
 

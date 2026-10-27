@@ -1,0 +1,45 @@
+      private static var FHashiramaNative:Object={};
+      private static function PreloadHashiramaNative() : void {
+         for each(var effect:String in ["Zhujianzhongyanmingshenfenglong","Zhujianzhongyanmingshenfenglong_texie","Zhujianzhongyandingshanghuafo","Zhujianzhongyandingshanghuafo_texie","Zhujianzhongyanbangpaizhishu","Zhujianzhongyanhuashujiejianglin"])LoadHashiramaNative(effect);
+      }
+      private static function LoadHashiramaNative(effect:String) : void {
+         if(FHashiramaNative[effect]!=null)return;
+         var state:Object={};FHashiramaNative[effect]=state;var loader:Loader=new Loader();state.loader=loader;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{state.domain=loader.contentLoaderInfo.applicationDomain;if(loader.content is MovieClip)MovieClip(loader.content).stop();});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void{delete FHashiramaNative[effect];});
+         loader.load(new URLRequest("/public/hashirama-vfx/native/"+effect+".swf"),new LoaderContext(false,new ApplicationDomain()));
+      }
+      private function HashiramaNativeLayer(effect:String,symbol:String,host:DisplayObjectContainer,point:Point,width:Number,height:Number,delay:int,mirrored:Boolean,screen:Boolean,behind:Boolean=false) : void {
+         LoadHashiramaNative(effect);
+         var caster:TRole=this;var layer:Sprite=new Sprite();layer.name="hashiramaSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         var sourceKey:String=effect+"-"+(symbol=="shang"?(effect=="Zhujianzhongyanbangpaizhishu"?"364":effect=="Zhujianzhongyanhuashujiejianglin"?"281":"688"):(effect=="Zhujianzhongyanbangpaizhishu"?"54":effect=="Zhujianzhongyanhuashujiejianglin"?"128":"170"));
+         var meta:Object=screen?null:HashiramaVfxManifest().clips[sourceKey];var sourceWidth:Number=meta!=null?Number(meta.width)/Number(meta.renderScale):0;
+         if(behind)host.addChildAt(layer,0);else host.addChild(layer);
+         FHashiramaActiveVfx.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:uint=FSkillId;var start:int=Math.max(0,FFrameIndex);var tick:Function;var clear:Function;var cleaned:Boolean=false;var bounds:Rectangle=null;
+         clear=function(event:Event=null):void{if(cleaned || event!=null&&event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK&&caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
+            var state:Object=FHashiramaNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
+            if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            var elapsed:int=(Math.max(0,caster.FFrameIndex)-start)*40-delay;
+            if(elapsed<0){layer.visible=false;return;}
+            var frame:int=Math.round(elapsed*24/1000)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            clip.gotoAndStop(frame);layer.visible=true;
+            var field:Boolean=effect=="Zhujianzhongyanhuashujiejianglin";
+            if(screen || field){
+               if(bounds==null || bounds.width<=1 || bounds.height<=1){var at:int=Math.min(clip.totalFrames,Math.max(8,int(clip.totalFrames*(field ? 0.5 : 0.25))));var previous:int=frame;clip.gotoAndStop(at);bounds=clip.getBounds(clip);clip.gotoAndStop(previous);}
+               if(bounds==null || bounds.width<=1 || bounds.height<=1)bounds=new Rectangle(-500,-300,1000,600);
+               var tl:Point=host.globalToLocal(stage.localToGlobal(new Point()));var br:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+               var fit:Number=field?Math.min((br.x-tl.x-48)/bounds.width,((br.y-tl.y)*.68)/bounds.height):Math.max((br.x-tl.x)/bounds.width,(br.y-tl.y)/bounds.height);
+               if(effect=="Zhujianzhongyanmingshenfenglong_texie")fit*=1.65;
+               clip.scaleX=clip.scaleY=fit;clip.x=(field?(tl.x+br.x)*.5:point.x)-(bounds.x+bounds.width*.5)*fit;clip.y=(field?tl.y+(br.y-tl.y)*.90:point.y)-(field?bounds.y+bounds.height:bounds.y+bounds.height*.5)*fit;
+               layer.scrollRect=new Rectangle(tl.x,tl.y,br.x-tl.x,br.y-tl.y);
+            }else{
+               var scale:Number=Math.min(1.6,Math.max(.15,width/Math.max(1,sourceWidth>0?sourceWidth:clip.width)));
+               clip.scaleX=clip.scaleY=scale;clip.x=0;clip.y=0;layer.x=point.x;layer.y=point.y+(effect=="Zhujianzhongyanmingshenfenglong"?95:0);layer.scaleX=mirrored?-1:1;
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

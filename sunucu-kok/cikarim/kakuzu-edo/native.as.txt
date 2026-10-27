@@ -2,7 +2,7 @@
       private var FKakuzuVfxStarted:Boolean=false;
       private var FKakuzuLayers:Array=[];
       private static function PreloadKakuzuNative() : void {
-         for each(var effect:String in ["HuituJiaodu_xinzangduoqu","HuituJiaodu_tishugongji3","HuituJiaodu_fengdunyahai","HuituJiaodu_leidunweian","HuituJiaodu_huoduntoukeku","HuituJiaodu_shuifenshenzhishu","HuituJiaodu_diyuanyufenghe","HuituJiaodu_diyuanyufenghe_shouji"])LoadKakuzuNative(effect);
+         for each(var effect:String in ["HuituJiaodu_xinzangduoqu","HuituJiaodu_tishugongji3","HuituJiaodu_fengdunyahai","HuituJiaodu_leidunweian","HuituJiaodu_huoduntoukeku","HuituJiaodu_shuifenshenzhishu","HuituJiaodu_diyuanyufenghe","HuituJiaodu_diyuanyufenghe_shouji","DASHEWAN_tongyongfuhuo"])LoadKakuzuNative(effect);
       }
       private static function LoadKakuzuNative(effect:String) : void {
          if(FKakuzuNative[effect]!=null)return;
@@ -18,16 +18,21 @@
       private function UpdateKakuzuVfx() : void {
          if((FId!=11120997 && FId!=11120998) || FKakuzuVfxStarted || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
          FKakuzuVfxStarted=true;
-         var effect:String=FSkillId==13121901?"HuituJiaodu_xinzangduoqu":FSkillId==13121902||FSkillId==13121903?"HuituJiaodu_tishugongji3":FSkillId==13121904?"HuituJiaodu_fengdunyahai":FSkillId==13121905?"HuituJiaodu_leidunweian":FSkillId==13121906?"HuituJiaodu_huoduntoukeku":FSkillId==13121907?"HuituJiaodu_shuifenshenzhishu":FSkillId==13121908?"HuituJiaodu_diyuanyufenghe_shouji":FSkillId==13121909?"HuituJiaodu_diyuanyufenghe":"";
+         if(FSkillId==13121909){PlayKakuzuNative("DASHEWAN_tongyongfuhuo","tyfh");return;}
+         var effect:String=FSkillId==13121901?"HuituJiaodu_xinzangduoqu":FSkillId==13121902||FSkillId==13121903?"HuituJiaodu_tishugongji3":FSkillId==13121904?"HuituJiaodu_fengdunyahai":FSkillId==13121905?"HuituJiaodu_leidunweian":FSkillId==13121906?"HuituJiaodu_huoduntoukeku":FSkillId==13121907?"HuituJiaodu_shuifenshenzhishu":FSkillId==13121908?"HuituJiaodu_diyuanyufenghe":"";
          if(effect!=""){PlayKakuzuNative(effect,"xia");PlayKakuzuNative(effect,"shang");}
+         if(FSkillId==13121908 && FTargets!=null && FResults!=null){
+            for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp==Camp && FResults[i].CMD==1 && FResults[i].ResultInfo.HurtHp<0)PlayKakuzuNative("HuituJiaodu_diyuanyufenghe_shouji","shang",FTargets[i],__REATTACH_HIT__);
+         }
       }
       private function KakuzuContactOffset() : Point {
-         if((FId!=11120997 && FId!=11120998) || FTargets==null || FResults==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return new Point();
+         if((FId!=11120997 && FId!=11120998) || FSkillId<13121901 || FSkillId>13121906 || FTargets==null || FResults==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return new Point();
          var enemy:TRole=null;
          for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp!=Camp && FResults[i].CMD==1){enemy=FTargets[i];break;}
          if(enemy==null)return new Point();
          var contact:Point=globalToLocal(enemy.localToGlobal(new Point()));
-         var distance:Number=FSkillId==13121901?180:75;
+         // Source SkillAction distances, using the same 0.84 scale as the actor.
+         var distance:Number=(FSkillId==13121901?410:FSkillId>=13121904?500:170)*0.84;
          var end:Number=FCurSequence.FrameCount-1;var phase:Number=Math.min(1,Math.max(0,FFrameIndex/9),Math.max(0,(end-FFrameIndex)/9));phase=phase*phase*(3-2*phase);
          return new Point((contact.x-distance)*phase,contact.y*phase);
       }
@@ -35,7 +40,7 @@
          if((FId!=11120997 && FId!=11120998) || frame==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
          var offset:Point=KakuzuContactOffset();FBitmap.x=-frame.Pivot.X+offset.x;FBitmap.y=-frame.Pivot.Y+offset.y;
       }
-      private function PlayKakuzuNative(effect:String,symbol:String) : void {
+      private function PlayKakuzuNative(effect:String,symbol:String,target:TRole=null,startFrame:int=0) : void {
          LoadKakuzuNative(effect);
          var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
          var layer:Sprite=new Sprite();layer.name="kakuzuEdoSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
@@ -47,11 +52,15 @@
             if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK && caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
             var state:Object=FKakuzuNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
             if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
-            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex)*rate/25)+1;
+            if(caster.FFrameIndex<startFrame){layer.visible=false;return;}
+            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex-startFrame)*rate/25)+1;
             if(frame>clip.totalFrames){clear();return;}
             layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
-            var offset:Point=caster.KakuzuContactOffset();var at:Point=host.globalToLocal(caster.localToGlobal(new Point(45+offset.x,offset.y)));
-            layer.x=at.x;layer.y=at.y;layer.scaleX=caster.scaleX<0?-0.82:0.82;layer.scaleY=0.82;
+            var offset:Point=caster.KakuzuContactOffset();var originX:Number=effect=="DASHEWAN_tongyongfuhuo"?0:70*0.84;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point(originX+offset.x,offset.y)));
+            var facing:Number=caster.scaleX;
+            if(target!=null){at=host.globalToLocal(target.localToGlobal(new Point()));facing=target.scaleX;}
+            layer.x=at.x;layer.y=at.y;layer.scaleX=facing<0?-0.84:0.84;layer.scaleY=0.84;
          };
          layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
       }

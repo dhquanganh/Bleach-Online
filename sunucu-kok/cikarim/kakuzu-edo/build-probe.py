@@ -1,6 +1,7 @@
 from pathlib import Path
-import importlib.util,json,re
+import importlib.util,json,re,sys
 B=Path(__file__).resolve().parent;s=importlib.util.spec_from_file_location('c',B/'build-client.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);c=m.c
+W=B/'revival-repair' if '--repair' in sys.argv else B
 a=json.loads((B/'animation.json').read_text());source=(B.parent/'tsunade-asian/probe-source/TApplication.as').read_text().split(' internal class ProbeRole extends Sprite {')[0]
 source=source.replace(' import flash.geom.*;',' import flash.geom.*;\n import flash.system.*;')
 def extract(text,name):
@@ -23,6 +24,8 @@ tick='''  private function tick(event:Event):void {
    var age:int=getTimer()-readyAt;var bounds:Array=__BOUNDS__;var slot:int=0;while(slot<22 && age>=bounds[slot+1])slot++;
    if(slot>=22){left.FSkillId=0;right.FSkillId=0;left.ClearKakuzuVfx();right.ClearKakuzuVfx();var remaining:int=0;for(var q:int=0;q<battle.numChildren;q++)if(battle.getChildAt(q).name=="kakuzuEdoSkillVfx")remaining++;report("DONE Kakuzu/Water Clone native component; remaining="+remaining);removeEventListener(Event.ENTER_FRAME,tick);return;}
    var side:int=slot<11?0:1;var index:int=slot%11;var caster:ProbeRole=side==0?left:right;var victim:ProbeRole=side==0?right:left;
+   caster.Camp=side;victim.Camp=index==6?side:1-side;
+   caster.FTargets=[caster,victim];caster.FResults=[{CMD:0,ResultInfo:{HurtHp:0}},{CMD:1,ResultInfo:{HurtHp:index==6?-300:10}}];
    if(lastSlot!=slot){left.ClearKakuzuVfx();right.ClearKakuzuVfx();left.FSkillId=0;right.FSkillId=0;++caster.FCombatVfxSerial;caster.FSkillId=skills[index];caster.FId=index>=8?11120998:11120997;caster.FFrameIndex=0;caster.y=440;victim.y=440;lastSlot=slot;label.text="Kakuzu / Water Clone | "+clipNames[index]+" | camp "+side;report("CASE "+skills[index]+" camp="+side);}
    var frame:int=int((age-bounds[slot])/40);var name:String=clipNames[index];caster.FFrameIndex=frame;
    if(frame<clips[name].images.length){renderRole(caster,name,frame);caster.UpdateKakuzuVfx();}else{caster.FSkillId=0;renderRole(caster,index>=8?"clone-idle":"idle",int(age/100)%clips.idle.images.length);}
@@ -30,7 +33,7 @@ tick='''  private function tick(event:Event):void {
    var phases:Array=name=="mystery"?[4,16,32,48,60,72,84,100]:[4,int(clips[name].images.length*.4),int(clips[name].images.length*.7)];
    for each(var phase:int in phases){var key:String="CASE-"+name+"-camp-"+side+"-frame-"+phase;if(frame>=phase&&!captured[key]){captured[key]=true;var started:int=getTimer();saveFrame(key);readyAt+=getTimer()-started;}}
   }'''.replace('__BOUNDS__',json.dumps(bounds));source=source.replace(extract(source,'tick'),tick,1)
-role=(B/'patched'/c.b.ROLE).read_text(encoding='utf-8');runtime='\n'.join(c.m.extract(role,name) for name in ['PreloadKakuzuNative','LoadKakuzuNative','ClearKakuzuVfx','UpdateKakuzuVfx','KakuzuContactOffset','KakuzuStrikePose','PlayKakuzuNative']).replace(':TRole',':ProbeRole').replace(':TAnimationFrame',':Object').replace('private static function','public static function').replace('private function','public function')
+role=(W/'patched'/c.b.ROLE).read_text(encoding='utf-8');runtime='\n'.join(c.m.extract(role,name) for name in ['PreloadKakuzuNative','LoadKakuzuNative','ClearKakuzuVfx','UpdateKakuzuVfx','KakuzuContactOffset','KakuzuStrikePose','PlayKakuzuNative']).replace(':TRole',':ProbeRole').replace(':TAnimationFrame',':Object').replace('private static function','public static function').replace('private function','public function')
 source+=''' internal class ProbeRole extends Sprite {
  public var FId:int=11120997;public var FSkillId:int=0;public var FIndex:int=1;public var FFrameIndex:int=0;public var Camp:int=0;public var Pos:int=1;
  public const TYPE_ACTIVE_ATTACK:int=1;public const TYPE_ACTIVE_SKILL:int=2;
@@ -38,7 +41,9 @@ source+=''' internal class ProbeRole extends Sprite {
  public var FBattleStage:Sprite;public var FTargets:Array=[];public var FResults:Array=[];public var actor:Bitmap=new Bitmap();public function get FBitmap():Bitmap{return actor;}
  public function ProbeRole(){actor.smoothing=true;addChild(actor);}
 '''+runtime+'\n }\n}'
-dest=B/'probe-source/TApplication.as';dest.parent.mkdir(exist_ok=True);dest.write_text(source,encoding='utf-8');probe_source=B/'source.swf';c.ff('-onerror','abort','-importScript',probe_source,B/'raster-probe.swf',dest.parent)
-raw=bytearray((B/'raster-probe.swf').read_bytes());raw[3]=21;(B/'raster-probe.swf').write_bytes(raw)
-js=(B.parent/'naruto-nine-tails/runtime-raster.js').read_text().replace('7486','7494').replace('7487','7495').replace('nine-tails-vfx','kakuzu-edo-vfx').replace('(v3|extracted|aligned-hd|native-v2)','native');(B/'runtime-raster.js').write_text(js);(B/'validation/native').mkdir(parents=True,exist_ok=True)
+dest=W/'probe-source/TApplication.as';dest.parent.mkdir(exist_ok=True);dest.write_text(source,encoding='utf-8');probe_source=W/'source.swf';c.ff('-onerror','abort','-importScript',probe_source,W/'raster-probe.swf',dest.parent)
+raw=bytearray((W/'raster-probe.swf').read_bytes());raw[3]=21;(W/'raster-probe.swf').write_bytes(raw)
+js=(B.parent/'naruto-nine-tails/runtime-raster.js').read_text().replace('7486','7494').replace('7487','7495').replace('nine-tails-vfx','kakuzu-edo-vfx').replace('(v3|extracted|aligned-hd|native-v2)','native')
+if W!=B:js=js.replace("'../../..'","'../../../..'")
+(W/'runtime-raster.js').write_text(js);(W/'validation/native').mkdir(parents=True,exist_ok=True)
 print('PASS 22 Kakuzu/Water Clone native component casts compiled')

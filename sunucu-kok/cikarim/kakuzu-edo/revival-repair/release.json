@@ -1,0 +1,34 @@
+{
+  "version": "2026102705",
+  "sha256": "b333d0cc6a8e18870126ca6343210840922d264ea79f74df1230051b8f9fa694",
+  "animationProbe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 22,
+    "restores": 0,
+    "stableRestores": 0,
+    "deathHolds": 0,
+    "assetPlays": 0,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  },
+  "revivalProbe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 8,
+    "restores": 8,
+    "stableRestores": 8,
+    "deathHolds": 0,
+    "assetPlays": 0,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  }
+}
