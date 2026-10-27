@@ -1,0 +1,290 @@
+package Processors.Game.Lobby.Activity.HDChineseYear.Windows
+{
+   import Components.Pages.*;
+   import Components.Standard.*;
+   import Foundation.UI.*;
+   import Foundation.Utilities.*;
+   import Logics.DatebaseVO.VO.*;
+   import Logics.DatebaseVO.VO.Json.*;
+   import Logics.HDActivityChineseYear.*;
+   import Logics.HDActivityMode.*;
+   import Logics.Inventories.*;
+   import Processors.Game.Lobby.Activity.HDIceHeros.Compoent.TRankAward;
+   import Processors.Game.Lobby.Activity.HDIceHeros.Compoent.TServersRankItem;
+   import Processors.Game.Lobby.Common.*;
+   import Processors.Game.Lobby.Utilities.*;
+   import Resources.Constants.*;
+   import flash.display.*;
+   import flash.events.*;
+   import flash.text.*;
+   
+   public class TProcessorWindowDoubleFishRank extends TProcessorLobbyWindow
+   {
+      
+      protected static const AWARD_NUM:uint = 6;
+      
+      protected static const RANK_NUM:uint = 10;
+      
+      protected var FRankAwardList:Vector.<TRankAward>;
+      
+      protected var FRankList:Vector.<TServersRankItem>;
+      
+      protected var FUIPage:TUIPage;
+      
+      protected var FTF_MyRank:TextField;
+      
+      protected var FTF_MyCount:TextField;
+      
+      protected var FTF_RankDesc:TextField;
+      
+      protected var FBT_Close:TUIButton;
+      
+      protected var FScene:Sprite;
+      
+      protected var FPageIndex:int;
+      
+      protected var FInvetoriesList:Vector.<TInventories>;
+      
+      protected var FFishBin:THDDoubleFish;
+      
+      protected var FFishData:THDDoubleFishData;
+      
+      protected var FOnRankClose:Function;
+      
+      protected var FOnBagOver:Function;
+      
+      protected var FOnBagOut:Function;
+      
+      public function TProcessorWindowDoubleFishRank(param1:TUIComponent)
+      {
+         super(param1);
+         this.FRankAwardList = new Vector.<TRankAward>(AWARD_NUM);
+         this.FRankList = new Vector.<TServersRankItem>(RANK_NUM);
+         this.FPageIndex = 0;
+      }
+      
+      override protected function LogicsPerform() : void
+      {
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         var _loc3_:TRankAward = null;
+         super.LogicsPerform();
+         if(!Visible)
+         {
+            return;
+         }
+         _loc2_ = int(AWARD_NUM);
+         _loc1_ = 0;
+         while(_loc1_ < _loc2_)
+         {
+            _loc3_ = this.FRankAwardList[_loc1_];
+            if(_loc3_ != null)
+            {
+               _loc3_.UpdatePerform();
+            }
+            _loc1_++;
+         }
+      }
+      
+      protected function InitRank() : void
+      {
+         var _loc1_:MovieClip = null;
+         var _loc2_:TextField = null;
+         var _loc3_:uint = 0;
+         var _loc4_:uint = 0;
+         var _loc5_:TServersRankItem = null;
+         var _loc6_:Sprite = null;
+         var _loc7_:TRankAward = null;
+         this.FScene = TUtilityReflection.CreateDisplayObjectInstance(CONST_ACTIVITY.RESOURCE_ClassName_DoubleFishRank) as Sprite;
+         addChild(this.FScene);
+         this.FTF_MyRank = this.FScene[CONST_ACTIVITY.RESOURCE_Link_TF_MyRank];
+         this.FTF_MyCount = this.FScene[CONST_ACTIVITY.RESOURCE_Link_TF_MyCount];
+         this.FTF_RankDesc = this.FScene[CONST_ACTIVITY.RESOURCE_Link_TF_RankDesc];
+         this.FBT_Close = new TUIButton();
+         this.FBT_Close.Substrate = this.FScene[CONST_ACTIVITY.RESOURCE_Link_MC_Close];
+         this.FBT_Close.OnClick = this.CloseOnClick;
+         this.FUIPage = new TUIPage(this);
+         _loc1_ = this.FScene[CONST_ACTIVITY.RESOURCE_Link_BTN_Left];
+         this.FUIPage.ButtonPrevious.Substrate = _loc1_;
+         _loc1_ = this.FScene[CONST_ACTIVITY.RESOURCE_Link_BTN_Right];
+         this.FUIPage.ButtonNext.Substrate = _loc1_;
+         _loc2_ = this.FScene[CONST_ACTIVITY.RESOURCE_Link_TF_Page];
+         this.FUIPage.LabelPage = _loc2_;
+         _loc2_.text = "0/0";
+         this.FUIPage.PageSize = RANK_NUM;
+         this.FUIPage.Init();
+         this.FUIPage.OnChangePage = this.PageOnChange;
+         _loc4_ = RANK_NUM;
+         _loc3_ = 0;
+         while(_loc3_ < _loc4_)
+         {
+            _loc6_ = this.FScene[CONST_ACTIVITY.RESOURCE_Link_MC_Lists + _loc3_];
+            _loc5_ = new TServersRankItem(this,_loc6_);
+            _loc5_.Init();
+            _loc5_.Visible = false;
+            this.FRankList[_loc3_] = _loc5_;
+            _loc3_++;
+         }
+         _loc4_ = AWARD_NUM;
+         _loc3_ = 0;
+         while(_loc3_ < _loc4_)
+         {
+            _loc6_ = this.FScene[CONST_ACTIVITY.RESOURCE_Link_MC_RankRangess + _loc3_];
+            _loc7_ = new TRankAward(this,_loc6_);
+            _loc7_.OnBagOut = this.FOnBagOut;
+            _loc7_.OnBagOver = this.FOnBagOver;
+            _loc7_.Tag = _loc3_;
+            _loc7_.Init();
+            _loc7_.Visible = false;
+            this.FRankAwardList[_loc3_] = _loc7_;
+            _loc3_++;
+         }
+      }
+      
+      protected function UpdateUIPage() : void
+      {
+         this.FUIPage.TotalQuantity = this.FFishData.CountRankList;
+         this.FUIPage.PageIndex = this.FPageIndex;
+         this.FUIPage.Update();
+      }
+      
+      protected function UpdateRankList() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:uint = 0;
+         var _loc3_:TServersRankItem = null;
+         var _loc4_:TActivityCrossServerRank = null;
+         var _loc5_:uint = 0;
+         if(this.FFishData.CountRankList == 0)
+         {
+            return;
+         }
+         _loc2_ = RANK_NUM;
+         _loc1_ = 0;
+         while(_loc1_ < _loc2_)
+         {
+            _loc3_ = this.FRankList[_loc1_];
+            _loc5_ = this.FPageIndex * RANK_NUM + _loc1_;
+            if(_loc5_ < this.FFishData.CountRankList)
+            {
+               _loc4_ = this.FFishData.GetRankByIndex(_loc5_);
+               _loc3_.UpdateItem(_loc4_);
+               _loc3_.RankVisible = true;
+            }
+            else
+            {
+               _loc3_.RankVisible = false;
+            }
+            _loc1_++;
+         }
+      }
+      
+      protected function UpdateAward() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:uint = 0;
+         var _loc3_:TRankAward = null;
+         var _loc4_:TDoubleFishRank = null;
+         _loc2_ = AWARD_NUM;
+         _loc1_ = 0;
+         while(_loc1_ < _loc2_)
+         {
+            _loc3_ = this.FRankAwardList[_loc1_];
+            _loc4_ = this.FFishBin.RankList[_loc1_];
+            _loc3_.UpdateRankAwar(_loc4_.Prompt,_loc4_.Title);
+            _loc1_++;
+         }
+      }
+      
+      protected function UpdateText() : void
+      {
+         if(this.FFishData.MyRank != -1)
+         {
+            this.FTF_MyRank.text = this.FFishData.MyRank.toString();
+         }
+         else
+         {
+            this.FTF_MyRank.text = TUtilityLobby.GetStringByIdentifier(CONST_SYSTEMLANGUAGE.STRING_ACTIVITY_26);
+         }
+         this.FTF_MyCount.text = this.FFishData.CollectionCount.toString();
+         this.FTF_RankDesc.text = this.FFishBin.RankDesc;
+      }
+      
+      protected function CloseOnClick(param1:Object, param2:MouseEvent) : void
+      {
+         if(this.FOnRankClose != null)
+         {
+            this.FOnRankClose(this);
+         }
+      }
+      
+      protected function PageOnChange(param1:Object, param2:int) : void
+      {
+         this.FPageIndex = param2;
+         this.UpdateUIPage();
+         this.UpdateRankList();
+      }
+      
+      public function get OnBagOver() : Function
+      {
+         return this.FOnBagOver;
+      }
+      
+      public function set OnBagOver(param1:Function) : void
+      {
+         this.FOnBagOver = param1;
+      }
+      
+      public function get OnBagOut() : Function
+      {
+         return this.FOnBagOut;
+      }
+      
+      public function set OnBagOut(param1:Function) : void
+      {
+         this.FOnBagOut = param1;
+      }
+      
+      public function get OnRankClose() : Function
+      {
+         return this.FOnRankClose;
+      }
+      
+      public function set OnRankClose(param1:Function) : void
+      {
+         this.FOnRankClose = param1;
+      }
+      
+      public function UpdateRankUI(param1:THDDoubleFish, param2:THDDoubleFishData) : void
+      {
+         this.FFishBin = param1;
+         this.FFishData = param2;
+         this.FPageIndex = 0;
+         this.UpdateUIPage();
+         this.UpdateRankList();
+         this.UpdateAward();
+         this.UpdateText();
+      }
+      
+      public function Reset() : void
+      {
+         var _loc1_:uint = 0;
+         var _loc2_:uint = 0;
+         var _loc3_:TRankAward = null;
+         _loc2_ = AWARD_NUM;
+         _loc1_ = 0;
+         while(_loc1_ < _loc2_)
+         {
+            _loc3_ = this.FRankAwardList[_loc1_];
+            _loc3_.Reset();
+            _loc1_++;
+         }
+      }
+      
+      public function Init() : void
+      {
+         this.InitRank();
+      }
+   }
+}
+

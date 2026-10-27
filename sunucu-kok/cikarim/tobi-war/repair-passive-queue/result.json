@@ -1,0 +1,5 @@
+{
+  "version": "2026102609",
+  "fix": "Buff-only skill ID 0 with null attack-target vector completes before queued dispels",
+  "clientSha256": "00d4257865bc5e0e28bed10895a9ba9ffffa0dd9469318e967eaac9cd849f5bd"
+}

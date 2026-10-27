@@ -103,6 +103,14 @@
       11,
       12,
       14
+    ],
+    "11120997": [
+      30,
+      52,
+      7,
+      11,
+      48,
+      51
     ]
   },
   "tags": {
@@ -213,6 +221,14 @@
     "54": {
       "name": "Female",
       "icon": "/public/character-tags/54.png"
+    },
+    "7": {
+      "name": "Hidden Waterfall",
+      "icon": "/public/character-tags/7.png"
+    },
+    "51": {
+      "name": "Edo Tensei",
+      "icon": "/public/character-tags/51.png"
     }
   }
 }

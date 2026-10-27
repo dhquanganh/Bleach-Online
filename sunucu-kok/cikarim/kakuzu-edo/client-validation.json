@@ -1,0 +1,10 @@
+{
+  "unchangedMethods": {
+    "TRole": 195,
+    "TActive": 27,
+    "TBattleStage": 45,
+    "TWindowAttribute": 39,
+    "TProcessorWindowPlayerAssets": 74
+  },
+  "sha256": "c6a821ca37e1e3bd6e9baf5c35d4dc2dfea00a6f3b07d571433f07e0afce6686"
+}

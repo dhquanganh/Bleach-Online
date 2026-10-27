@@ -64854,5 +64854,85 @@
     "desc": "White Zetsu cannot be defeated by Mystery skills and recovers 50% HP at the end of the round. While White Zetsu is alive, whenever a ninja in your lineup is attacked for the first time in a round, all units in your lineup will have their Mystery's Chakra Cost decreased by 10 and if that damage is a Mystery's damage, decreases 20 instead (stackable up to 40), lasts until the end of the round.",
     "icon": 13121812,
     "sortId": 12
+  },
+  {
+    "id": "00C8396D",
+    "skillId": 13121901,
+    "name": "Earth Grudge Fear - Heart Capture",
+    "desc": "Causes unavoidable damage neglecting Shields and Interruption to the selected unit. After this skill is executed, dispels all Fear Kakuzu currently has. If the selected unit's HP is lower than 15%, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121901,
+    "sortId": 1
+  },
+  {
+    "id": "00C8396E",
+    "skillId": 13121902,
+    "name": "Taijutsu Attack",
+    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, a chance of causing <font color=\"#4dc831\">Repulse</font>. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121902,
+    "sortId": 2
+  },
+  {
+    "id": "00C8396F",
+    "skillId": 13121903,
+    "name": "Taijutsu Attack",
+    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, a chance of causing <font color=\"#4dc831\">Repulse</font>. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121903,
+    "sortId": 3
+  },
+  {
+    "id": "00C83970",
+    "skillId": 13121904,
+    "name": "Earth Grudge Fear - Pressure Damage",
+    "desc": "Additional Skill; Wind: Causes unavoidable damage and Discouragement to all units in a random opponent's lineup and increases your lineup's Initiative by 3% (not stackable) until the end of the next round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121904,
+    "sortId": 4
+  },
+  {
+    "id": "00C83971",
+    "skillId": 13121905,
+    "name": "Earth Grudge Fear - False Darkness",
+    "desc": "Additional Skill; Lightning: Causes unavoidable damage and Level 2 - Paralysis until the end of the round to all units in a random opponent's lineup and reduces Kakuzu's Mystery Cooldown by 1. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121905,
+    "sortId": 5
+  },
+  {
+    "id": "00C83972",
+    "skillId": 13121906,
+    "name": "Earth Grudge Fear - Searing Migraine",
+    "desc": "Additional Skill; Fire: Causes unavoidable damage and Suppress Immunity for 1 round to all units in a random opponent's lineup and dispels all Ignition Kakuzu currently has. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13121906,
+    "sortId": 6
+  },
+  {
+    "id": "00C83973",
+    "skillId": 13121907,
+    "name": "Water Clone Jutsu",
+    "desc": "At the beginning of the battle, summons a <font color=\"#4dc831\">Water Clone</font> with 90% <font color=\"#4dc831\">HP</font> that has <font color=\"#4dc831\">Taijutsu Attack</font> and <font color=\"#4dc831\">Earth Grudge Fear - Reattachment</font>. While the Clone is alive, Kakuzu cannot be defeated by <font color=\"#4dc831\">Mystery</font> skills and after Kakuzu executes <font color=\"#4dc831\">Taijutsu Attack</font>, he randomly executes either: <font color=\"#4dc831\">Earth Grudge Fear - Pressure Damage</font>, <font color=\"#4dc831\">Earth Grudge Fear - False Darkness</font> or <font color=\"#4dc831\">Earth Grudge Fear - Searing Migraine</font>.",
+    "icon": 13121907,
+    "sortId": 7
+  },
+  {
+    "id": "00C83974",
+    "skillId": 13121908,
+    "name": "Earth Grudge Fear - Reattachment",
+    "desc": "At the end of the round, revives a random ally ninja to 30% HP. This skill is still active even when Water Clone is controlled.",
+    "icon": 13121908,
+    "sortId": 8
+  },
+  {
+    "id": "00C83975",
+    "skillId": 13121909,
+    "name": "Reincarnation Power",
+    "desc": "If Kakuzu is defeated, revives next round with 25% <font color=\"#4dc831\">HP</font>, reapplies all skills when he first entered the field and reduces his Mystery Cooldown to 0.",
+    "icon": 13121909,
+    "sortId": 9
+  },
+  {
+    "id": "00C83976",
+    "skillId": 13121910,
+    "name": "Water Style - Hiding in Water Jutsu",
+    "desc": "Kakuzu is <font color=\"#4dc831\">immune to Debuffs</font> and has high chances to evade <font color=\"#4dc831\">Chase</font> skills. If his <font color=\"#4dc831\">Mystery</font> defeats a unit, he recovers 20% <font color=\"#4dc831\">HP</font> and scales his <font color=\"#4dc831\">Attack</font> by 40%.",
+    "icon": 13121910,
+    "sortId": 10
   }
 ]

@@ -1,59 +1,11 @@
 BOOT /game.swf
 INIT child document loaded
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F425804.TexClient
 CALL goldProbeEnter
 CALL goldProbeFight
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA5.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA6.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA5.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA6.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA5.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA6.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA5.TexClient
-MISSING /public/2026102608/Resources/Textures/Skill/00CFFAA6.TexClient
-MISSING /public/2026102608/Resources/Textures/HeadIcon/000F4258.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580A.TexClient
-MISSING /public/2026102608/Resources/Textures/HeadIcon/000F4258.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580A.TexClient
-MISSING /public/2026102608/Resources/Textures/HeadIcon/000F4258.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580A.TexClient
-MISSING /public/2026102608/Resources/Textures/HeadIcon/000F4258.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580A.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580B.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580C.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580B.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580C.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580B.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580C.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580B.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580C.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580D.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580D.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580D.TexClient
-MISSING /public/2026102608/Resources/Textures/Model/0F42580D.TexClient
 CMD left=398 turn=0 skill=undefined passive=undefined die=undefined buff=undefined actor=-
 CMD left=397 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=0:0
 CMD left=396 turn=undefined skill=13310093 passive=undefined die=undefined buff=undefined actor=0:0
 PLAY hero=2000209 pos=0:0 hp=NaN dead=false skill=13310093
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
 NEXT hero=2000209 pos=0:0
 CMD left=395 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:0
 CMD left=394 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:0
@@ -226,10 +178,6 @@ CMD left=291 turn=undefined skill=undefined passive=undefined die=undefined buff
 CMD left=290 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=0:0
 CMD left=289 turn=undefined skill=13310093 passive=undefined die=undefined buff=undefined actor=0:0
 PLAY hero=2000209 pos=0:0 hp=NaN dead=false skill=13310093
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
-MISSING /public/2026102608/Resources/Textures/BackgroundIcon/000076CA.TexClient
 NEXT hero=2000209 pos=0:0
 CMD left=288 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:0
 CMD left=287 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:0
@@ -310,6 +258,391 @@ CMD left=243 turn=undefined skill=undefined passive=undefined die=undefined buff
 CMD left=242 turn=3 skill=undefined passive=undefined die=undefined buff=undefined actor=-
 CMD left=241 turn=undefined skill=0 passive=undefined die=undefined buff=undefined actor=0:7
 PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=0
-RUNTIME ERROR TypeError: Error #1009
-null
-FINISH stalled after last action
+NEXT hero=11120995 pos=0:7
+CMD left=240 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=239 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=238 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=237 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=236 turn=undefined skill=13121801 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121801
+NEXT hero=11120995 pos=0:7
+CMD left=235 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:6
+CMD left=234 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=233 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=232 turn=undefined skill=13121806 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121806
+NEXT hero=11120995 pos=0:7
+CMD left=231 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=230 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=229 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=228 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=227 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=226 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:1
+PLAY hero=11160004 pos=1:1 hp=118448.99999999997 dead=false skill=13100114
+NEXT hero=11160004 pos=1:1
+CMD left=225 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:1
+CMD left=224 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:1
+NEXT hero=11160004 pos=1:1
+CMD left=223 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:1
+CMD left=222 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=222430 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=221 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=220 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=219 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=218 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=213890 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=217 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=216 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=215 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=213740.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=214 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=213 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:7
+NEXT hero=11150013 pos=1:7
+CMD left=212 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=211 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:11
+PLAY hero=11160002 pos=1:11 hp=202563.00000000003 dead=false skill=13100114
+NEXT hero=11160002 pos=1:11
+CMD left=210 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:11
+CMD left=209 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:11
+CMD left=208 turn=undefined skill=13121803 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121803
+NEXT hero=11120995 pos=0:7
+CMD left=207 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=206 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=205 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=204 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=203 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=202 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:6
+NEXT hero=11100006 pos=0:6
+CMD left=201 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=200 turn=undefined skill=13121802 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121802
+NEXT hero=11120995 pos=0:7
+CMD left=199 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=198 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:7
+NEXT hero=11120995 pos=0:7
+CMD left=197 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=196 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=195 turn=4 skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=194 turn=undefined skill=13121805 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121805
+NEXT hero=11120995 pos=0:7
+CMD left=193 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:6
+CMD left=192 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=191 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=190 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:7
+CMD left=189 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:2
+CMD left=188 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=187 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=186 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=185 turn=undefined skill=13121804 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121804
+NEXT hero=11120995 pos=0:7
+CMD left=184 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=183 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=182 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=181 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=0:0
+CMD left=180 turn=undefined skill=13310093 passive=undefined die=undefined buff=undefined actor=0:0
+PLAY hero=2000209 pos=0:0 hp=NaN dead=false skill=13310093
+NEXT hero=2000209 pos=0:0
+CMD left=179 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:0
+CMD left=178 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:0
+CMD left=177 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=176 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=175 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:6
+NEXT hero=11100006 pos=0:6
+CMD left=174 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=173 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=172 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=171 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:6
+NEXT hero=11100006 pos=0:6
+CMD left=170 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=169 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=202215 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=168 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=167 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=166 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=186581 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=165 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=164 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=163 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=186999.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=162 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=161 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=160 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:11
+PLAY hero=11160002 pos=1:11 hp=166318.00000000003 dead=false skill=13100114
+NEXT hero=11160002 pos=1:11
+CMD left=159 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:11
+CMD left=158 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:11
+CMD left=157 turn=undefined skill=13121802 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121802
+NEXT hero=11120995 pos=0:7
+CMD left=156 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=155 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=154 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=153 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=186581 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=152 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=151 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:6
+NEXT hero=11160005 pos=1:6
+CMD left=150 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=149 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:1
+PLAY hero=11160004 pos=1:1 hp=54178.99999999997 dead=false skill=13100114
+NEXT hero=11160004 pos=1:1
+CMD left=148 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:1
+CMD left=147 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:1
+NEXT hero=11160004 pos=1:1
+CMD left=146 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:1
+CMD left=145 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:11
+PLAY hero=11160002 pos=1:11 hp=166318.00000000003 dead=false skill=13100114
+NEXT hero=11160002 pos=1:11
+CMD left=144 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:11
+CMD left=143 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:11
+NEXT hero=11160002 pos=1:11
+CMD left=142 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:11
+CMD left=141 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=186999.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=140 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=139 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:7
+NEXT hero=11150013 pos=1:7
+CMD left=138 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=137 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=202215 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=136 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=135 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=134 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=133 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=132 turn=5 skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=131 turn=undefined skill=13121801 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121801
+NEXT hero=11120995 pos=0:7
+CMD left=130 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:6
+CMD left=129 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=128 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=127 turn=undefined skill=13121806 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121806
+NEXT hero=11120995 pos=0:7
+CMD left=126 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=125 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=124 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=123 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=122 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=121 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:1
+PLAY hero=11160004 pos=1:1 hp=21988.99999999997 dead=false skill=13100114
+NEXT hero=11160004 pos=1:1
+CMD left=120 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:1
+CMD left=119 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:1
+NEXT hero=11160004 pos=1:1
+CMD left=118 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:1
+CMD left=117 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=178592 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=116 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=115 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=114 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=113 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=164634 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=112 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=111 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:6
+NEXT hero=11160005 pos=1:6
+CMD left=110 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=109 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=163350.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=108 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=107 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:7
+NEXT hero=11150013 pos=1:7
+CMD left=106 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=105 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:11
+PLAY hero=11160002 pos=1:11 hp=145450.00000000003 dead=false skill=13100114
+NEXT hero=11160002 pos=1:11
+CMD left=104 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:11
+CMD left=103 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:11
+NEXT hero=11160002 pos=1:11
+CMD left=102 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:11
+CMD left=101 turn=undefined skill=13121808 passive=undefined die=undefined buff=undefined actor=0:1
+PLAY hero=11120996 pos=0:1 hp=1 dead=false skill=13121808
+NEXT hero=11120996 pos=0:1
+CMD left=100 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=99 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:1
+CMD left=98 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:1
+CMD left=97 turn=undefined skill=13121808 passive=undefined die=undefined buff=undefined actor=0:2
+PLAY hero=11120996 pos=0:2 hp=1 dead=false skill=13121808
+NEXT hero=11120996 pos=0:2
+CMD left=96 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=95 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:2
+CMD left=94 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:2
+CMD left=93 turn=undefined skill=13121803 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121803
+NEXT hero=11120995 pos=0:7
+CMD left=92 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:1
+CMD left=91 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=90 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=89 turn=undefined skill=13121809 passive=undefined die=undefined buff=undefined actor=0:1
+PLAY hero=11120996 pos=0:1 hp=1 dead=false skill=13121809
+NEXT hero=11120996 pos=0:1
+CMD left=88 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:1
+CMD left=87 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:1
+CMD left=86 turn=undefined skill=13121809 passive=undefined die=undefined buff=undefined actor=0:2
+PLAY hero=11120996 pos=0:2 hp=1 dead=false skill=13121809
+NEXT hero=11120996 pos=0:2
+CMD left=85 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:2
+CMD left=84 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:2
+CMD left=83 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=82 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=81 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:6
+NEXT hero=11100006 pos=0:6
+CMD left=80 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=79 turn=undefined skill=13121802 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121802
+NEXT hero=11120995 pos=0:7
+CMD left=78 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=77 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=0:7
+NEXT hero=11120995 pos=0:7
+CMD left=76 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=75 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=74 turn=6 skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=73 turn=undefined skill=13121805 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121805
+NEXT hero=11120995 pos=0:7
+CMD left=72 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:6
+CMD left=71 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=70 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:7
+CMD left=69 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:2
+CMD left=68 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=67 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=66 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=65 turn=undefined skill=13121804 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121804
+NEXT hero=11120995 pos=0:7
+CMD left=64 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=63 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=62 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=61 turn=undefined skill=13100033 passive=undefined die=undefined buff=undefined actor=0:6
+PLAY hero=11100006 pos=0:6 hp=15080 dead=false skill=13100033
+NEXT hero=11100006 pos=0:6
+CMD left=60 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:6
+CMD left=59 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:6
+CMD left=58 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=161823 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=57 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=56 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=55 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=142553 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=54 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=53 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=52 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=142416.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=51 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=50 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=49 turn=undefined skill=13121803 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121803
+NEXT hero=11120995 pos=0:7
+CMD left=48 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:2
+CMD left=47 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=46 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=45 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=142553 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=44 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=43 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:6
+NEXT hero=11160005 pos=1:6
+CMD left=42 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=41 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:11
+PLAY hero=11160002 pos=1:11 hp=114163.00000000003 dead=false skill=13100114
+NEXT hero=11160002 pos=1:11
+CMD left=40 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:11
+CMD left=39 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:11
+NEXT hero=11160002 pos=1:11
+CMD left=38 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:11
+CMD left=37 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=142416.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=36 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=35 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:7
+NEXT hero=11150013 pos=1:7
+CMD left=34 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=33 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=151441 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=32 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=31 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=30 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=29 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=28 turn=7 skill=undefined passive=undefined die=undefined buff=undefined actor=-
+CMD left=27 turn=undefined skill=0 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=0
+NEXT hero=11120995 pos=0:7
+CMD left=26 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=25 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:11
+CMD left=24 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=23 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=22 turn=undefined skill=13121801 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121801
+NEXT hero=11120995 pos=0:7
+CMD left=21 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=1:6
+CMD left=20 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=19 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=18 turn=undefined skill=13121806 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=90916 dead=false skill=13121806
+NEXT hero=11120995 pos=0:7
+CMD left=17 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=16 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=15 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:2
+PLAY hero=11150012 pos=1:2 hp=130171 dead=false skill=13100114
+NEXT hero=11150012 pos=1:2
+CMD left=14 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:2
+CMD left=13 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=12 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:2
+NEXT hero=11150012 pos=1:2
+CMD left=11 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:2
+CMD left=10 turn=undefined skill=13121807 passive=undefined die=undefined buff=undefined actor=0:7
+PLAY hero=11120995 pos=0:7 hp=36366 dead=false skill=13121807
+NEXT hero=11120995 pos=0:7
+CMD left=9 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=0:7
+CMD left=8 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=0:7
+CMD left=7 turn=undefined skill=13100113 passive=undefined die=undefined buff=undefined actor=1:6
+PLAY hero=11160005 pos=1:6 hp=120546 dead=false skill=13100113
+NEXT hero=11160005 pos=1:6
+CMD left=6 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:6
+CMD left=5 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:6
+CMD left=4 turn=undefined skill=13100114 passive=undefined die=undefined buff=undefined actor=1:7
+PLAY hero=11150013 pos=1:7 hp=121102.00000000003 dead=false skill=13100114
+NEXT hero=11150013 pos=1:7
+CMD left=3 turn=undefined skill=undefined passive=undefined die=undefined buff=2 actor=1:7
+CMD left=2 turn=undefined skill=undefined passive=1 die=undefined buff=undefined actor=1:7
+NEXT hero=11150013 pos=1:7
+CMD left=1 turn=undefined skill=undefined passive=undefined die=undefined buff=1 actor=1:7
+CMD left=0 turn=undefined skill=undefined passive=undefined die=undefined buff=undefined actor=-
+BATTLE_END
+FINISH battle completed

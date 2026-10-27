@@ -234,7 +234,7 @@ function status(unit, field) {
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
   const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -250,6 +250,7 @@ function value(unit, field) {
   if(field==='critRate')result+=require('./mecha-combat').critical(unit);
   result*=require('./tsunade-combat').factor(unit,field);
   result*=require('./tobi-war-combat').factor(unit,field);
+  result*=require('./kakuzu-edo-combat').factor(unit,field);
   if(field==='critRate')result+=require('./tsunade-combat').critical(unit);
   if(field==='critRate')result+=require('./itachi-combat').critical(unit);
   if(field==='critRate')result-=require('./gaara-combat').criticalLoss(unit);

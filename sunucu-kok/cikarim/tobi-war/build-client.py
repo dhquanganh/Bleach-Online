@@ -13,11 +13,12 @@ def main():
  role=c.inject(role,'ActivePlay','         if(FId==11120995)ClearTobiVfx();\n         if(FId==11120996){if(param1==TYPE_ACTIVE_DIE){PlayWhiteZetsuPose(true,param5,param6);return;}if(param1==TYPE_ACTIVE_ATTACK || param1==TYPE_ACTIVE_SKILL)ClearWhiteZetsuPose();}')
  role=c.inject(role,'Reset','         if(FId==11120995)ClearTobiVfx();\n         if(FId==11120996){ClearWhiteZetsuPose();FWhiteZetsuSpawned=false;}')
  role=c.inject(role,'UpdateActive','         if(FId==11120996 && FWhiteZetsuStarted>=0){UpdateWhiteZetsuPose();return;}')
+ role=c.inject(role,'CommandPlay','         if(param1==0 && param3==null){this.OnNextCommand(param4);return;}')
  role=role.replace('         this.UpdateNineTailsVfx();','         this.UpdateNineTailsVfx();\n         this.UpdateTobiVfx();',1)
  role=role.replace('               this.ObitoStandardPose(_loc4_);','               this.ObitoStandardPose(_loc4_);\n               this.TobiStrikePose(_loc4_);',1)
  role=role.replace('(FId == 11120992 || FId == 11120993)','(FId == 11120992 || FId == 11120993 || FId == 11120995 || FId == 11120996)',1)
  method=c.m.extract(role,'RestoreTsunadeAfterRevival');i=method.rfind('}');role=role.replace(method,method[:i]+'         if(FId==11120996)PlayWhiteZetsuPose(false);\n      '+method[i:],1)
- active=(original/c.b.ACTIVE).read_text(encoding='utf-8');active=c.inject(active,'IsSkill','         if(FId==11120995)return param1!=13121802 && param1!=13121803;\n         if(FId==11120996)return param1==13121809;')
+ active=(original/c.b.ACTIVE).read_text(encoding='utf-8');active=c.inject(active,'IsSkill','         if(FId==11120995)return param1>=13121801 && param1<=13121807 && param1!=13121802 && param1!=13121803;\n         if(FId==11120996)return param1==13121809;')
  token='         this.FCurSequence = this.FTextureAttack.GetAnimationSequenceByIndex(_loc1_);';assert token in active;active=active.replace(token,'         if(FId==11120995)_loc1_=FSkillId==13121803?1:0;\n         if(FId==11120996)_loc1_=0;\n'+token,1)
  token='         this.FCurSequence = this.FTextureSkill.GetAnimationSequenceByIndex(_loc1_);';assert token in active;active=active.replace(token,'         if(FId==11120995)_loc1_=FSkillId==13121804?1:FSkillId==13121805?2:FSkillId==13121806?3:FSkillId==13121807?4:0;\n         if(FId==11120996)_loc1_=2;\n'+token,1)
  formation=(original/c.b.FORMATION).read_text(encoding='utf-8').replace('this.FSelectHero.Identifier == 11120994','(this.FSelectHero.Identifier == 11120994 || this.FSelectHero.Identifier == 11120995)').replace('this.FSelectHero.Identifier != 11120994','(this.FSelectHero.Identifier != 11120994 && this.FSelectHero.Identifier != 11120995)')
@@ -33,7 +34,7 @@ def main():
  c.ff('-onerror','abort','-importScript',B/'source.swf',B/'compiled.swf',B/'patched')
  raw=(B/'compiled.swf').read_bytes();assert [t for t in c.h.tags((B/'source.swf').read_bytes()) if t[0]!=82]==[t for t in c.h.tags(raw) if t[0]!=82]
  classes=','.join(str(rel.with_suffix('')).replace('\\','.').replace('/','.') for rel in outputs);c.ff('-selectclass',classes,'-export','script',B/'verify',B/'compiled.swf')
- allowed={c.b.ROLE:{'PrepareBattleRole','ActivePlay','Reset','UpdateActive','RestoreTsunadeAfterRevival','UpdateHealth','ChangeHP'},c.b.ACTIVE:{'IsSkill','PlayAttack','PlaySkill'},c.b.STAGE:{'SetBattle','Reset'},TAGS:{'InitCharacterTags'},PROFILE:{'InitCharacterTags'}};counts={}
+ allowed={c.b.ROLE:{'PrepareBattleRole','ActivePlay','Reset','UpdateActive','RestoreTsunadeAfterRevival','UpdateHealth','ChangeHP','CommandPlay'},c.b.ACTIVE:{'IsSkill','PlayAttack','PlaySkill'},c.b.STAGE:{'SetBattle','Reset'},TAGS:{'InitCharacterTags'},PROFILE:{'InitCharacterTags'}};counts={}
  for rel in outputs:
   old=(original/rel).read_text(encoding='utf-8');new=(B/'verify/scripts'/rel).read_text(encoding='utf-8');count=0
   if rel==c.b.FORMATION:continue

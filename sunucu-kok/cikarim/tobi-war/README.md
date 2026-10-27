@@ -1,6 +1,6 @@
 # Tobi [Great Ninja War]
 
-Native client release: `2026102608`. Initial Tobi integration was based on the active `2026102605` client; the actor scale and playback fix are based on `2026102606`.
+Native client release: `2026102609`. Initial Tobi integration was based on the active `2026102605` client; the actor scale and playback fix are based on `2026102606`.
 
 - Hero `11120995`, White Zetsu `11120996`, SSS/quality 7, all formation positions.
 - Tags: Earth, Male, Akatsuki, Confusion, Blood Limit.
@@ -42,6 +42,7 @@ Build order: prepare assets, build native data, build fragments with `--apply`, 
 - `repair-freeze-scale/client-validation.json`: Tobi's `IsSkill(0)` had returned true, causing passive records to play the 124-frame Mystery pose. Only Tobi's actual skill IDs now enter skill playback; the 24 passive ID-0 events in the two encoded revival fixtures no longer select Mystery. The repair preserves 201 other TRole methods and 29 other TActive methods.
 - `queue-probe/validation/native`: native stage registration addresses all 153 events in each camp's actual Tobi revival report, including both zero-HP White Zetsu actors. The old live-actor-only registration stopped at event 3.
 - `sunucu/tests/tower-gold-zetsu.test.js`: floor 68 produces two White Zetsu deaths and two Tobi revivals; every report actor resolves and play continues into the following round.
-- `repair-gold-zetsu`: release `2026102608` bounds White Zetsu death playback when a texture sequence is absent or the replay clock stalls. It also preserves the outstanding action callback if Zetsu dies during its own attack. Scope validation confirms 199 other `TRole` methods unchanged. The dual-death native probe compiles against the released actor methods; this run did not obtain a Flash runtime result, so the in-game floor 68 playback still needs confirmation.
+- `repair-gold-zetsu`: release `2026102608` bounds White Zetsu death playback when a texture sequence is absent or the replay clock stalls. It also preserves the outstanding action callback if Zetsu dies during its own attack. Scope validation confirms 199 other `TRole` methods unchanged. The dual-death native probe finished with both callbacks called exactly once, but the later full replay exposed a separate buff-only command error fixed in `2026102609`.
+- `repair-passive-queue`: release `2026102609` fixes the reproduced floor 68 freeze. A buff-only Tobi event with skill ID 0 has no `CMD_ATTACK` target vector; `TRole.CommandPlay` previously read `.length` from null and stopped the native command queue at the beginning of round 4. The fix completes that no-op command and lets the following buff removals and Mystery play. The exact same encoded report from an isolated copy of the account failed at command 158 with Flash `#1009` before the fix, then executed all 399 commands and reached the battle result after the fix. Scope validation confirms 201 other `TRole` methods unchanged. One unrelated, nonblocking Flash `#2094` also appeared in both runs during an earlier skill effect.
 
 The Flash probes are isolated native component tests, not a logged-in gameplay recording. Log out and sign in after publication to load fresh account-worker modules and the new client resource URLs.

@@ -25,11 +25,12 @@ veri.json: {"_aciklama":"VARSAYILAN baslangic anlik goruntusu. Admin 'Varsayilan
   [char] ana hero level=158 exp=1477953083 pos=6 skill=13100033
   [char] HEROLAR: +12 hero (1 devsirilen; giris sonu 570), paket 4678B
   [char] ekipman yamasi: 153 ornek, paket 5428B
-(node:2728) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(node:16636) ExperimentalWarning: SQLite is an experimental feature and might change at any time
 (Use `node --trace-warnings ...` to show where the warning was created)
 [panel] CustomHeros: 138 karakter
 [infinite-illusion] Boss database unavailable
-[savas] stage 0 "Tower of Gold 68" -> 5 dusman: 11160005@pos6, 11160004@pos1, 11160002@pos11, 11150013@pos7, 11150012@pos2
+[infinite-illusion] Boss database unavailable
+[infinite-illusion] Boss database unavailable
 [infinite-illusion] Boss database unavailable
 [infinite-illusion] Boss database unavailable
 [infinite-illusion] Boss database unavailable

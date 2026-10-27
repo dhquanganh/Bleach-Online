@@ -1,0 +1,26 @@
+TEXTURE hit frames=8
+TEXTURE idle frames=83
+TEXTURE run frames=4
+TEXTURE standard frames=95
+TEXTURE pressure frames=100
+TEXTURE summon frames=92
+TEXTURE reattach frames=89
+TEXTURE dead frames=23
+TEXTURE mystery frames=105
+TEXTURE entry frames=37
+TEXTURE darkness frames=108
+TEXTURE migraine frames=99
+TEXTURE reincarnation frames=41
+CASE six original Water Clone, both camps
+LATE_TEXTURE_OK six pending entries
+SNAPSHOT katsuyu-phase-0
+SNAPSHOT katsuyu-phase-1
+SNAPSHOT katsuyu-phase-2
+SNAPSHOT katsuyu-phase-3
+SNAPSHOT katsuyu-phase-4
+SNAPSHOT katsuyu-phase-5
+SNAPSHOT katsuyu-phase-6
+RESTORE_OK six summons; cancelled death callback; source entry/idle restored
+SNAPSHOT katsuyu-phase-7
+SNAPSHOT katsuyu-phase-8
+DONE Water Clone native lifecycle; remaining=0

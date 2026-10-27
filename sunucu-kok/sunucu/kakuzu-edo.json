@@ -1,0 +1,20 @@
+{
+  "heroId": 11120997,
+  "summonId": 11120998,
+  "name": "Kakuzu [Edo Tensei]",
+  "assess": "SSS",
+  "quality": 7,
+  "tags": [30, 52, 7, 11, 48, 51],
+  "mystery": {"id":13121901,"name":"Earth Grudge Fear - Heart Capture","prompt":true,"consumesPrimary":false,"attackStat":"atk","damageType":"physical","target":1,"multiplier":1.45,"unavoidable":true,"kakuzuMystery":true,"cooldown":3,"battlefieldCooldown":0,"chakraCost":0},
+  "standard": {"id":13121902,"name":"Taijutsu Attack","attackStat":"atk","damageType":"physical","target":1,"multiplier":1.0,"kakuzuStandard":true,"cooldown":0,"stateChance":0.5,"causes":"repulse"},
+  "cloneStandard": {"id":13121903,"name":"Taijutsu Attack","attackStat":"atk","damageType":"physical","target":1,"multiplier":0.65,"kakuzuCloneStandard":true,"cooldown":0,"stateChance":0.5,"causes":"repulse"},
+  "pressure": {"id":13121904,"name":"Earth Grudge Fear - Pressure Damage","attackStat":"atk","damageType":"physical","target":5,"multiplier":0.55,"unavoidable":true,"kakuzuAdditional":"wind"},
+  "darkness": {"id":13121905,"name":"Earth Grudge Fear - False Darkness","attackStat":"atk","damageType":"physical","target":5,"multiplier":0.55,"unavoidable":true,"kakuzuAdditional":"lightning"},
+  "migraine": {"id":13121906,"name":"Earth Grudge Fear - Searing Migraine","attackStat":"atk","damageType":"physical","target":5,"multiplier":0.55,"unavoidable":true,"kakuzuAdditional":"fire"},
+  "cloneCall": {"id":13121907,"name":"Water Clone Jutsu","support":true,"multiplier":0,"trigger":true},
+  "reattachment": {"id":13121908,"name":"Earth Grudge Fear - Reattachment","support":true,"multiplier":0,"trigger":true},
+  "reincarnation": {"id":13121909,"name":"Reincarnation Power","support":true,"multiplier":0,"trigger":true},
+  "waterHiding": {"id":13121910,"name":"Water Style - Hiding in Water Jutsu","support":true,"multiplier":0},
+  "cloneHpRatio": 0.9,
+  "balanceNote": "The screenshot does not provide damage coefficients; Mystery 1.45, standard 1, clone standard 0.65, additional skills 0.55. Every damaging move scales with Physical ATK and uses Physical DEF."
+}

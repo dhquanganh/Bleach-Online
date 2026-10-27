@@ -4321,12 +4321,8 @@
       "signin": 1,
       "allianceCampaign": 1
     },
-    "gun": "2026-10-26",
-    "gunluk": {
-      "allianceCampaign": 1,
-      "arenaReward": 1,
-      "arenaFight": 1
-    }
+    "gun": "2026-10-27",
+    "gunluk": {}
   },
   "knifeSoul": {
     "id": 18100010,
@@ -4486,7 +4482,7 @@
     "hosgeldin": 1
   },
   "gunluk": {
-    "gun": "2026-10-26",
+    "gun": "2026-10-27",
     "getback": 15,
     "welfare": 0
   },
@@ -4619,7 +4615,7 @@
     "mask": 0
   },
   "gunlukSayac": {
-    "gun": "2026-10-26",
+    "gun": "2026-10-27",
     "gorev": {
       "fresh": 0,
       "point": 0,
@@ -4627,11 +4623,11 @@
       "prog": 0,
       "finish": 0,
       "tasks": [
-        16300006,
-        16300005,
-        16300004,
-        16300001,
-        16300020
+        16300003,
+        16300020,
+        16300028,
+        16300014,
+        16300018
       ],
       "mask": 0,
       "schema": 2,
@@ -4646,7 +4642,7 @@
           "done": 0
         },
         {
-          "type": 16,
+          "type": 12,
           "done": 0
         }
       ],
@@ -6347,50 +6343,8 @@
     "version": 2,
     "group": 4,
     "current": {
-      "start": 1793023500,
+      "start": 1793196300,
       "groups": {
-        "1": {
-          "players": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ],
-          "matches": [],
-          "pairedAt": null
-        },
-        "2": {
-          "players": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ],
-          "matches": [],
-          "pairedAt": null
-        },
-        "3": {
-          "players": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-          ],
-          "matches": [],
-          "pairedAt": null
-        },
         "4": {
           "players": [
             {
@@ -6401,7 +6355,7 @@
               "server": "Local Player",
               "agent": 54,
               "serverId": 974,
-              "power": 199674,
+              "power": 222979,
               "units": [
                 {
                   "camp": 0,
@@ -6410,7 +6364,7 @@
                   "hp": 15080,
                   "maxHp": 15080,
                   "anger": 50,
-                  "atk": 17596,
+                  "atk": 10438,
                   "def": 14206,
                   "profession": 3,
                   "sex": 0,
@@ -6422,15 +6376,16 @@
                   "helpRate": 0,
                   "wreckRate": 0,
                   "antiknockRate": 0,
-                  "damageBonus": 0.3199999928474426,
+                  "damageBonus": 0.5699999928474426,
                   "damageReduction": 0.1599999964237213,
-                  "magicAtk": 17596,
+                  "magicAtk": 21996,
+                  "resistance": 4068,
                   "recoverRate": 0,
                   "controlRate": 0,
                   "controlResist": 0,
                   "furyEffect": 0,
                   "furyResist": 0,
-                  "speed": 1032,
+                  "speed": 6246,
                   "buff": {
                     "id": 13500037,
                     "tur": 3,
@@ -6452,17 +6407,45 @@
                     "history": 159
                   },
                   "partnerSkills": [],
-                  "weaponSkills": []
+                  "pvpPartnerSkills": [],
+                  "pvpStats": {
+                    "hp": 22982,
+                    "atk": 12884,
+                    "magicAtk": 24692,
+                    "def": 14450,
+                    "resistance": 4346,
+                    "speed": 11306,
+                    "anger": 50,
+                    "hitRate": 1,
+                    "dodgeRate": 0,
+                    "critRate": 0,
+                    "blockRate": 0,
+                    "punchRate": 0,
+                    "helpRate": 0,
+                    "wreckRate": 0,
+                    "antiknockRate": 0,
+                    "damageBonus": 0.5699999928474426,
+                    "damageReduction": 0.1599999964237213,
+                    "recoverRate": 0,
+                    "controlRate": 0,
+                    "controlResist": 0,
+                    "furyEffect": 0,
+                    "furyResist": 0,
+                    "guc": 104744
+                  },
+                  "pvpCritDamage": 0,
+                  "weaponSkills": [],
+                  "zanpakutoId": 2000209
                 },
                 {
                   "camp": 0,
-                  "pos": 7,
-                  "id": 11120994,
-                  "hp": 57152,
-                  "maxHp": 57152,
+                  "pos": 12,
+                  "id": 11120995,
+                  "hp": 93803,
+                  "maxHp": 93803,
                   "anger": 50,
-                  "atk": 38906,
-                  "def": 56372,
+                  "atk": 44593,
+                  "def": 67032,
                   "profession": 1,
                   "sex": 1,
                   "hitRate": 1,
@@ -6473,24 +6456,30 @@
                   "helpRate": 0,
                   "wreckRate": 0,
                   "antiknockRate": 0,
-                  "damageBonus": 0.1599999964237213,
+                  "damageBonus": 0.25999999046325684,
                   "damageReduction": 0.1599999964237213,
-                  "magicAtk": 38906,
+                  "magicAtk": 48382,
+                  "resistance": 25297,
                   "recoverRate": 0,
                   "controlRate": 0,
                   "controlResist": 0,
                   "furyEffect": 0,
                   "furyResist": 0,
-                  "speed": 614,
-                  "buff": null,
-                  "normal": 13121702,
-                  "skill": 13121701,
-                  "skillEffect": 13121701,
+                  "speed": 3656,
+                  "buff": {
+                    "id": 13500053,
+                    "tur": 3,
+                    "kendine": false,
+                    "ad": "Decrease avoid injury rate"
+                  },
+                  "normal": 13121802,
+                  "skill": 13121801,
+                  "skillEffect": 13121801,
                   "skillHealsVisually": false,
-                  "skillId": 13121701,
-                  "quality": 5,
-                  "level": 158,
-                  "isim": "Naruto [Nine-Tails Chakra]",
+                  "skillId": 13121801,
+                  "quality": 7,
+                  "level": 110,
+                  "isim": "Tobi [Great Ninja War]",
                   "rebirth": {
                     "n": 0,
                     "pp": 0,
@@ -6498,6 +6487,33 @@
                     "history": 0
                   },
                   "partnerSkills": [],
+                  "pvpPartnerSkills": [],
+                  "pvpStats": {
+                    "hp": 105795,
+                    "atk": 52119,
+                    "magicAtk": 56954,
+                    "def": 71581,
+                    "resistance": 30473,
+                    "speed": 6636,
+                    "anger": 50,
+                    "hitRate": 1,
+                    "dodgeRate": 0,
+                    "critRate": 0,
+                    "blockRate": 0,
+                    "punchRate": 0,
+                    "helpRate": 0,
+                    "wreckRate": 0,
+                    "antiknockRate": 0,
+                    "damageBonus": 0.25999999046325684,
+                    "damageReduction": 0.1599999964237213,
+                    "recoverRate": 0,
+                    "controlRate": 0,
+                    "controlResist": 0,
+                    "furyEffect": 0,
+                    "furyResist": 0,
+                    "guc": 199351
+                  },
+                  "pvpCritDamage": 0,
                   "weaponSkills": []
                 }
               ],
@@ -6512,68 +6528,8 @@
             null,
             null
           ],
-          "matches": [
-            {
-              "id": 4000,
-              "a": 0,
-              "b": null,
-              "ret": 1,
-              "done": true,
-              "time": 1793023560,
-              "bye": true
-            },
-            {
-              "id": 4001,
-              "a": null,
-              "b": null,
-              "ret": 2,
-              "done": true,
-              "time": 1793023560
-            },
-            {
-              "id": 4002,
-              "a": null,
-              "b": null,
-              "ret": 2,
-              "done": true,
-              "time": 1793023560
-            },
-            {
-              "id": 4003,
-              "a": null,
-              "b": null,
-              "ret": 2,
-              "done": true,
-              "time": 1793023560
-            },
-            {
-              "id": 4004,
-              "a": 0,
-              "b": null,
-              "ret": 1,
-              "done": true,
-              "time": 1793023860,
-              "bye": true
-            },
-            {
-              "id": 4005,
-              "a": null,
-              "b": null,
-              "ret": 2,
-              "done": true,
-              "time": 1793023860
-            },
-            {
-              "id": 4006,
-              "a": 0,
-              "b": null,
-              "ret": 1,
-              "done": true,
-              "time": 1793024160,
-              "bye": true
-            }
-          ],
-          "pairedAt": 1793023500
+          "matches": [],
+          "pairedAt": null
         }
       },
       "bets": [],
@@ -6940,6 +6896,240 @@
           "time": 1792752729,
           "order": 0
         }
+      },
+      {
+        "start": 1793023500,
+        "groups": {
+          "1": {
+            "players": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "matches": [],
+            "pairedAt": null
+          },
+          "2": {
+            "players": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "matches": [],
+            "pairedAt": null
+          },
+          "3": {
+            "players": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "matches": [],
+            "pairedAt": null
+          },
+          "4": {
+            "players": [
+              {
+                "low": 1569789919,
+                "high": 1,
+                "model": 11100006,
+                "name": "qa",
+                "server": "Local Player",
+                "agent": 54,
+                "serverId": 974,
+                "power": 199674,
+                "units": [
+                  {
+                    "camp": 0,
+                    "pos": 6,
+                    "id": 11100006,
+                    "hp": 15080,
+                    "maxHp": 15080,
+                    "anger": 50,
+                    "atk": 17596,
+                    "def": 14206,
+                    "profession": 3,
+                    "sex": 0,
+                    "hitRate": 1,
+                    "dodgeRate": 0,
+                    "critRate": 0,
+                    "blockRate": 0,
+                    "punchRate": 0,
+                    "helpRate": 0,
+                    "wreckRate": 0,
+                    "antiknockRate": 0,
+                    "damageBonus": 0.3199999928474426,
+                    "damageReduction": 0.1599999964237213,
+                    "magicAtk": 17596,
+                    "recoverRate": 0,
+                    "controlRate": 0,
+                    "controlResist": 0,
+                    "furyEffect": 0,
+                    "furyResist": 0,
+                    "speed": 1032,
+                    "buff": {
+                      "id": 13500037,
+                      "tur": 3,
+                      "kendine": true,
+                      "ad": "Hit increase  aura"
+                    },
+                    "normal": 13100033,
+                    "skill": 13100033,
+                    "skillEffect": 13100033,
+                    "skillHealsVisually": false,
+                    "skillId": 13100033,
+                    "quality": 2,
+                    "level": 158,
+                    "isim": "qa",
+                    "rebirth": {
+                      "n": 1,
+                      "pp": 1,
+                      "ae": 2,
+                      "history": 159
+                    },
+                    "partnerSkills": [],
+                    "weaponSkills": []
+                  },
+                  {
+                    "camp": 0,
+                    "pos": 7,
+                    "id": 11120994,
+                    "hp": 57152,
+                    "maxHp": 57152,
+                    "anger": 50,
+                    "atk": 38906,
+                    "def": 56372,
+                    "profession": 1,
+                    "sex": 1,
+                    "hitRate": 1,
+                    "dodgeRate": 0,
+                    "critRate": 0,
+                    "blockRate": 0,
+                    "punchRate": 0,
+                    "helpRate": 0,
+                    "wreckRate": 0,
+                    "antiknockRate": 0,
+                    "damageBonus": 0.1599999964237213,
+                    "damageReduction": 0.1599999964237213,
+                    "magicAtk": 38906,
+                    "recoverRate": 0,
+                    "controlRate": 0,
+                    "controlResist": 0,
+                    "furyEffect": 0,
+                    "furyResist": 0,
+                    "speed": 614,
+                    "buff": null,
+                    "normal": 13121702,
+                    "skill": 13121701,
+                    "skillEffect": 13121701,
+                    "skillHealsVisually": false,
+                    "skillId": 13121701,
+                    "quality": 5,
+                    "level": 158,
+                    "isim": "Naruto [Nine-Tails Chakra]",
+                    "rebirth": {
+                      "n": 0,
+                      "pp": 0,
+                      "ae": 0,
+                      "history": 0
+                    },
+                    "partnerSkills": [],
+                    "weaponSkills": []
+                  }
+                ],
+                "key": "6ad4de542b68ce1713162e25",
+                "pos": 0
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "matches": [
+              {
+                "id": 4000,
+                "a": 0,
+                "b": null,
+                "ret": 1,
+                "done": true,
+                "time": 1793023560,
+                "bye": true
+              },
+              {
+                "id": 4001,
+                "a": null,
+                "b": null,
+                "ret": 2,
+                "done": true,
+                "time": 1793023560
+              },
+              {
+                "id": 4002,
+                "a": null,
+                "b": null,
+                "ret": 2,
+                "done": true,
+                "time": 1793023560
+              },
+              {
+                "id": 4003,
+                "a": null,
+                "b": null,
+                "ret": 2,
+                "done": true,
+                "time": 1793023560
+              },
+              {
+                "id": 4004,
+                "a": 0,
+                "b": null,
+                "ret": 1,
+                "done": true,
+                "time": 1793023860,
+                "bye": true
+              },
+              {
+                "id": 4005,
+                "a": null,
+                "b": null,
+                "ret": 2,
+                "done": true,
+                "time": 1793023860
+              },
+              {
+                "id": 4006,
+                "a": 0,
+                "b": null,
+                "ret": 1,
+                "done": true,
+                "time": 1793024160,
+                "bye": true
+              }
+            ],
+            "pairedAt": 1793023500
+          }
+        },
+        "bets": [],
+        "claimed": false,
+        "entryKey": "1:1569789919"
       }
     ],
     "refunds": []

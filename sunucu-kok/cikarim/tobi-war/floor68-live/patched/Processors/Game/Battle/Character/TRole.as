@@ -3830,6 +3830,11 @@ package Processors.Game.Battle.Character
          var _loc6_:uint = 0;
          if(param1 == 0)
          {
+            if(param3 == null)
+            {
+               this.OnNextCommand(param4);
+               return;
+            }
             _loc6_ = param3.length;
             _loc5_ = 0;
             while(_loc5_ < _loc6_)

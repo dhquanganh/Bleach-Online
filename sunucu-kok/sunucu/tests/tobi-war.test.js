@@ -21,7 +21,7 @@ for(const camp of [0,1]){
  const {u,enemies,ctx}=fixture(camp);ctx.random=()=>.99;
  assert.deepEqual(k.targets(k.config.standard,enemies[0],enemies,ctx).map(v=>v.pos),[11]);ctx.random=()=>.5;
  assert.deepEqual(k.targets(k.config.lineStandard,enemies[0],enemies,ctx).map(v=>v.pos),[6,7]);
- const move=k.config.chases[0],primary=enemies[0];ctx.chakra[camp]=0;ctx.chakra[1-camp]=60;
+ const move=k.config.chases[0],primary=enemies[0];primary.hp=primary.maxHp=100000;ctx.chakra[camp]=0;ctx.chakra[1-camp]=60;
  const frame=attack(u,primary,move),before=enemies.map(v=>v.hp);k.afterHit(ctx,u,primary,[primary],move,frame);
  assert.equal(primary.immobileUntil,ctx.round);assert.equal(ctx.chakra[camp],40);assert.equal(ctx.chakra[1-camp],20);assert(enemies.every((v,i)=>v.hp<before[i]));assert.equal(frame.reactions.filter(f=>f.skillEffectId===move.id).length,0,'one chase animation for lineup splash');assert.equal(frame.targets.filter(r=>r.cmd===1&&r.targetCamp!==camp).length,enemies.length);
  const plain=enemies[1];plain.hp=100000;const base=attack(u,plain,k.config.mystery).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;plain.hp=100000;plain.auxiliary=true;const summonDamage=attack(u,plain,k.config.mystery).targets.find(r=>r.cmd===1&&r.targetCamp!==camp).result.hurtHp;assert(Math.abs(summonDamage/base-1.4)<.01);

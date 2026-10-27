@@ -13,7 +13,7 @@ const context={nhanNhanVat:(id,d)=>recruit(id,d,99)};
 function fixture(item,n=2){account();const d=structuredClone(base);d.meyhane={alinan:{}};const old=env.mevcut(d,item);if(old)env.dus(d,item,old);if(n>0)env.ekle(d,[{type:1,code:item,amount:n}]);return d;}
 after(()=>fs.rmSync(dir,{recursive:true,force:true}));
 test('all active Naruto heroes have usable recruit tokens with their existing Modify Fragment icons',()=>{
- assert.equal(catalog.length,12);assert.equal(new Set(catalog.map(r=>r.itemId)).size,12);
+ assert.equal(catalog.length,13);assert.equal(new Set(catalog.map(r=>r.itemId)).size,13);
  for(const row of catalog){
   const a=articles.find(a=>parseInt(a.id,16)===row.itemId),fragment=articles.find(a=>parseInt(a.id,16)===row.fragmentId);
   assert.ok(env.article(row.itemId).usable);assert.equal(a.picture,fragment.picture);assert.equal(a.functionValue,9);assert.equal(a.f16,row.heroId);
