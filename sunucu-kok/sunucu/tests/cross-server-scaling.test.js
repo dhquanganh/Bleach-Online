@@ -11,8 +11,8 @@ assert.equal(team.level,159);assert.equal(team.units.length,2);
 for(const unit of team.units){
   const template=battle.heroBirim(unit.id,unit.pos,159,null,null,0,true);
   const growth=require('../seviye').buyumeTemeli(unit.id,159);
-  assert.equal(unit.level,159);assert.equal(unit.maxHp,template.maxHp);assert.equal(unit.atk,template.atk);assert.equal(unit.def,Math.round(growth.combat*.3));
-  assert.equal(unit.hp,unit.maxHp);assert.equal(unit.magicAtk,Math.round(growth.intelligence*.6));assert.equal(unit.resistance,Math.round(growth.intelligence*.3));
+  assert.equal(unit.level,159);assert.equal(unit.maxHp,template.maxHp);assert.equal(unit.atk,template.atk);assert.equal(unit.def,template.def);
+  assert.equal(unit.hp,unit.maxHp);assert.equal(unit.magicAtk,template.magicAtk);assert.equal(unit.resistance,template.resistance);
 }
 const skillAttacker=players.baseUnit({id:11120997,pos:1,atk:800000000,skillBuffs:[{field:'atk',value:9,remaining:99}]});
 assert.equal(skillValues.value(skillAttacker,'atk'),skillAttacker.atk,'saved buffs do not enter Cross Server');

@@ -1,0 +1,48 @@
+{
+  "character": "itachi",
+  "cases": 20,
+  "modelSequences": 8,
+  "plan": [
+    {
+      "skill": 0,
+      "name": "idle"
+    },
+    {
+      "skill": 13121201,
+      "name": "mystery"
+    },
+    {
+      "skill": 13121202,
+      "name": "modified"
+    },
+    {
+      "skill": 13121203,
+      "name": "standard"
+    },
+    {
+      "skill": 13121204,
+      "name": "deidara"
+    },
+    {
+      "skill": 13121205,
+      "name": "pain"
+    },
+    {
+      "skill": 13121206,
+      "name": "hidan"
+    },
+    {
+      "skill": 13121207,
+      "name": "crow"
+    },
+    {
+      "skill": 13121201,
+      "name": "mystery",
+      "cancel": true
+    },
+    {
+      "skill": 13121201,
+      "name": "mystery"
+    }
+  ]
+}

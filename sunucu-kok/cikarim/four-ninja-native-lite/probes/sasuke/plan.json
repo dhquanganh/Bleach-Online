@@ -1,0 +1,56 @@
+{
+  "character": "sasuke",
+  "cases": 24,
+  "modelSequences": 10,
+  "plan": [
+    {
+      "skill": 0,
+      "name": "idle"
+    },
+    {
+      "skill": 13121301,
+      "name": "mystery"
+    },
+    {
+      "skill": 13121302,
+      "name": "blazeMystery"
+    },
+    {
+      "skill": 13121303,
+      "name": "standard"
+    },
+    {
+      "skill": 13121304,
+      "name": "blazeStandard"
+    },
+    {
+      "skill": 13121305,
+      "name": "dragon"
+    },
+    {
+      "skill": 13121306,
+      "name": "blazeDragon"
+    },
+    {
+      "skill": 13121307,
+      "name": "mangekyo"
+    },
+    {
+      "skill": 13121308,
+      "name": "rinnegan"
+    },
+    {
+      "skill": 13121309,
+      "name": "susanoo"
+    },
+    {
+      "skill": 13121301,
+      "name": "mystery",
+      "cancel": true
+    },
+    {
+      "skill": 13121301,
+      "name": "mystery"
+    }
+  ]
+}

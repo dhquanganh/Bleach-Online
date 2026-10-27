@@ -1,0 +1,129 @@
+TEXTURE mystery frames=142
+TEXTURE hidan frames=147
+TEXTURE crow frames=59
+TEXTURE idle frames=37
+TEXTURE standard frames=73
+TEXTURE modified frames=142
+TEXTURE deidara frames=182
+TEXTURE pain frames=195
+CASE 0 skill=0 camp=0
+SNAPSHOT CASE-0-skill-0-camp-0-frame-8
+SNAPSHOT CASE-0-skill-0-camp-0-frame-20
+CASE 1 skill=13121201 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-1-skill-13121201-camp-0-frame-41
+SNAPSHOT CASE-1-skill-13121201-camp-0-frame-71
+SNAPSHOT CASE-1-skill-13121201-camp-0-frame-110
+CASE 2 skill=13121202 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-2-skill-13121202-camp-0-frame-41
+SNAPSHOT CASE-2-skill-13121202-camp-0-frame-71
+SNAPSHOT CASE-2-skill-13121202-camp-0-frame-110
+CASE 3 skill=13121203 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Huanshuxielunyan-27
+SNAPSHOT CASE-3-skill-13121203-camp-0-frame-31
+NATIVE_LAYER itachi YuzhiboyoRZZL_Huanshuxielunyan_shouji-239
+SNAPSHOT CASE-3-skill-13121203-camp-0-frame-36
+SNAPSHOT CASE-3-skill-13121203-camp-0-frame-56
+CASE 4 skill=13121204 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_QY-227
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_QY-1257
+SNAPSHOT CASE-4-skill-13121204-camp-0-frame-91
+SNAPSHOT CASE-4-skill-13121204-camp-0-frame-110
+SNAPSHOT CASE-4-skill-13121204-camp-0-frame-141
+CASE 5 skill=13121205 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_LB-266
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_LB-1640
+SNAPSHOT CASE-5-skill-13121205-camp-0-frame-58
+SNAPSHOT CASE-5-skill-13121205-camp-0-frame-97
+SNAPSHOT CASE-5-skill-13121205-camp-0-frame-152
+CASE 6 skill=13121206 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB-348
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB-1795
+SNAPSHOT CASE-6-skill-13121206-camp-0-frame-12
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_zhen-4
+SNAPSHOT CASE-6-skill-13121206-camp-0-frame-73
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_shouji-91
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_shouji-293
+SNAPSHOT CASE-6-skill-13121206-camp-0-frame-114
+CASE 7 skill=13121207 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yafenshenzhishu-40
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yafenshenzhishu-40
+SNAPSHOT CASE-7-skill-13121207-camp-0-frame-12
+SNAPSHOT CASE-7-skill-13121207-camp-0-frame-29
+SNAPSHOT CASE-7-skill-13121207-camp-0-frame-46
+CASE 8 skill=13121201 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-8-skill-13121201-camp-0-frame-12
+CANCEL_OK 8
+SNAPSHOT CASE-8-skill-13121201-camp-0-frame-30
+CASE 9 skill=13121201 camp=0
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-9-skill-13121201-camp-0-frame-41
+SNAPSHOT CASE-9-skill-13121201-camp-0-frame-71
+SNAPSHOT CASE-9-skill-13121201-camp-0-frame-110
+CASE 10 skill=0 camp=1
+SNAPSHOT CASE-10-skill-0-camp-1-frame-8
+SNAPSHOT CASE-10-skill-0-camp-1-frame-20
+CASE 11 skill=13121201 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-11-skill-13121201-camp-1-frame-41
+SNAPSHOT CASE-11-skill-13121201-camp-1-frame-71
+SNAPSHOT CASE-11-skill-13121201-camp-1-frame-110
+CASE 12 skill=13121202 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-12-skill-13121202-camp-1-frame-41
+SNAPSHOT CASE-12-skill-13121202-camp-1-frame-71
+SNAPSHOT CASE-12-skill-13121202-camp-1-frame-110
+CASE 13 skill=13121203 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Huanshuxielunyan-27
+SNAPSHOT CASE-13-skill-13121203-camp-1-frame-31
+NATIVE_LAYER itachi YuzhiboyoRZZL_Huanshuxielunyan_shouji-239
+SNAPSHOT CASE-13-skill-13121203-camp-1-frame-36
+SNAPSHOT CASE-13-skill-13121203-camp-1-frame-56
+CASE 14 skill=13121204 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_QY-227
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_QY-1257
+SNAPSHOT CASE-14-skill-13121204-camp-1-frame-91
+SNAPSHOT CASE-14-skill-13121204-camp-1-frame-110
+SNAPSHOT CASE-14-skill-13121204-camp-1-frame-141
+CASE 15 skill=13121205 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_LB-266
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_LB-1640
+SNAPSHOT CASE-15-skill-13121205-camp-1-frame-58
+SNAPSHOT CASE-15-skill-13121205-camp-1-frame-97
+SNAPSHOT CASE-15-skill-13121205-camp-1-frame-152
+CASE 16 skill=13121206 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB-348
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB-1795
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_zhen-4
+SNAPSHOT CASE-16-skill-13121206-camp-1-frame-12
+SNAPSHOT CASE-16-skill-13121206-camp-1-frame-73
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_shouji-91
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_SB_shouji-293
+SNAPSHOT CASE-16-skill-13121206-camp-1-frame-114
+CASE 17 skill=13121207 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yafenshenzhishu-40
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yafenshenzhishu-40
+SNAPSHOT CASE-17-skill-13121207-camp-1-frame-12
+SNAPSHOT CASE-17-skill-13121207-camp-1-frame-29
+SNAPSHOT CASE-17-skill-13121207-camp-1-frame-46
+CASE 18 skill=13121201 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-18-skill-13121201-camp-1-frame-12
+CANCEL_OK 18
+SNAPSHOT CASE-18-skill-13121201-camp-1-frame-30
+CASE 19 skill=13121201 camp=1
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-213
+NATIVE_LAYER itachi YuzhiboyoRZZL_Yongbingjituan_NZ-879
+SNAPSHOT CASE-19-skill-13121201-camp-1-frame-41
+SNAPSHOT CASE-19-skill-13121201-camp-1-frame-71
+SNAPSHOT CASE-19-skill-13121201-camp-1-frame-110
+DONE itachi; remaining=0

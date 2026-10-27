@@ -1,0 +1,27 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "character": "itachi",
+  "speed": 1,
+  "completed": true,
+  "cases": 20,
+  "nativeLayers": 42,
+  "cancellations": 2,
+  "remainingLayers": 0,
+  "errors": [],
+  "requests": [
+    "/probe.swf",
+    "/public/2026090619/Resources/Textures/Model/A9B1400A.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B1400B.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B1400C.TexClient",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yafenshenzhishu.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf",
+    "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "ranks": ["D", "C", "B", "B+", "A-", "A", "A+", "S", "S+", "SS", "SSS"],
+  "maxLevel": 159,
+  "hp": {"level1": [5000, 6000], "level159": [20000, 23000]},
+  "attack": {"level1": [1000, 1500], "level159": [5000, 6000]},
+  "hpPerLife": 6,
+  "attackPerPrimary": 0.6,
+  "defensePerPrimary": 0.6
+}

@@ -1,0 +1,27 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "character": "mecha",
+  "speed": 1,
+  "completed": true,
+  "cases": 32,
+  "nativeLayers": 46,
+  "cancellations": 2,
+  "remainingLayers": 0,
+  "errors": [],
+  "requests": [
+    "/probe.swf",
+    "/public/2026090619/Resources/Textures/Model/A9B1360A.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B1360B.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B1360C.TexClient",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_aoyi.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_ji_aoyi.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_liandan_pugong3.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_luoxuanwan_zhuida.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_qianghua_pugong.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_shanbi.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_weisouyu.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_zhuaji.swf",
+    "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_hengsao.swf"
+  ]
+}

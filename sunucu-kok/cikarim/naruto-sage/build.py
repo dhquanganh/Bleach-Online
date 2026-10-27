@@ -20,6 +20,13 @@ def utf(s):
     b=s.encode('utf-8'); return struct.pack('<H',len(b))+b
 
 def serialize_hero(h):
+    # Keep future character rebuilds on the same base-stat policy as the server.
+    import importlib.util
+    if not hasattr(serialize_hero, '_balance'):
+        spec=importlib.util.spec_from_file_location('hero_base_balance',ROOT/'cikarim/balance-heroes.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        serialize_hero._balance=module.balance
+    h=serialize_hero._balance(h)
     fields=lambda names,fmt: b''.join(struct.pack(fmt,h[n]) for n in names.split())
     return (u32(int(h['id'],16))+u32(h['isMain'])+utf(h['desc'])+utf(h['name'])+utf(h['assess'])
         +fields('sex level needLevel profession source quality power agile intelligence life speed','<I')

@@ -1,0 +1,127 @@
+TEXTURE susanoo frames=41
+TEXTURE idle frames=40
+TEXTURE dragon frames=87
+TEXTURE blazeMystery frames=132
+TEXTURE rinnegan frames=64
+TEXTURE standard frames=86
+TEXTURE mystery frames=132
+TEXTURE mangekyo frames=58
+TEXTURE blazeStandard frames=86
+TEXTURE blazeDragon frames=87
+CASE 0 skill=0 camp=0
+SNAPSHOT CASE-0-skill-0-camp-0-frame-8
+SNAPSHOT CASE-0-skill-0-camp-0-frame-20
+CASE 1 skill=13121301 camp=0
+SNAPSHOT CASE-1-skill-13121301-camp-0-frame-66
+SNAPSHOT CASE-1-skill-13121301-camp-0-frame-69
+SNAPSHOT CASE-1-skill-13121301-camp-0-frame-102
+CASE 2 skill=13121302 camp=0
+SNAPSHOT CASE-2-skill-13121302-camp-0-frame-66
+SNAPSHOT CASE-2-skill-13121302-camp-0-frame-69
+SNAPSHOT CASE-2-skill-13121302-camp-0-frame-102
+CASE 3 skill=13121303 camp=0
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-112
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-684
+SNAPSHOT CASE-3-skill-13121303-camp-0-frame-6
+SNAPSHOT CASE-3-skill-13121303-camp-0-frame-43
+SNAPSHOT CASE-3-skill-13121303-camp-0-frame-67
+CASE 4 skill=13121304 camp=0
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-112
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-684
+SNAPSHOT CASE-4-skill-13121304-camp-0-frame-6
+SNAPSHOT CASE-4-skill-13121304-camp-0-frame-43
+SNAPSHOT CASE-4-skill-13121304-camp-0-frame-67
+CASE 5 skill=13121305 camp=0
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuo-31
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuo-664
+SNAPSHOT CASE-5-skill-13121305-camp-0-frame-24
+SNAPSHOT CASE-5-skill-13121305-camp-0-frame-43
+SNAPSHOT CASE-5-skill-13121305-camp-0-frame-67
+CASE 6 skill=13121306 camp=0
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuoyan-31
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuoyan-891
+SNAPSHOT CASE-6-skill-13121306-camp-0-frame-24
+SNAPSHOT CASE-6-skill-13121306-camp-0-frame-43
+SNAPSHOT CASE-6-skill-13121306-camp-0-frame-67
+CASE 7 skill=13121307 camp=0
+SNAPSHOT CASE-7-skill-13121307-camp-0-frame-27
+SNAPSHOT CASE-7-skill-13121307-camp-0-frame-29
+SNAPSHOT CASE-7-skill-13121307-camp-0-frame-45
+CASE 8 skill=13121308 camp=0
+SNAPSHOT CASE-8-skill-13121308-camp-0-frame-29
+SNAPSHOT CASE-8-skill-13121308-camp-0-frame-32
+SNAPSHOT CASE-8-skill-13121308-camp-0-frame-49
+CASE 9 skill=13121309 camp=0
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-106
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-107
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-108
+SNAPSHOT CASE-9-skill-13121309-camp-0-frame-12
+SNAPSHOT CASE-9-skill-13121309-camp-0-frame-20
+SNAPSHOT CASE-9-skill-13121309-camp-0-frame-31
+CASE 10 skill=13121301 camp=0
+SNAPSHOT CASE-10-skill-13121301-camp-0-frame-12
+CANCEL_OK 10
+SNAPSHOT CASE-10-skill-13121301-camp-0-frame-30
+CASE 11 skill=13121301 camp=0
+SNAPSHOT CASE-11-skill-13121301-camp-0-frame-66
+SNAPSHOT CASE-11-skill-13121301-camp-0-frame-69
+SNAPSHOT CASE-11-skill-13121301-camp-0-frame-102
+CASE 12 skill=0 camp=1
+SNAPSHOT CASE-12-skill-0-camp-1-frame-8
+SNAPSHOT CASE-12-skill-0-camp-1-frame-20
+CASE 13 skill=13121301 camp=1
+SNAPSHOT CASE-13-skill-13121301-camp-1-frame-66
+SNAPSHOT CASE-13-skill-13121301-camp-1-frame-69
+SNAPSHOT CASE-13-skill-13121301-camp-1-frame-102
+CASE 14 skill=13121302 camp=1
+SNAPSHOT CASE-14-skill-13121302-camp-1-frame-66
+SNAPSHOT CASE-14-skill-13121302-camp-1-frame-69
+SNAPSHOT CASE-14-skill-13121302-camp-1-frame-102
+CASE 15 skill=13121303 camp=1
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-112
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-684
+SNAPSHOT CASE-15-skill-13121303-camp-1-frame-6
+SNAPSHOT CASE-15-skill-13121303-camp-1-frame-43
+SNAPSHOT CASE-15-skill-13121303-camp-1-frame-67
+CASE 16 skill=13121304 camp=1
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-112
+NATIVE_LAYER sasuke ZuozhuZZZZ_qianniaodao3-684
+SNAPSHOT CASE-16-skill-13121304-camp-1-frame-6
+SNAPSHOT CASE-16-skill-13121304-camp-1-frame-43
+SNAPSHOT CASE-16-skill-13121304-camp-1-frame-67
+CASE 17 skill=13121305 camp=1
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuo-31
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuo-664
+SNAPSHOT CASE-17-skill-13121305-camp-1-frame-24
+SNAPSHOT CASE-17-skill-13121305-camp-1-frame-43
+SNAPSHOT CASE-17-skill-13121305-camp-1-frame-67
+CASE 18 skill=13121306 camp=1
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuoyan-31
+NATIVE_LAYER sasuke ZuozhuZZZZ_haolonghuoyan-891
+SNAPSHOT CASE-18-skill-13121306-camp-1-frame-24
+SNAPSHOT CASE-18-skill-13121306-camp-1-frame-43
+SNAPSHOT CASE-18-skill-13121306-camp-1-frame-67
+CASE 19 skill=13121307 camp=1
+SNAPSHOT CASE-19-skill-13121307-camp-1-frame-27
+SNAPSHOT CASE-19-skill-13121307-camp-1-frame-29
+SNAPSHOT CASE-19-skill-13121307-camp-1-frame-45
+CASE 20 skill=13121308 camp=1
+SNAPSHOT CASE-20-skill-13121308-camp-1-frame-29
+SNAPSHOT CASE-20-skill-13121308-camp-1-frame-32
+SNAPSHOT CASE-20-skill-13121308-camp-1-frame-49
+CASE 21 skill=13121309 camp=1
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-106
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-107
+NATIVE_LAYER sasuke ZuozhuZZZZ_xuzuobati-108
+SNAPSHOT CASE-21-skill-13121309-camp-1-frame-12
+SNAPSHOT CASE-21-skill-13121309-camp-1-frame-20
+SNAPSHOT CASE-21-skill-13121309-camp-1-frame-31
+CASE 22 skill=13121301 camp=1
+SNAPSHOT CASE-22-skill-13121301-camp-1-frame-12
+CANCEL_OK 22
+SNAPSHOT CASE-22-skill-13121301-camp-1-frame-30
+CASE 23 skill=13121301 camp=1
+SNAPSHOT CASE-23-skill-13121301-camp-1-frame-66
+SNAPSHOT CASE-23-skill-13121301-camp-1-frame-69
+SNAPSHOT CASE-23-skill-13121301-camp-1-frame-102
+DONE sasuke; remaining=0

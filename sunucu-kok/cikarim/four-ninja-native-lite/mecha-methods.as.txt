@@ -1,0 +1,238 @@
+      private static function PreloadMechaVfx() : void
+      {
+         var manifest:Object = MechaVfxManifest();
+         for each(var effect:String in ["Jijiamingren_aoyi","Jijiamingren_ji_aoyi","Jijiamingren_jiuweilama_hengsao","Jijiamingren_jiuweilama_weisouyu","Jijiamingren_jiuweilama_zhuaji","Jijiamingren_liandan_pugong3","Jijiamingren_luoxuanwan_zhuida","Jijiamingren_qianghua_pugong","Jijiamingren_shanbi"])
+         {
+            for each(var name:String in manifest.effects[effect])
+            {
+               var clip:Object = manifest.clips[name];
+               var seen:Object = {};
+               var head:int = 0;
+               while(head < Math.min(5,clip.timeline.length))
+               {
+                  var page:String = clip.frameAtlases != null ? String(clip.frameAtlases[head]) : String(clip.atlas);
+                  if(!seen[page])
+                  {
+                     seen[page] = true;
+                     LoadMechaVfxAtlas(page,manifest.atlases[page]);
+                  }
+                  head++;
+               }
+            }
+         }
+      }
+
+      private function PlayMechaVfxAsset(name:String, host:DisplayObjectContainer, point:Point, width:Number, height:Number, delay:int = 0, mirrored:Boolean = false, follow:Boolean = false, behind:Boolean = false, angle:Number = 0) : void
+      {
+         var caster:TRole;
+         var layer:Sprite;
+         var image:Bitmap;
+         var edgeMask:Sprite;
+         var gradient:Matrix;
+         var field:DisplayObject;
+         var outer:DisplayObjectContainer;
+         var started:int;
+         var castSerial:uint;
+         var castSkill:int;
+         var castFrame:int;
+         var lastFrame:int;
+         var buffer:BitmapData;
+         var animate:Function;
+         var cleanup:Function;
+         var pre:int;
+         var preload:String;
+         var copyRect:Rectangle = new Rectangle();
+         var copyOrigin:Point = new Point();
+         var pinned:Array = [];
+         var cleaned:Boolean = false;
+         var manifest:Object = MechaVfxManifest();
+         var clip:Object = manifest.clips[name];
+         if(clip == null || host == null || host.stage == null)
+         {
+            return;
+         }
+         pinned = clip.aheadPages[0];
+         MechaPinPages([],pinned);
+         pre = 0;
+         while(pre < pinned.length)
+         {
+            preload = String(pinned[pre]);
+            LoadMechaVfxAtlas(preload,manifest.atlases[preload],pre == 0,pre * 2);
+            pre++;
+         }
+         caster = this;
+         layer = new Sprite();
+         layer.name = "mechaSkillVfx";
+         FMechaActiveVfx.push(layer);
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         image = new Bitmap();
+         image.smoothing = true;
+         if(clip.additive)
+         {
+            image.blendMode = "add";
+         }
+         layer.addChild(image);
+         if(clip.softEdges)
+         {
+            edgeMask = new Sprite();
+            gradient = new Matrix();
+            gradient.createGradientBox(width,height,0,-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]));
+            edgeMask.graphics.beginGradientFill(GradientType.RADIAL,[16777215,16777215],[1,0],[175,255],gradient);
+            edgeMask.graphics.drawRect(-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]),width,height);
+            edgeMask.graphics.endFill();
+            image.cacheAsBitmap = true;
+            edgeMask.cacheAsBitmap = true;
+            layer.addChild(edgeMask);
+            image.mask = edgeMask;
+         }
+         if(FSkillId == 13121199)
+         {
+            host.addChildAt(layer,0);
+         }
+         else if(behind && host.parent != null)
+         {
+            field = host;
+            outer = host.parent;
+            point = outer.globalToLocal(host.localToGlobal(point));
+            host = outer;
+            host.addChildAt(layer,host.getChildIndex(field));
+         }
+         else
+         {
+            host.addChild(layer);
+         }
+         caster = this;
+         castSerial = FCombatVfxSerial;
+         castSkill = FSkillId;
+         castFrame = Math.max(0,FFrameIndex);
+         started = TBattleHandle.PlaybackTime + delay;
+         lastFrame = -1;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer)
+            {
+               return;
+            }
+            if(cleaned)
+            {
+               return;
+            }
+            cleaned = true;
+            MechaPinPages(pinned,[]);
+            pinned = [];
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            image.bitmapData = null;
+            if(buffer != null)
+            {
+               buffer.dispose();
+               buffer = null;
+            }
+            TrimMechaVfxCache("");
+            if(layer.parent != null && (event == null || event.type != Event.REMOVED_FROM_STAGE))
+            {
+               layer.parent.removeChild(layer);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            if(caster.FCombatVfxSerial != castSerial || caster.FSkillId != castSkill)
+            {
+               cleanup();
+               return;
+            }
+            var elapsed:int = (Math.max(0,caster.FFrameIndex) - castFrame) * 40 - delay;
+            if(host.stage == null || elapsed >= clip.timeline.length * 40)
+            {
+               cleanup();
+               return;
+            }
+            if(elapsed < 0)
+            {
+               layer.visible = false;
+               return;
+            }
+            var frame:int = int(elapsed / 40);
+            var frameAtlas:String = clip.frameAtlases != null ? String(clip.frameAtlases[frame]) : String(clip.atlas);
+            var wanted:Array = clip.aheadPages[frame];
+            if(pinned != wanted)
+            {
+               MechaPinPages(pinned,wanted);
+               pinned = wanted;
+            }
+            var ahead:int = 0;
+            while(ahead < wanted.length)
+            {
+               var page:String = String(wanted[ahead]);
+               LoadMechaVfxAtlas(page,manifest.atlases[page],ahead == 0,ahead * 2);
+               ahead++;
+            }
+            var frames:Array = FMechaFxCache[frameAtlas] as Array;
+            if(frames == null)
+            {
+               layer.visible = buffer != null;
+               return;
+            }
+            layer.visible = true;
+            if(frame != lastFrame)
+            {
+               var atlas:BitmapData = BitmapData(frames[0]);
+               var meta:Object = manifest.atlases[frameAtlas];
+               var cellW:int = int(atlas.width / int(meta.columns));
+               var cellH:int = int(atlas.height / int(meta.rows));
+               if(buffer == null)
+               {
+                  buffer = new BitmapData(cellW,cellH,true,0);
+                  image.bitmapData = buffer;
+               }
+               var cell:int = int(clip.timeline[frame]);
+               copyRect.x = cell % int(meta.columns) * cellW;
+               copyRect.y = int(cell / int(meta.columns)) * cellH;
+               copyRect.width = cellW;
+               copyRect.height = cellH;
+               buffer.copyPixels(atlas,copyRect,copyOrigin);
+               image.width = width;
+               image.height = height;
+               image.x = -width * Number(clip.pivot[0]);
+               image.y = -height * Number(clip.pivot[1]);
+               if(clip.tint != null)
+               {
+                  image.transform.colorTransform = new ColorTransform(Number(clip.tint[0]),Number(clip.tint[1]),Number(clip.tint[2]),1);
+               }
+               lastFrame = frame;
+            }
+            if(follow && caster.stage != null)
+            {
+               point = host.globalToLocal(caster.localToGlobal(new Point(0,0)));
+            }
+            layer.x = point.x;
+            layer.y = point.y;
+            layer.scaleX = mirrored ? -1 : 1;
+            layer.rotation = angle;
+            var duration:Number = clip.timeline.length * 40;
+            var fade:Number = Math.min(80,duration / 4);
+            layer.alpha = Math.min(1,(elapsed + 40) / fade,Math.max(0,(duration - elapsed) / Math.min(120,duration / 4)));
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+
+      private function UpdateMechaVfx() : void
+      {
+         if(FId != 11120950 || FSkillId < 13121101 || FSkillId > 13121113 || FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL || FMechaVfxStarted)
+         {
+            return;
+         }
+         for each(var prior:Sprite in FMechaActiveVfx)
+         {
+            if(prior.parent != null)
+            {
+               prior.parent.removeChild(prior);
+            }
+         }
+         FMechaActiveVfx = [];
+         FMechaVfxStarted = true;
+         ShowMechaVfx(FSkillId);
+      }

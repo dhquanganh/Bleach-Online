@@ -1,0 +1,107 @@
+      private function ShowMechaVfx(skill:int) : void
+      {
+         var host:DisplayObjectContainer = FBattleStage;
+         if(host == null || host.stage == null)
+         {
+            return;
+         }
+         var origin:Point = host.globalToLocal(localToGlobal(new Point()));
+         var center:Point = new Point();
+         var seen:Object = {};
+         var count:int = 0;
+         if(FTargets != null && FResults != null)
+         {
+            var i:int = 0;
+            while(i < FTargets.length && i < FResults.length)
+            {
+               var enemy:TRole = FTargets[i];
+               if(!(enemy == null || enemy == this || enemy.Camp == Camp || FResults[i].CMD != TTargetInfo.CMD_ATTACK))
+               {
+                  var key:String = enemy.Camp + "_" + enemy.Pos;
+                  if(!seen[key])
+                  {
+                     seen[key] = true;
+                     var pt:Point = host.globalToLocal(enemy.localToGlobal(new Point()));
+                     if(primary == null)
+                     {
+                        var primary:Point = pt.clone();
+                     }
+                     center.x += pt.x;
+                     center.y += pt.y;
+                     count++;
+                  }
+               }
+               i++;
+            }
+         }
+         if(count)
+         {
+            center.x /= count;
+            center.y /= count;
+         }
+         else
+         {
+            center = origin.clone();
+         }
+         var close:Boolean = skill == 13121102 || skill == 13121104 || skill == 13121105;
+         if(close && primary != null)
+         {
+            center = primary.clone();
+         }
+         if(skill == 13121101 || skill == 13121107 || skill == 13121111)
+         {
+            MechaBackdrop(host);
+         }
+         var data:Object = MechaVfxManifest();
+         var clipName:String = String(data.moves[skill]);
+         var effects:Array = data.actions[clipName] as Array;
+         if(effects == null)
+         {
+            return;
+         }
+         var viewTL:Point = host.globalToLocal(stage.localToGlobal(new Point()));
+         var viewBR:Point = host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+         var unit:Number = Math.abs(viewBR.x - viewTL.x) / 1250;
+         for each(var effect:String in effects)
+         {
+            var layers:Array = data.effects[effect] as Array;
+            if(layers != null)
+            {
+               var left:Number = 100000;
+               var right:Number = -100000;
+               var top:Number = 100000;
+               var bottom:Number = -100000;
+               for each(var name:String in layers)
+               {
+                  var c:Object = data.clips[name];
+                  var bw:Number = c.width / c.renderScale;
+                  var bh:Number = c.height / c.renderScale;
+                  left = Math.min(left,-c.pivot[0] * bw);
+                  right = Math.max(right,(1 - c.pivot[0]) * bw);
+                  top = Math.min(top,-c.pivot[1] * bh);
+                  bottom = Math.max(bottom,(1 - c.pivot[1]) * bh);
+               }
+               var jet:Boolean = skill == 13121108;
+               var recovery:Boolean = skill == 13121110;
+               var kurama:Boolean = skill == 13121112 || skill == 13121113;
+               var beam:Boolean = skill == 13121103 || skill == 13121106;
+               var limit:Number = (recovery ? 650 : (jet ? 330 : (close ? 650 : (kurama ? 1050 : (beam ? 1100 : 1250))))) * unit;
+               var fit:Number = limit / Math.max(1,right - left,bottom - top);
+               var at:Point = jet || recovery ? origin.clone() : center.clone();
+               at.y -= (recovery ? 0 : (jet ? 60 : (close ? 70 : 85))) * unit;
+               var anchor:Array = data.effectAnchors[effect] as Array;
+               if(anchor == null)
+               {
+                  anchor = [0,0];
+               }
+               var mirrored:Boolean = scaleX < 0;
+               at.x -= Number(anchor[0]) * fit * (mirrored ? -1 : 1);
+               at.y -= Number(anchor[1]) * fit;
+               for each(name in layers)
+               {
+                  c = data.clips[name];
+                  PlayMechaVfxAsset(name,host,at,c.width / c.renderScale * fit,c.height / c.renderScale * fit,0,mirrored,false,false);
+               }
+            }
+         }
+      }

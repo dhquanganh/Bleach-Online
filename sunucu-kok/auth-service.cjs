@@ -22,7 +22,10 @@ async function startAuth(port) {
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
   const townPresence=require('./town-presence.cjs').createPresence({runtimes,snapshot});
-  const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot);
+  const crossScores=require('./cross-scoreboard.cjs').createBoard(db,{runtimes,snapshot,onUpdate(board){
+    for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'cross-scores',board},()=>{});}catch(error){console.error('[Cross score push]',error.message);}}
+  }});
+  const arenaRoster = require('./arena-roster.cjs').createRoster(db, runtimes, snapshot,{crossScores});
   const allianceWar=require('./alliance-war.cjs').createWar(db,{runtimes,persist:id=>serial(id,async()=>{const rt=runtimes.get(id);if(!rt)throw Error('Player disconnected before persistence');if(rt.saving)await rt.saving;await save(rt);})});
   const illusionBoard = require('./illusion-board.cjs').createBoard(db,{onUpdate(){
     for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
@@ -109,6 +112,10 @@ async function startAuth(port) {
           }catch(error){console.error('[Boss ranking]',error.message);respond({error:'Không tải được BXH sát thương.'});}
           return;
         }
+        if(message?.type==='cross-score-result'){
+          const reply=response=>{if(child.connected){try{child.send({type:'cross-score-ack',id:message.id,...response},()=>{});}catch(error){console.error('[Cross score ack]',error.message);}}};
+          crossScores.settle(id,message).then(result=>reply({result}),error=>{console.error('[Cross scores]',error.message);reply({error:'Không lưu được điểm Cross. Máy chủ sẽ thử lại.'});});return;
+        }
         if(message?.type!=='arena-result')return;
         const reply = response => {
           if(!child.connected)return;
@@ -132,6 +139,7 @@ async function startAuth(port) {
         await delay(250);
       }
       if (!ready) { await stop(id); throw new Error('Không khởi động được máy chủ nhân vật'); }
+      if(child.connected)child.send({type:'cross-scores',board:await crossScores.snapshot()},()=>{});
       await arenaRoster.refresh();
       allianceWar.resume(id).catch(error=>console.error('[Alliance recovery]',error.message));
       ultimateBPRanking.refresh().catch(error=>console.error('[Ultimate BP ranking]',error.name));

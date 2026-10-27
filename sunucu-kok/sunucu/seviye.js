@@ -45,7 +45,7 @@ function heroGrowthTable() {
   try {
     for (const h of JSON.parse(fs.readFileSync(BASE_HERO, 'utf8'))) {
       const id = parseInt(h.id, 16) >>> 0;
-      if (id) HERO_GROWTH.set(id, h);
+      if (id) HERO_GROWTH.set(id, require('./hero-base-balance').row(h));
     }
   } catch (e) { console.log('[seviye] BaseHero.json okunamadi:', e.message); }
   return HERO_GROWTH;

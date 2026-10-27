@@ -65,6 +65,7 @@ function createRoster(db, runtimes, snapshot, options = {}) {
         try { const row = await (options.buildRow || build)(player); if (row) rows.push(row); }
         catch (e) { console.error('[Arena roster]', e.message); }
       }
+      if(options.crossScores){const scores=await options.crossScores.snapshot();for(const row of rows)row.crossScore=scores.scores[row.accountId]||0;}
       rows.sort((a,b) => priority.get(b.accountId)-priority.get(a.accountId) || b.level-a.level || a.accountId.localeCompare(b.accountId));
       // Priority/level seed the board once; subsequent refreshes retain earned places.
       const ranked = await ladder(rows,null,accounts);

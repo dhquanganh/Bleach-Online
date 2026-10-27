@@ -4,8 +4,8 @@
   "seasonDays": 7,
   "alwaysOpen": true,
   "cooldownSeconds": 10,
-  "winScore": 50,
-  "lossScore": 10,
+  "winScore": 0,
+  "lossScore": 0,
   "historyLimit": 20,
   "botSeed": 20261009,
   "enemyLevelMultiplier": 2,
@@ -13,5 +13,6 @@
   "rowLevelStep": 0.25,
   "rowStatStep": 0.5,
   "enemyAttackMultiplier": 2,
-  "enemyCombatLevelExponent": 2
+  "enemyCombatLevelExponent": 2,
+  "transferScore": 30
 }

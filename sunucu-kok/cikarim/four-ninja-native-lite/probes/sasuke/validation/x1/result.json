@@ -1,0 +1,28 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "character": "sasuke",
+  "speed": 1,
+  "completed": true,
+  "cases": 24,
+  "nativeLayers": 22,
+  "cancellations": 2,
+  "remainingLayers": 0,
+  "errors": [],
+  "requests": [
+    "/probe.swf",
+    "/public/2026090619/Resources/Textures/Model/A9B14A0A.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B14A0B.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B14A0C.TexClient",
+    "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_yantexie.swf",
+    "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin.swf",
+    "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_texie.swf",
+    "/public/sasuke-vfx/cinematic-v1/ZuozhuZZZZ_qilin_yan.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuo.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuoyan.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao1.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao2.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao3.swf",
+    "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf"
+  ]
+}

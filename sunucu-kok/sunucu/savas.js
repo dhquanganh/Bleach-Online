@@ -317,8 +317,8 @@ function heroBirim(id, pos, lv, isim, stat, k, localBattleEffects = false) {
   } else {
     const growth = require('./seviye').buyumeTemeli(id, lv);
     if (!growth) return null;
-    hp = Math.max(600, Math.round(growth.life * 6));
-    atk = Math.max(20, Math.round(growth.combat * 0.6));
+    const base = require('./hero-base-balance').stats(growth);
+    hp = base.hp; atk = base.atk; def = base.def;
   }
   const talent = heroTalents.effect(id);
   const rates = stat || heroTalents.rates(id);

@@ -2,15 +2,17 @@
 const assert=require('node:assert/strict');
 const battle=require('../savas'),codec=require('../kodek'),k=require('../kakuzu-edo-combat');
 
-// Use the actual Cross normalization and encoded report, not fabricated HP
-// changes: this matchup kills and revives Kakuzu and an ordinary ally repeatedly.
+// Use base units and the actual encoded combat report. Keep one durable ally
+// so this lifecycle fixture does not depend on the current roster balance.
+// Cross normalization itself is covered by cross-server-scaling.test.js.
 for(const camp of [0,1]){
   // Hashirama remains alive through the four-round delay. A wiped lineup must
   // not be kept in the match just to satisfy this resurrection fixture.
-  const rescued=[11120997,11100001,11120940].map((id,i)=>({id,pos:1+i*5}));
-  const opponents=[11120997,11120920,11120940].map((id,i)=>({id,pos:1+i*5}));
-  const report=codec.decodeBattleReport(battle.kadroRapor(0,{name:'Cross revival regression',level:159,units:camp?rescued:opponents},null,{
-    playerUnits:camp?opponents:rescued,playerState:{},crossServerBaseOnly:true,scaleEnemy:false,forceWin:false,random:()=>.5
+  const rescued=[11120997,11100001,11120940].map((id,i)=>require('../cross-server-players').baseUnit({id,pos:1+i*5}));
+  rescued[2].hp=rescued[2].maxHp=10000000;rescued[2].atk=1;rescued[2].skill=0;rescued[2].skillId=rescued[2].normal;
+  const opponents=[11100001,11100001,11100001].map((id,i)=>({...require('../cross-server-players').baseUnit({id,pos:1+i*5}),hp:10000000,maxHp:10000000,atk:12000,def:10000,skill:0,skillId:13100114,normal:13100114}));
+  const report=codec.decodeBattleReport(battle.kadroRapor(0,{name:'Revival lifecycle regression',level:159,units:camp?rescued:opponents},null,{
+    playerUnits:camp?opponents:rescued,playerState:{},scaleEnemy:false,forceWin:false,random:()=>.5
   }).payload);
   assert.equal(report._consumed,report._total);
   const actors=new Map();
@@ -57,4 +59,4 @@ for(const camp of [0,1]){
   assert(allies>0,'fixture must rescue the ordinary hero previously left invisible');
   assert(report.turns.length>3,'battle continues after revivals');
 }
-console.log('PASS Cross both camps: four-round self revival, living-owner ally rescue, HP-before-animation and addressable actors.');
+console.log('PASS both camps: four-round self revival, living-owner ally rescue, HP-before-animation and addressable actors.');

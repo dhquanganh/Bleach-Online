@@ -1,0 +1,18 @@
+{
+  "sourceVersion": "2026102706",
+  "sha256": "1f07920d7b3c50f7d62cab40a5a70929004936e8cbfba9c3895261bf2c43597d",
+  "unchangedMethods": 204,
+  "changedMethods": [
+    "PlayGaaraVfxAsset",
+    "PlayItachiVfxAsset",
+    "PlayMechaVfxAsset",
+    "PlaySasukeCinematic",
+    "PlaySasukeNativeImpact",
+    "PlaySasukeVfxAsset",
+    "PreloadGaaraVfx",
+    "PreloadItachiVfx",
+    "PreloadMechaVfx",
+    "PreloadSasukeVfx",
+    "ShowSasukeScreenFlash"
+  ]
+}

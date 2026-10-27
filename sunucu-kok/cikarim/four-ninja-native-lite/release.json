@@ -1,0 +1,307 @@
+{
+  "version": "2026102707",
+  "sha256": "c58ad883f2c125a82048388409c66167e557c9e5494380bf7264d10a4cebfbe8",
+  "probeCases": 180,
+  "sizes": {
+    "sasuke": {
+      "oldRuntimeBytes": 75532357,
+      "nativeRuntimeBytes": 26157806,
+      "reductionPercent": 65.37,
+      "oldRasterFiles": 40,
+      "nativeFiles": 6,
+      "unchangedNativeCinematics": 4,
+      "clips": 13,
+      "sources": {
+        "ZuozhuZZZZ_haolonghuo": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuo.swf",
+          "symbols": {
+            "664": "shang",
+            "31": "xia"
+          },
+          "sha256": "56a267550d4a4249cea573921890babf96e02b1c6a3b2cc08083cdc496599af3",
+          "bytes": 3053229
+        },
+        "ZuozhuZZZZ_haolonghuoyan": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuoyan.swf",
+          "symbols": {
+            "891": "shang",
+            "31": "xia"
+          },
+          "sha256": "9fc93e5ee4a7c7a414e44419f005894b1a9f1182576ebf63706b60f9cd85a7a7",
+          "bytes": 4566679
+        },
+        "ZuozhuZZZZ_qianniaodao1": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao1.swf",
+          "symbols": {
+            "258": "shang",
+            "69": "xia"
+          },
+          "sha256": "f5f56f8a5feefd4089444812bdaabb5ea43546f20c056b6e0d7755f6ff3e50ca",
+          "bytes": 538170
+        },
+        "ZuozhuZZZZ_qianniaodao2": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao2.swf",
+          "symbols": {
+            "285": "shang",
+            "90": "xia"
+          },
+          "sha256": "e748e86e26cd95534f21c5da323f47e85ec494e35451f17f1e71a32227b1a7b4",
+          "bytes": 556957
+        },
+        "ZuozhuZZZZ_qianniaodao3": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao3.swf",
+          "symbols": {
+            "684": "shang",
+            "112": "xia"
+          },
+          "sha256": "a74a3c82b19a80859ebfd497c1929e94ced73b126c7effcbfbf6a19ab7df6a91",
+          "bytes": 1776500
+        },
+        "ZuozhuZZZZ_xuzuobati": {
+          "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf",
+          "symbols": {
+            "108": "b2",
+            "107": "b3",
+            "106": "b1"
+          },
+          "sha256": "228f94f888bc018dd055eab9470b330be15196ce896ab9d8ac11df84358a5375",
+          "bytes": 191711
+        }
+      }
+    },
+    "mecha": {
+      "oldRuntimeBytes": 189681858,
+      "nativeRuntimeBytes": 22887590,
+      "reductionPercent": 87.93,
+      "oldRasterFiles": 279,
+      "nativeFiles": 9,
+      "unchangedNativeCinematics": 0,
+      "clips": 15,
+      "sources": {
+        "Jijiamingren_aoyi": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_aoyi.swf",
+          "symbols": {
+            "1343": "shang",
+            "139": "xia"
+          },
+          "sha256": "2f777833c3e367b5dc40de677c75aa31464fefafe450014e206a863ec845e0ff",
+          "bytes": 5707498
+        },
+        "Jijiamingren_ji_aoyi": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_ji_aoyi.swf",
+          "symbols": {
+            "440": "shang",
+            "245": "xia"
+          },
+          "sha256": "11ffd0d71790cd62589c5a26e681b29ffe708aa19eefc4f093f42b85b48433a6",
+          "bytes": 3505073
+        },
+        "Jijiamingren_liandan_pugong3": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_liandan_pugong3.swf",
+          "symbols": {
+            "529": "shang"
+          },
+          "sha256": "8bca529fdbd8c2959cb6d41ab9ea9d1f13d73645729bfc10edab91b84933dc03",
+          "bytes": 1788708
+        },
+        "Jijiamingren_luoxuanwan_zhuida": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_luoxuanwan_zhuida.swf",
+          "symbols": {
+            "626": "shang"
+          },
+          "sha256": "67f2e0e397b3366602d2f99ac8e71e24ca44499d93016c7fb258ac8da2eaeaa5",
+          "bytes": 2235850
+        },
+        "Jijiamingren_qianghua_pugong": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_qianghua_pugong.swf",
+          "symbols": {
+            "250": "shang"
+          },
+          "sha256": "0872ba821a2509448a40d6cbef96da0183d52a511a03e1908fa4b21fb13ebb47",
+          "bytes": 516812
+        },
+        "Jijiamingren_shanbi": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_shanbi.swf",
+          "symbols": {
+            "154": "shang",
+            "90": "xia"
+          },
+          "sha256": "7d52914311572ce326d5ed87053463b2a1d0127845756323c33748b4d750df49",
+          "bytes": 397347
+        },
+        "Jijiamingren_jiuweilama_weisouyu": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_weisouyu.swf",
+          "symbols": {
+            "609": "shang",
+            "67": "xia"
+          },
+          "sha256": "ad585c0be65777a291a66846cb3a9e0e8df0776391dbe069a407df91ef8b0b62",
+          "bytes": 4367165
+        },
+        "Jijiamingren_jiuweilama_zhuaji": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_zhuaji.swf",
+          "symbols": {
+            "379": "shang",
+            "12": "xia"
+          },
+          "sha256": "a579d913ef9082cc468776a0f7d144632dd4ea5280acc98b5d56dd71165e47c9",
+          "bytes": 2754631
+        },
+        "Jijiamingren_jiuweilama_hengsao": {
+          "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_hengsao.swf",
+          "symbols": {
+            "256": "shang",
+            "58": "xia"
+          },
+          "sha256": "a837e54ba912894d6d57f63761f8d0c9b63548cc66bccba60f1de5254cb24375",
+          "bytes": 1614506
+        }
+      }
+    },
+    "itachi": {
+      "oldRuntimeBytes": 315876093,
+      "nativeRuntimeBytes": 22575031,
+      "reductionPercent": 92.85,
+      "oldRasterFiles": 372,
+      "nativeFiles": 9,
+      "unchangedNativeCinematics": 0,
+      "clips": 14,
+      "sources": {
+        "YuzhiboyoRZZL_Huanshuxielunyan": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan.swf",
+          "symbols": {
+            "27": "shang"
+          },
+          "sha256": "492df21aeeb9277d37f0a5a2ad38e3420eba7568e4fd788fe8d50b268bcbc16c",
+          "bytes": 158959
+        },
+        "YuzhiboyoRZZL_Huanshuxielunyan_shouji": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf",
+          "symbols": {
+            "239": "shang"
+          },
+          "sha256": "f73f36f74c503a285c419c4ba68eeed8071f0a85173565e5509df520f5109a88",
+          "bytes": 447593
+        },
+        "YuzhiboyoRZZL_Yafenshenzhishu": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yafenshenzhishu.swf",
+          "symbols": {
+            "40": "shang"
+          },
+          "sha256": "ca9f750705aafd05eb3a63da2fe081b3607a202f60bc51d048e1ffd261bf33fa",
+          "bytes": 91213
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_QY": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+          "symbols": {
+            "1257": "shang",
+            "227": "xia"
+          },
+          "sha256": "94ef0805d9f089097f559f3e82872cba78f4ca53aa6d21e576627f639e88c700",
+          "bytes": 4136472
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_NZ": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+          "symbols": {
+            "879": "shang",
+            "213": "xia"
+          },
+          "sha256": "9e7a104cb71be0d20000a6386b95fd01317ddc3224026c1d285383dce5cca33f",
+          "bytes": 4696662
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_LB": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+          "symbols": {
+            "1640": "shang",
+            "266": "xia"
+          },
+          "sha256": "e299af225860675403535e5e9eb27f27817004f1907ed294a7a2803c41324077",
+          "bytes": 5584190
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_SB": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+          "symbols": {
+            "1795": "shang",
+            "348": "xia"
+          },
+          "sha256": "8a3ca108208ddaed1c10e2d6afbb4bb7ee091f79195b2bf8e16b451f38f77688",
+          "bytes": 6267588
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_SB_zhen": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf",
+          "symbols": {
+            "4": "shang"
+          },
+          "sha256": "a15ad08e77afb121f118e698e26c7dfc128fe263c338879d0e9a6818e638a157",
+          "bytes": 10922
+        },
+        "YuzhiboyoRZZL_Yongbingjituan_SB_shouji": {
+          "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf",
+          "symbols": {
+            "293": "shang",
+            "91": "xia"
+          },
+          "sha256": "532fabf8cb998f88fe0e0b2c66a6042b679c6271d080c1bd397b9fb914542eb5",
+          "bytes": 1181432
+        }
+      }
+    },
+    "gaara": {
+      "oldRuntimeBytes": 69925511,
+      "nativeRuntimeBytes": 7697682,
+      "reductionPercent": 88.99,
+      "oldRasterFiles": 61,
+      "nativeFiles": 5,
+      "unchangedNativeCinematics": 0,
+      "clips": 10,
+      "sources": {
+        "Yzwoailuo_pugong": {
+          "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_pugong.swf",
+          "symbols": {
+            "424": "shang",
+            "81": "xia"
+          },
+          "sha256": "89f8a1a3b5a6c784d0d3b2f3e29bb534355c6a3463198ed1670ed93421aeb0c4",
+          "bytes": 4343028
+        },
+        "Yzwoailuo_beidong2": {
+          "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_beidong2.swf",
+          "symbols": {
+            "124": "shang",
+            "38": "xia"
+          },
+          "sha256": "6b03228ffc8f97f243fe789f0988c7b1814c8bb7ba29edf8410eed9d6524e5db",
+          "bytes": 440399
+        },
+        "Woailuoyongzhuang_shazhikai": {
+          "url": "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+          "symbols": {
+            "35": "b2",
+            "34": "b3",
+            "23": "b1"
+          },
+          "sha256": "2d4dbbadbce669c64c2dc296fcdc97fdc751f202d12310e9983c22fdbeb187a4",
+          "bytes": 548763
+        },
+        "GAR_shazhidun": {
+          "url": "/public/ninja-native-lite/v1/gaara/GAR_shazhidun.swf",
+          "symbols": {
+            "37": "bt_Data",
+            "36": "bt"
+          },
+          "sha256": "584ce76fa19080c11a98432c4d52fa6e462ed63c063840f1e65d1c5d0323523d",
+          "bytes": 18421
+        },
+        "Yzwoailuo_aoyi": {
+          "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_aoyi.swf",
+          "symbols": {
+            "432": "shang",
+            "159": "xia"
+          },
+          "sha256": "36bd258f532d81c5919848ee22202da9fa8302d4d45375195e831c408a1327be",
+          "bytes": 2347071
+        }
+      }
+    }
+  }
+}

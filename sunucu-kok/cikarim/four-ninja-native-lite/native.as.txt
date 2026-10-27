@@ -1,0 +1,74 @@
+      private static var FFourNinjaNativeCache:Object={};
+      private static var FFourNinjaNativeManifest:Object;
+      private static function FourNinjaNativeManifest() : Object {
+         if(FFourNinjaNativeManifest==null)FFourNinjaNativeManifest=JSON.parse(__MANIFEST__);
+         return FFourNinjaNativeManifest;
+      }
+      private static function PreloadFourNinjaNative(character:String) : void {
+         for each(var url:String in FourNinjaNativeManifest()[character].urls)LoadFourNinjaNative(url);
+      }
+      private static function LoadFourNinjaNative(url:String) : void {
+         if(FFourNinjaNativeCache[url]!=null)return;
+         var entry:Object={};var loader:Loader=new Loader();entry.loader=loader;FFourNinjaNativeCache[url]=entry;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void {
+            entry.domain=loader.contentLoaderInfo.applicationDomain;
+            if(loader.content is MovieClip)MovieClip(loader.content).stop();
+         });
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void {delete FFourNinjaNativeCache[url];});
+         loader.load(new URLRequest(url),new flash.system.LoaderContext(false,new flash.system.ApplicationDomain()));
+      }
+      private function PlayFourNinjaNative(character:String,name:String,host:DisplayObjectContainer,point:Point,width:Number,height:Number,delay:int,mirrored:Boolean,follow:Boolean,behind:Boolean,angle:Number,layers:Array) : void {
+         var meta:Object=FourNinjaNativeManifest()[character].clips[name];
+         if(meta==null || host==null || host.stage==null)return;
+         LoadFourNinjaNative(meta.url);
+         var caster:TRole=this;var layer:Sprite=new Sprite();layer.name=character+"SkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         layers.push(layer);
+         if(behind && host.parent!=null){var field:DisplayObject=host;var outer:DisplayObjectContainer=host.parent;point=outer.globalToLocal(host.localToGlobal(point));host=outer;host.addChildAt(layer,host.getChildIndex(field));}
+         else host.addChild(layer);
+         var view:Sprite=new Sprite();layer.addChild(view);
+         // Match the original cropped raster rectangle in source coordinates.
+         // scrollRect moves its top-left to zero, so restore the old pivot once.
+         view.scrollRect=new Rectangle(-Number(meta.width)*Number(meta.pivot[0]),-Number(meta.height)*Number(meta.pivot[1]),Number(meta.width),Number(meta.height));
+         view.scaleX=width/Number(meta.width);view.scaleY=height/Number(meta.height);
+         view.x=-width*Number(meta.pivot[0]);view.y=-height*Number(meta.pivot[1]);
+         if(meta.additive)view.blendMode="add";
+         if(meta.tint!=null)view.transform.colorTransform=new ColorTransform(meta.tint[0],meta.tint[1],meta.tint[2],1);
+         if(meta.soft){
+            var maskShape:Sprite=new Sprite();var gradient:Matrix=new Matrix();
+            gradient.createGradientBox(width,height,0,-width*Number(meta.pivot[0]),-height*Number(meta.pivot[1]));
+            maskShape.graphics.beginGradientFill(GradientType.RADIAL,[16777215,16777215],[1,0],[175,255],gradient);
+            maskShape.graphics.drawRect(-width*Number(meta.pivot[0]),-height*Number(meta.pivot[1]),width,height);maskShape.graphics.endFill();
+            view.cacheAsBitmap=true;maskShape.cacheAsBitmap=true;layer.addChild(maskShape);view.mask=maskShape;
+         }
+         var movie:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:int=FSkillId;var start:int=Math.max(0,FFrameIndex);var last:int=-1;
+         var tick:Function;var cleanup:Function;var cleaned:Boolean=false;
+         cleanup=function(event:Event=null):void {
+            if(cleaned || event!=null && event.target!=layer)return;cleaned=true;
+            layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            if(movie!=null)movie.stop();view.mask=null;view.scrollRect=null;
+            if(layer.parent!=null && (event==null || event.type!=Event.REMOVED_FROM_STAGE))layer.parent.removeChild(layer);
+         };
+         tick=function(event:Event=null):void {
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill){cleanup();return;}
+            var elapsed:int=(Math.max(0,caster.FFrameIndex)-start)*40-delay;
+            if(elapsed>=Number(meta.duration)){cleanup();return;}
+            if(elapsed<0){layer.visible=false;return;}
+            var entry:Object=FFourNinjaNativeCache[meta.url];
+            if(entry==null || entry.domain==null){layer.visible=false;return;}
+            if(movie==null){
+               if(!entry.domain.hasDefinition(meta.symbol)){cleanup();return;}
+               var type:Class=entry.domain.getDefinition(meta.symbol) as Class;movie=new type() as MovieClip;movie.stop();view.addChild(movie);
+            }
+            var frame:int=Math.min(movie.totalFrames,Math.round(elapsed*Number(meta.rate)/1000)+1);
+            if(frame!=last){movie.gotoAndStop(frame);last=frame;}
+            layer.visible=true;
+            if(follow){
+               var offset:Point=character=="gaara"?caster.GaaraStrikeOffset():new Point();
+               point=host.globalToLocal(caster.localToGlobal(new Point(character=="gaara"?offset.x+70:0,offset.y)));
+            }
+            layer.x=point.x;layer.y=point.y;layer.scaleX=mirrored?-1:1;layer.rotation=angle;
+            var duration:Number=Number(meta.duration);var fade:Number=Math.min(80,duration/4);
+            layer.alpha=Math.min(1,(elapsed+40)/fade,Math.max(0,(duration-elapsed)/Math.min(120,duration/4)));
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);tick();
+      }

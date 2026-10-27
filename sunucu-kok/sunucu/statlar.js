@@ -81,7 +81,7 @@ function olcek(heroId, lv, anaId, anaLv) {
 
 function olcekler(heroId, lv, anaId, anaLv, durum = null) {
   const quality = Number(durum && durum.meyhane && durum.meyhane.kalite && durum.meyhane.kalite[String(heroId)]) || 0;
-  return { ...require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1, quality), heroId, level: lv || 1 };
+  return { ...require('./seviye').statCarpanlari(heroId, lv || 1, anaId, anaLv || 1, quality), heroId, level: lv || 1, quality };
 }
 
 // Attribute blogunu olcekle. Uzunluk ve alan sayisi DEGISMEZ, sadece OLCEKLI int slotlari.
@@ -89,6 +89,9 @@ function blokOlcekle(blok, k) {
   const oran = typeof k === 'number'
     ? { genel: k, power: k, agile: k, intelligence: k, life: k }
     : (k || { genel: 1, power: 1, agile: 1, intelligence: 1, life: 1 });
+  const growth = oran.heroId && require('./seviye').buyumeTemeli(oran.heroId, oran.level, oran.quality);
+  const base = growth && require('./hero-base-balance').stats(growth);
+  const absolute = base && {0:Math.round(growth.power),1:Math.round(growth.intelligence),2:Math.round(growth.agile),3:Math.round(growth.life),5:base.hp,6:base.atk,7:base.magicAtk,8:base.def,9:base.resistance,26:base.hp+base.atk+base.magicAtk+base.def+base.resistance};
   const b = Buffer.from(blok);
   let p = 0;
   for (let no = 0; no < 2; no++) {                 // BaseAttributes, PvPAttributes
@@ -97,6 +100,7 @@ function blokOlcekle(blok, k) {
     if (p + 4 * n > b.length) return b;
     for (const i of OLCEKLI) {
       if (i >= n || TIP[i] === 1) continue;
+      if (absolute) { b.writeUInt32BE(Math.max(1,Math.min(0x7fffffff,absolute[i])),p+4*i); continue; }
       const factor = i === IDX.Power ? oran.power
         : i === IDX.Intelligence ? oran.intelligence
           : i === IDX.Agile ? oran.agile

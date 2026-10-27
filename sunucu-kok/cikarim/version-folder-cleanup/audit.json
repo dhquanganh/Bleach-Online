@@ -1,0 +1,10 @@
+{
+  "activeVersion": "2026102707",
+  "manifestEntries": 10242,
+  "base2017112917References": 8903,
+  "protectedExistingManifestFiles": 9789,
+  "retiredFiles": 1945,
+  "retiredBytes": 2167370719,
+  "archive": ".tools\\version-archive\\2026102707-unused-snapshots.zip",
+  "applied": false
+}

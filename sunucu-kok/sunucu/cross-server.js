@@ -1,10 +1,15 @@
 "use strict";
 const {Y,O,cv,satir,json,simdi}=require('./paket'),cfg=require('./cross-server-config.json'),players=require('./cross-server-players'),env=require('./envanter'),levels=require('./seviye'),codec=require('./kodek'),crypto=require('crypto');
-const OP={BASE:0x01183d07,LIST:0x01183d05,RECORD:0x01183d0e,SEASON:0x01183d0d},day=t=>Math.floor((t+25200)/86400),clone=d=>JSON.parse(JSON.stringify(d));
+const settleScores=require('./cross-score-rpc').createClient();
+let scoreNotice=null;
+function setNotify(fn){scoreNotice=fn;}
+function notify(){if(scoreNotice)scoreNotice();}
+const OP={RANK:0x01183d04,BASE:0x01183d07,LIST:0x01183d05,RECORD:0x01183d0e,SEASON:0x01183d0d},day=t=>Math.floor((t+25200)/86400),clone=d=>JSON.parse(JSON.stringify(d));
 function state(d,now=simdi()){let k=d.crossServer;if(!k)k=d.crossServer={season:Math.floor(day(now)/cfg.seasonDays),score:0,tier:0,history:[]};
- const season=Math.floor(day(now)/cfg.seasonDays);if(k.season!==season){k.season=season;k.score=0;k.tier=0;k.history=[];}
+ const season=Math.floor(day(now)/cfg.seasonDays);if(k.season!==season){k.season=season;k.score=0;k.tier=0;k.history=[];k.pendingScores=[];}
  if(k.day!==day(now)){k.yesterdayScore=k.score;k.yesterdayRank=rank(k);k.day=day(now);k.times=Number(cv(60350016,5));k.bought=0;k.refresh=0;k.paid=[];k.boxes=0;k.killed={};k.normal=[];k.super=[];k.round=0;}
- k.history=k.history||[];k.normal=k.normal||[];k.super=k.super||[];k.killed=k.killed||{};return k;}
+ const authoritative=players.ownScore(k.season);if(authoritative!==null)k.score=authoritative;
+ k.pendingScores=k.pendingScores||[];k.history=k.history||[];k.normal=k.normal||[];k.super=k.super||[];k.killed=k.killed||{};return k;}
 function rank(k){return 1+players.accounts().filter(p=>p.score>k.score).length;}
 function playerLevel(){return levels.anaDurum(levels.veriOku()).lv;}
 function ownPower(d){try{const units=players.ownUnits(d);return Math.max(1,Math.min(0xffffffff,units.reduce((sum,u)=>sum+u.atk+u.def+Math.round(u.maxHp/10),0)));}catch(e){return 1;}}
@@ -18,6 +23,8 @@ function records(k){const w=new Y().u16(k.history.length);for(const r of k.histo
 function normalAllowed(k,id){let offset=0;for(const count of cv(60350012,[6,5,4,2,1])){const group=k.normal.slice(offset,offset+count);if(group.includes(id))return k.normal.slice(0,offset).every(x=>k.killed[x]);offset+=count;}return false;}
 function rewards(index,tier){const row=satir('GSPVP_Reward',5001+(tier||0)*5+index);return json(row&&row.f2,[]);}
 function preview(d,aw){for(const a of aw.filter(a=>a.type===1)){const before=env.mevcut(d,a.code);env.ekle(d,[a]);if(env.mevcut(d,a.code)!==before+a.amount||before+a.amount>env.MAX_ADET)throw Error('Reward capacity');}}
+function ranking(d,now=simdi()){ const k=state(d,now),rows=players.accounts().map(p=>({name:p.name,server:p.server,level:159,score:p.score,tier:Math.min(6,Math.floor(p.score/1500))}));rows.push({name:d.nick||'Player',server:'Local',level:159,score:k.score,tier:k.tier});rows.sort((a,b)=>b.score-a.score);const w=new Y().u16(rows.length);rows.forEach((r,i)=>w.u32(i+1).utf(r.name).utf(r.server).u32(r.level).u32(r.score).u32(r.tier));return w.done(); }
+function updates(d,now=simdi()){const k=state(d,now);return [{id:OP.LIST,payload:lists(d,k)},{id:OP.BASE,payload:base(d,k)},{id:OP.RANK,payload:ranking(d,now)}];}
 function kur(y,opt={}){const now=opt.now||simdi,H={},fail=n=>new Y().u32(n).done();
  function push(d,k){y.ekSonra(OP.BASE,base(d,k),'CROSS-base');}
  function commit(ctx,next,costs=[],aw=[]){const charged=costs.length?y.paraHarca(costs):null;if(costs.length&&!charged)return false;try{ctx.kaydet(next);}catch(e){if(charged)y.paraIcinOdul(costs);return false;}Object.assign(ctx.durum,next);if(charged)y.ekSonra(0x01180105,charged,'CROSS-cost');if(aw.some(a=>a.type!==1)){const p=y.paraIcinOdul(aw.filter(a=>a.type!==1));if(p)y.ekSonra(0x01180105,p,'CROSS-reward');}if(aw.some(a=>a.type===1))y.ekSonra(0x01180f00,env.loadBagPaketi(next),'CROSS-bag');push(next,state(next,now()));return true;}
@@ -27,14 +34,16 @@ function kur(y,opt={}){const now=opt.now||simdi,H={},fail=n=>new Y().u32(n).done
  H['0x01813d05']=ctx=>{const next=clone(ctx.durum),k=state(next,now());const packet=lists(next,k);try{ctx.kaydet(next);}catch(e){return new Y().u16(0).u16(0).done();}Object.assign(ctx.durum,next);return packet;};
  H['0x01813d0a']=ctx=>{if(ctx.payload.length)return fail(4);const next=clone(ctx.durum),k=state(next,now());if(k.refresh>=3||!players.accounts().length)return fail(1);k.refresh++;k.super=players.all().filter(b=>!k.normal.includes(b.id)&&!k.super.includes(b.id)).sort((a,b)=>((a.id+k.refresh*199)>>>0)-((b.id+k.refresh*199)>>>0)).slice(0,12).map(b=>b.id);if(!commit(ctx,next,[{type:0,code:1,amount:Number(cv(60350014,200))}]))return fail(16);y.ekSonra(OP.LIST,lists(next,k),'CROSS-refresh');return fail(0);};
  H['0x01813d0c']=ctx=>{if(ctx.payload.length)return fail(4);const next=clone(ctx.durum),k=state(next,now());if(k.bought>=Number(cv(60350017,50)))return fail(1);k.bought++;k.times++;return commit(ctx,next,[{type:0,code:1,amount:Number(cv(60350011,10))}])?fail(0):fail(16);};
- H['0x01813d04']=ctx=>{const k=state(ctx.durum,now()),rows=players.accounts().map(p=>({name:p.name,server:p.server,level:159,score:p.score,tier:Math.min(6,Math.floor(p.score/1500))}));rows.push({name:ctx.durum.nick||'Player',server:'Local',level:159,score:k.score,tier:k.tier});rows.sort((a,b)=>b.score-a.score);const w=new Y().u16(rows.length);rows.forEach((r,i)=>w.u32(i+1).utf(r.name).utf(r.server).u32(r.level).u32(r.score).u32(r.tier));return w.done();};
- H['0x01813d0e']=ctx=>records(state(ctx.durum,now()));H['0x01813d0b']=ctx=>{const k=state(ctx.durum,now()),w=new Y().u16((k.paid||[]).length);for(const p of k.paid||[])w.utf(ctx.durum.nick||'Player').u32(p.quality).u32(p.id);return w.done();};
+ H['0x01813d04']=ctx=>ranking(ctx.durum,now());
+ H['0x01813d0e']=ctx=>{for(const p of updates(ctx.durum,now()))y.ekSonra(p.id,p.payload,'CROSS-after-battle');return records(state(ctx.durum,now()));};H['0x01813d0b']=ctx=>{const k=state(ctx.durum,now()),w=new Y().u16((k.paid||[]).length);for(const p of k.paid||[])w.utf(ctx.durum.nick||'Player').u32(p.quality).u32(p.id);return w.done();};
  H['0x01813d03']=ctx=>{if(ctx.payload.length!==4)return fail(4);const id=ctx.payload.readUInt32BE(0),row=satir('GSPVP_DailyAward',id);if(!row)return fail(4);const next=clone(ctx.durum),k=state(next,now());if((k.paid||[]).some(p=>p.id===id))return fail(1);const aw=json(row.f4,[]);try{preview(next,aw);}catch(e){return fail(1);}k.paid=k.paid||[];k.paid.push({id,quality:Number(row.quality)});return commit(ctx,next,[{type:0,code:Number(row.costType)===1?0:1,amount:Number(row.cost)}],aw)?fail(0):fail(13);};
  H['0x01813d11']=ctx=>{if(ctx.payload.length!==4)return fail(4);const box=ctx.payload.readUInt32BE(0),next=clone(ctx.durum),k=state(next,now()),counts=cv(60350012,[6,5,4,2,1]);if(box<1||box>5||(k.boxes&(1<<(box-1))))return fail(1);let offset=0;for(let i=0;i<box-1;i++)offset+=counts[i];const members=k.normal.slice(offset,offset+counts[box-1]);if(members.length!==counts[box-1]||members.some(id=>!k.killed[id]))return fail(1);const aw=rewards(box-1,k.tier);try{preview(next,aw);}catch(e){return fail(1);}k.boxes|=1<<(box-1);const reset=k.boxes===31;if(reset){k.round++;k.boxes=0;k.killed={};k.tier=Math.max(0,...cv(60350018,[]).filter(r=>k.score>=r.score).map(r=>Number(r.layer)||0));select(k);}if(!commit(ctx,next,[],aw))return fail(1);if(reset)y.ekSonra(OP.LIST,lists(next,k),'CROSS-next-round');return new Y().u32(0).u32(box).done();};
- function fight(ctx){if(ctx.payload.length!==5)return {error:4};const mode=ctx.payload[0],id=ctx.payload.readUInt32BE(1),next=clone(ctx.durum),k=state(next,now());if(mode>1||(!mode&&!normalAllowed(k,id))||!(mode?k.super.slice((k.refresh-1)*4,k.refresh*4):k.normal).includes(id)||k.killed[id]||k.times<=0||now()<(k.nextFight||0)||(mode&&k.refresh===0))return {error:1};
+ async function fight(ctx){if(ctx.payload.length!==5)return {error:4};const mode=ctx.payload[0],id=ctx.payload.readUInt32BE(1),next=clone(ctx.durum),k=state(next,now());if(mode>1||(!mode&&!normalAllowed(k,id))||!(mode?k.super.slice((k.refresh-1)*4,k.refresh*4):k.normal).includes(id)||k.killed[id]||k.times<=0||now()<(k.nextFight||0)||(mode&&k.refresh===0))return {error:1};
  const team=opponent(k,id);if(!team||!team.units.length)return {error:1};const savas=require('./savas');const own=players.ownUnits(next);if(!own.length)return {error:1};const battleState={...next,zanpakuto:{},bicak:{acik:[],sekil:0,guc:{}},knifeSoul:null};const report=opt.simulate?opt.simulate(team,battleState,own):savas.kadroRapor(0,team,null,{playerState:battleState,playerUnits:own,crossServerBaseOnly:true,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});if(!report||!Buffer.isBuffer(report.payload))throw Error('Cross battle unavailable');
- const aw=report.won?[{type:1,code:14100282,amount:2}]:[];try{preview(next,aw);}catch(e){return {error:1};}k.times--;k.lastFight=now();k.nextFight=now()+cfg.cooldownSeconds;k.score+=report.won?cfg.winScore:cfg.lossScore;if(report.won)k.killed[id]=true;
- const row={id:crypto.randomUUID(),name:team.name,time:now(),won:!!report.won,report:report.payload.toString('base64')};k.history.unshift(row);k.history=k.history.slice(0,cfg.historyLimit);if(!commit(ctx,next,[],aw))return {error:1};y.ekSonra(OP.RECORD,records(k),'CROSS-records');
+ const aw=report.won?[{type:1,code:14100282,amount:2}]:[];try{preview(next,aw);}catch(e){return {error:1};}k.times--;k.lastFight=now();k.nextFight=now()+cfg.cooldownSeconds;if(report.won)k.killed[id]=true;
+ const row={id:crypto.randomUUID(),name:team.name,time:now(),won:!!report.won,report:report.payload.toString('base64')};k.history.unshift(row);k.history=k.history.slice(0,cfg.historyLimit);k.pendingScores.push({id:row.id,opponentId:team.accountId,won:!!report.won,season:k.season});if(!commit(ctx,next,[],aw))return {error:1};
+ try{await flushScores(ctx,opt.settleScores||settleScores,now);}catch(error){console.error('[Cross scores pending]',error.message);}
+ for(const p of updates(ctx.durum,now()))y.ekSonra(p.id,p.payload,'CROSS-score-update');y.ekSonra(OP.RECORD,records(k),'CROSS-records');
  return {ack:new Y().u32(0).u8(mode).u32(id).done(),report:report.payload,result:codec.encodeSingleResult(report.won,aw)};}
  function replay(ctx){if(ctx.payload.length<2||ctx.payload.readUInt16BE(0)+2!==ctx.payload.length)return {error:4};const k=state(ctx.durum,now()),id=new O(ctx.payload).utf(),r=k.history.find(r=>r.id===id);if(!r)return {error:4};return {ack:new Y().u32(0).u8(2).u32(0).done(),report:Buffer.from(r.report,'base64'),result:codec.encodeSingleResult(r.won,[])};}
  function exchange(ctx,row,qty){
@@ -65,4 +74,13 @@ function kur(y,opt={}){const now=opt.now||simdi,H={},fail=n=>new Y().u32(n).done
  }
 
  return {handlers:H,fight,replay,exchange};}
-module.exports={difficulty,opponent,state,base,lists,records,rank,season,OP,kur,config:cfg};
+async function flushScores(ctx,settle=settleScores,now=simdi){
+ const pending=(state(ctx.durum,now()).pendingScores||[]).slice();
+ for(const request of pending){
+  const result=await settle(request);players.updateScores(result);
+  const latest=ctx.reload?ctx.reload():clone(ctx.durum),k=state(latest,now());
+  k.pendingScores=k.pendingScores.filter(row=>row.id!==request.id);
+  ctx.kaydet(latest);Object.assign(ctx.durum,latest);notify();
+ }
+}
+module.exports={setNotify,notify,updates,ranking,flushScores,difficulty,opponent,state,base,lists,records,rank,season,OP,kur,config:cfg};

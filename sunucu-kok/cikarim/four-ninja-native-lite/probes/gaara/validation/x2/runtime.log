@@ -1,0 +1,86 @@
+TEXTURE surf frames=107
+TEXTURE standard frames=57
+TEXTURE mystery frames=107
+TEXTURE storm frames=45
+TEXTURE idle frames=43
+CASE 0 skill=0 camp=0
+SNAPSHOT CASE-0-skill-0-camp-0-frame-8
+SNAPSHOT CASE-0-skill-0-camp-0-frame-20
+CASE 1 skill=13121501 camp=0
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-1-skill-13121501-camp-0-frame-42
+SNAPSHOT CASE-1-skill-13121501-camp-0-frame-53
+SNAPSHOT CASE-1-skill-13121501-camp-0-frame-83
+CASE 2 skill=13121502 camp=0
+NATIVE_LAYER gaara Yzwoailuo_pugong-424
+NATIVE_LAYER gaara Yzwoailuo_pugong-81
+NATIVE_LAYER gaara GAR_shazhidun-36
+SNAPSHOT CASE-2-skill-13121502-camp-0-frame-12
+SNAPSHOT CASE-2-skill-13121502-camp-0-frame-28
+SNAPSHOT CASE-2-skill-13121502-camp-0-frame-44
+CASE 3 skill=13121503 camp=0
+NATIVE_LAYER gaara Yzwoailuo_beidong2-124
+NATIVE_LAYER gaara Yzwoailuo_beidong2-38
+SNAPSHOT CASE-3-skill-13121503-camp-0-frame-9
+SNAPSHOT CASE-3-skill-13121503-camp-0-frame-22
+SNAPSHOT CASE-3-skill-13121503-camp-0-frame-35
+CASE 4 skill=13121504 camp=0
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-4-skill-13121504-camp-0-frame-42
+SNAPSHOT CASE-4-skill-13121504-camp-0-frame-53
+SNAPSHOT CASE-4-skill-13121504-camp-0-frame-83
+CASE 5 skill=13121501 camp=0
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-5-skill-13121501-camp-0-frame-12
+CANCEL_OK 5
+SNAPSHOT CASE-5-skill-13121501-camp-0-frame-30
+CASE 6 skill=13121501 camp=0
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-6-skill-13121501-camp-0-frame-42
+SNAPSHOT CASE-6-skill-13121501-camp-0-frame-53
+SNAPSHOT CASE-6-skill-13121501-camp-0-frame-83
+CASE 7 skill=0 camp=1
+SNAPSHOT CASE-7-skill-0-camp-1-frame-8
+SNAPSHOT CASE-7-skill-0-camp-1-frame-20
+CASE 8 skill=13121501 camp=1
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-8-skill-13121501-camp-1-frame-42
+SNAPSHOT CASE-8-skill-13121501-camp-1-frame-53
+SNAPSHOT CASE-8-skill-13121501-camp-1-frame-83
+CASE 9 skill=13121502 camp=1
+NATIVE_LAYER gaara Yzwoailuo_pugong-424
+NATIVE_LAYER gaara Yzwoailuo_pugong-81
+NATIVE_LAYER gaara GAR_shazhidun-36
+SNAPSHOT CASE-9-skill-13121502-camp-1-frame-12
+SNAPSHOT CASE-9-skill-13121502-camp-1-frame-28
+SNAPSHOT CASE-9-skill-13121502-camp-1-frame-44
+CASE 10 skill=13121503 camp=1
+NATIVE_LAYER gaara Yzwoailuo_beidong2-124
+NATIVE_LAYER gaara Yzwoailuo_beidong2-38
+SNAPSHOT CASE-10-skill-13121503-camp-1-frame-9
+SNAPSHOT CASE-10-skill-13121503-camp-1-frame-22
+SNAPSHOT CASE-10-skill-13121503-camp-1-frame-35
+CASE 11 skill=13121504 camp=1
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-11-skill-13121504-camp-1-frame-42
+SNAPSHOT CASE-11-skill-13121504-camp-1-frame-53
+SNAPSHOT CASE-11-skill-13121504-camp-1-frame-83
+CASE 12 skill=13121501 camp=1
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-12-skill-13121501-camp-1-frame-12
+CANCEL_OK 12
+SNAPSHOT CASE-12-skill-13121501-camp-1-frame-30
+CASE 13 skill=13121501 camp=1
+NATIVE_LAYER gaara Yzwoailuo_aoyi-159
+NATIVE_LAYER gaara Yzwoailuo_aoyi-432
+SNAPSHOT CASE-13-skill-13121501-camp-1-frame-42
+SNAPSHOT CASE-13-skill-13121501-camp-1-frame-53
+SNAPSHOT CASE-13-skill-13121501-camp-1-frame-83
+DONE gaara; remaining=0

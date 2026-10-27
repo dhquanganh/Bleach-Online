@@ -1,0 +1,72 @@
+{
+  "character": "mecha",
+  "cases": 32,
+  "modelSequences": 15,
+  "plan": [
+    {
+      "skill": 0,
+      "name": "idle"
+    },
+    {
+      "skill": 13121101,
+      "name": "bomb"
+    },
+    {
+      "skill": 13121102,
+      "name": "combo"
+    },
+    {
+      "skill": 13121103,
+      "name": "beam"
+    },
+    {
+      "skill": 13121104,
+      "name": "rasengan"
+    },
+    {
+      "skill": 13121105,
+      "name": "modified"
+    },
+    {
+      "skill": 13121106,
+      "name": "extreme"
+    },
+    {
+      "skill": 13121107,
+      "name": "high-bomb"
+    },
+    {
+      "skill": 13121108,
+      "name": "jet"
+    },
+    {
+      "skill": 13121109,
+      "name": "transform"
+    },
+    {
+      "skill": 13121110,
+      "name": "recovery"
+    },
+    {
+      "skill": 13121111,
+      "name": "beast-bomb"
+    },
+    {
+      "skill": 13121112,
+      "name": "claw"
+    },
+    {
+      "skill": 13121113,
+      "name": "sweep"
+    },
+    {
+      "skill": 13121101,
+      "name": "bomb",
+      "cancel": true
+    },
+    {
+      "skill": 13121101,
+      "name": "bomb"
+    }
+  ]
+}

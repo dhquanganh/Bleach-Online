@@ -1,0 +1,783 @@
+{
+  "sasuke": {
+    "clips": {
+      "ZuozhuZZZZ_haolonghuo-31": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuo.swf",
+        "symbol": "xia",
+        "width": 1835.3846153846152,
+        "height": 510.7692307692308,
+        "pivot": [
+          0.13896689019279126,
+          0.5171536144578314
+        ],
+        "duration": 3440,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_haolonghuo-664": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuo.swf",
+        "symbol": "shang",
+        "width": 3196.923076923077,
+        "height": 3008.1158081158082,
+        "pivot": [
+          0.3489232435033686,
+          0.5132544757033248
+        ],
+        "duration": 3440,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_haolonghuoyan-31": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuoyan.swf",
+        "symbol": "xia",
+        "width": 1835.3846153846152,
+        "height": 510.7692307692308,
+        "pivot": [
+          0.13896689019279126,
+          0.5171536144578314
+        ],
+        "duration": 3440,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_haolonghuoyan-891": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuoyan.swf",
+        "symbol": "shang",
+        "width": 3196.923076923077,
+        "height": 3008.1158081158082,
+        "pivot": [
+          0.3489232435033686,
+          0.5132544757033248
+        ],
+        "duration": 3440,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao1-258": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao1.swf",
+        "symbol": "shang",
+        "width": 551.7647058823529,
+        "height": 523.5294117647059,
+        "pivot": [
+          0.2868710021321962,
+          0.676438202247191
+        ],
+        "duration": 1880,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao1-69": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao1.swf",
+        "symbol": "xia",
+        "width": 338.8235294117647,
+        "height": 163.52941176470588,
+        "pivot": [
+          0.4671614583333334,
+          1.197068345323741
+        ],
+        "duration": 1880,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao2-285": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao2.swf",
+        "symbol": "shang",
+        "width": 552.9411764705883,
+        "height": 570.5882352941177,
+        "pivot": [
+          0.2881914893617021,
+          0.7027422680412371
+        ],
+        "duration": 2240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao2-90": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao2.swf",
+        "symbol": "xia",
+        "width": 340.0,
+        "height": 227.05882352941177,
+        "pivot": [
+          0.46658304498269887,
+          1.1315673575129532
+        ],
+        "duration": 2240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao3-112": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao3.swf",
+        "symbol": "xia",
+        "width": 456.47058823529414,
+        "height": 232.94117647058823,
+        "pivot": [
+          0.3469072164948453,
+          1.1593434343434343
+        ],
+        "duration": 3400,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_qianniaodao3-684": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao3.swf",
+        "symbol": "shang",
+        "width": 950.0,
+        "height": 665.8260869565217,
+        "pivot": [
+          0.3828328173374613,
+          0.6200353356890458
+        ],
+        "duration": 3400,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_xuzuobati-106": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf",
+        "symbol": "b1",
+        "width": 143.52941176470588,
+        "height": 212.35294117647058,
+        "pivot": [
+          0.6557991803278688,
+          1.0593905817174516
+        ],
+        "duration": 1640,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_xuzuobati-107": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf",
+        "symbol": "b3",
+        "width": 142.35294117647058,
+        "height": 215.88235294117646,
+        "pivot": [
+          0.662107438016529,
+          1.0590463215258854
+        ],
+        "duration": 1640,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "ZuozhuZZZZ_xuzuobati-108": {
+        "url": "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf",
+        "symbol": "b2",
+        "width": 132.35294117647058,
+        "height": 215.88235294117646,
+        "pivot": [
+          0.6281555555555555,
+          1.0590463215258854
+        ],
+        "duration": 1640,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      }
+    },
+    "urls": [
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuo.swf",
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_haolonghuoyan.swf",
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao1.swf",
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao2.swf",
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_qianniaodao3.swf",
+      "/public/ninja-native-lite/v1/sasuke/ZuozhuZZZZ_xuzuobati.swf"
+    ]
+  },
+  "mecha": {
+    "clips": {
+      "Jijiamingren_aoyi-1343": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_aoyi.swf",
+        "symbol": "shang",
+        "width": 1800.0,
+        "height": 1199.53125,
+        "pivot": [
+          0.49989542483660127,
+          0.5001617647058824
+        ],
+        "duration": 6400,
+        "rate": 24,
+        "soft": true,
+        "additive": false
+      },
+      "Jijiamingren_aoyi-139": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_aoyi.swf",
+        "symbol": "xia",
+        "width": 1800.0,
+        "height": 1199.53125,
+        "pivot": [
+          0.5002483660130718,
+          0.5004338235294118
+        ],
+        "duration": 6400,
+        "rate": 24,
+        "soft": true,
+        "additive": true
+      },
+      "Jijiamingren_ji_aoyi-245": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_ji_aoyi.swf",
+        "symbol": "xia",
+        "width": 2025.8823529411764,
+        "height": 1460.972850678733,
+        "pivot": [
+          0.45411149825783975,
+          0.7395933977455716
+        ],
+        "duration": 2920,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_ji_aoyi-440": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_ji_aoyi.swf",
+        "symbol": "shang",
+        "width": 1754.1176470588234,
+        "height": 2192.6470588235293,
+        "pivot": [
+          0.4887206572769953,
+          0.6312674356223177
+        ],
+        "duration": 2920,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_liandan_pugong3-529": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_liandan_pugong3.swf",
+        "symbol": "shang",
+        "width": 840.0,
+        "height": 611.7647058823529,
+        "pivot": [
+          0.5355217086834734,
+          0.6485624999999999
+        ],
+        "duration": 3920,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_luoxuanwan_zhuida-626": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_luoxuanwan_zhuida.swf",
+        "symbol": "shang",
+        "width": 1000.0,
+        "height": 800.0,
+        "pivot": [
+          -0.11905882352941181,
+          0.7178897058823529
+        ],
+        "duration": 3240,
+        "rate": 24,
+        "soft": true,
+        "additive": false
+      },
+      "Jijiamingren_qianghua_pugong-250": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_qianghua_pugong.swf",
+        "symbol": "shang",
+        "width": 982.3529411764706,
+        "height": 430.5882352941177,
+        "pivot": [
+          0.1380329341317365,
+          0.7177800546448087
+        ],
+        "duration": 2200,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_shanbi-154": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_shanbi.swf",
+        "symbol": "shang",
+        "width": 407.0588235294118,
+        "height": 201.17647058823533,
+        "pivot": [
+          0.5182008670520232,
+          0.7446929824561404
+        ],
+        "duration": 1680,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_shanbi-90": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_shanbi.swf",
+        "symbol": "xia",
+        "width": 408.2352941176471,
+        "height": 334.11764705882354,
+        "pivot": [
+          0.5035878962536023,
+          0.7393309859154928
+        ],
+        "duration": 1680,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_jiuweilama_weisouyu-609": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_weisouyu.swf",
+        "symbol": "shang",
+        "width": 1800.575294117647,
+        "height": 1199.110588235294,
+        "pivot": [
+          0.5001587727843846,
+          0.5001059608886586
+        ],
+        "duration": 4480,
+        "rate": 24,
+        "soft": true,
+        "additive": false
+      },
+      "Jijiamingren_jiuweilama_weisouyu-67": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_weisouyu.swf",
+        "symbol": "xia",
+        "width": 1798.6658823529413,
+        "height": 1199.110588235294,
+        "pivot": [
+          0.499922164532405,
+          0.49994898179434955
+        ],
+        "duration": 4480,
+        "rate": 24,
+        "soft": true,
+        "additive": true
+      },
+      "Jijiamingren_jiuweilama_zhuaji-12": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_zhuaji.swf",
+        "symbol": "xia",
+        "width": 1097.6920588235294,
+        "height": 252.17249999999999,
+        "pivot": [
+          0.44418910478750473,
+          0.22828152764243437
+        ],
+        "duration": 3560,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_jiuweilama_zhuaji-379": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_zhuaji.swf",
+        "symbol": "shang",
+        "width": 3129.905735294117,
+        "height": 3112.613438414039,
+        "pivot": [
+          0.4388882318810674,
+          0.4921450138808531
+        ],
+        "duration": 3560,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_jiuweilama_hengsao-256": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_hengsao.swf",
+        "symbol": "shang",
+        "width": 2762.160088235294,
+        "height": 3115.2181446262716,
+        "pivot": [
+          0.49661891322629925,
+          0.4919143719713732
+        ],
+        "duration": 4400,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Jijiamingren_jiuweilama_hengsao-58": {
+        "url": "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_hengsao.swf",
+        "symbol": "xia",
+        "width": 1144.1957647058823,
+        "height": 420.1343823529412,
+        "pivot": [
+          0.47832970581751527,
+          0.5081309068548024
+        ],
+        "duration": 4400,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      }
+    },
+    "urls": [
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_aoyi.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_ji_aoyi.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_liandan_pugong3.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_luoxuanwan_zhuida.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_qianghua_pugong.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_shanbi.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_weisouyu.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_zhuaji.swf",
+      "/public/ninja-native-lite/v1/mecha/Jijiamingren_jiuweilama_hengsao.swf"
+    ]
+  },
+  "itachi": {
+    "clips": {
+      "YuzhiboyoRZZL_Huanshuxielunyan-27": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan.swf",
+        "symbol": "shang",
+        "width": 274.11764705882354,
+        "height": 285.88235294117646,
+        "pivot": [
+          0.5190236051502145,
+          1.1208744855967079
+        ],
+        "duration": 2360,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Huanshuxielunyan_shouji-239": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf",
+        "symbol": "shang",
+        "width": 464.7058823529412,
+        "height": 409.4117647058824,
+        "pivot": [
+          0.4781012658227848,
+          0.6919899425287356
+        ],
+        "duration": 1600,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yafenshenzhishu-40": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yafenshenzhishu.swf",
+        "symbol": "shang",
+        "width": 375.29411764705884,
+        "height": 254.11764705882354,
+        "pivot": [
+          0.5348432601880878,
+          0.9090972222222222
+        ],
+        "duration": 2320,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_QY-1257": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+        "symbol": "shang",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 7240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_QY-227": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+        "symbol": "xia",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 7240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_NZ-213": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+        "symbol": "xia",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 5600,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_NZ-879": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+        "symbol": "shang",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 5600,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_LB-1640": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+        "symbol": "shang",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 7760,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_LB-266": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+        "symbol": "xia",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 7760,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_SB-1795": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+        "symbol": "shang",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 5840,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_SB-348": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+        "symbol": "xia",
+        "width": 1250.0,
+        "height": 650.0,
+        "pivot": [
+          0.26,
+          0.6923076923076923
+        ],
+        "duration": 5840,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_SB_zhen-4": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf",
+        "symbol": "shang",
+        "width": 131.76470588235296,
+        "height": 125.88235294117648,
+        "pivot": [
+          0.5031696428571428,
+          1.1498831775700935
+        ],
+        "duration": 960,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_SB_shouji-293": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf",
+        "symbol": "shang",
+        "width": 1751.6346470588235,
+        "height": 2195.6423152547927,
+        "pivot": [
+          0.5022490756449379,
+          0.6336523421604101
+        ],
+        "duration": 2000,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "YuzhiboyoRZZL_Yongbingjituan_SB_shouji-91": {
+        "url": "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf",
+        "symbol": "xia",
+        "width": 1976.148882352941,
+        "height": 1508.057882352941,
+        "pivot": [
+          0.4928413199160304,
+          0.7170646125924953
+        ],
+        "duration": 2000,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      }
+    },
+    "urls": [
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Huanshuxielunyan_shouji.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yafenshenzhishu.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_QY.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_NZ.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_LB.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_zhen.swf",
+      "/public/ninja-native-lite/v1/itachi/YuzhiboyoRZZL_Yongbingjituan_SB_shouji.swf"
+    ]
+  },
+  "gaara": {
+    "clips": {
+      "Yzwoailuo_pugong-424": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_pugong.swf",
+        "symbol": "shang",
+        "width": 3448.2081176470588,
+        "height": 2039.2918320772058,
+        "pivot": [
+          0.43379413873920336,
+          0.5327624018214182
+        ],
+        "duration": 2240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Yzwoailuo_pugong-81": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_pugong.swf",
+        "symbol": "xia",
+        "width": 1252.2790588235293,
+        "height": 566.1899999999999,
+        "pivot": [
+          0.5830309200016686,
+          0.4272745690232857
+        ],
+        "duration": 2240,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Yzwoailuo_beidong2-124": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_beidong2.swf",
+        "symbol": "shang",
+        "width": 1058.8235294117646,
+        "height": 682.3529411764706,
+        "pivot": [
+          0.04237777777777778,
+          0.5167241379310344
+        ],
+        "duration": 1760,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Yzwoailuo_beidong2-38": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_beidong2.swf",
+        "symbol": "xia",
+        "width": 916.4705882352941,
+        "height": 382.3529411764706,
+        "pivot": [
+          -0.011784338896020539,
+          0.5076384615384615
+        ],
+        "duration": 1760,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Woailuoyongzhuang_shazhikai-23": {
+        "url": "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+        "symbol": "b1",
+        "width": 348.2352941176471,
+        "height": 300.0,
+        "pivot": [
+          0.47402027027027027,
+          0.8938333333333331
+        ],
+        "duration": 680,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Woailuoyongzhuang_shazhikai-34": {
+        "url": "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+        "symbol": "b3",
+        "width": 252.94117647058823,
+        "height": 257.6470588235294,
+        "pivot": [
+          0.4299883720930232,
+          0.8374429223744293
+        ],
+        "duration": 640,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Woailuoyongzhuang_shazhikai-35": {
+        "url": "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+        "symbol": "b2",
+        "width": 230.58823529411765,
+        "height": 248.23529411764707,
+        "pivot": [
+          0.47167091836734687,
+          0.8691943127962085
+        ],
+        "duration": 600,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "GAR_shazhidun-36": {
+        "url": "/public/ninja-native-lite/v1/gaara/GAR_shazhidun.swf",
+        "symbol": "bt",
+        "width": 344.70588235294116,
+        "height": 309.4117647058824,
+        "pivot": [
+          0.479684300341297,
+          0.8604182509505702
+        ],
+        "duration": 1120,
+        "rate": 24,
+        "soft": false,
+        "additive": false
+      },
+      "Yzwoailuo_aoyi-159": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_aoyi.swf",
+        "symbol": "xia",
+        "width": 2233.0,
+        "height": 1030.36376953125,
+        "pivot": [
+          0.45776981639050607,
+          0.5589320388349515
+        ],
+        "duration": 4240,
+        "rate": 24,
+        "soft": true,
+        "additive": false
+      },
+      "Yzwoailuo_aoyi-432": {
+        "url": "/public/ninja-native-lite/v1/gaara/Yzwoailuo_aoyi.swf",
+        "symbol": "shang",
+        "width": 3463.5,
+        "height": 2039.54150390625,
+        "pivot": [
+          0.4793417063663924,
+          0.5322794117647058
+        ],
+        "duration": 4240,
+        "rate": 24,
+        "soft": true,
+        "additive": false
+      }
+    },
+    "urls": [
+      "/public/ninja-native-lite/v1/gaara/Yzwoailuo_pugong.swf",
+      "/public/ninja-native-lite/v1/gaara/Yzwoailuo_beidong2.swf",
+      "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+      "/public/ninja-native-lite/v1/gaara/GAR_shazhidun.swf",
+      "/public/ninja-native-lite/v1/gaara/Yzwoailuo_aoyi.swf"
+    ]
+  }
+}

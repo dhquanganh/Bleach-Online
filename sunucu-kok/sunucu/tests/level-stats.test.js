@@ -10,7 +10,7 @@ for(const id of [source.id,highHero]) {
  const after=stats.blokOku(gear.statPaketi({},id,159).subarray(4));
  for(const key of ['hp','atk','def','guc'])assert(after[key]>before[key],`${id}: ${key} must grow at 158->159`);
 }
-assert(level.statCarpanlari(highHero,159,source.id,source.lv).life>12);
+assert(level.buyumeTemeli(highHero,159).life>level.buyumeTemeli(highHero,1).life);
 let count=0;
 for(const [id,h] of stats.heroById) {
  const before=level.statCarpanlari(id,158,source.id,source.lv),after=level.statCarpanlari(id,159,source.id,source.lv);

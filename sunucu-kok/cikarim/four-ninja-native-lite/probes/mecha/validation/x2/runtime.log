@@ -1,0 +1,188 @@
+TEXTURE idle frames=39
+TEXTURE combo frames=99
+TEXTURE beam frames=56
+TEXTURE beast-idle frames=37
+TEXTURE jet frames=43
+TEXTURE recovery frames=74
+TEXTURE beast-bomb frames=113
+TEXTURE extreme frames=56
+TEXTURE transform frames=54
+TEXTURE claw frames=90
+TEXTURE bomb frames=161
+TEXTURE modified frames=82
+TEXTURE sweep frames=113
+TEXTURE rasengan frames=82
+TEXTURE high-bomb frames=161
+CASE 0 skill=0 camp=0
+SNAPSHOT CASE-0-skill-0-camp-0-frame-8
+SNAPSHOT CASE-0-skill-0-camp-0-frame-20
+CASE 1 skill=13121101 camp=0
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-1-skill-13121101-camp-0-frame-22
+SNAPSHOT CASE-1-skill-13121101-camp-0-frame-80
+SNAPSHOT CASE-1-skill-13121101-camp-0-frame-125
+CASE 2 skill=13121102 camp=0
+NATIVE_LAYER mecha Jijiamingren_liandan_pugong3-529
+SNAPSHOT CASE-2-skill-13121102-camp-0-frame-7
+SNAPSHOT CASE-2-skill-13121102-camp-0-frame-49
+SNAPSHOT CASE-2-skill-13121102-camp-0-frame-77
+CASE 3 skill=13121103 camp=0
+NATIVE_LAYER mecha Jijiamingren_qianghua_pugong-250
+SNAPSHOT CASE-3-skill-13121103-camp-0-frame-18
+SNAPSHOT CASE-3-skill-13121103-camp-0-frame-28
+SNAPSHOT CASE-3-skill-13121103-camp-0-frame-43
+CASE 4 skill=13121104 camp=0
+NATIVE_LAYER mecha Jijiamingren_luoxuanwan_zhuida-626
+SNAPSHOT CASE-4-skill-13121104-camp-0-frame-36
+SNAPSHOT CASE-4-skill-13121104-camp-0-frame-41
+SNAPSHOT CASE-4-skill-13121104-camp-0-frame-63
+CASE 5 skill=13121105 camp=0
+NATIVE_LAYER mecha Jijiamingren_luoxuanwan_zhuida-626
+SNAPSHOT CASE-5-skill-13121105-camp-0-frame-36
+SNAPSHOT CASE-5-skill-13121105-camp-0-frame-41
+SNAPSHOT CASE-5-skill-13121105-camp-0-frame-63
+CASE 6 skill=13121106 camp=0
+NATIVE_LAYER mecha Jijiamingren_qianghua_pugong-250
+SNAPSHOT CASE-6-skill-13121106-camp-0-frame-18
+SNAPSHOT CASE-6-skill-13121106-camp-0-frame-28
+SNAPSHOT CASE-6-skill-13121106-camp-0-frame-43
+CASE 7 skill=13121107 camp=0
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-7-skill-13121107-camp-0-frame-22
+SNAPSHOT CASE-7-skill-13121107-camp-0-frame-80
+SNAPSHOT CASE-7-skill-13121107-camp-0-frame-125
+CASE 8 skill=13121108 camp=0
+NATIVE_LAYER mecha Jijiamingren_shanbi-154
+NATIVE_LAYER mecha Jijiamingren_shanbi-90
+SNAPSHOT CASE-8-skill-13121108-camp-0-frame-12
+SNAPSHOT CASE-8-skill-13121108-camp-0-frame-21
+SNAPSHOT CASE-8-skill-13121108-camp-0-frame-33
+CASE 9 skill=13121109 camp=0
+SNAPSHOT CASE-9-skill-13121109-camp-0-frame-12
+SNAPSHOT CASE-9-skill-13121109-camp-0-frame-27
+SNAPSHOT CASE-9-skill-13121109-camp-0-frame-42
+CASE 10 skill=13121110 camp=0
+NATIVE_LAYER mecha Jijiamingren_ji_aoyi-245
+NATIVE_LAYER mecha Jijiamingren_ji_aoyi-440
+SNAPSHOT CASE-10-skill-13121110-camp-0-frame-12
+SNAPSHOT CASE-10-skill-13121110-camp-0-frame-37
+SNAPSHOT CASE-10-skill-13121110-camp-0-frame-57
+CASE 11 skill=13121111 camp=0
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_weisouyu-609
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_weisouyu-67
+SNAPSHOT CASE-11-skill-13121111-camp-0-frame-53
+SNAPSHOT CASE-11-skill-13121111-camp-0-frame-56
+SNAPSHOT CASE-11-skill-13121111-camp-0-frame-88
+CASE 12 skill=13121112 camp=0
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_zhuaji-12
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_zhuaji-379
+SNAPSHOT CASE-12-skill-13121112-camp-0-frame-38
+SNAPSHOT CASE-12-skill-13121112-camp-0-frame-45
+SNAPSHOT CASE-12-skill-13121112-camp-0-frame-70
+CASE 13 skill=13121113 camp=0
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_hengsao-256
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_hengsao-58
+SNAPSHOT CASE-13-skill-13121113-camp-0-frame-51
+SNAPSHOT CASE-13-skill-13121113-camp-0-frame-56
+SNAPSHOT CASE-13-skill-13121113-camp-0-frame-88
+CASE 14 skill=13121101 camp=0
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-14-skill-13121101-camp-0-frame-12
+CANCEL_OK 14
+SNAPSHOT CASE-14-skill-13121101-camp-0-frame-30
+CASE 15 skill=13121101 camp=0
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-15-skill-13121101-camp-0-frame-22
+SNAPSHOT CASE-15-skill-13121101-camp-0-frame-80
+SNAPSHOT CASE-15-skill-13121101-camp-0-frame-125
+CASE 16 skill=0 camp=1
+SNAPSHOT CASE-16-skill-0-camp-1-frame-8
+SNAPSHOT CASE-16-skill-0-camp-1-frame-20
+CASE 17 skill=13121101 camp=1
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-17-skill-13121101-camp-1-frame-22
+SNAPSHOT CASE-17-skill-13121101-camp-1-frame-80
+SNAPSHOT CASE-17-skill-13121101-camp-1-frame-125
+CASE 18 skill=13121102 camp=1
+NATIVE_LAYER mecha Jijiamingren_liandan_pugong3-529
+SNAPSHOT CASE-18-skill-13121102-camp-1-frame-7
+SNAPSHOT CASE-18-skill-13121102-camp-1-frame-49
+SNAPSHOT CASE-18-skill-13121102-camp-1-frame-77
+CASE 19 skill=13121103 camp=1
+NATIVE_LAYER mecha Jijiamingren_qianghua_pugong-250
+SNAPSHOT CASE-19-skill-13121103-camp-1-frame-18
+SNAPSHOT CASE-19-skill-13121103-camp-1-frame-28
+SNAPSHOT CASE-19-skill-13121103-camp-1-frame-43
+CASE 20 skill=13121104 camp=1
+NATIVE_LAYER mecha Jijiamingren_luoxuanwan_zhuida-626
+SNAPSHOT CASE-20-skill-13121104-camp-1-frame-36
+SNAPSHOT CASE-20-skill-13121104-camp-1-frame-41
+SNAPSHOT CASE-20-skill-13121104-camp-1-frame-63
+CASE 21 skill=13121105 camp=1
+NATIVE_LAYER mecha Jijiamingren_luoxuanwan_zhuida-626
+SNAPSHOT CASE-21-skill-13121105-camp-1-frame-36
+SNAPSHOT CASE-21-skill-13121105-camp-1-frame-41
+SNAPSHOT CASE-21-skill-13121105-camp-1-frame-63
+CASE 22 skill=13121106 camp=1
+NATIVE_LAYER mecha Jijiamingren_qianghua_pugong-250
+SNAPSHOT CASE-22-skill-13121106-camp-1-frame-18
+SNAPSHOT CASE-22-skill-13121106-camp-1-frame-28
+SNAPSHOT CASE-22-skill-13121106-camp-1-frame-43
+CASE 23 skill=13121107 camp=1
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-23-skill-13121107-camp-1-frame-22
+SNAPSHOT CASE-23-skill-13121107-camp-1-frame-80
+SNAPSHOT CASE-23-skill-13121107-camp-1-frame-125
+CASE 24 skill=13121108 camp=1
+NATIVE_LAYER mecha Jijiamingren_shanbi-154
+NATIVE_LAYER mecha Jijiamingren_shanbi-90
+SNAPSHOT CASE-24-skill-13121108-camp-1-frame-12
+SNAPSHOT CASE-24-skill-13121108-camp-1-frame-21
+SNAPSHOT CASE-24-skill-13121108-camp-1-frame-33
+CASE 25 skill=13121109 camp=1
+SNAPSHOT CASE-25-skill-13121109-camp-1-frame-12
+SNAPSHOT CASE-25-skill-13121109-camp-1-frame-27
+SNAPSHOT CASE-25-skill-13121109-camp-1-frame-42
+CASE 26 skill=13121110 camp=1
+NATIVE_LAYER mecha Jijiamingren_ji_aoyi-245
+NATIVE_LAYER mecha Jijiamingren_ji_aoyi-440
+SNAPSHOT CASE-26-skill-13121110-camp-1-frame-12
+SNAPSHOT CASE-26-skill-13121110-camp-1-frame-37
+SNAPSHOT CASE-26-skill-13121110-camp-1-frame-57
+CASE 27 skill=13121111 camp=1
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_weisouyu-609
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_weisouyu-67
+SNAPSHOT CASE-27-skill-13121111-camp-1-frame-53
+SNAPSHOT CASE-27-skill-13121111-camp-1-frame-56
+SNAPSHOT CASE-27-skill-13121111-camp-1-frame-88
+CASE 28 skill=13121112 camp=1
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_zhuaji-12
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_zhuaji-379
+SNAPSHOT CASE-28-skill-13121112-camp-1-frame-38
+SNAPSHOT CASE-28-skill-13121112-camp-1-frame-45
+SNAPSHOT CASE-28-skill-13121112-camp-1-frame-70
+CASE 29 skill=13121113 camp=1
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_hengsao-256
+NATIVE_LAYER mecha Jijiamingren_jiuweilama_hengsao-58
+SNAPSHOT CASE-29-skill-13121113-camp-1-frame-51
+SNAPSHOT CASE-29-skill-13121113-camp-1-frame-56
+SNAPSHOT CASE-29-skill-13121113-camp-1-frame-88
+CASE 30 skill=13121101 camp=1
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-30-skill-13121101-camp-1-frame-12
+CANCEL_OK 30
+SNAPSHOT CASE-30-skill-13121101-camp-1-frame-30
+CASE 31 skill=13121101 camp=1
+NATIVE_LAYER mecha Jijiamingren_aoyi-1343
+NATIVE_LAYER mecha Jijiamingren_aoyi-139
+SNAPSHOT CASE-31-skill-13121101-camp-1-frame-22
+SNAPSHOT CASE-31-skill-13121101-camp-1-frame-80
+SNAPSHOT CASE-31-skill-13121101-camp-1-frame-125
+DONE mecha; remaining=0

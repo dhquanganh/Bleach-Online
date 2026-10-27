@@ -368,6 +368,15 @@ async function illusionRefresh() {
 setInterval(illusionRefresh,15000).unref();
 illusion.setNotify(illusionRefresh);
 
+// Push committed Cross points/ranks to every authenticated connection, including
+// the defender and delayed-settlement recovery, without reloading the game.
+require('./cross-server').setNotify(()=>{
+  const sessions=loggedInClients();if(!sessions.length)return;
+  try{const packets=require('./cross-server').updates(durumMod.yukle());
+    for(const session of sessions)for(const packet of packets)session.send(packet.id,packet.payload,'CROSS-live-scores');
+  }catch(error){console.error('[Cross live scores]',error.message);}
+});
+
 // Native Arena_Update refreshes the chest at release time and after claiming.
 let lastArenaRewardState='';
 setInterval(()=>{
@@ -529,7 +538,7 @@ net.createServer(client => {
   function send(id, payload, kaynak) { client.write(frame(id, payload)); LOG.s2c(cid, id, payload, kaynak || '?'); }
   const session = { cid, client, send, authenticated: false };
   let accountVerified = false;
-  let illusionRequestQueue=Promise.resolve();
+  let illusionRequestQueue=Promise.resolve(),crossRequestQueue=Promise.resolve();
   CLIENTS.add(send);
   GAME_SESSIONS.add(session);
   client.on('close', () => { CLIENTS.delete(send); GAME_SESSIONS.delete(session); publishTown(); });
@@ -862,10 +871,12 @@ net.createServer(client => {
         continue;
       }
       if((pk.id>>>0)===0x01813d02 || (pk.id>>>0)===0x01813d7d){
-        try{const d=durumMod.yukle(),cross=require('./cross-server').kur(handlers),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet};const result=(pk.id>>>0)===0x01813d7d?cross.replay(ctx):cross.fight(ctx);
+        if(!session.authenticated)continue;
+        crossRequestQueue=crossRequestQueue.catch(error=>LOG.note(cid,'Cross request: '+error.message)).then(async()=>{
+        try{const d=durumMod.yukle(),cross=require('./cross-server').kur(handlers),ctx={durum:d,payload:pk.payload,kaydet:durumMod.kaydet,reload:durumMod.yukle};const result=(pk.id>>>0)===0x01813d7d?cross.replay(ctx):await cross.fight(ctx);
           if(result.error){const p=Buffer.alloc(4);p.writeUInt32BE(result.error);send(0x01183d02,p,'CROSS-error');}
           else{send(0x01183d02,result.ack,'CROSS-ack');send(kodek.OP.REPORT,result.report,'CROSS-report');send(kodek.OP.RESULT,result.result,'CROSS-result');const q=handlers.ekAl();for(const p of q.once.concat(q.sonra))send(p.id,p.payload,p.kaynak);}
-        }catch(e){LOG.note(cid,'Cross Server: '+e.message);send(0x01183d02,Buffer.from([0,0,0,1]),'CROSS-error');}continue;
+        }catch(e){LOG.note(cid,'Cross Server: '+e.message);send(0x01183d02,Buffer.from([0,0,0,1]),'CROSS-error');}});continue;
       }
       if((pk.id>>>0)===illusion.OP.INFO_REQ || (pk.id>>>0)===illusion.OP.FIGHT_REQ){
         if(!session.authenticated)continue;

@@ -1,0 +1,236 @@
+      private static function PreloadGaaraVfx() : void
+      {
+         var manifest:Object = GaaraVfxManifest();
+         for each(var effect:String in ["Yzwoailuo_aoyi","Yzwoailuo_beidong2","Yzwoailuo_pugong"])
+         {
+            for each(var name:String in manifest.effects[effect])
+            {
+               var clip:Object = manifest.clips[name];
+               var seen:Object = {};
+               var head:int = 0;
+               while(head < Math.min(5,clip.timeline.length))
+               {
+                  var page:String = clip.frameAtlases != null ? String(clip.frameAtlases[head]) : String(clip.atlas);
+                  if(!seen[page])
+                  {
+                     seen[page] = true;
+                     LoadGaaraVfxAtlas(page,manifest.atlases[page]);
+                  }
+                  head++;
+               }
+            }
+         }
+      }
+
+      private function PlayGaaraVfxAsset(name:String, host:DisplayObjectContainer, point:Point, width:Number, height:Number, delay:int = 0, mirrored:Boolean = false, follow:Boolean = false, behind:Boolean = false, angle:Number = 0) : void
+      {
+         var caster:TRole;
+         var layer:Sprite;
+         var image:Bitmap;
+         var edgeMask:Sprite;
+         var gradient:Matrix;
+         var field:DisplayObject;
+         var outer:DisplayObjectContainer;
+         var started:int;
+         var castSerial:uint;
+         var castSkill:int;
+         var castFrame:int;
+         var lastFrame:int;
+         var displayedAtlas:String;
+         var displayedCell:String;
+         var animate:Function;
+         var cleanup:Function;
+         var pre:int;
+         var preload:String;
+         var copyRect:Rectangle = new Rectangle();
+         var copyOrigin:Point = new Point();
+         var pinned:Array = [];
+         var cleaned:Boolean = false;
+         var manifest:Object = GaaraVfxManifest();
+         var clip:Object = manifest.clips[name];
+         if(clip == null || host == null || host.stage == null)
+         {
+            return;
+         }
+         pinned = clip.aheadPages[0];
+         GaaraPinPages([],pinned);
+         pre = 0;
+         while(pre < pinned.length)
+         {
+            preload = String(pinned[pre]);
+            LoadGaaraVfxAtlas(preload,manifest.atlases[preload],pre == 0,pre * 2);
+            pre++;
+         }
+         caster = this;
+         layer = new Sprite();
+         layer.name = "gaaraSkillVfx";
+         FGaaraActiveVfx.push(layer);
+         layer.mouseEnabled = false;
+         layer.mouseChildren = false;
+         image = new Bitmap();
+         image.smoothing = true;
+         if(clip.additive)
+         {
+            image.blendMode = "add";
+         }
+         layer.addChild(image);
+         if(clip.softEdges)
+         {
+            edgeMask = new Sprite();
+            gradient = new Matrix();
+            gradient.createGradientBox(width,height,0,-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]));
+            edgeMask.graphics.beginGradientFill(GradientType.RADIAL,[16777215,16777215],[1,0],[175,255],gradient);
+            edgeMask.graphics.drawRect(-width * Number(clip.pivot[0]),-height * Number(clip.pivot[1]),width,height);
+            edgeMask.graphics.endFill();
+            image.cacheAsBitmap = true;
+            edgeMask.cacheAsBitmap = true;
+            layer.addChild(edgeMask);
+            image.mask = edgeMask;
+         }
+         if(FSkillId == 13121199)
+         {
+            host.addChildAt(layer,0);
+         }
+         else if(behind && host.parent != null)
+         {
+            field = host;
+            outer = host.parent;
+            point = outer.globalToLocal(host.localToGlobal(point));
+            host = outer;
+            host.addChildAt(layer,host.getChildIndex(field));
+         }
+         else
+         {
+            host.addChild(layer);
+         }
+         caster = this;
+         castSerial = FCombatVfxSerial;
+         castSkill = FSkillId;
+         castFrame = Math.max(0,FFrameIndex);
+         started = TBattleHandle.PlaybackTime + delay;
+         lastFrame = -1;
+         cleanup = function(event:Event = null):void
+         {
+            if(event != null && event.target != layer)
+            {
+               return;
+            }
+            if(cleaned)
+            {
+               return;
+            }
+            cleaned = true;
+            GaaraPinPages(pinned,[]);
+            pinned = [];
+            layer.removeEventListener(Event.ENTER_FRAME,animate);
+            layer.removeEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+            image.bitmapData = null;
+            image.scrollRect = null;
+            if(displayedAtlas != null)
+            {
+               GaaraPinPages([displayedAtlas],[]);
+               displayedAtlas = null;
+            }
+            TrimGaaraVfxCache("");
+            if(layer.parent != null && (event == null || event.type != Event.REMOVED_FROM_STAGE))
+            {
+               layer.parent.removeChild(layer);
+            }
+         };
+         animate = function(event:Event):void
+         {
+            if(caster.FCombatVfxSerial != castSerial || caster.FSkillId != castSkill)
+            {
+               cleanup();
+               return;
+            }
+            var elapsed:int = (Math.max(0,caster.FFrameIndex) - castFrame) * 40 - delay;
+            if(host.stage == null || elapsed >= clip.timeline.length * 40)
+            {
+               cleanup();
+               return;
+            }
+            if(elapsed < 0)
+            {
+               layer.visible = false;
+               return;
+            }
+            var frame:int = int(elapsed / 40);
+            var frameAtlas:String = clip.frameAtlases != null ? String(clip.frameAtlases[frame]) : String(clip.atlas);
+            var wanted:Array = clip.aheadPages[frame];
+            if(pinned != wanted)
+            {
+               GaaraPinPages(pinned,wanted);
+               pinned = wanted;
+            }
+            var ahead:int = 0;
+            while(ahead < wanted.length)
+            {
+               var page:String = String(wanted[ahead]);
+               LoadGaaraVfxAtlas(page,manifest.atlases[page],ahead == 0,ahead * 2);
+               ahead++;
+            }
+            var frames:Array = FGaaraFxCache[frameAtlas] as Array;
+            if(frames == null)
+            {
+               layer.visible = image.bitmapData != null;
+               return;
+            }
+            layer.visible = true;
+            if(frame != lastFrame)
+            {
+               var rect:Array = clip.frameRects[frame];
+               var cellKey:String = frameAtlas + ":" + rect[0] + ":" + rect[1];
+               if(displayedCell != cellKey)
+               {
+                  GaaraPinPages(displayedAtlas == null ? [] : [displayedAtlas],[frameAtlas]);
+                  displayedAtlas = frameAtlas;
+                  displayedCell = cellKey;
+                  image.bitmapData = BitmapData(frames[0]);
+                  image.scrollRect = new Rectangle(rect[0],rect[1],rect[2],rect[3]);
+                  image.scaleX = width / Number(clip.width);
+                  image.scaleY = height / Number(clip.height);
+                  image.x = -width * Number(clip.pivot[0]) + Number(rect[4]) * image.scaleX;
+                  image.y = -height * Number(clip.pivot[1]) + Number(rect[5]) * image.scaleY;
+               }
+               if(clip.tint != null)
+               {
+                  image.transform.colorTransform = new ColorTransform(Number(clip.tint[0]),Number(clip.tint[1]),Number(clip.tint[2]),1);
+               }
+               lastFrame = frame;
+            }
+            if(follow && caster.stage != null)
+            {
+               var gaaraOffset:Point = caster.GaaraStrikeOffset();
+               point = host.globalToLocal(caster.localToGlobal(new Point(gaaraOffset.x + 70,gaaraOffset.y)));
+            }
+            layer.x = point.x;
+            layer.y = point.y;
+            layer.scaleX = mirrored ? -1 : 1;
+            layer.rotation = angle;
+            var duration:Number = clip.timeline.length * 40;
+            var fade:Number = Math.min(80,duration / 4);
+            layer.alpha = Math.min(1,(elapsed + 40) / fade,Math.max(0,(duration - elapsed) / Math.min(120,duration / 4)));
+         };
+         layer.addEventListener(Event.ENTER_FRAME,animate);
+         layer.addEventListener(Event.REMOVED_FROM_STAGE,cleanup);
+         animate(null);
+      }
+
+      private function UpdateGaaraVfx() : void
+      {
+         if(FId != 11120991 || FSkillId < 13121501 || FSkillId > 13121504 || FIndex != TYPE_ACTIVE_ATTACK && FIndex != TYPE_ACTIVE_SKILL || FGaaraVfxStarted)
+         {
+            return;
+         }
+         for each(var old:Sprite in FGaaraActiveVfx)
+         {
+            if(old.parent != null)
+            {
+               old.parent.removeChild(old);
+            }
+         }
+         FGaaraActiveVfx = [];
+         FGaaraVfxStarted = true;
+         ShowGaaraVfx(FSkillId);
+      }

@@ -1,0 +1,36 @@
+{
+  "character": "gaara",
+  "cases": 14,
+  "modelSequences": 5,
+  "plan": [
+    {
+      "skill": 0,
+      "name": "idle"
+    },
+    {
+      "skill": 13121501,
+      "name": "mystery"
+    },
+    {
+      "skill": 13121502,
+      "name": "standard"
+    },
+    {
+      "skill": 13121503,
+      "name": "storm"
+    },
+    {
+      "skill": 13121504,
+      "name": "surf"
+    },
+    {
+      "skill": 13121501,
+      "name": "mystery",
+      "cancel": true
+    },
+    {
+      "skill": 13121501,
+      "name": "mystery"
+    }
+  ]
+}

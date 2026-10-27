@@ -1,0 +1,23 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "character": "gaara",
+  "speed": 2,
+  "completed": true,
+  "cases": 14,
+  "nativeLayers": 26,
+  "cancellations": 2,
+  "remainingLayers": 0,
+  "errors": [],
+  "requests": [
+    "/probe.swf",
+    "/public/2026090619/Resources/Textures/Model/A9B15F0A.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B15F0B.TexClient",
+    "/public/2026090619/Resources/Textures/Model/A9B15F0C.TexClient",
+    "/public/ninja-native-lite/v1/gaara/Yzwoailuo_pugong.swf",
+    "/public/ninja-native-lite/v1/gaara/Yzwoailuo_beidong2.swf",
+    "/public/ninja-native-lite/v1/gaara/Woailuoyongzhuang_shazhikai.swf",
+    "/public/ninja-native-lite/v1/gaara/GAR_shazhidun.swf",
+    "/public/ninja-native-lite/v1/gaara/Yzwoailuo_aoyi.swf"
+  ]
+}
