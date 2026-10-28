@@ -65206,5 +65206,205 @@
     "desc": "Madara has Advanced Immunity, Divine - Absorption and if he is defeated, revives 3 rounds later with 80% HP. While Madara is alive, whenever any ninja in both fields executes an action, scale Madara's Physical ATK by 10%, can be triggered 8 times per round.",
     "icon": 13122212,
     "sortId": 12
+  },
+  {
+    "id": "00C83AFD",
+    "skillId": 13122301,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto resonates a Tailed Beast Power in the order of Shukaku, Matatabi, Isobu, Son Goku, Kokuo, Saiken, Chomei, Gyuki, Kurama. After every time Naruto resonates with a Tailed Beast, he can execute his Mystery skill again. After Naruto resonates with Kurama, his Mystery changes to Six Paths - Super Massive Rasen-Shuriken.",
+    "icon": 13122301,
+    "sortId": 1
+  },
+  {
+    "id": "00C83AFE",
+    "skillId": 13122302,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Matatabi Resonance, dispels all Blindness he currently has. While having this Resonance, Naruto's Standard Attack causes Level 2 - Ignition. Lasts until the end of the round.",
+    "icon": 13122302,
+    "sortId": 2
+  },
+  {
+    "id": "00C83AFF",
+    "skillId": 13122303,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Isobu Resonance, dispels all Blindness he currently has. While having this Resonance, Naruto's Standard Attack causes Discouragement. Lasts until the end of the round.",
+    "icon": 13122303,
+    "sortId": 3
+  },
+  {
+    "id": "00C83B00",
+    "skillId": 13122304,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Son Goku Resonance, dispels all Blindness he currently has. While having this Resonance, Naruto's Standard Attack causes Inferno. Lasts until the end of the round.",
+    "icon": 13122304,
+    "sortId": 4
+  },
+  {
+    "id": "00C83B01",
+    "skillId": 13122305,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Kokuo Resonance, dispels all Debuffs (including Level 2 Debuffs) he currently has. While having this Resonance, Naruto's Standard Attack causes Defense Shatter. Lasts until the end of the round.",
+    "icon": 13122305,
+    "sortId": 5
+  },
+  {
+    "id": "00C83B02",
+    "skillId": 13122306,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Saiken Resonance, dispels all Blindness he currently has. While having this Resonance, Naruto's Standard Attack causes Melt. Lasts until the end of the round.",
+    "icon": 13122306,
+    "sortId": 6
+  },
+  {
+    "id": "00C83B03",
+    "skillId": 13122307,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Chomei Resonance, dispels all Blindness he currently has. While having this Resonance, Naruto's Standard Attack causes Level 2 - Blindness. Lasts until the end of the round.",
+    "icon": 13122307,
+    "sortId": 7
+  },
+  {
+    "id": "00C83B04",
+    "skillId": 13122308,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Gyuki Resonance, dispels all Blindness he currently has. While having this Resonance, whenever Naruto's Standard Attack causes Knockdown, he also causes Dye Ink to that unit. Lasts until the end of the round.",
+    "icon": 13122308,
+    "sortId": 8
+  },
+  {
+    "id": "00C83B05",
+    "skillId": 13122309,
+    "name": "Tailed Beast Bond",
+    "desc": "Naruto activates Kurama Resonance, dispels all Blindness he currently has. While having this Resonance, whenever Naruto's Standard Attack defeats a unit, he receives an Extra Standard Attack. Lasts until the end of the round.",
+    "icon": 13122309,
+    "sortId": 9
+  },
+  {
+    "id": "00C83B06",
+    "skillId": 13122310,
+    "name": "Kurama Power",
+    "desc": "Naruto randomly executes Kurama Claw, Kurama Tail or Kurama - Tailed Beast Bomb as his Standard Attack. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122310,
+    "sortId": 10
+  },
+  {
+    "id": "00C83B07",
+    "skillId": 13122311,
+    "name": "Kurama Power",
+    "desc": "Naruto randomly executes Kurama Claw, Kurama Tail or Kurama - Tailed Beast Bomb as his Standard Attack. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122311,
+    "sortId": 11
+  },
+  {
+    "id": "00C83B08",
+    "skillId": 13122312,
+    "name": "Kurama Power",
+    "desc": "Attacks all units in the opponent's lineup and causes Suppress Immunity until the end of the next round, causes Knockdown to a unit hit. This skill neglects Shields and has additonal Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122312,
+    "sortId": 12
+  },
+  {
+    "id": "00C83B09",
+    "skillId": 13122313,
+    "name": "Six Paths - Super Massive Rasen-Shuriken",
+    "desc": "Causes unavoidable damage neglecting Shields to all units in the opponent's field, causes Knockdown and Level 2 - Weakness for 1 round to the selected unit. If there's only 1 unit in the opponent's field, increase this skill's damage by 100%. If the selected unit is a Female unit, executes Sexy Jutsu - Reverse Harem Jutsu. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122313,
+    "sortId": 13
+  },
+  {
+    "id": "00C83B0A",
+    "skillId": 13122314,
+    "name": "Sexy Jutsu - Reverse Harem Jutsu",
+    "desc": "Causes Interruption, Level 2 - Slowness to the selected unit and reduces that unit's damage caused by 60% (not stackable), last until the end of the round. This skill is unavoidable.",
+    "icon": 13122314,
+    "sortId": 14
+  },
+  {
+    "id": "00C83B0B",
+    "skillId": 13122315,
+    "name": "Sage Art - Magnet Style Rasengan",
+    "desc": "Chases and Attacks a Low Floated or Knocked Down unit, causes Repulse and Magnet Seal. This skill is unavoidable. If Naruto has Shukaku Resonance, this skill additionally ignores a certain amount of Defense and Resistance and Magnet Seal becomes a Special Effect. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122315,
+    "sortId": 15
+  },
+  {
+    "id": "00C83B0C",
+    "skillId": 13122316,
+    "name": "Tailed Beast Repeated Rasen-Shuriken",
+    "desc": "Additional Skill: Causes unavoidable damage, Interruption and Suppress Super Armor for 1 round to all units in the opponent's field. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122316,
+    "sortId": 16
+  },
+  {
+    "id": "00C83B0D",
+    "skillId": 13122317,
+    "name": "Six Paths - Recovery",
+    "desc": "Dispels all Debuffs and resets all actions. Recovers 10% of Naruto's max HP.",
+    "icon": 13122317,
+    "sortId": 17
+  },
+  {
+    "id": "00C83B0E",
+    "skillId": 13122318,
+    "name": "Six Paths - Restoration",
+    "desc": "Dispels all Debuffs and resets all actions. Recovers 10% of Naruto's max HP.",
+    "icon": 13122318,
+    "sortId": 18
+  },
+  {
+    "id": "00C83B61",
+    "skillId": 13122401,
+    "name": "Evening Elephant - Five Steps",
+    "desc": "Causes unavoidable damage and 6 Combo to all units in the opponent's field, causes Knockdown to the selected unit. After executed, causes Evening Elephant - Immobility to Guy and the selected unit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122401,
+    "sortId": 1
+  },
+  {
+    "id": "00C83B62",
+    "skillId": 13122402,
+    "name": "Evening Elephant - Compressed Air Cannon",
+    "desc": "Attacks a random line of opponent units and causes Suppress Super Armor until the end of the round, causes Repulse to a unit hit, a chance of causing 20% splash damage to units 1 grid away from all units hit. This skill is unavoidable, ignores a certain amount of Defense and after executed, causes Evening Elephant - Restraint to Guy and all units hit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122402,
+    "sortId": 2
+  },
+  {
+    "id": "00C83B63",
+    "skillId": 13122403,
+    "name": "Evening Elephant - Compressed Air Cannon",
+    "desc": "Attacks a random line of opponent units and causes Suppress Super Armor until the end of the round, causes Repulse to a unit hit, a chance of causing 20% splash damage to units 1 grid away from all units hit. This skill is unavoidable, ignores a certain amount of Defense and after executed, causes Evening Elephant - Restraint to Guy and all units hit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122403,
+    "sortId": 3
+  },
+  {
+    "id": "00C83B64",
+    "skillId": 13122404,
+    "name": "Night Guy",
+    "desc": "Death Skill: Causes unavoidable damage to the line of units in front based on Guy's Physical ATK. Units defeated by this skill cannot be revived. After execution, Guy is defeated. Naruto Final Battle allows the single revival described in Youth's Last Shield. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122404,
+    "sortId": 4
+  },
+  {
+    "id": "00C83B65",
+    "skillId": 13122405,
+    "name": "Overflowing Youth - Steam of Blood",
+    "desc": "Before an action, consumes 10% HP to grant himself Level 2 Super Armor and high chances to evade Standard Attacks, last until the end of the round, and increase Guy's Physical ATK by 60% (stackable up to 10 times) and Initiative by 5% (stackable up to 3 times).",
+    "icon": 13122405,
+    "sortId": 5
+  },
+  {
+    "id": "00C83B66",
+    "skillId": 13122406,
+    "name": "Naruto's Lifeline",
+    "desc": "With Naruto Final Battle in the starting lineup, Guy revives once with 50% max HP. This rescue does not reset on revival and cannot bypass an enemy no-revival effect.",
+    "icon": 13122406,
+    "sortId": 6
+  },
+  {
+    "id": "00C83B67",
+    "skillId": 13122407,
+    "name": "Compressed Air Cannon - Splash",
+    "desc": "Has a chance to cause 20% Physical ATK splash damage to enemies one grid from units hit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122407,
+    "sortId": 7
   }
 ]

@@ -77,8 +77,8 @@ function endRound(ctx){const out=[];for(const u of ctx.teams.flat()){
   for(const [field,ratio] of [['madaraInfernoUntil',.4],['madaraIgnitionUntil',.3]])if(u[field]>=ctx.round){
     const source=field==='madaraInfernoUntil'?u.madaraInfernoSource:u.madaraIgnitionSource;
     const attack=source?skills.value(source,'atk'):0,defense=skills.value(u,'def');
-    const amount=Math.min(u.hp,Math.max(1,Math.round(attack*ratio*attack/Math.max(1,attack+defense))));
-    u.hp-=amount;out.push(pain.passive(u,[skills.hpRecord(u,amount)]));
+    let amount=Math.min(u.hp,Math.max(1,Math.round(attack*ratio*attack/Math.max(1,attack+defense))));
+    const redirected=[];amount=require('./guy-gate-combat').indirect(ctx,source,u,amount,redirected);u.hp-=amount;out.push(pain.passive(u,[...redirected,skills.hpRecord(u,amount)]));
   }
 }return out;}
 module.exports={config,isMadara,isClone,active,profile,prepareSummons,initialize,battleStart,factor,critical,pureImmune,beforeDamage,fatalProtected,onDamage,evade,targets,prepareMove,afterHit,triggers,endRound};

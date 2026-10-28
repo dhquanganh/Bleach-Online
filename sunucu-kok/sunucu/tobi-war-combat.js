@@ -65,7 +65,7 @@ function afterHit(ctx,u,selected,hit,move,frame){if(!isTobi(u))return;
 function roundRequests(ctx){const out=[];for(const u of ctx.teams.flat())if(isTobi(u)&&u.tobiSummitRound<=ctx.round){delete u.tobiSummitRound;if(u.hp>0&&!require('./naruto-combat').disabled(u))out.push({unit:u,move:{...config.summit}});}return out;}
 function triggers(ctx){return ctx.tobiQueue.splice(0).filter(r=>r.unit.hp>0&&!require('./naruto-combat').disabled(r.unit));}
 function revivals(ctx){const out=[];for(const u of ctx.teams.flat()){
- if(!isTobi(u)||u.hp>0||u.noRevive||u.itachiUnrevivable)continue;
+ if(require('./naruto-final-combat').blocksDeath(u)||!isTobi(u)||u.hp>0||u.noRevive||u.itachiUnrevivable)continue;
  const z=ctx.teams[u.camp].filter(v=>isZetsu(v)&&v.hp>0).sort((a,b)=>a.hp-b.hp||a.pos-b.pos)[0];if(!z)continue;
  const old=z.hp;z.hp=0;u.hp=Math.max(1,Math.round(u.maxHp*.4));require('./tsunade-combat').cleanseAll(u,[]);
  out.push({unit:u,records:[skills().hpRecord(z,old,false),skills().hpRecord(u,-u.hp,false)],animation:config.revival});

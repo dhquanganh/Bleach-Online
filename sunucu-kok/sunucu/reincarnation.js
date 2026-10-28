@@ -57,7 +57,7 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
   if(!ignoreDefensiveSkills&&proc(target,3,rng))damage=0;
   let absorbed=0;
   if(!ignoreDefensiveSkills&&!ignoreShield&&target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
-  const blockedHeal=(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
+  const blockedHeal=require('./guy-gate-combat').isGuy(target)||(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
   const heal=!ignoreDefensiveSkills&&!blockedHeal&&proc(target,6,rng);
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);
   damage=Math.min(Math.max(0,target.hp-(heal||nonfatal?1:0)),damage);

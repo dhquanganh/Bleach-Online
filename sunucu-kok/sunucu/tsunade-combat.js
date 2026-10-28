@@ -68,7 +68,7 @@ function cleanseOne(u,records){
  if(skills().removeOneDebuff(u,records))return;
  for(const k of negativeTimers)if(active(u,k)){delete u[k];if(k==='itachiParalyzedUntil')u.paralyzed=false;return;}
 }
-const negativeTimers=['infiniteParalysisUntil','minatoMarkUntil','minatoTriggerPenaltyWindow','minatoMysteryPenalty','minatoTriggerPenalty','madaraInfernoUntil','madaraIgnitionUntil','madaraCombustionUntil','madaraEngulfUntil','madaraMentalUntil','madaraShatterUntil','suppressedUntil','extremeChaosUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil','tsunadeMeltUntil','tsunadeCorrosionUntil','tsunadeWeakUntil','sasukeBlazeUntil','sasukeIgnitionUntil','sasukeParalysisUntil','sasukeFearUntil','sasukeElectrocutionUntil','sasukeDisorderUntil','sasukeStaticUntil','gaaraBlindUntil','gaaraCritLossUntil','gaaraDiscourageUntil','gaaraRagingUntil','painAfflictionUntil','painDisruptionUntil','painHorrorUntil','painInterruptedUntil','painChakraLimitUntil','hashWeakUntil','hashEnfeebleUntil','hashRootUntil','hashSealUntil','obitoTagUntil','itachiParalyzedUntil','mechaMysteryLockUntil'];
+const negativeTimers=['guyRestraintUntil','guyImmobileUntil','nfWeakUntil','nfDiscourageUntil','nfMagnetUntil','nfHaremUntil','nfSlowReflexUntil','nfBlindUntil','nfInkUntil','kakuzuDiscouragementUntil','infiniteParalysisUntil','minatoMarkUntil','minatoTriggerPenaltyWindow','minatoMysteryPenalty','minatoTriggerPenalty','madaraInfernoUntil','madaraIgnitionUntil','madaraCombustionUntil','madaraEngulfUntil','madaraMentalUntil','madaraShatterUntil','suppressedUntil','extremeChaosUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil','tsunadeMeltUntil','tsunadeCorrosionUntil','tsunadeWeakUntil','sasukeBlazeUntil','sasukeIgnitionUntil','sasukeParalysisUntil','sasukeFearUntil','sasukeElectrocutionUntil','sasukeDisorderUntil','sasukeStaticUntil','gaaraBlindUntil','gaaraCritLossUntil','gaaraDiscourageUntil','gaaraRagingUntil','painAfflictionUntil','painDisruptionUntil','painHorrorUntil','painInterruptedUntil','painChakraLimitUntil','hashWeakUntil','hashEnfeebleUntil','hashRootUntil','hashSealUntil','obitoTagUntil','itachiParalyzedUntil','mechaMysteryLockUntil'];
 function cleanseAll(u,records){skills().remove(u,true,records);for(const k of negativeTimers)delete u[k];delete u.tsunadeCorrosionStacks;}
 function heal(ctx,u,giant,records){
  const allies=ctx.teams[u.camp].filter(t=>t.hp>0).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp||a.pos-b.pos);
@@ -121,7 +121,7 @@ function afterHit(ctx,u,selected,hit,move,frame){
  frame.targets.push(...records);
 }
 function revivals(ctx){const out=[];for(const u of ctx.teams.flat()){
- if(!isTsunade(u)||u.hp>0||u.tsunadeRevived||u.noRevive||u.itachiUnrevivable)continue;
+ if(require('./naruto-final-combat').blocksDeath(u)||!isTsunade(u)||u.hp>0||u.tsunadeRevived||u.noRevive||u.itachiUnrevivable)continue;
  u.tsunadeRevived=true;u.hp=Math.max(1,u.maxHp);const records=[];cleanseAll(u,records);
  records.push(skills().hpRecord(u,-u.hp,false));label(records,u,6,100);
  out.push({unit:u,records,animation:config.revival});

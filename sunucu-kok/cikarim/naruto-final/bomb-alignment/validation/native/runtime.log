@@ -1,0 +1,43 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=37
+TEXTURE additional frames=86
+TEXTURE bond4 frames=43
+TEXTURE entry frames=23
+TEXTURE claw frames=59
+TEXTURE final frames=292
+TEXTURE bond1 frames=43
+TEXTURE bond6 frames=43
+TEXTURE recovery frames=38
+TEXTURE bond3 frames=43
+TEXTURE bond8 frames=43
+TEXTURE dead frames=20
+TEXTURE tail frames=49
+TEXTURE chase frames=48
+TEXTURE bond5 frames=43
+TEXTURE bond2 frames=43
+TEXTURE restoration frames=38
+TEXTURE harem frames=160
+TEXTURE bond7 frames=43
+TEXTURE bond9 frames=43
+TEXTURE bomb frames=130
+CASE 13122313 camp=0
+SNAPSHOT CASE-final-camp-0-frame-4
+SNAPSHOT CASE-final-camp-0-frame-40
+SNAPSHOT CASE-final-camp-0-frame-70
+SNAPSHOT CASE-final-camp-0-frame-90
+SNAPSHOT CASE-final-camp-0-frame-116
+SNAPSHOT CASE-final-camp-0-frame-150
+SNAPSHOT CASE-final-camp-0-frame-175
+SNAPSHOT CASE-final-camp-0-frame-204
+SNAPSHOT CASE-final-camp-0-frame-246
+CASE 13122313 camp=1
+SNAPSHOT CASE-final-camp-1-frame-4
+SNAPSHOT CASE-final-camp-1-frame-40
+SNAPSHOT CASE-final-camp-1-frame-70
+SNAPSHOT CASE-final-camp-1-frame-90
+SNAPSHOT CASE-final-camp-1-frame-116
+SNAPSHOT CASE-final-camp-1-frame-150
+SNAPSHOT CASE-final-camp-1-frame-175
+SNAPSHOT CASE-final-camp-1-frame-204
+SNAPSHOT CASE-final-camp-1-frame-246
+DONE Naruto Final Battle native component; remaining=0

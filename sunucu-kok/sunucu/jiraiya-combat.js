@@ -71,7 +71,7 @@ function noteDeaths(ctx){
 }
 function revivals(ctx){
   const revived=[];
-  for(const u of ctx.teams.flat())if(isJiraiya(u)&&!u.noRevive&&!u.itachiUnrevivable&&u.hp<=0&&u.jiraiyaDeathCount!=null&&
+  for(const u of ctx.teams.flat())if(isJiraiya(u)&&!require('./naruto-final-combat').blocksDeath(u)&&!u.noRevive&&!u.itachiUnrevivable&&u.hp<=0&&u.jiraiyaDeathCount!=null&&
       ctx.mysteryCounts[u.camp]-u.jiraiyaDeathCount>=3){
     u.hp=Math.max(1,Math.round(u.maxHp*.3));
     // Revival preserves all cooldowns and cannot grant another action this round.

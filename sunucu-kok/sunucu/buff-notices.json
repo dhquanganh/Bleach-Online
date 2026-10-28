@@ -1,0 +1,21 @@
+{
+  "baseId": 20100000,
+  "durationMs": 4000,
+  "stats": {
+    "atk": "Physical ATK UP", "magicAtk": "Magic ATK UP", "def": "Physical DEF UP", "resistance": "Resistance UP", "speed": "Speed UP",
+    "critRate": "Critical Rate UP", "critDamage": "Critical Damage UP", "hitRate": "Accuracy UP", "dodgeRate": "Dodge UP", "blockRate": "Block UP",
+    "punchRate": "Combo Rate UP", "wreckRate": "Defense Break UP", "helpRate": "Aid UP", "damageBonus": "Damage UP", "damageReduction": "Damage Reduction UP",
+    "recoverRate": "Healing Received UP", "ignoreDefense": "Armor Penetration UP", "leechRate": "Life Steal UP", "controlResist": "Control Resistance UP",
+    "silenceResist": "Silence Resistance UP", "furyResist": "Fury Resistance UP", "furyEffect": "Fury Effect UP", "maxHp": "Max HP UP"
+  },
+  "states": {
+    "immuneDebuffs": "Debuff Immunity", "immuneControl": "Control Immunity", "invincible": "Invincibility", "reflect": "Reflection", "immuneHealBlock": "Healing Block Immunity",
+    "superArmor": "Super Armor", "shield": "Shield UP", "regeneration": "Regeneration", "standardDamage": "Standard Attack Damage UP", "chaseDamage": "Chase Damage UP",
+    "extraStandard": "Extra Standard Attack", "chaseBonus": "Extra Chase", "freeMystery": "Free Mystery", "interruptImmune": "Interruption Immunity",
+    "madaraBurst": "Chakra Burst", "hashBurst": "Chakra Burst", "mechaBeast": "Tailed Beast Mode", "minatoProwess": "Prowess", "excited": "Excited",
+    "shukaku": "Shukaku Resonance", "matatabi": "Matatabi Resonance", "isobu": "Isobu Resonance", "sonGoku": "Son Goku Resonance", "kokuo": "Kokuo Resonance",
+    "saiken": "Saiken Resonance", "chomei": "Chomei Resonance", "gyuki": "Gyuki Resonance", "kurama": "Kurama Resonance",
+    "triggerDamage": "Trigger Damage UP", "armor2": "Level 2 Super Armor", "advancedImmunity": "Advanced Immunity", "explosive": "Explosive Mode",
+    "triggerEvasion": "Trigger Evasion UP", "unavoidable": "Unavoidable Attacks", "hiding": "Hidden", "mysteryCostReduction": "Mystery Chakra Cost DOWN", "mysteryCooldown": "Mystery Cooldown DOWN", "actionsReset": "Actions Restored", "chakraLimit": "Chakra Limit UP"
+  }
+}

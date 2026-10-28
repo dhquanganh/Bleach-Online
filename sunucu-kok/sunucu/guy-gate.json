@@ -1,0 +1,172 @@
+{
+  "heroId": 11121007,
+  "name": "Guy [Gate of Death]",
+  "assess": "SSS",
+  "quality": 7,
+  "tags": [
+    28,
+    52,
+    1,
+    57
+  ],
+  "guardRounds": 2,
+  "defenseBonus": 2,
+  "reviveHpRatio": 0.5,
+  "evadeChance": 0.6,
+  "hpCostRatio": 0.1,
+  "splashChance": 0.5,
+  "splashRatio": 0.2,
+  "balanceNote": "All direct, splash and Night Guy damage use buffed Physical ATK against Physical DEF. HP costs remain max-HP costs. Mystery hits all enemies as requested. No independent summoned unit is defined by this kit. Source gives no damage coefficients, splash probability or evasion percentage; the configured coefficients, 50% splash chance and 60% evasion chance are balance values.",
+  "mystery": {
+    "id": 13122401,
+    "sourceId": 21001947,
+    "name": "Evening Elephant - Five Steps",
+    "description": "Causes unavoidable damage and 6 Combo to all units in the opponent's field, causes Knockdown to the selected unit. After executed, causes Evening Elephant - Immobility to Guy and the selected unit.",
+    "guyMove": "mystery",
+    "multiplier": 1.5,
+    "combo": 6,
+    "target": "all",
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 1,
+    "unavoidable": true,
+    "pureTaijutsu": true,
+    "prompt": true,
+    "consumesPrimary": false,
+    "battlefieldCooldown": 1,
+    "chakraCost": 0,
+    "causes": "knockdown"
+  },
+  "standard": {
+    "id": 13122402,
+    "sourceId": 21001943,
+    "name": "Evening Elephant - Compressed Air Cannon",
+    "description": "Attacks a random line of opponent units and causes Suppress Super Armor until the end of the round, causes Repulse to a unit hit, a chance of causing 20% splash damage to units 1 grid away from all units hit. This skill is unavoidable, ignores a certain amount of Defense and after executed, causes Evening Elephant - Restraint to Guy and all units hit.",
+    "guyMove": "standard",
+    "multiplier": 0.95,
+    "combo": 3,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "pureTaijutsu": true,
+    "causes": "repulse",
+    "ignoreDefense": 0.2
+  },
+  "standard2": {
+    "id": 13122403,
+    "sourceId": 21001941,
+    "name": "Evening Elephant - Compressed Air Cannon",
+    "description": "Attacks a random line of opponent units and causes Suppress Super Armor until the end of the round, causes Repulse to a unit hit, a chance of causing 20% splash damage to units 1 grid away from all units hit. This skill is unavoidable, ignores a certain amount of Defense and after executed, causes Evening Elephant - Restraint to Guy and all units hit.",
+    "guyMove": "standard2",
+    "multiplier": 0.95,
+    "combo": 3,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "pureTaijutsu": true,
+    "causes": "repulse",
+    "ignoreDefense": 0.2
+  },
+  "night": {
+    "id": 13122404,
+    "sourceId": 21001948,
+    "name": "Night Guy",
+    "description": "Death Skill: Causes unavoidable damage to the line of units in front based on Guy's Physical ATK. Units defeated by this skill cannot be revived. After execution, Guy is defeated. Naruto Final Battle allows the single revival described in Youth's Last Shield.",
+    "guyMove": "night",
+    "multiplier": 3,
+    "combo": 10,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "pureTaijutsu": true,
+    "deathSkill": true,
+    "additional": true
+  },
+  "steam": {
+    "id": 13122405,
+    "sourceId": 21001945,
+    "name": "Overflowing Youth - Steam of Blood",
+    "description": "Before an action, consumes 10% HP to grant himself Level 2 Super Armor and high chances to evade Standard Attacks, last until the end of the round, and increase Guy's Physical ATK by 60% (stackable up to 10 times) and Initiative by 5% (stackable up to 3 times).",
+    "guyMove": "steam",
+    "multiplier": 0,
+    "combo": 0,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "support": true,
+    "trigger": true
+  },
+  "revive": {
+    "id": 13122406,
+    "sourceId": 21001946,
+    "name": "Naruto's Lifeline",
+    "description": "With Naruto Final Battle in the starting lineup, Guy revives once with 50% max HP. This rescue does not reset on revival and cannot bypass an enemy no-revival effect.",
+    "guyMove": "revive",
+    "multiplier": 0,
+    "combo": 0,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "support": true
+  },
+  "splash": {
+    "id": 13122407,
+    "sourceId": 21001943,
+    "name": "Compressed Air Cannon - Splash",
+    "description": "Has a chance to cause 20% Physical ATK splash damage to enemies one grid from units hit.",
+    "guyMove": "splash",
+    "multiplier": 0.19,
+    "combo": 1,
+    "target": 1,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0,
+    "unavoidable": true,
+    "pureTaijutsu": true,
+    "causes": null,
+    "ignoreDefense": 0.2,
+    "additional": true
+  },
+  "skillKeys": [
+    "mystery",
+    "standard",
+    "standard2",
+    "night",
+    "steam",
+    "revive",
+    "splash"
+  ],
+  "chases": [],
+  "passives": [
+    {
+      "name": "Gate of Death - Night Guy",
+      "description": "Whenever Guy's Mystery skill is interrupted, reduces his Mystery Cooldown to 0. Whenever Guy suffers fatal damage, executes Death Skill: Night Guy, then he becomes defeated and cannot be revived. Exception: with Naruto Uzumaki [The Final Battle] in his starting lineup, Guy can revive once with 50% max HP after Night Guy. Revival does not reset this allowance."
+    },
+    {
+      "name": "Overflowing Youth - Steam of Blood",
+      "description": "Before an action, consumes 10% HP to grant himself Level 2 Super Armor and high chances to evade Standard Attacks, last until the end of the round, and increase Guy's Physical ATK by 60% (stackable up to 10 times) and Initiative by 5% (stackable up to 3 times)."
+    },
+    {
+      "name": "Eight Inner Gates - Gate of Death",
+      "description": "Guy is immune to Debuffs and cannot suffer from Suppress Immunity or receive Healings. Whenever he executes a Mystery, consumes 10% HP. For every 1% HP Guy currently loses, increase your lineup's Physical ATK by 2% and Critical Rate by 1%."
+    },
+    {
+      "name": "Youth's Last Shield",
+      "description": "During rounds 1 and 2, Guy intercepts all incoming damage aimed at his allies and gains 200% Physical DEF. Damage is mitigated using Guy's Physical DEF. If multiple Guys are present, only one intercepts each hit. With Naruto Uzumaki [The Final Battle] in the starting lineup, Guy can revive once with 50% max HP, overriding his own Night Guy revival prohibition. Enemy effects that forbid revival still prevent this rescue."
+    },
+    {
+      "name": "Evening Elephant Statuses",
+      "description": "Evening Elephant - Restraint: Level 2 Debuff; cannot execute Standard Attacks until round end. Evening Elephant - Immobility: Level 2 Debuff; cannot execute most actions until round end. Guy receives his own Elephant status even while immune to external Debuffs. Level 2 Super Armor prevents Low Float, High Float, Repulse and Knockdown and lower-level Suppress Super Armor. If Night Guy is disabled, fatal damage leaves Guy at 1 HP until he is defeated at round end. The Naruto rescue is an external revival and is still limited to one use. HP costs stop at 1 HP and do not count as attack damage."
+    }
+  ]
+}

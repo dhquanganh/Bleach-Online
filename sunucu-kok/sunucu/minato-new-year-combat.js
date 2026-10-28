@@ -48,7 +48,7 @@ function evade(ctx,u,move,attacker,chase=false){if(!isMinato(u)&&!isClone(u)||u.
  evaded(ctx,u,attacker);return true;
 }
 function prepareMove(ctx,u,move,selected){if(!move)return move;
- if(trigger(move)){triggerExecuted(ctx,u);move={...move,minatoTriggerCredited:true};}
+ if(trigger(move)){triggerExecuted(ctx,u,move);move={...move,minatoTriggerCredited:true};}
  if(marked(ctx,u)){const attributes=tags(u);if(move.prompt&&attributes.includes(18)||trigger(move)&&attributes.includes(48))move={...move,unavoidable:false};}
  if(!move.minatoMove)return move;
  let multiplier=move.multiplier,critBonus=move.critBonus||0;
@@ -93,9 +93,9 @@ function afterHit(ctx,u,selected,hit,move,frame){if(!move)return;
   for(const v of hit)if(v.hp>0)v.armorSuppressedUntil=ctx.round;
   if(isClone(u)){const owner=u.minatoOwner;if(owner?.hp>0){resetRound(ctx,owner);if(owner.minatoResets<config.maxMysteryResetsPerRound){owner.minatoResets++;owner.mysteryReadyRound=ctx.round;}}}
  }
- if(trigger(move)&&!move.minatoTriggerCredited)triggerExecuted(ctx,u);
+ if(trigger(move)&&!move.minatoTriggerCredited)triggerExecuted(ctx,u,move);
 }
-function triggerExecuted(ctx,u){if(!ctx?.teams||!u)return;for(const owner of owners(ctx,u.camp)){
+function triggerExecuted(ctx,u,move=null){if(!ctx?.teams||!u)return;require('./naruto-final-combat').observe(ctx,u,move||{trigger:true});for(const owner of owners(ctx,u.camp)){
  resetRound({round:Math.max(1,ctx.round)},owner);if(owner.minatoTriggerBuffs<config.maxTeamTriggerBuffsPerRound){owner.minatoTriggerBuffs++;owner.minatoAttackStacks++;}
 }}
 function triggers(ctx){return ctx.minatoQueue.splice(0).filter(r=>r.unit.hp>0);}

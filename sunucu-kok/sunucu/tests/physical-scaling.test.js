@@ -14,6 +14,8 @@ const sets=[
   {hero:hash.config.heroId,moves:[...['mystery','burstMystery','standard','sword','severe','burstSevere','additional'].map(k=>hash.config[k]),...hash.config.chases]},
 ];
 sets.push({hero:11121005,moves:Object.values(require('../madara-infinite.json')).filter(m=>m&&typeof m==='object'&&m.multiplier>0)});
+sets.push({hero:11121006,moves:Object.values(require('../naruto-final.json')).filter(m=>m&&typeof m==='object'&&m.multiplier>0)});
+sets.push({hero:11121007,moves:Object.values(require('../guy-gate.json')).filter(m=>m&&typeof m==='object'&&m.multiplier>0)});
 function damage(hero,move,camp,overrides={},targetOverrides={}){
   const actor={...unit(hero,camp),...overrides},target={...unit(200,1-camp),...targetOverrides};
   const teams=camp?[[target],[actor]]:[[actor],[target]],ctx=naruto.create(teams,{random:()=>.5});naruto.startRound(ctx,1);

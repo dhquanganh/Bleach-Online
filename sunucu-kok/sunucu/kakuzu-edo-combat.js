@@ -30,7 +30,7 @@ function summon(ctx,u){
 }
 function battleStart(ctx){const out=[];for(const u of ctx.teams.flat().filter(isKakuzu))if(u.hp>0)out.push(...summon(ctx,u));return out;}
 function roundStart(ctx){const out=[];for(const u of ctx.teams.flat().filter(isKakuzu)){
-  if(u.hp>0||!canRevive(u)){u.kakuzuReviveRound=0;continue;}
+  if(u.hp>0||!canRevive(u)||require('./naruto-final-combat').blocksDeath(u)){u.kakuzuReviveRound=0;continue;}
   if(!u.kakuzuReviveRound||u.kakuzuReviveRound>ctx.round)continue;
   u.hp=Math.max(1,Math.round(u.maxHp*.25));u.kakuzuReviveRound=0;u.mysteryReadyRound=ctx.round;u.kakuzuAttackStacks=0;
   require('./tsunade-combat').cleanseAll(u,[]);
@@ -39,7 +39,7 @@ function roundStart(ctx){const out=[];for(const u of ctx.teams.flat().filter(isK
   out.push(pain.passive(u,[skills.hpRecord(u,-u.hp,false)]),pain.visual(u,config.reincarnation));
   out.push(...summon(ctx,u));
 }for(const u of ctx.teams.flat())if(u.kakuzuParalysisUntil&&u.kakuzuParalysisUntil<ctx.round){u.paralyzed=false;delete u.kakuzuParalysisUntil;}return out;}
-function noteDeaths(ctx){for(const u of ctx.teams.flat().filter(isKakuzu)){if(u.hp>0||!canRevive(u)){u.kakuzuReviveRound=0;continue;}if(!u.kakuzuReviveRound)u.kakuzuReviveRound=ctx.round+config.reincarnationDelayRounds;}}
+function noteDeaths(ctx){for(const u of ctx.teams.flat().filter(isKakuzu)){if(u.hp>0||!canRevive(u)||require('./naruto-final-combat').blocksDeath(u)){u.kakuzuReviveRound=0;continue;}if(!u.kakuzuReviveRound)u.kakuzuReviveRound=ctx.round+config.reincarnationDelayRounds;}}
 function selectStandard(ctx,u,move){return isClone(u)?config.cloneStandard:move;}
 function targets(move,selected,enemies,ctx){if(!move?.kakuzuAdditional&&!move?.kakuzuStandard&&!move?.kakuzuCloneStandard)return null;
   const units=enemies.filter(alive);if(!units.length)return [];

@@ -1,0 +1,41 @@
+      private var FBuffNoticeEntries:Object={};
+      private var FBuffNoticeLabel:TextField=null;
+      private var FBuffNoticeStarted:int=0;
+      private function ClearBuffNoticeText(event:Event=null):void {
+         if(event!=null && event.target!=FBuffNoticeLabel)return;
+         if(FBuffNoticeLabel!=null){
+            FBuffNoticeLabel.removeEventListener(Event.ENTER_FRAME,UpdateBuffNoticeText);
+            FBuffNoticeLabel.removeEventListener(Event.REMOVED_FROM_STAGE,ClearBuffNoticeText);
+            if(FBuffNoticeLabel.parent!=null)FBuffNoticeLabel.parent.removeChild(FBuffNoticeLabel);
+         }
+         FBuffNoticeLabel=null;FBuffNoticeEntries={};
+      }
+      private function ShowBuffNoticeText(marker:uint):void {
+         var messages:Object=JSON.parse(__MESSAGES__);var message:String=messages[String(marker)];
+         if(message==null || parent==null || parent.stage==null)return;
+         FBuffNoticeEntries[String(marker)]={message:message,expires:getTimer()+4000};
+         if(FBuffNoticeLabel==null){
+            FBuffNoticeLabel=new TextField();FBuffNoticeLabel.name="characterBuffNotices_"+Camp+"_"+Pos;
+            FBuffNoticeLabel.mouseEnabled=false;FBuffNoticeLabel.selectable=false;FBuffNoticeLabel.multiline=true;
+            FBuffNoticeLabel.defaultTextFormat=new TextFormat("Arial",13,12320574,true,null,null,null,null,"center");
+            FBuffNoticeLabel.width=300;FBuffNoticeLabel.filters=[new GlowFilter(0,1,4,4,5)];
+            FBuffNoticeStarted=getTimer();parent.addChild(FBuffNoticeLabel);
+            FBuffNoticeLabel.addEventListener(Event.ENTER_FRAME,UpdateBuffNoticeText);
+            FBuffNoticeLabel.addEventListener(Event.REMOVED_FROM_STAGE,ClearBuffNoticeText);
+         }
+         UpdateBuffNoticeText(null);
+      }
+      private function UpdateBuffNoticeText(event:Event=null):void {
+         if(FBuffNoticeLabel==null)return;
+         var host:DisplayObjectContainer=FBuffNoticeLabel.parent;
+         if(host==null || host.stage==null || parent!=host){ClearBuffNoticeText();return;}
+         var now:int=getTimer();var keys:Array=[];var key:String;
+         for(key in FBuffNoticeEntries){if(now>=int(FBuffNoticeEntries[key].expires))delete FBuffNoticeEntries[key];else keys.push(key);}
+         if(keys.length==0){ClearBuffNoticeText();return;}
+         keys.sort(Array.NUMERIC);var lines:Array=[];
+         for each(key in keys)lines.push(String(FBuffNoticeEntries[key].message));
+         FBuffNoticeLabel.text=lines.join("\n");FBuffNoticeLabel.height=FBuffNoticeLabel.textHeight+8;
+         var anchor:Point=host.globalToLocal(localToGlobal(new Point(0,-160)));
+         FBuffNoticeLabel.x=anchor.x-150;
+         FBuffNoticeLabel.y=Math.max(4,anchor.y-FBuffNoticeLabel.height-Math.min(8,(now-FBuffNoticeStarted)/300));
+      }

@@ -1,0 +1,58 @@
+      private function PlayNarutoFinalNative(effect:String,symbol:String,target:TRole=null,startFrame:int=0) : void {
+         LoadNarutoFinalNative(effect);
+         var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         var backdrop:Sprite=null;
+         if(FSkillId==13122313 && symbol=="texie"){
+            backdrop=new Sprite();backdrop.name="narutoFinalCinematicBackdrop";backdrop.mouseEnabled=false;
+            var corner:Point=host.globalToLocal(stage.localToGlobal(new Point()));
+            var farCorner:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
+            backdrop.graphics.beginFill(0x101014,1);backdrop.graphics.drawRect(corner.x,corner.y,farCorner.x-corner.x,farCorner.y-corner.y);backdrop.graphics.endFill();host.addChild(backdrop);FNarutoFinalLayers.push(backdrop);
+         }
+         var layer:Sprite=new Sprite();layer.name="madaraNarutoFinalSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         // The cinematic light textures use a black matte; composite them transparently.
+         if(symbol=="texie" && FSkillId!=13122313 || FSkillId==13122313 && symbol!="texie")layer.blendMode="screen";
+         if(symbol=="xia" && parent==host)host.addChildAt(layer,host.getChildIndex(this));else host.addChild(layer);
+         FNarutoFinalLayers.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:uint=FSkillId;var last:int=-1;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null && event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(backdrop!=null&&backdrop.parent!=null)backdrop.parent.removeChild(backdrop);if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK && caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
+            var state:Object=FNarutoFinalNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
+            if(skill==13122313 && symbol!="texie" && caster.FFrameIndex<150){layer.visible=false;return;}
+            if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            if(caster.FFrameIndex<startFrame){layer.visible=false;return;}
+            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex-startFrame)*rate/25)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
+            var offset:Point=caster.NarutoFinalContactOffset();var originX:Number=70*0.84;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point(originX+offset.x,offset.y)));
+            var facing:Number=caster.scaleX;
+            if(target!=null){at=host.globalToLocal(target.localToGlobal(new Point()));facing=target.scaleX;}
+            layer.x=at.x;layer.y=at.y;layer.scaleX=facing<0?-0.84:0.84;layer.scaleY=0.84;
+            if(symbol=="texie"){
+               var bounds:Rectangle=clip.getBounds(clip);if(bounds.width>1 && bounds.height>1){
+                  if(skill==13122313 && symbol=="texie"){
+                     var sampleScale:Number=256/Math.max(bounds.width,bounds.height);
+                     var sample:BitmapData=new BitmapData(Math.max(1,Math.ceil(bounds.width*sampleScale)),Math.max(1,Math.ceil(bounds.height*sampleScale)),true,0);
+                     sample.draw(clip,new Matrix(sampleScale,0,0,sampleScale,-bounds.x*sampleScale,-bounds.y*sampleScale));
+                     var left:int=sample.width;var right:int=-1;var top:int=sample.height;var bottom:int=-1;
+                     for(var sy:int=0;sy<sample.height;sy++)for(var sx:int=0;sx<sample.width;sx++){
+                        var pixel:uint=sample.getPixel32(sx,sy);var red:int=(pixel>>>16)&255;var green:int=(pixel>>>8)&255;var blue:int=pixel&255;
+                        if((pixel>>>24)>150 && red>160 && green>90 && blue<green*.85){left=Math.min(left,sx);right=Math.max(right,sx);top=Math.min(top,sy);bottom=Math.max(bottom,sy);}
+                     }
+                     sample.dispose();
+                     if(right>left+3 && bottom>top+3){
+                        bounds=new Rectangle(bounds.x+left/sampleScale,bounds.y+top/sampleScale,(right-left+1)/sampleScale,(bottom-top+1)/sampleScale);
+                        bounds.inflate(bounds.width*.08,bounds.height*.08);
+                     }
+                  }
+                  // Fit the original cut-in uniformly to the battle viewport.
+                  var fit:Number=skill==13122313?(symbol=="texie"?Math.min(host.stage.stageWidth/bounds.width,host.stage.stageHeight/bounds.height):Math.max(host.stage.stageWidth/bounds.width,host.stage.stageHeight/bounds.height)):host.stage.stageWidth/bounds.width;
+                  layer.scaleX=fit;layer.scaleY=fit;
+                  layer.x=host.stage.stageWidth*.5-(bounds.x+bounds.width*.5)*fit;
+                  layer.y=host.stage.stageHeight*(skill==13122313 ? 0.5 : 0.4)-(bounds.y+bounds.height*.5)*fit;
+               }
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

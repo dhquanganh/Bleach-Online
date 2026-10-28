@@ -1,0 +1,21 @@
+{
+  "version": "2026102810",
+  "sha256": "4b1a3be54947155b47aeda03d4923bb2f9f576718f8ca078bd14d6bf706be999",
+  "probe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 2,
+    "restores": 0,
+    "stableRestores": 0,
+    "deathHolds": 0,
+    "assetPlays": 0,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  },
+  "unchangedMethods": 255,
+  "changedMethod": "PlayNarutoFinalNative"
+}

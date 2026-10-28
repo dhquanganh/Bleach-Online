@@ -1,0 +1,6 @@
+from pathlib import Path
+R=Path(__file__).resolve().parents[1];B=R/'sunucu-kok/cikarim/naruto-final';T=B.parent/'madara-infinite'
+s=(T/'release.py').read_text().replace("VERSION='2026102805'","VERSION='2026102808'").replace("active=='2026102804'","active=='2026102807'").replace("probe['cases']==28","probe['cases']==40").replace('11121005','11121006').replace('14131005','14131006').replace('14141005','14141006').replace('131222','131223').replace('13623201','13623301').replace('range(13122301,13122313)','range(13122301,13122319)').replace("['TRole']>=235","['TRole']>=242")
+(B/'release.py').write_text(s)
+s=(R/'tools/verify-madara-infinite-release.py').read_text().replace('madara-infinite','naruto-final').replace('Madara_Infinite_Tsukuyomi_Full','Naruto_The_Final_Battle_Full').replace('2026102805','2026102808').replace('11121005','11121006').replace('13221005','13221006').replace('131222','131223').replace('range(13122301,13122313)','range(13122301,13122319)').replace('count==37','count==49').replace('[26,52,1,13,14,31,46,48,58]','[27,52,1,13,14,47,57,58]').replace("glob('yuehziyan*.swf')","glob('MIngrenZyzz*.swf')").replace("'tagIcons':9,'nativeEffects':14","'tagIcons':8,'nativeEffects':19")
+(R/'tools/verify-naruto-final-release.py').write_text(s)

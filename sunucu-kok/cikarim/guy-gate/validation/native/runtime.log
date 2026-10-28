@@ -1,0 +1,94 @@
+BOOT native Flash shared VFX component probe
+TEXTURE standard2 frames=65
+TEXTURE dead frames=15
+TEXTURE idle frames=50
+TEXTURE standard frames=65
+TEXTURE steam frames=59
+TEXTURE splash frames=3
+TEXTURE entry frames=16
+TEXTURE night frames=90
+TEXTURE mystery frames=147
+TEXTURE revive frames=14
+CASE 13122401 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13122402 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-26
+SNAPSHOT CASE-standard-camp-0-frame-45
+CASE 13122403 camp=0
+SNAPSHOT CASE-standard2-camp-0-frame-4
+SNAPSHOT CASE-standard2-camp-0-frame-26
+SNAPSHOT CASE-standard2-camp-0-frame-45
+CASE 13122404 camp=0
+SNAPSHOT CASE-night-camp-0-frame-4
+SNAPSHOT CASE-night-camp-0-frame-36
+SNAPSHOT CASE-night-camp-0-frame-62
+CASE 13122405 camp=0
+SNAPSHOT CASE-steam-camp-0-frame-4
+SNAPSHOT CASE-steam-camp-0-frame-23
+SNAPSHOT CASE-steam-camp-0-frame-41
+CASE 13122406 camp=0
+SNAPSHOT CASE-revive-camp-0-frame-4
+SNAPSHOT CASE-revive-camp-0-frame-5
+SNAPSHOT CASE-revive-camp-0-frame-9
+CASE 13122407 camp=0
+SNAPSHOT CASE-splash-camp-0-frame-1
+SNAPSHOT CASE-splash-camp-0-frame-2
+SNAPSHOT CASE-splash-camp-0-frame-4
+CASE 0 camp=0
+SNAPSHOT CASE-entry-camp-0-frame-4
+SNAPSHOT CASE-entry-camp-0-frame-6
+SNAPSHOT CASE-entry-camp-0-frame-11
+CASE 0 camp=0
+SNAPSHOT CASE-dead-camp-0-frame-4
+SNAPSHOT CASE-dead-camp-0-frame-6
+SNAPSHOT CASE-dead-camp-0-frame-10
+CASE 13122401 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+CASE 13122402 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-26
+SNAPSHOT CASE-standard-camp-1-frame-45
+CASE 13122403 camp=1
+SNAPSHOT CASE-standard2-camp-1-frame-4
+SNAPSHOT CASE-standard2-camp-1-frame-26
+SNAPSHOT CASE-standard2-camp-1-frame-45
+CASE 13122404 camp=1
+SNAPSHOT CASE-night-camp-1-frame-4
+SNAPSHOT CASE-night-camp-1-frame-36
+SNAPSHOT CASE-night-camp-1-frame-62
+CASE 13122405 camp=1
+SNAPSHOT CASE-steam-camp-1-frame-4
+SNAPSHOT CASE-steam-camp-1-frame-23
+SNAPSHOT CASE-steam-camp-1-frame-41
+CASE 13122406 camp=1
+SNAPSHOT CASE-revive-camp-1-frame-4
+SNAPSHOT CASE-revive-camp-1-frame-5
+SNAPSHOT CASE-revive-camp-1-frame-9
+CASE 13122407 camp=1
+SNAPSHOT CASE-splash-camp-1-frame-1
+SNAPSHOT CASE-splash-camp-1-frame-2
+SNAPSHOT CASE-splash-camp-1-frame-4
+CASE 0 camp=1
+SNAPSHOT CASE-entry-camp-1-frame-4
+SNAPSHOT CASE-entry-camp-1-frame-6
+SNAPSHOT CASE-entry-camp-1-frame-11
+CASE 0 camp=1
+SNAPSHOT CASE-dead-camp-1-frame-4
+SNAPSHOT CASE-dead-camp-1-frame-6
+SNAPSHOT CASE-dead-camp-1-frame-10
+DONE Guy Gate of Death native component; remaining=0

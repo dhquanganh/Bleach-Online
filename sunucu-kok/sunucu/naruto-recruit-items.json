@@ -110,5 +110,19 @@
     "fragmentId": 14131005,
     "picture": 16228157,
     "name": "Madara [Infinite Tsukuyomi] Recruit Token"
+  },
+  {
+    "heroId": 11121006,
+    "itemId": 14141006,
+    "fragmentId": 14131006,
+    "picture": 16228158,
+    "name": "Naruto [The Final Battle] Recruit Token"
+  },
+  {
+    "heroId": 11121007,
+    "itemId": 14141007,
+    "fragmentId": 14131007,
+    "picture": 16228159,
+    "name": "Guy [Gate of Death] Recruit Token"
   }
 ]

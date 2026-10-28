@@ -1,0 +1,9 @@
+CASE buff role=0
+CASE buff role=1
+CASE buff role=2
+CASE buff role=3
+CASE buff role=4
+CASE buff role=5
+HOLD_OK 3000ms
+EXPIRY_OK refreshed role remains
+DONE generic buff notice duration/refresh/mirror/reset; remaining=0

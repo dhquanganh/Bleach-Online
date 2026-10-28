@@ -1,0 +1,183 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=37
+TEXTURE additional frames=86
+TEXTURE bond4 frames=43
+TEXTURE entry frames=23
+TEXTURE tail frames=49
+TEXTURE final frames=292
+TEXTURE bond2 frames=43
+TEXTURE bond6 frames=43
+TEXTURE bond3 frames=43
+TEXTURE recovery frames=38
+TEXTURE bond8 frames=43
+TEXTURE dead frames=20
+TEXTURE bomb frames=130
+TEXTURE chase frames=48
+TEXTURE bond5 frames=43
+TEXTURE claw frames=59
+TEXTURE restoration frames=38
+TEXTURE harem frames=160
+TEXTURE bond1 frames=43
+TEXTURE bond7 frames=43
+TEXTURE bond9 frames=43
+CASE 13122301 camp=0
+SNAPSHOT CASE-bond1-camp-0-frame-4
+SNAPSHOT CASE-bond1-camp-0-frame-17
+SNAPSHOT CASE-bond1-camp-0-frame-30
+CASE 13122302 camp=0
+SNAPSHOT CASE-bond2-camp-0-frame-4
+SNAPSHOT CASE-bond2-camp-0-frame-17
+SNAPSHOT CASE-bond2-camp-0-frame-30
+CASE 13122303 camp=0
+SNAPSHOT CASE-bond3-camp-0-frame-4
+SNAPSHOT CASE-bond3-camp-0-frame-17
+SNAPSHOT CASE-bond3-camp-0-frame-30
+CASE 13122304 camp=0
+SNAPSHOT CASE-bond4-camp-0-frame-4
+SNAPSHOT CASE-bond4-camp-0-frame-17
+SNAPSHOT CASE-bond4-camp-0-frame-30
+CASE 13122305 camp=0
+SNAPSHOT CASE-bond5-camp-0-frame-4
+SNAPSHOT CASE-bond5-camp-0-frame-17
+SNAPSHOT CASE-bond5-camp-0-frame-30
+CASE 13122306 camp=0
+SNAPSHOT CASE-bond6-camp-0-frame-4
+SNAPSHOT CASE-bond6-camp-0-frame-17
+SNAPSHOT CASE-bond6-camp-0-frame-30
+CASE 13122307 camp=0
+SNAPSHOT CASE-bond7-camp-0-frame-4
+SNAPSHOT CASE-bond7-camp-0-frame-17
+SNAPSHOT CASE-bond7-camp-0-frame-30
+CASE 13122308 camp=0
+SNAPSHOT CASE-bond8-camp-0-frame-4
+SNAPSHOT CASE-bond8-camp-0-frame-17
+SNAPSHOT CASE-bond8-camp-0-frame-30
+CASE 13122309 camp=0
+SNAPSHOT CASE-bond9-camp-0-frame-4
+SNAPSHOT CASE-bond9-camp-0-frame-17
+SNAPSHOT CASE-bond9-camp-0-frame-30
+CASE 13122310 camp=0
+SNAPSHOT CASE-claw-camp-0-frame-4
+SNAPSHOT CASE-claw-camp-0-frame-23
+SNAPSHOT CASE-claw-camp-0-frame-41
+CASE 13122311 camp=0
+SNAPSHOT CASE-tail-camp-0-frame-4
+SNAPSHOT CASE-tail-camp-0-frame-19
+SNAPSHOT CASE-tail-camp-0-frame-34
+CASE 13122312 camp=0
+SNAPSHOT CASE-bomb-camp-0-frame-4
+SNAPSHOT CASE-bomb-camp-0-frame-52
+SNAPSHOT CASE-bomb-camp-0-frame-91
+CASE 13122313 camp=0
+SNAPSHOT CASE-final-camp-0-frame-4
+SNAPSHOT CASE-final-camp-0-frame-116
+SNAPSHOT CASE-final-camp-0-frame-204
+CASE 13122314 camp=0
+SNAPSHOT CASE-harem-camp-0-frame-4
+SNAPSHOT CASE-harem-camp-0-frame-64
+SNAPSHOT CASE-harem-camp-0-frame-112
+CASE 13122315 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-19
+SNAPSHOT CASE-chase-camp-0-frame-33
+CASE 13122316 camp=0
+SNAPSHOT CASE-additional-camp-0-frame-4
+SNAPSHOT CASE-additional-camp-0-frame-34
+SNAPSHOT CASE-additional-camp-0-frame-60
+CASE 13122317 camp=0
+SNAPSHOT CASE-recovery-camp-0-frame-4
+SNAPSHOT CASE-recovery-camp-0-frame-15
+SNAPSHOT CASE-recovery-camp-0-frame-26
+CASE 13122318 camp=0
+SNAPSHOT CASE-restoration-camp-0-frame-4
+SNAPSHOT CASE-restoration-camp-0-frame-15
+SNAPSHOT CASE-restoration-camp-0-frame-26
+CASE 0 camp=0
+SNAPSHOT CASE-entry-camp-0-frame-4
+SNAPSHOT CASE-entry-camp-0-frame-9
+SNAPSHOT CASE-entry-camp-0-frame-16
+CASE 0 camp=0
+SNAPSHOT CASE-dead-camp-0-frame-4
+SNAPSHOT CASE-dead-camp-0-frame-8
+SNAPSHOT CASE-dead-camp-0-frame-14
+CASE 13122301 camp=1
+SNAPSHOT CASE-bond1-camp-1-frame-4
+SNAPSHOT CASE-bond1-camp-1-frame-17
+SNAPSHOT CASE-bond1-camp-1-frame-30
+CASE 13122302 camp=1
+SNAPSHOT CASE-bond2-camp-1-frame-4
+SNAPSHOT CASE-bond2-camp-1-frame-17
+SNAPSHOT CASE-bond2-camp-1-frame-30
+CASE 13122303 camp=1
+SNAPSHOT CASE-bond3-camp-1-frame-4
+SNAPSHOT CASE-bond3-camp-1-frame-17
+SNAPSHOT CASE-bond3-camp-1-frame-30
+CASE 13122304 camp=1
+SNAPSHOT CASE-bond4-camp-1-frame-4
+SNAPSHOT CASE-bond4-camp-1-frame-17
+SNAPSHOT CASE-bond4-camp-1-frame-30
+CASE 13122305 camp=1
+SNAPSHOT CASE-bond5-camp-1-frame-4
+SNAPSHOT CASE-bond5-camp-1-frame-17
+SNAPSHOT CASE-bond5-camp-1-frame-30
+CASE 13122306 camp=1
+SNAPSHOT CASE-bond6-camp-1-frame-4
+SNAPSHOT CASE-bond6-camp-1-frame-17
+SNAPSHOT CASE-bond6-camp-1-frame-30
+CASE 13122307 camp=1
+SNAPSHOT CASE-bond7-camp-1-frame-4
+SNAPSHOT CASE-bond7-camp-1-frame-17
+SNAPSHOT CASE-bond7-camp-1-frame-30
+CASE 13122308 camp=1
+SNAPSHOT CASE-bond8-camp-1-frame-4
+SNAPSHOT CASE-bond8-camp-1-frame-17
+SNAPSHOT CASE-bond8-camp-1-frame-30
+CASE 13122309 camp=1
+SNAPSHOT CASE-bond9-camp-1-frame-4
+SNAPSHOT CASE-bond9-camp-1-frame-17
+SNAPSHOT CASE-bond9-camp-1-frame-30
+CASE 13122310 camp=1
+SNAPSHOT CASE-claw-camp-1-frame-4
+SNAPSHOT CASE-claw-camp-1-frame-23
+SNAPSHOT CASE-claw-camp-1-frame-41
+CASE 13122311 camp=1
+SNAPSHOT CASE-tail-camp-1-frame-4
+SNAPSHOT CASE-tail-camp-1-frame-19
+SNAPSHOT CASE-tail-camp-1-frame-34
+CASE 13122312 camp=1
+SNAPSHOT CASE-bomb-camp-1-frame-4
+SNAPSHOT CASE-bomb-camp-1-frame-52
+SNAPSHOT CASE-bomb-camp-1-frame-91
+CASE 13122313 camp=1
+SNAPSHOT CASE-final-camp-1-frame-4
+SNAPSHOT CASE-final-camp-1-frame-116
+SNAPSHOT CASE-final-camp-1-frame-204
+CASE 13122314 camp=1
+SNAPSHOT CASE-harem-camp-1-frame-4
+SNAPSHOT CASE-harem-camp-1-frame-64
+SNAPSHOT CASE-harem-camp-1-frame-112
+CASE 13122315 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-19
+SNAPSHOT CASE-chase-camp-1-frame-33
+CASE 13122316 camp=1
+SNAPSHOT CASE-additional-camp-1-frame-4
+SNAPSHOT CASE-additional-camp-1-frame-34
+SNAPSHOT CASE-additional-camp-1-frame-60
+CASE 13122317 camp=1
+SNAPSHOT CASE-recovery-camp-1-frame-4
+SNAPSHOT CASE-recovery-camp-1-frame-15
+SNAPSHOT CASE-recovery-camp-1-frame-26
+CASE 13122318 camp=1
+SNAPSHOT CASE-restoration-camp-1-frame-4
+SNAPSHOT CASE-restoration-camp-1-frame-15
+SNAPSHOT CASE-restoration-camp-1-frame-26
+CASE 0 camp=1
+SNAPSHOT CASE-entry-camp-1-frame-4
+SNAPSHOT CASE-entry-camp-1-frame-9
+SNAPSHOT CASE-entry-camp-1-frame-16
+CASE 0 camp=1
+SNAPSHOT CASE-dead-camp-1-frame-4
+SNAPSHOT CASE-dead-camp-1-frame-8
+SNAPSHOT CASE-dead-camp-1-frame-14
+DONE Naruto Final Battle native component; remaining=0

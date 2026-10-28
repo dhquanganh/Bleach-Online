@@ -44,10 +44,10 @@ function increaseCost(ctx,target,records){
   target.painCostRound=ctx.round;target.painCost=(target.painCost||0)+20;label(records,target,5,target.painCost);
 }
 function interrupt(ctx,target,records){
-  if(target.hp<=0||active(target,'painInterruptImmuneUntil')||skills.status(target,'immuneDebuffs'))return;
+  if(target.hp<=0||active(target,'painInterruptImmuneUntil')||skills.status(target,'immuneDebuffs')&&!require('./guy-gate-combat').isGuy(target))return;
   // The non-Level-2 cancellation passive also cancels Interruption.
   if(rejectBuff(null,target,{field:'silence',value:1},records))return;
-  target.painInterruptedUntil=ctx.round;label(records,target,6);
+  target.painInterruptedUntil=ctx.round;label(records,target,6);require('./guy-gate-combat').interrupted(ctx,target);
 }
 function canMystery(ctx,u,move){return !active(u,'mechaMysteryLockUntil')&&(!isPain(u)||((u.painMysteries||0)<(u.painFinal?2:1)&&(move.consumeAllTechnique||(u.painTechnique||0)>=(move.techniqueCost||0))))&&(!active(u,'painInterruptedUntil')||active(u,'painInterruptImmuneUntil'));}
 function mysteryReady(ctx,u){return ctx.round>=(u.mysteryReadyRound||1)||(isPain(u)&&u.painFinal&&u.painMysteryWindow===ctx.round&&(u.painMysteries||0)<2);}
@@ -109,7 +109,7 @@ function roundStart(ctx){
 function revivals(ctx){
   const out=[];
   for(const u of ctx.teams.flat()){
-    if(!isPain(u)||u.hp>0||u.noRevive||u.itachiUnrevivable)continue;
+    if(require('./naruto-final-combat').blocksDeath(u)||!isPain(u)||u.hp>0||u.noRevive||u.itachiUnrevivable)continue;
     const records=[];
     if(!u.painFinal){
       u.painFinal=true;u.hp=u.maxHp;u.painDamageStacks=0;u.painInitiativeStacks=0;
