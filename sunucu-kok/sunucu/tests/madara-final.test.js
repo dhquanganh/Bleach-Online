@@ -15,6 +15,8 @@ for(const camp of [0,1]){
  m.onDamage(ctx,afflicted,u,{damage:1},{},false,[]);assert.equal(afflicted.madaraInfernoStacks,1);assert.equal(m.factor(afflicted,'resistance'),.97);
  afflicted.battleRound=3;assert.equal(m.factor(afflicted,'resistance'),1,'Inferno shred expires with Inferno');
  const before=skills.value(u,'atk');m.onDamage(ctx,u,enemy,{damage:1},m.config.burstMystery,true,[]);assert(skills.value(u,'atk')>before);
+ const magic=skills.value(u,'magicAtk'),attack=skills.value(u,'atk');assert(m.evade(ctx,u,{}));assert(skills.value(u,'atk')>attack);assert.equal(skills.value(u,'magicAtk'),magic);
+ u.hp=u.maxHp*.1;const reflected={targets:[],reactions:[]};m.afterHit(ctx,u,enemy,[enemy],m.config.reflection,reflected);assert.equal(u.hp,u.maxHp*.6,'Reflection heals 50% max HP');
  const damage=m.beforeDamage(ctx,u,u.hp+100);assert.equal(damage,u.hp-1);u.hp=1;const healed=[];m.onDamage(ctx,enemy,u,{damage},m.config.chase,false,healed);assert.equal(u.hp,Math.round(u.maxHp*.3));assert(healed.length);
  assert.equal(m.beforeDamage(ctx,u,u.hp+1),u.hp+1,'entry protection is consumed exactly once');
  ctx.madaraQueue=[];m.onDamage(ctx,enemy,clone,{damage:1},{trigger:true},false,[]);m.onDamage(ctx,enemy,clone,{damage:1},{trigger:true},false,[]);assert.equal(m.triggers(ctx).length,1,'clone counter has a finite per-round budget');

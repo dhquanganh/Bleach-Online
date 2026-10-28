@@ -1,0 +1,50 @@
+from pathlib import Path
+import importlib.util,json,re,sys
+B=Path(__file__).resolve().parent;s=importlib.util.spec_from_file_location('c',B/'build-client.py');m=importlib.util.module_from_spec(s);s.loader.exec_module(m);c=m.c
+W=B/'revival-repair' if '--repair' in sys.argv else B
+a=json.loads((B/'animation.json').read_text());source=(B.parent/'tsunade-asian/probe-source/TApplication.as').read_text().split(' internal class ProbeRole extends Sprite {')[0]
+source=source.replace(' import flash.geom.*;',' import flash.geom.*;\n import flash.system.*;')
+def extract(text,name):
+ match=re.search(r'[^\n]*function '+name+r'\(',text);start=match.start();return text[start:c.b.method_end(text,start)]
+names=['mystery', 'limbo', 'standard', 'standard2', 'standard3', 'susanoo', 'chase', 'limboChase', 'counter', 'barrier', 'evade', 'revive', 'entry', 'dead'];ids=[13122201, 13122202, 13122203, 13122204, 13122205, 13122206, 13122207, 13122208, 13122209, 13122210, 13122211, 13122212, 0, 0];bounds=[0]
+for _ in range(2):
+ for name in names:bounds.append(bounds[-1]+len(a['clips'][name]['assets'])*40+1000)
+source=re.sub(r'private var skills:Array=\[[^\]]+\]','private var skills:Array='+json.dumps(ids),source,count=1);source=re.sub(r'private var clipNames:Array=\[[^\]]+\]','private var clipNames:Array='+json.dumps(names),source,count=1);source=re.sub(r'private var metadata:Object=.*?;\n','private var metadata:Object='+json.dumps(a['clips'],separators=(',',':'))+';\n',source,count=1)
+boot=extract(source,'boot');start=boot.index('   loadTexture(');end=boot.index('   addEventListener',start)
+boot=boot[:start]+'''   loadTexture("00A9B16D",["idle"]);
+   loadTexture("A9B16D0B",["limbo","standard","standard2","standard3"]);
+   loadTexture("A9B16D0C",["mystery","susanoo","chase","limboChase","counter","barrier","evade","revive","entry","dead"]);
+'''+boot[end:];source=source.replace(extract(source,'boot'),boot,1)
+source=source.replace(extract(source,'renderRole'),'''  private function renderRole(role:ProbeRole,name:String,index:int):void {
+   var clip:Object=clips[name];if(clip==null)return;index=Math.max(0,Math.min(index,clip.images.length-1));role.actor.bitmapData=clip.images[index];role.actor.x=-clip.meta[index].px;role.actor.y=-clip.meta[index].py;role.InfiniteStrikePose({Pivot:{X:clip.meta[index].px,Y:clip.meta[index].py}});
+  }''',1)
+tick='''  private function tick(event:Event):void {
+   for each(var decoder:TPakDecoder in decoders)if(decoder.Unstreamizing)decoder.Process();if(loaded<15)return;
+   if(readyAt<0){clips["clone-idle"]=clips.idle;clips["clone-standard"]=clips.standard;clips["clone-counter"]=clips.counter;readyAt=getTimer()+4000;ProbeRole.PreloadInfiniteNative();}if(getTimer()<readyAt)return;
+   var age:int=getTimer()-readyAt;var bounds:Array=__BOUNDS__;var slot:int=0;while(slot<28 && age>=bounds[slot+1])slot++;
+   if(slot>=28){left.FSkillId=0;right.FSkillId=0;left.ClearInfiniteVfx();right.ClearInfiniteVfx();var remaining:int=0;for(var q:int=0;q<battle.numChildren;q++)if(battle.getChildAt(q).name=="madaraInfiniteSkillVfx")remaining++;report("DONE Infinite/Yellow Flash Clone native component; remaining="+remaining);removeEventListener(Event.ENTER_FRAME,tick);return;}
+   var side:int=slot<14?0:1;var index:int=slot%14;var caster:ProbeRole=side==0?left:right;var victim:ProbeRole=side==0?right:left;
+   caster.Camp=side;victim.Camp=1-side;
+   caster.FTargets=[caster,victim];caster.FResults=[{CMD:0,ResultInfo:{HurtHp:0}},{CMD:1,ResultInfo:{HurtHp:index==6?-300:10}}];
+   if(lastSlot!=slot){left.ClearInfiniteVfx();right.ClearInfiniteVfx();left.FSkillId=0;right.FSkillId=0;++caster.FCombatVfxSerial;caster.FSkillId=skills[index];caster.FId=(index==6||index>=10)?11121005:11121005;caster.FFrameIndex=0;caster.y=440;victim.y=440;lastSlot=slot;label.text="Infinite / Yellow Flash Clone | "+clipNames[index]+" | camp "+side;report("CASE "+skills[index]+" camp="+side);}
+   var frame:int=int((age-bounds[slot])/40);var name:String=clipNames[index];caster.FFrameIndex=frame;
+   if(frame<clips[name].images.length){renderRole(caster,name,frame);caster.UpdateInfiniteVfx();}else{caster.FSkillId=0;renderRole(caster,"idle",int(age/100)%clips.idle.images.length);}
+   renderRole(victim,"idle",int(age/100)%clips.idle.images.length);
+   var phases:Array=name=="mystery"?[4,16,32,48,60,72,84,100]:[4,int(clips[name].images.length*.4),int(clips[name].images.length*.7)];
+   for each(var phase:int in phases){var key:String="CASE-"+name+"-camp-"+side+"-frame-"+phase;if(frame>=phase&&!captured[key]){captured[key]=true;var started:int=getTimer();saveFrame(key);readyAt+=getTimer()-started;}}
+  }'''.replace('__BOUNDS__',json.dumps(bounds));source=source.replace(extract(source,'tick'),tick,1)
+role=(W/'patched'/c.b.ROLE).read_text(encoding='utf-8');runtime='\n'.join(c.m.extract(role,name) for name in ['PreloadInfiniteNative','LoadInfiniteNative','ClearInfiniteVfx','UpdateInfiniteVfx','InfiniteContactOffset','InfiniteStrikePose','PlayInfiniteNative']).replace(':TRole',':ProbeRole').replace(':TAnimationFrame',':Object').replace('private static function','public static function').replace('private function','public function')
+source+=''' internal class ProbeRole extends Sprite {
+ public var FId:int=11121005;public var FSkillId:int=0;public var FIndex:int=1;public var FFrameIndex:int=0;public var Camp:int=0;public var Pos:int=1;
+ public const TYPE_ACTIVE_ATTACK:int=1;public const TYPE_ACTIVE_SKILL:int=2;
+ public static var FInfiniteNative:Object={};public var FInfiniteVfxStarted:Boolean=false;public var FInfiniteLayers:Array=[];public var FCombatVfxSerial:uint=0;
+ public var FBattleStage:Sprite;public var FTargets:Array=[];public var FResults:Array=[];public var actor:Bitmap=new Bitmap();public function get FBitmap():Bitmap{return actor;}
+ public function ProbeRole(){actor.smoothing=true;addChild(actor);}
+'''+runtime+'\n }\n}'
+dest=W/'probe-source/TApplication.as';dest.parent.mkdir(exist_ok=True);dest.write_text(source,encoding='utf-8');probe_source=W/'source.swf';c.ff('-onerror','abort','-importScript',probe_source,W/'raster-probe.swf',dest.parent)
+raw=bytearray((W/'raster-probe.swf').read_bytes());raw[3]=21;(W/'raster-probe.swf').write_bytes(raw)
+js=(B.parent/'naruto-nine-tails/runtime-raster.js').read_text().replace('7486','7512').replace('7487','7513').replace('nine-tails-vfx','madara-infinite-vfx').replace('(v3|extracted|aligned-hd|native-v2)','native')
+if W!=B:js=js.replace("'../../..'","'../../../..'")
+js=js.replace('300000','300000')
+(W/'runtime-raster.js').write_text(js);(W/'validation/native').mkdir(parents=True,exist_ok=True)
+print('PASS 22 Infinite/Yellow Flash Clone native component casts compiled')

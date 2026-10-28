@@ -18,7 +18,7 @@ function initialize(ctx){
 }
 function forest(ctx,u){
   ctx.hashForest={owner:u.camp,source:u,until:Math.max(1,ctx.round)+1};
-  u.hashExplosiveUntil=Math.max(1,ctx.round)+1;
+  if(!require('./madara-infinite-combat').blocksExplosive(u))u.hashExplosiveUntil=Math.max(1,ctx.round)+1;
   const records=[];label(records,u,3,2);return visual(u,config.forest,records);
 }
 function roundStart(ctx){const out=[];for(const u of ctx.teams.flat())if(isHash(u)&&u.hp>0){u.hashStandards=0;u.hashExtra=0;u.hashMysteries=0;if(!u.hashStarted){u.hashStarted=true;out.push(forest(ctx,u));}}return out;}

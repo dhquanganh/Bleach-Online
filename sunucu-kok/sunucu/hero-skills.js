@@ -228,13 +228,16 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
+  const infinite=require('./madara-infinite-combat');
+  if(infinite.immune(unit,field))return field==='paralysis'?false:true;
+  if(field==='immuneDebuffs'&&infinite.isMadara(unit))return true;
   const sasuke=require('./sasuke-combat');
   if(field==='disarm'&&require('./gaara-combat').active(unit,'gaaraBlindUntil'))return true;
   if(field==='noHeal'&&unit.madaraIgnitionUntil>=unit.battleRound)return true;
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
-  const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
+  const immunitySuppressed=!infinite.isMadara(unit)&&!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
   if(field==='immuneDebuffs')return !immunitySuppressed&&!!(require('./minato-new-year-combat').immuneAura(unit)||unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
@@ -254,6 +257,7 @@ function value(unit, field) {
   result*=require('./kakuzu-edo-combat').factor(unit,field);
   result*=require('./madara-final-combat').factor(unit,field);
   result*=require('./minato-new-year-combat').factor(unit,field);
+  result*=require('./madara-infinite-combat').factor(unit,field);
   if(field==='critRate')result+=require('./minato-new-year-combat').critical(unit);
   if(field==='critRate')result+=require('./madara-final-combat').critical(unit);
   if(['def','resistance'].includes(field)&&unit.madaraShatterUntil>=unit.battleRound)result*=.7;
@@ -284,7 +288,7 @@ function changeFury(unit, amount, records, unresistable=false, random=Math.rando
 }
 function restore(caster, target, amount, records) {
   if(target.hp<=0)return 0;
-  const rate=Math.max(0,1+value(target,'recoverRate'))*require('./gaara-combat').healFactor(target);
+  const rate=Math.max(0,1+value(target,'recoverRate'))*require('./gaara-combat').healFactor(target)*require('./madara-infinite-combat').healing(target);
   const restored=status(target,'noHeal')&&!status(target,'immuneHealBlock')?0:Math.min(Math.max(0,target.maxHp-target.hp),Math.max(0,Math.round(amount*rate)));
   target.hp+=restored;
   records.push(hpRecord(target,-restored));

@@ -65,7 +65,7 @@ function afterHit(ctx,u,selected,hit,move,frame){if(!move?.madaraMove)return;
   if(key==='burstStandard')for(const v of hit){v.madaraResistanceStacks=(v.madaraResistanceStacks||0)+1;debuff(ctx,v,'madaraShatterUntil',ctx.round);}
   if(key==='complete')for(const v of hit){v.armorSuppressedUntil=ctx.round+1;debuff(ctx,v,'madaraShatterUntil',ctx.round);}
   if(key==='chase'||key==='burstChase')for(const v of hit){if(!(v.madaraInfernoUntil>=ctx.round))v.madaraInfernoStacks=0;debuff(ctx,v,'madaraInfernoUntil',ctx.round+1);v.madaraInfernoSource=u;if(key==='chase'){v.hashStandardLossRound=ctx.round;v.hashStandardLoss=(v.hashStandardLoss||0)+1;}}
-  if(key==='reflection'){const records=[];skills.restore(u,u,u.maxHp*.3,records);if(records.length)frame.reactions.push(pain.passive(u,records));}
+  if(key==='reflection'){const records=[];skills.restore(u,u,u.maxHp*config.reflection.healRatio,records);if(records.length)frame.reactions.push(pain.passive(u,records));}
   if(key==='cloneCounter'){for(const v of hit){if(!(v.madaraMentalUntil>=ctx.round))v.madaraMentalStacks=0;debuff(ctx,v,'madaraMentalUntil',ctx.round);v.madaraMentalStacks=Math.min(4,(v.madaraMentalStacks||0)+1);v.perseverance=0;v.skillBuffs=(v.skillBuffs||[]).filter(b=>b.field!=='perseverance');}if(hit.some(v=>v.hp<=0))queue(ctx,u,config.cloneSplash);}
   if(move.trigger&&u.madaraCombustionUntil>=ctx.round){u.madaraIgnitionUntil=ctx.round;u.madaraIgnitionSource=u.madaraCombustionSource;}
   if(move.prompt&&u.madaraCombustionUntil>=ctx.round)for(const ally of ctx.teams[u.camp]){ally.madaraIgnitionUntil=ctx.round;ally.madaraIgnitionSource=u.madaraCombustionSource;}

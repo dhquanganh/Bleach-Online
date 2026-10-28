@@ -1,0 +1,21 @@
+{
+  "version": "2026102806",
+  "sha256": "1bad89dad04b667ca398ad4364278649ab0ac2243c820630656bd5551de5c7a4",
+  "probe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 2,
+    "restores": 0,
+    "stableRestores": 0,
+    "deathHolds": 0,
+    "assetPlays": 0,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  },
+  "unchangedMethods": 245,
+  "changedMethod": "PlayInfiniteNative"
+}

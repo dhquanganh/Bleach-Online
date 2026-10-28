@@ -1,0 +1,25 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=72
+TEXTURE barrier frames=53
+TEXTURE chase frames=98
+TEXTURE susanoo frames=175
+TEXTURE standard frames=62
+TEXTURE standard2 frames=76
+TEXTURE standard3 frames=115
+TEXTURE entry frames=34
+TEXTURE dead frames=33
+TEXTURE limbo frames=107
+TEXTURE mystery frames=171
+TEXTURE evade frames=55
+TEXTURE revive frames=73
+TEXTURE limboChase frames=72
+TEXTURE counter frames=72
+CASE 13122206 camp=0
+SNAPSHOT CASE-susanoo-camp-0-frame-4
+SNAPSHOT CASE-susanoo-camp-0-frame-70
+SNAPSHOT CASE-susanoo-camp-0-frame-122
+CASE 13122206 camp=1
+SNAPSHOT CASE-susanoo-camp-1-frame-4
+SNAPSHOT CASE-susanoo-camp-1-frame-70
+SNAPSHOT CASE-susanoo-camp-1-frame-122
+DONE Madara Susanoo transparency native component; remaining=0

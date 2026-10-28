@@ -65011,7 +65011,7 @@
     "id": "00C839DA",
     "skillId": 13122010,
     "name": "Uchiha Reflection",
-    "desc": "Madara has high chances to evade an attack every round and if he evades one, recovers 30% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scales his Ninjutsu by 15%. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "desc": "Madara has high chances to evade an attack every round and if he evades one, recovers 50% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scales his Physical ATK by 15%. All damage scales with Physical ATK and is reduced by Physical DEF.",
     "icon": 13122010,
     "sortId": 10
   },
@@ -65110,5 +65110,101 @@
     "desc": "Minato has high chances to evade Chase skills and after he executes his Mystery, he additionally gains high chances to evade Trigger skills until the end of the round. After he evades an attack, causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases Minato's Trigger damage by 10% (stackable up to 100%).",
     "icon": 13122110,
     "sortId": 10
+  },
+  {
+    "id": "00C83A99",
+    "skillId": 13122201,
+    "name": "Infinite Tsukuyomi",
+    "desc": "Guarantee retrains all units in the opponent's field, causes Interruption to the selected unit. This skill is unavoidable and after it's executed, Madara's Mystery changes to Limbo - Complete Body - Susano'o. After retrained units execute an action in that round, that unit suffers from Slumber.",
+    "icon": 13122201,
+    "sortId": 1
+  },
+  {
+    "id": "00C83A9A",
+    "skillId": 13122202,
+    "name": "Shadow Style - Thunder Dance",
+    "desc": "Madara will execute Limbo - Border Jail as his first Standard Attack every round, then it becomes: Attacks a random opponent unit, a chance of causing Knockdown and Level 2 - Paralysis. Units defeated by this skill cannot be revived. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122202,
+    "sortId": 2
+  },
+  {
+    "id": "00C83A9B",
+    "skillId": 13122203,
+    "name": "Shadow Style - Thunder Dance",
+    "desc": "Attacks a random opponent unit, a chance of causing Knockdown and Level 2 - Paralysis. Units defeated by this skill cannot be revived. Madara will execute Limbo - Border Jail as his first Standard Attack every round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122203,
+    "sortId": 3
+  },
+  {
+    "id": "00C83A9C",
+    "skillId": 13122204,
+    "name": "Shadow Style - Thunder Dance",
+    "desc": "Attacks a random opponent unit, a chance of causing Knockdown and Level 2 - Paralysis. Units defeated by this skill cannot be revived. Madara will execute Limbo - Border Jail as his first Standard Attack every round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122204,
+    "sortId": 4
+  },
+  {
+    "id": "00C83A9D",
+    "skillId": 13122205,
+    "name": "Shadow Style - Thunder Dance",
+    "desc": "Attacks a random opponent unit, a chance of causing Knockdown and Level 2 - Paralysis. Units defeated by this skill cannot be revived. Madara will execute Limbo - Border Jail as his first Standard Attack every round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122205,
+    "sortId": 5
+  },
+  {
+    "id": "00C83A9E",
+    "skillId": 13122206,
+    "name": "Limbo - Complete Body - Susano'o",
+    "desc": "Causes damage, Suppress Super Armor until the end of the next round to all units in the opponent's field and removes their Explosive Mode, causes Defense Shatter and Knockdown to the selected unit. After this skill is executed, Madara's Mystery changes to Infinite Tsukuyomi. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122206,
+    "sortId": 6
+  },
+  {
+    "id": "00C83A9F",
+    "skillId": 13122207,
+    "name": "Sage Art - Shadow Thunder Blast",
+    "desc": "Triggered with at least 30 Combo, causes damage, Level 2 - Paralysis to all units in the opponent's field and dispels their Perseverance. This skill has additional Critical Rate increase and if your lineup's Chakra is 60 or higher, this skill changes to Limbo - Shadow Thunder Prison. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122207,
+    "sortId": 7
+  },
+  {
+    "id": "00C83AA0",
+    "skillId": 13122208,
+    "name": "Limbo - Shadow Thunder Prison",
+    "desc": "Triggered with at least 30 Combo, causes damage, Level 2 - Paralysis to all units in the opponent's field and removes their Perseverance. This skill never misses and ignores a certain amount of Resistance. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122208,
+    "sortId": 8
+  },
+  {
+    "id": "00C83AA1",
+    "skillId": 13122209,
+    "name": "Extreme - Limbo - Shadow Thunder Prison",
+    "desc": "Additional Skill: Causes damage and Level 2 - Paralysis to all units in the opponent's field and removes their Perseverance. This skill never misses, ignores a certain amount of Resistance and after executed, Madara can execute his Mystery skill once more in that round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122209,
+    "sortId": 9
+  },
+  {
+    "id": "00C83AA2",
+    "skillId": 13122210,
+    "name": "Divine - Deep Forest Emergence",
+    "desc": "After executing Infinite Tsukuyomi, activates the Divine - Deep Forest Emergence Barrier for 2 rounds. On the round of its activation, opponents cannot gain additional Chakra from skills or effects and their healing received is reduced by 80%.",
+    "icon": 13122210,
+    "sortId": 10
+  },
+  {
+    "id": "00C83AA3",
+    "skillId": 13122211,
+    "name": "Divine - Absorption",
+    "desc": "Madara has a high chance to evade an attack every round and after he evades one, recovers 100 Chakra, then executes Extreme - Limbo - Shadow Thunder Prison.",
+    "icon": 13122211,
+    "sortId": 11
+  },
+  {
+    "id": "00C83AA4",
+    "skillId": 13122212,
+    "name": "Ten-Tails Jinchuriki",
+    "desc": "Madara has Advanced Immunity, Divine - Absorption and if he is defeated, revives 3 rounds later with 80% HP. While Madara is alive, whenever any ninja in both fields executes an action, scale Madara's Physical ATK by 10%, can be triggered 8 times per round.",
+    "icon": 13122212,
+    "sortId": 12
   }
 ]

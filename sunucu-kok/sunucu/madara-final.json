@@ -162,14 +162,15 @@
   "reflection": {
     "id": 13122010,
     "name": "Uchiha Reflection",
-    "description": "Madara has high chances to evade an attack every round and if he evades one, recovers 30% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scales his Ninjutsu by 15%.",
+    "description": "Madara has high chances to evade an attack every round and if he evades one, recovers 50% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scales his Physical ATK by 15%.",
     "sourceId": 21011755,
     "multiplier": 0.6,
     "combo": 3,
     "madaraMove": "reflection",
     "target": 1,
     "attackStat": "atk",
-    "damageType": "physical"
+    "damageType": "physical",
+    "healRatio": 0.5
   },
   "burst": {
     "id": 13122011,
@@ -234,7 +235,7 @@
     {
       "id": 21011759,
       "name": "Susano'o - Absolute Protection",
-      "description": "Madara has Level 2 Super Armor and is immune to Pure Taijutsu damage. Whenever Madara suffers the first damage in a round, increase his Critical Rate by 50% and reduces his Mystery's Chakra Cost to 0, last until the end of the round. Every time Madara causes Critical Hit to 1 unit, increase his Ninjutsu by 10% (stackable)."
+      "description": "Madara has Level 2 Super Armor and is immune to Pure Taijutsu damage. Whenever Madara suffers the first damage in a round, increase his Critical Rate by 50% and reduces his Mystery's Chakra Cost to 0, last until the end of the round. Every time Madara causes Critical Hit to 1 unit, increase his Physical ATK by 10% (stackable)."
     },
     {
       "id": 21011785,
@@ -244,7 +245,7 @@
     {
       "id": 21011755,
       "name": "Uchiha Reflection",
-      "description": "Madara has high chances to evade an attack every round and if he evades one, recovers 30% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scale his Ninjutsu by 15%."
+      "description": "Madara has high chances to evade an attack every round and if he evades one, recovers 50% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scale his Physical ATK by 15%."
     }
   ]
 }
