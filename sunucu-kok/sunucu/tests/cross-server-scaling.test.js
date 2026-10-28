@@ -11,9 +11,10 @@ assert.equal(team.level,159);assert.equal(team.units.length,2);
 for(const unit of team.units){
   const template=battle.heroBirim(unit.id,unit.pos,159,null,null,0,true);
   const growth=require('../seviye').buyumeTemeli(unit.id,159);
-  assert.equal(unit.level,159);assert.equal(unit.maxHp,template.maxHp);assert.equal(unit.atk,template.atk);assert.equal(unit.def,template.def);
+  assert.equal(unit.level,159);assert.equal(unit.maxHp,100000);assert.equal(unit.atk,template.atk);assert.equal(unit.def,template.def);
   assert.equal(unit.hp,unit.maxHp);assert.equal(unit.magicAtk,template.magicAtk);assert.equal(unit.resistance,template.resistance);
 }
+assert.notEqual(battle.heroBirim(team.units[0].id,1,159,null,null,0,true).maxHp,100000,'ordinary base HP remains unchanged');
 const skillAttacker=players.baseUnit({id:11120997,pos:1,atk:800000000,skillBuffs:[{field:'atk',value:9,remaining:99}]});
 assert.equal(skillValues.value(skillAttacker,'atk'),skillAttacker.atk,'saved buffs do not enter Cross Server');
 skillAttacker.skillBuffs=[{kind:'buff',field:'atk',value:.5,remaining:2,source:skillAttacker.id}];
@@ -43,6 +44,6 @@ assert(report.payload.equals(baseline.payload),'equipped Zanpakuto, materializat
 const decoded=codec.decodeBattleReport(report.payload);
 for(const side of [decoded.player1,decoded.player2]){
   assert.equal(side.knifeOfKillSoulID,0);
-  for(const role of side.roles){const source=team.units.find(u=>u.id===role.roleId);if(!source)continue;assert.equal(role.level,159);assert.equal(role.rebirthNum,0);assert.equal(role.totalHealth,source.maxHp);}
+  for(const role of side.roles){const source=team.units.find(u=>u.id===role.roleId);if(!source)continue;assert.equal(role.level,159);assert.equal(role.rebirthNum,0);assert.equal(role.totalHealth,100000);}
 }
 console.log('PASS Cross Server: level 159 character base growth ignores saved equipment stats and has no generated fallback.');

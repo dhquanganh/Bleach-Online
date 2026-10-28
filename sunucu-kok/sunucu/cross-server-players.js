@@ -1,6 +1,6 @@
 'use strict';
 const crypto=require('node:crypto');
-const LEVEL=159, SLOTS=90;
+const LEVEL=159, HP=100000, SLOTS=90;
 let roster=[],scoreboard=null;
 function updateScores(board){if(!board||!board.scores)return;if(scoreboard&&(board.season<scoreboard.season||(board.season===scoreboard.season&&board.revision<=scoreboard.revision)))return;scoreboard=board;return true;}
 function score(accountId,season){return scoreboard?.season===season&&Object.hasOwn(scoreboard.scores,accountId)?scoreboard.scores[accountId]:null;}
@@ -27,7 +27,8 @@ function get(id){return all().find(row=>row.id===(Number(id)>>>0))||null;}
 function baseUnit(unit){
   const built=require('./savas').heroBirim(Number(unit.id),Number(unit.pos),LEVEL,null,null,0,true);
   if(!built)return null;
-  built.level=LEVEL;built.hp=built.maxHp;built.partnerSkills=[];built.weaponSkills=[];built.zanpakutoId=0;
+  // Cross Server alone uses fixed starting HP; combat skills retain their normal effects.
+  built.level=LEVEL;built.hp=built.maxHp=HP;built.partnerSkills=[];built.weaponSkills=[];built.zanpakutoId=0;
   return built;
 }
 function units(row){return row.units.map(baseUnit).filter(Boolean);}
@@ -42,4 +43,4 @@ function ownUnits(state){
   return entries.map(baseUnit).filter(Boolean);
 }
 function team(id){const row=get(id);if(!row)return null;return {...row,baseLevel:LEVEL,level:LEVEL,units:units(row)};}
-module.exports={updateScores,ownScore,LEVEL,update,accounts,all,get,team,units,ownUnits,baseUnit};
+module.exports={updateScores,ownScore,LEVEL,HP,update,accounts,all,get,team,units,ownUnits,baseUnit};
