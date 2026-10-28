@@ -15,6 +15,8 @@ const gaara = require('./gaara-combat');
 const tsunade = require('./tsunade-combat');
 const nineTails = require('./naruto-nine-tails-combat');
 const tobi = require('./tobi-war-combat');
+const minato = require('./minato-new-year-combat');
+const madara = require('./madara-final-combat');
 const kakuzu = require('./kakuzu-edo-combat');
 const STATE = Object.freeze({ LOW_FLOAT:'lowFloat', HIGH_FLOAT:'highFloat', KNOCKDOWN:'knockdown', REPULSE:'repulse', IMMOBILE:'immobile' });
 const displacement = new Set([STATE.LOW_FLOAT, STATE.HIGH_FLOAT, STATE.KNOCKDOWN, STATE.REPULSE]);
@@ -26,7 +28,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : minato.profile(unit) || madara.profile(unit) || kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -56,6 +58,8 @@ function create(teams, options = {}) {
   tsunade.initialize(context);
   tobi.initialize(context);
   kakuzu.initialize(context);
+  madara.initialize(context);
+  minato.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -103,7 +107,7 @@ function spendCooldown(ctx, unit, key, move) {
   ctx.skillReady.get(unit).set(key,ctx.round+Math.max(1,move.cooldown || 1));
 }
 function useStandard(ctx, unit, allies) {
-  const move=kakuzu.selectStandard(ctx,unit,tobi.selectStandard(ctx,unit,nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies))))));
+  const move=minato.selectStandard(ctx,unit,kakuzu.selectStandard(ctx,unit,tobi.selectStandard(ctx,unit,nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies)))))));
   if(!move || sasuke.active(unit,'sasukeFearUntil') || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
     if(mecha.isMecha(unit)){
@@ -126,7 +130,7 @@ function useStandard(ctx, unit, allies) {
 function canMystery(ctx, unit) {
   nagato.beforeAction(ctx,unit);
   const p=profile(unit), m=p && p.mystery;
-  return !!(m && sasuke.canMystery(unit) && hash.canMystery(ctx,unit) && !pain.active(unit,'mechaMysteryLockUntil') && (m.kakuzuMystery||pain.canMystery(ctx,unit,m)) && (m.consumesPrimary===false || primaryAvailable(ctx,unit)) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
+  return !!(m && minato.canMystery(ctx,unit) && sasuke.canMystery(unit) && hash.canMystery(ctx,unit) && !pain.active(unit,'mechaMysteryLockUntil') && (m.kakuzuMystery||pain.canMystery(ctx,unit,m)) && (m.consumesPrimary===false || primaryAvailable(ctx,unit)) && !disabled(unit) && !skills.status(unit,'silence') && !skills.status(unit,'chaos') && !jiraiya.blocksMystery(ctx,unit,m) && ctx.round > m.battlefieldCooldown &&
     pain.mysteryReady(ctx,unit) && ctx.chakra[unit.camp] >= pain.mysteryCost(ctx,unit,m));
 }
 function useMystery(ctx,unit,beforeSpend=null) {
@@ -139,6 +143,7 @@ function useMystery(ctx,unit,beforeSpend=null) {
   sasuke.spendMystery(ctx,unit);
   hash.spendMystery(ctx,unit);
   gaara.mysteryExecuted(unit);
+  minato.mysteryExecuted(ctx,unit);
   unit.mysteryReadyRound=ctx.round+(pain.isPain(unit)||sasuke.isSasuke(unit)?Math.max(0,m.cooldown):Math.max(1,m.cooldown));
   if(m.consumesPrimary!==false)ctx.primaryActions.set(unit,ctx.round);
   return m;

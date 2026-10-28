@@ -64763,7 +64763,7 @@
     "id": "00C83909",
     "skillId": 13121801,
     "name": "Kanzeon Lotus King - All is Suffering",
-    "desc": "Causes unavoidable five-elemental damage to up to 9 units in the opponent's field and cancels all <font color=\"#4dc831\">Buffs</font> and <font color=\"#4dc831\">Shields</font>. This skill causes 40% more damage to Clones, Summons and Puppets and if it defeats a unit, additionally executes <font color=\"#4dc831\">Additional Skill: Kanzeon Lotus King - Summit</font>. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "desc": "Causes unavoidable five-elemental damage to up to 9 units in the opponent's field and cancels all Buffs and Shields. This skill causes 40% more damage to Clones, Summons and Puppets and if it defeats a unit, additionally executes Additional Skill: Kanzeon Lotus King - Summit. All damage scales with maximum HP and is reduced by Physical DEF.",
     "icon": 13121801,
     "sortId": 1
   },
@@ -64771,7 +64771,7 @@
     "id": "00C8390A",
     "skillId": 13121802,
     "name": "Taijutsu Attack",
-    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Immunity</font> for 1 round, a chance of attacking a line of opponent units instead and causes <font color=\"#4dc831\">Repulse</font> to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "desc": "Attacks a random opponent unit and causes Suppress Immunity for 1 round, a chance of attacking a line of opponent units instead and causes Repulse to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
     "icon": 13121802,
     "sortId": 2
   },
@@ -64779,7 +64779,7 @@
     "id": "00C8390B",
     "skillId": 13121803,
     "name": "Taijutsu Attack",
-    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Immunity</font> for 1 round, a chance of attacking a line of opponent units instead and causes <font color=\"#4dc831\">Repulse</font> to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "desc": "Attacks a random opponent unit and causes Suppress Immunity for 1 round, a chance of attacking a line of opponent units instead and causes Repulse to a unit hit. All damage scales with maximum HP and is reduced by Physical DEF.",
     "icon": 13121803,
     "sortId": 3
   },
@@ -64787,7 +64787,7 @@
     "id": "00C8390C",
     "skillId": 13121804,
     "name": "Wood Style - Thursting Spears",
-    "desc": "<font color=\"#4dc831\">Chases and Attacks a Low Floated unit</font>, causes <font color=\"#4dc831\">Knockdown</font>, <font color=\"#4dc831\">Immobile</font> and absorbs 40 Chakra, then causes damage to all units in the opponent's lineup. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "desc": "Chases and Attacks a Low Floated unit, causes Knockdown, Immobile and absorbs 40 Chakra, then causes damage to all units in the opponent's lineup. All damage scales with maximum HP and is reduced by Physical DEF.",
     "icon": 13121804,
     "sortId": 4
   },
@@ -64795,7 +64795,7 @@
     "id": "00C8390D",
     "skillId": 13121805,
     "name": "Kanzeon Lotus King - Summit",
-    "desc": "After Tobi executes <font color=\"#4dc831\">Kanzeon Lotus King - All is Suffering</font>, triggered at the beginning of the next round, causes unavoidable damage and <font color=\"#4dc831\">Interruption</font> to up to 7 units in the opponent's field, causes <font color=\"#4dc831\">Low Float</font> to the unit hit with the lowest <font color=\"#4dc831\">HP</font>, then Tobi receives <font color=\"#4dc831\">Level 2 Super Armor</font> until the end of the round and reduces his Mystery Cooldown by 1. All damage scales with maximum HP and is reduced by Physical DEF.",
+    "desc": "After Tobi executes Kanzeon Lotus King - All is Suffering, triggered at the beginning of the next round, causes unavoidable damage and Interruption to up to 7 units in the opponent's field, causes Low Float to the unit hit with the lowest HP, then Tobi receives Level 2 Super Armor until the end of the round and reduces his Mystery Cooldown by 1. All damage scales with maximum HP and is reduced by Physical DEF.",
     "icon": 13121805,
     "sortId": 5
   },
@@ -64867,7 +64867,7 @@
     "id": "00C8396E",
     "skillId": 13121902,
     "name": "Taijutsu Attack",
-    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, a chance of causing <font color=\"#4dc831\">Repulse</font>. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "desc": "Attacks a random opponent unit and causes Suppress Super Armor for 1 round, a chance of causing Repulse. All damage scales with Physical ATK and is reduced by Physical DEF.",
     "icon": 13121902,
     "sortId": 2
   },
@@ -64875,7 +64875,7 @@
     "id": "00C8396F",
     "skillId": 13121903,
     "name": "Taijutsu Attack",
-    "desc": "Attacks a random opponent unit and causes <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, a chance of causing <font color=\"#4dc831\">Repulse</font>. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "desc": "Attacks a random opponent unit and causes Suppress Super Armor for 1 round, a chance of causing Repulse. All damage scales with Physical ATK and is reduced by Physical DEF.",
     "icon": 13121903,
     "sortId": 3
   },
@@ -64907,7 +64907,7 @@
     "id": "00C83973",
     "skillId": 13121907,
     "name": "Water Clone Jutsu",
-    "desc": "At the beginning of the battle, summons a <font color=\"#4dc831\">Water Clone</font> with 90% <font color=\"#4dc831\">HP</font> that has <font color=\"#4dc831\">Taijutsu Attack</font> and <font color=\"#4dc831\">Earth Grudge Fear - Reattachment</font>. While the Clone is alive, Kakuzu cannot be defeated by <font color=\"#4dc831\">Mystery</font> skills and after Kakuzu executes <font color=\"#4dc831\">Taijutsu Attack</font>, he randomly executes either: <font color=\"#4dc831\">Earth Grudge Fear - Pressure Damage</font>, <font color=\"#4dc831\">Earth Grudge Fear - False Darkness</font> or <font color=\"#4dc831\">Earth Grudge Fear - Searing Migraine</font>.",
+    "desc": "At the beginning of the battle, summons a Water Clone with 90% HP that has Taijutsu Attack and Earth Grudge Fear - Reattachment. While the Clone is alive, Kakuzu cannot be defeated by Mystery skills and after Kakuzu executes Taijutsu Attack, he randomly executes either: Earth Grudge Fear - Pressure Damage, Earth Grudge Fear - False Darkness or Earth Grudge Fear - Searing Migraine.",
     "icon": 13121907,
     "sortId": 7
   },
@@ -64933,6 +64933,182 @@
     "name": "Water Style - Hiding in Water Jutsu",
     "desc": "Kakuzu is <font color=\"#4dc831\">immune to Debuffs</font> and has high chances to evade <font color=\"#4dc831\">Chase</font> skills. If his <font color=\"#4dc831\">Mystery</font> defeats a unit, he recovers 20% <font color=\"#4dc831\">HP</font> and scales his <font color=\"#4dc831\">Attack</font> by 40%.",
     "icon": 13121910,
+    "sortId": 10
+  },
+  {
+    "id": "00C839D1",
+    "skillId": 13122001,
+    "name": "Fire Style - Majestic Fire Destruction",
+    "desc": "Causes damage and Combustion to up to 9 units in the opponent's field, causes Fire Engulfment and Interruption to the selected unit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122001,
+    "sortId": 1
+  },
+  {
+    "id": "00C839D2",
+    "skillId": 13122002,
+    "name": "Susano'o - Sever",
+    "desc": "Attacks the line of opponents in front, high chance of causing Knockdown and reduces Madara's Mystery Cooldown by 1. This skill is unavoidable. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122002,
+    "sortId": 2
+  },
+  {
+    "id": "00C839D3",
+    "skillId": 13122003,
+    "name": "Fire Style - Great Fire Annihilation",
+    "desc": "Triggered with at least 20 Combo, causes damage, Inferno to up to 7 units in the opponent's field and reduces their Standard Attack attempt by 1. This skill ignores a small amount of Resistance. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122003,
+    "sortId": 3
+  },
+  {
+    "id": "00C839D4",
+    "skillId": 13122004,
+    "name": "Complete Body - Susano'o",
+    "desc": "Causes damage and 3 Combo to up to 12 units in the opponent's field, causes Knockdown, Suppress Super Armor until the end of the next round and Defense Shatter to the selected unit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122004,
+    "sortId": 4
+  },
+  {
+    "id": "00C839D5",
+    "skillId": 13122005,
+    "name": "Susano'o - Majestic Attire",
+    "desc": "Causes damage neglecting Shields and 5 Combo to all units in the opponent's field, causes Knockdown, Immobile and Suppress Immunity until the end of the next round to the selected unit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122005,
+    "sortId": 5
+  },
+  {
+    "id": "00C839D6",
+    "skillId": 13122006,
+    "name": "Susano'o - Twin Blade Dance",
+    "desc": "Attacks all units in the opponent's lineup and reduces their Resistance by 10% (stackable), high chance of causing Knockdown and Defense Shatter to a unit hit. This skill is unavoidable. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122006,
+    "sortId": 6
+  },
+  {
+    "id": "00C839D7",
+    "skillId": 13122007,
+    "name": "Fire Style - Great Fire Annihilation",
+    "desc": "Triggered with at least 20 Combo, causes unavoidable damage and Inferno to up to 12 units in the opponent's field. This skill ignores a small amount of Resistance and has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122007,
+    "sortId": 7
+  },
+  {
+    "id": "00C839D8",
+    "skillId": 13122008,
+    "name": "Shadow Clone Jutsu",
+    "desc": "Whenever Madara enters the field, summons a Madara Shadow Clone with 60% HP, then Madara becomes immune to Interruption until the end of the round and if he suffers the first fatal damage within that round, escapes death and recovers 30% HP. Madara Shadow Clone has Super Armor, is immune to Pure Taijutsu damage and when it suffers the first Trigger damage in a round, causes unavoidable damage and Mental Breakdown to up to 2 ninjas in the opponent's lineup having the lowest HP and if this skill defeats a unit, additionally causes True damage to all remaining units in that lineup based on 100% of the Clone's max HP (max of 30000).",
+    "icon": 13122008,
+    "sortId": 8
+  },
+  {
+    "id": "00C839D9",
+    "skillId": 13122009,
+    "name": "Genjutsu - Sharingan",
+    "desc": "Madara Shadow Clone's Additional Skill: Causes unavoidable damage and Mental Breakdown (Level 2 Debuff: Whenever units affected execute an action, reduces that unit's lineup's Critical Rate by 15% (stackable up to 4 times) until the end of the round and dispels their Perseverance. Lasts until the end of the round.) to the opponent ninja with the lowest HP. If this skill defeats a unit, additionally causes True damage to all remaining units in that lineup based on 100% of the Clone's max HP (max of 30000). All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122009,
+    "sortId": 9
+  },
+  {
+    "id": "00C839DA",
+    "skillId": 13122010,
+    "name": "Uchiha Reflection",
+    "desc": "Madara has high chances to evade an attack every round and if he evades one, recovers 30% HP and counterattacks with 20% of his current HP. Whenever Madara evades the first attack in a round, scales his Ninjutsu by 15%. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122010,
+    "sortId": 10
+  },
+  {
+    "id": "00C839DB",
+    "skillId": 13122011,
+    "name": "Chakra Burst",
+    "desc": "At the end of the round, deactivates Chakra Burst, increase Madara's Chase damage by 10% (stackable) and all of Madara's other skills changes to non-breakthrough State, during that battle.",
+    "icon": 13122011,
+    "sortId": 11
+  },
+  {
+    "id": "00C839DC",
+    "skillId": 13122012,
+    "name": "Burst - Genjutsu - Mangekyo Sharingan",
+    "desc": "Additional Skill: Causes unavoidable damage, Interruption, Mental Breakdown to the unit in front and up to 7 opponent units suffering from Inferno, dispels their Perseverance and reduces Madara's Mystery Cooldown by 1. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122012,
+    "sortId": 12
+  },
+  {
+    "id": "00C83A35",
+    "skillId": 13122101,
+    "name": "New Year Combo - Rasen-Flash Super-Circle Dance Howl",
+    "desc": "Causes unavoidable damage and Interruption to all units in the opponent's field. If the selected unit is suffering from Flying Thunder Mark, increase this skill's damage by 40% and additionally reduces the selected unit's Mystery damage by 75% (not stackable) until that unit executes a Mystery skill. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122101,
+    "sortId": 1
+  },
+  {
+    "id": "00C83A36",
+    "skillId": 13122102,
+    "name": "Space-Time - Rasengan",
+    "desc": "Attacks a random row of opponent units and causes Flying Thunder Mark. This skill is unavoidable and if the unit hit is suffering from Flying Thunder Mark, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122102,
+    "sortId": 2
+  },
+  {
+    "id": "00C83A37",
+    "skillId": 13122103,
+    "name": "Space-Time - Rasengan",
+    "desc": "Attacks a random row of opponent units and causes Flying Thunder Mark. This skill is unavoidable and if the unit hit is suffering from Flying Thunder Mark, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122103,
+    "sortId": 3
+  },
+  {
+    "id": "00C83A38",
+    "skillId": 13122104,
+    "name": "Space-Time - Rasengan",
+    "desc": "Attacks a random row of opponent units and causes Flying Thunder Mark. This skill is unavoidable and if the unit hit is suffering from Flying Thunder Mark, this skill has additional Critical Rate increase. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122104,
+    "sortId": 4
+  },
+  {
+    "id": "00C83A39",
+    "skillId": 13122105,
+    "name": "Enhanced New Year Combo - Rasen-Flash Super-Circle Dance Howl",
+    "desc": "Causes unavoidable damage and Interruption to all units in the opponent's field. If the selected unit is suffering from Flying Thunder Mark, increases this skill's damage by 40%, additionally reduces the selected unit's Mystery damage by 75% (not stackable) until that unit executes a Mystery skill and during that round, whenever that selected unit is attacked by a Mystery skill, reduces that unit's Trigger damage by 15% (stackable up to 75%) until the end of the battle. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122105,
+    "sortId": 5
+  },
+  {
+    "id": "00C83A3A",
+    "skillId": 13122106,
+    "name": "Space-Time - Counter",
+    "desc": "causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases its Trigger damage by 10% (stackable up to 100%). All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122106,
+    "sortId": 6
+  },
+  {
+    "id": "00C83A3B",
+    "skillId": 13122107,
+    "name": "Space-Time - Counter",
+    "desc": "Yellow Flash Clone has high chances to evade Chase and Trigger skills and after it evades an attack, causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases its Trigger damage by 10% (stackable up to 100%). All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122107,
+    "sortId": 7
+  },
+  {
+    "id": "00C83A3C",
+    "skillId": 13122108,
+    "name": "Shadow Clone Jutsu",
+    "desc": "Minato has Flying Raijin Jutsu. At the beginning of the battle, summons a Yellow Flash Clone with 100% HP. There can only be a maximum of 1 Yellow Flash Clone present in your lineup.",
+    "icon": 13122108,
+    "sortId": 8
+  },
+  {
+    "id": "00C83A3D",
+    "skillId": 13122109,
+    "name": "Konoha's Yellow Flash",
+    "desc": "Passive: Whenever Minato's HP reaches 50% for the first time in a battle, dispels all Debuffs he currently has, recovers 70% HP, resets his action count and his Mystery changes to Enhanced New Year Combo - Rasen-Flash Super-Circle Dance Howl (Mystery, Battlefield Cooldown: 0, Cooldown: 2, Chakra Cost: 0). Causes unavoidable damage and Interruption to all units in the opponent's field. If the selected unit is suffering from Flying Thunder Mark, increases this skill's damage by 40%, additionally reduces the selected unit's Mystery damage by 75% (not stackable) until that unit executes a Mystery skill and during that round, whenever that selected unit is attacked by a Mystery skill, reduces that unit's Trigger damage by 15% (stackable up to 75%) until the end of the battle.",
+    "icon": 13122109,
+    "sortId": 9
+  },
+  {
+    "id": "00C83A3E",
+    "skillId": 13122110,
+    "name": "New Year Spirit - Space-Time Counter",
+    "desc": "Minato has high chances to evade Chase skills and after he executes his Mystery, he additionally gains high chances to evade Trigger skills until the end of the round. After he evades an attack, causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases Minato's Trigger damage by 10% (stackable up to 100%).",
+    "icon": 13122110,
     "sortId": 10
   }
 ]

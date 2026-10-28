@@ -1,0 +1,80 @@
+      private static var FMinatoNative:Object={};
+      private var FMinatoVfxStarted:Boolean=false;
+      private var FMinatoLayers:Array=[];
+      private static function PreloadMinatoNative() : void {
+         for each(var effect:String in ["BofengshuimenXinchun_Feileishenyinji", "BofengshuimenXinchun_Shikongjianlianduan_1", "BofengshuimenXinchun_Shikongjianlianduan_2", "BofengshuimenXinchun_Shikongjianlianduan_2teixie", "BofengshuimenXinchun_ShikongjianLuoxuanlianwan", "BofengshuimenXinchun_ShikongjianLuoxuanlianwan_shouji", "BofengshuimenXinchun_Shikongjianniji_luoxuanwan", "BofengshuimenXinchun_Shikongjianniji_shanbi", "BofengshuimenXinchun_Shikongjianniji_shouji", "BofengshuimenXinchun_Yingfenshenzhishu", "DASHEWAN_tongyongfuhuo"])LoadMinatoNative(effect);
+      }
+      private static function LoadMinatoNative(effect:String) : void {
+         if(FMinatoNative[effect]!=null)return;
+         var state:Object={};FMinatoNative[effect]=state;var loader:Loader=new Loader();state.loader=loader;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{state.domain=loader.contentLoaderInfo.applicationDomain;if(loader.content is MovieClip)MovieClip(loader.content).stop();});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void{delete FMinatoNative[effect];});
+         loader.load(new URLRequest("/public/minato-new-year-vfx/native/"+effect+".swf"),new flash.system.LoaderContext(false,new flash.system.ApplicationDomain()));
+      }
+      private function ClearMinatoVfx() : void {
+         for each(var layer:Sprite in FMinatoLayers)if(layer.parent!=null)layer.parent.removeChild(layer);
+         FMinatoLayers=[];FMinatoVfxStarted=false;
+      }
+      private function UpdateMinatoVfx() : void {
+         if((FId!=11121003 && FId!=11121004) || FMinatoVfxStarted || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         FMinatoVfxStarted=true;
+         if(FSkillId==13122109){PlayMinatoNative("DASHEWAN_tongyongfuhuo","tyfh");return;}
+         var mapping:Object=JSON.parse("{\"13122101\":\"BofengshuimenXinchun_Shikongjianlianduan_1\",\"13122105\":\"BofengshuimenXinchun_Shikongjianlianduan_2\",\"13122102\":\"BofengshuimenXinchun_ShikongjianLuoxuanlianwan\",\"13122103\":\"BofengshuimenXinchun_ShikongjianLuoxuanlianwan\",\"13122104\":\"BofengshuimenXinchun_ShikongjianLuoxuanlianwan\",\"13122106\":\"BofengshuimenXinchun_Shikongjianniji_luoxuanwan\",\"13122107\":\"BofengshuimenXinchun_Shikongjianniji_luoxuanwan\",\"13122108\":\"BofengshuimenXinchun_Yingfenshenzhishu\",\"13122110\":\"BofengshuimenXinchun_Shikongjianniji_shanbi\"}");var effect:String=mapping[String(FSkillId)];
+         if(FSkillId==13122105)PlayMinatoNative("BofengshuimenXinchun_Shikongjianlianduan_2teixie","texie");
+         if(effect!=null){PlayMinatoNative(effect,"xia");PlayMinatoNative(effect,"shang");}
+         if(FTargets!=null && FResults!=null && ((FSkillId>=13122102 && FSkillId<=13122104)||FSkillId==13122106||FSkillId==13122107)){
+            var standard:Boolean=FSkillId>=13122102&&FSkillId<=13122104;
+            for(var i:int=0;i<FTargets.length&&i<FResults.length;i++)if(FTargets[i]!=null&&FTargets[i].Camp!=Camp&&FResults[i].CMD==1&&FResults[i].ResultInfo.HurtHp>0){
+               PlayMinatoNative(standard?"BofengshuimenXinchun_ShikongjianLuoxuanlianwan_shouji":"BofengshuimenXinchun_Shikongjianniji_shouji","shang",FTargets[i],standard?14:15);
+               if(standard)PlayMinatoNative("BofengshuimenXinchun_Feileishenyinji","shang",FTargets[i],14);
+            }
+         }
+      }
+      private function MinatoContactOffset() : Point {
+         if((FId!=11121003 && FId!=11121004) || FSkillId<13122101 || FSkillId>13122110 || FTargets==null || FResults==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return new Point();
+         var enemy:TRole=null;
+         for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp!=Camp && FResults[i].CMD==1){enemy=FTargets[i];break;}
+         if(enemy==null || FSkillId==13122101 || FSkillId==13122105 || FSkillId>=13122108)return new Point();
+         var contact:Point=globalToLocal(enemy.localToGlobal(new Point()));
+         // Source SkillAction distances, using the same 0.84 scale as the actor.
+         var distance:Number=(FSkillId>=13122102&&FSkillId<=13122104?600:510)*0.84;
+         var end:Number=Number(JSON.parse("{\"13122101\":115,\"13122102\":99,\"13122103\":99,\"13122104\":99,\"13122105\":109,\"13122106\":91,\"13122107\":91,\"13122108\":32,\"13122109\":27,\"13122110\":41}")[String(FSkillId)]);var phase:Number=Math.min(1,Math.max(0,FFrameIndex/9),Math.max(0,(end-FFrameIndex)/9));phase=phase*phase*(3-2*phase);
+         return new Point((contact.x-distance)*phase,contact.y*phase);
+      }
+      private function MinatoStrikePose(frame:TAnimationFrame) : void {
+         if((FId!=11121003 && FId!=11121004) || frame==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         var offset:Point=MinatoContactOffset();FBitmap.x=-frame.Pivot.X+offset.x;FBitmap.y=-frame.Pivot.Y+offset.y;
+      }
+      private function PlayMinatoNative(effect:String,symbol:String,target:TRole=null,startFrame:int=0) : void {
+         LoadMinatoNative(effect);
+         var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         var layer:Sprite=new Sprite();layer.name="minatoNewYearSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         if(symbol=="xia" && parent==host)host.addChildAt(layer,host.getChildIndex(this));else host.addChild(layer);
+         FMinatoLayers.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:uint=FSkillId;var last:int=-1;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null && event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK && caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
+            var state:Object=FMinatoNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
+            if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            if(caster.FFrameIndex<startFrame){layer.visible=false;return;}
+            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex-startFrame)*rate/25)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
+            var offset:Point=caster.MinatoContactOffset();var originX:Number=70*0.84;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point(originX+offset.x,offset.y)));
+            var facing:Number=caster.scaleX;
+            if(target!=null){at=host.globalToLocal(target.localToGlobal(new Point()));facing=target.scaleX;}
+            layer.x=at.x;layer.y=at.y;layer.scaleX=facing<0?-0.84:0.84;layer.scaleY=0.84;
+            if(symbol=="texie"){
+               var bounds:Rectangle=clip.getBounds(clip);if(bounds.width>1 && bounds.height>1){
+                  // Fit the original cut-in uniformly to the battle viewport.
+                  var fit:Number=host.stage.stageWidth/bounds.width;
+                  layer.scaleX=fit;layer.scaleY=fit;
+                  layer.x=host.stage.stageWidth*.5-(bounds.x+bounds.width*.5)*fit;
+                  layer.y=host.stage.stageHeight*.4-(bounds.y+bounds.height*.5)*fit;
+               }
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

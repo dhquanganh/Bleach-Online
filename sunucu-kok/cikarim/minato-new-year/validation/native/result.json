@@ -1,0 +1,15 @@
+{
+  "componentProbe": true,
+  "combatReplay": false,
+  "completed": true,
+  "cases": 24,
+  "restores": 0,
+  "stableRestores": 0,
+  "deathHolds": 0,
+  "assetPlays": 0,
+  "powerLayers": 0,
+  "atlasesLoaded": 0,
+  "missingFrames": 0,
+  "remainingLayers": 0,
+  "errors": []
+}

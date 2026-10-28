@@ -1,0 +1,27 @@
+TEXTURE idle frames=39
+TEXTURE hit frames=8
+TEXTURE run frames=4
+TEXTURE prowess frames=28
+TEXTURE mystery frames=116
+TEXTURE standard-2 frames=100
+TEXTURE summon frames=33
+TEXTURE dead frames=15
+TEXTURE standard frames=100
+TEXTURE entry frames=40
+TEXTURE standard-3 frames=100
+TEXTURE enhanced-mystery frames=110
+TEXTURE counter frames=92
+TEXTURE evade frames=42
+CASE six original Yellow Flash Clone, both camps
+LATE_TEXTURE_OK six pending entries
+SNAPSHOT katsuyu-phase-0
+SNAPSHOT katsuyu-phase-1
+SNAPSHOT katsuyu-phase-2
+SNAPSHOT katsuyu-phase-3
+SNAPSHOT katsuyu-phase-4
+SNAPSHOT katsuyu-phase-5
+SNAPSHOT katsuyu-phase-6
+RESTORE_OK six summons; cancelled death callback; source entry/idle restored
+SNAPSHOT katsuyu-phase-7
+SNAPSHOT katsuyu-phase-8
+DONE Yellow Flash Clone native lifecycle; remaining=0

@@ -230,11 +230,12 @@ function scoped(scope, caster, allies, enemies, targets, random) {
 function status(unit, field) {
   const sasuke=require('./sasuke-combat');
   if(field==='disarm'&&require('./gaara-combat').active(unit,'gaaraBlindUntil'))return true;
+  if(field==='noHeal'&&unit.madaraIgnitionUntil>=unit.battleRound)return true;
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
   const immunitySuppressed=!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(require('./minato-new-year-combat').immuneAura(unit)||unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -251,6 +252,11 @@ function value(unit, field) {
   result*=require('./tsunade-combat').factor(unit,field);
   result*=require('./tobi-war-combat').factor(unit,field);
   result*=require('./kakuzu-edo-combat').factor(unit,field);
+  result*=require('./madara-final-combat').factor(unit,field);
+  result*=require('./minato-new-year-combat').factor(unit,field);
+  if(field==='critRate')result+=require('./minato-new-year-combat').critical(unit);
+  if(field==='critRate')result+=require('./madara-final-combat').critical(unit);
+  if(['def','resistance'].includes(field)&&unit.madaraShatterUntil>=unit.battleRound)result*=.7;
   if(field==='critRate')result+=require('./tsunade-combat').critical(unit);
   if(field==='critRate')result+=require('./itachi-combat').critical(unit);
   if(field==='critRate')result-=require('./gaara-combat').criticalLoss(unit);
@@ -414,4 +420,4 @@ function eventFrames(unit,records) {
 module.exports={get,plans,effects,select,scoped,status,value,apply,restore,healPower,changeFury,remove,removeField,removeOneDebuff,startRound,endRound,hpRecord,eventFrames};
 
 // Shared armor suppression belongs to the combat engine.
-module.exports.armor=unit=>require('./gaara-combat').active(unit,'tobiArmorUntil')||require('./gaara-combat').active(unit,'gaaraArmor2Until')||!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));
+module.exports.armor=unit=>require('./madara-final-combat').isMadara(unit)&&require('./madara-final-combat').active(unit,'madaraBurstUntil')||require('./gaara-combat').active(unit,'tobiArmorUntil')||require('./gaara-combat').active(unit,'gaaraArmor2Until')||!!((unit.superArmor||require('./mecha-combat').beast(unit))&&(!(unit.armorSuppressedUntil>=unit.battleRound)||require('./mecha-combat').advanced(unit)));

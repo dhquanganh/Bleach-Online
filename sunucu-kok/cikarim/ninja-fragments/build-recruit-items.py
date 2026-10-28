@@ -20,7 +20,7 @@ def main():
     extras={};catalog=[]
     for association in attrs:
         hero=int(association['id'],16)
-        if not 11120900<=hero<11121000 or hero not in allowed:continue
+        if not 11120900<=hero<11122000 or hero not in allowed:continue
         fragment=articles[int(association['chipValue'])];item=hero+3020000;name=roster[hero]['name']
         row=copy.deepcopy(template)
         row.update(id=f'{item:08X}',name=name+' Recruit Token',level=1,quality=fragment['quality'],sort=item,overlayNumber=999,bindMode=1,obtain=0,
@@ -28,7 +28,7 @@ def main():
           picture=fragment['picture'],sellPrice=0,itemFunction=0,functionValue=9,f16=hero)
         if item in articles:assert articles[item]['functionValue']==9 and articles[item]['f16']==hero,'Item ID collision'
         extras[item]=row;catalog.append({'heroId':hero,'itemId':item,'fragmentId':int(association['chipValue']),'picture':row['picture'],'name':row['name']})
-    assert len(catalog)==13,('Review changed Naruto roster before applying',catalog)
+    assert len(catalog)==15,('Review changed Naruto roster before applying',catalog)
     replacement={i:f.serialize(2,r) for i,r in extras.items()}
     def patch(raw):
         if struct.unpack_from('<I',raw)[0]!=0x1000002:return raw

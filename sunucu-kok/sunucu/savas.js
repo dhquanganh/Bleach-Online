@@ -25,6 +25,8 @@ const sasukeCombat = require('./sasuke-combat');
 const tsunadeCombat = require('./tsunade-combat');
 const nineTailsCombat = require('./naruto-nine-tails-combat');
 const tobiCombat = require('./tobi-war-combat');
+const minatoCombat = require('./minato-new-year-combat');
+const madaraCombat = require('./madara-final-combat');
 const kakuzuCombat = require('./kakuzu-edo-combat');
 
 const VJSON = path.join(__dirname, '..', 'cikarim', 'veri-json');
@@ -811,7 +813,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec?.zanpakutoTargets || (attackSpec ? (attackSpec.summon || attackSpec.support ? [] : kakuzuCombat.targets(attackSpec,hedef,opponents,u.kakuzuContext||{random}) || tobiCombat.targets(attackSpec,hedef,opponents,u.tobiContext||{random}) || nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
+  const victims = attackSpec?.zanpakutoTargets || (attackSpec ? (attackSpec.summon || attackSpec.support ? [] : minatoCombat.targets(u.minatoContext||{random},u,attackSpec,hedef,opponents)||madaraCombat.targets(u.madaraContext||{random},u,attackSpec,hedef,opponents)||kakuzuCombat.targets(attackSpec,hedef,opponents,u.kakuzuContext||{random}) || tobiCombat.targets(attackSpec,hedef,opponents,u.tobiContext||{random}) || nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef]);
   mechaCombat.beforeAttack(u,attackSpec,targets);
   const hitTargets = [];
@@ -826,6 +828,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   // Offensive scaling is independent of the defense/resistance used by the move.
   const castAttack = attackSpec && attackSpec.attackStat === 'maxHp' && (tobiCombat.isTobi(u)||tobiCombat.isZetsu(u)) ? heroSkills.value(u,'maxHp') : attackSpec && attackSpec.attackStat === 'atk' ? heroSkills.value(u,'atk') : attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(u,'atk') + heroSkills.value(u,'magicAtk')) / 2 : attackSpec && attackSpec.damageType === 'ninjutsu' ? heroSkills.value(u,'magicAtk') : heroSkills.value(u,'atk');
   let painPrimaryDamage=0;
+  const minatoScale=minatoCombat.outgoing(u.minatoContext||{round:u.battleRound},u,attackSpec||{prompt:skillAt,trigger:extra});
   for (const victim of victims) {
     if(victim.tobiContext)tobiCombat.attacked(victim.tobiContext,victim,attackSpec||{prompt:skillAt});
     if(victim.mechaContext)mechaCombat.onAttacked(victim.mechaContext,victim);
@@ -835,7 +838,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const painTechniqueCredited=painCombat.isPain(victim)&&victim.hp>0;
     if(painTechniqueCredited){const notices=[];painCombat.points(victim,victim.painFinal?1:.5,notices);reactions.push(painCombat.passive(victim,notices));}
     const kamuiProtected=!bypass&&obitoCombat.fatalLimit(victim,!skillAt);
-    if(!bypass&&!guaranteed&&(kakuzuCombat.evade(victim.kakuzuContext||{random},victim,attackSpec,extra)||itachiCombat.evade(victim.itachiContext,victim,attackSpec,random)||mechaCombat.evade(victim.mechaContext||{round:victim.battleRound,mechaTriggers:[]},victim,attackSpec,random)||obitoCombat.evade(victim,random))){
+    if(!bypass&&!guaranteed&&(minatoCombat.evade(victim.minatoContext||{random},victim,attackSpec,u,extra)||madaraCombat.evade(victim.madaraContext||{random},victim,attackSpec)||kakuzuCombat.evade(victim.kakuzuContext||{random},victim,attackSpec,extra)||itachiCombat.evade(victim.itachiContext,victim,attackSpec,random)||mechaCombat.evade(victim.mechaContext||{round:victim.battleRound,mechaTriggers:[]},victim,attackSpec,random)||obitoCombat.evade(victim,random))){
       const notice=[];if(!mechaCombat.isMecha(victim))obitoCombat.label(notice,victim,11);reactions.push(obitoCombat.passive(victim,notice));
       targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
       continue;
@@ -844,6 +847,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const hitChance = chance((u.hitRate == null ? 1 : heroSkills.value(u,'hitRate')) - heroSkills.value(victim,'dodgeRate'));
     if (!bitir && !guaranteed && !talent.guaranteedHit && hitChance < 1 && random() >= hitChance) {
       itachiCombat.evaded(victim);
+      if(victim.minatoContext)minatoCombat.evaded(victim.minatoContext,victim,u);
       targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
       continue;
     }
@@ -851,10 +855,11 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const resistance=(victim.resistance == null ? heroSkills.value(victim,'def') : heroSkills.value(victim,'resistance'))*Math.max(0,1-.1*(victim.jiraiyaResistanceStacks||0));
     const attack = castAttack, defense = (attackSpec && attackSpec.damageType === 'mixed' ? (heroSkills.value(victim,'def') + resistance) / 2 : attackSpec && attackSpec.damageType === 'ninjutsu' ? resistance : heroSkills.value(victim,'def')) * (1-Math.max(0,Math.min(1,heroSkills.value(u,'ignoreDefense'))));
     let dmg = Math.round(attack * (attackSpec ? attackSpec.multiplier : skillAt ? (plan ? plan.multiplier : 1.8) : (talent.normalMultiplier || 1)) * (0.92 + random() * 0.16) * (triple ? 3 : 1));
+    dmg=Math.round(dmg*minatoScale);
     if(attackSpec&&attackSpec.superArmorBonus&&(heroSkills.armor(victim)||(painCombat.isPain(victim)&&victim.painFinal)))dmg=Math.round(dmg*(1+attackSpec.superArmorBonus));
     if(attackSpec?.tobiMystery&&(victim.cloneOwner||victim.auxiliary||victim.isSummon||victim.puppet||tobiCombat.isZetsu(victim)))dmg=Math.round(dmg*1.4);
     if (victim.cloneOwner && (attackSpec && attackSpec.element || u.element) === 'lightning') dmg = Math.round(dmg * (1 - narutoCombat.config.cloneLightningReduction));
-    const critical = hashCombat.active(u,'hashSealUntil') || !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate')+(attackSpec?.critBonus||0));
+    const critical = hashCombat.active(u,'hashSealUntil') || !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate')+(attackSpec?.critBonus||0)+minatoCombat.criticalBonus(u,victim,attackSpec));
     if (critical) dmg = Math.round(dmg * Math.max(0,1.5+(hashCombat.active(u,'hashSealUntil')?0:heroSkills.value(u,'critDamage'))));
     const breakDefense = chance(heroSkills.value(u,'wreckRate')) > 0 && random() < chance(heroSkills.value(u,'wreckRate'));
     if (defense > 0 && !ignoreDefense && !breakDefense) dmg = Math.round(dmg * attack / Math.max(1,attack + defense*(1-chance(attackSpec&&attackSpec.ignoreDefense))));
@@ -868,6 +873,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if(attackSpec?.hashGolem)dmg=Math.round(dmg*(attackSpec.hashSplashWeights?.get(victim)||1));
     if(attackSpec?.painChase){if(victim===hedef)painPrimaryDamage=dmg;else dmg=Math.round(painPrimaryDamage*.3);}
     if (hashCombat.fireImmune(victim,attackSpec,u) || !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'))) dmg = 0;
+    if(attackSpec?.damageCap)dmg=Math.min(attackSpec.damageCap,dmg);
     if (u.maxHitDamage) dmg = Math.min(u.maxHitDamage, dmg);
     // Local aid rule: a living ally with Help rate intercepts half a normal hit.
     // Both HP changes are transmitted, so rendered HP and server HP stay equal.
@@ -881,7 +887,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       if(u.tsunadeContext){const notices=[];nineTailsCombat.onDamage(u.tsunadeContext,u,helper,aided,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(helper,notices));}
       appendHit(targets,helper,aided,ST.TARGET_EFFECT | ST.HIT | ST.HELP | (helper.hp<=0?ST.DIED:0));
     }
-    const immune = hashCombat.fireImmune(victim,attackSpec,u) || !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'));
+    const immune = madaraCombat.pureImmune(victim,attackSpec||{pureTaijutsu:!skillAt}) || hashCombat.fireImmune(victim,attackSpec,u) || !bypass&&(heroSkills.status(victim,'invincible') || !skillAt && heroSkills.status(victim,'void'));
     if(kamuiProtected&&dmg>=victim.hp){const notice=[];obitoCombat.label(notice,victim,12);reactions.push(obitoCombat.passive(victim,notice));}
     if(kamuiProtected)dmg=Math.min(dmg,Math.max(0,victim.hp-1));
     if(victim.sasukeContext&&!bypass&&!immune)dmg=sasukeCombat.beforeDamage(victim.sasukeContext,u,victim,attackSpec||{prompt:skillAt},dmg);
@@ -891,12 +897,16 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if(victim.tobiContext)dmg=tobiCombat.beforeDamage(victim.tobiContext,victim,attackSpec||{prompt:skillAt},dmg);
     if(victim.kakuzuContext)dmg=kakuzuCombat.beforeDamage(victim.kakuzuContext,victim,attackSpec||{prompt:skillAt},dmg);
     const kakuzuProtected=kakuzuCombat.isKakuzu(victim)&&!!victim.kakuzuContext&&!!(attackSpec?attackSpec.prompt:skillAt)&&!!kakuzuCombat.clone(victim.kakuzuContext,victim);
-    const result = immune ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,kamuiProtected||tsunadeNonfatal||kakuzuProtected||(tobiCombat.isZetsu(victim)&&!!(attackSpec?attackSpec.prompt:skillAt)));
+    const madaraProtected=!immune&&!!victim.madaraContext&&madaraCombat.fatalProtected(victim.madaraContext,victim,dmg);
+    if(victim.madaraContext&&!immune)dmg=madaraCombat.beforeDamage(victim.madaraContext,victim,dmg);
+    const result = immune ||madaraCombat.pureImmune(victim,attackSpec||{pureTaijutsu:!skillAt}) ? {damage:0} : rebirth.hit(u, victim, dmg, random,bypass,madaraProtected||kamuiProtected||tsunadeNonfatal||kakuzuProtected||(tobiCombat.isZetsu(victim)&&!!(attackSpec?attackSpec.prompt:skillAt)),!!attackSpec?.ignoreShield);
     if(u.gaaraContext){const notices=[];require('./gaara-combat').onDamage(u.gaaraContext,u,victim,result,critical,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
     if(u.tsunadeContext){const notices=[];tsunadeCombat.onDamage(u.tsunadeContext,u,victim,result,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
     if(u.tsunadeContext){const notices=[];nineTailsCombat.onDamage(u.tsunadeContext,u,victim,result,attackSpec,notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
     if(u.sasukeContext)sasukeCombat.onDamage(u.sasukeContext,u,victim,result.damage,critical);
     if(u.itachiContext){const notices=[];itachiCombat.onDamage(u.itachiContext,u,victim,result,attackSpec,notices,critical);if(notices.length)reactions.push(painCombat.passive(u,notices));}
+    if(u.minatoContext){const notices=[];minatoCombat.onDamage(u.minatoContext,u,victim,result,attackSpec||{prompt:skillAt},notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
+    if(u.madaraContext){const notices=[];madaraCombat.onDamage(u.madaraContext,u,victim,result,attackSpec,critical,notices);if(notices.length)reactions.push(painCombat.passive(victim,notices));}
     const status = (ST.TARGET_EFFECT | ST.HIT | (critical ? ST.CRIT : 0) | (blocked ? ST.BLOCK : 0) | (victim.hp <= 0 ? ST.DIED : 0)) >>> 0;
     appendHit(targets,victim,result,status);
     if(u.painContext){const notices=[];painCombat.onHit(u.painContext,u,victim,{...result,painTechniqueCredited},critical,notices);if(notices.length)reactions.push(painCombat.passive(u,notices));}
@@ -1169,6 +1179,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   tsunadeCombat.prepareSummons([p1,p2]);
   tobiCombat.prepareSummons([p1,p2]);
   kakuzuCombat.prepareSummons([p1,p2]);
+  madaraCombat.prepareSummons([p1,p2]);
+  minatoCombat.prepareSummons([p1,p2]);
   const chaseContext = narutoCombat.create([p1,p2], {random:options.random});
   // roller simulasyondan ONCE (curHealth = baslangic HP'si)
   const roles1 = p1.map(rolBilgisi), roles2 = p2.map(rolBilgisi);
@@ -1184,8 +1196,10 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     initialActives.push(...heroSkills.eventFrames(unit,records));
   }
   initialActives.push(...kakuzuCombat.battleStart(chaseContext));
+  initialActives.push(...madaraCombat.battleStart(chaseContext));
+  initialActives.push(...minatoCombat.battleStart(chaseContext));
   for (const [team, roles] of [[p1,roles1],[p2,roles2]]) team.forEach((unit,index)=>{
-    roles[index].curHealth=unit.hp; roles[index].totalHealth=unit.maxHp;
+    roles[index].curHealth=madaraCombat.isClone(unit)||minatoCombat.isClone(unit)?0:unit.hp; roles[index].totalHealth=unit.maxHp;
   });
   const deathTriggered = new Set(p1.concat(p2).filter(unit=>unit.hp<=0));
   const appendDeaths = actives => {
@@ -1229,6 +1243,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       move=sasukeCombat.prepareMove(actor,move);
       move=tobiCombat.prepareMove(chaseContext,actor,move,victim);
       if(move?.tobiBefore)beforeFrames.push(...move.tobiBefore);
+      move=minatoCombat.prepareMove(chaseContext,actor,move,victim);
+      move=madaraCombat.prepareMove(chaseContext,actor,move);
       move=kakuzuCombat.prepareMove(chaseContext,actor,move,victim);
       if(move?.kakuzuBefore)beforeFrames.push(...move.kakuzuBefore);
       move=require('./gaara-combat').prepareMove(chaseContext,actor,victim,move);
@@ -1249,9 +1265,12 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         tsunadeCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         nineTailsCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         tobiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        minatoCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        madaraCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         kakuzuCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.cleanse(chaseContext);
       }
+      if(!move&&frame.activeType===kodek.ACTIVE.SKILL)minatoCombat.afterHit(chaseContext,actor,victim,[],{prompt:true},frame);
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
       return frame;
     };
@@ -1268,6 +1287,15 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     appendDeaths(actives);
     for(const request of tobiCombat.triggers(chaseContext)){
       const enemies=chaseContext.teams[1-request.unit.camp],victim=enemies.find(v=>v.hp>0);
+      if(victim&&performDepth<24)perform(request.unit,victim,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
+    }
+    for(const request of minatoCombat.triggers(chaseContext)){
+      const enemies=chaseContext.teams[1-request.unit.camp],victim=request.target?.hp>0?request.target:enemies.find(v=>v.hp>0&&!v.auxiliary);
+      const move=request.standardAction?narutoCombat.useStandard(chaseContext,request.unit,chaseContext.teams[request.unit.camp]):request.move;
+      if(move&&victim&&performDepth<24)perform(request.unit,victim,enemies,chaseContext.teams[request.unit.camp],actives,move);
+    }
+    for(const request of madaraCombat.triggers(chaseContext)){
+      const enemies=chaseContext.teams[1-request.unit.camp],victim=request.target||enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(victim&&performDepth<24)perform(request.unit,victim,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
     }
     for(const request of kakuzuCombat.triggers(chaseContext)){
@@ -1339,6 +1367,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     if(battleOver())break;
     reactiveEnabled=false;
     narutoCombat.startRound(chaseContext,t);
+    minatoCombat.roundStart(chaseContext);
     const kakuzuRound=kakuzuCombat.roundStart(chaseContext);
     mechaCombat.roundStart(chaseContext);
     tsunadeCombat.roundStart(chaseContext);
@@ -1410,7 +1439,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if (u.hp <= 0) continue;
       // Sage Shadow Clone is a full combatant. Other auxiliary clones keep the
       // legacy skip rule used by their owning characters.
-      if ((u.cloneOwner && u.id !== narutoCombat.config.cloneId) || u.auxiliary&&!u.tsunadeSmall&&!tobiCombat.isZetsu(u)&&!kakuzuCombat.isClone(u) || narutoCombat.disabled(u)) continue;
+      if ((u.cloneOwner && u.id !== narutoCombat.config.cloneId) || u.auxiliary&&!u.tsunadeSmall&&!tobiCombat.isZetsu(u)&&!kakuzuCombat.isClone(u)&&!madaraCombat.isClone(u)&&!minatoCombat.isClone(u) || narutoCombat.disabled(u)) continue;
       if (['stun','fossilize','void','freeze'].some(field=>heroSkills.status(u,field))) continue;
       const canSkill = hashCombat.canMystery(chaseContext,u) && !narutoCombat.profile(u) && painCombat.canMystery(chaseContext,u,{}) && chaseContext.chakra[u.camp]>=painCombat.mysteryCost(chaseContext,u,{}) && u.skill && validSkillTargets(u, u.camp === 0 ? p2 : p1) && !heroSkills.status(u,'silence') && !heroSkills.status(u,'chaos') && !jiraiyaCombat.blocksMystery(chaseContext,u,null) && (u.anger >= 100 || heroTalents.effect(u.id).normalSkill);
       if(!canSkill&&painCombat.active(u,'painHorrorUntil'))continue;
@@ -1470,6 +1499,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     actives.push(...nineTailsCombat.endRound(chaseContext));
     actives.push(...tobiCombat.endRound(chaseContext));
     actives.push(...kakuzuCombat.endRound(chaseContext));
+    actives.push(...madaraCombat.endRound(chaseContext));
     // A rescued ally can die again to round-end damage; its new death must be
     // processed even if its first death was already observed earlier this round.
     for(const unit of p1.concat(p2))if(unit.hp>0)deathTriggered.delete(unit);

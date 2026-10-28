@@ -47,7 +47,7 @@ function restriction(a,b){
 }
 const CHANCE={1:.10,2:.03,3:.015,4:.02,5:.02,6:.01,7:.04,8:.01,10:.02};
 function proc(unit,effect,rng=Math.random){const r=unit.rebirth||{};return r.n>0&&r.ae===effect&&rng()<Math.min(1,r.n*(CHANCE[effect]||0));}
-function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,nonfatal=false){
+function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,nonfatal=false,ignoreShield=false){
   const before=target.hp;
   const clearShield=proc(attacker,1,rng),clearBuffs=proc(attacker,7,rng);
   if(clearShield)target.shield=0;
@@ -56,7 +56,7 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
   if(instantKill)damage=target.hp;
   if(!ignoreDefensiveSkills&&proc(target,3,rng))damage=0;
   let absorbed=0;
-  if(!ignoreDefensiveSkills&&target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
+  if(!ignoreDefensiveSkills&&!ignoreShield&&target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
   const blockedHeal=(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
   const heal=!ignoreDefensiveSkills&&!blockedHeal&&proc(target,6,rng);
   if(attacker.maxHitDamage)damage=Math.min(damage,attacker.maxHitDamage);

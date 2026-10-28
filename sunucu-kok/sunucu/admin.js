@@ -269,7 +269,7 @@ function magazaListesi() {
 }
 // Custom Naruto heroes/summons use the reserved 111209xx IDs.
 // Restrict the sale catalog without removing ownership or admin recruitment.
-function overlayHeroListesi() { return heroListesi().filter(h => h.id < 11120900 || h.id > 11120999); }
+function overlayHeroListesi() { return heroListesi().filter(h => (h.id < 11120900 || h.id > 11120999) && h.id !== 11121001 && h.id !== 11121003); }
 const GIA_THIET_BI = { 1: 100, 2: 200, 3: 400, 4: 800, 5: 1600, 6: 3200, 7: 6400 };
 const LOAI_THIET_BI = { 2: 'Thiết bị', 4: 'Bảo vật', 6: 'Trang sức' };
 function giaThietBi(quality, level) {

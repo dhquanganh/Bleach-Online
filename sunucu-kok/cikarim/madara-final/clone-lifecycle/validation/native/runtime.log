@@ -1,0 +1,29 @@
+TEXTURE idle frames=52
+TEXTURE dead frames=12
+TEXTURE standard frames=43
+TEXTURE hit frames=8
+TEXTURE run frames=4
+TEXTURE burst frames=38
+TEXTURE chase frames=48
+TEXTURE burst-mystery frames=133
+TEXTURE burst-standard frames=53
+TEXTURE mystery frames=165
+TEXTURE burst-chase frames=48
+TEXTURE reflection frames=38
+TEXTURE complete frames=60
+TEXTURE summon frames=25
+TEXTURE clone-counter frames=58
+TEXTURE entry frames=12
+CASE six original Madara Shadow Clone, both camps
+LATE_TEXTURE_OK six pending entries
+SNAPSHOT katsuyu-phase-0
+SNAPSHOT katsuyu-phase-1
+SNAPSHOT katsuyu-phase-2
+SNAPSHOT katsuyu-phase-3
+SNAPSHOT katsuyu-phase-4
+SNAPSHOT katsuyu-phase-5
+SNAPSHOT katsuyu-phase-6
+RESTORE_OK six summons; cancelled death callback; source entry/idle restored
+SNAPSHOT katsuyu-phase-7
+SNAPSHOT katsuyu-phase-8
+DONE Madara Shadow Clone native lifecycle; remaining=0

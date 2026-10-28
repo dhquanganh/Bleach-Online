@@ -1,0 +1,196 @@
+{
+  "heroId": 11121003,
+  "summonId": 11121004,
+  "name": "Minato Namikaze [New Year]",
+  "assess": "SSS",
+  "quality": 7,
+  "tags": [
+    27,
+    62,
+    52,
+    1,
+    18,
+    58
+  ],
+  "chases": [],
+  "cloneHpRatio": 1,
+  "evadeChance": 0.6,
+  "maxMysteryResetsPerRound": 2,
+  "maxTeamTriggerBuffsPerRound": 6,
+  "balanceNote": "The reference does not supply damage coefficients. Every attack, counterattack and summon attack uses buffed Physical ATK against Physical DEF. Mystery hits all enemies as requested. Multi-hit presentation preserves the original 5-hit Mystery; this kit has reactive counters rather than an invented Chase.",
+  "mystery": {
+    "id": 13122101,
+    "sourceId": 21004477,
+    "name": "New Year Combo - Rasen-Flash Super-Circle Dance Howl",
+    "description": "Causes unavoidable damage and <font color=\"#4dc831\">Interruption</font> to all units in the opponent's field. If the selected unit is suffering from <font color=\"#4dc831\">Flying Thunder Mark</font>, increase this skill's damage by 40% and additionally reduces the selected unit's <font color=\"#4dc831\">Mystery</font> damage by 75% (not stackable) until that unit executes a Mystery skill.",
+    "minatoMove": "mystery",
+    "multiplier": 1.4,
+    "combo": 25,
+    "target": "all",
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "prompt": true,
+    "consumesPrimary": false,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "chakraCost": 20
+  },
+  "standard": {
+    "id": 13122102,
+    "sourceId": 21004471,
+    "name": "Space-Time - Rasengan",
+    "description": "Attacks a random row of opponent units and causes <font color=\"#4dc831\">Flying Thunder Mark</font>. This skill is unavoidable and if the unit hit is suffering from <font color=\"#4dc831\">Flying Thunder Mark</font>, this skill has additional Critical Rate increase.",
+    "minatoMove": "standard",
+    "multiplier": 0.95,
+    "combo": 10,
+    "target": 1,
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0
+  },
+  "standard2": {
+    "id": 13122103,
+    "sourceId": 21004472,
+    "name": "Space-Time - Rasengan",
+    "description": "Attacks a random row of opponent units and causes <font color=\"#4dc831\">Flying Thunder Mark</font>. This skill is unavoidable and if the unit hit is suffering from <font color=\"#4dc831\">Flying Thunder Mark</font>, this skill has additional Critical Rate increase.",
+    "minatoMove": "standard2",
+    "multiplier": 0.95,
+    "combo": 10,
+    "target": 1,
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0
+  },
+  "standard3": {
+    "id": 13122104,
+    "sourceId": 21004473,
+    "name": "Space-Time - Rasengan",
+    "description": "Attacks a random row of opponent units and causes <font color=\"#4dc831\">Flying Thunder Mark</font>. This skill is unavoidable and if the unit hit is suffering from <font color=\"#4dc831\">Flying Thunder Mark</font>, this skill has additional Critical Rate increase.",
+    "minatoMove": "standard3",
+    "multiplier": 0.95,
+    "combo": 10,
+    "target": 1,
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "cooldown": 0
+  },
+  "enhancedMystery": {
+    "id": 13122105,
+    "sourceId": 21004487,
+    "name": "Enhanced New Year Combo - Rasen-Flash Super-Circle Dance Howl",
+    "description": "Causes unavoidable damage and <font color=\"#4dc831\">Interruption</font> to all units in the opponent's field. If the selected unit is suffering from <font color=\"#4dc831\">Flying Thunder Mark</font>, increases this skill's damage by 40%, additionally reduces the selected unit's <font color=\"#4dc831\">Mystery</font> damage by 75% (not stackable) until that unit executes a Mystery skill and during that round, whenever that selected unit is attacked by a Mystery skill, reduces that unit's <font color=\"#4dc831\">Trigger</font> damage by 15% (stackable up to 75%) until the end of the battle.",
+    "minatoMove": "enhancedMystery",
+    "multiplier": 1.4,
+    "combo": 25,
+    "target": "all",
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "prompt": true,
+    "consumesPrimary": false,
+    "cooldown": 2,
+    "battlefieldCooldown": 0,
+    "chakraCost": 0
+  },
+  "counter": {
+    "id": 13122106,
+    "sourceId": 21004476,
+    "name": "Space-Time - Counter",
+    "description": "causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases its Trigger damage by 10% (stackable up to 100%).",
+    "minatoMove": "counter",
+    "multiplier": 0.65,
+    "combo": 10,
+    "target": 1,
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "trigger": true,
+    "causes": "highFloat"
+  },
+  "cloneCounter": {
+    "id": 13122107,
+    "sourceId": 21004495,
+    "name": "Space-Time - Counter",
+    "description": "Yellow Flash Clone has high chances to evade Chase and Trigger skills and after it evades an attack, causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases its Trigger damage by 10% (stackable up to 100%).",
+    "minatoMove": "cloneCounter",
+    "multiplier": 0.65,
+    "combo": 10,
+    "target": 1,
+    "unavoidable": true,
+    "attackStat": "atk",
+    "damageType": "physical",
+    "trigger": true,
+    "causes": "highFloat"
+  },
+  "summon": {
+    "id": 13122108,
+    "sourceId": 21004474,
+    "name": "Shadow Clone Jutsu",
+    "description": "Minato has <font color=\"#4dc831\">Flying Raijin Jutsu</font>. At the beginning of the battle, summons a <font color=\"#4dc831\">Yellow Flash Clone</font> with 100% <font color=\"#4dc831\">HP</font>. There can only be a maximum of 1 <font color=\"#4dc831\">Yellow Flash Clone</font> present in your lineup.",
+    "minatoMove": "summon",
+    "multiplier": 0,
+    "combo": 0,
+    "target": 1,
+    "unavoidable": true,
+    "support": true,
+    "trigger": true
+  },
+  "prowess": {
+    "id": 13122109,
+    "sourceId": 21004479,
+    "name": "Konoha's Yellow Flash",
+    "description": "Passive: Whenever Minato's HP reaches 50% for the first time in a battle, dispels all Debuffs he currently has, recovers 70% HP, resets his action count and his Mystery changes to Enhanced New Year Combo - Rasen-Flash Super-Circle Dance Howl (Mystery, Battlefield Cooldown: 0, Cooldown: 2, Chakra Cost: 0). Causes unavoidable damage and Interruption to all units in the opponent's field. If the selected unit is suffering from Flying Thunder Mark, increases this skill's damage by 40%, additionally reduces the selected unit's Mystery damage by 75% (not stackable) until that unit executes a Mystery skill and during that round, whenever that selected unit is attacked by a Mystery skill, reduces that unit's Trigger damage by 15% (stackable up to 75%) until the end of the battle.",
+    "minatoMove": "prowess",
+    "multiplier": 0,
+    "combo": 0,
+    "target": 1,
+    "unavoidable": true,
+    "support": true
+  },
+  "evade": {
+    "id": 13122110,
+    "sourceId": 21004475,
+    "name": "New Year Spirit - Space-Time Counter",
+    "description": "Minato has high chances to evade <font color=\"#4dc831\">Chase</font> skills and after he executes his <font color=\"#4dc831\">Mystery</font>, he additionally gains high chances to evade <font color=\"#4dc831\">Trigger</font> skills until the end of the round. After he evades an attack, causes unavoidable damage, <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, <font color=\"#4dc831\">High Float</font> to a random opponent ninja and increases Minato's <font color=\"#4dc831\">Trigger</font> damage by 10% (stackable up to 100%).",
+    "minatoMove": "evade",
+    "multiplier": 0,
+    "combo": 0,
+    "target": 1,
+    "unavoidable": true,
+    "support": true
+  },
+  "flyingRaijin": {
+    "name": "Flying Raijin Jutsu",
+    "description": "While Minato is alive, your lineup is immune to Debuffs and whenever they execute their Mystery skill, they also cause Flying Thunder Mark to the selected unit. Whenever your lineup executes a Trigger, scales Minato's Attack and Ninjutsu by 20%, can be triggered 6 times each round."
+  },
+  "passives": [
+    {
+      "name": "Shadow Clone Jutsu",
+      "description": "Minato has <font color=\"#4dc831\">Flying Raijin Jutsu</font>. At the beginning of the battle, summons a <font color=\"#4dc831\">Yellow Flash Clone</font> with 100% <font color=\"#4dc831\">HP</font>. There can only be a maximum of 1 <font color=\"#4dc831\">Yellow Flash Clone</font> present in your lineup."
+    },
+    {
+      "name": "New Year Spirit - Space-Time Counter",
+      "description": "Minato has high chances to evade <font color=\"#4dc831\">Chase</font> skills and after he executes his <font color=\"#4dc831\">Mystery</font>, he additionally gains high chances to evade <font color=\"#4dc831\">Trigger</font> skills until the end of the round. After he evades an attack, causes unavoidable damage, <font color=\"#4dc831\">Suppress Super Armor</font> for 1 round, <font color=\"#4dc831\">High Float</font> to a random opponent ninja and increases Minato's <font color=\"#4dc831\">Trigger</font> damage by 10% (stackable up to 100%)."
+    },
+    {
+      "name": "Flying Raijin Jutsu",
+      "description": "While Minato is alive, your lineup is immune to Debuffs and whenever they execute their Mystery skill, they also cause Flying Thunder Mark to the selected unit. Whenever your lineup executes a Trigger, scales Minato's Attack and Ninjutsu by 20%, can be triggered 6 times each round."
+    },
+    {
+      "name": "Konoha's Yellow Flash",
+      "description": "Minato has <font color=\"#4dc831\">Prowess</font>, is immune to <font color=\"#4dc831\">Flying Thunder Mark</font> and whenever he evades an attack, scales his <font color=\"#4dc831\">Critical Rate</font> by 15%. After Minato suffers the first <font color=\"#4dc831\">Mystery</font> damage in a round, executes <font color=\"#4dc831\">Shadow Clone Jutsu</font>. After the <font color=\"#4dc831\">Yellow Flash Clone</font> executes <font color=\"#4dc831\">Space-Time - Counter</font>, reduces Minato's Mystery Cooldown to 0 and he can execute his Mystery skill again, can be triggered twice each round."
+    },
+    {
+      "name": "Yellow Flash",
+      "description": "Yellow Flash Clone is immune to Debuffs and Flying Thunder Mark. Whenever it evades an attack, scales its Critical Rate by 15%."
+    },
+    {
+      "name": "Space-Time - Counter",
+      "description": "Yellow Flash Clone has high chances to evade Chase and Trigger skills and after it evades an attack, causes unavoidable damage, Suppress Super Armor for 1 round, High Float to a random opponent ninja and increases its Trigger damage by 10% (stackable up to 100%)."
+    }
+  ]
+}

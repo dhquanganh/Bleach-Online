@@ -1,0 +1,73 @@
+      private static var FMadaraNative:Object={};
+      private var FMadaraVfxStarted:Boolean=false;
+      private var FMadaraLayers:Array=[];
+      private static function PreloadMadaraNative() : void {
+         for each(var effect:String in ["Banzhongyanzhizhan_aoyi1", "Banzhongyanzhizhan_aoyi2", "Banzhongyanzhizhan_beidong", "Banzhongyanzhizhan_pugong1", "Banzhongyanzhizhan_pugong2", "Banzhongyanzhizhan_shanbi", "Banzhongyanzhizhan_zhuida1", "Banzhongyanzhizhan_zhuida2", "YuzhibobanZhongyanzhizhan_Haohuomieshi", "YuzhibobanZhongyanzhizhan_Haohuomieshi_texie", "YuzhibobanZhongyanzhizhan_Wanhtongxielunyan", "YuzhibobanZhongyanzhizhan_Wanhtongxielunyan_bao", "YuzhibobanZhongyanzhizhan_yingfenshen_bao"])LoadMadaraNative(effect);
+      }
+      private static function LoadMadaraNative(effect:String) : void {
+         if(FMadaraNative[effect]!=null)return;
+         var state:Object={};FMadaraNative[effect]=state;var loader:Loader=new Loader();state.loader=loader;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{state.domain=loader.contentLoaderInfo.applicationDomain;if(loader.content is MovieClip)MovieClip(loader.content).stop();});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void{delete FMadaraNative[effect];});
+         loader.load(new URLRequest("/public/madara-final-vfx/native/"+effect+".swf"),new flash.system.LoaderContext(false,new flash.system.ApplicationDomain()));
+      }
+      private function ClearMadaraVfx() : void {
+         for each(var layer:Sprite in FMadaraLayers)if(layer.parent!=null)layer.parent.removeChild(layer);
+         FMadaraLayers=[];FMadaraVfxStarted=false;
+      }
+      private function UpdateMadaraVfx() : void {
+         if((FId!=11121001 && FId!=11121002) || FMadaraVfxStarted || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         FMadaraVfxStarted=true;
+         var mapping:Object=JSON.parse("{\"13122001\":\"YuzhibobanZhongyanzhizhan_Haohuomieshi\",\"13122002\":\"Banzhongyanzhizhan_pugong1\",\"13122003\":\"Banzhongyanzhizhan_zhuida1\",\"13122004\":\"Banzhongyanzhizhan_aoyi1\",\"13122005\":\"Banzhongyanzhizhan_aoyi2\",\"13122006\":\"Banzhongyanzhizhan_pugong2\",\"13122007\":\"Banzhongyanzhizhan_zhuida2\",\"13122008\":\"YuzhibobanZhongyanzhizhan_yingfenshen_bao\",\"13122009\":\"YuzhibobanZhongyanzhizhan_Wanhtongxielunyan\",\"13122010\":\"Banzhongyanzhizhan_shanbi\",\"13122011\":\"Banzhongyanzhizhan_beidong\",\"13122012\":\"YuzhibobanZhongyanzhizhan_Wanhtongxielunyan_bao\"}");var effect:String=mapping[String(FSkillId)];
+         if(FSkillId==13122001)PlayMadaraNative("YuzhibobanZhongyanzhizhan_Haohuomieshi_texie","texie");
+         if(effect!=null){PlayMadaraNative(effect,"xia");PlayMadaraNative(effect,"shang");}
+      }
+      private function MadaraContactOffset() : Point {
+         if((FId!=11121001 && FId!=11121002) || FSkillId<13122001 || FSkillId>13122012 || FTargets==null || FResults==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return new Point();
+         var enemy:TRole=null;
+         for(var i:int=0;i<FTargets.length && i<FResults.length;i++)if(FTargets[i]!=null && FTargets[i].Camp!=Camp && FResults[i].CMD==1){enemy=FTargets[i];break;}
+         if(enemy==null || FSkillId==13122001 || FSkillId==13122004 || FSkillId>=13122008)return new Point();
+         var contact:Point=globalToLocal(enemy.localToGlobal(new Point()));
+         // Source SkillAction distances, using the same 0.84 scale as the actor.
+         var distance:Number=(FSkillId==13122002 || FSkillId==13122003?430:FSkillId==13122006?680:FSkillId==13122005?520:FSkillId==13122007?500:0)*0.84;
+         var end:Number=Number(JSON.parse("{\"13122001\":164,\"13122002\":42,\"13122003\":47,\"13122004\":59,\"13122005\":132,\"13122006\":52,\"13122007\":47,\"13122008\":24,\"13122009\":57,\"13122010\":37,\"13122011\":37,\"13122012\":57}")[String(FSkillId)]);var phase:Number=Math.min(1,Math.max(0,FFrameIndex/9),Math.max(0,(end-FFrameIndex)/9));phase=phase*phase*(3-2*phase);
+         return new Point((contact.x-distance)*phase,contact.y*phase);
+      }
+      private function MadaraStrikePose(frame:TAnimationFrame) : void {
+         if((FId!=11121001 && FId!=11121002) || frame==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         var offset:Point=MadaraContactOffset();FBitmap.x=-frame.Pivot.X+offset.x;FBitmap.y=-frame.Pivot.Y+offset.y;
+      }
+      private function PlayMadaraNative(effect:String,symbol:String,target:TRole=null,startFrame:int=0) : void {
+         LoadMadaraNative(effect);
+         var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         var layer:Sprite=new Sprite();layer.name="madaraFinalSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         if(symbol=="xia" && parent==host)host.addChildAt(layer,host.getChildIndex(this));else host.addChild(layer);
+         FMadaraLayers.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:uint=FSkillId;var last:int=-1;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null && event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK && caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
+            var state:Object=FMadaraNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
+            if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            if(caster.FFrameIndex<startFrame){layer.visible=false;return;}
+            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex-startFrame)*rate/25)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
+            var offset:Point=caster.MadaraContactOffset();var originX:Number=70*0.84;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point(originX+offset.x,offset.y)));
+            var facing:Number=caster.scaleX;
+            if(target!=null){at=host.globalToLocal(target.localToGlobal(new Point()));facing=target.scaleX;}
+            layer.x=at.x;layer.y=at.y;layer.scaleX=facing<0?-0.84:0.84;layer.scaleY=0.84;
+            if(symbol=="texie"){
+               var bounds:Rectangle=clip.getBounds(clip);if(bounds.width>1 && bounds.height>1){
+                  // The source cut-in has transparent side gutters; its painted panel
+                  // occupies two thirds of the native bounds. Fit that panel to width.
+                  var fit:Number=host.stage.stageWidth*1.5/bounds.width;
+                  layer.scaleX=fit;layer.scaleY=fit;
+                  layer.x=host.stage.stageWidth*.5-(bounds.x+bounds.width*.5)*fit;
+                  layer.y=host.stage.stageHeight*.4-(bounds.y+bounds.height*.5)*fit;
+               }
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

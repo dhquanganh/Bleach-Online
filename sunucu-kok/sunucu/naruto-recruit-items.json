@@ -89,5 +89,19 @@
     "fragmentId": 14130997,
     "picture": 16228149,
     "name": "Kakuzu [Edo Tensei] Recruit Token"
+  },
+  {
+    "heroId": 11121001,
+    "itemId": 14141001,
+    "fragmentId": 14131001,
+    "picture": 16228153,
+    "name": "Madara [The Final Battle] Recruit Token"
+  },
+  {
+    "heroId": 11121003,
+    "itemId": 14141003,
+    "fragmentId": 14131003,
+    "picture": 16228155,
+    "name": "Minato [New Year] Recruit Token"
   }
 ]

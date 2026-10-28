@@ -1,0 +1,34 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=52
+TEXTURE entry frames=12
+TEXTURE chase frames=48
+TEXTURE complete frames=60
+TEXTURE standard frames=43
+TEXTURE summon frames=25
+TEXTURE burst-mystery frames=133
+TEXTURE burst frames=38
+TEXTURE mystery frames=165
+TEXTURE reflection frames=38
+TEXTURE dead frames=12
+TEXTURE burst-standard frames=53
+TEXTURE clone-counter frames=58
+TEXTURE burst-chase frames=48
+CASE 13122001 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13122001 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+DONE Madara/Water Clone native component; remaining=0

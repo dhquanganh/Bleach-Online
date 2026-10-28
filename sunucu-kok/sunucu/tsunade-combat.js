@@ -68,7 +68,7 @@ function cleanseOne(u,records){
  if(skills().removeOneDebuff(u,records))return;
  for(const k of negativeTimers)if(active(u,k)){delete u[k];if(k==='itachiParalyzedUntil')u.paralyzed=false;return;}
 }
-const negativeTimers=['suppressedUntil','extremeChaosUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil','tsunadeMeltUntil','tsunadeCorrosionUntil','tsunadeWeakUntil','sasukeBlazeUntil','sasukeIgnitionUntil','sasukeParalysisUntil','sasukeFearUntil','sasukeElectrocutionUntil','sasukeDisorderUntil','sasukeStaticUntil','gaaraBlindUntil','gaaraCritLossUntil','gaaraDiscourageUntil','gaaraRagingUntil','painAfflictionUntil','painDisruptionUntil','painHorrorUntil','painInterruptedUntil','painChakraLimitUntil','hashWeakUntil','hashEnfeebleUntil','hashRootUntil','hashSealUntil','obitoTagUntil','itachiParalyzedUntil','mechaMysteryLockUntil'];
+const negativeTimers=['minatoMarkUntil','minatoTriggerPenaltyWindow','minatoMysteryPenalty','minatoTriggerPenalty','madaraInfernoUntil','madaraIgnitionUntil','madaraCombustionUntil','madaraEngulfUntil','madaraMentalUntil','madaraShatterUntil','suppressedUntil','extremeChaosUntil','immobileUntil','armorSuppressedUntil','immunitySuppressedUntil','tsunadeMeltUntil','tsunadeCorrosionUntil','tsunadeWeakUntil','sasukeBlazeUntil','sasukeIgnitionUntil','sasukeParalysisUntil','sasukeFearUntil','sasukeElectrocutionUntil','sasukeDisorderUntil','sasukeStaticUntil','gaaraBlindUntil','gaaraCritLossUntil','gaaraDiscourageUntil','gaaraRagingUntil','painAfflictionUntil','painDisruptionUntil','painHorrorUntil','painInterruptedUntil','painChakraLimitUntil','hashWeakUntil','hashEnfeebleUntil','hashRootUntil','hashSealUntil','obitoTagUntil','itachiParalyzedUntil','mechaMysteryLockUntil'];
 function cleanseAll(u,records){skills().remove(u,true,records);for(const k of negativeTimers)delete u[k];delete u.tsunadeCorrosionStacks;}
 function heal(ctx,u,giant,records){
  const allies=ctx.teams[u.camp].filter(t=>t.hp>0).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp||a.pos-b.pos);
@@ -85,6 +85,7 @@ function smallHeal(ctx,u,records){
  const target=allies[Math.min(allies.length-1,Math.floor(ctx.random()*allies.length))];
  skills().restore(owner,target,skills().value(owner,config.healingStat)*config.smallKatsuyuHealRatio,records);
  ctx.chakraLimit[u.camp]=100;label(records,target,7,100);
+ require('./minato-new-year-combat').triggerExecuted(ctx,u);
 }
 function beforeMystery(ctx,u,move){
  if(!isTsunade(u)||u.hp<=0||!move?.prompt)return [];
@@ -94,6 +95,7 @@ function beforeMystery(ctx,u,move){
    const before=slug.hp;slug.hp=slug.maxHp;slug.tsunadeFatalHealed=false;slug.tsunadeSpawned=true;
    records.push(skills().hpRecord(slug,before-slug.hp,false));
   }
+  require('./minato-new-year-combat').triggerExecuted(ctx,u);
   frames.push({...require('./pain-combat').visual(u,config.summoning),targets:records.length?records:[{cmd:CMD.NONE,targetCamp:u.camp,targetPos:u.pos,reportTargetStatus:0,result:{}}]});
  }
  return frames;
@@ -125,7 +127,7 @@ function revivals(ctx){const out=[];for(const u of ctx.teams.flat()){
  out.push({unit:u,records,animation:config.revival});
 }return out;}
 function endRound(ctx){const out=[];if(ctx.round<1||ctx.round>3)return out;for(const u of ctx.teams.flat())if(isTsunade(u)&&u.hp>0&&!u.tsunadeRevived){
- const records=[];heal(ctx,u,true,records);out.push({...require('./pain-combat').visual(u,config.healing),targets:records});
+ const records=[];heal(ctx,u,true,records);require('./minato-new-year-combat').triggerExecuted(ctx,u);out.push({...require('./pain-combat').visual(u,config.healing),targets:records});
 }return out;}
 function triggers(ctx){const result=[];for(const u of ctx.tsunadeExtra.splice(0)){
  if(u.hp>0&&(require('./naruto-combat').disabled(u)||skills().status(u,'disarm'))){ctx.tsunadeExtra.push(u);continue;}

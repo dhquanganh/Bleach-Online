@@ -1,0 +1,128 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=52
+TEXTURE entry frames=12
+TEXTURE chase frames=48
+TEXTURE complete frames=60
+TEXTURE standard frames=43
+TEXTURE summon frames=25
+TEXTURE burst-mystery frames=133
+TEXTURE burst frames=38
+TEXTURE mystery frames=165
+TEXTURE reflection frames=38
+TEXTURE dead frames=12
+TEXTURE burst-standard frames=53
+TEXTURE clone-counter frames=58
+TEXTURE burst-chase frames=48
+CASE 13122001 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13122002 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-17
+SNAPSHOT CASE-standard-camp-0-frame-30
+CASE 13122003 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-19
+SNAPSHOT CASE-chase-camp-0-frame-33
+CASE 13122004 camp=0
+SNAPSHOT CASE-complete-camp-0-frame-4
+SNAPSHOT CASE-complete-camp-0-frame-24
+SNAPSHOT CASE-complete-camp-0-frame-42
+CASE 13122005 camp=0
+SNAPSHOT CASE-burst-mystery-camp-0-frame-4
+SNAPSHOT CASE-burst-mystery-camp-0-frame-53
+SNAPSHOT CASE-burst-mystery-camp-0-frame-93
+CASE 13122006 camp=0
+SNAPSHOT CASE-burst-standard-camp-0-frame-4
+SNAPSHOT CASE-burst-standard-camp-0-frame-21
+SNAPSHOT CASE-burst-standard-camp-0-frame-37
+CASE 13122007 camp=0
+SNAPSHOT CASE-burst-chase-camp-0-frame-4
+SNAPSHOT CASE-burst-chase-camp-0-frame-19
+SNAPSHOT CASE-burst-chase-camp-0-frame-33
+CASE 13122008 camp=0
+SNAPSHOT CASE-summon-camp-0-frame-4
+SNAPSHOT CASE-summon-camp-0-frame-10
+SNAPSHOT CASE-summon-camp-0-frame-17
+CASE 13122009 camp=0
+SNAPSHOT CASE-clone-counter-camp-0-frame-4
+SNAPSHOT CASE-clone-counter-camp-0-frame-23
+SNAPSHOT CASE-clone-counter-camp-0-frame-40
+CASE 13122010 camp=0
+SNAPSHOT CASE-reflection-camp-0-frame-4
+SNAPSHOT CASE-reflection-camp-0-frame-15
+SNAPSHOT CASE-reflection-camp-0-frame-26
+CASE 13122011 camp=0
+SNAPSHOT CASE-burst-camp-0-frame-4
+SNAPSHOT CASE-burst-camp-0-frame-15
+SNAPSHOT CASE-burst-camp-0-frame-26
+CASE 13122012 camp=0
+CASE 0 camp=0
+SNAPSHOT CASE-entry-camp-0-frame-4
+SNAPSHOT CASE-entry-camp-0-frame-8
+CASE 0 camp=0
+SNAPSHOT CASE-dead-camp-0-frame-4
+SNAPSHOT CASE-dead-camp-0-frame-8
+CASE 13122001 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+CASE 13122002 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-17
+SNAPSHOT CASE-standard-camp-1-frame-30
+CASE 13122003 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-19
+SNAPSHOT CASE-chase-camp-1-frame-33
+CASE 13122004 camp=1
+SNAPSHOT CASE-complete-camp-1-frame-4
+SNAPSHOT CASE-complete-camp-1-frame-24
+SNAPSHOT CASE-complete-camp-1-frame-42
+CASE 13122005 camp=1
+SNAPSHOT CASE-burst-mystery-camp-1-frame-4
+SNAPSHOT CASE-burst-mystery-camp-1-frame-53
+SNAPSHOT CASE-burst-mystery-camp-1-frame-93
+CASE 13122006 camp=1
+SNAPSHOT CASE-burst-standard-camp-1-frame-4
+SNAPSHOT CASE-burst-standard-camp-1-frame-21
+SNAPSHOT CASE-burst-standard-camp-1-frame-37
+CASE 13122007 camp=1
+SNAPSHOT CASE-burst-chase-camp-1-frame-4
+SNAPSHOT CASE-burst-chase-camp-1-frame-19
+SNAPSHOT CASE-burst-chase-camp-1-frame-33
+CASE 13122008 camp=1
+SNAPSHOT CASE-summon-camp-1-frame-4
+SNAPSHOT CASE-summon-camp-1-frame-10
+SNAPSHOT CASE-summon-camp-1-frame-17
+CASE 13122009 camp=1
+SNAPSHOT CASE-clone-counter-camp-1-frame-4
+SNAPSHOT CASE-clone-counter-camp-1-frame-23
+SNAPSHOT CASE-clone-counter-camp-1-frame-40
+CASE 13122010 camp=1
+SNAPSHOT CASE-reflection-camp-1-frame-4
+SNAPSHOT CASE-reflection-camp-1-frame-15
+SNAPSHOT CASE-reflection-camp-1-frame-26
+CASE 13122011 camp=1
+SNAPSHOT CASE-burst-camp-1-frame-4
+SNAPSHOT CASE-burst-camp-1-frame-15
+SNAPSHOT CASE-burst-camp-1-frame-26
+CASE 13122012 camp=1
+CASE 0 camp=1
+SNAPSHOT CASE-entry-camp-1-frame-4
+SNAPSHOT CASE-entry-camp-1-frame-8
+CASE 0 camp=1
+SNAPSHOT CASE-dead-camp-1-frame-4
+SNAPSHOT CASE-dead-camp-1-frame-8
+DONE Madara/Water Clone native component; remaining=0

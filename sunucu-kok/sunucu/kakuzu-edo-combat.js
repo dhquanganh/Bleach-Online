@@ -88,6 +88,7 @@ function endRound(ctx){const out=[];for(const team of ctx.teams){
     const v=dead[Math.min(dead.length-1,Math.floor(ctx.random()*dead.length))];
     v.kakuzuReviveRound=0;
     v.hp=Math.max(1,Math.round(v.maxHp*.3));
+    require('./minato-new-year-combat').triggerExecuted(ctx,u);
     out.push(visual(u,config.reattachment,[skills.hpRecord(v,-v.hp,false)]));
   }
 }return out;}

@@ -3,7 +3,7 @@ Run with --apply to install. Existing unrelated records remain byte-for-byte int
 """
 from pathlib import Path
 from PIL import Image, ImageOps
-import argparse, copy, hashlib, io, json, shutil, struct, zlib
+import argparse, copy, hashlib, io, json, shutil, struct, zlib, re, html
 import vfx
 
 BASE = Path(__file__).resolve().parent
@@ -18,6 +18,14 @@ hexid = lambda n: f'{n:08X}'
 u32 = lambda n: struct.pack('<I', n)
 def utf(s):
     b=s.encode('utf-8'); return struct.pack('<H',len(b))+b
+
+def plain_description(value):
+    """Native skill tooltips use TextField.text, so do not send HTML markup."""
+    value=html.unescape(str(value or ''))
+    value=re.sub(r'<\s*br\s*/?\s*>', '\n\n',value,flags=re.I)
+    value=re.sub(r'</\s*(?:p|div)\s*>','\n\n',value,flags=re.I)
+    value=re.sub(r'<[^>]+>','',value)
+    return re.sub(r'\n[ \t]*\n(?:[ \t]*\n)+','\n\n',value).strip()
 
 def serialize_hero(h):
     # Keep future character rebuilds on the same base-stat policy as the server.
@@ -96,8 +104,8 @@ def serialize(kind,row):
     ident=u32(int(row['id'],16))
     if kind=='BaseHero':return serialize_hero(row)
     if kind=='RoleModel':return ident+b''.join(u32(row[k]) for k in ['model','roleStyle','roleHead'])
-    if kind=='HeroTalent':return ident+utf(row['talentName'])+utf(row['talentDesc'])
-    return ident+u32(row['skillId'])+utf(row['name'])+utf(row['desc'])+u32(row['icon'])+u32(row['sortId'])
+    if kind=='HeroTalent':return ident+utf(row['talentName'])+utf(plain_description(row['talentDesc']))
+    return ident+u32(row['skillId'])+utf(row['name'])+utf(plain_description(row['desc']))+u32(row['icon'])+u32(row['sortId'])
 
 def patch(raw,rows):
     kind={0x1000005:'BaseHero',0x100001f:'HeroTalent',0x1000038:'RoleModel',0x100003f:'SkillConfig'}.get(struct.unpack_from('<I',raw)[0])
