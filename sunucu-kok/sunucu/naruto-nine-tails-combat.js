@@ -12,7 +12,7 @@ function damage(source,target,multiplier){
  const s=skills(),clamp=v=>Math.max(0,Math.min(1,v)),atk=s.value(source,'atk'),def=s.value(target,'def')*(1-clamp(s.value(source,'ignoreDefense')));
  return Math.max(0,Math.round(atk*multiplier*atk/Math.max(1,atk+def)*Math.max(0,1+s.value(source,'damageBonus'))*(1-clamp(s.value(target,'damageReduction')))*Math.max(0,1+s.value(target,'vulnerability'))));
 }
-function ignite(ctx,source,target,records){
+function ignite(ctx,source,target,records){if(require('./asura-guardian-combat').immuneStatus(target,'ignition'))return;
  if(!target||target.hp<=0||skills().status(target,'immuneDebuffs')||require('./hashirama-combat').fireImmune(target,{element:'fire'},null))return;
  target.skillBuffs||=[];
  const buff={kind:'dot',field:'ignite',buffId:13500022,ntcIgnition:true,element:'fire',level:1,remaining:1,source:source.id,sourceCamp:source.camp,sourcePos:source.pos,attackStat:'atk',damageType:'physical',amount:damage(source,target,config.ignitionMultiplier)};

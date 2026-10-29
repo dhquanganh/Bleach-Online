@@ -9,8 +9,8 @@ const code=r=>(Buffer.isBuffer(r)?r:r.payload).readUInt32BE(0);
 let now=Date.parse('2026-10-26T14:00:00Z')/1000,simulations=0;
 function actor(id,level=99,storeOverride=null){
  const a={d:{roleIdHi:1,roleIdLo:id,nick:'Player '+id,server:974},coins:1000,fail:false,canPay:true,packets:[],saved:null};
- a.H=K.kur({ekSonra:(id,payload)=>a.packets.push({id,payload}),paraHarca:costs=>{const n=costs.reduce((n,r)=>n+r.amount,0);if(!a.canPay||a.coins<n)return null;a.coins-=n;return Buffer.alloc(1);},paraIcinOdul:rewards=>{a.coins+=rewards.reduce((n,r)=>n+r.amount,0);return Buffer.alloc(1);}},
- {now:()=>now,account:()=>({level}),accountKey:d=>String(d.roleIdLo),store:storeOverride||createStore(file),snapshot:()=>[{id:levels.anaId(),pos:6,maxHp:10000,hp:10000,atk:1000,def:500,speed:100}],simulate:(left,right)=>{simulations++;return {won:left.low<right.low,payload:Buffer.from([1,2,3])};}});
+ a.H=K.kur({ekSonra:(id,payload)=>{if(a.failPush)throw Error('notification failed');a.packets.push({id,payload});},paraHarca:costs=>{const n=costs.reduce((n,r)=>n+r.amount,0);if(!a.canPay||a.coins<n)return null;a.coins-=n;return Buffer.alloc(1);},paraIcinOdul:rewards=>{a.coins+=rewards.reduce((n,r)=>n+r.amount,0);return Buffer.alloc(1);}},
+ {now:()=>now,account:()=>({level}),accountKey:d=>String(d.roleIdLo),store:storeOverride||createStore(file),snapshot:()=>a.units||[{id:levels.anaId(),pos:6,maxHp:10000,hp:10000,atk:1000,def:500,speed:100}],simulate:(left,right)=>{simulations++;return {won:left.low<right.low,payload:Buffer.from([1,2,3])};}});
  a.call=(op,payload=Buffer.alloc(0))=>a.H['0x01818a'+op]({durum:a.d,payload,kaydet:d=>{if(a.fail)throw Error('save failed');a.saved=JSON.parse(JSON.stringify(d));}});
  return a;
 }
@@ -86,5 +86,29 @@ try{
  const unit=battle.heroBirim(11150008,6,60,null,null,0,true),result=K.defaultSimulate({name:'A',units:[unit]},{name:'B',units:[unit]},A.d),decoded=require('../kodek').decodeBattleReport(result.payload);assert.equal(decoded._consumed,decoded._total);
  const handlers=require('../handlers');for(let op=0;op<=9;op++)assert.equal(typeof handlers.byReq['0x01818a0'+op],'function');
  assert.equal(handlers.byReq['0x01818a01']({durum:{roleIdHi:1,roleIdLo:99},payload:u(1),kaydet:()=>{}}).readUInt16BE(4),0);
+ // Registration selects its actual group, and a network failure cannot undo committed state.
+ const notified=actor(106);notified.call('01',u(4));notified.failPush=true;
+ assert.equal(code(notified.call('07')),0);assert.equal(notified.d.kingChallenge.group,1);assert(notified.d.kingChallenge.current.submission);
+ const committed=JSON.parse(fs.readFileSync(file)).seasons[notified.d.kingChallenge.current.start].registrations['106'];assert(committed);
+ notified.failPush=false;const list=notified.call('01',u(1));assert.equal(list.readUInt32BE(list.length-4),1,'player packet identifies the viewed group');
+ const fight=notified.call('03',u(1));assert.equal(fight.readUInt32BE(fight.length-4),1,'fight packet identifies the viewed group');const rank=notified.call('02',u(4));assert.equal(rank.readUInt32BE(rank.length-4),4);
+ assert.equal(code(notified.call('09',Buffer.from([0]))),4);assert.equal(code(notified.call('09',Buffer.from([0,10,65]))),4);
+ const invalid=actor(107);invalid.units=[{id:levels.anaId(),pos:1,maxHp:10000,atk:Infinity,def:1,speed:1}];assert.equal(code(invalid.call('07')),4);assert(!JSON.parse(fs.readFileSync(file)).seasons[notified.d.kingChallenge.current.start].registrations['107']);
+ // A prior prize can belong to a different group; registration still points at today's actual group.
+ const old={start:notified.d.kingChallenge.current.start-86400,entryKey:'106',submission:{group:4},bets:[],claimed:false,groups:{4:{players:[{key:'106',low:106,high:1}],matches:Array.from({length:7},(_,i)=>({id:4000+i,a:0,b:null,ret:1,done:true}))}}};notified.d.kingChallenge.archive.push(old);
+ const base=notified.call('00');assert.equal(base[base.length-7],4);assert.equal(base[base.length-3],1);
+ // Orphaned historic bet records cannot crash unrelated pages.
+ old.bets.push({match:2000,side:0,claimed:false});assert.doesNotThrow(()=>K.betsPacket(old));assert.doesNotThrow(()=>K.basePacket(notified.d.kingChallenge,now));
+ // Archived winning wagers remain discoverable and collectable after a new registration opens.
+ const archived=notified.d.kingChallenge.archive.find(entry=>entry.start===old.start);archived.groups[4].players.push({key:'other',low:109,high:1});archived.groups[4].matches[0].b=1;archived.bets.push({match:4000,side:0,claimed:false,cost:{type:0,code:2,amount:50},placedAt:old.start});
+ const pending=notified.call('00');assert.equal(pending.readUInt16BE(pending.length-2),1);const coinsBefore=notified.coins;assert.equal(code(notified.call('06',uu(0,0))),0);assert.equal(notified.coins,coinsBefore+100);assert.equal(code(notified.call('06',uu(0,0))),1);const collected=notified.call('00');assert.equal(collected.readUInt16BE(collected.length-2),0);
+ // A send failure after a paid wager or payout cannot refund it or allow duplicate collection.
+ const nextOpponent=actor(108);assert.equal(code(nextOpponent.call('07')),0);now=notified.d.kingChallenge.current.start;notified.call('03',u(1));const wagerBalance=notified.coins;notified.failPush=true;
+ assert.equal(code(notified.call('05',uu(1000,0))),0);assert.equal(notified.coins,wagerBalance-50);notified.failPush=false;
+ now+=K.PAIRING_SECONDS;notified.call('03',u(1));notified.failPush=true;assert.equal(code(notified.call('06',uu(1,1000))),0);assert.equal(notified.coins,wagerBalance+50);notified.failPush=false;assert.equal(code(notified.call('06',uu(1,1000))),1);assert.equal(notified.coins,wagerBalance+50);
+ const pv={...unit,pvpStats:{hp:12345,atk:1700,def:600,speed:160},partnerSkills:[],weaponSkills:[],zanpakutoId:0};
+ const frozen=codecReport(K.defaultSimulate({name:'Snapshot A',units:[pv]},{name:'Snapshot B',units:[pv]}, {bicak:{sekil:999999},kadro:{11121009:1}}).payload);
+ assert.equal(frozen.player1.roles[0].totalHealth,12345);assert.equal(frozen.player2.roles[0].totalHealth,12345);assert.equal(frozen.player1.knifeOfKillSoulID,0);assert.equal(frozen.player2.knifeOfKillSoulID,0);
+ function codecReport(payload){return require('../kodek').decodeBattleReport(payload);}
  console.log('PASS registered tournament: zero bots, shared account registry, capacity/cutoff, single-player champion via byes, real PvP brackets, shared results/replays, wagers, rollback/refunds, rank prizes and migration.');
 }finally{fs.rmSync(temp,{recursive:true,force:true});}

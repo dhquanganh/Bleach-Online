@@ -38,7 +38,8 @@
     "causes": "lowFloat",
     "hashMystery": true,
     "hashBurstMystery": true,
-    "hitCount": 5
+    "hitCount": 20,
+    "combo": 20
   },
   "standard": {
     "id": 13121006,

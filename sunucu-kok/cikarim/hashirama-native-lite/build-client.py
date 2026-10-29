@@ -14,9 +14,9 @@ def main():
     replacement='''      private function PlayHashiramaVfxAsset(name:String,host:DisplayObjectContainer,point:Point,width:Number,height:Number,delay:int=0,mirrored:Boolean=false,follow:Boolean=false,behind:Boolean=false,angle:Number=0) : void {
          if(host==null || host.stage==null)return;
          if(name=="Hashirama-thousand-hands-cinematic"){
-            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo","xia",host,point,width,height,delay,false,true,true);
-            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo","shang",host,point,width,height,delay,false,true);
-            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo_texie","texie",host,point,width,height,delay,false,true);
+            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo","xia",host,point,width,height,delay,mirrored,true,true);
+            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo","shang",host,point,width,height,delay,mirrored,true);
+            HashiramaNativeLayer("Zhujianzhongyandingshanghuafo_texie","texie",host,point,width,height,delay,mirrored,true);
             return;
          }
          var cut:int=name.lastIndexOf("-");if(cut<0)return;

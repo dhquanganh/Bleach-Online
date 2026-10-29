@@ -291,6 +291,25 @@ process.on('message',message=>{if(message?.type!=='admin-item-mail')return;
 });
 const GAME_SESSIONS = new Set();
 const loggedInClients = () => Array.from(GAME_SESSIONS).filter(session => session.authenticated && !session.client.destroyed);
+let tournamentFingerprint='';
+function refreshTournament(force=false){
+ const clients=loggedInClients();if(!clients.length)return;
+ try{
+  const d=durumMod.yukle();if(!force&&!d.kingChallenge)return;
+  const K=require('./king-challenge'),t=Math.floor(Date.now()/1000),key=process.env.BLEACH_ACCOUNT_ID||`${Number(d.roleIdHi)||1}:${Number(d.roleIdLo)||1}`;
+  const packets=require('./king-challenge-store').createStore().transact(registry=>{
+   const x=K.synchronize(d,t,K.defaultSimulate,registry,key);
+   for(const group of new Set([x.k.submission?.group,...x.k.bets.map(b=>Math.floor(b.match/1000))].filter(Boolean)))x.resolve(group);
+   const b=x.resolve(x.s.group);
+   return {commit:true,result:[[0x01188a00,K.basePacket(x.s,t)],[0x01188a01,K.playerPacket(b)],[0x01188a03,K.fightPacket(x.k,b)]]};
+  });
+  durumMod.kaydet(d);
+  const fingerprint=packets.map(p=>p[1].toString('base64')).join('|');
+  if(force||fingerprint!==tournamentFingerprint){tournamentFingerprint=fingerprint;for(const session of clients)for(const [id,payload]of packets)session.send(id,payload,'KING-live');}
+ }catch(e){console.error('[Tournament live]',e.message);}
+}
+process.on('message',m=>{if(m?.type==='tournament-update')refreshTournament(true);});
+setInterval(refreshTournament,5000).unref();
 let allianceOpen=null;
 let alliancePlayback=null;
 const allianceNativePending=new Map();
@@ -910,6 +929,14 @@ net.createServer(client => {
       // === SAVAS: fight istegi -> (1) fight-ack (2) savas raporu (3) sonuc ===
       // Gercek sunucu once fight opcode'un normal swap cevabini (ack) yollar, SONRA raporu.
       // Ack olmadan client savas moduna gecmiyordu. Ack = [u32 result=0][istek payload][u16 0].
+      if((pk.id>>>0)===0x01810a01){
+        try{
+          const d=durumMod.yukle(),r=require('./soul-palace').challenge({payload:pk.payload,durum:d,kaydet:durumMod.kaydet},handlers);
+          if(r.error)send(0x01180a01,r.error,'PALACE-rejected');
+          else {send(0x01180a01,r.ack,'PALACE-ack');const rewards=handlers.ekAl();for(const q of rewards.once.concat(rewards.sonra))send(q.id,q.payload,'PALACE-reward');send(kodek.OP.REPORT,r.report,'PALACE-report');send(kodek.OP.RESULT,r.result,'PALACE-result');}
+        }catch(e){LOG.note(cid,'Soul Palace: '+e.message);send(0x01180a01,Buffer.from([0,0,0,1]),'PALACE-error');}
+        continue;
+      }
       if (savas.isFight(pk.id)) {
         try {
           const isHeroChangeFight = (pk.id >>> 0) === 0x01816f09 &&

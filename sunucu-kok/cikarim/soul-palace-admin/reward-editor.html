@@ -1,0 +1,10 @@
+  <h3>Phần thưởng</h3>
+  <p class="note">Tìm vật phẩm theo tên hoặc ID, chọn nhóm thưởng rồi bấm vào vật phẩm để thêm. Sửa số lượng ngay trên từng hàng.</p>
+  <label for="palaceRewardTarget">Thêm vào nhóm</label><select id="palaceRewardTarget"></select>
+  <input id="palaceItemSearch" type="search" placeholder="Tìm tên hoặc ID vật phẩm…">
+  <div id="palaceItemResults" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;max-height:260px;overflow:auto"></div>
+  <p id="palaceItemStatus" class="note" role="status"></p>
+  <label for="palaceCurrency">Thêm tiền hoặc EXP</label><select id="palaceCurrency"><option value="0:0">Bạc</option><option value="0:1">Vàng</option><option value="0:2">Coupon</option><option value="2:0">EXP</option></select>
+  <button id="palaceAddCurrency" type="button" class="secondary">Thêm tiền / EXP</button>
+  <div id="palaceRewardGroups"></div>
+  <button id="palaceAddRewardPool" type="button" class="secondary">Thêm nhóm thưởng ngẫu nhiên</button>

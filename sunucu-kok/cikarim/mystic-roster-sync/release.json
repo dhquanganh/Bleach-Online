@@ -1,0 +1,112 @@
+{
+  "version": "2026102908",
+  "added": [
+    {
+      "id": 41121001,
+      "model": 1,
+      "heroID": 11121001,
+      "itemID": 14131001,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121003,
+      "model": 1,
+      "heroID": 11121003,
+      "itemID": 14131003,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121005,
+      "model": 1,
+      "heroID": 11121005,
+      "itemID": 14131005,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121006,
+      "model": 1,
+      "heroID": 11121006,
+      "itemID": 14131006,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121007,
+      "model": 1,
+      "heroID": 11121007,
+      "itemID": 14131007,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121008,
+      "model": 1,
+      "heroID": 11121008,
+      "itemID": 14131008,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    },
+    {
+      "id": 41121009,
+      "model": 1,
+      "heroID": 11121009,
+      "itemID": 14131009,
+      "number": 1,
+      "price": {
+        "type": 1,
+        "code": 14900001,
+        "amount": 100
+      },
+      "totalTimes": 2147483647
+    }
+  ],
+  "resources": [
+    "Resources/Bin/combine/0F000000.binPackage",
+    "Resources/Bin/normal/0F000000.binPackage",
+    "Resources/Bin/dil-id/0F000000.binPackage",
+    "Resources/Bin/dil-fr/0F000000.binPackage",
+    "Resources/Bin/dil-es/0F000000.binPackage",
+    "Resources/Bin/dil-ru/0F000000.binPackage",
+    "Resources/Bin/dil-tr/0F000000.binPackage",
+    "Resources/Bin/dil-it/0F000000.binPackage",
+    "Resources/Bin/dil-de/0F000000.binPackage",
+    "Resources/Bin/dil-ja/0F000000.binPackage",
+    "Resources/Bin/dil-pt/0F000000.binPackage",
+    "Resources/Bin/dil-vi/0F000000.binPackage",
+    "Resources/Bin/dil-zh/0F000000.binPackage"
+  ],
+  "clientUnchanged": true
+}

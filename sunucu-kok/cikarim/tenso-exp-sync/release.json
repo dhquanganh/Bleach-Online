@@ -1,0 +1,10 @@
+{
+  "version": "2026102907",
+  "sha256": "c33881fe60a31bfed4590ae1bb79736b2ab62caf7fd57a4d9c2fdb5ced43770e",
+  "validation": {
+    "unchangedMethods": 10,
+    "onlyChangedMethod": "GetExp",
+    "unchangedAssets": true
+  },
+  "changedManifestEntries": 1
+}

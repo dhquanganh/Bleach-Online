@@ -1,0 +1,105 @@
+BOOT native Flash shared VFX component probe
+TEXTURE standard3 frames=103
+TEXTURE idle frames=32
+TEXTURE standard frames=29
+TEXTURE standard2 frames=44
+TEXTURE entry frames=15
+TEXTURE mystery frames=159
+TEXTURE dragon frames=92
+TEXTURE dead frames=13
+TEXTURE chase frames=59
+TEXTURE modified frames=68
+TEXTURE protection frames=74
+TEXTURE barrier frames=72
+TEXTURE revive frames=36
+CASE 13122501 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-16
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-48
+SNAPSHOT CASE-mystery-camp-0-frame-60
+SNAPSHOT CASE-mystery-camp-0-frame-72
+SNAPSHOT CASE-mystery-camp-0-frame-84
+SNAPSHOT CASE-mystery-camp-0-frame-100
+CASE 13122502 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-11
+SNAPSHOT CASE-standard-camp-0-frame-20
+CASE 13122503 camp=0
+SNAPSHOT CASE-standard2-camp-0-frame-4
+SNAPSHOT CASE-standard2-camp-0-frame-17
+SNAPSHOT CASE-standard2-camp-0-frame-30
+CASE 13122504 camp=0
+SNAPSHOT CASE-standard3-camp-0-frame-4
+SNAPSHOT CASE-standard3-camp-0-frame-41
+SNAPSHOT CASE-standard3-camp-0-frame-72
+CASE 13122505 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-23
+SNAPSHOT CASE-chase-camp-0-frame-41
+CASE 13122506 camp=0
+SNAPSHOT CASE-modified-camp-0-frame-4
+SNAPSHOT CASE-modified-camp-0-frame-27
+SNAPSHOT CASE-modified-camp-0-frame-47
+CASE 13122507 camp=0
+SNAPSHOT CASE-protection-camp-0-frame-4
+SNAPSHOT CASE-protection-camp-0-frame-29
+SNAPSHOT CASE-protection-camp-0-frame-51
+CASE 13122508 camp=0
+SNAPSHOT CASE-dragon-camp-0-frame-4
+SNAPSHOT CASE-dragon-camp-0-frame-36
+SNAPSHOT CASE-dragon-camp-0-frame-64
+CASE 13122509 camp=0
+SNAPSHOT CASE-barrier-camp-0-frame-4
+SNAPSHOT CASE-barrier-camp-0-frame-28
+SNAPSHOT CASE-barrier-camp-0-frame-50
+CASE 13122510 camp=0
+SNAPSHOT CASE-revive-camp-0-frame-4
+SNAPSHOT CASE-revive-camp-0-frame-14
+SNAPSHOT CASE-revive-camp-0-frame-25
+CASE 13122501 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-16
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-48
+SNAPSHOT CASE-mystery-camp-1-frame-60
+SNAPSHOT CASE-mystery-camp-1-frame-72
+SNAPSHOT CASE-mystery-camp-1-frame-84
+SNAPSHOT CASE-mystery-camp-1-frame-100
+CASE 13122502 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-11
+SNAPSHOT CASE-standard-camp-1-frame-20
+CASE 13122503 camp=1
+SNAPSHOT CASE-standard2-camp-1-frame-4
+SNAPSHOT CASE-standard2-camp-1-frame-17
+SNAPSHOT CASE-standard2-camp-1-frame-30
+CASE 13122504 camp=1
+SNAPSHOT CASE-standard3-camp-1-frame-4
+SNAPSHOT CASE-standard3-camp-1-frame-41
+SNAPSHOT CASE-standard3-camp-1-frame-72
+CASE 13122505 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-23
+SNAPSHOT CASE-chase-camp-1-frame-41
+CASE 13122506 camp=1
+SNAPSHOT CASE-modified-camp-1-frame-4
+SNAPSHOT CASE-modified-camp-1-frame-27
+SNAPSHOT CASE-modified-camp-1-frame-47
+CASE 13122507 camp=1
+SNAPSHOT CASE-protection-camp-1-frame-4
+SNAPSHOT CASE-protection-camp-1-frame-29
+SNAPSHOT CASE-protection-camp-1-frame-51
+CASE 13122508 camp=1
+SNAPSHOT CASE-dragon-camp-1-frame-4
+SNAPSHOT CASE-dragon-camp-1-frame-36
+SNAPSHOT CASE-dragon-camp-1-frame-64
+CASE 13122509 camp=1
+SNAPSHOT CASE-barrier-camp-1-frame-4
+SNAPSHOT CASE-barrier-camp-1-frame-28
+SNAPSHOT CASE-barrier-camp-1-frame-50
+CASE 13122510 camp=1
+SNAPSHOT CASE-revive-camp-1-frame-4
+SNAPSHOT CASE-revive-camp-1-frame-14
+SNAPSHOT CASE-revive-camp-1-frame-25
+DONE Asura Guardian of the Land native component; remaining=0

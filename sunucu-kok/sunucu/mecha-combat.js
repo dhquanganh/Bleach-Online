@@ -110,7 +110,7 @@ function onAttacked(ctx,u){if(beast(u)&&u.hp>0)u.mysteryReadyRound=Math.max(ctx.
 function ignitionDamage(source,target){const clamp=v=>Math.max(0,Math.min(1,v)),atk=skills.value(source,'atk'),def=skills.value(target,'def')*(1-clamp(skills.value(source,'ignoreDefense')));return Math.max(0,Math.round(atk*config.ignition.multiplier*atk/Math.max(1,atk+def)*Math.max(0,1+skills.value(source,'damageBonus'))*(1-clamp(skills.value(target,'damageReduction')))*Math.max(0,1+skills.value(target,'vulnerability'))));}
 function onDamage(ctx,actor,target,result,move,records){
   if(!beast(target)||target.hp<=0||result.damage<=0||actor===target)return;
-  const highImmunity=require('./hashirama-combat').burst(actor)||advanced(actor);
+  const highImmunity=require('./asura-guardian-combat').isAsura(actor)||require('./asura-guardian-combat').immuneStatus(actor,'ignition')||require('./hashirama-combat').burst(actor)||advanced(actor);
   if(active(target,'mechaAdvancedUntil')&&move?.damageType!=='ninjutsu'&&!highImmunity){
     actor.skillBuffs=actor.skillBuffs||[];
     const entry={kind:'dot',field:'ignite',buffId:13500022,mechaIgnition:true,element:'fire',level:2,source:target.id,sourceCamp:target.camp,sourceSkill:config.beastRecovery.id,amount:ignitionDamage(target,actor),attackStat:'atk',damageType:'physical',remaining:2};

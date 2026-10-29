@@ -32,7 +32,7 @@ function rejectBuff(caster,target,rule,records){
   if(!isPain(target)||target.painFinal||rule.level===2)return false;
   target.painInitiativeStacks=Math.min(5,(target.painInitiativeStacks||0)+1);label(records,target,7,target.painInitiativeStacks*2);return true;
 }
-function debuff(ctx,u,target,field,records,duration=1){
+function debuff(ctx,u,target,field,records,duration=1){if(require('./asura-guardian-combat').blocksKey(target,field))return false;
   if(target.hp<=0||skills.status(target,'immuneDebuffs'))return false;
   target[field]=ctx.round+duration;label(records,target,field==='painHorrorUntil'?2:field==='painDisruptionUntil'?3:4);
   if(field==='painDisruptionUntil')target.painDisruptionCount=ctx.teams[u.camp].filter(v=>v.hp>0&&isRinnegan(v)).length;
@@ -50,8 +50,8 @@ function interrupt(ctx,target,records){
   target.painInterruptedUntil=ctx.round;label(records,target,6);require('./guy-gate-combat').interrupted(ctx,target);
 }
 function canMystery(ctx,u,move){return !active(u,'mechaMysteryLockUntil')&&(!isPain(u)||((u.painMysteries||0)<(u.painFinal?2:1)&&(move.consumeAllTechnique||(u.painTechnique||0)>=(move.techniqueCost||0))))&&(!active(u,'painInterruptedUntil')||active(u,'painInterruptImmuneUntil'));}
-function mysteryReady(ctx,u){return ctx.round>=(u.mysteryReadyRound||1)||(isPain(u)&&u.painFinal&&u.painMysteryWindow===ctx.round&&(u.painMysteries||0)<2);}
-function mysteryCost(ctx,u,move){if(u.madaraFreeUntil>=ctx.round)return 0;if(require('./nagato-combat').isNagato(u)&&u.nagatoLeadRound===ctx.round)return 0;return Math.max(0,(Number(move.chakraCost)||0)-(u.tobiCostRound===ctx.round?u.tobiCostReduction||0:0)+(u.painCostRound===ctx.round?(u.painCost||0):0)-(u.mechaContext?u.mechaContext.teams[u.camp].filter(v=>v.mechaCostRound===ctx.round).reduce((s,v)=>s+(v.mechaCostReduction||0),0):0));}
+function mysteryReady(ctx,u){if(require('./asura-guardian-combat').active(u,'asuraCooldownLockUntil'))return false;return ctx.round>=(u.mysteryReadyRound||1)||(isPain(u)&&u.painFinal&&u.painMysteryWindow===ctx.round&&(u.painMysteries||0)<2);}
+function mysteryCost(ctx,u,move){const oroReduction=require('./orochimaru-new-year-combat').cost(ctx,u);if(u.madaraFreeUntil>=ctx.round)return 0;if(require('./nagato-combat').isNagato(u)&&u.nagatoLeadRound===ctx.round)return 0;return Math.max(0,(Number(move.chakraCost)||0)-oroReduction-(u.tobiCostRound===ctx.round?u.tobiCostReduction||0:0)+(u.painCostRound===ctx.round?(u.painCost||0):0)-(u.mechaContext?u.mechaContext.teams[u.camp].filter(v=>v.mechaCostRound===ctx.round).reduce((s,v)=>s+(v.mechaCostReduction||0),0):0));}
 function spendMystery(ctx,u,move){
   // Executing a Mystery clears Fear/Horror even if the resulting attack misses.
   if(active(u,'painHorrorUntil')){delete u.painHorrorUntil;}

@@ -49,6 +49,7 @@ const CHANCE={1:.10,2:.03,3:.015,4:.02,5:.02,6:.01,7:.04,8:.01,10:.02};
 function proc(unit,effect,rng=Math.random){const r=unit.rebirth||{};return r.n>0&&r.ae===effect&&rng()<Math.min(1,r.n*(CHANCE[effect]||0));}
 function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,nonfatal=false,ignoreShield=false){
   const before=target.hp;
+  if(require('./asura-guardian-combat').immune(target))return {damage:0,recovered:0,absorbed:0,before};
   const clearShield=proc(attacker,1,rng),clearBuffs=proc(attacker,7,rng);
   if(clearShield)target.shield=0;
   let damage=Math.max(0,Math.round(amount*restriction(attacker.rebirth||{},target.rebirth||{})));

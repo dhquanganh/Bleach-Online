@@ -55,7 +55,7 @@ function afterHit(ctx,u,selected,hit,move,frame){if(!move?.guyMove)return;const 
  if(key==='night'){for(const v of hit)if(v.hp<=0)v.noRevive=true;frame.reactions.push(...finishDeath(ctx,u));}
 }
 function interrupted(ctx,u){if(isGuy(u)){u.mysteryReadyRound=ctx.round;delete u.painInterruptedUntil;require('./buff-notices').touch(u,'mysteryCooldown');}}
-function indirect(ctx,source,target,damage,records){if(!ctx)return damage;const g=isGuy(target)?target:guard(ctx,target);if(!g||!(damage>0))return damage;
+function indirect(ctx,source,target,damage,records){if(require('./asura-guardian-combat').immune(target))return 0;if(!ctx)return damage;const g=isGuy(target)?target:guard(ctx,target);if(!g&&damage>0){const result=require('./orochimaru-new-year-combat').indirect(ctx,source,target,damage,records);if(result!==null)return result;}if(!g||!(damage>0))return damage;
  const attack=source?Math.max(1,skills.value(source,'atk')):0;const amount=source?Math.round(damage*(attack+skills.value(target,'def'))/(attack+skills.value(g,'def'))):damage;
  const protectedHit=protectFatal(ctx,g,amount);const r=require('./reincarnation').hit(source||target,g,amount,ctx.random,false,protectedHit);
  records.push(skills.hpRecord(g,r.damage,false));return 0;

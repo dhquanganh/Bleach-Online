@@ -1,5 +1,6 @@
 'use strict';
 const {Y,tablo,satir,json,cv,gunluk}=require('./paket');
+const EXP_MULTIPLIER=3;
 const rows=()=>tablo('ExpDuplicate').liste.slice().sort((a,b)=>a._id-b._id);
 function armies(row){
   const index=rows().findIndex(r=>r._id===row._id);
@@ -27,7 +28,7 @@ function skills(a){
 }
 function experience(row,level,vip=0){
   const need=Number(satir('HeroExp',level)?.f0)||0;
-  return Math.floor((Math.pow(level,1.25)+0.625*need*(Number(cv(61400001,0.05))+vip*Number(cv(61400002,0.01))+row.diffArg)/level+1500*level)/1000)*1000;
+  return EXP_MULTIPLIER*Math.floor((Math.pow(level,1.25)+0.625*need*(Number(cv(61400001,0.05))+vip*Number(cv(61400002,0.01))+row.diffArg)/level+1500*level)/1000)*1000;
 }
 function rewards(row,a,level,vip,rng=Math.random){
   const out=[{type:2,code:0,amount:experience(row,level,vip)}];
@@ -86,13 +87,28 @@ function kur({ekSonra,odulVer,paraHarca,seviye,tensoAccount}){
     const money=paraHarca([{type:0,code:0,amount:row.needSilver}]);if(!money)return error(16);
     e.kul++;
     const award=report.won?rewards(row,a,seviye.anaDurum(v).lv,Number(v.vipLevel)||0):[];
+    const exp=award.filter(r=>r.type===2&&r.code===0).reduce((sum,r)=>sum+r.amount,0);
+    const ids=exp>0?seviye.kadroIds(durum):[];
+    const before=new Map(ids.map(id=>[id,seviye.heroDurum(durum,id,v).lv]));
     ekSonra(0x01180105,money,'TENSO-cost');
+    odulVer(durum,award);
+    if(exp>0){
+      const updated=account(),leveled=ids.filter(id=>seviye.heroDurum(durum,id,updated).lv>before.get(id));
+      // Apply the reward delta first, then authoritative levels/EXP before starting the replay.
+      // This also handles clients whose local rebirth threshold did not request a level update.
+      if(leveled.length){
+        ekSonra(0x01180103,seviye.upgradeNtf(durum,leveled,updated),'TENSO-level');
+        for(const id of leveled){const packet=require('./ekipman').statPaketi(durum,id,seviye.heroDurum(durum,id,updated).lv);if(packet)ekSonra(0x01180104,packet,'TENSO-stats');}
+        seviye.bekleyenTemizle(durum,leveled);
+      }
+      for(const id of ids)ekSonra(0x01180105,seviye.expHedefPaketi(id,seviye.heroDurum(durum,id,updated).exp),'TENSO-exp-sync');
+    }
+    kaydet(durum);
     ekSonra(codec.OP.REPORT,report.payload,'TENSO-report');
     ekSonra(codec.OP.RESULT,codec.encodeSingleResult(report.won,award),'TENSO-result');
-    odulVer(durum,award);kaydet(durum);
     ekSonra(0x01188404,new Y().i32(e.kul).done(),'TENSO-count');
     return error(0);
   };
   return H;
 }
-module.exports={kur,state,rows,armies,army,skills,experience,rewards,init,detail};
+module.exports={EXP_MULTIPLIER,kur,state,rows,armies,army,skills,experience,rewards,init,detail};

@@ -20,7 +20,7 @@ function groupFor(d,v){
   const i=cv(61900006,[[60,100],[101,120],[121,159]]).findIndex(([min,max])=>lv>=min&&lv<=max);
   return i<0?0:i+1;
 }
-function power(units){return Math.max(1,Math.min(0xffffffff,Math.round(units.reduce((sum,u)=>sum+u.maxHp/5+u.atk*2+u.def+u.speed,0))));}
+function power(units){return Math.max(1,Math.min(0xffffffff,Math.round(units.reduce((sum,u)=>{const p=u.pvpStats||{};return sum+(p.hp??u.maxHp)/5+(p.atk??u.atk)*2+(p.def??u.def)+(p.speed??u.speed);},0))));}
 function award(group,rank){
   const id=cv(61900008+group,[])[rank-1],row=satir('Award',id);
   return (json(row?.fixed,{}).fixed||[]).map(r=>({...r}));
@@ -30,9 +30,9 @@ function createGroup(season,group,paired=false){
     .sort((a,b)=>(a.order??a.player.pos??0)-(b.order??b.player.pos??0)||a.player.key.localeCompare(b.player.key));
   const players=Array(8).fill(null);
   entries.forEach((entry,i)=>{players[i]={...clone(entry.player),pos:i};});
-  const delay=season.registrationPhase===2?PAIRING_SECONDS:0;
+  const delay=season.registrationPhase===2&&!season.adminImmediate?PAIRING_SECONDS:0;
   const matches=paired?Array.from({length:7},(_,i)=>({id:group*1000+i,a:i<4&&players[i*2]?i*2:null,b:i<4&&players[i*2+1]?i*2+1:null,ret:-1,done:false,time:season.start+delay+(i<4?0:i<6?ROUND_SECONDS:ROUND_SECONDS*2)})):[];
-  return {players,matches,pairedAt:paired?season.start:null};
+  return {group,players,matches,pairedAt:paired?season.start:null};
 }
 function winner(m){return m.ret===1?m.a:m.ret===0?m.b:null;}
 function ownRank(k){
@@ -49,16 +49,19 @@ function synchronize(d,now,simulate,registry,entryKey){
   if(!s || s.version!==2){
     const old=s;
     const active=Object.values(registry.seasons).filter(season=>season.start<=now&&now<season.start+DISPLAY_SECONDS).sort((a,b)=>b.start-a.start)[0];
-    s=d.kingChallenge={version:2,group:old?.group||1,current:{start:active?.start||nextStart(now),groups:{},bets:[],claimed:false,entryKey},archive:old?[...(old.archive||[]),...(old.current&&ownRank(old.current)?[old.current]:[])]:[],refunds:(old?.current?.bets||[]).filter(b=>!b.claimed).map(b=>b.cost).filter(Boolean)};
+    s=d.kingChallenge={version:2,group:old?.group||1,current:{start:active?.start||nextStart(now),registryEpoch:now,groups:{},bets:[],claimed:false,entryKey},archive:old?[...(old.archive||[]),...(old.current&&ownRank(old.current)?[old.current]:[])]:[],refunds:(old?.current?.bets||[]).filter(b=>!b.claimed).map(b=>b.cost).filter(Boolean)};
   }
-  s.refunds=s.refunds||[];
+  s.refunds=Array.isArray(s.refunds)?s.refunds:[];s.archive=Array.isArray(s.archive)?s.archive:[];
+  s.group=[1,2,3,4].includes(s.group)?s.group:1;
+  if(!s.current||!Number.isFinite(s.current.start))s.current={start:nextStart(now),registryEpoch:now,groups:{},bets:[],claimed:false,entryKey};
+  for(const k of [...s.archive,s.current]){k.groups=k.groups||{};k.bets=Array.isArray(k.bets)?k.bets:[];}
   const seasonFor=k=>registry.seasons[k.start]||(registry.seasons[k.start]={start:k.start,registrations:{},groups:{},locked:{},registrationPhase:2,sequence:0});
   function resolve(k,group){
     const season=seasonFor(k);
     // Registration shows a list only. No opponents or bracket exist before the cutoff.
     if(now<k.start){const preview=createGroup(season,group,false);k.groups[group]=preview;return preview;}
     if(!season.groups[group] || season.groups[group].matches.length!==7)season.groups[group]=createGroup(season,group,true);
-    const b=season.groups[group];
+    const b=season.groups[group];b.group=group;
     for(let i=0;i<7;i++){
       const m=b.matches[i];
       if(m.done || now<k.start)continue;
@@ -80,7 +83,11 @@ function synchronize(d,now,simulate,registry,entryKey){
     return k.groups[group];
   }
   let k=s.current;k.entryKey=entryKey;
-  const currentSeason=seasonFor(k);
+  // Admin start keeps the registration roster and redirects existing account pointers.
+  const redirected=registry.redirects?.[k.start];
+  if(redirected&&(k.registryEpoch||0)<=redirected){k.start=redirected;k.groups={};}
+
+  const currentSeason=seasonFor(k);currentSeason.registrations||={};currentSeason.groups||={};currentSeason.locked||={};currentSeason.sequence=Number(currentSeason.sequence)||0;
   // Upgrade only open registrations; never rewrite a tournament already in progress.
   if(now<k.start && currentSeason.registrationPhase!==2){currentSeason.sequence=Math.max(0,...Object.values(currentSeason.registrations).map(e=>Number(e.order)||Number(e.player.pos)||0));currentSeason.registrationPhase=2;currentSeason.groups={};currentSeason.locked={};}
   if(currentSeason.registrationPhase===2){
@@ -96,23 +103,26 @@ function synchronize(d,now,simulate,registry,entryKey){
     s.archive.push(k);
     const recent=s.archive.slice(-3);
     s.archive=s.archive.filter(e=>recent.includes(e)||!e.claimed&&e.submission||e.bets.some(b=>eligibleBet(e,b)));
-    s.current=k={start:nextStart(now),groups:{},bets:[],claimed:false,entryKey};
+    s.current=k={start:nextStart(now),registryEpoch:now,groups:{},bets:[],claimed:false,entryKey};
     const next=seasonFor(k).registrations[entryKey];if(next)k.submission=clone(next);
   }
   return {s,k,season:seasonFor(k),resolve:group=>resolve(k,group)};
 }
 function defaultSimulate(a,b,d){
-  return require('./savas').kadroRapor(0,null,{ad:b.name,birimler:clone(b.units).map(u=>({...u,camp:1,hp:u.maxHp}))},{playerState:d,playerUnits:clone(a.units).map(u=>({...u,camp:0,hp:u.maxHp})),scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});
+  const snapshot=(units,camp)=>clone(units).map(u=>({...u,camp,hp:u.maxHp,partnerSkills:u.partnerSkills||[],weaponSkills:u.weaponSkills||[]}));
+  // Both camps use the registered PvP snapshots; the spectator's account must not supply equipment or skills.
+  return require('./savas').kadroRapor(0,{name:b.name,level:b.level||159,units:snapshot(b.units,1)},null,{playerState:{},playerUnits:snapshot(a.units,0),pvp:true,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});
 }
-function playerPacket(board){const w=new Y().u32(0).u16(board.players.filter(Boolean).length);for(const p of board.players.filter(Boolean))w.u32(p.low).u32(p.high).u32(p.model).u32(p.power).i32(p.pos).i32(p.agent).i32(p.serverId).utf(p.name).utf(p.server);return w.done();}
-function fightPacket(k,board){const w=new Y().u32(0).u16(board.matches.length);for(const m of board.matches){const a=board.players[m.a],b=board.players[m.b];w.i32(m.id).u32(a?.low||0).u32(a?.high||0).u32(b?.low||0).u32(b?.high||0).i8(m.ret===2?-1:m.ret).utf(m.report?`${k.start}:${m.id}`:'');}return w.u32(board.matches[0]?.time||k.start+PAIRING_SECONDS).done();}
-function betWinner(k,bet){const b=k.groups[Math.floor(bet.match/1000)],m=b?.matches.find(m=>m.id===bet.match);return m&&m.ret!==-1?b.players[winner(m)]:null;}
-function betsPacket(k,prefix=true){const w=new Y();if(prefix)w.u32(0);w.u16(k.bets.length);for(const bet of k.bets){const board=k.groups[Math.floor(bet.match/1000)],m=board.matches.find(m=>m.id===bet.match),chosen=board.players[bet.side===0?m.a:m.b],win=betWinner(k,bet);w.u32(bet.match).u32(chosen.low).u32(chosen.high).u32(win?.low||0).u32(win?.high||0).i8(bet.claimed?1:0).utf(board.players[m.a]?.name||'').utf(board.players[m.b]?.name||'').utf(chosen.name);}return w.done();}
-function eligibleBet(k,b){const win=betWinner(k,b),board=k.groups[Math.floor(b.match/1000)],m=board.matches.find(m=>m.id===b.match),chosen=board.players[b.side===0?m.a:m.b];return !b.claimed&&win&&win.low===chosen.low&&win.high===chosen.high;}
+function playerPacket(board){const w=new Y().u32(0).u16(board.players.filter(Boolean).length);for(const p of board.players.filter(Boolean))w.u32(p.low).u32(p.high).u32(p.model).u32(p.power).i32(p.pos).i32(p.agent).i32(p.serverId).utf(p.name).utf(p.server);return w.u32(board.group||0).done();}
+function fightPacket(k,board){const w=new Y().u32(0).u16(board.matches.length);for(const m of board.matches){const a=board.players[m.a],b=board.players[m.b];w.i32(m.id).u32(a?.low||0).u32(a?.high||0).u32(b?.low||0).u32(b?.high||0).i8(m.ret===2?-1:m.ret).utf(m.report?`${k.start}:${m.id}`:'');}return w.u32(board.matches[0]?.time||k.start+PAIRING_SECONDS).u32(board.group||0).done();}
+function betState(k,bet){const board=k.groups?.[Math.floor(bet.match/1000)],match=board?.matches?.find(m=>m.id===bet.match);if(!match||![0,1].includes(bet.side))return null;const chosen=board.players[bet.side===0?match.a:match.b];if(!chosen)return null;return {board,match,chosen,win:match.ret===-1?null:board.players[winner(match)]||null};}
+function betWinner(k,bet){return betState(k,bet)?.win||null;}
+function betsPacket(k,prefix=true){const w=new Y();if(prefix)w.u32(0);const bets=k.bets.map(bet=>({bet,state:betState(k,bet)})).filter(row=>row.state);w.u16(bets.length);for(const {bet,state:{board,match:m,chosen,win}} of bets)w.u32(bet.match).u32(chosen.low).u32(chosen.high).u32(win?.low||0).u32(win?.high||0).i8(bet.claimed?1:0).utf(board.players[m.a]?.name||'').utf(board.players[m.b]?.name||'').utf(chosen.name);return w.done();}
+function eligibleBet(k,b){const state=betState(k,b);return !!(!b.claimed&&state?.win&&state.win.low===state.chosen.low&&state.win.high===state.chosen.high);}
 function basePacket(s,now){
   const k=s.current,rank=ownRank(k),pendingEntry=[...s.archive,k].find(e=>e.submission&&ownRank(e)>0&&!e.claimed),pending=!!pendingEntry;
   const w=new Y().u32(0).u32(now<k.start?0:1).u32(now<k.start?k.start:nextStart(now)).raw(betsPacket(k,false));
-  return w.u8((rank?k.submission?.group:pendingEntry?.submission?.group)||k.submission?.group||0).bool(!!k.submission).u8(rank||pendingEntry&&ownRank(pendingEntry)||0).i8(pending?0:k.claimed?1:2).done();
+  return w.u8((rank?k.submission?.group:pendingEntry?.submission?.group)||k.submission?.group||0).bool(!!k.submission).u8(rank||pendingEntry&&ownRank(pendingEntry)||0).i8(pending?0:k.claimed?1:2).u8(k.submission?.group||0).u16(s.archive.reduce((sum,entry)=>sum+entry.bets.filter(b=>eligibleBet(entry,b)).length,0)).done();
 }
 function kur(y,opt={}){
   const now=opt.now||(()=>Math.floor(Date.now()/1000)),account=opt.account||(()=>levels.veriOku()),simulate=opt.simulate||defaultSimulate;
@@ -144,7 +154,10 @@ function kur(y,opt={}){
         const d=clone(ctx.durum),x=synchronize(d,now(),simulate,registry,key(d));
         return {result:fn(d,x),commit:tx.commit};
       });
-      transaction=null;for(const effect of tx.after)effect();return result;
+      transaction=null;
+      // Persistence has committed; a failed network notification cannot roll it back or refund a settled wager.
+      for(const effect of tx.after)try{effect();}catch(error){console.error('[KING] notification:',error.message);}
+      return result;
     }catch(error){
       transaction=null;
       if(tx.saved){try{ctx.kaydet(original);for(const key of Object.keys(ctx.durum))delete ctx.durum[key];Object.assign(ctx.durum,original);}catch(e){console.error('[KING] rollback:',e.message);}}
@@ -158,27 +171,27 @@ function kur(y,opt={}){
   };
   H['0x01818a01']=ctx=>withState(ctx,(d,x)=>{const g=getGroup(ctx.payload);if(!g)return fail(4);x.s.group=g;const b=x.resolve(g);if(!save(ctx,d))return fail(1);return playerPacket(b);});
   H['0x01818a03']=ctx=>withState(ctx,(d,x)=>{const g=getGroup(ctx.payload);if(!g)return fail(4);const b=x.resolve(g);if(!save(ctx,d))return fail(1);return fightPacket(x.k,b);});
-  H['0x01818a02']=ctx=>withState(ctx,(d,x)=>{const g=getGroup(ctx.payload);if(!g)return fail(4);const b=x.resolve(g),players=b.players.filter(Boolean).sort((a,b)=>b.power-a.power);if(!save(ctx,d))return fail(1);const w=new Y().u32(0).u16(players.length);players.forEach((p,i)=>w.u32(p.low).u32(p.high).i32(p.agent).i32(p.serverId).utf(p.server).utf(p.name).u32(i+1).u32(p.power));return w.done();});
+  H['0x01818a02']=ctx=>withState(ctx,(d,x)=>{const g=getGroup(ctx.payload);if(!g)return fail(4);const b=x.resolve(g),players=b.players.filter(Boolean).sort((a,b)=>b.power-a.power);if(!save(ctx,d))return fail(1);const w=new Y().u32(0).u16(players.length);players.forEach((p,i)=>w.u32(p.low).u32(p.high).i32(p.agent).i32(p.serverId).utf(p.server).utf(p.name).u32(i+1).u32(p.power));return w.u32(g).done();});
   H['0x01818a00']=ctx=>withState(ctx,(d,x)=>{if(ctx.payload.length)return fail(4);for(const g of new Set([x.k.submission?.group,...x.k.bets.map(b=>Math.floor(b.match/1000))].filter(Boolean)))x.resolve(g);if(!save(ctx,d))return fail(1);return basePacket(x.s,now());});
   H['0x01818a07']=ctx=>withState(ctx,(d,x)=>{
     if(ctx.payload.length)return fail(4);
     const reject=message=>new Y().u32(1).utf(message).done();
-    if(now()>=x.k.start)return reject('?? ch?t ??ng k? cho gi?i n?y.');
-    const v=account(),group=groupFor(d,v);if(!group)return reject('C?n c?p 60 tr? l?n ho?c ?? chuy?n sinh ?? ??ng k?.');
-    const units=opt.snapshot?opt.snapshot(d):require('./savas').playerTeam({playerState:d});
-    if(!units.length||units.length>7||new Set(units.map(u=>u.pos)).size!==units.length||units.some(u=>!satir('BaseHero',u.id)||!require('./retired-heroes').allowed(u.id)||u.pos<1||u.pos>15||!Number.isFinite(u.maxHp)||u.maxHp<=0))return fail(4);
-    const player={own:true,low:Number(d.roleIdLo)||1,high:Number(d.roleIdHi)||1,model:levels.anaId(),name:d.nick||'Player',server:'Local Player',agent:Number(d.agent)||0,serverId:Number(d.server)||1,power:power(units),units:clone(units)};
+    if(now()>=x.k.start)return reject('Đã chốt đăng ký cho giải này.');
+    const v=account(),group=groupFor(d,v);if(!group)return reject('Cần cấp 60 trở lên hoặc đã chuyển sinh để đăng ký.');
+    const units=opt.snapshot?opt.snapshot(d):require('./savas').playerTeam({playerState:d,pvp:true});
+    if(!units.length||units.length>7||new Set(units.map(u=>u.pos)).size!==units.length||units.some(u=>!satir('BaseHero',u.id)||!require('./retired-heroes').allowed(u.id)||!Number.isInteger(u.pos)||u.pos<1||u.pos>15||!Number.isFinite(u.maxHp)||u.maxHp<=0||!['atk','def','speed'].every(field=>Number.isFinite(u[field])&&u[field]>=0)))return fail(4);
+    const player={own:true,low:Number(d.roleIdLo)||1,high:Number(d.roleIdHi)||1,model:levels.anaId(),name:d.karakter?.nick||d.nick||'Player',server:'Local Player',agent:Number(d.agent)||0,serverId:Number(d.server)||1,power:power(units),units:clone(units)};
     const key=x.k.entryKey,existing=x.season.registrations[key];
-    if(x.season.locked[key])return reject('?? c? c??c cho c?p ??u c?a b?n; kh?ng th? ??i ??i h?nh.');
+    if(x.season.locked[key])return reject('Đã có cược cho cặp đấu của bạn; không thể đổi đội hình.');
     const entries=Object.values(x.season.registrations).filter(e=>e.group===group&&e.player.key!==key);
-    if(entries.length>=8)return reject('Nh?m n?y ?? ?? 8 ng??i ??ng k?.');
+    if(entries.length>=8)return reject('Nhóm này đã đủ 8 người đăng ký.');
     const occupied=new Set(entries.map(e=>e.player.pos));
     const pos=existing?.group===group?existing.player.pos:Array.from({length:8},(_,i)=>i).find(i=>!occupied.has(i));
     player.key=key;player.pos=pos;delete player.own;
     const entry={group,player,time:now(),order:existing?.order??existing?.player.pos??++x.season.sequence};
     if(existing)delete x.season.groups[existing.group];
     x.season.registrations[key]=clone(entry);delete x.season.groups[group];
-    x.k.submission=entry;delete x.k.groups[group];
+    x.s.group=group;x.k.submission=entry;delete x.k.groups[group];
     if(!save(ctx,d))return fail(1);push(ctx,d,x);return fail(0);
   });
   H['0x01818a05']=ctx=>withState(ctx,(d,x)=>{
@@ -209,7 +222,8 @@ function kur(y,opt={}){
   });
   H['0x01818a08']=ctx=>withState(ctx,(d,x)=>{if(ctx.payload.length)return fail(4);const group=x.s.group,b=x.resolve(group),p=!b.matches[6]||b.matches[6].ret===-1?null:b.players[winner(b.matches[6])];if(!save(ctx,d)||!p)return fail(1);return new Y().u32(0).u32(p.model).utf(p.name).done();});
   H['0x01818a09']=ctx=>withState(ctx,(d,x)=>{
-    const r=new O(ctx.payload),token=r.utf();if(r.kalan()||ctx.payload.length<2)return fail(4);
+    if(ctx.payload.length<2||ctx.payload.readUInt16BE(0)!==ctx.payload.length-2)return fail(4);
+    const r=new O(ctx.payload),token=r.utf();if(r.kalan())return fail(4);
     const m=/^(\d+):(\d+)$/.exec(token);if(!m)return fail(4);const start=Number(m[1]),id=Number(m[2]),k=[...x.s.archive,x.k].find(k=>k.start===start),g=Math.floor(id/1000);if(!k||g<1||g>4||id%1000>6)return fail(4);
     if(k===x.k)x.resolve(g);const fight=k.groups[g]?.matches.find(f=>f.id===id);if(!fight?.report)return fail(1);
     if(!save(ctx,d))return fail(1);

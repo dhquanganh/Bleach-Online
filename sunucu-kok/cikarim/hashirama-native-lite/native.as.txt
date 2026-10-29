@@ -34,7 +34,8 @@
                var tl:Point=host.globalToLocal(stage.localToGlobal(new Point()));var br:Point=host.globalToLocal(stage.localToGlobal(new Point(stage.stageWidth,stage.stageHeight)));
                var fit:Number=field?Math.min((br.x-tl.x-48)/bounds.width,((br.y-tl.y)*.68)/bounds.height):Math.max((br.x-tl.x)/bounds.width,(br.y-tl.y)/bounds.height);
                if(effect=="Zhujianzhongyanmingshenfenglong_texie")fit*=1.65;
-               clip.scaleX=clip.scaleY=fit;clip.x=(field?(tl.x+br.x)*.5:point.x)-(bounds.x+bounds.width*.5)*fit;clip.y=(field?tl.y+(br.y-tl.y)*.90:point.y)-(field?bounds.y+bounds.height:bounds.y+bounds.height*.5)*fit;
+               var facing:Number=effect.indexOf("Zhujianzhongyandingshanghuafo")==0&&caster.scaleX<0?-1:1;
+               clip.scaleY=fit;clip.scaleX=fit*facing;clip.x=(field?(tl.x+br.x)*.5:point.x)-(bounds.x+bounds.width*.5)*fit*facing;clip.y=(field?tl.y+(br.y-tl.y)*.90:point.y)-(field?bounds.y+bounds.height:bounds.y+bounds.height*.5)*fit;
                layer.scrollRect=new Rectangle(tl.x,tl.y,br.x-tl.x,br.y-tl.y);
             }else{
                var scale:Number=Math.min(1.6,Math.max(.15,width/Math.max(1,sourceWidth>0?sourceWidth:clip.width)));

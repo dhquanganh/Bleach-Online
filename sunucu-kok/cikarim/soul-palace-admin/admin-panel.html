@@ -1,0 +1,29 @@
+<section class="card" id="palacePanel">
+ <h2>Seireitei Soul Palace</h2>
+ <p class="note">Quản lý tầng lớn, tầng con và đội hình địch. Dữ liệu được áp dụng khi mở lại Soul Palace trong game; không cần F5. ID giữ nguyên để bảo toàn tiến độ đã vượt ải.</p>
+ <button id="palaceReload" type="button" class="secondary">Tải lại dữ liệu</button>
+ <p id="palaceStatus" class="note" role="status"></p>
+ <label for="palaceTower">Tầng lớn</label><select id="palaceTower"></select>
+ <button id="palaceAddTower" type="button">Thêm tầng lớn</button>
+ <form id="palaceForm">
+  <div class="columns"><label>ID tầng lớn<input id="palaceTowerId" readonly></label><label>Tên tầng lớn<input id="palaceTowerName" required maxlength="100"></label><label>Cấp mở khóa<input id="palaceLevel" type="number" min="1" max="159" required></label></div>
+  <label for="palaceFloor">Tầng con</label><select id="palaceFloor"></select><button id="palaceAddFloor" type="button" class="secondary">Thêm tầng con</button>
+  <div class="columns"><label>ID tầng con<input id="palaceFloorId" readonly></label><label>Tên tầng con<input id="palaceFloorName" maxlength="100" required></label></div>
+  <h3>Đội hình địch</h3><p class="note">Vị trí 1–5: hàng trước; 6–10: hàng giữa; 11–15: hàng sau. Mỗi vị trí chỉ có một nhân vật. Có thể chọn cả tướng và quái trong game.</p>
+  <input id="palaceSearch" type="search" placeholder="Tìm tên hoặc ID nhân vật"><select id="palaceCharacter" hidden aria-hidden="true"></select>
+  <div id="palaceCharacterList" role="listbox" aria-label="Danh sách nhân vật" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;max-height:300px;overflow:auto;margin:10px 0"></div>
+  <button id="palaceAddUnit" type="button" class="secondary">Thêm vào đội hình</button>
+  <div style="overflow:auto"><table style="width:100%;text-align:left"><thead><tr><th>Nhân vật</th><th>Vị trí</th><th>Cấp</th><th>HP</th><th>ATK</th><th>DEF</th><th>Tốc độ</th><th></th></tr></thead><tbody id="palaceUnits"></tbody></table></div>
+  <h3>Phần thưởng</h3>
+  <p class="note">Tìm vật phẩm theo tên hoặc ID, chọn nhóm thưởng rồi bấm vào vật phẩm để thêm. Sửa số lượng ngay trên từng hàng.</p>
+  <label for="palaceRewardTarget">Thêm vào nhóm</label><select id="palaceRewardTarget"></select>
+  <input id="palaceItemSearch" type="search" placeholder="Tìm tên hoặc ID vật phẩm…">
+  <div id="palaceItemResults" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;max-height:260px;overflow:auto"></div>
+  <p id="palaceItemStatus" class="note" role="status"></p>
+  <label for="palaceCurrency">Thêm tiền hoặc EXP</label><select id="palaceCurrency"><option value="0:0">Bạc</option><option value="0:1">Vàng</option><option value="0:2">Coupon</option><option value="2:0">EXP</option></select>
+  <button id="palaceAddCurrency" type="button" class="secondary">Thêm tiền / EXP</button>
+  <div id="palaceRewardGroups"></div>
+  <button id="palaceAddRewardPool" type="button" class="secondary">Thêm nhóm thưởng ngẫu nhiên</button>
+  <button id="palaceSave" type="submit">Lưu thay đổi vào game</button>
+ </form>
+</section>

@@ -516,6 +516,7 @@ function kur(y) {
     for (const id of ids) w.u32(id);
     return w.done();
   };
+  Object.assign(H,require('./soul-palace').kur(y).handlers);
   Object.assign(H,require('./soul-hunt').kur(y).handlers);
   Object.assign(H,require('./protect-seireitei').kur(y).handlers);
   Object.assign(H,require('./cross-server').kur(y).handlers);

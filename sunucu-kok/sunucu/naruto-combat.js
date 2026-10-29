@@ -15,6 +15,8 @@ const gaara = require('./gaara-combat');
 const tsunade = require('./tsunade-combat');
 const nineTails = require('./naruto-nine-tails-combat');
 const tobi = require('./tobi-war-combat');
+const oro = require('./orochimaru-new-year-combat');
+const asura = require('./asura-guardian-combat');
 const guy = require('./guy-gate-combat');
 const finalNaruto = require('./naruto-final-combat');
 const infinite = require('./madara-infinite-combat');
@@ -31,10 +33,10 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : guy.profile(unit) || finalNaruto.profile(unit) || infinite.profile(unit) || minato.profile(unit) || madara.profile(unit) || kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : oro.profile(unit) || asura.profile(unit) || guy.profile(unit) || finalNaruto.profile(unit) || infinite.profile(unit) || minato.profile(unit) || madara.profile(unit) || kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
-  return unit.hp <= 0 || guy.disabled(unit) || infinite.active(unit,'infiniteSlumberUntil') || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
+  return unit.hp <= 0 || asura.active(unit,'asuraBanishedUntil') || guy.disabled(unit) || infinite.active(unit,'infiniteSlumberUntil') || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
 }
 function canChase(unit) { return !finalNaruto.active(unit,'nfInkUntil') && !disabled(unit) && !skills.status(unit,'chaos') && (infinite.immune(unit,'paralysis') || !infinite.active(unit,'infiniteParalysisUntil') && !sasuke.active(unit,'sasukeParalysisUntil') && !unit.paralyzed && !skills.status(unit,'paralysis')); }
 function setState(target, state, round) {
@@ -66,6 +68,8 @@ function create(teams, options = {}) {
   infinite.initialize(context);
   finalNaruto.initialize(context);
   guy.initialize(context);
+  asura.initialize(context);
+  oro.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -115,7 +119,7 @@ function spendCooldown(ctx, unit, key, move) {
 }
 function useStandard(ctx, unit, allies, granted=false) {
   const move0=minato.selectStandard(ctx,unit,kakuzu.selectStandard(ctx,unit,tobi.selectStandard(ctx,unit,nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies)))))));
-  const move=guy.selectStandard(ctx,unit,finalNaruto.selectStandard(ctx,unit,infinite.selectStandard(ctx,unit,move0)));
+  const move=oro.selectStandard(ctx,unit,asura.selectStandard(ctx,unit,guy.selectStandard(ctx,unit,finalNaruto.selectStandard(ctx,unit,infinite.selectStandard(ctx,unit,move0)))));
   if(!move || skills.status(unit,'disarm') || sasuke.active(unit,'sasukeFearUntil') || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(granted)return move;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
@@ -162,6 +166,7 @@ function useMystery(ctx,unit,beforeSpend=null) {
   infinite.mysteryExecuted(ctx,unit);
   unit.mysteryReadyRound=ctx.round+(pain.isPain(unit)||sasuke.isSasuke(unit)?Math.max(0,m.cooldown):Math.max(1,m.cooldown));
   finalNaruto.mysterySpent(ctx,unit,m);
+  if(asura.active(unit,'asuraZeroCooldownUntil'))unit.mysteryReadyRound=ctx.round;
   if(m.consumesPrimary!==false)ctx.primaryActions.set(unit,ctx.round);
   return m;
 }

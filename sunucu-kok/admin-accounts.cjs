@@ -33,7 +33,7 @@ function integer(value, min, max, label) {
   if (!Number.isInteger(value) || value < min || value > max) fail(400, `${label}: nhập số nguyên từ ${min} đến ${max}.`);
   return value;
 }
-function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking }) {
+function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking, tournament }) {
   async function read(id) {
     const rt = runtimes.get(id.toHexString());
     if (rt) await save(rt);
@@ -67,6 +67,31 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimat
   return async function handle(req,res,pathname,user,json) {
     if (user.account.role !== 'admin') { json(403,{error:'Cần tài khoản admin.'}); return; }
     try {
+      const palaceAvatar=/^\/auth\/admin\/soul-palace\/characters\/(\d+)\/avatar$/.exec(pathname);
+      if(palaceAvatar&&req.method==='GET'){
+        const id=Number(palaceAvatar[1]),p=require('./sunucu/paket'),hero=p.satir('BaseHero',id),enemy=p.satir('Enemy',id);
+        if(!hero&&!enemy)fail(404,'Không tìm thấy nhân vật.');
+        const model=p.satir('RoleModel',id),reader=require('./admin-item-icon.cjs');let icon;
+        for(const picture of [...new Set([model?.roleHead,enemy?.heroIcon,id].filter(Boolean))]){
+          icon=reader(picture,'HeadIcon')||reader(picture,'SmallIcon');if(icon)break;
+        }
+        if(!icon)fail(404,'Chưa có avatar.');
+        res.writeHead(200,{'Content-Type':icon.type,'Cache-Control':'private, max-age=3600'});res.end(icon.data);return;
+      }
+      if(pathname==='/auth/admin/soul-palace'){
+        const palace=require('./sunucu/soul-palace-config');
+        const view=config=>{const codes=new Set(config.towers.flatMap(t=>t.floors.flatMap(f=>[...f.rewards,...(f.randomRewards||[]).flatMap(p=>p.value)].filter(r=>r.type===1).map(r=>r.code))));return {config,characters:palace.catalog(),rewardItems:items().filter(i=>codes.has(i.id)).map(i=>({...i,iconFrame:require('./item-atlas.cjs')(i.picture||i.id)}))};};
+        if(req.method==='GET'){json(200,view(palace.read()));return;}
+        if(req.method!=='PATCH')fail(405,'Method not allowed.');
+        const data=await body(req,2*1024*1024),saved=palace.write(data,String(user.account._id));
+        json(200,view(saved));return;
+      }
+      if(pathname==='/auth/admin/tournament'){
+        if(!tournament)fail(503,'Dịch vụ giải đấu chưa sẵn sàng.');
+        if(req.method==='GET'){json(200,await tournament.view());return;}
+        if(req.method!=='POST')fail(405,'Phương thức không hợp lệ.');
+        json(200,await tournament.update(await body(req),String(user.account._id)));return;
+      }
       if(pathname==='/auth/admin/ultimate-bp/ranking'){
         if(!ultimateBPRanking)fail(503,'Dịch vụ BXH chưa sẵn sàng.');
         if(req.method==='GET'){json(200,await ultimateBPRanking.view());return;}

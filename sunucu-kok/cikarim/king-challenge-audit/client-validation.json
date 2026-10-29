@@ -1,0 +1,12 @@
+{
+  "unchangedMethods": {
+    "Processors\\Game\\Lobby\\KingChallenge\\TProcessorWindowKingChallenge.as": 13,
+    "Processors\\Game\\Lobby\\KingChallenge\\TProcessorKingChallenge.as": 14,
+    "Processors\\Game\\Lobby\\KingChallenge\\TUIDetail.as": 7,
+    "Processors\\Game\\Lobby\\KingChallenge\\TUIMyGamble.as": 7,
+    "Logics\\Streamization\\KingChallenge\\TUnsteamizerKingChallenge.as": 3,
+    "Logics\\KingChallenge\\TKingChallenge.as": 6
+  },
+  "unchangedAssets": true,
+  "sha256": "b3066eff12dc77696bfa631c507d1a7cc527a55d397141eaa1e7c52ab53b121a"
+}

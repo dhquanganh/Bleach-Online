@@ -1,6 +1,16 @@
 "use strict";
 const assert=require('assert'),env=require('../envanter'),{Y,O}=require('../paket'),shop=require('../mystic-shop');
 const C=shop.config.currencyID,offer=shop.config.offers[0];let sent=[],saved;
+// Every active partner with a Modify Fragment must be available when owned.
+const tables=require('../paket'),active=require('../herolar').gecerliHerolar();
+for(const hero of active){
+ const item=tables.satir('HeroChangeAttr',hero.id)?.chipValue;
+ if(!item)continue;
+ const ownOffers=shop.offers({}, {herolar:[hero.id]}),row=ownOffers.find(o=>o.heroID===hero.id);
+ assert(row,'Missing owned hero fragment offer: '+hero.id);assert.equal(row.itemID,item);
+ assert.equal(row.price.amount,100);if(hero.id>=11121001&&hero.id<=11121009)assert(tables.satir('BlackMarket',row.id),'Missing new client table offer: '+row.id);
+ assert(!shop.offers({}, {herolar:[]}).some(o=>o.heroID===hero.id),'Unowned partner leaked into shop');
+}
 const y={ekSonra:(id,payload)=>sent.push({id,payload}),paraHarca:()=>{throw Error('Mystic must not charge gold/coupons');}};
 const account={herolar:[offer.heroID]};const H=shop.kur(y,{account:()=>account});let d={nick:'Test'};
 const req=id=>new Y().u32(1).u32(id).done();

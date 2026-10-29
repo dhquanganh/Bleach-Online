@@ -56,7 +56,7 @@ function prepareMove(ctx,u,move){
   // Requested adaptation: counterattacks and clone splash also scale with ATK.
   return {...move,multiplier,critBonus:key==='burstChase'?.2:0};
 }
-function debuff(ctx,v,key,until){if(v.hp>0&&!skills.status(v,'immuneDebuffs'))v[key]=until;}
+function debuff(ctx,v,key,until){if(require('./asura-guardian-combat').blocksKey(v,key))return;if(v.hp>0&&!skills.status(v,'immuneDebuffs'))v[key]=until;}
 function afterHit(ctx,u,selected,hit,move,frame){if(!move?.madaraMove)return;
   const key=move.madaraMove;
   if(key==='mystery'){debuff(ctx,selected,'madaraCombustionUntil',ctx.round+1);debuff(ctx,selected,'madaraEngulfUntil',ctx.round);selected.madaraCombustionSource=u;pain.interrupt(ctx,selected,frame.targets);queue(ctx,u,config.complete);}
@@ -67,8 +67,8 @@ function afterHit(ctx,u,selected,hit,move,frame){if(!move?.madaraMove)return;
   if(key==='chase'||key==='burstChase')for(const v of hit){if(!(v.madaraInfernoUntil>=ctx.round))v.madaraInfernoStacks=0;debuff(ctx,v,'madaraInfernoUntil',ctx.round+1);v.madaraInfernoSource=u;if(key==='chase'){v.hashStandardLossRound=ctx.round;v.hashStandardLoss=(v.hashStandardLoss||0)+1;}}
   if(key==='reflection'){const records=[];skills.restore(u,u,u.maxHp*config.reflection.healRatio,records);if(records.length)frame.reactions.push(pain.passive(u,records));}
   if(key==='cloneCounter'){for(const v of hit){if(!(v.madaraMentalUntil>=ctx.round))v.madaraMentalStacks=0;debuff(ctx,v,'madaraMentalUntil',ctx.round);v.madaraMentalStacks=Math.min(4,(v.madaraMentalStacks||0)+1);v.perseverance=0;v.skillBuffs=(v.skillBuffs||[]).filter(b=>b.field!=='perseverance');}if(hit.some(v=>v.hp<=0))queue(ctx,u,config.cloneSplash);}
-  if(move.trigger&&u.madaraCombustionUntil>=ctx.round){u.madaraIgnitionUntil=ctx.round;u.madaraIgnitionSource=u.madaraCombustionSource;}
-  if(move.prompt&&u.madaraCombustionUntil>=ctx.round)for(const ally of ctx.teams[u.camp]){ally.madaraIgnitionUntil=ctx.round;ally.madaraIgnitionSource=u.madaraCombustionSource;}
+  if(move.trigger&&u.madaraCombustionUntil>=ctx.round&&!require('./asura-guardian-combat').immuneStatus(u,'ignition')){u.madaraIgnitionUntil=ctx.round;u.madaraIgnitionSource=u.madaraCombustionSource;}
+  if(move.prompt&&u.madaraCombustionUntil>=ctx.round)for(const ally of ctx.teams[u.camp]){if(require('./asura-guardian-combat').immuneStatus(ally,'ignition'))continue;ally.madaraIgnitionUntil=ctx.round;ally.madaraIgnitionSource=u.madaraCombustionSource;}
 }
 function triggers(ctx){return ctx.madaraQueue.splice(0).filter(r=>r.unit.hp>0);}
 function endRound(ctx){const out=[];for(const u of ctx.teams.flat()){

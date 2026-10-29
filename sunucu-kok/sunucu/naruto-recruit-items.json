@@ -124,5 +124,19 @@
     "fragmentId": 14131007,
     "picture": 16228159,
     "name": "Guy [Gate of Death] Recruit Token"
+  },
+  {
+    "heroId": 11121008,
+    "itemId": 14141008,
+    "fragmentId": 14131008,
+    "picture": 16228160,
+    "name": "Asura [Guardian of the Land] Recruit Token"
+  },
+  {
+    "heroId": 11121009,
+    "itemId": 14141009,
+    "fragmentId": 14131009,
+    "picture": 16228161,
+    "name": "Orochimaru [New Year] Recruit Token"
   }
 ]

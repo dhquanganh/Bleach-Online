@@ -342,6 +342,51 @@
             <div id="accounts"></div>
         </aside>
         <main>
+<section class="card" id="palacePanel">
+ <h2>Seireitei Soul Palace</h2>
+ <p class="note">Quản lý tầng lớn, tầng con và đội hình địch. Dữ liệu được áp dụng khi mở lại Soul Palace trong game; không cần F5. ID giữ nguyên để bảo toàn tiến độ đã vượt ải.</p>
+ <button id="palaceReload" type="button" class="secondary">Tải lại dữ liệu</button>
+ <p id="palaceStatus" class="note" role="status"></p>
+ <label for="palaceTower">Tầng lớn</label><select id="palaceTower"></select>
+ <button id="palaceAddTower" type="button">Thêm tầng lớn</button>
+ <form id="palaceForm">
+  <div class="columns"><label>ID tầng lớn<input id="palaceTowerId" readonly></label><label>Tên tầng lớn<input id="palaceTowerName" required maxlength="100"></label><label>Cấp mở khóa<input id="palaceLevel" type="number" min="1" max="159" required></label></div>
+  <label for="palaceFloor">Tầng con</label><select id="palaceFloor"></select><button id="palaceAddFloor" type="button" class="secondary">Thêm tầng con</button>
+  <div class="columns"><label>ID tầng con<input id="palaceFloorId" readonly></label><label>Tên tầng con<input id="palaceFloorName" maxlength="100" required></label></div>
+  <h3>Đội hình địch</h3><p class="note">Vị trí 1–5: hàng trước; 6–10: hàng giữa; 11–15: hàng sau. Mỗi vị trí chỉ có một nhân vật. Có thể chọn cả tướng và quái trong game.</p>
+  <input id="palaceSearch" type="search" placeholder="Tìm tên hoặc ID nhân vật"><select id="palaceCharacter" hidden aria-hidden="true"></select>
+  <div id="palaceCharacterList" role="listbox" aria-label="Danh sách nhân vật" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;max-height:300px;overflow:auto;margin:10px 0"></div>
+  <button id="palaceAddUnit" type="button" class="secondary">Thêm vào đội hình</button>
+  <div style="overflow:auto"><table style="width:100%;text-align:left"><thead><tr><th>Nhân vật</th><th>Vị trí</th><th>Cấp</th><th>HP</th><th>ATK</th><th>DEF</th><th>Tốc độ</th><th></th></tr></thead><tbody id="palaceUnits"></tbody></table></div>
+  <h3>Phần thưởng</h3>
+  <p class="note">Tìm vật phẩm theo tên hoặc ID, chọn nhóm thưởng rồi bấm vào vật phẩm để thêm. Sửa số lượng ngay trên từng hàng.</p>
+  <label for="palaceRewardTarget">Thêm vào nhóm</label><select id="palaceRewardTarget"></select>
+  <input id="palaceItemSearch" type="search" placeholder="Tìm tên hoặc ID vật phẩm…">
+  <div id="palaceItemResults" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;max-height:260px;overflow:auto"></div>
+  <p id="palaceItemStatus" class="note" role="status"></p>
+  <label for="palaceCurrency">Thêm tiền hoặc EXP</label><select id="palaceCurrency"><option value="0:0">Bạc</option><option value="0:1">Vàng</option><option value="0:2">Coupon</option><option value="2:0">EXP</option></select>
+  <button id="palaceAddCurrency" type="button" class="secondary">Thêm tiền / EXP</button>
+  <div id="palaceRewardGroups"></div>
+  <button id="palaceAddRewardPool" type="button" class="secondary">Thêm nhóm thưởng ngẫu nhiên</button>
+  <button id="palaceSave" type="submit">Lưu thay đổi vào game</button>
+ </form>
+</section>
+
+            <section class="card" id="tournamentPanel">
+                <h2>Tournament of Throne</h2>
+                <p class="note">Quản lý đăng ký của cả 4 nhóm. Tối đa 8 người mỗi nhóm; dùng đội hình hiện tại của người chơi khi thêm. Thứ tự danh sách quyết định cặp đấu. Sau khi bắt đầu, danh sách được khóa.</p>
+                <p id="tournamentInfo" role="status">Đang tải giải đấu…</p>
+                <label for="tournamentGroup">Nhóm thi đấu</label>
+                <select id="tournamentGroup"><option value="1">Beginning · cấp 60–100</option><option value="2">Intermediate · cấp 101–120</option><option value="3">Advanced · cấp 121–159</option><option value="4">Master · chuyển sinh</option></select>
+                <label for="tournamentAccount">Thêm người chơi vào nhóm đủ điều kiện</label>
+                <select id="tournamentAccount"></select>
+                <button type="button" id="tournamentAdd" disabled>Thêm người tham gia</button>
+                <div id="tournamentPlayers"></div>
+                <button type="button" id="tournamentReload" class="secondary">Tải lại danh sách</button>
+                <button type="button" id="tournamentStart" disabled>Bắt đầu giải ngay · tất cả nhóm</button>
+                <p class="note">Nút bắt đầu chốt danh sách và chạy vòng đầu ngay. Các vòng tiếp theo cách nhau 5 phút. Người chơi trong game nhận cập nhật trực tiếp.</p>
+                <p id="tournamentStatus" class="note" role="status"></p>
+            </section>
             <div id="status" role="status" aria-live="polite">Đang tải dữ liệu…</div>
             <div id="empty" class="empty">Chọn một tài khoản để quản lý.</div>
 <section class="card" style="margin-bottom:22px">
@@ -657,6 +702,103 @@
  load();
 }());
 
+        (function () {
+            var data, pending=false;
+            function button(text, action) { var b=document.createElement('button');b.type='button';b.className='secondary';b.textContent=text;b.disabled=pending||data.status!=='registration';b.onclick=action;return b; }
+            function render() {
+                if(!data)return;
+                var group=Number(el('tournamentGroup').value),rows=data.groups.find(function(g){return g.group===group;}).players,open=data.status==='registration';
+                el('tournamentInfo').textContent=(open?'Đang đăng ký · bắt đầu lúc ':'Giải đã bắt đầu lúc ')+new Date(data.start*1000).toLocaleString('vi-VN')+' · '+data.groups.map(function(g){return 'Nhóm '+g.group+': '+g.players.length+'/8';}).join(' | ');
+                var select=el('tournamentAccount'),chosen=select.value;select.textContent='';
+                data.candidates.filter(function(c){return c.group===group&&!data.groups.some(function(g){return g.players.some(function(p){return p.key===c.id;});});}).forEach(function(c){select.add(new Option(c.name+' · '+c.username+' · Lv.'+c.level+(c.online?' · online':''),c.id));});
+                if(Array.from(select.options).some(function(o){return o.value===chosen;}))select.value=chosen;
+                el('tournamentAdd').disabled=pending||!open||!select.value||rows.length>=8;
+                el('tournamentStart').disabled=pending||!open||!data.groups.some(function(g){return g.players.length;});
+                el('tournamentReload').disabled=pending;select.disabled=pending||!open;
+                var root=el('tournamentPlayers');root.textContent='';
+                if(!rows.length){var empty=document.createElement('p');empty.textContent='Chưa có người đăng ký trong nhóm này.';root.appendChild(empty);}
+                rows.forEach(function(p,i){var row=document.createElement('div');row.style.cssText='padding:10px;border-bottom:1px solid #46536a;display:flex;gap:8px;align-items:center;flex-wrap:wrap';var text=document.createElement('span');text.style.flex='1';text.textContent=(i+1)+'. '+p.name+' · BP '+p.power.toLocaleString('vi-VN')+' · '+p.heroes+' nhân vật';row.appendChild(text);
+                    function move(offset){var keys=rows.map(function(p){return p.key;});var tmp=keys[i];keys[i]=keys[i+offset];keys[i+offset]=tmp;change({action:'order',group:group,keys:keys});}
+                    var up=button('↑',function(){move(-1);});up.setAttribute('aria-label','Đưa '+p.name+' lên');up.disabled=up.disabled||i===0;row.appendChild(up);
+                    var down=button('↓',function(){move(1);});down.setAttribute('aria-label','Đưa '+p.name+' xuống');down.disabled=down.disabled||i===rows.length-1;row.appendChild(down);
+                    row.appendChild(button('Xóa',function(){change({action:'remove',key:p.key});}));root.appendChild(row);
+                });
+            }
+            async function load(){if(pending)return;pending=true;render();try{data=await api('tournament');render();}catch(e){el('tournamentStatus').textContent=e.message;}finally{pending=false;render();}}
+            async function change(action){if(pending||!data)return;pending=true;action.revision=data.revision;render();el('tournamentStatus').textContent='Đang cập nhật…';try{data=await api('tournament','POST',action);el('tournamentStatus').textContent=action.action==='start'?'Đã bắt đầu giải và gửi cập nhật vào game.':'Đã lưu danh sách và gửi cập nhật vào game.';}catch(e){el('tournamentStatus').textContent=e.message;}finally{pending=false;render();}}
+            el('tournamentGroup').onchange=render;el('tournamentAccount').onchange=render;
+            el('tournamentReload').onclick=load;el('tournamentAdd').onclick=function(){change({action:'add',accountId:el('tournamentAccount').value});};
+            el('tournamentStart').onclick=function(){change({action:'start'});};
+            setInterval(function(){if(!el('tournamentPanel').hidden&&!document.hidden)load();},5000);load();
+        }());
+(function(){
+ var data,busy=false,dirty=false,discard=false,towerId,floorId;
+ function lock(){el('palacePanel').querySelectorAll('button,input,select,textarea').forEach(function(e){e.disabled=busy;});}
+ function tower(){return data.config.towers.find(function(t){return t.id===towerId;});}
+ function floor(){return tower().floors.find(function(f){return f.id===floorId;});}
+ function status(s){el('palaceStatus').textContent=s;}
+ var rewardItems={},itemSearchTimer,itemSearchSequence=0;
+ function rememberItems(rows){(rows||[]).forEach(function(i){rewardItems[i.id]=i;});}
+ function rewardName(r){return r.type===1?(rewardItems[r.code]||{}).name||'Vật phẩm #'+r.code:r.type===2?'EXP':['Bạc','Vàng','Coupon'][r.code]||'Tiền';}
+ function itemIcon(r){
+  var box=document.createElement('span');box.style.cssText='display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex-shrink:0;background:#292532;border-radius:5px;overflow:hidden';
+  if(r.type!==1){box.textContent=r.type===2?'EXP':['B','G','C'][r.code];return box;}
+  var image=document.createElement('img');image.width=40;image.height=40;image.alt='';image.style.objectFit='contain';image.onerror=function(){image.remove();box.textContent='?';};
+  image.onload=function(){if(image.dataset.decoded)return;try{var meta=rewardItems[r.code]||{},f=meta.iconFrame||{x:0,y:0,width:Math.min(image.naturalWidth,40),height:image.naturalHeight/2,atlasHeight:image.naturalHeight/2},canvas=document.createElement('canvas');canvas.width=f.width;canvas.height=f.height;var ctx=canvas.getContext('2d');ctx.drawImage(image,f.x,f.y,f.width,f.height,0,0,f.width,f.height);var color=ctx.getImageData(0,0,f.width,f.height);ctx.clearRect(0,0,f.width,f.height);ctx.drawImage(image,f.x,f.y+f.atlasHeight,f.width,f.height,0,0,f.width,f.height);var alpha=ctx.getImageData(0,0,f.width,f.height);for(var p=0;p<color.data.length;p+=4)color.data[p+3]=alpha.data[p];ctx.putImageData(color,0,0);image.dataset.decoded='1';image.src=canvas.toDataURL('image/png');}catch(e){image.style.height='80px';image.style.objectFit='cover';}};
+  image.src='/auth/admin/items/'+r.code+'/icon';box.appendChild(image);return box;
+ }
+ function rewardRow(list,r){
+  var row=document.createElement('div');row.dataset.type=r.type;row.dataset.code=r.code;row.style.cssText='display:flex;align-items:center;gap:10px;margin:8px 0;flex-wrap:wrap';row.appendChild(itemIcon(r));
+  var label=document.createElement('span');label.textContent=rewardName(r)+(r.type===1?' · #'+r.code:'');label.style.cssText='flex:1;min-width:150px';row.appendChild(label);
+  var amount=document.createElement('input');amount.type='number';amount.min=1;amount.max=r.type===1?65535:1000000000;amount.required=true;amount.value=r.amount;amount.style.width='110px';amount.setAttribute('aria-label','Số lượng '+rewardName(r));amount.oninput=function(){dirty=true;};row.appendChild(amount);
+  var remove=document.createElement('button');remove.type='button';remove.className='secondary';remove.textContent='Xóa';remove.onclick=function(){row.remove();dirty=true;};row.appendChild(remove);list.appendChild(row);
+ }
+ function collectRewardRows(f){
+  f.rewards=[];f.randomRewards=[];Array.from(el('palaceRewardGroups').children).forEach(function(box){var rows=Array.from(box.querySelector('[data-reward-list]').children).map(function(row){return {type:Number(row.dataset.type),code:Number(row.dataset.code),amount:Number(row.querySelector('input').value)};});if(box.dataset.fixed==='1')f.rewards=rows;else f.randomRewards.push({rate:Number(box.querySelector('[data-rate]').value)/100,value:rows});});
+ }
+ function renderRewards(){
+  rememberItems(data.rewardItems);var root=el('palaceRewardGroups'),target=el('palaceRewardTarget'),chosen=target.value;root.textContent='';target.textContent='';
+  function group(rows,index,rate){var box=document.createElement('div');box.style.cssText='padding:12px;border:1px solid #51495b;border-radius:6px;margin:12px 0';box.dataset.fixed=index<0?'1':'0';var name=index<0?'Thưởng chắc chắn':'Nhóm ngẫu nhiên '+(index+1),heading=document.createElement('strong');heading.textContent=name;box.appendChild(heading);target.add(new Option(name,String(index)));
+   if(index>=0){var label=document.createElement('label');label.textContent='Tỷ lệ rơi (%)';var input=document.createElement('input');input.type='number';input.min=0;input.max=100;input.step='0.01';input.required=true;input.value=Number((rate*100).toFixed(4));input.dataset.rate='1';input.style.width='110px';label.appendChild(input);box.appendChild(label);var remove=document.createElement('button');remove.type='button';remove.className='secondary';remove.textContent='Xóa nhóm';remove.onclick=function(){if(collect()===false)return;floor().randomRewards.splice(index,1);dirty=true;renderRewards();};box.appendChild(remove);}
+   var list=document.createElement('div');list.dataset.rewardList='1';rows.forEach(function(r){rewardRow(list,r);});box.appendChild(list);root.appendChild(box);
+  }
+  group(floor().rewards,-1,1);(floor().randomRewards||[]).forEach(function(p,i){group(p.value,i,p.rate);});if(Array.from(target.options).some(function(o){return o.value===chosen;}))target.value=chosen;
+ }
+ function addReward(r){if(busy)return;var index=Number(el('palaceRewardTarget').value)+1,list=el('palaceRewardGroups').children[index].querySelector('[data-reward-list]');if(list.children.length>=16)return status('Mỗi nhóm tối đa 16 phần thưởng.');var existing=Array.from(list.children).find(function(row){return Number(row.dataset.type)===r.type&&Number(row.dataset.code)===r.code;});if(existing){existing.querySelector('input').focus();return;}rewardRow(list,r);dirty=true;}
+ el('palaceAddCurrency').onclick=function(){var parts=el('palaceCurrency').value.split(':');addReward({type:Number(parts[0]),code:Number(parts[1]),amount:1});};
+ el('palaceAddRewardPool').onclick=function(){if(!data||busy)return;if(collect()===false)return;if(floor().randomRewards.length>=20)return status('Tối đa 20 nhóm thưởng.');floor().randomRewards.push({rate:1,value:[]});dirty=true;renderRewards();};
+ el('palaceItemSearch').oninput=function(){clearTimeout(itemSearchTimer);var sequence=++itemSearchSequence,q=this.value;itemSearchTimer=setTimeout(async function(){try{var result=await api('items?q='+encodeURIComponent(q));if(sequence!==itemSearchSequence)return;rememberItems(result.items);var root=el('palaceItemResults');root.textContent='';result.items.forEach(function(item){var button=document.createElement('button');button.type='button';button.className='secondary';button.style.cssText='display:flex;align-items:center;gap:8px;text-align:left;margin:0';button.appendChild(itemIcon({type:1,code:item.id}));var label=document.createElement('span');label.textContent=item.name+' · #'+item.id;button.appendChild(label);button.onclick=function(){addReward({type:1,code:item.id,amount:1});};root.appendChild(button);});el('palaceItemStatus').textContent=result.items.length?'Bấm vật phẩm để thêm vào nhóm đã chọn.':'Nhập ít nhất 2 ký tự hoặc thử tên khác.';}catch(e){if(sequence===itemSearchSequence)el('palaceItemStatus').textContent=e.message;}},250);};
+ function avatar(id,name){
+  var box=document.createElement('span');box.style.cssText='display:inline-block;position:relative;width:44px;height:44px;flex-shrink:0;overflow:hidden;border:1px solid #665d4b;border-radius:6px;background:#252331;vertical-align:middle';
+  var fallback=document.createElement('span');fallback.textContent=(name||'?').slice(0,1);fallback.style.cssText='display:block;text-align:center;line-height:44px;color:#f5cf79';box.appendChild(fallback);
+  var img=document.createElement('img');img.alt='';img.loading='lazy';img.style.cssText='position:absolute;left:0;top:0;width:100%;height:200%;object-fit:cover;object-position:center top';
+  img.onload=function(){img.style.height=img.naturalHeight>img.naturalWidth*1.5?'200%':'100%';};img.onerror=function(){img.remove();};img.src='/auth/admin/soul-palace/characters/'+id+'/avatar';box.appendChild(img);return box;
+ }
+ function characters(){
+  if(!data)return;var select=el('palaceCharacter'),chosen=select.value,q=el('palaceSearch').value.toLowerCase(),list=el('palaceCharacterList');select.textContent='';list.textContent='';
+  data.characters.filter(function(c){return c.name.toLowerCase().includes(q)||String(c.id).includes(q);}).slice(0,100).forEach(function(c){
+   select.add(new Option(c.name+' · #'+c.id,c.id));var button=document.createElement('button');button.type='button';button.className='secondary';button.setAttribute('role','option');button.dataset.id=c.id;button.style.cssText='display:flex;align-items:center;gap:10px;text-align:left;margin:0;padding:8px;min-height:62px';
+   button.appendChild(avatar(c.id,c.name));var label=document.createElement('span');label.textContent=c.name+' · #'+c.id+' · '+c.kind;button.appendChild(label);button.onclick=function(){select.value=String(c.id);highlight();};list.appendChild(button);
+  });
+  if(Array.from(select.options).some(function(o){return o.value===chosen;}))select.value=chosen;highlight();
+  function highlight(){Array.from(list.children).forEach(function(b){var active=b.dataset.id===select.value;b.setAttribute('aria-selected',String(active));b.style.outline=active?'2px solid #f2c66c':'none';});}
+ }
+
+ function collect(){if(!data||!floor())return;var t=tower(),f=floor();t.name=el('palaceTowerName').value;t.openLevel=Number(el('palaceLevel').value);f.name=el('palaceFloorName').value;f.units=Array.from(el('palaceUnits').children).map(function(row){var u={id:Number(row.dataset.id)};row.querySelectorAll('[data-field]').forEach(function(input){u[input.dataset.field]=Number(input.value);});return u;});collectRewardRows(f);return true;}
+ function render(){
+  var t=tower(),f=floor(),select=el('palaceTower');select.textContent='';data.config.towers.forEach(function(t){select.add(new Option(t.name+' · #'+t.id+' · '+t.floors.length+' ải',t.id));});select.value=t.id;
+  el('palaceTowerId').value=t.id;el('palaceTowerName').value=t.name;el('palaceLevel').value=t.openLevel;select=el('palaceFloor');select.textContent='';t.floors.forEach(function(f,i){select.add(new Option((i+1)+'. '+f.name+' · #'+f.id,f.id));});select.value=f.id;
+  el('palaceFloorId').value=f.id;el('palaceFloorName').value=f.name;renderRewards();var body=el('palaceUnits');body.textContent='';f.units.forEach(function(u,unitIndex){var row=document.createElement('tr');row.dataset.id=u.id;var td=document.createElement('td'),c=data.characters.find(function(c){return c.id===u.id;});var label=document.createElement('span');label.textContent=(c?c.name:String(u.id))+' #'+u.id;var identity=document.createElement('div');identity.style.cssText='display:flex;align-items:center;gap:8px;min-width:190px';identity.appendChild(avatar(u.id,c?c.name:''));identity.appendChild(label);td.appendChild(identity);row.appendChild(td);['pos','level','hp','atk','def','speed'].forEach(function(k){var cell=document.createElement('td'),input=document.createElement('input');input.type='number';input.value=u[k];input.required=true;input.dataset.field=k;input.style.cssText='min-width:70px;width:100%';input.min=['pos','level','hp'].includes(k)?1:0;input.max=k==='pos'?15:k==='level'?159:k==='hp'?1000000000:k==='speed'?1000000:100000000;input.oninput=function(){dirty=true;};cell.appendChild(input);row.appendChild(cell);});var cell=document.createElement('td'),remove=document.createElement('button');remove.type='button';remove.textContent='Xóa';remove.className='secondary';remove.onclick=function(){if(collect()===false)return;floor().units.splice(unitIndex,1);dirty=true;render();};cell.appendChild(remove);row.appendChild(cell);body.appendChild(row);});
+ }
+ async function load(){if(busy)return;if(dirty){status('Có thay đổi chưa lưu. Hãy lưu trước khi tải lại.');return;}busy=true;lock();try{data=await api('soul-palace');dirty=false;discard=false;towerId=data.config.towers[0].id;floorId=tower().floors[0].id;characters();render();status('Đã tải '+data.config.towers.length+' tầng lớn · phiên bản '+data.config.revision);}catch(e){status(e.message);}finally{busy=false;lock();}}
+ el('palaceReload').onclick=load;el('palaceSearch').oninput=characters;
+ el('palaceTower').onchange=function(){if(collect()===false)return;towerId=Number(this.value);floorId=tower().floors[0].id;render();};el('palaceFloor').onchange=function(){if(collect()===false)return;floorId=Number(this.value);render();};el('palaceForm').oninput=function(){dirty=true;};
+ el('palaceAddUnit').onclick=function(){if(!data)return;if(collect()===false)return;var f=floor(),pos=Array.from({length:15},function(_,i){return i+1;}).find(function(p){return !f.units.some(function(u){return u.pos===p;});}),id=Number(el('palaceCharacter').value);if(f.units.length>=9||!id)return status('Đội hình tối đa 9 nhân vật.');f.units.push({id:id,pos:pos,level:159,hp:100000,atk:6000,def:6000,speed:180});dirty=true;render();};
+ el('palaceAddFloor').onclick=function(){if(!data)return;if(collect()===false)return;var ids=data.config.towers.reduce(function(ids,t){return ids.concat(t.floors.map(function(f){return f.id;}));},[]),id=Math.max.apply(null,ids)+1,f=JSON.parse(JSON.stringify(floor()));f.id=id;f.name='Tầng con mới';tower().floors.push(f);floorId=id;dirty=true;render();};
+ el('palaceAddTower').onclick=function(){if(!data)return;if(collect()===false)return;var id=Math.max.apply(null,data.config.towers.map(function(t){return t.id;}))+1,ids=data.config.towers.reduce(function(ids,t){return ids.concat(t.floors.map(function(f){return f.id;}));},[]),f=JSON.parse(JSON.stringify(floor()));f.id=Math.max.apply(null,ids)+1;f.name='Tầng 1';data.config.towers.push({id:id,name:'Tầng lớn mới',openLevel:159,floors:[f]});towerId=id;floorId=f.id;dirty=true;render();};
+ el('palaceForm').onsubmit=async function(e){e.preventDefault();if(!data||busy)return;if(collect()===false)return;busy=true;lock();el('palaceSave').disabled=true;status('Đang lưu…');try{data=await api('soul-palace','PATCH',data.config);dirty=false;render();status('Đã lưu. Mở lại Soul Palace trong game để cập nhật tầng và đội hình.');}catch(e){status(e.message);}finally{busy=false;lock();}};
+ load();
+}());
     </script>
 </body>
 

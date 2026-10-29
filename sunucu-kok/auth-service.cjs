@@ -9,8 +9,8 @@ const { connect, passwordHash, passwordMatches, newFiles, ROOT, FILES } = requir
 const digest = value => crypto.createHash('sha256').update(value).digest('hex');
 const cookieToken = req => ((req.headers.cookie || '').split(';').map(v => v.trim()).find(v => v.startsWith('bleach_session=')) || '').slice(15);
 const delay = ms => new Promise(r => setTimeout(r, ms));
-async function body(req) {
-  let text = ''; for await (const chunk of req) { text += chunk; if (text.length > 4096) throw new Error('Yêu cầu quá lớn'); }
+async function body(req, limit=4096) {
+  let text = ''; for await (const chunk of req) { text += chunk; if (Buffer.byteLength(text) > limit) throw new Error('Yêu cầu quá lớn'); }
   return JSON.parse(text || '{}');
 }
 function available(port) { return new Promise(resolve => { const s = net.createServer(); s.once('error', () => resolve(false)); s.listen(port, '127.0.0.1', () => s.close(() => resolve(true))); }); }
@@ -31,7 +31,8 @@ async function startAuth(port) {
     for(const rt of runtimes.values())if(rt.child.connected){try{rt.child.send({type:'illusion-update'},()=>{});}catch(error){console.error('[Boss ranking push]',error.message);}}
   }});
   const ultimateBPRanking=require('./ultimate-bp-ranking.cjs').createRanking(db,{runtimes,serial,save,snapshot});
-  const adminAccounts = require('./admin-accounts.cjs').createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking });
+  const tournament=require('./tournament-admin.cjs').createTournament({db,runtimes,snapshot});
+  const adminAccounts = require('./admin-accounts.cjs').createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimateBPRanking, tournament });
   async function serial(id, action) {
     const previous = locks.get(id) || Promise.resolve();
     const current = previous.catch(() => {}).then(action); locks.set(id, current);

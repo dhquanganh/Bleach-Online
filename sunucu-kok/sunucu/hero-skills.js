@@ -228,6 +228,14 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
+  const oro=require('./orochimaru-new-year-combat');
+  if(field==='immuneDebuffs'&&oro.isOro(unit))return true;
+  if(field==='disarm'&&oro.active(unit,'oroBlindUntil'))return true;
+  if(field==='silence'&&oro.active(unit,'oroAcupunctureUntil'))return true;
+  const asura=require('./asura-guardian-combat');
+  if(field==='immuneDebuffs'&&asura.isAsura(unit))return true;
+  if(field==='invincible'&&asura.immune(unit))return true;
+  if(asura.immuneStatus(unit,field))return false;
   const guy=require('./guy-gate-combat');
   if(field==='immuneDebuffs'&&guy.isGuy(unit))return true;
   if(field==='disarm'&&guy.restrained(unit))return true;
@@ -243,7 +251,7 @@ function status(unit, field) {
   if(field==='noHeal'&&sasuke.active(unit,'sasukeIgnitionUntil'))return true;
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
-  const immunitySuppressed=!guy.isGuy(unit)&&!finalNaruto.isNaruto(unit)&&!infinite.isMadara(unit)&&!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
+  const immunitySuppressed=!asura.isAsura(unit)&&!guy.isGuy(unit)&&!finalNaruto.isNaruto(unit)&&!infinite.isMadara(unit)&&!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
   if(field==='immuneDebuffs')return !immunitySuppressed&&!!(require('./minato-new-year-combat').immuneAura(unit)||unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
@@ -266,6 +274,10 @@ function value(unit, field) {
   result*=require('./madara-infinite-combat').factor(unit,field);
   result*=require('./naruto-final-combat').factor(unit,field);
   result*=require('./guy-gate-combat').factor(unit,field);
+  result*=require('./asura-guardian-combat').factor(unit,field);
+  result*=require('./orochimaru-new-year-combat').factor(unit,field);
+  if(field==='critRate')result+=require('./orochimaru-new-year-combat').critical(unit);
+  if(field==='critRate')result+=require('./asura-guardian-combat').critical(unit);
   if(field==='critRate')result+=require('./guy-gate-combat').critical(unit);
   if(field==='critRate')result+=require('./minato-new-year-combat').critical(unit);
   if(field==='critRate')result+=require('./madara-final-combat').critical(unit);
@@ -284,6 +296,7 @@ function value(unit, field) {
   if(tagged&&field==='dodgeRate')return Math.min(.35,result);
   if(['atk','magicAtk'].includes(field)&&require('./tsunade-combat').active(unit,'tsunadeWeakUntil'))result=base*.75;
   if(field==='atk'&&require('./naruto-final-combat').active(unit,'nfWeakUntil'))result=base*.75;
+  if(field==='atk'&&require('./orochimaru-new-year-combat').sealed(unit))result=base*.7;
   return result*(tagged&&['def','resistance'].includes(field)?.85:1);
 }
 function hpRecord(unit, amount, targetEffect=true) {
@@ -296,9 +309,9 @@ function changeFury(unit, amount, records, unresistable=false, random=Math.rando
   const before=unit.anger; unit.anger=Math.max(0,Math.min(100,before+amount));
   records.push({cmd:CMD.ATTACK,targetCamp:unit.camp,targetPos:unit.pos,reportTargetStatus:ST.HIT>>>0,result:{hurtHp:0,hurtAnger:before-unit.anger}});
 }
-function restore(caster, target, amount, records) {
-  if(target.hp<=0||require('./guy-gate-combat').isGuy(target))return 0;
-  const rate=Math.max(0,1+value(target,'recoverRate'))*require('./gaara-combat').healFactor(target)*require('./madara-infinite-combat').healing(target);
+function restore(caster, target, amount, records, allowFatal=false) {
+  if(target.hp<=0&&!allowFatal||require('./guy-gate-combat').isGuy(target))return 0;
+  const rate=Math.max(0,1+value(target,'recoverRate'))*require('./gaara-combat').healFactor(target)*require('./madara-infinite-combat').healing(target)*(1+(target.asuraHealBonus||0))*require('./orochimaru-new-year-combat').healing(target);
   const restored=status(target,'noHeal')&&!status(target,'immuneHealBlock')?0:Math.min(Math.max(0,target.maxHp-target.hp),Math.max(0,Math.round(amount*rate)));
   target.hp+=restored;
   records.push(hpRecord(target,-restored));
@@ -309,6 +322,7 @@ function healPower(caster) {
   return base*(caster.atk>0?value(caster,'atk')/caster.atk:1);
 }
 function putBuff(caster,target,rule,records,random=Math.random,sourceSkill=0) {
+  if(require('./asura-guardian-combat').immuneStatus(target,rule.field))return;
   if(rule.value>=0&&!controls.has(rule.field)&&rule.field!=='vulnerability'&&rule.kind!=='dot'&&require('./naruto-final-combat').blocksBuff(target))return;
   if(rule.value>=0&&!controls.has(rule.field)&&rule.field!=='vulnerability'&&rule.kind!=='dot'&&require('./gaara-combat').blocks(caster,target))return;
   if(rule.value>=0&&rule.kind!=='dot'&&require('./sasuke-combat').active(target,'sasukeFearUntil'))return;

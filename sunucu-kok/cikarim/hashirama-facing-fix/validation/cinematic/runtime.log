@@ -1,0 +1,27 @@
+BOOT native Flash shared VFX component probe
+TEXTURE adamantine frames=54
+TEXTURE forest frames=107
+TEXTURE sword frames=53
+TEXTURE severe frames=88
+TEXTURE burst frames=15
+TEXTURE taijutsu frames=36
+TEXTURE burst-severe frames=88
+TEXTURE deity frames=138
+TEXTURE rumbling frames=226
+TEXTURE golem frames=54
+TEXTURE idle frames=35
+CASE 13121002 camp=0
+LAYERS_OK slot=0 skill=13121002 count=3 bound=4
+SNAPSHOT CASE-13121002-camp-0-cast
+SNAPSHOT HIT-13121002-camp-0
+SNAPSHOT CASE-13121002-camp-0-impact
+CASE 13121002 camp=0
+LAYERS_OK slot=1 skill=13121002 count=3 bound=4
+CASE 13121002 camp=1
+LAYERS_OK slot=2 skill=13121002 count=3 bound=4
+SNAPSHOT CASE-13121002-camp-1-cast
+SNAPSHOT HIT-13121002-camp-1
+SNAPSHOT CASE-13121002-camp-1-impact
+CASE 13121002 camp=1
+LAYERS_OK slot=3 skill=13121002 count=3 bound=4
+DONE Hashirama native component; remaining=0

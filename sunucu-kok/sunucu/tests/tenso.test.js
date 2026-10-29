@@ -8,10 +8,15 @@ for(const name of ['veri.json','oyuncu.json'])fs.copyFileSync(path.join(root,nam
 const t=require('../tenso'),battle=require('../savas'),codec=require('../kodek'),p=require('../paket'),levels=require('../seviye');
 const originalReport=battle.kadroRapor;
 try{
+  for(const row of t.rows())for(const level of [30,50,99,159])for(const vip of [0,5,10]){
+    const need=Number(p.satir('HeroExp',level).f0)||0;
+    const original=Math.floor((Math.pow(level,1.25)+.625*need*(Number(p.cv(61400001,.05))+vip*Number(p.cv(61400002,.01))+row.diffArg)/level+1500*level)/1000)*1000;
+    assert.equal(t.experience(row,level,vip),original*3,'each chapter EXP is exactly triple the former rounded reward');
+  }
   let v={level:159,vipLevel:0},canPay=true,saves=0,won=true;
   const packets=[],charges=[],grants=[];
   const H=t.kur({seviye:levels,tensoAccount:()=>v,
-    ekSonra:(id,payload)=>packets.push({id,payload}),
+    ekSonra:(id,payload,kaynak)=>packets.push({id,payload,kaynak}),
     paraHarca:list=>{if(!canPay)return null;charges.push(list);return Buffer.from([1]);},
     odulVer:(d,list)=>grants.push(list)});
   const d={},ctx=id=>({durum:d,payload:new p.Y().u32(id).done(),kaydet:()=>saves++});
@@ -39,7 +44,7 @@ try{
   canPay=false;const used=t.state(d).kul;
   assert.equal(H['0x01818403'](ctx(id)).readInt32BE(0),16);assert.equal(t.state(d).kul,used);
   canPay=true;won=false;packets.length=0;
-  assert.equal(H['0x01818403'](ctx(id)).readInt32BE(0),0);assert.deepEqual(grants.at(-1),[]);assert.equal(t.state(d).kul,1);
+  assert.equal(H['0x01818403'](ctx(id)).readInt32BE(0),0);assert.deepEqual(grants.at(-1),[]);assert.equal(t.state(d).kul,1);assert(!packets.some(packet=>packet.kaynak==='TENSO-exp-sync'||packet.id===0x01180103),'defeat must not send reward EXP or level-up notifications');
   assert.equal(packets.at(-1).id,0x01188404);assert.equal(packets.at(-1).payload.readInt32BE(0),1);
   won=true;assert.equal(H['0x01818403'](ctx(id)).readInt32BE(0),0);
   assert.equal(grants.at(-1)[0].type,2);assert.equal(grants.at(-1)[0].amount,t.experience(row,159,0));
@@ -73,7 +78,7 @@ try{
   const decoded=codec.decodeBattleReport(report.payload);assert.equal(decoded._consumed,decoded._total);assert.equal(decoded.player2.roles.length,5);
   // Exercise the production grant/save path in an isolated account directory.
   const account=JSON.parse(fs.readFileSync(path.join(dir,'veri.json')));
-  account.level=99;account.deneyim=0;account.gumus=10000000;
+  account.level=99;account.deneyim=levels.need(99)-1;account.gumus=10000000;
   fs.writeFileSync(path.join(dir,'veri.json'),JSON.stringify(account));
   delete player.gunlukSayac;
   const handlers=require('../handlers');
@@ -92,6 +97,15 @@ try{
   assert(savedAccount.level>99||savedAccount.deneyim>0,'EXP must persist through the actual reward handler');
   assert.equal(t.state(savedPlayer).kul,1);
   const queued=handlers.ekAl().sonra;assert(queued.some(p=>p.id===codec.OP.RESULT));assert(queued.some(p=>p.id===0x01180105));
+  const absolute=queued.filter(packet=>packet.kaynak==='TENSO-exp-sync'),mounted=levels.kadroIds(savedPlayer);
+  assert.equal(absolute.length,mounted.length,'every mounted hero receives authoritative EXP without a reload');
+  const reportIndex=queued.findIndex(packet=>packet.id===codec.OP.REPORT);
+  for(const packet of absolute){assert(queued.indexOf(packet)<reportIndex);assert.equal(packet.payload.readUInt16BE(0),1);assert.equal(packet.payload[2],12);const id=packet.payload.readUInt32BE(11);assert(mounted.includes(id));assert.equal(packet.payload.readUInt32BE(7),levels.heroDurum(savedPlayer,id,savedAccount).exp);}
+  const expectedExp=t.experience(row,99,Number(account.vipLevel)||0);
+  const updates=queued.filter(packet=>packet.id===0x01180105);let delta=0;
+  for(const packet of updates){const bytes=packet.payload;for(let offset=2,n=bytes.readUInt16BE(0);n>0;n--,offset+=13)if(bytes[offset]===11)delta+=bytes.readUInt32BE(offset+1);}
+  assert.equal(delta,expectedExp,'EXP reward delta is emitted exactly once');
+  if(savedAccount.level>99){assert(queued.some(packet=>packet.id===0x01180103),'level-ups pushed proactively');assert(queued.some(packet=>packet.id===0x01180104),'new level stats pushed proactively');}
   const result=queued.find(p=>p.id===codec.OP.RESULT).payload,reader=new p.O(result);
   assert.equal(reader.i32(),0);assert.equal(reader.u8(),1);
   const displayed=[];for(let n=reader.u16();n>0;n--)displayed.push({type:reader.u16(),code:reader.u32(),amount:reader.u32()});

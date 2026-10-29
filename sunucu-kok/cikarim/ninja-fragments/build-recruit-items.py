@@ -28,7 +28,7 @@ def main():
           picture=fragment['picture'],sellPrice=0,itemFunction=0,functionValue=9,f16=hero)
         if item in articles:assert articles[item]['functionValue']==9 and articles[item]['f16']==hero,'Item ID collision'
         extras[item]=row;catalog.append({'heroId':hero,'itemId':item,'fragmentId':int(association['chipValue']),'picture':row['picture'],'name':row['name']})
-    assert len(catalog)==18,('Review changed Naruto roster before applying',catalog)
+    assert len(catalog)==20,('Review changed Naruto roster before applying',catalog)
     replacement={i:f.serialize(2,r) for i,r in extras.items()}
     def patch(raw):
         if struct.unpack_from('<I',raw)[0]!=0x1000002:return raw

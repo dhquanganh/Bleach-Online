@@ -25,7 +25,7 @@ function onDamage(ctx,actor,target,damage,critical){if(damage<=0)return;
  if(active(actor,'sasukeBlazeUntil'))actor.sasukeBlazeAtkLoss=(actor.sasukeBlazeAtkLoss||0)+.01;
  if(critical&&active(target,'sasukeDisorderUntil')&&target.sasukeDisorderCriticalRound!==ctx.round){target.sasukeDisorderCriticalRound=ctx.round;actor.skillBuffs||=[];actor.skillBuffs.push({field:'critRate',value:-.15,remaining:2,source:target.id,sasukeDisorder:true});target.sasukeDisorderDamage=target.maxHp*.1;}
 }
-function apply(ctx,target,key,records,rounds=0){if(target.hp<=0||skills().status(target,'immuneDebuffs'))return false;target[key]=ctx.round+rounds;label(records,target,{sasukeBlazeUntil:1,sasukeElectrocutionUntil:2,sasukeStaticUntil:3,sasukeDisorderUntil:4,sasukeFearUntil:5,sasukeIgnitionUntil:6}[key]||1);return true;}
+function apply(ctx,target,key,records,rounds=0){if(require('./asura-guardian-combat').blocksKey(target,key))return false;if(target.hp<=0||skills().status(target,'immuneDebuffs'))return false;target[key]=ctx.round+rounds;label(records,target,{sasukeBlazeUntil:1,sasukeElectrocutionUntil:2,sasukeStaticUntil:3,sasukeDisorderUntil:4,sasukeFearUntil:5,sasukeIgnitionUntil:6}[key]||1);return true;}
 function afterHit(ctx,u,selected,hit,move,frame){if(!isSasuke(u)||!move)return;const records=[];
  for(const t of hit){
   if(move.sasukeStandard){if(move.sasukeBlaze)apply(ctx,t,'sasukeBlazeUntil',records,1);if(move.causes==='knockdown')apply(ctx,t,'sasukeStaticUntil',records,1);}

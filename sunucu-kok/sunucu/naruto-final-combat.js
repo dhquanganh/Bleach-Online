@@ -45,7 +45,7 @@ function blocksDeath(u){return !!u?.nfDeathBlocked||!jinchuriki(u)&&blocksMyster
 function noteDeaths(ctx){for(const u of ctx.teams.flat()){if(u.hp>0)delete u.nfDeathBlocked;else if(!jinchuriki(u)&&blocksMystery(u))u.nfDeathBlocked=true;}}
 function cleanseBlind(u,records){delete u.nfBlindUntil;delete u.gaaraBlindUntil;skills.removeField(u,'disarm',records);skills.removeField(u,'blind',records);}
 function resetActions(ctx,u,enqueue){const spent=u.nfStandardUsed||ctx.primaryActions.get(u)===ctx.round;ctx.primaryActions.delete(u);ctx.skillReady.get(u)?.delete('standard');ctx.used.delete(u);u.nfStandardUsed=false;u.nfExtras=0;require('./buff-notices').touch(u,'actionsReset');if(enqueue&&spent)ctx.nfQueue.push({unit:u,standardAction:true});}
-function debuff(ctx,u,key,until=ctx.round,special=false){if(u.hp<=0||!special&&skills.status(u,'immuneDebuffs'))return false;u[key]=Math.max(u[key]||0,until);return true;}
+function debuff(ctx,u,key,until=ctx.round,special=false){if(!special&&require('./asura-guardian-combat').blocksKey(u,key))return false;if(u.hp<=0||!special&&skills.status(u,'immuneDebuffs'))return false;u[key]=Math.max(u[key]||0,until);return true;}
 function prepareMove(ctx,u,move,selected){if(!move)return move;
  if(!move.prompt&&!move.chase&&!trigger(move)&&standardGuaranteed(u))move={...move,unavoidable:true};
  if(!move.nfMove)return move;

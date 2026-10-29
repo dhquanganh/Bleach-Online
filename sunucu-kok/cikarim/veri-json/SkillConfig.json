@@ -64227,7 +64227,7 @@
     "id": "00C835EA",
     "skillId": 13121002,
     "name": "Wood Style - Rumbling Dragon Strike",
-    "desc": "Causes unavoidable damage, Suppress Immunity until the end of the round to up to 12 units in the opponent's field and absorbs all Chakra from all units hit, causes Low Float and Level 2 - Weakness until the end of the next round to the selected unit. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF. Deals 5 consecutive damage hits; the listed damage coefficient is the total per cast.",
+    "desc": "Causes unavoidable damage, Suppress Immunity until the end of the round to up to 12 units in the opponent's field and absorbs all Chakra from all units hit, causes Low Float and Level 2 - Weakness until the end of the next round to the selected unit. Deals 20 consecutive damage hits; the listed damage coefficient is the total per cast. Deals physical damage, scales with Physical ATK and is mitigated by Physical DEF.",
     "icon": 13121002,
     "sortId": 2
   },
@@ -65406,5 +65406,173 @@
     "desc": "Has a chance to cause 20% Physical ATK splash damage to enemies one grid from units hit. All damage scales with Physical ATK and is reduced by Physical DEF.",
     "icon": 13122407,
     "sortId": 7
+  },
+  {
+    "id": "00C83BC5",
+    "skillId": 13122501,
+    "name": "Guardian of The Land - Destruction",
+    "desc": "Causes damage and Suppress Super Armor until the end of the next round to all units in the opponent's field, causes Knockdown to the selected unit and locks their Mystery Cooldown to 2 until the end of the next round. If the selected unit is an ally unit, this skill changes to Guardian of the Land - Protection. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122501,
+    "sortId": 1
+  },
+  {
+    "id": "00C83BC6",
+    "skillId": 13122502,
+    "name": "Truth-Seeking Balls - Combo",
+    "desc": "Attacks the opponent ninja with the lowest HP, high chance of causing Repulse. There's a chance of attacking all units in that ninja's line. This skill never misses and units defeated by this skill cannot be revived. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122502,
+    "sortId": 2
+  },
+  {
+    "id": "00C83BC7",
+    "skillId": 13122503,
+    "name": "Truth-Seeking Balls - Combo",
+    "desc": "Attacks the opponent ninja with the lowest HP, high chance of causing Repulse. There's a chance of attacking all units in that ninja's line. This skill never misses and units defeated by this skill cannot be revived. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122503,
+    "sortId": 3
+  },
+  {
+    "id": "00C83BC8",
+    "skillId": 13122504,
+    "name": "Truth-Seeking Balls - Combo",
+    "desc": "Attacks the opponent ninja with the lowest HP, high chance of causing Repulse. There's a chance of attacking all units in that ninja's line. This skill never misses and units defeated by this skill cannot be revived. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122504,
+    "sortId": 4
+  },
+  {
+    "id": "00C83BC9",
+    "skillId": 13122505,
+    "name": "Wood Style - Wood Dragon - Ascension",
+    "desc": "Triggered with at least 20 Combo, deals damage to all enemies, causes High Float, absorbs all enemy Chakra and reduces Asura's Mystery Cooldown by 1. Ignores 30% Physical DEF. Below 60% HP, changes to Modified Wood Dragon - Ascension. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122505,
+    "sortId": 5
+  },
+  {
+    "id": "00C83BCA",
+    "skillId": 13122506,
+    "name": "Modified - Wood Style - Wood Dragon - Ascension",
+    "desc": "Triggered with at least 20 Combo, causes damage to an opponent ninja, absorbs all Chakra and teleports them out of the field until the end of the round. This skill can only be triggered once each round, ignores a certain amount of Defense and Resistance and after this skill is executed, locks Asura's Mystery Cooldown to 0 for 1 round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122506,
+    "sortId": 6
+  },
+  {
+    "id": "00C83BCB",
+    "skillId": 13122507,
+    "name": "Guardian of The Land - Protection",
+    "desc": "All allied ninjas recover 20 shared Chakra, Chakra Limit is restored to 100, and cannot be defeated by their first 5 pure Physical ATK attacks received this round. Cooldown 2; Battlefield Cooldown 1; Chakra Cost 40. Selected instead of Destruction when targeting an ally.",
+    "icon": 13122507,
+    "sortId": 7
+  },
+  {
+    "id": "00C83BCC",
+    "skillId": 13122508,
+    "name": "Wood Style - Dragon Protection",
+    "desc": "All ninjas in your lineup will have all Debuffs cancelled, healed based on 25% of Asura's base Physical ATK stat and increase Asura's healings received by 25%.",
+    "icon": 13122508,
+    "sortId": 8
+  },
+  {
+    "id": "00C83BCD",
+    "skillId": 13122509,
+    "name": "Divine Tree",
+    "desc": "Barrier: allied ninjas gain 30% Water and Earth Resistance and are immune to Ignition, Acupuncture, Discouragement, Tension and Fear. Lasts until the end of the round.",
+    "icon": 13122509,
+    "sortId": 9
+  },
+  {
+    "id": "00C83BCE",
+    "skillId": 13122510,
+    "name": "Ninshu Successor - Revival",
+    "desc": "Asura revives 2 rounds after defeat with 40% max HP and executes Dragon Protection. A complete lineup defeat ends the battle. While Asura is alive, he revives a random defeated allied ninja with 100% max HP, at most once per round; cannot bypass no-revival effects.",
+    "icon": 13122510,
+    "sortId": 10
+  },
+  {
+    "id": "00C83C29",
+    "skillId": 13122601,
+    "name": "Summoning Jutsu - Manda",
+    "desc": "Causes unavoidable damage and Laceration to all ninjas in the opponent's lineup, causes Interruption to the selected unit. After this skill is executed, Orochimaru's Mystery changes to Reincarnation - Eight Headed Serpent Jutsu. If this skill defeats a unit, additionally executes Additional Skill: Eight Headed Serpent Jutsu. Cooldown 2; Battlefield Cooldown 0; Chakra Cost 20. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122601,
+    "sortId": 1
+  },
+  {
+    "id": "00C83C2A",
+    "skillId": 13122602,
+    "name": "Sword of Kusanagi - Striking Shadow Snakes",
+    "desc": "Attacks the opponent ninja with the lowest HP, a chance of causing Repulse. This skill is unavoidable, has additional Critical Rate increase and isn't subjected to the opponent's defensive skills. If the attacked unit is suffering from Laceration, additionally causes True damage based on 10% of that unit's max HP and after executed, Orochimaru suffers from Level 2 - Blindness until the end of the round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122602,
+    "sortId": 2
+  },
+  {
+    "id": "00C83C2B",
+    "skillId": 13122603,
+    "name": "Sword of Kusanagi - Striking Shadow Snakes",
+    "desc": "Attacks the opponent ninja with the lowest HP, a chance of causing Repulse. This skill is unavoidable, has additional Critical Rate increase and isn't subjected to the opponent's defensive skills. If the attacked unit is suffering from Laceration, additionally causes True damage based on 10% of that unit's max HP and after executed, Orochimaru suffers from Level 2 - Blindness until the end of the round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122603,
+    "sortId": 3
+  },
+  {
+    "id": "00C83C2C",
+    "skillId": 13122604,
+    "name": "Sword of Kusanagi - Striking Shadow Snakes",
+    "desc": "Attacks the opponent ninja with the lowest HP, a chance of causing Repulse. This skill is unavoidable, has additional Critical Rate increase and isn't subjected to the opponent's defensive skills. If the attacked unit is suffering from Laceration, additionally causes True damage based on 10% of that unit's max HP and after executed, Orochimaru suffers from Level 2 - Blindness until the end of the round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122604,
+    "sortId": 4
+  },
+  {
+    "id": "00C83C2D",
+    "skillId": 13122605,
+    "name": "Wind Style - Great Breakthrough",
+    "desc": "Chases and Attacks a Low Floated unit, causes Repulse, then causes damage to all units in the opponent's lineup. After every time this skill is executed, it receives one extra Chase condition in the following order: High Float, Knockdown, Repulse. If this skill has 4 Chase conditions, it becomes unavoidable and additionally dispels Perseverance of all units hit. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122605,
+    "sortId": 5
+  },
+  {
+    "id": "00C83C2E",
+    "skillId": 13122606,
+    "name": "Sealing Jutsu - Five Elements Seal",
+    "desc": "At the end of the round, causes unavoidable damage, guaranteed Level 2 - Acupuncture and Five Elements Seal to a random opponent unit. After this skill is executed, reduces Orochimaru's Mystery Cooldown by 1 and your lineup's Mystery Chakra Cost by 20 (stackable up to 2 times) until the end of the next round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122606,
+    "sortId": 6
+  },
+  {
+    "id": "00C83C2F",
+    "skillId": 13122607,
+    "name": "Sealing Jutsu - Five Elements Seal",
+    "desc": "At the end of the round, causes unavoidable damage, guaranteed Level 2 - Acupuncture and Five Elements Seal to a random opponent unit. After this skill is executed, reduces Orochimaru's Mystery Cooldown by 1 and your lineup's Mystery Chakra Cost by 20 (stackable up to 2 times) until the end of the next round. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122607,
+    "sortId": 7
+  },
+  {
+    "id": "00C83C30",
+    "skillId": 13122608,
+    "name": "Reincarnation - Eight Headed Serpent Jutsu",
+    "desc": "Causes unavoidable damage to all units in the opponent's field. This skill causes 30% more damage to units having Immunity or Super Armor (these 2 effects can stack together). After this skill is executed, Orochimaru's Mystery changes to Summoning Jutsu - Manda and he enters Explosive Mode until the end of the round. Explosive Mode: immune to Death and recovers 4% max HP whenever attacked until round end. Cooldown 2; Battlefield Cooldown 0; Chakra Cost 40. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122608,
+    "sortId": 8
+  },
+  {
+    "id": "00C83C31",
+    "skillId": 13122609,
+    "name": "Eight Headed Serpent Jutsu",
+    "desc": "Additional Skill: deals unavoidable Physical ATK damage to all enemies. Deals 30% extra damage against Immunity and 30% extra against Super Armor; both bonuses stack. Enters Explosive Mode until round end: cannot die and recovers 4% max HP whenever attacked. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122609,
+    "sortId": 9
+  },
+  {
+    "id": "00C83C32",
+    "skillId": 13122610,
+    "name": "Earth Substitution Jutsu",
+    "desc": "Orochimaru has high chances to evade Mystery skills and whenever he evades an attack, scales his Critical Rate by 8% (can be triggered 5 times per round) and he recovers 15% HP.",
+    "icon": 13122610,
+    "sortId": 10
+  },
+  {
+    "id": "00C83C33",
+    "skillId": 13122611,
+    "name": "New Year - Immortal Spirit",
+    "desc": "If defeated, revives 2 rounds later with 50% max HP. A complete lineup defeat ends the battle; no-revival effects remain effective.",
+    "icon": 13122611,
+    "sortId": 11
   }
 ]

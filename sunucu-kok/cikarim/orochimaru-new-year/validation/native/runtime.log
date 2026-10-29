@@ -1,0 +1,140 @@
+BOOT native Flash shared VFX component probe
+TEXTURE standard3 frames=114
+TEXTURE idle frames=38
+TEXTURE standard2 frames=75
+TEXTURE standard frames=69
+TEXTURE additionalSerpent frames=175
+TEXTURE dead frames=29
+TEXTURE manda frames=254
+TEXTURE chase frames=63
+TEXTURE seal frames=38
+TEXTURE additionalSeal frames=38
+TEXTURE evade frames=44
+TEXTURE revive frames=39
+TEXTURE entry frames=15
+TEXTURE serpent frames=175
+CASE 13122601 camp=0
+SNAPSHOT CASE-manda-camp-0-frame-4
+SNAPSHOT CASE-manda-camp-0-frame-16
+SNAPSHOT CASE-manda-camp-0-frame-32
+SNAPSHOT CASE-manda-camp-0-frame-48
+SNAPSHOT CASE-manda-camp-0-frame-60
+SNAPSHOT CASE-manda-camp-0-frame-72
+SNAPSHOT CASE-manda-camp-0-frame-84
+SNAPSHOT CASE-manda-camp-0-frame-100
+SNAPSHOT CASE-manda-camp-0-frame-114
+SNAPSHOT CASE-manda-camp-0-frame-135
+SNAPSHOT CASE-manda-camp-0-frame-145
+SNAPSHOT CASE-manda-camp-0-frame-155
+CASE 13122602 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-27
+SNAPSHOT CASE-standard-camp-0-frame-48
+CASE 13122603 camp=0
+SNAPSHOT CASE-standard2-camp-0-frame-4
+SNAPSHOT CASE-standard2-camp-0-frame-30
+SNAPSHOT CASE-standard2-camp-0-frame-52
+CASE 13122604 camp=0
+SNAPSHOT CASE-standard3-camp-0-frame-4
+SNAPSHOT CASE-standard3-camp-0-frame-45
+SNAPSHOT CASE-standard3-camp-0-frame-79
+CASE 13122605 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-25
+SNAPSHOT CASE-chase-camp-0-frame-44
+CASE 13122606 camp=0
+SNAPSHOT CASE-seal-camp-0-frame-4
+SNAPSHOT CASE-seal-camp-0-frame-15
+SNAPSHOT CASE-seal-camp-0-frame-26
+CASE 13122607 camp=0
+SNAPSHOT CASE-additionalSeal-camp-0-frame-4
+SNAPSHOT CASE-additionalSeal-camp-0-frame-15
+SNAPSHOT CASE-additionalSeal-camp-0-frame-26
+CASE 13122608 camp=0
+SNAPSHOT CASE-serpent-camp-0-frame-4
+SNAPSHOT CASE-serpent-camp-0-frame-16
+SNAPSHOT CASE-serpent-camp-0-frame-32
+SNAPSHOT CASE-serpent-camp-0-frame-48
+SNAPSHOT CASE-serpent-camp-0-frame-60
+SNAPSHOT CASE-serpent-camp-0-frame-72
+SNAPSHOT CASE-serpent-camp-0-frame-84
+SNAPSHOT CASE-serpent-camp-0-frame-100
+SNAPSHOT CASE-serpent-camp-0-frame-114
+SNAPSHOT CASE-serpent-camp-0-frame-135
+SNAPSHOT CASE-serpent-camp-0-frame-145
+SNAPSHOT CASE-serpent-camp-0-frame-155
+CASE 13122609 camp=0
+SNAPSHOT CASE-additionalSerpent-camp-0-frame-4
+SNAPSHOT CASE-additionalSerpent-camp-0-frame-70
+SNAPSHOT CASE-additionalSerpent-camp-0-frame-122
+CASE 13122610 camp=0
+SNAPSHOT CASE-evade-camp-0-frame-4
+SNAPSHOT CASE-evade-camp-0-frame-17
+SNAPSHOT CASE-evade-camp-0-frame-30
+CASE 13122611 camp=0
+SNAPSHOT CASE-revive-camp-0-frame-4
+SNAPSHOT CASE-revive-camp-0-frame-15
+SNAPSHOT CASE-revive-camp-0-frame-27
+CASE 13122601 camp=1
+SNAPSHOT CASE-manda-camp-1-frame-4
+SNAPSHOT CASE-manda-camp-1-frame-16
+SNAPSHOT CASE-manda-camp-1-frame-32
+SNAPSHOT CASE-manda-camp-1-frame-48
+SNAPSHOT CASE-manda-camp-1-frame-60
+SNAPSHOT CASE-manda-camp-1-frame-72
+SNAPSHOT CASE-manda-camp-1-frame-84
+SNAPSHOT CASE-manda-camp-1-frame-100
+SNAPSHOT CASE-manda-camp-1-frame-114
+SNAPSHOT CASE-manda-camp-1-frame-135
+SNAPSHOT CASE-manda-camp-1-frame-145
+SNAPSHOT CASE-manda-camp-1-frame-155
+CASE 13122602 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-27
+SNAPSHOT CASE-standard-camp-1-frame-48
+CASE 13122603 camp=1
+SNAPSHOT CASE-standard2-camp-1-frame-4
+SNAPSHOT CASE-standard2-camp-1-frame-30
+SNAPSHOT CASE-standard2-camp-1-frame-52
+CASE 13122604 camp=1
+SNAPSHOT CASE-standard3-camp-1-frame-4
+SNAPSHOT CASE-standard3-camp-1-frame-45
+SNAPSHOT CASE-standard3-camp-1-frame-79
+CASE 13122605 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-25
+SNAPSHOT CASE-chase-camp-1-frame-44
+CASE 13122606 camp=1
+SNAPSHOT CASE-seal-camp-1-frame-4
+SNAPSHOT CASE-seal-camp-1-frame-15
+SNAPSHOT CASE-seal-camp-1-frame-26
+CASE 13122607 camp=1
+SNAPSHOT CASE-additionalSeal-camp-1-frame-4
+SNAPSHOT CASE-additionalSeal-camp-1-frame-15
+SNAPSHOT CASE-additionalSeal-camp-1-frame-26
+CASE 13122608 camp=1
+SNAPSHOT CASE-serpent-camp-1-frame-4
+SNAPSHOT CASE-serpent-camp-1-frame-16
+SNAPSHOT CASE-serpent-camp-1-frame-32
+SNAPSHOT CASE-serpent-camp-1-frame-48
+SNAPSHOT CASE-serpent-camp-1-frame-60
+SNAPSHOT CASE-serpent-camp-1-frame-72
+SNAPSHOT CASE-serpent-camp-1-frame-84
+SNAPSHOT CASE-serpent-camp-1-frame-100
+SNAPSHOT CASE-serpent-camp-1-frame-114
+SNAPSHOT CASE-serpent-camp-1-frame-135
+SNAPSHOT CASE-serpent-camp-1-frame-145
+SNAPSHOT CASE-serpent-camp-1-frame-155
+CASE 13122609 camp=1
+SNAPSHOT CASE-additionalSerpent-camp-1-frame-4
+SNAPSHOT CASE-additionalSerpent-camp-1-frame-70
+SNAPSHOT CASE-additionalSerpent-camp-1-frame-122
+CASE 13122610 camp=1
+SNAPSHOT CASE-evade-camp-1-frame-4
+SNAPSHOT CASE-evade-camp-1-frame-17
+SNAPSHOT CASE-evade-camp-1-frame-30
+CASE 13122611 camp=1
+SNAPSHOT CASE-revive-camp-1-frame-4
+SNAPSHOT CASE-revive-camp-1-frame-15
+SNAPSHOT CASE-revive-camp-1-frame-27
+DONE Orochimaru New Year native component; remaining=0

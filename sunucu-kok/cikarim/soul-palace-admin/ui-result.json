@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "result": {
+    "avatarLoaded": true,
+    "floors": 2,
+    "status": "Đã lưu. Mở lại Soul Palace trong game để cập nhật tầng và đội hình.",
+    "teamAvatars": 5,
+    "towers": 14,
+    "visible": true
+  },
+  "errors": []
+}

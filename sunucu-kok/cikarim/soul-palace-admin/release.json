@@ -1,0 +1,10 @@
+{
+  "version": "2026102909",
+  "sha256": "8b3f76f90d095c0ab78da583bf5b96b860c2132559a5bdbe6ca95893d3392a99",
+  "validation": {
+    "unchangedAssets": true,
+    "changedClasses": 3,
+    "dynamicCatalog": true
+  },
+  "changedManifestEntries": 1
+}

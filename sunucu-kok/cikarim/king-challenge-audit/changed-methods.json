@@ -1,0 +1,33 @@
+{
+  "Processors\\Game\\Lobby\\KingChallenge\\TProcessorWindowKingChallenge.as": [
+    "LogicsPerform",
+    "ResourcesPerform_UIDispatch",
+    "TabOnSwitch",
+    "UpdateLine",
+    "UpdateRegistrationPhase",
+    "UpdateUI"
+  ],
+  "Processors\\Game\\Lobby\\KingChallenge\\TProcessorKingChallenge.as": [
+    "PacketPerform_SC_KingChallenge_BettingAwardRet",
+    "PacketPerform_SC_KingChallenge_InitFightRet",
+    "PacketPerform_SC_KingChallenge_UploadRet",
+    "ResourcesPerform_UIFinalize"
+  ],
+  "Processors\\Game\\Lobby\\KingChallenge\\TUIDetail.as": [
+    "Reset",
+    "UpdateUI"
+  ],
+  "Processors\\Game\\Lobby\\KingChallenge\\TUIMyGamble.as": [
+    "UpdateUI"
+  ],
+  "Logics\\Streamization\\KingChallenge\\TUnsteamizerKingChallenge.as": [
+    "BaseRet",
+    "FightReq",
+    "FightRet",
+    "InitReq",
+    "InitRet",
+    "RankReq",
+    "RankRet"
+  ],
+  "Logics\\KingChallenge\\TKingChallenge.as": []
+}

@@ -8,9 +8,9 @@ const battle=require('../savas'),codec=require('../kodek'),k=require('../kakuzu-
 for(const camp of [0,1]){
   // Hashirama remains alive through the four-round delay. A wiped lineup must
   // not be kept in the match just to satisfy this resurrection fixture.
-  const rescued=[11120997,11100001,11120940].map((id,i)=>require('../cross-server-players').baseUnit({id,pos:1+i*5}));
+  const rescued=[11120997,11100001,11120940].map((id,i)=>battle.heroBirim(id,1+i*5,159,null,null,0,true));
   rescued[2].hp=rescued[2].maxHp=10000000;rescued[2].atk=1;rescued[2].skill=0;rescued[2].skillId=rescued[2].normal;
-  const opponents=[11100001,11100001,11100001].map((id,i)=>({...require('../cross-server-players').baseUnit({id,pos:1+i*5}),hp:10000000,maxHp:10000000,atk:12000,def:10000,skill:0,skillId:13100114,normal:13100114}));
+  const opponents=[11100001,11100001,11100001].map((id,i)=>({...battle.heroBirim(id,1+i*5,159,null,null,0,true),hp:10000000,maxHp:10000000,atk:12000,def:10000,skill:0,skillId:13100114,normal:13100114}));
   const report=codec.decodeBattleReport(battle.kadroRapor(0,{name:'Revival lifecycle regression',level:159,units:camp?rescued:opponents},null,{
     playerUnits:camp?opponents:rescued,playerState:{},scaleEnemy:false,forceWin:false,random:()=>.5
   }).payload);

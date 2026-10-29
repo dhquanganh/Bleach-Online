@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "result": {
+    "allLocked": true,
+    "rows": 2,
+    "startDisabled": true,
+    "status": "Đã bắt đầu giải và gửi cập nhật vào game.",
+    "tab": true
+  },
+  "requests": [
+    {
+      "action": "add",
+      "accountId": "c",
+      "revision": "test"
+    },
+    {
+      "action": "order",
+      "group": 4,
+      "keys": [
+        "a",
+        "c",
+        "b"
+      ],
+      "revision": "test"
+    },
+    {
+      "action": "remove",
+      "key": "b",
+      "revision": "test"
+    },
+    {
+      "action": "start",
+      "revision": "test"
+    }
+  ],
+  "errors": []
+}

@@ -3,6 +3,9 @@ const assert=require('node:assert/strict'),h=require('../hashirama-combat'),n=re
 const unit=(id,pos,camp=0)=>({id,pos,camp,hp:100000,maxHp:100000,atk:1000,magicAtk:1,def:100,resistance:100,speed:100,hitRate:1,critRate:0,anger:0,level:99,normal:13100114,skill:0,skillId:13100114,partnerSkills:[],weaponSkills:[]});
 function fixture(camp=0,pos=6){const u={...unit(h.config.heroId,pos,camp),hp:10000,maxHp:10000,normal:h.config.standard.id,skill:h.config.mystery.id,skillId:h.config.mystery.id};const enemies=Array.from({length:15},(_,i)=>unit(12101003,i+1,1-camp)),ally=unit(500,7,camp);const ctx=n.create(camp?[enemies,[u,ally]]:[[u,ally],enemies],{random:()=>.5});n.startRound(ctx,1);h.roundStart(ctx);return {ctx,u,enemies,ally};}
 function strike(f,move,actor=f.u,target=f.enemies[0]){move=h.prepareMove(f.ctx,actor,move);const frame=battle.vurus(actor,target,false,f.ctx.teams[1-actor.camp],()=>.5,false,f.ctx.teams[actor.camp],n.attackSpec(move));const hit=f.ctx.teams[1-actor.camp].filter(t=>frame.targets.some(r=>r.cmd===codec.CMD.ATTACK&&r.targetCamp===t.camp&&r.targetPos===t.pos&&(r.reportTargetStatus&codec.ST.HIT)));h.afterHit(f.ctx,actor,target,hit,move,frame);return frame;}
+assert.equal(h.config.burstMystery.hitCount,20);
+assert.equal(h.config.burstMystery.combo,20);
+assert.equal(h.config.burstMystery.multiplier,2,'twenty impacts share the original total coefficient');
 for(const camp of [0,1]){
  // Senjutsu heals 25% max HP per positive damage event in base form.
  {const f=fixture(camp),records=[];f.u.hp=4000;f.u.mysteryReadyRound=5;

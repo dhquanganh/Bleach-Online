@@ -1,0 +1,69 @@
+      private static var FOrochimaruNative:Object={};
+      private var FOrochimaruVfxStarted:Boolean=false;
+      private var FOrochimaruLayers:Array=[];
+      private static function PreloadOrochimaruNative() : void {
+         for each(var effect:String in ["Dashewanxinchun_baqizhishu", "Dashewanxinchun_baqizhishu_texie", "Dashewanxinchun_fengdundatupo", "Dashewanxinchun_qianyingduosheshou1", "Dashewanxinchun_qianyingduosheshou2", "Dashewanxinchun_qianyingduosheshou3", "Dashewanxinchun_tonglingzhishujushe", "Dashewanxinchun_tonglingzhishujushe_texie", "Dashewanxinchun_tutishenshu", "Dashewanxinchun_wuxingfengyin", "Dashewanxinchun_wuxingfengyin_BUFF", "DASHEWAN_tongyongfuhuo"])LoadOrochimaruNative(effect);
+      }
+      private static function LoadOrochimaruNative(effect:String) : void {
+         if(FOrochimaruNative[effect]!=null)return;
+         var state:Object={};FOrochimaruNative[effect]=state;var loader:Loader=new Loader();state.loader=loader;
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{state.domain=loader.contentLoaderInfo.applicationDomain;if(loader.content is MovieClip)MovieClip(loader.content).stop();});
+         loader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,function(event:IOErrorEvent):void{delete FOrochimaruNative[effect];});
+         loader.load(new URLRequest("/public/orochimaru-new-year-vfx/native/"+effect+".swf"),new flash.system.LoaderContext(false,new flash.system.ApplicationDomain()));
+      }
+      private function ClearOrochimaruVfx() : void {
+         for each(var layer:Sprite in FOrochimaruLayers)if(layer.parent!=null)layer.parent.removeChild(layer);
+         FOrochimaruLayers=[];FOrochimaruVfxStarted=false;
+      }
+      private function UpdateOrochimaruVfx() : void {
+         if((FId!=11121009 && FId!=11121009) || FOrochimaruVfxStarted || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         FOrochimaruVfxStarted=true;
+         if(FSkillId==13122611){PlayOrochimaruNative("DASHEWAN_tongyongfuhuo","tyfh");return;}
+         var mapping:Object=JSON.parse("{\"13122601\":\"Dashewanxinchun_tonglingzhishujushe\",\"13122602\":\"Dashewanxinchun_qianyingduosheshou1\",\"13122603\":\"Dashewanxinchun_qianyingduosheshou2\",\"13122604\":\"Dashewanxinchun_qianyingduosheshou3\",\"13122605\":\"Dashewanxinchun_fengdundatupo\",\"13122606\":\"Dashewanxinchun_wuxingfengyin\",\"13122607\":\"Dashewanxinchun_wuxingfengyin\",\"13122608\":\"Dashewanxinchun_baqizhishu\",\"13122609\":\"Dashewanxinchun_baqizhishu\",\"13122610\":\"Dashewanxinchun_tutishenshu\"}");var effect:String=mapping[String(FSkillId)];
+         if(effect!=null){PlayOrochimaruNative(effect,"xia");PlayOrochimaruNative(effect,"shang");}
+         if(FSkillId==13122601)PlayOrochimaruNative("Dashewanxinchun_tonglingzhishujushe_texie","texie");
+         if(FSkillId==13122608||FSkillId==13122609)PlayOrochimaruNative("Dashewanxinchun_baqizhishu_texie","texie");
+      }
+
+      private function OrochimaruContactOffset() : Point {
+         return new Point();
+      }
+
+      private function OrochimaruStrikePose(frame:TAnimationFrame) : void {
+         if((FId!=11121009 && FId!=11121009) || frame==null || (FIndex!=TYPE_ACTIVE_ATTACK && FIndex!=TYPE_ACTIVE_SKILL))return;
+         var offset:Point=OrochimaruContactOffset();FBitmap.x=-frame.Pivot.X+offset.x;FBitmap.y=-frame.Pivot.Y+offset.y;
+      }
+      private function PlayOrochimaruNative(effect:String,symbol:String,target:TRole=null,startFrame:int=0) : void {
+         LoadOrochimaruNative(effect);
+         var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;if(host==null || stage==null)return;
+         var layer:Sprite=new Sprite();layer.name="orochimaruSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;
+         layer.blendMode=symbol=="texie"?"screen":"normal";
+         if(symbol=="xia" && parent==host)host.addChildAt(layer,host.getChildIndex(this));else host.addChild(layer);
+         FOrochimaruLayers.push(layer);
+         var clip:MovieClip=null;var serial:uint=FCombatVfxSerial;var skill:uint=FSkillId;var last:int=-1;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null && event.target!=layer)return;cleaned=true;layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(clip!=null)clip.stop();if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId!=skill || (caster.FIndex!=TYPE_ACTIVE_ATTACK && caster.FIndex!=TYPE_ACTIVE_SKILL)){clear();return;}
+            var state:Object=FOrochimaruNative[effect];if(state==null || state.domain==null){layer.visible=false;return;}
+            if(clip==null){if(!state.domain.hasDefinition(symbol)){clear();return;}var type:Class=state.domain.getDefinition(symbol) as Class;clip=new type() as MovieClip;clip.stop();layer.addChild(clip);}
+            if(caster.FFrameIndex<startFrame){layer.visible=false;return;}
+            var rate:Number=24;var frame:int=Math.round(Math.max(0,caster.FFrameIndex-startFrame)*rate/25)+1;
+            if(frame>clip.totalFrames){clear();return;}
+            layer.visible=true;if(frame!=last){clip.gotoAndStop(frame);last=frame;}
+            var offset:Point=caster.OrochimaruContactOffset();var originX:Number=70*0.84;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point(originX+offset.x,offset.y)));
+            var facing:Number=caster.scaleX;
+            if(target!=null){at=host.globalToLocal(target.localToGlobal(new Point()));facing=target.scaleX;}
+            layer.x=at.x;layer.y=at.y;layer.scaleX=facing<0?-0.84:0.84;layer.scaleY=0.84;
+            if(symbol=="texie"){
+               var bounds:Rectangle=clip.getBounds(clip);if(bounds.width>1 && bounds.height>1){
+                  // Fit the original cut-in uniformly to the battle viewport.
+                  var fit:Number=host.stage.stageWidth/bounds.width;
+                  layer.scaleX=fit;layer.scaleY=fit;
+                  layer.x=host.stage.stageWidth*.5-(bounds.x+bounds.width*.5)*fit;
+                  layer.y=host.stage.stageHeight*.4-(bounds.y+bounds.height*.5)*fit;
+               }
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

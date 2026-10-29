@@ -12,6 +12,7 @@ function snapshot(u){
  const buffFields=new Set((u.skillBuffs||[]).filter(b=>b.remaining>0).map(b=>b.field));
  for(const field of Object.keys(config.stats)){raw[field]=Number(u[field])||0;values[field]=core.has(field)||raw[field]||buffFields.has(field)?Number(skills.value(u,field))||0:0;}
  for(const field of ['immuneDebuffs','immuneControl','invincible','reflect','immuneHealBlock'])values[field]=Number(skills.status(u,field));
+ values.recoverRate+=(u.asuraHealBonus||0);
  values.superArmor=Number(skills.armor(u));values.shield=Math.max(0,u.shield||0);
  values.regeneration=(u.skillBuffs||[]).filter(b=>b.kind==='regen'&&b.remaining>0).reduce((sum,b)=>sum+Math.max(0,b.amount||b.value||0),0);
  values.standardDamage=active(u,'nfFriendshipUntil')?(u.nfFriendshipStacks||0):0;
@@ -22,9 +23,9 @@ function snapshot(u){
  values.madaraBurst=active(u,'madaraBurstUntil');values.hashBurst=active(u,'hashBurstUntil');values.excited=active(u,'hashExcitedUntil');
  values.mechaBeast=Number(!!u.mechaBeast);values.minatoProwess=Number(!!u.minatoProwess);
  values.armor2=Math.max(active(u,'gaaraArmor2Until'),active(u,'tobiArmorUntil'),active(u,'madaraBurstUntil'));
- values.advancedImmunity=active(u,'mechaAdvancedUntil');values.explosive=active(u,'hashExplosiveUntil');
+ values.advancedImmunity=require('./asura-guardian-combat').isAsura(u)?1:active(u,'mechaAdvancedUntil');values.explosive=Math.max(active(u,'hashExplosiveUntil'),active(u,'asuraExplosiveUntil'),active(u,'oroExplosiveUntil'));
  values.triggerEvasion=active(u,'minatoTriggerEvadeUntil');values.unavoidable=active(u,'painUnavoidableUntil');values.hiding=active(u,'itachiHidingUntil');
- values.mysteryCostReduction=(u.mechaCostReduction||0)+(u.tobiCostRound===u.battleRound?u.tobiCostReduction||0:0);
+ values.mysteryCostReduction=require('./orochimaru-new-year-combat').cost(u.oroContext,u)+(u.mechaCostReduction||0)+(u.tobiCostRound===u.battleRound?u.tobiCostReduction||0:0);
  values.mysteryCooldown=Number.isFinite(u.mysteryReadyRound)?-u.mysteryReadyRound:0;
  values.chakraLimit=u.nfContext?.chakraLimit?.[u.camp]??100;
  const beasts=['Shukaku','Matatabi','Isobu','Son Goku','Kokuo','Saiken','Chomei','Gyuki','Kurama'];
