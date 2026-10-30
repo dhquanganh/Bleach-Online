@@ -1,0 +1,8 @@
+{
+  "unchangedAssets": true,
+  "unchangedMethods": 9,
+  "changedMethods": [
+    "PACKETID_SC_CollectSoul_MallRet",
+    "PacketPerform_SC_InitInfoRet"
+  ]
+}

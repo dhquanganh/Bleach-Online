@@ -1,0 +1,13 @@
+{
+  "version": "2026103001",
+  "sha256": "b60aa052a02f023e176f6d1afc7467156b7f95e24c7beeaa118e76149fd3af1b",
+  "validation": {
+    "unchangedAssets": true,
+    "unchangedMethods": 9,
+    "changedMethods": [
+      "PACKETID_SC_CollectSoul_MallRet",
+      "PacketPerform_SC_InitInfoRet"
+    ]
+  },
+  "changedManifestEntries": 1
+}
