@@ -1,0 +1,15 @@
+{
+  "unchangedAssets": true,
+  "unchangedMethods": 19,
+  "changedMethods": [
+    "OnSelectItem",
+    "ProcessorForge",
+    "LogicsPerform",
+    "Reset",
+    "LogicsPerform",
+    "ProcessorAdvance",
+    "OnSelectItem",
+    "LogicsPerform",
+    "Reset"
+  ]
+}

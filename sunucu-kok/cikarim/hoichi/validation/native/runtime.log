@@ -1,0 +1,39 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=22
+TEXTURE standard frames=70
+TEXTURE mystery frames=82
+TEXTURE barrage frames=104
+TEXTURE pillars frames=90
+CASE 13122901 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-32
+SNAPSHOT CASE-mystery-camp-0-frame-57
+CASE 13122902 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-28
+SNAPSHOT CASE-standard-camp-0-frame-49
+CASE 13122903 camp=0
+SNAPSHOT CASE-pillars-camp-0-frame-4
+SNAPSHOT CASE-pillars-camp-0-frame-36
+SNAPSHOT CASE-pillars-camp-0-frame-62
+CASE 13122904 camp=0
+SNAPSHOT CASE-barrage-camp-0-frame-4
+SNAPSHOT CASE-barrage-camp-0-frame-41
+SNAPSHOT CASE-barrage-camp-0-frame-72
+CASE 13122901 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-32
+SNAPSHOT CASE-mystery-camp-1-frame-57
+CASE 13122902 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-28
+SNAPSHOT CASE-standard-camp-1-frame-49
+CASE 13122903 camp=1
+SNAPSHOT CASE-pillars-camp-1-frame-4
+SNAPSHOT CASE-pillars-camp-1-frame-36
+SNAPSHOT CASE-pillars-camp-1-frame-62
+CASE 13122904 camp=1
+SNAPSHOT CASE-barrage-camp-1-frame-4
+SNAPSHOT CASE-barrage-camp-1-frame-41
+SNAPSHOT CASE-barrage-camp-1-frame-72
+DONE Hoichi native component; remaining=0

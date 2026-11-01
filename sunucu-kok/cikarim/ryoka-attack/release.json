@@ -1,0 +1,26 @@
+{
+  "version": "2026103101",
+  "nativeStringMatches": [
+    13,
+    13,
+    13,
+    13
+  ],
+  "resources": [
+    "Resources/Bin/combine/0F000000.binPackage",
+    "Resources/Bin/normal/0F000000.binPackage",
+    "Resources/Bin/dil-id/0F000000.binPackage",
+    "Resources/Bin/dil-fr/0F000000.binPackage",
+    "Resources/Bin/dil-es/0F000000.binPackage",
+    "Resources/Bin/dil-ru/0F000000.binPackage",
+    "Resources/Bin/dil-tr/0F000000.binPackage",
+    "Resources/Bin/dil-it/0F000000.binPackage",
+    "Resources/Bin/dil-de/0F000000.binPackage",
+    "Resources/Bin/dil-ja/0F000000.binPackage",
+    "Resources/Bin/dil-pt/0F000000.binPackage",
+    "Resources/Bin/dil-vi/0F000000.binPackage",
+    "Resources/Bin/dil-zh/0F000000.binPackage"
+  ],
+  "sha256": "0fed6414a41f8b9cd8399a146a87e2f9c2e6471f67fe11aa68f36748c78d2ff9",
+  "nonCodeAssetsUnchanged": true
+}

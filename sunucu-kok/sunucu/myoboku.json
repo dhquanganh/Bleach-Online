@@ -1,5 +1,5 @@
 {
-  "revision": 31,
+  "revision": 32,
   "rewards": [
     {
       "itemId": 14140994,
@@ -27,9 +27,9 @@
       "weight": 10
     },
     {
-      "itemId": 14900001,
+      "itemId": 14900002,
       "amount": 200,
-      "weight": 9
+      "weight": 7
     },
     {
       "itemId": 14900001,

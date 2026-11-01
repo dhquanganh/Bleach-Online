@@ -1,0 +1,6 @@
+CASE native top-up protocol paid=0 claims=0 OK
+CASE native top-up protocol paid=1 claims=0 OK
+CASE native top-up protocol paid=200 claims=1 OK
+CASE native top-up protocol paid=500000 claims=1 OK
+CASE native top-up protocol paid=500000 claims=6 OK
+DONE native top-up decode and completion checks

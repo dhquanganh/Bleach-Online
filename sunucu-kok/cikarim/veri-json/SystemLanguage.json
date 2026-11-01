@@ -2265,7 +2265,7 @@
   },
   {
     "id": "042EB5A9",
-    "desc": "<P ALIGN=\"LEFT\"><FONT FACE=\"Verdana\" SIZE=\"13\" COLOR=\"#00FF00\" LETTERSPACING=\"0\" KERNING=\"0\"><B>Ryoka Attack</B><BR />1. Ryoka Attack <FONT COLOR=\"#00FF00\">lasts 30 minutes</FONT>.<BR />2, Within the event period, player will need to defeat as many Ryoka as possible.<BR />3. Higher damage on the Ryoka means higher reward.<BR />4. <FONT COLOR=\"#00FF00\">If you kill the Ryoka, then you can get more reward</FONT>.<BR />5. Each wave of Ryoka includes <FONT COLOR=\"#00FF00\">5</FONT>, between each wave is <FONT COLOR=\"#00FF00\">10 seconds</FONT>CD .<BR />6. When the event ends, <FONT COLOR=\"#00FF00\">Top 30 will obtain great reward</FONT>, rewards are sent via mail.<BR />7. After event ends, system will give out rewards according to Clan Points, rewards are sent via mail.<BR />8, When attack reaches a certain amount, all players participating in Ryoka Attack will gain attack bonus .</FONT></P>"
+    "desc": "<p><font color=\"#66FF66\">Ryoka Attack</font><br/>Open all day. Personal runs last 30 minutes, up to 100 waves of five Ryoka. Wait 10 seconds between waves. Damage grants Silver, EXP and Souls; kills grant material chests. Progress and cooldown persist when re-entering. Damage ranking and clan score are local to your run. No offline registration or ranking mail.</p>"
   },
   {
     "id": "042EB5AA",

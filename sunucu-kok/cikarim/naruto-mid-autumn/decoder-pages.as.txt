@@ -1,0 +1,19 @@
+      private function DecodeFestivalPages(data:ByteArray):void {
+         // Format 126 is used only by Mid-Autumn's sparse actor composites.
+         var count:int=data.readUnsignedShort();var refs:Array=[];var files:Array=[];var pages:Array=[];
+         for(var i:int=0;i<count;i++)refs.push(data.readUnsignedShort());
+         var unique:int=data.readUnsignedShort();
+         for(i=0;i<unique;i++){var size:uint=data.readUnsignedInt();var bytes:ByteArray=new ByteArray();data.readBytes(bytes,0,size);files.push(bytes);}
+         FUnstreamizationState=UNSTREAMIZATIONSTATE_SurfaceWait;
+         var decoder:TPakDecoder=this;var page:int=0;var loader:Loader=new Loader();var next:Function;
+         next=function():void {
+            if(page>=files.length){
+               for(var j:int=0;j<refs.length;j++)decoder.FResult.push(BitmapData(pages[int(refs[j])]).clone());
+               for each(var image:BitmapData in pages)image.dispose();
+               loader.unload();decoder.FUnstreamizationState=UNSTREAMIZATIONSTATE_Finalize;return;
+            }
+            loader.loadBytes(files[page],new LoaderContext());
+         };
+         loader.contentLoaderInfo.addEventListener(Event.COMPLETE,function(event:Event):void{pages.push(Bitmap(loader.content).bitmapData.clone());page++;next();});
+         next();
+      }

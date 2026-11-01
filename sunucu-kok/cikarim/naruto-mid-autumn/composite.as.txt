@@ -1,0 +1,20 @@
+      private function PlayMidAutumnComposite():void {
+         LoadMidAutumnNative("actor");var caster:TRole=this;var host:DisplayObjectContainer=FBattleStage;
+         if(host==null)return;var layer:Sprite=new Sprite();layer.name="midAutumnSkillVfx";layer.mouseEnabled=false;layer.mouseChildren=false;host.addChild(layer);FMidAutumnLayers.push(layer);
+         var data:Object=JSON.parse(__COMPOSITE__);var cache:Object={};var serial:uint=FCombatVfxSerial;var tick:Function;var clear:Function;var cleaned:Boolean=false;
+         clear=function(event:Event=null):void{if(cleaned || event!=null&&event.target!=layer)return;cleaned=true;caster.FBitmap.alpha=1;for each(var source:BitmapData in cache)source.dispose();layer.removeEventListener(Event.ENTER_FRAME,tick);layer.removeEventListener(Event.REMOVED_FROM_STAGE,clear);if(layer.parent!=null)layer.parent.removeChild(layer);};
+         tick=function(event:Event=null):void{
+            if(host.stage==null || caster.stage==null || caster.FCombatVfxSerial!=serial || caster.FSkillId<13122706 || caster.FSkillId>13122707){clear();return;}
+            var state:Object=FMidAutumnNative.actor;if(state==null||state.domain==null)return;
+            var at:Point=host.globalToLocal(caster.localToGlobal(new Point()));layer.x=at.x;layer.y=at.y;layer.scaleX=caster.scaleX<0?-0.84:0.84;layer.scaleY=0.84;
+            while(layer.numChildren)layer.removeChildAt(0);var index:int=Math.round(caster.FFrameIndex*24/25);if(index>=80){clear();return;}
+            caster.FBitmap.alpha=0;
+            for each(var frames:Array in data.layers)for each(var frame:Object in frames)if(index>=frame.at&&index<frame.end){
+               for each(var part:Object in frame.parts){var asset:Object=data.assets[part.asset];var bitmap:BitmapData=cache[part.asset];
+                  if(bitmap==null){if(!state.domain.hasDefinition(asset.name))continue;var type:Class=state.domain.getDefinition(asset.name) as Class;bitmap=new type() as BitmapData;if(bitmap==null)continue;cache[part.asset]=bitmap;}
+                  var image:Bitmap=new Bitmap(bitmap,"auto",true);var matrix:flash.geom.Matrix=new flash.geom.Matrix();matrix.translate(asset.x,asset.y);matrix.scale(part.sx,part.sy);matrix.rotate(part.r*Math.PI/180);matrix.translate(part.x,part.y);image.transform.matrix=matrix;image.alpha=part.alpha;layer.addChild(image);
+               }break;
+            }
+         };
+         layer.addEventListener(Event.ENTER_FRAME,tick);layer.addEventListener(Event.REMOVED_FROM_STAGE,clear);tick();
+      }

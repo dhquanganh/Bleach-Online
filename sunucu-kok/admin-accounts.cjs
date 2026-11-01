@@ -105,6 +105,18 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimat
         if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
         const data=await body(req);await serial('ultimate-bp',async()=>json(200,config.view(await config.writeDatabase(db,data))));return;
       }
+      if(pathname==='/auth/admin/palace-chests'){
+        const config=require('./sunucu/palace-chest-config');
+        if(req.method==='GET'){json(200,config.view());return;}
+        if(req.method!=='PATCH')fail(405,'Phương thức không hợp lệ.');
+        json(200,config.view(config.write(await body(req,256*1024),String(user.account._id))));return;
+      }
+      if(pathname==='/auth/admin/konoha-tree'){
+        const config=require('./sunucu/konoha-tree-config');
+        if(req.method==='GET'){await serial('konoha-tree',async()=>json(200,config.adminView(await config.readDatabase(db))));return;}
+        if(req.method!=='PATCH')fail(405,'Method not allowed.');
+        const data=await body(req,256*1024);await serial('konoha-tree',async()=>json(200,config.adminView(await config.writeDatabase(db,data))));return;
+      }
       if(pathname==='/auth/admin/myoboku'){
         const config=require('./sunucu/myoboku-config');
         if(req.method==='GET'){await serial('myoboku',async()=>json(200,await config.readDatabase(db)));return;}
@@ -131,8 +143,10 @@ function createAdmin({ db, runtimes, serial, save, stop, body, snapshot, ultimat
       }
       if (pathname === '/auth/admin/heroes' && req.method === 'GET') { json(200,{heroes:heroes()});return; }
       if (pathname === '/auth/admin/items' && req.method === 'GET') {
-        const q=(new URL(req.url,'http://localhost').searchParams.get('q')||'').trim().toLowerCase();
-        json(200,{items:q.length<2?[]:items().filter(a=>a.name.toLowerCase().includes(q)||String(a.id).includes(q)||a.id.toString(16).includes(q)).slice(0,60).map(a=>({...a,iconFrame:require('./item-atlas.cjs')(a.picture||a.id)}))});return;
+        const params=new URL(req.url,'http://localhost').searchParams,q=(params.get('q')||'').trim().toLowerCase(),browse=params.get('browse')==='1';
+        const offset=browse?Math.max(0,Math.min(100000,Math.floor(Number(params.get('offset'))||0))):0;
+        const catalog=!browse&&q.length<2?[]:items().filter(a=>!q||a.name.toLowerCase().includes(q)||String(a.id).includes(q)||a.id.toString(16).includes(q));
+        json(200,{total:catalog.length,offset,items:catalog.slice(offset,offset+60).map(a=>({...a,iconFrame:require('./item-atlas.cjs')(a.picture||a.id)}))});return;
       }
       const iconMatch=/^\/auth\/admin\/items\/(\d+)\/icon$/.exec(pathname);
       if (iconMatch && req.method==='GET') {

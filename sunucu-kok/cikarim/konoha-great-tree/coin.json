@@ -1,0 +1,20 @@
+{
+  "id": "00E35B22",
+  "name": "Fortune Coins",
+  "majorType": 1,
+  "minorType": 96,
+  "level": 1,
+  "quality": 5,
+  "cardType": 1,
+  "sort": 14900002,
+  "overlayNumber": 65535,
+  "bindMode": 1,
+  "obtain": 0,
+  "functionDesc": "<p>Fortune Coins</p><p>Used to redeem rewards in Konoha's Great Tree - Fortune Store during the event. Expires at the event deadline.</p><p>Selling Price: 10 Silver</p>",
+  "picture": 14900002,
+  "costPrice": "0_1_0_1",
+  "sellPrice": 0,
+  "itemFunction": 10,
+  "functionValue": 0,
+  "f16": 0
+}

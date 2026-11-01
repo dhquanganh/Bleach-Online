@@ -504,6 +504,38 @@
                     </div>
                 </div>
             </div>
+            <section class="card" id="palaceChestAdmin">
+                <h2>Rương điểm Soul Palace</h2>
+                <p class="note">Mỗi ngày chỉ được chọn 1 rương đủ điểm. Điểm là số tầng con đã vượt qua. Lưu tại đây sẽ cập nhật phần thưởng thật và tooltip khi mở lại rương trong game.</p>
+                <label for="pcTier">Mốc điểm</label><select id="pcTier"></select>
+                <div style="overflow:auto"><table style="width:100%;text-align:left"><thead><tr><th>Phần thưởng</th><th>Số lượng</th><th></th></tr></thead><tbody id="pcRewards"></tbody></table></div>
+                <label for="pcSearch">Thêm vật phẩm — tìm theo tên hoặc ID</label><input id="pcSearch" type="search" placeholder="Nguyên thạch, Fortune Coins, Modify Fragment…">
+                <div id="pcItems" style="display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));max-height:280px;overflow:auto;margin:12px 0"></div>
+                <div><button type="button" id="pcPrev" class="secondary">← Trước</button> <span id="pcPage"></span> <button type="button" id="pcNext" class="secondary">Sau →</button></div>
+                <label for="pcCurrency">Thêm loại tài nguyên</label><select id="pcCurrency"></select><button type="button" id="pcAddCurrency" class="secondary">Thêm tài nguyên</button>
+                <p><button type="button" id="pcSave">Lưu tất cả mốc vào game</button> <button type="button" id="pcReload" class="secondary">Tải lại</button></p>
+                <p id="pcStatus" class="note" role="status" aria-live="polite"></p>
+            </section>
+            <section class="card" id="konohaAdmin">
+                <style>#konohaAdmin input[type=checkbox]{width:auto;padding:0}#konohaAdmin td{padding:8px 5px;vertical-align:middle}#konohaAdmin table button{padding:7px;margin:2px}</style>
+                <h2>Konoha’s Great Tree</h2>
+                <p class="note">Fortune Store · Cấu hình có tác dụng trực tiếp trong game. Fortune Coin: <b>14900002</b>. Có thể cấp coin trong mục Item của tài khoản.</p>
+                <form id="ktAdminForm">
+                    <label><input type="checkbox" id="ktAdminEnabled"> Mở sự kiện</label>
+                    <label for="ktAdminSeason">Mã đợt sự kiện (giữ nguyên để giữ giới hạn đã đổi)</label>
+                    <input id="ktAdminSeason" required pattern="[a-zA-Z0-9_-]{1,64}">
+                    <label for="ktAdminStart">Bắt đầu · UTC+7</label><input id="ktAdminStart" type="datetime-local" step="1" required>
+                    <label for="ktAdminEnd">Kết thúc · UTC+7</label><input id="ktAdminEnd" type="datetime-local" step="1" required>
+                    <label for="ktAdminSearch">Thêm quà — tìm tên hoặc ID vật phẩm</label>
+                    <input id="ktAdminSearch" type="search" placeholder="Ví dụ: Nguyên thạch, Modify Fragment…">
+                    <div id="ktAdminResults" style="display:grid;grid-gap:8px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;max-height:260px;overflow:auto;margin:12px 0"></div>
+                    <div><button type="button" id="ktAdminPrev" class="secondary">← Trước</button> <span id="ktAdminPage" role="status"></span> <button type="button" id="ktAdminNext" class="secondary">Sau →</button></div>
+                    <div style="overflow:auto"><table style="width:100%;text-align:left"><thead><tr><th>Vật phẩm</th><th>Số lượng</th><th>Giá coin</th><th>Giới hạn/ngày</th><th>Mở</th><th></th></tr></thead><tbody id="ktAdminRows"></tbody></table></div>
+                    <button type="submit" id="ktAdminSave">Lưu vào game</button>
+                    <button type="button" id="ktAdminReload" class="secondary">Tải lại</button>
+                    <p id="ktAdminStatus" class="note" role="status" aria-live="polite"></p>
+                </form>
+            </section>
         </main>
     </div>
     <script>
@@ -800,6 +832,8 @@
  load();
 }());
     </script>
+    <script src="/gorsel/konoha-tree-admin.js?v=2026103103b"></script>
+    <script src="/gorsel/palace-chests-admin.js?v=2026103107"></script>
 </body>
 
 </html>

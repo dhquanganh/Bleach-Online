@@ -1,0 +1,7 @@
+CASE idle timer OK
+CASE future timer OK
+CASE exact expiry OK
+CASE offline expiry OK
+CASE empty forge click OK
+CASE empty evolution click OK
+DONE Item Evolutions native checks

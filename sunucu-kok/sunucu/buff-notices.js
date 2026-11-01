@@ -20,12 +20,12 @@ function snapshot(u){
  values.extraStandard=(u.mechaExtra||0)+(u.hashExtra||0)+(u.tsunadeExtras||0)+(u.nfExtras||0)+(u.nfExtraGranted||0)+(u.nfReflexRound===u.battleRound?u.nfReflexGranted||0:0)+(u.obitoKillCredits||0);
  values.chaseBonus=(u.nfContext?.chaseBonus?.[u.camp]||0);
  values.freeMystery=active(u,'madaraFreeUntil');values.interruptImmune=active(u,'painInterruptImmuneUntil');
- values.madaraBurst=active(u,'madaraBurstUntil');values.hashBurst=active(u,'hashBurstUntil');values.excited=active(u,'hashExcitedUntil');
+ values.madaraBurst=active(u,'madaraBurstUntil');values.hashBurst=active(u,'hashBurstUntil');values.excited=Math.max(active(u,'hashExcitedUntil'),active(u,'festivalExcitedUntil'));
  values.mechaBeast=Number(!!u.mechaBeast);values.minatoProwess=Number(!!u.minatoProwess);
  values.armor2=Math.max(active(u,'gaaraArmor2Until'),active(u,'tobiArmorUntil'),active(u,'madaraBurstUntil'));
  values.advancedImmunity=require('./asura-guardian-combat').isAsura(u)?1:active(u,'mechaAdvancedUntil');values.explosive=Math.max(active(u,'hashExplosiveUntil'),active(u,'asuraExplosiveUntil'),active(u,'oroExplosiveUntil'));
  values.triggerEvasion=active(u,'minatoTriggerEvadeUntil');values.unavoidable=active(u,'painUnavoidableUntil');values.hiding=active(u,'itachiHidingUntil');
- values.mysteryCostReduction=require('./orochimaru-new-year-combat').cost(u.oroContext,u)+(u.mechaCostReduction||0)+(u.tobiCostRound===u.battleRound?u.tobiCostReduction||0:0);
+ values.mysteryCostReduction=require('./hoichi-combat').cost(u)+require('./orochimaru-new-year-combat').cost(u.oroContext,u)+(u.mechaCostReduction||0)+(u.tobiCostRound===u.battleRound?u.tobiCostReduction||0:0);
  values.mysteryCooldown=Number.isFinite(u.mysteryReadyRound)?-u.mysteryReadyRound:0;
  values.chakraLimit=u.nfContext?.chakraLimit?.[u.camp]??100;
  const beasts=['Shukaku','Matatabi','Isobu','Son Goku','Kokuo','Saiken','Chomei','Gyuki','Kurama'];

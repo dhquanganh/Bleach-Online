@@ -1,0 +1,21 @@
+package {
+ import flash.display.Sprite;import flash.external.ExternalInterface;import flash.utils.ByteArray;
+ import Logics.DatebaseVO.VO.THDFirstPay;import Logics.DatebaseVO.VO.Json.TActAward;
+ import Logics.HDActivityMode.TActivityInitRetData;import Logics.HDActivityRecharge.THDFirstPayData;
+ import Logics.Streamization.HDActivity.TUnstreamizerActivity;import Logics.Streamization.HDActivityRecharge.TUnstreamizerActivityRecharge;
+ import Processors.Game.Lobby.Activity.HDFirstPay.TProcessorHDFirstPay;
+ public class TApplication extends Sprite {
+  public function TApplication(){try{
+   var fixture:Object=JSON.parse("{\"metadata\":[{\"key\":1,\"value\":[21401018],\"prompt\":\"100Gold\"},{\"key\":200,\"value\":[21401019],\"prompt\":\"200Gold\"},{\"key\":500,\"value\":[21401020],\"prompt\":\"500Gold\"},{\"key\":1000,\"value\":[21401021],\"prompt\":\"1000Gold\"},{\"key\":5000,\"value\":[21401022],\"prompt\":\"5000Gold\"},{\"key\":500000,\"value\":[21401023],\"prompt\":\"500000Gold\"}],\"cases\":[{\"paid\":0,\"claims\":[],\"packet\":\"0000000c0002000000020000000100010000000000060000000000000001000000000001000000010000000100000001000000000001000000c80000000200000001000000000001000001f40000000300000001000000000001000003e800000004000000010000000000010000138800000005000000010000000000010007a120\"},{\"paid\":1,\"claims\":[],\"packet\":\"0000000c0002000000020000000100010000000100060000000000000001000000010001000000010000000100000001000000000001000000c80000000200000001000000000001000001f40000000300000001000000000001000003e800000004000000010000000000010000138800000005000000010000000000010007a120\"},{\"paid\":200,\"claims\":[0],\"packet\":\"0000000c000200000002000000010001000000c800060000000000000001ffffffff0001000000010000000100000001000000010001000000c80000000200000001000000000001000001f40000000300000001000000000001000003e800000004000000010000000000010000138800000005000000010000000000010007a120\"},{\"paid\":500000,\"claims\":[5],\"packet\":\"0000000c0002000000020000000100010007a12000060000000000000001000000010001000000010000000100000001000000010001000000c80000000200000001000000010001000001f40000000300000001000000010001000003e80000000400000001000000010001000013880000000500000001ffffffff00010007a120\"},{\"paid\":500000,\"claims\":[0,1,2,3,4,5],\"packet\":\"0000000c0002000000020000000100010007a12000060000000000000001ffffffff0001000000010000000100000001ffffffff0001000000c80000000200000001ffffffff0001000001f40000000300000001ffffffff0001000003e80000000400000001ffffffff0001000013880000000500000001ffffffff00010007a120\"}]}");var config:ProbeConfig=new ProbeConfig(fixture.metadata);
+   for each(var test:Object in fixture.cases){var packet:ByteArray=new ByteArray();for(var p:int=0;p<test.packet.length;p+=2)packet.writeByte(parseInt(test.packet.substr(p,2),16));packet.position=4;
+    var decoded:TActivityInitRetData=new TUnstreamizerActivity().UnstreamizationPerform_Activity(packet,null);var data:THDFirstPayData=new THDFirstPayData();new TUnstreamizerActivityRecharge().UnstreamizeUpdateFirstPay(decoded,data,config);
+    if(data.TotalPay!=test.paid||data.CountForAward()!=6)throw Error("Progress or tier count mismatch");
+    for(var i:int=0;i<6;i++){var expected:int=test.claims.indexOf(i)>=0?-1:test.paid>=fixture.metadata[i].key?1:0;if(data.GetAwardByIndex(i).State!=expected)throw Error("Tier status mismatch "+i);}
+    if(TProcessorHDFirstPay.AllTopUpAwardsClaimed(data)!=(test.claims.length==6))throw Error("Pack hidden before every tier claimed");
+    ExternalInterface.call("vfxProbe","CASE native top-up protocol paid="+test.paid+" claims="+test.claims.length+" OK");
+   }
+   if(TProcessorHDFirstPay.AllTopUpAwardsClaimed(new THDFirstPayData()))throw Error("Empty award list marked complete");ExternalInterface.call("vfxProbe","DONE native top-up decode and completion checks");
+  }catch(e:Error){ExternalInterface.call("vfxProbe","ERROR "+e);}}
+ }
+ class ProbeConfig extends THDFirstPay {public function ProbeConfig(rows:Array){super();FActAwards=new Vector.<TActAward>();for each(var row:Object in rows)FActAwards.push(new TActAward(row));}}
+}

@@ -1,0 +1,20 @@
+{
+  "version": "2026103004",
+  "sha256": "6f20a341c11f42b8db73edceed22da51d30534754105985d79b7b18cf97cd52a",
+  "validation": {
+    "unchangedAssets": true,
+    "unchangedMethods": 19,
+    "changedMethods": [
+      "OnSelectItem",
+      "ProcessorForge",
+      "LogicsPerform",
+      "Reset",
+      "LogicsPerform",
+      "ProcessorAdvance",
+      "OnSelectItem",
+      "LogicsPerform",
+      "Reset"
+    ]
+  },
+  "changedManifestEntries": 1
+}

@@ -27,6 +27,9 @@ const nineTailsCombat = require('./naruto-nine-tails-combat');
 const tobiCombat = require('./tobi-war-combat');
 const finalNarutoCombat = require('./naruto-final-combat');
 const oroCombat = require('./orochimaru-new-year-combat');
+const festivalCombat = require('./naruto-mid-autumn-combat');
+const asumaWindCombat = require('./asuma-wind-combat');
+const hoichiCombat = require('./hoichi-combat');
 const asuraCombat = require('./asura-guardian-combat');
 const guyCombat = require('./guy-gate-combat');
 const buffNotices = require('./buff-notices');
@@ -819,7 +822,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
   };
   const aoe = !skillAt && rebirth.proc(u, 4, random);
   const selected = heroTalents.selectTargets(u, opponents);
-  const victims = attackSpec?.zanpakutoTargets || (attackSpec ? (attackSpec.summon || attackSpec.support ? [] : oroCombat.targets(u.oroContext||{random},u,attackSpec,hedef,opponents)||asuraCombat.targets(u.asuraContext||{random},u,attackSpec,hedef,opponents)||guyCombat.targets(u.guyContext||{random},u,attackSpec,hedef,opponents)||finalNarutoCombat.targets(u.nfContext||{random},u,attackSpec,hedef,opponents)||infiniteCombat.targets(u.infiniteContext||{random},u,attackSpec,hedef,opponents)||minatoCombat.targets(u.minatoContext||{random},u,attackSpec,hedef,opponents)||madaraCombat.targets(u.madaraContext||{random},u,attackSpec,hedef,opponents)||kakuzuCombat.targets(attackSpec,hedef,opponents,u.kakuzuContext||{random}) || tobiCombat.targets(attackSpec,hedef,opponents,u.tobiContext||{random}) || nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
+  const victims = attackSpec?.zanpakutoTargets || (attackSpec ? (attackSpec.summon || attackSpec.support ? [] : hoichiCombat.targets({random},u,attackSpec,hedef,opponents)||asumaWindCombat.targets({random},u,attackSpec,hedef,opponents)||festivalCombat.targets({random},u,attackSpec,hedef,opponents)||oroCombat.targets(u.oroContext||{random},u,attackSpec,hedef,opponents)||asuraCombat.targets(u.asuraContext||{random},u,attackSpec,hedef,opponents)||guyCombat.targets(u.guyContext||{random},u,attackSpec,hedef,opponents)||finalNarutoCombat.targets(u.nfContext||{random},u,attackSpec,hedef,opponents)||infiniteCombat.targets(u.infiniteContext||{random},u,attackSpec,hedef,opponents)||minatoCombat.targets(u.minatoContext||{random},u,attackSpec,hedef,opponents)||madaraCombat.targets(u.madaraContext||{random},u,attackSpec,hedef,opponents)||kakuzuCombat.targets(attackSpec,hedef,opponents,u.kakuzuContext||{random}) || tobiCombat.targets(attackSpec,hedef,opponents,u.tobiContext||{random}) || nineTailsCombat.targets(attackSpec,opponents) || require('./gaara-combat').targets(attackSpec,hedef,opponents) || itachiCombat.targets(u.itachiContext||{random},u,attackSpec,hedef,opponents) || mechaCombat.targets(u.mechaContext||{random},attackSpec,hedef,opponents) || hashCombat.targets(u.hashContext||{random},attackSpec,hedef,opponents) || painCombat.targetList(attackSpec,hedef,opponents) || obitoCombat.targets(attackSpec,hedef,opponents) || (attackSpec.target === 'all' ? opponents.filter(target=>target.hp>0) : typeof attackSpec.target === 'number' ? [hedef,...opponents.filter(target=>target!==hedef&&target.hp>0)].slice(0,attackSpec.target) : [hedef])) : plan && plan.healOnly ? [] : plan ? heroSkills.select(opponents,plan.target,random,!u.strictSkillTargets)
     : aoe ? opponents.filter(target => target.hp > 0) : talent.highestAttackTargets && !skillAt ? selected : [hedef]);
   if(u.nfContext)finalNarutoCombat.onAttacked(u.nfContext,u,victims,attackSpec);
   mechaCombat.beforeAttack(u,attackSpec,targets);
@@ -850,6 +853,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     const kamuiProtected=!bypass&&obitoCombat.fatalLimit(victim,!skillAt);
     if(!bypass&&!guaranteed&&(oroCombat.evade(victim.oroContext||{random},victim,attackSpec)||guyCombat.evade(victim.guyContext||{random},victim,attackSpec,extra)||infiniteCombat.evade(victim.infiniteContext||{random},victim)||minatoCombat.evade(victim.minatoContext||{random},victim,attackSpec,u,extra)||madaraCombat.evade(victim.madaraContext||{random},victim,attackSpec)||kakuzuCombat.evade(victim.kakuzuContext||{random},victim,attackSpec,extra)||itachiCombat.evade(victim.itachiContext,victim,attackSpec,random)||mechaCombat.evade(victim.mechaContext||{round:victim.battleRound,mechaTriggers:[]},victim,attackSpec,random)||obitoCombat.evade(victim,random))){
       asuraCombat.evaded(victim.asuraContext,victim);
+      hoichiCombat.evaded(victim.hoichiContext,victim);
       const notice=[];if(!mechaCombat.isMecha(victim))obitoCombat.label(notice,victim,11);reactions.push(obitoCombat.passive(victim,notice));
       targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
       continue;
@@ -860,6 +864,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
       itachiCombat.evaded(victim);
       oroCombat.evaded(victim.oroContext,victim);
       asuraCombat.evaded(victim.asuraContext,victim);
+      hoichiCombat.evaded(victim.hoichiContext,victim);
       if(victim.infiniteContext)infiniteCombat.evaded(victim.infiniteContext,victim);
       if(victim.minatoContext)minatoCombat.evaded(victim.minatoContext,victim,u);
       targets.push({cmd:kodek.CMD.ATTACK,targetCamp:victim.camp,targetPos:victim.pos,reportTargetStatus:ST.TARGET_EFFECT>>>0,result:{hurtHp:0,hurtAnger:0}});
@@ -874,7 +879,7 @@ function vurus(u, hedef, bitir, opponents = [hedef], random = Math.random, extra
     if(attackSpec?.tobiMystery&&(victim.cloneOwner||victim.auxiliary||victim.isSummon||victim.puppet||tobiCombat.isZetsu(victim)))dmg=Math.round(dmg*1.4);
     if (victim.cloneOwner && (attackSpec && attackSpec.element || u.element) === 'lightning') dmg = Math.round(dmg * (1 - narutoCombat.config.cloneLightningReduction));
     const critical = hashCombat.active(u,'hashSealUntil') || !((victim.rebirth || {}).n > 0 && (victim.rebirth || {}).ae === 9) && random() < chance(heroSkills.value(u,'critRate')+(attackSpec?.critBonus||0)+minatoCombat.criticalBonus(u,victim,attackSpec));
-    if (critical) dmg = Math.round(dmg * Math.max(0,1.5+(hashCombat.active(u,'hashSealUntil')?0:heroSkills.value(u,'critDamage'))));
+    if (critical) dmg = Math.round(dmg * Math.max(0,1.5+(hashCombat.active(u,'hashSealUntil')?0:heroSkills.value(u,'critDamage')+(attackSpec?.injuryBonus||0))));
     const breakDefense = chance(heroSkills.value(u,'wreckRate')) > 0 && random() < chance(heroSkills.value(u,'wreckRate'));
     if (defense > 0 && !ignoreDefense && !breakDefense) dmg = Math.round(dmg * attack / Math.max(1,attack + defense*(1-chance(attackSpec&&attackSpec.ignoreDefense))));
     const blocked = !bypass && chance(heroSkills.value(victim,'blockRate')) > 0 && random() < chance(heroSkills.value(victim,'blockRate'));
@@ -1181,7 +1186,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     }
   }
   const enemyAttackScale = Math.max(0, Number(options.enemyAttackScale) || 1);
-  if (!crossBaseOnly&&enemyAttackScale !== 1 && !arenaRakip) {
+  if (!crossBaseOnly&&enemyAttackScale !== 1) {
     for (const unit of p2) {
       unit.atk = Math.max(1, Math.round(unit.atk * enemyAttackScale));
     }
@@ -1230,6 +1235,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   });
   const deathTriggered = new Set(p1.concat(p2).filter(unit=>unit.hp<=0));
   const appendDeaths = actives => {
+    hoichiCombat.noteDeaths(chaseContext);
     oroCombat.noteDeaths(chaseContext);
     asuraCombat.noteDeaths(chaseContext);
     finalNarutoCombat.noteDeaths(chaseContext);
@@ -1258,7 +1264,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
   const turns = [];
   let performDepth=0,reactiveEnabled=false,drainingMysteries=false;
   const drainFinalNarutoTriggers = actives => {
-    for(const request of finalNarutoCombat.triggers(chaseContext)){
+    for(const request of finalNarutoCombat.triggers(chaseContext).concat(festivalCombat.triggers(chaseContext),hoichiCombat.triggers(chaseContext))){
+      if(request.frame){actives.push(request.frame);continue;}
       const enemies=chaseContext.teams[1-request.unit.camp],victim=enemies.find(v=>v.hp>0&&!v.auxiliary);
       let move=request.standardAction?narutoCombat.useStandard(chaseContext,request.unit,chaseContext.teams[request.unit.camp],!!request.granted):request.move;
       if(request.granted&&!narutoCombat.profile(request.unit)&&!narutoCombat.disabled(request.unit)&&!heroSkills.status(request.unit,'disarm'))move={id:request.unit.normal,multiplier:heroTalents.effect(request.unit.id).normalMultiplier||1,attackStat:'atk',damageType:'physical',target:1,combo:1};
@@ -1279,6 +1286,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const beforeFrames=[];const oroChakraBefore=chaseContext.chakra[actor.camp];
       move=obitoCombat.prepareMove(chaseContext,actor,victim,move);
       move=painCombat.prepareMove(chaseContext,actor,move);
+      move=hoichiCombat.prepareMove(chaseContext,actor,move,victim);
       move=hashCombat.prepareMove(chaseContext,actor,move);
       move=mechaCombat.prepareMove(chaseContext,actor,victim,move);
       move=sasukeCombat.prepareMove(actor,move);
@@ -1301,6 +1309,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         jiraiyaCombat.afterHit(chaseContext,actor,hit,move,frame.targets);
         obitoCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         painCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        asumaWindCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
+        hoichiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         hashCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         mechaCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
         itachiCombat.afterHit(chaseContext,actor,victim,hit,move,frame);
@@ -1322,6 +1332,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
         itachiCombat.cleanse(chaseContext);
       }
       if(!move&&frame.activeType===kodek.ACTIVE.SKILL){asuraCombat.observe(chaseContext,actor,{prompt:true});minatoCombat.afterHit(chaseContext,actor,victim,[],{prompt:true},frame);finalNarutoCombat.observe(chaseContext,actor,{prompt:true});}
+      festivalCombat.afterAction(chaseContext,actor,move,frame);
       infiniteCombat.action(chaseContext,actor);
       actor.verdi=(actor.verdi||0)+frame.targets.filter(row=>row.targetCamp!==actor.camp).reduce((sum,row)=>sum+Math.max(0,Number(row.result.hurtHp)||0),0);
       frame.reactions.push(...buffNotices.collect(chaseContext));
@@ -1441,6 +1452,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     narutoCombat.startRound(chaseContext,t);
     minatoCombat.roundStart(chaseContext);
     finalNarutoCombat.roundStart(chaseContext);
+    const festivalRound=festivalCombat.roundStart(chaseContext);
+    const asumaWindRound=asumaWindCombat.roundStart(chaseContext);
     const oroRound=oroCombat.roundStart(chaseContext);
     const asuraRound=asuraCombat.roundStart(chaseContext);
     const infiniteRound=infiniteCombat.roundStart(chaseContext);
@@ -1476,6 +1489,8 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
     }
+    actives.push(...asumaWindRound,...festivalRound,...buffNotices.collect(chaseContext));
+    drainFinalNarutoTriggers(actives);
     actives.push(...hashCombat.roundStart(chaseContext));
     actives.push(...obitoCombat.roundStart(chaseContext));
     for(const request of painCombat.roundStart(chaseContext)){
@@ -1573,6 +1588,11 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
       if(actives.length)turns.push({curTurn:t,actives});
       break;
     }
+    for(const request of hoichiCombat.endRequests(chaseContext)){
+      const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
+      if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
+    }
+    actives.push(...hoichiCombat.endRound(chaseContext));
     for(const request of oroCombat.endRound(chaseContext)){
       const enemies=chaseContext.teams[1-request.unit.camp],target=enemies.find(v=>v.hp>0&&!v.auxiliary);
       if(target)perform(request.unit,target,enemies,chaseContext.teams[request.unit.camp],actives,request.move);
@@ -1614,7 +1634,7 @@ function kadroRapor(bpId, arenaRakip, enemyOverride, options = {}) {
     chaseTrace: chaseContext.trace,
     chakra: chaseContext.chakra,
     payload: kodek.encodeBattleReport({ version: options.battleDataVersion || 3, player1: { roles: roles1,knifeOfKillSoulID:crossBaseOnly?0:p1.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, player2: { roles: roles2,knifeOfKillSoulID:crossBaseOnly?0:p2.find(u=>u.zanpakutoId)?.zanpakutoId||0 }, turns }),
-    remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, rate: Math.max(0, unit.hp) / unit.maxHp })),
+    remainingHp: p1.concat(p2).map(unit => ({ camp: unit.camp, id: unit.id, ...(options.remainingPositions?{pos:unit.pos}:{}), rate: Math.max(0, unit.hp) / unit.maxHp })),
     won: hasLivingLineup(p1) && (arenaRakip || options.requireEnemyDefeated ? !hasLivingLineup(p2) : true),
   };
 }
@@ -1671,6 +1691,16 @@ function fightPetFrames(enemyId, currentHp) {
 }
 
 // Protect Seireitei fights the configured gate, with its persistent remaining HP.
+function ryokaBattle(enemyId,currentHp,playerState) {
+  SON_OYUNCU_HASARI=0;SON_ISTATISTIK=null;
+  const enemy=enemyById.get(Number(enemyId)>>>0);
+  if(!enemy||enemyId<12500101||enemyId>12510005)throw Error('Unknown Ryoka');
+  const hp=Math.max(1,Math.min(enemy.hp,currentHp)),unit=dusmanBirim({...enemy,hp},6);
+  unit.hp=unit.maxHp=hp;
+  const report=kadroRapor(0,null,{ad:enemy.name,birimler:[unit]},{playerState,scaleEnemy:false,forceWin:false,requireEnemyDefeated:true,battleDataVersion:4});
+  if(!report)throw Error('Unable to create Ryoka battle');
+  return {...report,damage:Math.max(0,Math.floor(SON_OYUNCU_HASARI))};
+}
 function cityDefendBattle(enemyId,currentHp,playerState) {
   SON_OYUNCU_HASARI=0;SON_ISTATISTIK=null;
   const enemy=enemyById.get(Number(enemyId)>>>0);if(!enemy)throw Error('Unknown CityDefend gate');
@@ -1911,7 +1941,7 @@ function fightAck(reqId, payload) {
 
 module.exports = {
   illusionBattle, dusmanBirim,
-  worldMapLevel, worldMapScale, stageArmyDusmanlari, cityDefendBattle, heroBirim, initiative, vurus, isFight, fightAck, fightFrames, fightPetFrames, sonOyuncuHasari, voidFightFrames,
+  worldMapLevel, worldMapScale, stageArmyDusmanlari, cityDefendBattle, ryokaBattle, heroBirim, initiative, vurus, isFight, fightAck, fightFrames, fightPetFrames, sonOyuncuHasari, voidFightFrames,
   isAutoBattle, autoBattleFrames, FIGHT_OPS, synthReport, stageDusmanlari, stageIdCoz,
   instanceStageWon, stageAssessment, stageNextLayer, stageCityType, raidersDailyStageId,
   isRaidersDailyCity, skyTowerStageId, stageOdulleri, kadroRapor, sonIstatistik,

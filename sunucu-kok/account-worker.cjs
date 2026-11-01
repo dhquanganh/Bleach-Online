@@ -1,5 +1,8 @@
 'use strict';
 // A separate module cache and runtime directory for every player.
+require('./sunucu/topup-gift-pack').recover();
+require('./sunucu/guild').recover();
+require('./sunucu/item-evolutions').recover();
 require('./sunucu/oyun-sunucu.js');
 require('./sunucu/admin.js');
 process.on('disconnect', () => process.exit(0));

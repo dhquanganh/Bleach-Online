@@ -228,6 +228,7 @@ function scoped(scope, caster, allies, enemies, targets, random) {
   return selected;
 }
 function status(unit, field) {
+  if(field==='silence'&&require('./hoichi-combat').active(unit,'hoichiAcupunctureUntil'))return true;
   const oro=require('./orochimaru-new-year-combat');
   if(field==='immuneDebuffs'&&oro.isOro(unit))return true;
   if(field==='disarm'&&oro.active(unit,'oroBlindUntil'))return true;
@@ -252,7 +253,7 @@ function status(unit, field) {
   if(field==='paralysis'&&sasuke.active(unit,'sasukeParalysisUntil'))return true;
   if(field==='noHeal'&&(unit.skillBuffs||[]).some(b=>(b.mechaIgnition||b.itachiIgnition||b.ntcIgnition)&&b.remaining>0))return true;
   const immunitySuppressed=!asura.isAsura(unit)&&!guy.isGuy(unit)&&!finalNaruto.isNaruto(unit)&&!infinite.isMadara(unit)&&!require('./hashirama-combat').burst(unit)&&!require('./mecha-combat').advanced(unit)&&(unit.suppressedUntil>=unit.battleRound);
-  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(require('./minato-new-year-combat').immuneAura(unit)||unit.immuneDebuffs||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
+  if(field==='immuneDebuffs')return !immunitySuppressed&&!!(require('./minato-new-year-combat').immuneAura(unit)||unit.immuneDebuffs||unit.id===11121012||unit.id===11121010||unit.id===11120997||unit.id===11120995||unit.id===11120994||unit.id===11120992||unit.id===11120940||unit.id===11120950||unit.id===11120970||(unit.id===11120930&&unit.painFinal)||(unit.skillBuffs||[]).some(b=>b.field==='immuneDebuffs'&&b.remaining>0));
   if(immunitySuppressed&&['immuneControl','immuneHealBlock'].includes(field))return false;
   if(field==='immuneControl'&&status(unit,'immuneDebuffs'))return true;
   if(field==='chaos'&&unit.extremeChaosUntil>=unit.battleRound)return true;
@@ -276,6 +277,9 @@ function value(unit, field) {
   result*=require('./guy-gate-combat').factor(unit,field);
   result*=require('./asura-guardian-combat').factor(unit,field);
   result*=require('./orochimaru-new-year-combat').factor(unit,field);
+  result*=require('./naruto-mid-autumn-combat').factor(unit,field);
+  result*=require('./asuma-wind-combat').factor(unit,field);
+  if(field==='punchRate')result+=require('./naruto-mid-autumn-combat').punch(unit);
   if(field==='critRate')result+=require('./orochimaru-new-year-combat').critical(unit);
   if(field==='critRate')result+=require('./asura-guardian-combat').critical(unit);
   if(field==='critRate')result+=require('./guy-gate-combat').critical(unit);

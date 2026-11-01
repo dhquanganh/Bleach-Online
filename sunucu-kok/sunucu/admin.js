@@ -269,7 +269,7 @@ function magazaListesi() {
 }
 // Custom Naruto heroes/summons use the reserved 111209xx IDs.
 // Restrict the sale catalog without removing ownership or admin recruitment.
-function overlayHeroListesi() { return heroListesi().filter(h => (h.id < 11120900 || h.id > 11120999) && h.id !== 11121001 && h.id !== 11121003 && h.id !== 11121005 && h.id !== 11121006 && h.id !== 11121007 && h.id !== 11121008 && h.id !== 11121009); }
+function overlayHeroListesi() { return heroListesi().filter(h => (h.id < 11120900 || h.id > 11120999) && h.id !== 11121001 && h.id !== 11121003 && h.id !== 11121005 && h.id !== 11121006 && h.id !== 11121007 && h.id !== 11121008 && h.id !== 11121009 && h.id !== 11121011 && h.id !== 11121012); }
 const GIA_THIET_BI = { 1: 100, 2: 200, 3: 400, 4: 800, 5: 1600, 6: 3200, 7: 6400 };
 const LOAI_THIET_BI = { 2: 'Thiết bị', 4: 'Bảo vật', 6: 'Trang sức' };
 function giaThietBi(quality, level) {
@@ -440,7 +440,8 @@ function apiIsle(req, res) {
     res.writeHead(200, { ...cors, 'content-type': ik.tip, 'Cache-Control': 'public, max-age=86400' }); return res.end(ik.veri);
   }
   if (u.pathname.startsWith('/api/item-ikon/')) {
-    const ik = ikonBul(u.pathname.slice('/api/item-ikon/'.length), 'Inventory');
+    const picture=Number(u.pathname.slice('/api/item-ikon/'.length)),shared=require('../admin-item-icon.cjs')(picture);
+    const ik = shared?{tip:shared.type,veri:shared.data}:ikonBul(picture, 'Inventory');
     if (!ik) { res.writeHead(404, cors); return res.end(); }
     res.writeHead(200, { ...cors, 'content-type': ik.tip, 'Cache-Control': 'public, max-age=86400' }); return res.end(ik.veri);
   }

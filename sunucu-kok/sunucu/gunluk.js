@@ -74,7 +74,7 @@ function durumPaketi(durum) {
   for (const x of liste) {
     w.i8(x.tip);
     w.i8(kayitli(durum, x.tip));
-    w.i8(1);                       // CanSign: katilim butonu acik
+    w.i8(x.tip === 8 ? 0 : 1);      // Ryoka uses native in-scene auto battle, not offline registration.
     w.u32(SILVER);
     w.u32(EXP);
   }
@@ -86,7 +86,7 @@ function operatePaketi(tip, durum) {
   const d = depo(durum);
   const t = tip | 0;
   const varMi = tipler().some(x => x.tip === t);
-  if (!varMi) { const w = new W(); w.u32(1); return w.done(); }   // bilinmeyen tip -> hata
+  if (!varMi || t === 8) return new W().u32(1).i8(t).i8(0).done();
   const yeni = kayitli(durum, t) ? 0 : 1;
   if (yeni) d.kayit[String(t)] = 1; else delete d.kayit[String(t)];
   const w = new W();

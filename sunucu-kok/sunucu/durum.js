@@ -33,11 +33,13 @@ function veriBirimleri() {
 }
 
 function yukle() {
+  require('./item-evolutions').recover();
   require('./alliance-war').recover();
   require('./myoboku').recover();
   require('./ultimate-bp').recover();
   require('./title-achievements').recover();
   require('./arena-rewards').recover();
+  require('./palace-chests').recover();
   let d;
   try { d = JSON.parse(fs.readFileSync(DURUM_DOSYA, 'utf8')); } catch { d = { ...VARSAYILAN }; }
   // veri.json birimleri her zaman uygulanir (admin tool oradan yaziyor)

@@ -223,6 +223,7 @@ function giris30(x) {
   b.writeUInt32BE(x.code >>> 0, 1);
   b.writeUInt32BE((x.instance || instanceOf(x.code)) >>> 0, 5);
   b.writeUInt16BE(Math.max(1, Math.min(x.amount || 1, MAX_ADET)), 9);
+  if(x.code===14900002){const expires=Math.floor(Date.parse(require('./konoha-tree-config').read().endsAt)/1000);b[11]=1;b.writeUInt32BE(expires,12);}
   // TimingCategory=0 (Permant), timing=0, 14B kuyruk sifir
   return b;
 }
@@ -291,5 +292,5 @@ function ozet(durum) {
 module.exports = {
   ekle, liste, loadBagPaketi, taban, ozet, depo, articleSet, kategoriBul, article, instanceOf,
   mevcut, dus, giris30, ntfPaketi, reducePaketi, guncellemePaketi, kazancPaketi, odulTemplate,
-  OP_NTF, OP_REDUCE, MAX_ADET, kancaAyarla,
+  OP_NTF, OP_REDUCE, MAX_ADET, MAX_GIRIS, kancaAyarla,
 };

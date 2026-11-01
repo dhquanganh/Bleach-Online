@@ -111,22 +111,21 @@ function vipHesapla(vipExp) {
   return require('./harita').vipSinir(lv);
 }
 function topupUygula(miktar) {
-  const n = Math.max(1, Math.floor(Number(miktar) || 0));
+  const n=Number(miktar);if(!Number.isSafeInteger(n)||n<=0||n>PARA_TAVAN)throw Error('Invalid top-up amount');
   const yol = require('./runtime-path')('veri.json');
   const v = JSON.parse(fs.readFileSync(yol, 'utf8'));
   v.altin = Math.min(PARA_TAVAN, (Number(v.altin) || 0) + n);
   v.vipExp = Math.min(PARA_TAVAN, (Number(v.vipExp) || 0) + n);
   v.vipLevel = Math.max(Number(v.vipLevel) || 0, vipHesapla(v.vipExp));
-  fs.writeFileSync(yol, JSON.stringify(v, null, 2));
   const durumMod = require('./durum'); const d = durumMod.yukle();
   const t = require('./etkinlik-ozel').topupEkle(d, n);
   sayacArtir(d, 300029, n); sayacArtir(d, 300005, 1);
   olay.say(d, 'topup', n);                       // Experiences/HD sartlari (yukleme) — kaydet'ten ONCE
-  durumMod.kaydet(d);
+  require('./topup-gift-pack').persist(v,d,durumMod.kaydet);
   const H = require('./harita');
   const paket = H.baseInfoUpdate([{ index: H.BASEINFO.Gold, v: v.altin }, { index: H.BASEINFO.VipLevel, v: v.vipLevel }, { index: H.BASEINFO.VipExp, v: v.vipExp }]);
   console.log(`[topup] +${n} altin -> altin ${v.altin}, VIP ${v.vipLevel} (exp ${v.vipExp}), bugun ${t.gun[require('./paket').gun()]}`);
-  return { paket, altin: v.altin, vipLevel: v.vipLevel, vipExp: v.vipExp, bugun: t.gun[require('./paket').gun()] || 0, toplam: t.toplam || 0 };
+  return { paket, altin: v.altin, vipLevel: v.vipLevel, vipExp: v.vipExp, bugun: t.gun[require('./paket').gun()] || 0, toplam: t.toplam || 0, giftPackets:require('./topup-gift-pack').updates(d) };
 }
 // Handler BASARILI (ilk u32 = 0) cevap verince artacak olay sayaclari (Experiences / gorev sartlari).
 // Kendi icinde olay.say cagiran handler'lar (recruit, cultivate, signin, soulmap...) burada YOK (cift sayim olmasin).
@@ -513,6 +512,7 @@ const byReq = {
   // (yakalanan gercek veri, yoksa genel paket) korunur ki calisan paneller bozulmasin.
   '0x01812302': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
+    if(require('./topup-gift-pack').supports(actId)){if(payload.length!==4)return etkinlik.initPaketi(0,durum,0);return require('./topup-gift-pack').init(actId,durum);}
     if(etkinlik.katalog().get(actId)?.kategori===450000)return require('./ultimate-bp').init(actId,durum);
     const key = (actId >>> 0).toString(16).padStart(8, '0');
     // OZEL pencereler (Daily Presents, Seireitei Attack, zar tahtasi, Make Money): kendi durum makinesi.
@@ -538,6 +538,8 @@ const byReq = {
   '0x01812303': ({ payload, durum, kaydet }) => {
     const actId = payload.length >= 4 ? payload.readUInt32BE(0) : 0;
     const idx = payload.length >= 8 ? payload.readUInt32BE(4) : 0;
+    if(payload.length<8){SON_CLAIM={ozel:true};return etkinlik.operateRet(80,actId,[]);}
+    if(require('./topup-gift-pack').supports(actId)){SON_CLAIM={ozel:true};return require('./topup-gift-pack').operate({payload,durum,kaydet},{ekSonra});}
     if(etkinlik.katalog().get(actId)?.kategori===450000){
       SON_CLAIM={ozel:true};
       if(payload.length!==14||payload.readInt16BE(8)!==1)return etkinlik.operateRet(80,actId,[]);

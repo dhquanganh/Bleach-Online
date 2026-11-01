@@ -1,0 +1,39 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=48
+TEXTURE standard frames=51
+TEXTURE chase frames=88
+TEXTURE mystery frames=74
+TEXTURE courage frames=35
+CASE 13122801 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-29
+SNAPSHOT CASE-mystery-camp-0-frame-51
+CASE 13122802 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-20
+SNAPSHOT CASE-standard-camp-0-frame-35
+CASE 13122803 camp=0
+SNAPSHOT CASE-courage-camp-0-frame-4
+SNAPSHOT CASE-courage-camp-0-frame-14
+SNAPSHOT CASE-courage-camp-0-frame-24
+CASE 13122804 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-35
+SNAPSHOT CASE-chase-camp-0-frame-61
+CASE 13122801 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-29
+SNAPSHOT CASE-mystery-camp-1-frame-51
+CASE 13122802 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-20
+SNAPSHOT CASE-standard-camp-1-frame-35
+CASE 13122803 camp=1
+SNAPSHOT CASE-courage-camp-1-frame-4
+SNAPSHOT CASE-courage-camp-1-frame-14
+SNAPSHOT CASE-courage-camp-1-frame-24
+CASE 13122804 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-35
+SNAPSHOT CASE-chase-camp-1-frame-61
+DONE Asuma native component; remaining=0

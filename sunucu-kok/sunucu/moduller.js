@@ -102,6 +102,9 @@ function kur(y) {
       console.log(`[moduller] ${ad}: ${n} handler`);
     } catch (e) { console.log(`[moduller] ${ad} yuklenemedi:`, e.message); }
   }
+  Object.assign(H,require('./guild').kur(y2));
+  const guildMarket=require('./guild-shop').handlers(require('./guild').create(y2));
+  for(const op of Object.keys(guildMarket)){const previous=H[op];H[op]=ctx=>ctx.payload.length>=4&&[3,4].includes(ctx.payload.readUInt32BE())?guildMarket[op](ctx):previous(ctx);}
   return H;
 }
 

@@ -1,0 +1,11 @@
+{
+  "version": "2026103105",
+  "artworkUnchanged": true,
+  "tables": 32,
+  "changedMethods": [
+    "RenderShop",
+    "BtnExchangeOnClick",
+    "MallBuyGoodRet"
+  ],
+  "clientSha256": "5f45b394f372d449ba5f3368a6a514cb24862e6d4f48c31616b9e1f7793126ed"
+}

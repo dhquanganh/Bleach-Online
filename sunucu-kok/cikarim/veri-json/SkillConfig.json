@@ -65574,5 +65574,141 @@
     "desc": "If defeated, revives 2 rounds later with 50% max HP. A complete lineup defeat ends the battle; no-revival effects remain effective.",
     "icon": 13122611,
     "sortId": 11
+  },
+  {
+    "id": "00C83C8D",
+    "skillId": 13122701,
+    "name": "Festival Wish - Ingot Shower from All Directions",
+    "desc": "Causes unavoidable damage and 5 Combo to all units in the opponent's field. Cooldown 1; Battlefield Cooldown 0; Chakra Cost 40. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122701,
+    "sortId": 1
+  },
+  {
+    "id": "00C83C8E",
+    "skillId": 13122702,
+    "name": "Summoning Jutsu - Gamatatsu",
+    "desc": "Attacks 2-4 units in the opponent's lineup with a chance of causing Knockdown. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122702,
+    "sortId": 2
+  },
+  {
+    "id": "00C83C8F",
+    "skillId": 13122703,
+    "name": "Summoning Jutsu - Gamatatsu",
+    "desc": "Attacks 2-4 units in the opponent's lineup with a chance of causing Knockdown. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122703,
+    "sortId": 3
+  },
+  {
+    "id": "00C83C90",
+    "skillId": 13122704,
+    "name": "Summoning Jutsu - Gamatatsu",
+    "desc": "Attacks 2-4 units in the opponent's lineup with a chance of causing Knockdown. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122704,
+    "sortId": 4
+  },
+  {
+    "id": "00C83C91",
+    "skillId": 13122705,
+    "name": "Festival Wish - Ingot Shower",
+    "desc": "At the beginning of every round, a random ninja in your lineup will receive Excited Mode and have their Combo Rate increased by 70% until the end of the round. Excited Mode: Physical ATK +60%, Physical DEF and Resistance -30% (not stackable).",
+    "icon": 13122705,
+    "sortId": 5
+  },
+  {
+    "id": "00C83C92",
+    "skillId": 13122706,
+    "name": "Festival Wish - Giant Coin Toss",
+    "desc": "Triggered with at least 5 Combo, causes damage to up to 5 units in the opponent's lineup. This skill ignores a small amount of Defense. If Naruto's HP is higher than 60%, this skill is modified. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122706,
+    "sortId": 6
+  },
+  {
+    "id": "00C83C93",
+    "skillId": 13122707,
+    "name": "Modified Festival Wish - Giant Coin Toss",
+    "desc": "Triggered with at least 5 Combo, causes unavoidable damage to 1 unit in the opponent's lineup. This skill ignores a certain amount of Defense and has additional Critical Rate and Injury Rate. All damage scales with Physical ATK and is reduced by Physical DEF.",
+    "icon": 13122707,
+    "sortId": 7
+  },
+  {
+    "id": "00C83CF1",
+    "skillId": 13122801,
+    "name": "Flying Swallow - Wind Blade",
+    "desc": "Causes damage to up to 3 units in the opponent's lineup, causes Knockdown to the selected unit. Cooldown 3; Battlefield Cooldown 1; Chakra Cost 40. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122801,
+    "sortId": 1
+  },
+  {
+    "id": "00C83CF2",
+    "skillId": 13122802,
+    "name": "Chakra Blade - Straight Line",
+    "desc": "Attacks up to 3 opponent units in the front row, a chance of causing Repulse. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122802,
+    "sortId": 2
+  },
+  {
+    "id": "00C83CF3",
+    "skillId": 13122803,
+    "name": "Courage",
+    "desc": "At the beginning of the battle, recovers 20 Chakra.",
+    "icon": 13122803,
+    "sortId": 3
+  },
+  {
+    "id": "00C83CF4",
+    "skillId": 13122804,
+    "name": "Fire Style - Burning Ash",
+    "desc": "Chases and Attacks a Repulsed unit, causes Knockdown and Blindness. Blindness: affected units cannot execute Standard Attacks. Lasts for 1 round. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122804,
+    "sortId": 4
+  },
+  {
+    "id": "00C83CF5",
+    "skillId": 13122805,
+    "name": "Pose of Invincibility",
+    "desc": "While Asuma is alive, ninjas in your lineup having full HP will have their Physical ATK increased by 30%.",
+    "icon": 13122805,
+    "sortId": 5
+  },
+  {
+    "id": "00C83D55",
+    "skillId": 13122901,
+    "name": "Dharma Sealing Jutsu - Restraint",
+    "desc": "Causes unavoidable damage to up to 5 units in the opponent's lineup, causes Level 2 - Acupuncture until the end of the next round to the selected unit. If the selected unit is suffering from Acupuncture, additionally causes Dharma Seal to that unit. Cooldown 4; Battlefield Cooldown 0; Chakra Cost 20. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122901,
+    "sortId": 1
+  },
+  {
+    "id": "00C83D56",
+    "skillId": 13122902,
+    "name": "Dharma Sealing Jutsu - Absorption",
+    "desc": "Attacks a random line of opponent units, causes Suppress Immunity for 1 round and absorbs 20 Chakra from each unit hit, a chance of causing Level 2 - Acupuncture until the end of the round to a random unit hit. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122902,
+    "sortId": 2
+  },
+  {
+    "id": "00C83D57",
+    "skillId": 13122903,
+    "name": "Dharma Barrier - Celestial Pillars",
+    "desc": "If Hoichi's HP falls below 50%, grants Endurance to all units in your lineup and reduces his Mystery Cooldown to 0, can be triggered once per round. The first time this skill is activated in a battle, grants Perseverance instead, additionally dispels all Debuffs (including Level 2 Debuffs) he currently has and resets his action count. This skill is still active even when Hoichi is controlled.",
+    "icon": 13122903,
+    "sortId": 3
+  },
+  {
+    "id": "00C83D58",
+    "skillId": 13122904,
+    "name": "Dharma Barrier - Senbon Barrage",
+    "desc": "Triggered at the end of the round Hoichi executes Dharma Sealing Jutsu - Restraint, causes unavoidable damage, 4 Combo to up to 9 units in the opponent's field and cancels all Buffs and Shields, causes Level 2 - Acupuncture until the end of the next round to the unit hit with the lowest HP. All damage scales with Physical ATK against Physical DEF.",
+    "icon": 13122904,
+    "sortId": 4
+  },
+  {
+    "id": "00C83D59",
+    "skillId": 13122905,
+    "name": "Bunpuku Inheritance",
+    "desc": "Hoichi is immune to Debuffs and when he suffers damage, reduces his Mystery Cooldown by 1. While Hoichi is alive, your lineup's Secret Jutsu ninjas' damage neglects Shields and when they evade an action, reduces that unit's Mystery's Chakra Cost by 10 (stackable) until the end of the battle or until defeated. When Hoichi executes a Trigger skill, dispels all Acupuncture and Immobile he currently has.",
+    "icon": 13122905,
+    "sortId": 5
   }
 ]

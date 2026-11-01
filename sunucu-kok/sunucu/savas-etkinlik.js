@@ -519,6 +519,7 @@ function kur(y) {
   Object.assign(H,require('./soul-palace').kur(y).handlers);
   Object.assign(H,require('./soul-hunt').kur(y).handlers);
   Object.assign(H,require('./protect-seireitei').kur(y).handlers);
+  Object.assign(H,require('./ryoka-attack').kur(y).handlers);
   Object.assign(H,require('./cross-server').kur(y).handlers);
   Object.assign(H,require('./conquest').kur(y).handlers);
   return H;

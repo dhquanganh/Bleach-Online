@@ -6,7 +6,7 @@ function state(d,c=config.read()){
  const k=d.kule||={kat:0,integral:0,chest:0};if(!k.progress||typeof k.progress!=='object'||Array.isArray(k.progress))k.progress={};
  if(!Object.keys(k.progress).length&&Number(k.kat)>0)k.progress[k.lockedTowerId||c.towers[0].id]=Number(k.kat);
  if(!Array.isArray(k.cleared)){k.cleared=[];for(const t of c.towers)for(const f of t.floors.slice(0,Math.max(0,Number(k.progress[t.id])||0)))k.cleared.push(f.id);}
- if(k.day!==gun()){k.day=gun();k.pve=0;k.pveBuy=0;k.akey=false;k.dailyTower=0;}
+ if(k.day!==gun()){if(k.day){k.chest=0;k.claimed=[];}k.day=gun();k.pve=0;k.pveBuy=0;k.akey=false;k.dailyTower=0;}
  if(!Array.isArray(k.claimed))k.claimed=[];k.pve=Math.max(0,Math.min(255,Number(k.pve)||0));k.pveBuy=Math.max(0,Math.min(255,Number(k.pveBuy)||0));return k;
 }
 function describe(d,c=config.read(),level=require('./seviye').anaDurum(require('./seviye').veriOku()).lv){
@@ -58,12 +58,7 @@ function kur(y){
   k.akey=true;k.dailyTower=t.id;try{ctx.kaydet(d);}catch(e){y.paraIcinOdul(costs);return fail(1);}Object.assign(ctx.durum,d);
   y.ekSonra(0x01180105,charged,'PALACE-sweep-cost');y.odulVer(ctx.durum,awarded);ctx.kaydet(ctx.durum);return new Y().u32(0).odul(awarded).done();
  };
- handlers['0x01810a06']=ctx=>{const k=state(ctx.durum);return {id:0x01180a07,payload:new Y().u32(0).u16(k.cleared.length).u32(k.chest||0).done()};};
- handlers['0x01810a07']=ctx=>{
-  if(ctx.payload.length!==4)return {id:0x01180a08,payload:fail(4)};const id=ctx.payload.readUInt32BE(0),row=satir('TemplePliesNumber',id),d=structuredClone(ctx.durum),k=state(d);
-  if(!row||k.cleared.length<row.numberPlies||k.claimed.includes(id)||k.chest>=id)return {id:0x01180a08,payload:fail(1)};
-  const rewards=json(satir('Award',row.awardID)?.fixed,{}).fixed||[];if(!rewards.length)return {id:0x01180a08,payload:fail(4)};
-  k.claimed.push(id);k.chest=id;try{ctx.kaydet(d);}catch(e){return {id:0x01180a08,payload:fail(1)};}Object.assign(ctx.durum,d);y.odulVer(ctx.durum,rewards);ctx.kaydet(ctx.durum);return {id:0x01180a08,payload:new Y().u32(0).u32(id).done()};
- };return {handlers};
+ handlers['0x01810a06']=ctx=>{if(ctx.payload.length)return {id:0x01180a07,payload:fail(4)};const d=structuredClone(ctx.durum),p=require('./palace-chests').info(d);ctx.kaydet(d);Object.assign(ctx.durum,d);return {id:0x01180a07,payload:p};};
+ handlers['0x01810a07']=ctx=>require('./palace-chests').claim(ctx,y);return {handlers};
 }
 module.exports={state,describe,packet,units,challenge,kur,rewards};

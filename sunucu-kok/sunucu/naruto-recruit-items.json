@@ -138,5 +138,26 @@
     "fragmentId": 14131009,
     "picture": 16228161,
     "name": "Orochimaru [New Year] Recruit Token"
+  },
+  {
+    "heroId": 11121010,
+    "itemId": 14141010,
+    "fragmentId": 14131010,
+    "picture": 16228162,
+    "name": "Naruto [Mid-Autumn Festival] Recruit Token"
+  },
+  {
+    "heroId": 11121011,
+    "itemId": 14141011,
+    "fragmentId": 14131011,
+    "picture": 16228163,
+    "name": "Asuma [Wind Blade] Recruit Token"
+  },
+  {
+    "heroId": 11121012,
+    "itemId": 14141012,
+    "fragmentId": 14131012,
+    "picture": 16228164,
+    "name": "Hoichi Recruit Token"
   }
 ]

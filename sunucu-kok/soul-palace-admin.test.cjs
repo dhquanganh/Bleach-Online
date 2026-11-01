@@ -1,6 +1,6 @@
 'use strict';
 const {test}=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),zlib=require('node:zlib');
-const dir=fs.mkdtempSync(path.join(os.tmpdir(),'bleach-palace-test-'));process.env.BLEACH_ACCOUNT_DIR=dir;process.env.BLEACH_PALACE_FILE=path.join(dir,'palace.json');
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'bleach-palace-test-'));process.env.BLEACH_ACCOUNT_DIR=dir;process.env.BLEACH_PALACE_FILE=path.join(dir,'palace.json');process.env.BLEACH_PALACE_CHEST_FILE=path.join(dir,'chests.json');
 for(const f of ['oyuncu.json','veri.json'])fs.copyFileSync(path.join(__dirname,'sunucu',f),path.join(dir,f));
 const config=require('./sunucu/soul-palace-config'),palace=require('./sunucu/soul-palace'),{Y,O,tablo}=require('./sunucu/paket'),{createAdmin}=require('./admin-accounts.cjs');
 test('Palace configuration: authorization, all towers/floors, character editing, additions, stale writes and cross-process hot reads',async()=>{
@@ -34,7 +34,8 @@ test('Palace chest and purchases: no free or repeated claims, save failure refun
  let d={},gold=1000,rewards=0;const y={paraHarca(c){const cost=c[0].amount;if(cost>gold)return null;gold-=cost;return Buffer.from([1]);},paraIcinOdul(c){gold+=c[0].amount;},odulVer(){rewards++;},ekSonra(){}};const H=palace.kur(y).handlers,call=(op,p=Buffer.alloc(0),broken=false)=>H['0x01810a'+op]({payload:p,durum:d,kaydet:()=>{if(broken)throw Error('disk');}}),code=r=>(r.payload||r).readUInt32BE();
  const chest=tablo('TemplePliesNumber').liste[0];assert.notEqual(code(call('07',new Y().u32(chest._id).done())),0);assert.notEqual(code(call('05')),0);assert.equal(rewards,0);
  const before=gold;assert.notEqual(code(call('02',Buffer.from([1]),true)),0);assert.equal(gold,before);assert.equal(code(call('02',Buffer.from([1]))),0);assert(gold<before);
- palace.state(d).cleared=Array.from({length:chest.numberPlies},(_,i)=>15910001+i);assert.equal(code(call('07',new Y().u32(chest._id).done())),0);assert.equal(rewards,1);assert.notEqual(code(call('07',new Y().u32(chest._id).done())),0);assert.equal(rewards,1);
+ const env=require('./sunucu/envanter'),owned=env.mevcut(d,14100006);
+ palace.state(d).cleared=Array.from({length:chest.numberPlies},(_,i)=>15910001+i);assert.equal(code(call('07',new Y().u32(chest._id).done())),0);assert.equal(env.mevcut(d,14100006),owned+40);assert.notEqual(code(call('07',new Y().u32(chest._id).done())),0);assert.equal(env.mevcut(d,14100006),owned+40);
 });
 test('Palace new hero formation produces a complete real battle report; original random rewards remain available',()=>{
  const battle=require('./sunucu/savas'),codec=require('./sunucu/kodek'),floor=config.read().towers[13].floors[0];

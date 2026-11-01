@@ -1,0 +1,52 @@
+{
+  "layout": {
+    "opened": true
+  },
+  "initial": {
+    "balance": "100",
+    "cards": 1,
+    "height": 600,
+    "icon": true,
+    "width": 790
+  },
+  "game": {
+    "blocked": true,
+    "closed": true,
+    "error": true,
+    "retry": true,
+    "success": true
+  },
+  "admin": {
+    "initialIcon": true,
+    "rows": 2,
+    "searchIcon": true,
+    "status": "Đã lưu vào game. Người chơi thấy thay đổi khi tải lại hoặc trong 15 giây.",
+    "visible": true
+  },
+  "saved": {
+    "revision": 2,
+    "seasonId": "konoha-tree-2026-11",
+    "enabled": true,
+    "startsAt": "2026-10-31T00:00:00+07:00",
+    "endsAt": "2026-11-04T22:59:59+07:00",
+    "offers": [
+      {
+        "id": "primogem",
+        "itemId": 14900001,
+        "amount": 1,
+        "price": 10,
+        "dailyLimit": 100,
+        "enabled": true
+      },
+      {
+        "id": "gift_1793447611818_kexc4r",
+        "itemId": 14131010,
+        "amount": 3,
+        "price": 23,
+        "dailyLimit": 7,
+        "enabled": true
+      }
+    ]
+  },
+  "ok": true
+}

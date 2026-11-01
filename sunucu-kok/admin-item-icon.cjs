@@ -7,7 +7,8 @@ module.exports=function icon(picture, directory='Inventory') {
   const root=path.join(__dirname,'kaynak/login.gogames.me/public');
   const hex=(picture>>>0).toString(16).toUpperCase().padStart(8,'0');
   for(const version of ['2026090619','2017112917']) {
-    const file=path.join(root,version,'Resources/Textures',directory,hex+'.TexClient');
+    let file=path.join(root,version,'Resources/Textures',directory,hex+'.TexClient');
+    if(!fs.existsSync(file)&&directory==='Inventory')file=path.join(root,version,'Resources/Textures/Article',hex+'.TexClient');
     if(!fs.existsSync(file))continue;
     const raw=fs.readFileSync(file),surfaces=[raw];
     for(let i=0;i+1<raw.length;i++)if(raw[i]===0x78&&[0x01,0x9c,0xda].includes(raw[i+1])) {

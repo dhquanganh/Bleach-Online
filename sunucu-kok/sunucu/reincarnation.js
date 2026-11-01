@@ -49,6 +49,7 @@ const CHANCE={1:.10,2:.03,3:.015,4:.02,5:.02,6:.01,7:.04,8:.01,10:.02};
 function proc(unit,effect,rng=Math.random){const r=unit.rebirth||{};return r.n>0&&r.ae===effect&&rng()<Math.min(1,r.n*(CHANCE[effect]||0));}
 function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,nonfatal=false,ignoreShield=false){
   const before=target.hp;
+  if(require('./hoichi-combat').ignoreShield(attacker))ignoreShield=true;
   if(require('./asura-guardian-combat').immune(target))return {damage:0,recovered:0,absorbed:0,before};
   const clearShield=proc(attacker,1,rng),clearBuffs=proc(attacker,7,rng);
   if(clearShield)target.shield=0;
@@ -56,6 +57,7 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
   const instantKill=proc(attacker,8,rng);
   if(instantKill)damage=target.hp;
   if(!ignoreDefensiveSkills&&proc(target,3,rng))damage=0;
+  damage=require('./hoichi-combat').defend(target,damage);
   let absorbed=0;
   if(!ignoreDefensiveSkills&&!ignoreShield&&target.shield>0&&!instantKill){absorbed=Math.min(target.shield,damage);target.shield-=absorbed;damage-=absorbed;}
   const blockedHeal=require('./guy-gate-combat').isGuy(target)||(target.skillBuffs||[]).some(b=>b.field==='noHeal'&&b.remaining>0)&&!(target.skillBuffs||[]).some(b=>b.field==='immuneHealBlock'&&b.remaining>0);
@@ -67,6 +69,7 @@ function hit(attacker,target,amount,rng=Math.random,ignoreDefensiveSkills=false,
     if(target.gaaraContext)require('./gaara-combat').onDamage(target.gaaraContext,attacker,target,{damage,absorbed},false,[]);
     recovered=Math.round((target.maxHp-target.hp)*require('./gaara-combat').healFactor(target));target.hp+=recovered;
   }
+  require('./hoichi-combat').onDamage(target.hoichiContext,target,{damage,before,absorbed});
   if(clearBuffs)target.activeBuffs={};
   return {damage,recovered,clearShield,clearBuffs,absorbed,before};
 }

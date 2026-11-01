@@ -318,6 +318,7 @@ function bonuslar(durum, heroId, baseBlock, skipRefinery = false, skipRebirth = 
       }
     }
   }
+  for(const bonus of require('./guild').bonuses(durum))ek[bonus.index]+=bonus.value;
   const hogu = hogyokuBonuses(durum, heroId);
   for (let i = 0; i < hogu.length; i++) ek[i] += hogu[i];
   // Rank rows describe the total formation bonus, never a cumulative upgrade reward.
@@ -800,15 +801,8 @@ function kur(y) {
   };
   // Native Hollow Soul King / CrashJade transactions and immediate stats.
   Object.assign(H, require('./crash-jade').kur(y,{statPush:attrPush}).handlers);
-  // --- Ekipman Ocagi (UltimateEquip) ---
-  const forge = durum => { durum.ocak = durum.ocak || { enerji: 10, satin: 3, is: 0, hazir: 0 }; const f = durum.ocak; const g = require('./paket').gun(); if (f.gun !== g) { f.gun = g; f.satin = 3; f.enerji = Math.max(f.enerji, 10); } return f; };
-  H['0x01818c00'] = ({ durum }) => { const f = forge(durum); return new Y().u32(0).u32(f.enerji).u32(f.satin).u32(f.is).u32(f.hazir).done(); };
-  H['0x01818c01'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const tpl = o.u32(), inst = o.u32(); const ef = satir('EquipForge', tpl); const x = esya(durum, inst); if (!ef || !x || takiliMi(depo(durum), inst)) return new Y().u32(4).done(); delete depo(durum).esyalar[String(inst)]; ekSonra(OP_REDUCE, reducePaketi([inst]), 'OCAK'); esyaVer(durum, Number(ef.itemId), Math.max(1, Number(ef.retCount) || 1)); kaydetS(kaydet, durum); return new Y().u32(0).done(); };
-  H['0x01818c02'] = ({ payload, durum, kaydet }) => { const o = new O(payload); const tpl = o.u32(), inst = o.u32(); const ea = satir('EquipAdvance', tpl); const x = esya(durum, inst); if (!ea || !x || !article(Number(ea.itemId))) return new Y().u32(4).done(); const n = Number(ea.needCount) || 0; if (n && !esyaHarca(durum, 14100723, n)) return new Y().u32(18).done(); x.tpl = Number(ea.itemId); kaydetS(kaydet, durum); ntf(durum, inst); return new Y().u32(0).done(); };
-  H['0x01818c03'] = ({ durum, kaydet }) => { const f = forge(durum); if (f.enerji < 1) return new Y().u32(1).done(); f.enerji -= 1; f.is = simdi() + 600; kaydetS(kaydet, durum); return new Y().u32(0).u32(f.enerji).u32(f.is).u32(f.hazir).done(); };
-  H['0x01818c04'] = ({ durum, kaydet }) => { const f = forge(durum); if (f.satin < 1) return new Y().u32(1).done(); if (!altin(cv(62100005, 50))) return new Y().u32(16).done(); f.satin -= 1; f.enerji += cv(62100006, 60); kaydetS(kaydet, durum); return new Y().u32(0).u32(f.enerji).u32(f.satin).done(); };
-  H['0x01818c05'] = ({ durum, kaydet }) => { const f = forge(durum); if (!f.is) return new Y().u32(1).done(); if (f.is > simdi() && !altin(cv(62100007, 20))) return new Y().u32(16).done(); f.is = 0; f.hazir += 1; kaydetS(kaydet, durum); return new Y().u32(0).done(); };
-  H['0x01818c06'] = ({ durum, kaydet }) => { const f = forge(durum); if (f.hazir < 1) return new Y().u32(1).done(); f.hazir -= 1; const aw = y.awardOf ? y.awardOf(cv(62100003, 23200001), 0) : [{ type: 1, code: 14100723, amount: 5 }]; y.odulVer(durum, aw); kaydetS(kaydet, durum); const w = new Y().u32(0).u32(f.hazir); w.odul(aw.filter(a => [1, 17, 21, 23].includes(a.type) ? article(a.code) : envanter.odulTemplate(a.type, a.code))); return w.done(); };
+  // Authoritative Item Evolutions, work rewards and shared Smithy progression.
+  Object.assign(H,require('./item-evolutions').kur(y,{statPush:attrPush}));
   // --- Depo -> canta (gecici canta yok) ---
   H['0x01810f07'] = () => new Y().u32(0).done();
   H['0x01810204'] = () => false;   // Enter_Jade: client hic gondermez

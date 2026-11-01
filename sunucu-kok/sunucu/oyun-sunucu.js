@@ -310,6 +310,12 @@ function refreshTournament(force=false){
 }
 process.on('message',m=>{if(m?.type==='tournament-update')refreshTournament(true);});
 setInterval(refreshTournament,5000).unref();
+function refreshGuild(){
+ const clients=loggedInClients();if(!clients.length)return;
+ try{const d=durumMod.yukle(),packets=[],service=require('./guild').create({ekSonra(id,payload){packets.push({id,payload});}});const info=service.run({durum:d},x=>require('./guild').info(x.g,x.m));for(const session of clients){session.send(0x01182507,info,'GUILD-shared');for(const packet of packets)session.send(packet.id,packet.payload,'GUILD-shared-update');}}catch(error){console.error('[Guild refresh]',error.message);}
+}
+process.on('message',message=>{if(message?.type==='guild-refresh')refreshGuild();});
+setInterval(refreshGuild,60000).unref();
 let allianceOpen=null;
 let alliancePlayback=null;
 const allianceNativePending=new Map();
@@ -432,6 +438,17 @@ require('http').createServer((req, res) => {
   if (localOrigin && !/^https?:\/\/(127\.0\.0\.1|localhost)(:\d+)?$/.test(localOrigin)) {
     return json(403, { ok: false, hata: 'Chỉ launcher trên máy này mới được phép truy cập.' });
   }
+  if(u.pathname==='/konoha-tree'&&req.method==='GET'){
+    try{return json(200,require('./konoha-tree').view(durumMod.yukle()));}catch(e){return json(e.status||500,{error:e.message});}
+  }
+  if(u.pathname==='/konoha-tree/exchange'&&req.method==='POST'){
+    if(!loggedInClients().length)return json(409,{error:'Hãy vào game trước khi đổi quà.'});
+    let text='',tooLarge=false;req.on('data',chunk=>{if(!tooLarge){text+=chunk;if(Buffer.byteLength(text)>4096){tooLarge=true;text='';}}});req.on('end',()=>{
+      try{if(tooLarge)return json(413,{error:'Yêu cầu quá lớn.'});const result=require('./konoha-tree').exchange(JSON.parse(text||'{}'),{load:durumMod.yukle});
+        const bag=handlers.envanterDepo.loadBagPaketi(result.state);for(const session of loggedInClients())session.send(0x01180f00,bag,'KONOHA-TREE-exchange');delete result.state;return json(200,result);
+      }catch(e){return json(e.status||400,{error:e.message});}
+    });return;
+  }
   if (u.pathname === '/myoboku' && req.method === 'GET') {
     const state=durumMod.yukle();
     return json(200,{ok:true,...require('./myoboku-config').view(),gold:Number(veri().altin)||0,spins:state.myoboku?.spins||0});
@@ -468,10 +485,11 @@ require('http').createServer((req, res) => {
     let b = ''; req.on('data', c => b += c);
     req.on('end', () => {
       try {
-        const n = Math.floor(Number(JSON.parse(b || '{}').altin) || 0);
-        if (!(n > 0) || n > 100000000) return json(400, { ok: false, hata: 'gecersiz miktar' });
+        const n = Number(JSON.parse(b || '{}').altin);
+        if (!Number.isSafeInteger(n) || !(n > 0) || n > 100000000) return json(400, { ok: false, hata: 'gecersiz miktar' });
         const r = handlers.topupUygula(n);
         for (const s of CLIENTS) { try { s(0x01180105, r.paket, 'TOPUP-para'); } catch (e) { } }
+        for(const packet of r.giftPackets||[])for(const send of CLIENTS)try{send(packet.id,packet.payload,'TOPUPGIFT-live');}catch(e){}
         return json(200, { ok: true, altin: r.altin, vipLevel: r.vipLevel, vipExp: r.vipExp, bugun: r.bugun, toplam: r.toplam, bagli: CLIENTS.size });
       } catch (e) { return json(500, { ok: false, hata: e.message }); }
     });
@@ -636,6 +654,9 @@ net.createServer(client => {
       }
       if([0x01810200,0x01810201,0x01810202,0x01810205,0x01810206,0x01810207,0x01810209,0x0181020c,0x0181020e,0x01810211].includes(pk.id>>>0)){
         const d=durumMod.yukle();if(d.protectSeireitei && d.protectSeireitei.active){d.protectSeireitei.active=false;d.protectSeireitei.atDoor=false;durumMod.kaydet(d);}
+      }
+      if((pk.id>>>0)!==0x0181020c && (pk.id>>>0)>=0x01810200 && (pk.id>>>0)<=0x01810220){
+        const d=durumMod.yukle();if(d.ryokaAttack?.present){d.ryokaAttack.present=false;durumMod.kaydet(d);}
       }
       session.lastSeen=Date.now();
       if((pk.id>>>0)===0x01810200){
@@ -877,6 +898,14 @@ net.createServer(client => {
           else{send(0x01181f07,Buffer.alloc(4),'SOULHUNT-FightOk');send(kodek.OP.REPORT,result.report.payload,'SOULHUNT-report');send(kodek.OP.RESULT,kodek.encodeSingleResult(result.report.won,[]),'SOULHUNT-result');const q=handlers.ekAl();for(const p of q.once.concat(q.sonra))send(p.id,p.payload,p.kaynak);}
         }catch(e){LOG.note(cid,'Soul Hunt rob: '+e.message);send(0x01181f04,Buffer.from([0,0,0,1]),'SOULHUNT-rob-error');}continue;
       }
+      if((pk.id >>> 0)===0x01813402){
+        if(!session.authenticated)continue;
+        try{
+          const d=durumMod.yukle(),event=require('./ryoka-attack').kur(handlers),result=event.fight({durum:d,payload:pk.payload,kaydet:durumMod.kaydet});
+          send(0x01183402,result.ack,'RYOKA-FightRet');
+          if(!result.error){send(kodek.OP.REPORT,result.report,'RYOKA-report');send(kodek.OP.RESULT,result.result,'RYOKA-result');for(const update of result.updates)send(update.id,update.payload,'RYOKA-update');}
+        }catch(e){LOG.note(cid,'Ryoka Attack: '+e.message);send(0x01183402,Buffer.from([0,0,0,1]),'RYOKA-error');}continue;
+      }
       if((pk.id >>> 0)===0x01812401 || (pk.id >>> 0)===0x0181247d){
         try{
           const d=durumMod.yukle(),protect=require('./protect-seireitei').kur(handlers);
@@ -936,6 +965,10 @@ net.createServer(client => {
           else {send(0x01180a01,r.ack,'PALACE-ack');const rewards=handlers.ekAl();for(const q of rewards.once.concat(rewards.sonra))send(q.id,q.payload,'PALACE-reward');send(kodek.OP.REPORT,r.report,'PALACE-report');send(kodek.OP.RESULT,r.result,'PALACE-result');}
         }catch(e){LOG.note(cid,'Soul Palace: '+e.message);send(0x01180a01,Buffer.from([0,0,0,1]),'PALACE-error');}
         continue;
+      }
+      if([0x01817800,0x01817802,0x01817803].includes(pk.id>>>0)){
+        try{const d=durumMod.yukle(),response=handlers.byReq[hx(pk.id)]({payload:pk.payload,durum:d,kaydet:durumMod.kaydet});send(respIdFor(pk.id),Buffer.isBuffer(response)?response:response.payload,'GUILD-instance');const updates=handlers.ekAl();for(const packet of updates.once.concat(updates.sonra))send(packet.id,packet.payload,'GUILD-instance-update');}
+        catch(e){handlers.ekAl();LOG.note(cid,'Guild instance: '+e.message);send(respIdFor(pk.id),Buffer.from([0,0,0,1]),'GUILD-instance-error');}continue;
       }
       if (savas.isFight(pk.id)) {
         try {

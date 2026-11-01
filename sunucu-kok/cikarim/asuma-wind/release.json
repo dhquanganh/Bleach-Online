@@ -1,0 +1,33 @@
+{
+  "version": "2026110102",
+  "heroId": 11121011,
+  "fragmentId": 14131011,
+  "recruitItemId": 14141011,
+  "textureCount": 23,
+  "textureBytes": 2205420,
+  "nativeEffectBytes": 349506,
+  "probe": {
+    "componentProbe": true,
+    "combatReplay": false,
+    "completed": true,
+    "cases": 8,
+    "restores": 0,
+    "stableRestores": 0,
+    "deathHolds": 0,
+    "assetPlays": 0,
+    "powerLayers": 0,
+    "atlasesLoaded": 0,
+    "missingFrames": 0,
+    "remainingLayers": 0,
+    "errors": []
+  },
+  "unchangedMethods": {
+    "TRole": 283,
+    "TActive": 27,
+    "TBattleStage": 46,
+    "TWindowAttribute": 39,
+    "TProcessorWindowPlayerAssets": 74
+  },
+  "clientSha256": "e507080214d42b34e4529438d925d773860633a0cd3271b5d669ec75ce4460cd",
+  "tables": 32
+}

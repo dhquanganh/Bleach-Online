@@ -16,6 +16,9 @@ const tsunade = require('./tsunade-combat');
 const nineTails = require('./naruto-nine-tails-combat');
 const tobi = require('./tobi-war-combat');
 const oro = require('./orochimaru-new-year-combat');
+const festival = require('./naruto-mid-autumn-combat');
+const asuma = require('./asuma-wind-combat');
+const hoichi = require('./hoichi-combat');
 const asura = require('./asura-guardian-combat');
 const guy = require('./guy-gate-combat');
 const finalNaruto = require('./naruto-final-combat');
@@ -33,7 +36,7 @@ function comboRecord(frame,target,state,count,isChase=false,obitoSource=false) {
 // The Sage clone inherits Naruto's combat kit, but its normal slot is pinned to
 // Rasengan Barrage and cloneId is cleared so a clone can never summon a clone.
 const cloneProfile = Object.freeze({...config,heroId:config.cloneId,cloneId:0,standard:config.barrage,barrage:config.barrage});
-const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : oro.profile(unit) || asura.profile(unit) || guy.profile(unit) || finalNaruto.profile(unit) || infinite.profile(unit) || minato.profile(unit) || madara.profile(unit) || kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
+const profile = unit => unit.naruto || (unit.id === config.heroId ? config : unit.id === config.cloneId ? cloneProfile : unit.id === jiraiya.config.heroId ? jiraiya.config : hoichi.profile(unit) || asuma.profile(unit) || festival.profile(unit) || oro.profile(unit) || asura.profile(unit) || guy.profile(unit) || finalNaruto.profile(unit) || infinite.profile(unit) || minato.profile(unit) || madara.profile(unit) || kakuzu.profile(unit) || tobi.profile(unit) || nineTails.profile(unit) || tsunade.profile(unit) || gaara.profile(unit) || nagato.profile(unit) || sasuke.profile(unit) || itachi.profile(unit) || mecha.profile(unit) || hash.profile(unit) || pain.profile(unit) || obito.profile(unit) || null);
 const order = unit => Number(unit.moveOrder) || Number(unit.pos);
 function disabled(unit) {
   return unit.hp <= 0 || asura.active(unit,'asuraBanishedUntil') || guy.disabled(unit) || infinite.active(unit,'infiniteSlumberUntil') || unit.immobileUntil >= unit.battleRound || ['stun','freeze','fossilize','void'].some(field => skills.status(unit,field));
@@ -70,6 +73,9 @@ function create(teams, options = {}) {
   guy.initialize(context);
   asura.initialize(context);
   oro.initialize(context);
+  festival.initialize(context);
+  asuma.initialize(context);
+  hoichi.initialize(context);
   return context;
 }
 function startRound(ctx, round) {
@@ -119,7 +125,7 @@ function spendCooldown(ctx, unit, key, move) {
 }
 function useStandard(ctx, unit, allies, granted=false) {
   const move0=minato.selectStandard(ctx,unit,kakuzu.selectStandard(ctx,unit,tobi.selectStandard(ctx,unit,nineTails.selectStandard(ctx,unit,sasuke.selectStandard(ctx,unit,mecha.selectStandard(ctx,unit,standard(unit,allies)))))));
-  const move=oro.selectStandard(ctx,unit,asura.selectStandard(ctx,unit,guy.selectStandard(ctx,unit,finalNaruto.selectStandard(ctx,unit,infinite.selectStandard(ctx,unit,move0)))));
+  const move=festival.selectStandard(ctx,unit,oro.selectStandard(ctx,unit,asura.selectStandard(ctx,unit,guy.selectStandard(ctx,unit,finalNaruto.selectStandard(ctx,unit,infinite.selectStandard(ctx,unit,move0))))));
   if(!move || skills.status(unit,'disarm') || sasuke.active(unit,'sasukeFearUntil') || !hash.canStandard(unit) || pain.active(unit,'painHorrorUntil') || disabled(unit)) return null;
   if(granted)return move;
   if(unit.hashStandardLossRound===ctx.round && unit.hashStandardLoss>0){
@@ -164,6 +170,7 @@ function useMystery(ctx,unit,beforeSpend=null) {
   gaara.mysteryExecuted(unit);
   minato.mysteryExecuted(ctx,unit);
   infinite.mysteryExecuted(ctx,unit);
+  hoichi.mysteryExecuted(ctx,unit,m);
   unit.mysteryReadyRound=ctx.round+(pain.isPain(unit)||sasuke.isSasuke(unit)?Math.max(0,m.cooldown):Math.max(1,m.cooldown));
   finalNaruto.mysterySpent(ctx,unit,m);
   if(asura.active(unit,'asuraZeroCooldownUntil'))unit.mysteryReadyRound=ctx.round;
@@ -179,7 +186,7 @@ function hitTarget(frame, target) {
 function resolve(ctx, attacker, target, opener, spec, strike) {
   const events=[];
   if (!spec || !hitTarget(opener,target) || target.hp<=0) return events;
-  let count=spec.combo || 1;
+  let count=festival.combo(ctx,attacker,spec,spec.combo || 1);
   let state=setState(target,spec.stateChance==null||ctx.random()<spec.stateChance?spec.causes:null,ctx.round);
   comboRecord(opener,target,state,count,false,obito.isObito(attacker));
   ctx.trace.push({round:ctx.round,kind:'open',actor:attacker.id,target:target.id,count,state});

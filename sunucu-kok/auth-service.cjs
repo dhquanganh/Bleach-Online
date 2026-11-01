@@ -17,7 +17,7 @@ function available(port) { return new Promise(resolve => { const s = net.createS
 async function startAuth(port) {
   const { client, db } = await connect();
   if (!await db.collection('accounts').findOne({ username: 'admin' })) { await client.close(); throw new Error('Run node sunucu-kok/migrate-mongo.cjs first'); }
-  try { await require('./sunucu/anniversary-feast-config').readDatabase(db); await require('./sunucu/myoboku-config').readDatabase(db); await require('./sunucu/ultimate-bp-config').readDatabase(db); }
+  try { await require('./sunucu/anniversary-feast-config').readDatabase(db); await require('./sunucu/myoboku-config').readDatabase(db); await require('./sunucu/ultimate-bp-config').readDatabase(db); await require('./sunucu/konoha-tree-config').readDatabase(db); }
   catch (error) { await client.close(); throw error; }
   const origin = `http://127.0.0.1:${port}`, runtimes = new Map(), starting = new Map(), locks = new Map(), attempts = new Map();
   let nextPort = 11000, closing = false;
@@ -98,6 +98,7 @@ async function startAuth(port) {
       child.once('exit',()=>{if(runtimes.get(id)===rt){townPresence.drop(id);allianceWar.drop(id);}});
       child.on('message', message => {
         if(runtimes.get(id)!==rt)return;
+        if(message?.type==='guild-changed'){for(const worker of runtimes.values())if(worker.child.connected)worker.child.send({type:'guild-refresh'},()=>{});return;}
         if(allianceWar.receive(id,message))return;
         if(message?.type==='alliance-war-native-request'){
           if(!require('./alliance-war-native.cjs').REQUESTS.has(message.op)||typeof message.payload!=='string'||message.payload.length>5500)return;

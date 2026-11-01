@@ -48,9 +48,9 @@
     "id": "042F2AC6",
     "activityName": "Ryoka Attack",
     "activityType": 8,
-    "activityTime": "[\"Event Start Time: \",\"20:15 - 20:45\"]",
-    "activityDescription": "Battle duration: 20:15 -- 20:45",
-    "activityRewards": "Participate in Ryoka Attacks can get large amount of silver, EXP, souls, common material chests, epic material chests, spirit stones, coupons and soul talisman",
+    "activityTime": "[\"Event Start Time: \",\"00:00 - 24:00\"]",
+    "activityDescription": "Open all day. Each personal run lasts 30 minutes. Five Ryoka per wave; 10 seconds between waves. Re-entering preserves HP, damage and cooldown.",
+    "activityRewards": "Damage grants Silver, EXP and Souls immediately. Killing a Ryoka grants 1 Common Material Chest, or 1 Epic Material Chest on every fifth wave. The damage list and clan score show this personal run. No offline registration or ranking mail.",
     "buttonState": "[\"Not started\",\"Join\",\"Finished\"]"
   },
   {

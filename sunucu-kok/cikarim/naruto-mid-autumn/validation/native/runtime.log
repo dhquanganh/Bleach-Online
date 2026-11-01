@@ -1,0 +1,68 @@
+BOOT native Flash shared VFX component probe
+TEXTURE idle frames=39
+TEXTURE mystery frames=97
+TEXTURE chase frames=85
+TEXTURE standard frames=47
+TEXTURE modified frames=85
+TEXTURE entry frames=12
+TEXTURE dead frames=16
+TEXTURE standard2 frames=47
+TEXTURE standard3 frames=47
+TEXTURE shower frames=35
+CASE 13122701 camp=0
+SNAPSHOT CASE-mystery-camp-0-frame-4
+SNAPSHOT CASE-mystery-camp-0-frame-38
+SNAPSHOT CASE-mystery-camp-0-frame-67
+CASE 13122702 camp=0
+SNAPSHOT CASE-standard-camp-0-frame-4
+SNAPSHOT CASE-standard-camp-0-frame-18
+SNAPSHOT CASE-standard-camp-0-frame-32
+CASE 13122703 camp=0
+SNAPSHOT CASE-standard2-camp-0-frame-4
+SNAPSHOT CASE-standard2-camp-0-frame-18
+SNAPSHOT CASE-standard2-camp-0-frame-32
+CASE 13122704 camp=0
+SNAPSHOT CASE-standard3-camp-0-frame-4
+SNAPSHOT CASE-standard3-camp-0-frame-18
+SNAPSHOT CASE-standard3-camp-0-frame-32
+CASE 13122705 camp=0
+SNAPSHOT CASE-shower-camp-0-frame-4
+SNAPSHOT CASE-shower-camp-0-frame-14
+SNAPSHOT CASE-shower-camp-0-frame-24
+CASE 13122706 camp=0
+SNAPSHOT CASE-chase-camp-0-frame-4
+SNAPSHOT CASE-chase-camp-0-frame-34
+SNAPSHOT CASE-chase-camp-0-frame-59
+CASE 13122707 camp=0
+SNAPSHOT CASE-modified-camp-0-frame-4
+SNAPSHOT CASE-modified-camp-0-frame-34
+SNAPSHOT CASE-modified-camp-0-frame-59
+CASE 13122701 camp=1
+SNAPSHOT CASE-mystery-camp-1-frame-4
+SNAPSHOT CASE-mystery-camp-1-frame-38
+SNAPSHOT CASE-mystery-camp-1-frame-67
+CASE 13122702 camp=1
+SNAPSHOT CASE-standard-camp-1-frame-4
+SNAPSHOT CASE-standard-camp-1-frame-18
+SNAPSHOT CASE-standard-camp-1-frame-32
+CASE 13122703 camp=1
+SNAPSHOT CASE-standard2-camp-1-frame-4
+SNAPSHOT CASE-standard2-camp-1-frame-18
+SNAPSHOT CASE-standard2-camp-1-frame-32
+CASE 13122704 camp=1
+SNAPSHOT CASE-standard3-camp-1-frame-4
+SNAPSHOT CASE-standard3-camp-1-frame-18
+SNAPSHOT CASE-standard3-camp-1-frame-32
+CASE 13122705 camp=1
+SNAPSHOT CASE-shower-camp-1-frame-4
+SNAPSHOT CASE-shower-camp-1-frame-14
+SNAPSHOT CASE-shower-camp-1-frame-24
+CASE 13122706 camp=1
+SNAPSHOT CASE-chase-camp-1-frame-4
+SNAPSHOT CASE-chase-camp-1-frame-34
+SNAPSHOT CASE-chase-camp-1-frame-59
+CASE 13122707 camp=1
+SNAPSHOT CASE-modified-camp-1-frame-4
+SNAPSHOT CASE-modified-camp-1-frame-34
+SNAPSHOT CASE-modified-camp-1-frame-59
+DONE Naruto Mid-Autumn Festival native component; remaining=0

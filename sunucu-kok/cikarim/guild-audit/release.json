@@ -1,0 +1,15 @@
+{
+  "version": "2026103003",
+  "sha256": "6bff9a12a8815df3d0e23bae377f922f0684482ffc73b2296277fddd10b61136",
+  "validation": {
+    "unchangedAssets": true,
+    "unchangedMethods": 68,
+    "changedMethods": [
+      "Unstreamization_OrgMembersList",
+      "UnstreamizerCopyConfig",
+      "SingleEnterRet",
+      "OnChangeText_Money"
+    ]
+  },
+  "changedManifestEntries": 1
+}

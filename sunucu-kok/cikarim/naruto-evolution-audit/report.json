@@ -1,0 +1,167 @@
+{
+  "checkedAt": "2026-10-30T16:05:12.100Z",
+  "characters": 20,
+  "missingWakeUp": 20,
+  "rows": [
+    {
+      "heroId": 11120920,
+      "name": "Uchiha Obito [Rage Mode]",
+      "wakeUpStages": 0,
+      "fragment": 14130920,
+      "fragmentExists": true,
+      "token": 14140920
+    },
+    {
+      "heroId": 11120930,
+      "name": "Pain - Tendo [Six Paths Rinnegan]",
+      "wakeUpStages": 0,
+      "fragment": 14130930,
+      "fragmentExists": true,
+      "token": 14140930
+    },
+    {
+      "heroId": 11120940,
+      "name": "Hashirama Senju [The Final Battle]",
+      "wakeUpStages": 0,
+      "fragment": 14130940,
+      "fragmentExists": true,
+      "token": 14140940
+    },
+    {
+      "heroId": 11120950,
+      "name": "Mecha-Naruto",
+      "wakeUpStages": 0,
+      "fragment": 14130950,
+      "fragmentExists": true,
+      "token": 14140950
+    },
+    {
+      "heroId": 11120960,
+      "name": "Itachi Uchiha [Road to Ninja]",
+      "wakeUpStages": 0,
+      "fragment": 14130960,
+      "fragmentExists": true,
+      "token": 14140960
+    },
+    {
+      "heroId": 11120901,
+      "name": "Naruto [Sage Mode]",
+      "wakeUpStages": 0,
+      "fragment": 14130901,
+      "fragmentExists": true,
+      "token": 14140901
+    },
+    {
+      "heroId": 11120970,
+      "name": "Sasuke Uchiha [Sasuke Shinden]",
+      "wakeUpStages": 0,
+      "fragment": 14130970,
+      "fragmentExists": true,
+      "token": 14140970
+    },
+    {
+      "heroId": 11120990,
+      "name": "Nagato [Frog Squad]",
+      "wakeUpStages": 0,
+      "fragment": 14130990,
+      "fragmentExists": true,
+      "token": 14140990
+    },
+    {
+      "heroId": 11120991,
+      "name": "Gaara [Swimsuit]",
+      "wakeUpStages": 0,
+      "fragment": 14130991,
+      "fragmentExists": true,
+      "token": 14140991
+    },
+    {
+      "heroId": 11120992,
+      "name": "Tsunade [Asian Style]",
+      "wakeUpStages": 0,
+      "fragment": 14130992,
+      "fragmentExists": true,
+      "token": 14140992
+    },
+    {
+      "heroId": 11120994,
+      "name": "Naruto [Nine-Tails Chakra]",
+      "wakeUpStages": 0,
+      "fragment": 14130994,
+      "fragmentExists": true,
+      "token": 14140994
+    },
+    {
+      "heroId": 11120995,
+      "name": "Tobi [Great Ninja War]",
+      "wakeUpStages": 0,
+      "fragment": 14130995,
+      "fragmentExists": true,
+      "token": 14140995
+    },
+    {
+      "heroId": 11120997,
+      "name": "Kakuzu [Edo Tensei]",
+      "wakeUpStages": 0,
+      "fragment": 14130997,
+      "fragmentExists": true,
+      "token": 14140997
+    },
+    {
+      "heroId": 11121001,
+      "name": "Madara Uchiha [The Final Battle]",
+      "wakeUpStages": 0,
+      "fragment": 14131001,
+      "fragmentExists": true,
+      "token": 14141001
+    },
+    {
+      "heroId": 11121003,
+      "name": "Minato Namikaze [New Year]",
+      "wakeUpStages": 0,
+      "fragment": 14131003,
+      "fragmentExists": true,
+      "token": 14141003
+    },
+    {
+      "heroId": 11121005,
+      "name": "Madara Uchiha [Infinite Tsukuyomi]",
+      "wakeUpStages": 0,
+      "fragment": 14131005,
+      "fragmentExists": true,
+      "token": 14141005
+    },
+    {
+      "heroId": 11121006,
+      "name": "Naruto Uzumaki [The Final Battle]",
+      "wakeUpStages": 0,
+      "fragment": 14131006,
+      "fragmentExists": true,
+      "token": 14141006
+    },
+    {
+      "heroId": 11121007,
+      "name": "Guy [Gate of Death]",
+      "wakeUpStages": 0,
+      "fragment": 14131007,
+      "fragmentExists": true,
+      "token": 14141007
+    },
+    {
+      "heroId": 11121008,
+      "name": "Asura Otsutsuki [Guardian of the Land]",
+      "wakeUpStages": 0,
+      "fragment": 14131008,
+      "fragmentExists": true,
+      "token": 14141008
+    },
+    {
+      "heroId": 11121009,
+      "name": "Orochimaru [New Year]",
+      "wakeUpStages": 0,
+      "fragment": 14131009,
+      "fragmentExists": true,
+      "token": 14141009
+    }
+  ]
+}

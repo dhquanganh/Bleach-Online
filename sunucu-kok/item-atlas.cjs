@@ -7,7 +7,7 @@ module.exports=function itemAtlas(picture){
  if(cache.has(picture))return cache.get(picture);
  const root=path.join(__dirname,'kaynak/login.gogames.me/public'),hex=(picture>>>0).toString(16).toUpperCase().padStart(8,'0');
  for(const version of fs.readdirSync(root).sort().reverse()){
-  const file=path.join(root,version,'Resources/Textures/Inventory',hex+'.TexClient');if(!fs.existsSync(file))continue;
+  let file=path.join(root,version,'Resources/Textures/Inventory',hex+'.TexClient');if(!fs.existsSync(file))file=path.join(root,version,'Resources/Textures/Article',hex+'.TexClient');if(!fs.existsSync(file))continue;
   try{
    const raw=fs.readFileSync(file),offset=8+raw.readUInt32LE(4),count=raw.readUInt16LE(offset);if(!count)return null;
    const size=raw.readUInt32LE(offset+2),pak=zlib.inflateSync(raw.subarray(offset+6,offset+6+size));

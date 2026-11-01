@@ -103,7 +103,7 @@ function bilgiPaketi(durum) {
 function aktiviteDurumPaketi() {
   // Flash maps the seven bytes to types [2, 4, 5, 6, 7, 8, 9].
   // Mark the three Evil Spirit factions as joinable for all-day testing.
-  return Buffer.from([2, 0, 1, 1, 1, 0, 0]);
+  return Buffer.from([2, 0, 1, 1, 1, 2, 0]);
 }
 function kampPaketi(durum) {
   const l = var_(durum) ? depo(durum) : null;

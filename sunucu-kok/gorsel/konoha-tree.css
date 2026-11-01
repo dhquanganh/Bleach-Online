@@ -1,0 +1,27 @@
+/* The clickable entrance lives in the native shortcut layer, beneath game windows. */
+#konoha-tree-entry{display:none}
+#konoha-tree-entry img{display:block;width:60px;height:60px;margin:auto;filter:drop-shadow(0 0 4px #b6db50)}
+#konoha-tree-entry:hover img,#konoha-tree-entry:focus img{filter:drop-shadow(1px 0 0 #ff2020) drop-shadow(-1px 0 0 #ff2020) drop-shadow(0 1px 0 #ff2020) drop-shadow(0 -1px 0 #ff2020) drop-shadow(0 0 4px #e00000)}
+#konoha-tree-entry:focus{outline:2px solid #ffdb76}
+#konoha-tree{position:absolute;left:0;top:0;right:0;bottom:0;z-index:9300;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.48);font:12px Arial;color:#fff}
+#konoha-tree[hidden]{display:none!important}
+#konoha-tree .kt-panel{position:relative;width:790px;height:600px;flex-shrink:0;background:url('/gorsel/konoha-tree/panel.png') no-repeat left top}
+#konoha-tree .kt-naruto{position:absolute;left:-15px;bottom:12px;width:220px;height:auto;pointer-events:none}
+#konoha-tree .kt-close{position:absolute;left:649px;top:80px;width:34px;height:34px;border-radius:50%;border:2px solid #ffda74;background:#ad201c;color:#fff;font:bold 28px/26px Arial;cursor:pointer;box-shadow:0 2px 4px #111}
+#konoha-tree .kt-deadline{position:absolute;left:220px;top:144px;width:422px;text-align:right;color:#ffe58d;text-shadow:1px 1px #222}
+#konoha-tree .kt-offers{position:absolute;left:214px;top:180px;width:426px;height:338px;overflow-y:auto;overflow-x:hidden;display:flex;flex-wrap:wrap;align-content:flex-start;scrollbar-color:#bb9334 #445f62}
+#konoha-tree .kt-offer{position:relative;width:204px;height:104px;flex-shrink:0;margin:0 8px 10px 0;background:url('/gorsel/konoha-tree/offer.png') center/100% 100%;box-sizing:border-box;text-shadow:1px 1px #10151b}
+#konoha-tree .kt-item-icon{position:absolute;left:12px;top:16px;width:50px;height:50px;object-fit:contain;background:#111c24;border:2px solid #b39542;box-sizing:border-box}
+#konoha-tree .kt-item-name{position:absolute;left:69px;top:10px;right:5px;height:32px;font:bold 12px/14px Arial;overflow:hidden}
+#konoha-tree .kt-limit{position:absolute;left:69px;top:50px;font-size:11px}
+#konoha-tree .kt-buy{position:absolute;left:69px;bottom:10px;width:125px;height:25px;background:linear-gradient(#ffda73,#f6aa16 45%,#cf7906 50%,#e8a026);border:2px solid #e0c66a;box-shadow:0 0 0 1px #60450c;color:#211d10;cursor:pointer;font-weight:bold;text-shadow:0 1px #ffe9a6}
+#konoha-tree .kt-buy img{width:21px;height:21px;position:absolute;left:4px;top:0}
+#konoha-tree .kt-buy:disabled{cursor:default;filter:grayscale(.7);opacity:.6}
+#konoha-tree .kt-tab{position:absolute;left:659px;top:303px;width:102px;height:83px;background:url('/gorsel/konoha-tree/tab-active.png') no-repeat;pointer-events:none}
+#konoha-tree .kt-owned{position:absolute;left:214px;top:552px;width:425px;text-align:right;font:bold 14px Arial;color:#ffdd80;display:flex;justify-content:flex-end;align-items:center;gap:7px;text-shadow:1px 1px #333}
+#konoha-tree .kt-owned img{width:28px;height:28px}
+#konoha-tree .kt-message{position:absolute;left:215px;top:518px;width:425px;margin:0;color:#733416;font-weight:bold;line-height:14px;min-height:28px}
+#konoha-tree .kt-refresh{position:absolute;left:210px;top:550px;z-index:1;border:1px solid #b79b44;background:#365e26;color:#ffef9b;padding:5px 9px;cursor:pointer}
+#konoha-tree .kt-empty{padding:20px 12px;color:#70380d;font-size:14px;line-height:20px}
+
+#konoha-tree .kt-owned>*{margin-left:7px}
